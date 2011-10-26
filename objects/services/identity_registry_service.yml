@@ -1,17 +1,5 @@
 # Identity Registry Service interface definition
 
-#obj:
-#  UserInfo:
-#    name: ""
-#    roles: ""
-#    subjects: ""
-#    email: ""
-#    phone: ""
-#    variables:
-#    - name: ""
-#      value: ""
-#---
-
 name: identity_registry
 dependencies: [datastore]
 methods:

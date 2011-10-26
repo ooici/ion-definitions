@@ -1,3 +1,9 @@
-UserRole:
+UserInfo:
   name: ""
-  description: ""
+  roles: ""
+  subjects: ""
+  email: ""
+  phone: ""
+  variables:
+  - name: ""
+    value: ""

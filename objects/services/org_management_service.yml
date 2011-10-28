@@ -1,0 +1,25 @@
+# Org Management Service interface definition
+
+name: org_management
+dependencies: [datastore]
+methods:
+  affiliate:
+    in:
+
+    out:
+
+  enroll:
+    in:
+
+    out:
+
+  leave:
+    in:
+
+    out:
+
+  has_permission:
+    in:
+
+    out:
+

@@ -39,3 +39,17 @@ methods:
     out:
       value: {}
 
+  find_resources:
+    in:
+
+    out:
+
+  register_resource:
+    in:
+
+    out:
+
+  unregister_resource:
+    in:
+
+    out:

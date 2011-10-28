@@ -1,0 +1,42 @@
+# Conversation Management Service interface definition
+
+name: conversation_management
+dependencies: [policy_mamnagement,datastore]
+methods:
+  find_conversations:
+    in:
+      name: "*"
+
+    out:
+      conversation_list: []
+
+  get_conversation:
+    in:
+
+    out:
+
+  define_conversation:
+    in:
+
+    out:
+
+  delete_conversation:
+    in:
+
+    out:
+
+  define_conversation_type:
+    in:
+
+    out:
+
+  delete_conversation_type:
+    in:
+
+    out:
+
+log_message:
+    in:
+      message: ""
+
+    out:

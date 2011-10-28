@@ -3,6 +3,7 @@
 name: identity_registry
 dependencies: [datastore]
 methods:
+#TODO Rename to register_user_credentials
   create_user:
     in:
       user_info: !UserInfo
@@ -10,18 +11,21 @@ methods:
     out:
       id: ""
 
+#TODO Rename to update_user_profile
   update_user:
     in:
       user_info: !UserInfo
 
     out:
 
-  remove_user:
+#TODO Rename to register_user_credentials
+  delete_user_profile:
     in:
       name: ""
       email: ""
 
     out:
+#TODO Implement get_ooiid_for_user
 
   find_user_by_id:
     in:
@@ -69,6 +73,7 @@ methods:
     out:
       status: True
 
+#TODO Move all the operations below to the Policy Management Service
   get_user_roles:
     in:
       name: ""

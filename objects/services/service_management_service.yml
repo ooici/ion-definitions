@@ -1,0 +1,25 @@
+# Service Management Service interface definition
+
+name: service_management
+dependencies: [datastore]
+methods:
+  find_services:
+    in:
+
+    out:
+
+  get_service_spec:
+    in:
+
+    out:
+
+  define_service:
+    in:
+
+    out:
+
+  delete_service:
+    in:
+
+    out:
+

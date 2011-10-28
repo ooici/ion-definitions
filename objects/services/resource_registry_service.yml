@@ -1,0 +1,44 @@
+# Resource Registry Service interface definition
+
+name: resource_registry
+dependencies: [datastore]
+methods:
+  find_resources:
+    in:
+
+    out:
+
+  get_resource:
+    in:
+
+    out:
+
+  define_resource:
+    in:
+
+    out:
+
+  delete_resource:
+    in:
+
+    out:
+
+  find_resource_types:
+    in:
+
+    out:
+
+  get_resource_type:
+    in:
+
+    out:
+
+  define_resource_type:
+    in:
+
+    out:
+
+  delete_resource_type:
+    in:
+
+    out:

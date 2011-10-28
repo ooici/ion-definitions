@@ -1,0 +1,25 @@
+# Object Management Service interface definition
+
+name: object_management
+dependencies: [datastore]
+methods:
+  find_object_types:
+    in:
+
+    out:
+
+  get_object_definition:
+    in:
+
+    out:
+
+  define_object_type:
+    in:
+
+    out:
+
+  delete_object_type:
+    in:
+
+    out:
+

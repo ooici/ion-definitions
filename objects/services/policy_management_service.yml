@@ -1,0 +1,43 @@
+# Policy Management Service interface definition
+
+name: policy_management
+dependencies: [datastore]
+methods:
+  define_policy:
+    in:
+
+    out:
+
+  get_policy:
+    in:
+
+    out:
+
+  delete_policy:
+    in:
+
+    out:
+
+  enable_policy:
+    in:
+
+    out:
+
+  disable_policy:
+    in:
+
+    out:
+
+  set_role:
+    in:
+      userid: ""
+      roleid: []
+
+    out:
+
+  unset_role:
+    in:
+      userid: ""
+      roleid: []
+      
+    out:

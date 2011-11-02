@@ -5,7 +5,12 @@ description: Release 2 deployment configuration
 ion: 0.0.1
 apps:
 
-    # Bootlevels less than 4 are not represented in this rel file...
+#-------------#
+# Bootlevel 3 #
+#-------------#
+  - name: directory
+    version: 0.1
+    processapp: [directory, prototype.directory_service, DirectoryService]
 
 #-------------#
 # Bootlevel 4 #
@@ -16,7 +21,7 @@ apps:
     processapp: [datastore, prototype.datastore_service, DataStoreService]
     config:
         type: CouchDB
-        forceClean: true
+        force_clean: true
 
 #-------------#
 # Bootlevel 7 #

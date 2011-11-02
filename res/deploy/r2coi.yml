@@ -1,0 +1,22 @@
+type: release
+name: Release2Configuration COI services
+version: 0.1
+description: Release 2 deployment configuration
+ion: 0.0.1
+apps:
+
+  - name: datastore
+    description: Data store service
+    version: 0.1
+    processapp: [datastore, prototype.datastore_service, DataStoreService]
+    config:
+        type: CouchDB
+        forceClean: true
+
+  - name: identity_registry
+    version: 0.1
+    processapp: [identity_registry, prototype.identity_registry_service, IdentityRegistryService]
+
+  - name: resource_registry
+    version: 0.1
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]

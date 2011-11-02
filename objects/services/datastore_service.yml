@@ -24,6 +24,13 @@ methods:
     out:
       list: []
 
+  datastore_exists:
+    in:
+      datastore_name: ""
+
+    out:
+      status: false
+
   info_datastore:
     in:
       datastore_name: ""

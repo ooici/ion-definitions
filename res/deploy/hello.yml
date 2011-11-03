@@ -15,3 +15,8 @@ apps:
     version: 0.1
     config:
         some: "Ho"
+
+  - name: hello2
+    version: 0.1
+    config:
+        some: "Hop"

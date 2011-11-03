@@ -1,0 +1,8 @@
+type: application
+name: hello2
+description: Hello service (app version)
+version: 0.1
+mod: examples.service.hello_service
+dependencies: []
+config:
+    some: "Hi"

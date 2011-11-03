@@ -1,0 +1,8 @@
+type: application
+name: hello1
+description: Hello service (procapp version)
+version: 0.1
+processapp: [hello1, examples.service.hello_service, HelloService]
+dependencies: []
+config:
+    some: "Hi"

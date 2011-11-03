@@ -10,3 +10,8 @@ apps:
     processapp: [hello, examples.service.hello_service, HelloService]
     config:
         some: "Hi"
+
+  - name: hello1
+    version: 0.1
+    config:
+        some: "Ho"

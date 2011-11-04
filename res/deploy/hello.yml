@@ -15,8 +15,12 @@ apps:
     version: 0.1
     config:
         some: "Ho"
+        service:
+            name: hello
 
   - name: hello2
     version: 0.1
     config:
         some: "Hop"
+        service:
+            name: hello

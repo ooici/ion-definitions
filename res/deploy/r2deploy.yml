@@ -20,8 +20,9 @@ apps:
     version: 0.1
     processapp: [datastore, prototype.datastore_service, DataStoreService]
     config:
-        type: CouchDB
-        force_clean: true
+        datastore:
+            persistent: true
+            force_clean: true
 
 #-------------#
 # Bootlevel 7 #
@@ -38,8 +39,19 @@ apps:
     processapp: [app_integration, prototype.app_integration_service, AppIntegrationService]
 
 #--------------#
+# Bootlevel 10 #
+#--------------#
+  - name: trade
+    version: 0.1
+    processapp: [trade, prototype.trade, TradeService]
+
+#--------------#
 # Bootlevel 11 #
 #--------------#
   - name: bank
     version: 0.1
     processapp: [bank, prototype.bank, BankService]
+
+  - name: hello_resource
+    version: 0.1
+    processapp: [hello_resource, prototype.hello_resource_service, HelloResourceService]

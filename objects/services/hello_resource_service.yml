@@ -1,0 +1,47 @@
+# _ID = 20029
+# _VERSION = 1
+obj:
+  InstrumentResource:
+    name: ""
+    make: ""
+    model: ""
+    serial_number: ""
+    lifecycle_state: 0
+--- # _ID = 20030
+
+# _ID = 20030
+# _VERSION = 1
+obj:
+  InstrumentInfoObject:
+    name: ""
+    make: ""
+    model: ""
+    serial_number: ""
+--- # _ID = 20030
+
+
+name: hello_resource
+dependencies: [datastore]
+methods:
+  create_instrument_resource:
+    in:
+      instrument_info: !InstrumentInfoObject
+      instrument_resource: !InstrumentResource
+
+    out:
+      resource_id: ""
+
+  update_instrument_resource:
+    in:
+      resource_id: ""
+      instrument_info: !InstrumentInfoObject
+
+    out:
+
+  set_instrument_resource_life_cycle:
+    in:
+      resource_id: ""
+#      life_cycle_operation: !LifeCycleOperation
+
+    out:
+

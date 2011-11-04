@@ -1,4 +1,5 @@
 BankAccount:
   owner: ""
   account_type: Checking
-  balance: 0.0
+  cash_balance: 0.0
+  bond_balance: 0.0

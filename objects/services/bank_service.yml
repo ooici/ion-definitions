@@ -1,7 +1,7 @@
 # Bank Service interface definition
 
 name: bank
-dependencies: [datastore]
+dependencies: [trade, datastore]
 methods:
   new_account:
     in:
@@ -27,9 +27,26 @@ methods:
     out:
       status: ""
 
-  get_balance:
+  get_balances:
     in:
       account_id: -1
+
+    out:
+      cash: 0.0
+      bonds: 0
+
+  buy_bonds:
+    in:
+      account_id: ""
+      cash_amount: 0.0
+
+    out:
+      status: ""
+
+  sell_bonds:
+    in:
+      account_id: ""
+      quantity: 0
 
     out:
       status: ""

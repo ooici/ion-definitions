@@ -121,9 +121,7 @@ methods:
 
   find:
     in:
-      type: ""
-      key: ""
-      key_value: ""
+      criteria: []
       datastore_name: ""
 
     out:
@@ -131,9 +129,7 @@ methods:
 
   find_doc:
     in:
-      type: ""
-      key: ""
-      key_value: ""
+      criteria: []
       datastore_name: ""
 
     out:

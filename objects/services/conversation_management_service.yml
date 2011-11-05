@@ -1,7 +1,7 @@
 # Conversation Management Service interface definition
 
 name: conversation_management
-dependencies: [policy_mamnagement,datastore]
+dependencies: [policy_management,datastore]
 methods:
   find_conversations:
     in:

@@ -24,6 +24,15 @@ apps:
             persistent: true
             force_clean: true
 
+  - name: resource_registry
+    description: Resource registry service
+    version: 0.1
+    processapp: [resource_registry, prototype.resource_registry_service, ResourceRegistryService]
+    config:
+        resource_registry:
+            persistent: true
+            force_clean: true
+
 #-------------#
 # Bootlevel 7 #
 #-------------#
@@ -43,14 +52,14 @@ apps:
 #--------------#
   - name: trade
     version: 0.1
-    processapp: [trade, prototype.trade, TradeService]
+    processapp: [trade, prototype.trade_service, TradeService]
 
 #--------------#
 # Bootlevel 11 #
 #--------------#
   - name: bank
     version: 0.1
-    processapp: [bank, prototype.bank, BankService]
+    processapp: [bank, prototype.bank_service, BankService]
 
   - name: hello_resource
     version: 0.1

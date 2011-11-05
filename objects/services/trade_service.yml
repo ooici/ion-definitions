@@ -18,7 +18,7 @@ obj:
 ---
 
 name: trade
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
   exercise:
     in:

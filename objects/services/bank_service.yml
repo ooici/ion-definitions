@@ -1,7 +1,7 @@
 # Bank Service interface definition
 
 name: bank
-dependencies: [trade, datastore]
+dependencies: [trade, resource_registry]
 methods:
   new_account:
     in:

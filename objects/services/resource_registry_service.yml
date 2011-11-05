@@ -1,27 +1,43 @@
 # Resource Registry Service interface definition
 
 name: resource_registry
-dependencies: [datastore]
+dependencies: []
 methods:
-  find_resources:
+  create:
     in:
+      object: {}
 
     out:
+      tuple: []
 
-  get_resource:
+  read:
     in:
+      object_id: ""
+      rev_id: ""
 
     out:
+      object: {}
 
-  define_resource:
+  update:
     in:
+      object: {}
 
     out:
+      tuple: []
 
-  delete_resource:
+  delete:
     in:
+      object: {}
 
     out:
+      status: True
+
+  find:
+    in:
+      criteria: []
+
+    out:
+      list: []
 
   find_resource_types:
     in:

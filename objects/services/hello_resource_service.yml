@@ -21,7 +21,7 @@ obj:
 
 
 name: hello_resource
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
   create_instrument_resource:
     in:

@@ -1,7 +1,7 @@
 type: release
-name: r2deploy
+name: bank_1
 version: 0.1
-description: Release 2 deployment configuration
+description: Bank Example, Core and trade
 ion: 0.0.1
 apps:
   - name: directory
@@ -17,11 +17,6 @@ apps:
             persistent: true
             force_clean: true
 
-  - name: resource_registry
-    description: Resource registry service
+  - name: trade
     version: 0.1
-    processapp: [resource_registry, prototype.resource_registry_service, ResourceRegistryService]
-    config:
-        resource_registry:
-            persistent: true
-            force_clean: true
+    processapp: [trade, prototype.trade, TradeService]

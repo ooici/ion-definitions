@@ -1,0 +1,28 @@
+# Bond Trade Service interface definition
+
+obj:
+  Order:
+    type: "buy"
+    on_behalf: ""
+    cash_amount: 0.0
+    bond_amount: 0.0
+
+---
+
+obj:
+  Confirmation:
+    tracking_number: ""
+    status: "pending"
+    proceeds: 0.0
+
+---
+
+name: trade
+dependencies: [datastore]
+methods:
+  exercise:
+    in:
+      order: !Order
+
+    out:
+      confirmation: !Confirmation 

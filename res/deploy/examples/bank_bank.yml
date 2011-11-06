@@ -1,0 +1,10 @@
+type: release
+name: r2deploy
+version: 0.1
+description: Release 2 deployment configuration
+ion: 0.0.1
+apps:
+  - name: bank
+    version: 0.1
+    processapp: [bank, examples.bank.bank_service, BankService]
+

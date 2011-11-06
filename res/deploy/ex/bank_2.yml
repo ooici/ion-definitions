@@ -1,9 +1,0 @@
-type: release
-name: bank_2
-version: 0.1
-description: Bank Example, Bank service
-ion: 0.0.1
-apps:
-  - name: bank
-    version: 0.1
-    processapp: [bank, prototype.bank, BankService]

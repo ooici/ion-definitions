@@ -28,5 +28,5 @@ apps:
 
   - name: bank
     version: 0.1
-    processapp: [bank, prototype.bank_service, BankService]
+    processapp: [bank, examples.bank.bank_service, BankService]
 

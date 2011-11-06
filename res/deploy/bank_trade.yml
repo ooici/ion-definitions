@@ -28,5 +28,5 @@ apps:
 
   - name: trade
     version: 0.1
-    processapp: [trade, prototype.trade_service, TradeService]
+    processapp: [trade, examples.bank.trade_service, TradeService]
 

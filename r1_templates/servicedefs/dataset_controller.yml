@@ -119,7 +119,7 @@ obj:
     task_id: ""
 --- # _ID = 2603
 
-name: dataset_controller.py
+name: dataset_controller
 dependencies: []
 methods:
   create_dataset_resource:

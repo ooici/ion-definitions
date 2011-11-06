@@ -6,7 +6,7 @@ obj:
     body: ""
 --- # _ID = 30001
 
-name: ccbrokerload.py
+name: ccbrokerload
 dependencies: []
 methods:
   message_simple:

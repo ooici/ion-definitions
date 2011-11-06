@@ -153,7 +153,7 @@ obj:
       isleaf: true]
 --- # _ID = 52
 
-name: ingestion.py
+name: ingestion
 dependencies: []
 methods:
   create_dataset_topics:

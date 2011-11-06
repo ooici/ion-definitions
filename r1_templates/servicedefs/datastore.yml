@@ -143,7 +143,7 @@ obj:
       isleaf: true
 --- # _ID = 10021
 
-name: datastore.py
+name: datastore
 dependencies: []
 methods:
   pull:

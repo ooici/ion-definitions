@@ -29,7 +29,7 @@ obj:
     title: ""
 --- # _ID = 20003
 
-name: hello_message.py
+name: hello_message
 dependencies: []
 methods:
   hello_person:

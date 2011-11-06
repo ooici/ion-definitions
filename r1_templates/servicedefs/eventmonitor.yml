@@ -61,7 +61,7 @@ obj:
       isleaf: true]
 --- # _ID = 2340
 
-name: eventmonitor.py
+name: eventmonitor
 dependencies: []
 methods:
   subscribe:

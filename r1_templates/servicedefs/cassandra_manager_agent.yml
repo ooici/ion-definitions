@@ -126,7 +126,7 @@ obj:
     result: ""
 --- # _ID = 12
 
-name: cassandra_manager_agent.py
+name: cassandra_manager_agent
 dependencies: []
 methods:
   create_persistent_archive:

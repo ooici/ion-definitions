@@ -1,4 +1,4 @@
-name: transformation_service.py
+name: transformation_service
 dependencies: []
 methods:
   transform:

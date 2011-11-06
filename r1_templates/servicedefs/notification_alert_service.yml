@@ -24,7 +24,7 @@ obj:
     ooi_id: ""
 --- # _ID = 1403
 
-name: notification_alert_service.py
+name: notification_alert_service
 dependencies: []
 methods:
   addSubscription:

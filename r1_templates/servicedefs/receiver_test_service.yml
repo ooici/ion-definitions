@@ -29,7 +29,7 @@ obj:
       type: MOBILE]
 --- # _ID = 20001
 
-name: receiver_test_service.py
+name: receiver_test_service
 dependencies: []
 methods:
   a:

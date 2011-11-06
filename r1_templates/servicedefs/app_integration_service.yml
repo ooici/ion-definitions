@@ -29,7 +29,7 @@ obj:
       type: MOBILE]
 --- # _ID = 20001
 
-name: app_integration_service.py
+name: app_integration_service
 dependencies: []
 methods:
   broadcast:

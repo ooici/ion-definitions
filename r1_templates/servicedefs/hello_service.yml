@@ -1,4 +1,4 @@
-name: hello_service.py
+name: hello_service
 dependencies: []
 methods:
   hello:

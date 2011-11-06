@@ -1,4 +1,4 @@
-name: exchange_management.py
+name: exchange_management
 dependencies: []
 methods:
   create_object:

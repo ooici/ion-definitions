@@ -1,4 +1,4 @@
-name: logger.py
+name: logger
 dependencies: []
 methods:
   config:

@@ -12,7 +12,7 @@ obj:
     output_string: ""
 --- # _ID = 20033
 
-name: rot13_service.py
+name: rot13_service
 dependencies: []
 methods:
   rot13:

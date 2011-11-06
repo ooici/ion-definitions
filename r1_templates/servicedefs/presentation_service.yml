@@ -1,4 +1,4 @@
-name: presentation_service.py
+name: presentation_service
 dependencies: []
 methods:
   present_catalog:

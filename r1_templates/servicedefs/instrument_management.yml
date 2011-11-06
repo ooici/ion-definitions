@@ -34,7 +34,7 @@ obj:
     treeish: ""
 --- # _ID = 4
 
-name: instrument_management.py
+name: instrument_management
 dependencies: []
 methods:
   create_new_instrument:

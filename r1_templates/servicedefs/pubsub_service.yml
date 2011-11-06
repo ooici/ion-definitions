@@ -354,7 +354,7 @@ obj:
     key: ""
 --- # _ID = 25
 
-name: pubsub_service.py
+name: pubsub_service
 dependencies: []
 methods:
   declare_exchange_space:

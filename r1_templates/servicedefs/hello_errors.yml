@@ -10,7 +10,7 @@ obj:
       type: MOBILE]
 --- # _ID = 20001
 
-name: hello_errors.py
+name: hello_errors
 dependencies: []
 methods:
   replytome:

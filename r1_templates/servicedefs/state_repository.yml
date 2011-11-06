@@ -1,4 +1,4 @@
-name: state_repository.py
+name: state_repository
 dependencies: []
 methods:
   define_state:

@@ -48,7 +48,7 @@ obj:
     version: -1
 --- # _ID = 9
 
-name: resource_registry.py
+name: resource_registry
 dependencies: []
 methods:
   register_resource_instance:

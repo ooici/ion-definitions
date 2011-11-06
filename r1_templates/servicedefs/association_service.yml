@@ -137,7 +137,7 @@ obj:
     lcs: NEW
 --- # _ID = 26
 
-name: association_service.py
+name: association_service
 dependencies: []
 methods:
   get_subjects:

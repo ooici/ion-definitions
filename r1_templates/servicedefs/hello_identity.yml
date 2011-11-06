@@ -1,4 +1,4 @@
-name: hello_identity.py
+name: hello_identity
 dependencies: []
 methods:
   hello_anonymous_request:

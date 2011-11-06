@@ -211,7 +211,7 @@ obj:
       fw_version: ""]
 --- # _ID = 9314
 
-name: instrument_integration_service.py
+name: instrument_integration_service
 dependencies: []
 methods:
   prepInstrument:

@@ -67,7 +67,7 @@ obj:
     result: ""
 --- # _ID = 12
 
-name: hello_data_update.py
+name: hello_data_update
 dependencies: []
 methods:
   create_addressbook_resource:

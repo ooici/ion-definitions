@@ -48,7 +48,7 @@ obj:
       column_value: ""]
 --- # _ID = 21
 
-name: index_store_service.py
+name: index_store_service
 dependencies: []
 methods:
   query:

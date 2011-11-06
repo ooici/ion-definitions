@@ -1,4 +1,4 @@
-name: hello_identity_delegate.py
+name: hello_identity_delegate
 dependencies: []
 methods:
   hello_anonymous_request_delegate:

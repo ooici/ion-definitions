@@ -106,7 +106,7 @@ obj:
     result: ""
 --- # _ID = 12
 
-name: hello_policy.py
+name: hello_policy
 dependencies: []
 methods:
   hello_anonymous_request:

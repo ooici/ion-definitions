@@ -121,7 +121,7 @@ obj:
       isleaf: true
 --- # _ID = 10001
 
-name: java_agent_wrapper.py
+name: java_agent_wrapper
 dependencies: []
 methods:
   pretty_print:

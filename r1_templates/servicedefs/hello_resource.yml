@@ -68,7 +68,7 @@ obj:
     treeish: ""
 --- # _ID = 4
 
-name: hello_resource.py
+name: hello_resource
 dependencies: []
 methods:
   create_instrument_resource:

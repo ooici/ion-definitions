@@ -48,7 +48,7 @@ obj:
       column_value: ""]
 --- # _ID = 21
 
-name: store_service.py
+name: store_service
 dependencies: []
 methods:
   put:

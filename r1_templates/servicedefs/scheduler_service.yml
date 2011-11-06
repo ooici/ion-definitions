@@ -53,7 +53,7 @@ obj:
     
 --- # _ID = 2606
 
-name: scheduler_service.py
+name: scheduler_service
 dependencies: []
 methods:
   add_task:

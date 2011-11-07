@@ -1,0 +1,16 @@
+This is the ION resource files directory.
+
+Resource files are used when the ION system, a capability container or an example is started.
+
+Resource files may be placed in this directory by different repository owners, in order for them to be
+available when the system is started. Place or edit files with care.
+
+
+DIRECTORY STRUCTURE:
+
+./apps/     App definition/configuration files (YML format and extension)
+
+./config/   ION configuration files (YML format and extension). Example: pyon
+
+./deploy/   Container startup (deploy) files (YML format and extension).
+

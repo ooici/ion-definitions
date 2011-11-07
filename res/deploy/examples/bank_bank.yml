@@ -1,7 +1,7 @@
 type: release
-name: r2deploy
+name: bank_bank
 version: 0.1
-description: Release 2 deployment configuration
+description: Bank Example; bank service
 ion: 0.0.1
 apps:
   - name: bank

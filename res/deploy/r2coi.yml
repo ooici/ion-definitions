@@ -8,14 +8,14 @@ apps:
   - name: datastore
     description: Data store service
     version: 0.1
-    processapp: [datastore, prototype.datastore_service, DataStoreService]
+    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
     config:
         type: CouchDB
         forceClean: true
 
   - name: identity_registry
     version: 0.1
-    processapp: [identity_registry, prototype.identity_registry_service, IdentityRegistryService]
+    processapp: [identity_registry, ion.services.coi.identity_registry_service, IdentityRegistryService]
 
   - name: resource_registry
     version: 0.1

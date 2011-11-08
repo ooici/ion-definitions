@@ -1,0 +1,32 @@
+# Chat Server Service interface definition
+
+name: chats
+dependencies: []
+methods:
+  register:
+    in:
+      user_name: ""
+      proc_id: ""
+    out:
+      res: ""
+
+  unregister:
+    in:
+      user_name: ""
+    out:
+      res: ""
+
+  message:
+    in:
+      from_name: ""
+      to_name: ""
+      text: ""
+    out:
+      res: ""
+
+  ping:
+    in:
+      from_name: ""
+      to_name: ""
+    out:
+      res: ""

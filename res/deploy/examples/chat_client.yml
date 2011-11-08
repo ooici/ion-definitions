@@ -1,0 +1,9 @@
+type: release
+name: chat_client
+version: 0.1
+description: Chat client
+ion: 0.0.1
+apps:
+  - name: chatc
+    version: 0.1
+    processapp: [chatc, examples.chat.chatc_service, ChatClientService]

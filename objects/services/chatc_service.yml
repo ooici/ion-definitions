@@ -1,0 +1,17 @@
+# Chat Client Service interface definition
+
+name: chatc
+dependencies: [chats]
+methods:
+  message:
+    in:
+      from_name: ""
+      text: ""
+    out:
+      res: ""
+
+  ping:
+    in:
+      from_name: ""
+    out:
+      res: ""

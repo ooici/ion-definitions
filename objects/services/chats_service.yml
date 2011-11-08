@@ -30,3 +30,8 @@ methods:
       to_name: ""
     out:
       res: ""
+
+  list_users:
+    in:
+    out:
+      users: ""

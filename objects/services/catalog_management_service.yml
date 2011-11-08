@@ -1,0 +1,27 @@
+# Catalog Management Service interface definition
+
+name: catalog_management_service
+dependencies:
+methods:
+  define_catalog:
+    in:
+      name: ""
+       paramters: {}
+
+    out:
+      status: True
+
+  define_view:
+    in:
+      name: ""
+      paramters: {}
+
+    out:
+      status: True
+
+  get_catalog_definition:
+    in:
+      resourceId: ""
+
+    out:
+      result:

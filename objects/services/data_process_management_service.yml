@@ -1,0 +1,30 @@
+# Data Process Management Service interface definition
+
+name: data_process_management_service
+dependencies: [datastore]
+methods:
+  attach_process:
+    in:
+      process: ""
+
+    out:
+      status: True
+
+  define_data_process:
+    in:
+      process: ""
+      transformID: ""
+      transformParams: {}
+      creatorDetails: {}
+      scheduleDetails: {}
+
+    out:
+      status: True
+
+   get_data_process:
+    in:
+      filters: {}
+
+    out:
+      process: []
+

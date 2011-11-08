@@ -1,0 +1,20 @@
+# Data Acquisition Management Service interface definition
+
+name: data_acquisition_management_service
+dependencies: [datastore]
+methods:
+  define_data_agent:
+    in:
+      name: ""
+      description: ""
+
+    out:
+      status: True
+
+  define_data_producer:
+    in:
+      name: ""
+      description: ""
+
+    out:
+      status: True

@@ -1,0 +1,86 @@
+# Instrument Management Service interface definition
+
+name: instrument_management_service
+dependencies: [datastore]
+methods:
+  define_instrument:
+    in:
+      serialNumber: ""
+      parameters: {}
+
+    out:
+      status: True
+
+  get_instrument:
+    in:
+      resourceId: ""
+
+    out:
+      instrument:
+
+  activate_instrument:
+    in:
+      resourceId: ""
+      agentId: ""
+
+    out:
+      status: True
+
+  update_instrument:
+    in:
+      resourceId: ""
+      parameters: {}
+
+    out:
+      status: True
+
+  find_instrument:
+    in:
+      filters: {}
+
+    out:
+      results: []
+
+  define_platform:
+    in:
+      serialNumber: ""
+      name: ""
+      description: ""
+
+    out:
+      status: True
+
+  get_platform:
+    in:
+      resourceId: ""
+
+    out:
+      result:
+
+  find_platform:
+    in:
+      filters: {}
+
+    out:
+      results: []
+
+  retire_platform:
+    in:
+      resourceId: ""
+
+    out:
+      status: True
+
+  request_direct_access:
+    in:
+      resourceId: ""
+
+    out:
+      status: True
+
+  request_command:
+    in:
+      resourceId: ""
+
+    out:
+      status: True

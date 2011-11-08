@@ -1,0 +1,36 @@
+# Data Product Management Service interface definition
+
+name: data_product_management_service
+dependencies: [datastore]
+methods:
+  define_data_product:
+    in:
+      title: ""
+      description: ""
+      parameterList: {}
+      keywords: {}
+
+    out:
+      status: True
+
+  find_data_products:
+    in:
+      filters: {}
+
+    out:
+      list: []
+
+  get_data_product_detail:
+    in:
+      dataProductId: ""
+
+    out:
+      result: {}
+
+  set_data_product_detail:
+    in:
+      dataProductId: ""
+      updates: {}
+
+    out:
+      status: True

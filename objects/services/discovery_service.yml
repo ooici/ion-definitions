@@ -1,0 +1,26 @@
+# Discovery Service interface definition
+
+name: discovery_service
+dependencies:
+methods:
+  define_search:
+    in:
+      query: ""
+
+    out:
+      status: True
+
+  find_by_metadata:
+    in:
+      find_by_type: ""
+      filters: {}
+
+    out:
+      results: []
+
+  find_by_type:
+    in:
+      find_by_type: ""
+
+    out:
+      results: []

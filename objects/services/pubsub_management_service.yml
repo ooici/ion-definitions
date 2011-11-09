@@ -1,0 +1,61 @@
+# PubSub Management Service interface definition
+
+name: pubsub_management
+dependencies: [resource_registry]
+methods:
+  find_streams:
+    in:
+      filter: !ResourceFilter
+
+    out:
+      result: []
+
+  register_consumer:
+    in:
+      consumerid: ""
+
+    out:
+      status: True
+
+  define_stream
+    in:
+      stream: !Stream
+
+    out:
+      status: True
+
+  register_publisher:
+    in:
+      processid: ""
+      streamid: ""
+
+    out:
+      status: True
+
+  find_stream_producers:
+    in:
+      streamid: ""
+
+    producers: []
+
+  find_producers_stream:
+    in:
+      producerid: ""
+
+    out:
+      streams: []
+
+
+  find_stream_consumers:
+    in:
+      streamid: ""
+
+    out:
+      consumers: []
+
+   find_consumers_stream:
+    in:
+      consumerid: ""
+
+    out:
+      streams: []

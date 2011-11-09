@@ -1,0 +1,16 @@
+Platform:
+  id: ""
+  datatelemetry: ""
+  datatelemetrysystem: ""
+  buoyname: ""
+  buoyheight: ""
+  buoydiameter: ""
+  buoyweight: ""
+  buoypowersystem: ""
+  anchortype: ""
+  anchorweight: ""
+  controllertype: ""
+  controllerspecification: ""
+  controllerports: []
+  controllerpowerconsumption: ""
+  

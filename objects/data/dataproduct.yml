@@ -1,0 +1,32 @@
+DataProduct:
+  id: ""
+  title: ""
+  version: ""
+  summary: ""
+  keywords: {}
+  nominalmaxdatarate: 0
+  nominalmindatarate: 0
+  datarateunit: ""
+  datecreated: 2011-01-01
+  creatorname: ""
+  creatorurl: ""
+  institution: ""
+  project: ""
+  geospatiallatmin: 0
+  geospatiallatmax: 0
+  geospatiallat units: ""
+  geospatiallatresolution: 0
+  geospatiallonmin: 0
+  geospatiallonmax: 0
+  geospatiallonunits: ""
+  geospatiallonresolution: 0
+  geospatialverticalmin: 0
+  geospatialverticalmax: 0
+  geospatialverticalunits: ""
+  geospatialverticalresolution: 0
+  geospatialverticalpositive: 0
+  minbottomdepth: 0
+  maxbottomdepth: 0
+  depthunits: ""
+  depthverticalpositive: 0
+  

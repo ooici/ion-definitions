@@ -1,0 +1,10 @@
+Instrument:
+  id: ""
+  model: ""
+  serialnumber: ""
+  description: ""
+  firmwareversion: ""
+  hardwareversion: ""
+  instrumentclass: ""
+  sensors: []
+  

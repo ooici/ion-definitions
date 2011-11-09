@@ -17,7 +17,7 @@ methods:
     out:
       status: True
 
-   find_data_process:
+  find_data_process:
     in:
       filters: !ResourceFilter
 

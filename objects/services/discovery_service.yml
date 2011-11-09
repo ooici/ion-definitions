@@ -1,7 +1,7 @@
 # Discovery Service interface definition
 
 name: discovery
-dependencies:
+dependencies: []
 methods:
   define_search:
     in:

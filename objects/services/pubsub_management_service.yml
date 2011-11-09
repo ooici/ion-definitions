@@ -17,7 +17,7 @@ methods:
     out:
       status: True
 
-  define_stream
+  define_stream:
     in:
       stream: !Stream
 
@@ -53,7 +53,7 @@ methods:
     out:
       consumers: []
 
-   find_consumers_stream:
+  find_consumers_stream:
     in:
       consumerid: ""
 

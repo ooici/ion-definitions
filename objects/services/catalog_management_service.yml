@@ -1,20 +1,18 @@
 # Catalog Management Service interface definition
 
-name: catalog_management_service
-dependencies:
+name: catalog_management
+dependencies: [resource_registry]
 methods:
   define_catalog:
     in:
-      name: ""
-       paramters: {}
+      catalog: !Catalog
 
     out:
       status: True
 
   define_view:
     in:
-      name: ""
-      paramters: {}
+      view: !View
 
     out:
       status: True

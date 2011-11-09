@@ -12,9 +12,7 @@ methods:
 
   define_transform:
     in:
-      name: ""
-      description: ""
-      paramters: {}
+      transform: !Transform
 
     out:
       status: True

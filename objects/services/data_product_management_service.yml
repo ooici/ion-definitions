@@ -1,21 +1,18 @@
 # Data Product Management Service interface definition
 
-name: data_product_management_service
-dependencies: [datastore]
+name: data_product_management
+dependencies: [resource_registry]
 methods:
   define_data_product:
     in:
-      title: ""
-      description: ""
-      parameterList: {}
-      keywords: {}
+      product: !DataProduct
 
     out:
       status: True
 
   find_data_products:
     in:
-      filters: {}
+      filters: !ResourceFilter
 
     out:
       list: []

@@ -1,12 +1,11 @@
 # Instrument Management Service interface definition
 
 name: instrument_management_service
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
   define_instrument:
     in:
-      serialNumber: ""
-      parameters: {}
+      instrument: !Instrument
 
     out:
       status: True
@@ -16,7 +15,7 @@ methods:
       resourceId: ""
 
     out:
-      instrument:
+      instrument: !Instrument
 
   activate_instrument:
     in:
@@ -28,24 +27,21 @@ methods:
 
   update_instrument:
     in:
-      resourceId: ""
-      parameters: {}
+      instrument: !Instrument
 
     out:
       status: True
 
   find_instrument:
     in:
-      filters: {}
+      filters: !ResourceFilter
 
     out:
       results: []
 
   define_platform:
     in:
-      serialNumber: ""
-      name: ""
-      description: ""
+      platform: !Platform
 
     out:
       status: True
@@ -55,11 +51,11 @@ methods:
       resourceId: ""
 
     out:
-      result:
+      result: !Platform
 
   find_platform:
     in:
-      filters: {}
+      filters: !ResourceFilter
 
     out:
       results: []

@@ -1,7 +1,7 @@
 # Data Process Management Service interface definition
 
-name: data_process_management_service
-dependencies: [datastore]
+name: data_process_management
+dependencies: [resource_registry]
 methods:
   attach_process:
     in:
@@ -12,18 +12,14 @@ methods:
 
   define_data_process:
     in:
-      process: ""
-      transformID: ""
-      transformParams: {}
-      creatorDetails: {}
-      scheduleDetails: {}
+      process: !DataProcess
 
     out:
       status: True
 
-   get_data_process:
+   find_data_process:
     in:
-      filters: {}
+      filters: !ResourceFilter
 
     out:
       process: []

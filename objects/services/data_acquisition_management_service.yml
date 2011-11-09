@@ -1,20 +1,18 @@
 # Data Acquisition Management Service interface definition
 
-name: data_acquisition_management_service
-dependencies: [datastore]
+name: data_acquisition_management
+dependencies: [resource_registry]
 methods:
   define_data_agent:
     in:
-      name: ""
-      description: ""
+      basics: !ResourceBasics
 
     out:
       status: True
 
   define_data_producer:
     in:
-      name: ""
-      description: ""
+      basics: !ResourceBasics
 
     out:
       status: True

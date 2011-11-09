@@ -1,6 +1,6 @@
 # Discovery Service interface definition
 
-name: discovery_service
+name: discovery
 dependencies:
 methods:
   define_search:
@@ -12,15 +12,14 @@ methods:
 
   find_by_metadata:
     in:
-      find_by_type: ""
-      filters: {}
+      filters: !ResourceFilter
 
     out:
       results: []
 
   find_by_type:
     in:
-      find_by_type: ""
+      filters: !ResourceFilter
 
     out:
       results: []

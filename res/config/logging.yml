@@ -54,3 +54,16 @@ loggers:
   pyon:
     handlers: [console, file]
     level: DEBUG
+
+  ion:
+    handlers: [console, file]
+    level: DEBUG
+
+  examples:
+    handlers: [console, file]
+    level: DEBUG
+
+  prototype:
+    handlers: [console, file]
+    level: DEBUG
+

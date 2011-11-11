@@ -1,7 +1,7 @@
 # Object Management Service interface definition
 
 name: object_management
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
   find_object_types:
     in:

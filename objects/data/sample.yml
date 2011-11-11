@@ -7,4 +7,7 @@ SampleObject:
   none:
   _dict: {}
   _list: []
-  
+  enum: !enum
+    a: 1
+    b: 2
+    _default: a

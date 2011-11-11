@@ -1,7 +1,7 @@
 # Policy Management Service interface definition
 
 name: policy_management
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
   define_policy:
     in:

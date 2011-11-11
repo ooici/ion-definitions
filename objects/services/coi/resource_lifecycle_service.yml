@@ -1,7 +1,7 @@
 # Resource Lifecycle Service interface definition
 
 name: resource_lifecycle
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
   execute_lifecycle_transition:
     in:

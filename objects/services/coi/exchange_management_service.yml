@@ -1,8 +1,78 @@
 # Exchange Management Service interface definition
 
 name: exchange_management
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
+  create_exchange_space:
+    in:
+      name: ""
+      org_id: ""
+    out:
+      exchange_space_id: ""
+
+  update_exchange_space:
+    in:
+      exchange_space_id: ""
+    out:
+
+  delete_exchange_space:
+    in:
+      exchange_space_id: ""
+    out:
+
+  find_exchange_spaces:
+    in:
+      name: "*"
+    out:
+      exchange_space_list: []
+
+  create_exchange_name:
+    in:
+      name: ""
+      exchange_space: ""
+    out:
+      exchange_name_id: ""
+
+  update_exchange_name:
+    in:
+      exchange_name_id: ""
+    out:
+
+  delete_exchange_name:
+    in:
+      exchange_name_id: ""
+    out:
+
+  find_exchange_names:
+    in:
+      name: "*"
+
+    out:
+      exchange_name_list: []
+
+  create_exchange_point:
+    in:
+      name: ""
+    out:
+      exchange_point_id: ""
+
+  update_exchange_point:
+    in:
+      exchange_point_id: ""
+    out:
+
+  delete_exchange_point:
+    in:
+      exchange_point_id: ""
+    out:
+
+  find_exchange_points:
+    in:
+      name: "*"
+
+    out:
+      exchange_point_list: []
+
   find_brokers:
     in:
       name: "*"
@@ -35,53 +105,3 @@ methods:
 
     out:
 
-  define_exchange_name:
-    in:
-
-    out:
-
-  delete_exchange_name:
-    in:
-
-    out:
-
-  find_exchange_names:
-    in:
-      name: "*"
-
-    out:
-      exchange_name_list: []
-
-  define_exchange_space:
-    in:
-
-    out:
-
-  delete_exchange_space:
-    in:
-
-    out:
-
-  find_exchange_spaces:
-    in:
-      name: "*"
-
-    out:
-      exchange_space_list: []
-
-  define_exchange_point:
-    in:
-
-    out:
-
-  delete_exchange_point:
-    in:
-
-    out:
-
-  find_exchange_points:
-    in:
-      name: "*"
-
-    out:
-      exchange_point_list: []

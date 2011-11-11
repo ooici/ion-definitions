@@ -1,7 +1,7 @@
 # Service Management Service interface definition
 
 name: service_management
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
   find_services:
     in:

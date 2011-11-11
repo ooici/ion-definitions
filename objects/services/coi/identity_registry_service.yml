@@ -1,7 +1,7 @@
 # Identity Registry Service interface definition
 
 name: identity_registry
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
 #TODO Rename to register_user_credentials
   create_user:

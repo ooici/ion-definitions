@@ -1,25 +1,44 @@
 # Org Management Service interface definition
 
 name: org_management
-dependencies: [datastore]
+dependencies: [resource_registry]
 methods:
-  affiliate:
+  create_org:
     in:
+      name: ""
+    out:
+      org_id: ""
 
+  affiliate_org:
+    in:
+      org_id: ""
+      affiliate_org_id: ""
     out:
 
-  enroll:
+  enroll_member:
     in:
+      org_id: ""
+      user_id: ""
+    out:
 
+  share_resource:
+    in:
+      org_id: ""
+      resource_id: ""
     out:
 
   leave:
     in:
-
+      org_id: ""
+      user_id: ""
     out:
 
   has_permission:
     in:
-
+      org_id: ""
+      user_id: ""
+      action_id: ""
+      resource_id: ""
     out:
+      has_permission: False
 

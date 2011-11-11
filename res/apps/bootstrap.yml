@@ -1,0 +1,8 @@
+type: application
+name: bootstrap
+description: Bootstrap Level Triffer
+version: 0.1
+mod: ion.core.bootstrap_service
+dependencies: []
+config:
+    level: 0

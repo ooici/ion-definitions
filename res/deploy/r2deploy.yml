@@ -4,10 +4,6 @@ version: 0.1
 description: Release 2 deployment configuration
 ion: 0.0.1
 apps:
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-
   - name: datastore
     description: Data store service
     version: 0.1
@@ -20,6 +16,12 @@ apps:
   - name: directory
     version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+
+  # Container ZERO, bootstrap the ION system environment.
+  # Requires datastore and directory started
+  - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
 
   - name: resource_registry
     description: Resource registry service

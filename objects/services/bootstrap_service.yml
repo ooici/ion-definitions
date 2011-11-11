@@ -1,3 +1,3 @@
 name: bootstrap
-dependencies: []
+dependencies: [datastore, directory]
 methods:

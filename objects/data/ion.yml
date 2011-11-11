@@ -1,3 +1,10 @@
 Response:
   code: 200
   body:
+
+Association:
+  s: ""
+  st: ""
+  p: ""
+  o: ""
+  op: ""

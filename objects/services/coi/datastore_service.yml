@@ -173,3 +173,38 @@ methods:
 
     out:
       list: []
+
+  create_association:
+    in:
+      subject_id:
+      predicate:
+      object_id:
+    out:
+      association_id: ""
+
+  delete_association:
+    in:
+      association_id: ""
+    out:
+
+  find_associations:
+    in:
+      subject_id:
+      predicate:
+      object_id:
+    out:
+      list: []
+
+  find_objects:
+    in:
+      subject_id:
+      predicate:
+    out:
+      list: []
+
+  find_subjects:
+    in:
+      object_id:
+      predicate:
+    out:
+      list: []

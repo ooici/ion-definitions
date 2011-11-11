@@ -56,6 +56,7 @@ methods:
   create:
     in:
       object: {}
+      object_id: ""
       datastore_name: ""
 
     out:
@@ -64,6 +65,7 @@ methods:
   create_doc:
     in:
       object: {}
+      object_id: ""
       datastore_name: ""
 
     out:

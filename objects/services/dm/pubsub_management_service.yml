@@ -1,21 +1,9 @@
 # PubSub Management Service interface definition
+# Core Activities of PubSub: stream management, subscription management, historic replay management, only for curated stream
 
 name: pubsub_management
 dependencies: [resource_registry]
 methods:
-  find_streams:
-    in:
-      filter: !ResourceFilter
-
-    out:
-      result: []
-
-  register_consumer:
-    in:
-      consumerid: ""
-
-    out:
-      status: True
 
   define_stream:
     in:
@@ -24,6 +12,30 @@ methods:
     out:
       status: True
 
+  define_subscription:
+    in:
+      query: !Query
+      queue: !Queue
+
+    out:
+      subscriptionId: ""
+
+
+  activate_subscription:
+    in:
+      subscriptionId: ""
+
+    out:
+      status: True
+
+  register_consumer:
+    in:
+      consumerid: ""
+
+    out:
+      status: True
+
+
   register_publisher:
     in:
       processid: ""
@@ -31,6 +43,15 @@ methods:
 
     out:
       status: True
+  #
+  # find ops
+  #
+  find_streams:
+    in:
+      filter: !ResourceFilter
+
+    out:
+      result: []
 
   find_stream_producers:
     in:
@@ -44,7 +65,6 @@ methods:
 
     out:
       streams: []
-
 
   find_stream_consumers:
     in:

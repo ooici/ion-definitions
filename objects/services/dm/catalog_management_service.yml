@@ -1,4 +1,5 @@
 # Catalog Management Service interface definition
+# Manages views of data in coordination with the discovery service
 
 name: catalog_management
 dependencies: [resource_registry]

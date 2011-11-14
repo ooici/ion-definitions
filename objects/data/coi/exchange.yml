@@ -1,0 +1,8 @@
+ExchangeSpace: !Extends_Resource
+  some: ""
+
+ExchangeName: !Extends_Resource
+  xn_type: "entity"
+
+ExchangePoint: !Extends_Resource
+  topology_type: "topic_tree"

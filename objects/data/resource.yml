@@ -9,6 +9,13 @@ ResourceType:
 Resource:
   name: ""
   description: ""
+  lcstate: "NEW"
 
 ---
-R:
+ResourceBasics:
+  name: ""
+  description: ""
+
+ResourceFilter:
+  filters: {}
+  

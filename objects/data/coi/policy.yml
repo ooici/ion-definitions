@@ -1,3 +1,6 @@
 UserRole:
   name: ""
   description: ""
+
+Policy: !Extends_Resource
+  some: ""

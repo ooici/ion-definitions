@@ -1,0 +1,6 @@
+ServiceDefinition: !Extends_Resource
+  definition: ""
+  operations: []
+
+Service: !Extends_Resource
+  some: ""

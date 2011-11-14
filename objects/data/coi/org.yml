@@ -1,18 +1,6 @@
-
 Org: !Extends_Resource
-  some: ""
-
-Policy: !Extends_Resource
   some: ""
 
 Member: !Extends_Resource
   some: ""
 
-ExchangeSpace: !Extends_Resource
-  some: ""
-
-ExchangeName: !Extends_Resource
-  some: ""
-
-ExchangePoint: !Extends_Resource
-  some: ""

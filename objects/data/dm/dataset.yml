@@ -1,4 +1,4 @@
-DataSet:
+Dataset: !Extends_Resource
   owner_: ""
   lastmodified_: ""
   Description: ""

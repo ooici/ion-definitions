@@ -1,6 +1,3 @@
 Org: !Extends_Resource
-  some: ""
-
-Member: !Extends_Resource
-  some: ""
+  tbd: ""
 

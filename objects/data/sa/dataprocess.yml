@@ -1,6 +1,3 @@
-DataProcess:
-  id: ""
-  name: ""
-  description: ""
+DataProcess: !Extends_Resource
   atbdReference: ""
   sourcecode: ""

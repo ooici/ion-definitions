@@ -3,3 +3,5 @@ Identity: !Extends_Resource
   private_key: ""
   external_id: ""
 
+UserIdentity: !Extends_Resource
+  tbd: ""

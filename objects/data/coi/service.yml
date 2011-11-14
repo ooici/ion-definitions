@@ -3,4 +3,4 @@ ServiceDefinition: !Extends_Resource
   operations: []
 
 Service: !Extends_Resource
-  some: ""
+  tbd: ""

@@ -1,6 +1,4 @@
-Stream:
-  id: ""
-  name: ""
+Stream: !Extends_Resource
   irl: ""
   startdate: 2011-01-01
   enddate: 2011-01-01

@@ -1,4 +1,2 @@
-Catalog:
-  name: ""
-  description: ""
+Catalog: !Extends_Resource
   view: ""

@@ -1,5 +1,4 @@
-Platform:
-  id: ""
+Platform: !Extends_Resource
   datatelemetry: ""
   datatelemetrysystem: ""
   buoyname: ""

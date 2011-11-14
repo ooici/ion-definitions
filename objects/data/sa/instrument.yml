@@ -1,5 +1,4 @@
-Instrument:
-  id: ""
+Instrument: !Extends_Resource
   model: ""
   serialnumber: ""
   description: ""

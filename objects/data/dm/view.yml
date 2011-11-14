@@ -1,4 +1,2 @@
-View:
-  name: ""
-  description: ""
+View: !Extends_Resource
   function: ""

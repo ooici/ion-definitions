@@ -1,5 +1,5 @@
 ExchangeSpace: !Extends_Resource
-  some: ""
+  tbd: ""
 
 ExchangeName: !Extends_Resource
   xn_type: "entity"

@@ -1,6 +1,5 @@
-UserRole:
-  name: ""
-  description: ""
+UserRole: !Extends_Resource
+  tbd: ""
 
 Policy: !Extends_Resource
-  some: ""
+  tbd: ""

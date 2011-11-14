@@ -1,6 +1,4 @@
-DataProduct:
-  id: ""
-  title: ""
+DataProduct: !Extends_Resource
   version: ""
   summary: ""
   keywords: {}

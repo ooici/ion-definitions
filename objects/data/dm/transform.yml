@@ -1,6 +1,4 @@
-Transform:
-  name: ""
-  description: ""
+Transform: !Extends_Resource
   instream: ""
   outstream: ""
   schedule:

@@ -1,6 +1,6 @@
 Directory: !Extends_Resource
   content: {}
 
-Entry: !Extends_Resource
-  some: ""
+DirEntry: !Extends_Resource
+  tbd: ""
 

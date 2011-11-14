@@ -17,10 +17,3 @@ methods:
     out:
       text: ""
 
-  noop:
-    in:
-      text: ""
-
-    out:
-      text: ""
-

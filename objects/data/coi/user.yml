@@ -1,4 +1,4 @@
-UserInfo:
+UserInfo: !Extends_Resource
   roles: ""
   subjects: ""
   email: ""

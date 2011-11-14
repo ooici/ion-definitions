@@ -104,3 +104,29 @@ methods:
       id_only: False
     out:
       list: []
+
+  find_res_bytype:
+    in:
+      restype: ""
+      lcstate: ""
+      id_only: False
+    out:
+      list: []
+
+  find_res_bylcstate:
+    in:
+      lcstate: ""
+      restype: ""
+      id_only: False
+    out:
+      list: []
+
+  find_res_byname:
+    in:
+      name: ""
+      restype: ""
+      id_only: False
+    out:
+      list: []
+
+

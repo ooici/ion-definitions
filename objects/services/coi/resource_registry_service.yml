@@ -59,37 +59,48 @@ methods:
 
     out:
 
+  execute_lifecycle_transition:
+    in:
+      resource_id: ""
+      lcstate: ""
+    out:
+
+  define_resource_lifecycle:
+    in:
+    out:
+
+  delete_resource_lifecycle:
+    in:
+    out:
+
   create_association:
     in:
-      subject_id: ""
-      predicate: ""
-      object_id: ""
+      subject:
+      predicate:
+      object:
     out:
-      association_id: ""
+      tuple: []
 
   delete_association:
     in:
-      association_id: ""
+      association: ""
     out:
-
-  find_associations:
-    in:
-      subject_id:
-      predicate:
-      object_id:
-    out:
-      list: []
+      status: True
 
   find_objects:
     in:
-      subject_id:
-      predicate:
+      subject: ""
+      predicate: ""
+      object_type: ""
+      id_only: False
     out:
       list: []
 
   find_subjects:
     in:
-      object_id:
-      predicate:
+      object: ""
+      predicate: ""
+      subject_type: ""
+      id_only: False
     out:
       list: []

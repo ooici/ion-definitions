@@ -137,7 +137,7 @@ methods:
     out:
       list: []
 
-  find_by_association:
+  find_by_idref:
     in:
       criteria: []
       association: ""
@@ -146,7 +146,7 @@ methods:
     out:
       list: []
 
-  find_by_association_doc:
+  find_by_idref_doc:
     in:
       criteria: []
       association: ""
@@ -154,7 +154,7 @@ methods:
     out:
       list: []
 
-  resolve_association:
+  resolve_idref:
     in:
       subject: ""
       predicate: ""
@@ -164,7 +164,7 @@ methods:
     out:
       list: []
 
-  resolve_association_doc:
+  resolve_idref_doc:
     in:
       subject: ""
       predicate: ""
@@ -176,35 +176,32 @@ methods:
 
   create_association:
     in:
-      subject_id:
+      subject:
       predicate:
-      object_id:
+      object:
     out:
-      association_id: ""
+      tuple: []
 
   delete_association:
     in:
-      association_id: ""
+      association: ""
     out:
-
-  find_associations:
-    in:
-      subject_id:
-      predicate:
-      object_id:
-    out:
-      list: []
+      status: True
 
   find_objects:
     in:
-      subject_id:
-      predicate:
+      subject: ""
+      predicate: ""
+      object_type: ""
+      id_only: False
     out:
       list: []
 
   find_subjects:
     in:
-      object_id:
-      predicate:
+      object: ""
+      predicate: ""
+      subject_type: ""
+      id_only: False
     out:
       list: []

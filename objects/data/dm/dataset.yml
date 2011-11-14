@@ -1,5 +1,4 @@
-Dataset: !Extends_Resource
-  owner_: ""
+DataSet: !Extends_Resource
   lastmodified_: ""
   Description: ""
   ContactInstitution: ""

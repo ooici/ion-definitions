@@ -1,0 +1,26 @@
+# Dataset Management Service interface definition
+# Provides the services to register and manipulate changeable data sets and their metadata within the Integrated Observatory.
+
+name: dataset_management
+dependencies: [resource_registry]
+methods:
+  create_dataset_resource:
+    in:
+      dataset: !DataSet
+
+    out:
+      status: True
+
+  find_dataset_resource:
+    in:
+      view: !ResourceFilter
+
+    out:
+      status: []
+
+  get_metadata:
+    in:
+      resourceId: ""
+
+    out:
+      dataset: !DataSet

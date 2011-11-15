@@ -1,24 +1,29 @@
 # Exchange Management Service interface definition
 
+# TODO:
+# - Define find query
+
 name: exchange_management
 dependencies: [resource_registry]
 methods:
   create_exchange_space:
     in:
-      name: ""
+      exchange_space: !ExchangeSpace
       org_id: ""
     out:
       exchange_space_id: ""
 
   update_exchange_space:
     in:
-      exchange_space_id: ""
+      exchange_space: !ExchangeSpace
     out:
+      success: True
 
   delete_exchange_space:
     in:
       exchange_space_id: ""
     out:
+      success: True
 
   find_exchange_spaces:
     in:
@@ -26,82 +31,89 @@ methods:
     out:
       exchange_space_list: []
 
-  create_exchange_name:
-    in:
-      name: ""
-      exchange_space: ""
-    out:
-      exchange_name_id: ""
+  # -----------------
 
-  update_exchange_name:
+  declare_exchange_name:
     in:
-      exchange_name_id: ""
+      exchange_name: !ExchangeName
+      exchange_space_id: ""
     out:
+      canonical_name: ""
 
-  delete_exchange_name:
+  undeclare_exchange_name:
     in:
-      exchange_name_id: ""
+      canonical_name: ""
+      exchange_space_id: ""
     out:
+      success: True
 
   find_exchange_names:
     in:
       name: "*"
-
     out:
       exchange_name_list: []
 
+  # -----------------
+
   create_exchange_point:
     in:
-      name: ""
+      exchange_point: !ExchangePoint
+      exchange_space_id: ""
     out:
       exchange_point_id: ""
 
   update_exchange_point:
     in:
+      exchange_point: !ExchangePoint
+    out:
+      success: True
+
+  read_exchange_point:
+    in:
       exchange_point_id: ""
     out:
+      exchange_point: !ExchangePoint
 
   delete_exchange_point:
     in:
       exchange_point_id: ""
     out:
+      success: True
 
   find_exchange_points:
     in:
       name: "*"
-
     out:
       exchange_point_list: []
+
+  # -----------------
+
+  create_broker:
+    in:
+      broker: !ExchangeBroker
+    out:
+      broker_id: ""
+
+  update_broker:
+    in:
+      broker: !ExchangeBroker
+    out:
+      success: True
+
+  read_broker:
+    in:
+      broker_id: ""
+    out:
+      broker: !ExchangeBroker
+
+  delete_broker:
+    in:
+      broker_id: ""
+    out:
+      success: True
 
   find_brokers:
     in:
       name: "*"
-
     out:
       broker_list: []
-
-  get_broker:
-    in:
-
-    out:
-
-  configure_broker:
-    in:
-
-    out:
-
-  delete_broker:
-    in:
-
-    out:
-
-  join_broker:
-    in:
-
-    out:
-
-  leave_broker:
-    in:
-
-    out:
-

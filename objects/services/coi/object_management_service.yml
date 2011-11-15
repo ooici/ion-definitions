@@ -1,25 +1,38 @@
 # Object Management Service interface definition
 
+# TODO:
+# - Define find query
+
 name: object_management
 dependencies: [resource_registry]
 methods:
-  find_object_types:
+  create_object_type:
     in:
-
+      object_type: !ObjectType
     out:
+      object_type_id: ""
 
-  get_object_definition:
+  update_object_type:
     in:
-
+      object_type: !ObjectType
     out:
+      success: True
 
-  define_object_type:
+  read_object_type:
+    # Read resource including object definition
     in:
-
+      object_type_id: ""
     out:
+      object_type: !ObjectType
 
   delete_object_type:
     in:
-
+      object_type_id: ""
     out:
+      success: True
 
+  find_object_types:
+    in:
+      query: {}
+    out:
+      object_type_list: []

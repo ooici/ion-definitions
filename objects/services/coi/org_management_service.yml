@@ -5,40 +5,70 @@ dependencies: [resource_registry]
 methods:
   create_org:
     in:
-      name: ""
+      org: !Org
     out:
       org_id: ""
+
+  update_org:
+    in:
+      org: !Org
+    out:
+      success: True
+
+  read_org:
+    in:
+      org_id: ""
+    out:
+      org: !Org
+
+  delete_org:
+    in:
+      org_id: ""
+    out:
+      success: True
+
+  # -----------------
 
   affiliate_org:
     in:
       org_id: ""
       affiliate_org_id: ""
     out:
+      success: True
+
+  unaffiliate_org:
+    in:
+      org_id: ""
+      affiliate_org_id: ""
+    out:
+      success: True
+
+  # -----------------
 
   enroll_member:
     in:
       org_id: ""
       user_id: ""
     out:
+      success: True
+
+  leave_member:
+    in:
+      org_id: ""
+      user_id: ""
+    out:
+      success: True
 
   share_resource:
     in:
       org_id: ""
       resource_id: ""
     out:
+      success: True
 
-  leave:
+  unshare_resource:
     in:
       org_id: ""
-      user_id: ""
-    out:
-
-  has_permission:
-    in:
-      org_id: ""
-      user_id: ""
-      action_id: ""
       resource_id: ""
     out:
-      has_permission: False
-
+      success: True

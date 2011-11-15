@@ -1,0 +1,5 @@
+# Index Management Service interface definition
+
+name: index_management_service
+dependencies: [resource_registry]
+methods:

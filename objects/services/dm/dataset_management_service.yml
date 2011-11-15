@@ -4,23 +4,33 @@
 name: dataset_management
 dependencies: [resource_registry]
 methods:
-  create_dataset_resource:
+  create_dataset:
     in:
       dataset: !DataSet
-
     out:
-      status: True
+      dataset_id: ""
 
-  find_dataset_resource:
+  update_dataset:
+    in:
+      dataset: !DataSet
+    out:
+      success: True
+
+  read_dataset:
+    # Read the dataset resource including metadata
+    in:
+      dataset_id: ""
+    out:
+      dataset: !DataSet
+
+  delete_dataset:
+    in:
+      dataset_id: ""
+    out:
+      success: True
+
+  find_datasets:
     in:
       view: !ResourceFilter
-
     out:
-      status: []
-
-  get_metadata:
-    in:
-      resourceId: ""
-
-    out:
-      dataset: !DataSet
+      dataset_list: []

@@ -1,4 +1,8 @@
 Instrument: !Extends_Resource
+  # This is the logical instrument that is part of the observatory
+
+InstrumentDevice: !Extends_Resource
+  # This is the physical instrument
   model: ""
   serialnumber: ""
   description: ""
@@ -6,4 +10,10 @@ Instrument: !Extends_Resource
   hardwareversion: ""
   instrumentclass: ""
   sensors: []
-  
+
+InstrumentAgent: !Extends_Resource
+  tbd: ""
+
+InstrumentAgentInstance: !Extends_Resource
+  exchange_name: ""
+  configuration: {}

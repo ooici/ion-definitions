@@ -1,0 +1,2 @@
+Subscription: !Extends_Resource
+  tbd: ""

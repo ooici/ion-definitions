@@ -1,39 +1,36 @@
 # Service interface definition to front end the
 # directory lookup library APIs
 
+# TODO:
+# - More powerful find operations
+
 name: directory
 dependencies: []
 methods:
-  add:
+  # Register is idempotent and acts as both create and update, based on the key
+  register:
+    in:
+      entry: !DirEntry
+    out:
+      entry: {}
+
+  unregister:
     in:
       parent: '/'
       key: ''
-      value: {}
-
     out:
-      value: {}
-
-  update:
-    in:
-      parent: '/'
-      key: ''
-      value: {}
-
-    out:
-      value: {}
+      success: True
 
   read:
     in:
       parent: '/'
       key: ''
-
     out:
-      value: {}
+      entry: {}
 
-  remove:
+  find:
     in:
       parent: '/'
-      key: ''
-
+      pattern: ''
     out:
-      value: {}
+      entry_list: []

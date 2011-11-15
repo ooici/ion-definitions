@@ -3,24 +3,40 @@
 name: data_process_management
 dependencies: [resource_registry]
 methods:
-  attach_process:
+  create_data_process:
     in:
-      process: ""
-
+      data_process: !DataProcess
     out:
-      status: True
+      data_process_id: ""
 
-  define_data_process:
+  update_data_process:
     in:
-      process: !DataProcess
-
+      data_process: !DataProcess
     out:
-      status: True
+      success: True
+
+  read_data_process:
+    in:
+      data_process_id: ""
+    out:
+      data_process: !DataProcess
+
+  delete_data_process:
+    in:
+      data_process_id: ""
+    out:
+      success: True
 
   find_data_process:
     in:
       filters: !ResourceFilter
-
     out:
-      process: []
+      data_process_list: []
 
+  # -----------------
+
+  attach_process:
+    in:
+      process: ""
+    out:
+      success: True

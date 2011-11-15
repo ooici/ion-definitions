@@ -6,3 +6,7 @@ ExchangeName: !Extends_Resource
 
 ExchangePoint: !Extends_Resource
   topology_type: "topic_tree"
+
+ExchangeBroker: !Extends_Resource
+  impl_type: "rabbitmq"
+  impl_version: "1.6.1"

@@ -3,4 +3,5 @@ ServiceDefinition: !Extends_Resource
   operations: []
 
 Service: !Extends_Resource
+  # This is a service instance
   tbd: ""

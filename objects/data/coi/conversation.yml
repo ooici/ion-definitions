@@ -1,0 +1,12 @@
+Conversation: !Extends_Resource
+  tbd: ""
+
+ConversationType: !Extends_Resource
+  definition_type: ""
+  definition: ""
+
+ConverationRole:
+  name: ""
+
+ConverationRoleBinding:
+  exchange_name: ""

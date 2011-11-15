@@ -1,0 +1,5 @@
+# Visualization Workflow Management Service interface definition
+
+name: visualization_workflow_management_service
+dependencies: [resource_registry]
+methods:

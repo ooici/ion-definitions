@@ -6,13 +6,11 @@ methods:
   define_data_agent:
     in:
       basics: !ResourceBasics
-
     out:
-      status: True
+      success: True
 
   define_data_producer:
     in:
       basics: !ResourceBasics
-
     out:
-      status: True
+      success: True

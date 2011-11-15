@@ -3,41 +3,103 @@
 name: policy_management
 dependencies: [resource_registry]
 methods:
-  define_policy:
+  create_policy:
     in:
-
+      policy: !Policy
+      org_id: ""
     out:
+      policy_id: ""
 
-  get_policy:
+  update_policy:
     in:
-
+      policy: !Policy
     out:
+      success: True
+
+  read_policy:
+    in:
+      policy_id: ""
+    out:
+      policy: !Policy
 
   delete_policy:
     in:
-
+      policy_id: ""
     out:
+      success: True
 
   enable_policy:
     in:
-
+      policy_id: ""
     out:
+      success: True
 
   disable_policy:
     in:
-
+      policy_id: ""
     out:
+      success: True
 
-  set_role:
+  # -----------------
+
+  create_role:
     in:
-      userid: ""
-      roleid: []
-
+      role: !UserRole
     out:
+      role_id: ""
 
-  unset_role:
+  update_role:
     in:
-      userid: ""
-      roleid: []
-      
+      role: !UserRole
     out:
+      success: True
+
+  read_role:
+    in:
+      role_id: ""
+    out:
+      role: !UserRole
+
+  delete_role:
+    in:
+      role_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+  grant_role:
+    in:
+      org_id: ""
+      user_id: ""
+      role_id: ""
+      scope: !RoleScope
+    out:
+      success: True
+
+  revoke_role:
+    in:
+      org_id: ""
+      user_id: ""
+      role_id: ""
+    out:
+      success: True
+
+  find_roles_by_user:
+    in:
+      org_id: ""
+      user_id: ""
+    out:
+      role_list: []
+
+  # -----------------
+
+  has_permission:
+    in:
+      org_id: ""
+      user_id: ""
+      action_id: ""
+      resource_id: ""
+    out:
+      has_permission: False
+

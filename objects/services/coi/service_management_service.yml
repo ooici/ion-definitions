@@ -3,23 +3,33 @@
 name: service_management
 dependencies: [resource_registry]
 methods:
+  create_service_definition:
+    in:
+      service_definition: !ServiceDefinition
+    out:
+      service_definition_id: ""
+
+  update_service_definition:
+    in:
+      service_definition: !ServiceDefinition
+    out:
+      success: True
+
+  read_service_definition:
+    in:
+      service_definition_id: ""
+    out:
+      service_definition: !ServiceDefinition
+
+  delete_service_definition:
+    in:
+      service_definition_id: ""
+    out:
+      success: True
+
   find_services:
     in:
-
+      query: {}
     out:
-
-  get_service_spec:
-    in:
-
-    out:
-
-  define_service:
-    in:
-
-    out:
-
-  delete_service:
-    in:
-
-    out:
+      service_definition_list: []
 

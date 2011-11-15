@@ -1,0 +1,5 @@
+# EPU Management Service interface definition
+
+name: epu_management_service
+dependencies: [resource_registry]
+methods:

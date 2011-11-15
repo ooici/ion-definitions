@@ -1,0 +1,63 @@
+# Resource Management Service interface definition
+
+# TODO:
+# - Find pattern
+
+name: resource_management
+dependencies: []
+methods:
+  create_resource_type:
+    in:
+      resource_type: !ResourceType
+    out:
+      resource_type_id: ""
+
+  update_resource_type:
+    in:
+      resource_type: !ResourceType
+    out:
+      success: True
+
+  read_resource_type:
+    in:
+      resource_type_id: ""
+    out:
+      resource_type: !ResourceType
+
+  delete_resource_type:
+    in:
+      resource_type_id: ""
+    out:
+      success: True
+
+  find_resource_types:
+    in:
+      query: {}
+    out:
+      resource_type_list: []
+
+  # -----------------
+
+  create_resource_lifecycle:
+    in:
+      resource_lifecycle: !ResourceLifeCycle
+    out:
+      resource_lifecycle_id: ""
+
+  update_resource_lifecycle:
+    in:
+      resource_lifecycle: !ResourceLifeCycle
+    out:
+      success: True
+
+  read_resource_lifecycle:
+    in:
+      resource_lifecycle_id: ""
+    out:
+      resource_lifecycle: !ResourceLifeCycle
+
+  delete_resource_lifecycle:
+    in:
+      resource_lifecycle_id: ""
+    out:
+      success: True

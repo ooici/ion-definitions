@@ -1,0 +1,5 @@
+# Execution Engine Management Service interface definition
+
+name: execution_engine_management_service
+dependencies: [resource_registry]
+methods:

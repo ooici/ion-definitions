@@ -1,0 +1,3 @@
+ObjectType: !Extends_Resource
+  definition_type: ""
+  definition: {}

@@ -1,0 +1,35 @@
+# Process Dispatcher Service interface definition
+
+name: process_dispatcher_service
+dependencies: [resource_registry]
+methods:
+  create_process_definition:
+    in:
+      process_definition: !ProcessDefinition
+    out:
+      process_definition_id: ""
+
+  update_process_definition:
+    in:
+      process_definition: !ProcessDefinition
+    out:
+      success: True
+
+  read_process_definition:
+    in:
+      process_definition_id: ""
+    out:
+      process_definition: !ProcessDefinition
+
+  delete_process_definition:
+    in:
+      process_definition_id: ""
+    out:
+      success: True
+
+  find_process_definitions:
+    in:
+      query: {}
+    out:
+      process_definition_list: []
+

@@ -1,42 +1,71 @@
 # Conversation Management Service interface definition
 
+# TODO:
+# - Define query
+
 name: conversation_management
-dependencies: [policy_management,resource_registry]
+dependencies: [resource_registry]
 methods:
-  find_conversations:
+  create_conversation:
     in:
-      name: "*"
-
+      conversation: !Conversation
     out:
-      conversation_list: []
+      conversation_id: ""
 
-  get_conversation:
+  update_conversation:
     in:
-
+      conversation: !Conversation
     out:
+      success: True
 
-  define_conversation:
+  read_conversation:
     in:
-
+      conversation_id: ""
     out:
+      conversation: !Conversation
 
   delete_conversation:
     in:
-
+      conversation_id: ""
     out:
+      success: True
 
-  define_conversation_type:
+  find_conversations:
     in:
-
+      query: {}
     out:
+      conversation_list: []
+
+  # -----------------
+
+  create_conversation_type:
+    in:
+      conversation_type: !ConversationType
+    out:
+      conversation_type_id: ""
+
+  update_conversation_type:
+    in:
+      conversation_type: !ConversationType
+    out:
+      success: True
+
+  read_conversation_type:
+    in:
+      conversation_type_id: ""
+    out:
+      conversation_type: !ConversationType
 
   delete_conversation_type:
     in:
-
+      conversation_type_id: ""
     out:
+      success: True
 
-log_message:
+  # -----------------
+
+  log_message:
     in:
-      message: ""
-
+      message: {}
     out:
+      success: True

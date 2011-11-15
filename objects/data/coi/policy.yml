@@ -2,4 +2,8 @@ UserRole: !Extends_Resource
   tbd: ""
 
 Policy: !Extends_Resource
-  tbd: ""
+  definition_type: ""
+  definition: {}
+
+RoleScope:
+  resource_list: {}

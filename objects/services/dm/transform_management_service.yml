@@ -1,0 +1,48 @@
+# Transform Management Service interface definition
+
+# TODO:
+# - Need resolution for transform:
+#   Sequence of steps
+#   Schedule and bind different?
+
+name: transform_management_service
+dependencies: [resource_registry]
+methods:
+  create_transform:
+    in:
+      transform: !Transform
+    out:
+      transform_id: ""
+
+  update_transform:
+    in:
+      transform: !Transform
+    out:
+      success: True
+
+  read_transform:
+    in:
+      transform_id: ""
+    out:
+      transform: !Transform
+
+  delete_transform:
+    in:
+      transform_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+
+  bind_transform:
+    in:
+      transform_id: ""
+    out:
+      success: True
+
+  schedule_transform:
+    in:
+      transform_id: ""
+    out:
+      success: True

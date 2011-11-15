@@ -1,0 +1,45 @@
+# Observatory Management Service interface definition
+
+# TODO:
+# - Observatory policy
+# - Deployment
+# - Life cycle support operations
+
+name: observatory_management_service
+dependencies: [resource_registry]
+methods:
+  create_site:
+    in:
+      site: !Site
+    out:
+      site_id: ""
+
+  update_site:
+    in:
+      site: !Site
+    out:
+      success: True
+
+  read_site:
+    in:
+      site_id: ""
+    out:
+      site: !Site
+
+  delete_site:
+    in:
+      site_id: ""
+    out:
+      success: True
+
+  find_sites:
+    in:
+      filters: !ResourceFilter
+    out:
+      site_list: []
+
+  # -----------------
+
+  define_observatory_policy:
+    in:
+    out:

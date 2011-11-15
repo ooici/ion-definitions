@@ -1,81 +1,135 @@
 # PubSub Management Service interface definition
-# Core Activities of PubSub: stream management, subscription management, historic replay management, only for curated stream
+# Core Activities of PubSub: stream management, subscription management
+# MAYBE LATER: historic replay management, only for curated stream
+
+# Notes:
+# Steams exist in the context of a higher level resource (steam XP, topic tree?)
 
 name: pubsub_management
 dependencies: [resource_registry]
 methods:
 
-  define_stream:
+  create_stream:
     in:
       stream: !Stream
-
     out:
-      status: True
+      stream_id: ""
 
-  define_subscription:
+  update_stream:
     in:
-      query: !Query
-      queue: !Queue
-
+      stream: !Stream
     out:
-      subscriptionId: ""
+      success: True
 
-
-  activate_subscription:
+  read_stream:
     in:
-      subscriptionId: ""
-
+      stream_id: ""
     out:
-      status: True
+      stream: !Stream
 
-  register_consumer:
+  delete_stream:
     in:
-      consumerid: ""
-
+      stream_id: ""
     out:
-      status: True
+      success: True
 
-
-  register_publisher:
-    in:
-      processid: ""
-      streamid: ""
-
-    out:
-      status: True
-  #
-  # find ops
-  #
   find_streams:
     in:
       filter: !ResourceFilter
-
     out:
-      result: []
+      stream_list: []
 
-  find_stream_producers:
+  find_streams_by_producer:
     in:
-      streamid: ""
-
-    producers: []
-
-  find_producers_stream:
-    in:
-      producerid: ""
-
+      producer_id: ""
     out:
-      streams: []
+      stream_list: []
 
-  find_stream_consumers:
+  find_streams_by_consumer:
     in:
-      streamid: ""
-
+      consumer_id: ""
     out:
-      consumers: []
+      stream_list: []
 
-  find_consumers_stream:
+  # -----------------
+
+  create_subscription:
     in:
-      consumerid: ""
-
+      subscription: !Subscription
     out:
-      streams: []
+      subscription_id: ""
+
+  update_subscription:
+    in:
+      subscription: !Subscription
+    out:
+      success: True
+
+  read_subscription:
+    in:
+      subscription_id: ""
+    out:
+      subscription: !Subscription
+
+  delete_subscription:
+    in:
+      subscription_id: ""
+    out:
+      success: True
+
+  activate_subscription:
+    in:
+      subscription_id: ""
+    out:
+      success: True
+
+  deactivate_subscription:
+    in:
+      subscription_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+  register_consumer:
+    in:
+      exchange_name: ""
+    out:
+      success: True
+
+  unregister_consumer:
+    in:
+      exchange_name: ""
+    out:
+      success: True
+
+  find_consumers_by_stream:
+    in:
+      stream_id: ""
+    out:
+      consumer_list: []
+
+  # -----------------
+
+  # Note: a producer is not a resource, just a declaration
+
+  register_producer:
+    in:
+      exchange_name: ""
+      stream_id: ""
+    out:
+      success: True
+
+  unregister_producer:
+    in:
+      exchange_name: ""
+      stream_id: ""
+    out:
+      success: True
+
+  find_producers_by_stream:
+    in:
+      stream_id: ""
+    out:
+      producer_list: []
+

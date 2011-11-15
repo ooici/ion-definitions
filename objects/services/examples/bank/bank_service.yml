@@ -1,9 +1,11 @@
 # Bank Service interface definition
 
+docstring: Service providing simple checking, savings and bond trading
 name: bank
 dependencies: [trade, resource_registry]
 methods:
   new_account:
+    docstring: Create checking or savings account for user.  Creates new user if user does not already exists.
     in:
       name: ""
       account_type: Checking
@@ -12,6 +14,7 @@ methods:
       acct_num: ""
 
   deposit:
+    docstring: Add cash to checking or savings account.
     in:
       account_id: -1
       amount: 0.0
@@ -20,6 +23,7 @@ methods:
       status: ""
 
   withdraw:
+    docstring: Remove cash from checking or savings account.
     in:
       account_id: -1
       amount: 0.0
@@ -28,6 +32,7 @@ methods:
       status: ""
 
   get_balances:
+    docstring: Report cash and bond balance for checking or savings account.
     in:
       account_id: -1
 
@@ -36,6 +41,7 @@ methods:
       bonds: 0
 
   buy_bonds:
+    docstring: Buy specified cash amount of bonds. Bonds are deposited in account.
     in:
       account_id: ""
       cash_amount: 0.0
@@ -44,6 +50,7 @@ methods:
       status: ""
 
   sell_bonds:
+    docstring: Sell specified amount of bonds. Cash proceeds are deposited in account.
     in:
       account_id: ""
       quantity: 0
@@ -52,6 +59,7 @@ methods:
       status: ""
 
   list_accounts:
+    docstring: List all accounts owned by user.
     in:
       name: ""
 

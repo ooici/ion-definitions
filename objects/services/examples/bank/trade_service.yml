@@ -17,10 +17,12 @@ obj:
 
 ---
 
+docstring: Simple bond trading service utilized by the Bank service
 name: trade
 dependencies: [resource_registry]
 methods:
   exercise:
+    docstring: Operation simply stores order info, calculates bogus results of trade and returns confirmation object.
     in:
       order: !Order
 

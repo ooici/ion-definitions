@@ -1,47 +1,48 @@
 # Service interface definition to front end the
 # datastore library APIs
 
+# TODO:
+# - Be more specific about return types
+# - Harmonize method naming
+# - Consolidate or remove idref methods
+
 name: datastore
 dependencies: []
 methods:
   create_datastore:
     in:
       datastore_name: ""
-
     out:
-      status: True
+      success: True
 
   delete_datastore:
     in:
       datastore_name: ""
-
     out:
-      status: True
+      success: True
 
   list_datastores:
     in:
-
     out:
       list: []
 
   datastore_exists:
     in:
       datastore_name: ""
-
     out:
-      status: false
+      exists: False
 
   info_datastore:
     in:
       datastore_name: ""
-
     out:
       info: []
+
+  # -----------------
 
   list_objects:
     in:
       datastore_name: ""
-
     out:
       info: []
 
@@ -49,7 +50,6 @@ methods:
     in:
       object_id: ""
       datastore_name: ""
-
     out:
       list: []
 
@@ -58,7 +58,6 @@ methods:
       object: {}
       object_id: ""
       datastore_name: ""
-
     out:
       tuple: []
 
@@ -67,7 +66,6 @@ methods:
       object: {}
       object_id: ""
       datastore_name: ""
-
     out:
       tuple: []
 
@@ -76,7 +74,6 @@ methods:
       object_id: ""
       rev_id: ""
       datastore_name: ""
-
     out:
       object: {}
 
@@ -85,7 +82,6 @@ methods:
       object_id: ""
       rev_id: ""
       datastore_name: ""
-
     out:
       object: {}
 
@@ -93,7 +89,6 @@ methods:
     in:
       object: {}
       datastore_name: ""
-
     out:
       tuple: []
 
@@ -101,7 +96,6 @@ methods:
     in:
       object: {}
       datastore_name: ""
-
     out:
       tuple: []
 
@@ -109,7 +103,6 @@ methods:
     in:
       object: {}
       datastore_name: ""
-
     out:
       status: True
 
@@ -117,15 +110,15 @@ methods:
     in:
       object: {}
       datastore_name: ""
-
     out:
       status: True
+
+  # -----------------
 
   find:
     in:
       criteria: []
       datastore_name: ""
-
     out:
       list: []
 
@@ -133,7 +126,6 @@ methods:
     in:
       criteria: []
       datastore_name: ""
-
     out:
       list: []
 
@@ -142,7 +134,6 @@ methods:
       criteria: []
       association: ""
       datastore_name: ""
-
     out:
       list: []
 
@@ -160,7 +151,6 @@ methods:
       predicate: ""
       object: ""
       datastore_name: ""
-
     out:
       list: []
 
@@ -170,9 +160,10 @@ methods:
       predicate: ""
       object: ""
       datastore_name: ""
-
     out:
       list: []
+
+  # -----------------
 
   create_association:
     in:

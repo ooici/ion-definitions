@@ -12,4 +12,14 @@ Platform: !Extends_Resource
   controllerspecification: ""
   controllerports: []
   controllerpowerconsumption: ""
-  
+
+InstrumentDevice: !Extends_Resource
+  # This is the physical instrument
+  tbd: ""
+
+PlatformAgent: !Extends_Resource
+  tbd: ""
+
+PlatformAgentInstance: !Extends_Resource
+  exchange_name: ""
+  configuration: {}

@@ -4,23 +4,28 @@
 name: catalog_management
 dependencies: [resource_registry]
 methods:
-  define_catalog:
+  create_catalog:
     in:
       catalog: !Catalog
-
     out:
-      status: True
+      catalog_id: ""
 
-  define_view:
+  update_catalog:
     in:
-      view: !View
-
+      catalog: !Catalog
     out:
-      status: True
+      success: True
 
-  get_catalog_definition:
+  read_catalog:
+    # Reads the catalog resource including its definition
     in:
-      resourceId: ""
-
+      catalog_id: ""
     out:
-      result:
+      catalog: !Catalog
+
+  delete_catalog:
+    in:
+      catalog_id: ""
+    out:
+      success: True
+

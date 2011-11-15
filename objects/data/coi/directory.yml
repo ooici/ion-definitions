@@ -2,5 +2,7 @@ Directory: !Extends_Resource
   content: {}
 
 DirEntry: !Extends_Resource
-  tbd: ""
-
+  parent: '/'
+  key: ''
+  entry_type: 'node'
+  attributes: {}

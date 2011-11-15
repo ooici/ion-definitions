@@ -3,3 +3,7 @@ Observatory: !Extends_Resource
 
 MarineFacility: !Extends_Resource
   tbd: ""
+
+Site: !Extends_Resource
+  site_type: ""
+  location: ""

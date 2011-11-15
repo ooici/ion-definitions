@@ -6,7 +6,6 @@ methods:
   create:
     in:
       object: {}
-
     out:
       tuple: []
 
@@ -14,50 +13,28 @@ methods:
     in:
       object_id: ""
       rev_id: ""
-
     out:
       object: {}
 
   update:
     in:
       object: {}
-
     out:
       tuple: []
 
   delete:
     in:
       object: {}
-
     out:
       status: True
 
   find:
     in:
       criteria: []
-
     out:
       list: []
 
-  find_resource_types:
-    in:
-
-    out:
-
-  get_resource_type:
-    in:
-
-    out:
-
-  define_resource_type:
-    in:
-
-    out:
-
-  delete_resource_type:
-    in:
-
-    out:
+  # -----------------
 
   execute_lifecycle_transition:
     in:
@@ -65,13 +42,7 @@ methods:
       lcstate: ""
     out:
 
-  define_resource_lifecycle:
-    in:
-    out:
-
-  delete_resource_lifecycle:
-    in:
-    out:
+  # -----------------
 
   create_association:
     in:

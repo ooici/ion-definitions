@@ -1,25 +1,52 @@
 # Discovery Service interface definition
 
+# TODO:
+# - Revise. Exact interface TBD
+
 name: discovery
-dependencies: []
+dependencies: [resource_registry]
 methods:
+  create_view:
+    in:
+      view: !View
+    out:
+      view_id: ""
+
+  update_view:
+    in:
+      view: !View
+    out:
+      success: True
+
+  read_view:
+    in:
+      view_id: ""
+    out:
+      view: !View
+
+  delete_view:
+    in:
+      view_id: ""
+    out:
+      success: True
+
+  # -----------------
+
   define_search:
     in:
       query: ""
-
     out:
-      status: True
+      success: True
 
   find_by_metadata:
     in:
       filters: !ResourceFilter
-
     out:
       results: []
 
   find_by_type:
     in:
       filters: !ResourceFilter
-
     out:
       results: []
+

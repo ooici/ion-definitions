@@ -3,31 +3,32 @@
 name: data_product_management
 dependencies: [resource_registry]
 methods:
-  define_data_product:
+  create_data_product:
     in:
-      product: !DataProduct
-
+      data_product: !DataProduct
     out:
-      status: True
+      data_product_id: ""
+
+  update_data_product:
+    in:
+      data_product: !DataProduct
+    out:
+      success: True
+
+  read_data_product:
+    in:
+      data_product_id: ""
+    out:
+      data_product: !DataProduct
+
+  delete_data_product:
+    in:
+      data_product_id: ""
+    out:
+      success: True
 
   find_data_products:
     in:
       filters: !ResourceFilter
-
     out:
-      list: []
-
-  get_data_product_detail:
-    in:
-      dataProductId: ""
-
-    out:
-      result: {}
-
-  set_data_product_detail:
-    in:
-      dataProductId: ""
-      updates: {}
-
-    out:
-      status: True
+      data_product_list: []

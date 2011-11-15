@@ -1,0 +1,7 @@
+ProcessDefinition: !Extends_Resource
+  definition_type: ""
+  definition: {}
+
+ProcessSchedule: !Extends_Resource
+  activation_mode: ""
+  schedule: {}

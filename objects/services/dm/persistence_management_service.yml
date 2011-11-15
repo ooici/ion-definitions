@@ -1,0 +1,5 @@
+# Persistence Management Service interface definition
+
+name: persistence_management_service
+dependencies: [resource_registry]
+methods:

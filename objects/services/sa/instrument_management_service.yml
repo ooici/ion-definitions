@@ -1,82 +1,241 @@
 # Instrument Management Service interface definition
 
+# TODO:
+
 name: instrument_management_service
 dependencies: [resource_registry]
 methods:
-  define_instrument:
+  # -----------------
+  # Working with Logical Instrument resources
+
+  create_instrument:
     in:
       instrument: !Instrument
-
     out:
-      status: True
-
-  get_instrument:
-    in:
-      resourceId: ""
-
-    out:
-      instrument: !Instrument
-
-  activate_instrument:
-    in:
-      resourceId: ""
-      agentId: ""
-
-    out:
-      status: True
+      instrument_id: ""
 
   update_instrument:
     in:
       instrument: !Instrument
-
     out:
-      status: True
+      success: True
 
-  find_instrument:
+  read_instrument:
+    in:
+      instrument_id: ""
+    out:
+      instrument: !Instrument
+
+  delete_instrument:
+    in:
+      instrument_id: ""
+    out:
+      success: True
+
+  find_instruments:
     in:
       filters: !ResourceFilter
-
     out:
-      results: []
-
-  define_platform:
-    in:
-      platform: !Platform
-
-    out:
-      status: True
-
-  get_platform:
-    in:
-      resourceId: ""
-
-    out:
-      result: !Platform
-
-  find_platform:
-    in:
-      filters: !ResourceFilter
-
-    out:
-      results: []
-
-  retire_platform:
-    in:
-      resourceId: ""
-
-    out:
-      status: True
+      instrument_list: []
 
   request_direct_access:
     in:
-      resourceId: ""
-
+      instrument_id: ""
     out:
-      status: True
+      success: True
+
+  stop_direct_access:
+    in:
+      instrument_id: ""
+    out:
+      success: True
 
   request_command:
+    # MM: Not sure what this is?
     in:
-      resourceId: ""
-
+      instrument_id: ""
+      command: {}
     out:
-      status: True
+      success: True
+
+  # -----------------
+  # Working with Physical Instrument resources
+
+  create_instrument_device:
+    in:
+      instrument_device: !InstrumentDevice
+    out:
+      instrument_device_id: ""
+
+  update_instrument_device:
+    in:
+      instrument_device: !InstrumentDevice
+    out:
+      success: True
+
+  read_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      instrument_device: !InstrumentDevice
+
+  delete_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      success: True
+
+  find_instrument_devices:
+    in:
+      filters: !ResourceFilter
+    out:
+      instrument_device_list: []
+
+  assign_instrument_device:
+    in:
+      instrument_id: ""
+      instrument_device_id: ""
+    out:
+      success: True
+
+  unassign_instrument_device:
+    in:
+      instrument_id: ""
+      instrument_device_id: ""
+    out:
+      success: True
+
+  activate_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # Working with Instrument Agent (type) resources
+
+  create_instrument_agent:
+    in:
+      instrument_agent: !InstrumentAgent
+    out:
+      instrument_agent_id: ""
+
+  update_instrument_agent:
+    in:
+      instrument_agent: !InstrumentAgent
+    out:
+      success: True
+
+  read_instrument_agent:
+    in:
+      instrument_agent_id: ""
+    out:
+      instrument_agent: !InstrumentAgent
+
+  delete_instrument_agent:
+    in:
+      instrument_agent_id: ""
+    out:
+      success: True
+
+  find_instrument_agents:
+    in:
+      filters: !ResourceFilter
+    out:
+      instrument_agent_list: []
+
+  assign_instrument_agent:
+    in:
+      instrument_agent_id: ""
+      instrument_id: ""
+      instrument_agent_instance: !InstrumentAgentInstance
+    out:
+      success: True
+
+  unassign_instrument_agent:
+    in:
+      instrument_agent_id: ""
+      instrument_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # Working with Platform resources
+
+  create_platform:
+    in:
+      platform: !Platform
+    out:
+      platform_id: ""
+
+  update_platform:
+    in:
+      platform: !Platform
+    out:
+      success: True
+
+  read_platform:
+    in:
+      platform_id: ""
+    out:
+      platform: !Platform
+
+  delete_platform:
+    in:
+      platform_id: ""
+    out:
+      success: True
+
+  find_platforms:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_list: []
+
+  # -----------------
+  # Working with Platform Agent (type) resources
+
+  create_platform_agent:
+    in:
+      platform_agent: !PlatformAgent
+    out:
+      platform_agent_id: ""
+
+  update_platform_agent:
+    in:
+      platform_agent: !PlatformAgent
+    out:
+      success: True
+
+  read_platform_agent:
+    in:
+      platform_agent_id: ""
+    out:
+      platform_agent: !PlatformAgent
+
+  delete_platform_agent:
+    in:
+      platform_agent_id: ""
+    out:
+      success: True
+
+  find_platform_agents:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_agent_list: []
+
+  assign_platform_agent:
+    in:
+      platform_agent_id: ""
+      platform_id: ""
+      platform_agent_instance: !PlatformAgentInstance
+    out:
+      success: True
+
+  unassign_agent:
+    in:
+      platform_agent_id: ""
+      platform_id: ""
+    out:
+      success: True

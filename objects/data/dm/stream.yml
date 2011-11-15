@@ -1,3 +1,7 @@
+StreamTopology: !Extends_Resource
+  topology_type: "topic_tree"
+  dimensions: []
+
 Stream: !Extends_Resource
   irl: ""
   startdate: 2011-01-01

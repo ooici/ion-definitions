@@ -1,0 +1,5 @@
+# Computation Planner Service interface definition
+
+name: computation_planner_service
+dependencies: [resource_registry]
+methods:

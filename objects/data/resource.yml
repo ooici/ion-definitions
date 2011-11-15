@@ -12,10 +12,15 @@ Resource:
   lcstate: "NEW"
 
 ---
+
+ResourceLifeCycle: !Extends_Resource
+  definition_type: ""
+  definition: {}
+
 ResourceBasics:
   name: ""
   description: ""
 
 ResourceFilter:
   filters: {}
-  
+

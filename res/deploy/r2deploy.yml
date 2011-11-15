@@ -4,7 +4,11 @@ version: 0.1
 description: Release 2 deployment configuration
 ion: 0.0.1
 apps:
-  # Container ZERO, bootstrap the ION system environment.
+  ##################################
+  # CORE SERVICES
+  # Bootstrapper app performs initializations
+  ##################################
+
   - name: bootstrap
     version: 0.1
     processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
@@ -59,4 +63,7 @@ apps:
     config:
       level: exchange_management
 
+  ##################################
+  # HIGHER LEVEL SERVICES
+  ##################################
 

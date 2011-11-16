@@ -1,2 +1,6 @@
 Catalog: !Extends_Resource
   view: ""
+
+
+Index: !Extends_Resource
+  function: ""

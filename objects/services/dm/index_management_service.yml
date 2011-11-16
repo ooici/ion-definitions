@@ -3,3 +3,31 @@
 name: index_management_service
 dependencies: [resource_registry]
 methods:
+  create_index:
+    in:
+      index: !Index
+    out:
+      index_id: ""
+
+  update_index:
+    in:
+      index: !Index
+    out:
+      success: True
+
+  read_index:
+    in:
+      index_id: ""
+    out:
+      index: !Index
+
+  delete_index:
+    in:
+      index_id: ""
+    out:
+      success: True
+
+  list_indexes:
+    in:
+    out:
+      list: []

@@ -3,13 +3,21 @@ Instrument: !Extends_Resource
 
 InstrumentDevice: !Extends_Resource
   # This is the physical instrument
-  model: ""
   serialnumber: ""
   description: ""
+  instrumentModel: ""
   firmwareversion: ""
   hardwareversion: ""
   instrumentclass: ""
   sensors: []
+
+InstrumentModel:
+  #This defines the characteristics of an instrument model
+    model: ""
+    manufacturer: ""
+    weight: 0
+    dimensions: "h x l x w"
+    buoyancy: ""
 
 InstrumentAgent: !Extends_Resource
   tbd: ""

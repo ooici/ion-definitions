@@ -13,8 +13,8 @@ Platform: !Extends_Resource
   controllerports: []
   controllerpowerconsumption: ""
 
-InstrumentDevice: !Extends_Resource
-  # This is the physical instrument
+PlatformDevice: !Extends_Resource
+  # This is the physical platform
   tbd: ""
 
 PlatformAgent: !Extends_Resource

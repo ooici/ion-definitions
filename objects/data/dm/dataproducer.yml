@@ -1,0 +1,5 @@
+
+DataProducer: !Extends_Resource
+  type: ""
+  startdate: 2011-01-01
+  enddate: 2011-01-01

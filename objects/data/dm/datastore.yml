@@ -1,0 +1,5 @@
+DataStore: !Extends_Resource
+  type: ""
+  technology: ""
+  connectionString: ""
+  adminUser: ""

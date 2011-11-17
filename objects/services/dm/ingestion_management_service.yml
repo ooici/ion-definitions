@@ -1,0 +1,22 @@
+# Ingestion Management Service interface definition
+
+name: ingestion_management_service
+dependencies: [resource_registry]
+methods:
+  define_ingestion:
+    in:
+      params: ""
+    out:
+      status: True
+
+  define_new_version:
+    in:
+      params: ""
+    out:
+      status: True
+
+  ingest_increment:
+    in:
+      params: ""
+    out:
+      status: True

@@ -3,3 +3,52 @@
 name: execution_engine_management_service
 dependencies: [resource_registry]
 methods:
+  create_execution_engine_definition:
+    in:
+      execution_engine_definition: !ExecutionEngineDefinition
+    out:
+      execution_engine_definition_id: ""
+
+  update_execution_engine_definition:
+    in:
+      execution_engine_definition: !ExecutionEngineDefinition
+    out:
+      success: True
+
+  read_execution_engine_definition:
+    in:
+      execution_engine_definition_id: ""
+    out:
+      execution_engine_definition: !ExecutionEngineDefinition
+
+  delete_execution_engine_definition:
+    in:
+      execution_engine_definition_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+  create_execution_engine:
+    in:
+      execution_engine: !ExecutionEngine
+    out:
+      execution_engine_id: ""
+
+  update_execution_engine:
+    in:
+      execution_engine: !ExecutionEngine
+    out:
+      success: True
+
+  read_execution_engine:
+    in:
+      execution_engine_id: ""
+    out:
+      execution_engine: !ExecutionEngine
+
+  delete_execution_engine:
+    in:
+      execution_engine_id: ""
+    out:
+      success: True

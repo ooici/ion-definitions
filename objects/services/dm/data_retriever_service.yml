@@ -1,0 +1,19 @@
+# Data Retriever Service interface definition
+
+name: data_retriever_service
+dependencies: [resource_registry]
+methods:
+  replay_data:
+    docstring: Replays data from data store by streaming to an exchange name.
+    in:
+      dataset_id: ""
+      query: {}
+      delivery_format: {}
+    out:
+      exchange_name: ""
+
+  cancel_replay:
+    in:
+      exchange_name: ""
+    out:
+      success: True

@@ -3,3 +3,52 @@
 name: epu_management_service
 dependencies: [resource_registry]
 methods:
+  create_EPU_definition:
+    in:
+      EPU_definition: !ExecutionEngineDefinition
+    out:
+      EPU_definition_id: ""
+
+  update_EPU_definition:
+    in:
+      EPU_definition: !ExecutionEngineDefinition
+    out:
+      success: True
+
+  read_EPU_definition:
+    in:
+      EPU_definition_id: ""
+    out:
+      EPU_definition: !ExecutionEngineDefinition
+
+  delete_EPU_definition:
+    in:
+      EPU_definition_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+  create_EPU:
+    in:
+      EPU: !ExecutionEngine
+    out:
+      EPU_id: ""
+
+  update_EPU:
+    in:
+      EPU: !ExecutionEngine
+    out:
+      success: True
+
+  read_EPU:
+    in:
+      EPU_id: ""
+    out:
+      EPU: !ExecutionEngine
+
+  delete_EPU:
+    in:
+      EPU_id: ""
+    out:
+      success: True

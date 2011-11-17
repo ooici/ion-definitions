@@ -3,3 +3,26 @@
 name: persistence_management_service
 dependencies: [resource_registry]
 methods:
+  create_archive:
+    in:
+      archive: !PersistentArchive
+    out:
+      view_id: ""
+
+  update_archive:
+    in:
+      archive: !PersistentArchive
+    out:
+      success: True
+
+  read_archive:
+    in:
+      archive_id: ""
+    out:
+      archive: !PersistentArchive
+
+  delete_archive:
+    in:
+      archive_id: ""
+    out:
+      success: True

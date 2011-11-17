@@ -3,9 +3,6 @@
 ResourceId:
   id: ""
 
-ResourceType:
-  name: ""
-
 Resource:
   name: ""
   description: ""
@@ -13,9 +10,20 @@ Resource:
 
 ---
 
+ResourceType: !Extends_Resource
+  tbd: ""
+
 ResourceLifeCycle: !Extends_Resource
   definition_type: ""
   definition: {}
+
+TaskableResource: !Extends_Resource
+  tbd: ""
+
+InformationResource: !Extends_Resource
+  tbd: ""
+
+---
 
 ResourceBasics:
   name: ""
@@ -23,4 +31,3 @@ ResourceBasics:
 
 ResourceFilter:
   filters: {}
-

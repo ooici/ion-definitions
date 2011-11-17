@@ -1,7 +1,7 @@
 # Data Acquisition Management Service interface definition
 
 name: data_acquisition_management
-dependencies: [resource_registry]
+dependencies: [resource_registry, pubsub_management]
 methods:
   define_data_agent:
     in:
@@ -11,6 +11,6 @@ methods:
 
   define_data_producer:
     in:
-      basics: !ResourceBasics
+      producer: !DataProducer
     out:
-      success: True
+      producer_id: ""

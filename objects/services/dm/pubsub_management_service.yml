@@ -118,7 +118,7 @@ methods:
       exchange_name: ""
       stream_id: ""
     out:
-      success: True
+      credentials: ""
 
   unregister_producer:
     in:

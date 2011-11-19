@@ -1,6 +1,21 @@
 Instrument: !Extends_Resource
   # This is the logical instrument that is part of the observatory
 
+InstrumentModel: !Extends_Resource
+  #This defines the characteristics of an instrument model
+  name:     ""
+  model: ""
+  manufacturer: ""
+  weight: 0
+  dimensions: "h x l x w"
+  buoyancy: ""
+  sensors:  []
+
+InstrumentDriver: !Extends_Resource
+  name:  ""
+  tbd:   ""
+
+
 InstrumentDevice: !Extends_Resource
   # This is the physical instrument
   serialnumber: ""
@@ -11,17 +26,10 @@ InstrumentDevice: !Extends_Resource
   instrumentclass: ""
   sensors: []
 
-InstrumentModel:
-  #This defines the characteristics of an instrument model
-    model: ""
-    manufacturer: ""
-    weight: 0
-    dimensions: "h x l x w"
-    buoyancy: ""
 
 InstrumentAgent: !Extends_Resource
   tbd: ""
 
 InstrumentAgentInstance: !Extends_Resource
-  exchange_name: ""
-  configuration: {}
+  exchange_name:  ""
+  configuration:  {}

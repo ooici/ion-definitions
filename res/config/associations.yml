@@ -1,0 +1,104 @@
+AssociationTypes:
+  - name: hasChildDataProducer
+    domain: [DataProducer]
+    range: [DataProducer]
+  - name: hasInputDataProcer
+    domain: [DataProducer]
+    range: [DataProducer]
+  - name: hasDataset
+    domain: [DataProducer, DataProduct]
+    range: [Dataset]
+  - name: hasDataProducer
+    domain: [DataProduct, InstrumentPhysical]
+    range: [DataProducer]
+  - name: hasInputProduct
+    domain: [DataProcess]
+    range: [DataProduct]
+  - name: hasOutputProduct
+    domain: [DataProcess]
+    range: [DataProduct]
+  - name: hasTransform
+    domain: [DataProcess]
+    range: [Transform]
+  - name: hasSite
+    domain: [MarineFacility, Site]
+    range: [Site]
+  - name: hasModel
+    domain: [PlatformPhysical, InstrumentPhysical, Sensor]
+    range: [PlatformModel, InstrumentModel, SensorModel]
+  - name: hasPlatform
+    domain: [MarineFacility, Site, PlatformLogical]
+    range: [PlatformPhysical, PlatformLogical]
+  - name: hasAssignment
+    domain: [PlatformPhysical, InstrumentPhysical]
+    range: [PlatformLogical, InstrumentLogical]
+  - name: hasAgentInstance
+    domain: [PlatformPhysical, InstrumentPhysical]
+    range: [PlatformAgentInstance,InstrumentAgentInstance]
+  - name: hasInstance
+    domain: [PlatformAgent, InstrumentAgent]
+    range: [PlatformAgentInstance, InstrumentAgentInstance]
+  - name: hasSensor
+    domain: [InstrumentPhysical]
+    range: [Sensor]
+  - name: hasCatalog
+    domain: [View]
+    range: [Catalog]
+  - name: hasDatastore
+    domain: [View, Index]
+    range: [Datastore]
+  - name: hasIndex
+    domain: [Catalog]
+    range: [Index]
+  - name: hasArchive
+    domain: [Datastore]
+    range: [PersistentArchive]
+  - name: hasTransform
+    domain: [DataProcess]
+    range: [Transform]
+  - name: hasStream
+    domain: [DataProcess, DataProducer, Dataset, ExchangePoint ]
+    range: [Stream]
+  - name: hasOutStream
+    domain: [Transform]
+    range: [Stream]
+  - name: hasTopology
+    domain: [Stream, Subscription]
+    range: [TopicTopology]
+  - name: hasProcessDefinition
+    domain: [Transform]
+    range: [ProcessDefinition]
+  - name: hasSubscription
+    domain: [Transform, ExchangePoint]
+    range: [Subscription]
+  - name: hasTopicTopology
+    domain: [ExchangePoint]
+    range: [TopicTopology]
+  - name: hasBroker
+    domain: [ExchangePoint]
+    range: [ExchangeBroker]
+  - name: hasExchangeSpace
+    domain: [ExchangePoint]
+    range: [ExchangeSpace]
+  - name: hasFacility
+    domain: [ExchangeSpace]
+    range: [Facility]
+  - name: hasCredentials
+    domain: [UserIdentity]
+    range: [UserCredentials]
+  - name: hasRole
+    domain: [Conversation]
+    range: [ConversationRole]
+  - name: hasType
+    domain: [Conversation]
+    range: [ServiceDefinition]
+#Special cases: domain valid for all subclasses of specified type
+  - name: hasAgent
+    domain: [taskableReource]
+    range: [Agent]
+  - name: hasPolicy
+    domain: [*]
+    range: [Policy]
+  - name: hasLifecycle
+    domain: [Resource]
+    range: [ResourceLifecycle]

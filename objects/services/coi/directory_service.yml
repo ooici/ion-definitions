@@ -24,9 +24,9 @@ methods:
       old_attributes: {}
 
   read:
+    docstring: Read an entry from the directory, given the qualified key
     in:
-      parent: '/'
-      key: ''
+      qualified_key: ''
     out:
       attributes: {}
 

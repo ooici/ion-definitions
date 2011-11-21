@@ -1,4 +1,5 @@
 AssociationTypes:
+#SA 
   - name: hasChildDataProducer
     domain: [DataProducer]
     range: [DataProducer]
@@ -41,6 +42,7 @@ AssociationTypes:
   - name: hasSensor
     domain: [InstrumentPhysical]
     range: [Sensor]
+# DM
   - name: hasCatalog
     domain: [View]
     range: [Catalog]
@@ -74,6 +76,7 @@ AssociationTypes:
   - name: hasTopicTopology
     domain: [ExchangePoint]
     range: [TopicTopology]
+# COI
   - name: hasBroker
     domain: [ExchangePoint]
     range: [ExchangeBroker]

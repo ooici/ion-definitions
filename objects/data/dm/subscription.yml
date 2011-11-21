@@ -1,2 +1,4 @@
 Subscription: !Extends_Resource
-  tbd: ""
+  stream_id: ""
+  exchange_name: ""
+  subscription_type: "simpleSubscription"

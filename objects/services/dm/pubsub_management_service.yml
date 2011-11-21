@@ -10,6 +10,7 @@ dependencies: [resource_registry]
 methods:
 
   create_stream:
+  docstring: The stream resource id is the topic in the simple topic topology.
     in:
       stream: !Stream
     out:
@@ -114,6 +115,7 @@ methods:
   # Note: a producer is not a resource, just a declaration
 
   register_producer:
+  docstring:  The publication credential is nothing more than the stream resource id which is used as the routing key for messages on that stream in this prototype.
     in:
       exchange_name: ""
       stream_id: ""

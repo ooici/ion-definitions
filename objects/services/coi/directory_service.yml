@@ -7,26 +7,28 @@
 name: directory
 dependencies: []
 methods:
-  # Register is idempotent and acts as both create and update, based on the key
   register:
+    docstring:  Register is idempotent and acts as both create and update, based on the key
     in:
-      entry: !DirEntry
+      parent: '/'
+      key: ''
+      attributes: {}
     out:
-      entry: {}
+      old_attributes: {}
 
   unregister:
     in:
       parent: '/'
       key: ''
     out:
-      success: True
+      old_attributes: {}
 
   read:
     in:
       parent: '/'
       key: ''
     out:
-      entry: {}
+      attributes: {}
 
   find:
     in:

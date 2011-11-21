@@ -1,8 +1,9 @@
-Directory: !Extends_Resource
+Directory:
+  name: ""
   content: {}
+  schema: {}
 
-DirEntry: !Extends_Resource
-  parent: '/'
+DirEntry:
+  parent: ''
   key: ''
-  entry_type: 'node'
   attributes: {}

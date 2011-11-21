@@ -29,6 +29,10 @@ apps:
   - name: directory
     version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+    config:
+        directory:
+            persistent: true
+            force_clean: true
 
   - name: bootstrap
     config:

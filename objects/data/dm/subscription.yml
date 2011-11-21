@@ -1,2 +1,7 @@
 Subscription: !Extends_Resource
-  tbd: ""
+  subscription_type: "singlestream"
+  query: {}
+  exchange_name: ""
+
+SingleStreamQuery:
+  stream_id: ""

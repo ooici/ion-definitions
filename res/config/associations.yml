@@ -4,113 +4,116 @@
 
 AssociationTypes:
 #SA 
-  - name: hasChildDataProducer
+  hasChildDataProducer:
     domain: [DataProducer]
     range: [DataProducer]
-  - name: hasInputDataProcer
+  hasInputDataProcer:
     domain: [DataProducer]
     range: [DataProducer]
-  - name: hasDataset
+  hasDataset:
     domain: [DataProducer, DataProduct]
     range: [Dataset]
-  - name: hasDataProducer
+  hasDataProducer:
     domain: [DataProduct, InstrumentPhysical]
     range: [DataProducer]
-  - name: hasInputProduct
+  hasInputProduct:
     domain: [DataProcess]
     range: [DataProduct]
-  - name: hasOutputProduct
+  hasOutputProduct:
     domain: [DataProcess]
     range: [DataProduct]
-  - name: hasTransform
+  hasTransform:
     domain: [DataProcess]
     range: [Transform]
-  - name: hasSite
+  hasSite:
     domain: [MarineFacility, Site]
     range: [Site]
-  - name: hasModel
+  hasModel:
     domain: [PlatformPhysical, InstrumentPhysical, Sensor]
     range: [PlatformModel, InstrumentModel, SensorModel]
-  - name: hasPlatform
+  hasPlatform:
     domain: [MarineFacility, Site, PlatformLogical]
     range: [PlatformPhysical, PlatformLogical]
-  - name: hasAssignment
+  hasAssignment:
     domain: [PlatformPhysical, InstrumentPhysical]
     range: [PlatformLogical, InstrumentLogical]
-  - name: hasAgentInstance
+  hasAgentInstance:
     domain: [PlatformPhysical, InstrumentPhysical]
     range: [PlatformAgentInstance,InstrumentAgentInstance]
-  - name: hasInstance
+  hasInstance:
     domain: [PlatformAgent, InstrumentAgent]
     range: [PlatformAgentInstance, InstrumentAgentInstance]
-  - name: hasSensor
+  hasSensor:
     domain: [InstrumentPhysical]
     range: [Sensor]
 # DM
-  - name: hasCatalog
+  hasCatalog:
     domain: [View]
     range: [Catalog]
-  - name: hasDatastore
+  hasDatastore:
     domain: [View, Index]
     range: [Datastore]
-  - name: hasIndex
+  hasIndex:
     domain: [Catalog]
     range: [Index]
-  - name: hasArchive
+  hasArchive:
     domain: [Datastore]
     range: [PersistentArchive]
-  - name: hasTransform
+  hasTransform:
     domain: [DataProcess]
     range: [Transform]
-  - name: hasStream
+  hasStream:
     domain: [DataProcess, DataProducer, Dataset, ExchangePoint ]
     range: [Stream]
-  - name: hasOutStream
+  hasOutStream:
     domain: [Transform]
     range: [Stream]
-  - name: hasTopology
+  hasTopology:
     domain: [Stream, Subscription]
     range: [TopicTopology]
-  - name: hasProcessDefinition
+  hasProcessDefinition:
     domain: [Transform]
     range: [ProcessDefinition]
-  - name: hasSubscription
+  hasSubscription:
     domain: [Transform, ExchangePoint]
     range: [Subscription]
-  - name: hasTopicTopology
+  hasTopicTopology:
     domain: [ExchangePoint]
     range: [TopicTopology]
 # COI
-  - name: hasBroker
+  hasBroker:
     domain: [ExchangeSpace]
     range: [ExchangeBroker]
-  - name: hasExchangeSpace
+  hasExchangeSpace:
     domain: [Org]
     range: [ExchangeSpace]
-  - name: hasExchangePoint
+  hasExchangePoint:
     domain: [ExchangeSpace]
     range: [ExchangePoint]
-  - name: hasExchangeName
+  hasExchangeName:
     domain: [ExchangeSpace]
     range: [ExchangeName]
-  - name: hasCredentials
+  hasCredentials:
     domain: [UserIdentity]
     range: [UserCredentials]
-  - name: hasRole
+  hasInfo:
+    domain: [UserIdentity]
+    range: [UserInfo]
+  hasRole:
     domain: [Conversation,UserIdentity]
     range: [ConversationRole,UserRole]
-  - name: hasType
+  hasType:
     domain: [Conversation]
     range: [ServiceDefinition]
-  - name: hasAgent
+  hasAgent:
     domain: [TaskableReource]
     range: [Agent]
-  - name: hasPolicy
+  hasPolicy:
     domain: [Resource]
     range: [Policy]
-  - name: hasOwner
+  hasOwner:
     domain: [Resource]
     range: [UserIdentity]
-  - name: hasLifecycle
+  hasLifecycle:
     domain: [Resource]
     range: [ResourceLifecycle]

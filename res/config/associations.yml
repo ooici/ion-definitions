@@ -1,3 +1,7 @@
+# associations.yml
+
+# This is the authoritative definition of all permissible association types in the system
+
 AssociationTypes:
 #SA 
   - name: hasChildDataProducer
@@ -78,30 +82,35 @@ AssociationTypes:
     range: [TopicTopology]
 # COI
   - name: hasBroker
-    domain: [ExchangePoint]
+    domain: [ExchangeSpace]
     range: [ExchangeBroker]
   - name: hasExchangeSpace
-    domain: [ExchangePoint]
+    domain: [Org]
     range: [ExchangeSpace]
-  - name: hasFacility
+  - name: hasExchangePoint
     domain: [ExchangeSpace]
-    range: [Facility]
+    range: [ExchangePoint]
+  - name: hasExchangeName
+    domain: [ExchangeSpace]
+    range: [ExchangeName]
   - name: hasCredentials
     domain: [UserIdentity]
     range: [UserCredentials]
   - name: hasRole
-    domain: [Conversation]
-    range: [ConversationRole]
+    domain: [Conversation,UserIdentity]
+    range: [ConversationRole,UserRole]
   - name: hasType
     domain: [Conversation]
     range: [ServiceDefinition]
-#Special cases: domain valid for all subclasses of specified type
   - name: hasAgent
-    domain: [taskableReource]
+    domain: [TaskableReource]
     range: [Agent]
   - name: hasPolicy
-    domain: [*]
+    domain: [Resource]
     range: [Policy]
+  - name: hasOwner
+    domain: [Resource]
+    range: [UserIdentity]
   - name: hasLifecycle
     domain: [Resource]
     range: [ResourceLifecycle]

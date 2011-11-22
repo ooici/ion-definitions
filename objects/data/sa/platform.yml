@@ -15,6 +15,10 @@ Platform: !Extends_Resource
 
 PlatformDevice: !Extends_Resource
   # This is the physical platform
+  serial_number: ""
+
+PlatformLogical: !Extends_Resource
+  # This is the logical platform
   tbd: ""
 
 PlatformAgent: !Extends_Resource

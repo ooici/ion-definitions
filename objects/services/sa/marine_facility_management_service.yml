@@ -1,0 +1,102 @@
+# Marine Facility Management Service interface definition
+
+name: marine_facility_management
+dependencies: [resource_registry]
+methods:
+  create_marine_facility:
+    in:
+      marine_facility: !MarineFacility
+    out:
+      marine_facility_id: ""
+
+  update_marine_facility:
+    in:
+      marine_facility: !MarineFacility
+    out:
+      success: True
+
+  read_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      marine_facility: !MarineFacility
+
+  delete_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      success: True
+
+  find_marine_facility:
+    in:
+      filters: !ResourceFilter
+    out:
+      marine_facility_list: []
+
+  # -----------------
+
+  # Note:
+
+  create_site:
+    in:
+      site: !Site
+    out:
+      site_id: ""
+
+  update_site:
+    in:
+      site: !Site
+    out:
+      success: True
+
+  read_site:
+    in:
+      site_id: ""
+    out:
+      site: !Site
+
+  delete_site:
+    in:
+      site_id: ""
+    out:
+      success: True
+
+  find_site:
+    in:
+      filters: !ResourceFilter
+    out:
+      site_list: []
+
+  # -----------------
+
+  # Note:
+
+  create_logical_platform:
+    in:
+      logical_platform: !PlatformLogical
+    out:
+      site_id: ""
+
+  update_logical_platform:
+    in:
+      logical_platform: !PlatformLogical
+    out:
+      success: True
+
+  read_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      logical_platform: !PlatformLogical
+
+  delete_site:
+    in:
+      logical_platform_id: ""
+    out:
+      success: True
+
+  find_logical_platform:
+    in:
+      filters: !ResourceFilter
+    out:
+      logical_platform_list: []

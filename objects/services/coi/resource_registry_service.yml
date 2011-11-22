@@ -76,7 +76,7 @@ methods:
     out:
       list: []
 
-  find_res_bytype:
+  find_res_by_type:
     in:
       restype: ""
       lcstate: ""
@@ -84,7 +84,7 @@ methods:
     out:
       list: []
 
-  find_res_bylcstate:
+  find_res_by_lcstate:
     in:
       lcstate: ""
       restype: ""
@@ -92,7 +92,7 @@ methods:
     out:
       list: []
 
-  find_res_byname:
+  find_res_by_name:
     in:
       name: ""
       restype: ""

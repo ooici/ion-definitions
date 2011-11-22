@@ -1,9 +1,8 @@
 # resource.yml
 
-ResourceId:
-  id: ""
-
 Resource:
+  # _id: ""   - Unique identifier (comes with every object)
+  # _rev: ""   - Revision identifier (comes with every object)
   name: ""
   description: ""
   lcstate: "NEW"
@@ -18,16 +17,20 @@ ResourceLifeCycle: !Extends_Resource
   definition: {}
 
 TaskableResource: !Extends_Resource
+  # Taskable resources are resources with behavior and state. This object describes them.
   tbd: ""
 
 InformationResource: !Extends_Resource
+  # Information resources are pure information artifacts. This object describes them.
   tbd: ""
 
 ---
 
+# TODO: Replace in favor of Resource base object
 ResourceBasics:
   name: ""
   description: ""
 
+# TODO: Refine and use consistently, where needed to find
 ResourceFilter:
   filters: {}

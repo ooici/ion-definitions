@@ -1,0 +1,23 @@
+type: release
+name: Release2Configuration COI services
+version: 0.1
+description: Release 2 DPMS unit test configuration
+ion: 0.0.1
+apps:
+
+#  - name: datastore
+#    description: Data store service
+#    version: 0.1
+#    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+#    config:
+#        type: CouchDB
+3        forceClean: true
+
+#  - name: resource_registry
+#    version: 0.1
+#    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+
+#  - name: data_product_management
+#    version: 0.1
+#    processapp: [data_product_management, ion.services.sa.data_product_management.data_product_management_service, DataProductManagementService]
+    

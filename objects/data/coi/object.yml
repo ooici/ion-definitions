@@ -1,3 +1,6 @@
 ObjectType: !Extends_Resource
   definition_type: ""
   definition: {}
+
+Collection: !Extends_Resource
+  tbd: ""

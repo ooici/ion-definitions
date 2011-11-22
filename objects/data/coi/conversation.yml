@@ -5,8 +5,8 @@ ConversationType: !Extends_Resource
   definition_type: ""
   definition: ""
 
-ConverationRole:
-  name: ""
+ConverationRole: !Extends_Resource
+  tbd: ""
 
 ConverationRoleBinding:
   exchange_name: ""

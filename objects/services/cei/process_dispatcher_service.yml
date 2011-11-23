@@ -2,6 +2,8 @@
 
 name: process_dispatcher_service
 dependencies: [resource_registry]
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Process+Dispatcher+Service
+
 methods:
   create_process_definition:
     in:

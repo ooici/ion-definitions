@@ -28,12 +28,6 @@ methods:
     out:
       status: True
 
-  find:
-    in:
-      criteria: []
-    out:
-      list: []
-
   # -----------------
 
   execute_lifecycle_transition:
@@ -41,6 +35,7 @@ methods:
       resource_id: ""
       lcstate: ""
     out:
+      status: True
 
   # -----------------
 
@@ -57,6 +52,8 @@ methods:
       association: ""
     out:
       status: True
+
+  # -----------------
 
   find_objects:
     in:

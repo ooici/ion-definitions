@@ -5,71 +5,98 @@
 name: instrument_management_service
 dependencies: [resource_registry]
 methods:
+
+
+
   # -----------------
-  # Working with Logical Instrument resources
+  # Working with Instrument Driver (type) resources
 
-  create_instrument:
+  create_instrument_driver:
     in:
-      instrument: !Instrument
+      instrument_driver_info: !InstrumentDriver
     out:
-      instrument_id: ""
+      instrument_driver_id: ""
 
-  update_instrument:
+  update_instrument_driver:
     in:
-      instrument: !Instrument
-    out:
-      success: True
-
-  read_instrument:
-    in:
-      instrument_id: ""
-    out:
-      instrument: !Instrument
-
-  delete_instrument:
-    in:
-      instrument_id: ""
+      instrument_driver_id: ""
+      instrument_driver_info: !InstrumentDriver
     out:
       success: True
 
-  find_instruments:
+  read_instrument_driver:
+    in:
+      instrument_driver_id: ""
+    out:
+      instrument_driver_info: !InstrumentDriver
+
+  delete_instrument_driver:
+    in:
+      instrument_driver_id: ""
+      reason:               ""
+    out:
+      success: True
+
+  find_instrument_driver:
     in:
       filters: !ResourceFilter
     out:
-      instrument_list: []
+      instrument_driver_info_list: []
 
-  request_direct_access:
+
+
+  # -----------------
+  # Working with Instrument Model (type) resources
+
+  create_instrument_model:
     in:
-      instrument_id: ""
+      instrument_model_info: !InstrumentModel
+    out:
+      instrument_model_id: ""
+
+  update_instrument_model:
+    in:
+      instrument_model_id: ""
+      instrument_model_info: !InstrumentModel
     out:
       success: True
 
-  stop_direct_access:
+  read_instrument_model:
     in:
-      instrument_id: ""
+      instrument_model_id: ""
+    out:
+      instrument_model_info: !InstrumentModel
+
+  delete_instrument_model:
+    in:
+      instrument_model_id: ""
+      reason:              ""
     out:
       success: True
 
-  request_command:
-    # MM: Not sure what this is?
+  find_instrument_model:
     in:
-      instrument_id: ""
-      command: {}
+      filters: !ResourceFilter
     out:
-      success: True
+      instrument_model_info_list: []
+
+
+
+
 
   # -----------------
   # Working with Physical Instrument resources
 
   create_instrument_device:
     in:
-      instrument_device: !InstrumentDevice
+      instrument_device_info: !InstrumentDevice
     out:
       instrument_device_id: ""
 
   update_instrument_device:
     in:
-      instrument_device: !InstrumentDevice
+      instrument_device_id: ""
+      instrument_device_info: !InstrumentDevice
     out:
       success: True
 
@@ -77,19 +104,21 @@ methods:
     in:
       instrument_device_id: ""
     out:
-      instrument_device: !InstrumentDevice
+      instrument_device_info: !InstrumentDevice
 
   delete_instrument_device:
     in:
       instrument_device_id: ""
+      reason:               ""
     out:
       success: True
 
-  find_instrument_devices:
+  find_instrument_device:
     in:
       filters: !ResourceFilter
     out:
-      instrument_device_list: []
+      instrument_device_info_list: []
+
 
   assign_instrument_device:
     in:
@@ -111,18 +140,86 @@ methods:
     out:
       success: True
 
+
+
+
+
+  # -----------------
+  # Working with Physical Instrument resources
+
+  create_instrument:
+    in:
+      instrument_info: !Instrument
+    out:
+      instrument_id: ""
+
+  update_instrument:
+    in:
+      instrument_id: ""
+      instrument_info: !Instrument
+    out:
+      success: True
+
+  read_instrument:
+    in:
+      instrument_id: ""
+    out:
+      instrument_info: !Instrument
+
+  delete_instrument:
+    in:
+      instrument_id: ""
+      reason:        ""
+    out:
+      success: True
+
+  find_instrument:
+    in:
+      filters: !ResourceFilter
+    out:
+      instrument_info_list: []
+
+
+  assign_instrument:
+    in:
+      instrument_id:        ""
+      instrument_device_id: ""
+    out:
+      success: True
+
+  unassign_instrument:
+    in:
+      instrument_id:        ""
+      instrument_device_id: ""
+    out:
+      success: True
+
+  activate_instrument:
+    in:
+      instrument_id: ""
+    out:
+      success: True
+
+
+
+
+
+
+
+
   # -----------------
   # Working with Instrument Agent (type) resources
 
   create_instrument_agent:
     in:
-      instrument_agent: !InstrumentAgent
+      instrument_agent_info: !InstrumentAgent
     out:
       instrument_agent_id: ""
 
   update_instrument_agent:
     in:
-      instrument_agent: !InstrumentAgent
+      instrument_agent_id: ""
+      instrument_agent_info: !InstrumentAgent
     out:
       success: True
 
@@ -130,19 +227,20 @@ methods:
     in:
       instrument_agent_id: ""
     out:
-      instrument_agent: !InstrumentAgent
+      instrument_agent_info: !InstrumentAgent
 
   delete_instrument_agent:
     in:
       instrument_agent_id: ""
+      reason:              ""
     out:
       success: True
 
-  find_instrument_agents:
+  find_instrument_agent:
     in:
       filters: !ResourceFilter
     out:
-      instrument_agent_list: []
+      instrument_agent_info_list: []
 
   assign_instrument_agent:
     in:
@@ -159,18 +257,21 @@ methods:
     out:
       success: True
 
+
+
   # -----------------
   # Working with Platform resources
 
   create_platform:
     in:
-      platform: !Platform
+      platform_info: !Platform
     out:
       platform_id: ""
 
   update_platform:
     in:
-      platform: !Platform
+      platform_id: ""
+      platform_info: !Platform
     out:
       success: True
 
@@ -178,32 +279,34 @@ methods:
     in:
       platform_id: ""
     out:
-      platform: !Platform
+      platform_info: !Platform
 
   delete_platform:
     in:
       platform_id: ""
+      reason:      ""
     out:
       success: True
 
-  find_platforms:
+  find_platform:
     in:
       filters: !ResourceFilter
     out:
-      platform_list: []
+      platform_info_list: []
 
   # -----------------
   # Working with Platform Agent (type) resources
 
   create_platform_agent:
     in:
-      platform_agent: !PlatformAgent
+      platform_agent_info: !PlatformAgent
     out:
       platform_agent_id: ""
 
   update_platform_agent:
     in:
-      platform_agent: !PlatformAgent
+      platform_agent_id: ""
+      platform_agent_info: !PlatformAgent
     out:
       success: True
 
@@ -211,19 +314,20 @@ methods:
     in:
       platform_agent_id: ""
     out:
-      platform_agent: !PlatformAgent
+      platform_agent_info: !PlatformAgent
 
   delete_platform_agent:
     in:
       platform_agent_id: ""
+      reason:            ""
     out:
       success: True
 
-  find_platform_agents:
+  find_platform_agent:
     in:
       filters: !ResourceFilter
     out:
-      platform_agent_list: []
+      platform_agent_info_list: []
 
   assign_platform_agent:
     in:

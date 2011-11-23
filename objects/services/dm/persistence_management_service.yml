@@ -26,3 +26,29 @@ methods:
       archive_id: ""
     out:
       success: True
+
+  # -----------------
+
+  create_datastore:
+    in:
+      datastore: !DataStore
+    out:
+      datastore_id: ""
+
+  update_datastore:
+    in:
+      datastore: !DataStore
+    out:
+      success: True
+
+  read_datastore:
+    in:
+      datastore_id: ""
+    out:
+      datastore: !DataStore
+
+  delete_datastore:
+    in:
+      datastore_id: ""
+    out:
+      success: True

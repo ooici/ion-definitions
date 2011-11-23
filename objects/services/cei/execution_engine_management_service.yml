@@ -1,6 +1,11 @@
 # Execution Engine Management Service interface definition
 
 name: execution_engine_management_service
+docstring: |
+  Responsible for exchange (messaging) related resources, including brokers, exchange spaces and
+      exchange points.
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Execution+Engine+Management+Service
+
 dependencies: [resource_registry]
 methods:
   create_execution_engine_definition:

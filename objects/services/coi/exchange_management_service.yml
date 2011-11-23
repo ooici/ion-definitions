@@ -19,6 +19,12 @@ methods:
     out:
       success: True
 
+  read_exchange_space:
+    in:
+      exchange_space_id: ""
+    out:
+      exchange_space: !ExchangeSpace
+
   delete_exchange_space:
     in:
       exchange_space_id: ""
@@ -27,7 +33,7 @@ methods:
 
   find_exchange_spaces:
     in:
-      name: "*"
+      filters: !ResourceFilter
     out:
       exchange_space_list: []
 
@@ -49,7 +55,7 @@ methods:
 
   find_exchange_names:
     in:
-      name: "*"
+      filters: !ResourceFilter
     out:
       exchange_name_list: []
 
@@ -82,7 +88,7 @@ methods:
 
   find_exchange_points:
     in:
-      name: "*"
+      filters: !ResourceFilter
     out:
       exchange_point_list: []
 
@@ -114,6 +120,6 @@ methods:
 
   find_brokers:
     in:
-      name: "*"
+      filters: !ResourceFilter
     out:
       broker_list: []

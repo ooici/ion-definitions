@@ -3,6 +3,9 @@
 name: epu_management_service
 dependencies: [resource_registry]
 methods:
+  # -----------------
+  # Manipulating EPU definitions
+
   create_EPU_definition:
     in:
       EPU_definition: !ExecutionEngineDefinition
@@ -28,6 +31,7 @@ methods:
       success: True
 
   # -----------------
+  # Manipulating instantiated EPUs
 
   create_EPU:
     in:
@@ -50,5 +54,32 @@ methods:
   delete_EPU:
     in:
       EPU_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # Manipulating Deployable Types
+
+  create_deployable_type:
+    in:
+      deployable_type: !DeployableType
+    out:
+      deployable_type_id: ""
+
+  update_deployable_type:
+    in:
+      deployable_type: !DeployableType
+    out:
+      success: True
+
+  read_deployable_type:
+    in:
+      deployable_type_id: ""
+    out:
+      deployable_type: !DeployableType
+
+  delete_deployable_type:
+    in:
+      deployable_type_id: ""
     out:
       success: True

@@ -9,3 +9,8 @@ Stream: !Extends_Resource
   original: True
   mimetype: ""
   contentlength: 0
+
+StreamRoute:
+  exchange_name: ""
+  routing_key: ""
+  credentials: {}

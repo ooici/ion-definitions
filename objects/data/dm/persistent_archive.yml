@@ -1,2 +1,5 @@
 PersistentArchive: !Extends_Resource
   type: ""
+  technology: ""
+  connection_string: ""
+  admin_user: ""

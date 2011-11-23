@@ -1,4 +1,4 @@
-Instrument: !Extends_Resource
+LogicalInstrument: !Extends_Resource
   # This is the logical instrument that is part of the observatory
 
 InstrumentDevice: !Extends_Resource
@@ -25,3 +25,4 @@ InstrumentAgent: !Extends_Resource
 InstrumentAgentInstance: !Extends_Resource
   exchange_name: ""
   configuration: {}
+

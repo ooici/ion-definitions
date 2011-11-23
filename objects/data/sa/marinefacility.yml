@@ -1,6 +1,3 @@
-Observatory: !Extends_Resource
-  tbd: ""
-
 MarineFacility: !Extends_Resource
   tbd: ""
 

@@ -31,6 +31,6 @@ methods:
 
   find_datasets:
     in:
-      view: !ResourceFilter
+      filters: !ResourceFilter
     out:
       dataset_list: []

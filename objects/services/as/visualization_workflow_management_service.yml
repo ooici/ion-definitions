@@ -3,3 +3,26 @@
 name: visualization_workflow_management_service
 dependencies: [resource_registry]
 methods:
+  create_visualization_workflow:
+    in:
+      visualization_workflow: !VisualizationWorkflow
+    out:
+      visualization_workflow_id: ""
+
+  update_visualization_workflow:
+    in:
+      visualization_workflow: !VisualizationWorkflow
+    out:
+      success: True
+
+  read_visualization_workflow:
+    in:
+      visualization_workflow_id: ""
+    out:
+      visualization_workflow: !VisualizationWorkflow
+
+  delete_visualization_workflow:
+    in:
+      visualization_workflow_id: ""
+    out:
+      success: True

@@ -32,7 +32,7 @@ methods:
 
   find_conversations:
     in:
-      query: {}
+      filters: !ResourceFilter
     out:
       conversation_list: []
 

@@ -1,0 +1,16 @@
+# Computation Planner Service interface definition
+
+name: taskable_resource_planner_service
+dependencies: [resource_registry]
+methods:
+  request_computation:
+    in:
+      computation_request: !ComputationRequest
+    out:
+      computation_id: ""
+
+  cancel_computation:
+    in:
+      computation_id: ""
+    out:
+      success: True

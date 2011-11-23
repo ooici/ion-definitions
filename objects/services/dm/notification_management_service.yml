@@ -1,0 +1,42 @@
+# Notification Management Service interface definition
+
+name: notification_management
+dependencies: [resource_registry]
+methods:
+  create_event_type:
+    in:
+      event_type: !EventType
+    out:
+      event_type_id: ""
+
+  update_event_type:
+    in:
+      event_type: !EventType
+    out:
+      success: True
+
+  read_event_type:
+    in:
+      event_type_id: ""
+    out:
+      event_type: !EventType
+
+  delete_event_type:
+    in:
+      event_type_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+  request_notification:
+    in:
+      notification_request: !NotificationRequest
+    out:
+      notification_id: ""
+
+  cancel_notification:
+    in:
+      notification_id: ""
+    out:
+      success: True

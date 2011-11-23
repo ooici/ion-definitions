@@ -1,0 +1,11 @@
+DeviceCommand:
+  name: ""
+  args: []
+
+DeviceCommandResult:
+  command: ""
+  status: ""
+  result: []
+
+DeviceConfiguration:
+  configuration: {}

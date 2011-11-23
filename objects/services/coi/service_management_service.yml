@@ -29,7 +29,7 @@ methods:
 
   find_services:
     in:
-      query: {}
+      filters: !ResourceFilter
     out:
       service_definition_list: []
 

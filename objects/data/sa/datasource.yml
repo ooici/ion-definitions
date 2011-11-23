@@ -1,0 +1,3 @@
+DataSource: !Extends_Resource
+  type: ""
+  connection_params: {}

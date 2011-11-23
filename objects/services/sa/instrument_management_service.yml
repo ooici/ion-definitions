@@ -1,63 +1,9 @@
 # Instrument Management Service interface definition
 
-# TODO:
-
 name: instrument_management_service
+docstring: Manages physical instruments and platforms
 dependencies: [resource_registry]
 methods:
-  # -----------------
-  # Working with Logical Instrument resources
-
-  create_instrument:
-    in:
-      instrument: !Instrument
-    out:
-      instrument_id: ""
-
-  update_instrument:
-    in:
-      instrument: !Instrument
-    out:
-      success: True
-
-  read_instrument:
-    in:
-      instrument_id: ""
-    out:
-      instrument: !Instrument
-
-  delete_instrument:
-    in:
-      instrument_id: ""
-    out:
-      success: True
-
-  find_instruments:
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_list: []
-
-  request_direct_access:
-    in:
-      instrument_id: ""
-    out:
-      success: True
-
-  stop_direct_access:
-    in:
-      instrument_id: ""
-    out:
-      success: True
-
-  request_command:
-    # MM: Not sure what this is?
-    in:
-      instrument_id: ""
-      command: {}
-    out:
-      success: True
-
   # -----------------
   # Working with Physical Instrument resources
 
@@ -111,6 +57,26 @@ methods:
     out:
       success: True
 
+  request_direct_access:
+    in:
+      instrument_device_id: ""
+    out:
+      success: True
+
+  stop_direct_access:
+    in:
+      instrument_device_id: ""
+    out:
+      success: True
+
+  request_command:
+    # MM: Not sure what this is?
+    in:
+      instrument_device_id: ""
+      command: {}
+    out:
+      success: True
+
   # -----------------
   # Working with Instrument Agent (type) resources
 
@@ -160,37 +126,37 @@ methods:
       success: True
 
   # -----------------
-  # Working with Platform resources
+  # Working with Physical Platform resources
 
-  create_platform:
+  create_platform_device:
     in:
-      platform: !Platform
+      platform_device: !PlatformDevice
     out:
-      platform_id: ""
+      platform_device_id: ""
 
-  update_platform:
+  update_platform_device:
     in:
-      platform: !Platform
-    out:
-      success: True
-
-  read_platform:
-    in:
-      platform_id: ""
-    out:
-      platform: !Platform
-
-  delete_platform:
-    in:
-      platform_id: ""
+      platform_device: !PlatformDevice
     out:
       success: True
 
-  find_platforms:
+  read_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      platform_device: !PlatformDevice
+
+  delete_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      success: True
+
+  find_platform_devices:
     in:
       filters: !ResourceFilter
     out:
-      platform_list: []
+      platform_device_list: []
 
   # -----------------
   # Working with Platform Agent (type) resources

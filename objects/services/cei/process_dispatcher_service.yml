@@ -33,3 +33,15 @@ methods:
     out:
       process_definition_list: []
 
+  schedule_process:
+    in:
+      process_definition_id: ""
+      schedule: !ProcessSchedule
+    out:
+      process_id: ""
+
+  cancel_process:
+    in:
+      process_id: ""
+    out:
+      success: True

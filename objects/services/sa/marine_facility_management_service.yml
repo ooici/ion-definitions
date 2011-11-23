@@ -1,7 +1,13 @@
 # Marine Facility Management Service interface definition
 
+# TODO:
+# - Observatory policy
+# - Deployment
+# - Life cycle support operations
+
 name: marine_facility_management
-dependencies: [resource_registry]
+docstring: Manages the marine facility and policy and all associated sites, logical instruments and platforms
+dependencies: [resource_registry, instrument_management]
 methods:
   create_marine_facility:
     in:
@@ -27,7 +33,7 @@ methods:
     out:
       success: True
 
-  find_marine_facility:
+  find_marine_facilities:
     in:
       filters: !ResourceFilter
     out:
@@ -61,25 +67,38 @@ methods:
     out:
       success: True
 
-  find_site:
+  find_sites:
     in:
       filters: !ResourceFilter
     out:
       site_list: []
 
-  # -----------------
+  assign_site:
+    in:
+      child_site_id: ""
+      parent_site_id: ""
+    out:
+      success: True
 
-  # Note:
+  unassign_site:
+    in:
+      parent_site_id: ""
+      child_site_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # Manipulation of logical platforms
 
   create_logical_platform:
     in:
-      logical_platform: !PlatformLogical
+      logical_platform: !LogicalPlatform
     out:
-      site_id: ""
+      logical_platform_id: ""
 
   update_logical_platform:
     in:
-      logical_platform: !PlatformLogical
+      logical_platform: !LogicalPlatform
     out:
       success: True
 
@@ -87,16 +106,83 @@ methods:
     in:
       logical_platform_id: ""
     out:
-      logical_platform: !PlatformLogical
+      logical_platform: !LogicalPlatform
 
-  delete_site:
+  delete_logical_platform:
     in:
       logical_platform_id: ""
     out:
       success: True
 
-  find_logical_platform:
+  find_logical_platforms:
     in:
       filters: !ResourceFilter
     out:
       logical_platform_list: []
+
+  assign_platform:
+    in:
+      logical_platform_id: ""
+      parent_site_id: ""
+    out:
+      success: True
+
+  unassign_platform:
+    in:
+      logical_platform_id: ""
+      parent_site_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # Manipulation of logical instruments
+
+  create_logical_instrument:
+    in:
+      logical_instrument: !LogicalInstrument
+    out:
+      logical_instrument_id: ""
+
+  update_logical_instrument:
+    in:
+      logical_instrument: !LogicalInstrument
+    out:
+      success: True
+
+  read_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      logical_instrument: !LogicalInstrument
+
+  delete_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  find_logical_instruments:
+    in:
+      filters: !ResourceFilter
+    out:
+      logical_instrument_list: []
+
+  assign_instrument:
+    in:
+      logical_instrument_id: ""
+      parent_site_id: ""
+    out:
+      success: True
+
+  unassign_instrument:
+    in:
+      logical_instrument_id: ""
+      parent_site_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+  define_observatory_policy:
+    in:
+    out:

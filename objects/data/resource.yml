@@ -6,6 +6,8 @@ Resource:
   name: ""
   description: ""
   lcstate: "NEW"
+  date_created: 0
+  date_updated: 0
 
 ---
 

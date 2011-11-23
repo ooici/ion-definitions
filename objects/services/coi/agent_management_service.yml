@@ -1,0 +1,47 @@
+# Agent Management Service interface definition
+
+name: agent_management
+dependencies: [resource_registry]
+methods:
+  # -----------------
+  # Working with Agent definitions
+
+  create_agent_definition:
+    in:
+      agent_definition: !AgentDefinition
+    out:
+      agent_definition_id: ""
+
+  update_agent_definition:
+    in:
+      agent_definition: !AgentDefinition
+    out:
+      success: True
+
+  read_agent_definition:
+    in:
+      agent_definition_id: ""
+    out:
+      agent_definition: !AgentDefinition
+
+  delete_agent_definition:
+    in:
+      agent_definition_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # Working with Agent instances
+
+  register_agent:
+    in:
+      agent_definition_id: ""
+      agent_id: ""
+    out:
+      success: True
+
+  unassign_instrument_agent:
+    in:
+      agent_id: ""
+    out:
+      success: True

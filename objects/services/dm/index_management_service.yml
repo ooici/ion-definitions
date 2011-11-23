@@ -27,7 +27,8 @@ methods:
     out:
       success: True
 
-  list_indexes:
+  find_indexes:
     in:
+      filters: !ResourceFilter
     out:
-      list: []
+      index_list: []

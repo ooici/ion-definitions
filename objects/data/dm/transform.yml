@@ -1,5 +1,2 @@
 Transform: !Extends_Resource
-  instream: ""
-  outstream: ""
-  schedule:
-  
+  tbd: ""

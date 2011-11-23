@@ -32,7 +32,7 @@ methods:
 
   find_resource_types:
     in:
-      query: {}
+      filters: !ResourceFilter
     out:
       resource_type_list: []
 

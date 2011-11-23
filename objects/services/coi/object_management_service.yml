@@ -33,6 +33,6 @@ methods:
 
   find_object_types:
     in:
-      query: {}
+      filters: !ResourceFilter
     out:
       object_type_list: []

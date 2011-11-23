@@ -1,0 +1,6 @@
+EventType: !Extends_Resource
+  pattern: ""
+
+NotificationRequest: !Extends_Resource
+  event_pattern: []
+  delivery_properties: {}

@@ -4,3 +4,12 @@ EPUDefinition: !Extends_Resource
 
 EPU: !Extends_Resource
   tbd: ""
+
+DeployableType: !Extends_Resource
+  tbd: ""
+
+DeployableUnit:
+  tbd: ""
+
+OperationalUnit:
+  tbd: ""

@@ -1,0 +1,16 @@
+ComputationRequest:
+  request_type: "process"
+  request: {}
+
+ProcessRequest:
+  process_definition_id: ""
+  parameters: {}
+  config: {}
+
+EPURequest:
+  epu_definition_id: ""
+  parameters: {}
+  config: {}
+
+ResourceAgentType: !Extends_Resource
+  tbd: ""

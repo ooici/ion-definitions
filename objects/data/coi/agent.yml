@@ -1,0 +1,6 @@
+AgentDefinition: !Extends_Resource
+  definition: ""
+
+AgentInstance: !Extends_Resource
+  exchange_name: ""
+  configuration: {}

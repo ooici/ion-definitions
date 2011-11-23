@@ -3,14 +3,113 @@
 name: data_acquisition_management
 dependencies: [resource_registry, pubsub_management]
 methods:
-  define_data_agent:
+  # -----------------
+  # Manipulate data sources
+
+  create_data_source:
     in:
-      basics: !ResourceBasics
+      data_source: !DataSource
+    out:
+      data_source_id: ""
+
+  update_data_source:
+    in:
+      data_source: !DataSource
     out:
       success: True
 
-  define_data_producer:
+  read_data_source:
     in:
-      producer: !DataProducer
+      data_source_id: ""
     out:
-      producer_id: ""
+      data_source: !DataSource
+
+  delete_data_source:
+    in:
+      data_source_id: ""
+    out:
+      success: True
+
+  assign_data_agent:
+    docstring: Connect the agent instance description with a data source
+    in:
+      data_source_id: ""
+      agent_instance: !AgentInstance
+    out:
+      success: True
+
+  unassign_data_agent:
+    in:
+      data_agent_id: ""
+      data_source_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # The following operations register different types of data producers
+
+  register_data_source:
+    docstring: Register an existing data source as data producer
+    in:
+      data_source_id: ""
+    out:
+      data_source_id: ""
+
+  unregister_data_source:
+    in:
+      data_source_id: ""
+    out:
+      success: True
+
+  register_process:
+    docstring: Register an existing data process as data producer
+    in:
+      data_process_id: ""
+    out:
+      data_producer_id: ""
+
+  unregister_process:
+    in:
+      data_process_id: ""
+    out:
+      success: True
+
+  register_instrument:
+    docstring: Register an existing instrument as data producer
+    in:
+      instrument_id: ""
+    out:
+      data_producer_id: ""
+
+  unregister_instrument:
+    in:
+      instrument_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # The following operations work directly on data producers (use boilerplate instead)
+
+  create_data_producer:
+    in:
+      data_producer: !DataProducer
+    out:
+      data_producer_id: ""
+
+  update_data_producer:
+    in:
+      data_producer: !DataProducer
+    out:
+      success: True
+
+  read_data_producer:
+    in:
+      data_producer_id: ""
+    out:
+      data_producer: !DataProducer
+
+  delete_data_producer:
+    in:
+      data_producer_id: ""
+    out:
+      success: True

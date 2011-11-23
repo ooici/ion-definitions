@@ -1,4 +1,4 @@
-Platform: !Extends_Resource
+LogicalPlatform: !Extends_Resource
   datatelemetry: ""
   datatelemetrysystem: ""
   buoyname: ""
@@ -17,8 +17,7 @@ PlatformDevice: !Extends_Resource
   # This is the physical platform
   serial_number: ""
 
-PlatformLogical: !Extends_Resource
-  # This is the logical platform
+PlatformModel: !Extends_Resource
   tbd: ""
 
 PlatformAgent: !Extends_Resource

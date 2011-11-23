@@ -1,0 +1,29 @@
+# Instrument Agent Service interface definition
+
+# TODO:
+# - Define based on instrument agent interface
+
+name: instrument_agent
+docstring: The instrument and platform agents as a service (shore side deployment)
+dependencies: [resource_registry]
+methods:
+  get_state:
+    in:
+      instrument_id: ""
+      attribute_names: []
+    out:
+      states: {}
+
+  execute_command:
+    in:
+      instrument_id: ""
+      command: !DeviceCommand
+    out:
+      command_result_list: []
+
+  get_configuration:
+    in:
+      instrument_id: ""
+      config_name: ""
+    out:
+      device_configuration: !DeviceConfiguration

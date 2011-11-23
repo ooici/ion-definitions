@@ -1,4 +1,3 @@
-BankCustomer:
-  name: ""
+BankCustomer: !Extends_Resource
   email: ""
   phone: ""

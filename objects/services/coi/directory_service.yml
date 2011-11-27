@@ -23,8 +23,8 @@ methods:
     out:
       old_attributes: {}
 
-  read:
-    docstring: Read an entry from the directory, given the qualified key
+  lookup:
+    docstring: Lookup an entry from the directory, given the qualified key
     in:
       qualified_key: ''
     out:

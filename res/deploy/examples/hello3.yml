@@ -1,0 +1,29 @@
+type: release
+name: MyConfig
+version: 0.1
+description: Demo deployment configuration
+ion: 0.0.1
+apps:
+  - name: hello1
+    description: Hello service
+    version: 0.1
+    processapp: [hello1, examples.service.hello_service, HelloService]
+    config:
+      process:
+        listen_name: hello
+
+  - name: hello2
+    description: Hello service
+    version: 0.1
+    processapp: [hello2, examples.service.hello_service, HelloService]
+    config:
+      process:
+        listen_name: hello
+
+  - name: hello3
+    description: Hello service
+    version: 0.1
+    processapp: [hello3, examples.service.hello_service, HelloService]
+    config:
+      process:
+        listen_name: hello

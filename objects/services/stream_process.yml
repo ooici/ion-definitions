@@ -1,5 +1,0 @@
-name: stream_process
-dependencies: []
-methods:
-  process:
-    packet: ""

@@ -1,4 +1,6 @@
 name: sample
+docstring: Example service documentation
+spec: http://url.to/service/spec
 dependencies: []
 methods:
   doc_fields_:

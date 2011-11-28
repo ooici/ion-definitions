@@ -1,0 +1,31 @@
+type: release
+name: PubSubResource
+version: 0.1
+description: PubSub Example; pubsub service
+ion: 0.0.1
+apps:
+  - name: PubSubResource
+    version: 0.1
+    processapp: [pubsub, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+
+  - name: directory
+    version: 0.1
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+
+  - name: datastore
+    description: Data store service
+    version: 0.1
+    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+    config:
+        datastore:
+            persistent: true
+            force_clean: true
+
+  - name: resource_registry
+    description: Resource registry service
+    version: 0.1
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    config:
+        resource_registry:
+            persistent: true
+            force_clean: true

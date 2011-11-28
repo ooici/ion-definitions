@@ -9,6 +9,7 @@ Stream: !Extends_Resource
   original: True
   mimetype: ""
   contentlength: 0
+  producers: []
 
 StreamRoute:
   exchange_name: ""

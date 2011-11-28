@@ -4,11 +4,12 @@ StreamTopology: !Extends_Resource
 
 Stream: !Extends_Resource
   irl: ""
-  startdate: 2011-01-01
-  enddate: 2011-01-01
+  #startdate: 2011-01-01
+  #enddate: 2011-01-01
   original: True
   mimetype: ""
   contentlength: 0
+  producers: []
 
 StreamRoute:
   exchange_name: ""

@@ -7,7 +7,7 @@
 
 name: marine_facility_management
 docstring: Manages the marine facility and policy and all associated sites, logical instruments and platforms
-dependencies: [resource_registry, instrument_management]
+dependencies: [resource_registry, instrument_management_service]
 methods:
   create_marine_facility:
     in:

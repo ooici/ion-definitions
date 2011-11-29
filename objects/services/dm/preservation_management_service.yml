@@ -1,0 +1,56 @@
+# Preservation Management Service interface definition
+# Controls the data and information preservation and persistence processes.
+# In particular, defines data streams so that persistence services (persister, retriever) can be chained to these data streams.
+
+name: preservation_management
+dependencies: [resource_registry]
+methods:
+  create_datastore:
+    in:
+      datastore: !DataStore
+    out:
+      datastore_id: ""
+
+  update_datastore:
+    in:
+      datastore: !DataStore
+    out:
+      success: True
+
+  read_datastore:
+    in:
+      datastore_id: ""
+    out:
+      datastore: !DataStore
+
+  delete_datastore:
+    in:
+      datastore_id: ""
+    out:
+      success: True
+
+  # -----------------
+
+  create_persistent_archive:
+    in:
+      persistent_archive: !PersistentArchive
+    out:
+      persistent_archive_id: ""
+
+  update_persistent_archive:
+    in:
+      persistent_archive: !PersistentArchive
+    out:
+      success: True
+
+  read_persistent_archive:
+    in:
+      persistent_archive_id: ""
+    out:
+      persistent_archive: !PersistentArchive
+
+  delete_persistent_archive:
+    in:
+      persistent_archive_id: ""
+    out:
+      success: True

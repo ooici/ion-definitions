@@ -1,3 +1,4 @@
 name: bootstrap
+docstring: Process that bootstraps the ION system
 dependencies: [datastore, directory, resource_registry, org_management, exchange_management]
 methods:

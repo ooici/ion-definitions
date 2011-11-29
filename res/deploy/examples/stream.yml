@@ -1,0 +1,25 @@
+type: release
+name: stream
+version: 0.1
+description: Demo stream processing
+ion: 0.0.1
+apps:
+  - name: stream_producer
+    description: Stream producer
+    version: 0.1
+    processapp: [stream_producer, examples.stream.stream_producer, StreamProducer]
+    config:
+      process:
+        type: service
+      stream_producer:
+        interval: 3000
+        stream_route: stream1
+
+  - name: stream_consumer
+    description: Stream consumer
+    version: 0.1
+    processapp: [stream_consumer, examples.stream.stream_consumer, StreamConsumer]
+    config:
+      process:
+        type: stream_process
+        listen_name: stream1

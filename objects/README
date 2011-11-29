@@ -1,7 +1,8 @@
-This is the root directory for service interface and data model YAML definition files.
+This is the root directory for ION object and service interface definitions.
+All definitions exist in form of YAML files.
 
-./data  - Object definitions (in YML) to be used across ION
-./services - Service definitions (in YML), with implicit message object definitions
+./data  - Object definitions (in YAML) to be used across ION (some object are resource objects)
+./services - Service definitions (in YAML), with implicit message object definitions
 
 Naming conventions:
 TBD

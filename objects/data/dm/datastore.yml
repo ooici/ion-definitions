@@ -1,2 +1,5 @@
 DataStore: !Extends_Resource
   type: ""
+
+PersistentArchive: !Extends_Resource
+  tbd: ""

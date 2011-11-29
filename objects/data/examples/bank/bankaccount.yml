@@ -1,5 +1,4 @@
 BankAccount: !Extends_Resource
-  owner: ""
   account_type: Checking
   cash_balance: 0.0
   bond_balance: 0.0

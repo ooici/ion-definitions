@@ -15,7 +15,7 @@ InstrumentModel:
   #This defines the characteristics of an instrument model
   model: ""
   manufacturer: ""
-  weight: 0
+  weight_kg: 0
   dimensions: "h x l x w"
   buoyancy: ""
 
@@ -36,5 +36,5 @@ SensorModel:
   #This defines the characteristics of an instrument model
   model: ""
   manufacturer: ""
-  weight: 0
+  weight_kg: 0
   dimensions: "h x l x w"

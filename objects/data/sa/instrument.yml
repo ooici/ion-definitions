@@ -20,6 +20,7 @@ InstrumentModel:
   buoyancy: ""
 
 InstrumentAgent: !Extends_Resource
+  driver: ""
   tbd: ""
 
 InstrumentAgentInstance: !Extends_Resource

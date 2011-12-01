@@ -35,8 +35,8 @@ AssociationTypes:
     domain: [MarineFacility, Site, PlatformLogical]
     range: [PlatformPhysical, PlatformLogical]
   hasAssignment:
-    domain: [PlatformPhysical, InstrumentPhysical]
-    range: [PlatformLogical, InstrumentLogical]
+    domain: [PlatformLogical, InstrumentLogical]
+    range: [PlatformPhysical, InstrumentPhysical]
   hasAgentInstance:
     domain: [PlatformPhysical, InstrumentPhysical]
     range: [PlatformAgentInstance,InstrumentAgentInstance]

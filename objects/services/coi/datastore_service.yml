@@ -190,9 +190,18 @@ methods:
 
   find_subjects:
     in:
-      object: ""
-      predicate: ""
       subject_type: ""
+      predicate: ""
+      object: ""
+      id_only: False
+    out:
+      list: []
+
+  find_associations:
+    in:
+      subject: ""
+      predicate: ""
+      object: ""
       id_only: False
     out:
       list: []

@@ -5,7 +5,7 @@ DataProduct: !Extends_Resource
   nominalmaxdatarate: 0
   nominalmindatarate: 0
   datarateunit: ""
-  datecreated: 2011-01-01
+#  datecreated: 2011-01-01
   creatorname: ""
   creatorurl: ""
   institution: ""

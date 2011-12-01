@@ -82,6 +82,14 @@ methods:
     out:
       list: []
 
+  get_association:
+    in:
+      subject: ""
+      predicate: ""
+      object: ""
+    out:
+      association: {}
+
   find_resources:
     in:
       restype: ""

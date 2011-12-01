@@ -117,3 +117,7 @@ AssociationTypes:
   hasLifecycle:
     domain: [Resource]
     range: [ResourceLifecycle]
+# Examples
+  hasAccount:
+    domain: [BankCustomer]
+    range: [BankAccount]

@@ -13,11 +13,11 @@ InstrumentDevice: !Extends_Resource
 
 InstrumentModel:
   #This defines the characteristics of an instrument model
-    model: ""
-    manufacturer: ""
-    weight: 0
-    dimensions: "h x l x w"
-    buoyancy: ""
+  model: ""
+  manufacturer: ""
+  weight: 0
+  dimensions: "h x l x w"
+  buoyancy: ""
 
 InstrumentAgent: !Extends_Resource
   tbd: ""
@@ -26,3 +26,15 @@ InstrumentAgentInstance: !Extends_Resource
   exchange_name: ""
   configuration: {}
 
+SensorDevice: !Extends_Resource
+  # This is the physical instrument
+  serialnumber: ""
+  description: ""
+
+
+SensorModel:
+  #This defines the characteristics of an instrument model
+  model: ""
+  manufacturer: ""
+  weight: 0
+  dimensions: "h x l x w"

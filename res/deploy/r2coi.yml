@@ -13,10 +13,10 @@ apps:
         type: CouchDB
         forceClean: true
 
-  - name: identity_registry
-    version: 0.1
-    processapp: [identity_registry, ion.services.coi.identity_registry_service, IdentityRegistryService]
-
   - name: resource_registry
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+
+  - name: identity_management
+    version: 0.1
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]

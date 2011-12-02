@@ -63,7 +63,7 @@ AssociationTypes:
     domain: [DataProcess]
     range: [Transform]
   hasStream:
-    domain: [DataProcess, DataProducer, Dataset, ExchangePoint ]
+    domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
     range: [Stream]
   hasOutStream:
     domain: [Transform]

@@ -47,6 +47,10 @@ apps:
             persistent: true
             force_clean: true
 
+  - name: identity_management
+    version: 0.1
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
+
   - name: bootstrap
     config:
       level: resource_registry

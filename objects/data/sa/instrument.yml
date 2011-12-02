@@ -20,7 +20,14 @@ InstrumentModel:
   buoyancy: ""
 
 InstrumentAgent: !Extends_Resource
-  tbd: ""
+  agent_version: ""
+  driver_module: ""
+  driver_class: ""
+  driver_client_module: ""
+  driver_class_client: ""
+  conection_method: ""
+  time_source: ""
+  event_publisher_origin: ""
 
 InstrumentAgentInstance: !Extends_Resource
   exchange_name: ""

@@ -11,6 +11,10 @@ InstrumentDevice: !Extends_Resource
   instrumentclass: ""
   sensors: []
 
+InstrumentDriver: !Extends_Resource
+  #This defines the name of an instrument driver that will be used by Inst. agent
+  
+
 InstrumentModel:
   #This defines the characteristics of an instrument model
   model: ""

@@ -1,0 +1,97 @@
+# Platform Management Service interface definition
+
+name: platform_management_service
+docstring: Manages physical platforms and platforms
+dependencies: [resource_registry]
+methods:
+  # -----------------
+  # Working with Physical Platform resources
+
+  create_platform_device:
+    in:
+      platform_device: !PlatformDevice
+    out:
+      platform_device_id: ""
+
+  update_platform_device:
+    in:
+      platform_device: !PlatformDevice
+    out:
+      success: True
+
+  read_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      platform_device: !PlatformDevice
+
+  delete_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      success: True
+
+  find_platform_devices:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_device_list: []
+
+  assign_platform_agent:
+    in:
+      platform_agent_id: ""
+      platform_id: ""
+      platform_agent_instance: !PlatformAgentInstance
+    out:
+      success: True
+
+  unassign_agent:
+    in:
+      platform_agent_id: ""
+      platform_id: ""
+    out:
+      success: True
+
+  create_platform_model:
+    in:
+      platform_model: !PlatformModel
+    out:
+      platform_model_id: ""
+
+  update_platform_model:
+    in:
+      platform_model: !PlatformModel
+    out:
+      success: True
+
+  read_platform_model:
+    in:
+      platform_model_id: ""
+    out:
+      platform_model: !PlatformModel
+
+  delete_platform_model:
+    in:
+      platform_model_id: ""
+    out:
+      success: True
+
+  find_platform_model:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_model_list: []
+
+  assign_platform_model:
+    in:
+      platform_model_id: ""
+      platform_device_id: ""
+    out:
+      success: True
+
+  unassign_platform_model:
+    in:
+      platform_model_id: ""
+      platform_device_id: ""
+    out:
+      success: True

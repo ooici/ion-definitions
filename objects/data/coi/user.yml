@@ -1,6 +1,4 @@
 UserInfo: !Extends_Resource
-  roles: ""
-  subjects: ""
   email: ""
   phone: ""
   variables:

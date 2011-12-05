@@ -4,9 +4,11 @@
 # - Define find query
 
 name: exchange_management
+docstring: 	The Exchange Management Service is the service that manages the Exchange and its associated resources.
 dependencies: [resource_registry]
 methods:
   create_exchange_space:
+    docstring: Creates an Exchange Space distributed resource from the parameter exchangespace object. Must be a uniquely named ExchangeSpace and must not already exist in the system.
     in:
       exchange_space: !ExchangeSpace
       org_id: ""
@@ -14,24 +16,28 @@ methods:
       exchange_space_id: ""
 
   update_exchange_space:
+    docstring: Updates an existing Exchange Space resource with data passed in as a parameter.
     in:
       exchange_space: !ExchangeSpace
     out:
       success: True
 
   read_exchange_space:
+    docstring: Returns an Exchange Space resource for the provided exchange space id.
     in:
       exchange_space_id: ""
     out:
       exchange_space: !ExchangeSpace
 
   delete_exchange_space:
+    docstring: Deletes an existing exchange space resource for the provided id.
     in:
       exchange_space_id: ""
     out:
       success: True
 
   find_exchange_spaces:
+    docstring: Returns a list of Exchange Space resources for the given Resource Filter.
     in:
       filters: !ResourceFilter
     out:
@@ -40,6 +46,7 @@ methods:
   # -----------------
 
   declare_exchange_name:
+    docstring: Create an Exchange Name resource resource
     in:
       exchange_name: !ExchangeName
       exchange_space_id: ""
@@ -47,6 +54,7 @@ methods:
       canonical_name: ""
 
   undeclare_exchange_name:
+    docstring: Remove an exhange nane resource
     in:
       canonical_name: ""
       exchange_space_id: ""
@@ -54,6 +62,7 @@ methods:
       success: True
 
   find_exchange_names:
+    docstring: Returns a list of exchange name resources for the given resource filter.
     in:
       filters: !ResourceFilter
     out:
@@ -62,6 +71,7 @@ methods:
   # -----------------
 
   create_exchange_point:
+    docstring: Create an exchange point resource within the exchange space provided by the id.
     in:
       exchange_point: !ExchangePoint
       exchange_space_id: ""
@@ -69,24 +79,28 @@ methods:
       exchange_point_id: ""
 
   update_exchange_point:
+     docstring: Update an existing exchange point resource.
     in:
       exchange_point: !ExchangePoint
     out:
       success: True
 
   read_exchange_point:
+    docstring: Return an existing exchange point resource.
     in:
       exchange_point_id: ""
     out:
       exchange_point: !ExchangePoint
 
   delete_exchange_point:
+    docstring: Delete an existing exchange point resource.
     in:
       exchange_point_id: ""
     out:
       success: True
 
   find_exchange_points:
+    docstring: Returns a list of exchange point resources for the provided resource filter.
     in:
       filters: !ResourceFilter
     out:
@@ -95,30 +109,35 @@ methods:
   # -----------------
 
   create_broker:
+    docstring: Creates an exchange broker resource
     in:
       broker: !ExchangeBroker
     out:
       broker_id: ""
 
   update_broker:
+    docstring: Updates an existing exchange broker resource.
     in:
       broker: !ExchangeBroker
     out:
       success: True
 
   read_broker:
+    docstring: Returns an existing exchange broker resource.
     in:
       broker_id: ""
     out:
       broker: !ExchangeBroker
 
   delete_broker:
+    docstring: Deletes an existing exchange broker resource.
     in:
       broker_id: ""
     out:
       success: True
 
   find_brokers:
+    docstring: Returns a list of exchange broker resources for the provided resource filter.
     in:
       filters: !ResourceFilter
     out:

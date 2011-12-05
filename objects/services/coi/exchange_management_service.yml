@@ -4,11 +4,11 @@
 # - Define find query
 
 name: exchange_management
-docstring: 	The Exchange Management Service is the service that manages the Exchange and its associated resources.
+docstring: The Exchange Management Service is the service that manages the Exchange and its associated resources.
 dependencies: [resource_registry]
 methods:
   create_exchange_space:
-    docstring: Creates an Exchange Space distributed resource from the parameter exchangespace object. Must be a uniquely named ExchangeSpace and must not already exist in the system.
+    docstring: Creates an Exchange Space distributed resource from the parameter exchangespace object. 
     in:
       exchange_space: !ExchangeSpace
       org_id: ""
@@ -79,7 +79,7 @@ methods:
       exchange_point_id: ""
 
   update_exchange_point:
-     docstring: Update an existing exchange point resource.
+    docstring: Update an existing exchange point resource.
     in:
       exchange_point: !ExchangePoint
     out:

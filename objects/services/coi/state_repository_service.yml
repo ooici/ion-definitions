@@ -5,9 +5,9 @@ methods:
   read:
     docstring: Reads a process state object from the repository when initiating a process
     in:
-      object_id: ""
+      process_state_id: ""
     out:
-      object: !ProcessState
+      process_state: !ProcessState
 
   write:
     docstring: Writes a process state object from the repository when ending a process.

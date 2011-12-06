@@ -6,6 +6,7 @@ methods:
   create_data_product:
     in:
       data_product: !DataProduct
+      data_producer: !DataProducer
     out:
       data_product_id: ""
 

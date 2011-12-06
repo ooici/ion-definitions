@@ -1,0 +1,5 @@
+ExternalDataProvider: !Extends_Resource
+  institution_website: ""
+
+ExternalDataSet: !Extends_Resource
+  update_description: ""

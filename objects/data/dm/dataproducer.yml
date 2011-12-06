@@ -1,2 +1,6 @@
 DataProducer: !Extends_Resource
-  tbd: ""
+  stream_id: ""
+  routing_key: ""
+  exchange_name: ""
+  credentials: {}
+  

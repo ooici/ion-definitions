@@ -11,3 +11,9 @@ SampleObject:
     a: 1
     b: 2
     _default: a
+
+SampleResource: !Extends_Resource
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}

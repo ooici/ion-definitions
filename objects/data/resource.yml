@@ -6,8 +6,8 @@ Resource:
   name: ""
   description: ""
   lcstate: "NEW"
-  date_created: 0
-  date_updated: 0
+  ts_created: 0  # Timestamp in current
+  ts_updated: 0
 
 ---
 

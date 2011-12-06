@@ -2,7 +2,7 @@
 
 name: instrument_management_service
 docstring: Manages physical instruments and platforms
-dependencies: [resource_registry]
+dependencies: [resource_registry, data_acquisition_management]
 methods:
   # -----------------
   # Working with Physical Instrument resources

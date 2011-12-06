@@ -37,17 +37,17 @@ methods:
   # -----------------
   # Working with external identities
 
-  register_user_credential:
+  register_user_credentials:
     in:
       user_id: ""
-      credential: !UserCredential
+      credentials: !UserCredentials
     out:
       success: True
 
-  unregister_user_credential:
+  unregister_user_credentials:
     in:
       user_id: ""
-      credential_name: ""
+      credentials_name: ""
     out:
       success: True
 
@@ -79,19 +79,19 @@ methods:
     out:
       success: True
 
-  find_userinfo_by_id:
+  find_user_info_by_id:
     in:
       user_id: ""
     out:
       user_info: !UserInfo
 
-  find_userinfo_by_name:
+  find_user_info_by_name:
     in:
       name: ""
     out:
       user_info: !UserInfo
 
-  find_userinfo_by_subject:
+  find_user_info_by_subject:
     in:
       subject: ""
     out:

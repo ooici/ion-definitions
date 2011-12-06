@@ -2,7 +2,7 @@ UserIdentity: !Extends_Resource
   # An OOI internal user identity
   tbd: ""
 
-UserCredential: !Extends_Resource
+UserCredentials: !Extends_Resource
   # An external user identity.  In the case
   # of CILogon, the identity is the subject
   # from the X.509 certificate.

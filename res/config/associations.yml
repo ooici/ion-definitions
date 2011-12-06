@@ -95,7 +95,7 @@ AssociationTypes:
     range: [ExchangeName]
   hasCredentials:
     domain: [UserIdentity]
-    range: [UserCredential]
+    range: [UserCredentials]
   hasInfo:
     domain: [UserIdentity]
     range: [UserInfo]

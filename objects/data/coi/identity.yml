@@ -3,11 +3,11 @@ UserIdentity: !Extends_Resource
   tbd: ""
 
 UserCredentials: !Extends_Resource
-  # An external user identity with credentials.
-  # Use name for external ID
+  # An external user identity.  In the case
+  # of CILogon, the identity is the subject
+  # from the X.509 certificate.
+  # The identity is stored in the name field.
   identity_provider: "CIlogon"
-  public_key: {}
-  private_key: {}
 
 ResourceIdentity: !Extends_Resource
   # An OOI resource identity

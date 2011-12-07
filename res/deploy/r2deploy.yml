@@ -51,6 +51,14 @@ apps:
     config:
       level: resource_registry
 
+  - name: identity_management
+    version: 0.1
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
+
+  - name: bootstrap
+    config:
+      level: identity_management
+
   - name: org_management
     version: 0.1
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]

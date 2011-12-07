@@ -1,0 +1,48 @@
+name: resource_agent
+docstring: Behaviors for any resource agent
+dependencies: []
+methods:
+  # -----------------
+  # Governance interface
+
+  negotiate:
+    in:
+      sap_in: !ServiceAgreementProposal
+    out:
+      sap_out: !ServiceAgreementProposal
+
+  # -----------------
+  # Capabilities interface
+
+  get_capabilities:
+    in:
+    out:
+
+  # -----------------
+  # Resource control interface
+
+  execute:
+    in:
+      command: !AgentCommand
+    out:
+      result:
+
+  get_param:
+    in:
+    out:
+
+  set_param:
+    in:
+    out:
+
+  # -----------------
+  # Resource monitor interface
+
+  emit:
+    docstring: This operation is never called; the return represents published event notifications
+    in:
+    out:
+      event: !AgentNotification
+
+  # -----------------
+  # Agent control interface

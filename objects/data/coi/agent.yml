@@ -4,3 +4,46 @@ AgentDefinition: !Extends_Resource
 AgentInstance: !Extends_Resource
   exchange_name: ""
   configuration: {}
+
+AgentCapability:
+  name: ""
+  cap_type: ""
+  restrictions: {}
+
+# Enumeration of agent capability types
+CAP_TYPES:
+  CONV_TYPE: CONV_TYPE
+  AGT_CMD: AGT_CMD
+  AGT_PAR: AGT_PAR
+  RES_CMD: RES_CMD
+  RES_PAR: RES_PAR
+
+ServiceAgreementProposal:
+  sap_id: ""
+  sequence_num: 0
+  target_resource_ids: []
+  conditions: {}
+  clauses: {}
+
+AgentCommand:
+  command_id: ""
+  command: ""
+  resource_id: ""
+  args: []
+  kwargs: {}
+
+AgentCommandResult:
+  command_id: ""
+  command: ""
+  resource_id: ""
+  ts_execute: ""
+  status: ""
+  result: []
+
+AgentNotification:
+  agent_id: ""
+  resource_id: ""
+  event_type: ""
+  ts_event: ""
+  args: {}
+

@@ -1,11 +1,13 @@
 # Data Process Management Service interface definition
 
 name: data_process_management
-dependencies: [resource_registry]
+dependencies: [resource_registry, data_product_management, transform_management_service]
 methods:
   create_data_process:
     in:
       data_process: !DataProcess
+      data_product_in: []
+      data_product_out: !DataProduct
     out:
       data_process_id: ""
 

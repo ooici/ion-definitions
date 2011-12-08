@@ -1,61 +1,107 @@
 # Resource Registry Service interface definition
 
+docstring: |
+  Service used to create, read, update and delete resources
+  (IonObjects).  Additionally, provides methods to manipulate
+  resource associations.
 name: resource_registry
 dependencies: []
 methods:
   create:
+    docstring: |
+      Persist an instance of the resource passed in the object param.
     in:
       object: {}
     out:
       tuple: []
 
   read:
+    docstring: |
+      Read the latest, or optionally the specific, version of resource
+      with id passed in the object_id param. Throws exception if
+      object not found.
     in:
       object_id: ""
       rev_id: ""
     out:
       object: {}
+    throws:
+      NotFound: object with specified id does not exist
 
   update:
+    docstring: |
+      Persist new version of resource. Throws exception if previous
+      version of object does not exist or object passed is not based
+      on the latest persisted version.
     in:
       object: {}
     out:
       tuple: []
+    throws:
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   delete:
+    docstring: |
+      For now, permanently delete object and all previous versions of
+      object. Throws exception if object does not exist.
     in:
       object: {}
     out:
-      status: True
+    throws:
+      NotFound: object does not exist
 
   # -----------------
 
   execute_lifecycle_transition:
+    docstring: |
+      Alter object lifecycle. Throws exception if object does not exist.
     in:
       resource_id: ""
       lcstate: ""
     out:
-      status: True
+    throws:
+      NotFound: object does not exist
 
   # -----------------
 
   create_association:
+    docstring: |
+      Create an association between subject and object resources (IonObjects).
+      Subject and object values can be passed as actual object instances or just
+      object ids.  Valid predicates can be found in res/config/associations.yml.
+      Subject and object must be of the proper types for the predicate or
+      an exception will be thrown.
     in:
       subject:
       predicate:
       object:
     out:
       tuple: []
+    throws:
+      NotFound: subject or object does not exist
+      BadRequest: predicate is unknown or subject or object are invalid types for predicate
+      
 
   delete_association:
+    docstring: |
+      For now, permanently delete an association between two resources (IonObjects).
+      Throws exception if association does not exist.
     in:
       association: ""
     out:
-      status: True
+    throws:
+      NotFound: association does not exist
 
   # -----------------
 
   find_objects:
+    docstring: |
+        Find objects (or object ids) by association from a given subject or
+        subject id (if str). Returns a tuple (list_of_objects, list_of_associations)
+        if id_only == False, or (list_of_object_ids, list_of_associations)
+        if id_only == True. Predicate and object_type are optional to narrow the
+        search down. Object_type can only be set if predicate is set as well.
     in:
       subject: ""
       predicate: ""
@@ -65,6 +111,12 @@ methods:
       list: []
 
   find_subjects:
+    docstring: |
+        Find subjects (or subject ids) by association from a given object or
+        object id (if str). Returns a tuple (list_of_subjects, list_of_associations)
+        if id_only == False, or (list_of_subject_ids, list_of_associations)
+        if id_only == True. Predicate and subject_type are optional to narrow the
+        search down. Subject_type can only be set if predicate is set as well.
     in:
       subject_type: ""
       predicate: ""
@@ -74,6 +126,10 @@ methods:
       list: []
 
   find_associations:
+    docstring: |
+        Find associations by subject, predicate, object. Either subject and
+        predicate have to be provided or predicate only. Returns either a list
+        of associations or a list of association ids.
     in:
       subject: ""
       predicate: ""
@@ -83,14 +139,28 @@ methods:
       list: []
 
   get_association:
+    docstring: |
+      Read the association specified by the exact subject, predicate, object
+      tuple.  Throws exception if association not found or more than one
+      association satisfies the tuple.
     in:
       subject: ""
       predicate: ""
       object: ""
     out:
       association: {}
+    throws:
+      NotFound: association does not exist
+      Inconsistent: multiple associations satisfy the subject, predicate, object tuple
 
   find_resources:
+    docstring: |
+      Utility method for finding resources via various attributes.  Legal attribute
+      combinations are:
+        name, restype
+        restype, lcstate
+        restype,
+        lcstate
     in:
       restype: ""
       lcstate: ""

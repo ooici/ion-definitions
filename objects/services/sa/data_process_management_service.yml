@@ -6,8 +6,8 @@ methods:
   create_data_process:
     in:
       data_process: !DataProcess
-      data_product_in: []
-      data_product_out: !DataProduct
+      in_subscription_id: ""
+      out_data_product_id: ""
     out:
       data_process_id: ""
 

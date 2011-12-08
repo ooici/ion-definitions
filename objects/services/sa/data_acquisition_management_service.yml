@@ -53,7 +53,7 @@ methods:
     in:
       data_source_id: ""
     out:
-      data_source_id: ""
+      data_producer_id: ""
 
   unregister_data_source:
     in:

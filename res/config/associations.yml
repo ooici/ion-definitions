@@ -7,7 +7,7 @@ AssociationTypes:
   hasChildDataProducer:
     domain: [DataProducer]
     range: [DataProducer]
-  hasInputDataProcer:
+  hasInputDataProducer:
     domain: [DataProducer]
     range: [DataProducer]
   hasDataset:

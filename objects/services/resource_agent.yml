@@ -2,6 +2,7 @@
 
 name: resource_agent
 docstring: Behaviors for any resource agent
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Resource+Agent
 dependencies: [directory]
 methods:
   # -----------------
@@ -27,17 +28,23 @@ methods:
   # Resource control interface
 
   execute:
+    docstring: Execute a command on the resource represented by the agent
     in:
       command: !AgentCommand
     out:
       result: !AgentCommandResult
+    throws:
+      BadRequest: if the command was malformed
+      NotFound: if the command is not implemented in the agent
 
   get_param:
+    docstring: Get the value of the given resource parameter
     in:
       name: ""
-      value: ""
     out:
       value: ""
+    throws:
+      NotFound: if the parameter does not exist
 
   set_param:
     in:
@@ -45,6 +52,8 @@ methods:
       value: ""
     out:
       prior_value: ""
+    throws:
+      NotFound: if the parameter does not exist
 
   # -----------------
   # Resource monitor interface
@@ -67,9 +76,10 @@ methods:
   get_agent_param:
     in:
       name: ""
-      value: ""
     out:
       value: ""
+    throws:
+      NotFound: if the parameter does not exist
 
   set_agent_param:
     in:
@@ -77,3 +87,5 @@ methods:
       value: ""
     out:
       prior_value: ""
+    throws:
+      NotFound: if the parameter does not exist

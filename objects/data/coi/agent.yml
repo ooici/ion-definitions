@@ -28,14 +28,12 @@ ServiceAgreementProposal:
 AgentCommand:
   command_id: ""
   command: ""
-  resource_id: ""
   args: []
   kwargs: {}
 
 AgentCommandResult:
   command_id: ""
   command: ""
-  resource_id: ""
   ts_execute: ""
   status: ""
   result: []

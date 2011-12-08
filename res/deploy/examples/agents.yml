@@ -1,0 +1,21 @@
+type: release
+name: agents
+version: 0.1
+description: Demo agents
+ion: 0.0.1
+apps:
+  - name: res_agent_1
+    description: Resource agent 1
+    version: 0.1
+    processapp: [res_agent_1, examples.agent.agents, ResAgentOne]
+    config:
+      process:
+        type: agent
+
+  - name: res_agent_2
+    description: Resource agent 2
+    version: 0.1
+    processapp: [res_agent_2, examples.agent.agents, ResAgentTwo]
+    config:
+      process:
+        type: agent

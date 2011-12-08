@@ -1,6 +1,8 @@
+# Resource agent interface definition
+
 name: resource_agent
 docstring: Behaviors for any resource agent
-dependencies: []
+dependencies: [directory]
 methods:
   # -----------------
   # Governance interface
@@ -16,7 +18,10 @@ methods:
 
   get_capabilities:
     in:
+      # Leave types default for all
+      capability_types: []
     out:
+      capability_list: []
 
   # -----------------
   # Resource control interface
@@ -25,15 +30,21 @@ methods:
     in:
       command: !AgentCommand
     out:
-      result:
+      result: !AgentCommandResult
 
   get_param:
     in:
+      name: ""
+      value: ""
     out:
+      value: ""
 
   set_param:
     in:
+      name: ""
+      value: ""
     out:
+      prior_value: ""
 
   # -----------------
   # Resource monitor interface
@@ -46,3 +57,23 @@ methods:
 
   # -----------------
   # Agent control interface
+
+  execute_agent:
+    in:
+      command: !AgentCommand
+    out:
+      result: !AgentCommandResult
+
+  get_agent_param:
+    in:
+      name: ""
+      value: ""
+    out:
+      value: ""
+
+  set_agent_param:
+    in:
+      name: ""
+      value: ""
+    out:
+      prior_value: ""

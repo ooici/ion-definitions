@@ -1,0 +1,10 @@
+ExternalDataset: !Extends_Resource
+  dataset_description: ""
+  update_description: ""
+  dataset_path: ""
+  temporal_id: ""
+  last_signature: None
+  contact_name: ""
+  contact_phone: ""
+  contact_email: ""
+  contact_address: ""

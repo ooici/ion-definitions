@@ -1,0 +1,8 @@
+ExternalDataSource: !Extends_Resource
+  protocol_type: ""
+  base_data_url: ""
+  webpage: ""
+  contact_name: ""
+  contact_phone: ""
+  contact_email: ""
+  contact_address: ""

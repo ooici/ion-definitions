@@ -1,0 +1,4 @@
+ExternalDataResource: !Extends_Resource
+  data_provider_id: None
+  data_source_id: None
+  dataset_id: None

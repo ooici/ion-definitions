@@ -1,0 +1,8 @@
+ExternalDataRequest:
+  start_time: None
+  end_time: None
+  bbox:
+    lower_left_x: -999.99
+    lower_left_y: -999.99
+    upper_right_x: -999.99
+    upper_right_y: -999.99

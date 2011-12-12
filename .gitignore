@@ -3,4 +3,4 @@ res/config/pyon.local.yml
 res/config/logging.local.yml
 *.swp
 *.*.swp
-
+.DS_Store

@@ -37,6 +37,49 @@ methods:
     out:
       instrument_device_list: []
 
+  plan_instrument_device:
+    in:
+      name: ""
+      description: ""
+      instrument_model_id: ""
+    out:
+      instrument_device_id: ""
+
+  acquire_instrument_device:
+    in:
+      instrument_device_id: ""
+      serialnumber: ""
+      firmwareversion: ""
+      hardwareversion: ""
+    out:
+      success: True
+
+  develop_instrument_device:
+    in:
+      instrument_device_id: ""
+      instrument_agent_id: ""
+    out:
+      success: True
+
+  activate_instrument_device:
+    in:
+      instrument_device_id: ""
+      instrument_agent_instance_id: ""
+    out:
+      success: True
+
+  deactivate_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      success: True
+
+  retire_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      success: True
+
   assign_instrument_device:
     in:
       instrument_id: ""
@@ -47,12 +90,6 @@ methods:
   unassign_instrument_device:
     in:
       instrument_id: ""
-      instrument_device_id: ""
-    out:
-      success: True
-
-  activate_instrument_device:
-    in:
       instrument_device_id: ""
     out:
       success: True

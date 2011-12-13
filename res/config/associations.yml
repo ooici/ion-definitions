@@ -14,7 +14,7 @@ AssociationTypes:
     domain: [DataProducer, DataProduct]
     range: [Dataset]
   hasDataProducer:
-    domain: [DataProduct, InstrumentPhysical]
+    domain: [DataProduct, InstrumentDevice]
     range: [DataProducer]
   hasInputProduct:
     domain: [DataProcess]
@@ -28,23 +28,26 @@ AssociationTypes:
   hasSite:
     domain: [MarineFacility, Site]
     range: [Site]
+  hasInstrument:
+    domain: [PlatformDevice]
+    range: [InstrumentDevice]
   hasModel:
-    domain: [PlatformPhysical, InstrumentPhysical, Sensor]
+    domain: [PlatformDevice, InstrumentDevice, Sensor]
     range: [PlatformModel, InstrumentModel, SensorModel]
   hasPlatform:
     domain: [MarineFacility, Site, PlatformLogical]
-    range: [PlatformPhysical, PlatformLogical]
+    range: [PlatformDevice, PlatformLogical]
   hasAssignment:
-    domain: [PlatformPhysical, InstrumentPhysical]
+    domain: [PlatformDevice, InstrumentDevice]
     range: [PlatformLogical, InstrumentLogical]
   hasAgentInstance:
-    domain: [PlatformPhysical, InstrumentPhysical]
+    domain: [PlatformDevice, InstrumentDevice]
     range: [PlatformAgentInstance,InstrumentAgentInstance]
   hasInstance:
     domain: [PlatformAgent, InstrumentAgent]
     range: [PlatformAgentInstance, InstrumentAgentInstance]
   hasSensor:
-    domain: [InstrumentPhysical]
+    domain: [InstrumentDevice]
     range: [Sensor]
 # DM
   hasCatalog:

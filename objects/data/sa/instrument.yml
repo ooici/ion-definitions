@@ -5,7 +5,6 @@ InstrumentDevice: !Extends_Resource
   # This is the physical instrument
   serialnumber: ""
   description: ""
-  instrumentModel: ""
   firmwareversion: ""
   hardwareversion: ""
   instrumentclass: ""

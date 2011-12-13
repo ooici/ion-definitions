@@ -31,6 +31,9 @@ AssociationTypes:
   hasModel:
     domain: [PlatformPhysical, InstrumentPhysical, Sensor]
     range: [PlatformModel, InstrumentModel, SensorModel]
+  hasInstrument:
+    domain: [PlatformPhysical]
+    range: [InstrumentPhysical]
   hasPlatform:
     domain: [MarineFacility, Site, PlatformLogical]
     range: [PlatformPhysical, PlatformLogical]

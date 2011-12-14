@@ -12,7 +12,7 @@ DataProduct: !Extends_Resource
   project: ""
   geospatiallatmin: 0
   geospatiallatmax: 0
-  geospatiallat units: ""
+  geospatiallatunits: ""
   geospatiallatresolution: 0
   geospatiallonmin: 0
   geospatiallonmax: 0

@@ -106,14 +106,6 @@ methods:
     out:
       success: True
 
-  request_command:
-    # MM: Not sure what this is?
-    in:
-      instrument_device_id: ""
-      command: {}
-    out:
-      success: True
-
   assign_instrument_agent:
     in:
       instrument_agent_id: ""

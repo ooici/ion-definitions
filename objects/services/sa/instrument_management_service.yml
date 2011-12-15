@@ -106,14 +106,6 @@ methods:
     out:
       success: True
 
-  request_command:
-    # MM: Not sure what this is?
-    in:
-      instrument_device_id: ""
-      command: {}
-    out:
-      success: True
-
   assign_instrument_agent:
     in:
       instrument_agent_id: ""
@@ -153,7 +145,7 @@ methods:
     out:
       success: True
 
-  find_instrument_model:
+  find_instrument_models:
     in:
       filters: !ResourceFilter
     out:
@@ -202,7 +194,7 @@ methods:
     out:
       success: True
 
-  find_sensor_device:
+  find_sensor_devices:
     in:
       filters: !ResourceFilter
     out:
@@ -232,7 +224,7 @@ methods:
     out:
       success: True
 
-  find_sensor_model:
+  find_sensor_models:
     in:
       filters: !ResourceFilter
     out:
@@ -324,7 +316,7 @@ methods:
     out:
       success: True
 
-  find_platform_model:
+  find_platform_models:
     in:
       filters: !ResourceFilter
     out:

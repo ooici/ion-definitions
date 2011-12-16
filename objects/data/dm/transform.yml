@@ -1,2 +1,5 @@
 Transform: !Extends_Resource
-  tbd: ""
+  atbd_reference: ""
+  sourcecode: ""
+  in_subscription_id: ""
+  out_data_product_id: ""

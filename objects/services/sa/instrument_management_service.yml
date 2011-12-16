@@ -285,7 +285,7 @@ methods:
     out:
       success: True
 
-  unassign_agent:
+  unassign_platform_agent:
     in:
       platform_agent_id: ""
       platform_id: ""

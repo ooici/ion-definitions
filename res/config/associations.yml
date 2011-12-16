@@ -32,7 +32,7 @@ AssociationTypes:
     domain: [PlatformDevice]
     range: [InstrumentDevice]
   hasModel:
-    domain: [PlatformDevice, InstrumentDevice, Sensor]
+    domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent]
     range: [PlatformModel, InstrumentModel, SensorModel]
   hasPlatform:
     domain: [MarineFacility, Site, PlatformLogical]

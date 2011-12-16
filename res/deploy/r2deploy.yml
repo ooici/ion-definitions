@@ -117,7 +117,6 @@ apps:
         #hostname: localhost
 
   #### CEI Services
-
   - name: epu_management
     version: 0.1
     processapp: [epu_management, ion.services.cei.epu_management_service, EpuManagementService]

@@ -170,6 +170,7 @@ methods:
       subject:
       predicate:
       object:
+      assoc_type:
     out:
       tuple: []
 

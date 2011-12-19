@@ -1,0 +1,38 @@
+# capability container service definition
+
+name: container_agent
+docstring: The base Capability Container service interface
+dependencies: []
+methods:
+  spawn_process:
+    in:
+      name:
+      module:
+      cls:
+      config:
+    out:
+      success: True
+
+  start_app:
+    in:
+      appdef:
+      config:
+
+  start_app_from_url:
+    in:
+      app_url: ""
+    out:
+      success: True
+
+  start_rel:
+    in:
+      rel:
+
+  start_rel_from_url:
+    in:
+      rel_url: ""
+    out:
+      success: True
+
+  stop:
+

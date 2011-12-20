@@ -10,7 +10,7 @@ InstrumentDevice: !Extends_Resource
   instrumentclass: ""
   sensors: []
 
-InstrumentModel:
+InstrumentModel: !Extends_Resource
   #This defines the characteristics of an instrument model
   model: ""
   manufacturer: ""
@@ -38,7 +38,7 @@ SensorDevice: !Extends_Resource
   description: ""
 
 
-SensorModel:
+SensorModel: !Extends_Resource
   #This defines the characteristics of an instrument model
   model: ""
   manufacturer: ""

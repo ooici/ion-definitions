@@ -10,7 +10,7 @@ InstrumentDevice: !Extends_TaskableResource
   instrumentclass: ""
   sensors: []
 
-InstrumentModel:
+InstrumentModel: !Extends_InformationResource
   #This defines the characteristics of an instrument model
   model: ""
   manufacturer: !Institution
@@ -38,7 +38,7 @@ SensorDevice: !Extends_TaskableResource
   description: ""
 
 
-SensorModel:
+SensorModel: !Extends_InformationResource
   #This defines the characteristics of an instrument model
   model: ""
   manufacturer: !Institution

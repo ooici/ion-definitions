@@ -35,6 +35,40 @@ methods:
     out:
       data_process_list: []
 
+  create_data_process:
+    in:
+      data_process: !DataProcess
+      in_subscription_id: ""
+      out_data_product_id: ""
+    out:
+      data_process_id: ""
+
+  # -----------------
+
+  update_data_process_definition:
+    in:
+      data_process_definition: !DataProcessDefinition
+    out:
+      success: True
+
+  read_data_process_definition:
+    in:
+      data_process_definition_id: ""
+    out:
+      data_process: !DataProcessDefinition
+
+  delete_data_process_definition:
+    in:
+      data_process_definition_id: ""
+    out:
+      success: True
+
+  find_data_process_definition:
+    in:
+      filters: !ResourceFilter
+    out:
+      data_process_definition_list: []
+
   # -----------------
 
   attach_process:

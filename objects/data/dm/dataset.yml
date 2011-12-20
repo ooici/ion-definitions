@@ -1,15 +1,7 @@
-DataSet: !Extends_Resource
+DataSet: !Extends_InformationResource
   last_modified: ""
-  contact_institution: ""
-  contact_name: ""
-  contact_email: ""
-  min_latitude: -180
-  max_latitude: 180
-  min_longitude: -90
-  max_longitude: 90
-  upper_bound: -1
-  lower_bound: -1
-  vertical_positive: ""
+  contact: !ContactInformation
+  geospatialbounds: !GeospatialBounds
   min_datetime: ""
   max_datetime: ""
   variables: []

@@ -1,8 +1,8 @@
-StreamTopology: !Extends_Resource
+StreamTopology: !Extends_InformationResource
   topology_type: "topic_tree"
   dimensions: []
 
-Stream: !Extends_Resource
+Stream: !Extends_InformationResource
   irl: ""
   #startdate: 2011-01-01
   #enddate: 2011-01-01

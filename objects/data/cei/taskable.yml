@@ -12,5 +12,5 @@ EPURequest:
   parameters: {}
   config: {}
 
-ResourceAgentType: !Extends_Resource
+ResourceAgentType: !Extends_InformationResource
   tbd: ""

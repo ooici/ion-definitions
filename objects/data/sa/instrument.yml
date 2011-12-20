@@ -1,7 +1,7 @@
-LogicalInstrument: !Extends_Resource
+LogicalInstrument: !Extends_InformationResource
   # This is the logical instrument that is part of the observatory
 
-InstrumentDevice: !Extends_Resource
+InstrumentDevice: !Extends_TaskableResource
   # This is the physical instrument
   serialnumber: ""
   description: ""
@@ -13,12 +13,12 @@ InstrumentDevice: !Extends_Resource
 InstrumentModel:
   #This defines the characteristics of an instrument model
   model: ""
-  manufacturer: ""
+  manufacturer: !Institution
   weight: 0
   dimensions: "h x l x w"
   buoyancy: ""
 
-InstrumentAgent: !Extends_Resource
+InstrumentAgent: !Extends_InformationResource
   agent_version: ""
   driver_module: ""
   driver_class: ""
@@ -28,11 +28,11 @@ InstrumentAgent: !Extends_Resource
   time_source: ""
   event_publisher_origin: ""
 
-InstrumentAgentInstance: !Extends_Resource
+InstrumentAgentInstance: !Extends_TaskableResource
   exchange_name: ""
   configuration: {}
 
-SensorDevice: !Extends_Resource
+SensorDevice: !Extends_TaskableResource
   # This is the physical instrument
   serialnumber: ""
   description: ""
@@ -41,6 +41,6 @@ SensorDevice: !Extends_Resource
 SensorModel:
   #This defines the characteristics of an instrument model
   model: ""
-  manufacturer: ""
+  manufacturer: !Institution
   weight: 0
   dimensions: "h x l x w"

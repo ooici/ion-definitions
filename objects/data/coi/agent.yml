@@ -1,7 +1,7 @@
-AgentDefinition: !Extends_Resource
+AgentDefinition: !Extends_InformationResource
   definition: ""
 
-AgentInstance: !Extends_Resource
+AgentInstance: !Extends_InformationResource
   exchange_name: ""
   configuration: {}
 

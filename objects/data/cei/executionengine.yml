@@ -1,6 +1,6 @@
-ExecutionEngineDefinition: !Extends_Resource
+ExecutionEngineDefinition: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
-ExecutionEngine: !Extends_Resource
+ExecutionEngine: !Extends_TaskableResource
   tbd: ""

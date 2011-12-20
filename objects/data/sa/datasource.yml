@@ -1,10 +1,7 @@
-DataSource: !Extends_Resource
+DataSource: !Extends_InformationResource
   type: ""
   connection_params: {}
   protocol_type: ""
   base_data_url: ""
-  webpage: ""
-  contact_name: ""
-  contact_phone: ""
-  contact_email: ""
-  contact_address: ""
+  institution: !Institution
+  contact: !ContactInformation

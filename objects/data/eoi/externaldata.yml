@@ -1,20 +1,12 @@
-ExternalDataProvider: !Extends_Resource
-  institution_name: ""
-  institution_id: ""
-  institution_webpage: ""
-  contact_name: ""
-  contact_phone: ""
-  contact_email: ""
-  contact_address: ""
+ExternalDataProvider: !Extends_InformationResource
+  institution: !Institution
+  contact: !ContactInformation
 
-ExternalDataset: !Extends_Resource
+ExternalDataset: !Extends_InformationResource
   dataset_description: ""
   update_description: ""
   dataset_path: ""
   temporal_id: ""
   last_signature: None
-  contact_name: ""
-  contact_phone: ""
-  contact_email: ""
-  contact_address: ""
+  contact: !ContactInformation
   

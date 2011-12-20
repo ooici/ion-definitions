@@ -1,6 +1,7 @@
-MarineFacility: !Extends_Resource
-  tbd: ""
+MarineFacility: !Extends_InformationResource
+  institution: !Institution
+  contact: !ContactInformation
 
-Site: !Extends_Resource
+Site: !Extends_InformationResource
   site_type: ""
   location: ""

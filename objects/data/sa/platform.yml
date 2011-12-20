@@ -1,4 +1,4 @@
-LogicalPlatform: !Extends_Resource
+LogicalPlatform: !Extends_InformationResource
   datatelemetry: ""
   datatelemetrysystem: ""
   buoyname: ""
@@ -13,16 +13,17 @@ LogicalPlatform: !Extends_Resource
   controllerports: []
   controllerpowerconsumption: ""
 
-PlatformDevice: !Extends_Resource
+PlatformDevice: !Extends_TaskableResource
   # This is the physical platform
   serial_number: ""
 
-PlatformModel: !Extends_Resource
+PlatformModel: !Extends_InformationResource
+  tbd: ""
+  manufacturer: !Institution
+
+PlatformAgent: !Extends_InformationResource
   tbd: ""
 
-PlatformAgent: !Extends_Resource
-  tbd: ""
-
-PlatformAgentInstance: !Extends_Resource
+PlatformAgentInstance: !Extends_TaskableResource
   exchange_name: ""
   configuration: {}

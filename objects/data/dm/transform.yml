@@ -1,4 +1,4 @@
-Transform: !Extends_Resource
+Transform: !Extends_InformationResource
   atbd_reference: ""
   sourcecode: ""
   in_subscription_id: ""

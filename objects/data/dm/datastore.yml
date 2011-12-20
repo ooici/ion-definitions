@@ -1,5 +1,5 @@
-DataStore: !Extends_Resource
+DataStore: !Extends_InformationResource
   type: ""
 
-PersistentArchive: !Extends_Resource
+PersistentArchive: !Extends_InformationResource
   tbd: ""

@@ -1,11 +1,11 @@
-Conversation: !Extends_Resource
+Conversation: !Extends_InformationResource
   tbd: ""
 
-ConversationType: !Extends_Resource
+ConversationType: !Extends_InformationResource
   definition_type: ""
   definition: ""
 
-ConverationRole: !Extends_Resource
+ConverationRole: !Extends_InformationResource
   tbd: ""
 
 ConverationRoleBinding:

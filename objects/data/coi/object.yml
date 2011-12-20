@@ -1,6 +1,6 @@
-ObjectType: !Extends_Resource
+ObjectType: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
-Collection: !Extends_Resource
+Collection: !Extends_InformationResource
   tbd: ""

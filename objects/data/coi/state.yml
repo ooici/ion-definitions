@@ -1,2 +1,2 @@
-ProcessState: !Extends_Resource
+ProcessState: !Extends_InformationResource
   tbd: ""

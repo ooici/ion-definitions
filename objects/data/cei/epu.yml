@@ -1,11 +1,11 @@
-EPUDefinition: !Extends_Resource
+EPUDefinition: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
-EPU: !Extends_Resource
+EPU: !Extends_TaskableResource
   tbd: ""
 
-DeployableType: !Extends_Resource
+DeployableType: !Extends_InformationResource
   tbd: ""
 
 DeployableUnit:

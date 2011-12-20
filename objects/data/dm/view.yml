@@ -1,2 +1,2 @@
-View: !Extends_Resource
+View: !Extends_InformationResource
   function: ""

@@ -1,6 +1,5 @@
-UserInfo: !Extends_Resource
-  email: ""
-  phone: ""
+UserInfo: !Extends_InformationResource
+  contact: !ContactInformation
   variables:
   - name: ""
     value: ""

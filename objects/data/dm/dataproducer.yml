@@ -1,4 +1,4 @@
-DataProducer: !Extends_Resource
+DataProducer: !Extends_InformationResource
   stream_id: ""
   routing_key: ""
   exchange_name: ""

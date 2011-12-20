@@ -1,7 +1,7 @@
-UserRole: !Extends_Resource
+UserRole: !Extends_InformationResource
   tbd: ""
 
-Policy: !Extends_Resource
+Policy: !Extends_InformationResource
   definition_type: ""
   definition: {}
 

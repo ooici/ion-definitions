@@ -1,12 +1,12 @@
-ExchangeSpace: !Extends_Resource
+ExchangeSpace: !Extends_InformationResource
   tbd: ""
 
-ExchangeName: !Extends_Resource
+ExchangeName: !Extends_InformationResource
   xn_type: "entity"
 
-ExchangePoint: !Extends_Resource
+ExchangePoint: !Extends_InformationResource
   topology_type: "topic_tree"
 
-ExchangeBroker: !Extends_Resource
+ExchangeBroker: !Extends_InformationResource
   impl_type: "rabbitmq"
   impl_version: "1.6.1"

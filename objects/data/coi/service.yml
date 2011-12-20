@@ -1,7 +1,7 @@
-ServiceDefinition: !Extends_Resource
+ServiceDefinition: !Extends_InformationResource
   definition: ""
   operations: []
 
-Service: !Extends_Resource
+Service: !Extends_TaskableResource
   # This is a service instance
   tbd: ""

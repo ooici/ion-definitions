@@ -1,7 +1,7 @@
-ProcessDefinition: !Extends_Resource
+ProcessDefinition: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
-ProcessSchedule: !Extends_Resource
+ProcessSchedule: !Extends_InformationResource
   activation_mode: ""
   schedule: {}

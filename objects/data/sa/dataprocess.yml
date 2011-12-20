@@ -1,3 +1,10 @@
+DataProcessDefinition: !Extends_InformationResource
+  #path to the folder (in coi) containing the script
+  transformreference: ""
+  subscription: !Subscription
+  outputproduct: !DataProduct
+  parameters: {}
+
 DataProcess: !Extends_InformationResource
-  atbd_reference: ""
-  sourcecode: ""
+  definition: !DataProcessDefinition
+  enable: True

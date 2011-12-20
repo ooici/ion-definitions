@@ -47,3 +47,17 @@ interceptor:
     message_incoming: [encode, codec, validate]
     process_outgoing: [sampleprocessonly]
     process_incoming: [sampleprocessonly]
+
+exchange_spaces:
+   # define the names and structure of exchange spaces and exchange points
+    ioncore:
+        exchange_points:
+            science_data:
+                type: topic_tree
+            events:
+                type: topic_tree
+
+core_xps:
+    # used as defaults by pyon.ion.endpoint and PubSub Mgmt Service
+    science_data: ioncore.science_data
+    events: ioncore.events

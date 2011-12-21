@@ -47,11 +47,25 @@ interceptor:
         enabled: true
     encode:
       class: pyon.core.interceptor.encode.EncodeInterceptor
+    governance:
+      class: pyon.core.governance.governance_interceptor.GovernanceInterceptor
+      config:
+        enabled: false
+        interceptor_order: [conversation, information, policy]
+        governance_interceptors:
+          conversation:
+            class: pyon.core.governance.conversation.conversation_monitor_interceptor.ConversationMonitorInterceptor
+          information:
+            class: pyon.core.governance.information.information_model_interceptor.InformationModelInterceptor
+          policy:
+            class: pyon.core.governance.policy.policy_interceptor.PolicyInterceptor
+
+
   stack:
     message_outgoing: [validate, codec, encode]
     message_incoming: [encode, codec, validate]
-    process_outgoing: [sampleprocessonly]
-    process_incoming: [sampleprocessonly]
+    process_outgoing: [governance]
+    process_incoming: [governance]
 
 exchange_spaces:
    # define the names and structure of exchange spaces and exchange points

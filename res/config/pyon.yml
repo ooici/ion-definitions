@@ -11,6 +11,11 @@ server:
     password: guest
     vhost: /
     heartbeat: 30
+  couchdb:
+    host: localhost
+    port: 5984
+    username:
+    password:
 
 system:
   # sysname - by default it is generated from your system's uname.

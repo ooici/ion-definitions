@@ -7,6 +7,71 @@ methods:
   # -----------------
   # Working with Physical Instrument resources
 
+
+  create_instrument_agent_instance:
+    in:
+      instrument_agent_instance: !InstrumentAgentInstance
+    out:
+      instrument_agent_instance_id: ""
+
+  update_instrument_agent_instance:
+    in:
+      instrument_agent_instance: !InstrumentAgentInstance
+    out:
+      success: True
+
+  read_instrument_agent_instance:
+    in:
+      instrument_agent_instance_id: ""
+    out:
+      instrument_agent_instance: !InstrumentAgentInstance
+
+  delete_instrument_agent_instance:
+    in:
+      instrument_agent_instance_id: ""
+    out:
+      success: True
+
+  find_instrument_agent_instances:
+    in:
+      filters: !ResourceFilter
+    out:
+      instrument_agent_instance_list: []
+
+
+
+  create_instrument_agent:
+    in:
+      instrument_agent: !InstrumentAgent
+    out:
+      instrument_agent_id: ""
+
+  update_instrument_agent:
+    in:
+      instrument_agent: !InstrumentAgent
+    out:
+      success: True
+
+  read_instrument_agent:
+    in:
+      instrument_agent_id: ""
+    out:
+      instrument_agent: !InstrumentAgent
+
+  delete_instrument_agent:
+    in:
+      instrument_agent_id: ""
+    out:
+      success: True
+
+  find_instrument_agents:
+    in:
+      filters: !ResourceFilter
+    out:
+      instrument_agent_list: []
+
+
+
   create_instrument_device:
     in:
       instrument_device: !InstrumentDevice
@@ -37,48 +102,305 @@ methods:
     out:
       instrument_device_list: []
 
-  plan_instrument_device:
+
+  create_instrument_model:
     in:
-      name: ""
-      description: ""
+      instrument_model: !InstrumentModel
+    out:
+      instrument_model_id: ""
+
+  update_instrument_model:
+    in:
+      instrument_model: !InstrumentModel
+    out:
+      success: True
+
+  read_instrument_model:
+    in:
       instrument_model_id: ""
     out:
-      instrument_device_id: ""
+      instrument_model: !InstrumentModel
 
-  acquire_instrument_device:
+  delete_instrument_model:
     in:
-      instrument_device_id: ""
-      serialnumber: ""
-      firmwareversion: ""
-      hardwareversion: ""
+      instrument_model_id: ""
     out:
       success: True
 
-  develop_instrument_device:
+  find_instrument_models:
     in:
-      instrument_device_id: ""
-      instrument_agent_id: ""
+      filters: !ResourceFilter
+    out:
+      instrument_model_list: []
+
+
+  create_logical_instrument:
+    in:
+      logical_instrument: !LogicalInstrument
+    out:
+      logical_instrument_id: ""
+
+  update_logical_instrument:
+    in:
+      logical_instrument: !LogicalInstrument
     out:
       success: True
 
-  activate_instrument_device:
+  read_logical_instrument:
     in:
-      instrument_device_id: ""
-      instrument_agent_instance_id: ""
+      logical_instrument_id: ""
+    out:
+      logical_instrument: !LogicalInstrument
+
+  delete_logical_instrument:
+    in:
+      logical_instrument_id: ""
     out:
       success: True
 
-  deactivate_instrument_device:
+  find_logical_instruments:
     in:
-      instrument_device_id: ""
+      filters: !ResourceFilter
+    out:
+      logical_instrument_list: []
+
+
+  create_logical_platform:
+    in:
+      logical_platform: !LogicalPlatform
+    out:
+      logical_platform_id: ""
+
+  update_logical_platform:
+    in:
+      logical_platform: !LogicalPlatform
     out:
       success: True
 
-  retire_instrument_device:
+  read_logical_platform:
     in:
-      instrument_device_id: ""
+      logical_platform_id: ""
+    out:
+      logical_platform: !LogicalPlatform
+
+  delete_logical_platform:
+    in:
+      logical_platform_id: ""
     out:
       success: True
+
+  find_logical_platforms:
+    in:
+      filters: !ResourceFilter
+    out:
+      logical_platform_list: []
+
+
+  # -----------------
+  # Working with Physical Platform resources
+
+
+
+  create_platform_agent_instance:
+    in:
+      platform_agent_instance: !PlatformAgentInstance
+    out:
+      platform_agent_instance_id: ""
+
+  update_platform_agent_instance:
+    in:
+      platform_agent_instance: !PlatformAgentInstance
+    out:
+      success: True
+
+  read_platform_agent_instance:
+    in:
+      platform_agent_instance_id: ""
+    out:
+      platform_agent_instance: !PlatformAgentInstance
+
+  delete_platform_agent_instance:
+    in:
+      platform_agent_instance_id: ""
+    out:
+      success: True
+
+  find_platform_agent_instances:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_agent_instance_list: []
+
+
+
+  create_platform_agent:
+    in:
+      platform_agent: !PlatformAgent
+    out:
+      platform_agent_id: ""
+
+  update_platform_agent:
+    in:
+      platform_agent: !PlatformAgent
+    out:
+      success: True
+
+  read_platform_agent:
+    in:
+      platform_agent_id: ""
+    out:
+      platform_agent: !PlatformAgent
+
+  delete_platform_agent:
+    in:
+      platform_agent_id: ""
+    out:
+      success: True
+
+  find_platform_agents:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_agent_list: []
+
+
+
+  create_platform_device:
+    in:
+      platform_device: !PlatformDevice
+    out:
+      platform_device_id: ""
+
+  update_platform_device:
+    in:
+      platform_device: !PlatformDevice
+    out:
+      success: True
+
+  read_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      platform_device: !PlatformDevice
+
+  delete_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      success: True
+
+  find_platform_devices:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_device_list: []
+
+
+
+  create_platform_model:
+    in:
+      platform_model: !PlatformModel
+    out:
+      platform_model_id: ""
+
+  update_platform_model:
+    in:
+      platform_model: !PlatformModel
+    out:
+      success: True
+
+  read_platform_model:
+    in:
+      platform_model_id: ""
+    out:
+      platform_model: !PlatformModel
+
+  delete_platform_model:
+    in:
+      platform_model_id: ""
+    out:
+      success: True
+
+  find_platform_models:
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_model_list: []
+
+
+
+
+  # -----------------
+  # Working with Physical Sensor resources
+
+
+  create_sensor_device:
+    in:
+      sensor_device: !SensorDevice
+    out:
+      sensor_device_id: ""
+
+  update_sensor_device:
+    in:
+      sensor_device: !SensorDevice
+    out:
+      success: True
+
+  read_sensor_device:
+    in:
+      sensor_device_id: ""
+    out:
+      sensor_device: !SensorDevice
+
+  delete_sensor_device:
+    in:
+      sensor_device_id: ""
+    out:
+      success: True
+
+  find_sensor_devices:
+    in:
+      filters: !ResourceFilter
+    out:
+      sensor_device_list: []
+
+
+  create_sensor_model:
+    in:
+      sensor_model: !SensorModel
+    out:
+      sensor_model_id: ""
+
+  update_sensor_model:
+    in:
+      sensor_model: !SensorModel
+    out:
+      success: True
+
+  read_sensor_model:
+    in:
+      sensor_model_id: ""
+    out:
+      sensor_model: !SensorModel
+
+  delete_sensor_model:
+    in:
+      sensor_model_id: ""
+    out:
+      success: True
+
+  find_sensor_models:
+    in:
+      filters: !ResourceFilter
+    out:
+      sensor_model_list: []
+
+
+
+
+
+####################################
+# associations
 
   assign_instrument_device:
     in:
@@ -121,36 +443,6 @@ methods:
     out:
       success: True
 
-  create_instrument_model:
-    in:
-      instrument_model: !InstrumentModel
-    out:
-      instrument_model_id: ""
-
-  update_instrument_model:
-    in:
-      instrument_model: !InstrumentModel
-    out:
-      success: True
-
-  read_instrument_model:
-    in:
-      instrument_model_id: ""
-    out:
-      instrument_model: !InstrumentModel
-
-  delete_instrument_model:
-    in:
-      instrument_model_id: ""
-    out:
-      success: True
-
-  find_instrument_models:
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_model_list: []
-
   assign_instrument_model:
     in:
       instrument_model_id: ""
@@ -165,71 +457,13 @@ methods:
     out:
       success: True
 
-
-  # -----------------
-  # Working with Physical Sensor resources
-
-
-  create_sensor_device:
+  assign_platform_agent:
     in:
-      sensor_device: !SensorDevice
-    out:
-      sensor_device_id: ""
-
-  update_sensor_device:
-    in:
-      sensor_device: !SensorDevice
+      platform_agent_id: ""
+      platform_id: ""
+      platform_agent_instance: !PlatformAgentInstance
     out:
       success: True
-
-  read_sensor_device:
-    in:
-      sensor_device_id: ""
-    out:
-      sensor_device: !SensorDevice
-
-  delete_sensor_device:
-    in:
-      sensor_device_id: ""
-    out:
-      success: True
-
-  find_sensor_devices:
-    in:
-      filters: !ResourceFilter
-    out:
-      sensor_device_list: []
-
-  create_sensor_model:
-    in:
-      sensor_model: !SensorModel
-    out:
-      sensor_model_id: ""
-
-  update_sensor_model:
-    in:
-      sensor_model: !SensorModel
-    out:
-      success: True
-
-  read_sensor_model:
-    in:
-      sensor_model_id: ""
-    out:
-      sensor_model: !SensorModel
-
-  delete_sensor_model:
-    in:
-      sensor_model_id: ""
-    out:
-      success: True
-
-  find_sensor_models:
-    in:
-      filters: !ResourceFilter
-    out:
-      sensor_model_list: []
-
   assign_sensor_model:
     in:
       sensor_model_id: ""
@@ -244,46 +478,7 @@ methods:
     out:
       success: True
 
-  # -----------------
-  # Working with Physical Platform resources
 
-  create_platform_device:
-    in:
-      platform_device: !PlatformDevice
-    out:
-      platform_device_id: ""
-
-  update_platform_device:
-    in:
-      platform_device: !PlatformDevice
-    out:
-      success: True
-
-  read_platform_device:
-    in:
-      platform_device_id: ""
-    out:
-      platform_device: !PlatformDevice
-
-  delete_platform_device:
-    in:
-      platform_device_id: ""
-    out:
-      success: True
-
-  find_platform_devices:
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_device_list: []
-
-  assign_platform_agent:
-    in:
-      platform_agent_id: ""
-      platform_id: ""
-      platform_agent_instance: !PlatformAgentInstance
-    out:
-      success: True
 
   unassign_platform_agent:
     in:
@@ -291,36 +486,6 @@ methods:
       platform_id: ""
     out:
       success: True
-
-  create_platform_model:
-    in:
-      platform_model: !PlatformModel
-    out:
-      platform_model_id: ""
-
-  update_platform_model:
-    in:
-      platform_model: !PlatformModel
-    out:
-      success: True
-
-  read_platform_model:
-    in:
-      platform_model_id: ""
-    out:
-      platform_model: !PlatformModel
-
-  delete_platform_model:
-    in:
-      platform_model_id: ""
-    out:
-      success: True
-
-  find_platform_models:
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_model_list: []
 
   assign_platform_model:
     in:
@@ -335,3 +500,5 @@ methods:
       platform_device_id: ""
     out:
       success: True
+
+

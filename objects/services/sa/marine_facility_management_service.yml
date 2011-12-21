@@ -87,8 +87,46 @@ methods:
     out:
       success: True
 
+
+  # -----------------
+  # Manipulation of logical instruments
+
+
+  create_logical_instrument:
+    in:
+      logical_instrument: !LogicalInstrument
+    out:
+      logical_instrument_id: ""
+
+  update_logical_instrument:
+    in:
+      logical_instrument: !LogicalInstrument
+    out:
+      success: True
+
+  read_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      logical_instrument: !LogicalInstrument
+
+  delete_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  find_logical_instruments:
+    in:
+      filters: !ResourceFilter
+    out:
+      logical_instrument_list: []
+
+
+
   # -----------------
   # Manipulation of logical platforms
+
 
   create_logical_platform:
     in:
@@ -120,6 +158,12 @@ methods:
     out:
       logical_platform_list: []
 
+
+
+  # ---------------
+  # associations
+
+
   assign_platform:
     in:
       logical_platform_id: ""
@@ -133,39 +177,6 @@ methods:
       parent_site_id: ""
     out:
       success: True
-
-  # -----------------
-  # Manipulation of logical instruments
-
-  create_logical_instrument:
-    in:
-      logical_instrument: !LogicalInstrument
-    out:
-      logical_instrument_id: ""
-
-  update_logical_instrument:
-    in:
-      logical_instrument: !LogicalInstrument
-    out:
-      success: True
-
-  read_logical_instrument:
-    in:
-      logical_instrument_id: ""
-    out:
-      logical_instrument: !LogicalInstrument
-
-  delete_logical_instrument:
-    in:
-      logical_instrument_id: ""
-    out:
-      success: True
-
-  find_logical_instruments:
-    in:
-      filters: !ResourceFilter
-    out:
-      logical_instrument_list: []
 
   assign_instrument:
     in:

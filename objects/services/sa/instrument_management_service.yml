@@ -134,68 +134,6 @@ methods:
       instrument_model_list: []
 
 
-  create_logical_instrument:
-    in:
-      logical_instrument: !LogicalInstrument
-    out:
-      logical_instrument_id: ""
-
-  update_logical_instrument:
-    in:
-      logical_instrument: !LogicalInstrument
-    out:
-      success: True
-
-  read_logical_instrument:
-    in:
-      logical_instrument_id: ""
-    out:
-      logical_instrument: !LogicalInstrument
-
-  delete_logical_instrument:
-    in:
-      logical_instrument_id: ""
-    out:
-      success: True
-
-  find_logical_instruments:
-    in:
-      filters: !ResourceFilter
-    out:
-      logical_instrument_list: []
-
-
-  create_logical_platform:
-    in:
-      logical_platform: !LogicalPlatform
-    out:
-      logical_platform_id: ""
-
-  update_logical_platform:
-    in:
-      logical_platform: !LogicalPlatform
-    out:
-      success: True
-
-  read_logical_platform:
-    in:
-      logical_platform_id: ""
-    out:
-      logical_platform: !LogicalPlatform
-
-  delete_logical_platform:
-    in:
-      logical_platform_id: ""
-    out:
-      success: True
-
-  find_logical_platforms:
-    in:
-      filters: !ResourceFilter
-    out:
-      logical_platform_list: []
-
-
   # -----------------
   # Working with Physical Platform resources
 

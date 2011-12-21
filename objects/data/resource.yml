@@ -80,3 +80,5 @@ ResourceFilter:
   filters: {}
 
 
+Attachment: !Extends_Resource
+  tbd: ""

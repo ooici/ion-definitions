@@ -3,6 +3,9 @@
 # This is the authoritative definition of all permissible association types in the system
 
 AssociationTypes:
+  hasAttachment:
+    domain: [InstrumentDevice]
+    range: [Attachment]
 #SA 
   hasChildDataProducer:
     domain: [DataProducer]

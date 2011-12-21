@@ -1,5 +1,5 @@
 Transform: !Extends_InformationResource
-  atbd_reference: ""
-  sourcecode: ""
+  #this is a cei process that is running the transform
+  process_definition_id: ""
   in_subscription_id: ""
-  out_data_product_id: ""
+  out_stream_id: ""

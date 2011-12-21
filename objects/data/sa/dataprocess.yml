@@ -1,10 +1,6 @@
 DataProcessDefinition: !Extends_InformationResource
-  #path to the folder (in coi) containing the script
-  transformreference: ""
-  subscription: !Subscription
-  outputproduct: !DataProduct
+  #path to the folder (in coi services) containing the script
+  process_source: ""
   parameters: {}
 
 DataProcess: !Extends_InformationResource
-  definition: !DataProcessDefinition
-  enable: True

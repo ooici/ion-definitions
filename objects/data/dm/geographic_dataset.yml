@@ -19,10 +19,39 @@ CI_Telephone:
 
 --- # Document separator required after obj block
 
+CI_Address:
+  deliveryPoint: ""
+  city: ""
+  administrativeArea: ""
+  postalCode: ""
+  country: ""   # Described by ISO 3166-3
+  electronicMailAddress: ""
+
+--- # Document separator required after obj block
+
+CI_OnLineFunctionCode:
+  download: 001
+  information: 002
+  offlineAccess: 003
+  order: 004
+  search: 005
+
+--- # Document separator required after obj block
+
+CI_OnlineResource:
+  linkage: ""   # TODO should this be a string?
+  protocol: ""
+  applicationProfile: ""
+  name: ""
+  description: ""
+  function: !CI_OnLineFunctionCode
+
+--- # Document separator required after obj block
+
 CI_Contact:
   phone: !CI_Telephone
-  address: ""
-  onlineResource: ""
+  address: !CI_Address
+  onlineResource: !CI_OnlineResource
   hoursOfService: ""
   contactInstructions: ""
 
@@ -198,39 +227,21 @@ MD_StandardOrderProcess:
 
 --- # Document separator required after obj block
 
-CI_OnLineFunctionCode:
-  download: 001
-  information: 002
-  offlineAccess: 003
-  order: 004
-  search: 005
-
---- # Document separator required after obj block
-
-CI_OnlineResource:
-  linkage: ""   # TODO should this be a string?
-  protocol: ""
-  applicationProfile: ""
-  name: ""
-  description: ""
-  function: !CI_OnLineFunctionCode
-
---- # Document separator required after obj block
-
 MD_MediumNameCode:
   cdRom: 001
   dvd: 002
   dvdRom: 003
-  3halfInchFloppy: 004
-  5quarterInchFloppy: 005
-  7trackTape: 006
-  9trackTape: 007
-  3480Cartridge: 008
-  3490Cartridge: 009
-  3580Cartridge: 010
-  4mmCartridgeTape: 011
-  8mmCartridgeTape: 012
-  1quarterInchCartridgeTape: 013
+# TODO assign legit python identifiers
+#  3halfInchFloppy: 004
+#  5quarterInchFloppy: 005
+#  7trackTape: 006
+#  9trackTape: 007
+#  3480Cartridge: 008
+#  3490Cartridge: 009
+#  3580Cartridge: 010
+#  4mmCartridgeTape: 011
+#  8mmCartridgeTape: 012
+#  1quarterInchCartridgeTape: 013
   digitalLinearTape: 014
   onLine: 015
   satellite: 016
@@ -325,7 +336,8 @@ MD_RepresentativeFraction:
 
 MD_Resolution:
   equivalentScale: MD_RepresentativeFraction
-  distance: Distance
+  # TODO figure out what the ISO def for this is
+#  distance: Distance
 
 --- # Document separator required after obj block
 
@@ -335,21 +347,22 @@ MD_CharacterSetCode:
   utf7: 003
   utf8: 004
   utf16: 005
-  8859part1: 006
-  8859part2: 007
-  8859part3: 008
-  8859part4: 009
-  8859part5: 010
-  8859part6: 011
-  8859part7: 012
-  8859part8: 013
-  8859part9: 014
-  8859part10: 015
-  8859part11: 016
-  8859part13: 018
-  8859part14: 019
-  8859part15: 020
-  8859part16: 021
+# TODO assign legit python identifiers
+#  8859part1: 006
+#  8859part2: 007
+#  8859part3: 008
+#  8859part4: 009
+#  8859part5: 010
+#  8859part6: 011
+#  8859part7: 012
+#  8859part8: 013
+#  8859part9: 014
+#  8859part10: 015
+#  8859part11: 016
+#  8859part13: 018
+#  8859part14: 019
+#  8859part15: 020
+#  8859part16: 021
   jis: 022
   shiftJIS: 023
   eucJP: 024
@@ -502,25 +515,6 @@ MD_Identification:
   resourceSpecificUsage: !MD_Usage
   resourceConstraints: !MD_Constraints
   aggregateInfo: !MD_AggregateInformation
-
---- # Document separator required after obj block
-
-CI_Address:
-  deliveryPoint: ""
-  city: ""
-  administrativeArea: ""
-  postalCode: ""
-  country: ""   # Described by ISO 3166-3
-  electronicMailAddress: ""
-
---- # Document separator required after obj block
-
-CI_Contact:
-  phone: !CI_Telephone
-  address: !CI_Address
-  onlineResource: !CI_OnlineResource
-  hoursOfService: ""
-  contactInstructions: ""
 
 --- # Document separator required after obj block
 

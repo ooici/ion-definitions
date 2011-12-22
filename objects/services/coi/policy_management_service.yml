@@ -78,9 +78,9 @@ methods:
       Persists the provided UserRole object. The id string returned
       is the internal id by which a UserRole will be indentified in the data store.
     in:
-      role: !UserRole
+      user_role: !UserRole
     out:
-      role_id: ""
+      user_role_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
@@ -91,7 +91,7 @@ methods:
       the provided UserRole object is not based on the latest persisted
       version of the object.
     in:
-      role: !UserRole
+      user_role: !UserRole
     out:
       success: True
     throws:
@@ -105,9 +105,9 @@ methods:
       Throws exception if id does not match any persisted UserRole
       objects.
     in:
-      role_id: ""
+      user_role_id: ""
     out:
-      role: !UserRole
+      user_role: !UserRole
     throws:
       NotFound: object with specified id does not exist
 
@@ -116,7 +116,7 @@ methods:
       For now, permanently deletes UserRole object with the specified
       id. Throws exception if id does not match any persisted UserRole.
     in:
-      role_id: ""
+      user_role_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -130,7 +130,7 @@ methods:
     in:
       org_id: ""
       user_id: ""
-      role_id: ""
+      user_role_id: ""
       scope: !RoleScope
     out:
     throws:
@@ -143,20 +143,20 @@ methods:
     in:
       org_id: ""
       user_id: ""
-      role_id: ""
+      user_role_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
   find_roles_by_user:
     docstring: |
-      Returns a list of orgaization roles for a specific user. Will throw a not NotFound exception
+      Returns a list of organization roles for a specific user. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
       org_id: ""
       user_id: ""
     out:
-      role_list: []
+      user_role_list: []
     throws:
       NotFound: object with specified id does not exist
 

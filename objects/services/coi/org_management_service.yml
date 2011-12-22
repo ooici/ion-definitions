@@ -4,71 +4,142 @@ name: org_management
 dependencies: [resource_registry]
 methods:
   create_org:
+    docstring: |
+      Persists the provided Org object. The id string returned
+      is the internal id by which Org will be identified in the data store.
     in:
       org: !Org
     out:
       org_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_org:
+    docstring: |
+      Updates the provided Org object.  Throws NotFound exception if
+      an existing version of Org is not found.  Throws Conflict if
+      the provided Policy object is not based on the latest persisted
+      version of the object.
     in:
       org: !Org
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_org:
+    docstring: |
+      Returns the Org object for the specified policy id.
+      Throws exception if id does not match any persisted Policy
+      objects.
     in:
       org_id: ""
     out:
       org: !Org
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_org:
+    docstring: |
+      Permanently deletes Org object with the specified
+      id. Throws exception if id does not match any persisted Policy.
     in:
       org_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
   affiliate_org:
+    docstring: |
+      Creates an association between multiple Orgs as an affiliation
+      so that they may coordinate activities between them.
+      Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       affiliate_org_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   unaffiliate_org:
+    docstring: |
+      Removes an association between multiple Orgs as an affiliation.
+      Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       affiliate_org_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
   enroll_member:
+    docstring: |
+      Enrolls a specified user into the specified Org so that they may find and negotiate to use resources
+      of the Org. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       user_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
 
-  leave_member:
+  cancel_member_enrollment:
+    docstring: |
+      Cancels the membership of a specifid user within the specified Org. Once canceled, the user will no longer
+      have access to the resource of that Org. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       user_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  is_enrolled:
+    docstring: |
+      Returns True if the specified user_id is enrolled in the Org and False if not.
+      Throws a NotFound exception if neither id is found.
+    in:
+      org_id: ""
+      user_id: ""
+    out:
+      is_enrolled: False
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  # ---------------------------
+
 
   share_resource:
+    docstring: |
+      Share a specified resource with the specified Org. Once shared, the resource will be added to a directory
+      of available resources within the Org. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       resource_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   unshare_resource:
+    docstring: |
+      Unshare a specified resource with the specified Org. Once unshared, the resource will be removed from a directory
+      of available resources within the Org. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       resource_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist

@@ -87,7 +87,7 @@ AssociationTypes:
     domain: [ExchangePoint]
     range: [TopicTopology]
 # COI
-  hasBroker:
+  hasExchangeBroker:
     domain: [ExchangeSpace]
     range: [ExchangeBroker]
   hasExchangeSpace:
@@ -123,6 +123,15 @@ AssociationTypes:
   hasLifecycle:
     domain: [Resource]
     range: [ResourceLifecycle]
+  hasOrgAffiliation:
+    domain: [Org]
+    range: [Org]
+  hasMembership:
+    domain: [Org]
+    range: [UserIdentity]
+  hasResource:
+    domain: [Org]
+    range: [Resource]
 # Examples
   hasAccount:
     domain: [BankCustomer]

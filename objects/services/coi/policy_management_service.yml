@@ -4,97 +4,168 @@ name: policy_management
 dependencies: [resource_registry]
 methods:
   create_policy:
+    docstring: |
+      Persists the provided Policy object for the specified Org id. The id string returned
+      is the internal id by which Policy will be indentified in the data store.
     in:
       policy: !Policy
       org_id: ""
     out:
       policy_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_policy:
+    docstring: |
+      Updates the provided Policy object.  Throws NotFound exception if
+      an existing version of Policy is not found.  Throws Conflict if
+      the provided Policy object is not based on the latest persisted
+      version of the object.
     in:
       policy: !Policy
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_policy:
+    docstring: |
+      Returns the Policy object for the specified policy id.
+      Throws exception if id does not match any persisted Policy
+      objects.
     in:
       policy_id: ""
     out:
       policy: !Policy
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_policy:
+    docstring: |
+      For now, permanently deletes Policy object with the specified
+      id. Throws exception if id does not match any persisted Policy.
     in:
       policy_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   enable_policy:
+    docstring: |
+      Advances the lifecycle state of the specified Policy object to be enabled. Only
+      enabled policies should be considered by the policy engine.
     in:
       policy_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   disable_policy:
+    docstring: |
+      Advances the lifecycle state of the specified Policy object to be disabled. Only
+      enabled policies should be considered by the policy engine.
     in:
       policy_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
   create_role:
+    docstring: |
+      Persists the provided UserRole object. The id string returned
+      is the internal id by which a UserRole will be indentified in the data store.
     in:
       role: !UserRole
     out:
       role_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_role:
+    docstring: |
+      Updates the provided UserRole object.  Throws NotFound exception if
+      an existing version of UserRole is not found.  Throws Conflict if
+      the provided UserRole object is not based on the latest persisted
+      version of the object.
     in:
       role: !UserRole
     out:
       success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_role:
+    docstring: |
+      Returns the UserRole object for the specified role id.
+      Throws exception if id does not match any persisted UserRole
+      objects.
     in:
       role_id: ""
     out:
       role: !UserRole
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_role:
+    docstring: |
+      For now, permanently deletes UserRole object with the specified
+      id. Throws exception if id does not match any persisted UserRole.
     in:
       role_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
   grant_role:
+    docstring: |
+      Grants a defined role within an organization to a specific user. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
     in:
       org_id: ""
       user_id: ""
       role_id: ""
       scope: !RoleScope
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   revoke_role:
+    docstring: |
+      Revokes a defined role within an organization to a specific user. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
     in:
       org_id: ""
       user_id: ""
       role_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   find_roles_by_user:
+    docstring: |
+      Returns a list of orgaization roles for a specific user. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
     in:
       org_id: ""
       user_id: ""
     out:
       role_list: []
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
   has_permission:
+    docstring: |
+      Returns a boolean of the specified user has permission for the specified action on a specified resource. Will
+      throw a NotFound exception if none of the specified ids do not exist.
     in:
       org_id: ""
       user_id: ""
@@ -102,4 +173,5 @@ methods:
       resource_id: ""
     out:
       has_permission: False
-
+    throws:
+      NotFound: object with specified id does not exist

@@ -18,7 +18,7 @@ methods:
     docstring: |
       Updates the provided Org object.  Throws NotFound exception if
       an existing version of Org is not found.  Throws Conflict if
-      the provided Policy object is not based on the latest persisted
+      the provided Org object is not based on the latest persisted
       version of the object.
     in:
       org: !Org
@@ -30,8 +30,8 @@ methods:
 
   read_org:
     docstring: |
-      Returns the Org object for the specified policy id.
-      Throws exception if id does not match any persisted Policy
+      Returns the Org object for the specified id.
+      Throws exception if id does not match any persisted Org
       objects.
     in:
       org_id: ""
@@ -43,7 +43,7 @@ methods:
   delete_org:
     docstring: |
       Permanently deletes Org object with the specified
-      id. Throws exception if id does not match any persisted Policy.
+      id. Throws exception if id does not match any persisted Org object.
     in:
       org_id: ""
     out:

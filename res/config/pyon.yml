@@ -62,8 +62,8 @@ interceptor:
 
 
   stack:
-    message_outgoing: [validate, codec, encode]
-    message_incoming: [encode, codec, validate]
+    message_outgoing: [codec, encode]
+    message_incoming: [encode, codec]
     process_outgoing: [governance]
     process_incoming: [governance]
 

@@ -14,7 +14,7 @@ apps:
     processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
     config:
         datastore:
-            persistent: true
+            # persistent: true
             force_clean: true
 
   - name: resource_registry
@@ -23,7 +23,7 @@ apps:
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
     config:
         resource_registry:
-            persistent: true
+            # persistent: true
             force_clean: true
 
   - name: trade

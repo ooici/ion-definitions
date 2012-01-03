@@ -3,6 +3,33 @@
 name: data_acquisition_management
 dependencies: [resource_registry, pubsub_management]
 methods:
+
+  # -----------------
+  # Manipulate external data providers
+  create_external_data_provider:
+    in:
+      external_data_provider: !ExternalDataProvider
+    out:
+      external_data_provider_id: ""
+
+  update_external_data_provider:
+    in:
+      external_data_provider: !ExternalDataProvider
+    out:
+      success: True
+
+  read_external_data_provider:
+    in:
+      external_data_provider_id: ""
+    out:
+      external_data_provider: !ExternalDataProvider
+
+  delete_external_data_provider:
+    in:
+      external_data_provider_id: ""
+    out:
+      success: True
+
   # -----------------
   # Manipulate data sources
 
@@ -29,6 +56,36 @@ methods:
       data_source_id: ""
     out:
       success: True
+
+
+  # -----------------
+  # Manipulate external data sets
+  create_external_data_set:
+    in:
+      external_data_set: !ExternalDataSet
+    out:
+      external_data_set_id: ""
+
+  update_external_data_set:
+    in:
+      external_data_set: !ExternalDataSet
+    out:
+      success: True
+
+  read_external_data_set:
+    in:
+      external_data_set_id: ""
+    out:
+      external_data_set: !ExternalDataSet
+
+  delete_external_data_set:
+    in:
+      external_data_set_id: ""
+    out:
+      success: True
+
+  # -----------------
+  # The following operations assign and unassign data agents
 
   assign_data_agent:
     docstring: Connect the agent instance description with a data source

@@ -14,7 +14,7 @@ apps:
     processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
     config:
         datastore:
-            # persistent: true
+            persistent: true
             force_clean: true
 
   - name: resource_registry
@@ -23,7 +23,7 @@ apps:
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
     config:
         resource_registry:
-            # persistent: true
+            persistent: true
             force_clean: true
 
   - name: trade
@@ -34,3 +34,10 @@ apps:
     version: 0.1
     processapp: [bank, examples.bank.bank_service, BankService]
 
+  - name: service_gateway
+    version: 0.1
+    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+    config:
+      web_server:
+        #port: 5050
+        #hostname: localhost

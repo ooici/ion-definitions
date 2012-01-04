@@ -1,10 +1,10 @@
 # Resource Registry Service interface definition
 
-docstring: |
-  Service used to create, read, update and delete resources
-  (IonObjects).  Additionally, provides methods to manipulate
-  resource associations.
 name: resource_registry
+docstring: |
+  Service that manages the definition of types of resources and all cross-cutting concerns of all
+  system resources. The resource registry uses the underlying push and pull ops of the datastore to
+  fetch, retrieve and create resource objects.
 dependencies: []
 methods:
   create:

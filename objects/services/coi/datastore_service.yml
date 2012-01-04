@@ -7,6 +7,10 @@
 # - Consolidate or remove idref methods
 
 name: datastore
+docstring: |
+  The Data Store Service manages the persistence of Structured Objects (i.e. the "Business Objects") in the ION
+  system, and the definition of Structured Object types. It makes use of DM Preservation services and components to
+  persist the actual information on disk or in the network.
 dependencies: []
 methods:
   create_datastore:

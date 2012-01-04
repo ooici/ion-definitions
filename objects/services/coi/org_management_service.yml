@@ -1,6 +1,10 @@
 # Org Management Service interface definition
 
 name: org_management
+docstring: |
+  Services to define and administer a facility (synonymous Org, community), to enroll/remove members and
+  to provide access to the resources of an Org to enrolled or affiliated entities (identities). Contains
+  contract and commitment repository
 dependencies: [resource_registry]
 methods:
   create_org:
@@ -47,7 +51,6 @@ methods:
     in:
       org_id: ""
     out:
-      success: True
     throws:
       NotFound: object with specified id does not exist
 

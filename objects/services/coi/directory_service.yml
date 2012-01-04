@@ -5,10 +5,12 @@
 # - More powerful find operations
 
 name: directory
+docstring: |
+  Provides a directory of services and other resources specific to an Org.
 dependencies: []
 methods:
   register:
-    docstring:  Register is idempotent and acts as both create and update, based on the key
+    docstring:  Register and entry in the directory. This action is idempotent and acts as both create and update, based on the key
     in:
       parent: '/'
       key: ''
@@ -17,6 +19,7 @@ methods:
       old_attributes: {}
 
   unregister:
+    docstring: Unregister an entry in the directory.
     in:
       parent: '/'
       key: ''
@@ -31,6 +34,7 @@ methods:
       attributes: {}
 
   find:
+    docstring: Find an entry in the directory based on a starting location in the hierarchy and optional pattern.
     in:
       parent: '/'
       pattern: ''

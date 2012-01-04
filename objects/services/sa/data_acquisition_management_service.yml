@@ -59,28 +59,28 @@ methods:
 
 
   # -----------------
-  # Manipulate external data sets
-  create_external_data_set:
+  # Manipulate external datasets
+  create_external_dataset:
     in:
-      external_data_set: !ExternalDataset
+      external_dataset: !ExternalDataset
     out:
-      external_data_set_id: ""
+      external_dataset_id: ""
 
-  update_external_data_set:
+  update_external_dataset:
     in:
-      external_data_set: !ExternalDataset
+      external_dataset: !ExternalDataset
     out:
       success: True
 
-  read_external_data_set:
+  read_external_dataset:
     in:
-      external_data_set_id: ""
+      external_dataset_id: ""
     out:
-      external_data_set: !ExternalDataset
+      external_dataset: !ExternalDataset
 
-  delete_external_data_set:
+  delete_external_dataset:
     in:
-      external_data_set_id: ""
+      external_dataset_id: ""
     out:
       success: True
 

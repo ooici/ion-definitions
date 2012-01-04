@@ -1,85 +1,130 @@
-# EPU Management Service interface definition
-
 name: epu_management_service
+
+docstring: |
+  Service to create, read, update and delete EPU definitions, EPU instances and Deployable Types.
+  Deployable Types are definitions of Virtual Machine types, with all required contextualization.
+  EPU definitions describe elastic, high available processing entities based on Deployable Types
+  with information about parameterization, execution constraints and
+  packaging that go along. EPUs are the deployed instances of EPU definitions.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+EPU+Management+Service
+
 dependencies: [resource_registry]
+
 methods:
   # -----------------
   # Manipulating EPU definitions
 
   create_EPU_definition:
+    docstring: Creates an EPU Definition based on given object.
     in:
       EPU_definition: !EPUDefinition
     out:
       EPU_definition_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_EPU_definition:
+    docstring: Updates an EPU Definition based on given object.
     in:
       EPU_definition: !EPUDefinition
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_EPU_definition:
+    docstring: Returns an EPU Definition as object.
     in:
       EPU_definition_id: ""
     out:
       EPU_definition: !EPUDefinition
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_EPU_definition:
+    docstring: Deletes/retires an EPU Definition.
     in:
       EPU_definition_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulating instantiated EPUs
 
   create_EPU:
+    docstring: Creates an EPU based on given object.
     in:
       EPU: !EPU
     out:
       EPU_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_EPU:
+    docstring: Updates an EPU based on given object.
     in:
       EPU: !EPU
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_EPU:
+    docstring: Returns an EPU as object.
     in:
       EPU_id: ""
     out:
       EPU: !EPU
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_EPU:
+    docstring: Deletes/retires an EPU.
     in:
       EPU_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulating Deployable Types
 
   create_deployable_type:
+    docstring: Creates a Deployable Type based on given object.
     in:
       deployable_type: !DeployableType
     out:
       deployable_type_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_deployable_type:
+    docstring: Updates a Deployable Type based on given object.
     in:
       deployable_type: !DeployableType
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_deployable_type:
+    docstring: Returns a Deployable Type as object.
     in:
       deployable_type_id: ""
     out:
       deployable_type: !DeployableType
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_deployable_type:
+    docstring: Deletes/retires a Deployable Type.
     in:
       deployable_type_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist

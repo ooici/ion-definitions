@@ -1,5 +1,29 @@
-# Provisioner Service interface definition
-
 name: provisioner_service
+
+docstring: |
+  Service to provision Deployable Types (= Virtual Machine types) into Operational Units
+  (= Virtual Machine instances). Also monitors and terminates these instances.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Provisioner+Service
+
 dependencies: [resource_registry]
+
 methods:
+  provision_operational_unit:
+    docstring: Provisions an Operational Unit from a Deployable Type.
+    in:
+      deployable_type_id: ""
+      context_params: {}
+    out:
+      operational_unit_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  terminate_operational_unit:
+    docstring: Terminates an Operational Unit.
+    in:
+      operational_unit_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist

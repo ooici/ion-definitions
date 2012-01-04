@@ -1,59 +1,89 @@
-# Execution Engine Management Service interface definition
-
 name: execution_engine_management_service
+
 docstring: |
-  Responsible for exchange (messaging) related resources, including brokers, exchange spaces and
-      exchange points.
+  Service to create, read, update and delete execution engines definitions and instances
+  of execution engines. Execution engine definitions describe available types of execution
+  engines. Execution engines describe running and available instances of these definitions.
+
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Execution+Engine+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
   create_execution_engine_definition:
+    docstring: Creates an Execution Engine Definition based on given object.
     in:
       execution_engine_definition: !ExecutionEngineDefinition
     out:
       execution_engine_definition_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_execution_engine_definition:
+    docstring: Updates an Execution Engine Definition based on given object.
     in:
       execution_engine_definition: !ExecutionEngineDefinition
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_execution_engine_definition:
+    docstring: Returns an Execution Engine Definition as object.
     in:
       execution_engine_definition_id: ""
     out:
       execution_engine_definition: !ExecutionEngineDefinition
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_execution_engine_definition:
+    docstring: Deletes/retires an Execution Engine Definition.
     in:
       execution_engine_definition_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  # TBD: Find
 
   # -----------------
 
   create_execution_engine:
+    docstring: Creates an Execution Engine based on given object.
     in:
       execution_engine: !ExecutionEngine
     out:
       execution_engine_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_execution_engine:
+    docstring: Updates an Execution Engine based on given object.
     in:
       execution_engine: !ExecutionEngine
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_execution_engine:
+    docstring: Returns an Execution Engine Definition as object.
     in:
       execution_engine_id: ""
     out:
       execution_engine: !ExecutionEngine
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_execution_engine:
+    docstring: Deletes/retires an Execution Engine.
     in:
       execution_engine_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  # TBD: Find

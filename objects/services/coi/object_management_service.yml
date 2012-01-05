@@ -1,12 +1,15 @@
-# Object Management Service interface definition
+name: object_management
+
+docstring: |
+  A service for defining and managing object types used as resource, messages, etc.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Object+Management+Service
+
+dependencies: [resource_registry]
 
 # TODO:
 # - Define find query
 
-name: object_management
-docstring: |
-  A service for defining and managing object types used as resource, messages, etc.
-dependencies: [resource_registry]
 methods:
   create_object_type:
     docstring: Creates a Object Type resource from the parameter ObjectType object.

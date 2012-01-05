@@ -1,14 +1,15 @@
-# Identity Management Service interface definition
+name: identity_management
+
+docstring: |
+  A resource registry that stores identities of users and resources, including bindings of internal
+  identities to external identities. Also stores metadata such as a user profile.a
+
+dependencies: [resource_registry]
 
 # TODO:
 # - Move R1 operations into R2 framework
 # - Check find_userinfo_by_subject, cilogon*
 
-name: identity_management
-docstring: |
-  A resource registry that stores identities of users and resources, including bindings of internal
-  identities to external identities. Also stores metadata such as a user profile.a
-dependencies: [resource_registry]
 methods:
   # -----------------
   # Working with internal user identities

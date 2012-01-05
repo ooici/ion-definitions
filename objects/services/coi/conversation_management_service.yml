@@ -1,13 +1,16 @@
-# Conversation Management Service interface definition
+name: conversation_management
+
+docstring: |
+  The Conversation Management Service is the service that manages the Conversations and their types
+  which are allowed in the system.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Conversation+Managment+Service
+
+dependencies: [resource_registry]
 
 # TODO:
 # - Define query
 
-name: conversation_management
-docstring: |
-  The Conversation Management Service is the service that manages the Conversations and their types
-  which are allowed in the system.
-dependencies: [resource_registry]
 methods:
   create_conversation:
     docstring: Creates a Conversation resource from the parameter Conversation object.

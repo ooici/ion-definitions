@@ -1,13 +1,16 @@
-# Resource Management Service interface definition
+name: resource_management
+
+docstring: |
+  The Resource Management Service is the service that manages the Resource Types and Lifecycles
+  workflows associated with Resource Types.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Resource+Management+Service
+
+dependencies: []
 
 # TODO:
 # - Find pattern
 
-name: resource_management
-docstring: |
-  The Resource Management Service is the service that manages the Resource Types and Lifecycles
-  associated with all Resources
-dependencies: []
 methods:
   create_resource_type:
     docstring: Creates a Resource Type resource from the parameter ResourceType object.

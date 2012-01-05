@@ -1,10 +1,13 @@
-# Service Management Service interface definition
-
 name: service_management
+
 docstring: |
-  The Service Management Service is the service that manages the service definitions for all of the services
-  running in the system
+  The Service Management Service is the service that manages service interface definitions
+  and all service instances running in the system.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Service+Management+Service
+
 dependencies: [resource_registry]
+
 methods:
   create_service_definition:
     docstring: Creates an Service Definition resource from the parameter ServiceDefinition object.

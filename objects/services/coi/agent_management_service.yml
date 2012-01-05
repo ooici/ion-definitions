@@ -1,9 +1,12 @@
-# Agent Management Service interface definition
-
 name: agent_management
+
 docstring: |
   The Agent Management Service is the service that manages the Agent Definitions and the running Agents in the system.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Agent+Management+Service
+
 dependencies: [resource_registry]
+
 methods:
   # -----------------
   # Working with Agent definitions

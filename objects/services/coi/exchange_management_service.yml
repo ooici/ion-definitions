@@ -4,7 +4,9 @@
 # - Define find query
 
 name: exchange_management
-docstring: The Exchange Management Service is the service that manages the Exchange and its associated resources.
+docstring: |
+  The Exchange Management Service is the service that manages the Exchange and its associated resources,
+  such as Exchange Spaces, Names, Points and Brokers.
 dependencies: [resource_registry]
 methods:
   create_exchange_space:

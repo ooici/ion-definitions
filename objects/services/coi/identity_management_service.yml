@@ -5,6 +5,9 @@
 # - Check find_userinfo_by_subject, cilogon*
 
 name: identity_management
+docstring: |
+  A resource registry that stores identities of users and resources, including bindings of internal
+  identities to external identities. Also stores metadata such as a user profile.a
 dependencies: [resource_registry]
 methods:
   # -----------------

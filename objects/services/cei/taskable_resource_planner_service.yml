@@ -12,12 +12,14 @@ dependencies: [resource_registry]
 
 methods:
   request_computation:
+    docstring: Requests the execution of the given computation request.
     in:
       computation_request: !ComputationRequest
     out:
       computation_id: ""
 
   cancel_computation:
+    docstring: Cancels a computation.
     in:
       computation_id: ""
     out:

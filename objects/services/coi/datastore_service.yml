@@ -331,9 +331,9 @@ methods:
       BadRequest: predicate is unknown or subject or object are invalid types for predicate
 
   delete_association:
-     docstring: |
-       For now, permanently delete an association between two resources (IonObjects).
-       Throws exception if association does not exist.
+    docstring: |
+      For now, permanently delete an association between two resources (IonObjects).
+      Throws exception if association does not exist.
     in:
       association: ""
     out:
@@ -342,11 +342,11 @@ methods:
 
   find_objects:
     docstring: |
-        Find objects (or object ids) by association from a given subject or
-        subject id (if str). Returns a tuple (list_of_objects, list_of_associations)
-        if id_only == False, or (list_of_object_ids, list_of_associations)
-        if id_only == True. Predicate and object_type are optional to narrow the
-        search down. Object_type can only be set if predicate is set as well.
+      Find objects (or object ids) by association from a given subject or
+      subject id (if str). Returns a tuple (list_of_objects, list_of_associations)
+      if id_only == False, or (list_of_object_ids, list_of_associations)
+      if id_only == True. Predicate and object_type are optional to narrow the
+      search down. Object_type can only be set if predicate is set as well.
     in:
       subject: ""
       predicate: ""
@@ -357,11 +357,11 @@ methods:
 
   find_subjects:
     docstring: |
-        Find subjects (or subject ids) by association from a given object or
-        object id (if str). Returns a tuple (list_of_subjects, list_of_associations)
-        if id_only == False, or (list_of_subject_ids, list_of_associations)
-        if id_only == True. Predicate and subject_type are optional to narrow the
-        search down. Subject_type can only be set if predicate is set as well.
+      Find subjects (or subject ids) by association from a given object or
+      object id (if str). Returns a tuple (list_of_subjects, list_of_associations)
+      if id_only == False, or (list_of_subject_ids, list_of_associations)
+      if id_only == True. Predicate and subject_type are optional to narrow the
+      search down. Subject_type can only be set if predicate is set as well.
     in:
       subject_type: ""
       predicate: ""
@@ -382,4 +382,3 @@ methods:
       id_only: False
     out:
       list: []
-

@@ -42,8 +42,8 @@ apps:
 
   - name: data_acquisition_management
     version: 0.1
-    processapp: [data_acquisition_management, ion.services.sa.data_acquisition_management.data_acquisition_management_service, DataAcquisitionManagementService]
+    processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
 
   - name: data_product_management
     version: 0.1
-    processapp: [data_product_management, ion.services.sa.data_product_management.data_product_management_service, DataProductManagementService]
+    processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]

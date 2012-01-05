@@ -4,6 +4,12 @@
 # - Revise. Exact interface TBD
 
 name: discovery
+
+docstring: |
+   The Discovery service supports finding resources by metadata attributes, potentially applying semantic reasoning
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Discovery+Service
+
 dependencies: [resource_registry]
 methods:
   create_view:

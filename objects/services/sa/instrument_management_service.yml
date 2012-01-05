@@ -1,7 +1,13 @@
 # Instrument Management Service interface definition
 
 name: instrument_management_service
-docstring: Manages physical instruments and platforms
+
+docstring: |
+  This service provides overall coordination for instrument management within an observatory context. In particular it
+  coordinates the access to the instrument registries and the interaction with instrument agents.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
+
 dependencies: [resource_registry, data_acquisition_management]
 methods:
   # -----------------
@@ -41,6 +47,7 @@ methods:
 
 
   create_instrument_agent:
+    docstring: create a cyberinfrastructure resource that represents instrument devices to the CI using a common interface, regardless of the instrument type
     in:
       instrument_agent: !InstrumentAgent
     out:
@@ -73,6 +80,7 @@ methods:
 
 
   create_instrument_device:
+    docstring: The key characteristic of an instrument device is that it is capable of reporting observed data through its interface. A device may be deployed in one location, retrieved, perhaps serviced, then deployed in another location.
     in:
       instrument_device: !InstrumentDevice
     out:
@@ -104,6 +112,7 @@ methods:
 
 
   create_instrument_model:
+    docstring: The instrument model defines specifications for a group of instruments defined by the manufacturer's model number.
     in:
       instrument_model: !InstrumentModel
     out:
@@ -204,6 +213,7 @@ methods:
 
 
   create_platform_device:
+    docstring: Platform resources include power systems, telemetry, networking, clocks, CPU cycles and storage and multiple instruments deployed on that platform.
     in:
       platform_device: !PlatformDevice
     out:
@@ -236,6 +246,7 @@ methods:
 
 
   create_platform_model:
+    docstring: The Platform Model defines specifications for a group of platform instances that is defined by the manufacturer's model number
     in:
       platform_model: !PlatformModel
     out:
@@ -273,6 +284,7 @@ methods:
 
 
   create_sensor_device:
+    docstring: The sensor is the part of the instrument that actually translates the real-world feature into a measured observation.
     in:
       sensor_device: !SensorDevice
     out:
@@ -304,6 +316,7 @@ methods:
 
 
   create_sensor_model:
+    docstring: The sensor model defines specifications for a group of sensors defined by the manufacturer's model number.
     in:
       sensor_model: !SensorModel
     out:
@@ -341,6 +354,7 @@ methods:
 # associations
 
   assign_instrument_device:
+    docstring: assign a physical instrument to a logical instrument 
     in:
       instrument_id: ""
       instrument_device_id: ""

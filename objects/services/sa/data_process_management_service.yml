@@ -1,9 +1,17 @@
 # Data Process Management Service interface definition
 
 name: data_process_management
+
+docstring: |
+  Services to monitor and control instantiated data processes anywhere in the OOI network. Also manage and update metadata related to datasets,
+  data products and data streams.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Process+Management+Service
+
 dependencies: [resource_registry, data_product_management, transform_management_service, data_acquisition_management]
 methods:
   create_data_process_definition:
+    docstring: Create a resource which defines the processing of a stream, from transform definition to scheduling
     in:
       data_process_definition: !DataProcessDefinition
     out:
@@ -36,6 +44,7 @@ methods:
   # -----------------
 
   create_data_process:
+    docstring: Create an instance or realization of a data proces definition.
     in:
       data_process_definition_id: ""
       in_subscription_id: ""

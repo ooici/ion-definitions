@@ -1,6 +1,13 @@
 # Data Acquisition Management Service interface definition
 
 name: data_acquisition_management
+
+docstring: |
+  Services related to the transformation of data samples and engineering data into messages with metadata ready for
+  publication as data product and ingestion into data archives. Service orchestrates data acquisition and processing by calling DM Distribution and Inventory services.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Acquisition+Management+Service
+
 dependencies: [resource_registry, pubsub_management]
 methods:
 

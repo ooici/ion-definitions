@@ -1,6 +1,14 @@
 # Notification Management Service interface definition
 
 name: notification_management
+
+docstring: |
+    The Notification Management Service provides a framework to publish notifications (events) and to subscribe to
+    notifications. Define a notification structure and event categorization. Capabilities to set up notification
+    system and topic trees.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Notification+Management+Service
+
 dependencies: [resource_registry]
 methods:
   create_event_type:

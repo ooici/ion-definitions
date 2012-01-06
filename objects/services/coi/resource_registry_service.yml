@@ -1,15 +1,17 @@
 # Resource Registry Service interface definition
 
 docstring: |
-  Service used to create, read, update and delete resources
+  Service used to create, read, update and delete persistent resources
   (IonObjects).  Additionally, provides methods to manipulate
-  resource associations.
+  resource associations and resource life cycle state.
 name: resource_registry
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Resource+Registry+Service
 dependencies: []
 methods:
   create:
     docstring: |
       Persist an instance of the resource passed in the object param.
+      Returns a tuple (_id, _rev) for the persistend object.
     in:
       object: {}
     out:
@@ -40,6 +42,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
+      BadRequest: lcstate was modified compared to persisted object version
 
   delete:
     docstring: |
@@ -55,13 +58,19 @@ methods:
 
   execute_lifecycle_transition:
     docstring: |
-      Alter object lifecycle. Throws exception if object does not exist.
+      Alter object lifecycle according to given transition event. Throws exception
+      if resource object does not exist or given transition_event is unknown/illegal.
+      The optional lcstate argument asserts that the current life cycle state matches.
+      The new life cycle state after applying the transition is returned.
     in:
       resource_id: ""
+      transition_event: ""
       lcstate: ""
     out:
+      lcstate: ""
     throws:
-      NotFound: object does not exist
+      NotFound: resource object does not exist
+      BadRequest: transition event unknown or illegal in current state
 
   # -----------------
 
@@ -156,12 +165,17 @@ methods:
 
   find_resources:
     docstring: |
-      Utility method for finding resources via various attributes.  Legal attribute
-      combinations are:
-        name, restype
-        restype, lcstate
-        restype,
+      Utility method for finding resources via various attributes, including resource type,
+      life cycle state and name. Legal attribute combinations are:
+        restype
         lcstate
+        restype, lcstate
+        name
+        name, restype
+      Returns a tuple (list_of_resources, list_of_matches) if id_only == False or
+      (list_of_resource_ids, list_of_matches) otherwise. List_of_matches is a list of
+      dicts with keys (type, lcstate, name, id), providing further information about the
+      matching resources.
     in:
       restype: ""
       lcstate: ""

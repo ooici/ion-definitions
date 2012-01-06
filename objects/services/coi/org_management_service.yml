@@ -1,11 +1,18 @@
-# Org Management Service interface definition
-
 name: org_management
+
+docstring: |
+  Services to define and administer a facility (synonymous Org, community), to enroll/remove members and
+  to provide access to the resources of an Org to enrolled or affiliated entities (identities). Contains
+  contract and commitment repository
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Org+Management+Service
+
 dependencies: [resource_registry]
+
 methods:
   create_org:
     docstring: |
-      Persists the provided Org object. The id string returned
+      Creates an Org based on the provided object. The id string returned
       is the internal id by which Org will be identified in the data store.
     in:
       org: !Org
@@ -16,10 +23,7 @@ methods:
 
   update_org:
     docstring: |
-      Updates the provided Org object.  Throws NotFound exception if
-      an existing version of Org is not found.  Throws Conflict if
-      the provided Org object is not based on the latest persisted
-      version of the object.
+      Updates the Org based on provided object.
     in:
       org: !Org
     out:
@@ -47,7 +51,6 @@ methods:
     in:
       org_id: ""
     out:
-      success: True
     throws:
       NotFound: object with specified id does not exist
 

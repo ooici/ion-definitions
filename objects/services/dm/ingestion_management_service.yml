@@ -1,6 +1,14 @@
 # Ingestion Management Service interface definition
 
 name: ingestion_management_service
+
+docstring: |
+    The Ingestion service provides operations to setup data ingestion as well as to perform actual data and metadata
+    increment ingestion. Provides registration, indexing, and presentation services to collect and organize data
+    holdings with their associated metadata for an individual, group and/or community.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Ingestion+Management+Service
+
 dependencies: [resource_registry]
 methods:
   define_ingestion:

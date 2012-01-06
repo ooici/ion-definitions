@@ -2,9 +2,18 @@
 # Manages views of data in coordination with the discovery service
 
 name: catalog_management
+
+docstring: |
+   The catalog definition services enables to define catalogs, which are created as datasets then can be accessed
+   through the inventory. Examples include a list of users from a specific organization, all active instruments or
+   data products that contain salinity data
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Catalog+Management+Service
+
 dependencies: [resource_registry]
 methods:
   create_catalog:
+    docstring: A catalog is a new data set that aggregates and presents datasets in a specific way.
     in:
       catalog: !Catalog
     out:

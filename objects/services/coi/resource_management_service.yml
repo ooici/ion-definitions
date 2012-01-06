@@ -1,36 +1,55 @@
-# Resource Management Service interface definition
+name: resource_management
+
+docstring: |
+  The Resource Management Service is the service that manages the Resource Types and Lifecycles
+  workflows associated with Resource Types.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Resource+Management+Service
+
+dependencies: []
 
 # TODO:
 # - Find pattern
 
-name: resource_management
-dependencies: []
 methods:
   create_resource_type:
+    docstring: Creates a Resource Type resource from the parameter ResourceType object.
     in:
       resource_type: !ResourceType
     out:
       resource_type_id: ""
-
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+      
   update_resource_type:
+    docstring: Updates an existing Resource Type resource.
     in:
       resource_type: !ResourceType
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_resource_type:
+    docstring: Returns an existing Resource Type resource.
     in:
       resource_type_id: ""
     out:
       resource_type: !ResourceType
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_resource_type:
+    docstring: Deletes an existing Resource Type resource.
     in:
       resource_type_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   find_resource_types:
+    docstring: Returns a list of Resource Type resources for the provided resource filter.
     in:
       filters: !ResourceFilter
     out:
@@ -39,25 +58,37 @@ methods:
   # -----------------
 
   create_resource_lifecycle:
+    docstring: Creates a Resource LifeCycle resource from the parameter ResourceLifeCycle object.
     in:
       resource_lifecycle: !ResourceLifeCycle
     out:
       resource_lifecycle_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_resource_lifecycle:
+    docstring: Updates an existing Resource LifeCycle resource.
     in:
       resource_lifecycle: !ResourceLifeCycle
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_resource_lifecycle:
+    docstring: Returns an existing Resource LifeCycle resource.
     in:
       resource_lifecycle_id: ""
     out:
       resource_lifecycle: !ResourceLifeCycle
-
+    throws:
+      NotFound: object with specified id does not exist
+      
   delete_resource_lifecycle:
+    docstring: Deletes an existing Resource LifeCycle resource.
     in:
       resource_lifecycle_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist

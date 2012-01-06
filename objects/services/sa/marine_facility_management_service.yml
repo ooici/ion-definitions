@@ -6,7 +6,12 @@
 # - Life cycle support operations
 
 name: marine_facility_management
-docstring: Manages the marine facility and policy and all associated sites, logical instruments and platforms
+
+docstring: |
+  Performs all the observatory level coordination of logical and physical resources and their policies.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Marine+Facility+Management+Service
+
 dependencies: [resource_registry, instrument_management_service]
 methods:
   create_marine_facility:
@@ -44,6 +49,7 @@ methods:
   # Note:
 
   create_site:
+    docstring: The concept of site typically generalizes the specific hardware or location that it represents. A site can be viewed and monitored as a collection of related resources.
     in:
       site: !Site
     out:
@@ -74,6 +80,7 @@ methods:
       site_list: []
 
   assign_site:
+    docstring: Sites can be nested within Sites.
     in:
       child_site_id: ""
       parent_site_id: ""
@@ -93,6 +100,7 @@ methods:
 
 
   create_logical_instrument:
+    docstring: A logical instrument is a virtual or conceptual representation of a series of instruments in the same place over time.
     in:
       logical_instrument: !LogicalInstrument
     out:
@@ -129,6 +137,7 @@ methods:
 
 
   create_logical_platform:
+    docstring: A logical platform is a virtual or conceptual representation of a series of platforms in the same place over time.
     in:
       logical_platform: !LogicalPlatform
     out:
@@ -165,6 +174,7 @@ methods:
 
 
   assign_platform:
+    docstring: A Platform agent can host (aggregate) other platforms and instruments
     in:
       logical_platform_id: ""
       parent_site_id: ""
@@ -179,6 +189,7 @@ methods:
       success: True
 
   assign_instrument:
+    docstring: assign an logical instrument to a host platform, also logical.
     in:
       logical_instrument_id: ""
       parent_site_id: ""

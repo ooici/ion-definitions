@@ -1,15 +1,25 @@
-# Computation Planner Service interface definition
-
 name: taskable_resource_planner_service
+
+docstring: |
+  Service to request the execution of taskable resources in registered execution environments with
+  given service level constraints. Resource requests can include muliple or composite resources.
+  Supports planning (schedule) of operational units based on available physical compute and
+  storage resources and execution policy.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Taskable+Resource+Planner+Service
+
 dependencies: [resource_registry]
+
 methods:
   request_computation:
+    docstring: Requests the execution of the given computation request.
     in:
       computation_request: !ComputationRequest
     out:
       computation_id: ""
 
   cancel_computation:
+    docstring: Cancels a computation.
     in:
       computation_id: ""
     out:

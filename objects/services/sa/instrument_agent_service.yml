@@ -4,7 +4,13 @@
 # - Define based on instrument agent interface
 
 name: instrument_agent
-docstring: The instrument and platform agents as a service (shore side deployment)
+
+docstring: |
+   This service is a deployment of instrument or platform agent behavior on the shore side as a service.
+   This service acts as any type of instrument agent.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Agent+Service
+
 dependencies: [resource_registry]
 methods:
   get_state:

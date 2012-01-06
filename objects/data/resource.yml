@@ -5,18 +5,11 @@ Resource:
   # _rev: ""   - Revision identifier (comes with every object)
   name: ""
   description: ""
-  lcstate: "NEW"
+  lcstate: "DRAFT"
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   ts_updated: ""
 
 ---
-
-ResourceType: !Extends_Resource
-  tbd: ""
-
-ResourceLifeCycle: !Extends_Resource
-  definition_type: ""
-  definition: {}
 
 TaskableResource: !Extends_Resource
   # Taskable resources are resources with behavior and state. This object describes them.
@@ -27,6 +20,21 @@ InformationResource: !Extends_Resource
   tbd: ""
 
 ---
+
+
+ResourceType: !Extends_InformationResource
+  tbd: ""
+
+ResourceLifeCycle: !Extends_InformationResource
+  definition_type: ""
+  definition: {}
+
+Attachment: !Extends_InformationResource
+  # To identify attachments to resources
+  tbd: ""
+
+---
+
 
 ContactInformation:
   name: ""
@@ -79,6 +87,3 @@ ResourceBasics:
 ResourceFilter:
   filters: {}
 
-
-Attachment: !Extends_Resource
-  tbd: ""

@@ -1,20 +1,25 @@
-# Service Gateway Service interface definition
-
 name: service_gateway
-docstring: Uses a gevent web server and Flask to provide a bridge between HTTP service requests and AMQP RPC requests to ION processes.
+
+docstring: |
+  Provides a web server accepting HTTP service requests, providing a bridge between
+  HTTP service requests and AMQP RPC requests to ION services.
+  Supports both HTTP GET and POST+JSON
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Service+Gateway+Service
+
 dependencies: []
+
 methods:
   start_service:
-    docstring: Responsible for starting the gevent based web server.
+    docstring: Starts the service gateway web server.
     in:
       hostname: ''
       port: 5000
     out:
       success: True
+
   stop_service:
-    docstring: Responsible for stopping the gevent based web server.
+    docstring: Stops the service gateway web server.
     in:
     out:
       success: True
-      
-  

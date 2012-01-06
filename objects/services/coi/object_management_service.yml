@@ -1,37 +1,54 @@
-# Object Management Service interface definition
+name: object_management
+
+docstring: |
+  A service for defining and managing object types used as resource, messages, etc.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Object+Management+Service
+
+dependencies: [resource_registry]
 
 # TODO:
 # - Define find query
 
-name: object_management
-dependencies: [resource_registry]
 methods:
   create_object_type:
+    docstring: Creates a Object Type resource from the parameter ObjectType object.
     in:
       object_type: !ObjectType
     out:
       object_type_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_object_type:
+    docstring: Updates an existing Object Type resource.
     in:
       object_type: !ObjectType
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_object_type:
-    # Read resource including object definition
+    docstring: Returns an existing Object Type resource.
     in:
       object_type_id: ""
     out:
       object_type: !ObjectType
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_object_type:
+    docstring: Deletes an existing Object Type resource.
     in:
       object_type_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   find_object_types:
+    docstring: Returns a list of Object Type resources for the provided resource filter.
     in:
       filters: !ResourceFilter
     out:

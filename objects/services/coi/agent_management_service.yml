@@ -1,46 +1,65 @@
-# Agent Management Service interface definition
-
 name: agent_management
+
+docstring: |
+  The Agent Management Service is the service that manages the Agent Definitions and the running Agents in the system.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Agent+Management+Service
+
 dependencies: [resource_registry]
+
 methods:
   # -----------------
   # Working with Agent definitions
 
   create_agent_definition:
+    docstring: Creates an Agent Definition resource from the parameter AgentDefinition object.
     in:
       agent_definition: !AgentDefinition
     out:
       agent_definition_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_agent_definition:
+    docstring: Updates an existing Agent Definition resource.
     in:
       agent_definition: !AgentDefinition
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_agent_definition:
+    docstring: Returns an existing Agent Definition resource.
     in:
       agent_definition_id: ""
     out:
       agent_definition: !AgentDefinition
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_agent_definition:
+    docstring: Deletes an existing Agent Definition resource.
     in:
       agent_definition_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Working with Agent instances
 
   register_agent:
+    docstring: Registers an Agent with an Agent Definition resource.
     in:
       agent_definition_id: ""
       agent_id: ""
     out:
       success: True
 
-  unassign_instrument_agent:
+  unassign_agent:
+    docstring: Uuregisters an Agent.  
     in:
       agent_id: ""
     out:

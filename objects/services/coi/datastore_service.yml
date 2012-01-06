@@ -1,38 +1,49 @@
-# Service interface definition to front end the
-# datastore library APIs
+name: datastore
+
+docstring: |
+  Service used to create, read, update and delete persistent Objects in the datastore.
+  The specific name of the datastore schema to use can be provided with most operations.
+  Also provides operations to work with associations and to find objects.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Datastore+Service
+
+dependencies: []
 
 # TODO:
 # - Be more specific about return types
 # - Harmonize method naming
 # - Consolidate or remove idref methods
 
-name: datastore
-dependencies: []
 methods:
   create_datastore:
+    docstring: Create a new datastore namespace.
     in:
       datastore_name: ""
     out:
       success: True
 
   delete_datastore:
+    docstring: Delete a datastore namespace and all objects within.
     in:
       datastore_name: ""
     out:
       success: True
 
   list_datastores:
+    docstring: Return a list of all datastore namespaces.
     in:
     out:
       list: []
 
   datastore_exists:
+    docstring: Return True if a given datastore namespace exists.
     in:
       datastore_name: ""
     out:
       exists: False
 
   info_datastore:
+    docstring: Get implementation specific information for a datastore namespace.
     in:
       datastore_name: ""
     out:
@@ -41,12 +52,15 @@ methods:
   # -----------------
 
   list_objects:
+    docstring: |
+      List the ids of all objects in the given datastore namespace or the default namespace.
     in:
       datastore_name: ""
     out:
       info: []
 
   list_object_revisions:
+    docstring: List the revision identifiers for an object.
     in:
       object_id: ""
       datastore_name: ""
@@ -54,6 +68,10 @@ methods:
       list: []
 
   create:
+    docstring: |
+      Persist (create) an IonObject in the datastore. If an ID is given, the object is
+      persisted under this ID; otherwise a UUID is generated. If an object with the same ID
+      exists, an exception will occur.
     in:
       object: {}
       object_id: ""
@@ -62,6 +80,10 @@ methods:
       tuple: []
 
   create_doc:
+    docstring: |
+      Persist (create) a raw dict document in the datastore. If an ID is given, the document is
+      persisted under this ID; otherwise a UUID is generated. If a document with the same ID
+      exists, an exception will occur.
     in:
       object: {}
       object_id: ""
@@ -70,36 +92,65 @@ methods:
       tuple: []
 
   read:
+    docstring: |
+      Read the latest, or optionally the specific, version of IonObject
+      with id passed in the object_id param. Throws exception if
+      object not found.
     in:
       object_id: ""
       rev_id: ""
       datastore_name: ""
     out:
       object: {}
+    throws:
+      NotFound: object with specified id does not exist
 
   read_doc:
+    docstring: |
+      Read the latest, or optionally the specific, version of raw dict document
+      with id passed in the object_id param. Throws exception if
+      document not found.
     in:
       object_id: ""
       rev_id: ""
       datastore_name: ""
     out:
       object: {}
+    throws:
+      NotFound: object with specified id does not exist
 
   update:
+    docstring: |
+      Persist new version of IonObject. Throws exception if previous
+      version of object does not exist or object passed is not based
+      on the latest persisted version.
     in:
       object: {}
       datastore_name: ""
     out:
       tuple: []
+    throws:
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   update_doc:
+    docstring: |
+      Persist new version of raw dict document. Throws exception if previous
+      version of document does not exist or object passed is not based
+      on the latest persisted version.
     in:
       object: {}
       datastore_name: ""
     out:
       tuple: []
+    throws:
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   delete:
+    docstring: |
+      Permanently delete object and all previous versions of
+      object. Throws exception if object does not exist.
     in:
       object: {}
       datastore_name: ""
@@ -107,6 +158,9 @@ methods:
       status: True
 
   delete_doc:
+    docstring: |
+      Permanently delete raw dict document and all previous versions of
+      document. Throws exception if document does not exist.
     in:
       object: {}
       datastore_name: ""
@@ -116,6 +170,38 @@ methods:
   # -----------------
 
   find:
+    docstring: |
+      Find objects based on specified criteria expression.
+      This operation is very expensive computationally. Do not use.
+
+      Generic query function that allows searching on zero
+      or more criteria represented in the following format:
+          [[<field>, <logical constant>, <value>], <and>|<or>, ...]
+
+      For example, to find all objects of type 'foo':
+          [['type_', DataStore.EQUAL, 'foo']]
+
+      Think of this as equivalent to:
+          select * from datastore_name where type = 'foo'
+
+      Possible logical values to apply are:
+          EQUAL
+          NOT_EQUAL
+          GREATER_THAN
+          GREATER_THAN_OR_EQUAL
+          LESS_THAN
+          LESS_THAN_OR_EQUAL
+
+      If you specify two or more criterion, each criterion can
+      be ANDed or ORed with the other criterion.  For example, to find
+      objects of type 'foo' with name value 'bar', pass the
+      following:
+          [['type_', DataStore.EQUAL, 'foo'], DataStore.AND, ['name', DataStore.EQUAL, 'bar']]
+
+      In SQL, this is equivalent to:
+          select * from datastore_name where type = 'foo' and name = 'bar'
+
+      This function returns IonObjects
     in:
       criteria: []
       datastore_name: ""
@@ -123,6 +209,9 @@ methods:
       list: []
 
   find_doc:
+    docstring: |
+      Find raw dict documents based on specified criteria expression.
+      This operation is very expensive computationally. Do not use. See find.
     in:
       criteria: []
       datastore_name: ""
@@ -130,6 +219,41 @@ methods:
       list: []
 
   find_by_idref:
+    docstring: |
+      Find objects based on specified association criteria expression.
+      This operation is very expensive computationally. Do not use.
+
+      Generic query function that allows searching on zero
+      or more criteria represented in the following format:
+          [(<field>, <logical constant>, <value>), ...]
+      to derive a list of associated objects.  The association
+      of interest is passed in the association attribute
+      and should be the name of an object field.
+
+      For example to find the roles of user 'foo' specify the following
+      criteria and association:
+          [['type_', DataStore.EQUAL, 'UserInfo'], DataStore.AND, ['name', DataStore.EQUAL, 'foo']], 'roles'
+
+      Think of this as equivalent to:
+          select * from datastore_name where id_ in (
+              select roles from datastore_name where type = 'UserInfo' and name = 'foo'
+          )
+
+      Possible logical values to apply are:
+          EQUAL
+          NOT_EQUAL
+          GREATER_THAN
+          GREATER_THAN_OR_EQUAL
+          LESS_THAN
+          LESS_THAN_OR_EQUAL
+
+      If you specify two or more criterion, each criterion can
+      be ANDed or ORed with the other criterion.  For example, to find
+      objects of type 'foo' with name value 'bar', pass the
+      following:
+          [['type_', DataStore.EQUAL, 'foo'], DataStore.AND, ['name', DataStore.EQUAL, 'bar']]
+
+      This function returns IonObjects
     in:
       criteria: []
       association: ""
@@ -138,6 +262,9 @@ methods:
       list: []
 
   find_by_idref_doc:
+    docstring: |
+      Find raw dict documents based on specified association criteria expression.
+      This operation is very expensive computationally. Do not use. See find_by_idref.
     in:
       criteria: []
       association: ""
@@ -146,6 +273,22 @@ methods:
       list: []
 
   resolve_idref:
+    docstring: |
+      Generic association query function that allows queries for associations
+      by subject, predicate and/or object.  Examples:
+
+      (<subject>, <predicate>, None) - returns all objects associated with
+          the subject via the specified predicate
+      (<subject>, None, <object>) - returns all associations between subject
+          and object
+      (None, <predicate>, <object>) - returns all subjects that have association
+          with object via predicate
+      (<subject>, <predicate>, <object>) - returns true if association exists
+      (None, <predicate>, None) - returns all subjects and objects associated
+          via predicate
+
+      This function returns a set of tuples in the form
+          [(IonObject, <predicate>, IonObject), ...]
     in:
       subject: ""
       predicate: ""
@@ -155,6 +298,10 @@ methods:
       list: []
 
   resolve_idref_doc:
+    docstring: |
+      Generic association query function that allows queries for associations
+      by subject, predicate and/or object and returns raw dict documents.
+      See resolve_idref.
     in:
       subject: ""
       predicate: ""
@@ -166,6 +313,12 @@ methods:
   # -----------------
 
   create_association:
+    docstring: |
+      Create an association between subject and object resources (IonObjects).
+      Subject and object values can be passed as actual object instances or just
+      object ids.  Valid predicates can be found in res/config/associations.yml.
+      Subject and object must be of the proper types for the predicate or
+      an exception will be thrown.
     in:
       subject:
       predicate:
@@ -173,14 +326,27 @@ methods:
       assoc_type:
     out:
       tuple: []
+    throws:
+      NotFound: subject or object does not exist
+      BadRequest: predicate is unknown or subject or object are invalid types for predicate
 
   delete_association:
+    docstring: |
+      For now, permanently delete an association between two resources (IonObjects).
+      Throws exception if association does not exist.
     in:
       association: ""
     out:
-      status: True
+    throws:
+      NotFound: association does not exist
 
   find_objects:
+    docstring: |
+      Find objects (or object ids) by association from a given subject or
+      subject id (if str). Returns a tuple (list_of_objects, list_of_associations)
+      if id_only == False, or (list_of_object_ids, list_of_associations)
+      if id_only == True. Predicate and object_type are optional to narrow the
+      search down. Object_type can only be set if predicate is set as well.
     in:
       subject: ""
       predicate: ""
@@ -190,6 +356,12 @@ methods:
       list: []
 
   find_subjects:
+    docstring: |
+      Find subjects (or subject ids) by association from a given object or
+      object id (if str). Returns a tuple (list_of_subjects, list_of_associations)
+      if id_only == False, or (list_of_subject_ids, list_of_associations)
+      if id_only == True. Predicate and subject_type are optional to narrow the
+      search down. Subject_type can only be set if predicate is set as well.
     in:
       subject_type: ""
       predicate: ""
@@ -199,6 +371,10 @@ methods:
       list: []
 
   find_associations:
+    docstring: |
+        Find associations by subject, predicate, object. Either subject and
+        predicate have to be provided or predicate only. Returns either a list
+        of associations or a list of association ids.
     in:
       subject: ""
       predicate: ""

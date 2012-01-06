@@ -1,49 +1,76 @@
-# Process Dispatcher Service interface definition
-
 name: process_dispatcher_service
-dependencies: [resource_registry]
+
+docstring: |
+  Service to create, read, update and delete process definitions. Process definitions
+  represent executables with information about parameterization, execution constraints and
+  packaging that go along. This service also schedules process definitions for execution
+  on execution engines and cancels executing processes.
+
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Process+Dispatcher+Service
+
+dependencies: [resource_registry]
 
 methods:
   create_process_definition:
+    docstring: Creates a Process Definition based on given object.
     in:
       process_definition: !ProcessDefinition
     out:
       process_definition_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_process_definition:
+    docstring: Updates a Process Definition based on given object.
     in:
       process_definition: !ProcessDefinition
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_process_definition:
+    docstring: Returns a Process Definition as object.
     in:
       process_definition_id: ""
     out:
       process_definition: !ProcessDefinition
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_process_definition:
+    docstring: Deletes/retires a Process Definition.
     in:
       process_definition_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   find_process_definitions:
+    docstring: Finds Process Definitions matching filter and returns a list of objects.
     in:
-      query: {}
+      filters: !ResourceFilter
     out:
       process_definition_list: []
 
+  # -----------------
+
   schedule_process:
+    docstring: Schedule a Process Definition for execution as process on an Execution Engine.
     in:
       process_definition_id: ""
       schedule: !ProcessSchedule
     out:
       process_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   cancel_process:
+    docstring: Cancels the execution of the given process id.
     in:
       process_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist

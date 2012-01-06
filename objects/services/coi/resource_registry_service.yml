@@ -1,12 +1,14 @@
-# Resource Registry Service interface definition
+name: resource_registry
 
 docstring: |
   Service used to create, read, update and delete persistent resources
   (IonObjects).  Additionally, provides methods to manipulate
   resource associations and resource life cycle state.
-name: resource_registry
+
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Resource+Registry+Service
+
 dependencies: []
+
 methods:
   create:
     docstring: |

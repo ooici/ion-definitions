@@ -5,8 +5,10 @@
 # Steams exist in the context of a higher level resource (steam XP, topic tree?)
 
 name: pubsub_management
+
 docstring:
   Core responsibilities include stream management, subscription management
+
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+PubSub+Management+Service
 
 dependencies: [resource_registry]

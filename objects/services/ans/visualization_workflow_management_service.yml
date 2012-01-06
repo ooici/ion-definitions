@@ -1,28 +1,48 @@
 # Visualization Workflow Management Service interface definition
 
 name: visualization_workflow_management_service
+docstring: The Visualization Workflow Management Service provides support for the definition, integration and enactment of defined workflows. Capabilities to enable the definition, instantiation, scheduling and execution control of developer provided workflows for the visualization of data products
 dependencies: [resource_registry]
 methods:
   create_visualization_workflow:
+    docstring: Creates an Visualization Workflow resource from the parameter visualization_workflow object.
     in:
       visualization_workflow: !VisualizationWorkflow
     out:
       visualization_workflow_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_visualization_workflow:
+    docstring: Updates an existing Visualization Workflow resource.
     in:
       visualization_workflow: !VisualizationWorkflow
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_visualization_workflow:
+    docstring: Returns an existing Visualization Workflow resource.
     in:
       visualization_workflow_id: ""
     out:
       visualization_workflow: !VisualizationWorkflow
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_visualization_workflow:
+    docstring: Deletes an existing Visualization Workflow resource.
     in:
       visualization_workflow_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_visualization_workflow:
+    docstring: Returns a list of Visualization Workflow resources for the provided resource filter.
+    in:
+      filters: !ResourceFilter
+    out:
+      visualization_workflow_list: []

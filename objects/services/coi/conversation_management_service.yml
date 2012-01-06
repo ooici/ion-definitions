@@ -1,36 +1,55 @@
-# Conversation Management Service interface definition
+name: conversation_management
+
+docstring: |
+  The Conversation Management Service is the service that manages the Conversations and their types
+  which are allowed in the system.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Conversation+Managment+Service
+
+dependencies: [resource_registry]
 
 # TODO:
 # - Define query
 
-name: conversation_management
-dependencies: [resource_registry]
 methods:
   create_conversation:
+    docstring: Creates a Conversation resource from the parameter Conversation object.
     in:
       conversation: !Conversation
     out:
       conversation_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_conversation:
+    docstring: Updates an existing Conversation resource.
     in:
       conversation: !Conversation
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_conversation:
+    docstring: Returns an existing Conversation resource.
     in:
       conversation_id: ""
     out:
       conversation: !Conversation
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_conversation:
+    docstring: Deletes an existing Conversation resource.
     in:
       conversation_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   find_conversations:
+    docstring: Returns a list of Conversation resources for the provided resource filter.
     in:
       filters: !ResourceFilter
     out:
@@ -39,33 +58,45 @@ methods:
   # -----------------
 
   create_conversation_type:
+    docstring: Creates a Conversation Type resource from the parameter ConversationType object.
     in:
       conversation_type: !ConversationType
     out:
       conversation_type_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_conversation_type:
+    docstring: Updates an existing Conversation Type resource.
     in:
       conversation_type: !ConversationType
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_conversation_type:
+    docstring: Returns an existing Conversation Type resource.
     in:
       conversation_type_id: ""
     out:
       conversation_type: !ConversationType
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_conversation_type:
+    docstring: Deletes an existing Conversation Type resource.
     in:
       conversation_type_id: ""
     out:
-      success: True
-
+    throws:
+      NotFound: object with specified id does not exist
   # -----------------
 
   log_message:
+    docstring: Logs a message to the system Conversation Log
     in:
       message: {}
     out:
-      success: True
+

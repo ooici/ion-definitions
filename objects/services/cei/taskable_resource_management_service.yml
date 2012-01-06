@@ -1,5 +1,13 @@
-# Taskable Resource Management Service interface definition
-
 name: taskable_resource_management_service
+
+docstring: |
+  Service to manage the execution of taskable resources in registered execution environments. Taskable
+  resources include EPUs, Operational Units, Processes, Execution Engines as well as storage related
+  and external compute resources.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Taskable+Resource+Management+Service
+
 dependencies: [resource_registry]
+
 methods:
+  # TBD

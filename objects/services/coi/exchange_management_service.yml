@@ -1,11 +1,16 @@
-# Exchange Management Service interface definition
+name: exchange_management
+
+docstring: |
+  The Exchange Management Service is the service that manages the Exchange and its associated resources,
+  such as Exchange Spaces, Names, Points and Brokers.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Exchange+Management+Service
+
+dependencies: [resource_registry]
 
 # TODO:
 # - Define find query
 
-name: exchange_management
-docstring: The Exchange Management Service is the service that manages the Exchange and its associated resources.
-dependencies: [resource_registry]
 methods:
   create_exchange_space:
     docstring: Creates an Exchange Space distributed resource from the parameter exchangespace object. 

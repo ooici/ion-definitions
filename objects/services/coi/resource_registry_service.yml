@@ -67,12 +67,14 @@ methods:
     in:
       resource_id: ""
       transition_event: ""
-      lcstate: ""
+      current_lcstate: ""
     out:
       lcstate: ""
     throws:
       NotFound: resource object does not exist
-      BadRequest: transition event unknown or illegal in current state
+      BadRequest: transition event unknown
+      Inconsistent: resource not in current_state or transition illegal in current state
+      Conflict: race condition while trying to update
 
   # -----------------
 

@@ -10,7 +10,7 @@ name: transform_management_service
 docstring: |
     Provides capabilities to manage the data transformations available in ION.
 
-spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+OV+DM+Transform+Management+Service
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Transform+Management+Service
 
 dependencies: [resource_registry]
 methods:

@@ -111,7 +111,7 @@ methods:
       subscription_id: ""
     out:
       success: True
-    throws
+    throws:
       NotFound: if subscription_id doesn't exist
 
   deactivate_subscription:

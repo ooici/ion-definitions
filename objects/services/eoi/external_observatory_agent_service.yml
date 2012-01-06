@@ -1,0 +1,20 @@
+# External Observatory Agent Service interface definition
+# Manages external data sources
+
+name: external_observatory_agent
+
+docstring: |
+   One service representing multiple external sources and data sets.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+External+Observatory+Agent+Service
+
+dependencies: [resource_registry]
+methods:
+  start_data_sampling:
+    docstring: Initiate data updates from an external source.
+    in:
+      external_dataset_id: ""
+    out:
+      success: True
+
+

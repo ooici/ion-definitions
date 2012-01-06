@@ -5,7 +5,7 @@ Resource:
   # _rev: ""   - Revision identifier (comes with every object)
   name: ""
   description: ""
-  lcstate: "NEW"
+  lcstate: "DRAFT"
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   ts_updated: ""
 

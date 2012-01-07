@@ -5,7 +5,7 @@ ConversationType: !Extends_InformationResource
   definition_type: ""
   definition: ""
 
-ConverationRole: !Extends_InformationResource
+ConversationRole: !Extends_InformationResource
   tbd: ""
 
 ConverationRoleBinding:

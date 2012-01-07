@@ -1,0 +1,67 @@
+name: user_notification
+
+docstring: |
+  Provides management of user requests for notification of various events within ION.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
+
+dependencies: [resource_registry]
+
+methods:
+  create_notification:
+    docstring: |
+      Persists the provided NotificationRequest object for the specified Org id. The id string returned
+      is the internal id by which NotificationRequest will be indentified in the data store.
+    in:
+      notification: !NotificationRequest
+    out:
+      notification_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_notification:
+    docstring: |
+      Updates the provided NotificationRequest object.  Throws NotFound exception if
+      an existing version of NotificationRequest is not found.  Throws Conflict if
+      the provided NotificationRequest object is not based on the latest persisted
+      version of the object.
+    in:
+      notification: !NotificationRequest
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_notification:
+    docstring: |
+      Returns the NotificationRequest object for the specified notification id.
+      Throws exception if id does not match any persisted NotificationRequest
+      objects.
+    in:
+      notification_id: ""
+    out:
+      notification: !NotificationRequest
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_notification:
+    docstring: |
+      For now, permanently deletes NotificationRequest object with the specified
+      id. Throws exception if id does not match any persisted NotificationRequest.
+    in:
+      notification_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_notifications_by_user:
+    docstring: |
+      Returns a list of notifications for a specific user. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      user_id: ""
+    out:
+      notification_list: []
+    throws:
+      NotFound: object with specified id does not exist

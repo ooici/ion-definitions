@@ -1,12 +1,26 @@
+DatasetDescription:
+  data_sampling: !enum
+      NONE: "NONE"
+      FIRST_LAST: "FIRST_LAST"
+      FULL: "FULL"
+      SHOTGUN: "SHOTGUN"
+      SHOTGUN_COUNT: "SHOTGUN_COUNT"
+      _default: NONE
+  parameters: {}
+
+UpdateDescription:
+  last_update_result: None
+  last_update_timestamp: None
+  last_signature: ""
+  parameters: {}
+
+---
+
 ExternalDataProvider: !Extends_InformationResource
   institution: !Institution
   contact: !ContactInformation
 
 ExternalDataset: !Extends_InformationResource
-  dataset_description: ""
-  update_description: ""
-  dataset_path: ""
-  temporal_id: ""
-  last_signature: None
+  dataset_description: !DatasetDescription
+  update_description: !UpdateDescription
   contact: !ContactInformation
-  

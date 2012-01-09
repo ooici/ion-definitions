@@ -15,128 +15,174 @@ dependencies: [resource_registry]
 methods:
 
   create_stream:
-    docstring: The stream resource id is the topic in the simple topic topology.
+    docstring: Creates a new stream. The id string returned is the ID of the new stream
+               in the resource registry.
     in:
       stream: !Stream
     out:
       stream_id: ""
 
   update_stream:
+    docstring: Update an existing stream.
     in:
       stream: !Stream
     out:
       success: True
 
   read_stream:
+    docstring: Get an existing stream object.
     in:
       stream_id: ""
     out:
       stream: !Stream
+    throws:
+      NotFound: if stream_id doesn't exist
 
   delete_stream:
+    docstring: Delete an existing stream.
     in:
       stream_id: ""
     out:
       success: True
+    throws:
+      NotFound: if stream_id doesn't exist
 
   find_streams:
+    docstring: Find a stream in the resource_registry based on the filters provided.
     in:
       filter: !ResourceFilter
     out:
       stream_list: []
 
   find_streams_by_producer:
+    docstring: Find all streams that contain a particular producer.
     in:
       producer_id: ""
     out:
       stream_list: []
 
   find_streams_by_consumer:
+    docstring: Not implemented here.
     in:
       consumer_id: ""
     out:
       stream_list: []
+    throws:
+      NotImplementedError: Method not implemented
 
   # -----------------
 
   create_subscription:
+    docstring: Create a new subscription. The id string returned is the ID of the new subscription
+               in the resource registry.
     in:
       subscription: !Subscription
     out:
       subscription_id: ""
 
   update_subscription:
+    docstring: Update an existing subscription.
     in:
       subscription: !Subscription
     out:
       success: True
 
   read_subscription:
+    docstring: Get an existing subscription object.
     in:
       subscription_id: ""
     out:
       subscription: !Subscription
+    throws:
+      NotFound: if subscription_id doesn't exist
 
   delete_subscription:
+    docstring: Delete an existing subscription.
     in:
       subscription_id: ""
     out:
       success: True
+    throws:
+      NotFound: if subscription_id doesn't exist or subscription has no stream association
 
   activate_subscription:
+    docstring: Bind a subscription using a channel layer.
     in:
       subscription_id: ""
     out:
       success: True
+    throws:
+      NotFound: if subscription_id doesn't exist
 
   deactivate_subscription:
+    docstring: Unbinds a subscription using a channel layer.
     in:
       subscription_id: ""
     out:
       success: True
+    throws:
+      NotFound: if subscription_id doesn't exist
 
   # -----------------
 
   register_consumer:
+    docstring: Not implmented here.
     in:
       exchange_name: ""
     out:
       success: True
+    throws:
+      NotImplementedError: Method not implemented
 
   unregister_consumer:
+    docstring: Not implemented here.
     in:
       exchange_name: ""
     out:
       success: True
+    throws:
+      NotImplementedError: Method not implemented
 
   find_consumers_by_stream:
+    docstring: Not implemented here.
     in:
       stream_id: ""
     out:
       consumer_list: []
+    throws:
+      NotImplementedError: Method not implemented
 
   # -----------------
 
   # Note: a producer is not a resource, just a declaration
 
   register_producer:
-    docstring:  The publication credential is nothing more than the stream resource id which is used as the routing key for messages on that stream in this prototype.
+    docstring: Register a producer with a stream.
     in:
       exchange_name: ""
       stream_id: ""
     out:
       stream_route: !StreamRoute
+    throws:
+      NotFound: if stream_id doesn't exist
 
   unregister_producer:
+    docstring: Unregister a producer from a stream.
     in:
       exchange_name: ""
       stream_id: ""
     out:
       success: True
+    throws:
+      NotFound: if stream_id doesn't exist
+      ValueError: if producer is not registered with the stream
 
   find_producers_by_stream:
+    docstring: Returns a list of registered producers for a stream.
     in:
       stream_id: ""
     out:
       producer_list: []
+    throws:
+      NotFound: if stream_id doesn't exist
 

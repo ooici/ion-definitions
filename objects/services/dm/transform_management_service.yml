@@ -12,7 +12,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Transform+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [pubsub_management, process_dispatcher_service, resource_registry]
 methods:
   create_transform:
     in:

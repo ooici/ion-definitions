@@ -1,0 +1,108 @@
+# event.yml: events/notifications messages
+
+Event:
+  origin: ""        # the origin of the event (derived specific)
+  description: ""   # readable description of the event (not required)
+  ts_created: ""    # timestamp of event created in millis in UNIX epoch
+
+---
+
+ResourceLifecycleEvent: !Extends_Event
+  state: !enum
+    NEW: "NEW"
+    READY: "READY"
+    ACTIVE: "ACTIVE"
+    TERMINATED: "TERMINATED"
+    ERROR: "ERROR"
+    _default: NEW
+
+---
+
+AppLoaderEvent: !Extends_Event
+  app_name: ""
+  state: !enum
+    STARTED: "STARTED"
+    STOPPED: "STOPPED"
+
+---
+
+ContainerStartupEvent: !Extends_Event
+  startup_names: []         # things we were required to startup with the container, list of strings
+
+---
+
+TriggerEvent: !Extends_Event
+  task_id: ""               # task id in the scheduler service
+
+# extend this for other triggered events
+
+---
+
+ResourceModifiedEvent: !Extends_Event
+  resource_id: 0            # TODO what is relevent here?
+
+---
+
+DatasourceUnavailableEvent: !Extends_ResourceModifiedEvent
+  datasource_id: ""
+  dataset_id: ""
+
+  title: ""
+  url: ""
+
+  error_explanation: ""
+
+---
+
+DatasetSupplementAddedEvent: !Extends_ResourceModifiedEvent
+  datasource_id: ""
+  dataset_id: ""
+
+  title: ""
+  url: ""
+
+  start_datetime_millis: 0
+  end_datetime_millis: 0
+
+  number_of_timesteps: 0
+
+---
+
+DatasetChangeEvent: !Extends_ResourceModifiedEvent
+  dataset_id: ""
+
+---
+
+DatasourceChangeEvent: !Extends_ResourceModifiedEvent
+  datasource_id: ""
+
+---
+
+IngestionProcessingEvent: !Extends_ResourceModifiedEvent
+  dataset_id: ""            # dataset being processed
+  ingestion_process_id: ""  # which ingestion process is handling this
+  conv_id: ""               # conversation id as known by ingestion
+  processing_step: ""       # string of "dataset", "chunk", "done"
+
+---
+
+NewSubscriptionEvent: !Extends_Event
+  dispatcher_workflow: ""       # TODO: this is a link, how2do
+
+---
+
+DelSubscriptionEvent: !Extends_Event
+  dispatcher_workflow: ""       # TODO: this is a link, how2do
+
+---
+
+DataEvent: !Extends_Event
+  dataset_id: ""
+  datasource_id: ""
+  data_block: ""
+
+---
+
+InstrumentSampleDataEvent: !Extends_DataEvent
+  could_not_find_this_original_event_type: ""       # please2fill in
+

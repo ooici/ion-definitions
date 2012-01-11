@@ -9,17 +9,23 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Data+R
 
 dependencies: [resource_registry]
 methods:
-  replay_data:
-    docstring: Replays data from data store by streaming to an exchange name.
+  define_replay:
+    docstring: Define the stream that will contain the data from data store by streaming to an exchange name.
     in:
       dataset_id: ""
       query: {}
       delivery_format: {}
     out:
-      exchange_name: ""
+      replay_id: ""
+      stream_id: ""
+
+  start_replay:
+    docstring: Replays data from data store by streaming to an exchange name.
+    in:
+      replay_id: ""
+    out:
 
   cancel_replay:
     in:
-      exchange_name: ""
+      replay_id: ""
     out:
-      success: True

@@ -1,0 +1,11 @@
+name: deployable_type_management_service
+
+docstring: |
+  The service which provides Deployable Type definitions
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Deployable+Type+Management+Service
+
+dependencies: [resource_registry]
+
+methods:
+  # TBD

@@ -202,3 +202,30 @@ methods:
       resource_identity_id: ""
     out:
 
+  # -----------------
+  # Utility methods
+  
+  signon:
+    docstring: |
+      Validates the certificate. If legit, extracts the subject line and searches
+      all UserCredentials objects looking for a match.
+      - If found, a lookup is performed on the association to the UserIdentity object.
+      If found, a lookup is performed to see if there is an associated UserInfo object.
+      The UserIdentity object id is returned along with the boolean True to indicate
+      whether a UserInfo object was found (this is a known user who has registered).
+      - If not found, a new UserIdentity object is created, a new UserCredentials
+      object is create, and an association is established between the two. The object
+      id of the UserIdentity object is returned with the boolean False to indicate
+      this is a new user who needs to register.
+    in:
+      certificate: ""
+      ignore_date_range: False
+    out:
+      user_id: ""
+      valid_til: ""
+      registered: False      
+    throws:
+      BadRequest: if certificate is not valid
+      NotFound: Something bad happened in the registry such that an object or association got lost
+      ServerError: More than one UserCredentials object was associated with the certificate subject
+

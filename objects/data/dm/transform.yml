@@ -1,7 +1,4 @@
-Transform: !Extends_InformationResource
-  #this is a cei process that is running the transform
-  process_definition_id: ""
-  process_id: ""
-  in_subscription_id: ""
-  out_stream_id: ""
 
+Transform: !Extends_InformationResource
+  process_id: ""
+  configuration: {}

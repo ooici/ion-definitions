@@ -1,6 +1,13 @@
 ProcessDefinition: !Extends_InformationResource
-  definition_type: ""
-  definition: {}
+  # Preloaded process defintions for each kind of process that can be executed
+  version: ""
+  executable: {
+    module: ""
+    class: ""
+    }
+  config: {}
+
+---
 
 ProcessSchedule: !Extends_InformationResource
   activation_mode: ""

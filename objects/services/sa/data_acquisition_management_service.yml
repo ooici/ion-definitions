@@ -18,24 +18,32 @@ methods:
       external_data_provider: !ExternalDataProvider
     out:
       external_data_provider_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_external_data_provider:
     in:
       external_data_provider: !ExternalDataProvider
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_external_data_provider:
     in:
       external_data_provider_id: ""
     out:
       external_data_provider: !ExternalDataProvider
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_external_data_provider:
     in:
       external_data_provider_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulate data sources
@@ -45,24 +53,32 @@ methods:
       data_source: !DataSource
     out:
       data_source_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_data_source:
     in:
       data_source: !DataSource
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_data_source:
     in:
       data_source_id: ""
     out:
       data_source: !DataSource
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_data_source:
     in:
       data_source_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
 
   # -----------------
@@ -72,24 +88,32 @@ methods:
       external_dataset: !ExternalDataset
     out:
       external_dataset_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_external_dataset:
     in:
       external_dataset: !ExternalDataset
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_external_dataset:
     in:
       external_dataset_id: ""
     out:
       external_dataset: !ExternalDataset
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_external_dataset:
     in:
       external_dataset_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # The following operations assign and unassign data agents
@@ -159,21 +183,29 @@ methods:
       data_producer: !DataProducer
     out:
       data_producer_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
 
   update_data_producer:
     in:
       data_producer: !DataProducer
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
 
   read_data_producer:
     in:
       data_producer_id: ""
     out:
       data_producer: !DataProducer
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_data_producer:
     in:
       data_producer_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist

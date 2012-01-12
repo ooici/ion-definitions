@@ -10,10 +10,11 @@ dependencies: [resource_registry]
 methods:
   create_notification:
     docstring: |
-      Persists the provided NotificationRequest object for the specified Org id. The id string returned
-      is the internal id by which NotificationRequest will be indentified in the data store.
+      Persists the provided NotificationRequest object for the specified Org id. Associate the Notification resource with the use The id string returned
+      is the internal id by which NotificationRequest will be identified in the data store.
     in:
       notification: !NotificationRequest
+      user_id: ""
     out:
       notification_id: ""
     throws:
@@ -65,3 +66,17 @@ methods:
       notification_list: []
     throws:
       NotFound: object with specified id does not exist
+
+  find_events:
+    docstring: |
+      Returns a list of events that match the specified search criteria. Will throw a not NotFound exception
+      if no events exist for the given parameters.
+    in:
+      origin: ""
+      type: ""
+      min_datetime: ""
+      max_datetime: ""
+    out:
+      event_list: []
+    throws:
+      NotFound: object with specified paramteres does not exist

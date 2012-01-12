@@ -1,10 +1,9 @@
 ProcessDefinition: !Extends_InformationResource
   # Preloaded process defintions for each kind of process that can be executed
   version: ""
-  executable: {
+  executable:
     module: ""
     class: ""
-    }
   config: {}
 
 ---

@@ -15,8 +15,9 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Transf
 dependencies: [pubsub_management, process_dispatcher_service, resource_registry]
 methods:
   create_transform:
-    docstring: Create a transform resource and start the process using CEI Process dispatcher. Associate the
-    transform to its process definition, in_subscription and out_stream. The transform_id is returned.
+    docstring: |
+      Create a transform resource and start the process using CEI Process dispatcher. Associate the
+      transform to its process definition, in_subscription and out_stream. The transform_id is returned.
     in:
       in_subscription_id: ""
       out_stream_id: ""
@@ -32,6 +33,7 @@ methods:
     in:
       configuration: {}
     out:
+
     throws:
      NotImplementedError: Method not implemented
 

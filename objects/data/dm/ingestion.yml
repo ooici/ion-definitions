@@ -1,0 +1,21 @@
+
+
+StreamIngestionPolicy: !Extends_InformationResource
+  # Policy specific to ingestion of a particular stream
+  archive_data: True
+  archive_metadata: True
+  stream_id: ""
+
+IngestionConfiguration: !Extends_InformationResource
+  # The default settings for ingestion of data on an exchange point
+  number_of_workers: 2
+  hdf_storage:
+    filesystem: ""
+    root_path: ""
+   couch_storage:
+    server: ""
+    database: ""
+  default_policy: !IngestPolicy
+
+
+

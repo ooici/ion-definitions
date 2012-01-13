@@ -1,4 +1,4 @@
-name: process_dispatcher_service
+name: process_dispatcher
 
 docstring: |
   Service to create, read, update and delete process definitions. Process definitions

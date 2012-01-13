@@ -8,7 +8,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Ingestion+Management+Service
 
-dependencies: [resource_registry, pubsub_management, transform_management_service]
+dependencies: [resource_registry, pubsub_management, transform_management]
 methods:
   create_ingestion_configuration:
     docstring: Setup ingestion workers to ingest all the data from a single exchange point.

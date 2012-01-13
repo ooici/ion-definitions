@@ -17,7 +17,7 @@ AssociationTypes:
     domain: [DataProducer, DataProduct]
     range: [Dataset]
   hasDataProducer:
-    domain: [DataProduct, InstrumentDevice]
+    domain: [DataProcess, InstrumentDevice]
     range: [DataProducer]
   hasInputProduct:
     domain: [DataProcess]

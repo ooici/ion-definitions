@@ -44,10 +44,10 @@ methods:
   # -----------------
 
   create_data_process:
-    docstring: Create an instance or realization of a data proces definition.
+    docstring: Create an instance or realization of a data process definition.
     in:
       data_process_definition_id: ""
-      in_subscription_id: ""
+      in_data_product_id: ""
       out_data_product_id: ""
     out:
       data_process_id: ""

@@ -3,28 +3,85 @@
 name: ingestion_management_service
 
 docstring: |
-    The Ingestion service provides operations to setup data ingestion as well as to perform actual data and metadata
-    increment ingestion. Provides registration, indexing, and presentation services to collect and organize data
-    holdings with their associated metadata for an individual, group and/or community.
+    The Ingestion service provides operations to setup data ingestion workers and the ingestion policy for each stream.
+    The actual processing of data and metadata occurs in an ingestion worker process, not the ingestion service.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Ingestion+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, pubsub_management, transform_management]
 methods:
-  define_ingestion:
+  create_ingestion_configuration:
+    docstring: Setup ingestion workers to ingest all the data from a single exchange point.
     in:
-      params: ""
+      exchange_point_id: "" # Resource is not yet used - later will be an id, for now it is empty (default is science_data)!
+      couch_storage:
+        filesystem: ""
+        root_path: ""
+      hfd_storage:
+        server: ""
+        database: ""
+      number_of_workers: 0
+      default_policy: !StreamIngestionPolicy
     out:
-      status: True
+      ingestion_configuration_id: ""
 
-  define_new_version:
+  update_ingestion_configuration:
+    docstring: Change the number of workers or the default policy for ingesting data on each stream
     in:
-      params: ""
+      ingestion_configuration: !IngestionConfiguration
     out:
-      status: True
 
-  ingest_increment:
+  read_ingestion_configuration:
+    docstring: Get an existing ingestion configuration object.
     in:
-      params: ""
+      ingestion_configuration_id: ""
     out:
-      status: True
+      ingestion_configuration: !IngestionConfiguration
+    throws:
+      NotFound: if ingestion configuration did not exist
+
+  delete_ingestion_configuration:
+    docstring: Delete an existing ingestion configuration object.
+    in:
+      ingestion_configuration_id: ""
+    out:
+    throws:
+      NotFound: if ingestion configuration did not exist
+
+  #-------------------------
+
+  create_stream_policy:
+    docstring: Create a policy for a particular stream and associate it to the ingestion configuration for the
+    exchange point the stream is on. (After LCA)
+    in:
+      stream_id: ""
+      archive_data: ""
+      archive_metadata: ""
+    out:
+      ingestion_policy_id: ""
+
+  update_stream_policy:
+    docstring: Change the number of workers or the default policy for ingesting data on each stream (After LCA)
+    in:
+      stream_policy: !StreamIngestionPolicy
+    out:
+    throws:
+      NotFound: if ingestion configuration did not exist
+
+  read_stream_policy:
+    docstring: Get an existing stream policy object. (After LCA)
+    in:
+      stream_policy_id: ""
+    out:
+      ingestion_configuration: !StreamIngestionPolicy
+    throws:
+      NotFound: if ingestion configuration did not exist
+
+
+  delete_stream_policy:
+    docstring: Delete an existing stream policy object. (After LCA)
+    in:
+      ingestion_configuration_id: ""
+    out:
+    throws:
+      NotFound: if ingestion configuration did not exist

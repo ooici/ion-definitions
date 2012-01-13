@@ -5,14 +5,14 @@
 #   Sequence of steps
 #   Schedule and bind different?
 
-name: transform_management_service
+name: transform_management
 
 docstring: |
     Provides capabilities to manage the data transformations available in ION.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Transform+Management+Service
 
-dependencies: [pubsub_management, process_dispatcher_service, resource_registry]
+dependencies: [resource_registry, pubsub_management, process_dispatcher]
 methods:
   create_transform:
     docstring: |
@@ -53,7 +53,7 @@ methods:
   # -----------------
 
 
-  bind_transform:
+  activate_transform:
     docstring: Activate the subscription to bind (start) the transform
     in:
       transform_id: ""

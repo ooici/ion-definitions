@@ -11,7 +11,7 @@ methods:
       cls:
       config:
     out:
-      success: True
+      process_id: ""
 
   start_app:
     in:

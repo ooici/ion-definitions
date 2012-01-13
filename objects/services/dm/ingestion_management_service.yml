@@ -8,7 +8,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Ingestion+Management+Service
 
-dependencies: [resource_registry, pubsub_management, transform_management]
+dependencies: [resource_registry, pubsub_management, transform_management_service]
 methods:
   create_ingestion_configuration:
     docstring: Setup ingestion workers to ingest all the data from a single exchange point.
@@ -51,8 +51,8 @@ methods:
   #-------------------------
 
   create_stream_policy:
-    docstring: Create a policy for a particular stream and associate it to the ingestion configuration for the
-      exchange point the stream is on. (After LCA)
+    docstring: Create a policy for a particular stream and associate it to the ingestion configuration for the exchange
+      point the stream is on. (After LCA)
     in:
       stream_id: ""
       archive_data: ""

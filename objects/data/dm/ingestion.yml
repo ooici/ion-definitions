@@ -12,7 +12,7 @@ IngestionConfiguration: !Extends_InformationResource
   hdf_storage:
     filesystem: ""
     root_path: ""
-   couch_storage:
+  couch_storage:
     server: ""
     database: ""
   default_policy: !IngestPolicy

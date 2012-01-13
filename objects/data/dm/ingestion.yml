@@ -6,6 +6,8 @@ StreamIngestionPolicy: !Extends_InformationResource
   archive_metadata: True
   stream_id: ""
 
+---
+
 IngestionConfiguration: !Extends_InformationResource
   # The default settings for ingestion of data on an exchange point
   number_of_workers: 2

@@ -15,7 +15,7 @@ IngestionConfiguration: !Extends_InformationResource
   couch_storage:
     server: ""
     database: ""
-  default_policy: !IngestPolicy
+  default_policy: !StreamIngestionPolicy
 
 
 

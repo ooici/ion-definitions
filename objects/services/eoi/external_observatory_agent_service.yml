@@ -6,15 +6,118 @@ name: external_observatory_agent
 docstring: |
    One service representing multiple external sources and data sets.
 
+   NOTE:  At this point, the functions below the "#From ResourceAgent" comment are copied directly
+   from the ResourceAgent interface definition (ion-definitions/objects/services/resource_agent.yml).
+   Ultimately, this service should really inherit from or be a subclass of ResourceAgent.
+   It is currently unclear how this should happen, but one suggestion is to have the concrete
+   implementation use multiple-inheritance, for example:
+
+     class ExternalObservatoryAgentService(BaseExternalObservatoryAgentService, ResourceAgent):
+
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+External+Observatory+Agent+Service
 
 dependencies: [resource_registry]
 methods:
-  start_data_sampling:
-    docstring: Initiate data updates from an external source.
+
+  spawn_worker:
+    docstring: |
+      Create a service process (worker) that contains the appropriate ExternalDataHandler and Pubsub instances
+      requried to operate on the ExternalDataset resource indicated by "resource_id"
     in:
-      external_dataset_id: ""
+      resource_id: ""
     out:
-      success: True
+      worker_id: ""
+      #worker: ??
+    throws:
+      NotFound: if the ExternalDataset resource indicated by "resource_id" can't be found
+
+  get_worker:
+    docstring: |
+      Locate an existing worker for the given "resource_id".  If one does not exist, one will be created
+    in:
+      resource_id: ""
+    out:
+      worker_id: ""
+      #worker: ??
+    throws:
+      NotFound: if the ExternalDataset resource indicated by "dataset_id" can't be found
 
 
+
+# -----------------
+# From ResourceAgent
+
+  # -----------------
+  # Capabilities interface
+
+  get_capabilities:
+    in:
+      # Leave types default for all
+      capability_types: []
+    out:
+      capability_list: []
+
+  # -----------------
+  # Resource control interface
+
+  execute:
+    docstring: |
+      Execute a command on the resource represented by the agent
+      One parameter of the AgentCommand is a resource_id.  If a worker for the dataset_id exists, the
+      command is forwarded to the worker.  If it does not exist, one is spawned and then the command
+      is forwarded.
+    in:
+      command: !AgentCommand
+    out:
+      result: !AgentCommandResult
+    throws:
+      BadRequest: if the command was malformed
+      NotFound: if the command is not implemented in the agent
+
+  get_param:
+    docstring: Get the value of the given resource parameter
+    in:
+      name: ""
+    out:
+      value: ""
+    throws:
+      NotFound: if the parameter does not exist
+
+  set_param:
+    docstring: Set the value of the given resource parameter
+    in:
+      name: ""
+      value: ""
+    out:
+      prior_value: ""
+    throws:
+      NotFound: if the parameter does not exist
+
+  # -----------------
+  # Agent control interface
+
+  execute_agent:
+    docstring: Execute a command on the agent itself (rather than against the represented resource)
+    in:
+      command: !AgentCommand
+    out:
+      result: !AgentCommandResult
+
+  get_agent_param:
+    docstring: Get the value of the given agent parameter
+    in:
+      name: ""
+    out:
+      value: ""
+    throws:
+      NotFound: if the parameter does not exist
+
+  set_agent_param:
+    docstring: Set the value of the given agent parameter
+    in:
+      name: ""
+      value: ""
+    out:
+      prior_value: ""
+    throws:
+      NotFound: if the parameter does not exist

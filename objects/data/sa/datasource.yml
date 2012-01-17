@@ -2,6 +2,5 @@ DataSource: !Extends_InformationResource
   type: ""
   connection_params: {}
   protocol_type: ""
-  base_data_url: ""
   institution: !Institution
   contact: !ContactInformation

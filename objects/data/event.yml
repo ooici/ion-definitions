@@ -8,13 +8,21 @@ Event:
 ---
 
 ResourceLifecycleEvent: !Extends_Event
-  state: !enum (name=ResourceLifecyleEventState, values=(NEW, READY, ACTIVE, TERMINATED, ERROR), default=NEW)
+  state: !enum
+    NEW: "NEW"
+    READY: "READY"
+    ACTIVE: "ACTIVE"
+    TERMINATED: "TERMINATED"
+    ERROR: "ERROR"
+    _default: NEW
 
 ---
 
 AppLoaderEvent: !Extends_Event
   app_name: ""
-  state: !enum (name=AppLoaderEventState, values=(STARTED, STOPPED), default=STARTED)
+  state: !enum
+    STARTED: "STARTED"
+    STOPPED: "STOPPED"
 
 ---
 

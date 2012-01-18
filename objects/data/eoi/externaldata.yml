@@ -18,3 +18,17 @@ ExternalDataset: !Extends_InformationResource
   dataset_description: !DatasetDescription
   update_description: !UpdateDescription
   contact: !ContactInformation
+
+---
+
+ExternalDataSourceModel: !Extends_InformationResource
+  model: ""
+  data_handler_module: ""
+  data_handler_class: ""
+
+ExternalDataAgent: !Extends_InformationResource
+  agent_version: ""
+
+ExternalDataAgentInstance: !Extends_InformationResource
+  stream_route: !StreamRoute
+  configuration: {}

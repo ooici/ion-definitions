@@ -10,10 +10,10 @@ apps:
     processapp: [stream_producer, examples.stream.stream_producer, StreamProducer]
     config:
       process:
-        type: service
+        type: agent
       stream_producer:
-        interval: 3000
-        stream_route: stream1
+        interval: 4000
+        stream_route: stream_example
 
   - name: stream_consumer
     description: Stream consumer

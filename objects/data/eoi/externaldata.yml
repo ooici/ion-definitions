@@ -1,5 +1,5 @@
 DatasetDescription:
-  data_sampling:  (name=DataDescriptionDataSamplingEnum, values=(NONE, FIRST_LAST, FULL, SHOTGUN, SHOTGUN_COUNT), default=NONE)
+  data_sampling: !enum (name=DataDescriptionDataSamplingEnum, values=(NONE, FIRST_LAST, FULL, SHOTGUN, SHOTGUN_COUNT), default=NONE)
   parameters: {}
 
 UpdateDescription:

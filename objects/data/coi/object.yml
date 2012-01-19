@@ -3,4 +3,3 @@ ObjectType: !Extends_InformationResource
   definition: {}
 
 Collection: !Extends_InformationResource
-  tbd: ""

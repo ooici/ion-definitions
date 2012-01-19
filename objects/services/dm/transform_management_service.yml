@@ -23,6 +23,8 @@ methods:
       @param process_definition_id the id of the process definition to execute including the module and class
       @configuration a transform instance specific configuration
     in:
+      name: ""
+      description: ""
       in_subscription_id: ""
       out_streams: {}
       process_definition_id: "" # CEI Process Definition ID

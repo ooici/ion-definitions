@@ -11,7 +11,13 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Ingest
 dependencies: [resource_registry, pubsub_management, transform_management]
 methods:
   create_ingestion_configuration:
-    docstring: Setup ingestion workers to ingest all the data from a single exchange point.
+    docstring: |
+      @brief Setup ingestion workers to ingest all the data from a single exchange point.
+      @param exchange_point_id is the resource id for the exchagne point to ingest from
+      @param couch_storage is the specification of the couch database to use
+      @param hdf_storage is the specification of the filesystem to use for hdf data files
+      @param number_of_workers is the number of ingestion workers to create
+      @param default_policy is the default policy for streams ingested on this exchange point
     in:
       exchange_point_id: "" # Resource is not yet used - later will be an id, for now it is empty (default is science_data)!
       couch_storage:

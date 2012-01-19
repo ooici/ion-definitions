@@ -18,9 +18,13 @@ methods:
     docstring: |
       Create a transform resource and start the process using CEI Process dispatcher. Associate the
       transform to its process definition, in_subscription and out_stream. The transform_id is returned.
+      @param in_subscription_id the id of the subscription resource for the transform input
+      @param out_streams a dictionary of publisher names and stream ids for the transform output
+      @param process_definition_id the id of the process definition to execute including the module and class
+      @configuration a transform instance specific configuration
     in:
       in_subscription_id: ""
-      out_stream_id: ""
+      out_streams: {}
       process_definition_id: "" # CEI Process Definition ID
       configuration: {}
     out:

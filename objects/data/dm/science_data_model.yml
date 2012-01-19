@@ -1,0 +1,67 @@
+
+
+ScienceObjectMetadataContainer:
+    reference_id: ""
+    identifiables: {}
+    encoded_hdf_string: ""
+
+---
+
+ScienceObjectSupplementContainer:
+    reference_to_metadata_id:
+    count:
+        element_number: -1
+        number_of_elements: -1
+    identifiables: {}
+    encoded_hdf_string: ""
+---
+
+AbstractIdentifiable:
+  id: ""
+
+---
+
+DataStream: !AbstractIdentifiable
+    element_type_id: ""
+    encoding_id: ""
+    values: ""
+
+---
+
+ElementType: !AbstractIdentifiable
+    data_record_id: ""
+
+---
+
+DataRecord: !AbstractIdentifiable
+    coverage_ids: []
+
+
+---
+
+Coverage: !AbstractIdentifiable
+    domain_id: ""
+    range_id: ""
+    attributes_ids: []
+    nil_values: {}
+
+---
+
+Domain: !AbstractIdentifiable
+
+
+---
+
+Range: !AbstractIdentifiable
+
+
+---
+
+Encoding: !AbstractIdentifiable
+    hdf_sha1: "" # Identifier for the hdf dataset containing the numeric data
+
+---
+
+DataArray: !AbstractIdentifiable
+    hdf_path: ""
+

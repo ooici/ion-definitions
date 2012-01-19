@@ -1,5 +1,4 @@
 ExchangeSpace: !Extends_InformationResource
-  tbd: ""
 
 ExchangeName: !Extends_InformationResource
   xn_type: "entity"

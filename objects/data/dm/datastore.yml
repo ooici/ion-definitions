@@ -2,4 +2,3 @@ DataStore: !Extends_InformationResource
   type: ""
 
 PersistentArchive: !Extends_InformationResource
-  tbd: ""

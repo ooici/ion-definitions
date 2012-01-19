@@ -18,11 +18,9 @@ PlatformDevice: !Extends_TaskableResource
   serial_number: ""
 
 PlatformModel: !Extends_InformationResource
-  tbd: ""
   manufacturer: !Institution
 
 PlatformAgent: !Extends_InformationResource
-  tbd: ""
 
 PlatformAgentInstance: !Extends_TaskableResource
   exchange_name: ""

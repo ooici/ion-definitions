@@ -13,17 +13,13 @@ Resource:
 
 TaskableResource: !Extends_Resource
   # Taskable resources are resources with behavior and state. This object describes them.
-  tbd: ""
 
 InformationResource: !Extends_Resource
   # Information resources are pure information artifacts. This object describes them.
-  tbd: ""
 
 ---
 
-
 ResourceType: !Extends_InformationResource
-  tbd: ""
 
 ResourceLifeCycle: !Extends_InformationResource
   definition_type: ""
@@ -31,10 +27,8 @@ ResourceLifeCycle: !Extends_InformationResource
 
 Attachment: !Extends_InformationResource
   # To identify attachments to resources
-  tbd: ""
 
 ---
-
 
 ContactInformation:
   name: ""
@@ -75,8 +69,6 @@ GeospatialBounds:
 GeospatialLocation:
   lat: ""
   lon: ""
-  
----
 
 # TODO: Replace in favor of Resource base object
 ResourceBasics:
@@ -86,4 +78,3 @@ ResourceBasics:
 # TODO: Refine and use consistently, where needed to find
 ResourceFilter:
   filters: {}
-

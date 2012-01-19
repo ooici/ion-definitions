@@ -1,4 +1,3 @@
-
 Transform: !Extends_InformationResource
   process_id: ""
   configuration: {}

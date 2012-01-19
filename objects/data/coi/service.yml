@@ -4,4 +4,3 @@ ServiceDefinition: !Extends_InformationResource
 
 Service: !Extends_TaskableResource
   # This is a service instance
-  tbd: ""

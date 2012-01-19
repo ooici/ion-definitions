@@ -3,10 +3,8 @@ EPUDefinition: !Extends_InformationResource
   definition: {}
 
 EPU: !Extends_TaskableResource
-  tbd: ""
 
 DeployableType: !Extends_InformationResource
-  tbd: ""
 
 DeployableUnit:
   tbd: ""

@@ -13,4 +13,3 @@ EPURequest:
   config: {}
 
 ResourceAgentType: !Extends_InformationResource
-  tbd: ""

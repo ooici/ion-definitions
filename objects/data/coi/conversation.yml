@@ -1,12 +1,10 @@
 Conversation: !Extends_InformationResource
-  tbd: ""
 
 ConversationType: !Extends_InformationResource
   definition_type: ""
   definition: ""
 
 ConversationRole: !Extends_InformationResource
-  tbd: ""
 
 ConverationRoleBinding:
   exchange_name: ""

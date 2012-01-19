@@ -1,5 +1,4 @@
 UserRole: !Extends_InformationResource
-  tbd: ""
 
 Policy: !Extends_InformationResource
   definition_type: ""

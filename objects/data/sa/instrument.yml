@@ -4,7 +4,6 @@ LogicalInstrument: !Extends_InformationResource
 InstrumentDevice: !Extends_TaskableResource
   # This is the physical instrument
   serialnumber: ""
-  description: ""
   firmwareversion: ""
   hardwareversion: ""
   instrumentclass: ""
@@ -35,7 +34,6 @@ InstrumentAgentInstance: !Extends_TaskableResource
 SensorDevice: !Extends_TaskableResource
   # This is the physical instrument
   serialnumber: ""
-  description: ""
 
 
 SensorModel: !Extends_InformationResource

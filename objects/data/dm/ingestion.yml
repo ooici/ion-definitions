@@ -1,5 +1,3 @@
-
-
 StreamIngestionPolicy: !Extends_InformationResource
   # Policy specific to ingestion of a particular stream
   archive_data: True
@@ -18,6 +16,3 @@ IngestionConfiguration: !Extends_InformationResource
     server: ""
     database: ""
   default_policy: !StreamIngestionPolicy
-
-
-

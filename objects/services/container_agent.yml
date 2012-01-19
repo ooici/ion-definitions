@@ -17,6 +17,7 @@ methods:
     in:
       appdef:
       config:
+    out:
 
   start_app_from_url:
     in:
@@ -27,6 +28,7 @@ methods:
   start_rel:
     in:
       rel:
+    out:
 
   start_rel_from_url:
     in:
@@ -35,4 +37,6 @@ methods:
       success: True
 
   stop:
+    in:
+    out:
 

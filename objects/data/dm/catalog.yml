@@ -1,6 +1,5 @@
 Catalog: !Extends_InformationResource
   view: ""
 
-
 Index: !Extends_InformationResource
   function: ""

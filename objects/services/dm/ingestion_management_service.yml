@@ -46,7 +46,24 @@ methods:
       ingestion_configuration_id: ""
     out:
     throws:
-      NotFound: if ingestion configuration did not exist
+      NotFound: The ingestion configuration id did not exist
+
+  activate_ingestion_configuration:
+    docstring: Activate an ingestion configuration and the transform processes that execute it
+    in:
+      ingestion_configuration_id: ""
+    out:
+    throws:
+      NotFound: The ingestion configuration id did not exist
+
+  deactivate_ingestion_configuration:
+    docstring: Deactivate an ingestion configuration and the transform processeses that execute it
+    in:
+      ingestion_configuration_id: ""
+    out:
+    throws:
+      NotFound: The ingestion configuration id did not exist
+
 
   #-------------------------
 

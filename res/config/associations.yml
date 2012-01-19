@@ -35,8 +35,8 @@ AssociationTypes:
     domain: [PlatformDevice]
     range: [InstrumentDevice]
   hasModel:
-    domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent]
-    range: [PlatformModel, InstrumentModel, SensorModel]
+    domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent, DataSource]
+    range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]
   hasPlatform:
     domain: [MarineFacility, Site, PlatformLogical]
     range: [PlatformDevice, PlatformLogical]
@@ -132,6 +132,13 @@ AssociationTypes:
   hasResource:
     domain: [Org]
     range: [Resource]
+# EOI
+  hasProvider:
+    domain: [DataSource]
+    range: [ExternalDataProvider]
+  hasSource:
+    domain: [ExternalDataset]
+    range: [DataSource]
 # Examples
   hasAccount:
     domain: [BankCustomer]

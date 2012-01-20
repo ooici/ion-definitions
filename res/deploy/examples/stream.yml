@@ -5,21 +5,36 @@ description: Demo stream processing
 ion: 0.0.1
 apps:
   - name: stream_producer
-    description: Stream producer
+    description: A process which perodically emits a message on a particular stream (routing key)
     version: 0.1
     processapp: [stream_producer, examples.stream.stream_producer, StreamProducer]
     config:
       process:
+        # The producer as the original source of published data is not a stream process but rather an agent
         type: agent
       stream_producer:
         interval: 4000
-        stream_route: stream_example
+        routing_key: glider_data
 
   - name: stream_consumer
-    description: Stream consumer
+    description: A stream process which processes messages from a queue
     version: 0.1
     processapp: [stream_consumer, examples.stream.stream_consumer, StreamConsumer]
     config:
       process:
         type: stream_process
-        listen_name: stream1
+        listen_name: consumer_input_queue
+
+
+
+  - name: stream_binder
+    description: Takes the place of calling pubsub to subscribe and activate subscription
+    version: 0.1
+    processapp: [stream_binder, examples.stream.stream_binder, StreamBinder]
+    config:
+      process:
+        # this process is not a stream process it is a helper that creates the binding (subscription)
+        type: agent
+      args:
+        queue_name: consumer_input_queue
+        binding: glider_data

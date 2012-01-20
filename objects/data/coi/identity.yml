@@ -1,6 +1,5 @@
 UserIdentity: !Extends_InformationResource
   # An OOI internal user identity
-  tbd: ""
 
 UserCredentials: !Extends_InformationResource
   # An external user identity.  In the case
@@ -11,4 +10,3 @@ UserCredentials: !Extends_InformationResource
 
 ResourceIdentity: !Extends_InformationResource
   # An OOI resource identity
-  tbd: ""

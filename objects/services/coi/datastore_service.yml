@@ -176,7 +176,7 @@ methods:
 
       Generic query function that allows searching on zero
       or more criteria represented in the following format:
-          [[<field>, <logical constant>, <value>], <and>|<or>, ...]
+          [[field, logical constant, value], and|or, ...]
 
       For example, to find all objects of type 'foo':
           [['type_', DataStore.EQUAL, 'foo']]
@@ -225,7 +225,7 @@ methods:
 
       Generic query function that allows searching on zero
       or more criteria represented in the following format:
-          [(<field>, <logical constant>, <value>), ...]
+          [(field, logical constant, value), ...]
       to derive a list of associated objects.  The association
       of interest is passed in the association attribute
       and should be the name of an object field.
@@ -277,18 +277,18 @@ methods:
       Generic association query function that allows queries for associations
       by subject, predicate and/or object.  Examples:
 
-      (<subject>, <predicate>, None) - returns all objects associated with
+      (subject, predicate, None) - returns all objects associated with
           the subject via the specified predicate
-      (<subject>, None, <object>) - returns all associations between subject
+      (subject, None, object) - returns all associations between subject
           and object
-      (None, <predicate>, <object>) - returns all subjects that have association
+      (None, predicate, object) - returns all subjects that have association
           with object via predicate
-      (<subject>, <predicate>, <object>) - returns true if association exists
-      (None, <predicate>, None) - returns all subjects and objects associated
+      (subject, predicate, object) - returns true if association exists
+      (None, predicate, None) - returns all subjects and objects associated
           via predicate
 
       This function returns a set of tuples in the form
-          [(IonObject, <predicate>, IonObject), ...]
+          [(IonObject, predicate, IonObject), ...]
     in:
       subject: ""
       predicate: ""

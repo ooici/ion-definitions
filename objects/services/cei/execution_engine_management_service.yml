@@ -1,4 +1,4 @@
-name: execution_engine_management_service
+name: execution_engine_management
 
 docstring: |
   Service to create, read, update and delete execution engines definitions and instances

@@ -1,4 +1,4 @@
-name: deployable_type_management_service
+name: deployable_type_management
 
 docstring: |
   The service which provides Deployable Type definitions

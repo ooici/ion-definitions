@@ -3,7 +3,7 @@ Response:
   body:
 
 Association:
-  at: "H2H" # Association type: H2H, R2R, H2R, R2H, R2R
+  at: "H2H" # Association type: H2H, R2R, H2R, R2H
   s: ""     # Subject ID
   st: ""    # Subject type
   srv: ""   # Subject revision

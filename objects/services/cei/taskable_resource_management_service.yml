@@ -1,4 +1,4 @@
-name: taskable_resource_management_service
+name: taskable_resource_management
 
 docstring: |
   Service to manage the execution of taskable resources in registered execution environments. Taskable

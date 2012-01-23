@@ -1,7 +1,7 @@
 
 
 ScienceObjectMetadataContainer:
-    reference_id: ""
+    metadata_reference_id: ""
     identifiables: {}
     encoded_hdf_string: ""
 
@@ -10,13 +10,15 @@ ScienceObjectMetadataContainer:
 ScienceObjectSupplementContainer:
     reference_to_metadata_id:
     count:
-        element_number: -1
-        number_of_elements: -1
+        packet_number: -1
+        number_of_packets_in_supplement: -1
+        number_of_records_in_supplement: 1
     identifiables: {}
     encoded_hdf_string: ""
 ---
 
 AbstractIdentifiable:
+  # Within any dataset each component has an identifier unique to that dataset
   id: ""
 
 ---

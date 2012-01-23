@@ -3,12 +3,13 @@ StreamTopology: !Extends_InformationResource
   dimensions: []
 
 Stream: !Extends_InformationResource
-  irl: ""
-  #startdate: 2011-01-01
-  #enddate: 2011-01-01
+  # Specified by create_stream
+  url: ""
+  encoding: ""
   original: True
-  mimetype: ""
-  contentlength: 0
+
+  # managed by pubsub
+  stream_definition_id: ""
   producers: []
 
 StreamRoute:

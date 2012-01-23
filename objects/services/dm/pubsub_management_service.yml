@@ -15,10 +15,22 @@ dependencies: [resource_registry]
 methods:
 
   create_stream:
-    docstring: Creates a new stream. The id string returned is the ID of the new stream
-               in the resource registry.
+    docstring: |
+      @brief Creates a new stream. The id string returned is the ID of the new stream in the resource registry.
+      @param encoding the encoding for data on this stream
+      @param original is the data on this stream from a source or a transform
+      @param stream_defintion_type a predefined stream definition type for this stream
+      @param name (optional) the name of the stream
+      @param description (optional) the description of the stream
+      @param url (optional) the url where data from this stream can be found (Not implemented)
     in:
-      stream: !Stream
+      encoding: ""
+      original: True
+      stream_definition_type: ""
+      name: ""
+      description: ""
+      url: ""
+
     out:
       stream_id: ""
 

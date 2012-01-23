@@ -90,9 +90,13 @@ methods:
       in the resource registry.
       @param query is a subscription query object (Stream Query, Exchange Query, etc...)
       @param exchange_name is the name (queue) where messages will be delivered for this subscription
+      @param name (optional) is the name of the subscription
+      @param description (optional) is the description of the subscription
     in:
       query: {}
       exchange_name: ""
+      name: ""
+      description: ""
     out:
       subscription_id: ""
     throws:

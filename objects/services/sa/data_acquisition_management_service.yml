@@ -1,8 +1,10 @@
 name: data_acquisition_management
 
 docstring: |
-  Services related to the transformation of data samples and engineering data into messages with metadata ready for
-  publication as data product and ingestion into data archives. Service orchestrates data acquisition and processing by calling DM Distribution and Inventory services.
+  Services related to management of data acquisition flows into the system, such as from instruments,
+  data transform processes and external data sources. Service orchestrates data acquisition and
+  processing by calling DM Distribution and Inventory services. In particular, this service sets up the
+  Data Producer object relationships, used to track data provenance
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Acquisition+Management+Service
 

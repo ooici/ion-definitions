@@ -207,3 +207,155 @@ methods:
   define_observatory_policy:
     in:
     out:
+
+
+  ##################
+  #
+  # LifeCycle States
+  #
+
+
+  declare_logical_instrument_planned:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  declare_logical_instrument_developed:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  declare_logical_instrument_integrated:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  declare_logical_instrument_discoverable:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  declare_logical_instrument_available:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  declare_logical_instrument_retired:
+    in:
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  declare_logical_platform_planned:
+    in:
+      logical_platform_id: ""
+    out:
+      success: True
+
+  declare_logical_platform_developed:
+    in:
+      logical_platform_id: ""
+    out:
+      success: True
+
+  declare_logical_platform_integrated:
+    in:
+      logical_platform_id: ""
+    out:
+      success: True
+
+  declare_logical_platform_discoverable:
+    in:
+      logical_platform_id: ""
+    out:
+      success: True
+
+  declare_logical_platform_available:
+    in:
+      logical_platform_id: ""
+    out:
+      success: True
+
+  declare_logical_platform_retired:
+    in:
+      logical_platform_id: ""
+    out:
+      success: True
+
+  declare_marine_facility_planned:
+    in:
+      marine_facility_id: ""
+    out:
+      success: True
+
+  declare_marine_facility_developed:
+    in:
+      marine_facility_id: ""
+    out:
+      success: True
+
+  declare_marine_facility_integrated:
+    in:
+      marine_facility_id: ""
+    out:
+      success: True
+
+  declare_marine_facility_discoverable:
+    in:
+      marine_facility_id: ""
+    out:
+      success: True
+
+  declare_marine_facility_available:
+    in:
+      marine_facility_id: ""
+    out:
+      success: True
+
+  declare_marine_facility_retired:
+    in:
+      marine_facility_id: ""
+    out:
+      success: True
+
+  declare_site_planned:
+    in:
+      site_id: ""
+    out:
+      success: True
+
+  declare_site_developed:
+    in:
+      site_id: ""
+    out:
+      success: True
+
+  declare_site_integrated:
+    in:
+      site_id: ""
+    out:
+      success: True
+
+  declare_site_discoverable:
+    in:
+      site_id: ""
+    out:
+      success: True
+
+  declare_site_available:
+    in:
+      site_id: ""
+    out:
+      success: True
+
+  declare_site_retired:
+    in:
+      site_id: ""
+    out:
+      success: True
+

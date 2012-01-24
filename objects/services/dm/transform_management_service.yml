@@ -52,9 +52,26 @@ methods:
 
   # -----------------
 
+  execute_transform:
+    docstring: Executes a transform in the container (blocking) 
+    in:
+      process_definition_id: ''
+      data:  {}
+      configuration: {}
+    out: 
+      result: {}
+    throws:
+      # Timeout, BadRequest etc.
+
 
   activate_transform:
     docstring: Activate the subscription to bind (start) the transform
+    in:
+      transform_id: ""
+    out:
+
+  deactivate_transform:
+    doctring: Deactivate the subscription.
     in:
       transform_id: ""
     out:

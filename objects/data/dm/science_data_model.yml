@@ -1,29 +1,161 @@
 
 
-ScienceObjectMetadataContainer:
-    metadata_reference_id: ""
+DataContainer:
     identifiables: {}
-    encoded_hdf_string: ""
+    encoded_binary: ""
+
+ScienceObjectMetadataContainer: !DataContainer
+    metadata_reference_id: ""
+
 
 ---
 
-ScienceObjectSupplementContainer:
-    reference_to_metadata_id:
+ScienceObjectPacketContainer: !DataContainer
+    reference_id_to_metadata:
     count:
-        packet_number: -1
+        # A supplement on a data stream is made up of one or more packets
         number_of_packets_in_supplement: -1
+        packet_number: -1
         number_of_records_in_supplement: 1
-    identifiables: {}
-    encoded_hdf_string: ""
+
+
+---
+
+UnitReferenceProperty:
+    name: ""
+    reference: ""
+
+
+---
+
+NilValue:
+    reason: ""
+    value: 0.0
+
+
 ---
 
 AbstractIdentifiable:
-  # Within any dataset each component has an identifier unique to that dataset
+  # Within any data stream each component has an identifier unique to that dataset
   id: ""
+  label: ""
+  description: ""
+
+---
+
+AbstractDataComponent: !AbstractIdentifiable
+    definition: "" # AnyURI
+    updatable: True
+    optiona: False
+
+---
+
+AbstractSimpleComponent: !AbstractDataComponent
+    quality:
+    nil_values: []
+    reference_frame:
+    axisID:
+
+---
+
+BooleanElement: !AbstractSimpleComponent
+    value: True
+
+---
+
+TextElement: !AbstractSimpleComponent
+    constraint: ""
+    value: ""
+
+---
+
+CategoryElement: !AbstractSimpleComponent
+    code_space: ""
+    constraint:
+    value: ""
+
+---
+
+CountElement: !AbstractSimpleComponent
+    constraint:
+    value: 0
+
+---
+
+CountRangeElement: !AbstractSimpleComponent
+    constraint:
+    value_pair: []
+
+---
+
+QuantityElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint:
+    value: 0.0
+
+---
+
+QuantityRangeElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint:
+    value_pair: []
+
+---
+
+TimeElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint:
+    reference_time: !DateTime
+    local_frame: "" # AnyURI
+    value: 0.0
+
+---
+
+TimeRangeElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint:
+    reference_time: !DateTime
+    local_frame: "" # AnyURI
+    value_pair: 0.0
+
+---
+
+QualityQuantityProperty: !QuantityElement
+
+
+---
+
+QualityQuantityRangeProperty: !QuantityRangeElement
+
+---
+
+QualityCatagoryProperty: !CatagoryElement
+
+---
+
+QualityTextProperty: !TextElement
+
+---
+
+AllowedTokens:
+    values: [] # Strings
+    pattern: ""
+
+---
+
+AllowedValues:
+    values: [] # reals
+    interval: [] # real pair
+    significant_figures: -1
+
+AllowedTimes:
+    values: []
+    interval: [] # time pair
 
 ---
 
 DataStream: !AbstractIdentifiable
+    count_id: ""
     element_type_id: ""
     encoding_id: ""
     values: ""
@@ -60,7 +192,9 @@ Range: !AbstractIdentifiable
 ---
 
 Encoding: !AbstractIdentifiable
+
     hdf_sha1: "" # Identifier for the hdf dataset containing the numeric data
+
 
 ---
 

@@ -1,6 +1,4 @@
-# Instrument Management Service interface definition
-
-name: instrument_management_service
+name: instrument_management
 
 docstring: |
   This service provides overall coordination for instrument management within an observatory context. In particular it
@@ -9,6 +7,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
 
 dependencies: [resource_registry, data_acquisition_management]
+
 methods:
   # -----------------
   # Working with Physical Instrument resources

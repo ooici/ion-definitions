@@ -1,5 +1,3 @@
-# Data Product Management Service interface definition
-
 name: data_product_management
 
 docstring: |
@@ -8,6 +6,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Product+Management+Service
 
 dependencies: [resource_registry, data_acquisition_management]
+
 methods:
   create_data_product:
     docstring: Define a realization of a uniquely identified presentation of a defined collection of information. The presentation consists of a particular subset of the collection.

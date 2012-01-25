@@ -8,7 +8,7 @@ methods:
     docstring: Create checking or savings account for user.  Creates new user if user does not already exists.
     in:
       name: ""
-      account_type: Checking
+      account_type: "Checking"
 
     out:
       acct_num: ""

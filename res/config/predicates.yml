@@ -1,11 +1,14 @@
-# associations.yml
+# predicates.yml
 
-# This is the authoritative definition of all permissible association types in the ION system
+# This is the authoritative definition of all permissible association predicates in the system
 
 # WARNING: !!! Make sure the same predicate does NOT occur twice in the list below !!!
 
-AssociationTypes:
+PredicateTypes:
 #SA
+  hasAttachment:
+    domain: [InstrumentDevice]
+    range: [Attachment]
   hasAgentInstance:
     domain: [PlatformDevice, InstrumentDevice]
     range: [PlatformAgentInstance,InstrumentAgentInstance]

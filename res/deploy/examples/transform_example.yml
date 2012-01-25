@@ -1,0 +1,43 @@
+type: release
+name: transform_example
+version: 0.1
+description: Launches the Transform Example
+ion: 0.0.1
+apps:
+  - name: directory
+    version: 0.1
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+
+  - name: datastore
+    description: Data store service
+    version: 0.1
+    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+    config:
+        datastore:
+            persistent: true
+            force_clean: true
+
+  - name: resource_registry
+    description: Resource registry service
+    version: 0.1
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    config:
+        resource_registry:
+            persistent: true
+            force_clean: true
+
+  - name: pubsub_management
+    version: 0.1
+    processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+
+  - name: transform_management
+    version: 0.1
+    processapp: [transform_management, ion.services.dm.transformation.transform_management_service, TransformManagementService]
+
+  - name: transform_example_launcher
+    version: 0.1
+    processapp: [transform_example_launcher, ion.services.dm.transformation.example.transform_example, TransformExampleLauncher]
+    config:
+        name: transform_example
+        example: even_odd_transform
+

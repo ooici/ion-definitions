@@ -188,7 +188,8 @@ methods:
       input_resource_id: ""
       data_product_id: ""
     out:
-      data_producer_id: ""
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_data_product:
     in:

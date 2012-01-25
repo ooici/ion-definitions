@@ -83,7 +83,7 @@ PredicateTypes:
     domain: [ExchangePoint]
     range: [TopicTopology]
   hasTransform:
-    domain: [DataProcess]
+    domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
 # COI
   hasAgent:

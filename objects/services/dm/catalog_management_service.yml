@@ -1,6 +1,3 @@
-# Catalog Management Service interface definition
-# Manages views of data in coordination with the discovery service
-
 name: catalog_management
 
 docstring: |
@@ -11,6 +8,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Catalog+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
   create_catalog:
     docstring: A catalog is a new data set that aggregates and presents datasets in a specific way.

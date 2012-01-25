@@ -1,6 +1,4 @@
-# Index Management Service interface definition
-
-name: index_management_service
+name: index_management
 
 docstring: |
     Service will primarily manage the inventory and metadata for indexes, via index resource objects,
@@ -10,6 +8,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Index+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
   create_index:
     in:

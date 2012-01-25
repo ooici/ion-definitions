@@ -1,8 +1,3 @@
-# Discovery Service interface definition
-
-# TODO:
-# - Revise. Exact interface TBD
-
 name: discovery
 
 docstring: |
@@ -11,6 +6,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Discovery+Service
 
 dependencies: [resource_registry]
+
 methods:
   create_view:
     in:

@@ -2,15 +2,20 @@
 
 # This is the authoritative definition of all permissible association predicates in the system
 
+# WARNING: !!! Make sure the same predicate does NOT occur twice in the list below !!!
+
 PredicateTypes:
+#SA
   hasAttachment:
     domain: [InstrumentDevice]
     range: [Attachment]
-#SA 
+  hasAgentInstance:
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [PlatformAgentInstance,InstrumentAgentInstance]
+  hasAssignment:
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [PlatformLogical, InstrumentLogical]
   hasChildDataProducer:
-    domain: [DataProducer]
-    range: [DataProducer]
-  hasInputDataProducer:
     domain: [DataProducer]
     range: [DataProducer]
   hasDataset:
@@ -19,40 +24,37 @@ PredicateTypes:
   hasDataProducer:
     domain: [DataProcess, InstrumentDevice]
     range: [DataProducer]
+  hasInputDataProducer:
+    domain: [DataProducer]
+    range: [DataProducer]
   hasInputProduct:
     domain: [DataProcess]
     range: [DataProduct]
-  hasOutputProduct:
-    domain: [DataProcess]
-    range: [DataProduct]
-  hasTransform:
-    domain: [DataProcess]
-    range: [Transform]
-  hasSite:
-    domain: [MarineFacility, Site]
-    range: [Site]
+  hasInstance:
+    domain: [PlatformAgent, InstrumentAgent]
+    range: [PlatformAgentInstance, InstrumentAgentInstance]
   hasInstrument:
     domain: [PlatformDevice]
     range: [InstrumentDevice]
   hasModel:
     domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent, DataSource]
     range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]
+  hasOutputProduct:
+    domain: [DataProcess]
+    range: [DataProduct]
   hasPlatform:
     domain: [MarineFacility, Site, PlatformLogical]
     range: [PlatformDevice, PlatformLogical]
-  hasAssignment:
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [PlatformLogical, InstrumentLogical]
-  hasAgentInstance:
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [PlatformAgentInstance,InstrumentAgentInstance]
-  hasInstance:
-    domain: [PlatformAgent, InstrumentAgent]
-    range: [PlatformAgentInstance, InstrumentAgentInstance]
   hasSensor:
     domain: [InstrumentDevice]
     range: [Sensor]
+  hasSite:
+    domain: [MarineFacility, Site]
+    range: [Site]
 # DM
+  hasArchive:
+    domain: [Datastore]
+    range: [PersistentArchive]
   hasCatalog:
     domain: [View]
     range: [Catalog]
@@ -62,76 +64,80 @@ PredicateTypes:
   hasIndex:
     domain: [Catalog]
     range: [Index]
-  hasArchive:
-    domain: [Datastore]
-    range: [PersistentArchive]
-  hasTransform:
-    domain: [DataProcess]
-    range: [Transform]
-  hasStream:
-    domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
-    range: [Stream]
   hasOutStream:
     domain: [Transform]
     range: [Stream]
-  hasTopology:
-    domain: [Stream, Subscription]
-    range: [TopicTopology]
   hasProcessDefinition:
     domain: [Transform]
     range: [ProcessDefinition]
   hasSubscription:
     domain: [Transform, ExchangePoint]
     range: [Subscription]
+  hasStream:
+    domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
+    range: [Stream]
+  hasTopology:
+    domain: [Stream, Subscription]
+    range: [TopicTopology]
   hasTopicTopology:
     domain: [ExchangePoint]
     range: [TopicTopology]
+  hasTransform:
+    domain: [DataProcess]
+    range: [Transform]
 # COI
-  hasExchangeBroker:
-    domain: [ExchangeSpace]
-    range: [ExchangeBroker]
-  hasExchangeSpace:
-    domain: [Org]
-    range: [ExchangeSpace]
-  hasExchangePoint:
-    domain: [ExchangeSpace]
-    range: [ExchangePoint]
-  hasExchangeName:
-    domain: [ExchangeSpace]
-    range: [ExchangeName]
+  hasAgent:
+    domain: [TaskableReource]
+    range: [Agent]
+  hasAttachment:
+    domain: [InstrumentDevice]
+    range: [Attachment]
   hasCredentials:
     domain: [UserIdentity]
     range: [UserCredentials]
+  hasExchangeBroker:
+    domain: [ExchangeSpace]
+    range: [ExchangeBroker]
+  hasExchangeName:
+    domain: [ExchangeSpace]
+    range: [ExchangeName]
+  hasExchangePoint:
+    domain: [ExchangeSpace]
+    range: [ExchangePoint]
+  hasExchangeSpace:
+    domain: [Org]
+    range: [ExchangeSpace]
   hasInfo:
     domain: [UserIdentity]
     range: [UserInfo]
+  hasLifecycle:
+    domain: [Resource]
+    range: [ResourceLifecycle]
+  hasMembership:
+    domain: [Org]
+    range: [UserIdentity]
+  hasOrgAffiliation:
+    domain: [Org]
+    range: [Org]
+  hasOwner:
+    domain: [Resource]
+    range: [UserIdentity]
+  hasPolicy:
+    domain: [Resource]
+    range: [Policy]
+  hasResource:
+    domain: [Org]
+    range: [Resource]
   hasRole:
     domain: [Conversation,UserIdentity]
     range: [ConversationRole,UserRole]
   hasType:
     domain: [Conversation]
     range: [ServiceDefinition]
-  hasAgent:
-    domain: [TaskableReource]
-    range: [Agent]
-  hasPolicy:
-    domain: [Resource]
-    range: [Policy]
-  hasOwner:
-    domain: [Resource]
-    range: [UserIdentity]
-  hasLifecycle:
-    domain: [Resource]
-    range: [ResourceLifecycle]
-  hasOrgAffiliation:
-    domain: [Org]
-    range: [Org]
-  hasMembership:
-    domain: [Org]
-    range: [UserIdentity]
-  hasResource:
-    domain: [Org]
-    range: [Resource]
+# CEI
+  supportsExecutionEngine:
+    domain: [ProcessDefinition]
+    range: [ExecutionEngineDefinition]
 # EOI
   hasProvider:
     domain: [DataSource]
@@ -139,6 +145,7 @@ PredicateTypes:
   hasSource:
     domain: [ExternalDataset]
     range: [DataSource]
+
 # Examples
   hasAccount:
     domain: [BankCustomer]

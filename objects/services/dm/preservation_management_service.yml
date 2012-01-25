@@ -1,7 +1,3 @@
-# Preservation Management Service interface definition
-# Controls the data and information preservation and persistence processes.
-# In particular, defines data streams so that persistence services (persister, retriever) can be chained to these data streams.
-
 name: preservation_management
 
 docstring: |
@@ -10,6 +6,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Preservation+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
   create_datastore:
     in:

@@ -1,6 +1,3 @@
-# External Observatory Agent Service interface definition
-# Manages external data sources
-
 name: external_observatory_agent
 
 docstring: |
@@ -17,6 +14,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+External+Observatory+Agent+Service
 
 dependencies: [resource_registry]
+
 methods:
 
   spawn_worker:

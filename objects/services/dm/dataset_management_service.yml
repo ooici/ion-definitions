@@ -1,6 +1,3 @@
-# Dataset Management Service interface definition
-# Provides the services to register and manipulate changeable data sets and their metadata within the Integrated Observatory.
-
 name: dataset_management
 
 docstring: |
@@ -10,6 +7,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Dataset+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
   create_dataset:
     docstring: A Data Set is a uniquely identified, possibly open-ended, collection of supplements that have been or will be persisted in the data store.

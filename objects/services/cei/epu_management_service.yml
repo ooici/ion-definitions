@@ -1,4 +1,4 @@
-name: epu_management_service
+name: epu_management
 
 docstring: |
   Service to create, read, update and delete EPU definitions, EPU instances and Deployable Types.

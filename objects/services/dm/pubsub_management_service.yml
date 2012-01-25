@@ -1,17 +1,12 @@
-# PubSub Management Service interface definition
-# Core Activities of PubSub: stream management, subscription management
-
-# Notes:
-# Steams exist in the context of a higher level resource (steam XP, topic tree?)
-
 name: pubsub_management
 
-docstring:
+docstring: |
   Core responsibilities include stream management, subscription management
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+PubSub+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
 
   create_stream:

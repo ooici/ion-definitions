@@ -1,5 +1,3 @@
-# Notification Management Service interface definition
-
 name: notification_management
 
 docstring: |
@@ -10,6 +8,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Notification+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
   create_event_type:
     in:

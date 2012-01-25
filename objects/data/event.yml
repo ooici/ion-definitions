@@ -8,7 +8,7 @@ Event:
 ---
 
 ResourceLifecycleEvent: !Extends_Event
-  state: !enum (name=ResourceLifecyleEventState, values=(NEW, READY, ACTIVE, TERMINATED, ERROR), default=NEW)
+  state: ""
 
 ---
 

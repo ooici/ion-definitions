@@ -87,6 +87,10 @@ methods:
       object ids.  Valid predicates can be found in res/config/associations.yml.
       Subject and object must be of the proper types for the predicate or
       an exception will be thrown.
+      Assoc_type determines the type of the association. If not specified, uses
+      the default "H2H". The possible values are H2H, H2R, R2H, R2R, where "H" stands
+      for an association to the head revision and "R" stands for an association
+      to a specific revision.
     in:
       subject:
       predicate:

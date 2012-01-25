@@ -12,7 +12,7 @@ AssociationTypes:
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [PlatformLogical, InstrumentLogical]
-  hasChildDataProducer:
+  hasParent:
     domain: [DataProducer]
     range: [DataProducer]
   hasDataset:
@@ -28,8 +28,8 @@ AssociationTypes:
     domain: [DataProcess]
     range: [DataProduct]
   hasInstance:
-    domain: [PlatformAgent, InstrumentAgent]
-    range: [PlatformAgentInstance, InstrumentAgentInstance]
+    domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition]
+    range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess]
   hasInstrument:
     domain: [PlatformDevice]
     range: [InstrumentDevice]

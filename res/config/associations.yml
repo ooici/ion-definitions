@@ -71,7 +71,7 @@ AssociationTypes:
     domain: [Transform, ExchangePoint]
     range: [Subscription]
   hasStream:
-    domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
+    domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription, ExternalDataset]
     range: [Stream]
   hasTopology:
     domain: [Stream, Subscription]

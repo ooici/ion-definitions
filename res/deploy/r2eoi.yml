@@ -1,0 +1,117 @@
+type: release
+name: Release2Configuration EOI services
+version: 0.1
+description: Release 2 EOI integration test configuration
+ion: 0.0.1
+apps:
+##################################
+  # CORE SERVICES
+  # Bootstrapper app performs initializations
+  ##################################
+
+  - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
+
+  - name: datastore
+    description: Data store service
+    version: 0.1
+    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+    config:
+        datastore:
+            persistent: true
+            force_clean: true
+
+  - name: bootstrap
+    config:
+      level: datastore
+
+  - name: directory
+    version: 0.1
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+    config:
+        directory:
+            persistent: true
+            force_clean: true
+
+  - name: bootstrap
+    config:
+      level: directory
+
+  - name: resource_registry
+    description: Resource registry service
+    version: 0.1
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    config:
+        resource_registry:
+            persistent: true
+            force_clean: true
+
+  - name: bootstrap
+    config:
+      level: resource_registry
+
+  - name: identity_management
+    version: 0.1
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
+
+  - name: bootstrap
+    config:
+      level: identity_management
+
+  - name: org_management
+    version: 0.1
+    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
+
+  - name: bootstrap
+    config:
+      level: org_management
+
+  - name: exchange_management
+    version: 0.1
+    processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
+
+  - name: bootstrap
+    config:
+      level: exchange_management
+
+# DM services
+
+  - name: PubSubResource
+    version: 0.1
+    processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+
+#  - name: transform_management_service
+#    version: 0.1
+#    processapp: [transform_management_service, ion.services.dm.transformation.transform_management_service, TransformManagementService]
+
+# SA services
+
+  - name: data_acquisition_management
+    version: 0.1
+    processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
+
+#  - name: data_product_management
+#    version: 0.1
+#    processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
+
+#  - name: data_process_management
+#    version: 0.1
+#    processapp: [data_process_management, ion.services.sa.process.data_process_management_service, DataProcessManagementService]
+
+#  - name: instrument_management_service
+#    version: 0.1
+#    processapp: [instrument_management_service, ion.services.sa.instrument.instrument_management_service, InstrumentManagementService]
+#
+#  - name: marine_facility_management_service
+#    version: 0.1
+#    processapp: [instrument_management_service, ion.services.sa.marine_facility.marine_facility_management_service, MarineFacilityManagementService]
+
+# EOI services
+
+  - name: external_data_agent_management
+    version: 0.1
+    processapp: [external_data_agent_management, eoi.services.external_observatory_agent_service, ExternalObservatoryAgentService]
+    config:
+        external_data_agent_management:
+            persistent: true

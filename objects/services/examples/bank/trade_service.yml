@@ -1,7 +1,7 @@
 # Bond Trade Service interface definition
 
 obj:
-  Order:
+  Order: !Extends_Resource
     type: "buy"
     on_behalf: ""
     cash_amount: 0.0

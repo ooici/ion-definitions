@@ -1,7 +1,14 @@
 Subscription: !Extends_InformationResource
-  subscription_type: "singlestream"
+  subscription_type: !enum (name=SubscriptionTypeEnum, values=(STREAM_QUERY, EXCHANGE_QUERY, CONTENT_QUERY), default=STREAM_QUERY)
   query: {}
   exchange_name: ""
 
-SingleStreamQuery:
-  stream_id: ""
+# These objects do not yet specify the exchange point for the subscription. That will come later and be
+# expressed by association.
+
+StreamQuery:
+  stream_ids: []
+
+ExchangeQuery:
+  all: True
+

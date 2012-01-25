@@ -155,7 +155,6 @@ methods:
       object: {}
       datastore_name: ""
     out:
-      status: True
 
   delete_doc:
     docstring: |
@@ -165,7 +164,6 @@ methods:
       object: {}
       datastore_name: ""
     out:
-      status: True
 
   # -----------------
 

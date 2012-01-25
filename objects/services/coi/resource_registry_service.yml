@@ -18,6 +18,8 @@ methods:
       object: {}
     out:
       tuple: []
+    throws:
+      BadRequest: object has _id field
 
   read:
     docstring: |
@@ -44,7 +46,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
-      BadRequest: lcstate was modified compared to persisted object version
+      BadRequest: object does not have required _id or _rev or lcstate was modified compared to persisted object version
 
   delete:
     docstring: |
@@ -98,7 +100,7 @@ methods:
       tuple: []
     throws:
       NotFound: subject or object does not exist
-      BadRequest: predicate is unknown or subject or object are invalid types for predicate
+      BadRequest: subject, predicate or object parameter missing, unknown value passed for the assoc_type parameter, predicate is unknown, subject or object are invalid types for predicate, or subject or object do not have _id field
       
 
   delete_association:
@@ -127,6 +129,8 @@ methods:
       id_only: False
     out:
       list: []
+    throws:
+      BadRequest: missing parameters, or object id field missing in subject
 
   find_subjects:
     docstring: |
@@ -142,6 +146,8 @@ methods:
       id_only: False
     out:
       list: []
+    throws:
+      BadRequest: missing parameters, or object id field missing in object
 
   find_associations:
     docstring: |
@@ -155,6 +161,8 @@ methods:
       id_only: False
     out:
       list: []
+    throws:
+      BadRequest: missing parameters, or object id field missing in subject or object
 
   get_association:
     docstring: |
@@ -165,9 +173,11 @@ methods:
       subject: ""
       predicate: ""
       object: ""
+      id_only: False
     out:
       association: {}
     throws:
+      BadRequest: missing parameters, or object id field missing in subject or object
       NotFound: association does not exist
       Inconsistent: multiple associations satisfy the subject, predicate, object tuple
 
@@ -191,3 +201,6 @@ methods:
       id_only: False
     out:
       list: []
+    throws:
+      BadRequest: incompatible parameters
+      

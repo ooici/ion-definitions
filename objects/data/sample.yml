@@ -5,14 +5,14 @@ SampleEnum: !enum (values=(SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY,
 SampleObject:
   name: ''
   time: "2011-07-27T02:59:43.1Z"
-  _int: 0
-  _float: 0.0
-  _str: ''
-  none:
-  _dict: {}
-  _list: []
-  _enum: !SampleEnum
-  _another_enum: !enum (name=AnEnum, values=(VALUE1, VALUE2), default=VALUE2)
+  an_int: 0
+  q_float: 0.0
+  a_str: ''
+  none_val:
+  a_dict: {}
+  a_list: []
+  an_enum: !SampleEnum
+  another_enum: !enum (name=AnEnum, values=(VALUE1, VALUE2), default=VALUE2)
 
 SampleResource: !Extends_Resource
   num: 0

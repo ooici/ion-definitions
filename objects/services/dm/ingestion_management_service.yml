@@ -20,7 +20,7 @@ methods:
     in:
       exchange_point_id: "" # Resource is not yet used - later will be an id, for now it is empty (default is science_data)!
       couch_storage: {}
-      hfd_storage: {}
+      hdf_storage: {}
       number_of_workers: 0
       default_policy: !StreamIngestionPolicy
     out:

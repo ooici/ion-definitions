@@ -66,7 +66,7 @@ AssociationTypes:
     domain: [Datastore]
     range: [PersistentArchive]
   hasTransform:
-    domain: [DataProcess]
+    domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
   hasStream:
     domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]

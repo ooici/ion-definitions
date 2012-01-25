@@ -56,6 +56,26 @@ methods:
 
   # -----------------
 
+  associate_execution_engine:
+    docstring: Declare that the given process definition is compatible with the given execution engine.
+    in:
+      process_definition_id: ""
+      execution_engine_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  dissociate_execution_engine:
+    docstring: Remove the association of the process definition with an execution engine.
+    in:
+      process_definition_id: ""
+      execution_engine_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+
   schedule_process:
     docstring: Schedule a Process Definition for execution as process on an Execution Engine.
     in:
@@ -65,6 +85,7 @@ methods:
       process_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   cancel_process:
     docstring: Cancels the execution of the given process id.

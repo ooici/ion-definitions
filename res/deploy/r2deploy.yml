@@ -111,10 +111,6 @@ apps:
   - name: service_gateway
     version: 0.1
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
-    config:
-      web_server:
-        port: 5000
-        #hostname: localhost
 
   #### CEI Services
   - name: epu_management

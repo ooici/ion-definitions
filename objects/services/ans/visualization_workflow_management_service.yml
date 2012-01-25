@@ -1,8 +1,11 @@
 # Visualization Workflow Management Service interface definition
 
-name: visualization_workflow_management_service
+name: visualization_workflow_management
+
 docstring: The Visualization Workflow Management Service provides support for the definition, integration and enactment of defined workflows. Capabilities to enable the definition, instantiation, scheduling and execution control of developer provided workflows for the visualization of data products
+
 dependencies: [resource_registry]
+
 methods:
   create_visualization_workflow:
     docstring: Creates an Visualization Workflow resource from the parameter visualization_workflow object.

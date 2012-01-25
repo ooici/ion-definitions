@@ -1,6 +1,4 @@
-# Data Retriever Service interface definition
-
-name: data_retriever_service
+name: data_retriever
 
 docstring: |
    Retrieve information locally. Chained to data streams by the preservation coordinator
@@ -8,6 +6,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Data+Retriever+Service
 
 dependencies: [resource_registry]
+
 methods:
   define_replay:
     docstring: Define the stream that will contain the data from data store by streaming to an exchange name.

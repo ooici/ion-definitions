@@ -1,24 +1,31 @@
-# PubSub Management Service interface definition
-# Core Activities of PubSub: stream management, subscription management
-
-# Notes:
-# Steams exist in the context of a higher level resource (steam XP, topic tree?)
-
 name: pubsub_management
 
-docstring:
+docstring: |
   Core responsibilities include stream management, subscription management
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+PubSub+Management+Service
 
 dependencies: [resource_registry]
+
 methods:
 
   create_stream:
-    docstring: Creates a new stream. The id string returned is the ID of the new stream
-               in the resource registry.
+    docstring: |
+      @brief Creates a new stream. The id string returned is the ID of the new stream in the resource registry.
+      @param encoding the encoding for data on this stream
+      @param original is the data on this stream from a source or a transform
+      @param stream_defintion_type a predefined stream definition type for this stream
+      @param name (optional) the name of the stream
+      @param description (optional) the description of the stream
+      @param url (optional) the url where data from this stream can be found (Not implemented)
     in:
-      stream: !Stream
+      encoding: ""
+      original: True
+      stream_definition_type: ""
+      name: ""
+      description: ""
+      url: ""
+
     out:
       stream_id: ""
 
@@ -73,12 +80,22 @@ methods:
   # -----------------
 
   create_subscription:
-    docstring: Create a new subscription. The id string returned is the ID of the new subscription
-               in the resource registry.
+    docstring: |
+      @brief Create a new subscription. The id string returned is the ID of the new subscription
+      in the resource registry.
+      @param query is a subscription query object (Stream Query, Exchange Query, etc...)
+      @param exchange_name is the name (queue) where messages will be delivered for this subscription
+      @param name (optional) is the name of the subscription
+      @param description (optional) is the description of the subscription
     in:
-      subscription: !Subscription
+      query: {}
+      exchange_name: ""
+      name: ""
+      description: ""
     out:
       subscription_id: ""
+    throws:
+      BadRequestError: Throws when the subscription query object type is not found
 
   update_subscription:
     docstring: Update an existing subscription.

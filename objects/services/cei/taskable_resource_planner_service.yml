@@ -1,4 +1,4 @@
-name: taskable_resource_planner_service
+name: taskable_resource_planner
 
 docstring: |
   Service to request the execution of taskable resources in registered execution environments with

@@ -1,4 +1,4 @@
-name: provisioner_service
+name: provisioner
 
 docstring: |
   Service to provision Deployable Types (= Virtual Machine types) into Operational Units

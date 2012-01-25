@@ -1,10 +1,3 @@
-# Transform Management Service interface definition
-
-# TODO:
-# - Need resolution for transform:
-#   Sequence of steps
-#   Schedule and bind different?
-
 name: transform_management
 
 docstring: |
@@ -13,14 +6,21 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Transform+Management+Service
 
 dependencies: [resource_registry, pubsub_management, process_dispatcher]
+
 methods:
   create_transform:
     docstring: |
       Create a transform resource and start the process using CEI Process dispatcher. Associate the
       transform to its process definition, in_subscription and out_stream. The transform_id is returned.
+      @param in_subscription_id the id of the subscription resource for the transform input
+      @param out_streams a dictionary of publisher names and stream ids for the transform output
+      @param process_definition_id the id of the process definition to execute including the module and class
+      @configuration a transform instance specific configuration
     in:
+      name: ""
+      description: ""
       in_subscription_id: ""
-      out_stream_id: ""
+      out_streams: {}
       process_definition_id: "" # CEI Process Definition ID
       configuration: {}
     out:
@@ -52,9 +52,26 @@ methods:
 
   # -----------------
 
+  execute_transform:
+    docstring: Executes a transform in the container (blocking) 
+    in:
+      process_definition_id: ''
+      data:  {}
+      configuration: {}
+    out: 
+      result: {}
+    throws:
+      # Timeout, BadRequest etc.
+
 
   activate_transform:
     docstring: Activate the subscription to bind (start) the transform
+    in:
+      transform_id: ""
+    out:
+
+  deactivate_transform:
+    doctring: Deactivate the subscription.
     in:
       transform_id: ""
     out:

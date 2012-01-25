@@ -1,5 +1,3 @@
-# Data Process Management Service interface definition
-
 name: data_process_management
 
 docstring: |
@@ -9,6 +7,7 @@ docstring: |
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Process+Management+Service
 
 dependencies: [resource_registry, data_product_management, transform_management, data_acquisition_management]
+
 methods:
   create_data_process_definition:
     docstring: Create a resource which defines the processing of a stream, from transform definition to scheduling

@@ -192,6 +192,7 @@ methods:
       NotFound: object with specified id does not exist
 
   unassign_data_product:
+    docstring: Disconnect the Data Product from the Data Producer
     in:
       input_resource_id: ""
       data_product_id: ""
@@ -204,6 +205,7 @@ methods:
   # The following operations work directly on data producers (use boilerplate instead)
 
   create_data_producer:
+    docstring: Create a data producer resource, create a stream reource via DM then associate the two resources. Currently, data producers and streams are one-to-one. If the data producer is a process, connect the data producer to any parent data producers.
     in:
       name: ""
       description: ""
@@ -213,6 +215,7 @@ methods:
       BadRequest: if object passed has _id or _rev attribute
 
   update_data_producer:
+    docstring: Update the attributes of a data producer resource.
     in:
       data_producer: !DataProducer
     out:

@@ -15,12 +15,16 @@ methods:
       data_process_definition: !DataProcessDefinition
     out:
       data_process_definition_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_data_process_definition:
     in:
       data_process_definition: !DataProcessDefinition
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   read_data_process_definition:
     in:
@@ -32,7 +36,8 @@ methods:
     in:
       data_process_definition_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   find_data_process_definitions:
     in:
@@ -55,6 +60,8 @@ methods:
     #This op may not make sense at this time
     in:
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_data_process:
     in:
@@ -68,7 +75,8 @@ methods:
     in:
       data_process_id: ""
     out:
-      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   find_data_process:
     in:
@@ -83,4 +91,5 @@ methods:
     in:
       process: ""
     out:
-      success: True
+    throws:
+      BadRequest: if object does not have _id or _rev attribute

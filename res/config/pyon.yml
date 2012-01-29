@@ -67,6 +67,10 @@ interceptor:
     process_outgoing: [governance]
     process_incoming: [governance]
 
+web_server:
+  port: 5000
+  hostname: localhost
+
 exchange_spaces:
    # define the names and structure of exchange spaces and exchange points
     ioncore:

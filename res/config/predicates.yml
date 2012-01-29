@@ -10,8 +10,8 @@ PredicateTypes:
     domain: [InstrumentDevice]
     range: [Attachment]
   hasAgentInstance:
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [PlatformAgentInstance,InstrumentAgentInstance]
+    domain: [PlatformDevice, InstrumentDevice, ExternalDataset]
+    range: [PlatformAgentInstance,InstrumentAgentInstance, ExternalDataAgentInstance]
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [PlatformLogical, InstrumentLogical]
@@ -37,7 +37,7 @@ PredicateTypes:
     domain: [PlatformDevice]
     range: [InstrumentDevice]
   hasModel:
-    domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent, DataSource]
+    domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent, DataSource, ExternalDataAgent]
     range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]
   hasOutputProduct:
     domain: [DataProcess]

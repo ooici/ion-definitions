@@ -120,18 +120,19 @@ methods:
   # The following operations assign and unassign data agents
 
   assign_data_agent:
-    docstring: Connect the agent instance description with an external data set
+    docstring: Connect the agent instance with an external data set
     in:
       external_dataset_id: ""
-      agent_instance: !AgentInstance
+      agent_instance_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
   unassign_data_agent:
+    docstring: Disonnect the agent instance from the external data set
     in:
-      data_agent_id: ""
       external_dataset_id: ""
+      agent_instance_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist

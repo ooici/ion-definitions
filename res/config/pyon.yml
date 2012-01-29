@@ -67,6 +67,18 @@ interceptor:
     process_outgoing: [governance]
     process_incoming: [governance]
 
+directory:
+  persistent: true
+  force_clean: true
+
+resource_registry:
+  persistent: true
+  force_clean: true
+
+datastore:
+  persistent: true
+  force_clean: true
+
 web_server:
   port: 5000
   hostname: localhost

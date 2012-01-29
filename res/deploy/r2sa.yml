@@ -19,10 +19,6 @@ apps:
     description: Resource registry service
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-    config:
-        resource_registry:
-            persistent: true
-            force_clean: true
 
 # DM services
 

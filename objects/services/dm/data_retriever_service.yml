@@ -18,12 +18,6 @@ methods:
       replay_id: ""
       stream_id: ""
 
-  delete_replay:
-    docstring: Deletes the replay resources
-    in:
-      replay_id: ""
-    out:
-
   start_replay:
     docstring: Replays data from data store by streaming to an exchange name.
     in:
@@ -31,6 +25,7 @@ methods:
     out:
 
   cancel_replay:
+    docstring: Deletes teh replay resource and stops the replay agent.
     in:
       replay_id: ""
     out:

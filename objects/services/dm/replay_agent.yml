@@ -1,0 +1,11 @@
+# Resource agent interface definition
+
+name: replay_agent
+docstring: Behaviors for any replay agent
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Resource+Agent
+dependencies: [directory]
+methods:
+  execute_replay:
+    in:
+    out:
+      status: True

@@ -3,6 +3,8 @@
 DataContainer:
     identifiables: {}
 
+---
+
 ScienceObjectMetadataContainer: !DataContainer
     metadata_reference_id: ""
 
@@ -51,6 +53,7 @@ AllowedValues:
     values: [] # reals
     interval: [] # real pair
     significant_figures: -1
+---
 
 AllowedTimes:
     values: []
@@ -152,7 +155,7 @@ QualityQuantityRangeProperty: !QuantityRangeElement
 
 ---
 
-QualityCatagoryProperty: !CatagoryElement
+QualityCatagoryProperty: !CategoryElement
 
 ---
 

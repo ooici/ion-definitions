@@ -2,7 +2,6 @@
 
 DataContainer:
     identifiables: {}
-    encoded_binary: ""
 
 ScienceObjectMetadataContainer: !DataContainer
     metadata_reference_id: ""
@@ -32,108 +31,13 @@ NilValue:
     reason: ""
     value: 0.0
 
-
 ---
 
-AbstractIdentifiable:
-  # Within any data stream each component has an identifier unique to that dataset
-  id: ""
-  label: ""
-  description: ""
-
----
-
-AbstractDataComponent: !AbstractIdentifiable
-    definition: "" # AnyURI
-    updatable: True
-    optiona: False
-
----
-
-AbstractSimpleComponent: !AbstractDataComponent
-    quality:
-    nil_values: []
-    reference_frame:
-    axisID:
-
----
-
-BooleanElement: !AbstractSimpleComponent
-    value: True
-
----
-
-TextElement: !AbstractSimpleComponent
-    constraint: ""
-    value: ""
-
----
-
-CategoryElement: !AbstractSimpleComponent
-    code_space: ""
-    constraint:
-    value: ""
-
----
-
-CountElement: !AbstractSimpleComponent
-    constraint:
-    value: 0
-
----
-
-CountRangeElement: !AbstractSimpleComponent
-    constraint:
-    value_pair: []
-
----
-
-QuantityElement: !AbstractSimpleComponent
-    unit_of_measure: !UnitReferenceProperty
-    constraint:
-    value: 0.0
-
----
-
-QuantityRangeElement: !AbstractSimpleComponent
-    unit_of_measure: !UnitReferenceProperty
-    constraint:
-    value_pair: []
-
----
-
-TimeElement: !AbstractSimpleComponent
-    unit_of_measure: !UnitReferenceProperty
-    constraint:
-    reference_time: !DateTime
-    local_frame: "" # AnyURI
-    value: 0.0
-
----
-
-TimeRangeElement: !AbstractSimpleComponent
-    unit_of_measure: !UnitReferenceProperty
-    constraint:
-    reference_time: !DateTime
-    local_frame: "" # AnyURI
-    value_pair: 0.0
-
----
-
-QualityQuantityProperty: !QuantityElement
-
-
----
-
-QualityQuantityRangeProperty: !QuantityRangeElement
-
----
-
-QualityCatagoryProperty: !CatagoryElement
-
----
-
-QualityTextProperty: !TextElement
+ElapsedTime:
+    days: 0
+    num_of_day: 0
+    denom_of_day: 86400 # Makes num_of_day a count of seconds
+    # denom_of_day: 86400000 # makes num_of_day a count of milli seconds
 
 ---
 
@@ -154,50 +58,184 @@ AllowedTimes:
 
 ---
 
+AbstractIdentifiable:
+  # Within any data stream each component has an identifier unique to that dataset
+  id: ""
+  label: ""
+  description: ""
+
+---
+
+AbstractDataComponent: !AbstractIdentifiable
+    definition: "" # AnyURI
+    updatable: True
+    optiona: False
+
+---
+
+AbstractSimpleComponent: !AbstractDataComponent
+    quality _id: ""
+    nil_values: [] # Nill values objects
+    reference_frame: "" # Any URI
+    axisID: ""
+
+---
+
+BooleanElement: !AbstractSimpleComponent
+    value: True
+
+---
+
+TextElement: !AbstractSimpleComponent
+    constraint: AllowedTokens
+    value: ""
+
+---
+
+CategoryElement: !AbstractSimpleComponent
+    code_space: ""
+    constraint: AllowedTokens
+    value: ""
+
+---
+
+CountElement: !AbstractSimpleComponent
+    constraint: !AllowedValues
+    value: 0
+
+---
+
+CountRangeElement: !AbstractSimpleComponent
+    constraint: !AllowedValues
+    value_pair: []
+
+---
+
+QuantityElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint: !AllowedValues
+    value: 0.0
+
+---
+
+QuantityRangeElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint: !AllowedValues
+    value_pair: []
+
+---
+
+TimeElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint: !AllowedTimes
+    reference_time: "" #ISO 8601
+    local_frame: "" # AnyURI
+    value: !ElapsedTime
+
+---
+
+TimeRangeElement: !AbstractSimpleComponent
+    unit_of_measure: !UnitReferenceProperty
+    constraint: !AllowedTimes
+    reference_time: "" #ISO 8601
+    local_frame: "" # AnyURI
+    value_pair: []
+
+---
+
+QualityQuantityProperty: !QuantityElement
+
+
+---
+
+QualityQuantityRangeProperty: !QuantityRangeElement
+
+---
+
+QualityCatagoryProperty: !CatagoryElement
+
+---
+
+QualityTextProperty: !TextElement
+
+---
+
 DataStream: !AbstractIdentifiable
-    count_id: ""
+    element_count_id: ""
     element_type_id: ""
     encoding_id: ""
     values: ""
 
 ---
 
-ElementType: !AbstractIdentifiable
+ElementType: !AbstractDataComponent
     data_record_id: ""
 
 ---
 
-DataRecord: !AbstractIdentifiable
-    coverage_ids: []
+DataRecord: !AbstractDataComponent
+    field_ids: []
+    domain_ids: [] # added explicit ref to the domain or domains of the record
+
+---
+
+Vector: !AbstractDataComponent
+    coordinate_ids: [] # contains the ids of a set of quantities or a set of ranges
+    reference_frame: "" # Any URI
+    local_frame: "" # optional
+
+
+### Above this like everything is based on SWE. Below this line I am creating
+### new SWE types for coverage - the fields of a data record are coverages in the CI
+### CDM.
+###
+### The coverage model draws on the description, but not the implementation of GML
+### See chapter 19.
+### GML implements concrete feature types were we want to express everything using
+### mesh!
 
 
 ---
 
-Coverage: !AbstractIdentifiable
+Coverage: !AbstractDataComponent
     domain_id: ""
     range_id: ""
-    attributes_ids: []
-    nil_values: {}
 
 ---
 
-Domain: !AbstractIdentifiable
-
+RangeSet: !AbstractDataComponent
+    quality _id: ""
+    nil_values: [] # Nill values objects
+    reference_frame: "" # Any URI
+    mesh_location: !CategoryElement # Where is this data located on the mesh elements? Edge, face, node...
+    values_path: "" #Path to data values in binary object
+    bounds_id: "" # Quantity or Count range of the values
 
 ---
 
-Range: !AbstractIdentifiable
+Domain: !AbstractDataComponent
+    coordinate_vector_id: "" # the vector of coordinates for this domain
+    mesh_id: "" # the element containing the mesh for this object
 
+---
+
+Mesh: !AbstractDataComponent
+    mesh_type: !CategoryElement
+    index_offset: 0 # Fortran or C indexing?
+    number_of_elements: 0
+    number_of_verticies: 0
+    values_path: "" # path to mesh values in binary object
+
+---
+
+CoordinateAxis: !RangeSet
+    axis: !CategoryElement
+    # A specific range type with an axis name for use in coordinate axis vectors
 
 ---
 
 Encoding: !AbstractIdentifiable
-
-    hdf_sha1: "" # Identifier for the hdf dataset containing the numeric data
-
-
----
-
-DataArray: !AbstractIdentifiable
-    hdf_path: ""
+    encoding_type: ""
+    compression: ""
+    sha1: "" # Identifier for the hdf dataset containing the numeric data
 

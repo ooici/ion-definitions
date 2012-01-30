@@ -74,7 +74,7 @@ PredicateTypes:
     domain: [Transform, ExchangePoint]
     range: [Subscription]
   hasStream:
-    domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
+    domain: [Replay, DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
     range: [Stream]
   hasTopology:
     domain: [Stream, Subscription]

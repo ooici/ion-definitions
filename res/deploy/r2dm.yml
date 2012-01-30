@@ -34,9 +34,9 @@ apps:
     version: 0.1
     processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
 
-#  - name: data_retriever
-#    version: 0.1
-#    processapp: [data_retriever, ion.services.dm.inventory.data_retriever_service, DataRetrieverService]
+  - name: data_retriever
+    version: 0.1
+    processapp: [data_retriever, ion.services.dm.inventory.data_retriever_service, DataRetrieverService]
 
   - name: index_management
     version: 0.1

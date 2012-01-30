@@ -79,6 +79,9 @@ datastore:
   persistent: true
   force_clean: true
 
+external_data_agent_management:
+  persistent: true
+
 web_server:
   port: 5000
   hostname: localhost

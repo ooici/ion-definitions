@@ -100,6 +100,3 @@ apps:
   - name: external_data_agent_management
     version: 0.1
     processapp: [external_data_agent_management, eoi.services.external_observatory_agent_service, ExternalObservatoryAgentService]
-    config:
-        external_data_agent_management:
-            persistent: true

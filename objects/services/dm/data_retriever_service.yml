@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Data+Retriever+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, pubsub_management]
 
 methods:
   define_replay:
@@ -17,6 +17,12 @@ methods:
     out:
       replay_id: ""
       stream_id: ""
+
+  delete_replay:
+    docstring: Deletes the replay resources
+    in:
+      replay_id: ""
+    out:
 
   start_replay:
     docstring: Replays data from data store by streaming to an exchange name.

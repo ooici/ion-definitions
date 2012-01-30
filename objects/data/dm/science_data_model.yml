@@ -11,7 +11,7 @@ ScienceObjectMetadataContainer: !DataContainer
 
 ScienceObjectPacketContainer: !DataContainer
     reference_id_to_metadata:
-    count:
+    count: ### Grr - this does not belong here...
         # A supplement on a data stream is made up of one or more packets
         number_of_packets_in_supplement: -1
         packet_number: -1
@@ -21,7 +21,7 @@ ScienceObjectPacketContainer: !DataContainer
 ---
 
 UnitReferenceProperty:
-    name: ""
+    code: ""
     reference: ""
 
 
@@ -69,7 +69,7 @@ AbstractIdentifiable:
 AbstractDataComponent: !AbstractIdentifiable
     definition: "" # AnyURI
     updatable: True
-    optiona: False
+    optional: False
 
 ---
 
@@ -87,14 +87,14 @@ BooleanElement: !AbstractSimpleComponent
 ---
 
 TextElement: !AbstractSimpleComponent
-    constraint: AllowedTokens
+    constraint: !AllowedTokens
     value: ""
 
 ---
 
 CategoryElement: !AbstractSimpleComponent
     code_space: ""
-    constraint: AllowedTokens
+    constraint: !AllowedTokens
     value: ""
 
 ---
@@ -200,7 +200,8 @@ Vector: !AbstractDataComponent
 Coverage: !AbstractDataComponent
     domain_id: ""
     range_id: ""
-
+    description: ""
+    label: ""
 ---
 
 RangeSet: !AbstractDataComponent
@@ -210,6 +211,7 @@ RangeSet: !AbstractDataComponent
     mesh_location: !CategoryElement # Where is this data located on the mesh elements? Edge, face, node...
     values_path: "" #Path to data values in binary object
     bounds_id: "" # Quantity or Count range of the values
+    unit_of_measure: !UnitReferenceProperty
 
 ---
 

@@ -71,6 +71,25 @@ interceptor:
     process_outgoing: [governance]
     process_incoming: [governance]
 
+directory:
+  persistent: true
+  force_clean: true
+
+resource_registry:
+  persistent: true
+  force_clean: true
+
+datastore:
+  persistent: true
+  force_clean: true
+
+external_data_agent_management:
+  persistent: true
+
+web_server:
+  port: 5000
+  hostname: localhost
+
 exchange_spaces:
    # define the names and structure of exchange spaces and exchange points
     ioncore:

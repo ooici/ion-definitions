@@ -7,19 +7,11 @@ apps:
   - name: directory
     version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-    config:
-        directory:
-            persistent: true
-            force_clean: true
 
   - name: resource_registry
     description: Resource registry service
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-    config:
-        resource_registry:
-            persistent: true
-            force_clean: true
 
   - name: org_agent
     description: Org agent

@@ -21,6 +21,7 @@ methods:
       exchange_space_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_exchange_space:
     docstring: Updates an existing Exchange Space resource with data passed in as a parameter.
@@ -67,6 +68,7 @@ methods:
       canonical_name: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   undeclare_exchange_name:
     docstring: Remove an exhange nane resource
@@ -96,6 +98,7 @@ methods:
       exchange_point_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_exchange_point:
     docstring: Update an existing exchange point resource.

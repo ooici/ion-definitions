@@ -12,19 +12,11 @@ apps:
     description: Data store service
     version: 0.1
     processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
-    config:
-        datastore:
-            persistent: true
-            force_clean: true
 
   - name: resource_registry
     description: Resource registry service
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-    config:
-        resource_registry:
-            persistent: true
-            force_clean: true
 
   - name: trade
     version: 0.1

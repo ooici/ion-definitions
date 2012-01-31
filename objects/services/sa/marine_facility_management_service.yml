@@ -213,8 +213,8 @@ methods:
 
   unassign_site_from_site:
     in:
-      parent_site_id: ""
       child_site_id: ""
+      parent_site_id: ""
     out:
       success: True
 

@@ -23,7 +23,6 @@ methods:
     in:
       instrument_agent_instance: !InstrumentAgentInstance
     out:
-      success: True
 
   read_instrument_agent_instance:
     in:
@@ -35,7 +34,6 @@ methods:
     in:
       instrument_agent_instance_id: ""
     out:
-      success: True
 
   find_instrument_agent_instances:
     in:
@@ -56,7 +54,6 @@ methods:
     in:
       instrument_agent: !InstrumentAgent
     out:
-      success: True
 
   read_instrument_agent:
     in:
@@ -68,7 +65,6 @@ methods:
     in:
       instrument_agent_id: ""
     out:
-      success: True
 
   find_instrument_agents:
     in:
@@ -89,7 +85,6 @@ methods:
     in:
       instrument_device: !InstrumentDevice
     out:
-      success: True
 
   read_instrument_device:
     in:
@@ -101,7 +96,6 @@ methods:
     in:
       instrument_device_id: ""
     out:
-      success: True
 
   find_instrument_devices:
     in:
@@ -121,7 +115,6 @@ methods:
     in:
       instrument_model: !InstrumentModel
     out:
-      success: True
 
   read_instrument_model:
     in:
@@ -133,7 +126,6 @@ methods:
     in:
       instrument_model_id: ""
     out:
-      success: True
 
   find_instrument_models:
     in:
@@ -157,7 +149,6 @@ methods:
     in:
       platform_agent_instance: !PlatformAgentInstance
     out:
-      success: True
 
   read_platform_agent_instance:
     in:
@@ -169,7 +160,6 @@ methods:
     in:
       platform_agent_instance_id: ""
     out:
-      success: True
 
   find_platform_agent_instances:
     in:
@@ -189,7 +179,6 @@ methods:
     in:
       platform_agent: !PlatformAgent
     out:
-      success: True
 
   read_platform_agent:
     in:
@@ -201,7 +190,6 @@ methods:
     in:
       platform_agent_id: ""
     out:
-      success: True
 
   find_platform_agents:
     in:
@@ -222,7 +210,6 @@ methods:
     in:
       platform_device: !PlatformDevice
     out:
-      success: True
 
   read_platform_device:
     in:
@@ -234,7 +221,6 @@ methods:
     in:
       platform_device_id: ""
     out:
-      success: True
 
   find_platform_devices:
     in:
@@ -255,7 +241,6 @@ methods:
     in:
       platform_model: !PlatformModel
     out:
-      success: True
 
   read_platform_model:
     in:
@@ -267,7 +252,6 @@ methods:
     in:
       platform_model_id: ""
     out:
-      success: True
 
   find_platform_models:
     in:
@@ -293,7 +277,6 @@ methods:
     in:
       sensor_device: !SensorDevice
     out:
-      success: True
 
   read_sensor_device:
     in:
@@ -305,7 +288,6 @@ methods:
     in:
       sensor_device_id: ""
     out:
-      success: True
 
   find_sensor_devices:
     in:
@@ -325,7 +307,6 @@ methods:
     in:
       sensor_model: !SensorModel
     out:
-      success: True
 
   read_sensor_model:
     in:
@@ -337,7 +318,6 @@ methods:
     in:
       sensor_model_id: ""
     out:
-      success: True
 
   find_sensor_models:
     in:
@@ -352,105 +332,100 @@ methods:
 ####################################
 # associations
 
-  assign_instrument_device:
+  assign_instrument_device_to_logical_instrument:
     docstring: assign a physical instrument to a logical instrument 
     in:
-      instrument_id: ""
       instrument_device_id: ""
+      logical_instrument_id: ""
     out:
-      success: True
 
-  unassign_instrument_device:
+  unassign_instrument_device_from_logical_instrument:
     in:
-      instrument_id: ""
+      instrument_device_id: ""
+      logical_instrument_id: ""
+    out:
+
+  assign_instrument_agent_instance_to_instrument_agent:
+    in:
+      instrument_agent_instance_id: ""
+      instrument_agent_id: ""
+    out:
+
+  unassign_instrument_agent_instance_from_instrument_agent:
+    in:
+      instrument_agent_instance_id: ""
+      instrument_agent_id: ""
+    out:
+
+  assign_instrument_model_to_instrument_device:
+    in:
+      instrument_model_id: ""
       instrument_device_id: ""
     out:
-      success: True
+
+  unassign_instrument_model_from_instrument_device:
+    in:
+      instrument_model_id: ""
+      instrument_device_id: ""
+    out:
+
+
+  assign_platform_agent_instance_to_platform_agent:
+    in:
+      platform_agent_instance_id: ""
+      platform_agent_id: ""
+    out:
+
+
+  unassign_platform_agent_instance_from_platform_agent:
+    in:
+      platform_agent_instance_id: ""
+      platform_agent_id: ""
+    out:
+
+  assign_platform_model_to_platform_device:
+    in:
+      platform_model_id: ""
+      platform_device_id: ""
+    out:
+
+  unassign_platform_model_from_platform_device:
+    in:
+      platform_model_id: ""
+      platform_device_id: ""
+    out:
+
+
+  assign_sensor_model_to_sensor_device:
+    in:
+      sensor_model_id: ""
+      sensor_device_id: ""
+    out:
+
+
+  unassign_sensor_model_from_sensor_device:
+    in:
+      sensor_model_id: ""
+      sensor_device_id: ""
+    out:
+
+
+
+  ##################
+  #
+  # Direct Access
+  #
+
 
   request_direct_access:
     in:
       instrument_device_id: ""
     out:
-      success: True
 
   stop_direct_access:
     in:
       instrument_device_id: ""
     out:
-      success: True
-
-  assign_instrument_agent:
-    in:
-      instrument_agent_id: ""
-      instrument_id: ""
-      instrument_agent_instance: !InstrumentAgentInstance
-    out:
-      success: True
-
-  unassign_instrument_agent:
-    in:
-      instrument_agent_id: ""
-      instrument_id: ""
-    out:
-      success: True
-
-  assign_instrument_model:
-    in:
-      instrument_model_id: ""
-      instrument_device_id: ""
-    out:
-      success: True
-
-  unassign_instrument_model:
-    in:
-      instrument_model_id: ""
-      instrument_device_id: ""
-    out:
-      success: True
-
-  assign_platform_agent:
-    in:
-      platform_agent_id: ""
-      platform_id: ""
-      platform_agent_instance: !PlatformAgentInstance
-    out:
-      success: True
-  assign_sensor_model:
-    in:
-      sensor_model_id: ""
-      sensor_device_id: ""
-    out:
-      success: True
-
-  unassign_sensor_model:
-    in:
-      sensor_model_id: ""
-      sensor_device_id: ""
-    out:
-      success: True
-
-
-
-  unassign_platform_agent:
-    in:
-      platform_agent_id: ""
-      platform_id: ""
-    out:
-      success: True
-
-  assign_platform_model:
-    in:
-      platform_model_id: ""
-      platform_device_id: ""
-    out:
-      success: True
-
-  unassign_platform_model:
-    in:
-      platform_model_id: ""
-      platform_device_id: ""
-    out:
-      success: True
 
 
   ##################
@@ -463,323 +438,269 @@ methods:
     in:
       instrument_agent_id: ""
     out:
-      success: True
 
   declare_instrument_agent_developed:
     in:
       instrument_agent_id: ""
     out:
-      success: True
 
   declare_instrument_agent_integrated:
     in:
       instrument_agent_id: ""
     out:
-      success: True
 
   declare_instrument_agent_discoverable:
     in:
       instrument_agent_id: ""
     out:
-      success: True
 
   declare_instrument_agent_available:
     in:
       instrument_agent_id: ""
     out:
-      success: True
 
   declare_instrument_agent_retired:
     in:
       instrument_agent_id: ""
     out:
-      success: True
 
   declare_instrument_agent_instance_planned:
     in:
       instrument_agent_instance_id: ""
     out:
-      success: True
 
   declare_instrument_agent_instance_developed:
     in:
       instrument_agent_instance_id: ""
     out:
-      success: True
 
   declare_instrument_agent_instance_integrated:
     in:
       instrument_agent_instance_id: ""
     out:
-      success: True
 
   declare_instrument_agent_instance_discoverable:
     in:
       instrument_agent_instance_id: ""
     out:
-      success: True
 
   declare_instrument_agent_instance_available:
     in:
       instrument_agent_instance_id: ""
     out:
-      success: True
 
   declare_instrument_agent_instance_retired:
     in:
       instrument_agent_instance_id: ""
     out:
-      success: True
 
   declare_instrument_model_planned:
     in:
       instrument_model_id: ""
     out:
-      success: True
 
   declare_instrument_model_developed:
     in:
       instrument_model_id: ""
     out:
-      success: True
 
   declare_instrument_model_integrated:
     in:
       instrument_model_id: ""
     out:
-      success: True
 
   declare_instrument_model_discoverable:
     in:
       instrument_model_id: ""
     out:
-      success: True
 
   declare_instrument_model_available:
     in:
       instrument_model_id: ""
     out:
-      success: True
 
   declare_instrument_model_retired:
     in:
       instrument_model_id: ""
     out:
-      success: True
 
   declare_platform_agent_planned:
     in:
       platform_agent_id: ""
     out:
-      success: True
 
   declare_platform_agent_developed:
     in:
       platform_agent_id: ""
     out:
-      success: True
 
   declare_platform_agent_integrated:
     in:
       platform_agent_id: ""
     out:
-      success: True
 
   declare_platform_agent_discoverable:
     in:
       platform_agent_id: ""
     out:
-      success: True
 
   declare_platform_agent_available:
     in:
       platform_agent_id: ""
     out:
-      success: True
 
   declare_platform_agent_retired:
     in:
       platform_agent_id: ""
     out:
-      success: True
 
   declare_platform_agent_instance_planned:
     in:
       platform_agent_instance_id: ""
     out:
-      success: True
 
   declare_platform_agent_instance_developed:
     in:
       platform_agent_instance_id: ""
     out:
-      success: True
 
   declare_platform_agent_instance_integrated:
     in:
       platform_agent_instance_id: ""
     out:
-      success: True
 
   declare_platform_agent_instance_discoverable:
     in:
       platform_agent_instance_id: ""
     out:
-      success: True
 
   declare_platform_agent_instance_available:
     in:
       platform_agent_instance_id: ""
     out:
-      success: True
 
   declare_platform_agent_instance_retired:
     in:
       platform_agent_instance_id: ""
     out:
-      success: True
 
   declare_platform_model_planned:
     in:
       platform_model_id: ""
     out:
-      success: True
 
   declare_platform_model_developed:
     in:
       platform_model_id: ""
     out:
-      success: True
 
   declare_platform_model_integrated:
     in:
       platform_model_id: ""
     out:
-      success: True
 
   declare_platform_model_discoverable:
     in:
       platform_model_id: ""
     out:
-      success: True
 
   declare_platform_model_available:
     in:
       platform_model_id: ""
     out:
-      success: True
 
   declare_platform_model_retired:
     in:
       platform_model_id: ""
     out:
-      success: True
 
   declare_platform_device_planned:
     in:
       platform_device_id: ""
     out:
-      success: True
 
   declare_platform_device_developed:
     in:
       platform_device_id: ""
     out:
-      success: True
 
   declare_platform_device_integrated:
     in:
       platform_device_id: ""
     out:
-      success: True
 
   declare_platform_device_discoverable:
     in:
       platform_device_id: ""
     out:
-      success: True
 
   declare_platform_device_available:
     in:
       platform_device_id: ""
     out:
-      success: True
 
   declare_platform_device_retired:
     in:
       platform_device_id: ""
     out:
-      success: True
 
   declare_sensor_model_planned:
     in:
       sensor_model_id: ""
     out:
-      success: True
 
   declare_sensor_model_developed:
     in:
       sensor_model_id: ""
     out:
-      success: True
 
   declare_sensor_model_integrated:
     in:
       sensor_model_id: ""
     out:
-      success: True
 
   declare_sensor_model_discoverable:
     in:
       sensor_model_id: ""
     out:
-      success: True
 
   declare_sensor_model_available:
     in:
       sensor_model_id: ""
     out:
-      success: True
 
   declare_sensor_model_retired:
     in:
       sensor_model_id: ""
     out:
-      success: True
 
   declare_sensor_device_planned:
     in:
       sensor_device_id: ""
     out:
-      success: True
 
   declare_sensor_device_developed:
     in:
       sensor_device_id: ""
     out:
-      success: True
 
   declare_sensor_device_integrated:
     in:
       sensor_device_id: ""
     out:
-      success: True
 
   declare_sensor_device_discoverable:
     in:
       sensor_device_id: ""
     out:
-      success: True
 
   declare_sensor_device_available:
     in:
       sensor_device_id: ""
     out:
-      success: True
 
   declare_sensor_device_retired:
     in:
       sensor_device_id: ""
     out:
-      success: True
 

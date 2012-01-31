@@ -116,6 +116,39 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  # -----------------
+  # Manipulate external data agent instance : ExternalDataAgent
+  create_external_data_agent:
+    in:
+      external_data_agent: !ExternalDataAgent
+    out:
+      external_data_agent_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_external_data_agent:
+    in:
+      external_data_agent: !ExternalDataAgent
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_external_data_agent:
+    in:
+      external_data_agent_id: ""
+    out:
+      external_data_agent: !ExternalDataAgent
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_external_data_agent:
+    in:
+      external_data_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulate external data agent instance : ExternalDataAgentInstance
@@ -190,7 +223,7 @@ methods:
   # -----------------
   # The following operations assign and unassign data model
 
-  assign_external_data_provider:
+  assign_data_source_to_external_data_provider:
     docstring: Connect the data source with an external data provider
     in:
       data_source_id: ""
@@ -199,7 +232,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_external_data_provider:
+  unassign_data_source_from_external_data_provider:
     docstring: Disonnect the data source from the external data provider
     in:
       data_source_id: ""
@@ -211,7 +244,7 @@ methods:
   # -----------------
   # The following operations assign and unassign data model
 
-  assign_data_model:
+  assign_data_source_to_data_model:
     docstring: Connect the data source with an external data model
     in:
       data_source_id: ""
@@ -220,7 +253,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_data_model:
+  unassign_data_source_from_data_model:
     docstring: Disonnect the data source from the external data model
     in:
       data_source_id: ""
@@ -232,7 +265,7 @@ methods:
   # -----------------
   # The following operations assign and unassign data agents
 
-  assign_external_data_agent_instance:
+  assign_external_dataset_to_agent_instance:
     docstring: Connect the agent instance with an external data set
     in:
       external_dataset_id: ""
@@ -241,7 +274,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_external_data_agent_instance:
+  unassign_external_dataset_from_agent_instance:
     docstring: Disonnect the agent instance from the external data set
     in:
       external_dataset_id: ""
@@ -252,9 +285,30 @@ methods:
 
 
   # -----------------
+  # The following operations assign and unassign data agents ExternalDataAgent
+
+  assign_external_data_agent_to_agent_instance:
+    docstring: Connect the agent instance with an external data set
+    in:
+      external_data_agent_id: ""
+      agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_external_data_agent_from_agent_instance:
+    docstring: Disonnect the agent instance from the external data set
+    in:
+      external_data_agent_id: ""
+      agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
   # The following operations assign and unassign an external data set to a data source
 
-  assign_data_source:
+  assign_external_dataset_to_data_source:
     docstring: Connect the external data set to a data source
     in:
       external_dataset_id: ""
@@ -263,7 +317,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_data_source:
+  unassign_external_dataset_from_data_source:
     docstring: Disonnect the external data set from the data source
     in:
       external_dataset_id: ""
@@ -282,6 +336,7 @@ methods:
       data_source_id: ""
       data_source_model_id: ""
       external_dataset_id: ""
+      external_data_agent_id: ""
       agent_instance_id: ""
     out:
     throws:

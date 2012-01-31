@@ -1,0 +1,18 @@
+# blog.yml
+# IonObjects for a blogging example
+BlogAuthor:
+  name: ''
+  email: ''
+
+BlogPost:
+  post_id: ''
+  title: ''
+  author: {}
+  updated: ''
+  content: ''
+
+BlogComment:
+  ref_id: '' #!Post.post_id
+  author: {}
+  updated: ''
+  content: ''

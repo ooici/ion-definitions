@@ -78,21 +78,6 @@ methods:
     out:
       site_list: []
 
-  assign_site:
-    docstring: Sites can be nested within Sites.
-    in:
-      child_site_id: ""
-      parent_site_id: ""
-    out:
-      success: True
-
-  unassign_site:
-    in:
-      parent_site_id: ""
-      child_site_id: ""
-    out:
-      success: True
-
 
   # -----------------
   # Manipulation of logical instruments
@@ -172,35 +157,68 @@ methods:
   # associations
 
 
-  assign_platform:
+  assign_platform_to_logical_platform:
     docstring: A Platform agent can host (aggregate) other platforms and instruments
     in:
+      platform_id: ""
       logical_platform_id: ""
-      parent_site_id: ""
     out:
       success: True
 
-  unassign_platform:
+  unassign_platform_from_logical_platform:
     in:
+      platform_id: ""
       logical_platform_id: ""
-      parent_site_id: ""
     out:
       success: True
 
-  assign_instrument:
+  assign_logical_instrument_to_logical_platform:
     docstring: assign an logical instrument to a host platform, also logical.
     in:
       logical_instrument_id: ""
+      logical_platform_id: ""
+    out:
+      success: True
+
+  unassign_logical_instrument_from_logical_platform:
+    in:
+      logical_instrument_id: ""
+      logical_platform_id: ""
+    out:
+      success: True
+
+  assign_site_to_marine_facility:
+    docstring: Marine facilities have sites.
+    in:
+      site_id: ""
+      marine_facility_id: ""
+    out:
+      success: True
+
+  unassign_site_from_marine_facility:
+    in:
+      site_id: ""
+      marine_facility_id: ""
+    out:
+      success: True
+
+
+  assign_site_to_site:
+    docstring: Sites can be nested within Sites.
+    in:
+      child_site_id: ""
       parent_site_id: ""
     out:
       success: True
 
-  unassign_instrument:
+  unassign_site_from_site:
     in:
-      logical_instrument_id: ""
       parent_site_id: ""
+      child_site_id: ""
     out:
       success: True
+
+
 
   # -----------------
 

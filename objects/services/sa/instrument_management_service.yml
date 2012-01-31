@@ -352,20 +352,98 @@ methods:
 ####################################
 # associations
 
-  assign_instrument_device:
+  assign_instrument_device_to_logical_instrument:
     docstring: assign a physical instrument to a logical instrument 
     in:
-      instrument_id: ""
+      instrument_device_id: ""
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  unassign_instrument_device_from_logical_instrument:
+    in:
+      instrument_device_id: ""
+      logical_instrument_id: ""
+    out:
+      success: True
+
+  assign_instrument_agent_instance_to_instrument_agent:
+    in:
+      instrument_agent_instance_id: ""
+      instrument_agent_id: ""
+    out:
+      success: True
+
+  unassign_instrument_agent_instance_from_instrument_agent:
+    in:
+      instrument_agent_instance_id: ""
+      instrument_agent_id: ""
+    out:
+      success: True
+
+  assign_instrument_model_to_instrument_device:
+    in:
+      instrument_model_id: ""
       instrument_device_id: ""
     out:
       success: True
 
-  unassign_instrument_device:
+  unassign_instrument_model_from_instrument_device:
     in:
-      instrument_id: ""
+      instrument_model_id: ""
       instrument_device_id: ""
     out:
       success: True
+
+  assign_platform_agent_instance_to_platform_agent:
+    in:
+      platform_agent_instance_id: ""
+      platform_agent_id: ""
+    out:
+      success: True
+
+  unassign_platform_agent_instance_from_platform_agent:
+    in:
+      platform_agent_instance_id: ""
+      platform_agent_id: ""
+    out:
+      success: True
+
+  assign_platform_model_to_platform_device:
+    in:
+      platform_model_id: ""
+      platform_device_id: ""
+    out:
+      success: True
+
+  unassign_platform_model_from_platform_device:
+    in:
+      platform_model_id: ""
+      platform_device_id: ""
+    out:
+      success: True
+
+  assign_sensor_model_to_sensor_device:
+    in:
+      sensor_model_id: ""
+      sensor_device_id: ""
+    out:
+      success: True
+
+  unassign_sensor_model_from_sensor_device:
+    in:
+      sensor_model_id: ""
+      sensor_device_id: ""
+    out:
+      success: True
+
+
+
+  ##################
+  #
+  # Direct Access
+  #
+
 
   request_direct_access:
     in:
@@ -376,79 +454,6 @@ methods:
   stop_direct_access:
     in:
       instrument_device_id: ""
-    out:
-      success: True
-
-  assign_instrument_agent:
-    in:
-      instrument_agent_id: ""
-      instrument_id: ""
-      instrument_agent_instance: !InstrumentAgentInstance
-    out:
-      success: True
-
-  unassign_instrument_agent:
-    in:
-      instrument_agent_id: ""
-      instrument_id: ""
-    out:
-      success: True
-
-  assign_instrument_model:
-    in:
-      instrument_model_id: ""
-      instrument_device_id: ""
-    out:
-      success: True
-
-  unassign_instrument_model:
-    in:
-      instrument_model_id: ""
-      instrument_device_id: ""
-    out:
-      success: True
-
-  assign_platform_agent:
-    in:
-      platform_agent_id: ""
-      platform_id: ""
-      platform_agent_instance: !PlatformAgentInstance
-    out:
-      success: True
-  assign_sensor_model:
-    in:
-      sensor_model_id: ""
-      sensor_device_id: ""
-    out:
-      success: True
-
-  unassign_sensor_model:
-    in:
-      sensor_model_id: ""
-      sensor_device_id: ""
-    out:
-      success: True
-
-
-
-  unassign_platform_agent:
-    in:
-      platform_agent_id: ""
-      platform_id: ""
-    out:
-      success: True
-
-  assign_platform_model:
-    in:
-      platform_model_id: ""
-      platform_device_id: ""
-    out:
-      success: True
-
-  unassign_platform_model:
-    in:
-      platform_model_id: ""
-      platform_device_id: ""
     out:
       success: True
 

@@ -16,6 +16,7 @@ methods:
   create_marine_facility:
     in:
       marine_facility: !MarineFacility
+      site_id: ""
     out:
       marine_facility_id: ""
 

@@ -23,7 +23,6 @@ methods:
     in:
       marine_facility: !MarineFacility
     out:
-      success: True
 
   read_marine_facility:
     in:
@@ -35,7 +34,7 @@ methods:
     in:
       marine_facility_id: ""
     out:
-      success: True
+
 
   find_marine_facilities:
     in:
@@ -58,7 +57,6 @@ methods:
     in:
       site: !Site
     out:
-      success: True
 
   read_site:
     in:
@@ -70,7 +68,6 @@ methods:
     in:
       site_id: ""
     out:
-      success: True
 
   find_sites:
     in:
@@ -94,7 +91,6 @@ methods:
     in:
       logical_instrument: !LogicalInstrument
     out:
-      success: True
 
   read_logical_instrument:
     in:
@@ -106,7 +102,6 @@ methods:
     in:
       logical_instrument_id: ""
     out:
-      success: True
 
   find_logical_instruments:
     in:
@@ -131,7 +126,6 @@ methods:
     in:
       logical_platform: !LogicalPlatform
     out:
-      success: True
 
   read_logical_platform:
     in:
@@ -143,7 +137,6 @@ methods:
     in:
       logical_platform_id: ""
     out:
-      success: True
 
   find_logical_platforms:
     in:
@@ -163,14 +156,12 @@ methods:
       platform_id: ""
       logical_platform_id: ""
     out:
-      success: True
 
   unassign_platform_from_logical_platform:
     in:
       platform_id: ""
       logical_platform_id: ""
     out:
-      success: True
 
   assign_logical_instrument_to_logical_platform:
     docstring: assign an logical instrument to a host platform, also logical.
@@ -178,14 +169,12 @@ methods:
       logical_instrument_id: ""
       logical_platform_id: ""
     out:
-      success: True
 
   unassign_logical_instrument_from_logical_platform:
     in:
       logical_instrument_id: ""
       logical_platform_id: ""
     out:
-      success: True
 
   assign_site_to_marine_facility:
     docstring: Marine facilities have sites.
@@ -193,14 +182,12 @@ methods:
       site_id: ""
       marine_facility_id: ""
     out:
-      success: True
 
   unassign_site_from_marine_facility:
     in:
       site_id: ""
       marine_facility_id: ""
     out:
-      success: True
 
 
   assign_site_to_site:
@@ -209,14 +196,12 @@ methods:
       child_site_id: ""
       parent_site_id: ""
     out:
-      success: True
 
   unassign_site_from_site:
     in:
       child_site_id: ""
       parent_site_id: ""
     out:
-      success: True
 
 
 
@@ -237,143 +222,119 @@ methods:
     in:
       logical_instrument_id: ""
     out:
-      success: True
 
   declare_logical_instrument_developed:
     in:
       logical_instrument_id: ""
     out:
-      success: True
 
   declare_logical_instrument_integrated:
     in:
       logical_instrument_id: ""
     out:
-      success: True
 
   declare_logical_instrument_discoverable:
     in:
       logical_instrument_id: ""
     out:
-      success: True
 
   declare_logical_instrument_available:
     in:
       logical_instrument_id: ""
     out:
-      success: True
 
   declare_logical_instrument_retired:
     in:
       logical_instrument_id: ""
     out:
-      success: True
 
   declare_logical_platform_planned:
     in:
       logical_platform_id: ""
     out:
-      success: True
 
   declare_logical_platform_developed:
     in:
       logical_platform_id: ""
     out:
-      success: True
 
   declare_logical_platform_integrated:
     in:
       logical_platform_id: ""
     out:
-      success: True
 
   declare_logical_platform_discoverable:
     in:
       logical_platform_id: ""
     out:
-      success: True
 
   declare_logical_platform_available:
     in:
       logical_platform_id: ""
     out:
-      success: True
 
   declare_logical_platform_retired:
     in:
       logical_platform_id: ""
     out:
-      success: True
 
   declare_marine_facility_planned:
     in:
       marine_facility_id: ""
     out:
-      success: True
 
   declare_marine_facility_developed:
     in:
       marine_facility_id: ""
     out:
-      success: True
 
   declare_marine_facility_integrated:
     in:
       marine_facility_id: ""
     out:
-      success: True
 
   declare_marine_facility_discoverable:
     in:
       marine_facility_id: ""
     out:
-      success: True
 
   declare_marine_facility_available:
     in:
       marine_facility_id: ""
     out:
-      success: True
 
   declare_marine_facility_retired:
     in:
       marine_facility_id: ""
     out:
-      success: True
 
   declare_site_planned:
     in:
       site_id: ""
     out:
-      success: True
 
   declare_site_developed:
     in:
       site_id: ""
     out:
-      success: True
 
   declare_site_integrated:
     in:
       site_id: ""
     out:
-      success: True
 
   declare_site_discoverable:
     in:
       site_id: ""
     out:
-      success: True
 
   declare_site_available:
     in:
       site_id: ""
     out:
-      success: True
 
   declare_site_retired:
     in:
       site_id: ""
     out:
-      success: True
 

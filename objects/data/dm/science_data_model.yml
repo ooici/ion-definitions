@@ -5,13 +5,13 @@ DataContainer:
 
 ---
 
-ScienceObjectMetadataContainer: !DataContainer
+ScienceObjectMetadataContainer: !Extends_DataContainer
     metadata_reference_id: ""
 
 
 ---
 
-ScienceObjectPacketContainer: !DataContainer
+ScienceObjectPacketContainer: !Extends_DataContainer
     reference_id_to_metadata:
     count: ### Grr - this does not belong here...
         # A supplement on a data stream is made up of one or more packets
@@ -69,66 +69,66 @@ AbstractIdentifiable:
 
 ---
 
-AbstractDataComponent: !AbstractIdentifiable
+AbstractDataComponent: !Extends_AbstractIdentifiable
     definition: "" # AnyURI
     updatable: True
     optional: False
 
 ---
 
-AbstractSimpleComponent: !AbstractDataComponent
-    quality _id: ""
+AbstractSimpleComponent: !Extends_AbstractDataComponent
+    quality_id: ""
     nil_values: [] # Nill values objects
     reference_frame: "" # Any URI
     axisID: ""
 
 ---
 
-BooleanElement: !AbstractSimpleComponent
+BooleanElement: !Extends_AbstractSimpleComponent
     value: True
 
 ---
 
-TextElement: !AbstractSimpleComponent
+TextElement: !Extends_AbstractSimpleComponent
     constraint: !AllowedTokens
     value: ""
 
 ---
 
-CategoryElement: !AbstractSimpleComponent
+CategoryElement: !Extends_AbstractSimpleComponent
     code_space: ""
     constraint: !AllowedTokens
     value: ""
 
 ---
 
-CountElement: !AbstractSimpleComponent
+CountElement: !Extends_AbstractSimpleComponent
     constraint: !AllowedValues
     value: 0
 
 ---
 
-CountRangeElement: !AbstractSimpleComponent
+CountRangeElement: !Extends_AbstractSimpleComponent
     constraint: !AllowedValues
     value_pair: []
 
 ---
 
-QuantityElement: !AbstractSimpleComponent
+QuantityElement: !Extends_AbstractSimpleComponent
     unit_of_measure: !UnitReferenceProperty
     constraint: !AllowedValues
     value: 0.0
 
 ---
 
-QuantityRangeElement: !AbstractSimpleComponent
+QuantityRangeElement: !Extends_AbstractSimpleComponent
     unit_of_measure: !UnitReferenceProperty
     constraint: !AllowedValues
     value_pair: []
 
 ---
 
-TimeElement: !AbstractSimpleComponent
+TimeElement: !Extends_AbstractSimpleComponent
     unit_of_measure: !UnitReferenceProperty
     constraint: !AllowedTimes
     reference_time: "" #ISO 8601
@@ -137,7 +137,7 @@ TimeElement: !AbstractSimpleComponent
 
 ---
 
-TimeRangeElement: !AbstractSimpleComponent
+TimeRangeElement: !Extends_AbstractSimpleComponent
     unit_of_measure: !UnitReferenceProperty
     constraint: !AllowedTimes
     reference_time: "" #ISO 8601
@@ -146,24 +146,24 @@ TimeRangeElement: !AbstractSimpleComponent
 
 ---
 
-QualityQuantityProperty: !QuantityElement
+QualityQuantityProperty: !Extends_QuantityElement
 
 
 ---
 
-QualityQuantityRangeProperty: !QuantityRangeElement
+QualityQuantityRangeProperty: !Extends_QuantityRangeElement
 
 ---
 
-QualityCatagoryProperty: !CategoryElement
+QualityCatagoryProperty: !Extends_CategoryElement
 
 ---
 
-QualityTextProperty: !TextElement
+QualityTextProperty: !Extends_TextElement
 
 ---
 
-DataStream: !AbstractIdentifiable
+DataStream: !Extends_AbstractIdentifiable
     element_count_id: ""
     element_type_id: ""
     encoding_id: ""
@@ -171,18 +171,18 @@ DataStream: !AbstractIdentifiable
 
 ---
 
-ElementType: !AbstractDataComponent
+ElementType: !Extends_AbstractDataComponent
     data_record_id: ""
 
 ---
 
-DataRecord: !AbstractDataComponent
+DataRecord: !Extends_AbstractDataComponent
     field_ids: []
     domain_ids: [] # added explicit ref to the domain or domains of the record
 
 ---
 
-Vector: !AbstractDataComponent
+Vector: !Extends_AbstractDataComponent
     coordinate_ids: [] # contains the ids of a set of quantities or a set of ranges
     reference_frame: "" # Any URI
     local_frame: "" # optional
@@ -200,15 +200,13 @@ Vector: !AbstractDataComponent
 
 ---
 
-Coverage: !AbstractDataComponent
+Coverage: !Extends_AbstractDataComponent
     domain_id: ""
     range_id: ""
-    description: ""
-    label: ""
 ---
 
-RangeSet: !AbstractDataComponent
-    quality _id: ""
+RangeSet: !Extends_AbstractDataComponent
+    quality_id: ""
     nil_values: [] # Nill values objects
     reference_frame: "" # Any URI
     mesh_location: !CategoryElement # Where is this data located on the mesh elements? Edge, face, node...
@@ -218,13 +216,13 @@ RangeSet: !AbstractDataComponent
 
 ---
 
-Domain: !AbstractDataComponent
+Domain: !Extends_AbstractDataComponent
     coordinate_vector_id: "" # the vector of coordinates for this domain
     mesh_id: "" # the element containing the mesh for this object
 
 ---
 
-Mesh: !AbstractDataComponent
+Mesh: !Extends_AbstractDataComponent
     mesh_type: !CategoryElement
     index_offset: 0 # Fortran or C indexing?
     number_of_elements: 0
@@ -233,13 +231,13 @@ Mesh: !AbstractDataComponent
 
 ---
 
-CoordinateAxis: !RangeSet
+CoordinateAxis: !Extends_RangeSet
     axis: !CategoryElement
     # A specific range type with an axis name for use in coordinate axis vectors
 
 ---
 
-Encoding: !AbstractIdentifiable
+Encoding: !Extends_AbstractIdentifiable
     encoding_type: ""
     compression: ""
     sha1: "" # Identifier for the hdf dataset containing the numeric data

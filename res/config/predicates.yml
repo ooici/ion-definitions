@@ -34,8 +34,8 @@ PredicateTypes:
     domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition, ExternalDataAgent]
     range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess, ExternalDataAgentInstance]
   hasInstrument:
-    domain: [PlatformDevice]
-    range: [InstrumentDevice]
+    domain: [PlatformDevice, LogicalPlatform]
+    range: [InstrumentDevice, LogicalInstrument]
   hasModel:
     domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent, DataSource, ExternalDataAgent]
     range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]

@@ -10,6 +10,7 @@ methods:
 
   negotiate:
     in:
+      resource_id: ""
       sap_in: !ServiceAgreementProposal
     out:
       sap_out: !ServiceAgreementProposal
@@ -19,6 +20,7 @@ methods:
 
   get_capabilities:
     in:
+      resource_id: ""
       # Leave types default for all
       capability_types: []
     out:
@@ -30,6 +32,7 @@ methods:
   execute:
     docstring: Execute a command on the resource represented by the agent
     in:
+      resource_id: ""
       command: !AgentCommand
     out:
       result: !AgentCommandResult
@@ -40,6 +43,7 @@ methods:
   get_param:
     docstring: Get the value of the given resource parameter
     in:
+      resource_id: ""
       name: ""
     out:
       value: ""
@@ -48,6 +52,7 @@ methods:
 
   set_param:
     in:
+      resource_id: ""
       name: ""
       value: ""
     out:
@@ -69,12 +74,14 @@ methods:
 
   execute_agent:
     in:
+      resource_id: ""
       command: !AgentCommand
     out:
       result: !AgentCommandResult
 
   get_agent_param:
     in:
+      resource_id: ""
       name: ""
     out:
       value: ""
@@ -83,6 +90,7 @@ methods:
 
   set_agent_param:
     in:
+      resource_id: ""
       name: ""
       value: ""
     out:

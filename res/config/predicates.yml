@@ -31,8 +31,8 @@ PredicateTypes:
     domain: [DataProcess]
     range: [DataProduct]
   hasInstance:
-    domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition]
-    range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess]
+    domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition, ExternalDataAgent]
+    range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess, ExternalDataAgentInstance]
   hasInstrument:
     domain: [PlatformDevice]
     range: [InstrumentDevice]
@@ -74,7 +74,7 @@ PredicateTypes:
     domain: [Transform, ExchangePoint]
     range: [Subscription]
   hasStream:
-    domain: [DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
+    domain: [Replay, DataProcess, DataProducer, Dataset, ExchangePoint, Subscription]
     range: [Stream]
   hasTopology:
     domain: [Stream, Subscription]

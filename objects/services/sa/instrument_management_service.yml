@@ -332,17 +332,17 @@ methods:
 ####################################
 # associations
 
-  assign_instrument_device_to_logical_instrument:
+  assign_logical_instrument_to_instrument_device:
     docstring: assign a physical instrument to a logical instrument 
     in:
-      instrument_device_id: ""
       logical_instrument_id: ""
+      instrument_device_id: ""
     out:
 
-  unassign_instrument_device_from_logical_instrument:
+  unassign_logical_instrument_from_instrument_device:
     in:
-      instrument_device_id: ""
       logical_instrument_id: ""
+      instrument_device_id: ""
     out:
 
   assign_instrument_agent_instance_to_instrument_agent:

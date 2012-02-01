@@ -189,6 +189,19 @@ methods:
       marine_facility_id: ""
     out:
 
+  assign_logical_platform_to_site:
+    docstring: assign a logical platform to a site
+    in:
+      logical_platform_id: ""
+      site_id: ""
+    out:
+
+  unassign_logical_platform_from_site:
+    in:
+      logical_platform_id: ""
+      site_id: ""
+    out:
+
 
   assign_site_to_site:
     docstring: Sites can be nested within Sites.

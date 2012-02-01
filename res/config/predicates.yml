@@ -14,7 +14,7 @@ PredicateTypes:
     range: [PlatformAgentInstance,InstrumentAgentInstance, ExternalDataAgentInstance]
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
-    range: [PlatformLogical, InstrumentLogical]
+    range: [LogicalPlatform, LogicalInstrument]
   hasParent:
     domain: [DataProducer]
     range: [DataProducer]
@@ -34,8 +34,8 @@ PredicateTypes:
     domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition, ExternalDataAgent]
     range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess, ExternalDataAgentInstance]
   hasInstrument:
-    domain: [PlatformDevice]
-    range: [InstrumentDevice]
+    domain: [PlatformDevice, LogicalPlatform]
+    range: [InstrumentDevice, LogicalInstrument]
   hasModel:
     domain: [PlatformDevice, InstrumentDevice, Sensor, InstrumentAgent, PlatformAgent, DataSource, ExternalDataAgent]
     range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]
@@ -43,8 +43,8 @@ PredicateTypes:
     domain: [DataProcess]
     range: [DataProduct]
   hasPlatform:
-    domain: [MarineFacility, Site, PlatformLogical]
-    range: [PlatformDevice, PlatformLogical]
+    domain: [MarineFacility, Site, LogicalPlatform]
+    range: [PlatformDevice, LogicalPlatform]
   hasSensor:
     domain: [InstrumentDevice]
     range: [Sensor]

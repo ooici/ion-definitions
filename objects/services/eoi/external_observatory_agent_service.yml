@@ -17,17 +17,17 @@ dependencies: [resource_registry]
 
 methods:
 
-  spawn_worker:
-    docstring: |
-      Create a service process (worker) that contains the appropriate ExternalDataHandler and Pubsub instances
-      requried to operate on the ExternalDataset resource indicated by "resource_id"
-    in:
-      resource_id: ""
-    out:
-      worker_id: ""
-      #worker: ??
-    throws:
-      NotFound: if the ExternalDataset resource indicated by "resource_id" can't be found
+#  spawn_worker:
+#    docstring: |
+#      Create a service process (worker) that contains the appropriate ExternalDataHandler and Pubsub instances
+#      requried to operate on the ExternalDataset resource indicated by "resource_id"
+#    in:
+#      resource_id: ""
+#    out:
+#      worker_id: ""
+#      #worker: ??
+#    throws:
+#      NotFound: if the ExternalDataset resource indicated by "resource_id" can't be found
 
   get_worker:
     docstring: |
@@ -35,7 +35,7 @@ methods:
     in:
       resource_id: ""
     out:
-      worker_id: ""
+      worker_id: boolean
       #worker: ??
     throws:
       NotFound: if the ExternalDataset resource indicated by "dataset_id" can't be found
@@ -50,6 +50,7 @@ methods:
 
   get_capabilities:
     in:
+      resource_id: ""
       # Leave types default for all
       capability_types: []
     out:
@@ -65,6 +66,7 @@ methods:
       command is forwarded to the worker.  If it does not exist, one is spawned and then the command
       is forwarded.
     in:
+      resource_id: ""
       command: !AgentCommand
     out:
       result: !AgentCommandResult
@@ -75,6 +77,7 @@ methods:
   get_param:
     docstring: Get the value of the given resource parameter
     in:
+      resource_id: ""
       name: ""
     out:
       value: ""
@@ -84,6 +87,7 @@ methods:
   set_param:
     docstring: Set the value of the given resource parameter
     in:
+      resource_id: ""
       name: ""
       value: ""
     out:
@@ -97,6 +101,7 @@ methods:
   execute_agent:
     docstring: Execute a command on the agent itself (rather than against the represented resource)
     in:
+      resource_id: ""
       command: !AgentCommand
     out:
       result: !AgentCommandResult
@@ -104,6 +109,7 @@ methods:
   get_agent_param:
     docstring: Get the value of the given agent parameter
     in:
+      resource_id: ""
       name: ""
     out:
       value: ""
@@ -113,6 +119,7 @@ methods:
   set_agent_param:
     docstring: Set the value of the given agent parameter
     in:
+      resource_id: ""
       name: ""
       value: ""
     out:

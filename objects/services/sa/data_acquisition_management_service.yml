@@ -221,7 +221,7 @@ methods:
 
 
   # -----------------
-  # The following operations assign and unassign data model
+  # The following operations assign and unassign data source to an external data provider
 
   assign_data_source_to_external_data_provider:
     docstring: Connect the data source with an external data provider
@@ -242,7 +242,7 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
-  # The following operations assign and unassign data model
+  # The following operations assign and unassign a data source to a data model
 
   assign_data_source_to_data_model:
     docstring: Connect the data source with an external data model
@@ -263,7 +263,7 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
-  # The following operations assign and unassign data agents
+  # The following operations assign and unassign external data sets to data agents
 
   assign_external_dataset_to_agent_instance:
     docstring: Connect the agent instance with an external data set
@@ -285,7 +285,7 @@ methods:
 
 
   # -----------------
-  # The following operations assign and unassign data agents ExternalDataAgent
+  # The following operations assign and unassign data agents ExternalDataAgent to an agent instance
 
   assign_external_data_agent_to_agent_instance:
     docstring: Connect the agent instance with an external data set
@@ -304,6 +304,30 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+
+  # -----------------
+  # The following operations assign and unassign an external data agent to a data source model
+
+  assign_external_data_agent_to_data_model:
+    docstring: Connect the data source with an external data model
+    in:
+      external_data_agent_id: ""
+      data_source_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_external_data_agent_from_data_model:
+    docstring: Disonnect the data source from the external data model
+    in:
+      external_data_agent_id: ""
+      data_source_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
 
   # -----------------
   # The following operations assign and unassign an external data set to a data source

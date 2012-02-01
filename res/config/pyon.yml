@@ -29,9 +29,8 @@ cc:
     heartbeat: 3.0
   proctype: green   # Type of ION process to spawn for new services/processes (green or python)
 
-ion_object:
-  validate_init: True
-  validate_setattr: True
+validate:
+  setattr: True
 
 endpoint:
   receive:

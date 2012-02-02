@@ -28,11 +28,14 @@ ResourceLifeCycle: !Extends_InformationResource
 Attachment: !Extends_InformationResource
   # To identify attachments to resources
 
+DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
+
 ---
 
 AgentDefinition: !Extends_InformationResource
 
 AgentInstance: !Extends_TaskableResource
+  deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
   exchange_name: ""
   configuration: {}
 

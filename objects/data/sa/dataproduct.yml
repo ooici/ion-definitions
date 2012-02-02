@@ -20,8 +20,6 @@ DataProduct: !Extends_InformationResource
   # A place to acknowledge various types of support provided by the project that produced the data
   provider_acknowledgement: ""
 
-  geospatialbounds: !GeospatialBounds
-
   # a link to the (time-varying) data product
   # Mandatory
   data_url: ""

@@ -4,10 +4,12 @@
 BlogBase:
   stream_id: ""
   is_replay: False
+
 ---
 BlogAuthor: 
   name: ''
   email: ''
+
 ---
 BlogPost: !Extends_BlogBase
   post_id: ''
@@ -15,6 +17,7 @@ BlogPost: !Extends_BlogBase
   author: !BlogAuthor
   updated: ''
   content: ''
+
 ---
 BlogComment: !Extends_BlogBase
   ref_id: '' #!Post.post_id

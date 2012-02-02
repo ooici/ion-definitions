@@ -17,7 +17,7 @@ InstrumentModel: !Extends_InformationResource
   dimensions: "h x l x w"
   buoyancy: ""
 
-InstrumentAgent: !Extends_InformationResource
+InstrumentAgent: !Extends_AgentDefinition
   agent_version: ""
   driver_module: ""
   driver_class: ""
@@ -27,9 +27,7 @@ InstrumentAgent: !Extends_InformationResource
   time_source: ""
   event_publisher_origin: ""
 
-InstrumentAgentInstance: !Extends_TaskableResource
-  exchange_name: ""
-  configuration: {}
+InstrumentAgentInstance: !Extends_AgentInstance
 
 SensorDevice: !Extends_TaskableResource
   # This is the physical instrument

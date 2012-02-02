@@ -1,8 +1,22 @@
-# Central configuration file for Ion services and modules.
+# Central configuration file for container, ION system and services.
 # The contents are transformed into a dict that supports dot notation:
-# CFG.broker.amqp.host
-# Do not modify this file! Set overrides in pyon.local.yml
+#   CFG.broker.amqp.host
+# Do not modify this file! Set overrides in pyon.local.yml or in rel files
 
+# The "system" root entry defines settings for the distributed ION system that this
+# container starts or joins. A system comprises all containers with the same sysname.
+system:
+  # sysname - by default it is generated from your system's uname.
+  # uncomment and set here if you want to lock it to something.
+  #name: r2demo
+  name:
+
+  # Global flag to use a mock datastore instead of CouchDB
+  mockdb: False
+  # Global flag to clean all persistent stores and reset system to defaults on start
+  force_clean: True
+
+# The "server" root entry defines settings for connections to external servers
 server:
   amqp:
     host: localhost
@@ -17,12 +31,15 @@ server:
     username:
     password:
 
-system:
-  # sysname - by default it is generated from your system's uname.
-  # uncomment and set here if you want to lock it to something.
-  #name: r2demo
-  name:
+# The "container" root entry defines settings for the current Pyon container
+container:
+  messaging:
+    endpoint: # TBD: move entries to here
+    interceptor: # TBD: move entries to here
+  objects:
+    validate: # TBD: move entries to here
 
+# TBD: Rename to "container". See there.
 cc:
   timeout:
     shutdown: 30.0
@@ -70,25 +87,35 @@ interceptor:
     process_outgoing: [governance]
     process_incoming: [governance]
 
+
+# The "service" root entry
+service:
+
+# TBD: Remove (use global flags instead)
 directory:
   persistent: true
   force_clean: true
 
+# TBD: Remove (use global flags instead)
 resource_registry:
   persistent: true
   force_clean: true
 
+# TBD: Remove (use global flags instead)
 datastore:
   persistent: true
   force_clean: true
 
+# TBD: Remove (use global flags instead)
 external_data_agent_management:
   persistent: true
 
+# TBD: Rename container.service_gateway
 web_server:
   port: 5000
   hostname: localhost
 
+# TBD: Rename system.exchange_spaces
 exchange_spaces:
    # define the names and structure of exchange spaces and exchange points
     ioncore:
@@ -98,6 +125,7 @@ exchange_spaces:
             events:
                 type: topic_tree
 
+# TBD: Rename system.core_xps
 core_xps:
     # used as defaults by pyon.ion.endpoint and PubSub Mgmt Service
     science_data: ioncore.science_data

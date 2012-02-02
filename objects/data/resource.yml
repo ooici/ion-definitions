@@ -78,3 +78,23 @@ ResourceBasics:
 # TODO: Refine and use consistently, where needed to find
 ResourceFilter:
   filters: {}
+
+# TODO: Define
+DataFormat:
+  name: ""
+  description: ""
+  format_version_identifier: ""
+  between_record_delimiter: ""
+  # Mandatory for OOI Core Data, optional for external provider data
+  character_set: ""
+  unique_short_name: ""
+  long_name: ""
+  units: ""
+  # what is inserted when a real measurement is unavailable)
+  missing_value: ""
+  # a Java-style format specification for parsing a value from a string
+  value_format: ""
+  nominal_sampling_rate_minimum: "" # Hz
+  nominal_sampling_rate_maximum: "" # Hz
+
+

@@ -1,14 +1,111 @@
 DataProduct: !Extends_InformationResource
-  version: ""
-  summary: ""
+
+  # Current to version 140 of confluence resource page:  https://confluence.oceanobservatories.org/x/EYHsAQ
+
+  # The realization of a uniquely identified presentation of a defined collection of information.
+  # The presentation consists of a particular subset of the collection.
+
+  # An entity that serves as a contact point
+  contact: !ContactInformation
+
+  # limits expressed relative to earth
+  geospatial_bounds: !GeospatialBounds
+
+  # lists key words and phrases that are relevant to the dataset
   keywords: {}
-  nominalmaxdatarate: 0
-  nominalmindatarate: 0
-  datarateunit: ""
-#  datecreated: 2011-01-01
-  creator: !ContactInformation
-  institution: !Institution
-  project: ""
+
+  # The name of the project from which the data came.
+  provider_project: ""
+
+  # A place to acknowledge various types of support provided by the project that produced the data
+  provider_acknowledgement: ""
+
   geospatialbounds: !GeospatialBounds
+
+  # a link to the (time-varying) data product
+  # Mandatory
+  data_url: ""
+
+  # one or more of the topic categories from ISO 19115
+  # Mandatory
+  iso_topic_category: ""
+
+  # detailed description of data that makes up the Data Product; for raw data, includes formatting information
+  # Mandatory
+  data_format: !DataFormat
+
+  # OOI data processing level; L0, L1, or L2. The definitions of these levels are currently in revision,
+  # and should be verified from the OOI Data Products document
+  # Mandatory
+  data_product_level: ""
+
+  # Provides the name and contact information for a person associated with the dataset
+  # A list of ContactInformation objects
+  data_contact: []
+
+  # See OOI Data Products document for latest (not necessarily normative) definitions and controlled vocabulary
+  # Mandatory
+  data_quality_control_level: ""
+
+  # Indicates whether this is a deprecated dataset
+  # Mandatory
+  # todo: is this deprecated? duplicates LCS?
+  version_status: ""
+
+  # THREDDS data type appropriate for this dataset. E.g., "Grid", "Image", "Station", "Trajectory", "Radial" (ACDD)
+  # Mandatory
+  CDM_data_type: ""
+
+  # Optional for ISO 19115 (=> MD_DataIdentification.spatialRepresentationType
+  ISO_spatial_representation_type: ""
+
+  # Describes the permissions and restrictions for access to and distribution of OOI data;
+  # presumed to be legally enforceable language.
+  # Mandatory
+  license: ""
+
+  # Reference identifier to an explicit license, as described in License attribute.
+  license_URI: ""
+
+  # Indicates whether the dataset is under proprietary hold or whether it is public
+  # string: unrestricted, temporary_hold, permanent_hold
+  # Mandatory
+  exclusive_rights_status: ""
+
+  # For temporary data holds, the date on which the hold will expire
+  # Mandatory
+  exclusive_rights_end_date: ""  #datetime
+
+  # The name and contact information of the person/entity who requested the exclusive rights
+  # Mandatory
+  exclusive_rights_contact: !ContactInformation
+
+  # Further information about the exclusive rights hold, such as a justification for a permanent hold
+  exclusive_rights_notes: ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

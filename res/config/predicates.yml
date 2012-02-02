@@ -87,7 +87,7 @@ PredicateTypes:
     range: [Transform]
 # COI
   hasAgent:
-    domain: [TaskableReource]
+    domain: [LogicalInstrument, LogicalPlatform]
     range: [Agent]
   hasAttachment:
     domain: [InstrumentDevice]

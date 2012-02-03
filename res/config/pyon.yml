@@ -130,3 +130,7 @@ core_xps:
     # used as defaults by pyon.ion.endpoint and PubSub Mgmt Service
     science_data: ioncore.science_data
     events: ioncore.events
+
+core_stream_types:
+    - "BlogStreamType"
+    - "ScienceStreamType"

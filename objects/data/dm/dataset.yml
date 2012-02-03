@@ -6,3 +6,19 @@ DataSet: !Extends_InformationResource
   max_datetime: ""
   variables: []
 
+
+
+
+DSJoinQuery:
+    type: ""
+    query: {}
+
+
+DSJoinStream:
+    # In order of primacy, define the
+    stream_ids: []
+    variables: []
+    location_bounds: []
+
+
+

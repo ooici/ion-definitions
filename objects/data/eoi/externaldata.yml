@@ -26,9 +26,8 @@ ExternalDataSourceModel: !Extends_InformationResource
   data_handler_module: ""
   data_handler_class: ""
 
-ExternalDataAgent: !Extends_InformationResource
+ExternalDataAgent: !Extends_AgentDefinition
   agent_version: ""
 
-ExternalDataAgentInstance: !Extends_InformationResource
-  stream_route: !StreamRoute
-  configuration: {}
+ExternalDataAgentInstance: !Extends_AgentInstance
+  #stream_route: !StreamRoute  # TBD: Remove - its exchange_name

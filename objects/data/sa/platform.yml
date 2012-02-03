@@ -20,8 +20,6 @@ PlatformDevice: !Extends_TaskableResource
 PlatformModel: !Extends_InformationResource
   manufacturer: !Institution
 
-PlatformAgent: !Extends_InformationResource
+PlatformAgent: !Extends_AgentDefinition
 
-PlatformAgentInstance: !Extends_TaskableResource
-  exchange_name: ""
-  configuration: {}
+PlatformAgentInstance: !Extends_AgentInstance

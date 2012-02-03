@@ -7,11 +7,11 @@
 PredicateTypes:
 #SA
   hasAttachment:
-    domain: [InstrumentDevice]
+    domain: [Resource]
     range: [Attachment]
-  hasAgentInstance:
-    domain: [PlatformDevice, InstrumentDevice, ExternalDataset]
-    range: [PlatformAgentInstance,InstrumentAgentInstance, ExternalDataAgentInstance]
+#  hasAgentInstance:
+#    domain: [PlatformDevice, InstrumentDevice, ExternalDataset]
+#    range: [PlatformAgentInstance,InstrumentAgentInstance, ExternalDataAgentInstance]
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [LogicalPlatform, LogicalInstrument]
@@ -85,10 +85,22 @@ PredicateTypes:
   hasTransform:
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
+  hasNotification:
+    domain: [UserIdentity]
+    range: [NotificationRequest]
 # COI
+  affiliatedWith:
+    domain: [Org]
+    range: [Org]
   hasAgent:
     domain: [LogicalInstrument, LogicalPlatform]
-    range: [Agent]
+    range: [InstrumentAgent, PlatformAgent]
+  hasAgentDefinition:
+    domain: [InstrumentModel, PlatformModel, LogicalInstrument, LogicalPlatform]
+    range: [AgentDefinition]
+  hasAgentInstance:
+    domain: [TaskableResource]
+    range: [AgentInstance]
   hasAttachment:
     domain: [InstrumentDevice]
     range: [Attachment]
@@ -111,14 +123,11 @@ PredicateTypes:
     domain: [UserIdentity]
     range: [UserInfo]
   hasLifecycle:
-    domain: [Resource]
+    domain: [ResourceType]
     range: [ResourceLifecycle]
   hasMembership:
     domain: [Org]
     range: [UserIdentity]
-  hasOrgAffiliation:
-    domain: [Org]
-    range: [Org]
   hasOwner:
     domain: [Resource]
     range: [UserIdentity]

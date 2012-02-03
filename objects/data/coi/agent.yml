@@ -1,22 +1,7 @@
-AgentDefinition: !Extends_InformationResource
-  definition: ""
-
-AgentInstance: !Extends_InformationResource
-  exchange_name: ""
-  configuration: {}
-
 AgentCapability:
   name: ""
-  cap_type: ""
+  cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, CONV_TYPE), default=AGT_CMD)
   restrictions: {}
-
-# Enumeration of agent capability types
-CAP_TYPES:
-  CONV_TYPE: CONV_TYPE
-  AGT_CMD: AGT_CMD
-  AGT_PAR: AGT_PAR
-  RES_CMD: RES_CMD
-  RES_PAR: RES_PAR
 
 ServiceAgreementProposal:
   sap_id: ""
@@ -44,4 +29,3 @@ AgentNotification:
   event_type: ""
   ts_event: ""
   args: {}
-

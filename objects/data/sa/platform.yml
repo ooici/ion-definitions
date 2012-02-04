@@ -1,4 +1,7 @@
 LogicalPlatform: !Extends_InformationResource
+ # Current to version XX of confluence resource page:  https://confluence.oceanobservatories.org/x/EYHsAQ
+ # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Logical+Platform
+
   datatelemetry: ""
   datatelemetrysystem: ""
   buoyname: ""
@@ -14,11 +17,64 @@ LogicalPlatform: !Extends_InformationResource
   controllerpowerconsumption: ""
 
 PlatformDevice: !Extends_TaskableResource
-  # This is the physical platform
+
+  # Current to version 30 of confluence resource page:
+  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Device
+
+  # A physical package with a manufacturer, model, and serial number, providing physical mountain locations for
+  # one to many instruments
+  
+  # a unique number for that instance, typically assigned by the manufacturer
+  # Mandatory
   serial_number: ""
 
+  # identifier of a static definition of manufacturer and model for the platform
+  # Mandatory
+  model: ""
+
+  # deployment point of platforms; platform may vary in location around that point
+  nominal_location: !GeospatialLocation
+
+  # Datetime when item was built
+  manufacture_date: "2011-07-27T02:59:43.1Z"
+
+  
+ 
+
+
 PlatformModel: !Extends_InformationResource
+
+  # Current to version 23 of confluence resource page:
+  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Model
+
+  # A grouping of platforms, derived from the manufacturer's model number, based on common attributes
+  
   manufacturer: !Institution
+
+  # Categorization by OOI node type
+  # Examples include: MJ (Medium-power Junction box), ID (Interface box HD camera), FJ (Float Junction Box),
+  # LJ (Low-power Junction box), WJ (Winch Junction box), PJ (Profiler Junction box), MF (Multi-Function Node)
+  # FI (Fixed Instruments), SB (Surface Buoy), SP (Surface-Piercing Profiler), WF (Wire-Following Profiler)
+  # MP (Mid-Water Platform), AV (AUV), GL (Gliders), BP (Benthic Package), DP (Deep Profiler)
+  # Mandatory
+  OOI_node_type: ""
+
+  # Whether ION software is run on platform resources
+  # Mandatory
+  ION_onboard: True
+
+  # How platform is designed to be connected to shore
+  # Mandatory
+  shore_networked: ""   # Always Fast, Always Slow, Intermittent, Never
+
+  # Broad categorization of the platform into major functional category (AUV, Glider, Mooring, Profiler, ...)/
+  # Mandatory
+  platform_type: ""   #
+
+  # Maximum number of people who can travel on platform
+  # Mandatoy
+  maximum_crew: 0  
+
 
 PlatformAgent: !Extends_AgentDefinition
 

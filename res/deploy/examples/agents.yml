@@ -17,46 +17,33 @@ apps:
     description: Org agent
     version: 0.1
     processapp: [org_agent, examples.agent.agents, OrgAgent]
-    config:
-      process:
-        type: agent
 
   - name: res_agent_1
     description: Resource agent 1
     version: 0.1
     processapp: [res_agent_1, examples.agent.agents, ResAgentOne]
-    config:
-      process:
-        type: agent
 
   - name: res_agent_2
     description: Resource agent 2
     version: 0.1
     processapp: [res_agent_2, examples.agent.agents, ResAgentTwo]
-    config:
-      process:
-        type: agent
 
   - name: res_agent_3
     description: Resource agent 3 with code same as 2
     version: 0.1
     processapp: [res_agent_3, examples.agent.agents, ResAgentTwo]
-    config:
-      process:
-        type: agent
-        
+
   - name: user_agent_1
     description: User agent 1
     version: 0.1
     processapp: [user_agent_1, examples.agent.agents, UserAgentOne]
-    config:
-      process:
-        type: agent
 
   - name: user_agent_2
     description: User agent 2
     version: 0.1
     processapp: [user_agent_2, examples.agent.agents, UserAgentTwo]
-    config:
-      process:
-        type: agent
+
+  - name: trigger_process
+    description: Action trigger process
+    version: 0.1
+    processapp: [trigger, examples.agent.agents, TriggerProcess]

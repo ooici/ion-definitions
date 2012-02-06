@@ -1,0 +1,26 @@
+# blog.yml
+# IonObjects for a blogging example
+
+BlogBase:
+  stream_id: ""
+  is_replay: False
+
+---
+BlogAuthor: 
+  name: ''
+  email: ''
+
+---
+BlogPost: !Extends_BlogBase
+  post_id: ''
+  title: ''
+  author: !BlogAuthor
+  updated: ''
+  content: ''
+
+---
+BlogComment: !Extends_BlogBase
+  ref_id: '' #!Post.post_id
+  author: !BlogAuthor
+  updated: ''
+  content: ''

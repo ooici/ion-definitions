@@ -85,6 +85,9 @@ PredicateTypes:
   hasTransform:
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
+  hasNotification:
+    domain: [UserIdentity]
+    range: [NotificationRequest]
 # COI
   affiliatedWith:
     domain: [Org]

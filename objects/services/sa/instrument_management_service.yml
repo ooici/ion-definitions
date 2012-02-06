@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
 
-dependencies: [resource_registry, data_acquisition_management]
+dependencies: [resource_registry, data_acquisition_management, data_product_management]
 
 methods:
   # -----------------
@@ -105,7 +105,7 @@ methods:
 
 
   create_instrument_model:
-    docstring: The instrument model defines specifications for a group of instruments defined by the manufacturer's model number.
+    docstring: The instrument model defines specifications for a group of instruments defined by the manufacturers model number.
     in:
       instrument_model: !InstrumentModel
     out:
@@ -231,7 +231,7 @@ methods:
 
 
   create_platform_model:
-    docstring: The Platform Model defines specifications for a group of platform instances that is defined by the manufacturer's model number
+    docstring: The Platform Model defines specifications for a group of platform instances that is defined by the manufacturers model number
     in:
       platform_model: !PlatformModel
     out:
@@ -297,7 +297,7 @@ methods:
 
 
   create_sensor_model:
-    docstring: The sensor model defines specifications for a group of sensors defined by the manufacturer's model number.
+    docstring: The sensor model defines specifications for a group of sensors defined by the manufacturers model number.
     in:
       sensor_model: !SensorModel
     out:
@@ -408,6 +408,22 @@ methods:
       sensor_model_id: ""
       sensor_device_id: ""
     out:
+
+
+
+
+  ##################
+  #
+  # Association Finds
+  #
+
+  find_data_product_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      data_product_list: []
+    
+
 
 
 

@@ -1,0 +1,13 @@
+type: release
+name: blog_ingest
+vesion: 0.1
+description: Blog Scraper and Ingestion
+ion: 0.0.1
+apps:
+  - name: feed_streamer
+    version: 0.1
+    processapp: [feed_streamer, ion.services.dm.ingestion.example.blog_scraper, FeedStreamer]
+    config:
+      process:
+        type: stream_process
+        blog: saintsandspinners

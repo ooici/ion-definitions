@@ -4,3 +4,13 @@ DataProcessDefinition: !Extends_InformationResource
   parameters: {}
 
 DataProcess: !Extends_InformationResource
+
+  # Current to version 20 of confluence resource page
+  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Data+Process
+
+  # Orchestrates processing of a stream, from transform definition to scheduling.
+
+  ATBD_reference: ""
+
+  source_code: ""
+  

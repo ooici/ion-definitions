@@ -369,13 +369,23 @@ methods:
       instrument_device_id: ""
     out:
 
+  assign_instrument_model_to_instrument_agent:
+    in:
+      instrument_model_id: ""
+      instrument_agent_id: ""
+    out:
+
+  unassign_instrument_model_from_instrument_agent:
+    in:
+      instrument_model_id: ""
+      instrument_agent_id: ""
+    out:
 
   assign_platform_agent_instance_to_platform_agent:
     in:
       platform_agent_instance_id: ""
       platform_agent_id: ""
     out:
-
 
   unassign_platform_agent_instance_from_platform_agent:
     in:
@@ -417,9 +427,63 @@ methods:
   # Association Finds
   #
 
+  find_instrument_model_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      instrument_model_list: []
+    
+  
+  find_instrument_device_by_instrument_model:
+    in:
+      instrument_model_id: ""
+    out:
+      instrument_device_list: []
+    
+  
+  find_instrument_model_by_instrument_agent:
+    in:
+      instrument_agent_id: ""
+    out:
+      instrument_model_list: []
+    
+  
+  find_instrument_agent_by_instrument_model:
+    in:
+      instrument_model_id: ""
+    out:
+      instrument_agent_list: []
+    
+
+  find_platform_device_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      platform_device_list: []
+    
+  
+  find_instrument_device_by_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      instrument_device_list: []
+    
+
+  
+  ##################
+  #
+  # Specialized Finds
+  #
+
   find_data_product_by_instrument_device:
     in:
       instrument_device_id: ""
+    out:
+      data_product_list: []
+    
+  find_data_product_by_platform_device:
+    in:
+      platform_device_id: ""
     out:
       data_product_list: []
     

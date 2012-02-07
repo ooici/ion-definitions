@@ -1,0 +1,22 @@
+type: release
+name: ia_mock
+version: 0.1
+description: Demo DA Server
+ion: 0.0.1
+apps:
+  - name: directory
+    version: 0.1
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+
+  - name: resource_registry
+    description: Resource registry service
+    version: 0.1
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+
+  - name: inst_agent_1
+    description: Resource agent 1
+    version: 0.1
+    processapp: [inst_agent_1, ion.services.sa.direct_access.ia_mock, InstAgentMock]
+    config:
+      process:
+        type: agent

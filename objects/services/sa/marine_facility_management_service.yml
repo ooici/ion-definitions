@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Marine+Facility+Management+Service
 
-dependencies: [resource_registry, instrument_management]
+dependencies: [resource_registry, instrument_management, data_product_management]
 
 # TODO:
 # - Observatory policy
@@ -223,6 +223,125 @@ methods:
   define_observatory_policy:
     in:
     out:
+
+
+  ##################
+  #
+  # Association Finds
+  #
+
+  find_logical_instrument_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      logical_instrument_list: []
+    
+  find_logical_platform_by_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      logical_platform_list: []
+    
+  find_site_by_child_site:
+    in:
+      child_site_id: ""
+    out:
+      site_list: []
+
+  find_site_by_parent_site:
+    in:
+      parent_site_id: ""
+    out:
+      site_list: []
+
+
+  find_logical_platform_by_site:
+    in:
+      site_id: ""
+    out:
+      logical_platform_list: []
+    
+  find_site_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      site_list: []
+    
+
+  find_site_by_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      site_list: []
+    
+  find_marine_facility_by_site:
+    in:
+      site_id: ""
+    out:
+      marine_facility_list: []
+    
+
+
+
+
+  ##################
+  #
+  # Specialized Finds
+  #
+
+    
+  find_instrument_device_by_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      instrument_device_list: []
+
+
+  find_platform_device_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      platform_device_list: []
+
+  
+  find_instrument_device_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      instrument_device_list: []
+
+  find_instrument_device_by_site:
+    in:
+      site_id: ""
+    out:
+      instrument_device_list: []
+
+  find_instrument_device_by_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      instrument_device_list: []
+
+
+  find_data_product_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      data_product_list: []
+
+  find_data_product_by_site:
+    in:
+      site_id: ""
+    out:
+      data_product_list: []
+
+  find_data_product_by_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      data_product_list: []
+
+
 
 
   ##################

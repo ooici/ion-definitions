@@ -1,6 +1,6 @@
 # Resource agent interface definition
 
-name: replay_agent
+name: replay_process
 docstring: Behaviors for any replay agent
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Resource+Agent
 dependencies: [directory]

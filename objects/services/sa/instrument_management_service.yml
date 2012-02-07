@@ -345,6 +345,19 @@ methods:
       instrument_device_id: ""
     out:
 
+  assign_logical_platform_to_platform_device:
+    docstring: assign a physical platform to a logical platform 
+    in:
+      logical_platform_id: ""
+      platform_device_id: ""
+    out:
+
+  unassign_logical_platform_from_platform_device:
+    in:
+      logical_platform_id: ""
+      platform_device_id: ""
+    out:
+
   assign_instrument_agent_instance_to_instrument_agent:
     in:
       instrument_agent_instance_id: ""
@@ -405,6 +418,18 @@ methods:
       platform_device_id: ""
     out:
 
+  assign_instrument_device_to_platform_device:
+    in:
+      instrument_device_id: ""
+      platform_device_id: ""
+    out:
+
+  unassign_instrument_device_from_platform_device:
+    in:
+      instrument_device_id: ""
+      platform_device_id: ""
+    out:
+
 
   assign_sensor_model_to_sensor_device:
     in:
@@ -441,6 +466,20 @@ methods:
       instrument_device_list: []
     
   
+  find_platform_model_by_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      platform_model_list: []
+    
+  
+  find_platform_device_by_platform_model:
+    in:
+      platform_model_id: ""
+    out:
+      platform_device_list: []
+
+  
   find_instrument_model_by_instrument_agent:
     in:
       instrument_agent_id: ""
@@ -468,7 +507,32 @@ methods:
     out:
       instrument_device_list: []
     
+  find_instrument_device_by_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      instrument_device_list: []
 
+  find_logical_instrument_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      logical_instrument_list: []
+
+
+  find_platform_device_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      platform_device_list: []
+
+  find_logical_platform_by_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      logical_platform_list: []
+
+  
   
   ##################
   #

@@ -1,8 +1,10 @@
-# Central configuration file for container, ION system and services.
+# Central configuration file for ION container, system and services.
 # The contents are transformed into a dict that supports dot notation:
-#   CFG.broker.amqp.host
+#   CFG.server.amqp.host
 # Do not modify this file! Set overrides in pyon.local.yml or in rel files
 
+
+# ----------------------------------------------------------------------------------
 # The "system" root entry defines settings for the distributed ION system that this
 # container starts or joins. A system comprises all containers with the same sysname.
 system:
@@ -11,11 +13,16 @@ system:
   #name: r2demo
   name:
 
-  # Global flag to use a mock datastore instead of CouchDB
+  # Global flag to use a mock datastore instead of CouchDB if True
   mockdb: False
-  # Global flag to clean all persistent stores and reset system to defaults on start
+  # Global flag to clean all persistent stores and reset system to defaults on start if True
   force_clean: True
+  # Flag indicating test run. Is set to False if started as interactive container
+  testing: True
+  # Global flag indicating debug mode. Can perform more expensive operations if True
+  debug: True
 
+# ----------------------------------------------------------------------------------
 # The "server" root entry defines settings for connections to external servers
 server:
   amqp:
@@ -31,6 +38,8 @@ server:
     username:
     password:
 
+
+# ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container
 container:
   messaging:
@@ -80,40 +89,11 @@ interceptor:
           policy:
             class: pyon.core.governance.policy.policy_interceptor.PolicyInterceptor
 
-
   stack:
     message_outgoing: [codec, encode]
     message_incoming: [encode, codec]
     process_outgoing: [governance]
     process_incoming: [governance]
-
-
-# The "service" root entry
-service:
-
-# TBD: Remove (use global flags instead)
-directory:
-  persistent: true
-  force_clean: true
-
-# TBD: Remove (use global flags instead)
-resource_registry:
-  persistent: true
-  force_clean: true
-
-# TBD: Remove (use global flags instead)
-datastore:
-  persistent: true
-  force_clean: true
-
-# TBD: Remove (use global flags instead)
-external_data_agent_management:
-  persistent: true
-
-# TBD: Rename container.service_gateway
-web_server:
-  port: 5000
-  hostname: localhost
 
 # TBD: Rename system.exchange_spaces
 exchange_spaces:
@@ -134,3 +114,18 @@ core_xps:
 core_stream_types:
     - "BlogStreamType"
     - "ScienceStreamType"
+
+
+# ----------------------------------------------------------------------------------
+# The "service" root entry
+service:
+
+
+# TBD: Remove (use global flags instead)
+external_data_agent_management:
+  persistent: true
+
+# TBD: Rename container.service_gateway
+web_server:
+  port: 5000
+  hostname: localhost

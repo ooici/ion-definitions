@@ -1,1 +1,4 @@
-ProcessState: !Extends_InformationResource
+ProcessState:
+  state:
+  ts: ""
+  process_type:

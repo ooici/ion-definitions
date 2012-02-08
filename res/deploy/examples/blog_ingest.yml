@@ -9,5 +9,4 @@ apps:
     processapp: [feed_streamer, ion.services.dm.ingestion.example.blog_scraper, FeedStreamer]
     config:
       process:
-        type: stream_process
         blog: saintsandspinners

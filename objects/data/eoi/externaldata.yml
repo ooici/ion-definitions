@@ -8,6 +8,14 @@ UpdateDescription:
   last_signature: ""
   parameters: {}
 
+CompareResult:
+  field_name: ""
+  difference: !enum (name=CompareResultEnum, value=(EQUAL, NEW_DIM, MOD_DIM, NEW_GATT, MOD_GATT, NEW_VARATT, MOD_VARATT, NEW_VAR, MOD_VAR), default=EQUAL)
+
+Variable:
+  column_name: ""
+  long_name: ""
+  units: ""
 ---
 
 ExternalDataProvider: !Extends_InformationResource

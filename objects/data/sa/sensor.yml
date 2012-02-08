@@ -1,0 +1,17 @@
+SensorDevice: !Extends_TaskableResource
+  # This is the physical instrument
+  serialnumber: ""
+
+
+SensorModel: !Extends_InformationResource
+
+  # Current to version 25 of confluence resource page:  
+  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32278807
+
+  # A grouping of sensors, derived from the manufacturer's model number, based on common attributes.
+  # Sensor Model provides the template for characterizing a measurement capability. 
+
+  model_label: ""
+  manufacturer: !Institution
+  weight: 0
+  dimensions: "h x l x w"

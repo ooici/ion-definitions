@@ -20,3 +20,12 @@ apps:
     config:
       process:
         type: agent
+
+  - name: inst_agent_2
+    description: Resource agent 2
+    version: 0.1
+    processapp: [inst_agent_2, ion.services.sa.direct_access.ia_mock, InstAgentMock]
+    config:
+      process:
+        type: agent
+        

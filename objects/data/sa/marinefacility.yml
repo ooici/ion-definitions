@@ -4,6 +4,8 @@ InstrumentsList:
   # number of instruments of this type
   count: 0
 
+---
+
 MarineFacility: !Extends_InformationResource
 
   # Current to version 22 of confluence resource page:  

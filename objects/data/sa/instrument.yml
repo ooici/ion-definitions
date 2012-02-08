@@ -28,3 +28,14 @@ InstrumentAgent: !Extends_AgentDefinition
   event_publisher_origin: ""
 
 InstrumentAgentInstance: !Extends_AgentInstance
+
+SensorDevice: !Extends_TaskableResource
+  # This is the physical instrument
+  serialnumber: ""
+
+SensorModel: !Extends_InformationResource
+  #This defines the characteristics of an instrument model
+  model: ""
+  manufacturer: !Institution
+  weight: 0
+  dimensions: "h x l x w"

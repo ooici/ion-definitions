@@ -10,9 +10,19 @@ dependencies: [resource_registry]
 
 methods:
   create_dataset:
-    docstring: A Data Set is a uniquely identified, possibly open-ended, collection of supplements that have been or will be persisted in the data store.
+    docstring: |
+      @brief Create a resource which defines a dataset. For LCA it is assumed that datasets are organized by stream.
+      @param stream_id is the primary key used in the couch view to retrieve the content or metadata
+      @param contact is the contact information for the dataset adminstrator
+      @param user_metadata is user defined metadata which can be added to this dataset. Should be annotation via association
+      @param name is the name of the dataset resource
+      @param description is a description of the dataset resource
     in:
-      dataset: !DataSet
+      stream_id: ""
+      name: ""
+      description: ""
+      contact: !ContactInformation
+      user_metadata: {}
     out:
       dataset_id: ""
 
@@ -20,7 +30,6 @@ methods:
     in:
       dataset: !DataSet
     out:
-      success: True
 
   read_dataset:
     # Read the dataset resource including metadata
@@ -28,12 +37,39 @@ methods:
       dataset_id: ""
     out:
       dataset: !DataSet
+    throws:
+      NotFound: if ingestion configuration did not exist
 
   delete_dataset:
     in:
       dataset_id: ""
     out:
-      success: True
+    throws:
+      NotFound: if ingestion configuration did not exist
+
+  get_dataset_bounds:
+    docstring: |
+        @brief Get the bounding coordinates of the dataset using a couch map/reduce query
+        @param dataset_id
+        @result bounds is a dictionary containing spatial and temporal bounds of the dataset in standard units
+    in:
+      dataset_id: ""
+    out:
+      bounds: {} # {geo: [latmin, lonmin, latmax, lonmax], height:[min, max], time:[min, max]}
+
+  get_dataset_metadata:
+    docstring: |
+      @brief Get the metadata for the dataset using a couch map/reduce query
+      @param dataset_id
+      @result the aggregated available metadata for the specified dataset
+    in:
+      dataset_id: ""
+    out:
+      metadata: {} # structure tbd... similar to datastream definition
+
+  #-------------------------
+  # Not implemented yet
+
 
   find_datasets:
     in:

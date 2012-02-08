@@ -1,24 +1,19 @@
 DataSet: !Extends_InformationResource
-  last_modified: ""
   contact: !ContactInformation
-  geospatialbounds: !GeospatialBounds
-  min_datetime: ""
-  max_datetime: ""
   variables: []
+  view_name: ""             # name of the primary view access in couch
+  view_keys: {}             # define the property keys used to access this data
+  primary_view_key: ""      # the primary key to access this dataset from the primary view
+  bounds_query: ""          # couch map/reduce for bounds
+  bounds_query_args: ""     # couch arguments for bounds of this dataset
+  metadata_query: ""        # couch map/reduce to extract the metadata for this dataset
+  metadata_query_args: ""   # couch arguments for metadata about this dataset
+  # All bounds are calculated dynamically by couch
+  user_metadata: {} # this needs to be extended and defined - information that can be set by the owner of this dataset
+  # Maybe moved to an annotation?
 
 
 
-
-DSJoinQuery:
-    type: ""
-    query: {}
-
-
-DSJoinStream:
-    # In order of primacy, define the
-    stream_ids: []
-    variables: []
-    location_bounds: []
 
 
 

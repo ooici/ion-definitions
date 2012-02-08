@@ -1,7 +1,77 @@
+InstrumentsList:
+  # instrument type
+  type: ""
+  # number of instruments of this type
+  count: 0
+
 MarineFacility: !Extends_InformationResource
+
+  # Current to version 22 of confluence resource page:  
+  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32801152
+
+  # (Also: Marine Observatory Facility; Observatory) Represents and manages an observatory 
+  # and its physical and information resources (including Instruments), providing Data Products, 
+  # Event Detection and Instrument services
+ 
+  # Identifies the institution that operates the facility
   institution: !Institution
+
+  # An entity that serves as a contact point
   contact: !ContactInformation
+  
+  # How many instruments are in the facility
+  number_instruments: 0
+  
+  # How many instruments are in the water
+  number_instruments_deployed: 0
+  
+  # How many instruments are deployed with lifecycle state of Active and execution state of Operational 
+  number_instruments_operational: 0
+  
+  # How many instruments are deployed with lifecycle state not Active or execution state not Operational 
+  number_instruments_inoperational: 0
+  
+  # How many platforms are in the facility 
+  number_platforms: 0
+  
+  # How many platforms are in the water
+  number_platforms_deployed: 0
+  
+  # Who are the online people with Marine Operator role
+  list_operators_online : {}
+   
+  # Total number of data sets (all types) in the Org
+  number_data_sets: 0
+  
+  # Total number of data sets updated in last 24 hours 
+  number_data_sets_active: 0
+  
+  # Size of total data in bytes; break down by platform, site, sensor, signal... 
+  amount_data_logged: 0
+  
+  # Throughput of data in last week/day/hour/5 minutes, by org/platform/site/sensor/signal
+  data_log_rate: 0
+  
+  # Data archived locally but not logged to ION, by platform/site/sensor 
+  estimated_local_data: 0
+  
+  # List of instruments that are available for deployment 
+  instruments_not_deployed_by_type: !InstrumentsList 
+  
 
 Site: !Extends_InformationResource
-  site_type: ""
-  location: ""
+
+  # Current to version 27 of confluence resource page:  
+  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32277834
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+  
+  # Specified bounds in 2 or 3 dimensions within which site exists
+  # Mandatory
+  geospatial_constraint: !GeospatialBounds
+  
+  # Specified time constraint within which site exist
+  temporal_constraint: ""   # what is TemporalConstraint object?
+  
+  # Collection of entities which collectively constrain site
+  entity_constraint: ""     # what is EntityConstraint object?

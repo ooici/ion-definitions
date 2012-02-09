@@ -40,7 +40,7 @@ MarineFacility: !Extends_InformationResource
   number_platforms_deployed: 0
   
   # Who are the online people with Marine Operator role
-  list_operators_online : {}
+  list_operators_online : []
    
   # Total number of data sets (all types) in the Org
   number_data_sets: 0

@@ -28,7 +28,7 @@ apps:
 
   - name: transform_example_launcher
     version: 0.1
-    processapp: [transform_example_launcher, ion.services.dm.transformation.example.transform_example, TransformExampleLauncher]
+    processapp: [transform_example_launcher, ion.processes.data.transforms.transform_example, TransformExampleLauncher]
     config:
         name: transform_example
         example: even_odd_transform

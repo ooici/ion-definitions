@@ -24,6 +24,9 @@ PredicateTypes:
   hasDataProducer:
     domain: [DataProcess, InstrumentDevice, ExternalDataset, DataProduct ]
     range: [DataProducer]
+  hasDataProduct:
+    domain: [LogicalInstrument]
+    range: [DataProduct]
   hasInputDataProducer:
     domain: [DataProducer]
     range: [DataProducer]

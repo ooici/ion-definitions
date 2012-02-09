@@ -54,6 +54,20 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
+  find_org:
+    docstring: |
+      Returns the Org object for the specified name.
+      Throws exception if name does not match any persisted Org
+      objects.
+    in:
+      name: "ION"
+    out:
+      org: !Org
+    throws:
+      NotFound: object with specified name does not exist
+
+
   # -----------------
 
   affiliate_org:

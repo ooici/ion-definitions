@@ -41,3 +41,10 @@ methods:
       filters: !ResourceFilter
     out:
       data_product_list: []
+
+
+  set_data_product_lifecycle:
+    in:
+      data_product_id: ""
+      lifecycle_state: ""
+    out:

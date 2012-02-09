@@ -578,61 +578,61 @@ methods:
   #
 
 
-  declare_instrument_agent_lcs:
+  set_instrument_agent_lifecycle:
     in:
       instrument_agent_id: ""
       lifecycle_state: ""
     out:
 
-  declare_instrument_agent_instance_lcs:
+  set_instrument_agent_instance_lifecycle:
     in:
       instrument_agent_instance_id: ""
       lifecycle_state: ""
     out:
 
-  declare_instrument_model_lcs:
+  set_instrument_model_lifecycle:
     in:
       instrument_model_id: ""
       lifecycle_state: ""
     out:
 
-  declare_instrument_device_lcs:
+  set_instrument_device_lifecycle:
     in:
       instrument_device_id: ""
       lifecycle_state: ""
     out:
 
-  declare_platform_agent_lcs:
+  set_platform_agent_lifecycle:
     in:
       platform_agent_id: ""
       lifecycle_state: ""
     out:
 
-  declare_platform_agent_instance_lcs:
+  set_platform_agent_instance_lifecycle:
     in:
       platform_agent_instance_id: ""
       lifecycle_state: ""
     out:
 
-  declare_platform_model_lcs:
+  set_platform_model_lifecycle:
     in:
       platform_model_id: ""
       lifecycle_state: ""
     out:
 
-  declare_platform_device_lcs:
+  set_platform_device_lifecycle:
     in:
       platform_device_id: ""
       lifecycle_state: ""
     out:
 
-  declare_sensor_model_lcs:
+  set_sensor_model_lifecycle:
     in:
       sensor_model_id: ""
       lifecycle_state: ""
     out:
 
-  declare_sensor_device_lcs:
+  set_sensor_device_lifecycle:
     in:
       sensor_device_id: ""
       lifecycle_state: ""

@@ -335,123 +335,26 @@ methods:
   #
 
 
-  declare_logical_instrument_planned:
+  declare_logical_instrument_lcs:
     in:
       logical_instrument_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_logical_instrument_developed:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_integrated:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_discoverable:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_available:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_retired:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_platform_planned:
+  declare_logical_platform_lcs:
     in:
       logical_platform_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_logical_platform_developed:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_integrated:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_discoverable:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_available:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_retired:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_marine_facility_planned:
+  declare_marine_facility_lcs:
     in:
       marine_facility_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_marine_facility_developed:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_integrated:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_discoverable:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_available:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_retired:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_site_planned:
+  declare_site_lcs:
     in:
       site_id: ""
+      lifecycle_state: ""
     out:
-
-  declare_site_developed:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_integrated:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_discoverable:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_available:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_retired:
-    in:
-      site_id: ""
-    out:
-

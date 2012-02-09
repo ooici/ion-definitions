@@ -9,9 +9,6 @@ apps:
     version: 0.1
     processapp: [stream_producer, examples.stream.stream_producer, StreamProducer]
     config:
-      process:
-        # The producer as the original source of published data is not a stream process but rather an agent
-        type: agent
       stream_producer:
         interval: 4000
         routing_key: glider_data
@@ -22,7 +19,6 @@ apps:
     processapp: [stream_consumer, examples.stream.stream_consumer, StreamConsumer]
     config:
       process:
-        type: stream_process
         listen_name: consumer_input_queue
 
 
@@ -32,9 +28,6 @@ apps:
     version: 0.1
     processapp: [stream_binder, examples.stream.stream_binder, StreamBinder]
     config:
-      process:
-        # this process is not a stream process it is a helper that creates the binding (subscription)
-        type: agent
       args:
         queue_name: consumer_input_queue
         binding: glider_data

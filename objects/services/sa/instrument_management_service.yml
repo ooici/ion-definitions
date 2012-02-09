@@ -345,6 +345,19 @@ methods:
       instrument_device_id: ""
     out:
 
+  assign_logical_platform_to_platform_device:
+    docstring: assign a physical platform to a logical platform 
+    in:
+      logical_platform_id: ""
+      platform_device_id: ""
+    out:
+
+  unassign_logical_platform_from_platform_device:
+    in:
+      logical_platform_id: ""
+      platform_device_id: ""
+    out:
+
   assign_instrument_agent_instance_to_instrument_agent:
     in:
       instrument_agent_instance_id: ""
@@ -369,13 +382,23 @@ methods:
       instrument_device_id: ""
     out:
 
+  assign_instrument_model_to_instrument_agent:
+    in:
+      instrument_model_id: ""
+      instrument_agent_id: ""
+    out:
+
+  unassign_instrument_model_from_instrument_agent:
+    in:
+      instrument_model_id: ""
+      instrument_agent_id: ""
+    out:
 
   assign_platform_agent_instance_to_platform_agent:
     in:
       platform_agent_instance_id: ""
       platform_agent_id: ""
     out:
-
 
   unassign_platform_agent_instance_from_platform_agent:
     in:
@@ -392,6 +415,18 @@ methods:
   unassign_platform_model_from_platform_device:
     in:
       platform_model_id: ""
+      platform_device_id: ""
+    out:
+
+  assign_instrument_device_to_platform_device:
+    in:
+      instrument_device_id: ""
+      platform_device_id: ""
+    out:
+
+  unassign_instrument_device_from_platform_device:
+    in:
+      instrument_device_id: ""
       platform_device_id: ""
     out:
 
@@ -417,9 +452,102 @@ methods:
   # Association Finds
   #
 
+  find_instrument_model_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      instrument_model_list: []
+    
+  
+  find_instrument_device_by_instrument_model:
+    in:
+      instrument_model_id: ""
+    out:
+      instrument_device_list: []
+    
+  
+  find_platform_model_by_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      platform_model_list: []
+    
+  
+  find_platform_device_by_platform_model:
+    in:
+      platform_model_id: ""
+    out:
+      platform_device_list: []
+
+  
+  find_instrument_model_by_instrument_agent:
+    in:
+      instrument_agent_id: ""
+    out:
+      instrument_model_list: []
+    
+  
+  find_instrument_agent_by_instrument_model:
+    in:
+      instrument_model_id: ""
+    out:
+      instrument_agent_list: []
+    
+
+  find_platform_device_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      platform_device_list: []
+    
+  
+  find_instrument_device_by_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      instrument_device_list: []
+    
+  find_instrument_device_by_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      instrument_device_list: []
+
+  find_logical_instrument_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      logical_instrument_list: []
+
+
+  find_platform_device_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      platform_device_list: []
+
+  find_logical_platform_by_platform_device:
+    in:
+      platform_device_id: ""
+    out:
+      logical_platform_list: []
+
+  
+  
+  ##################
+  #
+  # Specialized Finds
+  #
+
   find_data_product_by_instrument_device:
     in:
       instrument_device_id: ""
+    out:
+      data_product_list: []
+    
+  find_data_product_by_platform_device:
+    in:
+      platform_device_id: ""
     out:
       data_product_list: []
     
@@ -450,273 +578,62 @@ methods:
   #
 
 
-  declare_instrument_agent_planned:
+  set_instrument_agent_lifecycle:
     in:
       instrument_agent_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_instrument_agent_developed:
-    in:
-      instrument_agent_id: ""
-    out:
-
-  declare_instrument_agent_integrated:
-    in:
-      instrument_agent_id: ""
-    out:
-
-  declare_instrument_agent_discoverable:
-    in:
-      instrument_agent_id: ""
-    out:
-
-  declare_instrument_agent_available:
-    in:
-      instrument_agent_id: ""
-    out:
-
-  declare_instrument_agent_retired:
-    in:
-      instrument_agent_id: ""
-    out:
-
-  declare_instrument_agent_instance_planned:
+  set_instrument_agent_instance_lifecycle:
     in:
       instrument_agent_instance_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_instrument_agent_instance_developed:
-    in:
-      instrument_agent_instance_id: ""
-    out:
-
-  declare_instrument_agent_instance_integrated:
-    in:
-      instrument_agent_instance_id: ""
-    out:
-
-  declare_instrument_agent_instance_discoverable:
-    in:
-      instrument_agent_instance_id: ""
-    out:
-
-  declare_instrument_agent_instance_available:
-    in:
-      instrument_agent_instance_id: ""
-    out:
-
-  declare_instrument_agent_instance_retired:
-    in:
-      instrument_agent_instance_id: ""
-    out:
-
-  declare_instrument_model_planned:
+  set_instrument_model_lifecycle:
     in:
       instrument_model_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_instrument_model_developed:
+  set_instrument_device_lifecycle:
     in:
-      instrument_model_id: ""
+      instrument_device_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_instrument_model_integrated:
-    in:
-      instrument_model_id: ""
-    out:
-
-  declare_instrument_model_discoverable:
-    in:
-      instrument_model_id: ""
-    out:
-
-  declare_instrument_model_available:
-    in:
-      instrument_model_id: ""
-    out:
-
-  declare_instrument_model_retired:
-    in:
-      instrument_model_id: ""
-    out:
-
-  declare_platform_agent_planned:
+  set_platform_agent_lifecycle:
     in:
       platform_agent_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_platform_agent_developed:
-    in:
-      platform_agent_id: ""
-    out:
-
-  declare_platform_agent_integrated:
-    in:
-      platform_agent_id: ""
-    out:
-
-  declare_platform_agent_discoverable:
-    in:
-      platform_agent_id: ""
-    out:
-
-  declare_platform_agent_available:
-    in:
-      platform_agent_id: ""
-    out:
-
-  declare_platform_agent_retired:
-    in:
-      platform_agent_id: ""
-    out:
-
-  declare_platform_agent_instance_planned:
+  set_platform_agent_instance_lifecycle:
     in:
       platform_agent_instance_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_platform_agent_instance_developed:
-    in:
-      platform_agent_instance_id: ""
-    out:
-
-  declare_platform_agent_instance_integrated:
-    in:
-      platform_agent_instance_id: ""
-    out:
-
-  declare_platform_agent_instance_discoverable:
-    in:
-      platform_agent_instance_id: ""
-    out:
-
-  declare_platform_agent_instance_available:
-    in:
-      platform_agent_instance_id: ""
-    out:
-
-  declare_platform_agent_instance_retired:
-    in:
-      platform_agent_instance_id: ""
-    out:
-
-  declare_platform_model_planned:
+  set_platform_model_lifecycle:
     in:
       platform_model_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_platform_model_developed:
-    in:
-      platform_model_id: ""
-    out:
-
-  declare_platform_model_integrated:
-    in:
-      platform_model_id: ""
-    out:
-
-  declare_platform_model_discoverable:
-    in:
-      platform_model_id: ""
-    out:
-
-  declare_platform_model_available:
-    in:
-      platform_model_id: ""
-    out:
-
-  declare_platform_model_retired:
-    in:
-      platform_model_id: ""
-    out:
-
-  declare_platform_device_planned:
+  set_platform_device_lifecycle:
     in:
       platform_device_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_platform_device_developed:
-    in:
-      platform_device_id: ""
-    out:
-
-  declare_platform_device_integrated:
-    in:
-      platform_device_id: ""
-    out:
-
-  declare_platform_device_discoverable:
-    in:
-      platform_device_id: ""
-    out:
-
-  declare_platform_device_available:
-    in:
-      platform_device_id: ""
-    out:
-
-  declare_platform_device_retired:
-    in:
-      platform_device_id: ""
-    out:
-
-  declare_sensor_model_planned:
+  set_sensor_model_lifecycle:
     in:
       sensor_model_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_sensor_model_developed:
-    in:
-      sensor_model_id: ""
-    out:
-
-  declare_sensor_model_integrated:
-    in:
-      sensor_model_id: ""
-    out:
-
-  declare_sensor_model_discoverable:
-    in:
-      sensor_model_id: ""
-    out:
-
-  declare_sensor_model_available:
-    in:
-      sensor_model_id: ""
-    out:
-
-  declare_sensor_model_retired:
-    in:
-      sensor_model_id: ""
-    out:
-
-  declare_sensor_device_planned:
+  set_sensor_device_lifecycle:
     in:
       sensor_device_id: ""
+      lifecycle_state: ""
     out:
-
-  declare_sensor_device_developed:
-    in:
-      sensor_device_id: ""
-    out:
-
-  declare_sensor_device_integrated:
-    in:
-      sensor_device_id: ""
-    out:
-
-  declare_sensor_device_discoverable:
-    in:
-      sensor_device_id: ""
-    out:
-
-  declare_sensor_device_available:
-    in:
-      sensor_device_id: ""
-    out:
-
-  declare_sensor_device_retired:
-    in:
-      sensor_device_id: ""
-    out:
-

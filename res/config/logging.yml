@@ -9,9 +9,9 @@ version: 1
 # Users should generally not touch this section.
 formatters:
   brief:
-    format: '%(message)s'
-  default:
     format: '%(asctime)s %(levelname)-8s %(name)-15s %(message)s'
+  default:
+    format: '%(asctime)s %(levelname)-8s %(threadName)s %(name)-15s:%(lineno)d %(message)s'
     datefmt: '%Y-%m-%d %H:%M:%S'
 
 # Definition of the output handlers.  In this case, we've defined

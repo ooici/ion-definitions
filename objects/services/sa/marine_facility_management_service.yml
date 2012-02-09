@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Marine+Facility+Management+Service
 
-dependencies: [resource_registry, instrument_management]
+dependencies: [resource_registry, instrument_management, data_product_management]
 
 # TODO:
 # - Observatory policy
@@ -227,127 +227,134 @@ methods:
 
   ##################
   #
+  # Association Finds
+  #
+
+  find_logical_instrument_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      logical_instrument_list: []
+    
+  find_logical_platform_by_logical_instrument:
+    in:
+      logical_instrument_id: ""
+    out:
+      logical_platform_list: []
+    
+  find_site_by_child_site:
+    in:
+      child_site_id: ""
+    out:
+      site_list: []
+
+  find_site_by_parent_site:
+    in:
+      parent_site_id: ""
+    out:
+      site_list: []
+
+
+  find_logical_platform_by_site:
+    in:
+      site_id: ""
+    out:
+      logical_platform_list: []
+    
+  find_site_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      site_list: []
+    
+
+  find_site_by_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      site_list: []
+    
+  find_marine_facility_by_site:
+    in:
+      site_id: ""
+    out:
+      marine_facility_list: []
+    
+
+
+
+
+  ##################
+  #
+  # Specialized Finds
+  #
+
+  find_instrument_device_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      instrument_device_list: []
+    
+  find_instrument_device_by_site:
+    in:
+      site_id: ""
+    out:
+      instrument_device_list: []
+
+  find_instrument_device_by_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      instrument_device_list: []
+
+
+  find_data_product_by_logical_platform:
+    in:
+      logical_platform_id: ""
+    out:
+      data_product_list: []
+
+  find_data_product_by_site:
+    in:
+      site_id: ""
+    out:
+      data_product_list: []
+
+  find_data_product_by_marine_facility:
+    in:
+      marine_facility_id: ""
+    out:
+      data_product_list: []
+
+
+
+
+  ##################
+  #
   # LifeCycle States
   #
 
 
-  declare_logical_instrument_planned:
+  set_logical_instrument_lifecycle:
     in:
       logical_instrument_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_logical_instrument_developed:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_integrated:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_discoverable:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_available:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_instrument_retired:
-    in:
-      logical_instrument_id: ""
-    out:
-
-  declare_logical_platform_planned:
+  set_logical_platform_lifecycle:
     in:
       logical_platform_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_logical_platform_developed:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_integrated:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_discoverable:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_available:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_logical_platform_retired:
-    in:
-      logical_platform_id: ""
-    out:
-
-  declare_marine_facility_planned:
+  set_marine_facility_lifecycle:
     in:
       marine_facility_id: ""
+      lifecycle_state: ""
     out:
 
-  declare_marine_facility_developed:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_integrated:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_discoverable:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_available:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_marine_facility_retired:
-    in:
-      marine_facility_id: ""
-    out:
-
-  declare_site_planned:
+  set_site_lifecycle:
     in:
       site_id: ""
+      lifecycle_state: ""
     out:
-
-  declare_site_developed:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_integrated:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_discoverable:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_available:
-    in:
-      site_id: ""
-    out:
-
-  declare_site_retired:
-    in:
-      site_id: ""
-    out:
-

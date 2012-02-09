@@ -1,0 +1,55 @@
+SensorDevice: !Extends_TaskableResource
+
+  # Current to version 30 of confluence resource page:  
+  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=33227619
+  
+  # A physical device that can be deployed on an instrument, and reports its data through that instrument
+
+  # Identifier of the model that uniquely types the sensor (SensorModel Resource_ID)
+  # Mandatory
+  model: "" 
+
+  # Identifier of hard-coded operating system in unit 
+  firmware_version: ""
+
+  # Unique identifier of sensor provided by manufacturer
+  # Mandatory
+  serial_number: ""
+  
+  # Date sensor was manufactured  
+  manufacturer_date: ""          #datetime
+  
+  # Information about accuracy, precision, drift, etc. as assessed for this device. 
+  # (Signal characterization for the model is in that resource.) 
+  signal_characteristics: ""     # this is a DatumCharacterization object
+  
+  # Identifier of software installed in unit
+  software_version: ""
+  
+
+SensorModel: !Extends_InformationResource
+
+  # Current to version 25 of confluence resource page:  
+  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32278807
+
+  # A grouping of sensors, derived from the manufacturer's model number, based on common attributes.
+  # Sensor Model provides the template for characterizing a measurement capability. 
+
+  # Identifying label of the model that uniquely types the sensor
+  # Mandatory
+  model_label: ""
+  
+  # Entity that produces the instrument 
+  # Mandatory
+  manufacturer: !Institution
+  
+  # When item was built  
+  manufacturer_date: ""
+  
+  # Location(s) where additional information about this model can be obtained 
+  reference_url: []
+  
+  # A description of the characteristics of the data contents such as accuracy and precision
+  datum_characteristics: ""     # this is a DatumCharacterization object
+  
+  

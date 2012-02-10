@@ -14,8 +14,18 @@ CompareResult:
 
 Variable:
   column_name: ""
-  long_name: ""
   units: ""
+  attributes: []
+  key: ""
+
+Attribute:
+  name: ""
+  value: ""
+
+Dimension:
+  name: ""
+  size: 0
+  isunlimited: False
 ---
 
 ExternalDataProvider: !Extends_InformationResource
@@ -34,8 +44,9 @@ ExternalDataSourceModel: !Extends_InformationResource
   data_handler_module: ""
   data_handler_class: ""
 
-ExternalDataAgent: !Extends_AgentDefinition
+ExternalDataAgent: !Extends_InformationResource
   agent_version: ""
 
-ExternalDataAgentInstance: !Extends_AgentInstance
-  #stream_route: !StreamRoute  # TBD: Remove - its exchange_name
+ExternalDataAgentInstance: !Extends_InformationResource
+  stream_route: !StreamRoute
+  configuration: {}

@@ -1,0 +1,233 @@
+
+
+DataContainer:
+  identifiables: {}
+  stream_id: "" # handle of the root stream object in identifiables
+
+---
+
+UnitReferenceProperty:
+  code: ""
+  reference: ""
+
+
+---
+
+NilValue:
+  reason: ""
+  value: 0.0
+
+---
+
+ElapsedTime:
+  days: 0
+  num_of_day: 0
+  denom_of_day: 86400 # Makes num_of_day a count of seconds
+  # denom_of_day: 86400000 # makes num_of_day a count of milli seconds
+
+---
+
+AllowedTokens:
+  values: [] # Strings
+  pattern: ""
+
+---
+
+AllowedValues:
+  values: [] # list explicit values
+  intervals: [] # list of intervals
+  significant_figures: -1
+---
+
+AllowedTimes:
+  values: []
+  intervals: [] # time pair
+
+---
+
+AbstractIdentifiable:
+# Within any data stream each component has an identifier unique to that dataset
+  id: ""
+  label: ""
+  description: ""
+
+---
+
+AbstractDataComponent: !Extends_AbstractIdentifiable
+  definition: "" # AnyURI
+  updatable: True
+  optional: False
+
+---
+
+AbstractSimpleComponent: !Extends_AbstractDataComponent
+  quality_id: ""
+  nil_value_ids: [] # Nill values object ids
+  reference_frame: "" # Any URI
+  axisID: ""
+
+---
+
+BooleanElement: !Extends_AbstractSimpleComponent
+  value: True
+
+---
+
+TextElement: !Extends_AbstractSimpleComponent
+  constraint: !AllowedTokens
+  value: ""
+
+---
+
+CategoryElement: !Extends_AbstractSimpleComponent
+  code_space: ""
+  constraint: !AllowedTokens
+  value: ""
+
+---
+
+CountElement: !Extends_AbstractSimpleComponent
+  constraint: !AllowedValues
+  value: 0
+
+---
+
+CountRangeElement: !Extends_AbstractSimpleComponent
+  constraint: !AllowedValues
+  value_pair: []
+
+---
+
+QuantityElement: !Extends_AbstractSimpleComponent
+  unit_of_measure: !UnitReferenceProperty
+  constraint: !AllowedValues
+  value: 0.0
+
+---
+
+QuantityRangeElement: !Extends_AbstractSimpleComponent
+  unit_of_measure: !UnitReferenceProperty
+  constraint: !AllowedValues
+  value_pair: []
+
+---
+
+TimeElement: !Extends_AbstractSimpleComponent
+  unit_of_measure: !UnitReferenceProperty
+  constraint: !AllowedTimes
+  reference_time: "" #ISO 8601
+  local_frame: "" # AnyURI
+  value: !ElapsedTime
+
+---
+
+TimeRangeElement: !Extends_AbstractSimpleComponent
+  unit_of_measure: !UnitReferenceProperty
+  constraint: !AllowedTimes
+  reference_time: "" #ISO 8601
+  local_frame: "" # AnyURI
+  value_pair: []
+
+---
+
+QualityQuantityProperty: !Extends_QuantityElement
+
+
+---
+
+QualityQuantityRangeProperty: !Extends_QuantityRangeElement
+
+---
+
+QualityCatagoryProperty: !Extends_CategoryElement
+
+---
+
+QualityTextProperty: !Extends_TextElement
+
+---
+
+DataStream: !Extends_AbstractIdentifiable
+  element_count_id: "" # Number of records contained
+  element_type_id: ""
+  encoding_id: ""
+  values: ""
+  # Additional ion field!
+
+
+---
+
+ElementType: !Extends_AbstractDataComponent
+  data_record_id: ""
+
+---
+
+DataRecord: !Extends_AbstractDataComponent
+  field_ids: []
+  domain_ids: [] # added explicit ref to the domain or domains of the record
+
+---
+
+Vector: !Extends_AbstractDataComponent
+  coordinate_ids: [] # contains the ids of a set of quantities or a set of ranges
+  reference_frame: "" # Any URI
+  local_frame: "" # optional
+
+
+### Above this like everything is based on SWE. Below this line I am creating
+### new SWE types for coverage - the fields of a data record are coverages in the CI
+### CDM.
+###
+### The coverage model draws on the description, but not the implementation of GML
+### See chapter 19.
+### GML implements concrete feature types were we want to express everything using
+### mesh!
+
+
+---
+
+Coverage: !Extends_AbstractDataComponent
+  domain_id: ""
+  range_id: ""
+---
+
+RangeSet: !Extends_AbstractDataComponent
+  quality_id: ""
+  constraint: !AllowedValues
+  nil_values_ids: [] # Nill values object ids
+  reference_frame: "" # Any URI
+  mesh_location: !CategoryElement # Where is this data located on the mesh elements? Edge, face, node...
+  values_path: "" #Path to data values in binary object
+  bounds_id: "" # Quantity or Count range of the values
+  unit_of_measure: !UnitReferenceProperty
+  # slice_range_ids: [] # Don't do this yet - wait for MOAB...
+
+---
+
+Domain: !Extends_AbstractDataComponent
+  coordinate_vector_id: "" # the vector of coordinates for this domain
+  mesh_id: "" # the element containing the mesh for this object
+
+---
+
+Mesh: !Extends_AbstractDataComponent
+  mesh_type: !CategoryElement
+  index_offset: 0 # Fortran or C indexing?
+  number_of_elements: 0
+  number_of_verticies: 0
+  values_path: "" # path to mesh values in binary object
+
+---
+
+CoordinateAxis: !Extends_RangeSet
+  axis: !CategoryElement
+  # A specific range type with an axis name for use in coordinate axis vectors
+
+---
+
+Encoding: !Extends_AbstractIdentifiable
+  encoding_type: ""
+  record_dimension: "" # the
+  compression: ""
+  sha1: "" # Identifier for the hdf dataset containing the numeric data
+

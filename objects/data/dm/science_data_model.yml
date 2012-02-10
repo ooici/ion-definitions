@@ -47,9 +47,9 @@ AllowedTimes:
 
 AbstractIdentifiable:
 # Within any data stream each component has an identifier unique to that dataset
-id: ""
-label: ""
-description: ""
+  id: ""
+  label: ""
+  description: ""
 
 ---
 

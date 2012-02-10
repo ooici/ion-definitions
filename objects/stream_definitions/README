@@ -1,2 +1,9 @@
 
 This directory contains the predefined stream types for each class of dataset.
+
+At the moment these are inaccessible and are not created as ionobjects. I can't seem to get that to work?
+
+These datastructure for a CTD is implemented in code via a utility method to construct it at the moment in:
+ion/services/dm/example/ctd_stream.py
+
+David

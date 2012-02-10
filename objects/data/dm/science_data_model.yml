@@ -2,23 +2,7 @@
 
 DataContainer:
     identifiables: {}
-
----
-
-ScienceObjectMetadataContainer: !Extends_DataContainer
-    metadata_reference_id: ""
-
-
----
-
-ScienceObjectPacketContainer: !Extends_DataContainer
-    reference_id_to_metadata:
-    count: ### Grr - this does not belong here...
-        # A supplement on a data stream is made up of one or more packets
-        number_of_packets_in_supplement: -1
-        packet_number: -1
-        number_of_records_in_supplement: 1
-
+    stream_id: "" # handle of the root stream object in identifiables
 
 ---
 
@@ -50,14 +34,14 @@ AllowedTokens:
 ---
 
 AllowedValues:
-    values: [] # reals
-    interval: [] # real pair
+    values: [] # list explicit values
+    intervals: [] # list of intervals
     significant_figures: -1
 ---
 
 AllowedTimes:
     values: []
-    interval: [] # time pair
+    intervals: [] # time pair
 
 ---
 
@@ -78,7 +62,7 @@ AbstractDataComponent: !Extends_AbstractIdentifiable
 
 AbstractSimpleComponent: !Extends_AbstractDataComponent
     quality_id: ""
-    nil_values: [] # Nill values objects
+    nil_value_ids: [] # Nill values object ids
     reference_frame: "" # Any URI
     axisID: ""
 
@@ -164,10 +148,12 @@ QualityTextProperty: !Extends_TextElement
 ---
 
 DataStream: !Extends_AbstractIdentifiable
-    element_count_id: ""
+    element_count_id: "" # Number of records contained
     element_type_id: ""
     encoding_id: ""
     values: ""
+    # Additional ion field!
+
 
 ---
 
@@ -207,12 +193,14 @@ Coverage: !Extends_AbstractDataComponent
 
 RangeSet: !Extends_AbstractDataComponent
     quality_id: ""
-    nil_values: [] # Nill values objects
+    constraint: !AllowedValues
+    nil_values_ids: [] # Nill values object ids
     reference_frame: "" # Any URI
     mesh_location: !CategoryElement # Where is this data located on the mesh elements? Edge, face, node...
     values_path: "" #Path to data values in binary object
     bounds_id: "" # Quantity or Count range of the values
     unit_of_measure: !UnitReferenceProperty
+    # slice_range_ids: [] # Don't do this yet - wait for MOAB...
 
 ---
 
@@ -239,6 +227,7 @@ CoordinateAxis: !Extends_RangeSet
 
 Encoding: !Extends_AbstractIdentifiable
     encoding_type: ""
+    record_dimension: "" # the
     compression: ""
     sha1: "" # Identifier for the hdf dataset containing the numeric data
 

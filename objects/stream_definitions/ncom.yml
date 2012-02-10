@@ -1,4 +1,7 @@
 
+# This file is out of date!
+
+
 
 NCOMContainer: !ScienceObjectMetadataContainer
     metadata_reference_id: "NotDefinedForDatasetClass" # To be set for an NCOM dataset instance
@@ -71,8 +74,7 @@ NCOMContainer: !ScienceObjectMetadataContainer
                 "latitude"
                 "longitude"
                 "time"
-
-            referenceFrame: "http://www.opengis.net/def/crs/EPSG/0/4326":
+            referenceFrame: "http://www.opengis.net/def/crs/EPSG/0/4326"
 
         latitude: !CoordinateAxis
             definition: "http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Latitude"

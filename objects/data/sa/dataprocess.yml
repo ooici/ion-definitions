@@ -13,4 +13,5 @@ DataProcess: !Extends_InformationResource
   ATBD_reference: ""
 
   source_code: ""
-  
+
+  input_subscription_id: ""

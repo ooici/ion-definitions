@@ -4,129 +4,129 @@
 
 
 NCOMContainer: !ScienceObjectMetadataContainer
-    metadata_reference_id: "NotDefinedForDatasetClass" # To be set for an NCOM dataset instance
-    identifiables:
-        ncom_data_record: !DataStream
-            id: "ncom_data_record"
-            label: "ncom model hydrodynamic data"
-            description: "NCOM URI?"
-            element_count_id: "record_count"
-            element_type_id: "element_type"
-            encoding_id: "stream_encoding"
-            values: "NotDefinedForDatasetClass" # To be set for an NCOM dataset instance
+  metadata_reference_id: "NotDefinedForDatasetClass" # To be set for an NCOM dataset instance
+  identifiables:
+    ncom_data_record: !DataStream
+      id: "ncom_data_record"
+      label: "ncom model hydrodynamic data"
+      description: "NCOM URI?"
+      element_count_id: "record_count"
+      element_type_id: "element_type"
+      encoding_id: "stream_encoding"
+      values: "NotDefinedForDatasetClass" # To be set for an NCOM dataset instance
 
-        record_count: !CountElement
-            value: 0 # unknown for data class - set for an instance...
+    record_count: !CountElement
+      value: 0 # unknown for data class - set for an instance...
 
-        element_type: !ElementType
-            definition: "NCOM URI?"
-            updatable: False
-            data_record_id: "data_record"
+    element_type: !ElementType
+      definition: "NCOM URI?"
+      updatable: False
+      data_record_id: "data_record"
 
-        data_record: !DataRecord
-            definition: "" # AnyURI ?
-            updatable: False
-            optional: False
+    data_record: !DataRecord
+      definition: "" # AnyURI ?
+      updatable: False
+      optional: False
 
-            field_ids:
-                temperature
-                salinity
-                velocity
+      field_ids:
+        temperature
+        salinity
+        velocity
 
-            domain_ids:
-                ncom_domain
-
-
-        temperature: !Coverage
-            definition: "http://sweet.jpl.nasa.gov/2.0/physThermo.owl#Temperature" # ? where do we get our definitions from? MMI?
-            updatable: False
-            optional: False
-
-            domain_id: "ncom_domain"
-            range_id: "temp_data"
-
-            description: "temperature data from NCOM model hourly output"
+      domain_ids:
+        ncom_domain
 
 
-        temp_data: !RangeSet
-            nil_values:
-                missing_value: !NilValue
-                    reason: "Value is missing in the model domain"
-                    value: -999.99
-            mesh_location: !CategoryElement
-                value: "vertex"
-            values_path: "/quantities/temperature" # path in hdf file to the array containing temperature
-            #bounds_id Not in data class definition
-            unit_of_measure: !UnitReferenceProperty
-                code: "Cel"
+    temperature: !Coverage
+      definition: "http://sweet.jpl.nasa.gov/2.0/physThermo.owl#Temperature" # ? where do we get our definitions from? MMI?
+      updatable: False
+      optional: False
 
-        ncom_domain: !Domain
-            definition: "Spec for the ncom grid/model domain"
-            updatable: False
-            optional: False
+      domain_id: "ncom_domain"
+      range_id: "temp_data"
 
-            coordinate_vector_id: "coordinate_vector"
-            mesh_id: "mesh" # because there is only a single mesh for a single domain the name is simple...
+      description: "temperature data from NCOM model hourly output"
 
-        coordinate_vector: !Vector
-            definition: "http://sweet.jpl.nasa.gov/2.0/space.owl#Location" # grabbed some BS from SWE examples
-            coordinate_ids:
-                "latitude"
-                "longitude"
-                "time"
-            referenceFrame: "http://www.opengis.net/def/crs/EPSG/0/4326"
 
-        latitude: !CoordinateAxis
-            definition: "http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Latitude"
-            axis: "Latitude" # corresponds to the definition & reference frame?
-            nil_values:
-                missing_value: !NilValue
-                    reason: "Value is missing in the model domain"
-                    value: -999.99
-            mesh_location: !CategoryElement
-                value: "vertex"
-            values_path: "/coordinates/latitude" # path in hdf file to the array containing temperature
-            #bounds_id Not in data class definition
-            unit_of_measure: !UnitReferenceProperty
-                code: "deg"
+    temp_data: !RangeSet
+      nil_values:
+        missing_value: !NilValue
+          reason: "Value is missing in the model domain"
+          value: -999.99
+      mesh_location: !CategoryElement
+        value: "vertex"
+      values_path: "/quantities/temperature" # path in hdf file to the array containing temperature
+      #bounds_id Not in data class definition
+      unit_of_measure: !UnitReferenceProperty
+        code: "Cel"
 
-        longitude: !CoordinateAxis
-            definition: "http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Longitude"
-            axis: "Longitude" # corresponds to the definition & reference frame?
-            nil_values:
-                missing_value: !NilValue
-                    reason: "Value is missing in the model domain"
-                    value: -999.99
-            mesh_location: !CategoryElement
-                value: "vertex"
-            values_path: "/coordinates/longitude" # path in hdf file to the array containing temperature
-            #bounds_id Not in data class definition
-            unit_of_measure: !UnitReferenceProperty
-                code: "deg"
+    ncom_domain: !Domain
+      definition: "Spec for the ncom grid/model domain"
+      updatable: False
+      optional: False
 
-        time: !CoordinateAxis
-            definition: "http://www.opengis.net/def/property/OGC/0/SamplingTime"
-            axis: "time" # corresponds to the definition & reference frame?
-            mesh_location: !CategoryElement
-                value: "???"
-            values_path: "/coordinates/time" # path in hdf file to the array containing temperature
-            #bounds_id Not in data class definition
-            unit_of_measure: !UnitReferenceProperty
-                code: "s"
-            reference_frame: "http://www.opengis.net/def/trs/OGC/0/GPS"
+      coordinate_vector_id: "coordinate_vector"
+      mesh_id: "mesh" # because there is only a single mesh for a single domain the name is simple...
 
-        mesh: !Mesh
-            mesh_type: !CategoryElement
-                value: "Regular Grid"
-            values_path: "/topology/mesh"
-            index_offset: 0
-            number_of_elements: 1000
-            number_of_verticies: 1500
+    coordinate_vector: !Vector
+      definition: "http://sweet.jpl.nasa.gov/2.0/space.owl#Location" # grabbed some BS from SWE examples
+      coordinate_ids:
+        "latitude"
+        "longitude"
+        "time"
+      referenceFrame: "http://www.opengis.net/def/crs/EPSG/0/4326"
 
-        stream_encoding: !Encoding
-            encoding_type: "hdf5"
-            compression: "zlib"
-            sha1: "NotDefinedForDatasetClass"
+    latitude: !CoordinateAxis
+      definition: "http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Latitude"
+      axis: "Latitude" # corresponds to the definition & reference frame?
+      nil_values:
+        missing_value: !NilValue
+          reason: "Value is missing in the model domain"
+          value: -999.99
+      mesh_location: !CategoryElement
+        value: "vertex"
+      values_path: "/coordinates/latitude" # path in hdf file to the array containing temperature
+      #bounds_id Not in data class definition
+      unit_of_measure: !UnitReferenceProperty
+        code: "deg"
+
+    longitude: !CoordinateAxis
+      definition: "http://sweet.jpl.nasa.gov/2.0/spaceCoordinates.owl#Longitude"
+      axis: "Longitude" # corresponds to the definition & reference frame?
+      nil_values:
+        missing_value: !NilValue
+          reason: "Value is missing in the model domain"
+          value: -999.99
+      mesh_location: !CategoryElement
+        value: "vertex"
+      values_path: "/coordinates/longitude" # path in hdf file to the array containing temperature
+      #bounds_id Not in data class definition
+      unit_of_measure: !UnitReferenceProperty
+        code: "deg"
+
+    time: !CoordinateAxis
+      definition: "http://www.opengis.net/def/property/OGC/0/SamplingTime"
+      axis: "time" # corresponds to the definition & reference frame?
+      mesh_location: !CategoryElement
+        value: "???"
+      values_path: "/coordinates/time" # path in hdf file to the array containing temperature
+      #bounds_id Not in data class definition
+      unit_of_measure: !UnitReferenceProperty
+        code: "s"
+      reference_frame: "http://www.opengis.net/def/trs/OGC/0/GPS"
+
+    mesh: !Mesh
+      mesh_type: !CategoryElement
+        value: "Regular Grid"
+      values_path: "/topology/mesh"
+      index_offset: 0
+      number_of_elements: 1000
+      number_of_verticies: 1500
+
+    stream_encoding: !Encoding
+      encoding_type: "hdf5"
+      compression: "zlib"
+      sha1: "NotDefinedForDatasetClass"
 
 
 ---
@@ -134,19 +134,19 @@ NCOMContainer: !ScienceObjectMetadataContainer
 ### Example NCOM Packet...
 
 NCOMPacket: !ScienceObjectPacketContainer
-    reference_id_to_metadata: "ID of the NCOM dataset instance metadata"
-    identifiables:
-        time: !CoordinateAxis
-             bounds_id: "time_bounds"
-        time_bounds: !QuantityRangeElement
-            value_pair: [0.0 1.0]
+  reference_id_to_metadata: "ID of the NCOM dataset instance metadata"
+  identifiables:
+    time: !CoordinateAxis
+      bounds_id: "time_bounds"
+    time_bounds: !QuantityRangeElement
+      value_pair: [0.0 1.0]
 
-        temp_data: !RangeSet
-             bounds_id: "temp_bounds"
-        temp_bounds: !QuantityRangeElement
-            value_pair: [30.01 33.78]
+    temp_data: !RangeSet
+       bounds_id: "temp_bounds"
+    temp_bounds: !QuantityRangeElement
+       value_pair: [30.01 33.78]
 
-        stream_encoding: !Encoding
-            encoding_type: "hdf5"
-            compression: "zlib"
-            sha1: "ABC123..."
+    stream_encoding: !Encoding
+      encoding_type: "hdf5"
+      compression: "zlib"
+      sha1: "ABC123..."

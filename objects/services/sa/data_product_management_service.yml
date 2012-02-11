@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Product+Management+Service
 
-dependencies: [resource_registry, data_acquisition_management]
+dependencies: [resource_registry, data_acquisition_management, dataset_management, ingestion_management]
 
 methods:
   create_data_product:
@@ -24,6 +24,7 @@ methods:
       NotFound: object with specified id does not exist
 
   read_data_product:
+    docstring: Retrieve data product information
     in:
       data_product_id: ""
     out:
@@ -42,6 +43,22 @@ methods:
     out:
       data_product_list: []
 
+  activate_data_product_persistence:
+    docstring: Persist data product data into a data set
+    in:
+      data_product_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  suspend_data_product_persistence:
+    docstring: Suspend data product data persistnce into a data set, multiple options
+    in:
+      data_product_id: ""
+      type: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   set_data_product_lifecycle:
     in:

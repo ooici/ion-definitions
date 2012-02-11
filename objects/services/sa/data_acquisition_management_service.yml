@@ -417,8 +417,10 @@ methods:
     in:
       input_resource_id: ""
       data_product_id: ""
+      create_stream: False
     out:
     throws:
+      BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
   unassign_data_product:
@@ -433,38 +435,38 @@ methods:
 
   # -----------------
   # The following operations work directly on data producers (use boilerplate instead)
-
-  create_data_producer:
-    docstring: Create a data producer resource, create a stream reource via DM then associate the two resources. Currently, data producers and streams are one-to-one. If the data producer is a process, connect the data producer to any parent data producers.
-    in:
-      name: ""
-      description: ""
-    out:
-      data_producer_id: ""
-    throws:
-      BadRequest: if object passed has _id or _rev attribute
-
-  update_data_producer:
-    docstring: Update the attributes of a data producer resource.
-    in:
-      data_producer: !DataProducer
-    out:
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
-      NotFound: object with specified id does not exist
-      Conflict: object not based on latest persisted object version
-
-  read_data_producer:
-    in:
-      data_producer_id: ""
-    out:
-      data_producer: !DataProducer
-    throws:
-      NotFound: object with specified id does not exist
-
-  delete_data_producer:
-    in:
-      data_producer_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
+#
+#  create_data_producer:
+#    docstring: Create a data producer resource, create a stream reource via DM then associate the two resources. Currently, data producers and streams are one-to-one. If the data producer is a process, connect the data producer to any parent data producers.
+#    in:
+#      name: ""
+#      description: ""
+#    out:
+#      data_producer_id: ""
+#    throws:
+#      BadRequest: if object passed has _id or _rev attribute
+#
+#  update_data_producer:
+#    docstring: Update the attributes of a data producer resource.
+#    in:
+#      data_producer: !DataProducer
+#    out:
+#    throws:
+#      BadRequest: if object does not have _id or _rev attribute
+#      NotFound: object with specified id does not exist
+#      Conflict: object not based on latest persisted object version
+#
+#  read_data_producer:
+#    in:
+#      data_producer_id: ""
+#    out:
+#      data_producer: !DataProducer
+#    throws:
+#      NotFound: object with specified id does not exist
+#
+#  delete_data_producer:
+#    in:
+#      data_producer_id: ""
+#    out:
+#    throws:
+#      NotFound: object with specified id does not exist

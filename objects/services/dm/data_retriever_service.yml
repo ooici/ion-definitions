@@ -5,14 +5,13 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Data+Retriever+Service
 
-dependencies: [resource_registry, pubsub_management]
+dependencies: [resource_registry, pubsub_management, dataset_management]
 
 methods:
   define_replay:
     docstring: Define the stream that will contain the data from data store by streaming to an exchange name.
     in:
       dataset_id: ""
-      datastore_name: ""
       query: {}
       delivery_format: {}
     out:

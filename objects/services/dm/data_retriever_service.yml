@@ -12,6 +12,7 @@ methods:
     docstring: Define the stream that will contain the data from data store by streaming to an exchange name.
     in:
       dataset_id: ""
+      datastore_name: ""
       query: {}
       delivery_format: {}
     out:

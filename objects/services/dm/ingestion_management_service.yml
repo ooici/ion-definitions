@@ -73,8 +73,8 @@ methods:
       point the stream is on. (After LCA)
     in:
       stream_id: ""
-      archive_data: ""
-      archive_metadata: ""
+      archive_data: True
+      archive_metadata: True
     out:
       ingestion_policy_id: ""
 

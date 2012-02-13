@@ -1,6 +1,7 @@
 DataSet: !Extends_InformationResource
   view_name: ""             # name of the primary view access in couch
   view_keys: {}             # define the property keys used to access this data
+  datastore_name: ""        # the couch datastore name
   primary_view_key: ""      # the primary key to access this dataset from the primary view
   bounds_query: ""          # couch map/reduce for bounds
   bounds_query_args: ""     # couch arguments for bounds of this dataset

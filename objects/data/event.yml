@@ -79,8 +79,8 @@ IngestionProcessingEvent: !Extends_ResourceModifiedEvent
 StreamIngestionPolicyEvent: !Extends_ResourceModifiedEvent
   archive_data: True
   archive_metadata: True
-  # Use the resource_id field to hold the id of the stream resource
-
+  stream_id: ""
+  deleted: False # Temporary - until we have resource life cycle events
 ---
 
 NewSubscriptionEvent: !Extends_Event

@@ -91,7 +91,7 @@ methods:
     in:
       stream_policy_id: ""
     out:
-      ingestion_configuration: !StreamIngestionPolicy
+      stream_policy: !StreamIngestionPolicy
     throws:
       NotFound: if ingestion configuration did not exist
 
@@ -99,7 +99,7 @@ methods:
   delete_stream_policy:
     docstring: Delete an existing stream policy object. (After LCA)
     in:
-      ingestion_configuration_id: ""
+      stream_policy_id: ""
     out:
     throws:
       NotFound: if ingestion configuration did not exist

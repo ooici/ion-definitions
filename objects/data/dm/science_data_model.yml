@@ -2,7 +2,15 @@
 
 DataContainer:
   identifiables: {}
-  stream_id: "" # handle of the root stream object in identifiables
+  stream_resource_id: "" # Resource id for the stream this packet is published on
+  data_stream_id: "" # handle of the root stream object in identifiables
+---
+
+StreamDefinitionContainer: !Extends_DataContainer
+
+---
+
+StreamGranuleContainer: !Extends_DataContainer
 
 ---
 

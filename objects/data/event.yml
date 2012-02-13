@@ -76,6 +76,12 @@ IngestionProcessingEvent: !Extends_ResourceModifiedEvent
   processing_step: ""       # string of "dataset", "chunk", "done"
 
 ---
+StreamIngestionPolicyEvent: !Extends_ResourceModifiedEvent
+  archive_data: True
+  archive_metadata: True
+  # Use the resource_id field to hold the id of the stream resource
+
+---
 
 NewSubscriptionEvent: !Extends_Event
   dispatcher_workflow: ""       # TODO: this is a link, how2do

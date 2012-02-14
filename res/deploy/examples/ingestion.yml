@@ -1,0 +1,13 @@
+type: release
+name: ingestion
+vesion: 0.1
+description: Deployment of Ingestion Workers via REL
+ion: 0.0.1
+apps:
+  - name: ingestion_launcher
+    version: 0.1
+    processapp: [ingestion_launcher, ion.processes.data.ingestion.ingestion_launcher, IngestionLauncher ]
+    config:
+      process:
+        exchange_point: "science_data"
+        number_of_workers: 2

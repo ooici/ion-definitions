@@ -14,6 +14,7 @@ methods:
       @brief Create a resource which defines a dataset. For LCA it is assumed that datasets are organized by stream.
       @param stream_id is the primary key used in the couch view to retrieve the content or metadata
       @param datastore_name is the name of the datastore where this dataset resides.
+      @param view_name is the name of the view which joins the dataset definition to the dataset
       @param contact is the contact information for the dataset adminstrator
       @param user_metadata is user defined metadata which can be added to this dataset. Should be annotation via association
       @param name is the name of the dataset resource
@@ -21,6 +22,7 @@ methods:
     in:
       stream_id: ""
       datastore_name: ""
+      view_name: ""
       name: ""
       description: ""
       contact: !ContactInformation

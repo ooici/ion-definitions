@@ -19,10 +19,10 @@ methods:
       @param default_policy is the default policy for streams ingested on this exchange point
     in:
       exchange_point_id: "" # Resource is not yet used - later will be an id, for now it is empty (default is science_data)!
-      couch_storage: {}
-      hdf_storage: {}
+      couch_storage: !CouchStorage
+      hdf_storage: !HdfStorage
       number_of_workers: 0
-      default_policy: !StreamIngestionPolicy
+      default_policy: !StreamPolicy
     out:
       ingestion_configuration_id: ""
 

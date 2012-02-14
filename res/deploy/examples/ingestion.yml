@@ -11,3 +11,4 @@ apps:
       process:
         exchange_point: "science_data"
         number_of_workers: 2
+

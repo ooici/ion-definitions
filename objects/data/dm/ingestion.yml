@@ -20,8 +20,8 @@ HdfStorage:
 
 CouchStorage:
     server: "localhost"
-    database_name: "dm_datastore"
-    database_profile: "SCIDATA"
+    datastore_name: "dm_datastore"
+    datastore_profile: "SCIDATA"
 
 ---
 

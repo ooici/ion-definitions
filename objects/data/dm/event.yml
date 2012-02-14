@@ -1,6 +1,2 @@
 EventType: !Extends_InformationResource
   pattern: ""
-
-NotificationRequest: !Extends_InformationResource
-  event_pattern: []
-  delivery_properties: {}

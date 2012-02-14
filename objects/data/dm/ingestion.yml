@@ -13,7 +13,7 @@ StreamIngestionPolicy: !Extends_InformationResource
 ---
 
 HdfStorage:
-  filesystem: ""
+  file_system: ""
   root_path: ""
 
 ---

@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Data+Retriever+Service
 
-dependencies: [resource_registry, pubsub_management]
+dependencies: [resource_registry, pubsub_management, dataset_management]
 
 methods:
   define_replay:

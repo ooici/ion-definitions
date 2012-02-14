@@ -1,6 +1,7 @@
 *.pyc
 res/config/pyon.local.yml
 res/config/logging.local.yml
+res/preload/local/*
 *.swp
 *.*.swp
 .DS_Store

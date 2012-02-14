@@ -55,6 +55,10 @@ loggers:
     handlers: [console, file]
     level: DEBUG
 
+  prototype:
+    handlers: [console]
+    level: DEBUG
+
   ion:
     handlers: [console, file]
     level: DEBUG

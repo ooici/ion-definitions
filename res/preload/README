@@ -1,0 +1,17 @@
+This directory and subdirectories contain dumped CouchDB data that will get preloaded
+back into the datastores for quick initialization and sample data. Preload happens
+automatically under certain start conditions, e.g. ION start with r2deploy.yml
+
+The convention is to load from a subdirectory with a logical datastore name, e.g.
+"resources", "objects" etc.
+
+The contents of the local subdirectory are not under version control and can be used
+to dump data and to keep data for local testing.
+
+
+How to do it?
+=============
+
+Preload with the DatastoreLoader process.
+
+Dump with the DatastoreLoader process

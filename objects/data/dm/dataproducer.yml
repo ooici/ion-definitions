@@ -1,4 +1,5 @@
 DataProducer: !Extends_InformationResource
+  is_primary: False
   stream_id: ""
   routing_key: ""
   exchange_name: ""

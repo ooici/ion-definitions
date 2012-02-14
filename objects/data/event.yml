@@ -76,6 +76,12 @@ IngestionProcessingEvent: !Extends_ResourceModifiedEvent
   processing_step: ""       # string of "dataset", "chunk", "done"
 
 ---
+StreamIngestionPolicyEvent: !Extends_ResourceModifiedEvent
+  archive_data: True
+  archive_metadata: True
+  stream_id: ""
+  deleted: False # Temporary - until we have resource life cycle events
+---
 
 NewSubscriptionEvent: !Extends_Event
   dispatcher_workflow: ""       # TODO: this is a link, how2do

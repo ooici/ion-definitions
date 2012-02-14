@@ -18,6 +18,10 @@ apps:
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
             
+  - name: identity_management
+    version: 0.1
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
+
   - name: pubsub_management
     version: 0.1
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
@@ -41,6 +45,10 @@ apps:
   - name: index_management
     version: 0.1
     processapp: [index_management, ion.services.dm.inventory.index_management_service, IndexManagementService]
+
+  - name: user_notification
+    version: 0.1
+    processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
 
 #  - name: catalog_management
 #    version: 0.1

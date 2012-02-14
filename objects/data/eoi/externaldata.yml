@@ -5,12 +5,33 @@ DatasetDescription:
 UpdateDescription:
   last_update_result: None
   last_update_timestamp: None
-  last_signature: ""
+  last_fingerprint: ""
   parameters: {}
 
+CompareResult:
+  field_name: ""
+  difference: !enum (name=CompareResultEnum, value=(EQUAL, NEW_DIM, MOD_DIM, NEW_GATT, MOD_GATT, NEW_VARATT, MOD_VARATT, NEW_VAR, MOD_VAR), default=EQUAL)
+
+Variable:
+  name: ""
+  units: ""
+  attributes: []
+  index_key: ""
+  ion_name: ""
+
+Attribute:
+  name: ""
+  value: None
+  ion_name: ""
+
+Dimension:
+  name: ""
+  size: 0
+  isunlimited: False
+  ion_name: ""
 ---
 
-ExternalDataProvider: !Extends_InformationResource
+ExternalDataProvider: !Extends_AgentDefinition
   institution: !Institution
   contact: !ContactInformation
 
@@ -26,8 +47,9 @@ ExternalDataSourceModel: !Extends_InformationResource
   data_handler_module: ""
   data_handler_class: ""
 
-ExternalDataAgent: !Extends_AgentDefinition
+ExternalDataAgent: !Extends_InformationResource
   agent_version: ""
 
 ExternalDataAgentInstance: !Extends_AgentInstance
   #stream_route: !StreamRoute  # TBD: Remove - its exchange_name
+  configuration: {}

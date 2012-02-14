@@ -5,7 +5,7 @@ DatasetDescription:
 UpdateDescription:
   last_update_result: None
   last_update_timestamp: None
-  last_signature: ""
+  last_fingerprint: ""
   parameters: {}
 
 CompareResult:
@@ -13,19 +13,22 @@ CompareResult:
   difference: !enum (name=CompareResultEnum, value=(EQUAL, NEW_DIM, MOD_DIM, NEW_GATT, MOD_GATT, NEW_VARATT, MOD_VARATT, NEW_VAR, MOD_VAR), default=EQUAL)
 
 Variable:
-  column_name: ""
+  name: ""
   units: ""
   attributes: []
-  key: ""
+  index_key: ""
+  ion_name: ""
 
 Attribute:
   name: ""
-  value: ""
+  value: None
+  ion_name: ""
 
 Dimension:
   name: ""
   size: 0
   isunlimited: False
+  ion_name: ""
 ---
 
 ExternalDataProvider: !Extends_InformationResource

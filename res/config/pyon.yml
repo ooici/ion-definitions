@@ -9,30 +9,49 @@
 # container starts or joins. A system comprises all containers with the same sysname.
 system:
   # sysname - by default it is generated from your system's uname.
-  # uncomment and set here if you want to lock it to something.
-  #name: r2demo
+  # set in pyon.local.yml or via command line to lock it to something.
   name:
 
+  # Load config from directory (merge over pyon.yml+pyon.local.yml but allow command line override)
+  config_from_directory: True
   # Global flag to use a mock datastore instead of CouchDB if True
   mockdb: False
   # Global flag to clean all persistent stores and reset system to defaults on start if True
+  # Note: this is dangerous and will likely change to False or go away soon
   force_clean: True
   # Flag indicating test run. Is set to False if started as interactive container
   testing: True
   # Global flag indicating debug mode. Can perform more expensive operations if True
   debug: True
+  # Global flag indicating degraded mode during initial bootstrap phases
+  # (e.g. no use of RR, messaging, datastore, events, etc)
+  bootstrapping: False
 
 # ----------------------------------------------------------------------------------
-# The "server" root entry defines settings for connections to external servers
+# The "server" root entry defines profiles for connections/credentials to external servers
+# These entries are names of server/credential profiles that can be referenced in other settings.
 server:
   amqp:
+    # The basic broker connection
+    type: amqp_91
     host: localhost
     port: 5672
     username: guest
     password: guest
     vhost: /
     heartbeat: 30
+  amqp_priv:
+    # The privileged broker connection the Exchange Management Service uses
+    type: amqp_91
+    host: localhost
+    port: 5672
+    username: ion
+    password: ion
+    vhost: /
+    heartbeat: 30
   couchdb:
+    # The basic CouchDB connection
+    type: couchdb
     host: localhost
     port: 5984
     username:
@@ -42,9 +61,16 @@ server:
 # ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container
 container:
+  directory:
+    server: couchdb
+
   messaging:
+    server:
+      primary: amqp
+      priviledged: amqp_priv
     endpoint: # TBD: move entries to here
     interceptor: # TBD: move entries to here
+
   objects:
     validate: # TBD: move entries to here
 
@@ -60,7 +86,7 @@ validate:
 
 endpoint:
   receive:
-    timeout: 10   # Receive timeout in seconds
+    timeout: 10   # RPC receive timeout in seconds
 
 interceptor:
   interceptors:

@@ -12,6 +12,8 @@ system:
   # set in pyon.local.yml or via command line to lock it to something.
   name:
 
+  # The Org (name) that starts the system
+  root_org: ION
   # Load config from directory (merge over pyon.yml+pyon.local.yml but allow command line override)
   config_from_directory: True
   # Global flag to use a mock datastore instead of CouchDB if True
@@ -26,6 +28,8 @@ system:
   # Global flag indicating degraded mode during initial bootstrap phases
   # (e.g. no use of RR, messaging, datastore, events, etc)
   bootstrapping: False
+  # If true, the first container started will bootstrap the system
+  auto_bootstrap: True
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers

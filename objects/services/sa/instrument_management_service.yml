@@ -446,6 +446,22 @@ methods:
 
 
 
+  ##################
+  #
+  # Special Associations
+  #
+
+  reassign_logical_instrument_to_instrument_device:
+    in:
+      logical_instrument_id: ""
+      old_instrument_device_id: ""
+      new_instrument_device_id: ""
+      logical_data_product_ids: []
+      old_instrument_data_product_ids: []
+      new_instrument_data_product_ids: []
+    out:
+
+
 
   ##################
   #
@@ -550,6 +566,12 @@ methods:
       platform_device_id: ""
     out:
       data_product_list: []
+    
+  find_instrument_device_by_data_product:
+    in:
+      data_product_id: ""
+    out:
+      instrument_device_list: []
     
 
 

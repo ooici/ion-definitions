@@ -19,33 +19,5 @@ StreamRoute:
 
 
 
----
-
-BlogStreamType:
-    element_count: 0 # number of records in this stream, -1 for unlimited
-    stream_record: # defines the fields in the stream
-        post:
-            definition: "A blog comment - should be a url link defining what it is"
-            optional: True
-        comment: # A single field containing 3 elements
-            definition: "A blog comment - should be a url link defining what it is"
-            optional: True
-    encoding: "Blog ion objects"
-
----
-
-ScienceStreamType:
-    element_count: 0 # number of records in this stream. -1 for unlimited
-    stream_record: {} # defines the fields in the stream
-    encoding: ""
-
-
----
-
-StreamRecord:
-    element_range: [ ] # The record range in the stream if it is known, or a single value for the number of records in this packet
-    records: [ ]
-
-
 
 

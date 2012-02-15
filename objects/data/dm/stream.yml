@@ -9,7 +9,7 @@ Stream: !Extends_InformationResource
   original: True
 
   # managed by pubsub
-  stream_definition_id: ""
+  stream_definition: !StreamDefinitionContainer
   producers: []
 
 StreamRoute:

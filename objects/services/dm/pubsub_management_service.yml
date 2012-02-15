@@ -21,7 +21,7 @@ methods:
     in:
       encoding: ""
       original: True
-      stream_definition_type: ""
+      stream_definition: !StreamDefinitionContainer
       name: ""
       description: ""
       url: ""

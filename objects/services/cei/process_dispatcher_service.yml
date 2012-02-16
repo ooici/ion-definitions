@@ -81,6 +81,7 @@ methods:
     in:
       process_definition_id: ""
       schedule: !ProcessSchedule
+      configuration: {}
     out:
       process_id: ""
     throws:

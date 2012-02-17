@@ -29,6 +29,12 @@ apps:
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
 
+  - name: service_gateway
+    version: 0.1
+    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+
+
+
 # DM services
 
   - name: PubSubResource

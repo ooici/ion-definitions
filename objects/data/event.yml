@@ -79,7 +79,7 @@ IngestionProcessingEvent: !Extends_ResourceModifiedEvent
 StreamIngestionPolicyEvent: !Extends_ResourceModifiedEvent
   archive_data: True
   archive_metadata: True
-  stream_id: ""
+  dataset_id: ""
   deleted: False # Temporary - until we have resource life cycle events
 ---
 

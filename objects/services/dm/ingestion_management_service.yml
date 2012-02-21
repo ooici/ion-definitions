@@ -68,30 +68,31 @@ methods:
 
   #-------------------------
 
-  create_stream_policy:
-    docstring: Create a policy for a particular stream and associate it to the ingestion configuration for the exchange
-      point the stream is on. (After LCA)
+  create_dataset_configuration:
+    docstring: |
+      Create a configuration for ingestion of a particular dataset and associate it to a ingestion configuration.
     in:
-      stream_id: ""
+      dataset_id: ""
       archive_data: True
       archive_metadata: True
+      ingestion_configuration_id: ""
     out:
-      ingestion_policy_id: ""
+      dataset_ingestion_configuration_id: ""
 
-  update_stream_policy:
-    docstring: Change the number of workers or the default policy for ingesting data on each stream (After LCA)
+  update_dataset_config:
+    docstring:
     in:
-      stream_policy: !StreamIngestionPolicy
+      dataset_ingestion_configuration: !DatasetIngestionConfiguration
     out:
     throws:
       NotFound: if ingestion configuration did not exist
 
-  read_stream_policy:
-    docstring: Get an existing stream policy object. (After LCA)
+  read_dataset_config:
+    docstring: Get an existing dataset config object. (After LCA)
     in:
-      stream_policy_id: ""
+      dataset_ingestion_configuration_id: ""
     out:
-      stream_policy: !StreamIngestionPolicy
+      dataset_ingestion_configuration: !DatasetIngestionConfiguration
     throws:
       NotFound: if ingestion configuration did not exist
 

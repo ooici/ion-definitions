@@ -22,6 +22,10 @@ apps:
     version: 0.1
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
 
+  - name: process_dispatcher
+    version: 0.1
+    processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
+
   - name: transform_management
     version: 0.1
     processapp: [transform_management, ion.services.dm.transformation.transform_management_service, TransformManagementService]
@@ -31,5 +35,5 @@ apps:
     processapp: [transform_example_launcher, ion.processes.data.transforms.transform_example, TransformExampleLauncher]
     config:
         name: transform_example
-        example: even_odd_transform
+        example: reverse_transform
 

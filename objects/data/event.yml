@@ -76,10 +76,9 @@ IngestionProcessingEvent: !Extends_ResourceModifiedEvent
   processing_step: ""       # string of "dataset", "chunk", "done"
 
 ---
-StreamIngestionPolicyEvent: !Extends_ResourceModifiedEvent
-  archive_data: True
-  archive_metadata: True
-  dataset_id: ""
+DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
+  type: !enum (name=DatastIngestionTypeEnum, values=(DATASETINGESTIONBYSTREAM, OTHER ), default=DATASETINGESTIONBYSTREAM)
+  configuration: {}
   deleted: False # Temporary - until we have resource life cycle events
 ---
 

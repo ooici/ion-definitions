@@ -79,9 +79,9 @@ apps:
     version: 0.1
     processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
 
-#  - name: data_product_management
-#    version: 0.1
-#    processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
+  - name: data_product_management
+    version: 0.1
+    processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
 
 #  - name: data_process_management
 #    version: 0.1

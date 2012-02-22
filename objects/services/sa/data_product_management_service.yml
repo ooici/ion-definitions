@@ -55,7 +55,6 @@ methods:
     docstring: Suspend data product data persistnce into a data set, multiple options
     in:
       data_product_id: ""
-      type: ""
     out:
     throws:
       NotFound: object with specified id does not exist

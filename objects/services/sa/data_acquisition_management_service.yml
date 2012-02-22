@@ -377,6 +377,7 @@ methods:
       data_producer_id: ""
 
   unregister_external_data_set:
+    docstring: Delete the Data Producer (and all children) for this egister an existing external data set as data producer
     in:
       external_dataset_id: ""
     out:
@@ -426,7 +427,9 @@ methods:
   unassign_data_product:
     docstring: Disconnect the Data Product from the Data Producer
     in:
+      input_resource_id: ""
       data_product_id: ""
+      delete_stream: False
     out:
     throws:
       NotFound: object with specified id does not exist

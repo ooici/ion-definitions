@@ -13,12 +13,27 @@ apps:
 #        type: CouchDB
 #        forceClean: true
 
+
+# CEI services
+
+  - name: process_dispatcher
+    description: Process Dispatcher Service
+    version: 0.1
+    processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
+
+
 # COI services
 
   - name: resource_registry
     description: Resource registry service
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+
+  - name: service_gateway
+    version: 0.1
+    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+
+
 
 # DM services
 

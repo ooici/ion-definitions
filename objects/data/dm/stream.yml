@@ -2,7 +2,7 @@ StreamTopology: !Extends_InformationResource
   topology_type: "topic_tree"
   dimensions: []
 
-StreamDefinition:
+StreamDefinition: !Extends_InformationResource
   # A bit awkward - the stream definition resource contains a stream definition container?
   container: !StreamDefinitionContainer
 

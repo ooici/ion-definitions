@@ -77,7 +77,7 @@ IngestionProcessingEvent: !Extends_ResourceModifiedEvent
 
 ---
 DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
-  type: !enum (name=DatastIngestionTypeEnum, values=(DATASETINGESTIONBYSTREAM, OTHER ), default=DATASETINGESTIONBYSTREAM)
+  type: !DatasetIngestionTypeEnum
   configuration: {}
   deleted: False # Temporary - until we have resource life cycle events
 ---

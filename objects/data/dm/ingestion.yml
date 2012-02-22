@@ -6,9 +6,11 @@ DatasetIngestionByStream:
   stream_id: ""
 
 
+DatasetIngestionTypeEnum: !enum (values=(DATASETINGESTIONBYSTREAM, OTHER ), default=DATASETINGESTIONBYSTREAM)
+
 ---
 DatasetIngestionConfiguration: !Extends_InformationResource
-  type: !enum (name=DatastIngestionTypeEnum, values=(DATASETINGESTIONBYSTREAM, OTHER ), default=DATASETINGESTIONBYSTREAM)
+  type: !DatasetIngestionTypeEnum
   configuration: {}
 
 ---

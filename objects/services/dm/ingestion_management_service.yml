@@ -16,13 +16,11 @@ methods:
       @param couch_storage is the specification of the couch database to use
       @param hdf_storage is the specification of the filesystem to use for hdf data files
       @param number_of_workers is the number of ingestion workers to create
-      @param default_policy is the default policy for streams ingested on this exchange point
     in:
       exchange_point_id: "" # Resource is not yet used - later will be an id, for now it is empty (default is science_data)!
       couch_storage: !CouchStorage
       hdf_storage: !HdfStorage
       number_of_workers: 0
-      default_policy: !StreamPolicy
     out:
       ingestion_configuration_id: ""
 
@@ -84,7 +82,7 @@ methods:
       dataset_ingestion_configuration_id: ""
 
   update_dataset_config:
-    docstring:
+    docstring: Update the ingestion configuration for a dataset
     in:
       dataset_ingestion_configuration: !DatasetIngestionConfiguration
     out:

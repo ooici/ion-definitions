@@ -21,6 +21,15 @@ system:
   testing: True
   # Global flag indicating debug mode. Can perform more expensive operations if True
   debug: True
+  filesystem:
+    force_clean: True
+    cache: /tmp/ion/run/cache
+    temp: /tmp/ion/tmp
+    run: /tmp/ion/run
+    log: /tmp/ion/run/log
+    users: /tmp/ion/usr
+    resource: /tmp/ion/res
+    library: /tmp/ion/lib
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines settings for connections to external servers

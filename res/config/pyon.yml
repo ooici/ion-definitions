@@ -25,6 +25,15 @@ system:
   testing: True
   # Global flag indicating debug mode. Can perform more expensive operations if True
   debug: True
+  filesystem:
+    force_clean: False
+    cache: /tmp/ion/run/cache
+    temp: /tmp/ion/tmp
+    run: /tmp/ion/run
+    log: /tmp/ion/run/log
+    users: /tmp/ion/usr
+    resource: /tmp/ion/res
+    library: /tmp/ion/lib
   # Global flag indicating degraded mode during initial bootstrap phases
   # (e.g. no use of RR, messaging, datastore, events, etc)
   bootstrapping: False

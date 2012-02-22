@@ -27,13 +27,17 @@ methods:
       ingestion_configuration_id: ""
 
   update_ingestion_configuration:
-    docstring: Change the number of workers or the default policy for ingesting data on each stream
+    docstring: |
+      @brief Change the number of workers or the default policy for ingesting data on each stream
+      @param ingestion_configuration is the modified resource in its updated state.
     in:
       ingestion_configuration: !IngestionConfiguration
     out:
 
   read_ingestion_configuration:
-    docstring: Get an existing ingestion configuration object.
+    docstring: |
+      @brief Get an existing ingestion configuration object.
+      @param ingestion_configuraiton_id is the identity of the ingestion configuration resource
     in:
       ingestion_configuration_id: ""
     out:
@@ -84,11 +88,10 @@ methods:
     in:
       dataset_ingestion_configuration: !DatasetIngestionConfiguration
     out:
-    throws:
-      NotFound: if ingestion configuration did not exist
+
 
   read_dataset_config:
-    docstring: Get an existing dataset config object. (After LCA)
+    docstring: Get an existing dataset configuration.
     in:
       dataset_ingestion_configuration_id: ""
     out:
@@ -97,10 +100,10 @@ methods:
       NotFound: if ingestion configuration did not exist
 
 
-  delete_stream_policy:
-    docstring: Delete an existing stream policy object. (After LCA)
+  delete_dataset_config:
+    docstring: Delete an existing dataset configuration.
     in:
-      stream_policy_id: ""
+      dataset_ingestion_configuration_id: ""
     out:
     throws:
       NotFound: if ingestion configuration did not exist

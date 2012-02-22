@@ -88,6 +88,9 @@ PredicateTypes:
   hasNotification:
     domain: [UserIdentity]
     range: [NotificationRequest]
+  hasStreamDefinition:
+    domain: [Stream]
+    range: [StreamDefinition]
 # COI
   affiliatedWith:
     domain: [Org]

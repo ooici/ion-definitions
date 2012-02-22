@@ -26,7 +26,7 @@ system:
   # Global flag indicating debug mode. Can perform more expensive operations if True
   debug: True
   filesystem:
-    force_clean: True
+    force_clean: False
     cache: /tmp/ion/run/cache
     temp: /tmp/ion/tmp
     run: /tmp/ion/run

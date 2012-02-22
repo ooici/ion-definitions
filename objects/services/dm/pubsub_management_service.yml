@@ -39,7 +39,6 @@ methods:
     in:
       stream_definition_id: ""
     out:
-      success: True
     throws:
       NotFound: if stream_definition_id doesn't exist
 
@@ -85,7 +84,6 @@ methods:
     in:
       stream_id: ""
     out:
-      success: True
     throws:
       NotFound: if stream_id doesn't exist
 

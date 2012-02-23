@@ -4,7 +4,6 @@ DataContainer:
   identifiables: {}
   stream_resource_id: "" # Resource id for the stream this packet is published on
   data_stream_id: "" # handle of the root stream object in identifiables
-  is_replay: False
 ---
 
 StreamDefinitionContainer: !Extends_DataContainer

@@ -9,19 +9,58 @@ dependencies: [resource_registry]
 
 methods:
 
+  create_stream_definition:
+    docstring: |
+      @brief Create a new stream definition which may be used to publish on one or more streams
+      @param container is a stream definition container object
+      @param name is the name of the definition resource
+      @param description is the description of the definition resource
+    in:
+      container: !StreamDefinitionContainer
+      name: ""
+      description: ""
+    out:
+      stream_definition_id: ""
+
+  update_stream_definition:
+    docstring: Update an existing stream definition
+    in:
+      stream_definition: !StreamDefinition
+    out:
+    throws:
+      NotFound: if stream_definition_id doesn't exist
+
+  read_stream_definition:
+    docstring: Get an existing stream definition.
+    in:
+      stream_definition_id: ""
+    out:
+      stream_definition: !StreamDefinition
+    throws:
+      NotFound: if stream_definition_id doesn't exist
+
+  delete_stream_definition:
+    docstring: Delete an existing stream definition.
+    in:
+      stream_definition_id: ""
+    out:
+    throws:
+      NotFound: if stream_definition_id doesn't exist
+
+
   create_stream:
     docstring: |
       @brief Creates a new stream. The id string returned is the ID of the new stream in the resource registry.
       @param encoding the encoding for data on this stream
       @param original is the data on this stream from a source or a transform
-      @param stream_defintion_type a predefined stream definition type for this stream
+      @param stream_definition_id the id of a stream definition resource which describes this stream
       @param name (optional) the name of the stream
       @param description (optional) the description of the stream
       @param url (optional) the url where data from this stream can be found (Not implemented)
     in:
       encoding: ""
       original: True
-      stream_definition: !StreamDefinitionContainer
+      stream_definition_id: ""
       name: ""
       description: ""
       url: ""
@@ -34,7 +73,8 @@ methods:
     in:
       stream: !Stream
     out:
-      success: True
+    throws:
+      NotFound: if stream_id doesn't exist
 
   read_stream:
     docstring: Get an existing stream object.
@@ -50,7 +90,6 @@ methods:
     in:
       stream_id: ""
     out:
-      success: True
     throws:
       NotFound: if stream_id doesn't exist
 

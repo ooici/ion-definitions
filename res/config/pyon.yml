@@ -25,6 +25,7 @@ system:
   testing: True
   # Global flag indicating debug mode. Can perform more expensive operations if True
   debug: True
+
   # Global flag indicating degraded mode during initial bootstrap phases
   # (e.g. no use of RR, messaging, datastore, events, etc)
   bootstrapping: False
@@ -78,6 +79,16 @@ container:
   objects:
     validate: # TBD: move entries to here
 
+  filesystem:
+      force_clean: False
+      cache: /tmp/ion/run/cache
+      temp: /tmp/ion/tmp
+      run: /tmp/ion/run
+      log: /tmp/ion/run/log
+      users: /tmp/ion/usr
+      resource: /tmp/ion/res
+      library: /tmp/ion/lib
+      
 # TBD: Rename to "container". See there.
 cc:
   timeout:
@@ -159,3 +170,55 @@ external_data_agent_management:
 web_server:
   port: 5000
   hostname: localhost
+
+# ----------------------------------------------------------------------------------
+# The "event" root entry defines event types and event originators, and it
+# specifies which events each originator can publish
+event:
+  originators: [container, 
+                process, 
+                application, 
+                datasource, 
+                dataset, 
+                resource_agent, 
+                service]
+  types: [resource_lifecycle,
+          container_lifecycle,
+          process_lifecycle,
+          app_loader,
+          container_startup,
+          datasource_update,
+          schedule,
+          datasource_unavailable,
+          dataset_supplement_added,
+          business_state_modification,
+          dataset_change,
+          datasource_change,
+          ingestion_processing,
+          new_subscription,
+          del_subscription,
+          data,
+          data_block,
+          instrument_sample_data,
+          
+          stream_ingestion_policy]
+  containerr: [container_lifecycle, 
+              container_startup]
+  process: [process_lifecycle]
+  application: [app_loader, 
+                schedule, 
+                business_state_modification]
+  datasource: [datasource_update, 
+               datasource_unavailable,
+               datasource_change]
+  dataset: [dataset_supplement_added, 
+            dataset_change]
+  resource_agent: [resource_lifecycle, 
+                   data, 
+                   data_block, 
+                   instrument_sample_data]
+  service: [new_subscription, 
+            del_subscription, 
+            ingestion_processing, 
+            stream_ingestion_policy]
+  

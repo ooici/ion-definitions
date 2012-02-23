@@ -11,9 +11,9 @@ methods:
 
   create_stream_definition:
     docstring: |
-      @brief Create a new stream defintion which may be used to publish on one or more streams
+      @brief Create a new stream definition which may be used to publish on one or more streams
       @param container is a stream definition container object
-      @param name is the name of the defintion resource
+      @param name is the name of the definition resource
       @param description is the description of the definition resource
     in:
       container: !StreamDefinitionContainer
@@ -53,7 +53,7 @@ methods:
       @brief Creates a new stream. The id string returned is the ID of the new stream in the resource registry.
       @param encoding the encoding for data on this stream
       @param original is the data on this stream from a source or a transform
-      @param stream_defintion_id the id of a stream defintion resource which describes this stream
+      @param stream_definition_id the id of a stream definition resource which describes this stream
       @param name (optional) the name of the stream
       @param description (optional) the description of the stream
       @param url (optional) the url where data from this stream can be found (Not implemented)

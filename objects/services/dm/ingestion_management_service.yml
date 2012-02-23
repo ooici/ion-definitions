@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Ingestion+Management+Service
 
-dependencies: [resource_registry, pubsub_management, transform_management, process_dispatcher]
+dependencies: [resource_registry, pubsub_management, transform_management, process_dispatcher, dataset_management]
 
 methods:
   create_ingestion_configuration:

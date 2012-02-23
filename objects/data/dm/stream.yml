@@ -2,6 +2,11 @@ StreamTopology: !Extends_InformationResource
   topology_type: "topic_tree"
   dimensions: []
 
+StreamDefinition: !Extends_InformationResource
+  # A bit awkward - the stream definition resource contains a stream definition container?
+  container: !StreamDefinitionContainer
+
+
 Stream: !Extends_InformationResource
   # Specified by create_stream
   url: ""
@@ -9,7 +14,6 @@ Stream: !Extends_InformationResource
   original: True
 
   # managed by pubsub
-  stream_definition: !StreamDefinitionContainer
   producers: []
 
 StreamRoute:

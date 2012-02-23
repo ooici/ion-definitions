@@ -9,7 +9,7 @@ dependencies: [resource_registry]
 
 methods:
 
-  create_stream_defintion:
+  create_stream_definition:
     docstring: |
       @brief Create a new stream defintion which may be used to publish on one or more streams
       @param container is a stream definition container object

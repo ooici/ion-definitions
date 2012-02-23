@@ -16,24 +16,26 @@ methods:
       @param couch_storage is the specification of the couch database to use
       @param hdf_storage is the specification of the filesystem to use for hdf data files
       @param number_of_workers is the number of ingestion workers to create
-      @param default_policy is the default policy for streams ingested on this exchange point
     in:
       exchange_point_id: "" # Resource is not yet used - later will be an id, for now it is empty (default is science_data)!
       couch_storage: !CouchStorage
       hdf_storage: !HdfStorage
       number_of_workers: 0
-      default_policy: !StreamPolicy
     out:
       ingestion_configuration_id: ""
 
   update_ingestion_configuration:
-    docstring: Change the number of workers or the default policy for ingesting data on each stream
+    docstring: |
+      @brief Change the number of workers or the default policy for ingesting data on each stream
+      @param ingestion_configuration is the modified resource in its updated state.
     in:
       ingestion_configuration: !IngestionConfiguration
     out:
 
   read_ingestion_configuration:
-    docstring: Get an existing ingestion configuration object.
+    docstring: |
+      @brief Get an existing ingestion configuration object.
+      @param ingestion_configuraiton_id is the identity of the ingestion configuration resource
     in:
       ingestion_configuration_id: ""
     out:
@@ -68,38 +70,38 @@ methods:
 
   #-------------------------
 
-  create_stream_policy:
-    docstring: Create a policy for a particular stream and associate it to the ingestion configuration for the exchange
-      point the stream is on. (After LCA)
+  create_dataset_configuration:
+    docstring: |
+      Create a configuration for ingestion of a particular dataset and associate it to a ingestion configuration.
     in:
-      stream_id: ""
+      dataset_id: ""
       archive_data: True
       archive_metadata: True
+      ingestion_configuration_id: ""
     out:
-      ingestion_policy_id: ""
+      dataset_ingestion_configuration_id: ""
 
-  update_stream_policy:
-    docstring: Change the number of workers or the default policy for ingesting data on each stream (After LCA)
+  update_dataset_config:
+    docstring: Update the ingestion configuration for a dataset
     in:
-      stream_policy: !StreamIngestionPolicy
+      dataset_ingestion_configuration: !DatasetIngestionConfiguration
     out:
+
+
+  read_dataset_config:
+    docstring: Get an existing dataset configuration.
+    in:
+      dataset_ingestion_configuration_id: ""
+    out:
+      dataset_ingestion_configuration: !DatasetIngestionConfiguration
     throws:
       NotFound: if ingestion configuration did not exist
 
-  read_stream_policy:
-    docstring: Get an existing stream policy object. (After LCA)
-    in:
-      stream_policy_id: ""
-    out:
-      stream_policy: !StreamIngestionPolicy
-    throws:
-      NotFound: if ingestion configuration did not exist
 
-
-  delete_stream_policy:
-    docstring: Delete an existing stream policy object. (After LCA)
+  delete_dataset_config:
+    docstring: Delete an existing dataset configuration.
     in:
-      stream_policy_id: ""
+      dataset_ingestion_configuration_id: ""
     out:
     throws:
       NotFound: if ingestion configuration did not exist

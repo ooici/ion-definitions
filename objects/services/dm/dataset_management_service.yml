@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Dataset+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, ingestion_management]
 
 methods:
   create_dataset:

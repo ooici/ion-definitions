@@ -13,8 +13,12 @@ methods:
     docstring: |
       @brief Create a new stream defintion which may be used to publish on one or more streams
       @param container is a stream definition container object
+      @param name is the name of the defintion resource
+      @param description is the description of the definition resource
     in:
       container: !StreamDefinitionContainer
+      name: ""
+      description: ""
     out:
       stream_definition_id: ""
 
@@ -23,7 +27,8 @@ methods:
     in:
       stream_definition: !StreamDefinition
     out:
-      success: True
+    throws:
+      NotFound: if stream_definition_id doesn't exist
 
   read_stream_definition:
     docstring: Get an existing stream definition.
@@ -68,7 +73,8 @@ methods:
     in:
       stream: !Stream
     out:
-      success: True
+    throws:
+      NotFound: if stream_id doesn't exist
 
   read_stream:
     docstring: Get an existing stream object.

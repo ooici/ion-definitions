@@ -1,20 +1,22 @@
 
-StreamPolicy:
-  # Policy specific to ingestion of a particular stream
+DatasetIngestionByStream:
+  # Rules to ingest a dataset based on the incoming stream
   archive_data: True
   archive_metadata: True
   stream_id: ""
 
 
+DatasetIngestionTypeEnum: !enum (values=(DATASETINGESTIONBYSTREAM, OTHER ), default=DATASETINGESTIONBYSTREAM)
+
 ---
-StreamIngestionPolicy: !Extends_InformationResource
-  policy: !StreamPolicy
+DatasetIngestionConfiguration: !Extends_InformationResource
+  type: !DatasetIngestionTypeEnum
+  configuration: {}
 
 ---
 
 HdfStorage:
-  file_system: ""
-  root_path: ""
+  relative_path: ""
 
 ---
 
@@ -30,4 +32,3 @@ IngestionConfiguration: !Extends_InformationResource
   number_of_workers: 2
   hdf_storage: !HdfStorage
   couch_storage: !CouchStorage
-  default_policy: !StreamPolicy

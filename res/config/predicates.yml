@@ -88,6 +88,12 @@ PredicateTypes:
   hasNotification:
     domain: [UserIdentity]
     range: [NotificationRequest]
+  hasStreamDefinition:
+    domain: [Stream]
+    range: [StreamDefinition]
+  hasIngestionConfiguration:
+    domain: [DatasetIngestionConfiguration]
+    range: [IngestionConfiguration]
 # COI
   affiliatedWith:
     domain: [Org]

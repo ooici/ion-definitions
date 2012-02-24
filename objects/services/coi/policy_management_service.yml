@@ -127,57 +127,20 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  # -----------------
-
-  grant_role:
+  find_roles:
     docstring: |
-      Grants a defined role within an organization to a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
+      Returns a list of UserRole objects defined in the resource registry.
     in:
-      org_id: ""
-      user_id: ""
-      user_role_id: ""
-      scope: !RoleScope
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  revoke_role:
-    docstring: |
-      Revokes a defined role within an organization to a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      user_id: ""
-      user_role_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  find_roles_by_user:
-    docstring: |
-      Returns a list of organization roles for a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      user_id: ""
     out:
       user_role_list: []
     throws:
-      NotFound: object with specified id does not exist
 
-  # -----------------
-
-  has_permission:
+  find_role:
     docstring: |
-      Returns a boolean of the specified user has permission for the specified action on a specified resource. Will
-      throw a NotFound exception if none of the specified ids do not exist.
+      Returns UserRole object that matches the specified name.
     in:
-      org_id: ""
-      user_id: ""
-      action_id: ""
-      resource_id: ""
+      name: ""
     out:
-      has_permission: False
+      user_role: !UserRole
     throws:
       NotFound: object with specified id does not exist

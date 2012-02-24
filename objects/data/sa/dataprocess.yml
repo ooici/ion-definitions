@@ -1,5 +1,8 @@
 DataProcessDefinition: !Extends_InformationResource
-  #path to the folder (in coi services) containing the script
+  #module and class for source code
+  module: ""
+  class_name: ""
+
   process_source: ""
   parameters: {}
 

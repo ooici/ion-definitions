@@ -152,12 +152,13 @@ methods:
   find_associations:
     docstring: |
         Find associations by subject, predicate, object. Either subject and
-        predicate have to be provided or predicate only. Returns either a list
+        object have to be provided or predicate only. Returns either a list
         of associations or a list of association ids.
     in:
       subject: ""
       predicate: ""
       object: ""
+      assoc_type:
       id_only: False
     out:
       list: []
@@ -167,12 +168,13 @@ methods:
   get_association:
     docstring: |
       Read the association specified by the exact subject, predicate, object
-      tuple.  Throws exception if association not found or more than one
+      and type tuple.  Throws exception if association not found or more than one
       association satisfies the tuple.
     in:
       subject: ""
       predicate: ""
       object: ""
+      assoc_type:
       id_only: False
     out:
       association: {}

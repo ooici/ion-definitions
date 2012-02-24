@@ -199,10 +199,9 @@ event:
           del_subscription,
           data,
           data_block,
-          instrument_sample_data,
-          
+          instrument_sample_data,          
           stream_ingestion_policy]
-  containerr: [container_lifecycle, 
+  container: [container_lifecycle, 
               container_startup]
   process: [process_lifecycle]
   application: [app_loader, 

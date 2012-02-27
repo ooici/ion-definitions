@@ -83,15 +83,30 @@ methods:
 
   remove_user_role:
     docstring: |
-       Removes a UserRole from an Org.
+       Removes a UserRole from an Org. The UserRole will not be removed if there are
+       users associated with the UserRole unless the force_removal paramater is set to True
        Throws exception if either id does not exist.
     in:
       org_id: ""
       user_role_id: ""
+      force_removal: False
     out:
       success: True
     throws:
       NotFound: object with specified name does not exist
+
+  find_org_role_by_name:
+    docstring: |
+      Returns the User Role object for the specified name in the Org.
+      Throws exception if name does not match any persisted User Role or the Org does not exist.
+      objects.
+    in:
+      org_id: ""
+      name: ""
+    out:
+      user_role: !UserRole
+    throws:
+      NotFound: object with specified name or if does not exist
 
   find_org_roles:
     docstring: |
@@ -106,9 +121,89 @@ methods:
 
   # -----------------
 
+
+  request_enroll:
+    docstring: |
+      Requests for an enrollment with an Org which must be accepted or denied as a separate process.
+      Membership in the ION Org is implied by registration with the system, so a membership
+      association to the ION Org is not maintained. Throws a NotFound exception if neither id is found.
+    in:
+      org_id: ""
+      user_id: ""
+    out:
+      request_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  request_role:
+    docstring: |
+      Requests for an role within an Org which must be accepted or denied as a separate process.
+      A role of Member is automatically implied with successfull enrollment.  Throws a
+      NotFound exception if neither id is found.
+    in:
+      org_id: ""
+      user_id: ""
+      user_role_id: ""
+    out:
+      request_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_requests:
+    docstring: |
+      Returns a list of open requests for an Org. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+    out:
+      requests: []
+    throws:
+      NotFound: object with specified id does not exist
+
+  approve_request:
+    docstring: |
+      Approves a request made to an Org.  Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      request_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  deny_request:
+    docstring: |
+      Denys a request made to an Org. An optional reason can be recorded with the denial.
+      Will throw a not NotFound exception if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      request_id: ""
+      reason: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_user_requests:
+    docstring: |
+      Returns a list of requests for a specified User. All requests for all Orgs will be returned
+      unless an org_id is specified. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      user_id: ""
+      org_id: ""
+    out:
+      requests: []
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+
   grant_role:
     docstring: |
-      Grants a defined role within an organization to a specific user. Will throw a not NotFound exception
+      Grants a defined role within an organization to a specific user. A role of Member is
+      automatically implied with successfull enrollment. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
       org_id: ""
@@ -151,7 +246,8 @@ methods:
   enroll_member:
     docstring: |
       Enrolls a specified user into the specified Org so that they may find and negotiate to use resources
-      of the Org. Throws a NotFound exception if neither id is found.
+      of the Org. Membership in the ION Org is implied by registration with the system, so a membership
+      association to the ION Org is not maintained. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       user_id: ""

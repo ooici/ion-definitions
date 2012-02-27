@@ -9,16 +9,14 @@ apps:
   # Bootstrapper app performs initializations
   ##################################
 
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-
   - name: datastore
     description: Data store service
     version: 0.1
     processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
 
   - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: datastore
 
@@ -27,6 +25,8 @@ apps:
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
 
   - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: directory
 
@@ -36,6 +36,8 @@ apps:
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
 
   - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: resource_registry
 
@@ -44,6 +46,8 @@ apps:
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
 
   - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: identity_management
 
@@ -56,6 +60,8 @@ apps:
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
 
   - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: org_management
 
@@ -64,6 +70,8 @@ apps:
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
 
   - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: exchange_management
 

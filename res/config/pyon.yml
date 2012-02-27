@@ -69,6 +69,9 @@ container:
   directory:
     server: couchdb
 
+  exchange:
+    auto_register: True
+
   messaging:
     server:
       primary: amqp

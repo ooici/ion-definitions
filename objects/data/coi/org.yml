@@ -1,2 +1,9 @@
+
 Org: !Extends_TaskableResource
 
+UserRequest: !Extends_InformationResource
+  org_id: ""     # Will also keep an association but this makes it easier to filter on
+  user_id: ""    # Will also keep an association but this makes it easier to filter on
+  type: "Enroll"
+  status: "Open"
+  status_description: ""

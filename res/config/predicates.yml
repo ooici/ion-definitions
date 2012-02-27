@@ -140,6 +140,9 @@ PredicateTypes:
   hasPolicy:
     domain: [Resource]
     range: [Policy]
+  hasRequest:
+    domain: [Org, UserIdentity]
+    range: [UserRequest,UserRequest]
   hasResource:
     domain: [Org]
     range: [Resource]

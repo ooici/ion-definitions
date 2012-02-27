@@ -168,11 +168,4 @@ PredicateTypes:
   hasAccount:
     domain: [BankCustomer]
     range: [BankAccount]
-    
-AssociationTypes:
-  H2H: 'H2H'
-  R2R: 'R2R'
-  H2R: 'H2R'
-  R2H: 'R2H'
-  R2R: 'R2R'
   

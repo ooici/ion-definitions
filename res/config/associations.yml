@@ -168,3 +168,4 @@ PredicateTypes:
   hasAccount:
     domain: [BankCustomer]
     range: [BankAccount]
+  

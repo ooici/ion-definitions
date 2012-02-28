@@ -173,7 +173,9 @@ methods:
       Subject and object values can be passed as actual object instances or just
       object ids.  Valid predicates can be found in res/config/associations.yml.
       Subject and object must be of the proper types for the predicate or
-      an exception will be thrown.
+      an exception will be thrown.  Type indicates whether this is an association
+      between head versions or specific version instances or some combination there
+      of.
     in:
       subject:
       predicate:
@@ -234,6 +236,7 @@ methods:
       subject: ""
       predicate: ""
       object: ""
+      assoc_type:
       id_only: False
     out:
       list: []

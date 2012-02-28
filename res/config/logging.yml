@@ -32,6 +32,20 @@ handlers:
     filename: logs/logfile.txt
     maxBytes: 1024000
     backupCount: 3
+#  syslog:
+    # Use either the default built in syslog handler
+#    class: logging.handlers.SysLogHandler
+#    formatter: brief
+#    level: DEBUG
+#    address: /var/run/syslog    # Mac OS X syslog endpoint
+    #
+    # Or the syslog handler extended by us to handle the situation
+    # the default handler drops log records that exceed network MTU
+#    class: pyon.util.log.Pyon_SysLogHandler
+#    formatter: brief
+#    level: DEBUG
+#    address: /var/run/syslog    # Mac OS X syslog endpoint
+#    MTU: 1400                   # log record max size before partitioning
 
 # Section for defining logger log levels.  Loggers
 # are defined using dot notation.

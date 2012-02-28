@@ -51,6 +51,9 @@ PredicateTypes:
   hasSite:
     domain: [MarineFacility, Site]
     range: [Site]
+  hasObservatory:
+    domain: [Org]
+    range: [MarineFacility]
 # DM
   hasArchive:
     domain: [Datastore]
@@ -88,9 +91,11 @@ PredicateTypes:
   hasNotification:
     domain: [UserIdentity]
     range: [NotificationRequest]
-  hasStreamDefinition:
-    domain: [Stream]
+  hasInputStreamDefinition:
+    domain: [DataProcessDefinition]
     range: [StreamDefinition]
+  hasStreamDefinition:
+    domain: [Stream, InstrumentModel, DataProcessDefinition]
   hasIngestionConfiguration:
     domain: [DatasetIngestionConfiguration]
     range: [IngestionConfiguration]

@@ -25,9 +25,13 @@ ResourceLifeCycle: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
+AttachmentType: !enum (values=(BLOB), default=BLOB)
+
+---
+
 Attachment: !Extends_InformationResource
   # To identify attachments to resources
-  attachment_type: !enum (values=(BLOB), default=BLOB)
+  attachment_type: !AttachmentType
   content: {}
   content_type: ""  # MIME type
 

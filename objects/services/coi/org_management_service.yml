@@ -206,11 +206,11 @@ methods:
     docstring: |
       Grants a defined role within an organization to a specific user. A role of Member is
       automatically implied with successfull enrollment. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
+      if none of the specified ids or role_name does not exist.
     in:
       org_id: ""
       user_id: ""
-      user_role_id: ""
+      role_name: ""
       scope: !RoleScope
     out:
       success: True
@@ -219,12 +219,12 @@ methods:
 
   revoke_role:
     docstring: |
-      Revokes a defined role within an organization to a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
+      Revokes a defined Role within an organization to a specific user. Will throw a not NotFound exception
+      if none of the specified ids or role_name does not exist.
     in:
       org_id: ""
       user_id: ""
-      user_role_id: ""
+      role_name: ""
     out:
       success: True
     throws:
@@ -232,13 +232,25 @@ methods:
 
   find_roles_by_user:
     docstring: |
-      Returns a list of organization roles for a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
+      Returns a list of User Roles for a specific user in an Org.
+      Will throw a not NotFound exception if either of the IDs do not exist.
     in:
       org_id: ""
       user_id: ""
     out:
       user_role_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  find_all_roles_by_user:
+    docstring: |
+      Returns a list of all User Roles roles by Org associated with the specified user.
+      Will throw a not NotFound exception if either of the IDs do not exist.
+    in:
+      user_id: ""
+    out:
+      user_roles_by_org: {}
     throws:
       NotFound: object with specified id does not exist
 
@@ -290,6 +302,17 @@ methods:
       org_id: ""
     out:
       user_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_enrolled_orgs:
+    docstring: |
+      Returns a list of Orgs that the user is enrolled in. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      user_id: ""
+    out:
+      org_list: []
     throws:
       NotFound: object with specified id does not exist
 

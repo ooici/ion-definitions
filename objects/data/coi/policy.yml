@@ -1,4 +1,5 @@
 UserRole: !Extends_InformationResource
+  org_id: ""    #TODO - replace when bettern indexing in couch is available.
 
 Policy: !Extends_InformationResource
   definition_type: ""

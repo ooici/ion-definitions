@@ -40,3 +40,8 @@ methods:
     in:
     out:
 
+  status:
+    in:
+    out:
+      cstatus: ""
+

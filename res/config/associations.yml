@@ -96,6 +96,7 @@ PredicateTypes:
     range: [StreamDefinition]
   hasStreamDefinition:
     domain: [Stream, InstrumentModel, DataProcessDefinition]
+    range: [StreamDefinition]
   hasIngestionConfiguration:
     domain: [DatasetIngestionConfiguration]
     range: [IngestionConfiguration]

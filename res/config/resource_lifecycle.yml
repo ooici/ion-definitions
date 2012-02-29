@@ -1,0 +1,22 @@
+# Resource Lifecycle related Definitions
+
+# List of resource types (by name) for which lifecycle concepts are applied
+# References names from below LifecycleWorkflowDefinitions
+LifecycleResourceTypes:
+  InstrumentDevice: ResourceLCSM
+  InstrumentAgent: ResourceLCSM
+  PlatformDevice: ResourceLCSM
+  PlatformAgent: ResourceLCSM
+  DataProduct: InformationResourceLCSM
+
+# Definition of lifecycle workflows and specializations
+LifecycleWorkflowDefinitions:
+  - name: ResourceLCSM
+    lcsm_class: pyon.ion.resource.CommonResourceLifeCycleSM
+    initial_state: ""
+
+  - name: InformationResourceLCSM
+    based_on: ResourceLCSM
+    initial_state: "DEPLOYED_PRIVATE"
+    illegal_states: []
+    illegal_transitions: []

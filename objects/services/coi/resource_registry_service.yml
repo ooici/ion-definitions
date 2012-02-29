@@ -78,6 +78,45 @@ methods:
       Inconsistent: resource not in current_state or transition illegal in current state
       Conflict: race condition while trying to update
 
+  set_lifecycle_state:
+    docstring: |
+      Alter object lifecycle to set to give lifecycle state. Throws exception
+      if resource object does not exist or given state is unknown/illegal.
+      The optional lcstate argument asserts that the current life cycle state matches.
+    in:
+      resource_id: ""
+      target_lcstate: ""
+      current_lcstate: ""
+    out:
+    throws:
+      NotFound: resource object does not exist
+      BadRequest: target state unknown
+      Inconsistent: resource not in current_state or transition illegal in current state
+      Conflict: race condition while trying to update
+
+  # -----------------
+
+  add_attachment:
+    docstring: |
+      Add an attachment to a resource. The attachment is of specified type.
+    in:
+      resource_id: ""
+      attachment: !Attachment
+    out:
+      attachment_id: ""
+    throws:
+      NotFound: resource object does not exist
+      BadRequest: bad attachment type or content
+
+  remove_attachment:
+    docstring: |
+      Remove an attachment from a resource.
+    in:
+      attachment_id: ""
+    out:
+    throws:
+      NotFound: attachment does not exist
+
   # -----------------
 
   create_association:

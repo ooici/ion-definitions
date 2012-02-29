@@ -5,7 +5,7 @@ Resource:
   # _rev: ""   - Revision identifier (comes with every object)
   name: ""
   description: ""
-  lcstate: "DRAFT"
+  lcstate: "DRAFT_PRIVATE"
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   ts_updated: ""
 
@@ -27,6 +27,9 @@ ResourceLifeCycle: !Extends_InformationResource
 
 Attachment: !Extends_InformationResource
   # To identify attachments to resources
+  attachment_type: !enum (values=(BLOB), default=BLOB)
+  content: {}
+  content_type: ""  # MIME type
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 

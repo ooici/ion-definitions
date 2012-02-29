@@ -81,8 +81,10 @@ methods:
 
   create_role:
     docstring: |
-      Persists the provided UserRole object. The id string returned
-      is the internal id by which a UserRole will be indentified in the data store.
+      Persists the provided UserRole object. The name of a role can only contain
+      alphanumeric and underscore characters while the description can me human
+      readable. The id string returned is the internal id by which a UserRole will
+      be indentified in the data store.
     in:
       user_role: !UserRole
     out:
@@ -92,10 +94,11 @@ methods:
 
   update_role:
     docstring: |
-      Updates the provided UserRole object.  Throws NotFound exception if
-      an existing version of UserRole is not found.  Throws Conflict if
-      the provided UserRole object is not based on the latest persisted
-      version of the object.
+      Updates the provided UserRole object.  The name of a role can only contain
+      alphanumeric and underscore characters while the description can me human
+      readable.Throws NotFound exception if an existing version of UserRole is
+      not found.  Throws Conflict if the provided UserRole object is not based on
+      the latest persisted version of the object.
     in:
       user_role: !UserRole
     out:

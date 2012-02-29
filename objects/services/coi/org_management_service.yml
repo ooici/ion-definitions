@@ -61,7 +61,7 @@ methods:
       Throws exception if name does not match any persisted Org
       objects.
     in:
-      name: "ION"
+      name: ""
     out:
       org: !Org
     throws:
@@ -71,13 +71,15 @@ methods:
 
   add_user_role:
     docstring: |
-       Adds a UserRole to an Org.
-       Throws exception if either id does not exist.
+       Adds a UserRole to an Org. Will call Policy Management Service to actually
+       create the role based on name and description if the role by the specified
+       name does not exist. Throws exception if either id does not exist.
     in:
       org_id: ""
-      user_role_id: ""
+      name: ""
+      description: ""
     out:
-      success: True
+      user_role_id: ""
     throws:
       NotFound: object with specified name does not exist
 
@@ -88,7 +90,7 @@ methods:
        Throws exception if either id does not exist.
     in:
       org_id: ""
-      user_role_id: ""
+      name: ""
       force_removal: False
     out:
       success: True

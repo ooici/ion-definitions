@@ -1,4 +1,4 @@
-# predicates.yml
+# associations.yml
 
 # This is the authoritative definition of all permissible association predicates in the system
 
@@ -12,9 +12,6 @@ PredicateTypes:
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [LogicalPlatform, LogicalInstrument]
-  hasParent:
-    domain: [DataProducer]
-    range: [DataProducer]
   hasDataset:
     domain: [DataProducer, DataProduct]
     range: [Dataset]
@@ -39,9 +36,15 @@ PredicateTypes:
   hasModel:
     domain: [PlatformDevice, InstrumentDevice, SensorDevice, InstrumentAgent, PlatformAgent, DataSource, ExternalDataAgent]
     range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]
+  hasObservatory:
+    domain: [Org]
+    range: [MarineFacility]
   hasOutputProduct:
     domain: [DataProcess, InstrumentDevice, ExternalDataset]
     range: [DataProduct]
+  hasParent:
+    domain: [DataProducer]
+    range: [DataProducer]
   hasPlatform:
     domain: [MarineFacility, Site, LogicalPlatform]
     range: [PlatformDevice, LogicalPlatform]
@@ -51,9 +54,6 @@ PredicateTypes:
   hasSite:
     domain: [MarineFacility, Site]
     range: [Site]
-  hasObservatory:
-    domain: [Org]
-    range: [MarineFacility]
 # DM
   hasArchive:
     domain: [Datastore]
@@ -67,39 +67,39 @@ PredicateTypes:
   hasIndex:
     domain: [Catalog]
     range: [Index]
+  hasIngestionConfiguration:
+    domain: [DatasetIngestionConfiguration]
+    range: [IngestionConfiguration]
+  hasInputStreamDefinition:
+    domain: [DataProcessDefinition]
+    range: [StreamDefinition]
+  hasNotification:
+    domain: [UserIdentity]
+    range: [NotificationRequest]
   hasOutStream:
     domain: [Transform]
     range: [Stream]
   hasProcessDefinition:
     domain: [Transform]
     range: [ProcessDefinition]
-  hasSubscription:
-    domain: [Transform, ExchangePoint]
-    range: [Subscription]
   hasStream:
     domain: [Replay, DataProcess, DataProduct, Dataset, ExchangePoint, Subscription]
     range: [Stream]
-  hasTopology:
-    domain: [Stream, Subscription]
-    range: [TopicTopology]
+  hasStreamDefinition:
+    domain: [Stream, InstrumentModel, DataProcessDefinition]
+    range: [StreamDefinition]
+  hasSubscription:
+    domain: [Transform, ExchangePoint]
+    range: [Subscription]
   hasTopicTopology:
     domain: [ExchangePoint]
+    range: [TopicTopology]
+  hasTopology:
+    domain: [Stream, Subscription]
     range: [TopicTopology]
   hasTransform:
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
-  hasNotification:
-    domain: [UserIdentity]
-    range: [NotificationRequest]
-  hasInputStreamDefinition:
-    domain: [DataProcessDefinition]
-    range: [StreamDefinition]
-  hasStreamDefinition:
-    domain: [Stream, InstrumentModel, DataProcessDefinition]
-    range: [StreamDefinition]
-  hasIngestionConfiguration:
-    domain: [DatasetIngestionConfiguration]
-    range: [IngestionConfiguration]
 # COI
   affiliatedWith:
     domain: [Org]

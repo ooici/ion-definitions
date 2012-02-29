@@ -34,6 +34,7 @@ Attachment: !Extends_InformationResource
   attachment_type: !AttachmentType
   content: {}
   content_type: ""  # MIME type
+  resource_id: ""   # Associated resource ID, for easier indexing
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 

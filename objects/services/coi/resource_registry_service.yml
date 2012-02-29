@@ -64,18 +64,15 @@ methods:
     docstring: |
       Alter object lifecycle according to given transition event. Throws exception
       if resource object does not exist or given transition_event is unknown/illegal.
-      The optional lcstate argument asserts that the current life cycle state matches.
       The new life cycle state after applying the transition is returned.
     in:
       resource_id: ""
       transition_event: ""
-      current_lcstate: ""
     out:
       lcstate: ""
     throws:
       NotFound: resource object does not exist
-      BadRequest: transition event unknown
-      Inconsistent: resource not in current_state or transition illegal in current state
+      BadRequest: transition event unknown or illegal in current state; resource type has no lifecycle
       Conflict: race condition while trying to update
 
   set_lifecycle_state:
@@ -86,12 +83,10 @@ methods:
     in:
       resource_id: ""
       target_lcstate: ""
-      current_lcstate: ""
     out:
     throws:
       NotFound: resource object does not exist
-      BadRequest: target state unknown
-      Inconsistent: resource not in current_state or transition illegal in current state
+      BadRequest: target state unknown or resource type has no lifecycle
       Conflict: race condition while trying to update
 
   # -----------------

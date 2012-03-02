@@ -6,9 +6,6 @@
 
 PredicateTypes:
 #SA
-  hasAttachment:
-    domain: [Resource]
-    range: [Attachment]
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [LogicalPlatform, LogicalInstrument]
@@ -114,7 +111,7 @@ PredicateTypes:
     domain: [TaskableResource, PlatformDevice, InstrumentDevice, ExternalDataset]
     range: [AgentInstance, PlatformAgentInstance,InstrumentAgentInstance, ExternalDataAgentInstance]
   hasAttachment:
-    domain: [InstrumentDevice]
+    domain: [Resource]
     range: [Attachment]
   hasCredentials:
     domain: [UserIdentity]

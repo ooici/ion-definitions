@@ -91,19 +91,30 @@ methods:
 
   # -----------------
 
-  add_attachment:
+  create_attachment:
     docstring: |
       Add an attachment to a resource. The attachment is of specified type.
+      If no resource_id is provided, the attachment is created standalone.
     in:
       resource_id: ""
       attachment: !Attachment
     out:
       attachment_id: ""
     throws:
-      NotFound: resource object does not exist
+      NotFound: resource object does not exist if resource_id given
       BadRequest: bad attachment type or content
 
-  remove_attachment:
+  read_attachment:
+    docstring: |
+      Reads an attachment by id.
+    in:
+      attachment_id: ""
+    out:
+      attachment: !Attachment
+    throws:
+      NotFound: attachment does not exist
+
+  delete_attachment:
     docstring: |
       Remove an attachment from a resource.
     in:
@@ -111,6 +122,23 @@ methods:
     out:
     throws:
       NotFound: attachment does not exist
+
+  find_attachments:
+    docstring: |
+      Returns list of attachment from given resource id.
+      Can limit the number of results and reverse the sort order. Default result order is oldest
+      attachment first.
+    in:
+      resource_id: ""
+      limit: 0
+      descending: False
+      include_content: False
+      id_only: True
+    out:
+      attachment_list: []
+    throws:
+      NotFound: resource does not exist
+
 
   # -----------------
 
@@ -185,9 +213,13 @@ methods:
 
   find_associations:
     docstring: |
-        Find associations by subject, predicate, object. Either subject and
-        object have to be provided or predicate only. Returns either a list
-        of associations or a list of association ids.
+        Find associations by subject, predicate, object and assoc_type.
+        If subject and object are provided (with optional predicate and assoc_type),
+        the directed association is returned.
+        If subject only is provided (with optional predicate and assoc_type), any associations
+        as subject or object are returned.
+        Or provide predicate only. Returns either a list
+        of Association objects or a list of association ids.
     in:
       subject: ""
       predicate: ""

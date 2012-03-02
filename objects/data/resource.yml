@@ -25,16 +25,19 @@ ResourceLifeCycle: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
-AttachmentType: !enum (values=(BLOB), default=BLOB)
+AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
+  # ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application
+  # BLOB: the content is a binary
+  # OBJECT: the content is an arbitrary object, such as a dict, list
 
 ---
 
 Attachment: !Extends_InformationResource
   # To identify attachments to resources
   attachment_type: !AttachmentType
-  content: {}
   content_type: ""  # MIME type
-  resource_id: ""   # Associated resource ID, for easier indexing
+  content: {}
+  object_id: ""   # Associated object (resource) ID, for easier indexing
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 

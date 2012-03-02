@@ -144,8 +144,8 @@ PredicateTypes:
     domain: [Org]
     range: [Resource]
   hasRole:
-    domain: [Conversation,UserIdentity]
-    range: [ConversationRole,UserRole]
+    domain: [Conversation,UserIdentity,Org]
+    range: [ConversationRole,UserRole,UserRole]
   hasType:
     domain: [Conversation]
     range: [ServiceDefinition]

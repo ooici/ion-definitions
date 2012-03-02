@@ -7,7 +7,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Org+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [policy_management,resource_registry]
 
 methods:
   create_org:
@@ -67,33 +67,84 @@ methods:
     throws:
       NotFound: object with specified name does not exist
 
+  # -----------------
+
+  add_user_role:
+    docstring: |
+       Adds a UserRole to an Org.
+       Throws exception if either id does not exist.
+    in:
+      org_id: ""
+      user_role_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified name does not exist
+
+  remove_user_role:
+    docstring: |
+       Removes a UserRole from an Org.
+       Throws exception if either id does not exist.
+    in:
+      org_id: ""
+      user_role_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified name does not exist
+
+  find_org_roles:
+    docstring: |
+      Returns a list of roles available in an Org. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+    out:
+      user_role_list: []
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
-  affiliate_org:
+  grant_role:
     docstring: |
-      Creates an association between multiple Orgs as an affiliation
-      so that they may coordinate activities between them.
-      Throws a NotFound exception if neither id is found.
+      Grants a defined role within an organization to a specific user. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
     in:
       org_id: ""
-      affiliate_org_id: ""
+      user_id: ""
+      user_role_id: ""
+      scope: !RoleScope
     out:
       success: True
     throws:
       NotFound: object with specified id does not exist
 
-  unaffiliate_org:
+  revoke_role:
     docstring: |
-      Removes an association between multiple Orgs as an affiliation.
-      Throws a NotFound exception if neither id is found.
+      Revokes a defined role within an organization to a specific user. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
     in:
       org_id: ""
-      affiliate_org_id: ""
+      user_id: ""
+      user_role_id: ""
     out:
       success: True
     throws:
       NotFound: object with specified id does not exist
+
+  find_roles_by_user:
+    docstring: |
+      Returns a list of organization roles for a specific user. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      user_id: ""
+    out:
+      user_role_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
 
   # -----------------
 
@@ -133,6 +184,35 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  find_enrolled_users:
+    docstring: |
+      Returns a list of users enrolled in an Org. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+    out:
+      user_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
+
+  has_permission:
+    docstring: |
+      Returns a boolean of the specified user has permission for the specified action on a specified resource. Will
+      throw a NotFound exception if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      user_id: ""
+      action_id: ""
+      resource_id: ""
+    out:
+      has_permission: False
+    throws:
+      NotFound: object with specified id does not exist
+
+
 
   # ---------------------------
 
@@ -160,3 +240,32 @@ methods:
       success: True
     throws:
       NotFound: object with specified id does not exist
+
+
+  # -----------------
+
+  affiliate_org:
+    docstring: |
+      Creates an association between multiple Orgs as an affiliation
+      so that they may coordinate activities between them.
+      Throws a NotFound exception if neither id is found.
+    in:
+      org_id: ""
+      affiliate_org_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  unaffiliate_org:
+    docstring: |
+      Removes an association between multiple Orgs as an affiliation.
+      Throws a NotFound exception if neither id is found.
+    in:
+      org_id: ""
+      affiliate_org_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+

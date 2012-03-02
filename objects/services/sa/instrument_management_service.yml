@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
 
-dependencies: [resource_registry, data_acquisition_management, data_product_management]
+dependencies: [resource_registry, data_acquisition_management, data_product_management, process_dispatcher]
 
 methods:
   # -----------------
@@ -103,6 +103,17 @@ methods:
     out:
       instrument_device_list: []
 
+
+  #place holder: an orchestration method to launch and connect to the InstAgent
+  activate_instrument:
+    docstring: Create and launch the Instagent  Instance for this device, configure the InstAgentInstance
+    in:
+      instrument_device_id: ""
+    out:
+      instrument_agent_instance_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   create_instrument_model:
     docstring: The instrument model defines specifications for a group of instruments defined by the manufacturers model number.

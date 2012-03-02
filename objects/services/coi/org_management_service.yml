@@ -72,12 +72,11 @@ methods:
   add_user_role:
     docstring: |
        Adds a UserRole to an Org. Will call Policy Management Service to actually
-       create the role based on name and description if the role by the specified
+       create the role object that is passed in, if the role by the specified
        name does not exist. Throws exception if either id does not exist.
     in:
       org_id: ""
-      name: ""
-      description: ""
+      user_role: !UserRole
     out:
       user_role_id: ""
     throws:

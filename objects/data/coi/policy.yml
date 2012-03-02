@@ -1,5 +1,6 @@
 UserRole: !Extends_InformationResource
-  org_id: ""    #TODO - replace when bettern indexing in couch is available.
+  org_id: ""    #TODO - perhaps replace when better indexing in couch is available.
+  label: ""  # Can be human readable
 
 Policy: !Extends_InformationResource
   definition_type: ""

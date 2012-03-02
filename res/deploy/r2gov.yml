@@ -108,13 +108,32 @@ apps:
     version: 0.1
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
 
+#DM
+
+  - name: PubSubResource
+    version: 0.1
+    processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+
+  - name: transform_management_service
+    version: 0.1
+    processapp: [transform_management_service, ion.services.dm.transformation.transform_management_service, TransformManagementService]
+
 
 # SA services
+
+  - name: data_acquisition_management
+    version: 0.1
+    processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
 
 
   - name: data_product_management
     version: 0.1
     processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
+
+
+  - name: data_process_management
+    version: 0.1
+    processapp: [data_process_management, ion.services.sa.process.data_process_management_service, DataProcessManagementService]
 
   - name: instrument_management_service
     version: 0.1

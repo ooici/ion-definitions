@@ -521,6 +521,20 @@ methods:
       instrument_agent_list: []
     
 
+  find_instrument_device_by_instrument_agent_instance:
+    in:
+      instrument_agent_instance_id: ""
+    out:
+      instrument_device_list: []
+    
+  
+  find_instrument_agent_instance_by_instrument_device:
+    in:
+      instrument_device_id: ""
+    out:
+      instrument_agent_list: []
+    
+
   find_platform_device_by_instrument_device:
     in:
       instrument_device_id: ""

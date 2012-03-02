@@ -91,6 +91,13 @@ container:
       users: /tmp/ion/usr
       resource: /tmp/ion/res
       library: /tmp/ion/lib
+
+  service_gateway:
+    web_server:
+      port: 5000
+      hostname: localhost
+    trusted_originators: []  #Optional list of trusted addresses; an empty list means open system
+
       
 # TBD: Rename to "container". See there.
 cc:
@@ -169,10 +176,6 @@ service:
 external_data_agent_management:
   persistent: true
 
-# TBD: Rename container.service_gateway
-web_server:
-  port: 5000
-  hostname: localhost
 
 # ----------------------------------------------------------------------------------
 # The "event" root entry defines event types and event originators, and it

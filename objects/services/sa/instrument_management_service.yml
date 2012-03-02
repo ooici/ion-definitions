@@ -104,7 +104,19 @@ methods:
       instrument_device_list: []
 
 
-  #place holder: an orchestration method to launch and connect to the InstAgent
+  #Orchestration method to add the instrument to the ION system
+  register_instrument:
+    docstring: Create the instrument device and connect with Model/Agent
+    in:
+      instrument_device: !InstrumentDevice
+      instrument_model_id: ""
+    out:
+      instrument_device_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  #Orchestration method to launch and connect to the InstAgent
   activate_instrument:
     docstring: Create and launch the Instagent  Instance for this device, configure the InstAgentInstance
     in:

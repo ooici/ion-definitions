@@ -121,6 +121,7 @@ methods:
     docstring: Create and launch the Instagent  Instance for this device, configure the InstAgentInstance
     in:
       instrument_device_id: ""
+      instrument_agent_instance: !InstrumentAgentInstance
     out:
       instrument_agent_instance_id: ""
     throws:

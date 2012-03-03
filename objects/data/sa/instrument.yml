@@ -40,3 +40,14 @@ InstrumentAgent: !Extends_AgentDefinition
 
 
 InstrumentAgentInstance: !Extends_AgentInstance
+  agent_process_id: ""
+  driver_module: ""
+  driver_class: ""
+  svr_addr: ""
+  cmd_port: ""
+  evt_port: ""
+  comms_method: ""
+  comms_device_address: ""
+  comms_device_port: ""
+  comms_server_address: ""
+  comms_server_port: ""

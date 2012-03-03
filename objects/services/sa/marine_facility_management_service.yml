@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Marine+Facility+Management+Service
 
-dependencies: [resource_registry, instrument_management, data_product_management]
+dependencies: [resource_registry, instrument_management, data_product_management, org_management]
 
 # TODO:
 # - Observatory policy
@@ -35,12 +35,17 @@ methods:
       marine_facility_id: ""
     out:
 
-
   find_marine_facilities:
     in:
       filters: !ResourceFilter
     out:
       marine_facility_list: []
+
+  find_marine_facility_org:
+    in:
+      marine_facility_id: ""
+    out:
+      org_id: ""
 
   # -----------------
 

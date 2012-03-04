@@ -14,6 +14,8 @@ system:
 
   # The Org (name) that starts the system
   root_org: ION
+  # The name of the ION System UserIdentity
+  system_actor: ionsystem
   # Load config from directory (merge over pyon.yml+pyon.local.yml but allow command line override)
   config_from_directory: True
   # Global flag to use a mock datastore instead of CouchDB if True
@@ -226,8 +228,4 @@ event:
             del_subscription, 
             ingestion_processing, 
             stream_ingestion_policy]
- 
-device:
-  sbe37:
-     host: sbe37-simulator.oceanobservatories.org
-     port: 4001 
+

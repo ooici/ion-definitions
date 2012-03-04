@@ -29,9 +29,9 @@ apps:
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
 
-  - name: service_gateway
+  - name: identity_management
     version: 0.1
-    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
 
   - name: policy_management
     version: 0.1
@@ -41,6 +41,9 @@ apps:
     version: 0.1
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
 
+  - name: service_gateway
+    version: 0.1
+    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
 
 # DM services
 

@@ -62,6 +62,16 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  find_user_identity_by_name:
+    docstring: |
+      Return the UserIdentity object whose name attribute matches the passed value.
+    in:
+      name: ""
+    out:
+      user_info: !UserIdentity
+    throws:
+      NotFound: failed to find UserIdentity
+      Inconsistent: Multiple UserIdentity objects matched name
   # -----------------
   # Working with external identities
 

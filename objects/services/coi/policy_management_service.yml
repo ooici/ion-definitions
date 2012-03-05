@@ -215,21 +215,3 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
-  find_roles:
-    docstring: |
-      Returns a list of UserRole objects defined in the resource registry.
-    in:
-    out:
-      user_role_list: []
-    throws:
-
-  find_role:
-    docstring: |
-      Returns UserRole object that matches the specified name.
-    in:
-      name: ""
-    out:
-      user_role: !UserRole
-    throws:
-      NotFound: object with specified id does not exist

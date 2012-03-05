@@ -229,3 +229,8 @@ event:
             ingestion_processing, 
             stream_ingestion_policy]
 
+
+device:
+  sbe37:
+    host: sbe37-simulator.oceanobservatories.org
+    port: 4001

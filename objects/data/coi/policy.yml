@@ -4,6 +4,8 @@ UserRole: !Extends_InformationResource
 
 Policy: !Extends_InformationResource
   definition_type: ""
+  rule: ""
+  enabled: True
   definition: {}
 
 RoleScope:

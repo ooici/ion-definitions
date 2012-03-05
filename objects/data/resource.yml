@@ -64,7 +64,7 @@ ContactInformation:
     value: ""
 
 Institution:
-  address: ""
+  name: ""
   phone: ""
   email: ""
   website: ""

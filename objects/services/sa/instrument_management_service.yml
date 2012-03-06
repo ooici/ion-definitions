@@ -418,6 +418,18 @@ methods:
       instrument_agent_id: ""
     out:
 
+  assign_stream_definition_to_instrument_model:
+    in:
+      stream_definition_id: ""
+      instrument_model_id: ""
+    out:
+
+  unassign_stream_definition_from_instrument_model:
+    in:
+      stream_definition_id: ""
+      instrument_model_id: ""
+    out:
+
   assign_platform_agent_instance_to_platform_agent:
     in:
       platform_agent_instance_id: ""
@@ -546,6 +558,21 @@ methods:
       instrument_device_id: ""
     out:
       instrument_agent_list: []
+   
+  # TODO: uncomment for completeness
+  #
+  # find_stream_definition_by_instrument_model:
+  #   in:
+  #     instrument_model_id: ""
+  #   out:
+  #     stream_definition_list: []
+  #  
+  #
+  # find_instrument_model_by_stream_definition:
+  #   in:
+  #     stream_definition_id: ""
+  #   out:
+  #     instrument_model_list: []
     
 
   find_platform_device_by_instrument_device:

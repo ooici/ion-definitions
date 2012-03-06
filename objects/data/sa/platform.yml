@@ -1,4 +1,4 @@
-LogicalPlatform: !Extends_InformationResource
+LogicalPlatform: !Extends_Site
  # Current to version 17 of confluence resource page: 
  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Logical+Platform
 

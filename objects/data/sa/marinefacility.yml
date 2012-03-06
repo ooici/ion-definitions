@@ -6,7 +6,7 @@ InstrumentsList:
 
 ---
 
-MarineFacility: !Extends_InformationResource
+MarineFacility: !Extends_Site
 
   # Current to version 22 of confluence resource page:  
   # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32801152
@@ -60,20 +60,3 @@ MarineFacility: !Extends_InformationResource
   # List of instruments that are available for deployment 
   instruments_not_deployed_by_type: !InstrumentsList 
   
-
-Site: !Extends_InformationResource
-
-  # Current to version 27 of confluence resource page:  
-  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32277834
-
-  # An entity that encompasses a defined location, time, and/or data-producing entities
-  
-  # Specified bounds in 2 or 3 dimensions within which site exists
-  # Mandatory
-  geospatial_constraint: !GeospatialBounds
-  
-  # Specified time constraint within which site exist
-  temporal_constraint: ""   # what is TemporalConstraint object?
-  
-  # Collection of entities which collectively constrain site
-  entity_constraint: ""     # what is EntityConstraint object?

@@ -63,6 +63,10 @@ apps:
 
 # DM services
 
+  - name: pubsub_management
+    version: 0.1
+    processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+
   - name: ingestion_management
     version: 0.1
     processapp: [ingestion_management, ion.services.dm.ingestion.ingestion_management_service, IngestionManagementService]

@@ -121,19 +121,14 @@ DataFormat:
 
 ---
 
-Site: !Extends_InformationResource
+FrameOfReference: !Extends_InformationResource
 
-  # Current to version 27 of confluence resource page:
-  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32277834
-
-  # An entity that encompasses a defined location, time, and/or data-producing entities
-
-  # Specified bounds in 2 or 3 dimensions within which site exists
+  # Specified bounds in 2 or 3 dimensions within which entity exists
   # Mandatory
   geospatial_constraint: !GeospatialBounds
 
-  # Specified time constraint within which site exist
+  # Specified time constraint within which entity exists
   temporal_constraint: ""   # what is TemporalConstraint object?
 
-  # Collection of entities which collectively constrain site
+  # Collection of entities which collectively constrain the entity
   entity_constraint: ""     # what is EntityConstraint object?

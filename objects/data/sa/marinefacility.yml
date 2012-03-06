@@ -6,7 +6,22 @@ InstrumentsList:
 
 ---
 
-MarineFacility: !Extends_Site
+Site: !Extends_FrameOfReference
+
+  # Current to version 27 of confluence resource page:
+  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32277834
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
+
+Observatory: !Extends_FrameOfReference
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
+
+---
+
+MarineFacility: !Extends_Observatory
 
   # Current to version 22 of confluence resource page:  
   # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32801152

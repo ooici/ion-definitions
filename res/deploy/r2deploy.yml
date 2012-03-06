@@ -199,6 +199,43 @@ apps:
 
 
   ##### AS SERVICES
+  # real time stream emulator
+  - name: viz_stream_realtime
+    description: A process that emulates a real time stream from a NetCDF file
+    version: 0.1
+    processapp: [viz_stream_realtime, examples.viz_transform.viz_transform, VizStreamProducer]
+    config:
+        process:
+            type: stream_process
+        viz_stream:
+            name: viz_data_realtime
+            dataset: /Users/raj/data/CGSN_AS02CPSM/AS02CPSM_sbe16.nc
+            interval: 4000
+
+    # real time stream emulator with sine wave output
+  - name: viz_stream_realtime_sine
+    description: A process that emulates a real time stream from a sinusoidal source
+    version: 0.1
+    processapp: [viz_stream_realtime_sine, examples.viz_transform.viz_transform, VizStreamProducer]
+    config:
+        process:
+            type: stream_process
+        viz_stream:
+            name: viz_data_realtime_sinusoidal
+            dataset: sinusoidal
+            interval: 1000
+            samples: 60
+            amplitude: 2.0
+
   - name: visualization_workflow_management
     version: 0.1
     processapp: [visualization_workflow_management, ion.services.ans.visualization_workflow_management_service, VisualizationWorkflowManagementService]
+
+  - name: visualization_service
+    description: Responsible for spawning and maintaining viz transform processes and resulting viz data
+    version: 0.1
+    processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
+    config:
+        data_products:
+            timeout: 10
+            names: [viz_data_realtime viz_data_realtime_sinusoidal]

@@ -3,7 +3,7 @@
 name: resource_agent
 docstring: Behaviors for any resource agent
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Resource+Agent
-dependencies: [directory]
+dependencies: [directory, resource_registry]
 methods:
   # -----------------
   # Governance interface

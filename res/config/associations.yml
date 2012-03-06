@@ -9,6 +9,9 @@ PredicateTypes:
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [LogicalPlatform, LogicalInstrument]
+  hasDeployment:
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [LogicalPlatform, LogicalInstrument]    
   hasDataset:
     domain: [DataProducer, DataProduct]
     range: [Dataset]

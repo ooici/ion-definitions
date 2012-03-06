@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
 
-dependencies: [resource_registry, data_acquisition_management, data_product_management, process_dispatcher]
+dependencies: [resource_registry, data_acquisition_management, data_product_management, process_dispatcher, pubsub_management]
 
 methods:
   # -----------------
@@ -382,6 +382,32 @@ methods:
       platform_device_id: ""
     out:
 
+  deploy_instrument_device_to_logical_instrument:
+    docstring: link a physical instrument to a logical instrument
+    in:
+      instrument_device_id: ""
+      logical_instrument_id: ""
+    out:
+
+  undeploy_instrument_device_from_logical_instrument:
+    in:
+      instrument_device_id: ""
+      logical_instrument_id: ""
+    out:
+
+  deploy_platform_device_to_logical_platform:
+    docstring: link a physical platform to a logical platform
+    in:
+      platform_device_id: ""
+      logical_platform_id: ""
+    out:
+
+  undeploy_platform_device_from_logical_platform:
+    in:
+      platform_device_id: ""
+      logical_platform_id: ""
+    out:
+
   assign_instrument_agent_instance_to_instrument_agent:
     in:
       instrument_agent_instance_id: ""
@@ -416,6 +442,18 @@ methods:
     in:
       instrument_model_id: ""
       instrument_agent_id: ""
+    out:
+
+  assign_stream_definition_to_instrument_model:
+    in:
+      stream_definition_id: ""
+      instrument_model_id: ""
+    out:
+
+  unassign_stream_definition_from_instrument_model:
+    in:
+      stream_definition_id: ""
+      instrument_model_id: ""
     out:
 
   assign_platform_agent_instance_to_platform_agent:
@@ -546,6 +584,21 @@ methods:
       instrument_device_id: ""
     out:
       instrument_agent_list: []
+   
+  # TODO: uncomment for completeness
+  #
+  # find_stream_definition_by_instrument_model:
+  #   in:
+  #     instrument_model_id: ""
+  #   out:
+  #     stream_definition_list: []
+  #  
+  #
+  # find_instrument_model_by_stream_definition:
+  #   in:
+  #     stream_definition_id: ""
+  #   out:
+  #     instrument_model_list: []
     
 
   find_platform_device_by_instrument_device:

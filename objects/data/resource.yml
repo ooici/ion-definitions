@@ -119,4 +119,16 @@ DataFormat:
   nominal_sampling_rate_minimum: "" # Hz
   nominal_sampling_rate_maximum: "" # Hz
 
+---
 
+FrameOfReference: !Extends_InformationResource
+
+  # Specified bounds in 2 or 3 dimensions within which entity exists
+  # Mandatory
+  geospatial_constraint: !GeospatialBounds
+
+  # Specified time constraint within which entity exists
+  temporal_constraint: ""   # what is TemporalConstraint object?
+
+  # Collection of entities which collectively constrain the entity
+  entity_constraint: ""     # what is EntityConstraint object?

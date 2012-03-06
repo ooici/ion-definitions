@@ -1,4 +1,4 @@
-LogicalInstrument: !Extends_InformationResource
+LogicalInstrument: !Extends_FrameOfReference
   # This is the logical instrument that is part of the observatory
   
 

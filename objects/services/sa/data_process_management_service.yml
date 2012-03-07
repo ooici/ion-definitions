@@ -46,16 +46,15 @@ methods:
       data_process_definition_list: []
 
   # -----------------
-
   create_data_process:
     docstring: Create an instance or realization of a data process definition.
     in:
       data_process_definition_id: ""
       in_data_product_id: ""
-      out_data_product_id: ""
+      out_data_products: {}
     out:
       data_process_id: ""
-
+      
   update_data_process:
     #This op may not make sense at this time
     in:

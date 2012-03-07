@@ -1,5 +1,20 @@
-Scenario,ID,marine_facility_id,site/name,site/description,site/geospatial_constraint/geospatiallatmin,site/geospatial_constraint/geospatiallatmax,site/geospatial_constraint/geospatiallonmin,site/geospatial_constraint/geospatiallonmax,site/geospatial_constraint/minbottomdepth,site/geospatial_constraint/maxbottomdepth,site/geospatial_constraint/geospatialverticalpositive,site/temporal_constraint,site/entity_constraint
-DOC,,,site name,site description,"location bounds as minLat,maxLat,minLon,maxLon,minDepth,maxDepth (positive down system)",,,,,,,time bounds as ISO8601 interval
-LCA_DEMO_PRE,SITE_CE02SHSM,MF_1,Slope Base Shallow Profiler,Endurance OR Slope Base Mooring Shallow Profiler (winched) Site,44.55,44.65,-125.45,-125.35,0,205
-LCA_DEMO_PRE,SITE_CE02SH,MF_1,Slope Base,"Slope Base Site. the CE02SH is made up, to encompass all Slope Base sites",44.5,44.7,-125.5,-125.3,0,3000
-LCA_DEMO_PRE,SITE_CE02SHBS,MF_1,Slope Base 200m,"Endurance OR Slope Base Mooring 200m Platform Site. the CE02SHBS is made up, can't find a site code to match the 200m platform",44.55,44.65,-125.45,-125.35,195,205
+Scenario,ID,owner_id,marine_facility_id,parent_site_id,site/name,site/description,site/geospatial_constraint/geospatiallatmin,site/geospatial_constraint/geospatiallatmax,site/geospatial_constraint/geospatiallonmin,site/geospatial_constraint/geospatiallonmax,site/geospatial_constraint/minbottomdepth,site/geospatial_constraint/maxbottomdepth,site/geospatial_constraint/geospatialverticalpositive,site/temporal_constraint,site/entity_constraint
+DOC,,,,,site name,site description,"location bounds as minLat,maxLat,minLon,maxLon,minDepth,maxDepth (positive down system)",,,,,,,time bounds as ISO8601 interval
+LCA_DEMO_PRE,SITE_CE02SH,,MF_1,,Slope Base,"Slope Base Site. the CE02SH is made up, to encompass all Slope Base sites",44.5,44.7,-125.5,-125.3,0,3000
+LCA_DEMO_PRE,SITE_CE02SHSM,,,SITE_CE02SH,Slope Base Shallow Profiler,Endurance OR Slope Base Mooring Shallow Profiler (winched) Site,44.55,44.65,-125.45,-125.35,0,205
+LCA_DEMO_PRE,SITE_CE02SHBS,,,SITE_CE02SH,Slope Base 200m,"Endurance OR Slope Base Mooring 200m Platform Site. the CE02SHBS is made up, can't find a site code to match the 200m platform",44.55,44.65,-125.45,-125.35,195,205
+
+IN_PROGRESS,SITE_PN1A,,MF_1,,PN1A - Slope Base,Primary Node Slope Base
+IN_PROGRESS,SITE_PN1B,,MF_1,,PN1B - Southern Hydrate,Primary Node Southern Hydrate Ridge
+IN_PROGRESS,SITE_PN1C,,MF_1,,PN1C - 600 m site Newport,Primary Node Coastal Scale Nodes Endurance Oregon Line Extension; 600 m site Newport
+IN_PROGRESS,SITE_PN1D,,MF_1,,PN1D,Primary Node Coastal Scale Nodes Endurance Oregon Line Extension
+IN_PROGRESS,SITE_PN3A,,MF_1,,PN3A - Base of Axial,Primary Node Base of Axial Seamount
+IN_PROGRESS,SITE_PN3B,,MF_1,,PN3B - Axial Summit,Primary Node Eastern Summit
+IN_PROGRESS,SITE_PN5A,,MF_1,,PN5A - Mid-Plate,Primary Node Mid-Plate
+
+IN_PROGRESS,SITE_CE,,MF_2,,Endurance Array,Endurance Array
+IN_PROGRESS,SITE_CP,,MF_2,,Pioneer Array,Pioneer Array
+IN_PROGRESS,SITE_GA,,MF_2,,Argentine Basin,Global Array Argentine Basin
+IN_PROGRESS,SITE_GI,,MF_2,,Irminger Sea,Global Array Irminger Sea
+IN_PROGRESS,SITE_GP,,MF_2,,Station Papa,Global Array Station Papa
+IN_PROGRESS,SITE_GS,,MF_2,,Southern Ocean,Global Array Southern Ocean

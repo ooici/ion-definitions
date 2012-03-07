@@ -1,0 +1,7 @@
+Scenario,ID,pm/name,pm/description,pm/manufacturer/name,pm/OOI_node_type,pm/ION_onboard,pm/shore_networked,pm/platform_type,pm/maximum_crew
+LCA_DEMO_PRE,PM1,Shallow Profiler,Shallow Profiler Model w/200M platform,RSN,SP,FALSE,Intermittent,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+LCA_DEMO_PRE,PM2,Medium Power J-Box,Medium Power Junction Box (J-Box) Model,RSN,MJ,FALSE,Always Fast,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM3,200m Platform,200-meter Platform for Shallow Profiler Model,RSN,FI,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/mooring,0
+LCA_DEMO_PRE,PM4,Deep Profiler,Wire-following Deep Profiler Model,RSN,WF,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+LCA_DEMO_PRE,PM5,Low Power J-Box,Low Power Junction Box (J-Box) Model,RSN,LJ,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM6,Low Voltage Node,Low Voltage Node Model,RSN,??,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0

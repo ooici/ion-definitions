@@ -1,0 +1,3 @@
+Scenario,ID,subject,name,email
+LCA_DEMO_PRE,USER_1,/DC=org/DC=cilogon/C=US/O=Google/CN=Owen Ownerrep A893,Owen Ownerrep,owenownerrep@gmail.com
+LCA_DEMO_PRE,USER_2,/DC=org/DC=cilogon/C=US/O=Google/CN=Mike Manager A892,Mike Manager,mikemanagerooi@gmail.com

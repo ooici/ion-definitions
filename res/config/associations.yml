@@ -162,6 +162,9 @@ PredicateTypes:
   supportsExecutionEngine:
     domain: [ProcessDefinition]
     range: [ExecutionEngineDefinition]
+  hasProcessDefinition:
+    domain: [Resource]
+    range: [ProcessDefinition]
 # EOI
   hasProvider:
     domain: [DataSource]

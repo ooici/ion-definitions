@@ -87,11 +87,6 @@ DataProduct: !Extends_InformationResource
   dataset_configuration_id: ""
 
 
-  # todo: remove when this is auto-created by IngestionMmtSvc
-  # Ingestion Configuration for the persisted product. THIS IS A TEMP SOLUTION.
-  ingestion_configuration_id: ""
-
-
 
 
 

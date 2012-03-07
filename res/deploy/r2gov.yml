@@ -115,6 +115,13 @@ apps:
     version: 0.1
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
 
+# CEI services
+
+  - name: process_dispatcher
+    description: Process Dispatcher Service
+    version: 0.1
+    processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
+
 #DM
 
   - name: PubSubResource

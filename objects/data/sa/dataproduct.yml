@@ -83,6 +83,9 @@ DataProduct: !Extends_InformationResource
 
   # Dataset Id for the persisted product
   dataset_id: ""
+  # Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
+  dataset_configuration_id: ""
+
 
   # todo: remove when this is auto-created by IngestionMmtSvc
   # Ingestion Configuration for the persisted product. THIS IS A TEMP SOLUTION.

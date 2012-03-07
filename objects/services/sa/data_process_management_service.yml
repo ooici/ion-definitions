@@ -45,6 +45,42 @@ methods:
     out:
       data_process_definition_list: []
 
+  assign_input_stream_definition_to_data_process_definition:
+    docstring: Connect the input  stream with a data process definition
+    in:
+      stream_definition_id: ""
+      data_process_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_input_stream_definition_from_data_process_definition:
+    docstring: Disonnect the input stream from a data process definition
+    in:
+      stream_definition_id: ""
+      data_process_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_stream_definition_to_data_process_definition:
+    docstring: Connect the output stream with a data process definition
+    in:
+      stream_definition_id: ""
+      data_process_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_stream_definition_from_data_process_definition:
+    docstring: Disonnect the output stream from a data process definition
+    in:
+      stream_definition_id: ""
+      data_process_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
   # -----------------
   create_data_process:
     docstring: Create an instance or realization of a data process definition.

@@ -35,6 +35,18 @@ methods:
       instrument_agent_instance_id: ""
     out:
 
+  start_instrument_agent_instance:
+    docstring: Launch the instument agent instance and return the id. Agent instance must first be created and associated with a instrument device
+    in:
+      instrument_agent_instance_id: ""
+    out:
+
+  stop_instrument_agent_instance:
+    docstring: Deactivate the instrument agent instance
+    in:
+      instrument_agent_instance_id: ""
+    out:
+
   find_instrument_agent_instances:
     in:
       filters: !ResourceFilter
@@ -116,17 +128,6 @@ methods:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
-  #Orchestration method to launch and connect to the InstAgent
-  activate_instrument:
-    docstring: Create and launch the Instagent  Instance for this device, configure the InstAgentInstance
-    in:
-      instrument_device_id: ""
-      instrument_agent_instance: !InstrumentAgentInstance
-    out:
-      instrument_agent_instance_id: ""
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
-      NotFound: object with specified id does not exist
 
   create_instrument_model:
     docstring: The instrument model defines specifications for a group of instruments defined by the manufacturers model number.

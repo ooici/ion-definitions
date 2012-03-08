@@ -408,6 +408,33 @@ methods:
       logical_platform_id: ""
     out:
 
+
+  deploy_as_primary_instrument_device_to_logical_instrument:
+    docstring: link a physical instrument to a logical instrument
+    in:
+      instrument_device_id: ""
+      logical_instrument_id: ""
+    out:
+
+  undeploy_primary_instrument_device_from_logical_instrument:
+    in:
+      instrument_device_id: ""
+      logical_instrument_id: ""
+    out:
+
+  deploy_as_primary_platform_device_to_logical_platform:
+    docstring: link a physical platform to a logical platform
+    in:
+      platform_device_id: ""
+      logical_platform_id: ""
+    out:
+
+  undeploy_primary_platform_device_from_logical_platform:
+    in:
+      platform_device_id: ""
+      logical_platform_id: ""
+    out:
+
   assign_instrument_agent_instance_to_instrument_agent:
     in:
       instrument_agent_instance_id: ""
@@ -442,6 +469,18 @@ methods:
     in:
       instrument_model_id: ""
       instrument_agent_id: ""
+    out:
+
+  assign_instrument_model_to_logical_instrument:
+    in:
+      instrument_model_id: ""
+      logical_instrument_id: ""
+    out:
+
+  unassign_instrument_model_from_logical_instrument:
+    in:
+      instrument_model_id: ""
+      logical_instrument_id: ""
     out:
 
   assign_stream_definition_to_instrument_model:
@@ -479,6 +518,19 @@ methods:
       platform_model_id: ""
       platform_device_id: ""
     out:
+
+  assign_platform_model_to_logical_platform:
+    in:
+      platform_model_id: ""
+      logical_platform_id: ""
+    out:
+
+  unassign_platform_model_from_logical_platform:
+    in:
+      platform_model_id: ""
+      logical_platform_id: ""
+    out:
+
 
   assign_instrument_device_to_platform_device:
     in:

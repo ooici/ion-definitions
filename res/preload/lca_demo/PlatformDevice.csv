@@ -1,0 +1,3 @@
+Scenario,ID,owner_id,platform_model_id,deployment_lp_ids,primary_deployment_lp_id,pd/name,pd/description,pd/serial_number,pd/model,pd/nominal_location,pd/manufacture_date
+LCA_DEMO_PRE,PD1,,PM3,,,Profiler 200m Platform 101,200-meter Platform for Shallow Profiler,101
+LCA_DEMO_PRE,PD2,,PM3,,,Profiler 200m Platform 102,200-meter Platform for Shallow Profiler,102

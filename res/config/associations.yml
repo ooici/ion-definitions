@@ -82,9 +82,6 @@ PredicateTypes:
   hasOutStream:
     domain: [Transform]
     range: [Stream]
-  hasProcessDefinition:
-    domain: [Transform]
-    range: [ProcessDefinition]
   hasStream:
     domain: [Replay, DataProcess, DataProduct, Dataset, ExchangePoint, Subscription]
     range: [Stream]

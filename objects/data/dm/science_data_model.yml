@@ -178,8 +178,8 @@ DataRecord: !Extends_AbstractDataComponent
 
 Vector: !Extends_AbstractDataComponent
   coordinate_ids: [] # contains the ids of a set of quantities or a set of ranges
-  reference_frame: "" # Any URI
-  local_frame: "" # optional
+  reference_frame: "" # Any URI - declares the coordinate system type - ie geographic, mercator, state plane etc...
+  # details the local reference such as http://www.opengis.net/def/crs/OGC/0/ECI_WGS84
 
 
 ### Above this like everything is based on SWE. Below this line I am creating
@@ -204,6 +204,7 @@ RangeSet: !Extends_AbstractDataComponent
   constraint: !AllowedValues
   nil_values_ids: [] # Nill values object ids
   reference_frame: "" # Any URI
+  reference_value: ""
   mesh_location: !CategoryElement # Where is this data located on the mesh elements? Edge, face, node...
   values_path: "" #Path to data values in binary object
   bounds_id: "" # Quantity or Count range of the values
@@ -213,7 +214,9 @@ RangeSet: !Extends_AbstractDataComponent
 ---
 
 Domain: !Extends_AbstractDataComponent
-  coordinate_vector_id: "" # the vector of coordinates for this domain
+  # Since none of the OGC coordinate systems or definitions provide for a single coordiante vector it must be split in two
+  geospatial_coordinate_vector_id: "" # the vector geospatial coordinates for this domain
+  temporal_coordinate_vector_id: "" # the vector of temporal coordinates for this domain
   mesh_id: "" # the element containing the mesh for this object
 
 ---

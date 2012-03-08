@@ -448,6 +448,18 @@ methods:
       instrument_agent_id: ""
     out:
 
+  assign_instrument_agent_instance_to_instrument_device:
+    in:
+      instrument_agent_instance_id: ""
+      instrument_device_id: ""
+    out:
+
+  unassign_instrument_agent_instance_from_instrument_device:
+    in:
+      instrument_agent_instance_id: ""
+      instrument_device_id: ""
+    out:
+
   assign_instrument_model_to_instrument_device:
     in:
       instrument_model_id: ""

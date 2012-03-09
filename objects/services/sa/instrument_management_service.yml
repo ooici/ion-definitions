@@ -1,8 +1,8 @@
 name: instrument_management
 
 docstring: |
-  This service provides overall coordination for instrument management within an observatory context. In particular it
-  coordinates the access to the instrument registries and the interaction with instrument agents.
+  This service provides overall coordination for instrument, platform and sensor management. In particular, it
+  manages instrument resource registration and the interaction with instrument agents.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
 
@@ -10,111 +10,168 @@ dependencies: [resource_registry, data_acquisition_management, data_product_mana
 
 methods:
   # -----------------
-  # Working with Physical Instrument resources
-
+  # Working with Instrument Agent Instance resources (they describe how to configure agent instances)
 
   create_instrument_agent_instance:
+    docstring: Create an InstrumentAgentInstance resource
     in:
       instrument_agent_instance: !InstrumentAgentInstance
     out:
       instrument_agent_instance_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_instrument_agent_instance:
+    docstring: Update an InstrumentAgentInstance resource
     in:
       instrument_agent_instance: !InstrumentAgentInstance
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_instrument_agent_instance:
+    docstring: Read an InstrumentAgentInstance resource
     in:
       instrument_agent_instance_id: ""
     out:
       instrument_agent_instance: !InstrumentAgentInstance
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_instrument_agent_instance:
+    docstring: Delete an InstrumentAgentInstance resource
     in:
       instrument_agent_instance_id: ""
     out:
-
-  start_instrument_agent_instance:
-    docstring: Launch the instument agent instance and return the id. Agent instance must first be created and associated with a instrument device
-    in:
-      instrument_agent_instance_id: ""
-    out:
-
-  stop_instrument_agent_instance:
-    docstring: Deactivate the instrument agent instance
-    in:
-      instrument_agent_instance_id: ""
-    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_instrument_agent_instances:
+    docstring: Find InstrumentAgentInstance resources
     in:
       filters: !ResourceFilter
     out:
       instrument_agent_instance_list: []
 
 
+  start_instrument_agent_instance:
+    docstring: |
+      Launch an instument agent instance process and return its process id. Agent instance resource
+      must exist and be associated with an InstrumentDevice
+    in:
+      instrument_agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  stop_instrument_agent_instance:
+    docstring: Deactivate the instrument agent instance process
+    in:
+      instrument_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
+  # Working with Instrument Agent definitions. These are types of device specific agent/driver combinations
 
   create_instrument_agent:
-    docstring: create a cyberinfrastructure resource that represents instrument devices to the CI using a common interface, regardless of the instrument type
+    docstring: Create an InstrumentAgent resource
     in:
       instrument_agent: !InstrumentAgent
     out:
       instrument_agent_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_instrument_agent:
+    docstring: Update an InstrumentAgent resource
     in:
       instrument_agent: !InstrumentAgent
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_instrument_agent:
+    docstring: Read an InstrumentAgent resource
     in:
       instrument_agent_id: ""
     out:
       instrument_agent: !InstrumentAgent
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_instrument_agent:
+    docstring: Delete an InstrumentAgent resource
     in:
       instrument_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_instrument_agents:
+    docstring: Find InstrumentAgent resources
     in:
       filters: !ResourceFilter
     out:
       instrument_agent_list: []
 
 
+  # -----------------
+  # Working with Physical Instrument resources
 
   create_instrument_device:
-    docstring: The key characteristic of an instrument device is that it is capable of reporting observed data through its interface. A device may be deployed in one location, retrieved, perhaps serviced, then deployed in another location.
+    docstring: |
+      Create an Instrument device resource. The key characteristic of an instrument device is that it
+      is capable of reporting observed data through its interface. A device may be deployed in one location,
+      retrieved, perhaps serviced, then deployed in another location.
     in:
       instrument_device: !InstrumentDevice
     out:
       instrument_device_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_instrument_device:
+    docstring: Update an InstrumentDevice resource
     in:
       instrument_device: !InstrumentDevice
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_instrument_device:
+    docstring: Read an InstrumentDevice resource
     in:
       instrument_device_id: ""
     out:
       instrument_device: !InstrumentDevice
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_instrument_device:
+    docstring: Delete an InstrumentDevice resource
     in:
       instrument_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_instrument_devices:
+    docstring: Find InstrumentDevice resources
     in:
       filters: !ResourceFilter
     out:
       instrument_device_list: []
 
+
+  # -----------------
+  # Working with InstrumentModel resources
 
   #Orchestration method to add the instrument to the ION system
   register_instrument:
@@ -128,31 +185,45 @@ methods:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
-
   create_instrument_model:
-    docstring: The instrument model defines specifications for a group of instruments defined by the manufacturers model number.
+    docstring: |
+      Create an InstrumentModel resource. The instrument model defines specifications for a group of
+      instruments defined by the manufacturers model number.
     in:
       instrument_model: !InstrumentModel
     out:
       instrument_model_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_instrument_model:
+    docstring: Update an InstrumentModel resource
     in:
       instrument_model: !InstrumentModel
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_instrument_model:
+    docstring: Read an InstrumentModel resource
     in:
       instrument_model_id: ""
     out:
       instrument_model: !InstrumentModel
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_instrument_model:
+    docstring: Delete an InstrumentModel resource
     in:
       instrument_model_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_instrument_models:
+    docstring: Find InstrumentModel resources
     in:
       filters: !ResourceFilter
     out:
@@ -160,198 +231,291 @@ methods:
 
 
   # -----------------
-  # Working with Physical Platform resources
-
-
+  # Working with PlatformAgentInstance resources
 
   create_platform_agent_instance:
+    docstring: |
+      Create a PlatformAgentInstance resource. This describes the parameters for starting a
+      platform specific agent/driver instance combination.
     in:
       platform_agent_instance: !PlatformAgentInstance
     out:
       platform_agent_instance_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_platform_agent_instance:
+    docstring: Update a PlatformAgentInstance resource
     in:
       platform_agent_instance: !PlatformAgentInstance
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_platform_agent_instance:
+    docstring: Read a PlatformAgentInstance resource
     in:
       platform_agent_instance_id: ""
     out:
       platform_agent_instance: !PlatformAgentInstance
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_platform_agent_instance:
+    docstring: Delete a PlatformAgentInstance resource
     in:
       platform_agent_instance_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_platform_agent_instances:
+    docstring: Find PlatformAgentInstance resources
     in:
       filters: !ResourceFilter
     out:
       platform_agent_instance_list: []
 
 
+  # -----------------
+  # Working with PlatformAgent definition resources
 
   create_platform_agent:
+    docstring: |
+      Create a PlatformAgent resource. This describes a type of platform agent/driver combination
+      for a specific platform model.
     in:
       platform_agent: !PlatformAgent
     out:
       platform_agent_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_platform_agent:
+    docstring: Update a PlatformAgent resource
     in:
       platform_agent: !PlatformAgent
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_platform_agent:
+    docstring: Read a PlatformAgent resource
     in:
       platform_agent_id: ""
     out:
       platform_agent: !PlatformAgent
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_platform_agent:
+    docstring: Delete a PlatformAgent resource
     in:
       platform_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_platform_agents:
+    docstring: Find a PlatformAgent resource
     in:
       filters: !ResourceFilter
     out:
       platform_agent_list: []
 
 
+  # -----------------
+  # Working with PlatformDevice resources. These represent the physical platforms
 
   create_platform_device:
-    docstring: Platform resources include power systems, telemetry, networking, clocks, CPU cycles and storage and multiple instruments deployed on that platform.
+    docstring: |
+      Create a PlatformDevice resource. Platforms contain power systems, telemetry, networking, clocks,
+      CPU cycles and storage and multiple instruments deployed on that platform.
     in:
       platform_device: !PlatformDevice
     out:
       platform_device_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_platform_device:
+    docstring: Update a PlatformDevice resource
     in:
       platform_device: !PlatformDevice
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_platform_device:
+    docstring: Read a PlatformDevice resource
     in:
       platform_device_id: ""
     out:
       platform_device: !PlatformDevice
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_platform_device:
+    docstring: Delete a PlatformDevice resource
     in:
       platform_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_platform_devices:
+    docstring: Find PlatformDevice resources
     in:
       filters: !ResourceFilter
     out:
       platform_device_list: []
 
 
+  # -----------------
+  # Working with PlatformModel resources. These represent types of platforms
 
   create_platform_model:
-    docstring: The Platform Model defines specifications for a group of platform instances that is defined by the manufacturers model number
+    docstring: |
+      Create a PlatformModel resource. The Platform Model defines specifications for a group of
+      platform instances that is defined by the manufacturers model number.
     in:
       platform_model: !PlatformModel
     out:
       platform_model_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_platform_model:
+    docstring: Update a PlatformModel resource
     in:
       platform_model: !PlatformModel
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_platform_model:
+    docstring: Read a PlatformModel resource
     in:
       platform_model_id: ""
     out:
       platform_model: !PlatformModel
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_platform_model:
+    docstring: Delete a PlatformModel resource
     in:
       platform_model_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_platform_models:
+    docstring: Find PlatformModel resources
     in:
       filters: !ResourceFilter
     out:
       platform_model_list: []
 
 
-
-
   # -----------------
-  # Working with Physical Sensor resources
-
+  # Working with SensorDevice resources
 
   create_sensor_device:
-    docstring: The sensor is the part of the instrument that actually translates the real-world feature into a measured observation.
+    docstring: |
+      Create a SensorDevice resource. The sensor is the part of the instrument that actually
+      translates the real-world feature into a measured observation.
     in:
       sensor_device: !SensorDevice
     out:
       sensor_device_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_sensor_device:
+    docstring: Update a SensorDevice resource
     in:
       sensor_device: !SensorDevice
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_sensor_device:
+    docstring: Read a SensorDevice resource
     in:
       sensor_device_id: ""
     out:
       sensor_device: !SensorDevice
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_sensor_device:
+    docstring: Deleate a SensorDevice resource
     in:
       sensor_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_sensor_devices:
+    docstring: Find SensorDevice resources
     in:
       filters: !ResourceFilter
     out:
       sensor_device_list: []
 
 
+  # -----------------
+  # Working with SensorModel resources, types of sensors
+
   create_sensor_model:
-    docstring: The sensor model defines specifications for a group of sensors defined by the manufacturers model number.
+    docstring: |
+      Create a SensorModel resource. The sensor model defines specifications for a group of sensors
+      defined by the manufacturers model number.
     in:
       sensor_model: !SensorModel
     out:
       sensor_model_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_sensor_model:
+    docstring: Update a SensorModel resource
     in:
       sensor_model: !SensorModel
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_sensor_model:
+    docstring: Read a SensorModel resource
     in:
       sensor_model_id: ""
     out:
       sensor_model: !SensorModel
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_sensor_model:
+    docstring: Delete a SensorModel resource
     in:
       sensor_model_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_sensor_models:
+    docstring: Find SensorModel resources
     in:
       filters: !ResourceFilter
     out:
       sensor_model_list: []
-
-
-
 
 
 ####################################
@@ -363,12 +527,16 @@ methods:
       logical_instrument_id: ""
       instrument_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_logical_instrument_from_instrument_device:
     in:
       logical_instrument_id: ""
       instrument_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_logical_platform_to_platform_device:
     docstring: assign a physical platform to a logical platform 
@@ -376,12 +544,16 @@ methods:
       logical_platform_id: ""
       platform_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_logical_platform_from_platform_device:
     in:
       logical_platform_id: ""
       platform_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   deploy_instrument_device_to_logical_instrument:
     docstring: link a physical instrument to a logical instrument
@@ -389,12 +561,16 @@ methods:
       instrument_device_id: ""
       logical_instrument_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   undeploy_instrument_device_from_logical_instrument:
     in:
       instrument_device_id: ""
       logical_instrument_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   deploy_platform_device_to_logical_platform:
     docstring: link a physical platform to a logical platform
@@ -402,147 +578,197 @@ methods:
       platform_device_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   undeploy_platform_device_from_logical_platform:
     in:
       platform_device_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
 
   deploy_as_primary_instrument_device_to_logical_instrument:
-    docstring: link a physical instrument to a logical instrument
+    docstring: link a physical instrument to a logical instrument as primary
     in:
       instrument_device_id: ""
       logical_instrument_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   undeploy_primary_instrument_device_from_logical_instrument:
     in:
       instrument_device_id: ""
       logical_instrument_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   deploy_as_primary_platform_device_to_logical_platform:
-    docstring: link a physical platform to a logical platform
+    docstring: link a physical platform to a logical platform as primary
     in:
       platform_device_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   undeploy_primary_platform_device_from_logical_platform:
     in:
       platform_device_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
+
 
   assign_instrument_agent_instance_to_instrument_agent:
     in:
       instrument_agent_instance_id: ""
       instrument_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_instrument_agent_instance_from_instrument_agent:
     in:
       instrument_agent_instance_id: ""
       instrument_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_instrument_agent_instance_to_instrument_device:
     in:
       instrument_agent_instance_id: ""
       instrument_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_instrument_agent_instance_from_instrument_device:
     in:
       instrument_agent_instance_id: ""
       instrument_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_instrument_model_to_instrument_device:
     in:
       instrument_model_id: ""
       instrument_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_instrument_model_from_instrument_device:
     in:
       instrument_model_id: ""
       instrument_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_instrument_model_to_instrument_agent:
     in:
       instrument_model_id: ""
       instrument_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_instrument_model_from_instrument_agent:
     in:
       instrument_model_id: ""
       instrument_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_instrument_model_to_logical_instrument:
     in:
       instrument_model_id: ""
       logical_instrument_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_instrument_model_from_logical_instrument:
     in:
       instrument_model_id: ""
       logical_instrument_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_stream_definition_to_instrument_model:
     in:
       stream_definition_id: ""
       instrument_model_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_stream_definition_from_instrument_model:
     in:
       stream_definition_id: ""
       instrument_model_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
+
 
   assign_platform_agent_instance_to_platform_agent:
     in:
       platform_agent_instance_id: ""
       platform_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_platform_agent_instance_from_platform_agent:
     in:
       platform_agent_instance_id: ""
       platform_agent_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_platform_model_to_platform_device:
     in:
       platform_model_id: ""
       platform_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_platform_model_from_platform_device:
     in:
       platform_model_id: ""
       platform_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_platform_model_to_logical_platform:
     in:
       platform_model_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_platform_model_from_logical_platform:
     in:
       platform_model_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
 
   assign_instrument_device_to_platform_device:
@@ -550,12 +776,16 @@ methods:
       instrument_device_id: ""
       platform_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_instrument_device_from_platform_device:
     in:
       instrument_device_id: ""
       platform_device_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
 
   assign_sensor_model_to_sensor_device:
@@ -563,14 +793,16 @@ methods:
       sensor_model_id: ""
       sensor_device_id: ""
     out:
-
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_sensor_model_from_sensor_device:
     in:
       sensor_model_id: ""
       sensor_device_id: ""
     out:
-
+    throws:
+      NotFound: object with specified id does not exist
 
 
   ##################
@@ -587,7 +819,8 @@ methods:
       old_instrument_data_product_ids: []
       new_instrument_data_product_ids: []
     out:
-
+    throws:
+      NotFound: object with specified id does not exist
 
 
   ##################
@@ -757,60 +990,70 @@ methods:
 
 
   set_instrument_agent_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       instrument_agent_id: ""
       lifecycle_state: ""
     out:
 
   set_instrument_agent_instance_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       instrument_agent_instance_id: ""
       lifecycle_state: ""
     out:
 
   set_instrument_model_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       instrument_model_id: ""
       lifecycle_state: ""
     out:
 
   set_instrument_device_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       instrument_device_id: ""
       lifecycle_state: ""
     out:
 
   set_platform_agent_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       platform_agent_id: ""
       lifecycle_state: ""
     out:
 
   set_platform_agent_instance_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       platform_agent_instance_id: ""
       lifecycle_state: ""
     out:
 
   set_platform_model_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       platform_model_id: ""
       lifecycle_state: ""
     out:
 
   set_platform_device_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       platform_device_id: ""
       lifecycle_state: ""
     out:
 
   set_sensor_model_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       sensor_model_id: ""
       lifecycle_state: ""
     out:
 
   set_sensor_device_lifecycle:
+    docstring: Set resource lifecycle state to given state.
     in:
       sensor_device_id: ""
       lifecycle_state: ""

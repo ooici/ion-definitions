@@ -13,9 +13,11 @@ methods:
   # Working with Instrument Agent Instance resources (they describe how to configure agent instances)
 
   create_instrument_agent_instance:
-    docstring: Create an InstrumentAgentInstance resource
+    docstring: Create an InstrumentAgentInstance resource, associate it to the instrument agent and instrument device it represents
     in:
       instrument_agent_instance: !InstrumentAgentInstance
+      instrument_agent_id: ""
+      instrument_device_id: ""
     out:
       instrument_agent_instance_id: ""
     throws:
@@ -172,18 +174,6 @@ methods:
 
   # -----------------
   # Working with InstrumentModel resources
-
-  #Orchestration method to add the instrument to the ION system
-  register_instrument:
-    docstring: Create the instrument device and connect with Model/Agent
-    in:
-      instrument_device: !InstrumentDevice
-      instrument_model_id: ""
-    out:
-      instrument_device_id: ""
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
-      NotFound: object with specified id does not exist
 
   create_instrument_model:
     docstring: |
@@ -521,39 +511,6 @@ methods:
 ####################################
 # associations
 
-  assign_logical_instrument_to_instrument_device:
-    docstring: assign a physical instrument to a logical instrument 
-    in:
-      logical_instrument_id: ""
-      instrument_device_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  unassign_logical_instrument_from_instrument_device:
-    in:
-      logical_instrument_id: ""
-      instrument_device_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  assign_logical_platform_to_platform_device:
-    docstring: assign a physical platform to a logical platform 
-    in:
-      logical_platform_id: ""
-      platform_device_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  unassign_logical_platform_from_platform_device:
-    in:
-      logical_platform_id: ""
-      platform_device_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
 
   deploy_instrument_device_to_logical_instrument:
     docstring: link a physical instrument to a logical instrument
@@ -689,22 +646,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  assign_instrument_model_to_logical_instrument:
-    in:
-      instrument_model_id: ""
-      logical_instrument_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  unassign_instrument_model_from_logical_instrument:
-    in:
-      instrument_model_id: ""
-      logical_instrument_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
   assign_stream_definition_to_instrument_model:
     in:
       stream_definition_id: ""
@@ -754,22 +695,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  assign_platform_model_to_logical_platform:
-    in:
-      platform_model_id: ""
-      logical_platform_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  unassign_platform_model_from_logical_platform:
-    in:
-      platform_model_id: ""
-      logical_platform_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
 
   assign_instrument_device_to_platform_device:
     in:
@@ -800,24 +725,6 @@ methods:
     in:
       sensor_model_id: ""
       sensor_device_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-
-  ##################
-  #
-  # Special Associations
-  #
-
-  reassign_logical_instrument_to_instrument_device:
-    in:
-      logical_instrument_id: ""
-      old_instrument_device_id: ""
-      new_instrument_device_id: ""
-      logical_data_product_ids: []
-      old_instrument_data_product_ids: []
-      new_instrument_data_product_ids: []
     out:
     throws:
       NotFound: object with specified id does not exist

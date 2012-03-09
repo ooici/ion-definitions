@@ -145,7 +145,7 @@ methods:
     in:
       org_id: ""
       user_id: ""
-      user_role_id: ""
+      role_name: ""
     out:
       request_id: ""
     throws:
@@ -154,11 +154,13 @@ methods:
   find_requests:
     docstring: |
       Returns a list of open requests for an Org. An optional request_type can be supplied
-      or else all types will be returned. Will throw a not NotFound exception
+      or else all types will be returned. An optional request_status can be supplied
+      or else requests will be returned. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
       org_id: ""
       request_type: ""
+      request_status: ""
     out:
       requests: []
     throws:
@@ -193,12 +195,14 @@ methods:
     docstring: |
       Returns a list of requests for a specified User. All requests for all Orgs will be returned
       unless an org_id is specified. An optional request_type can be supplied
-      or else all types will be returned. Will throw a not NotFound exception
+      or else all types will be returned. An optional request_status can be supplied
+      or else requests will be returned. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
       user_id: ""
       org_id: ""
       request_type: ""
+      request_status: ""
     out:
       requests: []
     throws:

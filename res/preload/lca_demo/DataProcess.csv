@@ -1,6 +1,6 @@
-Scenario,ID,data_process_definition_id,in_data_product_id,out_data_products
-LCA_DEMO_PRE,DPROC1,DPD1,DPROD2,"{'conductivity':'DPROD3','pressure':'DPROD4','temperature':'DPROD5'}"
-LCA_DEMO_PRE,DPROC2,DPD2,DPROD3,{'out':'DPROD6'}
-LCA_DEMO_PRE,DPROC3,DPD3,DPROD4,{'out':'DPROD7'}
-LCA_DEMO_PRE,DPROC4,DPD4,DPROD5,{'out':'DPROD8'}
-LCA_DEMO_PRE,DPROC5,DPD5,DPROD2,{'out':'DPROD9'}
+Scenario,ID,owner_id,data_process_definition_id,in_data_product_id,out_data_products
+LCA_DEMO_PRE,DPROC1,,DPD1,DPROD2,"{'conductivity':'DPROD3','pressure':'DPROD4','temperature':'DPROD5'}"
+LCA_DEMO_PRE,DPROC2,,DPD2,DPROD3,{'out':'DPROD6'}
+LCA_DEMO_PRE,DPROC3,,DPD3,DPROD4,{'out':'DPROD7'}
+LCA_DEMO_PRE,DPROC4,,DPD4,DPROD5,{'out':'DPROD8'}
+LCA_DEMO_PRE,DPROC5,,DPD5,DPROD2,{'out':'DPROD9'}

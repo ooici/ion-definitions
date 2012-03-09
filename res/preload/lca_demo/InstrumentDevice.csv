@@ -1,4 +1,4 @@
 Scenario,ID,owner_id,instrument_model_id,deployment_li_ids,primary_deployment_li_id,id/name,id/description,id/serial_number,id/firmware_version,id/hardware_version, id/manufacture_date,id/lot_number,id/datum_characterization
-LCA_DEMO_PRE,ID1,,IM1,,,Seabird CTD for Demo,Seabird Conductivity-Temperature-Depth instrument used for demonstration,tbd,tbd,tbd
-LCA_DEMO_PRE,ID2,,IM1,,,CTD Simulator 1,Simulator providing CTD data in the LCA demonstration,10001,0-00,0-00,,1
+LCA_DEMO_PRE,ID1,,IM1,LOGINS1,,Seabird CTD for Demo,Seabird Conductivity-Temperature-Depth instrument used for demonstration,tbd,tbd,tbd
+LCA_DEMO_PRE,ID2,,IM1,,LOGINS2,CTD Simulator 1,Simulator providing CTD data in the LCA demonstration,10001,0-00,0-00,,1
 LCA_DEMO_PRE,ID3,,IM1,,,CTD Simulator 2,Simulator providing CTD data in the LCA demonstration,10002,0-00,0-00,,1

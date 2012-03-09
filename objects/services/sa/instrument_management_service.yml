@@ -508,8 +508,8 @@ methods:
       sensor_model_list: []
 
 
-####################################
-# associations
+  # ---------------------------
+  # Associations
 
 
   deploy_instrument_device_to_logical_instrument:

@@ -99,6 +99,7 @@ container:
       port: 5000
       hostname: localhost
     trusted_originators: []  #Optional list of trusted addresses; an empty list means open system
+    user_cache_size: 2000    #The number of user's whos role data is cached in the gateway
 
       
 # TBD: Rename to "container". See there.

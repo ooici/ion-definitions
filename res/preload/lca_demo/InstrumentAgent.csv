@@ -1,2 +1,2 @@
-Scenario,ID,owner_id,ia/name,ia/description,ia/agent_version,ia/driver_module,ia/driver_class,ia/driver_client_module,ia/driver_class_client,ia/conection_method,ia/time_source,ia/event_publisher_origin
-LCA_DEMO_PRE,IA1,,CTD 1
+Scenario,ID,owner_id,lcstate,ia/name,ia/description,ia/agent_version,ia/driver_module,ia/driver_class,ia/driver_client_module,ia/driver_class_client,ia/conection_method,ia/time_source,ia/event_publisher_origin
+LCA_DEMO_PRE,IA1,,DEPLOYED_AVAILABLE,CTD Instrument Agent,CTD Instrument Agent,0.1

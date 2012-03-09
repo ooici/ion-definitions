@@ -1,3 +1,3 @@
-Scenario,ID,owner_id,instrument_agent_id,start_agent,iai/name,iai/description,iai/svr_addr,iai/cmd_port,iai/evt_port,iai/comms_method,iai/comms_device_address,iai/comms_device_port,iai/comms_server_address,iai/comms_server_port
-LCA_DEMO_PRE,IAI1,,IA1,FALSE,CTD Agent Instance 1
-LCA_DEMO_PRE,IAI2,,,FALSE,CTD Agent Instance 2
+Scenario,ID,owner_id,instrument_agent_id,instrument_device_id,start_agent,iai/name,iai/description,iai/svr_addr,iai/cmd_port,iai/evt_port,iai/comms_method,iai/comms_device_address,iai/comms_device_port,iai/comms_server_address,iai/comms_server_port
+LCA_DEMO_PRE,IAI1,,IA1,ID1,FALSE,CTD Simulator 1 Agent Instance
+LCA_DEMO_PRE,IAI2,,IA1,ID2,FALSE,CTD Simulator 2 Agent Instance

@@ -1,2 +1,3 @@
-Scenario,ID,ic/name,ic/description,exchange_point_id,couch_storage/datastore_name,couch_storage/datastore_profile,number_of_workers
-LCA_DEMO_PRE,INGCFG1,ingest_config_1,default ingestion config to be used by DataProduct MgmtSvc,science_data,ingested_science_datasets,SCIDATA,2
+Scenario,ID,ic/name,ic/description,exchange_point_id,couch_storage/datastore_name,couch_storage/datastore_profile,hdf_storage/relative_path,number_of_workers
+LCA_DEMO_PRE,INGCFG1,ingest_config_1,default ingestion config to be used by DataProduct MgmtSvc,science_data,ingested_science_datasets,SCIDATA,ingest,2
+VIZ_DEMO_PRE,INGCFG2,ingest_config_2,default ingestion config to be used by DataProduct MgmtSvc,science_data,ingested_science_datasets,SCIDATA,ingest,2

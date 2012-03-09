@@ -1,3 +1,14 @@
-Scenario,ID,subject,name,email
+Scenario,ID,subject,name,email,comment
 LCA_DEMO_PRE,USER_1,/DC=org/DC=cilogon/C=US/O=Google/CN=Owen Ownerrep A893,Owen Ownerrep,owenownerrep@gmail.com
 LCA_DEMO_PRE,USER_2,/DC=org/DC=cilogon/C=US/O=Google/CN=Mike Manager A892,Mike Manager,mikemanagerooi@gmail.com
+LCA_DEMO_PRE,USER_3,/DC=org/DC=cilogon/C=US/O=Google/CN=Tim Ampe A448,Tim Ampe,tampe@ucsd.edu
+LCA_DEMO_PRE,USER_10,TBD_subject,User 10,,MF_1 Manager
+LCA_DEMO_PRE,USER_11,TBD_subject,User 11,,MF_1 Observatory Operator
+LCA_DEMO_PRE,USER_12,TBD_subject,User 12,,MF_1 Instrument Operator
+LCA_DEMO_PRE,USER_13,TBD_subject,User 13,,MF_1 Data Operator
+LCA_DEMO_PRE,USER_14,TBD_subject,User 14,,MF_1 Member
+LCA_DEMO_PRE,USER_20,TBD_subject,User 20,,MF_2 Manager
+LCA_DEMO_PRE,USER_21,TBD_subject,User 21,,MF_2 Observatory Operator
+LCA_DEMO_PRE,USER_22,TBD_subject,User 22,,MF_2 Instrument Operator
+LCA_DEMO_PRE,USER_23,TBD_subject,User 23,,MF_2 Data Operator
+LCA_DEMO_PRE,USER_24,TBD_subject,User 24,,MF_2 Member

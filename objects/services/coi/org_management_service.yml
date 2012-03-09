@@ -67,6 +67,7 @@ methods:
     throws:
       NotFound: object with specified name does not exist
 
+
   # -----------------
 
   add_user_role:
@@ -152,10 +153,12 @@ methods:
 
   find_requests:
     docstring: |
-      Returns a list of open requests for an Org. Will throw a not NotFound exception
+      Returns a list of open requests for an Org. An optional request_type can be supplied
+      or else all types will be returned. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
       org_id: ""
+      request_type: ""
     out:
       requests: []
     throws:
@@ -189,70 +192,42 @@ methods:
   find_user_requests:
     docstring: |
       Returns a list of requests for a specified User. All requests for all Orgs will be returned
-      unless an org_id is specified. Will throw a not NotFound exception
+      unless an org_id is specified. An optional request_type can be supplied
+      or else all types will be returned. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
       user_id: ""
       org_id: ""
+      request_type: ""
     out:
       requests: []
     throws:
       NotFound: object with specified id does not exist
 
-  # -----------------
-
-  grant_role:
+  accept_request:
     docstring: |
-      Grants a defined role within an organization to a specific user. A role of Member is
-      automatically implied with successfull enrollment. Will throw a not NotFound exception
-      if none of the specified ids or role_name does not exist.
+      Accepts and invitation for a request made to an Org.  Will throw a not NotFound exception
+      if none of the specified ids do not exist.
     in:
       org_id: ""
-      user_id: ""
-      role_name: ""
-      scope: !RoleScope
+      request_id: ""
     out:
       success: True
     throws:
       NotFound: object with specified id does not exist
 
-  revoke_role:
+  reject_request:
     docstring: |
-      Revokes a defined Role within an organization to a specific user. Will throw a not NotFound exception
-      if none of the specified ids or role_name does not exist.
+      Rejects an invitation made to an Org. An optional reason can be recorded with the rejection.
+      Will throw a not NotFound exception if none of the specified ids do not exist.
     in:
       org_id: ""
-      user_id: ""
-      role_name: ""
+      request_id: ""
+      reason: ""
     out:
       success: True
     throws:
       NotFound: object with specified id does not exist
-
-  find_roles_by_user:
-    docstring: |
-      Returns a list of User Roles for a specific user in an Org.
-      Will throw a not NotFound exception if either of the IDs do not exist.
-    in:
-      org_id: ""
-      user_id: ""
-    out:
-      user_role_list: []
-    throws:
-      NotFound: object with specified id does not exist
-
-
-  find_all_roles_by_user:
-    docstring: |
-      Returns a list of all User Roles roles by Org associated with the specified user.
-      Will throw a not NotFound exception if either of the IDs do not exist.
-    in:
-      user_id: ""
-    out:
-      user_roles_by_org: {}
-    throws:
-      NotFound: object with specified id does not exist
-
 
   # -----------------
 
@@ -314,6 +289,61 @@ methods:
       org_list: []
     throws:
       NotFound: object with specified id does not exist
+
+  # -----------------
+
+  grant_role:
+    docstring: |
+      Grants a defined role within an organization to a specific user. A role of Member is
+      automatically implied with successfull enrollment. Will throw a not NotFound exception
+      if none of the specified ids or role_name does not exist.
+    in:
+      org_id: ""
+      user_id: ""
+      role_name: ""
+      scope: !RoleScope
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  revoke_role:
+    docstring: |
+      Revokes a defined Role within an organization to a specific user. Will throw a not NotFound exception
+      if none of the specified ids or role_name does not exist.
+    in:
+      org_id: ""
+      user_id: ""
+      role_name: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_roles_by_user:
+    docstring: |
+      Returns a list of User Roles for a specific user in an Org.
+      Will throw a not NotFound exception if either of the IDs do not exist.
+    in:
+      org_id: ""
+      user_id: ""
+    out:
+      user_role_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  find_all_roles_by_user:
+    docstring: |
+      Returns a list of all User Roles roles by Org associated with the specified user.
+      Will throw a not NotFound exception if either of the IDs do not exist.
+    in:
+      user_id: ""
+    out:
+      user_roles_by_org: {}
+    throws:
+      NotFound: object with specified id does not exist
+
 
 
   # -----------------

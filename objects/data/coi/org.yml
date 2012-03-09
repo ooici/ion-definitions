@@ -1,9 +1,22 @@
 
 Org: !Extends_TaskableResource
 
-UserRequest: !Extends_InformationResource
-  org_id: ""     # Will also keep an association but this makes it easier to filter on
-  user_id: ""    # Will also keep an association but this makes it easier to filter on
-  type: "Enroll"
+---
+
+ResourceNegotiation: !Extends_InformationResource
   status: "Open"
   status_description: ""
+
+---
+
+UserRequest: !Extends_ResourceNegotiation
+  org_id: ""     # Will also keep an association but this makes it easier to filter on
+  user_id: ""    # Will also keep an association but this makes it easier to filter on
+
+---
+EnrollmentRequest: !Extends_UserRequest
+
+RoleRequest: !Extends_UserRequest
+
+ResourceRequest: !Extends_UserRequest
+  resource_id: ""

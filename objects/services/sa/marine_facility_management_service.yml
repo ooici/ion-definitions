@@ -78,6 +78,7 @@ methods:
       either the observatory or another site.
     in:
       site: !Site
+      parent_id: ""
     out:
       site_id: ""
     throws:
@@ -102,7 +103,7 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_site:
-    docstring: Delete a LogicalPlatform resource
+    docstring: Delete a LogicalPlatform resource, removes assocations to parents
     in:
       site_id: ""
     out:
@@ -128,6 +129,7 @@ methods:
       platform over time.
     in:
       logical_platform: !LogicalPlatform
+      parent_site_id: ""
     out:
       logical_platform_id: ""
     throws:
@@ -152,7 +154,7 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_logical_platform:
-    docstring: Delete a LogicalPlatform resource
+    docstring: Delete a LogicalPlatform resource, remove association to parent Site
     in:
       logical_platform_id: ""
     out:
@@ -178,6 +180,7 @@ methods:
       instrument over time.
     in:
       logical_instrument: !LogicalInstrument
+      parent_logical_platform_id: ""
     out:
       logical_instrument_id: ""
     throws:
@@ -221,6 +224,26 @@ methods:
   # ---------------------------
   # Associations
 
+  assign_resource_to_marine_facility:
+    docstring: Assign a resource to a Marine facility's assets.
+    in:
+      resource_id: ""
+      marine_facility_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  unassign_resource_from_marine_facility:
+    docstring: Remove a resource from a Marine facilitiy's assets.
+    in:
+      resource_id: ""
+      marine_facility_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+      
   assign_site_to_marine_facility:
     docstring: Marine facilities have sites.
     in:

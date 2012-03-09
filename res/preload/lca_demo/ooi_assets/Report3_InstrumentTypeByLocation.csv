@@ -1,0 +1,636 @@
+﻿Textbox8,tbToday,Textbox2
+All Instrument Types By Location,Report Generated: 3/9/2012,Total Instruments (761)
+
+Textbox14
+
+
+Count
+"Total Active, Retired, Draft, Rejected Risks: 0"
+
+LocationCode,SubsiteName,SiteNumber,SiteCode,NodeTypeName,NodeSequence,SensorInstrumentName,SensorInstrumentClass,SensorCount
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),004,Velocity_Profile_Short_Range,ADCPT,1
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),004,oxygen_dissolved_stable,DOSTA,1
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),004,attenuation_absorption_optical,OPTAA,1
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),004,pCO2_water,PCO2W,1
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),004,pH_stable,PHSEN,1
+CE01ISSM-MF005,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),005,camera_digital_still_strobe,CAMDS,1
+CE01ISSM-MF005,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),005,CTD_bottom_pumped,CTDBP,1
+CE01ISSM-MF005,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),005,pressure_SF,PRESF,1
+CE01ISSM-MF005,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),005,Velocity_point_3D_turb,VEL3D,1
+CE01ISSM-MF005,Endurance OR Inshore Surface Mooring ,01,ISSM,MF (Multi-Function Node),005,plankton_ZP_sonar_coastal,ZPLSC,1
+CE01ISSM-RI002,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CE01ISSM-RI002,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),002,pCO2_water,PCO2W,1
+CE01ISSM-RI002,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CE01ISSM-RI002,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),002,Velocity_point,VELPT,1
+CE01ISSM-RI003,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),003,CTD_bottom_pumped,CTDBP,1
+CE01ISSM-RI003,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CE01ISSM-RI003,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CE01ISSM-RI003,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),003,attenuation_absorption_optical,OPTAA,1
+CE01ISSM-RI003,Endurance OR Inshore Surface Mooring ,01,ISSM,RI (Mooring Riser),003,spectral_irradiance,SPKIR,1
+CE01ISSM-SB001,Endurance OR Inshore Surface Mooring ,01,ISSM,SB (Surface Buoy),001,Velocity_point,VELPT,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,PAR,PARAD,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,Velocity_Profile_Short_Range,ADCPT,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,CTD_bottom_pumped,CTDBP,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,oxygen_dissolved_stable,DOSTA,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,attenuation_absorption_optical,OPTAA,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,pCO2_water,PCO2W,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,pH_stable,PHSEN,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,pressure_SF,PRESF,1
+CE02SHBP-BP001,Endurance OR Shelf Benthic Pkg,02,SHBP,BP (Benthic Package),001,Velocity_point_3D_turb,VEL3D,1
+CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,camera_digital_still_strobe,CAMDS,1
+CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Hydrophone_BB_passive,HYDBB,1
+CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,plankton_ZP_sonar_coastal,ZPLSC,1
+CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,CTD_bottom_pumped,CTDBP,1
+CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,Velocity_point,VELPT,1
+CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Velocity_Profile_Short_Range,ADCPT,1
+CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,attenuation_absorption_optical,OPTAA,1
+CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,spectral_irradiance,SPKIR,1
+CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,flux_direct_cov_HP,FDCHP,1
+CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Velocity_point,VELPT,1
+CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,PAR,PARAD,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CE04OSBP-BP001,Endurance OR Offshore Benthic Pkg,04,OSBP,BP (Benthic Package),001,Velocity_Profile_Long_Range,ADCPS,1
+CE04OSBP-BP001,Endurance OR Offshore Benthic Pkg,04,OSBP,BP (Benthic Package),001,CTD_bottom_pumped,CTDBP,1
+CE04OSBP-BP001,Endurance OR Offshore Benthic Pkg,04,OSBP,BP (Benthic Package),001,oxygen_dissolved_stable,DOSTA,1
+CE04OSBP-BP001,Endurance OR Offshore Benthic Pkg,04,OSBP,BP (Benthic Package),001,attenuation_absorption_optical,OPTAA,1
+CE04OSBP-BP001,Endurance OR Offshore Benthic Pkg,04,OSBP,BP (Benthic Package),001,pCO2_water,PCO2W,1
+CE04OSBP-BP001,Endurance OR Offshore Benthic Pkg,04,OSBP,BP (Benthic Package),001,pressure_SF,PRESF,1
+CE04OSBP-BP001,Endurance OR Offshore Benthic Pkg,04,OSBP,BP (Benthic Package),001,Velocity_point_3D_turb,VEL3D,1
+CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,camera_digital_still_strobe,CAMDS,1
+CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Hydrophone_BB_passive,HYDBB,1
+CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,CTD_profiler,CTDPF,1
+CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,oxygen_dissolved_fastresp,DOFST,1
+CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Fluorometer_three_wavelength,FLORT,1
+CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Velocity_point_3D_turb,VEL3D,1
+CE04OSHY-FJ01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,FJ (200 m Platform),01B,pCO2_water,PCO2W,1
+CE04OSHY-FJ01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,FJ (200 m Platform),01B,pH_stable,PHSEN,1
+CE04OSHY-FJ01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,FJ (200 m Platform),01B,plankton_ZP_sonar_coastal,ZPLSC,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,CTD_profiler,CTDPF,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,oxygen_dissolved_fastresp,DOFST,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,Fluorometer_three_wavelength,FLORT,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,nutrient_Nitrate,NUTNR,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,attenuation_absorption_optical,OPTAA,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,PAR,PARAD,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,pCO2_water,PCO2W,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,spectral_irradiance,SPKIR,1
+CE04OSHY-SP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SP (Surface-Piercing Profiler / Shallow Profiler),01B,Velocity_point_3D_turb,VEL3D,1
+CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,CTD_bottom_pumped,CTDBP,1
+CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Velocity_point,VELPT,1
+CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Velocity_Profile_Short_Range,ADCPT,1
+CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,attenuation_absorption_optical,OPTAA,1
+CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,spectral_irradiance,SPKIR,1
+CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,flux_direct_cov_HP,FDCHP,1
+CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,Velocity_point,VELPT,1
+CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,velocity_profile_mobile_asset,ADCPA,1
+CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,CTD_glider,CTDGV,1
+CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,oxygen_dissolved_stable,DOSTA,1
+CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer_three_wavelength,FLORT,1
+CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,PAR,PARAD,1
+CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,velocity_profile_mobile_asset,ADCPA,1
+CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,CTD_glider,CTDGV,1
+CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,oxygen_dissolved_stable,DOSTA,1
+CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer_three_wavelength,FLORT,1
+CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,PAR,PARAD,1
+CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,velocity_profile_mobile_asset,ADCPA,1
+CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,CTD_glider,CTDGV,1
+CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,oxygen_dissolved_stable,DOSTA,1
+CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer_three_wavelength,FLORT,1
+CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,PAR,PARAD,1
+CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,velocity_profile_mobile_asset,ADCPA,1
+CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,CTD_glider,CTDGV,1
+CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,oxygen_dissolved_stable,DOSTA,1
+CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,Fluorometer_three_wavelength,FLORT,1
+CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,PAR,PARAD,1
+CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,velocity_profile_mobile_asset,ADCPA,1
+CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,CTD_glider,CTDGV,1
+CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,oxygen_dissolved_stable,DOSTA,1
+CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,Fluorometer_three_wavelength,FLORT,1
+CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,PAR,PARAD,1
+CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,velocity_profile_mobile_asset,ADCPA,1
+CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,CTD_glider,CTDGV,1
+CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,oxygen_dissolved_stable,DOSTA,1
+CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,Fluorometer_three_wavelength,FLORT,1
+CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,PAR,PARAD,1
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),004,Velocity_Profile_Short_Range,ADCPT,1
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),004,oxygen_dissolved_stable,DOSTA,1
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),004,attenuation_absorption_optical,OPTAA,1
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),004,pCO2_water,PCO2W,1
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),004,pH_stable,PHSEN,1
+CE06ISSM-MF005,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),005,camera_digital_still_strobe,CAMDS,1
+CE06ISSM-MF005,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),005,CTD_bottom_pumped,CTDBP,1
+CE06ISSM-MF005,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),005,pressure_SF,PRESF,1
+CE06ISSM-MF005,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),005,Velocity_point_3D_turb,VEL3D,1
+CE06ISSM-MF005,Endurance WA Inshore Surface Mooring ,06,ISSM,MF (Multi-Function Node),005,plankton_ZP_sonar_coastal,ZPLSC,1
+CE06ISSM-RI002,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CE06ISSM-RI002,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),002,pCO2_water,PCO2W,1
+CE06ISSM-RI002,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CE06ISSM-RI002,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),002,Velocity_point,VELPT,1
+CE06ISSM-RI003,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),003,CTD_bottom_pumped,CTDBP,1
+CE06ISSM-RI003,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CE06ISSM-RI003,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CE06ISSM-RI003,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),003,attenuation_absorption_optical,OPTAA,1
+CE06ISSM-RI003,Endurance WA Inshore Surface Mooring ,06,ISSM,RI (Mooring Riser),003,spectral_irradiance,SPKIR,1
+CE06ISSM-SB001,Endurance WA Inshore Surface Mooring ,06,ISSM,SB (Surface Buoy),001,Velocity_point,VELPT,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,PAR,PARAD,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,CTD_bottom_pumped,CTDBP,1
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,oxygen_dissolved_stable,DOSTA,1
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,attenuation_absorption_optical,OPTAA,1
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,pCO2_water,PCO2W,1
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,pH_stable,PHSEN,1
+CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,Velocity_Profile_Short_Range,ADCPT,1
+CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,camera_digital_still_strobe,CAMDS,1
+CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,pressure_SF,PRESF,1
+CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,Velocity_point_3D_turb,VEL3D,1
+CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,plankton_ZP_sonar_coastal,ZPLSC,1
+CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,CTD_bottom_pumped,CTDBP,1
+CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,Velocity_point,VELPT,1
+CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Velocity_Profile_Short_Range,ADCPT,1
+CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,attenuation_absorption_optical,OPTAA,1
+CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,spectral_irradiance,SPKIR,1
+CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,flux_direct_cov_HP,FDCHP,1
+CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,Velocity_point,VELPT,1
+CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,PAR,PARAD,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,CTD_profiler,CTDPF,1
+CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,PAR,PARAD,1
+CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Velocity_Profile_Long_Range,ADCPS,1
+CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,oxygen_dissolved_stable,DOSTA,1
+CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,attenuation_absorption_optical,OPTAA,1
+CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,pCO2_water,PCO2W,1
+CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,camera_digital_still_strobe,CAMDS,1
+CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,CTD_bottom_pumped,CTDBP,1
+CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,pressure_SF,PRESF,1
+CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,Velocity_point_3D_turb,VEL3D,1
+CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,CTD_bottom_pumped,CTDBP,1
+CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,Velocity_point,VELPT,1
+CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Velocity_Profile_Short_Range,ADCPT,1
+CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,attenuation_absorption_optical,OPTAA,1
+CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,spectral_irradiance,SPKIR,1
+CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,flux_direct_cov_HP,FDCHP,1
+CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,Velocity_point,VELPT,1
+CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Velocity_Profile_Short_Range,ADCPT,1
+CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,oxygen_dissolved_stable,DOSTA,1
+CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,attenuation_absorption_optical,OPTAA,1
+CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Velocity_point,VELPT,1
+CP01CNSM-MF005,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),005,CTD_bottom_pumped,CTDBP,1
+CP01CNSM-MF005,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),005,pCO2_water,PCO2W,1
+CP01CNSM-MF005,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),005,pressure_SF,PRESF,1
+CP01CNSM-MF005,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),005,plankton_ZP_sonar_coastal,ZPLSC,1
+CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,CTD_bottom_pumped,CTDBP,1
+CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,attenuation_absorption_optical,OPTAA,1
+CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,Velocity_point,VELPT,1
+CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,oxygen_dissolved_stable,DOSTA,1
+CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,pH_stable,PHSEN,1
+CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,spectral_irradiance,SPKIR,1
+CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,flux_direct_cov_LP,FDCLP,1
+CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,PAR,PARAD,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CP02PMCI-RI001,Pioneer Central Inshore Profiler Mooring,02,PMCI,RI (Mooring Riser),001,Velocity_Profile_Short_Range,ADCPT,1
+CP02PMCI-WF001,Pioneer Central Inshore Profiler Mooring,02,PMCI,WF (Wire-Following Profiler),001,CTD_profiler,CTDPF,1
+CP02PMCI-WF001,Pioneer Central Inshore Profiler Mooring,02,PMCI,WF (Wire-Following Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CP02PMCI-WF001,Pioneer Central Inshore Profiler Mooring,02,PMCI,WF (Wire-Following Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CP02PMCI-WF001,Pioneer Central Inshore Profiler Mooring,02,PMCI,WF (Wire-Following Profiler),001,PAR,PARAD,1
+CP02PMCI-WF001,Pioneer Central Inshore Profiler Mooring,02,PMCI,WF (Wire-Following Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CP02PMCO-RI001,Pioneer Central Offshore Profiler Mooring,02,PMCO,RI (Mooring Riser),001,Velocity_Profile_Short_Range,ADCPT,1
+CP02PMCO-WF001,Pioneer Central Offshore Profiler Mooring,02,PMCO,WF (Wire-Following Profiler),001,CTD_profiler,CTDPF,1
+CP02PMCO-WF001,Pioneer Central Offshore Profiler Mooring,02,PMCO,WF (Wire-Following Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CP02PMCO-WF001,Pioneer Central Offshore Profiler Mooring,02,PMCO,WF (Wire-Following Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CP02PMCO-WF001,Pioneer Central Offshore Profiler Mooring,02,PMCO,WF (Wire-Following Profiler),001,PAR,PARAD,1
+CP02PMCO-WF001,Pioneer Central Offshore Profiler Mooring,02,PMCO,WF (Wire-Following Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CP02PMUI-RI001,Pioneer Upstream Inshore Profiler Mooring,02,PMUI,RI (Mooring Riser),001,Velocity_Profile_Short_Range,ADCPT,1
+CP02PMUI-WF001,Pioneer Upstream Inshore Profiler Mooring,02,PMUI,WF (Wire-Following Profiler),001,CTD_profiler,CTDPF,1
+CP02PMUI-WF001,Pioneer Upstream Inshore Profiler Mooring,02,PMUI,WF (Wire-Following Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CP02PMUI-WF001,Pioneer Upstream Inshore Profiler Mooring,02,PMUI,WF (Wire-Following Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CP02PMUI-WF001,Pioneer Upstream Inshore Profiler Mooring,02,PMUI,WF (Wire-Following Profiler),001,PAR,PARAD,1
+CP02PMUI-WF001,Pioneer Upstream Inshore Profiler Mooring,02,PMUI,WF (Wire-Following Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CP02PMUO-RI001,Pioneer Upstream Offshore Profiler Mooring,02,PMUO,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+CP02PMUO-WF001,Pioneer Upstream Offshore Profiler Mooring,02,PMUO,WF (Wire-Following Profiler),001,CTD_profiler,CTDPF,1
+CP02PMUO-WF001,Pioneer Upstream Offshore Profiler Mooring,02,PMUO,WF (Wire-Following Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CP02PMUO-WF001,Pioneer Upstream Offshore Profiler Mooring,02,PMUO,WF (Wire-Following Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CP02PMUO-WF001,Pioneer Upstream Offshore Profiler Mooring,02,PMUO,WF (Wire-Following Profiler),001,PAR,PARAD,1
+CP02PMUO-WF001,Pioneer Upstream Offshore Profiler Mooring,02,PMUO,WF (Wire-Following Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,CTD_bottom_pumped,CTDBP,1
+CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,oxygen_dissolved_stable,DOSTA,1
+CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,pH_stable,PHSEN,1
+CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,Velocity_point,VELPT,1
+CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Velocity_Profile_Short_Range,ADCPT,1
+CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,attenuation_absorption_optical,OPTAA,1
+CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,pCO2_water,PCO2W,1
+CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,pressure_SF,PRESF,1
+CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,plankton_ZP_sonar_coastal,ZPLSC,1
+CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,attenuation_absorption_optical,OPTAA,1
+CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,spectral_irradiance,SPKIR,1
+CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,CTD_bottom_pumped,CTDBP,1
+CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,Velocity_point,VELPT,1
+CP03ISSM-SB001,Pioneer Inshore Surface Mooring,03,ISSM,SB (Surface Buoy),001,flux_direct_cov_LP,FDCLP,1
+CP03ISSM-SB001,Pioneer Inshore Surface Mooring,03,ISSM,SB (Surface Buoy),001,Meteorology_bulk,METBK,1
+CP03ISSM-SB001,Pioneer Inshore Surface Mooring,03,ISSM,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,PAR,PARAD,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler / Shallow Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,CTD_profiler,CTDPF,1
+CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,oxygen_dissolved_fastresp,DOFST,1
+CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,Fluorometer_three_wavelength,FLORT,1
+CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,PAR,PARAD,1
+CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,Velocity_point_3D_turb,VEL3D,1
+CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),004,CTD_bottom_pumped,CTDBP,1
+CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),004,oxygen_dissolved_stable,DOSTA,1
+CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),004,Velocity_point,VELPT,1
+CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Velocity_Profile_Long_Range,ADCPS,1
+CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,attenuation_absorption_optical,OPTAA,1
+CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,pCO2_water,PCO2W,1
+CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,pressure_SF,PRESF,1
+CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,plankton_ZP_sonar_coastal,ZPLSC,1
+CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,oxygen_dissolved_stable,DOSTA,1
+CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,attenuation_absorption_optical,OPTAA,1
+CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH_stable,PHSEN,1
+CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,spectral_irradiance,SPKIR,1
+CP04OSSM-RI003,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,CTD_bottom_pumped,CTDBP,1
+CP04OSSM-RI003,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Fluorometer_three_wavelength,FLORT,1
+CP04OSSM-RI003,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,nutrient_Nitrate,NUTNR,1
+CP04OSSM-RI003,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Velocity_point,VELPT,1
+CP04OSSM-SB001,Pioneer Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,flux_direct_cov_LP,FDCLP,1
+CP04OSSM-SB001,Pioneer Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,Meteorology_bulk,METBK,1
+CP04OSSM-SB001,Pioneer Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,CTD_AUV,CTDAV,1
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,nutrient_four_channel,NUTR4,1
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,PAR,PARAD,1
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,CTD_AUV,CTDAV,1
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,nutrient_four_channel,NUTR4,1
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,PAR,PARAD,1
+CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,CTD_AUV,CTDAV,1
+CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,nutrient_four_channel,NUTR4,1
+CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,PAR,PARAD,1
+CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,CTD_glider,CTDGV,1
+CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,PAR,PARAD,1
+CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,CTD_glider,CTDGV,1
+CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,PAR,PARAD,1
+CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,CTD_glider,CTDGV,1
+CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,PAR,PARAD,1
+CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,CTD_glider,CTDGV,1
+CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,PAR,PARAD,1
+CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,CTD_glider,CTDGV,1
+CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,PAR,PARAD,1
+CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,velocity_profile_mobile_asset,ADCPA,1
+CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,CTD_glider,CTDGV,1
+CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,oxygen_dissolved_stable,DOSTA,1
+CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,Fluorometer_three_wavelength,FLORT,1
+CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,PAR,PARAD,1
+GA01SUMO-RI002,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity_Profile_Long_Range,ADCPS,1
+GA01SUMO-RI002,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),002,CTD_mooring,CTDMO,1
+GA01SUMO-RI002,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),002,Fluorometer_two_wavelength,FLORD,1
+GA01SUMO-RI002,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity_point,VELPT,1
+GA01SUMO-RI003,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),003,CTD_mooring,CTDMO,12
+GA01SUMO-RI003,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),003,pH_stable,PHSEN,2
+GA01SUMO-SB001,Argentine Basin Surface Mooring,01,SUMO,SB (Surface Buoy),001,flux_direct_cov_HP,FDCHP,1
+GA01SUMO-SB001,Argentine Basin Surface Mooring,01,SUMO,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+GA01SUMO-SB001,Argentine Basin Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+GA01SUMO-SB001,Argentine Basin Surface Mooring,01,SUMO,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+GA02HYPM-MP003,Argentine Basin Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,plankton_ZP_sonar_global,ZPLSG,1
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_stable,DOSTA,1
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_two_wavelength,FLORD,1
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD_profiler,CTDPF,1
+GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,oxygen_dissolved_stable,DOSTA,1
+GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer_two_wavelength,FLORD,1
+GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity_point_3D_turb,VEL3D,1
+GA03FLMA-RI001,Argentine Basin Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GA03FLMA-RI001,Argentine Basin Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GA03FLMA-RI001,Argentine Basin Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GA03FLMA-RI001,Argentine Basin Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GA03FLMA-RI001,Argentine Basin Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GA03FLMB-RI001,Argentine Basin Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GA03FLMB-RI001,Argentine Basin Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GA03FLMB-RI001,Argentine Basin Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GA03FLMB-RI001,Argentine Basin Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GA03FLMB-RI001,Argentine Basin Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,CTD_glider,CTDGV,1
+GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,oxygen_dissolved_stable,DOSTA,1
+GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer_two_wavelength,FLORD,1
+GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,CTD_glider,CTDGV,1
+GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,oxygen_dissolved_stable,DOSTA,1
+GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer_two_wavelength,FLORD,1
+GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,CTD_glider,CTDGV,1
+GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,oxygen_dissolved_stable,DOSTA,1
+GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer_two_wavelength,FLORD,1
+GI01SUMO-RI002,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity_Profile_Long_Range,ADCPS,1
+GI01SUMO-RI002,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),002,CTD_mooring,CTDMO,1
+GI01SUMO-RI002,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),002,Fluorometer_two_wavelength,FLORD,1
+GI01SUMO-RI002,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity_point,VELPT,1
+GI01SUMO-RI003,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),003,CTD_mooring,CTDMO,12
+GI01SUMO-RI003,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),003,pH_stable,PHSEN,2
+GI01SUMO-SB001,Irminger Sea Surface Mooring,01,SUMO,SB (Surface Buoy),001,flux_direct_cov_HP,FDCHP,1
+GI01SUMO-SB001,Irminger Sea Surface Mooring,01,SUMO,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+GI01SUMO-SB001,Irminger Sea Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+GI01SUMO-SB001,Irminger Sea Surface Mooring,01,SUMO,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+GI02HYPM-MP003,Irminger Sea Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,plankton_ZP_sonar_global,ZPLSG,1
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_stable,DOSTA,1
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_two_wavelength,FLORD,1
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD_profiler,CTDPF,1
+GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,oxygen_dissolved_stable,DOSTA,1
+GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer_two_wavelength,FLORD,1
+GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity_point_3D_turb,VEL3D,1
+GI03FLMA-RI001,Irminger Sea Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GI03FLMA-RI001,Irminger Sea Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GI03FLMA-RI001,Irminger Sea Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GI03FLMA-RI001,Irminger Sea Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GI03FLMA-RI001,Irminger Sea Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GI03FLMB-RI001,Irminger Sea Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GI03FLMB-RI001,Irminger Sea Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GI03FLMB-RI001,Irminger Sea Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GI03FLMB-RI001,Irminger Sea Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GI03FLMB-RI001,Irminger Sea Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,CTD_glider,CTDGV,1
+GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,oxygen_dissolved_stable,DOSTA,1
+GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer_two_wavelength,FLORD,1
+GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,CTD_glider,CTDGV,1
+GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,oxygen_dissolved_stable,DOSTA,1
+GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer_two_wavelength,FLORD,1
+GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,CTD_glider,CTDGV,1
+GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,oxygen_dissolved_stable,DOSTA,1
+GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer_two_wavelength,FLORD,1
+GP02HYPM-MP003,Station Papa Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,plankton_ZP_sonar_global,ZPLSG,1
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_stable,DOSTA,1
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_two_wavelength,FLORD,1
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD_profiler,CTDPF,1
+GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,oxygen_dissolved_stable,DOSTA,1
+GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer_two_wavelength,FLORD,1
+GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity_point_3D_turb,VEL3D,1
+GP03FLMA-RI001,Station Papa Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GP03FLMA-RI001,Station Papa Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GP03FLMA-RI001,Station Papa Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GP03FLMA-RI001,Station Papa Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GP03FLMA-RI001,Station Papa Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GP03FLMB-RI001,Station Papa Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GP03FLMB-RI001,Station Papa Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GP03FLMB-RI001,Station Papa Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GP03FLMB-RI001,Station Papa Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GP03FLMB-RI001,Station Papa Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,CTD_glider,CTDGV,1
+GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,oxygen_dissolved_stable,DOSTA,1
+GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer_two_wavelength,FLORD,1
+GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,CTD_glider,CTDGV,1
+GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,oxygen_dissolved_stable,DOSTA,1
+GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer_two_wavelength,FLORD,1
+GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,CTD_glider,CTDGV,1
+GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,oxygen_dissolved_stable,DOSTA,1
+GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer_two_wavelength,FLORD,1
+GS01SUMO-RI002,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity_Profile_Long_Range,ADCPS,1
+GS01SUMO-RI002,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),002,CTD_mooring,CTDMO,1
+GS01SUMO-RI002,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),002,Fluorometer_two_wavelength,FLORD,1
+GS01SUMO-RI002,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity_point,VELPT,1
+GS01SUMO-RI003,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),003,CTD_mooring,CTDMO,12
+GS01SUMO-RI003,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),003,pH_stable,PHSEN,2
+GS01SUMO-SB001,Southern Ocean Surface Mooring,01,SUMO,SB (Surface Buoy),001,flux_direct_cov_HP,FDCHP,1
+GS01SUMO-SB001,Southern Ocean Surface Mooring,01,SUMO,SB (Surface Buoy),001,Meteorology_bulk,METBK,2
+GS01SUMO-SB001,Southern Ocean Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2_air-sea,PCO2A,1
+GS01SUMO-SB001,Southern Ocean Surface Mooring,01,SUMO,SB (Surface Buoy),001,wave_spectra_surface,WAVSS,1
+GS02HYPM-MP003,Southern Ocean Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,plankton_ZP_sonar_global,ZPLSG,1
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,CTD_profiler,CTDPF,1
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,oxygen_dissolved_stable,DOSTA,1
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,Fluorometer_two_wavelength,FLORD,1
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,nutrient_Nitrate,NUTNR,1
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,attenuation_absorption_optical,OPTAA,1
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,pCO2_water,PCO2W,1
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler / Shallow Profiler),001,spectral_irradiance,SPKIR,1
+GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD_profiler,CTDPF,1
+GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,oxygen_dissolved_stable,DOSTA,1
+GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer_two_wavelength,FLORD,1
+GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity_point_3D_turb,VEL3D,1
+GS03FLMA-RI001,Southern Ocean Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GS03FLMA-RI001,Southern Ocean Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GS03FLMA-RI001,Southern Ocean Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GS03FLMA-RI001,Southern Ocean Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GS03FLMA-RI001,Southern Ocean Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GS03FLMB-RI001,Southern Ocean Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Velocity_Profile_Long_Range,ADCPS,1
+GS03FLMB-RI001,Southern Ocean Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD_mooring,CTDMO,12
+GS03FLMB-RI001,Southern Ocean Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,oxygen_dissolved_stable,DOSTA,1
+GS03FLMB-RI001,Southern Ocean Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Fluorometer_two_wavelength,FLORD,1
+GS03FLMB-RI001,Southern Ocean Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH_stable,PHSEN,1
+GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,CTD_glider,CTDGV,1
+GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,oxygen_dissolved_stable,DOSTA,1
+GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer_two_wavelength,FLORD,1
+GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,CTD_glider,CTDGV,1
+GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,oxygen_dissolved_stable,DOSTA,1
+GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer_two_wavelength,FLORD,1
+GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,CTD_glider,CTDGV,1
+GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,oxygen_dissolved_stable,DOSTA,1
+GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer_two_wavelength,FLORD,1
+RS01HRBS-MJ01A,Hydrate Base,01,HRBS,MJ (MP Jbox),01A,Hydrophone_LF_passive,HYDLF,1
+RS01HRBS-MJ01A,Hydrate Base,01,HRBS,MJ (MP Jbox),01A,Seismometer_BB_triaxial_accel,OBSBB,1
+RS01HRBS-MJ01A,Hydrate Base,01,HRBS,MJ (MP Jbox),01A,pressure_SF_tidal,PREST,1
+RS01HRBS-MJ01A,Hydrate Base,01,HRBS,MJ (MP Jbox),01A,Velocity_point_3D_turb,VEL3D,1
+RS01HRVM-DP01A,Hydrate Mooring,01,HRVM,DP (Deep Profiler),01A,CTD_profiler,CTDPF,1
+RS01HRVM-DP01A,Hydrate Mooring,01,HRVM,DP (Deep Profiler),01A,oxygen_dissolved_stable,DOSTA,1
+RS01HRVM-DP01A,Hydrate Mooring,01,HRVM,DP (Deep Profiler),01A,Fluorometer_three_wavelength,FLORT,1
+RS01HRVM-DP01A,Hydrate Mooring,01,HRVM,DP (Deep Profiler),01A,attenuation_absorption_optical,OPTAA,1
+RS01HRVM-DP01A,Hydrate Mooring,01,HRVM,DP (Deep Profiler),01A,Velocity_point_3D_turb,VEL3D,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,Velocity_Profile_Short_Range,ADCPT,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,camera_digital_still_strobe,CAMDS,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,CTD_profiler,CTDPF,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,oxygen_dissolved_stable,DOSTA,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,Fluorometer_two_wavelength,FLORD,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,Hydrophone_BB_passive,HYDBB,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,pH_stable,PHSEN,1
+RS01HRVM-FJ01A,Hydrate Mooring,01,HRVM,FJ (200 m Platform),01A,Velocity_profile_50m_turb,VADCP,1
+RS01HRVM-LJ01A,Hydrate Mooring,01,HRVM,LJ (LP Jbox),01A,Velocity_Profile_Short_Range,ADCPT,1
+RS01HRVM-LJ01A,Hydrate Mooring,01,HRVM,LJ (LP Jbox),01A,CTD_profiler,CTDPF,1
+RS01HRVM-LJ01A,Hydrate Mooring,01,HRVM,LJ (LP Jbox),01A,oxygen_dissolved_stable,DOSTA,1
+RS01HRVM-LJ01A,Hydrate Mooring,01,HRVM,LJ (LP Jbox),01A,IES_pressure_velocity,HPIES,1
+RS01HRVM-LJ01A,Hydrate Mooring,01,HRVM,LJ (LP Jbox),01A,Hydrophone_BB_passive,HYDBB,1
+RS01HRVM-LJ01A,Hydrate Mooring,01,HRVM,LJ (LP Jbox),01A,attenuation_absorption_optical,OPTAA,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,CTD_profiler,CTDPF,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,oxygen_dissolved_fastresp,DOFST,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,Fluorometer_three_wavelength,FLORT,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,nutrient_Nitrate,NUTNR,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,attenuation_absorption_optical,OPTAA,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,PAR,PARAD,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,pCO2_water,PCO2W,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,pH_stable,PHSEN,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,spectral_irradiance,SPKIR,1
+RS01HRVM-SP01A,Hydrate Mooring,01,HRVM,SP (Surface-Piercing Profiler / Shallow Profiler),01A,Velocity_point_3D_turb,VEL3D,1
+RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Hydrophone_LF_passive,HYDLF,1
+RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Seismometer_BB_triaxial_keck,OBSBK,1
+RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Seismometer_shortperiod,OBSSP,3
+RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,pressure_SF_tidal,PREST,1
+RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Velocity_point_3D_turb,VEL3D,1
+RS01SUM2-MJ01B,Southern Hydrate Summit 2,01,SUM2,MJ (MP Jbox),01B,Velocity_Profile_Long_Range,ADCPS,1
+RS01SUM2-MJ01B,Southern Hydrate Summit 2,01,SUM2,MJ (MP Jbox),01B,camera_digital_still_strobe,CAMDS,1
+RS01SUM2-MJ01B,Southern Hydrate Summit 2,01,SUM2,MJ (MP Jbox),01B,mass_spectrometer,MASSP,1
+RS01SUM2-MJ01B,Southern Hydrate Summit 2,01,SUM2,MJ (MP Jbox),01B,watersample_chem_trace,OSMOI,1
+RS01SUM2-MJ01B,Southern Hydrate Summit 2,01,SUM2,MJ (MP Jbox),01B,flow_benthic ,OTISF,1
+RS03ASHD-MJ03B,Ashes-Diffuse,03,ASHD,MJ (MP Jbox),03B,camera_digital_still_strobe,CAMDS,1
+RS03ASHD-MJ03B,Ashes-Diffuse,03,ASHD,MJ (MP Jbox),03B,mass_spectrometer,MASSP,1
+RS03ASHD-MJ03B,Ashes-Diffuse,03,ASHD,MJ (MP Jbox),03B,watersample_chem_trace,OSMOI,1
+RS03ASHD-MJ03B,Ashes-Diffuse,03,ASHD,MJ (MP Jbox),03B,DNA_particulate,PPSDN,1
+RS03ASHD-MJ03B,Ashes-Diffuse,03,ASHD,MJ (MP Jbox),03B,watersample_chem_trace_H2S_pH,RASFL,1
+RS03ASHD-MJ03B,Ashes-Diffuse,03,ASHD,MJ (MP Jbox),03B,Temperature_seafloor,TMPSF,1
+RS03ASHD-MJ03B,Ashes-Diffuse,03,ASHD,MJ (MP Jbox),03B,Velocity_point_3D_turb,VEL3D,1
+RS03ASHI-ID03A,Ashes-Inferno,03,ASHI,ID (IF box HD camera),03A,camera_digital_video_HD,CAMHD,1
+RS03ASHI-MJ03C,Ashes-Inferno,03,ASHI,MJ (MP Jbox),03C,Temp_H2_H2S_pH,THSPH,1
+RS03ASHI-MJ03C,Ashes-Inferno,03,ASHI,MJ (MP Jbox),03C,Temp_resist,TRHPH,1
+RS03ASHS-MJ03D,Ashes-Seismic,03,ASHS,MJ (MP Jbox),03D,pressure_bottom_tilt,BOTPT,1
+RS03ASHS-MJ03D,Ashes-Seismic,03,ASHS,MJ (MP Jbox),03D,Seismometer_shortperiod,OBSSP,3
+RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Hydrophone_LF_passive,HYDLF,1
+RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Seismometer_BB_triaxial_accel,OBSBB,1
+RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,pressure_SF_tidal,PREST,1
+RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Velocity_point_3D_turb,VEL3D,1
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,CTD_profiler,CTDPF,1
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,oxygen_dissolved_stable,DOSTA,1
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Fluorometer_three_wavelength,FLORT,1
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,attenuation_absorption_optical,OPTAA,1
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Velocity_point_3D_turb,VEL3D,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,Velocity_Profile_Short_Range,ADCPT,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,camera_digital_still_strobe,CAMDS,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,CTD_profiler,CTDPF,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,oxygen_dissolved_stable,DOSTA,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,Fluorometer_two_wavelength,FLORD,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,Hydrophone_BB_passive,HYDBB,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,pH_stable,PHSEN,1
+RS03AXVM-FJ03A,Axial Mooring,03,AXVM,FJ (200 m Platform),03A,Velocity_profile_50m_turb,VADCP,1
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Velocity_Profile_Short_Range,ADCPT,1
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,CTD_profiler,CTDPF,1
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,oxygen_dissolved_stable,DOSTA,1
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,IES_pressure_velocity,HPIES,1
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Hydrophone_BB_passive,HYDBB,1
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,attenuation_absorption_optical,OPTAA,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,CTD_profiler,CTDPF,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,oxygen_dissolved_fastresp,DOFST,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,Fluorometer_three_wavelength,FLORT,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,nutrient_Nitrate,NUTNR,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,attenuation_absorption_optical,OPTAA,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,PAR,PARAD,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,pCO2_water,PCO2W,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,pH_stable,PHSEN,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,spectral_irradiance,SPKIR,1
+RS03AXVM-SP03A,Axial Mooring,03,AXVM,SP (Surface-Piercing Profiler / Shallow Profiler),03A,Velocity_point_3D_turb,VEL3D,1
+RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,pressure_bottom_tilt,BOTPT,1
+RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Hydrophone_LF_passive,HYDLF,1
+RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Seismometer_BB_triaxial_keck,OBSBK,1
+RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Seismometer_shortperiod,OBSSP,1
+RS03NCAL-MJ03F,Northern Caldera,03,NCAL,MJ (MP Jbox),03F,pressure_bottom_tilt,BOTPT,1
+RS03NCAL-MJ03F,Northern Caldera,03,NCAL,MJ (MP Jbox),03F,Hydrophone_LF_passive,HYDLF,1
+RS03NCAL-MJ03F,Northern Caldera,03,NCAL,MJ (MP Jbox),03F,Seismometer_BB_triaxial_accel,OBSBB,1
+RS03NCAL-MJ03F,Northern Caldera,03,NCAL,MJ (MP Jbox),03F,Seismometer_shortperiod,OBSSP,1
+

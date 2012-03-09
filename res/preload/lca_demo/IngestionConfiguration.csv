@@ -1,0 +1,2 @@
+Scenario,ID,ic/name,ic/description,exchange_point_id,couch_storage/datastore_name,couch_storage/datastore_profile,number_of_workers
+LCA_DEMO_PRE,INGCFG1,ingest_config_1,default ingestion config to be used by DataProduct MgmtSvc,science_data,ingested_science_datasets,SCIDATA,2

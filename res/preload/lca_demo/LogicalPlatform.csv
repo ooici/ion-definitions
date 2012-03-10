@@ -1,59 +1,59 @@
-Scenario,ID,owner_id,site_id,platform_model_ids,lp/name,lp/description,lp/geospatial_constraint/geospatiallatmin,lp/geospatial_constraint/geospatiallatmax,lp/geospatial_constraint/geospatiallonmin,lp/geospatial_constraint/geospatiallonmax,lp/geospatial_constraint/minbottomdepth,lp/geospatial_constraint/maxbottomdepth,lp/geospatial_constraint/geospatialverticalpositive,lp/temporal_constraint,lp/entity_constraint
-LCA_DEMO_PRE,LP1,,SITE_PN1A,[PM6],PN1A Low-Voltage Node,PN1A Low-Voltage Node
-LCA_DEMO_PRE,LP2,,SITE_PN1A,PM2,PN1A Medium-Power J-Box,PN1A Medium-Power J-Box
-LCA_DEMO_P,LP3,,SITE_PN1A,,PN1A Low-Power J-Box,PN1A Low-Power J-Box
-LCA_DEMO_P,LP4,,SITE_PN1A,,PN1A Deep Profiling Mooring,PN1A Deep Profiling Mooring
-LCA_DEMO_P,LP5,,SITE_PN1A,,PN1A Shallow Profiling Mooring and 200 m platform,PN1A Shallow Profiling Mooring and 200 m platform
-LCA_DEMO_P,LP6,,SITE_PN1B,,PN1B Low-Voltage Node,PN1B Low-Voltage Node
-LCA_DEMO_P,LP7,,SITE_PN1B,,PN1B Medium-Power J-Box,PN1B Medium-Power J-Box
-LCA_DEMO_P,LP8,,SITE_PN1B,,PN1B Low-Power J-Box,PN1B Low-Power J-Box
-LCA_DEMO_P,LP9,,SITE_PN1C,,PN1C Low-Voltage Node,PN1C Low-Voltage Node
-LCA_DEMO_P,LP10,,SITE_PN1C,,PN1C Low-Power J-Box ,PN1C Low-Power J-Box 
-LCA_DEMO_P,LP11,,SITE_PN1C,,PN1C Deep Profiling Mooring,PN1C Deep Profiling Mooring
-LCA_DEMO_P,LP12,,SITE_PN1C,,PN1C Shallow Profiling Mooring and 200 m platform,PN1C Shallow Profiling Mooring and 200 m platform
-LCA_DEMO_P,LP13,,SITE_PN3A,,PN3A Low-Voltage Node,PN3A Low-Voltage Node
-LCA_DEMO_P,LP15,,SITE_PN3A,,PN3A Medium-Power J-Box,PN3A Medium-Power J-Box
-LCA_DEMO_P,LP16,,SITE_PN3A,,PN3A Low-Power J-Box,PN3A Low-Power J-Box
-LCA_DEMO_P,LP17,,SITE_PN3A,,PN3A Deep Profiling Mooring,PN3A Deep Profiling Mooring
-LCA_DEMO_P,LP18,,SITE_PN3A,,PN3A 200 m and Shallow Profiling Mooring,PN3A 200 m and Shallow Profiling Mooring
-LCA_DEMO_P,LP19,,SITE_PN3B,,PN3B Medium Power J-Box 1,PN3B Medium Power J-Box 1
-LCA_DEMO_P,LP20,,SITE_PN3B,,PN3B Medium Power J-Box 2,PN3B Medium Power J-Box 2
-LCA_DEMO_P,LP21,,SITE_PN3B,,PN3B Medium Power J-Box 3,PN3B Medium Power J-Box 3
-LCA_DEMO_P,LP22,,SITE_PN3B,,PN3B Medium Power J-Box 4,PN3B Medium Power J-Box 4
+Scenario,ID,owner_id,mf_ids,site_id,platform_model_ids,lp/name,lp/description,lp/geospatial_constraint/geospatiallatmin,lp/geospatial_constraint/geospatiallatmax,lp/geospatial_constraint/geospatiallonmin,lp/geospatial_constraint/geospatiallonmax,lp/geospatial_constraint/minbottomdepth,lp/geospatial_constraint/maxbottomdepth,lp/geospatial_constraint/geospatialverticalpositive,lp/temporal_constraint,lp/entity_constraint
+LCA_DEMO_PRE,LP1,,MF_RSN,SITE_PN1A,[PM6],PN1A Low-Voltage Node,PN1A Low-Voltage Node
+LCA_DEMO_PRE,LP2,,MF_RSN,SITE_PN1A,PM2,PN1A Medium-Power J-Box,PN1A Medium-Power J-Box
+LCA_DEMO_P,LP3,,MF_RSN,SITE_PN1A,,PN1A Low-Power J-Box,PN1A Low-Power J-Box
+LCA_DEMO_P,LP4,,MF_RSN,SITE_PN1A,,PN1A Deep Profiling Mooring,PN1A Deep Profiling Mooring
+LCA_DEMO_P,LP5,,MF_RSN,SITE_PN1A,,PN1A Shallow Profiling Mooring and 200 m platform,PN1A Shallow Profiling Mooring and 200 m platform
+LCA_DEMO_P,LP6,,MF_RSN,SITE_PN1B,,PN1B Low-Voltage Node,PN1B Low-Voltage Node
+LCA_DEMO_P,LP7,,MF_RSN,SITE_PN1B,,PN1B Medium-Power J-Box,PN1B Medium-Power J-Box
+LCA_DEMO_P,LP8,,MF_RSN,SITE_PN1B,,PN1B Low-Power J-Box,PN1B Low-Power J-Box
+LCA_DEMO_P,LP9,,MF_RSN,SITE_PN1C,,PN1C Low-Voltage Node,PN1C Low-Voltage Node
+LCA_DEMO_P,LP10,,MF_RSN,SITE_PN1C,,PN1C Low-Power J-Box ,PN1C Low-Power J-Box 
+LCA_DEMO_P,LP11,,MF_RSN,SITE_PN1C,,PN1C Deep Profiling Mooring,PN1C Deep Profiling Mooring
+LCA_DEMO_P,LP12,,MF_RSN,SITE_PN1C,,PN1C Shallow Profiling Mooring and 200 m platform,PN1C Shallow Profiling Mooring and 200 m platform
+LCA_DEMO_P,LP13,,MF_RSN,SITE_PN3A,,PN3A Low-Voltage Node,PN3A Low-Voltage Node
+LCA_DEMO_P,LP15,,MF_RSN,SITE_PN3A,,PN3A Medium-Power J-Box,PN3A Medium-Power J-Box
+LCA_DEMO_P,LP16,,MF_RSN,SITE_PN3A,,PN3A Low-Power J-Box,PN3A Low-Power J-Box
+LCA_DEMO_P,LP17,,MF_RSN,SITE_PN3A,,PN3A Deep Profiling Mooring,PN3A Deep Profiling Mooring
+LCA_DEMO_P,LP18,,MF_RSN,SITE_PN3A,,PN3A 200 m and Shallow Profiling Mooring,PN3A 200 m and Shallow Profiling Mooring
+LCA_DEMO_P,LP19,,MF_RSN,SITE_PN3B,,PN3B Medium Power J-Box 1,PN3B Medium Power J-Box 1
+LCA_DEMO_P,LP20,,MF_RSN,SITE_PN3B,,PN3B Medium Power J-Box 2,PN3B Medium Power J-Box 2
+LCA_DEMO_P,LP21,,MF_RSN,SITE_PN3B,,PN3B Medium Power J-Box 3,PN3B Medium Power J-Box 3
+LCA_DEMO_P,LP22,,MF_RSN,SITE_PN3B,,PN3B Medium Power J-Box 4,PN3B Medium Power J-Box 4
 
-LCA_DEMO_PRE,LP50,,SITE_GA,,Argentine Basin Surface Mooring,Argentine Basin Surface Mooring
-LCA_DEMO_P,LP51,,SITE_GA,,Argentine Basin Flanking Mooring,Argentine Basin Flanking Mooring
-LCA_DEMO_P,LP52,,SITE_GA,,Argentine Basin Vertical Profiler Mooring,Argentine Basin Vertical Profiler Mooring
-LCA_DEMO_P,LP53,,SITE_GA,,Argentine Basin Global Glider 1,Argentine Basin Global Glider 1
-LCA_DEMO_P,LP54,,SITE_GA,,Argentine Basin Global Glider 2,Argentine Basin Global Glider 2
-LCA_DEMO_P,LP55,,SITE_GA,,Argentine Basin Global Glider 3,Argentine Basin Global Glider 3
-LCA_DEMO_P,LP56,,SITE_GA,,Argentine Basin Global Glider 4,Argentine Basin Global Glider 4
-LCA_DEMO_P,LP57,,SITE_GI,,Irminger Sea Surface Mooring,Irminger Sea Surface Mooring
-LCA_DEMO_P,LP58,,SITE_GI,,Irminger Sea Flanking Mooring,Irminger Sea Flanking Mooring
-LCA_DEMO_P,LP59,,SITE_GI,,Irminger Sea Vertical Profiler Mooring,Irminger Sea Vertical Profiler Mooring
-LCA_DEMO_P,LP60,,SITE_GI,,Irminger Sea Global Glider 1,Irminger Sea Global Glider 1
-LCA_DEMO_P,LP61,,SITE_GI,,Irminger Sea Global Glider 2,Irminger Sea Global Glider 2
-LCA_DEMO_P,LP62,,SITE_GI,,Irminger Sea Global Glider 3,Irminger Sea Global Glider 3
-LCA_DEMO_P,LP63,,SITE_GI,,Irminger Sea Global Glider 4,Irminger Sea Global Glider 4
-LCA_DEMO_P,LP64,,SITE_GP,,Station Papa Flanking Mooring,Station Papa Flanking Mooring
-LCA_DEMO_P,LP65,,SITE_GP,,Station Papa Vertical Profiler Mooring,Station Papa Vertical Profiler Mooring
-LCA_DEMO_P,LP66,,SITE_GP,,Station Papa Global Glider 1,Station Papa Global Glider 1
-LCA_DEMO_P,LP67,,SITE_GP,,Station Papa Global Glider 2,Station Papa Global Glider 2
-LCA_DEMO_P,LP68,,SITE_GP,,Station Papa Global Glider 3,Station Papa Global Glider 3
-LCA_DEMO_P,LP69,,SITE_GP,,Station Papa Global Glider 4,Station Papa Global Glider 4
-LCA_DEMO_P,LP70,,SITE_GS,,Southern Ocean Surface Mooring,Southern Ocean Surface Mooring
-LCA_DEMO_P,LP71,,SITE_GS,,Southern Ocean Flanking Mooring,Southern Ocean Flanking Mooring
-LCA_DEMO_P,LP72,,SITE_GS,,Southern Ocean Vertical Profiler Mooring,Southern Ocean Vertical Profiler Mooring
-LCA_DEMO_P,LP73,,SITE_GS,,Southern Ocean Global Glider 1,Southern Ocean Global Glider 1
-LCA_DEMO_P,LP74,,SITE_GS,,Southern Ocean Global Glider 2,Southern Ocean Global Glider 2
-LCA_DEMO_P,LP75,,SITE_GS,,Southern Ocean Global Glider 3,Southern Ocean Global Glider 3
-LCA_DEMO_P,LP76,,SITE_GS,,Southern Ocean Global Glider 4,Southern Ocean Global Glider 4
+LCA_DEMO_PRE,LP50,,MF_CGSN,SITE_GA,,Argentine Basin Surface Mooring,Argentine Basin Surface Mooring
+LCA_DEMO_P,LP51,,MF_CGSN,SITE_GA,,Argentine Basin Flanking Mooring,Argentine Basin Flanking Mooring
+LCA_DEMO_P,LP52,,MF_CGSN,SITE_GA,,Argentine Basin Vertical Profiler Mooring,Argentine Basin Vertical Profiler Mooring
+LCA_DEMO_P,LP53,,MF_CGSN,SITE_GA,,Argentine Basin Global Glider 1,Argentine Basin Global Glider 1
+LCA_DEMO_P,LP54,,MF_CGSN,SITE_GA,,Argentine Basin Global Glider 2,Argentine Basin Global Glider 2
+LCA_DEMO_P,LP55,,MF_CGSN,SITE_GA,,Argentine Basin Global Glider 3,Argentine Basin Global Glider 3
+LCA_DEMO_P,LP56,,MF_CGSN,SITE_GA,,Argentine Basin Global Glider 4,Argentine Basin Global Glider 4
+LCA_DEMO_P,LP57,,MF_CGSN,SITE_GI,,Irminger Sea Surface Mooring,Irminger Sea Surface Mooring
+LCA_DEMO_P,LP58,,MF_CGSN,SITE_GI,,Irminger Sea Flanking Mooring,Irminger Sea Flanking Mooring
+LCA_DEMO_P,LP59,,MF_CGSN,SITE_GI,,Irminger Sea Vertical Profiler Mooring,Irminger Sea Vertical Profiler Mooring
+LCA_DEMO_P,LP60,,MF_CGSN,SITE_GI,,Irminger Sea Global Glider 1,Irminger Sea Global Glider 1
+LCA_DEMO_P,LP61,,MF_CGSN,SITE_GI,,Irminger Sea Global Glider 2,Irminger Sea Global Glider 2
+LCA_DEMO_P,LP62,,MF_CGSN,SITE_GI,,Irminger Sea Global Glider 3,Irminger Sea Global Glider 3
+LCA_DEMO_P,LP63,,MF_CGSN,SITE_GI,,Irminger Sea Global Glider 4,Irminger Sea Global Glider 4
+LCA_DEMO_P,LP64,,MF_CGSN,SITE_GP,,Station Papa Flanking Mooring,Station Papa Flanking Mooring
+LCA_DEMO_P,LP65,,MF_CGSN,SITE_GP,,Station Papa Vertical Profiler Mooring,Station Papa Vertical Profiler Mooring
+LCA_DEMO_P,LP66,,MF_CGSN,SITE_GP,,Station Papa Global Glider 1,Station Papa Global Glider 1
+LCA_DEMO_P,LP67,,MF_CGSN,SITE_GP,,Station Papa Global Glider 2,Station Papa Global Glider 2
+LCA_DEMO_P,LP68,,MF_CGSN,SITE_GP,,Station Papa Global Glider 3,Station Papa Global Glider 3
+LCA_DEMO_P,LP69,,MF_CGSN,SITE_GP,,Station Papa Global Glider 4,Station Papa Global Glider 4
+LCA_DEMO_P,LP70,,MF_CGSN,SITE_GS,,Southern Ocean Surface Mooring,Southern Ocean Surface Mooring
+LCA_DEMO_P,LP71,,MF_CGSN,SITE_GS,,Southern Ocean Flanking Mooring,Southern Ocean Flanking Mooring
+LCA_DEMO_P,LP72,,MF_CGSN,SITE_GS,,Southern Ocean Vertical Profiler Mooring,Southern Ocean Vertical Profiler Mooring
+LCA_DEMO_P,LP73,,MF_CGSN,SITE_GS,,Southern Ocean Global Glider 1,Southern Ocean Global Glider 1
+LCA_DEMO_P,LP74,,MF_CGSN,SITE_GS,,Southern Ocean Global Glider 2,Southern Ocean Global Glider 2
+LCA_DEMO_P,LP75,,MF_CGSN,SITE_GS,,Southern Ocean Global Glider 3,Southern Ocean Global Glider 3
+LCA_DEMO_P,LP76,,MF_CGSN,SITE_GS,,Southern Ocean Global Glider 4,Southern Ocean Global Glider 4
 
-LCA_DEMO_PRE,LP100,,SITE_CE,,Endurance 25m,Endurance 25m
-LCA_DEMO_P,LP101,,SITE_CE,,Endurance 80m,Endurance 80m
-LCA_DEMO_P,LP102,,SITE_CE,,Endurance 200m,Endurance 200m
-LCA_DEMO_P,LP103,,SITE_CE,,Endurance 500m,Endurance 500m
-LCA_DEMO_P,LP104,,SITE_CP,,Pioneer 25m,Pioneer 25m
-LCA_DEMO_P,LP105,,SITE_CP,,Pioneer 80m,Pioneer 80m
-LCA_DEMO_P,LP106,,SITE_CP,,Pioneer 200m,Pioneer 200m
-LCA_DEMO_P,LP107,,SITE_CP,,Pioneer 500m,Pioneer 500m
+LCA_DEMO_PRE,LP100,,MF_CGSN,SITE_CE,,Endurance 25m,Endurance 25m
+LCA_DEMO_P,LP101,,MF_CGSN,SITE_CE,,Endurance 80m,Endurance 80m
+LCA_DEMO_P,LP102,,MF_CGSN,SITE_CE,,Endurance 200m,Endurance 200m
+LCA_DEMO_P,LP103,,MF_CGSN,SITE_CE,,Endurance 500m,Endurance 500m
+LCA_DEMO_P,LP104,,MF_CGSN,SITE_CP,,Pioneer 25m,Pioneer 25m
+LCA_DEMO_P,LP105,,MF_CGSN,SITE_CP,,Pioneer 80m,Pioneer 80m
+LCA_DEMO_P,LP106,,MF_CGSN,SITE_CP,,Pioneer 200m,Pioneer 200m
+LCA_DEMO_P,LP107,,MF_CGSN,SITE_CP,,Pioneer 500m,Pioneer 500m

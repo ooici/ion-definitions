@@ -1,9 +1,9 @@
-Scenario,ID,owner_id,input_stream_defs,output_stream_defs,dpd/name,dpd/description,dpd/module,dpd/class_name,dpd/process_source,dpd/parameters
-LCA_DEMO_PRE,DPD1,,StreamDef2,"StreamDef3,StreamDef4,StreamDef5",CTD_L0,L0 - Conductivity/Temp/Pressure,ion.processes.data.transforms.ctd.ctd_L0_all,ctd_L0_all
-LCA_DEMO_PRE,DPD2,,StreamDef3,StreamDef6,CONDWAT,L1 - Conductivity,ion.processes.data.transforms.ctd.ctd_L1_conductivity,CTDL1ConductivityTransform
-LCA_DEMO_PRE,DPD3,,StreamDef4,StreamDef7,TEMPWAT,L1 - Temperature,ion.processes.data.transforms.ctd.ctd_L1_temperature,CTDL1TemperatureTransform
-LCA_DEMO_PRE,DPD4,,StreamDef5,StreamDef8,PRESWAT,L1 - Pressure (Depth),ion.processes.data.transforms.ctd.ctd_L1_pressure,CTDL1PressureTransform
-LCA_DEMO_PRE,DPD5,,StreamDef2,StreamDef9,PRACSAL,L2 - Practical Salinity,ion.processes.data.transforms.ctd.ctd_L2_salinity,SalinityTransform
-LCA_DEMO_PRE,DPD6,,StreamDef2,StreamDef10,DENSITY L2,L2 - Density,ion.processes.data.transforms.ctd.ctd_L2_density,DensityTransform
-VIZ_DEMO_PRE,DPD7,,,StreamDef11,SINEWAVE,Raw Sine Wave DPD,??,??
-VIZ_DEMO_PRE,DPD8,,,StreamDef12,NETCDFSAMPLE,NetCDF Sample DPD,??,??
+Scenario,ID,owner_id,mf_ids,input_stream_defs,output_stream_defs,dpd/name,dpd/description,dpd/module,dpd/class_name,dpd/process_source,dpd/parameters
+LCA_DEMO_PRE,DPD1,,MF_RSN,StreamDef2,"StreamDef3,StreamDef4,StreamDef5",CTD_L0,L0 - Conductivity/Temp/Pressure,ion.processes.data.transforms.ctd.ctd_L0_all,ctd_L0_all
+LCA_DEMO_PRE,DPD2,,MF_RSN,StreamDef3,StreamDef6,CONDWAT,L1 - Conductivity,ion.processes.data.transforms.ctd.ctd_L1_conductivity,CTDL1ConductivityTransform
+LCA_DEMO_PRE,DPD3,,MF_RSN,StreamDef4,StreamDef7,TEMPWAT,L1 - Temperature,ion.processes.data.transforms.ctd.ctd_L1_temperature,CTDL1TemperatureTransform
+LCA_DEMO_PRE,DPD4,,MF_RSN,StreamDef5,StreamDef8,PRESWAT,L1 - Pressure (Depth),ion.processes.data.transforms.ctd.ctd_L1_pressure,CTDL1PressureTransform
+LCA_DEMO_PRE,DPD5,,MF_RSN,StreamDef2,StreamDef9,PRACSAL,L2 - Practical Salinity,ion.processes.data.transforms.ctd.ctd_L2_salinity,SalinityTransform
+LCA_DEMO_PRE,DPD6,,MF_RSN,StreamDef2,StreamDef10,DENSITY L2,L2 - Density,ion.processes.data.transforms.ctd.ctd_L2_density,DensityTransform
+VIZ_DEMO_PRE,DPD7,,,,StreamDef11,SINEWAVE,Raw Sine Wave DPD,??,??
+VIZ_DEMO_PRE,DPD8,,,,StreamDef12,NETCDFSAMPLE,NetCDF Sample DPD,??,??

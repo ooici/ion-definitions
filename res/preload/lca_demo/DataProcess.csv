@@ -1,8 +1,8 @@
-Scenario,ID,owner_id,data_process_definition_id,in_data_product_id,out_data_products
-LCA_DEMO_PRE,DPROC1,,DPD1,DPROD2,"{'conductivity':'DPROD3','pressure':'DPROD4','temperature':'DPROD5'}"
-LCA_DEMO_PRE,DPROC2,,DPD2,DPROD3,{'out':'DPROD6'}
-LCA_DEMO_PRE,DPROC3,,DPD3,DPROD4,{'out':'DPROD7'}
-LCA_DEMO_PRE,DPROC4,,DPD4,DPROD5,{'out':'DPROD8'}
-LCA_DEMO_PRE,DPROC5,,DPD5,DPROD2,{'out':'DPROD9'}
-VIZ_DEMO_PRE,DPROC6,,DPD7,,{'out':'DPROD11'}
-VIZ_DEMO_PRE,DPROC7,,DPD8,,{'out':'DPROD12'}
+Scenario,ID,owner_id,mf_ids,data_process_definition_id,in_data_product_id,out_data_products
+LCA_DEMO_PRE,DPROC1,,MF_RSN,DPD1,DPROD2,"{'conductivity':'DPROD3','pressure':'DPROD4','temperature':'DPROD5'}"
+LCA_DEMO_PRE,DPROC2,,MF_RSN,DPD2,DPROD3,{'out':'DPROD6'}
+LCA_DEMO_PRE,DPROC3,,MF_RSN,DPD3,DPROD4,{'out':'DPROD7'}
+LCA_DEMO_PRE,DPROC4,,MF_RSN,DPD4,DPROD5,{'out':'DPROD8'}
+LCA_DEMO_PRE,DPROC5,,MF_RSN,DPD5,DPROD2,{'out':'DPROD9'}
+VIZ_DEMO_PRE,DPROC6,,,DPD7,,{'out':'DPROD11'}
+VIZ_DEMO_PRE,DPROC7,,,DPD8,,{'out':'DPROD12'}

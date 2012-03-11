@@ -1,24 +1,59 @@
 # event.yml: events/notifications messages
 
 Event:
-  origin: ""        # the origin of the event (derived specific)
+  origin: ""        # the origin of the event (derived specific). Mostly a resource id
+  origin_type: ""   # the type of origin (e.g. resource type, etc)
   description: ""   # readable description of the event (not required)
   ts_created: ""    # timestamp of event created in millis in UNIX epoch
+  base_types: []    # List of event super types
 
 ---
 
-ResourceLifecycleEvent: !Extends_Event
-  state: ""
+ResourceEvent: !Extends_Event
+  # The origin is the resource id
 
 ---
 
-AppLoaderEvent: !Extends_Event
-  app_name: ""
-  state: !enum (name=AppLoaderEventState, values=(STARTED, STOPPED), default=STARTED)
+# When a resource changes its life cycle and is created
+ResourceLifecycleEvent: !Extends_ResourceEvent
+  old_state: ""
+  new_state: ""
+  transition: ""
+  resource_type: ""
+
 ---
 
-ContainerStartupEvent: !Extends_Event
-  startup_names: []         # things we were required to startup with the container, list of strings
+ResourceModifiedEvent: !Extends_ResourceEvent
+  change_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, DELETE), default=UPDATE)
+  change_set: ""
+
+
+ContainerStateEnum: !enum (values=(CREATE, START, STOP, TERMINATE, ERROR), default=CREATE)
+
+ProcessStateEnum: !enum (values=(CREATE, START, STOP, TERMINATE, ERROR), default=CREATE)
+
+---
+
+ContainerLifecycleEvent: !Extends_Event
+  # The origin is the container id
+  state: !ContainerStateEnum
+  host: ""
+
+ProcessLifecycleEvent: !Extends_Event
+  # The origin is the process id
+  state: !ProcessStateEnum
+  container_id: ""
+
+---
+
+DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
+  type: !DatasetIngestionTypeEnum
+  configuration: {}
+  deleted: False # Temporary - until we have resource life cycle events
+
+
+# ------------------------------------------------------------------------------------
+# FORMER R1 event types - delete if not needed
 
 ---
 
@@ -26,11 +61,6 @@ TriggerEvent: !Extends_Event
   task_id: ""               # task id in the scheduler service
 
 # extend this for other triggered events
-
----
-
-ResourceModifiedEvent: !Extends_Event
-  resource_id: 0            # TODO what is relevent here?
 
 ---
 
@@ -75,11 +105,6 @@ IngestionProcessingEvent: !Extends_ResourceModifiedEvent
   conv_id: ""               # conversation id as known by ingestion
   processing_step: ""       # string of "dataset", "chunk", "done"
 
----
-DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
-  type: !DatasetIngestionTypeEnum
-  configuration: {}
-  deleted: False # Temporary - until we have resource life cycle events
 ---
 
 NewSubscriptionEvent: !Extends_Event

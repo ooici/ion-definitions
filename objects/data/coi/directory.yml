@@ -7,3 +7,5 @@ DirEntry:
   parent: ''
   key: ''
   attributes: {}
+  ts_created: ""  # Timestamp str in millis in UNIX epoch
+  ts_updated: ""

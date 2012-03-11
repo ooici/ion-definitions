@@ -18,14 +18,13 @@ ResourceEvent: !Extends_Event
 ResourceLifecycleEvent: !Extends_ResourceEvent
   old_state: ""
   new_state: ""
-  transition: ""
+  transition_event: ""
   resource_type: ""
 
 ---
 
 ResourceModifiedEvent: !Extends_ResourceEvent
-  change_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, DELETE), default=UPDATE)
-  change_set: ""
+  mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, DELETE), default=UPDATE)
 
 
 ContainerStateEnum: !enum (values=(CREATE, START, STOP, TERMINATE, ERROR), default=CREATE)
@@ -50,6 +49,7 @@ DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
   type: !DatasetIngestionTypeEnum
   configuration: {}
   deleted: False # Temporary - until we have resource life cycle events
+  resource_id: ""
 
 
 # ------------------------------------------------------------------------------------

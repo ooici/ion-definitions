@@ -17,10 +17,10 @@ InstrumentModel: !Extends_InformationResource
   model_label: ""
   manufacturer: !Institution
   reference_url: ""
-  instrument_family: !enum (name=InstrumentFamilyCode, values=(CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL), default=CAM)
-  instrument_class: !enum (name=InstrumentClassCode, values=(OPTAA, CAMDS, CAMHD, CTDAV, CTDBP, CTDGV, CTDMO, CTDPF, PPSDN, OTISF, FLORT, FLORD, FDCHP, FDCLP, HYDBB, HYDLF, HPIES, MASSP, METBK, NUTR4, NUTNR, DOFST, DOSTA, PARAD, PCO2A, PCO2W, PHSEN, ZPLSC, ZPLSG, BOTPT, PRESF, PREST, OSBSBB, OBSBK, OBSSP, OBSSK, SPKIR, THSPH, TRHPH, TMPSF, VELPT, VELPT, VEL3D, ADCPT, ADCPV, ADCPS, ADCPA, OSMOI, RASFL, WAVSS), default=OPTAA)
+  instrument_family: ""     # values= CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL, default=CAM
+  instrument_class: ""  # values=OPTAA, CAMDS, CAMHD, CTDAV, CTDBP, CTDGV, CTDMO, CTDPF, PPSDN, OTISF, FLORT, FLORD, FDCHP, FDCLP, HYDBB, HYDLF, HPIES, MASSP, METBK, NUTR4, NUTNR, DOFST, DOSTA, PARAD, PCO2A, PCO2W, PHSEN, ZPLSC, ZPLSG, BOTPT, PRESF, PREST, OSBSBB, OBSBK, OBSSP, OBSSK, SPKIR, THSPH, TRHPH, TMPSF, VELPT, VELPT, VEL3D, ADCPT, ADCPV, ADCPS, ADCPA, OSMOI, RASFL, WAVSS, default=OPTAA
   data_record_description: "" #later will be an object
-  primary_interface: !enum (name=PrimaryInterfaceCode, values=(RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE), default=RS232)
+  primary_interface: "" # values=RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE, default=RS232
   secondary_interface: []
   baud_default: ""
   baud_supported: []

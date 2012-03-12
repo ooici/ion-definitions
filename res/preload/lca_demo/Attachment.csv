@@ -1,4 +1,4 @@
 Scenario,ID,resource_id,file_path,att/name,att/description,att/attachment_type,att/content_type,att/content
-LCA_DEMO_PRE,ATT1,ID1,att1.pdf,,,BLOB
-LCA_DEMO_PRE,ATT2,ID1,att2.png,,,BLOB
-LCA_DEMO_PRE,ATT3,ID2,att3.csv,,,ASCII
+LCA_DEMO_PRE,ATT1,ID3,att1.pdf,,,BLOB
+LCA_DEMO_PRE,ATT2,ID3,att2.png,,,BLOB
+LCA_DEMO_PRE,ATT3,ID4,att3.csv,,,ASCII

@@ -1,5 +1,8 @@
 Scenario,ID,owner_id,mf_ids,marine_facility_id,parent_site_id,site/name,site/description,site/geospatial_constraint/geospatiallatmin,site/geospatial_constraint/geospatiallatmax,site/geospatial_constraint/geospatiallonmin,site/geospatial_constraint/geospatiallonmax,site/geospatial_constraint/minbottomdepth,site/geospatial_constraint/maxbottomdepth,site/geospatial_constraint/geospatialverticalpositive,site/temporal_constraint,site/entity_constraint
 DOC,,,,,,site name,site description,"location bounds as minLat,maxLat,minLon,maxLon,minDepth,maxDepth (positive down system)",,,,,,,time bounds as ISO8601 interval
-LCA_DEMO_PRE,SITE_CE02SH,,MF_RSN,MF_RSN,,Slope Base,"Slope Base Site. the CE02SH is made up, to encompass all Slope Base sites",44.5,44.7,-125.5,-125.3,0,3000
-LCA_DEMO_PRE,SITE_CE02SHSM,,MF_RSN,,SITE_CE02SH,Slope Base Shallow Profiler,Endurance OR Slope Base Mooring Shallow Profiler (winched) Site,44.55,44.65,-125.45,-125.35,0,205
-LCA_DEMO_PRE,SITE_CE02SHBS,,MF_RSN,,SITE_CE02SH,Slope Base 200m,"Endurance OR Slope Base Mooring 200m Platform Site. the CE02SHBS is made up, can't find a site code to match the 200m platform",44.55,44.65,-125.45,-125.35,195,205
+LCA_DEMO_PRE,SITE_CE02SH,USER_10,MF_RSN,MF_RSN,,Slope Base,"Slope Base Site. the CE02SH is made up, to encompass all Slope Base sites",44.5,44.7,-125.5,-125.3,0,3000
+LCA_DEMO_PRE,SITE_CE02SHSM,USER_10,MF_RSN,,SITE_CE02SH,Slope Base Shallow Profiler,Endurance OR Slope Base Mooring Shallow Profiler (winched) Site,44.55,44.65,-125.45,-125.35,0,205
+LCA_DEMO_PRE,SITE_CE02SHBS,USER_10,MF_RSN,,SITE_CE02SH,Slope Base 200m,"Endurance OR Slope Base Mooring 200m Platform Site. the CE02SHBS is made up, can't find a site code to match the 200m platform",44.55,44.65,-125.45,-125.35,195,205
+LCA_DEMO_PRE,SITE_CE03SH,USER_1,MF_3,MF_3,,Slope Base Demo,"Slope Base Site. the CE02SH is made up, to encompass all Slope Base sites",44.5,44.7,-125.5,-125.3,0,3000
+LCA_DEMO_PRE,SITE_CE03SHSM,USER_1,MF_3,,SITE_CE03SH,Slope Base Shallow Profiler Demo,Endurance OR Slope Base Mooring Shallow Profiler (winched) Site,44.55,44.65,-125.45,-125.35,0,205
+LCA_DEMO_PRE,SITE_CE03SHBS,USER_1,MF_3,,SITE_CE03SH,Slope Base 200m Demo,"Endurance OR Slope Base Mooring 200m Platform Site. the CE02SHBS is made up, can't find a site code to match the 200m platform",44.55,44.65,-125.45,-125.35,195,205

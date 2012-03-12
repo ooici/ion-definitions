@@ -1,7 +1,13 @@
 Scenario,ID,owner_id,mf_ids,pm/name,pm/description,pm/manufacturer/name,pm/OOI_node_type,pm/ION_onboard,pm/shore_networked,pm/platform_type,pm/maximum_crew
-LCA_DEMO_PRE,PM1,USER_1,"MF_RSN,MF_CGSN",Shallow Profiler,Shallow Profiler Model w/200M platform,RSN,SP,FALSE,Intermittent,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
-LCA_DEMO_PRE,PM2,USER_1,MF_RSN,Medium Power J-Box,Medium Power Junction Box (J-Box) Model,RSN,MJ,FALSE,Always Fast,http://mmisw.org/ont/mmi/platform/BenthicNode,0
-LCA_DEMO_PRE,PM3,USER_1,MF_RSN,200m Platform,200-meter Platform for Shallow Profiler Model,RSN,FI,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/mooring,0
-LCA_DEMO_PRE,PM4,USER_2,MF_RSN,Deep Profiler,Wire-following Deep Profiler Model,RSN,WF,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
-LCA_DEMO_PRE,PM5,USER_2,MF_RSN,Low Power J-Box,Low Power Junction Box (J-Box) Model,RSN,LJ,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
-LCA_DEMO_PRE,PM6,USER_2,MF_RSN,Low Voltage Node,Low Voltage Node Model,RSN,??,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM1,USER_10,"MF_RSN,MF_CGSN",Shallow Profiler,Shallow Profiler Model w/200M platform,RSN,SP,FALSE,Intermittent,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+LCA_DEMO_PRE,PM2,USER_10,MF_RSN,Medium Power J-Box,Medium Power Junction Box (J-Box) Model,RSN,MJ,FALSE,Always Fast,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM3,USER_10,MF_RSN,200m Platform,200-meter Platform for Shallow Profiler Model,RSN,FI,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/mooring,0
+LCA_DEMO_PRE,PM4,USER_10,MF_RSN,Deep Profiler,Wire-following Deep Profiler Model,RSN,WF,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+LCA_DEMO_PRE,PM5,USER_10,MF_RSN,Low Power J-Box,Low Power Junction Box (J-Box) Model,RSN,LJ,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM6,USER_10,MF_RSN,Low Voltage Node,Low Voltage Node Model,RSN,??,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM11,USER_1,MF_3,Shallow Profilern Demo,Shallow Profiler Model w/200M platform,RSN,SP,FALSE,Intermittent,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+LCA_DEMO_PRE,PM12,USER_1,MF_3,Medium Power J-Box Demo,Medium Power Junction Box (J-Box) Model,RSN,MJ,FALSE,Always Fast,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM13,USER_1,MF_3,200m Platform Demo,200-meter Platform for Shallow Profiler Model,RSN,FI,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/mooring,0
+LCA_DEMO_PRE,PM14,USER_1,MF_3,Deep Profiler Demo,Wire-following Deep Profiler Model,RSN,WF,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+LCA_DEMO_PRE,PM15,USER_1,MF_3,Low Power J-Box Demo,Low Power Junction Box (J-Box) Model,RSN,LJ,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+LCA_DEMO_PRE,PM16,USER_1,MF_3,Low Voltage Node Demo,Low Voltage Node Model,RSN,??,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0

@@ -15,8 +15,15 @@ UserRequest: !Extends_ResourceNegotiation
 
 ---
 EnrollmentRequest: !Extends_UserRequest
+  pre_condition: ["is_registered(user_id) == True", "is_enrolled(org_id,user_id) == False", "enroll_req_exists(org_id,user_id) == True"]
+  accept_action: enroll_member(org_id,user_id)
 
 RoleRequest: !Extends_UserRequest
+  role_name: ""
+  pre_condition: ["is_enrolled(org_id,user_id) == True"]
+  accept_action: grant_role(org_id,user_id,role_name)
 
 ResourceRequest: !Extends_UserRequest
   resource_id: ""
+  pre_condition: ["is_enrolled(org_id,user_id) == True"]
+  accept_action: grant_resource_access(org_id,user_id,resource_id)

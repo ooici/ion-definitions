@@ -27,9 +27,9 @@ ResourceModifiedEvent: !Extends_ResourceEvent
   mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, DELETE), default=UPDATE)
 
 
-ContainerStateEnum: !enum (values=(CREATE, START, STOP, TERMINATE, ERROR), default=CREATE)
+ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
 
-ProcessStateEnum: !enum (values=(CREATE, START, STOP, TERMINATE, ERROR), default=CREATE)
+ProcessStateEnum: !enum (values=(SPAWN, TERMINATE, ERROR), default=SPAWN)
 
 ---
 
@@ -42,6 +42,8 @@ ProcessLifecycleEvent: !Extends_Event
   # The origin is the process id
   state: !ProcessStateEnum
   container_id: ""
+  process_type: ""
+  process_name: ""
 
 ---
 

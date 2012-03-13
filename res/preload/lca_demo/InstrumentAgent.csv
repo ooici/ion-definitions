@@ -1,2 +1,2 @@
-Scenario,ID,owner_id,lcstate,mf_ids,ia/name,ia/description,ia/agent_version,ia/driver_module,ia/driver_class,ia/driver_client_module,ia/driver_class_client,ia/conection_method,ia/time_source,ia/event_publisher_origin
-LCA_DEMO_PRE,IA2,USER_1,DEPLOYED_AVAILABLE,MF_3,CTD Instrument Agent Demo,CTD Instrument Agent,0.1,ion.services.mi.instrument_agent,InstrumentAgent
+Scenario,ID,owner_id,lcstate,mf_ids,instrument_model_ids,ia/name,ia/description,ia/agent_version,ia/driver_module,ia/driver_class,ia/driver_client_module,ia/driver_class_client,ia/conection_method,ia/time_source,ia/event_publisher_origin
+LCA_DEMO_PRE,IA2,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,CTD Instrument Agent Demo,CTD Instrument Agent,0.1,ion.services.mi.instrument_agent,InstrumentAgent

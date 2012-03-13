@@ -3,27 +3,37 @@ Org: !Extends_TaskableResource
 
 ---
 
-ResourceNegotiation: !Extends_InformationResource
+NegotiationDefinition: !Extends_InformationResource
+  pre_condition: []
+  accept_action: ""
+
+---
+
+NegotiationRequest: !Extends_InformationResource
   status: "Open"
   status_description: ""
 
 ---
 
-UserRequest: !Extends_ResourceNegotiation
+UserRequest: !Extends_NegotiationRequest
   org_id: ""     # Will also keep an association but this makes it easier to filter on
   user_id: ""    # Will also keep an association but this makes it easier to filter on
 
 ---
 EnrollmentRequest: !Extends_UserRequest
-  pre_condition: ["is_registered(user_id) == True", "is_enrolled(org_id,user_id) == False", "enroll_req_exists(org_id,user_id) == True"]
-  accept_action: enroll_member(org_id,user_id)
 
 RoleRequest: !Extends_UserRequest
   role_name: ""
-  pre_condition: ["is_enrolled(org_id,user_id) == True"]
-  accept_action: grant_role(org_id,user_id,role_name)
 
 ResourceRequest: !Extends_UserRequest
   resource_id: ""
-  pre_condition: ["is_enrolled(org_id,user_id) == True"]
-  accept_action: grant_resource_access(org_id,user_id,resource_id)
+
+---
+
+Commitment: !Extends_InformationResource
+  org_id: ""
+  user_id: ""
+---
+
+ResourceCommitment: !Extends_Commitment
+  resource_id: ""

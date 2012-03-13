@@ -116,6 +116,9 @@ PredicateTypes:
   hasAttachment:
     domain: [Resource]
     range: [Attachment]
+  hasCommitment:
+    domain: [Org, Resource]
+    range: [Commitment, Commitment]
   hasCredentials:
     domain: [UserIdentity]
     range: [UserCredentials]

@@ -1,0 +1,3 @@
+Scenario,ID,owner_id,mf_ids,marine_facility_id,parent_site_id,site/name,site/description,site/geospatial_constraint/geospatiallatmin,site/geospatial_constraint/geospatiallatmax,site/geospatial_constraint/geospatiallonmin,site/geospatial_constraint/geospatiallonmax,site/geospatial_constraint/minbottomdepth,site/geospatial_constraint/maxbottomdepth,site/geospatial_constraint/geospatialverticalpositive,site/temporal_constraint,site/entity_constraint
+DOC,,,,,,site name,site description,"location bounds as minLat,maxLat,minLon,maxLon,minDepth,maxDepth (positive down system)",,,,,,,time bounds as ISO8601 interval
+LCA_DEMO_PRE,SITE_CE03SH,USER_1,MF_3,MF_3,,Slope Base Demo,"Slope Base Site. the CE02SH is made up, to encompass all Slope Base sites",44.5,44.7,-125.5,-125.3,0,3000

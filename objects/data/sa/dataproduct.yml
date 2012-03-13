@@ -38,8 +38,8 @@ DataProduct: !Extends_InformationResource
   data_product_level: ""
 
   # Provides the name and contact information for a person associated with the dataset
-  # A list of ContactInformation objects
-  data_contact: []
+  # TODO: change this back to : A list of ContactInformation objects
+  data_contact: !ContactInformation
 
   # See OOI Data Products document for latest (not necessarily normative) definitions and controlled vocabulary
   # Mandatory
@@ -81,9 +81,10 @@ DataProduct: !Extends_InformationResource
   # Further information about the exclusive rights hold, such as a justification for a permanent hold
   exclusive_rights_notes: ""
 
-
-
-
+  # Dataset Id for the persisted product
+  dataset_id: ""
+  # Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
+  dataset_configuration_id: ""
 
 
 

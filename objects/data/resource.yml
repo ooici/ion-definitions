@@ -5,7 +5,7 @@ Resource:
   # _rev: ""   - Revision identifier (comes with every object)
   name: ""
   description: ""
-  lcstate: "DRAFT"
+  lcstate: "DRAFT_PRIVATE"
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   ts_updated: ""
 
@@ -25,8 +25,19 @@ ResourceLifeCycle: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
+AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
+  # ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application
+  # BLOB: the content is a binary
+  # OBJECT: the content is an arbitrary object, such as a dict, list
+
+---
+
 Attachment: !Extends_InformationResource
   # To identify attachments to resources
+  attachment_type: !AttachmentType
+  content_type: ""  # MIME type
+  content: {}
+  object_id: ""   # Associated object (resource) ID, for easier indexing
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 
@@ -53,7 +64,7 @@ ContactInformation:
     value: ""
 
 Institution:
-  address: ""
+  name: ""
   phone: ""
   email: ""
   website: ""
@@ -108,4 +119,16 @@ DataFormat:
   nominal_sampling_rate_minimum: "" # Hz
   nominal_sampling_rate_maximum: "" # Hz
 
+---
 
+FrameOfReference: !Extends_InformationResource
+
+  # Specified bounds in 2 or 3 dimensions within which entity exists
+  # Mandatory
+  geospatial_constraint: !GeospatialBounds
+
+  # Specified time constraint within which entity exists
+  temporal_constraint: ""   # what is TemporalConstraint object?
+
+  # Collection of entities which collectively constrain the entity
+  entity_constraint: ""     # what is EntityConstraint object?

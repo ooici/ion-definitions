@@ -30,6 +30,20 @@ methods:
     throws:
       NotFound: if stream_definition_id doesn't exist
 
+  find_stream_definition:
+    docstring: |
+      @brief Retrieves a stream definition from an existing stream_id
+      @param stream_id Stream ID
+      @param id_only True if you only want the stream definition id
+      @return stream definition object
+    in:
+      stream_id: ""
+      id_only: True
+    out:
+      stream_definition: ""
+    throws:
+      NotFound: if there is no association
+
   read_stream_definition:
     docstring: Get an existing stream definition.
     in:

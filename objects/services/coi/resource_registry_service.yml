@@ -64,19 +64,81 @@ methods:
     docstring: |
       Alter object lifecycle according to given transition event. Throws exception
       if resource object does not exist or given transition_event is unknown/illegal.
-      The optional lcstate argument asserts that the current life cycle state matches.
       The new life cycle state after applying the transition is returned.
     in:
       resource_id: ""
       transition_event: ""
-      current_lcstate: ""
     out:
       lcstate: ""
     throws:
       NotFound: resource object does not exist
-      BadRequest: transition event unknown
-      Inconsistent: resource not in current_state or transition illegal in current state
+      BadRequest: transition event unknown or illegal in current state; resource type has no lifecycle
       Conflict: race condition while trying to update
+
+  set_lifecycle_state:
+    docstring: |
+      Alter object lifecycle to set to give lifecycle state. Throws exception
+      if resource object does not exist or given state is unknown/illegal.
+      The optional lcstate argument asserts that the current life cycle state matches.
+    in:
+      resource_id: ""
+      target_lcstate: ""
+    out:
+    throws:
+      NotFound: resource object does not exist
+      BadRequest: target state unknown or resource type has no lifecycle
+      Conflict: race condition while trying to update
+
+  # -----------------
+
+  create_attachment:
+    docstring: |
+      Add an attachment to a resource. The attachment is of specified type.
+      If no resource_id is provided, the attachment is created standalone.
+    in:
+      resource_id: ""
+      attachment: !Attachment
+    out:
+      attachment_id: ""
+    throws:
+      NotFound: resource object does not exist if resource_id given
+      BadRequest: bad attachment type or content
+
+  read_attachment:
+    docstring: |
+      Reads an attachment by id.
+    in:
+      attachment_id: ""
+    out:
+      attachment: !Attachment
+    throws:
+      NotFound: attachment does not exist
+
+  delete_attachment:
+    docstring: |
+      Remove an attachment from a resource.
+    in:
+      attachment_id: ""
+    out:
+    throws:
+      NotFound: attachment does not exist
+
+  find_attachments:
+    docstring: |
+      Returns list of attachment from given resource id.
+      Can limit the number of results and reverse the sort order. Default result order is oldest
+      attachment first.
+    in:
+      resource_id: ""
+      limit: 0
+      descending: False
+      include_content: False
+      id_only: True
+    out:
+      attachment_list: []
+    throws:
+      NotFound: resource does not exist
+
 
   # -----------------
 
@@ -151,13 +213,18 @@ methods:
 
   find_associations:
     docstring: |
-        Find associations by subject, predicate, object. Either subject and
-        predicate have to be provided or predicate only. Returns either a list
-        of associations or a list of association ids.
+        Find associations by subject, predicate, object and assoc_type.
+        If subject and object are provided (with optional predicate and assoc_type),
+        the directed association is returned.
+        If subject only is provided (with optional predicate and assoc_type), any associations
+        as subject or object are returned.
+        Or provide predicate only. Returns either a list
+        of Association objects or a list of association ids.
     in:
       subject: ""
       predicate: ""
       object: ""
+      assoc_type:
       id_only: False
     out:
       list: []
@@ -167,12 +234,13 @@ methods:
   get_association:
     docstring: |
       Read the association specified by the exact subject, predicate, object
-      tuple.  Throws exception if association not found or more than one
+      and type tuple.  Throws exception if association not found or more than one
       association satisfies the tuple.
     in:
       subject: ""
       predicate: ""
       object: ""
+      assoc_type:
       id_only: False
     out:
       association: {}

@@ -5,14 +5,14 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Product+Management+Service
 
-dependencies: [resource_registry, data_acquisition_management, dataset_management, ingestion_management]
+dependencies: [resource_registry, pubsub_management, data_acquisition_management, dataset_management, ingestion_management]
 
 methods:
   create_data_product:
     docstring: Define a realization of a uniquely identified presentation of a defined collection of information. The presentation consists of a particular subset of the collection.
     in:
       data_product: !DataProduct
-      source_resource_id: ""
+      stream_definition_id: ""
     out:
       data_product_id: ""
 
@@ -47,6 +47,8 @@ methods:
     docstring: Persist data product data into a data set
     in:
       data_product_id: ""
+      persist_data: True
+      persist_metadata: True
     out:
     throws:
       NotFound: object with specified id does not exist

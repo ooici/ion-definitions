@@ -61,37 +61,54 @@ methods:
       Throws exception if name does not match any persisted Org
       objects.
     in:
-      name: "ION"
+      name: ""
     out:
       org: !Org
     throws:
       NotFound: object with specified name does not exist
 
+
   # -----------------
 
   add_user_role:
     docstring: |
-       Adds a UserRole to an Org.
-       Throws exception if either id does not exist.
+       Adds a UserRole to an Org. Will call Policy Management Service to actually
+       create the role object that is passed in, if the role by the specified
+       name does not exist. Throws exception if either id does not exist.
     in:
       org_id: ""
-      user_role_id: ""
+      user_role: !UserRole
     out:
-      success: True
+      user_role_id: ""
     throws:
       NotFound: object with specified name does not exist
 
   remove_user_role:
     docstring: |
-       Removes a UserRole from an Org.
+       Removes a UserRole from an Org. The UserRole will not be removed if there are
+       users associated with the UserRole unless the force_removal paramater is set to True
        Throws exception if either id does not exist.
     in:
       org_id: ""
-      user_role_id: ""
+      name: ""
+      force_removal: False
     out:
       success: True
     throws:
       NotFound: object with specified name does not exist
+
+  find_org_role_by_name:
+    docstring: |
+      Returns the User Role object for the specified name in the Org.
+      Throws exception if name does not match any persisted User Role or the Org does not exist.
+      objects.
+    in:
+      org_id: ""
+      name: ""
+    out:
+      user_role: !UserRole
+    throws:
+      NotFound: object with specified name or if does not exist
 
   find_org_roles:
     docstring: |
@@ -106,52 +123,123 @@ methods:
 
   # -----------------
 
-  grant_role:
+
+  request_enroll:
     docstring: |
-      Grants a defined role within an organization to a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
+      Requests for an enrollment with an Org which must be accepted or denied as a separate process.
+      Membership in the ION Org is implied by registration with the system, so a membership
+      association to the ION Org is not maintained. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       user_id: ""
-      user_role_id: ""
-      scope: !RoleScope
+    out:
+      request_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  request_role:
+    docstring: |
+      Requests for an role within an Org which must be accepted or denied as a separate process.
+      A role of Member is automatically implied with successfull enrollment.  Throws a
+      NotFound exception if neither id is found.
+    in:
+      org_id: ""
+      user_id: ""
+      role_name: ""
+    out:
+      request_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_requests:
+    docstring: |
+      Returns a list of open requests for an Org. An optional request_type can be supplied
+      or else all types will be returned. An optional request_status can be supplied
+      or else requests will be returned. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      request_type: ""
+      request_status: ""
+    out:
+      requests: []
+    throws:
+      NotFound: object with specified id does not exist
+
+  approve_request:
+    docstring: |
+      Approves a request made to an Org.  Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      request_id: ""
     out:
       success: True
     throws:
       NotFound: object with specified id does not exist
 
-  revoke_role:
+  deny_request:
     docstring: |
-      Revokes a defined role within an organization to a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
+      Denys a request made to an Org. An optional reason can be recorded with the denial.
+      Will throw a not NotFound exception if none of the specified ids do not exist.
     in:
       org_id: ""
-      user_id: ""
-      user_role_id: ""
+      request_id: ""
+      reason: ""
     out:
       success: True
     throws:
       NotFound: object with specified id does not exist
 
-  find_roles_by_user:
+  find_user_requests:
     docstring: |
-      Returns a list of organization roles for a specific user. Will throw a not NotFound exception
+      Returns a list of requests for a specified User. All requests for all Orgs will be returned
+      unless an org_id is specified. An optional request_type can be supplied
+      or else all types will be returned. An optional request_status can be supplied
+      or else requests will be returned. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
-      org_id: ""
       user_id: ""
+      org_id: ""
+      request_type: ""
+      request_status: ""
     out:
-      user_role_list: []
+      requests: []
     throws:
       NotFound: object with specified id does not exist
 
+  accept_request:
+    docstring: |
+      Accepts and invitation for a request made to an Org.  Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      request_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  reject_request:
+    docstring: |
+      Rejects an invitation made to an Org. An optional reason can be recorded with the rejection.
+      Will throw a not NotFound exception if none of the specified ids do not exist.
+    in:
+      org_id: ""
+      request_id: ""
+      reason: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
   enroll_member:
     docstring: |
       Enrolls a specified user into the specified Org so that they may find and negotiate to use resources
-      of the Org. Throws a NotFound exception if neither id is found.
+      of the Org. Membership in the ION Org is implied by registration with the system, so a membership
+      association to the ION Org is not maintained. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       user_id: ""
@@ -194,6 +282,72 @@ methods:
       user_list: []
     throws:
       NotFound: object with specified id does not exist
+
+  find_enrolled_orgs:
+    docstring: |
+      Returns a list of Orgs that the user is enrolled in. Will throw a not NotFound exception
+      if none of the specified ids do not exist.
+    in:
+      user_id: ""
+    out:
+      org_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+
+  grant_role:
+    docstring: |
+      Grants a defined role within an organization to a specific user. A role of Member is
+      automatically implied with successfull enrollment. Will throw a not NotFound exception
+      if none of the specified ids or role_name does not exist.
+    in:
+      org_id: ""
+      user_id: ""
+      role_name: ""
+      scope: !RoleScope
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  revoke_role:
+    docstring: |
+      Revokes a defined Role within an organization to a specific user. Will throw a not NotFound exception
+      if none of the specified ids or role_name does not exist.
+    in:
+      org_id: ""
+      user_id: ""
+      role_name: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_roles_by_user:
+    docstring: |
+      Returns a list of User Roles for a specific user in an Org.
+      Will throw a not NotFound exception if either of the IDs do not exist.
+    in:
+      org_id: ""
+      user_id: ""
+    out:
+      user_role_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  find_all_roles_by_user:
+    docstring: |
+      Returns a list of all User Roles roles by Org associated with the specified user.
+      Will throw a not NotFound exception if either of the IDs do not exist.
+    in:
+      user_id: ""
+    out:
+      user_roles_by_org: {}
+    throws:
+      NotFound: object with specified id does not exist
+
 
 
   # -----------------

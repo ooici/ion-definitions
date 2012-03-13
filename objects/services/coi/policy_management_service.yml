@@ -12,10 +12,9 @@ methods:
   create_policy:
     docstring: |
       Persists the provided Policy object for the specified Org id. The id string returned
-      is the internal id by which Policy will be indentified in the data store.
+      is the internal id by which Policy will be identified in the data store.
     in:
       policy: !Policy
-      org_id: ""
     out:
       policy_id: ""
     throws:
@@ -59,8 +58,7 @@ methods:
 
   enable_policy:
     docstring: |
-      Advances the lifecycle state of the specified Policy object to be enabled. Only
-      enabled policies should be considered by the policy engine.
+      Sets a flag to enable the use of the policy rule
     in:
       policy_id: ""
     out:
@@ -69,11 +67,99 @@ methods:
 
   disable_policy:
     docstring: |
-      Advances the lifecycle state of the specified Policy object to be disabled. Only
-      enabled policies should be considered by the policy engine.
+      Resets a flag to disable the use of the policy rule
     in:
       policy_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  add_resource_policy:
+    docstring: |
+      Associates a policy rule to a specific resource
+    in:
+      resource_id: ""
+      policy_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  remove_resource_policy:
+    docstring: |
+      Removes an association for a policy rule to a specific resource
+    in:
+      resource_id: ""
+      policy_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_resource_policies:
+    docstring: |
+      Finds all policies associated with a specific resource
+    in:
+      resource_id: ""
+    out:
+      policy_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  get_active_resource_policy_rules:
+    docstring: |
+      Generates the set of all enabled policies for the specified resource
+    in:
+      resource_id: ""
+    out:
+      policy: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  add_service_policy:
+    docstring: |
+      Associates a policy rule to a specific service
+    in:
+      service_name: ""
+      policy_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  remove_service_policy:
+    docstring: |
+      Removes an association for a policy rule to a specific service
+    in:
+      service_name: ""
+      policy_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_service_policies:
+    docstring: |
+      Finds all policies associated with a specific service
+    in:
+      service_name: ""
+    out:
+      policy_list: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  get_active_service_policy_rules:
+    docstring: |
+      Generates the set of all enabled policies for the specified service
+    in:
+      org_id: ""
+      service_name: ""
+    out:
+      policy: ""
     throws:
       NotFound: object with specified id does not exist
 
@@ -81,8 +167,10 @@ methods:
 
   create_role:
     docstring: |
-      Persists the provided UserRole object. The id string returned
-      is the internal id by which a UserRole will be indentified in the data store.
+      Persists the provided UserRole object. The name of a role can only contain
+      alphanumeric and underscore characters while the description can me human
+      readable. The id string returned is the internal id by which a UserRole will
+      be indentified in the data store.
     in:
       user_role: !UserRole
     out:
@@ -92,10 +180,11 @@ methods:
 
   update_role:
     docstring: |
-      Updates the provided UserRole object.  Throws NotFound exception if
-      an existing version of UserRole is not found.  Throws Conflict if
-      the provided UserRole object is not based on the latest persisted
-      version of the object.
+      Updates the provided UserRole object.  The name of a role can only contain
+      alphanumeric and underscore characters while the description can me human
+      readable.Throws NotFound exception if an existing version of UserRole is
+      not found.  Throws Conflict if the provided UserRole object is not based on
+      the latest persisted version of the object.
     in:
       user_role: !UserRole
     out:
@@ -124,23 +213,5 @@ methods:
     in:
       user_role_id: ""
     out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  find_roles:
-    docstring: |
-      Returns a list of UserRole objects defined in the resource registry.
-    in:
-    out:
-      user_role_list: []
-    throws:
-
-  find_role:
-    docstring: |
-      Returns UserRole object that matches the specified name.
-    in:
-      name: ""
-    out:
-      user_role: !UserRole
     throws:
       NotFound: object with specified id does not exist

@@ -14,6 +14,8 @@ system:
 
   # The Org (name) that starts the system
   root_org: ION
+  # The name of the ION System UserIdentity
+  system_actor: ionsystem
   # Load config from directory (merge over pyon.yml+pyon.local.yml but allow command line override)
   config_from_directory: True
   # Global flag to use a mock datastore instead of CouchDB if True
@@ -69,6 +71,9 @@ container:
   directory:
     server: couchdb
 
+  exchange:
+    auto_register: True
+
   messaging:
     server:
       primary: amqp
@@ -88,6 +93,14 @@ container:
       users: /tmp/ion/usr
       resource: /tmp/ion/res
       library: /tmp/ion/lib
+
+  service_gateway:
+    web_server:
+      port: 5000
+      hostname: localhost
+    trusted_originators: []  #Optional list of trusted addresses; an empty list means open system
+    user_cache_size: 2000    #The number of user's whos role data is cached in the gateway
+
       
 # TBD: Rename to "container". See there.
 cc:
@@ -166,10 +179,6 @@ service:
 external_data_agent_management:
   persistent: true
 
-# TBD: Rename container.service_gateway
-web_server:
-  port: 5000
-  hostname: localhost
 
 # ----------------------------------------------------------------------------------
 # The "event" root entry defines event types and event originators, and it
@@ -199,10 +208,9 @@ event:
           del_subscription,
           data,
           data_block,
-          instrument_sample_data,
-          
+          instrument_sample_data,          
           stream_ingestion_policy]
-  containerr: [container_lifecycle, 
+  container: [container_lifecycle, 
               container_startup]
   process: [process_lifecycle]
   application: [app_loader, 
@@ -221,4 +229,9 @@ event:
             del_subscription, 
             ingestion_processing, 
             stream_ingestion_policy]
-  
+
+
+device:
+  sbe37:
+    host: sbe37-simulator.oceanobservatories.org
+    port: 4001

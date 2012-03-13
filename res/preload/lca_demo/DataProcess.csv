@@ -1,0 +1,8 @@
+Scenario,ID,owner_id,mf_ids,data_process_definition_id,in_data_product_id,out_data_products
+LCA_DEMO_PRE,DPROC6,USER_1,MF_3,DPD7,DPROD12,"{'conductivity':'DPROD13','pressure':'DPROD14','temperature':'DPROD15'}"
+LCA_DEMO_PRE,DPROC7,USER_1,MF_3,DPD8,DPROD13,{'out':'DPROD16'}
+LCA_DEMO_PRE,DPROC8,USER_1,MF_3,DPD9,DPROD14,{'out':'DPROD17'}
+LCA_DEMO_PRE,DPROC9,USER_1,MF_3,DPD10,DPROD15,{'out':'DPROD18'}
+LCA_DEMO_PRE,DPROC10,USER_1,MF_3,DPD11,DPROD12,{'out':'DPROD19'}
+VIZ_DEMO_PRE,DPROC6,,,DPD12,,{'out':'DPROD21'}
+VIZ_DEMO_PRE,DPROC7,,,DPD13,,{'out':'DPROD22'}

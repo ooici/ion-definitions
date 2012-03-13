@@ -1,0 +1,5 @@
+Scenario,ID,owner_id,mf/name,mf/description,mf/institution/name,mf/contact/name
+LCA_DEMO_PRE,MF_RSN,USER_10,RSN,Regional Scale Node Observatory,Univ. of Washington,John Delaney
+LCA_DEMO_PRE,MF_CGSN,USER_20,CGSN,Coastal Global Scale Node Observatory,Woods Hole Oceanographic Institution,Bob Weller
+LCA_DEMO_PRE,MF_3,USER_1,RSN_Demo,LCA Demonstration of RSN Observatory,Univ. of Washington,Owen Ownerrep
+LCA_MANUAL,MF_4,USER_1,RSN_Demo_Create,Demonstration of RSN Observatory creation,Univ. of Washington,Owen Ownerrep

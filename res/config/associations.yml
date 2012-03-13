@@ -1,4 +1,4 @@
-# predicates.yml
+# associations.yml
 
 # This is the authoritative definition of all permissible association predicates in the system
 
@@ -6,15 +6,15 @@
 
 PredicateTypes:
 #SA
-  hasAttachment:
-    domain: [Resource]
-    range: [Attachment]
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [LogicalPlatform, LogicalInstrument]
-  hasParent:
-    domain: [DataProducer]
-    range: [DataProducer]
+  hasDeployment:
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [LogicalPlatform, LogicalInstrument]
+  hasPrimaryDeployment:
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [LogicalPlatform, LogicalInstrument]
   hasDataset:
     domain: [DataProducer, DataProduct]
     range: [Dataset]
@@ -37,11 +37,17 @@ PredicateTypes:
     domain: [PlatformDevice, LogicalPlatform]
     range: [InstrumentDevice, LogicalInstrument]
   hasModel:
-    domain: [PlatformDevice, InstrumentDevice, SensorDevice, InstrumentAgent, PlatformAgent, DataSource, ExternalDataAgent]
+    domain: [PlatformDevice, InstrumentDevice, SensorDevice, InstrumentAgent, PlatformAgent, DataSource, ExternalDataAgent, LogicalInstrument, LogicalPlatform]
     range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]
+  hasObservatory:
+    domain: [Org]
+    range: [MarineFacility]
   hasOutputProduct:
     domain: [DataProcess, InstrumentDevice, ExternalDataset]
     range: [DataProduct]
+  hasParent:
+    domain: [DataProducer]
+    range: [DataProducer]
   hasPlatform:
     domain: [MarineFacility, Site, LogicalPlatform]
     range: [PlatformDevice, LogicalPlatform]
@@ -64,36 +70,36 @@ PredicateTypes:
   hasIndex:
     domain: [Catalog]
     range: [Index]
+  hasIngestionConfiguration:
+    domain: [DatasetIngestionConfiguration]
+    range: [IngestionConfiguration]
+  hasInputStreamDefinition:
+    domain: [DataProcessDefinition]
+    range: [StreamDefinition]
+  hasNotification:
+    domain: [UserIdentity]
+    range: [NotificationRequest]
   hasOutStream:
     domain: [Transform]
     range: [Stream]
-  hasProcessDefinition:
-    domain: [Transform]
-    range: [ProcessDefinition]
-  hasSubscription:
-    domain: [Transform, ExchangePoint]
-    range: [Subscription]
   hasStream:
     domain: [Replay, DataProcess, DataProduct, Dataset, ExchangePoint, Subscription]
     range: [Stream]
-  hasTopology:
-    domain: [Stream, Subscription]
-    range: [TopicTopology]
+  hasStreamDefinition:
+    domain: [Stream, InstrumentModel, DataProcessDefinition]
+    range: [StreamDefinition]
+  hasSubscription:
+    domain: [Transform, ExchangePoint]
+    range: [Subscription]
   hasTopicTopology:
     domain: [ExchangePoint]
+    range: [TopicTopology]
+  hasTopology:
+    domain: [Stream, Subscription]
     range: [TopicTopology]
   hasTransform:
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
-  hasNotification:
-    domain: [UserIdentity]
-    range: [NotificationRequest]
-  hasStreamDefinition:
-    domain: [Stream]
-    range: [StreamDefinition]
-  hasIngestionConfiguration:
-    domain: [DatasetIngestionConfiguration]
-    range: [IngestionConfiguration]
 # COI
   affiliatedWith:
     domain: [Org]
@@ -108,7 +114,7 @@ PredicateTypes:
     domain: [TaskableResource, PlatformDevice, InstrumentDevice, ExternalDataset]
     range: [AgentInstance, PlatformAgentInstance,InstrumentAgentInstance, ExternalDataAgentInstance]
   hasAttachment:
-    domain: [InstrumentDevice]
+    domain: [Resource]
     range: [Attachment]
   hasCredentials:
     domain: [UserIdentity]
@@ -140,6 +146,9 @@ PredicateTypes:
   hasPolicy:
     domain: [Resource]
     range: [Policy]
+  hasRequest:
+    domain: [Org, UserIdentity]
+    range: [UserRequest,UserRequest]
   hasResource:
     domain: [Org]
     range: [Resource]
@@ -153,6 +162,9 @@ PredicateTypes:
   supportsExecutionEngine:
     domain: [ProcessDefinition]
     range: [ExecutionEngineDefinition]
+  hasProcessDefinition:
+    domain: [Resource]
+    range: [ProcessDefinition]
 # EOI
   hasProvider:
     domain: [DataSource]
@@ -165,3 +177,4 @@ PredicateTypes:
   hasAccount:
     domain: [BankCustomer]
     range: [BankAccount]
+  

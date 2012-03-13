@@ -1,75 +1,117 @@
 name: marine_facility_management
 
 docstring: |
-  Performs all the observatory level coordination of logical and physical resources and their policies.
+  Provides operations to manage observatories and their logical and associated device resources.
+  Also provide observatory level policy control.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Marine+Facility+Management+Service
 
-dependencies: [resource_registry, instrument_management, data_product_management]
+dependencies: [resource_registry, instrument_management, data_product_management, org_management]
 
 # TODO:
 # - Observatory policy
-# - Deployment
-# - Life cycle support operations
 
 methods:
+  # -----------------
+  # Working with Marine Facility resources.
+
   create_marine_facility:
+    docstring: |
+      Create a MarineFacility resource. A marine facility represents one observatory and is coupled
+      with one Org. The Org is created and associated as part of this call.
     in:
       marine_facility: !MarineFacility
     out:
       marine_facility_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_marine_facility:
+    docstring: Update a MarineFacility resource
     in:
       marine_facility: !MarineFacility
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_marine_facility:
+    docstring: Read a MarineFacility resource
     in:
       marine_facility_id: ""
     out:
       marine_facility: !MarineFacility
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_marine_facility:
+    docstring: Delete a MarineFacility resource
     in:
       marine_facility_id: ""
     out:
-
+    throws:
+      NotFound: object with specified id does not exist
 
   find_marine_facilities:
+    docstring: Find MarineFacility resources
     in:
       filters: !ResourceFilter
     out:
       marine_facility_list: []
 
-  # -----------------
+  find_marine_facility_org:
+    docstring: Return the Org resource id for a specific MarineFacility resource.
+    in:
+      marine_facility_id: ""
+    out:
+      org_id: ""
+    throws:
+      NotFound: object with specified id does not exist
 
-  # Note:
+
+  # -----------------
+  # Working with Site resources.
 
   create_site:
-    docstring: The concept of site typically generalizes the specific hardware or location that it represents. A site can be viewed and monitored as a collection of related resources.
+    docstring: |
+      Create a Site resource. A site is a frame of reference within an observatory. It's parent is
+      either the observatory or another site.
     in:
       site: !Site
+      parent_id: ""
     out:
       site_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_site:
+    docstring: Update a Site resource
     in:
       site: !Site
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_site:
+    docstring: Read a Site resource
     in:
       site_id: ""
     out:
       site: !Site
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_site:
+    docstring: Delete a LogicalPlatform resource, removes assocations to parents
     in:
       site_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_sites:
+    docstring: Find Site resources
     in:
       filters: !ResourceFilter
     out:
@@ -77,33 +119,101 @@ methods:
 
 
   # -----------------
-  # Manipulation of logical instruments
+  # Working with logical platforms
 
+  create_logical_platform:
+    docstring: |
+      Create a LogicalPlatform resource. A logical platform is a frame of reference within an observatory.
+      It represents one slot that can be filled with a device, and defines the platform models that all
+      devices for this slot can be. Devices of the same model can succeed one another for one logical
+      platform over time.
+    in:
+      logical_platform: !LogicalPlatform
+      parent_site_id: ""
+    out:
+      logical_platform_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_logical_platform:
+    docstring: Update a LogicalPlatform resource
+    in:
+      logical_platform: !LogicalPlatform
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_logical_platform:
+    docstring: Read a LogicalPlatform resource
+    in:
+      logical_platform_id: ""
+    out:
+      logical_platform: !LogicalPlatform
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_logical_platform:
+    docstring: Delete a LogicalPlatform resource, remove association to parent Site
+    in:
+      logical_platform_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  find_logical_platforms:
+    docstring: Find LogicalPlatform resources
+    in:
+      filters: !ResourceFilter
+    out:
+      logical_platform_list: []
+
+
+  # -----------------
+  # Working with logical instruments
 
   create_logical_instrument:
-    docstring: A logical instrument is a virtual or conceptual representation of a series of instruments in the same place over time.
+    docstring: |
+      Create a LogicalInstrument resource. A logical instrument is a frame of reference within an observatory.
+      It represents one slot that can be filled with a device, and defines the instrument models that all
+      devices for this slot can be. Devices of the same model can succeed one another for one logical
+      instrument over time.
     in:
       logical_instrument: !LogicalInstrument
+      parent_logical_platform_id: ""
     out:
       logical_instrument_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_logical_instrument:
+    docstring: Update a LogicalInstrument resource
     in:
       logical_instrument: !LogicalInstrument
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   read_logical_instrument:
+    docstring: Read a LogicalInstrument resource
     in:
       logical_instrument_id: ""
     out:
       logical_instrument: !LogicalInstrument
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_logical_instrument:
+    docstring: Delete a LogicalInstrument resource
     in:
       logical_instrument_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   find_logical_instruments:
+    docstring: Find LogicalInstrument resources
     in:
       filters: !ResourceFilter
     out:
@@ -111,43 +221,96 @@ methods:
 
 
 
-  # -----------------
-  # Manipulation of logical platforms
+  # ---------------------------
+  # Associations
 
-
-  create_logical_platform:
-    docstring: A logical platform is a virtual or conceptual representation of a series of platforms in the same place over time.
+  assign_resource_to_marine_facility:
+    docstring: Assign a resource to a Marine facility's assets.
     in:
-      logical_platform: !LogicalPlatform
+      resource_id: ""
+      marine_facility_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  unassign_resource_from_marine_facility:
+    docstring: Remove a resource from a Marine facilitiy's assets.
+    in:
+      resource_id: ""
+      marine_facility_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+      
+  assign_site_to_marine_facility:
+    docstring: Marine facilities have sites.
+    in:
+      site_id: ""
+      marine_facility_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_site_from_marine_facility:
+    in:
+      site_id: ""
+      marine_facility_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_site_to_site:
+    docstring: Sites can be nested within Sites.
+    in:
+      child_site_id: ""
+      parent_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_site_from_site:
+    in:
+      child_site_id: ""
+      parent_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_logical_platform_to_site:
+    docstring: assign a logical platform to a site
+    in:
       logical_platform_id: ""
-
-  update_logical_platform:
-    in:
-      logical_platform: !LogicalPlatform
+      site_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
-  read_logical_platform:
-    in:
-      logical_platform_id: ""
-    out:
-      logical_platform: !LogicalPlatform
-
-  delete_logical_platform:
+  unassign_logical_platform_from_site:
     in:
       logical_platform_id: ""
+      site_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
-  find_logical_platforms:
+  assign_logical_instrument_to_logical_platform:
+    docstring: assign an logical instrument to a host platform, also logical.
     in:
-      filters: !ResourceFilter
+      logical_instrument_id: ""
+      logical_platform_id: ""
     out:
-      logical_platform_list: []
+    throws:
+      NotFound: object with specified id does not exist
 
-
-
-  # ---------------
-  # associations
+  unassign_logical_instrument_from_logical_platform:
+    in:
+      logical_instrument_id: ""
+      logical_platform_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
 
   assign_platform_to_logical_platform:
@@ -156,67 +319,66 @@ methods:
       platform_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
   unassign_platform_from_logical_platform:
     in:
       platform_id: ""
       logical_platform_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
 
-  assign_logical_instrument_to_logical_platform:
-    docstring: assign an logical instrument to a host platform, also logical.
+  assign_platform_model_to_logical_platform:
+    in:
+      platform_model_id: ""
+      logical_platform_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_platform_model_from_logical_platform:
+    in:
+      platform_model_id: ""
+      logical_platform_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_instrument_model_to_logical_instrument:
+    in:
+      instrument_model_id: ""
+      logical_instrument_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_instrument_model_from_logical_instrument:
+    in:
+      instrument_model_id: ""
+      logical_instrument_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  ##################
+  #
+  # Special Associations
+  #
+
+  reassign_instrument_device_to_logical_instrument:
     in:
       logical_instrument_id: ""
-      logical_platform_id: ""
+      old_instrument_device_id: ""
+      new_instrument_device_id: ""
+      logical_data_product_ids: []
+      old_instrument_data_product_ids: []
+      new_instrument_data_product_ids: []
     out:
-
-  unassign_logical_instrument_from_logical_platform:
-    in:
-      logical_instrument_id: ""
-      logical_platform_id: ""
-    out:
-
-  assign_site_to_marine_facility:
-    docstring: Marine facilities have sites.
-    in:
-      site_id: ""
-      marine_facility_id: ""
-    out:
-
-  unassign_site_from_marine_facility:
-    in:
-      site_id: ""
-      marine_facility_id: ""
-    out:
-
-  assign_logical_platform_to_site:
-    docstring: assign a logical platform to a site
-    in:
-      logical_platform_id: ""
-      site_id: ""
-    out:
-
-  unassign_logical_platform_from_site:
-    in:
-      logical_platform_id: ""
-      site_id: ""
-    out:
-
-
-  assign_site_to_site:
-    docstring: Sites can be nested within Sites.
-    in:
-      child_site_id: ""
-      parent_site_id: ""
-    out:
-
-  unassign_site_from_site:
-    in:
-      child_site_id: ""
-      parent_site_id: ""
-    out:
-
-
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 
@@ -288,6 +450,14 @@ methods:
   #
   # Specialized Finds
   #
+
+  find_subordinate_entity:
+    in:
+      parent_resource_id: ""
+      child_resource_type_list: []
+    out:
+      child_resource_lists: {}
+      
 
   find_instrument_device_by_logical_platform:
     in:

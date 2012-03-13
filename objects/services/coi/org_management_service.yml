@@ -151,6 +151,21 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  request_acquire_resource:
+    docstring: |
+      Requests to acquire a resource within an Org which must be accepted or denied as a separate process.
+      Throws a NotFound exception if neither id is found.
+    in:
+      org_id: ""
+      user_id: ""
+      resource_id: ""
+    out:
+      request_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+
+
   find_requests:
     docstring: |
       Returns a list of open requests for an Org. An optional request_type can be supplied
@@ -389,6 +404,32 @@ methods:
       of available resources within the Org. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
+      resource_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  acquire_resource:
+    docstring: |
+      Acquire the specified resource for a specified user withing the specified Org. Once shared, the resource is
+      committed to the user. Throws a NotFound exception if none of the ids are found.
+    in:
+      org_id: ""
+      user_id: ""
+      resource_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  release_resource:
+    docstring: |
+      Release the specified resource from an existing commitment. Throws a NotFound exception if none of the ids are found.
+    in:
+      org_id: ""
+      user_id: ""
       resource_id: ""
     out:
       success: True

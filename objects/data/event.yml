@@ -1,11 +1,12 @@
-# event.yml: events/notifications messages
+# event.yml: events/notifications object types
 
 Event:
-  origin: ""        # the origin of the event (derived specific). Mostly a resource id
-  origin_type: ""   # the type of origin (e.g. resource type, etc)
+  origin: ""        # the origin of the event (content specific to subtype). Mostly a resource id
+  origin_type: ""   # the type of origin (e.g. resource type, etc) or empty
   description: ""   # readable description of the event (not required)
   ts_created: ""    # timestamp of event created in millis in UNIX epoch
   base_types: []    # List of event super types
+  sub_type: ""      # A specialization of the event_type expressed by this object type (or empty)
 
 ---
 

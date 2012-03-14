@@ -71,6 +71,6 @@ methods:
     in:
       data_product_id: ""
     out:
-      last_update: !LastUpdate
+      last_update: {}
     throws:
       NotFound: Data product not found or cache for data product not found.

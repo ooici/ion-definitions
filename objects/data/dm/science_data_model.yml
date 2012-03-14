@@ -125,7 +125,7 @@ TimeElement: !Extends_AbstractSimpleComponent
   constraint: !AllowedTimes
   reference_time: "" #ISO 8601
   local_frame: "" # AnyURI
-  value: !ElapsedTime
+  value: ""
 
 ---
 
@@ -160,6 +160,7 @@ DataStream: !Extends_AbstractIdentifiable
   element_type_id: ""
   encoding_id: ""
   values: ""
+  timestamp: !TimeElement
   # Additional ion field!
 
 
@@ -238,7 +239,7 @@ CoordinateAxis: !Extends_RangeSet
 
 Encoding: !Extends_AbstractIdentifiable
   encoding_type: ""
-  record_dimension: "" # the
+  record_dimension: "" # deprecated...
   compression: ""
   sha1: "" # Identifier for the hdf dataset containing the numeric data
 

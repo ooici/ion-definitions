@@ -1,0 +1,23 @@
+type: release
+name: viz_data_producers
+version: 0.1
+description: Launches the data producers / emulators for viz service
+ion: 0.0.1
+apps:
+  - name: viz_stream_realtime
+    description: A process that emulates a real time stream from a NetCDF file
+    version: 0.1
+    processapp: [viz_stream_realtime, ion.processes.data.vis_stream_launcher, VisStreamLauncher]
+    config:
+        name: viz_data_realtime_sinusoidal
+        dataset: A
+
+
+  - name: viz_stream_realtime_sine
+    description: A process that emulates a real time stream from a sinusoidal source
+    version: 0.1
+    processapp: [viz_stream_realtime_sine, ion.processes.data.vis_stream_launcher, VisStreamLauncher]
+    config:
+        name: viz_data_realtime_B
+        dataset: B
+

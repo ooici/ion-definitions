@@ -1,0 +1,86 @@
+# Visualization service interface definition
+
+name: visualization_service
+
+docstring: The Visualization Service is responsible for creating transform processes for the data products available in the system and also provides access to the resulting viz products. (e.g Google DataTables, Matplotlib graphs, etc)
+
+dependencies: [resource_registry, pubsub_management, transform_management]
+
+methods:
+# Methods used by the Service Gateway Service (SGS)
+  get_google_dt:
+    docstring: Request to fetch the datatable for a data product as specified in the query. Query will also specify whether its a realtime view or one-shot
+    in:
+      data_product_id: ""
+      query: ""
+    out:
+      datatable: ""
+    throws:
+      NotFound: object with specified id, query does not exist
+
+  get_google_realtime_dt:
+    docstring: Request to fetch the datatable for a data product as specified in the query. Query will also specify whether its a realtime view or one-shot
+    in:
+      data_product_id: ""
+      query: ""
+    out:
+      datatable: ""
+    throws:
+      NotFound: object with specified id, query does not exist
+
+  get_list_of_mpl_images:
+    docstring: Request to fetch the list of Matplotlib generated images associated with a data product
+    in:
+      data_product_id: ""
+    out:
+      image_list: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  get_image:
+    docstring: Request to fetch an image object from within the Visualization Service
+    in:
+      data_product_id: ""
+      image_name: ""
+    out:
+      image_obj: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+# Methods used by the transform processes
+  submit_google_dt:
+    docstring: Send the rendered image to
+    in:
+      data_product_id: ""
+      data_table: ""
+    out:
+    throws:
+      BadRequest: check data_product_id
+
+  submit_google_realtime_dt:
+    docstring: Send the rendered image to
+    in:
+      data_product_id: ""
+      data_table: ""
+    out:
+    throws:
+      BadRequest: check data_product_id
+
+  submit_mpl_image:
+    docstring: Send the rendered image to the visualization service
+    in:
+      data_product_id: ""
+      image_file_obj: ""
+      image_name: ""
+    out:
+    throws:
+      BadRequest: check data_product_id
+
+# Methods used by the Pyon container processes to update the Visualization service
+  register_new_data_product:
+    docstring: Apprise the Visualization service of a new data product in the system.
+    in:
+      data_product_id: ""
+    out:
+    throws:
+      BadRequest: check data_product_id for duplicates

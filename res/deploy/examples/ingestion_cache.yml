@@ -1,12 +1,12 @@
 type: release
-name: ingestion
+name: cache_launcher
 vesion: 0.1
 description: Deployment of Ingestion Workers via REL
 ion: 0.0.1
 apps:
-  - name: ingestion_cache_launcher
+  - name: last_update_cache_launcher
     version: 0.1
-    processapp: [cache_launcher, ion.processes.data.ingestion.cache_launcher, CacheLauncher ]
+    processapp: [cache_launcher, ion.processes.data.cache_launcher, CacheLauncher ]
     config:
       process:
         number_of_workers: 2

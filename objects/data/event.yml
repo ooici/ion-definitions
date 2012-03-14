@@ -62,6 +62,27 @@ DeviceEvent: !Extends_Event
 DeviceOperatorEvent: !Extends_DeviceEvent
 
 
+---
+
+NegotiationEvent: !Extends_Event
+---
+
+
+RequestStatusEvent: !Extends_NegotiationEvent
+  # The origin is the org_id
+  request_id: ""
+  user_id: ""
+
+---
+
+EnrollmentRequestStatusEvent: !Extends_RequestStatusEvent
+
+RoleRequestStatusEvent: !Extends_RequestStatusEvent
+  role_name: ""
+
+ResourceRequestStatusEvent: !Extends_RequestStatusEvent
+  resource_id: ""
+
 # ------------------------------------------------------------------------------------
 # FORMER R1 event types - delete if not needed
 

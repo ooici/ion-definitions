@@ -453,10 +453,10 @@ methods:
 
   find_subordinate_entity:
     in:
-      parent_resource_id: ""
-      child_resource_type_list: []
+      input_resource_id: ""
+      output_resource_type_list: []
     out:
-      child_resource_lists: {}
+      output_resource_lists: {}
       
 
   find_instrument_device_by_logical_platform:

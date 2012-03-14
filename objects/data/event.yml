@@ -54,6 +54,13 @@ DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
   deleted: False # Temporary - until we have resource life cycle events
   resource_id: ""
 
+DeviceEvent: !Extends_Event
+    # The origin is a device (resource) id
+
+---
+
+DeviceOperatorEvent: !Extends_DeviceEvent
+
 
 # ------------------------------------------------------------------------------------
 # FORMER R1 event types - delete if not needed

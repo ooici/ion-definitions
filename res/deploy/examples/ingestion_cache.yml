@@ -9,5 +9,4 @@ apps:
     processapp: [cache_launcher, ion.processes.data.ingestion.cache_launcher, CacheLauncher ]
     config:
       process:
-        datastore_name: "dm_cache"
-        datastore_profile: "SCIDATA"
+        number_of_workers: 2

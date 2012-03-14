@@ -4,10 +4,10 @@ vesion: 0.1
 description: Deployment of Ingestion Workers via REL
 ion: 0.0.1
 apps:
-  - name: aggregate_launcher
+  - name: ingestion_cache_launcher
     version: 0.1
-    processapp: [aggregate_launcher, ion.processes.data.ingestion.aggregate_launcher, AggregateLauncher ]
+    processapp: [cache_launcher, ion.processes.data.ingestion.cache_launcher, CacheLauncher ]
     config:
       process:
-        datastore_name: "dm_aggregate"
+        datastore_name: "dm_cache"
         datastore_profile: "SCIDATA"

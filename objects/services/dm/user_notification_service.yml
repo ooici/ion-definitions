@@ -1,7 +1,8 @@
 name: user_notification
 
 docstring: |
-  Provides management of user requests for notification of various events within ION.
+  Provides management of user requests for notification of various events within ION. Also provides access
+  to the event capabilities of ION
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
@@ -10,7 +11,8 @@ dependencies: [resource_registry]
 methods:
   create_notification:
     docstring: |
-      Persists the provided NotificationRequest object for the specified Org id. Associate the Notification resource with the use The id string returned
+      Persists the provided NotificationRequest object for the specified Org id. Associate the
+      Notification resource with the use. The id string returned
       is the internal id by which NotificationRequest will be identified in the data store.
     in:
       notification: !NotificationRequest
@@ -92,4 +94,17 @@ methods:
     out:
       event_type_list: []
     throws:
-      NotFound: object with specified paramteres does not exist
+      NotFound: object with specified parameters does not exist
+
+  generate_event:
+    docstring: Manually generate an event
+    in:
+      event_type: "Event"
+      origin: ""
+      origin_type: ""
+      event_fields: {}
+      sub_type: ""
+      description: ""
+    out:
+    throws:
+      NotFound: event type unknown

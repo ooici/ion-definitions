@@ -10,7 +10,7 @@ apps:
     processapp: [viz_stream_realtime, ion.processes.data.vis_stream_launcher, VisStreamLauncher]
     config:
         name: viz_data_realtime_sinusoidal
-        dataset: A
+        dataset: sinusoidal
 
 
   - name: viz_stream_realtime_sine

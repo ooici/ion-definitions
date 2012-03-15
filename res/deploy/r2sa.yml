@@ -90,7 +90,16 @@ apps:
   - name: user_notification
     version: 0.1
     processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
-    
+
+  - name: last_update_cache_launcher
+    version: 0.1
+    processapp: [cache_launcher, ion.processes.data.cache_launcher, CacheLauncher ]
+    config:
+      process:
+        number_of_workers: 4
+
+
+
 # SA services
 
   - name: data_acquisition_management

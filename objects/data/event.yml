@@ -22,6 +22,12 @@ ResourceLifecycleEvent: !Extends_ResourceEvent
   transition_event: ""
   resource_type: ""
 
+ResourceCommandEvent: !Extends_ResourceEvent
+  command: ""
+  result: ""
+
+ResourceOperatorEvent: !Extends_ResourceEvent
+
 ---
 
 ResourceModifiedEvent: !Extends_ResourceEvent
@@ -31,6 +37,9 @@ ResourceModifiedEvent: !Extends_ResourceEvent
 ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
 
 ProcessStateEnum: !enum (values=(SPAWN, TERMINATE, ERROR), default=SPAWN)
+
+DeviceEvent: !Extends_Event
+    # The origin is a device (resource) id
 
 ---
 
@@ -54,19 +63,19 @@ DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
   deleted: False # Temporary - until we have resource life cycle events
   resource_id: ""
 
-DeviceEvent: !Extends_Event
-    # The origin is a device (resource) id
-
 ---
+DeviceSpecificLifecycleEvent: !Extends_DeviceEvent
 
-DeviceOperatorEvent: !Extends_DeviceEvent
+DeviceCommonLifecycleEvent: !Extends_DeviceEvent
 
+DeviceOperatorEvent: !Extends_ResourceOperatorEvent
 
 ---
 
 NegotiationEvent: !Extends_Event
----
+  # The origin is the id of the provider actor (e.g. org id, resource id)
 
+---
 
 RequestStatusEvent: !Extends_NegotiationEvent
   # The origin is the org_id

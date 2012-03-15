@@ -183,6 +183,7 @@ methods:
       success: True
     throws:
       NotFound: if subscription_id doesn't exist
+      BadRequest: Subscription is already active!
 
   deactivate_subscription:
     docstring: Unbinds a subscription using a channel layer.
@@ -192,7 +193,7 @@ methods:
       success: True
     throws:
       NotFound: if subscription_id doesn't exist
-
+      BadRequest: Subscription is not active!
   # -----------------
 
   register_consumer:

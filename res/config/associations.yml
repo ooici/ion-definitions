@@ -86,7 +86,7 @@ PredicateTypes:
     domain: [Replay, DataProcess, DataProduct, Dataset, ExchangePoint, Subscription]
     range: [Stream]
   hasStreamDefinition:
-    domain: [Stream, InstrumentModel, DataProcessDefinition]
+    domain: [Stream, InstrumentAgent, DataProcessDefinition]
     range: [StreamDefinition]
   hasSubscription:
     domain: [Transform, ExchangePoint]

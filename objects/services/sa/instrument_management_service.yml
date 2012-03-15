@@ -663,6 +663,18 @@ methods:
       NotFound: object with specified id does not exist
 
 
+  assign_stream_definition_to_instrument_agent:
+    in:
+      stream_definition_id: ""
+      instrument_agent_id: ""
+    out:
+
+  unassign_stream_definition_from_instrument_agent:
+    in:
+      stream_definition_id: ""
+      instrument_agent_id: ""
+    out:
+
   assign_platform_agent_instance_to_platform_agent:
     in:
       platform_agent_instance_id: ""
@@ -776,7 +788,19 @@ methods:
     out:
       instrument_agent_list: []
     
-
+  find_stream_definition_by_instrument_agent:
+    in:
+      instrument_agent_id: ""
+    out:
+      stream_definition_list: []
+    
+  
+  find_instrument_agent_by_stream_definition:
+    in:
+      stream_definition_id: ""
+    out:
+      instrument_agent_list: []
+    
   find_instrument_device_by_instrument_agent_instance:
     in:
       instrument_agent_instance_id: ""

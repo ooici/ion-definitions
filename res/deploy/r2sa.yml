@@ -13,6 +13,14 @@ apps:
 #        type: CouchDB
 #        forceClean: true
 
+# CORE services
+
+  - name: identity_management
+    version: 0.1
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
+
+
+
 
 # CEI services
 

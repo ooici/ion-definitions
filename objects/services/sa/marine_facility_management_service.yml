@@ -379,7 +379,8 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
+      BadRequest: operation cannot be completed with specified resources
+      
   # -----------------
 
   define_observatory_policy:

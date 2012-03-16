@@ -8,7 +8,14 @@ apps:
     version: 0.1
     processapp: [ingestion_launcher, ion.processes.data.ingestion.ingestion_launcher, IngestionLauncher ]
     config:
-      process:
-        exchange_point: "science_data"
-        number_of_workers: 2
+      ingestion:
+        exchange_point: science_data
+        number_of_workers: 6
+        couch_storage:
+          datastore_name: ingested_datasets
+          server: localhost
+          datastore_profile: SCIDATA
+
+
+
 

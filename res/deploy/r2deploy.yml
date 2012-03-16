@@ -193,16 +193,16 @@ apps:
 
 
   ##### AS SERVICE
-  - name: visualization_workflow_management
-    version: 0.1
-    processapp: [visualization_workflow_management, ion.services.ans.visualization_workflow_management_service, VisualizationWorkflowManagementService]
+  # - name: visualization_workflow_management
+  #   version: 0.1
+  #   processapp: [visualization_workflow_management, ion.services.ans.visualization_workflow_management_service, VisualizationWorkflowManagementService]
 
   #- name: visualization_service
   #  description: Responsible for spawning and maintaining viz transform processes and resulting viz data
   #  version: 0.1
   #  processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
 
- # LAST SERVICE GATEWAY SERVICE
+  # LAST SERVICE GATEWAY SERVICE
   - name: service_gateway
     version: 0.1
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]

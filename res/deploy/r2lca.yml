@@ -65,6 +65,12 @@ apps:
     config:
       level: org_management
 
+  - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
+    config:
+      level: load_system_policy
+
   - name: exchange_management
     version: 0.1
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]

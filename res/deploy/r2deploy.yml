@@ -104,9 +104,7 @@ apps:
     version: 0.1
     processapp: [state_repository, ion.services.coi.state_repository_service, StateRepositoryService]
 
-  - name: service_gateway
-    version: 0.1
-    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+  # GATEWAY SERVICE MOVED TO THE END
 
   #### CEI Services
   - name: epu_management
@@ -204,7 +202,7 @@ apps:
   #  version: 0.1
   #  processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
 
-
-
-
-
+ # LAST SERVICE GATEWAY SERVICE
+  - name: service_gateway
+    version: 0.1
+    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]

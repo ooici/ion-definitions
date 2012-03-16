@@ -119,6 +119,13 @@ methods:
     out:
       data_process_list: []
 
+  activate_data_process:
+    #This op may not make sense at this time
+    in:
+      data_process_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 

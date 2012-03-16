@@ -198,6 +198,20 @@ apps:
     processapp: [marine_facility_management, ion.services.sa.marine_facility.marine_facility_management_service, MarineFacilityManagementService]
 
 
+  # Note: the following depends on a many of DM services
+  - name: ingestion_launcher
+    version: 0.1
+    processapp: [ingestion_launcher, ion.processes.data.ingestion.ingestion_launcher, IngestionLauncher ]
+    config:
+      ingestion:
+        exchange_point: science_data
+        number_of_workers: 2
+        couch_storage:
+          datastore_name: ingested_datasets
+          server: localhost
+          datastore_profile: SCIDATA
+
+
   ##### AS SERVICE
   # - name: visualization_workflow_management
   #   version: 0.1
@@ -207,6 +221,7 @@ apps:
   #  description: Responsible for spawning and maintaining viz transform processes and resulting viz data
   #  version: 0.1
   #  processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
+
 
   # LAST SERVICE GATEWAY SERVICE
   - name: service_gateway

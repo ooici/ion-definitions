@@ -1,0 +1,13 @@
+type: release
+name: dispatcher
+vesion: 0.1
+description: Deployment of Dispatcher via REL
+ion: 0.0.1
+apps:
+  - name: dispatcher
+    version: 0.1
+    processapp: [dispatcher, ion.processes.data.simple_dispatcher, SimpleDispatcher ]
+    config:
+      data_product_id: None
+
+

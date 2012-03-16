@@ -1,3 +1,14 @@
+type: release
+name: lcaviz
+version: 0.1
+description: Release 2 lca viz deployment configuration
+ion: 0.0.1
+apps:
+  ##################################
+  # CORE SERVICES
+  # Bootstrapper app performs initializations
+  ##################################
+
 ##### AS SERVICE
  - name: visualization_workflow_management
    version: 0.1

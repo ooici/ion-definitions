@@ -68,7 +68,7 @@ DeviceSpecificLifecycleEvent: !Extends_DeviceEvent
 
 DeviceCommonLifecycleEvent: !Extends_DeviceEvent
 
-DeviceCommandEvent: !Extends_DeviceEvent
+DeviceCommandEvent: !Extends_ResourceCommandEvent
 
 DeviceOperatorEvent: !Extends_ResourceOperatorEvent
 

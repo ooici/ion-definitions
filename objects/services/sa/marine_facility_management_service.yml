@@ -451,6 +451,18 @@ methods:
   # Specialized Finds
   #
 
+  find_subordinate_frames_of_reference:
+    in:
+      input_resource_id: ""
+    out:
+      output_resource_lists: {}
+    
+  find_superior_frames_of_reference:
+    in:
+      input_resource_id: ""
+    out:
+      output_resource_lists: {}
+    
   find_subordinate_entity:
     in:
       input_resource_id: ""

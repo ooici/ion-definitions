@@ -71,7 +71,7 @@ PredicateTypes:
     domain: [Catalog]
     range: [Index]
   hasIngestionConfiguration:
-    domain: [DatasetIngestionConfiguration]
+    domain: [DataSet, DatasetIngestionConfiguration]
     range: [IngestionConfiguration]
   hasInputStreamDefinition:
     domain: [DataProcessDefinition]

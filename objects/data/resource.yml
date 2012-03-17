@@ -70,27 +70,27 @@ Institution:
   website: ""
 
 GeospatialBounds:
-  geospatiallatmin: 0
-  geospatiallatmax: 0
+  geospatiallatmin: 0.0
+  geospatiallatmax: 0.0
   geospatiallatunits: ""
-  geospatiallatresolution: 0
-  geospatiallonmin: 0
-  geospatiallonmax: 0
+  geospatiallatresolution: 0.0
+  geospatiallonmin: 0.0
+  geospatiallonmax: 0.0
   geospatiallonunits: ""
-  geospatiallonresolution: 0
-  geospatialverticalmin: 0
-  geospatialverticalmax: 0
+  geospatiallonresolution: 0.0
+  geospatialverticalmin: 0.0
+  geospatialverticalmax: 0.0
   geospatialverticalunits: ""
-  geospatialverticalresolution: 0
-  geospatialverticalpositive: 0
-  minbottomdepth: 0
-  maxbottomdepth: 0
+  geospatialverticalresolution: 0.0
+  geospatialverticalpositive: 0.0
+  minbottomdepth: 0.0
+  maxbottomdepth: 0.0
   depthunits: ""
-  depthverticalpositive: 0
+  depthverticalpositive: 0.0
 
 GeospatialLocation:
-  lat: ""
-  lon: ""
+  lat: 0.0
+  lon: 0.0
 
 # TODO: Replace in favor of Resource base object
 ResourceBasics:

@@ -1,7 +1,7 @@
-Scenario,ID,owner_id,mf_ids,data_process_definition_id,in_data_product_id,out_data_products,comment
-LCA_DEMO_PRE,DPROC6,USER_1,MF_3,DPD7,DPROD12,"{'conductivity':'DPROD13','pressure':'DPROD14','temperature':'DPROD15'}",CTD_L0 demo
-LCA_DEMO_PRE,DPROC7,USER_1,MF_3,DPD8,DPROD13,{'output':'DPROD16'},CONDWAT demo
-LCA_DEMO_PRE,DPROC8,USER_1,MF_3,DPD9,DPROD14,{'output':'DPROD17'},TEMPWAT demo
-LCA_DEMO_PRE,DPROC9,USER_1,MF_3,DPD10,DPROD15,{'output':'DPROD18'},PRESWAT demo
-LCA_DEMO_PRE,DPROC10,USER_1,MF_3,DPD11,DPROD12,{'output':'DPROD19'},PRACSAL demo
-LCA_DEMO_PRE,DPROC12,USER_1,MF_3,DPD12,DPROD12,{'output':'DPROD20'},DENSITY demo
+Scenario,ID,owner_id,mf_ids,data_process_definition_id,in_data_product_id,out_data_products,configuration,comment
+LCA_DEMO_PRE,DPROC6,USER_1,MF_3,DPD7,DPROD12,"{'conductivity':'DPROD13','pressure':'DPROD14','temperature':'DPROD15'}",,CTD_L0 demo
+LCA_DEMO_PRE,DPROC7,USER_1,MF_3,DPD8,DPROD13,{'output':'DPROD16'},,CONDWAT demo
+LCA_DEMO_PRE,DPROC8,USER_1,MF_3,DPD9,DPROD14,{'output':'DPROD17'},,TEMPWAT demo
+LCA_DEMO_PRE,DPROC9,USER_1,MF_3,DPD10,DPROD15,{'output':'DPROD18'},,PRESWAT demo
+LCA_DEMO_PRE,DPROC10,USER_1,MF_3,DPD11,DPROD12,{'output':'DPROD19'},,PRACSAL demo
+LCA_DEMO_PRE,DPROC12,USER_1,MF_3,DPD12,DPROD12,{'output':'DPROD20'},,DENSITY demo

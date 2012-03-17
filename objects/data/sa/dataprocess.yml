@@ -14,9 +14,6 @@ DataProcess: !Extends_InformationResource
   # Orchestrates processing of a stream, from transform definition to scheduling.
 
   ATBD_reference: ""
-
   source_code: ""
-
   input_subscription_id: ""
-
-  
+  configuration: {}

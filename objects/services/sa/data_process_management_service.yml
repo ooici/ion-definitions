@@ -88,6 +88,7 @@ methods:
       data_process_definition_id: ""
       in_data_product_id: ""
       out_data_products: {}
+      configuration: {}
     out:
       data_process_id: ""
       

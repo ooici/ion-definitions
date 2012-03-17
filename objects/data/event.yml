@@ -55,7 +55,19 @@ ProcessLifecycleEvent: !Extends_Event
   process_type: ""
   process_name: ""
 
+IngestionEvent: !Extends_ResourceModifiedEvent
+  # origin: dataset id
+  stream_id: ""
+  status: 0
+
 ---
+
+GranuleIngestedEvent: !Extends_IngestionEvent
+  ingest_attributes: {}
+
+GranuleIngestionErrorEvent: !Extends_IngestionEvent
+  error_msg: ""
+
 
 DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
   type: !DatasetIngestionTypeEnum

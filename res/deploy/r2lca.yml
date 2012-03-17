@@ -210,6 +210,12 @@ apps:
           server: localhost
           datastore_profile: SCIDATA
 
+  - name: last_update_cache_launcher
+    version: 0.1
+    processapp: [cache_launcher, ion.processes.data.cache_launcher, CacheLauncher]
+    config:
+      process:
+        number_of_workers: 2
 
   ##### AS SERVICE
 #   - name: visualization_workflow_management

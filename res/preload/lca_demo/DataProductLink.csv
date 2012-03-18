@@ -1,3 +1,5 @@
 Scenario,ID,data_product_id,input_resource_id,create_stream,comment
 LCA_DEMO_PRE,,DPROD11,ID3,FALSE,CTD Sim 1 Raw
 LCA_DEMO_PRE,,DPROD12,ID3,FALSE,CTD Sim 1 Parsed
+LCA_DEMO_PRE,,DPROD21,ID4,FALSE,CTD Sim 2 Raw
+LCA_DEMO_PRE,,DPROD22,ID4,FALSE,CTD Sim 2 Parsed

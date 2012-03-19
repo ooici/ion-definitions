@@ -181,3 +181,8 @@ DataEvent: !Extends_Event
 InstrumentSampleDataEvent: !Extends_DataEvent
   could_not_find_this_original_event_type: ""       # please2fill in
 
+---
+
+ExceptionEvent: !Extends_Event
+  exception_type: ""
+  exception_message: ""

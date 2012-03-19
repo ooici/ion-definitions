@@ -4,6 +4,7 @@ DatasetIngestionByStream:
   archive_data: True
   archive_metadata: True
   stream_id: ""
+  dataset_id: ""
 
 
 DatasetIngestionTypeEnum: !enum (values=(DATASETINGESTIONBYSTREAM, OTHER ), default=DATASETINGESTIONBYSTREAM)

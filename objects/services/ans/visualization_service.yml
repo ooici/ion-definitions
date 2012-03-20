@@ -8,11 +8,29 @@ dependencies: [resource_registry, pubsub_management, transform_management]
 
 methods:
 # Methods used by the Service Gateway Service (SGS)
-  get_google_dt:
-    docstring: Request to fetch the datatable for a data product as specified in the query. Query will also specify whether its a realtime view or one-shot
+  start_google_dt_transform:
+    docstring: Request to start a transform process for a data_product_id. Will return a token that will be used with the get_google_dt call
     in:
       data_product_id: ""
       query: ""
+    out:
+      data_product_id_token: ""
+    throws:
+      NotFound: object with specified id, query does not exist
+
+  is_google_dt_ready:
+    docstring: A non-blocking call that returns instantly with "True" or "False"
+    in:
+      data_product_id_token: ""
+    out:
+      datatable: ""
+    throws:
+      NotFound: object with specified id, query does not exist
+
+  get_google_dt:
+    docstring: A non-blocking call that returns instantly with either an empty list or a valid datatable when its ready
+    in:
+      data_product_id_token: ""
     out:
       datatable: ""
     throws:
@@ -51,7 +69,7 @@ methods:
   submit_google_dt:
     docstring: Send the rendered image to
     in:
-      data_product_id: ""
+      data_product_id_token: ""
       data_table: ""
     out:
     throws:

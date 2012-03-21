@@ -57,6 +57,8 @@ ContactInformation:
   address: ""
   city: ""
   postalcode: ""
+  state: ""
+  country: ""
   phone: ""
   email: ""
   variables:

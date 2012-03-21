@@ -1,3 +1,4 @@
 Scenario,ID,owner_id,mf_ids,site_id,platform_model_ids,lp/name,lp/description,lp/geospatial_constraint/geospatiallatmin,lp/geospatial_constraint/geospatiallatmax,lp/geospatial_constraint/geospatiallonmin,lp/geospatial_constraint/geospatiallonmax,lp/geospatial_constraint/minbottomdepth,lp/geospatial_constraint/maxbottomdepth,lp/geospatial_constraint/geospatialverticalpositive,lp/temporal_constraint,lp/entity_constraint
-LCA_DEMO_PRE,LP3,USER_1,MF_3,SITE_CE03SH,PM16,PN1A Low-Voltage Node Demo,PN1A Low-Voltage Node
-LCA_DEMO_PRE,LP4,USER_1,MF_3,SITE_CE03SH,PM12,PN1A Medium-Power J-Box Demo,PN1A Medium-Power J-Box
+DOC,,,marine facility ID,site ID for logical platform,,,,,,,,should be min depth?,should be max depth?
+LCA_DEMO_PRE,LP3,USER_1,MF_3,SITE_CE02SHSM,PM16,PN1A Low-Voltage Node Demo,PN1A Low-Voltage Node,44.45,44.55,-125.45,-125.35,2905,2910,FALSE
+LCA_DEMO_PRE,LP4,USER_1,MF_3,SITE_CE02SHSM,PM12,PN1A Medium-Power J-Box Demo,PN1A Medium-Power J-Box,44.45,44.55,-125.45,-125.35,2905,2907,FALSE

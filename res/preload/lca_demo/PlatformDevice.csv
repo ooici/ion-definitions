@@ -1,3 +1,4 @@
 Scenario,ID,owner_id,lcstate,mf_ids,platform_model_id,deployment_lp_ids,primary_deployment_lp_id,pd/name,pd/description,pd/serial_number,pd/model,pd/nominal_location,pd/manufacture_date
-LCA_DEMO_PRE,PD3,USER_1,DEPLOYED_AVAILABLE,MF_3,PM13,LP3,LP3,Profiler 200m Platform 103,200-meter Platform for Shallow Profiler,103
-LCA_DEMO_PRE,PD4,USER_1,DEPLOYED_AVAILABLE,MF_3,PM13,LP4,,Profiler 200m Platform 104,200-meter Platform for Shallow Profiler,104
+DOC,,,,,,,,,,,,"oops? this wouldn't be preconfigured, it would be calculated?"
+LCA_DEMO_PRE,PD3,USER_1,DEPLOYED_AVAILABLE,MF_3,PM13,LP3,LP3,Profiler 200m Platform 103,200-meter Platform for Shallow Profiler,103,PM13,,20120423
+LCA_DEMO_PRE,PD4,USER_1,DEPLOYED_AVAILABLE,MF_3,PM13,LP4,,Profiler 200m Platform 104,200-meter Platform for Shallow Profiler,104,PM13,,20120515

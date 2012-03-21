@@ -12,7 +12,6 @@ apps:
         name: viz_data_realtime_sinusoidal
         dataset: sinusoidal
 
-
   - name: viz_stream_realtime_sine
     description: A process that emulates a real time stream from a sinusoidal source
     version: 0.1
@@ -20,4 +19,5 @@ apps:
     config:
         name: viz_data_realtime_B
         dataset: B
+
 

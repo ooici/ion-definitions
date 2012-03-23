@@ -20,7 +20,8 @@ methods:
     out:
       notification_id: ""
     throws:
-      BadRequest: if object passed has _id or _rev attribute
+      BadRequest: if object passed has _id or _rev attribute, or if more than one user info exists
+      NotFound: if user does not exist, user info does not exist, or user email does not exist
 
   update_notification:
     docstring: |
@@ -32,9 +33,9 @@ methods:
       notification: !NotificationRequest
     out:
     throws:
-      BadRequest: if object does not have _id or _rev attribute
-      NotFound: object with specified id does not exist
-      Conflict: object not based on latest persisted object version
+      BadRequest: if object does not have _id or _rev attribute, or more than one user exists for the notification
+      NotFound: if object with specified id does not exist, or no user found for notification
+      Conflict: if object not based on latest persisted object version
 
   read_notification:
     docstring: |
@@ -46,7 +47,7 @@ methods:
     out:
       notification: !NotificationRequest
     throws:
-      NotFound: object with specified id does not exist
+      NotFound: if object with specified id does not exist
 
   delete_notification:
     docstring: |
@@ -56,7 +57,8 @@ methods:
       notification_id: ""
     out:
     throws:
-      NotFound: object with specified id does not exist
+      BadRequest: if more than one user exists for the notification
+      NotFound: if object with specified id does not exist, user for notification does not exist, or association does not exist
 
   find_notifications_by_user:
     docstring: |
@@ -67,7 +69,7 @@ methods:
     out:
       notification_list: []
     throws:
-      NotFound: object with specified id does not exist
+      NotFound: if object with specified id does not exist
 
   find_events:
     docstring: |
@@ -83,7 +85,7 @@ methods:
     out:
       event_list: []
     throws:
-      NotFound: object with specified paramteres does not exist  
+      NotFound: if object with specified paramteres does not exist  
       
   find_event_types_for_resource:
     docstring: |
@@ -94,7 +96,7 @@ methods:
     out:
       event_type_list: []
     throws:
-      NotFound: object with specified parameters does not exist
+      NotFound: if object with specified parameters does not exist
 
   generate_event:
     docstring: Manually generate an event
@@ -107,4 +109,5 @@ methods:
       description: ""
     out:
     throws:
-      NotFound: event type unknown
+      BadRequest: if origin is missing or not a str, if event_fields is missing or not a dict, or if the event failed to publish
+      NotFound: if event type unknown

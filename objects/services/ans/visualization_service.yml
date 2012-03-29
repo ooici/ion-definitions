@@ -65,34 +65,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-# Methods used by the transform processes
-  submit_google_dt:
-    docstring: Send the rendered image to
-    in:
-      data_product_id_token: ""
-      data_table: ""
-    out:
-    throws:
-      BadRequest: check data_product_id
-
-  submit_google_realtime_dt:
-    docstring: Send the rendered image to
-    in:
-      data_product_id: ""
-      data_table: ""
-    out:
-    throws:
-      BadRequest: check data_product_id
-
-  submit_mpl_image:
-    docstring: Send the rendered image to the visualization service
-    in:
-      data_product_id: ""
-      image_file_obj: ""
-      image_name: ""
-    out:
-    throws:
-      BadRequest: check data_product_id
 
 # Methods used by the Pyon container processes to update the Visualization service
   register_new_data_product:

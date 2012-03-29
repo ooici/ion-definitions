@@ -177,6 +177,27 @@ methods:
 
   # -----------------
 
+  read_object:
+    docstring: |
+        Returns the object (or object id) by association from a given subject or
+        subject id (if str). Predicate and object_type are optional to narrow the
+        search down. Object_type can only be set if predicate is set as well.
+        Alternatively, an association (or association id) can be given.
+        If no object matches the criteria, NotFound is raised. If more than one
+        object match the criteria, Inconsistent is raised.
+    in:
+      subject: ""
+      predicate: ""
+      object_type: ""
+      assoc: ""
+      id_only: False
+    out:
+      list: []
+    throws:
+      BadRequest: missing parameters, or object id field missing in subject
+      NotFound: object not found
+      Inconsistent: more than one object matching the given criteria
+
   find_objects:
     docstring: |
         Find objects (or object ids) by association from a given subject or
@@ -193,6 +214,27 @@ methods:
       list: []
     throws:
       BadRequest: missing parameters, or object id field missing in subject
+
+  read_subject:
+    docstring: |
+        Returns the subject (or subject id) by association from a given object or
+        object id (if str). Predicate and subject_type are optional to narrow the
+        search down. Subject_type can only be set if predicate is set as well.
+        Alternatively, an association (or association id) can be given.
+        If no subject matches the criteria, NotFound is raised. If more than one
+        subject match the criteria, Inconsistent is raised.
+    in:
+      subject_type: ""
+      predicate: ""
+      object: ""
+      assoc: ""
+      id_only: False
+    out:
+      list: []
+    throws:
+      BadRequest: missing parameters, or object id field missing in object
+      NotFound: subject not found
+      Inconsistent: more than one subject matching the given criteria
 
   find_subjects:
     docstring: |

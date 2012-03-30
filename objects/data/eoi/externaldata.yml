@@ -48,7 +48,6 @@ DataSourceAgent: !Extends_AgentDefinition
   handler_module: ""
   handler_class: ""
   conection_method: ""
-  time_source: ""
   event_publisher_origin: ""
 
 DataSourceAgentInstance: !Extends_AgentInstance

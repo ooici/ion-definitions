@@ -36,20 +36,52 @@ ExternalDataProvider: !Extends_InformationResource
   institution: !Institution
   contact: !ContactInformation
 
+---
+
+DataSourceModel: !Extends_InformationResource
+  model: ""
+  data_handler_module: ""
+  data_handler_class: ""
+
+DataSourceAgent: !Extends_AgentDefinition
+  agent_version: ""
+  handler_module: ""
+  handler_class: ""
+  conection_method: ""
+  time_source: ""
+  event_publisher_origin: ""
+
+DataSourceAgentInstance: !Extends_AgentInstance
+  agent_process_id: ""
+  handler_module: ""
+  handler_class: ""
+  server_addr: ""
+  login: ""
+  password: ""
+
+---
 ExternalDataset: !Extends_InformationResource
   dataset_description: !DatasetDescription
   update_description: !UpdateDescription
   contact: !ContactInformation
 
----
+ExternalDatasetModel: !Extends_InformationResource
+  #This defines the characteristics of a dataset class
+  datset_type: ""
 
-ExternalDataSourceModel: !Extends_InformationResource
-  model: ""
-  data_handler_module: ""
-  data_handler_class: ""
-
-ExternalDataAgent: !Extends_AgentDefinition
+ExternalDatasetAgent: !Extends_AgentDefinition
   agent_version: ""
+  handler_module: ""
+  handler_class: ""
+  conection_method: ""
+  time_source: ""
+  event_publisher_origin: ""
 
-ExternalDataAgentInstance: !Extends_AgentInstance
-  #stream_route: !StreamRoute  # TBD: Remove - its exchange_name
+ExternalDatasetAgentInstance: !Extends_AgentInstance
+  agent_process_id: ""
+  handler_module: ""
+  handler_class: ""
+  server_addr: ""
+  login: ""
+  password: ""
+

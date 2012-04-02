@@ -120,8 +120,10 @@ methods:
   # -----------------
   # Manipulate data source agent instance
   create_data_source_agent:
+    docstring: Create and persist DatasourceAgent object, associate with a DataSourceModel and return object _id as OOI id
     in:
       data_source_agent: !DataSourceAgent
+      data_source_model_id: ""
     out:
       data_source_agent_id: ""
     throws:
@@ -155,9 +157,11 @@ methods:
   # -----------------
   # Manipulate  data source agent instance : DataSourceAgentInstance
   create_data_source_agent_instance:
+    docstring: Create and persist DatasourceAgentInstance, associate both the DataSource agent and the DataSource that it will control
     in:
       data_source_agent_instance: !DataSourceAgentInstance
-      data_source_agent: ""
+      data_source_agent_id: ""
+      data_source_id: ""
     out:
       data_source_agent_instance_id: ""
     throws:
@@ -267,9 +271,10 @@ methods:
   # -----------------
   # Manipulate external dataset agent  : ExternalDatasetAgent
   create_external_dataset_agent:
-    docstring: Persist ExternalDatasetAgent object and return object _id as OOI id
+    docstring: Persist ExternalDatasetAgent object, associate with a DatasetModel and return object _id as OOI id
     in:
       external_dataset_agent: !ExternalDatasetAgent
+      external_dataset_model_id: ""
     out:
       external_dataset_agent_id: ""
     throws:
@@ -305,10 +310,11 @@ methods:
   # -----------------
   # Manipulate external dataset agent instance : ExternalDatasetAgentInstance
   create_external_dataset_agent_instance:
-    docstring: Persist ExternalDatasetAgentInstance object and return object _id as OOI id
+    docstring: Create and persist ExternalDatasetAgentInstance, associate both the ExternalDatasetAgent and the ExternalDataset that it will control
     in:
       external_dataset_agent_instance: !ExternalDatasetAgentInstance
       external_dataset_agent_id: ""
+      external_dataset_id: ""
     out:
       external_dataset_agent_instance_id: ""
     throws:

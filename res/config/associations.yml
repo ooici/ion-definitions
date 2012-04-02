@@ -31,14 +31,14 @@ PredicateTypes:
     domain: [DataProcess]
     range: [DataProduct]
   hasInstance:
-    domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition, ExternalDataAgent]
-    range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess, ExternalDataAgentInstance]
+    domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition,  DataSourceAgent, ExternalDatasetAgent]
+    range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess, DataSourceAgentInstance, ExternalDatasetAgentInstance]
   hasInstrument:
     domain: [PlatformDevice, LogicalPlatform]
     range: [InstrumentDevice, LogicalInstrument]
   hasModel:
-    domain: [PlatformDevice, InstrumentDevice, SensorDevice, InstrumentAgent, PlatformAgent, DataSource, ExternalDataAgent, LogicalInstrument, LogicalPlatform]
-    range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel]
+    domain: [PlatformDevice, InstrumentDevice, SensorDevice, InstrumentAgent, PlatformAgent, DataSource, ExternalDataset, DataSourceAgent, ExternalDatasetAgent, LogicalInstrument, LogicalPlatform]
+    range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel, ExternalDatasetModel]
   hasObservatory:
     domain: [Org]
     range: [MarineFacility]
@@ -111,8 +111,8 @@ PredicateTypes:
     domain: [InstrumentModel, PlatformModel, LogicalInstrument, LogicalPlatform]
     range: [AgentDefinition]
   hasAgentInstance:
-    domain: [TaskableResource, PlatformDevice, InstrumentDevice, ExternalDataset]
-    range: [AgentInstance, PlatformAgentInstance,InstrumentAgentInstance, ExternalDataAgentInstance]
+    domain: [TaskableResource, PlatformDevice, InstrumentDevice, DataSource, ExternalDataset]
+    range: [AgentInstance, PlatformAgentInstance,InstrumentAgentInstance, DataSourceAgentInstance, ExternalDatasetAgentInstance]
   hasAttachment:
     domain: [Resource]
     range: [Attachment]

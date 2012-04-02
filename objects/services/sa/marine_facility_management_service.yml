@@ -503,26 +503,26 @@ methods:
   #
 
 
-  set_logical_instrument_lifecycle:
+  execute_logical_instrument_lifecycle:
     in:
       logical_instrument_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_logical_platform_lifecycle:
+  execute_logical_platform_lifecycle:
     in:
       logical_platform_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_marine_facility_lifecycle:
+  execute_marine_facility_lifecycle:
     in:
       marine_facility_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_site_lifecycle:
+  execute_site_lifecycle:
     in:
       site_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:

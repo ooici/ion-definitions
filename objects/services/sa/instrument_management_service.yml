@@ -896,72 +896,72 @@ methods:
   #
 
 
-  set_instrument_agent_lifecycle:
+  execute_instrument_agent_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       instrument_agent_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_instrument_agent_instance_lifecycle:
+  execute_instrument_agent_instance_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       instrument_agent_instance_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_instrument_model_lifecycle:
+  execute_instrument_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       instrument_model_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_instrument_device_lifecycle:
+  execute_instrument_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       instrument_device_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_platform_agent_lifecycle:
+  execute_platform_agent_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       platform_agent_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_platform_agent_instance_lifecycle:
+  execute_platform_agent_instance_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       platform_agent_instance_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_platform_model_lifecycle:
+  execute_platform_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       platform_model_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_platform_device_lifecycle:
+  execute_platform_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       platform_device_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_sensor_model_lifecycle:
+  execute_sensor_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       sensor_model_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
-  set_sensor_device_lifecycle:
+  execute_sensor_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
       sensor_device_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:

@@ -38,7 +38,7 @@ PredicateTypes:
     range: [InstrumentDevice, LogicalInstrument]
   hasModel:
     domain: [PlatformDevice, InstrumentDevice, SensorDevice, InstrumentAgent, PlatformAgent, DataSource, ExternalDataset, DataSourceAgent, ExternalDatasetAgent, LogicalInstrument, LogicalPlatform]
-    range: [PlatformModel, InstrumentModel, SensorModel, ExternalDataSourceModel, ExternalDatasetModel]
+    range: [PlatformModel, InstrumentModel, SensorModel, DataSourceModel, ExternalDatasetModel]
   hasObservatory:
     domain: [Org]
     range: [MarineFacility]

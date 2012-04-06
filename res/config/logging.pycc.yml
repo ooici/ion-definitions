@@ -1,0 +1,11 @@
+handlers:
+  file:
+    filename: logs/pycc_logfile.txt
+
+loggers:
+  pyon:
+    handlers: [console, file]
+    level: WARN
+  ion:
+    handlers: [console, file]
+    level: INFO

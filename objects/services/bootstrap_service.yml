@@ -10,6 +10,7 @@ dependencies: [datastore, directory,
   exchange_management,
   ingestion_management,
   data_retriever,
-  transform_management
+  transform_management,
+  process_dispatcher
 ]
 methods:

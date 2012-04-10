@@ -9,3 +9,6 @@ loggers:
   ion:
     handlers: [file]
     level: INFO
+  prototype:
+    handlers: [file]
+    level: INFO

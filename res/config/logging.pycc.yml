@@ -4,8 +4,8 @@ handlers:
 
 loggers:
   pyon:
-    handlers: [console, file]
-    level: WARN
+    handlers: [file]
+    level: INFO
   ion:
-    handlers: [console, file]
+    handlers: [file]
     level: INFO

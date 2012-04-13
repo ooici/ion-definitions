@@ -12,7 +12,8 @@ dependencies: [resource_registry]
 methods:
   create_index:
     in:
-      index: !Index
+      index_name: ""
+      index_type: ""
     out:
       index_id: ""
 
@@ -39,3 +40,11 @@ methods:
       filters: !ResourceFilter
     out:
       index_list: []
+
+  query:
+    in:
+      index_id: ""
+      query_string: ""
+    out:
+      resource_id: "" 
+

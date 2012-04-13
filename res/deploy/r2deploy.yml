@@ -125,6 +125,12 @@ apps:
     version: 0.1
     processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
 
+  - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
+    config:
+      level: process_dispatcher
+
   - name: provisioner
     version: 0.1
     processapp: [provisioner, ion.services.cei.provisioner_service, ProvisionerService]
@@ -150,6 +156,12 @@ apps:
   - name: transform_management
     version: 0.1
     processapp: [transform_management, ion.services.dm.transformation.transform_management_service, TransformManagementService]
+
+  - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
+    config:
+      level: transform_management
 
   - name: dataset_management
     version: 0.1

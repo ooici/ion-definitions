@@ -37,6 +37,10 @@ methods:
     out:
       success: True
 
+  list_indexes:
+    in:
+    out:
+
   find_indexes:
     in:
       filters: !ResourceFilter

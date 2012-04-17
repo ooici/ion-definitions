@@ -4,7 +4,7 @@ name: visualization_service
 
 docstring: The Visualization Service is responsible for creating transform processes for the data products available in the system and also provides access to the resulting viz products. (e.g Google DataTables, Matplotlib graphs, etc)
 
-dependencies: [resource_registry, pubsub_management, transform_management]
+dependencies: [resource_registry, pubsub_management, transform_management, data_retriever, dataset_management]
 
 methods:
 # Methods used by the Service Gateway Service (SGS)

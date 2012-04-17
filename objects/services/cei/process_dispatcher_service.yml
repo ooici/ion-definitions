@@ -47,13 +47,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_process_definitions:
-    docstring: Finds Process Definitions matching filter and returns a list of objects.
-    in:
-      filters: !ResourceFilter
-    out:
-      process_definition_list: []
-
   # -----------------
 
   associate_execution_engine:
@@ -76,12 +69,24 @@ methods:
 
   # -----------------
 
+  create_process:
+    docstring: Create a process resource and process id. Does not yet start the process
+    in:
+      process_definition_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
   schedule_process:
-    docstring: Schedule a Process Definition for execution as process on an Execution Engine.
+    docstring: |
+      Schedule a process definition for execution on an Execution Engine. If no process id is given,
+      a new unique ID is generated.
     in:
       process_definition_id: ""
       schedule: !ProcessSchedule
       configuration: {}
+      process_id: ""
     out:
       process_id: ""
     throws:

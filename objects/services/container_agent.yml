@@ -1,46 +1,64 @@
-# capability container service definition
-
 name: container_agent
-docstring: The base Capability Container service interface
+
+docstring: The Capability Container messaging interface
+
 dependencies: []
+
 methods:
   spawn_process:
+    docstring: |
+      Spawn a process with given name (just a human readable label), from the provided Python module and class,
+      and optional config override params. If no process_id is given, a new unique ID is generated for this
+      process; otherwise the caller is responsible for making sure the ID is unique in the system.
     in:
       name:
       module:
       cls:
       config:
+      process_id:
     out:
       process_id: ""
 
   start_app:
+    docstring: |
+      Start a container application, i.e. a set of processes from a given app definition.
     in:
       appdef:
       config:
     out:
 
   start_app_from_url:
+    docstring: |
+      Start a container application, i.e. a set of processes from a given app file.
     in:
       app_url: ""
     out:
       success: True
 
   start_rel:
+    docstring: |
+      Start a container deployment, i.e. a set of processes from a given deploy definition.
     in:
       rel:
     out:
 
   start_rel_from_url:
+    docstring: |
+      Start a container deployment, i.e. a set of processes from a given deploy file.
     in:
       rel_url: ""
     out:
       success: True
 
   stop:
+    docstring: |
+      Shutdown the container gracefully after shutting down all processes on it.
     in:
     out:
 
   status:
+    docstring: |
+      Provides status information and stats for the container.
     in:
     out:
       cstatus: ""

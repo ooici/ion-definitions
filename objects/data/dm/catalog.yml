@@ -1,7 +1,15 @@
+SearchOptions: !Extends_InformationResource
+  attribute_match: [] # Fields for simple field searches, e.g. ['color', 'author']
+  wildcard:        [] # Fields supporting wildcard e.g. ['model', 'serial'] using 'XM*' for a model search
+  range_fields:    [] # Fields supporting ranges, e.g. ['date', 'time', 'weight', 'cost']
+  geo_fields:      [] # Fields containing discrete geospatial locations
+
+---
+
 Catalog: !Extends_InformationResource
-  available_fields: [] # List of fields that can be searched on the entire catalog
+  available_fields: [] # List of fields that can be searched in the entire catalog
   # Description is part of resources but plays an integral role in Catalogs
+  catalog_fields:   [] # List of fields that are common to all indexes.
+  options:          !SearchOptions # Aggregate options to the entire catalog
   keywords:         [] # List of keywords used to organize and search catalogs
   metadata:         [] # flags such as has_geo
-  
-

@@ -1,11 +1,3 @@
-SearchOptions: !Extends_InformationResource
-  attribute_match: [] # Fields for simple field searches, e.g. ['color', 'author']
-  wildcard:        [] # Fields supporting wildcard e.g. ['model', 'serial'] using 'XM*' for a model search
-  range_fields:    [] # Fields supporting ranges, e.g. ['date', 'time', 'weight', 'cost']
-  geo_fields:      [] # Fields containing discrete geospatial locations
-
----
-
 Index: !Extends_InformationResource
   index_name:   ""
   index_type:   ""

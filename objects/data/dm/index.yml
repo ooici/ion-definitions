@@ -3,4 +3,3 @@ Index: !Extends_InformationResource
   index_type:   ""
   content_type: "" # Devices, Instruments, Users etc.
   options:      !SearchOptions
-

@@ -14,6 +14,7 @@ methods:
     docstring: A catalog is a new data set that aggregates and presents datasets in a specific way.
     in:
       catalog_name: ""
+      keywords:     ""
     out:
       catalog_id: ""
 
@@ -37,8 +38,8 @@ methods:
       success: True
 
 
-  add_index:
-    docstring: Add an index to the specified catalog
+  add_indexes:
+    docstring: Add the listed indexes to the catalog.
     in:
       catalog_id: ""
       index_ids: []

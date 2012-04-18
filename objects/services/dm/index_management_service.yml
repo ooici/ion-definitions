@@ -16,6 +16,8 @@ methods:
       index_type: ""
       options: {}
       datastore_name: ""
+      shards: 5
+      replicas: 1 
     out:
       index_id: ""
 

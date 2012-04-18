@@ -1,5 +1,7 @@
 Catalog: !Extends_InformationResource
-  view: ""
+  available_fields: [] # List of fields that can be searched on the entire catalog
+  # Description is part of resources but plays an integral role in Catalogs
+  keywords:         [] # List of keywords used to organize and search catalogs
+  metadata:         [] # flags such as has_geo
+  
 
-Index: !Extends_InformationResource
-  function: ""

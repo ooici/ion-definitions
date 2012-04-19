@@ -56,3 +56,7 @@ methods:
     out:
       resource_id: "" 
 
+  span_resources:
+    docstring: "Spans resource types and creates filters and rivers for each resource type"
+    in:
+    out:

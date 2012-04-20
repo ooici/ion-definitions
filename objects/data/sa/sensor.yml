@@ -1,4 +1,4 @@
-SensorDevice: !Extends_TaskableResource
+SensorDevice: !Extends_Device
 
   # Current to version 30 of confluence resource page:  
   # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=33227619
@@ -27,7 +27,7 @@ SensorDevice: !Extends_TaskableResource
   software_version: ""
   
 
-SensorModel: !Extends_InformationResource
+SensorModel: !Extends_DeviceModel
 
   # Current to version 25 of confluence resource page:  
   # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32278807

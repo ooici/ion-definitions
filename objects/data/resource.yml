@@ -11,13 +11,25 @@ Resource:
 
 ---
 
+Site:
+
+  # Current to version 27 of confluence resource page:
+  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32277834
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
 TaskableResource: !Extends_Resource
   # Taskable resources are resources with behavior and state. This object describes them.
 
 InformationResource: !Extends_Resource
   # Information resources are pure information artifacts. This object describes them.
 
+
 ---
+
+ExecutableResource: !Extends_InformationResource
+  # Information resources are pure information artifacts. This object describes them.
+  
 
 ResourceType: !Extends_InformationResource
 
@@ -43,12 +55,43 @@ DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 
 ---
 
+
+Observatory: !Extends_Site
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
+
+Subsite: !Extends_Site
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
+
+PlatformSite: !Extends_Site
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
+
+InstrumentSite: !Extends_Site
+
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
+---
+
 AgentDefinition: !Extends_InformationResource
 
 AgentInstance: !Extends_TaskableResource
   deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
   exchange_name: ""
   configuration: {}
+
+
+Device: !Extends_TaskableResource
+
+  # Base for a physical device with a serial number, such as sensor, instrument and platform.
+
+DeviceModel: !Extends_ExecutableResource
+
+  # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
 
 ---
 

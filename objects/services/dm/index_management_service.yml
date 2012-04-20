@@ -60,4 +60,5 @@ methods:
     docstring: "Spans resource types and creates filters and rivers for each resource type"
     in:
       index_id: ""
+      map_types: True
     out:

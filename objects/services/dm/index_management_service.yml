@@ -62,3 +62,23 @@ methods:
       index_id: ""
       map_types: True
     out:
+
+  index_resources:
+    docstring: "Adds the specified resources to the index"
+    in:
+      index_id: ""
+      resource_ids: []
+      datastore_name: ""
+    out:
+      filter_name: ""
+
+  river_start:
+    docstring: "Starts a river for indexing"
+    in:
+      index_id: ""
+      index_type: ""
+      datastore_name: ""
+      river_name: ""
+      couchdb_filter: ""
+    out:
+      success: True 

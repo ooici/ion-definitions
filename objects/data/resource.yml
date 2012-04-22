@@ -11,11 +11,7 @@ Resource:
 
 ---
 
-Site:
-
-  # Current to version 27 of confluence resource page:
-  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32277834
-
+Site: 
   # An entity that encompasses a defined location, time, and/or data-producing entities
 
 TaskableResource: !Extends_Resource
@@ -24,12 +20,37 @@ TaskableResource: !Extends_Resource
 InformationResource: !Extends_Resource
   # Information resources are pure information artifacts. This object describes them.
 
-
 ---
 
 ExecutableResource: !Extends_InformationResource
   # Information resources are pure information artifacts. This object describes them.
+
+Observatory: !Extends_Site
+  # Represents an observatory and its physical and information resources (including Instruments),
+  # providing Data Products, Event Detection and Instrument services
+  # (Also: Marine Facility; Marine Observatory; Virtual Observatory)
+
   
+Subsite: !Extends_Site
+  # An entity that encompasses a defined location, time, and/or data-producing entities
+
+PlatformSite: !Extends_Site
+  # A sub-site of an observatory, providing a slot, definition and metadata for platform information,
+  # based on a succession of functionally equivalent (physical) Platform resources at a single site
+
+InstrumentSite: !Extends_Site
+  # An observatory sub-site, providing a slot, definition and metadata for instrument information,
+  # based on a succession of functionally equivalent (physical) Instrument resources at a single site.
+
+---
+
+Device: !Extends_TaskableResource
+  # Base for a physical device with a serial number, such as sensor, instrument and platform.
+  
+DeviceModel: !Extends_ExecutableResource
+  # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
+    
+---
 
 ResourceType: !Extends_InformationResource
 
@@ -55,43 +76,12 @@ DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 
 ---
 
-
-Observatory: !Extends_Site
-
-  # An entity that encompasses a defined location, time, and/or data-producing entities
-
-
-Subsite: !Extends_Site
-
-  # An entity that encompasses a defined location, time, and/or data-producing entities
-
-
-PlatformSite: !Extends_Site
-
-  # An entity that encompasses a defined location, time, and/or data-producing entities
-
-
-InstrumentSite: !Extends_Site
-
-  # An entity that encompasses a defined location, time, and/or data-producing entities
-
----
-
 AgentDefinition: !Extends_InformationResource
 
 AgentInstance: !Extends_TaskableResource
   deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
   exchange_name: ""
   configuration: {}
-
-
-Device: !Extends_TaskableResource
-
-  # Base for a physical device with a serial number, such as sensor, instrument and platform.
-
-DeviceModel: !Extends_ExecutableResource
-
-  # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
 
 ---
 
@@ -177,3 +167,5 @@ FrameOfReference: !Extends_InformationResource
 
   # Collection of entities which collectively constrain the entity
   entity_constraint: ""     # what is EntityConstraint object?
+
+

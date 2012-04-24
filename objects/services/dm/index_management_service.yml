@@ -71,6 +71,7 @@ methods:
       resource_ids: []
       filter_name: ""
       datastore_name: ""
+      map_resources: False
     out:
       filter_name: ""
 

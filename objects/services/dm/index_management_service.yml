@@ -52,7 +52,8 @@ methods:
   query:
     in:
       index_id: ""
-      query_string: ""
+      field: ""
+      query: ""
     out:
       resource_id: "" 
 
@@ -83,3 +84,10 @@ methods:
       couchdb_filter: ""
     out:
       success: True 
+
+  mapped_fields:
+    docstring: "Determines the searchable fields based on the dynamic maps"
+    in:
+      index_id: ""
+    out:
+      success: True

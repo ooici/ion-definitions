@@ -4,16 +4,25 @@ UIResource: !Extends_Resource
 
 ---
 
+# Back reference to ION resource type
+UIInternalResourceType: !Extends_UIResource
+
 # An attribute within a resource object
 UIAttribute: !Extends_UIResource
+    attribute_level_id: ""         # FK
+    screen_label_id: ""            # FK
+    internal_resource_type_id: ""  # FK
+    composite_name: ""
+    alignment_status: ""
+    value_generation: ""
 
-# A collection of attributes
+# A sequence of attributes
 UIBlock: !Extends_UIResource
     layout_id: ""
     group_id: ""          # FK
     screen_label_id: ""   # FK
 
-# A group of blocks
+# A group of blocks. For now a tab in the UI
 UIGroup: !Extends_UIResource
     screen_label_id: ""   # FK
 
@@ -30,7 +39,7 @@ UIScreenLabel: !Extends_UIResource
     text: ""
     abbreviation: ""
 
-# A panel/tab of groups
+# A specification how to lay out a screen
 UIView: !Extends_UIResource
     screen_label_id: ""   # FK
 

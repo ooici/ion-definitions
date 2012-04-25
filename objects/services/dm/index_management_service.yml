@@ -92,3 +92,11 @@ methods:
       index_id: ""
     out:
       success: True
+
+  create_mapping:
+    docstring: "Creates static mapping based on parameters"
+    in:
+      index_id: ""
+      options: !SearchOptions
+    out:
+      success: True

@@ -175,6 +175,34 @@ PredicateTypes:
   hasSource:
     domain: [ExternalDataset]
     range: [DataSource]
+# UX
+  hasUIGroup:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIScreenLabel:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIBlockAttribute:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIAttribute:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIBlockRepresentation:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIRepresentation:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIGroupBlock:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIBlock:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIViewGroup:
+    domain: [UIResource]
+    range: [UIResource]
 
 # Examples
   hasAccount:

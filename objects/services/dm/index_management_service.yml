@@ -100,3 +100,11 @@ methods:
       options: !SearchOptions
     out:
       success: True
+
+  resource_mapping:
+    docstring: "Creates a resource mapping based on a list of resource types"
+    in:
+      index_id: ""
+      resources: []
+    out:
+      success: True

@@ -8,13 +8,13 @@ PredicateTypes:
 #SA
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
-    range: [LogicalPlatform, LogicalInstrument]
+    range: [LogicalPlatform, LogicalInstrument, InstrumentSite, PlatformSite]
   hasDeployment:
     domain: [PlatformDevice, InstrumentDevice]
-    range: [LogicalPlatform, LogicalInstrument]
+    range: [LogicalPlatform, LogicalInstrument, InstrumentSite, PlatformSite]
   hasPrimaryDeployment:
     domain: [PlatformDevice, InstrumentDevice]
-    range: [LogicalPlatform, LogicalInstrument]
+    range: [LogicalPlatform, LogicalInstrument, InstrumentSite, PlatformSite]
   hasDataset:
     domain: [DataProducer, DataProduct]
     range: [Dataset]
@@ -22,7 +22,7 @@ PredicateTypes:
     domain: [DataProcess, InstrumentDevice, ExternalDataset, DataProduct ]
     range: [DataProducer]
   hasDataProduct:
-    domain: [LogicalInstrument]
+    domain: [LogicalInstrument, InstrumentSite]
     range: [DataProduct]
   hasInputDataProducer:
     domain: [DataProducer]
@@ -34,8 +34,8 @@ PredicateTypes:
     domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition,  DataSourceAgent, ExternalDatasetAgent]
     range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess, DataSourceAgentInstance, ExternalDatasetAgentInstance]
   hasInstrument:
-    domain: [PlatformDevice, LogicalPlatform]
-    range: [InstrumentDevice, LogicalInstrument]
+    domain: [PlatformDevice, LogicalPlatform, PlatformSite]
+    range: [InstrumentDevice, LogicalInstrument, InstrumentSite]
   hasModel:
     domain: [PlatformDevice, InstrumentDevice, SensorDevice, InstrumentAgent, PlatformAgent, DataSource, ExternalDataset, DataSourceAgent, ExternalDatasetAgent, LogicalInstrument, LogicalPlatform]
     range: [PlatformModel, InstrumentModel, SensorModel, DataSourceModel, ExternalDatasetModel]
@@ -55,8 +55,8 @@ PredicateTypes:
     domain: [InstrumentDevice]
     range: [SensorDevice]
   hasSite:
-    domain: [MarineFacility, Site]
-    range: [Site]
+    domain: [MarineFacility, Observatory, Site, Subsite, PlatformSite, InstrumentSite]
+    range: [Site, Subsite, PlatformSite, InstrumentSite]
 # DM
   hasArchive:
     domain: [Datastore]
@@ -105,10 +105,10 @@ PredicateTypes:
     domain: [Org]
     range: [Org]
   hasAgent:
-    domain: [LogicalInstrument, LogicalPlatform]
+    domain: [LogicalInstrument, LogicalPlatform, InstrumentSite, PlatformSite]
     range: [InstrumentAgent, PlatformAgent]
   hasAgentDefinition:
-    domain: [InstrumentModel, PlatformModel, LogicalInstrument, LogicalPlatform]
+    domain: [InstrumentModel, PlatformModel, LogicalInstrument, LogicalPlatform, InstrumentSite, PlatformSite]
     range: [AgentDefinition]
   hasAgentInstance:
     domain: [TaskableResource, PlatformDevice, InstrumentDevice, DataSource, ExternalDataset]
@@ -175,6 +175,34 @@ PredicateTypes:
   hasSource:
     domain: [ExternalDataset]
     range: [DataSource]
+# UX
+  hasUIGroup:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIScreenLabel:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIBlockAttribute:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIAttribute:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIBlockRepresentation:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIRepresentation:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIGroupBlock:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIBlock:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIViewGroup:
+    domain: [UIResource]
+    range: [UIResource]
 
 # Examples
   hasAccount:

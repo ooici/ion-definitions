@@ -1,10 +1,3 @@
-InstrumentsList:
-  # instrument type
-  type: ""
-  # number of instruments of this type
-  count: 0
-
----
 
 Site: !Extends_FrameOfReference
 
@@ -23,18 +16,17 @@ Observatory: !Extends_FrameOfReference
 
 MarineFacility: !Extends_Observatory
 
-  # Current to version 22 of confluence resource page:  
+  # Current to version 22 of confluence resource page:
   # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=32801152
 
-  # (Also: Marine Observatory Facility; Observatory) Represents and manages an observatory 
-  # and its physical and information resources (including Instruments), providing Data Products, 
+  # (Also: Marine Observatory Facility; Observatory) Represents and manages an observatory
+  # and its physical and information resources (including Instruments), providing Data Products,
   # Event Detection and Instrument services
- 
+
   # Identifies the institution that operates the facility
   institution: !Institution
 
   # An entity that serves as a contact point
   contact: !ContactInformation
-  
 
-  
+

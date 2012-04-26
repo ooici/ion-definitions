@@ -3,7 +3,7 @@ LogicalPlatform: !Extends_FrameOfReference
  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Logical+Platform
 
 
-PlatformDevice: !Extends_TaskableResource
+PlatformDevice: !Extends_Device
 
   # Current to version 30 of confluence resource page:
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Device
@@ -27,7 +27,7 @@ PlatformDevice: !Extends_TaskableResource
 
   
 
-PlatformModel: !Extends_InformationResource
+PlatformModel: !Extends_DeviceModel
 
   # Current to version 23 of confluence resource page:
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Model

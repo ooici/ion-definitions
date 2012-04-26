@@ -2,7 +2,7 @@ LogicalInstrument: !Extends_FrameOfReference
   # This is the logical instrument that is part of the observatory
   
 
-InstrumentDevice: !Extends_TaskableResource
+InstrumentDevice: !Extends_Device
   # This is the physical instrument
   serial_number: ""
   firmware_version: ""
@@ -12,7 +12,7 @@ InstrumentDevice: !Extends_TaskableResource
   datum_characterization: "" #later will be an object
   
 
-InstrumentModel: !Extends_InformationResource
+InstrumentModel: !Extends_DeviceModel
   #This defines the characteristics of an instrument model
   model_label: ""
   manufacturer: !Institution

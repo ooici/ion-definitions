@@ -1,0 +1,203 @@
+name: observatory_management_management
+
+docstring: |
+  Provides operations to manage observatories and their logical and associated device resources.
+  Also provide observatory level policy control.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Observatory+Management
+
+dependencies: [resource_registry, instrument_management, data_product_management, org_management]
+
+# TODO:
+# - Observatory policy
+
+methods:
+  # -----------------
+  # Working with Marine Facility resources.
+
+  create_observatory:
+    docstring: |
+      Create a Observatory resource. An observatory  is coupled
+      with one Org. The Org is created and associated as part of this call.
+    in:
+      observatory: !Observatory
+    out:
+      observatory_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_observatory:
+    docstring: Update a Observatory resource
+    in:
+      observatory: !Observatory
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_observatory_id:
+    docstring: Read a Observatory resource
+    in:
+      observatory_id: ""
+    out:
+      observatory: !Observatory
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_observatory:
+    docstring: Delete a Observatory resource
+    in:
+      observatory_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
+  # Working with Subsite resources.
+
+  create_subsite:
+    docstring: |
+      Create a Subsite resource. A subsite is a frame of reference within an observatory. It's parent is
+      either the observatory or another subsite.
+    in:
+      subsite: !Subsite
+      parent_id: ""
+    out:
+      subsite_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_subsite:
+    docstring: Update a Subsite resource
+    in:
+      subsite: !Subsite
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_subsite:
+    docstring: Read a Subsite resource
+    in:
+      subsite_id: ""
+    out:
+      subsite: !Subsite
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_subsite:
+    docstring: Delete a LogicalPlatform resource, removes assocations to parents
+    in:
+      subsite_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+
+
+  # -----------------
+  # Working with PlatformSite resources.
+
+  create_platformsite:
+    docstring: |
+      Create a PlatformSite resource. A platformsite is a frame of reference within an observatory. It's parent is
+      either the observatory or another platformsite.
+    in:
+      platformsite: !PlatformSite
+      parent_id: ""
+    out:
+      platformsite_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_platformsite:
+    docstring: Update a PlatformSite resource
+    in:
+      platformsite: !PlatformSite
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_platformsite:
+    docstring: Read a PlatformSite resource
+    in:
+      platformsite_id: ""
+    out:
+      platformsite: !PlatformSite
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_platformsite:
+    docstring: Delete a PlatformSite resource, removes assocations to parents
+    in:
+      platformsite_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+
+  # -----------------
+  # Working with InstrumentSite resources.
+
+  create_instrumentsite:
+    docstring: |
+      Create a InstrumentSite resource. A instrumentsite is a frame of reference within an observatory. It's parent is
+      either the observatory or another instrumentsite.
+    in:
+      instrumentsite: !InstrumentSite
+      parent_id: ""
+    out:
+      instrumentsite_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_instrumentsite:
+    docstring: Update a InstrumentSite resource
+    in:
+      instrumentsite: !InstrumentSite
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_instrumentsite:
+    docstring: Read a InstrumentSite resource
+    in:
+      instrumentsite_id: ""
+    out:
+      instrumentsite: !InstrumentSite
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_instrumentsite:
+    docstring: Delete a PlatformSite resource, removes assocations to parents
+    in:
+      instrumentsite_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+  # Assigning Site resources.
+
+  assign_site_to_site:
+    docstring: Connects a child site (any subtype) to a parent site (any subtype)
+    in:
+      child_site_id: ""
+      parent_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_site_to_site:
+    docstring: Disconnects a child site (any subtype) from a parent site (any subtype)
+    in:
+      child_site_id: ""
+      parent_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist

@@ -6,19 +6,29 @@ UIResource: !Extends_Resource
 
 # Back reference to ION resource type
 UIInternalResourceType: !Extends_UIResource
+    internal_resource_superclass: ""  # FK
+    alignment_status: ""
+
+# How important is an attribute
+UIInformationLevel: !Extends_UIResource
+    level: ""
+
+# A text label in the UI
+UIScreenLabel: !Extends_UIResource
+    text: ""
+    abbreviation: ""
 
 # An attribute within a resource object
 UIAttribute: !Extends_UIResource
-    attribute_level_id: ""         # FK
+    information_level_id: ""       # FK
     screen_label_id: ""            # FK
     internal_resource_type_id: ""  # FK
-    composite_name: ""
-    alignment_status: ""
     value_generation: ""
+    alignment_status: ""
 
 # A sequence of attributes
 UIBlock: !Extends_UIResource
-    layout_id: ""
+    resource_id: ""       # FK
     group_id: ""          # FK
     screen_label_id: ""   # FK
 
@@ -34,10 +44,6 @@ UIRepresentation: !Extends_UIResource
 UIResourceType: !Extends_UIResource
     screen_label_id: ""   # FK
 
-# A text label in the UI
-UIScreenLabel: !Extends_UIResource
-    text: ""
-    abbreviation: ""
 
 # A specification how to lay out a screen
 UIView: !Extends_UIResource

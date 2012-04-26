@@ -203,6 +203,12 @@ PredicateTypes:
   hasUIViewGroup:
     domain: [UIResource]
     range: [UIResource]
+  hasUISupertype:
+    domain: [UIResource]
+    range: [UIResource]
+  hasUIResource:
+    domain: [UIResource]
+    range: [UIResource]
 
 # Examples
   hasAccount:

@@ -11,10 +11,23 @@ dependencies: [resource_registry]
 
 methods:
   create_index:
+    docstring: |
+      Creates an index resource and ElasticSearch index based on the parameters
+      @param index_name     Desired name for the index, should be intuitive, i.e. devices, instruments, RSN etc.
+      @param index_type     (COUCHDB_RIVER_INDEX | SIMPLE_INDEX | ADVANCED_INDEX)
+      @param options        SearchOptions describes what the types are for specific fields in the index and how they are searched
+      @param datastore_name The datastore to use when creating a COUCHDB_RIVER_INDEX
+      @param shards         Number of shards to use when creating an ADVANCED_INDEX
+      @param replicas       Number of replicas per shard (min 1) to use when creating an ADVANCED_INDEX
+
+      Simplest way to create the index is to use an advanced index and then use other service calls to craft it.
+
+      > ims_cli = IndexManagementServiceClient()
+      > index_id = ims_cli.create_index('basic', IndexManagementService.ADVANCED_INDEX)
     in:
       index_name: ""
       index_type: ""
-      options: {}
+      options: !SearchOptions
       datastore_name: ""
       shards: 5
       replicas: 1 
@@ -28,12 +41,14 @@ methods:
       success: True
 
   read_index:
+    docstring: "Retrieves the index resource from the registry."
     in:
       index_id: ""
     out:
       index: !Index
 
   delete_index:
+    docstring: "Deletes and removes the index from the registry and from ElasticSearch"
     in:
       index_id: ""
     out:
@@ -58,14 +73,29 @@ methods:
       resource_id: "" 
 
   span_resources:
-    docstring: "Spans resource types and creates filters and rivers for each resource type"
+    docstring: |
+      span_resources traverses all known and defined resource types, creates an ElasticSearch index_type under the specified index
+      and creates a river for every known resource type with a static mapping.
+      @param index_id  Index to use
+      @param map_types conditional on whether or not a static mapping should be provided to ElasticSearch before creating the rivers.
     in:
       index_id: ""
       map_types: True
     out:
 
   index_resources:
-    docstring: "Adds the specified resources to the index"
+    docstring: |
+      index_resources is used when individual documents are to be added to an index, a custom filter is added to the datastore
+      design documents as well as a static mapping if map_resources is True.
+      @param index_id       Index to use
+      @param resource_ids   List of documents to be added to the index
+      @param filter_name    The name of the filter to use or update (optional)
+      @param datastore_name Which datastore to use
+      @param map_resources  Conditional for creating a map in ElasticSearch (recommended)
+
+
+      > filter_name = ims_cli.index_resources(index_id, resource_list, map_resources=True)
+      > ims_cli.river_start(index_id,couchdb_filter=filter_name)
     in:
       index_id: ""
       resource_ids: []
@@ -76,7 +106,16 @@ methods:
       filter_name: ""
 
   river_start:
-    docstring: "Starts a river for indexing"
+    docstring: |
+      Creates a streaming river from ElasticSearch to CouchDB using the specified datastore with the specified filter.  Rivers 
+      are continuous HTTP connections and are mostly event-driven methods for CouchDB updates to documents to be disseminated 
+      accross to indices in ElasticSearch.
+
+      @param index_id       Index to use
+      @param index_type     Which ElasticSearch index_type to use, provides subcategories
+      @param datastore_name Specifies which datastore to use
+      @param river_name     For instances of multiple rivers it helps to name them intuitively i.e. (user_river, devices_river)
+      @param couchdb_filter Which CouchDB _changes filter to use
     in:
       index_id: ""
       index_type: ""
@@ -87,14 +126,19 @@ methods:
       success: True 
 
   mapped_fields:
-    docstring: "Determines the searchable fields based on the dynamic maps"
+    docstring: |
+      Updates the index resource's Search Fields based on the dynamic field types determined by ElasticSearch.
+      @param index_id Index to use
     in:
       index_id: ""
     out:
       success: True
 
   create_mapping:
-    docstring: "Creates static mapping based on parameters"
+    docstring: |
+      Creates an ElasticSearch mapping based on the search fields in the resource. Attribute_matches, range_fields etc.
+      @param index_id Index to use
+      @param options  (optional) Fields to be added to the resource and the map
     in:
       index_id: ""
       options: !SearchOptions
@@ -102,7 +146,14 @@ methods:
       success: True
 
   resource_mapping:
-    docstring: "Creates a resource mapping based on a list of resource types"
+    docstring: |
+      Creates an ElasticSearch mapping based on the resource types specified, mostly used when the index is indexing 
+      by resource types. The mapping is mostly intelligent making best-case analyzations based on the resource schema.
+      @param index_id  Index to use
+      @param resources List of resource types to be used for the basis of the map 
+
+
+      > ims_cli.resource_mapping(index_id, [RT.DataProduct, RT.Site, RT.Transform])
     in:
       index_id: ""
       resources: []

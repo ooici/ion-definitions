@@ -1,0 +1,13 @@
+
+
+
+CompoundGranule:
+  granules: []
+---
+
+Granule:
+  data_producer_name: ''
+  taxonomy_name: ''
+  record_dictionary: {}
+
+

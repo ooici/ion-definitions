@@ -7,7 +7,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Catalog+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry,index_management]
 
 methods:
   create_catalog:
@@ -53,3 +53,25 @@ methods:
       id_only: True
     out:
       success: []
+
+  catalog_search:
+    in:
+      catalog_id: ""
+      field: ""
+      query: ""
+    out:
+      success: []
+
+  refresh_indexes:
+    in:
+      catalog_id: ""
+      index_ids: []
+    out:
+      success: True
+
+  remove_indexes:
+    in:
+      catalog_id: ""
+      index_ids: []
+    out:
+      success: True

@@ -46,3 +46,20 @@ methods:
       pattern: ''
     out:
       entry_list: []
+
+  # -----------------
+  # Specialty operations (may move)
+
+  get_ui_specs:
+    docstring: |
+      Returns the UI specifications as a composite data structure (dict).
+      The dict has several keys:
+      Key 'objects' contains a dict mapping object ids to objects.
+      Key 'associated_to' contains a dict mapping subject ids to lists of predicate and object id.
+      Key 'associated_from' contains a dict mapping object ids to lists of predicate and subject id.
+      Every resource type has a key containing a list of ids.
+      The resulting structure is the one applicable to the given user id.
+    in:
+      user_id: ""
+    out:
+      ui_specs: {}

@@ -60,6 +60,7 @@ methods:
 
   find_indexes:
     in:
+      index_name: ""
       filters: !ResourceFilter
     out:
       index_list: []

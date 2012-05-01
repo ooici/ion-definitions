@@ -13,9 +13,11 @@ Resource:
 
 InformationResource: !Extends_Resource
   # Information resources are pure information artifacts. This object describes them.
+---
 
 TaskableResource: !Extends_Resource
   # Taskable resources are resources with behavior and state. This object describes them.
+---
 
 ExecutableResource: !Extends_InformationResource
   # Information resources are pure information artifacts. This object describes them.

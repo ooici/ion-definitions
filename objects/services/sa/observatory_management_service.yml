@@ -1,4 +1,4 @@
-name: observatory_management_management
+name: observatory_management
 
 docstring: |
   Provides operations to manage observatories and their logical and associated device resources.
@@ -14,6 +14,19 @@ dependencies: [resource_registry, instrument_management, data_product_management
 methods:
   # -----------------
   # Working with Marine Facility resources.
+
+  create_marine_facility:
+    docstring: |
+      Create an Observatory resource of special MarineFacility type. 
+      It is coupled
+      with one Org. The Org is created and associated as part of this call.
+    in:
+      observatory: !Observatory
+    out:
+      observatory_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   create_observatory:
     docstring: |
@@ -35,7 +48,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  read_observatory_id:
+  read_observatory:
     docstring: Read a Observatory resource
     in:
       observatory_id: ""
@@ -100,40 +113,40 @@ methods:
   # -----------------
   # Working with PlatformSite resources.
 
-  create_platformsite:
+  create_platform_site:
     docstring: |
       Create a PlatformSite resource. A platformsite is a frame of reference within an observatory. It's parent is
       either the observatory or another platformsite.
     in:
-      platformsite: !PlatformSite
+      platform_site: !PlatformSite
       parent_id: ""
     out:
-      platformsite_id: ""
+      platform_site_id: ""
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
-  update_platformsite:
+  update_platform_site:
     docstring: Update a PlatformSite resource
     in:
-      platformsite: !PlatformSite
+      platform_site: !PlatformSite
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  read_platformsite:
+  read_platform_site:
     docstring: Read a PlatformSite resource
     in:
-      platformsite_id: ""
+      platform_site_id: ""
     out:
-      platformsite: !PlatformSite
+      platform_site: !PlatformSite
     throws:
       NotFound: object with specified id does not exist
 
-  delete_platformsite:
+  delete_platform_site:
     docstring: Delete a PlatformSite resource, removes assocations to parents
     in:
-      platformsite_id: ""
+      platform_site_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -143,40 +156,40 @@ methods:
   # -----------------
   # Working with InstrumentSite resources.
 
-  create_instrumentsite:
+  create_instrument_site:
     docstring: |
       Create a InstrumentSite resource. A instrumentsite is a frame of reference within an observatory. It's parent is
       either the observatory or another instrumentsite.
     in:
-      instrumentsite: !InstrumentSite
+      instrument_site: !InstrumentSite
       parent_id: ""
     out:
-      instrumentsite_id: ""
+      instrument_site_id: ""
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
-  update_instrumentsite:
+  update_instrument_site:
     docstring: Update a InstrumentSite resource
     in:
-      instrumentsite: !InstrumentSite
+      instrument_site: !InstrumentSite
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  read_instrumentsite:
+  read_instrument_site:
     docstring: Read a InstrumentSite resource
     in:
-      instrumentsite_id: ""
+      instrument_site_id: ""
     out:
-      instrumentsite: !InstrumentSite
+      instrument_site: !InstrumentSite
     throws:
       NotFound: object with specified id does not exist
 
-  delete_instrumentsite:
-    docstring: Delete a PlatformSite resource, removes assocations to parents
+  delete_instrument_site:
+    docstring: Delete an InstrumentSite resource, removes assocations to parents
     in:
-      instrumentsite_id: ""
+      instrument_site_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -193,11 +206,76 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_site_to_site:
+  unassign_site_from_site:
     docstring: Disconnects a child site (any subtype) from a parent site (any subtype)
     in:
       child_site_id: ""
       parent_site_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  assign_resource_to_observatory:
+    docstring: Assign a resource to a Marine facility's assets.
+    in:
+      resource_id: ""
+      observatory_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  unassign_resource_from_observatory:
+    docstring: Remove a resource from a Marine facilitiy's assets.
+    in:
+      resource_id: ""
+      observatory_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+
+  # -----------------
+  # find methods
+
+
+  find_observatories:
+    docstring: Find Observatory resources
+    in:
+      filters: !ResourceFilter
+    out:
+      observatory_list: []
+
+  find_subsites:             
+    docstring: Find Subsite resources
+    in:
+      filters: !ResourceFilter
+    out:
+      subsite_list: []
+
+  find_instrument_sites:             
+    docstring: Find inst site resources
+    in:
+      filters: !ResourceFilter
+    out:
+      instrument_site_list: []
+
+  find_platform_sites:             
+    docstring: Find inst site resources
+    in:
+      filters: !ResourceFilter
+    out:
+      platform_site_list: []
+
+
+
+  find_org_by_observatory:
+    docstring: Return the Org resource id for a specific Observatory resource.
+    in:
+      observatory_id: ""
+    out:
+      org_list: []
     throws:
       NotFound: object with specified id does not exist

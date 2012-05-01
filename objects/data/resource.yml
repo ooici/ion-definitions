@@ -11,36 +11,14 @@ Resource:
 
 ---
 
-Site: 
-  # An entity that encompasses a defined location, time, and/or data-producing entities
+InformationResource: !Extends_Resource
+  # Information resources are pure information artifacts. This object describes them.
 
 TaskableResource: !Extends_Resource
   # Taskable resources are resources with behavior and state. This object describes them.
 
-InformationResource: !Extends_Resource
-  # Information resources are pure information artifacts. This object describes them.
-
----
-
 ExecutableResource: !Extends_InformationResource
   # Information resources are pure information artifacts. This object describes them.
-
-Observatory: !Extends_Site
-  # Represents an observatory and its physical and information resources (including Instruments),
-  # providing Data Products, Event Detection and Instrument services
-  # (Also: Marine Facility; Marine Observatory; Virtual Observatory)
-
-  
-Subsite: !Extends_Site
-  # An entity that encompasses a defined location, time, and/or data-producing entities
-
-PlatformSite: !Extends_Site
-  # A sub-site of an observatory, providing a slot, definition and metadata for platform information,
-  # based on a succession of functionally equivalent (physical) Platform resources at a single site
-
-InstrumentSite: !Extends_Site
-  # An observatory sub-site, providing a slot, definition and metadata for instrument information,
-  # based on a succession of functionally equivalent (physical) Instrument resources at a single site.
 
 ---
 

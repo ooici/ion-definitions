@@ -11,7 +11,7 @@ Resource:
 
 ---
 
-Site: 
+Site: !Extends_Resource
   # An entity that encompasses a defined location, time, and/or data-producing entities
 
 TaskableResource: !Extends_Resource

@@ -1,9 +1,7 @@
 
 
 
-Taxonomy:
-  # Not happy with this. How do we put the ID in the object - the _id only exists for resources that are in the RR?
-  tx_id: ""
+Taxonomy: !Extends_InformationResource
   map: {}
 
 ---
@@ -17,7 +15,7 @@ Granule:
   data_producer_id: ''
   # Can be a reference or value
 
-  taxonomy_id: ''
+  taxonomy: !Taxonomy
   # Can be reference or a value
 
   record_dictionary: {}

@@ -75,3 +75,15 @@ methods:
       index_ids: []
     out:
       success: True
+
+  search_fields:
+    in:
+      catalog_id: ""
+    out:
+      fields: {}
+
+  catalog_fields:
+    in:
+      catalog_id: ""
+    out:
+      fields: {}

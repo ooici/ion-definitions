@@ -15,6 +15,19 @@ methods:
   # -----------------
   # Working with Marine Facility resources.
 
+  create_marine_facility:
+    docstring: |
+      Create an Observatory resource of special MarineFacility type. 
+      It is coupled
+      with one Org. The Org is created and associated as part of this call.
+    in:
+      observatory: !Observatory
+    out:
+      observatory_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
   create_observatory:
     docstring: |
       Create a Observatory resource. An observatory  is coupled

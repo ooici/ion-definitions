@@ -51,6 +51,7 @@ Attachment: !Extends_InformationResource
   content_type: ""  # MIME type
   content: {}
   object_id: ""   # Associated object (resource) ID, for easier indexing
+  keywords: []
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 

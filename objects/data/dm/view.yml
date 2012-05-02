@@ -1,2 +1,3 @@
 View: !Extends_InformationResource
-  function: ""
+  default_field: "" # The field to order by
+

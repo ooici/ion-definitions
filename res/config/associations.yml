@@ -100,6 +100,9 @@ PredicateTypes:
   hasTransform:
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
+  hasView:
+    domain: [View, Catalog]
+    range: [View]
 # COI
   affiliatedWith:
     domain: [Org]

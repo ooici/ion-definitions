@@ -195,7 +195,43 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
-  # Assigning Site resources.
+  # Assigning (Associations).
+
+  assign_instrument_device_to_instrument_site:
+    docstring: Connects a child site (any subtype) to a parent site (any subtype)
+    in:
+      instrument_device_id: ""
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_instrument_device_from_instrument_site:
+    docstring: Disconnects a child site (any subtype) from a parent site (any subtype)
+    in:
+      instrument_device_id: ""
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_platform_device_to_platform_site:
+    docstring: Connects a child site (any subtype) to a parent site (any subtype)
+    in:
+      platform_device_id: ""
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_platform_device_from_platform_site:
+    docstring: Disconnects a child site (any subtype) from a parent site (any subtype)
+    in:
+      platform_device_id: ""
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_site_to_site:
     docstring: Connects a child site (any subtype) to a parent site (any subtype)
@@ -279,3 +315,14 @@ methods:
       org_list: []
     throws:
       NotFound: object with specified id does not exist
+
+
+
+  find_related_frames_of_reference:
+    in:
+      input_resource_id: ""
+      output_resource_type_list: []
+    out:
+      output_resource_lists: {}
+      
+

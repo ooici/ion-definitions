@@ -124,7 +124,7 @@ methods:
 
 
   # -----------------
-  # Working with Physical Instrument resources
+  # Working with InstrumentDevice resources
 
   create_instrument_device:
     docstring: |

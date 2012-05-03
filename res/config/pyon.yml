@@ -106,6 +106,7 @@ cc:
   timeout:
     shutdown: 30.0
     heartbeat: 3.0
+  proctype: green   # Type of ION process to spawn for new services/processes (green or python)
 
 validate:
   setattr: True

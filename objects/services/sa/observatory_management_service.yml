@@ -1,32 +1,53 @@
 name: observatory_management
 
 docstring: |
-  Provides operations to manage observatories and their logical and associated device resources.
+  Provides operations to manage observatories and their constituent site resources.
+  Manages the associations of device models and devoices to sites.
   Also provide observatory level policy control.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Observatory+Management
 
 dependencies: [resource_registry, instrument_management, data_product_management, org_management]
 
-# TODO:
-# - Observatory policy
-
 methods:
   # -----------------
-  # Working with Marine Facility resources.
+  # Working with observatory domains of authority.
 
   create_marine_facility:
     docstring: |
-      Create an Observatory resource of special MarineFacility type. 
-      It is coupled
-      with one Org. The Org is created and associated as part of this call.
+      Create an Org (domain of authority) that realizes a marine facility. This Org will have
+      set up roles for a marine facility. Shared resources, such as a device can only be
+      registered in one marine facility Org, and additionally in many virtual observatory Orgs. The
+      marine facility operators will have more extensive permissions and will supercede virtual
+      observatory commands
     in:
-      observatory: !Observatory
+      org: !Org
+      # TBD additional args specific to set up a marine facility
     out:
-      observatory_id: ""
+      org_id: ""
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
+
+  create_virtual_observatory:
+    docstring: |
+      Create an Org (domain of authority) that realizes a virtual observatory. This Org will have
+      set up roles for a virtual observatory. Shared resources, such as a device can only be
+      registered in one marine facility Org, and additionally in many virtual observatory Orgs. The
+      marine facility operators will have more extensive permissions and will supercede virtual
+      observatory commands
+    in:
+      org: !Org
+      # TBD additional args specific to set up a virtual observatory
+    out:
+      org_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
+  # Working with Observatory resources.
 
   create_observatory:
     docstring: |
@@ -106,8 +127,6 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
-
 
 
   # -----------------
@@ -194,6 +213,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
   # -----------------
   # Assigning Site resources.
 
@@ -216,21 +236,21 @@ methods:
       NotFound: object with specified id does not exist
 
 
-  assign_resource_to_observatory:
-    docstring: Assign a resource to a Marine facility's assets.
+  assign_resource_to_observatory_org:
+    docstring: Assign a resource to an Org's assets.
     in:
       resource_id: ""
-      observatory_id: ""
+      org_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
 
-  unassign_resource_from_observatory:
+  unassign_resource_from_observatory_org:
     docstring: Remove a resource from a Marine facilitiy's assets.
     in:
       resource_id: ""
-      observatory_id: ""
+      org_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist

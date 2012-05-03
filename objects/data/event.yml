@@ -33,6 +33,7 @@ ResourceOperatorEvent: !Extends_ResourceEvent
 ResourceModifiedEvent: !Extends_ResourceEvent
   mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, DELETE), default=UPDATE)
 
+ContainerConfigModifiedEvent: !Extends_Event
 
 ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
 

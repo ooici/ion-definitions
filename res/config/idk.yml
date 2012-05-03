@@ -1,0 +1,7 @@
+idk:
+  repo: coi-services
+  driver_repo: marine-integrations
+  driver_path: ion/code
+  driver_dir: driver
+  template_dir: ion/idk/templates
+

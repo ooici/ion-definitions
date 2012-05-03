@@ -136,7 +136,7 @@ interceptor:
     governance:
       class: pyon.core.governance.governance_interceptor.GovernanceInterceptor
       config:
-        enabled: false
+        enabled: true
         interceptor_order: [conversation, information, policy]
         governance_interceptors:
           conversation:

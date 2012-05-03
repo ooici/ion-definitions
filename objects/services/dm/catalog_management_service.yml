@@ -14,7 +14,7 @@ methods:
     docstring: A catalog is a new data set that aggregates and presents datasets in a specific way.
     in:
       catalog_name: ""
-      keywords:     ""
+      keywords:     []
     out:
       catalog_id: ""
 

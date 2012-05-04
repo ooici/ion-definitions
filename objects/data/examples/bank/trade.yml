@@ -1,0 +1,12 @@
+Order: !Extends_Resource
+  type: "buy"
+  on_behalf: ""
+  cash_amount: 0.0
+  bond_amount: 0.0
+
+---
+
+Confirmation:
+  tracking_number: ""
+  status: "pending"
+  proceeds: 0.0

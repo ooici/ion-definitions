@@ -1,22 +1,5 @@
 # Bond Trade Service interface definition
 
-obj:
-  Order: !Extends_Resource
-    type: "buy"
-    on_behalf: ""
-    cash_amount: 0.0
-    bond_amount: 0.0
-
----
-
-obj:
-  Confirmation:
-    tracking_number: ""
-    status: "pending"
-    proceeds: 0.0
-
----
-
 docstring: |
   Simple bond trading service utilized by the Bank service
   to demonstrate service to service delegation

@@ -78,4 +78,9 @@ methods:
       success: True
   
 
-  
+  list_collection_resources:
+    in:
+      collection_id: ""
+      id_only: False
+    out:
+      success: []

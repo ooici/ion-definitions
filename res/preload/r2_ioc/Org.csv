@@ -1,0 +1,6 @@
+Scenario,ID,owner_id,org_type,org/name,org/description,org/institution/name,org/contact/name
+R2_DEMO,MF_RSN,USER_10,MarineFacility,RSN,Regional Scale Node Marine Facility,Univ. of Washington,John Delaney
+R2_DEMO,MF_CGSN,USER_20,MarineFacility,CGSN,Coastal Global Scale Node Marine Facility,Woods Hole Oceanographic Institution,Bob Weller
+R2_DEMO,MF_3,USER_1,MarineFacility,RSN_Demo,LCA Demonstration of RSN Marine Facility,Univ. of Washington,Owen Ownerrep
+LCA_MANUAL,MF_4,USER_1,MarineFacility,RSN_Demo_Create,Demonstration of RSN Observatory Marine Facility,Univ. of Washington,Owen Ownerrep
+R2_XXX,VO_ION,USER_3,VirtualObservatory,ION,Integrated Observatory,OOI Cyberinfrastructure,John Orcutt

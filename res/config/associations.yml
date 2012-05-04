@@ -9,6 +9,9 @@ PredicateTypes:
   hasAssignment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [LogicalPlatform, LogicalInstrument, InstrumentSite, PlatformSite]
+  hasDevice:
+    domain: [PlatformSite, InstrumentSite]
+    range: [PlatformDevice, InstrumentDevice]
   hasDeployment:
     domain: [PlatformDevice, InstrumentDevice]
     range: [LogicalPlatform, LogicalInstrument, InstrumentSite, PlatformSite]
@@ -41,7 +44,7 @@ PredicateTypes:
     range: [PlatformModel, InstrumentModel, SensorModel, DataSourceModel, ExternalDatasetModel]
   hasObservatory:
     domain: [Org]
-    range: [MarineFacility]
+    range: [Observatory]
   hasOutputProduct:
     domain: [DataProcess, InstrumentDevice, ExternalDataset]
     range: [DataProduct]
@@ -49,13 +52,13 @@ PredicateTypes:
     domain: [DataProducer]
     range: [DataProducer]
   hasPlatform:
-    domain: [MarineFacility, Site, LogicalPlatform]
+    domain: [LogicalPlatform]
     range: [PlatformDevice, LogicalPlatform]
   hasSensor:
     domain: [InstrumentDevice]
     range: [SensorDevice]
   hasSite:
-    domain: [MarineFacility, Observatory, Site, Subsite, PlatformSite, InstrumentSite]
+    domain: [Observatory, Site, Subsite, PlatformSite, InstrumentSite]
     range: [Site, Subsite, PlatformSite, InstrumentSite]
 # DM
   hasArchive:

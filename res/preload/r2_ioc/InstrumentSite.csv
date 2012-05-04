@@ -1,0 +1,3 @@
+Scenario,ID,owner_id,org_ids,parent_site_id,instrument_model_ids,is/name,is/description,is/geospatial_constraint/geospatiallatmin,is/geospatial_constraint/geospatiallatmax,is/geospatial_constraint/geospatiallonmin,is/geospatial_constraint/geospatiallonmax,is/geospatial_constraint/minbottomdepth,is/geospatial_constraint/maxbottomdepth,is/geospatial_constraint/geospatialverticalpositive,is/temporal_constraint,is/entity_constraint
+R2_DEMO,LOGINS3,USER_1,MF_3,LP3,IM2,Logical instrument 1 Demo,First logical simulator of CTD,32.882375,32.882385,-117.2321465,-117.2321455,100,140,TRUE,,
+R2_DEMO,LOGINS4,USER_1,MF_3,LP4,IM2,Logical instrument 2 Demo,Second logical simulator of CTD,32.882375,32.882385,-117.2321465,-117.2321455,100,140,TRUE,,

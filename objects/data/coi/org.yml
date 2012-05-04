@@ -1,6 +1,15 @@
+OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSROOM, LABORATORY, INTERACTIVE_FACILITY), default=BASIC)
+---
 
 Org: !Extends_TaskableResource
+  # Specializes the type of Org
+  org_type: !OrgTypeEnum
 
+  # Identifies the institution that operates the Org/Facility
+  institution: !Institution
+
+  # An entity that serves as a contact point
+  contact: !ContactInformation
 ---
 
 NegotiationDefinition: !Extends_InformationResource

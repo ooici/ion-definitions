@@ -1,0 +1,7 @@
+Scenario,ID,owner_id,org_ids,data_process_definition_id,in_data_product_id,out_data_products,configuration,comment
+R2_DEMO,DPROC1,USER_1,MF_3,DPD1,DPROD12,"{'conductivity':'DPROD13','temperature':'DPROD14','pressure':'DPROD15'}",,CTD_L0 demo
+R2_DEMO,DPROC2,USER_1,MF_3,DPD2,DPROD13,{'output':'DPROD16'},,CONDWAT demo
+R2_DEMO,DPROC3,USER_1,MF_3,DPD3,DPROD14,{'output':'DPROD17'},,TEMPWAT demo
+R2_DEMO,DPROC4,USER_1,MF_3,DPD4,DPROD15,{'output':'DPROD18'},,PRESWAT demo
+R2_DEMO,DPROC5,USER_1,MF_3,DPD5,DPROD12,{'output':'DPROD19'},,PRACSAL demo
+R2_DEMO,DPROC6,USER_1,MF_3,DPD6,DPROD12,{'output':'DPROD20'},,DENSITY demo

@@ -1,0 +1,5 @@
+Scenario,ID,data_product_id,input_resource_id,create_stream,comment
+R2_DEMO,,DPROD11,ID3,FALSE,CTD Sim 1 Raw
+R2_DEMO,,DPROD12,ID3,FALSE,CTD Sim 1 Parsed
+R2_DEMO,,DPROD21,ID4,FALSE,CTD Sim 2 Raw
+R2_DEMO,,DPROD22,ID4,FALSE,CTD Sim 2 Parsed

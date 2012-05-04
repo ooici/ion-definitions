@@ -1,32 +1,53 @@
 name: observatory_management
 
 docstring: |
-  Provides operations to manage observatories and their logical and associated device resources.
+  Provides operations to manage observatories and their constituent site resources.
+  Manages the associations of device models and devoices to sites.
   Also provide observatory level policy control.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Observatory+Management
 
 dependencies: [resource_registry, instrument_management, data_product_management, org_management]
 
-# TODO:
-# - Observatory policy
-
 methods:
   # -----------------
-  # Working with Marine Facility resources.
+  # Working with observatory domains of authority.
 
   create_marine_facility:
     docstring: |
-      Create an Observatory resource of special MarineFacility type. 
-      It is coupled
-      with one Org. The Org is created and associated as part of this call.
+      Create an Org (domain of authority) that realizes a marine facility. This Org will have
+      set up roles for a marine facility. Shared resources, such as a device can only be
+      registered in one marine facility Org, and additionally in many virtual observatory Orgs. The
+      marine facility operators will have more extensive permissions and will supercede virtual
+      observatory commands
     in:
-      observatory: !Observatory
+      org: !Org
+      # TBD additional args specific to set up a marine facility
     out:
-      observatory_id: ""
+      org_id: ""
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
+
+  create_virtual_observatory:
+    docstring: |
+      Create an Org (domain of authority) that realizes a virtual observatory. This Org will have
+      set up roles for a virtual observatory. Shared resources, such as a device can only be
+      registered in one marine facility Org, and additionally in many virtual observatory Orgs. The
+      marine facility operators will have more extensive permissions and will supercede virtual
+      observatory commands
+    in:
+      org: !Org
+      # TBD additional args specific to set up a virtual observatory
+    out:
+      org_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
+  # Working with Observatory resources.
 
   create_observatory:
     docstring: |
@@ -106,8 +127,6 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
-
 
 
   # -----------------
@@ -194,8 +213,9 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
   # -----------------
-  # Assigning Site resources.
+  # Assigning observatory sites
 
   assign_site_to_site:
     docstring: Connects a child site (any subtype) to a parent site (any subtype)
@@ -216,30 +236,139 @@ methods:
       NotFound: object with specified id does not exist
 
 
-  assign_resource_to_observatory:
-    docstring: Assign a resource to a Marine facility's assets.
+  # -----------------
+  # Assigning resources to observatory Orgs
+
+  assign_resource_to_observatory_org:
+    docstring: Assign a resource to an observatory Org's assets.
     in:
       resource_id: ""
-      observatory_id: ""
+      org_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_resource_from_observatory_org:
+    docstring: Remove a resource from a observatory Org's assets.
+    in:
+      resource_id: ""
+      org_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+  # Assigning models to observatory sites
+
+  assign_platform_model_to_platform_site:
+    in:
+      platform_model_id: ""
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_platform_model_from_platform_site:
+    in:
+      platform_model_id: ""
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_instrument_model_to_instrument_site:
+    in:
+      instrument_model_id: ""
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_instrument_model_from_instrument_site:
+    in:
+      instrument_model_id: ""
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+  # Deploying devices to observatory sites (primary and non-primary)
+
+  deploy_platform_device_to_platform_site:
+    docstring: link a physical platform to a platform site
+    in:
+      platform_device_id: ""
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  undeploy_platform_device_from_platform_site:
+    in:
+      platform_device_id: ""
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  deploy_as_primary_platform_device_to_platform_site:
+    docstring: link a physical platform to a platform site as primary
+    in:
+      platform_device_id: ""
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  undeploy_primary_platform_device_from_platform_site:
+    in:
+      platform_device_id: ""
+      platform_site_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
 
-  unassign_resource_from_observatory:
-    docstring: Remove a resource from a Marine facilitiy's assets.
+  deploy_instrument_device_to_instrument_site:
+    docstring: link a physical instrument to a instrument site
     in:
-      resource_id: ""
-      observatory_id: ""
+      instrument_device_id: ""
+      instrument_site_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  undeploy_instrument_device_from_instrument_site:
+    in:
+      instrument_device_id: ""
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  deploy_as_primary_instrument_device_to_instrument_site:
+    docstring: link a physical instrument to a instrument site as primary
+    in:
+      instrument_device_id: ""
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  undeploy_primary_instrument_device_from_instrument_site:
+    in:
+      instrument_device_id: ""
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
 
 
 
   # -----------------
   # find methods
-
 
   find_observatories:
     docstring: Find Observatory resources
@@ -279,3 +408,14 @@ methods:
       org_list: []
     throws:
       NotFound: object with specified id does not exist
+
+
+
+  find_related_frames_of_reference:
+    in:
+      input_resource_id: ""
+      output_resource_type_list: []
+    out:
+      output_resource_lists: {}
+      
+

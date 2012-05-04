@@ -51,3 +51,31 @@ methods:
     out:
       index_list: []
 
+
+  create_collection:
+    in:
+      name: ""
+      resources: []
+    out:
+      collection_id: ""
+
+  read_collection:
+    in:
+      collection_id: ""
+    out:
+      collection: !Collection
+
+  update_collection:
+    in:
+      collection: !Collection
+    out: 
+      collection_id: ""
+
+  delete_collection:
+    in:
+      collection_id: ""
+    out:
+      success: True
+  
+
+  

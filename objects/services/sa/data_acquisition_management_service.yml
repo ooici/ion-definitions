@@ -213,9 +213,10 @@ methods:
   # -----------------
   # Manipulate external datasets
   create_external_dataset:
-    docstring: Persist ExternalDataset object and return object _id as OOI id
+    docstring: Persist ExternalDataset object , associate with a DatasetModel and return object _id as OOI id
     in:
       external_dataset: !ExternalDataset
+      external_dataset_model_id: ""
     out:
       external_dataset_id: ""
     throws:

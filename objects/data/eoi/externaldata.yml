@@ -76,11 +76,14 @@ ExternalDatasetAgent: !Extends_AgentDefinition
   time_source: ""
   event_publisher_origin: ""
 
+---
+
 ExternalDatasetAgentInstance: !Extends_AgentInstance
   agent_process_id: ""
   handler_module: ""
   handler_class: ""
-  server_addr: ""
-  login: ""
-  password: ""
+  dataset_driver_config: {}
+  dataset_agent_config: {}
+  dataset_agent_process_id: ""
 
+---

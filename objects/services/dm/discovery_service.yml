@@ -10,27 +10,29 @@ dependencies: [resource_registry]
 methods:
   create_view:
     in:
-      view: !View
+      view_name:   ""
+      description: ""
     out:
-      view_id: ""
+      view_id:     ""
 
-  update_view:
-    in:
-      view: !View
-    out:
-      success: True
 
   read_view:
     in:
-      view_id: ""
+      view_id:     ""
     out:
-      view: !View
+      view:        !View
 
+  update_view:
+    in:
+      view:        !View
+    out:
+      success:     True
+  
   delete_view:
     in:
-      view_id: ""
+      view_id:     ""
     out:
-      success: True
+      success:     True
 
   # -----------------
 

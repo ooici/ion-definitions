@@ -8,7 +8,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Acquisition+Management+Service
 
-dependencies: [resource_registry, pubsub_management]
+dependencies: [resource_registry, pubsub_management, process_dispatcher]
 
 methods:
 
@@ -191,6 +191,24 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  start_data_source_agent_instance:
+    docstring: |
+      Launch an data source agent instance process and return its process id. Agent instance resource
+      must exist and be associated with an external data source
+    in:
+      data_source_agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  stop_data_source_agent_instance:
+    docstring: Deactivate the  agent instance process
+    in:
+      data_source_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulate external datasets
@@ -347,6 +365,24 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  start_external_dataset_agent_instance:
+    docstring: |
+      Launch an dataset agent instance process and return its process id. Agent instance resource
+      must exist and be associated with an external dataset
+    in:
+      external_dataset_agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  stop_external_dataset_agent_instance:
+    docstring: Deactivate the  agent instance process
+    in:
+      external_dataset_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # The following operations assign and unassign data source to an external data provider

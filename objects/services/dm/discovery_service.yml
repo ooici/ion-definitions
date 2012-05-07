@@ -5,13 +5,25 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Discovery+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry,catalog_management]
 
 methods:
   create_view:
+    docstring: |
+      Creates a view which has the specified search fields, the order in which the search fields are presented
+      to a query and a term filter.
+      @param view_name Name of the view
+      @param description Simple descriptive sentence
+      @param fields Search fields
+      @param order List of fields to determine order of precendence in which the results are presented
+      @param filter Simple term filter
+    
     in:
       view_name:   ""
       description: ""
+      fields:      []
+      order:       []
+      filters:     ""
     out:
       view_id:     ""
 

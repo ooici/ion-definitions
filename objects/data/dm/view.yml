@@ -1,3 +1,4 @@
 View: !Extends_InformationResource
-  default_field: "" # The field to order by
+  order:   []
+  filters: ""
 

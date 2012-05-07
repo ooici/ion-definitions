@@ -92,9 +92,9 @@ apps:
     version: 0.1
     processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
 
-#  - name: discovery
-#    version: 0.1
-#    processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
+  - name: discovery
+    version: 0.1
+    processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
 
 #  - name: preservation_management
 #    version: 0.1

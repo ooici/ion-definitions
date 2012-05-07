@@ -48,6 +48,14 @@ methods:
 
   # -----------------
 
+  query:
+    in: 
+      source: ""
+      query: !SearchQuery
+    out:
+      results: {}
+
+
   define_search:
     in:
       query: ""

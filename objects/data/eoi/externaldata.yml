@@ -85,5 +85,3 @@ ExternalDatasetAgentInstance: !Extends_AgentInstance
   dataset_driver_config: {}
   dataset_agent_config: {}
   dataset_agent_process_id: ""
-
----

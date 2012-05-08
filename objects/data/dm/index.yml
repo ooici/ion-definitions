@@ -1,11 +1,21 @@
 Index: !Extends_InformationResource
-  index_name:   ""
-  index_type:   ""
-  content_type: "" # Devices, Instruments, Users etc.
-  options:      !SearchOptions
+  content_type:   "" # Devices, Instruments, Users etc.
+  options:        !SearchOptions
 
 ---
 
 Collection: !Extends_InformationResource
   resources: []
   options:   !SearchOptions
+
+---
+
+CouchDBIndex: !Extends_Index
+  view_name: ""
+  datastore_name: ""
+
+---
+
+ElasticSearchIndex: !Extends_Index
+  index_name: ""
+  index_type: ""

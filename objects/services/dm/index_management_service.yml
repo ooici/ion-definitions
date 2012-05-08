@@ -17,6 +17,7 @@ methods:
       content_type: ""
       options: !SearchOptions
       datastore_name: ""
+      view_name: ""
     out:
       index_id: ""
 

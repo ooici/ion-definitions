@@ -6,4 +6,3 @@ SearchQuery: !Extends_Resource
   results: 10
   offset:  0
   
-

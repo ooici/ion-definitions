@@ -1,0 +1,25 @@
+
+
+
+Taxonomy: !Extends_InformationResource
+  map: {}
+
+---
+
+CompoundGranule:
+  granules: []
+
+---
+
+Granule:
+  data_producer_id: ''
+  # Can be a reference or value
+
+  taxonomy: !Taxonomy
+  # Can be reference or a value
+
+  record_dictionary: {}
+  # can be a what?
+
+
+

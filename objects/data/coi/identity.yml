@@ -1,8 +1,10 @@
-UserIdentity: !Extends_InformationResource
-  # An OOI internal user identity
+ActorIdentity: !Extends_InformationResource
+  # An OOI internal actor identity
+  # ContactInformation is optional
+  contact: !ContactInformation
 
-UserCredentials: !Extends_InformationResource
-  # An external user identity.  In the case
+ActorCredentials: !Extends_InformationResource
+  # An external actor identity.  In the case
   # of CILogon, the identity is the subject
   # from the X.509 certificate.
   # The identity is stored in the name field.

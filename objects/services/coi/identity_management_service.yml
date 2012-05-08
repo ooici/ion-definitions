@@ -1,191 +1,105 @@
 name: identity_management
 
 docstring: |
-  A resource registry that stores identities of users and resources, including bindings of internal
-  identities to external identities. Also stores metadata such as a user profile.a
+  A resource registry that stores identities of actors (users
+  are an instance of actor) and resources, including bindings
+  of internal identities to external identities. Also stores
+  metadata such as user contact info.
 
 dependencies: [resource_registry]
 
 # TODO:
 # - Move R1 operations into R2 framework
-# - Check find_userinfo_by_subject, cilogon*
 
 methods:
   # -----------------
-  # Working with internal user identities
+  # Working with internal actor identities
 
-  create_user_identity:
+  create_actor_identity:
     docstring: |
-      Persists the provided UserIdentity object. The id string returned
-      is the internal id by which users should be represented in message
+      Persists the provided ActorIdentity object. The id string returned
+      is the internal id by which actors should be represented in message
       headers for policy enforcement, etc. 
     in:
-      user_identity: !UserIdentity
+      actor_identity: !ActorIdentity
     out:
-      user_id: ""
+      actor_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
-  update_user_identity:
+  update_actor_identity:
     docstring: |
-      Updates the provided UserIdentity object.  Throws NotFound exception if
-      an existing version of UserIdentity is not found.  Throws Conflict if
-      the provided UserIdentity object is not based on the latest persisted
+      Updates the provided ActorIdentity object.  Throws NotFound exception if
+      an existing version of ActorIdentity is not found.  Throws Conflict if
+      the provided ActorIdentity object is not based on the latest persisted
       version of the object.
     in:
-      user_identity: !UserIdentity
+      actor_identity: !ActorIdentity
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
 
-  read_user_identity:
+  read_actor_identity:
     docstring: |
-      Returns the UserIdentity object for the specified user id.
-      Throws exception if id does not match any persisted UserIdentity
+      Returns the ActorIdentity object for the specified actor id.
+      Throws exception if id does not match any persisted ActorIdentity
       objects.
     in:
-      user_id: ""
+      actor_id: ""
     out:
-      user_identity: !UserIdentity
+      actor_identity: !ActorIdentity
     throws:
       NotFound: object with specified id does not exist
 
-  delete_user_identity:
+  delete_actor_identity:
     docstring: |
-      For now, permanently deletes UserIdentity object with the specified
-      id. Throws exception if id does not match any persisted UserIdentity.
+      For now, permanently deletes ActorIdentity object with the specified
+      id. Throws exception if id does not match any persisted ActorIdentity.
     in:
-      user_id: ""
+      actor_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  find_user_identity_by_name:
+  find_actor_identity_by_name:
     docstring: |
-      Return the UserIdentity object whose name attribute matches the passed value.
+      Return the ActorIdentity object whose name attribute matches the passed value.
     in:
       name: ""
     out:
-      user_info: !UserIdentity
+      actor_info: !ActorIdentity
     throws:
-      NotFound: failed to find UserIdentity
-      Inconsistent: Multiple UserIdentity objects matched name
+      NotFound: failed to find ActorIdentity
+      Inconsistent: Multiple ActorIdentity objects matched name
   # -----------------
   # Working with external identities
 
-  register_user_credentials:
+  register_actor_credentials:
     docstring: |
-      Persists new UserCredentials object. Then establishes an association
-      with the UserIdentity object identified by the passed user id.
+      Persists new ActorCredentials object. Then establishes an association
+      with the ActorIdentity object identified by the passed actor id.
     in:
-      user_id: ""
-      credentials: !UserCredentials
+      actor_id: ""
+      credentials: !ActorCredentials
     out:
     throws:
       BadRequest: if object passed has _id or _rev attribute or association creation fails
-      NotFound: UserIdentity object does not exist
+      NotFound: ActorIdentity object does not exist
 
-  unregister_user_credentials:
+  unregister_actor_credentials:
     docstring: |
-      For now, permanently deletes the UserCredential object with the
-      specified name.  The association between the UserCredential object
-      and the UserIdentity object indicated by the passed user id is
+      For now, permanently deletes the ActorCredential object with the
+      specified name.  The association between the ActorCredential object
+      and the ActorIdentity object indicated by the passed actor id is
       also deleted.
     in:
-      user_id: ""
+      actor_id: ""
       credentials_name: ""
     out:
     throws:
-      NotFound: if UserCredential or association do not exist
-
-  # -----------------
-  # Working with user information (profile)
-
-  create_user_info:
-    docstring: |
-      Persists new UserInfo object. Then establishes an association with
-      the UserIdentity object identified by the passed user id.
-    in:
-      user_id: ""
-      user_info: !UserInfo
-    out:
-      user_info_id: ""
-    throws:
-      BadRequest: if object passed has _id or _rev attribute or association creation fails
-      NotFound: UserIdentity object does not exist
-
-  update_user_info:
-    docstring: |
-      Updates the provided UserInfo object.  Throws NotFound exception if
-      an existing version of UserInfo is not found.  Throws Conflict if
-      the provided UserInfo object is not based on the latest persisted
-      version of the object.
-    in:
-      user_info: !UserInfo
-    out:
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
-      NotFound: object with specified id does not exist
-      Conflict: object not based on latest persisted object version
-
-  read_user_info:
-    docstring: |
-      Returns the UserInfo object for the specified user id.
-      Throws exception if id does not match any persisted UserInfo
-      objects.
-    in:
-      user_info_id: ""
-    out:
-      user_info: !UserInfo
-    throws:
-      NotFound: object with specified id does not exist
-
-  delete_user_info:
-    docstring: |
-      For now, permanently deletes the UserInfo object with the
-      specified id.  The association between the UserInfo object
-      and the UserIdentity object is also deleted.
-    in:
-      user_info_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist or association could not be found
-
-  find_user_info_by_id:
-    docstring: |
-      Return the UserInfo object associated with the UserIdentity object
-      identified by the passed user id.
-    in:
-      user_id: ""
-    out:
-      user_info: !UserInfo
-    throws:
-      NotFound: failed to find UserIdentity, association or UserInfo object
-
-  find_user_info_by_name:
-    docstring: |
-      Return the UserInfo object whose name attribute matches the passed value.
-    in:
-      name: ""
-    out:
-      user_info: !UserInfo
-    throws:
-      NotFound: failed to find UserInfo
-      Inconsistent: Multiple UserInfo objects matched name
-
-  find_user_info_by_subject:
-    docstring: |
-      Return the UserInfo object associated with the UserIdentity object
-      which is associated with the UserCredential with subject matching
-      the passed value.
-    in:
-      subject: ""
-    out:
-      user_info: !UserInfo
-    throws:
-      NotFound: failed to find UserCredential, UserIdentity, association or UserInfo object
+      NotFound: if ActorCredential or association do not exist
 
   # -----------------
   # Working with internal resource identities
@@ -218,24 +132,36 @@ methods:
   signon:
     docstring: |
       Validates the certificate. If legit, extracts the subject line and searches
-      all UserCredentials objects looking for a match.
-      - If found, a lookup is performed on the association to the UserIdentity object.
-      If found, a lookup is performed to see if there is an associated UserInfo object.
-      The UserIdentity object id is returned along with the boolean True to indicate
-      whether a UserInfo object was found (this is a known user who has registered).
-      - If not found, a new UserIdentity object is created, a new UserCredentials
+      all ActorCredentials objects looking for a match.
+      - If found, a lookup is performed on the association to the ActorIdentity object.
+      If found, a check is made to see if the actor contact info is non-null.
+      The ActorIdentity object id is returned along with the boolean True to indicate
+      whether contact info was found (this is a known user who has registered).
+      - If not found, a new ActorIdentity object is created, a new ActorCredentials
       object is create, and an association is established between the two. The object
-      id of the UserIdentity object is returned with the boolean False to indicate
-      this is a new user who needs to register.
+      id of the ActorIdentity object is returned with the boolean False to indicate
+      this is a new user who needs to register contact info.
     in:
       certificate: ""
       ignore_date_range: False
     out:
-      user_id: ""
+      actor_id: ""
       valid_til: ""
       registered: False      
     throws:
       BadRequest: if certificate is not valid
       NotFound: Something bad happened in the registry such that an object or association got lost
-      ServerError: More than one UserCredentials object was associated with the certificate subject
+      ServerError: More than one ActorCredentials object was associated with the certificate subject
 
+  update_actor_contact_info:
+    docstring: |
+      Helper method to attach contact info to ActorIdentity object identified
+      by the passed actor (user) id.  The ActorIdentity is first read, the
+      contact info is applied to the object and the object is updated in the
+      datastore.
+    in:
+      actor_id: ""
+      contact_info: !ContactInformation
+    out:
+    throws:
+      NotFound: ActorIdentity object does not exist

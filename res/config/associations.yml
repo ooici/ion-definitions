@@ -80,7 +80,7 @@ PredicateTypes:
     domain: [DataProcessDefinition]
     range: [StreamDefinition]
   hasNotification:
-    domain: [UserIdentity]
+    domain: [ActorIdentity]
     range: [NotificationRequest]
   hasOutStream:
     domain: [Transform]
@@ -120,10 +120,10 @@ PredicateTypes:
     domain: [Resource]
     range: [Attachment]
   hasCommitment:
-    domain: [UserIdentity, Resource]
+    domain: [ActorIdentity, Resource]
     range: [Commitment]
   hasCredentials:
-    domain: [UserIdentity]
+    domain: [ActorIdentity]
     range: [UserCredentials]
   hasExchangeBroker:
     domain: [ExchangeSpace]
@@ -138,28 +138,28 @@ PredicateTypes:
     domain: [Org]
     range: [ExchangeSpace]
   hasInfo:
-    domain: [UserIdentity]
+    domain: [ActorIdentity]
     range: [UserInfo]
   hasLifecycle:
     domain: [ResourceType]
     range: [ResourceLifecycle]
   hasMembership:
     domain: [Org]
-    range: [UserIdentity]
+    range: [ActorIdentity]
   hasOwner:
     domain: [Resource]
-    range: [UserIdentity]
+    range: [ActorIdentity]
   hasPolicy:
     domain: [Resource]
     range: [Policy]
   hasRequest:
-    domain: [Org, UserIdentity]
+    domain: [Org, ActorIdentity]
     range: [UserRequest,UserRequest]
   hasResource:
     domain: [Org]
     range: [Resource]
   hasRole:
-    domain: [Conversation,UserIdentity,Org]
+    domain: [Conversation,ActorIdentity,Org]
     range: [ConversationRole,UserRole,UserRole]
   hasType:
     domain: [Conversation]

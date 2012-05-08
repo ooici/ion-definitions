@@ -14,7 +14,7 @@ system:
 
   # The Org (name) that starts the system
   root_org: ION
-  # The name of the ION System UserIdentity
+  # The name of the ION System ActorIdentity
   system_actor: ionsystem
   # Load config from directory (merge over pyon.yml+pyon.local.yml but allow command line override)
   config_from_directory: True

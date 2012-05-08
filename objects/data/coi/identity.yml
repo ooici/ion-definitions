@@ -1,4 +1,4 @@
-UserIdentity: !Extends_InformationResource
+ActorIdentity: !Extends_InformationResource
   # An OOI internal user identity
 
 UserCredentials: !Extends_InformationResource

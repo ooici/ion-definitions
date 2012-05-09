@@ -38,7 +38,7 @@ ExternalDataProvider: !Extends_InformationResource
 
 ---
 
-DataSourceModel: !Extends_InformationResource
+DataSourceModel: !Extends_DeviceModel
   model: ""
   data_handler_module: ""
   data_handler_class: ""
@@ -64,7 +64,7 @@ ExternalDataset: !Extends_InformationResource
   update_description: !UpdateDescription
   contact: !ContactInformation
 
-ExternalDatasetModel: !Extends_InformationResource
+ExternalDatasetModel: !Extends_DeviceModel
   #This defines the characteristics of a dataset class
   datset_type: ""
 

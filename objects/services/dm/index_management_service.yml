@@ -43,7 +43,9 @@ methods:
 
   list_indexes:
     in:
+      id_only: True
     out:
+      success: {}
 
   find_indexes:
     in:

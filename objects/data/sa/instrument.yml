@@ -1,3 +1,6 @@
+LogicalInstrument: !Extends_InformationResource
+
+
 # This is the physical instrument
 InstrumentDevice: !Extends_Device
   serial_number: ""

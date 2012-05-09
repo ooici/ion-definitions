@@ -1,3 +1,6 @@
+LogicalPlatform: !Extends_InformationResource
+
+
 PlatformDevice: !Extends_Device
   # Current to version 30 of confluence resource page:
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Device

@@ -1,7 +1,6 @@
 idk:
-  repo: coi-services
-  driver_repo: marine-integrations
-  driver_path: ion/code
+  dev_base_path: ~/OOI/R2/code
+  coi_repo_dir_name: coi-services
+  mi_repo_dir_name: marine-integrations
   driver_dir: driver
   template_dir: ion/idk/templates
-

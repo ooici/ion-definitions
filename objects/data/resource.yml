@@ -12,16 +12,16 @@ Resource:
 
 ---
 
-# Information resources are pure information artifacts. This object describes them.
+# Information resources are pure information artifacts. Abstract.
 InformationResource: !Extends_Resource
 
 ---
 
-# Taskable resources are resources with behavior and state. This object describes them.
+# Taskable resources are resources with behavior and state. This object describes them. Abstract.
 TaskableResource: !Extends_Resource
 ---
 
-# Information resources are pure information artifacts. This object describes them.
+# Executable resources are information resources that can be instantiated into (separate) taskable resources. Abstract.
 ExecutableResource: !Extends_InformationResource
 
 ---
@@ -36,38 +36,3 @@ ResourceFilter:
   filters: {}
 
 
----
-
-# Base for a physical device with a serial number, such as sensor, instrument and platform.
-Device: !Extends_TaskableResource
-
-# Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
-DeviceModel: !Extends_ExecutableResource
-
----
-
-AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
-  # ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application
-  # BLOB: the content is a binary
-  # OBJECT: the content is an arbitrary object, such as a dict, list
-
----
-
-# To identify attachments to resources
-Attachment: !Extends_InformationResource
-  attachment_type: !AttachmentType
-  content_type: ""  # MIME type
-  content: {}
-  object_id: ""   # Associated object (resource) ID, for easier indexing
-  keywords: []
-
-DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
-
----
-
-AgentDefinition: !Extends_InformationResource
-
-AgentInstance: !Extends_TaskableResource
-  deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
-  exchange_name: ""
-  configuration: {}

@@ -44,14 +44,10 @@ DataSourceModel: !Extends_DeviceModel
   data_handler_class: ""
 
 DataSourceAgent: !Extends_AgentDefinition
-  agent_version: ""
   handler_module: ""
   handler_class: ""
-  conection_method: ""
-  event_publisher_origin: ""
 
 DataSourceAgentInstance: !Extends_AgentInstance
-  agent_process_id: ""
   handler_module: ""
   handler_class: ""
   server_addr: ""
@@ -69,17 +65,13 @@ ExternalDatasetModel: !Extends_DeviceModel
   datset_type: ""
 
 ExternalDatasetAgent: !Extends_AgentDefinition
-  agent_version: ""
   handler_module: ""
   handler_class: ""
-  conection_method: ""
   time_source: ""
-  event_publisher_origin: ""
 
 ---
 
 ExternalDatasetAgentInstance: !Extends_AgentInstance
-  agent_process_id: ""
   handler_module: ""
   handler_class: ""
   dataset_driver_config: {}

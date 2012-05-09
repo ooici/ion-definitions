@@ -1,10 +1,7 @@
-LogicalPlatform: !Extends_FrameOfReference
- # Current to version 17 of confluence resource page: 
- # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Logical+Platform
+LogicalPlatform: !Extends_InformationResource
 
 
 PlatformDevice: !Extends_Device
-
   # Current to version 30 of confluence resource page:
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Device
 
@@ -25,10 +22,8 @@ PlatformDevice: !Extends_Device
   # Datetime when item was built
   manufacture_date: "2011-07-27T02:59:43.1Z"
 
-  
 
 PlatformModel: !Extends_DeviceModel
-
   # Current to version 23 of confluence resource page:
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Model
 

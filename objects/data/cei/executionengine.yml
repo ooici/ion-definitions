@@ -1,4 +1,4 @@
-ExecutionEngineDefinition: !Extends_InformationResource
+ExecutionEngineDefinition: !Extends_ExecutableResource
   definition_type: ""
   definition: {}
 

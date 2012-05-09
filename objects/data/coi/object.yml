@@ -1,5 +1,3 @@
 ObjectType: !Extends_InformationResource
   definition_type: ""
   definition: {}
-
-Collection: !Extends_InformationResource

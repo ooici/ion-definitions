@@ -64,17 +64,48 @@ DataFormat:
 
 ---
 
-FrameOfReference: !Extends_InformationResource
+# A named resource associating to other resources, representing a collection
+Collection: !Extends_InformationResource
 
-  # Specified bounds in 2 or 3 dimensions within which entity exists
-  # Mandatory
-  geospatial_constraint: !GeospatialBounds
+# Base for a physical device with a serial number, such as sensor, instrument and platform.
+Device: !Extends_TaskableResource
 
-  # Specified time constraint within which entity exists
-  temporal_constraint: ""   # what is TemporalConstraint object?
+# Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
+DeviceModel: !Extends_InformationResource
 
-  # Collection of entities which collectively constrain the entity
-  entity_constraint: ""     # what is EntityConstraint object?
+---
+
+AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
+  # ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application
+  # BLOB: the content is a binary
+  # OBJECT: the content is an arbitrary object, such as a dict, list
+
+---
+
+# To identify attachments to resources
+Attachment: !Extends_InformationResource
+  attachment_type: !AttachmentType
+  content_type: ""  # MIME type
+  content: {}
+  object_id: ""   # Associated object (resource) ID, for easier indexing
+  keywords: []
+
+DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
+
+---
+
+# Abstract base type for all agent type
+AgentDefinition: !Extends_InformationResource
+  agent_version: ""
+  conection_method: ""
+  event_publisher_origin: ""
+
+# Abstract base type for all agent instances
+AgentInstance: !Extends_TaskableResource
+  deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
+  exchange_name: ""
+  configuration: {}
+  agent_process_id: ""
 
 ---
 

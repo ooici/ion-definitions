@@ -1,19 +1,14 @@
-LogicalInstrument: !Extends_FrameOfReference
-  # This is the logical instrument that is part of the observatory
-  
-
+# This is the physical instrument
 InstrumentDevice: !Extends_Device
-  # This is the physical instrument
   serial_number: ""
   firmware_version: ""
   hardware_version: ""
   manufacture_date: "" #later will be timeinstance object
   lot_number: ""
   datum_characterization: "" #later will be an object
-  
 
+#This defines the characteristics of an instrument model
 InstrumentModel: !Extends_DeviceModel
-  #This defines the characteristics of an instrument model
   model_label: ""
   manufacturer: !Institution
   reference_url: ""
@@ -27,20 +22,14 @@ InstrumentModel: !Extends_DeviceModel
   writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
   # more fields remain
 
-
 InstrumentAgent: !Extends_AgentDefinition
-  agent_version: ""
   driver_module: ""
   driver_class: ""
   driver_client_module: ""
   driver_class_client: ""
-  conection_method: ""
   time_source: ""
-  event_publisher_origin: ""
-
 
 InstrumentAgentInstance: !Extends_AgentInstance
-  agent_process_id: ""
   driver_module: ""
   driver_class: ""
   svr_addr: ""
@@ -56,4 +45,3 @@ InstrumentAgentInstance: !Extends_AgentInstance
   agent_config: {}
   port_agent_work_dir: ""
   port_agent_delimeter: []
-  

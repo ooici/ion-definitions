@@ -6,72 +6,66 @@
 
 PredicateTypes:
 #SA
-  hasAssignment:
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [InstrumentSite, PlatformSite]
-  hasDevice:
-    domain: [PlatformSite, InstrumentSite]
-    range: [PlatformDevice, InstrumentDevice]
-  hasDeployment:
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [InstrumentSite, PlatformSite]
-  hasPrimaryDeployment:
+  hasAssignment: # DEPRECATE (use hasDevice)
     domain: [PlatformDevice, InstrumentDevice]
     range: [InstrumentSite, PlatformSite]
   hasDataset:
     domain: [DataProducer, DataProduct]
-    range: [Dataset]
+    range: [DataSet]
   hasDataProducer:
-    domain: [DataProcess, InstrumentDevice, ExternalDataset, DataProduct ]
+    domain: [DataProcess, Device, ExternalDataset, DataProduct]
     range: [DataProducer]
   hasDataProduct:
-    domain: [InstrumentSite]
+    domain: [Site]
     range: [DataProduct]
+  hasDevice:
+    domain: [Site, Device]
+    range: [Device]
+  hasDeployment:
+    domain: [Device, InstrumentSite, PlatformSite]
+    range: [Deployment, InstrumentSite, PlatformSite]
   hasInputDataProducer:
     domain: [DataProducer]
     range: [DataProducer]
   hasInputProduct:
     domain: [DataProcess]
     range: [DataProduct]
-  hasInstance:
-    domain: [PlatformAgent, InstrumentAgent, DataProcessDefinition,  DataSourceAgent, ExternalDatasetAgent]
-    range: [PlatformAgentInstance, InstrumentAgentInstance, DataProcess, DataSourceAgentInstance, ExternalDatasetAgentInstance]
-  hasInstrument:
+  hasInstance: # DEPRECATE (use hasDefinition)
+    domain: [AgentDefinition, DataProcessDefinition]
+    range: [AgentInstance, DataProcess]
+  hasInstrument:  # DEPRECATE
     domain: [PlatformDevice, PlatformSite]
     range: [InstrumentDevice, InstrumentSite]
   hasModel:
-    domain: [Device, Site, AgentDefinition, DataSource, ExternalDataset ]
+    domain: [Device, Site, AgentDefinition, DataSource, ExternalDataset]
     range: [DeviceModel]
-  hasObservatory:
+  hasObservatory: # DEPRECATE
     domain: [Org]
     range: [Observatory]
   hasOutputProduct:
-    domain: [DataProcess, InstrumentDevice, ExternalDataset]
+    domain: [DataProcess, Device, ExternalDataset]
     range: [DataProduct]
   hasParent:
     domain: [DataProducer]
     range: [DataProducer]
-#  hasPlatform:
-#    domain: [LogicalPlatform]
-#    range: [PlatformDevice, LogicalPlatform]
-  hasSensor:
+  hasPrimaryDeployment: # DEPRECATE (use Deployment resource)
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [InstrumentSite, PlatformSite]
+  hasSensor: # DEPRECATE (use hasDevice)
     domain: [InstrumentDevice]
     range: [SensorDevice]
   hasSite:
-    domain: [Observatory, Site, Subsite, PlatformSite, InstrumentSite]
-    range: [Site, Subsite, PlatformSite, InstrumentSite]
+    domain: [Site]
+    range: [Site]
 # DM
-  hasArchive:
-    domain: [Datastore]
-    range: [PersistentArchive]
   hasCatalog:
     domain: [View]
     range: [Catalog]
-  hasDatastore:
-    domain: [View, Index]
-    range: [Datastore]
+  hasDataStore:
+    domain: [PersistenceSystem]
+    range: [DataStore]
   hasIndex:
-    domain: [Catalog]
+    domain: [Catalog, DataStore]
     range: [Index]
   hasIngestionConfiguration:
     domain: [DataSet, DatasetIngestionConfiguration]
@@ -86,7 +80,7 @@ PredicateTypes:
     domain: [Transform]
     range: [Stream]
   hasStream:
-    domain: [Replay, DataProcess, DataProduct, Dataset, ExchangePoint, Subscription]
+    domain: [Replay, DataProcess, DataProduct, DataSet, ExchangePoint, Subscription]
     range: [Stream]
   hasStreamDefinition:
     domain: [Stream, InstrumentModel, DataProcessDefinition]
@@ -94,11 +88,8 @@ PredicateTypes:
   hasSubscription:
     domain: [Transform, ExchangePoint]
     range: [Subscription]
-  hasTopicTopology:
-    domain: [ExchangePoint]
-    range: [TopicTopology]
   hasTopology:
-    domain: [Stream, Subscription]
+    domain: [ExchangePoint, Stream, Subscription]
     range: [TopicTopology]
   hasTransform:
     domain: [DataProcess, IngestionConfiguration]
@@ -107,15 +98,18 @@ PredicateTypes:
   affiliatedWith:
     domain: [Org]
     range: [Org]
-  hasAgent:
+  committedTo:
+    domain: [Commitment]
+    range: [ActorIdentity]
+  hasAgent: # DEPRECATE (don't use)
     domain: [InstrumentSite, PlatformSite]
     range: [InstrumentAgent, PlatformAgent]
   hasAgentDefinition:
-    domain: [InstrumentModel, PlatformModel, InstrumentSite, PlatformSite]
+    domain: [DeviceModel, Site]
     range: [AgentDefinition]
   hasAgentInstance:
-    domain: [TaskableResource, PlatformDevice, InstrumentDevice, DataSource, ExternalDataset]
-    range: [AgentInstance, PlatformAgentInstance,InstrumentAgentInstance, DataSourceAgentInstance, ExternalDatasetAgentInstance]
+    domain: [TaskableResource, Device, DataSource, ExternalDataset]
+    range: [AgentInstance]
   hasAttachment:
     domain: [Resource]
     range: [Attachment]
@@ -125,6 +119,9 @@ PredicateTypes:
   hasCredentials:
     domain: [ActorIdentity]
     range: [UserCredentials]
+  hasDefinition:
+    domain: [TaskableResource]
+    range: [ExecutableResource]
   hasExchangeBroker:
     domain: [ExchangeSpace]
     range: [ExchangeBroker]
@@ -156,21 +153,21 @@ PredicateTypes:
     domain: [Org, ActorIdentity]
     range: [UserRequest,UserRequest]
   hasResource:
-    domain: [Org]
+    domain: [Org, Collection]
     range: [Resource]
   hasRole:
-    domain: [Conversation,ActorIdentity,Org]
-    range: [ConversationRole,UserRole,UserRole]
-  hasType:
-    domain: [Conversation]
-    range: [ServiceDefinition]
+    domain: [Conversation, ActorIdentity, Org]
+    range: [ConversationRole, UserRole]
+  hasConversationType:
+    domain: [Conversation, ServiceDefinition]
+    range: [ConversationType]
 # CEI
+  hasProcessDefinition:
+    domain: [Resource]
+    range: [ProcessDefinition, DataProcessDefinition]
   supportsExecutionEngine:
     domain: [ProcessDefinition]
     range: [ExecutionEngineDefinition]
-  hasProcessDefinition:
-    domain: [Resource]
-    range: [ProcessDefinition]
 # EOI
   hasProvider:
     domain: [DataSource]

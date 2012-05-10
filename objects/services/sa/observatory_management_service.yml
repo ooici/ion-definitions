@@ -368,7 +368,7 @@ methods:
 
 
   # -----------------
-  # Working with Subsite resources.
+  # Working with Deployment resources.
 
   create_deployment:
     docstring: |
@@ -381,7 +381,7 @@ methods:
     throws:
       BadRequest: if object does not have _id or _rev attribute
 
-  update_subsite:
+  update_deployment:
     docstring: Update a Deployment resource
     in:
       deployment: !Deployment
@@ -389,7 +389,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  read_subsite:
+  read_deployment:
     docstring: Read a Deployment resource
     in:
       deployment_id: ""
@@ -398,15 +398,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  delete_subsite:
+  delete_deployment:
     docstring: Delete a Deployment resource
     in:
       deployment_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
-
-
 
 
 

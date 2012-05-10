@@ -1,0 +1,77 @@
+# Workflow Management Service interface definition
+
+name: workflow_management
+
+docstring: |
+  The Workflow Management Service provides support for the definition, integration and enactment of
+  defined workflows. Capabilities to enable the definition, instantiation, scheduling and execution
+  control of developer provided workflows; specifically for the visualization of data products
+
+dependencies: [resource_registry, data_product_management]
+
+methods:
+  create_workflow_definition:
+    docstring: |
+      Creates a Workflow Definition resource which specifies the steps involved in a workflow process.
+    in:
+      workflow_definition: !WorkflowDefinition
+    out:
+      workflow_definition_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_workflow_definition:
+    docstring: |
+      Updates an existing Workflow Definition resource.
+    in:
+      workflow_definition: !WorkflowDefinition
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_workflow_definition:
+    docstring: |
+      Returns an existing Workflow Definition resource.
+    in:
+      workflow_definition_id: ""
+    out:
+      workflow_definition: !WorkflowDefinition
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_workflow_definition:
+    docstring: |
+      Deletes an existing Workflow Definition resource.
+    in:
+      workflow_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+ # -----------------
+
+  create_workflow:
+    docstring: |
+      Instantiates a Workflow specific by a Workflow Definition resource and an input data product id.
+      Returns the data product id for the final output product.
+    in:
+      workflow_definition_id: ""
+      input_data_product_id: ""
+    out:
+      output_data_product_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  delete_workflow:
+    docstring: |
+      Terminates a Workflow specific by a Workflow Definition resource which includes all internal processes.
+    in:
+      workflow_definition_id: ""
+    out:
+      data_product_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+

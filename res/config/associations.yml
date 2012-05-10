@@ -97,6 +97,9 @@ PredicateTypes:
   hasView:
     domain: [View, Catalog]
     range: [View]
+  hasNode:
+    domain: [Node]
+    range: [Node]
 # COI
   affiliatedWith:
     domain: [Org]

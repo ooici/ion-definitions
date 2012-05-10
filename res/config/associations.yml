@@ -105,7 +105,7 @@ PredicateTypes:
     domain: [InstrumentSite, PlatformSite]
     range: [InstrumentAgent, PlatformAgent]
   hasAgentDefinition:
-    domain: [DeviceModel, Site]
+    domain: [DeviceModel, Site, AgentInstance]
     range: [AgentDefinition]
   hasAgentInstance:
     domain: [TaskableResource, Device, DataSource, ExternalDataset]

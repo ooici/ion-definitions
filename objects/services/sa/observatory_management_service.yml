@@ -368,6 +368,49 @@ methods:
 
 
   # -----------------
+  # Working with Subsite resources.
+
+  create_deployment:
+    docstring: |
+      Create a Deployment resource. Represents a (possibly open-ended) time interval
+      grouping one or more resources within a given context, such as an instrument
+      deployment on a platform at an observatory site.
+    in:
+      deployment: !Deployment
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+
+  update_subsite:
+    docstring: Update a Deployment resource
+    in:
+      deployment: !Deployment
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_subsite:
+    docstring: Read a Deployment resource
+    in:
+      deployment_id: ""
+    out:
+      deployment: !Deployment
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_subsite:
+    docstring: Delete a Deployment resource
+    in:
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+
+
+
+  # -----------------
   # find methods
 
   find_observatories:

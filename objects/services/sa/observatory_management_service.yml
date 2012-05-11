@@ -441,34 +441,6 @@ methods:
   # -----------------
   # find methods
 
-  find_observatories:
-    docstring: Find Observatory resources
-    in:
-      filters: !ResourceFilter
-    out:
-      observatory_list: []
-
-  find_subsites:             
-    docstring: Find Subsite resources
-    in:
-      filters: !ResourceFilter
-    out:
-      subsite_list: []
-
-  find_instrument_sites:             
-    docstring: Find inst site resources
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_site_list: []
-
-  find_platform_sites:             
-    docstring: Find inst site resources
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_site_list: []
-
 
 
   find_org_by_observatory:

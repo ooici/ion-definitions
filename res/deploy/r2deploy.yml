@@ -224,7 +224,7 @@ apps:
 
 
   ##### AS SERVICE
-  - name: visualization_workflow_management
+  - name: workflow_management
     version: 0.1
     processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
 

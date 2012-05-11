@@ -415,6 +415,7 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+      BadRequest: if object does not have _id or _rev attribute
 
 
   deploy_device_to_site:
@@ -425,6 +426,7 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+      BadRequest: if object does not have _id or _rev attribute
 
   undeploy_device_from_site:
     docstring: remove the link between a device and site which designates the instrument as primary

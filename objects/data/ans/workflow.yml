@@ -1,6 +1,6 @@
 
 WorkflowStep:
-  data_process_definition_id:
+  data_process_definition_id: ""
   persist_data: True
   persist_metadata: True
 
@@ -8,7 +8,7 @@ WorkflowStep:
 
 WorkflowDefinition: !Extends_InformationResource
     workflow_steps: []  # WorkflowStep
-    output_data_product_name: ""
+    output_data_product_name: ""  #Optional name tp use for output data product
 
 
 Workflow: !Extends_InformationResource

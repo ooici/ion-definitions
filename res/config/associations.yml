@@ -28,7 +28,7 @@ PredicateTypes:
     domain: [DataProducer]
     range: [DataProducer]
   hasInputProduct:
-    domain: [DataProcess]
+    domain: [DataProcess, Workflow]
     range: [DataProduct]
   hasInstance: # DEPRECATE (use hasDefinition)
     domain: [AgentDefinition, DataProcessDefinition]
@@ -43,7 +43,7 @@ PredicateTypes:
     domain: [Org]
     range: [Observatory]
   hasOutputProduct:
-    domain: [DataProcess, Device, ExternalDataset]
+    domain: [DataProcess, Device, ExternalDataset, Workflow]
     range: [DataProduct]
   hasParent:
     domain: [DataProducer]
@@ -111,7 +111,7 @@ PredicateTypes:
     domain: [InstrumentSite, PlatformSite]
     range: [InstrumentAgent, PlatformAgent]
   hasAgentDefinition:
-    domain: [DeviceModel, Site]
+    domain: [DeviceModel, Site, AgentInstance]
     range: [AgentDefinition]
   hasAgentInstance:
     domain: [TaskableResource, Device, DataSource, ExternalDataset]
@@ -169,8 +169,8 @@ PredicateTypes:
     range: [ConversationType]
 # CEI
   hasProcessDefinition:
-    domain: [Resource]
-    range: [ProcessDefinition, DataProcessDefinition]
+    domain: [Resource, Workflow]
+    range: [ProcessDefinition, DataProcessDefinition, WorkflowDefinition]
   supportsExecutionEngine:
     domain: [ProcessDefinition]
     range: [ExecutionEngineDefinition]
@@ -215,6 +215,11 @@ PredicateTypes:
   hasUIResource:
     domain: [UIResource]
     range: [UIResource]
+
+# AS
+  hasProcess:
+    domain: [Workflow]
+    range: [DataProcess]
 
 # Examples
   hasAccount:

@@ -368,6 +368,77 @@ methods:
 
 
   # -----------------
+  # Working with Deployment resources.
+
+  create_deployment:
+    docstring: |
+      Create a Deployment resource. Represents a (possibly open-ended) time interval
+      grouping one or more resources within a given context, such as an instrument
+      deployment on a platform at an observatory site.
+    in:
+      deployment: !Deployment
+      site_id: ""
+      device_id: ""
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+
+  update_deployment:
+    docstring: Update a Deployment resource
+    in:
+      deployment: !Deployment
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_deployment:
+    docstring: Read a Deployment resource
+    in:
+      deployment_id: ""
+    out:
+      deployment: !Deployment
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_deployment:
+    docstring: Delete a Deployment resource
+    in:
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  activate_deployment:
+    docstring: Make the devices on this deployment the primary devices for the sites
+    in:
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+      BadRequest: if object does not have _id or _rev attribute
+
+
+  deploy_device_to_site:
+    docstring: link a device to a site as the primary instrument
+    in:
+      device_id: ""
+      site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+      BadRequest: if object does not have _id or _rev attribute
+
+  undeploy_device_from_site:
+    docstring: remove the link between a device and site which designates the instrument as primary
+    in:
+      device_id: ""
+      site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
   # find methods
 
   find_observatories:

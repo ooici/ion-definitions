@@ -7,7 +7,7 @@ docstring: |
   defined workflows. Capabilities to enable the definition, instantiation, scheduling and execution
   control of developer provided workflows; specifically for the visualization of data products
 
-dependencies: [resource_registry, data_product_management]
+dependencies: [resource_registry, pubsub_management, data_product_management, data_process_management]
 
 methods:
   create_workflow_definition:
@@ -18,7 +18,7 @@ methods:
     out:
       workflow_definition_id: ""
     throws:
-      BadRequest: if object passed has _id or _rev attribute
+      BadRequest: if object passed has _id or _rev attribute or white spaces in name
 
   update_workflow_definition:
     docstring: |
@@ -27,7 +27,7 @@ methods:
       workflow_definition: !WorkflowDefinition
     out:
     throws:
-      BadRequest: if object does not have _id or _rev attribute
+      BadRequest: if object does not have _id or _rev attribute or white spaces in name
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
 
@@ -39,6 +39,7 @@ methods:
     out:
       workflow_definition: !WorkflowDefinition
     throws:
+      BadRequest: if any of the required parameters are not set
       NotFound: object with specified id does not exist
 
   delete_workflow_definition:
@@ -48,10 +49,11 @@ methods:
       workflow_definition_id: ""
     out:
     throws:
+      BadRequest: if any of the required parameters are not set
       NotFound: object with specified id does not exist
 
 
- # -----------------
+# -----------------
 
   create_workflow:
     docstring: |
@@ -63,7 +65,8 @@ methods:
     out:
       output_data_product_id: ""
     throws:
-      BadRequest: if object passed has _id or _rev attribute
+      BadRequest: if any of the required parameters are not set
+      NotFound: object with specified id does not exist
 
   delete_workflow:
     docstring: |
@@ -73,5 +76,6 @@ methods:
     out:
       data_product_id: ""
     throws:
-      BadRequest: if object passed has _id or _rev attribute
+      BadRequest: if any of the required parameters are not set
+      NotFound: object with specified id does not exist
 

@@ -178,9 +178,9 @@ apps:
 
 
   ##### AS SERVICE
-  # - name: visualization_workflow_management
-  #   version: 0.1
-  #   processapp: [visualization_workflow_management, ion.services.ans.visualization_workflow_management_service, VisualizationWorkflowManagementService]
+  - name: workflow_management
+    version: 0.1
+    processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
 
   #- name: visualization_service
   #  description: Responsible for spawning and maintaining viz transform processes and resulting viz data

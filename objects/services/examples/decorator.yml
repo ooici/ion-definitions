@@ -1,0 +1,15 @@
+# Example of adding decorators
+name: decorators_example
+docstring: Example of adding decorators 
+dependencies: []
+
+methods:
+  new_account:
+    docstring: Decorators do not have space after # 
+    in:
+      #Decorator
+      arg1: ""  
+    out:
+      #Notnull
+      #Required
+      arg2: ""

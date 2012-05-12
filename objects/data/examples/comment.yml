@@ -1,0 +1,8 @@
+# This is example how to add comments 
+
+Comment_Example:
+  # This is a comment. 
+  # Comments have space afte the #
+  foo: '' # This is another comment
+  #Decorator
+  foo2: '1' 

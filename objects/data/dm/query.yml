@@ -1,8 +1,4 @@
 SearchQuery: !Extends_Resource
-  term:    ""
-  query:   ""
-  order:   {}
-  filter:  ""
-  results: 10
-  offset:  0
-  
+  query:  {}
+  limit:  0
+  offset: 0

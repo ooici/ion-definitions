@@ -50,27 +50,12 @@ methods:
 
   query:
     in: 
-      source: ""
       query: !SearchQuery
     out:
       results: {}
 
-
-  define_search:
+  request:
     in:
-      query: ""
-    out:
-      success: True
-
-  find_by_metadata:
-    in:
-      filters: !ResourceFilter
+      query: {}
     out:
       results: []
-
-  find_by_type:
-    in:
-      filters: !ResourceFilter
-    out:
-      results: []
-

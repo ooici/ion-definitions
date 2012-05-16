@@ -589,6 +589,22 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  assign_sensor_device_to_instrument_device:
+    in:
+      sensor_device_id: ""
+      instrument_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_sensor_device_from_instrument_device:
+    in:
+      sensor_device_id: ""
+      instrument_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
 
   assign_sensor_model_to_sensor_device:
     in:
@@ -715,22 +731,6 @@ methods:
     out:
       instrument_agent_list: []
    
-  # TODO: uncomment for completeness
-  #
-  # find_stream_definition_by_instrument_model:
-  #   in:
-  #     instrument_model_id: ""
-  #   out:
-  #     stream_definition_list: []
-  #  
-  #
-  # find_instrument_model_by_stream_definition:
-  #   in:
-  #     stream_definition_id: ""
-  #   out:
-  #     instrument_model_list: []
-    
-
   find_platform_device_by_instrument_device:
     in:
       instrument_device_id: ""

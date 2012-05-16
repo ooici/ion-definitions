@@ -52,12 +52,108 @@ methods:
     out:
       catalogs:    []
   # -----------------
+  # --- Query Methods ---
 
   query:
     in: 
       query: !SearchQuery
     out:
       results: {}
+
+  query_couch:
+    docstring: |
+      Queries against a CouchDBIndex are performed here.  
+    in: 
+      index_id: ""
+      key:      ""
+      limit:    0
+      offset:   0
+      id_only:  True
+    out:
+      results:  [] 
+
+  traverse:
+    docstring: Breadth-first traversal of the association graph for a specified resource.
+    in:
+      resource_id: ""
+    out:
+      resources: []
+
+  intersect:
+    docstring: The intersection between two sets of resources.
+    in:
+      left: []
+      right: []
+    out:
+      result: []
+
+  union:
+    dosctring: The union between two sets of resources.
+    in: 
+      left: []
+      right: []
+    out:
+      result: []
+
+  parse:
+    dosctring: |
+      Parses a given string request and assembles the query, processes the query and returns the results of the query.
+    in: 
+      search_request: ''
+    out:
+      success: []
+
+  query_request:
+    docstring: Processes a single portion of a query.
+    in: 
+      query: {}
+      limit: 0
+      id_only: False
+    out:
+      results: []
+
+  query_term:
+    docstring: Processes a term search query.
+    in:
+      source_id: ""
+      field: ""
+      value: ""
+      order: {}
+      limit: 0
+      offset: 0
+      id_only: False
+    out:
+      results: []
+
+  query_range:
+    docstring: Processes a range query.
+    in:
+      source_id: ""
+      field: ""
+      from_value: Null
+      to_value: Null
+      order: {}
+      limit: 0
+      offset: 0
+      id_only: False
+    out:
+      results: []
+
+  query_association:
+    docstring: Proccesses an association query.
+    in:
+      resource_id: ""
+      id_only: False
+    out:
+      results: []
+
+  query_collection:
+    docstring: Processes a collection query.
+    in:
+      collection_id: ""
+      id_only: False
+    out:
+      results: []
 
   request:
     docstring: |
@@ -67,9 +163,4 @@ methods:
     out:
       results: []
 
-  parse:
-    in: 
-      search_request: ''
-    out:
-      success: []
       

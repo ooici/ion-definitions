@@ -46,6 +46,11 @@ methods:
     out:
       success:     True
 
+  list_catalogs:
+    in:
+      view_id:     ""
+    out:
+      catalogs:    []
   # -----------------
 
   query:
@@ -55,7 +60,16 @@ methods:
       results: {}
 
   request:
+    docstring: |
+      Temporary method exposure for client testing purposes.
     in:
       query: {}
     out:
       results: []
+
+  parse:
+    in: 
+      search_request: ''
+    out:
+      success: []
+      

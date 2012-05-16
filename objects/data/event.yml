@@ -187,3 +187,7 @@ InstrumentSampleDataEvent: !Extends_DataEvent
 ExceptionEvent: !Extends_Event
   exception_type: ""
   exception_message: ""
+
+---
+
+SearchBufferExceededEvent: !Extends_Event

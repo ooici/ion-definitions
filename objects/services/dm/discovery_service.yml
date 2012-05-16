@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Discovery+Service
 
-dependencies: [resource_registry,catalog_management]
+dependencies: [resource_registry,catalog_management, index_management]
 
 methods:
   create_view:

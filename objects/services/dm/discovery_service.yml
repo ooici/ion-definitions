@@ -160,6 +160,7 @@ methods:
       Temporary method exposure for client testing purposes.
     in:
       query: {}
+      id_only: True
     out:
       results: []
 

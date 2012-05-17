@@ -1,21 +1,19 @@
+# Object describing a specific capability of an agent
 AgentCapability:
   name: ""
   cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, CONV_TYPE), default=AGT_CMD)
   restrictions: {}
 
-ServiceAgreementProposal:
-  sap_id: ""
-  sequence_num: 0
-  target_resource_ids: []
-  conditions: {}
-  clauses: {}
 
+# Object representing a command to a resource agent
 AgentCommand:
   command_id: ""
   command: ""
   args: []
   kwargs: {}
 
+
+# Object representing the status of the execution of a command to a resource agent
 AgentCommandResult:
   command_id: ""
   command: ""
@@ -23,9 +21,4 @@ AgentCommandResult:
   status: ""
   result: []
 
-AgentNotification:
-  agent_id: ""
-  resource_id: ""
-  event_type: ""
-  ts_event: ""
-  args: {}
+

@@ -1,3 +1,20 @@
+# Enum for the different categories of object types
+ObjectTypeEnum: !enum (values=(OBJECT, ENUM), default=OBJECT)
+---
+
+
+# An instance of this resource describes a type of YML defined object
 ObjectType: !Extends_InformationResource
-  definition_type: ""
-  definition: {}
+
+  # The language of object specification. For future extensibility
+  definition_type: "ion_obj_yml_1"
+
+  # The actual object specification
+  definition: ""
+
+  # The class of object (e.g is it an enum or a content object)
+  object_type: !ObjectTypeEnum
+
+  # The version of the object definition. DON'T SET. For future extensibility.
+  object_version: 1
+

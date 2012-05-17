@@ -34,6 +34,16 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  read_mult:
+    docstring: |
+        Read the latest resources specified in the paramter.
+    in:
+      object_ids: []
+    out:
+      objects: []
+    throws:
+      NotFound: objects do not exist.
+
   update:
     docstring: |
       Persist new version of resource. Throws exception if previous

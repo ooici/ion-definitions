@@ -214,8 +214,63 @@ methods:
       NotFound: object with specified id does not exist
 
 
+
+
+
   # -----------------
-  # Assigning observatory sites
+  # Working with Deployment resources.
+
+  create_deployment:
+    docstring: |
+      Create a Deployment resource. Represents a (possibly open-ended) time interval
+      grouping one or more resources within a given context, such as an instrument
+      deployment on a platform at an observatory site.
+    in:
+      deployment: !Deployment
+      site_id: ""
+      device_id: ""
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+
+  update_deployment:
+    docstring: Update a Deployment resource
+    in:
+      deployment: !Deployment
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_deployment:
+    docstring: Read a Deployment resource
+    in:
+      deployment_id: ""
+    out:
+      deployment: !Deployment
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_deployment:
+    docstring: Delete a Deployment resource
+    in:
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  activate_deployment:
+    docstring: Make the devices on this deployment the primary devices for the sites
+    in:
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+      BadRequest: if object does not have _id or _rev attribute
+
+
+
+  # -----------------
+  # Assignments
 
   assign_site_to_site:
     docstring: Connects a child site (any subtype) to a parent site (any subtype)
@@ -235,6 +290,24 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
+  assign_device_to_site:
+    docstring: Connects a device (any type) to a site (any type)
+    in:
+      device_id: ""
+      site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_device_from_site:
+    docstring: Disconnects a child site (any subtype) from a parent site (any subtype)
+    in:
+      device_id: ""
+      site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Assigning resources to observatory Orgs
@@ -292,182 +365,49 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  # -----------------
-  # Deploying devices to observatory sites (primary and non-primary)
 
-  deploy_platform_device_to_platform_site:
+  # -----------------
+  # Deploying sites
+
+  deploy_platform_site:
     docstring: link a physical platform to a platform site
     in:
-      platform_device_id: ""
       platform_site_id: ""
+      deployment_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  undeploy_platform_device_from_platform_site:
+  undeploy_platform_site:
     in:
-      platform_device_id: ""
       platform_site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  deploy_as_primary_platform_device_to_platform_site:
-    docstring: link a physical platform to a platform site as primary
-    in:
-      platform_device_id: ""
-      platform_site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  undeploy_primary_platform_device_from_platform_site:
-    in:
-      platform_device_id: ""
-      platform_site_id: ""
+      deployment_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
 
-  deploy_instrument_device_to_instrument_site:
+  deploy_instrument_site:
     docstring: link a physical instrument to a instrument site
     in:
-      instrument_device_id: ""
       instrument_site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  undeploy_instrument_device_from_instrument_site:
-    in:
-      instrument_device_id: ""
-      instrument_site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  deploy_as_primary_instrument_device_to_instrument_site:
-    docstring: link a physical instrument to a instrument site as primary
-    in:
-      instrument_device_id: ""
-      instrument_site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  undeploy_primary_instrument_device_from_instrument_site:
-    in:
-      instrument_device_id: ""
-      instrument_site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-
-
-
-  # -----------------
-  # Working with Deployment resources.
-
-  create_deployment:
-    docstring: |
-      Create a Deployment resource. Represents a (possibly open-ended) time interval
-      grouping one or more resources within a given context, such as an instrument
-      deployment on a platform at an observatory site.
-    in:
-      deployment: !Deployment
-      site_id: ""
-      device_id: ""
-    out:
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
-
-  update_deployment:
-    docstring: Update a Deployment resource
-    in:
-      deployment: !Deployment
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  read_deployment:
-    docstring: Read a Deployment resource
-    in:
-      deployment_id: ""
-    out:
-      deployment: !Deployment
-    throws:
-      NotFound: object with specified id does not exist
-
-  delete_deployment:
-    docstring: Delete a Deployment resource
-    in:
       deployment_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  activate_deployment:
-    docstring: Make the devices on this deployment the primary devices for the sites
+  undeploy_instrument_site:
     in:
+      instrument_site_id: ""
       deployment_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
-      BadRequest: if object does not have _id or _rev attribute
 
-
-  deploy_device_to_site:
-    docstring: link a device to a site as the primary instrument
-    in:
-      device_id: ""
-      site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-      BadRequest: if object does not have _id or _rev attribute
-
-  undeploy_device_from_site:
-    docstring: remove the link between a device and site which designates the instrument as primary
-    in:
-      device_id: ""
-      site_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
 
 
   # -----------------
   # find methods
-
-  find_observatories:
-    docstring: Find Observatory resources
-    in:
-      filters: !ResourceFilter
-    out:
-      observatory_list: []
-
-  find_subsites:             
-    docstring: Find Subsite resources
-    in:
-      filters: !ResourceFilter
-    out:
-      subsite_list: []
-
-  find_instrument_sites:             
-    docstring: Find inst site resources
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_site_list: []
-
-  find_platform_sites:             
-    docstring: Find inst site resources
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_site_list: []
 
 
 

@@ -49,13 +49,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_instrument_agent_instances:
-    docstring: Find InstrumentAgentInstance resources
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_agent_instance_list: []
-
 
   start_instrument_agent_instance:
     docstring: |
@@ -115,13 +108,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_instrument_agents:
-    docstring: Find InstrumentAgent resources
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_agent_list: []
-
 
   # -----------------
   # Working with InstrumentDevice resources
@@ -164,13 +150,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_instrument_devices:
-    docstring: Find InstrumentDevice resources
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_device_list: []
-
 
   # -----------------
   # Working with InstrumentModel resources
@@ -211,13 +190,6 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
-  find_instrument_models:
-    docstring: Find InstrumentModel resources
-    in:
-      filters: !ResourceFilter
-    out:
-      instrument_model_list: []
 
 
   # -----------------
@@ -260,13 +232,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_platform_agent_instances:
-    docstring: Find PlatformAgentInstance resources
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_agent_instance_list: []
-
 
   # -----------------
   # Working with PlatformAgent definition resources
@@ -307,13 +272,6 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
-  find_platform_agents:
-    docstring: Find a PlatformAgent resource
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_agent_list: []
 
 
   # -----------------
@@ -356,13 +314,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_platform_devices:
-    docstring: Find PlatformDevice resources
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_device_list: []
-
 
   # -----------------
   # Working with PlatformModel resources. These represent types of platforms
@@ -403,13 +354,6 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
-  find_platform_models:
-    docstring: Find PlatformModel resources
-    in:
-      filters: !ResourceFilter
-    out:
-      platform_model_list: []
 
 
   # -----------------
@@ -452,13 +396,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_sensor_devices:
-    docstring: Find SensorDevice resources
-    in:
-      filters: !ResourceFilter
-    out:
-      sensor_device_list: []
-
 
   # -----------------
   # Working with SensorModel resources, types of sensors
@@ -500,31 +437,24 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_sensor_models:
-    docstring: Find SensorModel resources
-    in:
-      filters: !ResourceFilter
-    out:
-      sensor_model_list: []
-
 
   # ---------------------------
   # Associations
 
 
 
-  assign_instrument_agent_instance_to_instrument_agent:
+  assign_instrument_agent_to_instrument_agent_instance:
     in:
-      instrument_agent_instance_id: ""
       instrument_agent_id: ""
+      instrument_agent_instance_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_instrument_agent_instance_from_instrument_agent:
+  unassign_instrument_agent_from_instrument_agent_instance:
     in:
-      instrument_agent_instance_id: ""
       instrument_agent_id: ""
+      instrument_agent_instance_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -577,35 +507,35 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  assign_stream_definition_to_instrument_model:
-    in:
-      stream_definition_id: ""
-      instrument_model_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  unassign_stream_definition_from_instrument_model:
-    in:
-      stream_definition_id: ""
-      instrument_model_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-
-  assign_platform_agent_instance_to_platform_agent:
+  assign_platform_agent_instance_to_platform_device:
     in:
       platform_agent_instance_id: ""
-      platform_agent_id: ""
+      platform_device_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_platform_agent_instance_from_platform_agent:
+  unassign_platform_agent_instance_from_platform_device:
     in:
       platform_agent_instance_id: ""
+      platform_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  assign_platform_agent_to_platform_agent_instance:
+    in:
       platform_agent_id: ""
+      platform_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_platform_agent_from_platform_agent_instance:
+    in:
+      platform_agent_id: ""
+      platform_agent_instance_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -622,6 +552,22 @@ methods:
     in:
       platform_model_id: ""
       platform_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_platform_model_to_platform_agent:
+    in:
+      platform_model_id: ""
+      platform_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_platform_model_from_platform_agent:
+    in:
+      platform_model_id: ""
+      platform_agent_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -659,6 +605,54 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+
+
+  # -----------------
+  # Deploying sites
+
+  deploy_platform_device:
+    docstring: link a physical platform to a platform site
+    in:
+      platform_device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  undeploy_platform_device:
+    in:
+      platform_device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  deploy_instrument_device:
+    docstring: link a physical instrument to a instrument site
+    in:
+      instrument_device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  undeploy_instrument_device:
+    in:
+      instrument_device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+
+
+
+
+
+
 
 
   ##################

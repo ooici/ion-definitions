@@ -1,4 +1,4 @@
-LogicalPlatform: !Extends_InformationResource
+#LogicalPlatform: !Extends_InformationResource
 
 
 PlatformDevice: !Extends_Device

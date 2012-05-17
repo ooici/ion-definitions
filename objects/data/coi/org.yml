@@ -1,6 +1,9 @@
+# Enum for the different categories of Orgs
 OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSROOM, LABORATORY, INTERACTIVE_FACILITY), default=BASIC)
 ---
 
+
+# A domain of authority that is part of the system
 Org: !Extends_TaskableResource
   # Specializes the type of Org
   org_type: !OrgTypeEnum
@@ -12,9 +15,23 @@ Org: !Extends_TaskableResource
   contact: !ContactInformation
 ---
 
+# Object representing a current proposal for a service agreement. The proposal may contain several items of
+# different type, or can be a composite of service agreement proposals.
+ServiceAgreementProposal:
+  sap_id: ""
+  sequence_num: 0
+  target_resource_ids: []
+  conditions: {}
+  clauses: {}
+---
+
 NegotiationDefinition: !Extends_InformationResource
   pre_condition: []
   accept_action: ""
+
+Negotiation: !Extends_InformationResource
+  type: ""
+  sap: !ServiceAgreementProposal
 
 ---
 

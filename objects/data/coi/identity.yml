@@ -1,12 +1,19 @@
+ActorTypeEnum: !enum (values=(USER, AGENT, SYSTEM), default=USER)
+---
+
+# An OOI internal user identity
 ActorIdentity: !Extends_InformationResource
-  # An OOI internal user identity
 
+  # The type of actor
+  actor_type: !ActorTypeEnum
+
+
+# An external user identity.  In the case of CILogon, the identity taken from the subject
+# of the X.509 certificate. This identity is stored in the name attribute.
 UserCredentials: !Extends_InformationResource
-  # An external user identity.  In the case
-  # of CILogon, the identity is the subject
-  # from the X.509 certificate.
-  # The identity is stored in the name field.
-  identity_provider: "CIlogon"
 
-ResourceIdentity: !Extends_InformationResource
-  # An OOI resource identity
+  # Service that authenticates an actor
+  authentication_service: "CIlogon"
+
+  # Service that identities the specific actor.
+  identity_provider: ""

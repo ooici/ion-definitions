@@ -1,12 +1,17 @@
+# An instance of this resource describes a role in an Org
 UserRole: !Extends_InformationResource
   org_id: ""    #TODO - perhaps replace when better indexing in couch is available.
   label: ""  # Can be human readable
 
+
+# Holds policy applicable to a subset of resources within the system.
 Policy: !Extends_InformationResource
   definition_type: ""
   rule: ""
   enabled: True
   definition: {}
 
+
+# Defines the scope of applicability of policy, i.e. the subset of resources
 RoleScope:
   resource_list: {}

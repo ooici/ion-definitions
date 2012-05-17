@@ -1,11 +1,18 @@
+# Resource describing a namespace within the Exchange
 ExchangeSpace: !Extends_InformationResource
 
+
+# Resource describing a name within an ExchangeSpace
 ExchangeName: !Extends_InformationResource
   xn_type: "entity"
 
+
+# Resource describing an entity in an ExchangeSpace that acts as message router
 ExchangePoint: !Extends_InformationResource
   topology_type: "topic_tree"
 
+
+# Resource describing a single message broker instance (which itself may be a cluster of nodes)
 ExchangeBroker: !Extends_InformationResource
   impl_type: "rabbitmq"
-  impl_version: "1.6.1"
+  impl_version: ""

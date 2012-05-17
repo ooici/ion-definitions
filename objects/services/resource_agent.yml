@@ -27,7 +27,8 @@ methods:
 
   get_capabilities:
     docstring: |
-      Returns a dict of capabilities of this agent.
+      Returns a dict of capabilities (AgentCapability objects) for this agent. Represents the current
+      capabilies. There is no guarantee that all of these capabilities are active in the current operational state.
     in:
       resource_id: ""
       # Leave types default for all
@@ -78,12 +79,6 @@ methods:
 
   # -----------------
   # Resource monitor interface
-
-  emit:
-    docstring: This operation is never called; the return represents published event notifications
-    in:
-    out:
-      event: !AgentNotification
 
   # -----------------
   # Agent control interface

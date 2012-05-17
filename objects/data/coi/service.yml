@@ -1,6 +1,18 @@
-ServiceDefinition: !Extends_InformationResource
+# Resource describing a type of service that can be instantiated
+ServiceDefinition: !Extends_ExecutableResource
+
+  # The language of service specification. For future extensibility
+  definition_type: "ion_svc_yml_1"
+
+  # The actual service specification
   definition: ""
+
+  # List of operations in this service.
   operations: []
 
+
+# Resource describing a service instance
 Service: !Extends_TaskableResource
-  # This is a service instance
+
+  # The fully qualified name under which the service is available in the system
+  exchange_name: ""

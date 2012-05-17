@@ -1,4 +1,8 @@
 NotificationRequest: !Extends_InformationResource
-  origin_list: []
-  events_list: []
-  delivery_properties: {}
+  origin: ""
+  origin_type: ""
+  event_type: ""
+  event_subtype: ""
+  delivery_config: {}
+
+

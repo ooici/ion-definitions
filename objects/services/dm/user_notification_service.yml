@@ -23,6 +23,59 @@ methods:
       BadRequest: if object passed has _id or _rev attribute, or if more than one user info exists
       NotFound: if user does not exist, user info does not exist, or user email does not exist
 
+  create_email:
+    docstring: |
+      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+      resource with the user. Setup subscription and call back to send email
+      @todo - is the user email automatically selected from the user id?
+    in:
+      event_type: ""
+      event_subtype: ""
+      origin: ""
+      origin_subtype: ""
+      user_id: ""
+      email: ""
+    out:
+      notification_id: ""
+    throws:
+      NotFound: if user does not exist, user info does not exist, or user email does not exist
+
+  create_sms:
+    docstring: |
+      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+      resource with the user. Setup subscription and call back to send an sms to their phone
+      @todo - is the user email automatically selected from the user id?
+    in:
+      event_type: ""
+      event_subtype: ""
+      origin: ""
+      origin_subtype: ""
+      user_id: ""
+      phone: ""
+      provider: ""
+    out:
+      notification_id: ""
+    throws:
+      NotFound: if user does not exist, user info does not exist, or user email does not exist
+
+  create_detection_filter:
+    docstring: |
+      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+      resource with the user. Setup subscription and call back do a detection filter of some type...
+      @todo - is the user email automatically selected from the user id?
+    in:
+      event_type: ""
+      event_subtype: ""
+      origin: ""
+      origin_subtype: ""
+      user_id: ""
+      filter_config: {}
+    out:
+      notification_id: ""
+    throws:
+      NotFound: if user does not exist, user info does not exist, or user email does not exist
+
+
   update_notification:
     docstring: |
       Updates the provided NotificationRequest object.  Throws NotFound exception if

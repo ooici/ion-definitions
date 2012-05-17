@@ -26,6 +26,7 @@ ExecutableResource: !Extends_InformationResource
 
 ---
 
+# Defined a named type of resource
 ResourceType: !Extends_InformationResource
 
 ResourceLifeCycle: !Extends_InformationResource

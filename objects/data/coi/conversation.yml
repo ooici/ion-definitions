@@ -1,10 +1,17 @@
+# Resource describing an instance of conversation in the system
 Conversation: !Extends_InformationResource
 
+
+# Resource describing a type of conversation in the system
 ConversationType: !Extends_InformationResource
   definition_type: ""
   definition: ""
 
+
+# Resource describing the characteristics of in interacting party in a conversation type
 ConversationRole: !Extends_InformationResource
 
+
+# Resource describing an actor taking on a conversation role in a conversation (instance)
 ConverationRoleBinding:
   exchange_name: ""

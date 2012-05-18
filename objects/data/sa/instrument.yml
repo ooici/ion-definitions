@@ -1,4 +1,4 @@
-LogicalInstrument: !Extends_InformationResource
+#LogicalInstrument: !Extends_InformationResource
 
 
 # This is the physical instrument

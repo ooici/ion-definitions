@@ -149,6 +149,9 @@ PredicateTypes:
   hasMembership:
     domain: [Org]
     range: [ActorIdentity]
+  hasObjectType:
+    domain: [ResourceType, EventType]
+    range: [ObjectType]
   hasOwner:
     domain: [Resource]
     range: [ActorIdentity]

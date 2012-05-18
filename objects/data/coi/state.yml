@@ -1,3 +1,5 @@
+# Object keeping a persistent state of a process in the system, so that another process can pick
+# the the same state in case of restart, recovery or migration.
 ProcessState:
   state:
   ts: ""

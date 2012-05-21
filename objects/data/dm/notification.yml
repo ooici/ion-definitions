@@ -1,8 +1,41 @@
+
+
+DeliveryMode: !enum (values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
+
+# Base class objects....
+DeliveryConfig:
+  process_definition_id: ""
+  processing: {}             # Instructions for the processing of received events
+  delivery: {}               # Instructions for the delivery of the notification
+
+---
+
 NotificationRequest: !Extends_InformationResource
   origin: ""
   origin_type: ""
   event_type: ""
   event_subtype: ""
-  delivery_config: {}
+  delivery_config: !DeliveryConfig
 
+---
 
+# For SMS delivery....
+SMSDeliveryConfig: !Extends_DeliveryConfig
+  processing:
+    message_header: ""   # Short user defined header for the message?
+    parsing: ""          # Instructions on how to parse the notification to produce an SMS - more than just a string?
+  delivery:
+    phone_number: ""     # Phone number to use. If empty, get user contact-info
+    provider: ""         # Service provider to lookup how to sms
+
+---
+
+# For Email delivery....
+EmailDeliveryConfig: !Extends_DeliveryConfig
+  processing:
+    message_header: ""   # User defined header for the message
+    parsing: ""          # Instructions on how to parse the notification to produce an SMS - more than just a string?
+  delivery:
+    email: ""            # Email address to use. If empty, get user contact-info
+    mode: !DeliveryMode  # Delivery mode for email notification based on google groups api
+    frequency: ""        # Frequency of delivery for Digest and Abridged mode

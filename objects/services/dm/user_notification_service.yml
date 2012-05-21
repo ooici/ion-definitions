@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, transform_management]
 
 methods:
   create_notification:
@@ -35,6 +35,9 @@ methods:
       origin_type: ""
       user_id: ""
       email: ""
+      mode: !DeliveryMode
+      message_header: ""
+      parser: ""
     out:
       notification_id: ""
     throws:
@@ -53,6 +56,8 @@ methods:
       user_id: ""
       phone: ""
       provider: ""
+      message_header: ""
+      parser: ""
     out:
       notification_id: ""
     throws:
@@ -69,7 +74,7 @@ methods:
       origin: ""
       origin_type: ""
       user_id: ""
-      filter_config: {}
+      filter_config: !DeliveryConfig
     out:
       notification_id: ""
     throws:

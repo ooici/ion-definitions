@@ -5,8 +5,9 @@ DeliveryMode: !enum (values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
 # Base class objects....
 DeliveryConfig:
   process_definition_id: ""
-  processing: {}             # Instructions for the processing of received events
-  delivery: {}               # Instructions for the delivery of the notification
+  # Can't define these in the base class and in the child class... limitation of extends...
+  #processing: {}             # Instructions for the processing of received events
+  #delivery: {}               # Instructions for the delivery of the notification
 
 ---
 

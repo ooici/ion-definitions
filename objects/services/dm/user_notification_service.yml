@@ -35,6 +35,9 @@ methods:
       origin_subtype: ""
       user_id: ""
       email: ""
+      mode: !DeliveryMode
+      message_header: ""
+      parser: ""
     out:
       notification_id: ""
     throws:
@@ -53,6 +56,8 @@ methods:
       user_id: ""
       phone: ""
       provider: ""
+      message_header: ""
+      parser: ""
     out:
       notification_id: ""
     throws:
@@ -69,7 +74,7 @@ methods:
       origin: ""
       origin_subtype: ""
       user_id: ""
-      filter_config: {}
+      filter_config: !DeliveryConfig
     out:
       notification_id: ""
     throws:

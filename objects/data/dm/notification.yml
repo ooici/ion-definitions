@@ -1,5 +1,7 @@
 
 
+DeliveryMode: !enum (values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
+
 # Base class objects....
 DeliveryConfig:
   process_definition_id: ""
@@ -35,6 +37,5 @@ EmailDeliveryConfig: !Extends_DeliveryConfig
     parsing: ""          # Instructions on how to parse the notification to produce an SMS - more than just a string?
   delivery:
     email: ""            # Email address to use. If empty, get user contact-info
-    mode: !enum (name=DeliveryMode, values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
-                         # Delivery mode for email notification based on google groups api
+    mode: !DeliveryMode  # Delivery mode for email notification based on google groups api
     frequency: ""        # Frequency of delivery for Digest and Abridged mode

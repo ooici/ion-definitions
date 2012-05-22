@@ -8,20 +8,12 @@
 # The "system" root entry defines settings for the distributed ION system that this
 # container starts or joins. A system comprises all containers with the same sysname.
 system:
-  # sysname - by default it is generated from your system's uname.
-  # set in pyon.local.yml or via command line to lock it to something.
-  name:
-
   # The Org (name) that starts the system
   root_org: ION
   # The name of the ION System ActorIdentity
   system_actor: ionsystem
-  # Load config from directory (merge over pyon.yml+pyon.local.yml but allow command line override)
-  config_from_directory: True
-  # Global flag to use a mock datastore instead of CouchDB if True
-  mockdb: False
-  # Global flag to clean all persistent stores and reset system to defaults on start if True
-  # Note: this is dangerous and will likely change to False or go away soon
+  # Controls cleaning of all persistent stores and reset system to defaults on start.
+  # Note: this is dangerous and will likely change to False or go away soon.
   force_clean: True
   # Flag indicating test run. Is set to False if started as interactive container
   testing: True
@@ -31,8 +23,13 @@ system:
   # Global flag indicating degraded mode during initial bootstrap phases
   # (e.g. no use of RR, messaging, datastore, events, etc)
   bootstrapping: False
-  # If true, the first container started will bootstrap the system
-  auto_bootstrap: True
+  # Load config from directory.
+  # If true, merge order is pyon.yml+directory+pyon.local.yml+cmdline
+  # If false, merge order is pyon.yml+pyon.local.yml+cmdline
+  config_from_directory: False
+  # If true, the first container started will bootstrap the system config
+  # into the directory.
+  auto_bootstrap: False
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers

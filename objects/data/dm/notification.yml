@@ -2,6 +2,9 @@
 
 DeliveryMode: !enum (values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
 
+NotificationType: !enum (values=(EMAIL, SMS, FILTER), default=EMAIL)
+
+
 # Base class objects....
 DeliveryConfig:
   process_definition_id: ""
@@ -12,6 +15,7 @@ DeliveryConfig:
 ---
 
 NotificationRequest: !Extends_InformationResource
+  type: !NotificationType
   origin: ""
   origin_type: ""
   event_type: ""

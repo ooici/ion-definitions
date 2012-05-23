@@ -12,6 +12,8 @@ system:
   root_org: ION
   # The name of the ION System ActorIdentity
   system_actor: ionsystem
+  # TODO remove
+  mockdb: False
   # Controls cleaning of all persistent stores and reset system to defaults on start.
   # Note: this is dangerous and will likely change to False or go away soon.
   force_clean: True

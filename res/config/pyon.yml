@@ -64,9 +64,11 @@ server:
     username:
     password:
   elasticsearch:
-    type: elasticsearch
-    host: localhost
-    port: 9200
+    type:     elasticsearch
+    host:     localhost
+    port:     9200
+    shards:   5        # Defines the default number of shards for indexes
+    replicas: 1        # Defines the default number of replicas for each shard
 
 
 # ----------------------------------------------------------------------------------

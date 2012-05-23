@@ -38,6 +38,7 @@ methods:
       mode: !DeliveryMode
       message_header: ""
       parser: ""
+      period: 86400 # Integer number of seconds between emails - default is daily
     out:
       notification_id: ""
     throws:

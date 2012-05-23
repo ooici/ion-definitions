@@ -39,4 +39,4 @@ EmailDeliveryConfig: !Extends_DeliveryConfig
   delivery:
     email: ""            # Email address to use. If empty, get user contact-info
     mode: !DeliveryMode  # Delivery mode for email notification based on google groups api
-    frequency: ""        # Frequency of delivery for Digest and Abridged mode
+    period: ""           # Period of delivery for Digest and Abridged mode in seconds

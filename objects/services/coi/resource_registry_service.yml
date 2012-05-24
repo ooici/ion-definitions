@@ -283,6 +283,17 @@ methods:
     throws:
       BadRequest: missing parameters, or object id field missing in subject or object
 
+  find_associations_mult:
+    docstring: |
+      Find associtiations by a list of subjects.
+    in:
+      subjects: []
+      id_only: False
+    out:
+      results: []
+    throws:
+      BadRequest: subjects is not a list
+
   get_association:
     docstring: |
       Read the association specified by the exact subject, predicate, object

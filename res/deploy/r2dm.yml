@@ -22,7 +22,13 @@ apps:
     description: Process Dispatcher Service
     version: 0.1
     processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
-            
+
+  - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
+    config:
+      level: process_dispatcher
+
   - name: identity_management
     version: 0.1
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
@@ -56,6 +62,7 @@ apps:
     processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: exchange_management
+
   - name: pubsub_management
     version: 0.1
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]

@@ -213,12 +213,11 @@ apps:
     version: 0.1
     processapp: [observatory_management, ion.services.sa.observatory.observatory_management_service, ObservatoryManagementService]
 
-
-  # Note: the following depends on a many of DM services
-  - name: ingestion_launcher
+  - name: bootstrap
     version: 0.1
-    processapp: [ingestion_launcher, ion.processes.data.ingestion.ingestion_launcher, IngestionLauncher ]
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
+      level: ingestion_management
       ingestion:
         exchange_point: science_data
         number_of_workers: 2
@@ -226,13 +225,6 @@ apps:
           datastore_name: ingested_datasets
           server: localhost
           datastore_profile: SCIDATA
-
-#  - name: last_update_cache_launcher
-#    version: 0.1
-#    processapp: [cache_launcher, ion.processes.data.cache_launcher, CacheLauncher]
-#    config:
-#      process:
-#        number_of_workers: 2
 
 
   ##### AS SERVICE

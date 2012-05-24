@@ -8,7 +8,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Acquisition+Management+Service
 
-dependencies: [resource_registry, pubsub_management]
+dependencies: [resource_registry, pubsub_management, process_dispatcher]
 
 methods:
 
@@ -81,18 +81,149 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  # -----------------
+  # Data source models
+
+  create_data_source_model:
+    in:
+      data_source_model: !DataSourceModel
+    out:
+      data_source_model_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_data_source_model:
+    in:
+      data_source_model: !DataSourceModel
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_data_source_model:
+    in:
+      data_source_model_id: ""
+    out:
+      data_source: !DataSourceModel
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_data_source_model:
+    in:
+      data_source_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
+  # Manipulate data source agent instance
+  create_data_source_agent:
+    docstring: Create and persist DatasourceAgent object, associate with a DataSourceModel and return object _id as OOI id
+    in:
+      data_source_agent: !DataSourceAgent
+      data_source_model_id: ""
+    out:
+      data_source_agent_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_data_source_agent:
+    in:
+      data_source_agent: !DataSourceAgent
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_data_source_agent:
+    in:
+      data_source_agent_id: ""
+    out:
+      data_source_agent: !DataSourceAgent
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_data_source_agent:
+    in:
+      data_source_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  # -----------------
+  # Manipulate  data source agent instance : DataSourceAgentInstance
+  create_data_source_agent_instance:
+    docstring: Create and persist DatasourceAgentInstance, associate both the DataSource agent and the DataSource that it will control
+    in:
+      data_source_agent_instance: !DataSourceAgentInstance
+      data_source_agent_id: ""
+      data_source_id: ""
+    out:
+      data_source_agent_instance_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_data_source_agent_instance:
+    in:
+      data_source_agent_instance: !DataSourceAgentInstance
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_data_source_agent_instance:
+    in:
+      data_source_agent_instance_id: ""
+    out:
+      data_source_agent_instance: !DataSourceAgentInstance
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_data_source_agent_instance:
+    in:
+      data_source_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  start_data_source_agent_instance:
+    docstring: |
+      Launch an data source agent instance process and return its process id. Agent instance resource
+      must exist and be associated with an external data source
+    in:
+      data_source_agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  stop_data_source_agent_instance:
+    docstring: Deactivate the  agent instance process
+    in:
+      data_source_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulate external datasets
   create_external_dataset:
+    docstring: Persist ExternalDataset object , associate with a DatasetModel and return object _id as OOI id
     in:
       external_dataset: !ExternalDataset
+      external_dataset_model_id: ""
     out:
       external_dataset_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
   update_external_dataset:
+    docstring: Overwrite ExternalData object
     in:
       external_dataset: !ExternalDataset
     out:
@@ -102,6 +233,7 @@ methods:
       Conflict: object not based on latest persisted object version
 
   read_external_dataset:
+    docstring: Read ExternalDataset object with _id matching passed user id
     in:
       external_dataset_id: ""
     out:
@@ -110,6 +242,7 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_external_dataset:
+    docstring: Read and delete specified ExternalDataset object
     in:
       external_dataset_id: ""
     out:
@@ -117,108 +250,140 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
-  # Manipulate external data agent instance : ExternalDataAgent
-  create_external_data_agent:
+  # Manipulate external dataset model: ExternalDatasetModel
+  create_external_dataset_model:
+    docstring: Persist ExternalDatasetModel object and return object _id as OOI id
     in:
-      external_data_agent: !ExternalDataAgent
+      external_dataset_model: !ExternalDatasetModel
     out:
-      external_data_agent_id: ""
+      external_dataset_model_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
-  update_external_data_agent:
+  update_external_dataset_model:
+    docstring: Overwrite ExternalDatasetModel object
     in:
-      external_data_agent: !ExternalDataAgent
+      external_dataset_model: !ExternalDatasetModel
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
 
-  read_external_data_agent:
+  read_external_dataset_model:
+    docstring: Read ExternalDatasetModel object with _id matching passed  id
     in:
-      external_data_agent_id: ""
+      external_dataset_model_id: ""
     out:
-      external_data_agent: !ExternalDataAgent
+      external_dataset_model: !ExternalDatasetModel
     throws:
       NotFound: object with specified id does not exist
 
-  delete_external_data_agent:
+  delete_external_dataset_model:
+    docstring: Read and delete specified ExternalDatasetModel object
     in:
-      external_data_agent_id: ""
+      external_dataset_model_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
   # -----------------
-  # Manipulate external data agent instance : ExternalDataAgentInstance
-  create_external_data_agent_instance:
+  # Manipulate external dataset agent  : ExternalDatasetAgent
+  create_external_dataset_agent:
+    docstring: Persist ExternalDatasetAgent object, associate with a DatasetModel and return object _id as OOI id
     in:
-      external_data_agent_instance: !ExternalDataAgentInstance
+      external_dataset_agent: !ExternalDatasetAgent
+      external_dataset_model_id: ""
     out:
-      external_data_agent_instance_id: ""
+      external_dataset_agent_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
-  update_external_data_agent_instance:
+  update_external_dataset_agent:
+    docstring: Overwrite ExternalDatasetAgent object
     in:
-      external_data_agent_instance: !ExternalDataAgentInstance
+      external_dataset_agent: !ExternalDatasetAgent
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
 
-  read_external_data_agent_instance:
+  read_external_dataset_agent:
+    docstring: Read ExternalDatasetAgent object with _id matching passed id
     in:
-      external_data_agent_instance_id: ""
+      external_dataset_agent_id: ""
     out:
-      external_data_agent_instance: !ExternalDataAgentInstance
+      external_dataset_agent: !ExternalDatasetAgent
     throws:
       NotFound: object with specified id does not exist
 
-  delete_external_data_agent_instance:
+  delete_external_dataset_agent:
+    docstring: Read and delete specified ExternalDatasetAgent object
     in:
-      external_data_agent_instance_id: ""
+      external_dataset_agent_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
-
 
   # -----------------
-  # Manipulate external data source model: ExternalDataSourceModel
-  create_external_data_source_model:
+  # Manipulate external dataset agent instance : ExternalDatasetAgentInstance
+  create_external_dataset_agent_instance:
+    docstring: Create and persist ExternalDatasetAgentInstance, associate both the ExternalDatasetAgent and the ExternalDataset that it will control
     in:
-      external_data_source_model: !ExternalDataSourceModel
+      external_dataset_agent_instance: !ExternalDatasetAgentInstance
+      external_dataset_agent_id: ""
+      external_dataset_id: ""
     out:
-      external_data_source_model_id: ""
+      external_dataset_agent_instance_id: ""
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
-  update_external_data_source_model:
+  update_external_dataset_agent_instance:
+    docstring: Overwrite ExternalDatasetAgentInstance object
     in:
-      external_data_source_model: !ExternalDataSourceModel
+      external_dataset_agent_instance: !ExternalDatasetAgentInstance
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
 
-  read_external_data_source_model:
+  read_external_dataset_agent_instance:
+    docstring: Read ExternalDatasetAgentInstance object with _id matching passed id
     in:
-      external_data_source_model_id: ""
+      external_dataset_agent_instance_id: ""
     out:
-      external_data_source_model: !ExternalDataSourceModel
+      external_dataset_agent_instance: !ExternalDatasetAgentInstance
     throws:
       NotFound: object with specified id does not exist
 
-  delete_external_source_model_instance:
+  delete_external_dataset_agent_instance:
+    docstring: Read and delete specified ExternalDatasetAgentInstance object
     in:
-      external_data_source_model_id: ""
+      external_dataset_agent_instance_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
+  start_external_dataset_agent_instance:
+    docstring: |
+      Launch an dataset agent instance process and return its process id. Agent instance resource
+      must exist and be associated with an external dataset
+    in:
+      external_dataset_agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  stop_external_dataset_agent_instance:
+    docstring: Deactivate the  agent instance process
+    in:
+      external_dataset_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # The following operations assign and unassign data source to an external data provider
@@ -309,20 +474,20 @@ methods:
   # -----------------
   # The following operations assign and unassign an external data agent to a data source model
 
-  assign_external_data_agent_to_data_model:
-    docstring: Connect the data source with an external data model
+  assign_dataset_agent_to_external_dataset_model:
+    docstring: Connect the data set with an external data model
     in:
-      external_data_agent_id: ""
-      data_source_model_id: ""
+      dataset_agent_id: ""
+      external_dataset_model_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  unassign_external_data_agent_from_data_model:
-    docstring: Disonnect the data source from the external data model
+  unassign_dataset_agent_from_external_dataset_model:
+    docstring: Disonnect the data set from the external data model
     in:
-      external_data_agent_id: ""
-      data_source_model_id: ""
+      dataset_agent_id: ""
+      external_dataset_model_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -351,20 +516,7 @@ methods:
       NotFound: object with specified id does not exist
 
 
-  # -----------------
-  # The following operations connects all eoi resource for batch processing
-  assign_eoi_resources:
-    docstring: Connects multiple eoi resources in batch with assocations
-    in:
-      external_data_provider_id: ""
-      data_source_id: ""
-      data_source_model_id: ""
-      external_dataset_id: ""
-      external_data_agent_id: ""
-      agent_instance_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
+
 
   # -----------------
   # The following operations register different types of data producers

@@ -4,7 +4,7 @@ name: visualization_service
 
 docstring: The Visualization Service is responsible for creating transform processes for the data products available in the system and also provides access to the resulting viz products. (e.g Google DataTables, Matplotlib graphs, etc)
 
-dependencies: [resource_registry, pubsub_management, transform_management]
+dependencies: [resource_registry, pubsub_management, transform_management, data_retriever, dataset_management]
 
 methods:
 # Methods used by the Service Gateway Service (SGS)
@@ -65,34 +65,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-# Methods used by the transform processes
-  submit_google_dt:
-    docstring: Send the rendered image to
-    in:
-      data_product_id_token: ""
-      data_table: ""
-    out:
-    throws:
-      BadRequest: check data_product_id
-
-  submit_google_realtime_dt:
-    docstring: Send the rendered image to
-    in:
-      data_product_id: ""
-      data_table: ""
-    out:
-    throws:
-      BadRequest: check data_product_id
-
-  submit_mpl_image:
-    docstring: Send the rendered image to the visualization service
-    in:
-      data_product_id: ""
-      image_file_obj: ""
-      image_name: ""
-    out:
-    throws:
-      BadRequest: check data_product_id
 
 # Methods used by the Pyon container processes to update the Visualization service
   register_new_data_product:

@@ -33,6 +33,7 @@ ResourceOperatorEvent: !Extends_ResourceEvent
 ResourceModifiedEvent: !Extends_ResourceEvent
   mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, DELETE), default=UPDATE)
 
+ContainerConfigModifiedEvent: !Extends_Event
 
 ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
 
@@ -85,6 +86,9 @@ DeviceCommandEvent: !Extends_ResourceCommandEvent
 DeviceOperatorEvent: !Extends_ResourceOperatorEvent
 
 ---
+# ------------------------------------------------------------------------------------
+# Governance Events
+# ------------------------------------------------------------------------------------
 
 NegotiationEvent: !Extends_Event
   # The origin is the id of the provider actor (e.g. org id, resource id)
@@ -105,6 +109,19 @@ RoleRequestStatusEvent: !Extends_RequestStatusEvent
 
 ResourceRequestStatusEvent: !Extends_RequestStatusEvent
   resource_id: ""
+
+
+---
+
+# The ResourcePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
+# when the underlying policy object is updated in the resource registry but by business login in the Policy Management
+# Service as appropriate, like when it is assigned or removed from a resource or service
+# The origin is the policy_id
+ResourcePolicyEvent: !Extends_Event
+  resource_id: ""
+  resource_type: ""
+  resource_name: ""
+
 
 # ------------------------------------------------------------------------------------
 # FORMER R1 event types - delete if not needed

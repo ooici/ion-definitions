@@ -1,4 +1,4 @@
 DataStore: !Extends_InformationResource
-  type: ""
 
-PersistentArchive: !Extends_InformationResource
+PersistenceSystem: !Extends_TaskableResource
+  type: ""

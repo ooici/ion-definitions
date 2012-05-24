@@ -1,6 +1,5 @@
-# Bootstrap process interface definition
-
 name: bootstrap
+
 docstring: Process that bootstraps the ION system
 dependencies: [datastore, directory,
   identity_management,
@@ -13,4 +12,5 @@ dependencies: [datastore, directory,
   transform_management,
   process_dispatcher
 ]
+
 methods:

@@ -6,7 +6,8 @@ ProcessArgument:
   description: ""
   default:
 
-ProcessDefinition: !Extends_InformationResource
+
+ProcessDefinition: !Extends_ExecutableResource
   # Identifies process definitions for each kind of process that can be executed
   definition_type: !enum (name=ProcessDefinitionType, values=(PYON_STREAM), default=PYON_STREAM)
   version: ""
@@ -14,6 +15,9 @@ ProcessDefinition: !Extends_InformationResource
     module: ""
     class: ""
   arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
+
+
+Process: !Extends_TaskableResource
 
 ---
 

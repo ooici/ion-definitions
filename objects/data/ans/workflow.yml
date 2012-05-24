@@ -1,0 +1,14 @@
+
+WorkflowStep:
+  data_process_definition_id: ""
+  persist_data: True
+  persist_metadata: True
+
+---
+
+WorkflowDefinition: !Extends_InformationResource
+    workflow_steps: []  # WorkflowStep
+    output_data_product_name: ""  #Optional name to use for output data product
+
+
+Workflow: !Extends_InformationResource

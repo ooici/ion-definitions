@@ -1,0 +1,14 @@
+handlers:
+  file:
+    filename: logs/pycc_logfile.txt
+
+loggers:
+  pyon:
+    handlers: [file]
+    level: INFO
+  ion:
+    handlers: [file]
+    level: INFO
+  prototype:
+    handlers: [file]
+    level: INFO

@@ -1,14 +1,21 @@
-# Resource agent interface definition
-
 name: resource_agent
+
 docstring: Behaviors for any resource agent
+
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Resource+Agent
+
 dependencies: [directory, resource_registry]
+
 methods:
   # -----------------
   # Governance interface
 
   negotiate:
+    docstring: |
+      Initiate a negotiation with this agent. The subject of this negotiation is the given
+      ServiceAgreementProposal. The response is either a new ServiceAgreementProposal as counter-offer,
+      or the same ServiceAgreementProposal indicating the offer has been accepted.
+      NEEDS REFINEMENT.
     in:
       resource_id: ""
       sap_in: !ServiceAgreementProposal
@@ -19,6 +26,9 @@ methods:
   # Capabilities interface
 
   get_capabilities:
+    docstring: |
+      Returns a dict of capabilities (AgentCapability objects) for this agent. Represents the current
+      capabilies. There is no guarantee that all of these capabilities are active in the current operational state.
     in:
       resource_id: ""
       # Leave types default for all
@@ -31,6 +41,9 @@ methods:
 
   execute:
     docstring: Execute a command on the resource represented by the agent
+    docstring: |
+      Execute a command against the resource and returns the result.
+      As a side effect, fire a ResourceCommandEvent (or sub-type) with the result of the command.
     in:
       resource_id: ""
       command: !AgentCommand
@@ -42,6 +55,8 @@ methods:
 
   get_param:
     docstring: Get the value of the given resource parameter
+    docstring: |
+      Return the value of a device parameter.
     in:
       resource_id: ""
       name: ""
@@ -51,6 +66,8 @@ methods:
       NotFound: if the parameter does not exist
 
   set_param:
+    docstring: |
+      Set the value of a device parameter.
     in:
       resource_id: ""
       name: ""
@@ -63,16 +80,12 @@ methods:
   # -----------------
   # Resource monitor interface
 
-  emit:
-    docstring: This operation is never called; the return represents published event notifications
-    in:
-    out:
-      event: !AgentNotification
-
   # -----------------
   # Agent control interface
 
   execute_agent:
+    docstring: |
+      Execute a command against the agent itself and returns the result.
     in:
       resource_id: ""
       command: !AgentCommand
@@ -80,6 +93,8 @@ methods:
       result: !AgentCommandResult
 
   get_agent_param:
+    docstring: |
+      Returns the value of an agent parameter.
     in:
       resource_id: ""
       name: ""
@@ -89,6 +104,8 @@ methods:
       NotFound: if the parameter does not exist
 
   set_agent_param:
+    docstring: |
+      Sets the value of an agent parameter.
     in:
       resource_id: ""
       name: ""

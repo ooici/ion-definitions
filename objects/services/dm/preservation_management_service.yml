@@ -1,59 +1,87 @@
 name: preservation_management
 
 docstring: |
-    Capability to add and manage persistent archives. Includes definition of storage constraints and policies
+    Capability to add and manage persistence systems and their datastores (namespaces).
+    Includes definition of storage constraints and policies.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Preservation+Management+Service
 
 dependencies: [resource_registry]
 
 methods:
+  # Managing PersistenceSystem resources (such as a database cluster)
+
+  create_persistence_system:
+    docstring: |
+      Create an PersistenceSystem resource describing a persistence system, such as a database cluster.
+    in:
+      persistence_system: !PersistenceSystem
+    out:
+      persistence_system_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_persistence_system:
+    in:
+      persistence_system: !PersistenceSystem
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_persistence_system:
+    in:
+      persistence_system_id: ""
+    out:
+      persistence_system: !PersistenceSystem
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_persistence_system:
+    in:
+      persistence_system_id: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+  # Managing DataStore resources (namespaces in a PersistenceSystem)
+
   create_datastore:
+    docstring: |
+      Create an DataStore resource, describing a separate namespace in a PersistenceSystem
     in:
       datastore: !DataStore
     out:
       datastore_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
 
   update_datastore:
     in:
       datastore: !DataStore
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
 
   read_datastore:
     in:
       datastore_id: ""
     out:
       datastore: !DataStore
+    throws:
+      NotFound: object with specified id does not exist
 
   delete_datastore:
     in:
       datastore_id: ""
     out:
       success: True
+    throws:
+      NotFound: object with specified id does not exist
 
-  # -----------------
 
-  create_persistent_archive:
-    in:
-      persistent_archive: !PersistentArchive
-    out:
-      persistent_archive_id: ""
-
-  update_persistent_archive:
-    in:
-      persistent_archive: !PersistentArchive
-    out:
-      success: True
-
-  read_persistent_archive:
-    in:
-      persistent_archive_id: ""
-    out:
-      persistent_archive: !PersistentArchive
-
-  delete_persistent_archive:
-    in:
-      persistent_archive_id: ""
-    out:
-      success: True

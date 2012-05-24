@@ -1,0 +1,35 @@
+# observatory.yml
+
+
+# An entity that encompasses a defined location, time, and/or data-producing entities
+Site: !Extends_Resource
+  # Specified bounds in 2 or 3 dimensions within which entity exists
+  # Mandatory
+  geospatial_constraint: !GeospatialBounds
+
+  # Specified time constraint within which entity exists
+  temporal_constraint: "" # what is TemporalConstraint object?
+
+  # Collection of entities which collectively constrain the entity
+  entity_constraint: "" # what is EntityConstraint object?
+
+
+
+---
+# Represents an observatory and its physical and information resources (including Instruments),
+# providing Data Products, Event Detection and Instrument services
+# (Also: Marine Facility; Marine Observatory; Virtual Observatory)
+Observatory: !Extends_Site
+
+  
+# An entity that encompasses a defined location, time, and/or data-producing entities
+Subsite: !Extends_Site
+
+# A sub-site of an observatory, providing a slot, definition and metadata for platform information,
+# based on a succession of functionally equivalent (physical) Platform resources at a single site
+PlatformSite: !Extends_Site
+
+# An observatory sub-site, providing a slot, definition and metadata for instrument information,
+# based on a succession of functionally equivalent (physical) Instrument resources at a single site.
+InstrumentSite: !Extends_Site
+

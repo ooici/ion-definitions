@@ -1,5 +1,6 @@
-# resource.yml
+# Place resource specific definitions in here
 
+# Common base type of all resource objects
 Resource:
   # _id: ""   - Unique identifier (comes with every object)
   # _rev: ""   - Revision identifier (comes with every object)
@@ -11,126 +12,28 @@ Resource:
 
 ---
 
-TaskableResource: !Extends_Resource
-  # Taskable resources are resources with behavior and state. This object describes them.
-
+# Information resources are pure information artifacts. Abstract.
 InformationResource: !Extends_Resource
-  # Information resources are pure information artifacts. This object describes them.
 
 ---
 
+# Taskable resources are resources with behavior and state. This object describes them. Abstract.
+TaskableResource: !Extends_Resource
+---
+
+# Executable resources are information resources that can be instantiated into (separate) taskable resources. Abstract.
+ExecutableResource: !Extends_InformationResource
+
+---
+
+# Defined a named type of resource
 ResourceType: !Extends_InformationResource
 
 ResourceLifeCycle: !Extends_InformationResource
   definition_type: ""
   definition: {}
 
-AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
-  # ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application
-  # BLOB: the content is a binary
-  # OBJECT: the content is an arbitrary object, such as a dict, list
-
----
-
-Attachment: !Extends_InformationResource
-  # To identify attachments to resources
-  attachment_type: !AttachmentType
-  content_type: ""  # MIME type
-  content: {}
-  object_id: ""   # Associated object (resource) ID, for easier indexing
-
-DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
-
----
-
-AgentDefinition: !Extends_InformationResource
-
-AgentInstance: !Extends_TaskableResource
-  deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
-  exchange_name: ""
-  configuration: {}
-
----
-
-ContactInformation:
-  name: ""
-  address: ""
-  city: ""
-  postalcode: ""
-  state: ""
-  country: ""
-  phone: ""
-  email: ""
-  variables:
-  - name: ""
-    value: ""
-
-Institution:
-  name: ""
-  phone: ""
-  email: ""
-  website: ""
-
-GeospatialBounds:
-  geospatiallatmin: 0.0
-  geospatiallatmax: 0.0
-  geospatiallatunits: ""
-  geospatiallatresolution: 0.0
-  geospatiallonmin: 0.0
-  geospatiallonmax: 0.0
-  geospatiallonunits: ""
-  geospatiallonresolution: 0.0
-  geospatialverticalmin: 0.0
-  geospatialverticalmax: 0.0
-  geospatialverticalunits: ""
-  geospatialverticalresolution: 0.0
-  geospatialverticalpositive: 0.0
-  minbottomdepth: 0.0
-  maxbottomdepth: 0.0
-  depthunits: ""
-  depthverticalpositive: 0.0
-
-GeospatialLocation:
-  lat: 0.0
-  lon: 0.0
-
-# TODO: Replace in favor of Resource base object
-ResourceBasics:
-  name: ""
-  description: ""
-
-# TODO: Refine and use consistently, where needed to find
 ResourceFilter:
   filters: {}
 
-# TODO: Define
-DataFormat:
-  name: ""
-  description: ""
-  format_version_identifier: ""
-  between_record_delimiter: ""
-  # Mandatory for OOI Core Data, optional for external provider data
-  character_set: ""
-  unique_short_name: ""
-  long_name: ""
-  units: ""
-  # what is inserted when a real measurement is unavailable)
-  missing_value: ""
-  # a Java-style format specification for parsing a value from a string
-  value_format: ""
-  nominal_sampling_rate_minimum: "" # Hz
-  nominal_sampling_rate_maximum: "" # Hz
 
----
-
-FrameOfReference: !Extends_InformationResource
-
-  # Specified bounds in 2 or 3 dimensions within which entity exists
-  # Mandatory
-  geospatial_constraint: !GeospatialBounds
-
-  # Specified time constraint within which entity exists
-  temporal_constraint: ""   # what is TemporalConstraint object?
-
-  # Collection of entities which collectively constrain the entity
-  entity_constraint: ""     # what is EntityConstraint object?

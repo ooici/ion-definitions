@@ -1,13 +1,13 @@
-EPUDefinition: !Extends_InformationResource
+EPUDefinition: !Extends_ExecutableResource
   definition_type: ""
   definition: {}
 
 EPU: !Extends_TaskableResource
 
-DeployableType: !Extends_InformationResource
+DeployableType: !Extends_ExecutableResource
 
-DeployableUnit:
+DeployableUnit: !Extends_ExecutableResource
   tbd: ""
 
-OperationalUnit:
+OperationalUnit: !Extends_TaskableResource
   tbd: ""

@@ -103,12 +103,13 @@ apps:
 #    version: 0.1
 #    processapp: [instrument_management_service, ion.services.sa.instrument.instrument_management_service, InstrumentManagementService]
 #
-#  - name: marine_facility_management_service
+#  - name: observatory_management
 #    version: 0.1
-#    processapp: [instrument_management_service, ion.services.sa.marine_facility.marine_facility_management_service, MarineFacilityManagementService]
-
+#    processapp: [observatory_management, ion.services.sa.observatory.observatory_management_service, ObservatoryManagementService]
+#
+#
 # EOI services
 
   - name: external_data_agent_management
     version: 0.1
-    processapp: [external_data_agent_management, eoi.services.external_observatory_agent_service, ExternalObservatoryAgentService]
+    processapp: [external_data_agent_management, ion.services.eoi.external_observatory_agent_service, ExternalObservatoryAgentService]

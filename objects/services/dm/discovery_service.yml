@@ -79,6 +79,14 @@ methods:
     out:
       resources: []
 
+  iterative_traverse:
+    docstring: Iterative breadth-first traversal of the association graph for the specified resource.
+    in:
+      resource_id: ""
+      limit: -1
+    out:
+      resources: []
+
   intersect:
     docstring: The intersection between two sets of resources.
     in:

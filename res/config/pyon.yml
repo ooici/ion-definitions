@@ -31,7 +31,7 @@ system:
   config_from_directory: False
   # If true, the first container started will bootstrap the system config
   # into the directory.
-  auto_bootstrap: False
+  auto_bootstrap: True
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers

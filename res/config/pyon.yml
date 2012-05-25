@@ -177,6 +177,9 @@ service:
 external_data_agent_management:
   persistent: true
 
+instrument_management:
+  driver_release_host: amoeba.ucsd.edu
+  driver_release_directory: /var/www/releases
 
 # ----------------------------------------------------------------------------------
 # The "event" root entry defines event types and event originators, and it

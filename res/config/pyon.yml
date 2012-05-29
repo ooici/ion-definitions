@@ -33,6 +33,9 @@ system:
   # into the directory.
   auto_bootstrap: True
 
+  # Use ElasticSearch ?
+  elasticsearch: False
+
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.

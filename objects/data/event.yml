@@ -123,6 +123,13 @@ ResourcePolicyEvent: !Extends_Event
   resource_name: ""
 
 
+# The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
+# The origin is the org_id
+# the sub_type is GRANT or REVOKE
+UserRoleModifiedEvent: !Extends_Event
+  user_id: ""
+  role_name: ""
+
 # ------------------------------------------------------------------------------------
 # FORMER R1 event types - delete if not needed
 

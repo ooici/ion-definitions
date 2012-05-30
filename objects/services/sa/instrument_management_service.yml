@@ -108,6 +108,16 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  register_instrument_agent:
+    docstring: Register an InstrumentAgent egg, attach IDK validation docs and move the state to integrated
+    in:
+      instrument_agent_id: ""
+      agent_egg: ""
+      qa_documents: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+      BadRequest: agent in invalid state or invalid context
 
   # -----------------
   # Working with InstrumentDevice resources

@@ -86,7 +86,7 @@ methods:
     docstring: Create an instance or realization of a data process definition.
     in:
       data_process_definition_id: ""
-      in_data_product_id: ""
+      in_data_product_ids: []
       out_data_products: {}
       configuration: {}
     out:

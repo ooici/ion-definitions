@@ -33,6 +33,11 @@ system:
   # into the directory.
   auto_bootstrap: True
 
+  # Global config for use of a Real SMTP server or a fake logging class
+  # True is Real
+  # False is fake
+  smtp: False
+
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.
@@ -62,6 +67,9 @@ server:
     port: 5984
     username:
     password:
+  smtp:
+    host: localhost
+    port: 25
 
 
 # ----------------------------------------------------------------------------------

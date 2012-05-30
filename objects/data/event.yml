@@ -210,3 +210,16 @@ InstrumentSampleDataEvent: !Extends_DataEvent
 ExceptionEvent: !Extends_Event
   exception_type: ""
   exception_message: ""
+
+---
+
+ExampleDetectableEvent: !Extends_Event
+  voltage: ""
+
+---
+
+DetectionEvent: !Extends_Event
+  message: ""             # Message field for this detection event
+  condition: ""           # Concatenate the filter and make it a message
+  original_origin: ""     # The origin from the event that was detected by the filter
+  original_type: ""       # The type of the event that was detected by the filter

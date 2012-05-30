@@ -44,3 +44,19 @@ EmailDeliveryConfig: !Extends_DeliveryConfig
     email: ""            # Email address to use. If empty, get user contact-info
     mode: !DeliveryMode  # Delivery mode for email notification based on google groups api
     period: ""           # Period of delivery for Digest and Abridged mode in seconds
+
+---
+
+# For Detection Event
+DetectionFilterConfig: !Extends_DeliveryConfig
+  processing:
+    filter_field: ""  #Field to filter on.
+    comparator: ""    #Method of comparison: <,>,==
+    condition: ""     #Condition to test for
+
+  delivery: # contians the information to send when an event is detected
+    #origin: ""       #Use the notification id
+    #origin_type: ""  #Use notification type
+    #event_type: ""   #Detection Event
+    #event_subtype: ""#Detection!
+    message: ""       # Message to be put in the detection event

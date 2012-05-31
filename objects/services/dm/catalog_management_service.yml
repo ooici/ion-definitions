@@ -54,37 +54,3 @@ methods:
     out:
       success: []
 
-  catalog_search:
-    in:
-      catalog_id: ""
-      field: ""
-      query: ""
-    out:
-      success: []
-
-  refresh_indexes:
-    in:
-      catalog_id: ""
-      index_ids: []
-    out:
-      success: True
-
-  remove_indexes:
-    in:
-      catalog_id: ""
-      index_ids: []
-    out:
-      success: True
-
-  search_fields:
-    in:
-      catalog_id: ""
-    out:
-      fields: {}
-
-  catalog_fields:
-    in:
-      catalog_id: ""
-    out:
-      fields: {}
-

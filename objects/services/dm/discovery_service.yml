@@ -106,6 +106,8 @@ methods:
   parse:
     dosctring: |
       Parses a given string request and assembles the query, processes the query and returns the results of the query.
+      This is the primary means of interfacing with the search features in discovery.
+      See the formal language definition: https://confluence.oceanobservatories.org/display/CIDev/Pyon+Discovery+Query+DSL
     in: 
       search_request: ''
     out:
@@ -121,7 +123,7 @@ methods:
       results: []
 
   query_term:
-    docstring: Processes a term search query.
+    docstring: A term search which supports wildcards.
     in:
       source_id: ""
       field: ""
@@ -134,7 +136,7 @@ methods:
       results: []
 
   query_range:
-    docstring: Processes a range query.
+    docstring: A ranged search for fields with numbers
     in:
       source_id: ""
       field: ""
@@ -148,7 +150,7 @@ methods:
       results: []
 
   query_association:
-    docstring: Proccesses an association query.
+    docstring: Returns the list of all resources belonging to the specified resource.
     in:
       resource_id: ""
       limit: 0
@@ -157,7 +159,7 @@ methods:
       results: []
 
   query_collection:
-    docstring: Processes a collection query.
+    docstring: Returns the list of all resources that belong to the specified collection.
     in:
       collection_id: ""
       id_only: False
@@ -166,7 +168,8 @@ methods:
 
   request:
     docstring: |
-      Temporary method exposure for client testing purposes.
+      Process request objects.
+      Request objects are the collection of parameters and tokens assembled by the parser.
     in:
       query: {}
       id_only: True

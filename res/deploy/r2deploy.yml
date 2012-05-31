@@ -179,6 +179,10 @@ apps:
     version: 0.1
     processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
 
+  - name: preservation_management
+    version: 0.1
+    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
+
   - name: catalog_management
     version: 0.1
     processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]

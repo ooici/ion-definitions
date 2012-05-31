@@ -223,3 +223,6 @@ DetectionEvent: !Extends_Event
   condition: ""           # Concatenate the filter and make it a message
   original_origin: ""     # The origin from the event that was detected by the filter
   original_type: ""       # The type of the event that was detected by the filter
+---
+
+SearchBufferExceededEvent: !Extends_Event

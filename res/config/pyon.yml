@@ -38,6 +38,9 @@ system:
   # False is fake
   smtp: False
 
+  # Use ElasticSearch ?
+  elasticsearch: False
+
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.
@@ -70,7 +73,20 @@ server:
   smtp:
     host: localhost
     port: 25
-
+  elasticsearch:
+    type:           elasticsearch
+    host:           localhost
+    port:           9200
+    shards:         1        # Defines the default number of shards for indexes
+    replicas:       0        # Defines the default number of replicas for each shard
+    river_shards:   1        # Defines the number of shards for the _river
+    river_replicas: 0        # Defines the number of replicas (important) for the _river
+                             # This number should be the number of nodes running exactly
+# Example of production-like configuration
+#    shards: 5
+#    replicas: 1
+#    river_shards: 5
+#    replicas: 1
 
 # ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container

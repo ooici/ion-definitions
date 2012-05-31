@@ -149,10 +149,6 @@ apps:
     version: 0.1
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
 
-  - name: ingestion_management
-    version: 0.1
-    processapp: [ingestion_management, ion.services.dm.ingestion.ingestion_management_service, IngestionManagementService]
-
   - name: transform_management
     version: 0.1
     processapp: [transform_management, ion.services.dm.transformation.transform_management_service, TransformManagementService]
@@ -167,6 +163,10 @@ apps:
     version: 0.1
     processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
 
+  - name: ingestion_management
+    version: 0.1
+    processapp: [ingestion_management, ion.services.dm.ingestion.ingestion_management_service, IngestionManagementService]
+
   - name: data_retriever
     version: 0.1
     processapp: [data_retriever, ion.services.dm.inventory.data_retriever_service, DataRetrieverService]
@@ -179,17 +179,17 @@ apps:
     version: 0.1
     processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
 
-#  - name: catalog_management
-#    version: 0.1
-#    processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
+  - name: catalog_management
+    version: 0.1
+    processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
 
-#  - name: discovery
-#    version: 0.1
-#    processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
+  - name: discovery
+    version: 0.1
+    processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
 
-#  - name: preservation_management
-#    version: 0.1
-#    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
+  - name: preservation_management
+    version: 0.1
+    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
 
 
   ##### SA SERVICES

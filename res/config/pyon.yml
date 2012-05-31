@@ -33,6 +33,11 @@ system:
   # into the directory.
   auto_bootstrap: True
 
+  # Global config for use of a Real SMTP server or a fake logging class
+  # True is Real
+  # False is fake
+  smtp: False
+
   # Use ElasticSearch ?
   elasticsearch: False
 
@@ -65,6 +70,9 @@ server:
     port: 5984
     username:
     password:
+  smtp:
+    host: localhost
+    port: 25
   elasticsearch:
     type:           elasticsearch
     host:           localhost

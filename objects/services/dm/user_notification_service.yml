@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, transform_management]
 
 methods:
   create_notification:
@@ -22,6 +22,71 @@ methods:
     throws:
       BadRequest: if object passed has _id or _rev attribute, or if more than one user info exists
       NotFound: if user does not exist, user info does not exist, or user email does not exist
+
+  create_email:
+    docstring: |
+      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+      resource with the user. Setup subscription and call back to send email
+      @todo - is the user email automatically selected from the user id?
+    in:
+      name: ""
+      description: ""
+      event_type: ""
+      event_subtype: ""
+      origin: ""
+      origin_type: ""
+      user_id: ""
+      email: ""
+      mode: !DeliveryMode
+      message_header: ""
+      parser: ""
+      period: 86400 # Integer number of seconds between emails - default is daily
+    out:
+      notification_id: ""
+    throws:
+      NotFound: if user does not exist, user info does not exist, or user email does not exist
+
+  create_sms:
+    docstring: |
+      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+      resource with the user. Setup subscription and call back to send an sms to their phone
+      @todo - is the user email automatically selected from the user id?
+    in:
+      name: ""
+      description: ""
+      event_type: ""
+      event_subtype: ""
+      origin: ""
+      origin_type: ""
+      user_id: ""
+      phone: ""
+      provider: ""
+      message_header: ""
+      parser: ""
+    out:
+      notification_id: ""
+    throws:
+      NotFound: if user does not exist, user info does not exist, or user email does not exist
+
+  create_detection_filter:
+    docstring: |
+      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+      resource with the user. Setup subscription and call back do a detection filter of some type...
+      @todo - is the user email automatically selected from the user id?
+    in:
+      name: ""
+      description: ""
+      event_type: ""
+      event_subtype: ""
+      origin: ""
+      origin_type: ""
+      user_id: ""
+      filter_config: !DeliveryConfig
+    out:
+      notification_id: ""
+    throws:
+      NotFound: if user does not exist, user info does not exist, or user email does not exist
+
 
   update_notification:
     docstring: |
@@ -60,21 +125,11 @@ methods:
       BadRequest: if more than one user exists for the notification
       NotFound: if object with specified id does not exist, user for notification does not exist, or association does not exist
 
-  find_notifications_by_user:
-    docstring: |
-      Returns a list of notifications for a specific user. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
-    in:
-      user_id: ""
-    out:
-      notification_list: []
-    throws:
-      NotFound: if object with specified id does not exist
-
   find_events:
     docstring: |
       Returns a list of events that match the specified search criteria. Will throw a not NotFound exception
       if no events exist for the given parameters.
+      @todo can we replace this with discovery service?
     in:
       origin: ""
       type: ""
@@ -86,28 +141,3 @@ methods:
       event_list: []
     throws:
       NotFound: if object with specified paramteres does not exist  
-      
-  find_event_types_for_resource:
-    docstring: |
-      Returns a list of event types that the resource can publish. Will throw a not NotFound exception
-      if no resource exists for the given parameter.
-    in:
-      resource_id: ""
-    out:
-      event_type_list: []
-    throws:
-      NotFound: if object with specified parameters does not exist
-
-  generate_event:
-    docstring: Manually generate an event
-    in:
-      event_type: "Event"
-      origin: ""
-      origin_type: ""
-      event_fields: {}
-      sub_type: ""
-      description: ""
-    out:
-    throws:
-      BadRequest: if origin is missing or not a str, if event_fields is missing or not a dict, or if the event failed to publish
-      NotFound: if event type unknown

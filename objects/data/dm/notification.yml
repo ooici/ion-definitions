@@ -1,4 +1,62 @@
+
+
+DeliveryMode: !enum (values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
+
+NotificationType: !enum (values=(EMAIL, SMS, FILTER), default=EMAIL)
+
+
+# Base class objects....
+DeliveryConfig:
+  process_definition_id: ""
+  # Can't define these in the base class and in the child class... limitation of extends...
+  #processing: {}             # Instructions for the processing of received events
+  #delivery: {}               # Instructions for the delivery of the notification
+
+---
+
 NotificationRequest: !Extends_InformationResource
-  origin_list: []
-  events_list: []
-  delivery_properties: {}
+  type: !NotificationType
+  origin: ""
+  origin_type: ""
+  event_type: ""
+  event_subtype: ""
+  delivery_config: !DeliveryConfig
+
+---
+
+# For SMS delivery....
+SMSDeliveryConfig: !Extends_DeliveryConfig
+  processing:
+    message_header: ""   # Short user defined header for the message?
+    parsing: ""          # Instructions on how to parse the notification to produce an SMS - more than just a string?
+  delivery:
+    phone_number: ""     # Phone number to use. If empty, get user contact-info
+    provider: ""         # Service provider to lookup how to sms
+
+---
+
+# For Email delivery....
+EmailDeliveryConfig: !Extends_DeliveryConfig
+  processing:
+    message_header: ""   # User defined header for the message
+    parsing: ""          # Instructions on how to parse the notification to produce an SMS - more than just a string?
+  delivery:
+    email: ""            # Email address to use. If empty, get user contact-info
+    mode: !DeliveryMode  # Delivery mode for email notification based on google groups api
+    period: ""           # Period of delivery for Digest and Abridged mode in seconds
+
+---
+
+# For Detection Event
+DetectionFilterConfig: !Extends_DeliveryConfig
+  processing:
+    filter_field: ""  #Field to filter on.
+    comparator: ""    #Method of comparison: <,>,==
+    condition: ""     #Condition to test for
+
+  delivery: # contians the information to send when an event is detected
+    #origin: ""       #Use the notification id
+    #origin_type: ""  #Use notification type
+    #event_type: ""   #Detection Event
+    #event_subtype: ""#Detection!
+    message: ""       # Message to be put in the detection event

@@ -63,14 +63,14 @@ PredicateTypes:
 
 # DM
   hasArchive:
-    domain: [Datastore]
+    domain: [DataStore]
     range: [PersistentArchive]
   hasCatalog:
     domain: [View]
     range: [Catalog]
   hasDatastore:
-    domain: [View, Index,PersistenceSystem,PersistenceInstance]
-    range: [Datastore]
+    domain: [View, Index, PersistenceSystem, PersistenceInstance]
+    range: [DataStore]
   hasPersistenceInstance:
     domain: [PersistenceSystem]
     range: [PersistenceInstance]

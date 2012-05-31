@@ -212,12 +212,12 @@ ExceptionEvent: !Extends_Event
   exception_message: ""
 
 ---
-
+# input for example detection process
 ExampleDetectableEvent: !Extends_Event
-  voltage: ""
+  voltage: 0
 
 ---
-
+# output event from detection process
 DetectionEvent: !Extends_Event
   message: ""             # Message field for this detection event
   condition: ""           # Concatenate the filter and make it a message

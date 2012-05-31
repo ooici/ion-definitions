@@ -1,2 +1,4 @@
 View: !Extends_InformationResource
-  function: ""
+  order:   []
+  filters: ""
+

@@ -100,7 +100,6 @@ PredicateTypes:
   hasView:
     domain: [View, Catalog]
     range: [View]
-    range: [Node]
 # COI
   affiliatedWith:
     domain: [Org]

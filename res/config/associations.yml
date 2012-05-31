@@ -66,7 +66,7 @@ PredicateTypes:
     range: [DataStore]
   hasIndex:
     domain: [Catalog, Datastore]
-    range: [Index,ElasticSearchIndex,CouchDBIndex]
+    range: [Index]
   hasIngestionConfiguration:
     domain: [DataSet, DatasetIngestionConfiguration]
     range: [IngestionConfiguration]

@@ -1,9 +1,10 @@
 Index: !Extends_InformationResource
-  content_type:   "" # Devices, Instruments, Users etc.
+  # Devices, Instruments, Users etc.
+  content_type:   "" 
   options:        !SearchOptions
 
 ---
-
+# A resource which contains a list of resources
 Collection: !Extends_InformationResource
   resources: []
   options:   !SearchOptions

@@ -31,7 +31,15 @@ system:
   config_from_directory: False
   # If true, the first container started will bootstrap the system config
   # into the directory.
-  auto_bootstrap: False
+  auto_bootstrap: True
+
+  # Global config for use of a Real SMTP server or a fake logging class
+  # True is Real
+  # False is fake
+  smtp: False
+
+  # Use ElasticSearch ?
+  elasticsearch: False
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers
@@ -62,7 +70,23 @@ server:
     port: 5984
     username:
     password:
-
+  smtp:
+    host: localhost
+    port: 25
+  elasticsearch:
+    type:           elasticsearch
+    host:           localhost
+    port:           9200
+    shards:         1        # Defines the default number of shards for indexes
+    replicas:       0        # Defines the default number of replicas for each shard
+    river_shards:   1        # Defines the number of shards for the _river
+    river_replicas: 0        # Defines the number of replicas (important) for the _river
+                             # This number should be the number of nodes running exactly
+# Example of production-like configuration
+#    shards: 5
+#    replicas: 1
+#    river_shards: 5
+#    replicas: 1
 
 # ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container
@@ -171,6 +195,9 @@ core_stream_types:
 # ----------------------------------------------------------------------------------
 # The "service" root entry
 service:
+  instrument_management:
+    driver_release_host: amoeba.ucsd.edu
+    driver_release_directory: /var/www/releases
 
 
 # TBD: Remove (use global flags instead)

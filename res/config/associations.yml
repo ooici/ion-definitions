@@ -74,8 +74,11 @@ PredicateTypes:
   hasPersistenceInstance:
     domain: [PersistenceSystem]
     range: [PersistenceInstance]
+  hasElement:
+    domain: [Collection]
+    range: [Resource]
   hasIndex:
-    domain: [Catalog]
+    domain: [Catalog, Datastore]
     range: [Index]
   hasIngestionConfiguration:
     domain: [DataSet, DatasetIngestionConfiguration]
@@ -107,10 +110,9 @@ PredicateTypes:
   hasTransform:
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
-
-
-
-
+  hasView:
+    domain: [View, Catalog]
+    range: [View]
 # COI
   affiliatedWith:
     domain: [Org]

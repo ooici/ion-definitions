@@ -7,13 +7,14 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Catalog+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry,index_management]
 
 methods:
   create_catalog:
     docstring: A catalog is a new data set that aggregates and presents datasets in a specific way.
     in:
-      catalog: !Catalog
+      catalog_name: ""
+      keywords:     []
     out:
       catalog_id: ""
 
@@ -24,7 +25,7 @@ methods:
       success: True
 
   read_catalog:
-    # Reads the catalog resource including its definition
+    docstring: Read catalog resources
     in:
       catalog_id: ""
     out:
@@ -35,4 +36,21 @@ methods:
       catalog_id: ""
     out:
       success: True
+
+
+  add_indexes:
+    docstring: Add the listed indexes to the catalog.
+    in:
+      catalog_id: ""
+      index_ids: []
+    out:
+      success: True
+
+  list_indexes:
+    docstring: List the indexes for the specified catalog
+    in:
+      catalog_id: ""
+      id_only: True
+    out:
+      success: []
 

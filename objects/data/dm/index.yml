@@ -1,0 +1,22 @@
+Index: !Extends_InformationResource
+  # Devices, Instruments, Users etc.
+  content_type:   "" 
+  options:        !SearchOptions
+
+---
+# A resource which contains a list of resources
+Collection: !Extends_InformationResource
+  resources: []
+  options:   !SearchOptions
+
+---
+
+CouchDBIndex: !Extends_Index
+  view_name: ""
+  datastore_name: ""
+
+---
+
+ElasticSearchIndex: !Extends_Index
+  index_name: ""
+  index_type: ""

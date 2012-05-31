@@ -123,6 +123,13 @@ ResourcePolicyEvent: !Extends_Event
   resource_name: ""
 
 
+# The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
+# The origin is the org_id
+# the sub_type is GRANT or REVOKE
+UserRoleModifiedEvent: !Extends_Event
+  user_id: ""
+  role_name: ""
+
 # ------------------------------------------------------------------------------------
 # FORMER R1 event types - delete if not needed
 
@@ -203,3 +210,19 @@ InstrumentSampleDataEvent: !Extends_DataEvent
 ExceptionEvent: !Extends_Event
   exception_type: ""
   exception_message: ""
+
+---
+# input for example detection process
+ExampleDetectableEvent: !Extends_Event
+  voltage: 0
+
+---
+# output event from detection process
+DetectionEvent: !Extends_Event
+  message: ""             # Message field for this detection event
+  condition: ""           # Concatenate the filter and make it a message
+  original_origin: ""     # The origin from the event that was detected by the filter
+  original_type: ""       # The type of the event that was detected by the filter
+---
+
+SearchBufferExceededEvent: !Extends_Event

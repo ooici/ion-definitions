@@ -10,32 +10,92 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Index+
 dependencies: [resource_registry]
 
 methods:
+  # -- CRUD indexes -- 
   create_index:
     in:
-      index: !Index
+      name:           ""
+      description:    ""
+      content_type:   ""
+      options:        !SearchOptions
+      datastore_name: ""
+      view_name:      ""
     out:
-      index_id: ""
+      index_id:       ""
 
   update_index:
     in:
-      index: !Index
+      index:          !Index
     out:
-      success: True
+      success:        True
 
   read_index:
+    docstring:        "Retrieves the index resource from the registry."
     in:
-      index_id: ""
+      index_id:       ""
     out:
-      index: !Index
+      index:          !Index
 
   delete_index:
+    docstring:        "Deletes and removes the index from the registry and from ElasticSearch"
     in:
-      index_id: ""
+      index_id:       ""
     out:
-      success: True
+      success:        True
+
+  # --------------------------
+
+  list_indexes:
+    in:
+      id_only:    True
+    out:
+      success:    {}
 
   find_indexes:
     in:
-      filters: !ResourceFilter
+      index_name: ""
+      filters:    !ResourceFilter
     out:
       index_list: []
+
+  # -- CRUD Collection --
+
+  create_collection:
+    in:
+      name:          ""
+      resources:     []
+    out:
+      collection_id: ""
+
+  read_collection:
+    in:
+      collection_id: ""
+    out:
+      collection:    !Collection
+
+  update_collection:
+    in:
+      collection:    !Collection
+    out: 
+      collection_id: ""
+
+  delete_collection:
+    in:
+      collection_id: ""
+    out:
+      success:       True
+  
+  # --------------------------
+
+  list_collection_resources:
+    in:
+      collection_id:   ""
+      id_only:         False
+    out:
+      success:         []
+
+  find_collection:
+    in:
+      collection_name: ""
+      resource_ids:    []
+    out:
+      collections:     []

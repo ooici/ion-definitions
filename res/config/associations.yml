@@ -64,6 +64,9 @@ PredicateTypes:
   hasDataStore:
     domain: [PersistenceSystem]
     range: [DataStore]
+  hasElement:
+    domain: [Collection]
+    range: [Resource]
   hasIndex:
     domain: [Catalog, Datastore]
     range: [Index]
@@ -97,8 +100,6 @@ PredicateTypes:
   hasView:
     domain: [View, Catalog]
     range: [View]
-  hasNode:
-    domain: [Node]
     range: [Node]
 # COI
   affiliatedWith:

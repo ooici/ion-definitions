@@ -73,6 +73,8 @@ server:
   smtp:
     host: localhost
     port: 25
+    sender: me@email.com
+    password: Iwillnotell
   elasticsearch:
     type:           elasticsearch
     host:           localhost

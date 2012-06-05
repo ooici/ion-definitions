@@ -385,6 +385,15 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  retrieve_external_dataset_agent_instance:
+    docstring: Find the  agent instance for a dataset and check if running
+    in:
+      external_dataset_id: ""
+    out:
+      tuple: []
+    throws:
+      NotFound: object with specified id does not exist
+
   # -----------------
   # The following operations assign and unassign data source to an external data provider
 

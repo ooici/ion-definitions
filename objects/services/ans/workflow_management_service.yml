@@ -69,11 +69,12 @@ methods:
       BadRequest: if any of the required parameters are not set
       NotFound: object with specified id does not exist
 
-  termindate_data_process_workflow:
+  terminate_data_process_workflow:
     docstring: |
       Terminates a Workflow specific by a Workflow Definition resource which includes all internal processes.
     in:
       workflow_id: ""
+      delete_data_products: True      #If True, then all related data products will be deleted
     out:
     throws:
       BadRequest: if any of the required parameters are not set

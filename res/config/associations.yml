@@ -16,7 +16,7 @@ PredicateTypes:
     domain: [DataProcess, Device, ExternalDataset, DataProduct]
     range: [DataProducer]
   hasDataProduct:
-    domain: [Site]
+    domain: [Site, Workflow]
     range: [DataProduct]
   hasDevice:
     domain: [Site, Device]
@@ -133,8 +133,8 @@ PredicateTypes:
     domain: [ActorIdentity]
     range: [UserCredentials]
   hasDefinition:
-    domain: [TaskableResource]
-    range: [ExecutableResource]
+    domain: [TaskableResource, Workflow]
+    range: [ExecutableResource, WorkflowDefinition]
   hasExchangeBroker:
     domain: [ExchangeSpace]
     range: [ExchangeBroker]
@@ -179,8 +179,8 @@ PredicateTypes:
     range: [ConversationType]
 # CEI
   hasProcessDefinition:
-    domain: [Resource, Workflow]
-    range: [ProcessDefinition, DataProcessDefinition, WorkflowDefinition]
+    domain: [Resource]
+    range: [ProcessDefinition, DataProcessDefinition]
   supportsExecutionEngine:
     domain: [ProcessDefinition]
     range: [ExecutionEngineDefinition]
@@ -227,7 +227,11 @@ PredicateTypes:
     range: [UIResource]
 
 # AS
-  hasProcess:
+  hasDataProcessDefinition:
+    domain: [DataProcessWorkflowDefinition]
+    range: [DataProcessDefinition]
+
+  hasDataProcess:
     domain: [Workflow]
     range: [DataProcess]
 

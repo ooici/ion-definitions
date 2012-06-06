@@ -159,6 +159,7 @@ methods:
       results: []
 
   query_geo_distance:
+    docstring: Searches for resources based on the distance from an origin.
     in:
       source_id: ""
       field: ""

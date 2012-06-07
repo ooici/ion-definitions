@@ -87,6 +87,29 @@ DeviceOperatorEvent: !Extends_ResourceOperatorEvent
 
 ---
 # ------------------------------------------------------------------------------------
+# DataSource Events
+# ------------------------------------------------------------------------------------
+ExternalDataSourceEvent: !Extends_ResourceEvent
+
+ExternalDataSourceStatusEnum: !enum (values=(ONLINE, OFFLINE), default=OFFLINE)
+
+---
+
+ExternalDatasetAddedEvent: !Extends_ExternalDataSourceEvent
+  dataset_information: {}
+
+ExternalDatasetRemovedEvent: !Extends_ExternalDataSourceEvent
+  dataset_information: {}
+
+ExternalDatasetChangedEvent: !Extends_ExternalDataSourceEvent
+  dataset_information: {} # Not really sure what this will be...
+
+ExternalDataSourceStatusEvent: !Extends_ExternalDataSourceEvent
+  status: !ExternalDataSourceStatusEnum
+
+
+---
+# ------------------------------------------------------------------------------------
 # Governance Events
 # ------------------------------------------------------------------------------------
 

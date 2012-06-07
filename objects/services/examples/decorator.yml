@@ -1,0 +1,18 @@
+# Example of adding decorators
+name: decorators_example
+docstring: Example of adding decorators 
+dependencies: []
+
+methods:
+  new_account:
+    docstring: Decorators do not have space after # 
+    in:
+      # this is comment for arg1
+      #@Decorator
+      arg1: ""  
+    out:
+      # this is comment for arg2
+      #@Notnull
+      #@Required
+      #@Int
+      arg2: "" # This is inline comment

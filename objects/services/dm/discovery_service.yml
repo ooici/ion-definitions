@@ -163,9 +163,23 @@ methods:
     in:
       source_id: ""
       field: ""
-      origin: !GeospatialLocation
+      origin: []
       distance: ""
       units: ""
+      order: {}
+      limit: 0
+      offset: 0
+      id_only: False
+    out:
+      results: []
+
+  query_geo_bbox: 
+    docstring: Searches for resources based on a bounding box.
+    in:
+      source_id: ""
+      field: ""
+      top_left: []
+      bottom_right: []
       order: {}
       limit: 0
       offset: 0

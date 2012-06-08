@@ -9,6 +9,7 @@ DataProcessWorkflowStep: !Extends_WorkflowStep
   data_process_definition_id: ""
   persist_process_output_data: True
   output_data_product_name: ""  #Optional name to use for the result output data product for the step
+  configuration: {}  #Optional configuration dict passed to data process being created.
 
 ---
 

@@ -57,7 +57,7 @@ DetectionFilterConfig: !Extends_DeliveryConfig
 #    comparator: ""    #Method of comparison: <,>,==
 #    condition: ""     #Condition to test for
 
-  delivery: # contians the information to send when an event is detected
+  delivery: # contains the information to send when an event is detected
     #origin: ""       #Use the notification id
     #origin_type: ""  #Use notification type
     #event_type: ""   #Detection Event

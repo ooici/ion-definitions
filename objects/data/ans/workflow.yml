@@ -7,18 +7,14 @@ WorkflowStep:
 
 DataProcessWorkflowStep: !Extends_WorkflowStep
   data_process_definition_id: ""
-  persist_data: True
-  persist_metadata: True
+  persist_process_output_data: True
+  output_data_product_name: ""  #Optional name to use for the result output data product for the step
+  configuration: {}  #Optional configuration dict passed to data process being created.
 
 ---
 
 WorkflowDefinition: !Extends_InformationResource
   workflow_steps: []  # A list of ordered workflow steps
----
 
-DataProcessWorkflowDefinition: !Extends_WorkflowDefinition
-  output_data_product_name: ""  #Optional name to use for output data product
-
----
 
 Workflow: !Extends_InformationResource

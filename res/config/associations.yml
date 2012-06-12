@@ -228,7 +228,7 @@ PredicateTypes:
 
 # AS
   hasDataProcessDefinition:
-    domain: [DataProcessWorkflowDefinition]
+    domain: [WorkflowDefinition]
     range: [DataProcessDefinition]
 
   hasDataProcess:

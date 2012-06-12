@@ -85,3 +85,7 @@ loggers:
     handlers: [console, file]
     level: DEBUG
 
+  mi:
+    handlers: [console, file]
+    level: DEBUG
+

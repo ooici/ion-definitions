@@ -3,4 +3,4 @@ idk:
   coi_repo_dir_name: coi-services
   mi_repo_dir_name: marine-integrations
   driver_dir: driver
-  template_dir: ion/idk/templates
+  template_dir: mi/idk/templates

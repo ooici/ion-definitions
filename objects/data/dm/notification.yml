@@ -52,11 +52,6 @@ DetectionFilterConfig: !Extends_DeliveryConfig
   processing:
     search_string: ""
 
-#  processing:
-#    filter_field: ""  #Field to filter on.
-#    comparator: ""    #Method of comparison: <,>,==
-#    condition: ""     #Condition to test for
-
   delivery: # contains the information to send when an event is detected
     #origin: ""       #Use the notification id
     #origin_type: ""  #Use notification type

@@ -1,13 +1,8 @@
 # Minimal configuration file for bootstrapping the ION container,
 # system and services via the directory.
+# Note: override with pyon.local.yml
 system:
-  name:
   root_org: ION
-  force_clean: False
-  # Indicates this container should not bootstrap the directory.
-  # Rather, it should get its configuration from the directory.
-  auto_bootstrap: False
-
 
 # Config values to allow discovery of the directory
 container:
@@ -22,4 +17,3 @@ server:
     port: 5984
     username:
     password:
-

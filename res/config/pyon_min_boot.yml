@@ -3,6 +3,7 @@
 # Note: override with pyon.local.yml
 system:
   root_org: ION
+  auto_bootstrap: True
 
 # Config values to allow discovery of the directory
 container:

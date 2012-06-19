@@ -8,34 +8,28 @@
 # The "system" root entry defines settings for the distributed ION system that this
 # container starts or joins. A system comprises all containers with the same sysname.
 system:
-  # The Org (name) that starts the system
+  # Override for sysname in tests. Usually set via pycc command line
+  name:
+
+  # Name of the Org that bootstraps the system. Super-Org in Release 2
   root_org: ION
+
   # The name of the ION System ActorIdentity
   system_actor: ionsystem
-  # TODO remove
-  mockdb: False
-  # Controls cleaning of all persistent stores and reset system to defaults on start.
-  # Note: this is dangerous and will likely change to False or go away soon.
-  force_clean: True
-  # Flag indicating test run. Is set to False if started as interactive container
-  testing: True
-  # Global flag indicating debug mode. Can perform more expensive operations if True
-  debug: True
 
   # Global flag indicating degraded mode during initial bootstrap phases
-  # (e.g. no use of RR, messaging, datastore, events, etc)
-  bootstrapping: False
-  # Load config from directory.
-  # If true, merge order is pyon.yml+directory+pyon.local.yml+cmdline
-  # If false, merge order is pyon.yml+pyon.local.yml+cmdline
-  config_from_directory: False
-  # If true, the first container started will bootstrap the system config
-  # into the directory.
+  # (e.g. no use of RR, messaging, datastore, events, etc). Will be cleared when bootstrapped.
+  bootstrapping: True
+
+  # Global flag indicating debug mode. Code can perform more expensive operations if True
+  debug: True
+
+  # If true, the first container started will bootstrap the system config and interfaces
+  # into the directory and resource registry to avoid explicit pre-initialization step.
   auto_bootstrap: True
 
   # Global config for use of a Real SMTP server or a fake logging class
-  # True is Real
-  # False is fake
+  # True is Real, False is fake
   smtp: False
 
   # Use ElasticSearch ?
@@ -46,7 +40,7 @@ system:
 # These entries are names of server/credential profiles that can be referenced in other settings.
 server:
   amqp:
-    # The basic broker connection
+    # The normal container broker connection
     type: amqp_91
     host: localhost
     port: 5672
@@ -55,7 +49,7 @@ server:
     vhost: /
     heartbeat: 30
   amqp_priv:
-    # The privileged broker connection the Exchange Management Service uses
+    # The privileged broker connection that the Exchange Management Service uses
     type: amqp_91
     host: localhost
     port: 5672
@@ -71,11 +65,14 @@ server:
     username:
     password:
   smtp:
+    # Outgoing email server
+    type: smtp
     host: localhost
     port: 25
     sender: me@email.com
     password: Iwillnotell
   elasticsearch:
+    # Search index server
     type:           elasticsearch
     host:           localhost
     port:           9200
@@ -102,7 +99,7 @@ container:
   messaging:
     server:
       primary: amqp
-      priviledged: amqp_priv
+      priviledged:
     endpoint: # TBD: move entries to here
     interceptor: # TBD: move entries to here
 

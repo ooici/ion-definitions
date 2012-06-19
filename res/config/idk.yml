@@ -4,3 +4,4 @@ idk:
 
   rabbitmq: /usr/local/sbin/rabbitmq-server
   couchdb: /usr/local/bin/couchdb
+  git: /usr/local/bin/git

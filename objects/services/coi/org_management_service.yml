@@ -339,7 +339,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_roles_by_user:
+  find_org_roles_by_user:
     docstring: |
       Returns a list of User Roles for a specific user in an Org.
       Will throw a not NotFound exception if either of the IDs do not exist.

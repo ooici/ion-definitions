@@ -4,3 +4,16 @@ UserInfo: !Extends_InformationResource
   variables:
   - name: ""
     value: ""
+
+
+---
+
+ActorIdentityExtension: !Extends_ResourceContainer
+  credentials: !UserCredentials #hasCredentials
+  user_info: !UserInfo    #hasInfo
+  roles: []  #Can this be fulffiled with a decorator too?
+  policies: []  #hasPolicy
+  owned_resources: [] #hasOwner #Subject
+  #recent_events: []  #NOt sure about this one
+  user_requests: []  #hasRequest - maybe need to further qualify with status?
+

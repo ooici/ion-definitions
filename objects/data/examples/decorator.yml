@@ -1,8 +1,11 @@
-# This is example how to add decorators. Decorators don't have space after the #
+# This is example for adding decorators
 
 Deco_Example:
-  #Decorrator
-  #Required
-  foo: '1' 
-  # This is comment
+  # This is comment for foo
+  #@Decorator
+  #@Required
+  foo: '1' # This inline comment for foo
+  # This is comment for foo2
+  # This is second line comment
+  #@Int
   foo2: '' 

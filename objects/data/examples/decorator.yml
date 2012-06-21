@@ -1,0 +1,8 @@
+# This is example how to add decorators. Decorators don't have space after the #
+
+Deco_Example:
+  #Decorrator
+  #Required
+  foo: '1' 
+  # This is comment
+  foo2: '' 

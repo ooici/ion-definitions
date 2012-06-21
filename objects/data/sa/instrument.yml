@@ -51,22 +51,33 @@ InstrumentAgentInstance: !Extends_AgentInstance
 
 
 ---
-#Example set of computed attributes for instrument
+#Example set of computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
-  software_version: ""  #identifier of software installed in unit  @get_software_version(instrument_device_id)
-  attached_sensors: []  #list of sensors attached to this device   @get_attached_sensors(instrument_device_id)
-  location: !GeospatialBounds  #current geospatial (3D) location of instrument   @get_location(instrument_device_id)
-  sensor_count: 0   # example value for association count  @get_association_count(#hasSensor)
-  data_produced: ""   #URL (public) / Resource _id    @get_data_produced(instrument_device_id)
+  #@method
+  software_version: ""  #identifier of software installed in unit
+  #@method
+  attached_sensors: []  #list of sensors attached to this device
+  #@method
+  location: !GeospatialBounds  #current geospatial (3D) location of instrument
+  #@association_count=hasSensor
+  sensor_count: 0   # example value for association count
+  #@method
+  data_produced: ""   #URL (public) / Resource _id
 
 
 ---
 
+#This object contains additional information associated with an instrument device.
 InstrumentDeviceExtension: !Extends_ResourceContainer
-  data_products: [] #hasOutputProduct
-  instrument_model: !InstrumentModel  #hasModel
+  #@association=hasOutputProduct
+  data_products: [] #A list of associated data products
+  #@association=hasModel
+  instrument_model: !InstrumentModel  #The associated Instrument Model
   #primary_deployment: !LogicalInstrument #hasPrimaryDeployment
-  instrument_agent: !InstrumentAgentInstance  #hasAgentInstance
-  policies: []  #hasPolicy
-  owners: []  #get_owners()
+  #@association=hasAgentInstance
+  instrument_agent: !InstrumentAgentInstance  #The associated agent instance
+  #@association=hasPolicy
+  policies: []  #A list of any associated policies
+  #@method
+  owners: []  #A list of any owners of this resource
 

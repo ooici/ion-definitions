@@ -215,3 +215,19 @@ methods:
       NotFound: Something bad happened in the registry such that an object or association got lost
       ServerError: More than one UserCredentials object was associated with the certificate subject
 
+
+#-------
+
+  get_actor_identity_extension:
+    docstring: |
+      Returns an ActorIdentityExtension object containing additional related information
+    in:
+      user_id: ""
+      org_id: ""  # Optional - needed to get the assigned role(s) of the user within the specified Org
+      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: [] # An optional list of field names to exclude from retrieving
+    out:
+      actor_identity: !ActorIdentityExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified user_id does not exist

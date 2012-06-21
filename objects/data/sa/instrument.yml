@@ -48,3 +48,36 @@ InstrumentAgentInstance: !Extends_AgentInstance
   agent_config: {}
   port_agent_work_dir: ""
   port_agent_delimeter: []
+
+
+---
+#Example set of computed attributes for an instrument device
+InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
+  #@method
+  software_version: ""  #identifier of software installed in unit
+  #@method
+  attached_sensors: []  #list of sensors attached to this device
+  #@method
+  location: !GeospatialBounds  #current geospatial (3D) location of instrument
+  #@association_count=hasSensor
+  sensor_count: 0   # example value for association count
+  #@method
+  data_produced: ""   #URL (public) / Resource _id
+
+
+---
+
+#This object contains additional information associated with an instrument device.
+InstrumentDeviceExtension: !Extends_ResourceContainer
+  #@association=hasOutputProduct
+  data_products: [] #A list of associated data products
+  #@association=hasModel
+  instrument_model: !InstrumentModel  #The associated Instrument Model
+  #primary_deployment: !LogicalInstrument #hasPrimaryDeployment
+  #@association=hasAgentInstance
+  instrument_agent: !InstrumentAgentInstance  #The associated agent instance
+  #@association=hasPolicy
+  policies: []  #A list of any associated policies
+  #@method
+  owners: []  #A list of any owners of this resource
+

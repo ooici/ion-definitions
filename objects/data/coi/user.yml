@@ -1,6 +1,0 @@
-# Represents a human user in the system and their preferences
-UserInfo: !Extends_InformationResource
-  contact: !ContactInformation
-  variables:
-  - name: ""
-    value: ""

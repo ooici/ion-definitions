@@ -61,10 +61,10 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  set_data_product_lifecycle:
+  execute_data_product_lifecycle:
     in:
       data_product_id: ""
-      lifecycle_state: ""
+      lifecycle_event: ""
     out:
 
   get_last_update:

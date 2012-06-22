@@ -37,3 +37,21 @@ ResourceFilter:
   filters: {}
 
 
+---
+
+# The base type for computed attribute objects
+ComputedAttributes:
+
+---
+
+# A non-persistable container for a resource and its related data
+ResourceContainer:
+  _id: ""   #  Unique identifier (matchs the id of the internal persistable resource object)
+  ts_created: ""  # Timestamp str in millis in UNIX epoch
+  resource: !Resource
+  computed: !ComputedAttributes
+  ext_associations: {}  # An optional dict of names and associated objects to get other associations on the fly
+
+
+
+

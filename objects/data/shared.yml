@@ -64,9 +64,6 @@ DataFormat:
 
 ---
 
-# A named resource associating to other resources, representing a collection
-Collection: !Extends_InformationResource
-
 # Base for a physical device with a serial number, such as sensor, instrument and platform.
 Device: !Extends_TaskableResource
 

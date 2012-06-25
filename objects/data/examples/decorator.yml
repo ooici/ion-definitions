@@ -8,4 +8,5 @@ Deco_Example:
   # This is comment for foo2
   # This is second line comment
   #@Int
+  #@ABC=123
   foo2: '' 

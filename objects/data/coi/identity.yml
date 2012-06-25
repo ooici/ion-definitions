@@ -32,17 +32,16 @@ UserInfo: !Extends_InformationResource
 #This object contains additional information associated with an actor; typically a user.
 ActorIdentityExtension: !Extends_ResourceContainer
   #@Association=hasCredentials
-  credentials: !UserCredentials  #The associated user's credentials
+  credentials: !UserCredentials  # The associated user's credentials
   #@Association=hasInfo
-  user_info: !UserInfo #The associated user's information
-  #@Method
-  roles: []  #Any Org Roles associated with the user Can this be fulfilled with a decorator too?
+  user_info: !UserInfo # The associated user's information
+  roles: []  # Any Org Roles associated with the user Can this be fulfilled with a decorator too?
   #@Association=hasPolicy
-  policies: [] #A list of any associated policies
+  policies: [] # A list of any associated policies
   #@Association=hasOwner
-  owned_resources: [] #A list of any resources owned by this user
-  #recent_events: []  #Not sure about this one
+  owned_resources: [] # A list of any resources owned by this user
+  #recent_events: []  # Not sure about this one
   #@Association=hasRequest
-  user_requests: [] #A list of requests associated with this user
+  user_requests: [] # A list of requests associated with this user
 
 

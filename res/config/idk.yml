@@ -1,6 +1,9 @@
 idk:
-  dev_base_path: ~/OOI/R2/code
-  coi_repo_dir_name: coi-services
-  mi_repo_dir_name: marine-integrations
-  driver_dir: driver
+  tmp_dir: /tmp
   template_dir: mi/idk/templates
+
+  rabbitmq: /usr/local/sbin/rabbitmq-server
+  couchdb: /usr/local/bin/couchdb
+  git: /usr/local/bin/git
+  xterm: /usr/X11/bin/xterm
+  tail: /usr/bin/tail

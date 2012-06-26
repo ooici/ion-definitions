@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry, process_dispatcher, discovery]
+dependencies: [resource_registry, process_dispatcher]
 
 methods:
   create_notification:
@@ -166,7 +166,7 @@ methods:
       is sent to the user containing the digest of all the events.
 
     in:
-      start_time: 0
-      end_time: 0
+      start_time: 0.0
+      end_time: 10.0
     out:
 

@@ -17,7 +17,8 @@ ProcessDefinition: !Extends_ExecutableResource
 
 # Describes a running process
 Process: !Extends_TaskableResource
-  label: ""   # Human legible label
+  label: ""     # Human legible label
+  proctype: ""  # Indicates a specialized type of CC process
 
 ---
 

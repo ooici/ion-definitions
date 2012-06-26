@@ -165,6 +165,9 @@ PredicateTypes:
   hasPolicy:
     domain: [Resource]
     range: [Policy]
+  hasProcess:
+    domain: [CapabilityContainer, Service]
+    range: [Process]
   hasRequest:
     domain: [Org, ActorIdentity]
     range: [UserRequest,UserRequest]

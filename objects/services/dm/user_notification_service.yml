@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry, transform_management]
+dependencies: [resource_registry, process_dispatcher, discovery]
 
 methods:
   create_notification:
@@ -23,6 +23,13 @@ methods:
       BadRequest: if object passed has _id or _rev attribute, or if more than one user info exists
       NotFound: if user does not exist, user info does not exist, or user email does not exist
 
+  create_worker:
+    docstring: |
+      Creates notification workers
+    in:
+      number_of_workers: 1
+    out:
+
   create_email:
     docstring: |
       Creates a NotificationRequest object for the specified User Id. Associate the Notification
@@ -38,35 +45,44 @@ methods:
       user_id: ""
       email: ""
       mode: !DeliveryMode
+      frequency: !Frequency
       message_header: ""
       parser: ""
-      period: 86400 # Integer number of seconds between emails - default is daily
     out:
       notification_id: ""
     throws:
       NotFound: if user does not exist, user info does not exist, or user email does not exist
 
-  create_sms:
-    docstring: |
-      Creates a NotificationRequest object for the specified User Id. Associate the Notification
-      resource with the user. Setup subscription and call back to send an sms to their phone
-      @todo - is the user email automatically selected from the user id?
+#  create_sms:
+#    docstring: |
+#      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+#      resource with the user. Setup subscription and call back to send an sms to their phone
+#      @todo - is the user email automatically selected from the user id?
+#    in:
+#      name: ""
+#      description: ""
+#      event_type: ""
+#      event_subtype: ""
+#      origin: ""
+#      origin_type: ""
+#      user_id: ""
+#      phone: ""
+#      provider: ""
+#      message_header: ""
+#      parser: ""
+#    out:
+#      notification_id: ""
+#    throws:
+#      NotFound: if user does not exist, user info does not exist, or user email does not exist
+
+  publish_event:
     in:
-      name: ""
-      description: ""
-      event_type: ""
-      event_subtype: ""
-      origin: ""
-      origin_type: ""
-      user_id: ""
-      phone: ""
-      provider: ""
-      message_header: ""
-      parser: ""
+      event:
+      time:
     out:
-      notification_id: ""
     throws:
-      NotFound: if user does not exist, user info does not exist, or user email does not exist
+      BadRequest: if there is anything wrong with the event object
+      Conflict: if there is another event scheduled to be published in exactly the same time
 
   create_detection_filter:
     docstring: |
@@ -127,7 +143,7 @@ methods:
 
   find_events:
     docstring: |
-      Returns a list of events that match the specified search criteria. Will throw a not NotFound exception
+      Returns a list of events that match the specified search criteria. Will throw a NotFound exception
       if no events exist for the given parameters.
       @todo can we replace this with discovery service?
     in:
@@ -140,4 +156,17 @@ methods:
     out:
       event_list: []
     throws:
-      NotFound: if object with specified paramteres does not exist  
+      NotFound: if object with specified parameters does not exist
+
+  process_batch:
+    docstring:  |
+      This method is launched when an process_batch event is received. The user info dictionary maintained
+      by the User Notification Service is used to query the event repository for all events for a particular
+      user that have occurred in a certain time interval (right now the past 24 hours), and then an email
+      is sent to the user containing the digest of all the events.
+
+    in:
+      start_time: 0
+      end_time: 0
+    out:
+

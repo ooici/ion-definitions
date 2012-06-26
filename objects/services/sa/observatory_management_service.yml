@@ -7,7 +7,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Observatory+Management
 
-dependencies: [resource_registry, instrument_management, data_product_management, org_management]
+dependencies: [resource_registry, instrument_management, data_product_management, org_management, data_process_management]
 
 methods:
   # -----------------
@@ -404,7 +404,16 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  
+  create_site_data_product: 
+    in:
+      site_id: ""
+      data_product_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
+  
 
   # -----------------
   # find methods

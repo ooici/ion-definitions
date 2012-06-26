@@ -43,7 +43,7 @@ PredicateTypes:
     domain: [Org]
     range: [Observatory]
   hasOutputProduct:
-    domain: [DataProcess, Device, ExternalDataset, Workflow]
+    domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
     range: [DataProduct]
   hasParent:
     domain: [DataProducer]

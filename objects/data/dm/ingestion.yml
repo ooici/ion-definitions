@@ -33,3 +33,15 @@ IngestionConfiguration: !Extends_InformationResource
   number_of_workers: 2
   hdf_storage: !HdfStorage
   couch_storage: !CouchStorage
+
+---
+
+IngestionQueue:
+  name:
+  type:
+
+---
+
+IngestionConfigurationA: !Extends_InformationResource
+  exchange_point: ""
+  queues: []

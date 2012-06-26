@@ -1,0 +1,53 @@
+name: ingestion_management_a
+
+docstring: |
+    The ingestion service provides operations to setup data ingestion workers and the ingestion policy for each stream.
+    The actual processing of data and metadata occurs in an ingestion worker process, not the ingestion service.
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Ingestion+Management+Service
+
+dependencies: [resource_registry, pubsub_management, transform_management, process_dispatcher, dataset_management]
+
+methods:
+  create_ingestion_configuration:
+    in:
+      name: ""
+      exchange_point_id: ""
+      queues: []
+    out:
+      ingestion_configuration_id: ""
+
+  update_ingestion_configuration:
+    in:
+      ingestion_configuration: !IngestionConfiguration
+    out:
+
+  read_ingestion_configuration:
+    in:
+      ingestion_configuration_id: ""
+    out:
+      ingestion_configuration: !IngestionConfiguration
+    throws:
+      NotFound: if ingestion configuration did not exist
+
+  delete_ingestion_configuration:
+    in:
+      ingestion_configuration_id: ""
+    out:
+    throws:
+      NotFound: The ingestion configuration id did not exist
+
+  #-------------------------
+
+  persist_data_stream:
+    in:
+      stream_id: ""
+      ingestion_configuration_id: ""
+    out:
+      dataset_id: ""
+
+  unpersist_data_stream:
+    in:
+      stream_id: ""
+      ingestion_configuration_id: ""
+    out:

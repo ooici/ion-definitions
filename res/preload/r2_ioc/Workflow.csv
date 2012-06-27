@@ -1,0 +1,5 @@
+Scenario,ID,owner_id,org_ids,wfd_id,in_dp_id,out_dp_id,wf/description
+R2_DEMO,WF1,,,WFD1,DPROD31,DPROD33,Convert to realtime google data stream
+R2_DEMO,WF2,,,WFD1,DPROD32,DPROD34,Convert to realtime google data stream
+R2_DEMO,WF3,,,WFD2,DPROD31,DPROD35,Convert to MPL graphs
+R2_DEMO,WF4,,,WFD2,DPROD32,DPROD36,Convert to MPL graphs

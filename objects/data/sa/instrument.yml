@@ -59,7 +59,7 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   attached_sensors: []  # list of sensors attached to this device
   #@Method
   location: !GeospatialBounds  # current geospatial (3D) location of instrument
-  #@AssociationCount=hasSensor
+  #@hasSensor
   sensor_count: 0   # example value for association count
   #@Method=get_data_url
   data_produced: ""   # URL (public) / Resource _id
@@ -68,15 +68,10 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
 ---
 
 #This object contains additional information associated with an instrument device.
-InstrumentDeviceExtension: !Extends_ResourceContainer
-  #@Association=hasOutputProduct
+InstrumentDeviceExtension: !Extends_ExtendedInformationResource
+  #@hasOutputProduct
   data_products: [] # A list of associated data products
-  #@Association=hasModel
+  #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@Association=hasAgentInstance
+  #@hasAgentInstance
   instrument_agent: !InstrumentAgentInstance  # The associated agent instance
-  #@Association=hasPolicy
-  policies: []  # A list of any associated policies
-  #@Method
-  owners: []  # A list of any owners of this resource
-

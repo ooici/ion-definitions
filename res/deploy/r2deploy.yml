@@ -191,11 +191,6 @@ apps:
     version: 0.1
     processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
 
-  - name: preservation_management
-    version: 0.1
-    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
-
-
   ##### SA SERVICES
   - name: data_acquisition_management
     version: 0.1

@@ -129,6 +129,9 @@ PredicateTypes:
   hasCommitment:
     domain: [ActorIdentity, Resource]
     range: [Commitment]
+  hasConversationType:
+    domain: [Conversation, ServiceDefinition]
+    range: [ConversationType]
   hasCredentials:
     domain: [ActorIdentity]
     range: [UserCredentials]
@@ -165,6 +168,9 @@ PredicateTypes:
   hasPolicy:
     domain: [Resource]
     range: [Policy]
+  hasProcess:
+    domain: [CapabilityContainer, Service]
+    range: [Process]
   hasRequest:
     domain: [Org, ActorIdentity]
     range: [UserRequest,UserRequest]
@@ -174,9 +180,10 @@ PredicateTypes:
   hasRole:
     domain: [Conversation, ActorIdentity, Org]
     range: [ConversationRole, UserRole]
-  hasConversationType:
-    domain: [Conversation, ServiceDefinition]
-    range: [ConversationType]
+  hasServiceDefinition:
+    domain: [Service]
+    range: [ServiceDefinition]
+
 # CEI
   hasProcessDefinition:
     domain: [Resource]

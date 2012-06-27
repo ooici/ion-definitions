@@ -1,20 +1,14 @@
-# Root object for a directory
-Directory:
-  org_id: ""
-  org_name: ""
-  name: ""
-  content: {}
-  schema: {}
-
-
 # Node and leaf object within a directory tree
 DirEntry:
 
-  # Path to the parent node within the directory tree
-  parent: ''
+  # Name of the Org this directory entry belongs to
+  org: ""
+
+  # Path of the parent node within the directory tree
+  parent: ""
 
   # Name of this node (composite or leaf) in the directory tree
-  key: ''
+  key: ""
 
   # Key-value attributes associated to this node in the directory tree
   attributes: {}

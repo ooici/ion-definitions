@@ -249,3 +249,9 @@ DetectionEvent: !Extends_Event
 ---
 
 SearchBufferExceededEvent: !Extends_Event
+
+---
+# an event generated when a notification is created, updated or deleted
+UpdateNotificationEvent: !Extends_Event
+
+

@@ -267,7 +267,14 @@ methods:
       NotFound: object with specified id does not exist
       BadRequest: if object does not have _id or _rev attribute
 
-
+  transfer_site_subscription:
+    docstring: Set a new primary device for a site and switch data collection
+    in:
+      site_id: ""
+      device_id: ""
+    out:
+    throws:
+      BadRequest: if objects' associations are not as expected
 
   # -----------------
   # Assignments

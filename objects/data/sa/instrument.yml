@@ -51,22 +51,27 @@ InstrumentAgentInstance: !Extends_AgentInstance
 
 
 ---
-#Example set of computed attributes for instrument
+#Example set of computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
-  software_version: ""  #identifier of software installed in unit  @get_software_version(instrument_device_id)
-  attached_sensors: []  #list of sensors attached to this device   @get_attached_sensors(instrument_device_id)
-  location: !GeospatialBounds  #current geospatial (3D) location of instrument   @get_location(instrument_device_id)
-  sensor_count: 0   # example value for association count  @get_association_count(#hasSensor)
-  data_produced: ""   #URL (public) / Resource _id    @get_data_produced(instrument_device_id)
+  #@Method
+  software_version: ""  # identifier of software installed in unit
+  #@Method
+  attached_sensors: []  # list of sensors attached to this device
+  #@Method
+  location: !GeospatialBounds  # current geospatial (3D) location of instrument
+  #@hasSensor
+  sensor_count: 0   # example value for association count
+  #@Method=get_data_url
+  data_produced: ""   # URL (public) / Resource _id
 
 
 ---
 
-InstrumentDeviceExtension: !Extends_ResourceContainer
-  data_products: [] #hasOutputProduct
-  instrument_model: !InstrumentModel  #hasModel
-  #primary_deployment: !LogicalInstrument #hasPrimaryDeployment
-  instrument_agent: !InstrumentAgentInstance  #hasAgentInstance
-  policies: []  #hasPolicy
-  owners: []  #get_owners()
-
+#This object contains additional information associated with an instrument device.
+InstrumentDeviceExtension: !Extends_ExtendedInformationResource
+  #@hasOutputProduct
+  data_products: [] # A list of associated data products
+  #@hasModel
+  instrument_model: !InstrumentModel  # The associated Instrument Model
+  #@hasAgentInstance
+  instrument_agent: !InstrumentAgentInstance  # The associated agent instance

@@ -52,6 +52,29 @@ ResourceContainer:
   computed: !ComputedAttributes
   ext_associations: {}  # An optional dict of names and associated objects to get other associations on the fly
 
+---
 
+ExtendedResource: !Extends_ResourceContainer
+  #@hasPolicy
+  policies: []  # A list of any associated policies
+  #@hasOwnerInfo
+  owners: []  # A list of  owner information of this resource
+
+---
+
+# An object used for testing of the framework
+TestExtendedResource: !Extends_ExtendedResource
+  #@hasPolicy
+  policy_count: 0
+  #@Method
+  resource_object: !Resource
+
+---
+
+ExtendedInformationResource: !Extends_ExtendedResource
+
+---
+
+ExtendedTaskableResource: !Extends_ExtendedResource
 
 

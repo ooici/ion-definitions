@@ -1,0 +1,14 @@
+# Example of adding comments
+name: comment_example
+docstring: Example of adding decorators
+dependencies: []
+
+methods:
+  new_account:
+    docstring: Comments have space after #
+    in:
+      # This is comment 1
+      #@Decorator
+      arg1: "" # This is comment 2
+    out:
+      arg2: ""

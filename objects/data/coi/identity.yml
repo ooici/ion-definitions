@@ -17,3 +17,29 @@ UserCredentials: !Extends_InformationResource
 
   # Service that identities the specific actor.
   identity_provider: ""
+
+---
+
+# Represents a human user in the system and their preferences
+UserInfo: !Extends_InformationResource
+  contact: !ContactInformation
+  variables:
+  - name: ""
+    value: ""
+
+---
+
+#This object contains additional information associated with an actor; typically a user.
+ActorIdentityExtension: !Extends_ExtendedInformationResource
+  #@hasCredentials
+  credentials: !UserCredentials  # The associated user's credentials
+  #@hasInfo
+  user_info: !UserInfo # The associated user's information
+  roles: []  # Any Org Roles associated with the user Can this be fulfilled with a decorator too?
+  #@hasOwner
+  owned_resources: [] # A list of any resources owned by this user
+  #recent_events: []  # Not sure about this one
+  #@hasRequest
+  user_requests: [] # A list of requests associated with this user
+
+

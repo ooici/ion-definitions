@@ -43,7 +43,7 @@ PredicateTypes:
     domain: [Org]
     range: [Observatory]
   hasOutputProduct:
-    domain: [DataProcess, Device, ExternalDataset, Workflow]
+    domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
     range: [DataProduct]
   hasParent:
     domain: [DataProducer]
@@ -95,7 +95,7 @@ PredicateTypes:
     domain: [Stream, InstrumentModel, DataProcessDefinition]
     range: [StreamDefinition]
   hasSubscription:
-    domain: [Transform, ExchangePoint]
+    domain: [IngestionConfigurationA, Transform, ExchangePoint]
     range: [Subscription]
   hasTopology:
     domain: [ExchangePoint, Stream, Subscription]
@@ -247,3 +247,12 @@ PredicateTypes:
     domain: [BankCustomer]
     range: [BankAccount]
   
+
+# This is a configuration for retrieving combinations of associations
+# All predicates must be defined above.
+CompoundAssociations:
+  hasOwnerInfo:
+    predicates: [hasOwner,hasInfo]
+  hasMembershipInfo:
+    predicates: [hasMembership,hasInfo]
+

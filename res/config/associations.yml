@@ -240,3 +240,12 @@ PredicateTypes:
     domain: [BankCustomer]
     range: [BankAccount]
   
+
+# This is a configuration for retrieving combinations of associations
+# All predicates must be defined above.
+CompoundAssociations:
+  hasOwnerInfo:
+    predicates: [hasOwner,hasInfo]
+  hasMembershipInfo:
+    predicates: [hasMembership,hasInfo]
+

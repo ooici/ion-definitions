@@ -335,3 +335,18 @@ methods:
     throws:
       BadRequest: incompatible parameters
       
+#-------
+
+  get_resource_extension:
+    docstring: |
+      Returns any ExtendedResource object containing additional related information derived from associations
+    in:
+      resource_id: "" # The id of the resource to be extended
+      resource_extension: ""  # The name of the resource extension to fill out.
+      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: [] # An optional list of field names to exclude from retrieving
+    out:
+      actor_identity: !ExtendedResource
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified resource_id does not exist

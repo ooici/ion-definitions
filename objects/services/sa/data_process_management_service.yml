@@ -99,6 +99,15 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  update_data_process_inputs:
+    #This op may not make sense at this time
+    in: 
+      data_process_id: ""
+      in_data_product_ids: []
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
   read_data_process:
     in:
       data_process_id: ""

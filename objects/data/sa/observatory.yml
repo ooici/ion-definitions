@@ -33,4 +33,3 @@ PlatformSite: !Extends_Site
 # based on a succession of functionally equivalent (physical) Instrument resources at a single site.
 InstrumentSite: !Extends_Site
 
-

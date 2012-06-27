@@ -100,10 +100,10 @@ methods:
       NotFound: object with specified id does not exist
 
   update_data_process_inputs:
-    #This op may not make sense at this time
+    docstring: Update the subscriptions of a data process
     in: 
       data_process_id: ""
-      in_data_product_ids: []
+      in_stream_ids: []
     out:
     throws:
       NotFound: object with specified id does not exist

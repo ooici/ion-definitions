@@ -2,75 +2,41 @@
 
 name: visualization_service
 
-docstring: The Visualization Service is responsible for creating transform processes for the data products available in the system and also provides access to the resulting viz products. (e.g Google DataTables, Matplotlib graphs, etc)
+docstring: Service is responsible for mantaining user sessions and collecting requested viz products, preparing them before returning them to the web client
 
-dependencies: [resource_registry, pubsub_management, transform_management, data_retriever, dataset_management]
+dependencies: [resource_registry, pubsub_management, transform_management, data_retriever, dataset_management, workflow_management]
+
 
 methods:
-# Methods used by the Service Gateway Service (SGS)
-  start_google_dt_transform:
-    docstring: Request to start a transform process for a data_product_id. Will return a token that will be used with the get_google_dt call
+  # Interface available through the SGS
+  init_google_dt_realtime:
+    docstring: Request to search for the system transform handling the GDT conversion for the specified DP. Creates a queue to collect the data and a subscription to listen to the queue. Returns a token associate with the queue
     in:
       data_product_id: ""
       query: ""
     out:
-      data_product_id_token: ""
+      query_token: ""
     throws:
-      NotFound: object with specified id, query does not exist
+      NotFound: Specified Data product or its visualization product does not exist
 
-  is_google_dt_ready:
-    docstring: A non-blocking call that returns instantly with "True" or "False"
+  get_google_dt_realtime:
+    docstring: Returns the latest 'delta' of the datatable available to be used by the client for preparing a realtime view
     in:
-      data_product_id_token: ""
+      query_token: ""
     out:
       datatable: ""
     throws:
-      NotFound: object with specified id, query does not exist
+      NotFound: Specified Data product or its visualization product does not exist
 
-  get_google_dt:
-    docstring: A non-blocking call that returns instantly with either an empty list or a valid datatable when its ready
-    in:
-      data_product_id_token: ""
-    out:
-      datatable: ""
-    throws:
-      NotFound: object with specified id, query does not exist
-
-  get_google_realtime_dt:
-    docstring: Request to fetch the datatable for a data product as specified in the query. Query will also specify whether its a realtime view or one-shot
-    in:
-      data_product_id: ""
-      query: ""
-    out:
-      datatable: ""
-    throws:
-      NotFound: object with specified id, query does not exist
-
-  get_list_of_mpl_images:
-    docstring: Request to fetch the list of Matplotlib generated images associated with a data product
-    in:
-      data_product_id: ""
-    out:
-      image_list: ""
-    throws:
-      NotFound: object with specified id does not exist
 
   get_image:
-    docstring: Request to fetch an image object from within the Visualization Service
+    docstring: Request to fetch an image for a particular DP
     in:
       data_product_id: ""
-      image_name: ""
+      image_id: ""
     out:
       image_obj: ""
     throws:
-      NotFound: object with specified id does not exist
+      NotFound: Specified Data product or its visualization product does not exist
 
 
-# Methods used by the Pyon container processes to update the Visualization service
-  register_new_data_product:
-    docstring: Apprise the Visualization service of a new data product in the system.
-    in:
-      data_product_id: ""
-    out:
-    throws:
-      BadRequest: check data_product_id for duplicates

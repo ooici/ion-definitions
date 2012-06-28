@@ -1,5 +1,13 @@
+# Describes a type of execution engine to be instantiated
 ExecutionEngineDefinition: !Extends_ExecutableResource
   definition_type: ""
   definition: {}
 
+# A running execution engine that is available to execute processes of matching type
 ExecutionEngine: !Extends_TaskableResource
+
+# An ION capability container - a special type of execution engine with special treatment
+CapabilityContainer: !Extends_TaskableResource
+  version: "1.0"        # Version identifier for this container type
+  technology: "Python"  # Class of technology
+  cc_agent: ""          # Exchange name of the agent representing the container

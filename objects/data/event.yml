@@ -251,7 +251,8 @@ DetectionEvent: !Extends_Event
 SearchBufferExceededEvent: !Extends_Event
 
 ---
-# an event generated when a notification is created, updated or deleted
-UpdateNotificationEvent: !Extends_Event
+# a reload_user_info event generated when a notification is created, updated or deleted
+ReloadUserInfoEvent: !Extends_Event
+  notification_id: ""
 
 

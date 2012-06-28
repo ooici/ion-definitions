@@ -1,4 +1,4 @@
-name: ingestion_management_a
+name: ingestion_management
 
 docstring: |
     The ingestion service provides operations to setup data ingestion workers and the ingestion policy for each stream.

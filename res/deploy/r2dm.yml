@@ -28,6 +28,12 @@ apps:
     processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: process_dispatcher
+      bootstrap:
+        processes:
+          ingestion:
+            datastore_name: datasets
+            queue_name:     science_data.science_granule_ingestion
+
 
   - name: identity_management
     version: 0.1

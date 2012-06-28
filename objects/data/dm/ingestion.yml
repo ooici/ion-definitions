@@ -29,10 +29,8 @@ CouchStorage:
 ---
 
 IngestionConfiguration: !Extends_InformationResource
-  # The default settings for ingestion of data on an exchange point
-  number_of_workers: 2
-  hdf_storage: !HdfStorage
-  couch_storage: !CouchStorage
+  exchange_point: ""
+  queues: []
 
 ---
 
@@ -40,8 +38,3 @@ IngestionQueue:
   name:
   type:
 
----
-
-IngestionConfigurationA: !Extends_InformationResource
-  exchange_point: ""
-  queues: []

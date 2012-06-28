@@ -59,8 +59,8 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   attached_sensors: []  # list of sensors attached to this device
   #@Method
   location: !GeospatialBounds  # current geospatial (3D) location of instrument
-  #@hasSensor
-  sensor_count: 0   # example value for association count
+  #@hasDataProducer
+  data_producer_count: 0   # example value for association count
   #@Method=get_data_url
   data_produced: ""   # URL (public) / Resource _id
 

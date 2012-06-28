@@ -33,31 +33,3 @@ PlatformSite: !Extends_Site
 # based on a succession of functionally equivalent (physical) Instrument resources at a single site.
 InstrumentSite: !Extends_Site
 
-
----
-
-#This object contains additional information associated with an Observatory such as a Marine Facility
-ObservatoryExtension: !Extends_ExtendedInformationResource
-  #@hasResource=DataProduct
-  data_products: []
-  #@hasResource=PlatformDevice
-  platforms: []
-  #@hasResource=PlatformModel
-  platform_models: []
-  #@hasResource=InstrumentModel
-  instrument_models: []
-  #@hasResource=InstrumentDevice
-  instruments: []
-  #@hasResource=InstrumentAgent
-  instrument_agents: []
-  #@hasResource=DataProcessDefinition
-  data_process_definitions: []
-  #@Method=find_subordinate_frames_of_reference
-  subordinates: []
-  #@hasMembershipInfo
-  members: [] # The list of User Info objects
-  #@hasRole
-  roles: [] # The set of User Roles available in this Observatory
-  #@hasRequest
-  user_requests: [] # A list of requests associated with this user
-

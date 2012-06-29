@@ -134,6 +134,11 @@ apps:
     processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
     config:
       level: process_dispatcher
+      bootstrap:
+        processes:
+          ingestion:
+            datastore_name: datasets
+            queue_name:     science_data.science_granule_ingestion
 
   - name: provisioner
     version: 0.1
@@ -224,11 +229,10 @@ apps:
       level: ingestion_management
       ingestion:
         exchange_point: science_data
-        number_of_workers: 2
-        couch_storage:
-          datastore_name: ingested_datasets
-          server: localhost
-          datastore_profile: SCIDATA
+        queues: 
+          - name: science_granule_ingestion
+            type: SCIDATA
+            datastore_name: datasets
 
 
   ##### AS SERVICE

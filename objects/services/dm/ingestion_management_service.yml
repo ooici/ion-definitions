@@ -10,32 +10,19 @@ dependencies: [resource_registry, pubsub_management, transform_management, proce
 
 methods:
   create_ingestion_configuration:
-    docstring: |
-      @brief Setup ingestion workers to ingest all the data from a single exchange point.
-      @param exchange_point_id is the resource id for the exchagne point to ingest from
-      @param couch_storage is the specification of the couch database to use
-      @param hdf_storage is the specification of the filesystem to use for hdf data files
-      @param number_of_workers is the number of ingestion workers to create
     in:
-      exchange_point_id: "" # Resource is not yet used - later will be an id, for now it is empty (default is science_data)!
-      couch_storage: !CouchStorage
-      hdf_storage: !HdfStorage
-      number_of_workers: 0
+      name: ""
+      exchange_point_id: ""
+      queues: []
     out:
       ingestion_configuration_id: ""
 
   update_ingestion_configuration:
-    docstring: |
-      @brief Change the number of workers or the default policy for ingesting data on each stream
-      @param ingestion_configuration is the modified resource in its updated state.
     in:
       ingestion_configuration: !IngestionConfiguration
     out:
 
   read_ingestion_configuration:
-    docstring: |
-      @brief Get an existing ingestion configuration object.
-      @param ingestion_configuraiton_id is the identity of the ingestion configuration resource
     in:
       ingestion_configuration_id: ""
     out:
@@ -44,64 +31,23 @@ methods:
       NotFound: if ingestion configuration did not exist
 
   delete_ingestion_configuration:
-    docstring: Delete an existing ingestion configuration object.
     in:
       ingestion_configuration_id: ""
     out:
     throws:
       NotFound: The ingestion configuration id did not exist
-
-  activate_ingestion_configuration:
-    docstring: Activate an ingestion configuration and the transform processes that execute it
-    in:
-      ingestion_configuration_id: ""
-    out:
-    throws:
-      NotFound: The ingestion configuration id did not exist
-
-  deactivate_ingestion_configuration:
-    docstring: Deactivate an ingestion configuration and the transform processeses that execute it
-    in:
-      ingestion_configuration_id: ""
-    out:
-    throws:
-      NotFound: The ingestion configuration id did not exist
-
 
   #-------------------------
 
-  create_dataset_configuration:
-    docstring: |
-      Create a configuration for ingestion of a particular dataset and associate it to a ingestion configuration.
+  persist_data_stream:
     in:
-      dataset_id: ""
-      archive_data: True
-      archive_metadata: True
+      stream_id: ""
       ingestion_configuration_id: ""
     out:
-      dataset_ingestion_configuration_id: ""
+      dataset_id: ""
 
-  update_dataset_config:
-    docstring: Update the ingestion configuration for a dataset
+  unpersist_data_stream:
     in:
-      dataset_ingestion_configuration: !DatasetIngestionConfiguration
+      stream_id: ""
+      ingestion_configuration_id: ""
     out:
-
-
-  read_dataset_config:
-    docstring: Get an existing dataset configuration.
-    in:
-      dataset_ingestion_configuration_id: ""
-    out:
-      dataset_ingestion_configuration: !DatasetIngestionConfiguration
-    throws:
-      NotFound: if ingestion configuration did not exist
-
-
-  delete_dataset_config:
-    docstring: Delete an existing dataset configuration.
-    in:
-      dataset_ingestion_configuration_id: ""
-    out:
-    throws:
-      NotFound: if ingestion configuration did not exist

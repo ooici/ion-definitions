@@ -9,3 +9,8 @@ methods:
     in:
     out:
       status: True
+
+  execute_retrieve:
+    in:
+    out:
+      status: True

@@ -112,9 +112,10 @@ methods:
       version of the object.
     in:
       notification: !NotificationRequest
+      user_id: ''
     out:
     throws:
-      BadRequest: if object does not have _id or _rev attribute, or more than one user exists for the notification
+      BadRequest: if object does not have _id or _rev attribute
       NotFound: if object with specified id does not exist, or no user found for notification
       Conflict: if object not based on latest persisted object version
 

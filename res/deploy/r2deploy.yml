@@ -232,6 +232,7 @@ apps:
         queues: 
           - name: science_granule_ingestion
             type: SCIDATA
+            datastore_name: datasets
 
 
   ##### AS SERVICE

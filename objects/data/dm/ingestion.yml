@@ -37,4 +37,4 @@ IngestionConfiguration: !Extends_InformationResource
 IngestionQueue:
   name:
   type:
-
+  datastore_name: "datasets"

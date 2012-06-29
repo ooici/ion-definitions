@@ -1,3 +1,5 @@
+# Describes an entity that acts as data producer in the system. This resource references the actual
+# data producing resource, such as an instrument device or a data process. Used to compute provenance.
 DataProducer: !Extends_InformationResource
   is_primary: False
   stream_id: ""

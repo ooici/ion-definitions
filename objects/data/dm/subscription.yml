@@ -1,8 +1,10 @@
+# Represents an internal standing request for message delivery in real-time for messages
+# that match the given query expression. Messages are delivered into queues
 Subscription: !Extends_InformationResource
   subscription_type: !enum (name=SubscriptionTypeEnum, values=(STREAM_QUERY, EXCHANGE_QUERY, CONTENT_QUERY), default=STREAM_QUERY)
-  query: {}
-  exchange_name: ""
-  is_active: False
+  query: {}           # Specific query expression
+  exchange_name: ""   # Exchange name of queue for message delivery
+  is_active: False    # Enabled or not
 
 # These objects do not yet specify the exchange point for the subscription. That will come later and be
 # expressed by association.

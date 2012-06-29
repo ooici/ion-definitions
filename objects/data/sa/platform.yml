@@ -1,6 +1,4 @@
-#LogicalPlatform: !Extends_InformationResource
-
-
+# Describes a physical platform
 PlatformDevice: !Extends_Device
   # Current to version 30 of confluence resource page:
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Device
@@ -22,7 +20,7 @@ PlatformDevice: !Extends_Device
   # Datetime when item was built
   manufacture_date: "2011-07-27T02:59:43.1Z"
 
-
+# Describes a type of platform by common characteristics
 PlatformModel: !Extends_DeviceModel
   # Current to version 23 of confluence resource page:
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Model
@@ -55,7 +53,8 @@ PlatformModel: !Extends_DeviceModel
   # Mandatoy
   maximum_crew: 0  
 
-
+# Describes a type of platform agent
 PlatformAgent: !Extends_AgentDefinition
 
+# Describes parameters for a platform agent instance
 PlatformAgentInstance: !Extends_AgentInstance

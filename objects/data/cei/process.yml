@@ -9,10 +9,10 @@ ProcessArgument:
 # Describes a type of process available to the system to schedule. Points to an executable.
 ProcessDefinition: !Extends_ExecutableResource
   definition_type: !enum (name=ProcessDefinitionType, values=(PYON_STREAM), default=PYON_STREAM)
-  version: ""
-  executable:
-    module: ""
-    class: ""
+  version: ""    # Version of the same process definition
+  executable:    # Describes where to find the code to run
+    module: ""   # The source code file in which the code is in
+    class: ""    # The class name within the source code module
   arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
 
 # Describes a running process

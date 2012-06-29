@@ -14,13 +14,15 @@ DeliveryConfig:
 
 ---
 
+# Represents a user's standing request (a rule) to receive notifications when certain events
+# happen, to be delivered in chosen ways and modalities.
 NotificationRequest: !Extends_InformationResource
   type: !NotificationType
-  origin: ""
-  origin_type: ""
-  event_type: ""
-  event_subtype: ""
-  delivery_config: !DeliveryConfig
+  origin: ""           # Event filter by origin
+  origin_type: ""      # Event filter by origin type
+  event_type: ""       # Event filter by event type
+  event_subtype: ""    # Event filter by event subtype
+  delivery_config: !DeliveryConfig    # Detailed configuration of notification delivery
 
 ---
 

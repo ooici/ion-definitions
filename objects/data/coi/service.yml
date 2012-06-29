@@ -1,4 +1,4 @@
-# Resource describing a type of service that can be instantiated
+# Describes a type of service that can be instantiated
 ServiceDefinition: !Extends_ExecutableResource
 
   # The language of service specification. For future extensibility
@@ -11,7 +11,7 @@ ServiceDefinition: !Extends_ExecutableResource
   operations: []
 
 
-# Resource describing a service instance
+# Describes a service instance
 Service: !Extends_TaskableResource
 
   # The fully qualified name under which the service is available in the system

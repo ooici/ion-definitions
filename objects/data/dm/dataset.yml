@@ -1,3 +1,5 @@
+# Represents an internal persistent data and metadata coverage, most often associated with a
+# persistent data product.
 DataSet: !Extends_InformationResource
   view_name: ""             # name of the primary view access in couch
   view_keys: {}             # define the property keys used to access this data

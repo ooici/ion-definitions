@@ -1,3 +1,4 @@
+# Describes a physical sensor that is part of an instrument
 SensorDevice: !Extends_Device
 
   # Current to version 30 of confluence resource page:  
@@ -25,8 +26,9 @@ SensorDevice: !Extends_Device
   
   # Identifier of software installed in unit
   software_version: ""
-  
 
+
+# Describes a type of sensor
 SensorModel: !Extends_DeviceModel
 
   # Current to version 25 of confluence resource page:  

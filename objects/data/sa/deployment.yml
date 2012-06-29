@@ -1,1 +1,5 @@
+# Represents the deployment of one device on one site during a period of time
 Deployment: !Extends_InformationResource
+
+  # Specified time constraint within which entity exists
+  temporal_constraint: ""

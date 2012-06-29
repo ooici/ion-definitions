@@ -1,11 +1,11 @@
-# Object describing a specific capability of an agent
+# Describes a specific capability of an agent
 AgentCapability:
   name: ""
   cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, CONV_TYPE), default=AGT_CMD)
   restrictions: {}
 
 
-# Object representing a command to a resource agent
+# Represents a command to a resource agent
 AgentCommand:
   command_id: ""
   command: ""
@@ -13,7 +13,7 @@ AgentCommand:
   kwargs: {}
 
 
-# Object representing the status of the execution of a command to a resource agent
+# Represents the status of the execution of a command to a resource agent
 AgentCommandResult:
   command_id: ""
   command: ""

@@ -1,3 +1,4 @@
+# Represents an external source of data and metadata, accessible by the ION system
 DataSource: !Extends_InformationResource
   type: ""
   connection_params: {}

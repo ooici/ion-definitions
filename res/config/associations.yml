@@ -95,7 +95,7 @@ PredicateTypes:
     domain: [Stream, InstrumentModel, DataProcessDefinition]
     range: [StreamDefinition]
   hasSubscription:
-    domain: [IngestionConfigurationA, Transform, ExchangePoint]
+    domain: [IngestionConfiguration, Transform, ExchangePoint]
     range: [Subscription]
   hasTopology:
     domain: [ExchangePoint, Stream, Subscription]

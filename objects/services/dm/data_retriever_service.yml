@@ -38,5 +38,8 @@ methods:
   start_retrieve:
     docstring: Replays data as one chunk on a stream.
     in:
-      replay_id: ""
+      dataset_id: ""
+      query: {}
+      delivery_format: {}
     out:
+      retrieve_data: {}

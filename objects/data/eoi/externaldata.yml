@@ -32,21 +32,25 @@ Dimension:
 
 ---
 
+# Represents an institutional entity providing data
 ExternalDataProvider: !Extends_InformationResource
   institution: !Institution
   contact: !ContactInformation
 
 ---
 
+# Describes a type of data source
 DataSourceModel: !Extends_DeviceModel
   model: ""
   data_handler_module: ""
   data_handler_class: ""
 
+# Describes a type of data source agent
 DataSourceAgent: !Extends_AgentDefinition
   handler_module: ""
   handler_class: ""
 
+# Describes an instance of data source agent
 DataSourceAgentInstance: !Extends_AgentInstance
   handler_module: ""
   handler_class: ""
@@ -55,22 +59,24 @@ DataSourceAgentInstance: !Extends_AgentInstance
   password: ""
 
 ---
+# Describes one dataset that is fetched from an external source into the system
 ExternalDataset: !Extends_InformationResource
   dataset_description: !DatasetDescription
   update_description: !UpdateDescription
   contact: !ContactInformation
 
+# Describes a type of external dataset
 ExternalDatasetModel: !Extends_DeviceModel
   #This defines the characteristics of a dataset class
   datset_type: ""
 
+# Describes a type of external dataset agent
 ExternalDatasetAgent: !Extends_AgentDefinition
   handler_module: ""
   handler_class: ""
   time_source: ""
 
----
-
+# Describes an instance of external dataset agent
 ExternalDatasetAgentInstance: !Extends_AgentInstance
   handler_module: ""
   handler_class: ""

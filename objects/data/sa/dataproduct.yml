@@ -1,3 +1,5 @@
+# Describes a user visible data and metadata resource in the ION system. May be streamed only
+# or also persisted for later historic query.
 DataProduct: !Extends_InformationResource
 
   # Current to version 140 of confluence resource page:  https://confluence.oceanobservatories.org/x/EYHsAQ

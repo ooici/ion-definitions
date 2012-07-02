@@ -1,12 +1,14 @@
+# Represents a routing structure for topics.
 StreamTopology: !Extends_InformationResource
   topology_type: "topic_tree"
-  dimensions: []
+  dimensions: []   # Components of a topic that can be routed
 
+# Describes a class of streams
 StreamDefinition: !Extends_InformationResource
   # A bit awkward - the stream definition resource contains a stream definition container?
   container: !StreamDefinitionContainer
 
-
+# Represents one publisher stream of sequential, related messages
 Stream: !Extends_InformationResource
   # Specified by create_stream
   url: ""
@@ -14,8 +16,9 @@ Stream: !Extends_InformationResource
   original: True
 
   # managed by pubsub
-  producers: []
+  producers: []    # A list of processes permitted to produce on the stream
 
+# Description for accessing a stream via the Exchange
 StreamRoute:
   exchange_name: ""
   routing_key: ""

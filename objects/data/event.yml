@@ -1,5 +1,4 @@
-# event.yml: events/notifications object types
-
+# Base type for all events in the system
 Event:
   origin: ""        # the origin of the event (content specific to subtype). Mostly a resource id
   origin_type: ""   # the type of origin (e.g. resource type, etc) or empty

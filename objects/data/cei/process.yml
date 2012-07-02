@@ -1,26 +1,28 @@
+# Defines one argument that a process can receive on startup. This does not set an instance value.
 ProcessArgument:
-  # Defines one argument that a process can receive on startup -
-  # this is not the place to set this argument
   name: ""
   type: ""
   description: ""
   default:
 
 
+# Describes a type of process available to the system to schedule. Points to an executable.
 ProcessDefinition: !Extends_ExecutableResource
-  # Identifies process definitions for each kind of process that can be executed
   definition_type: !enum (name=ProcessDefinitionType, values=(PYON_STREAM), default=PYON_STREAM)
-  version: ""
-  executable:
-    module: ""
-    class: ""
+  version: ""    # Version of the same process definition
+  executable:    # Describes where to find the code to run
+    module: ""   # The source code file in which the code is in
+    class: ""    # The class name within the source code module
   arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
 
-
+# Describes a running process
 Process: !Extends_TaskableResource
+  label: ""     # Human legible label
+  proctype: ""  # Indicates a specialized type of CC process
 
 ---
 
+# Describes request scheduling a process on specific resources
 ProcessTarget:
   execution_engine_id: ""
   execution_engine_group: ""
@@ -28,6 +30,7 @@ ProcessTarget:
 
 ---
 
+# Describes request to schedule a process at a certain time or modality
 ProcessSchedule:
   schedule_mode: !enum (name=ProcessScheduleMode, values=(FOREVER, IMMEDIATE, SCHEDULE), default=FOREVER)
   schedule:

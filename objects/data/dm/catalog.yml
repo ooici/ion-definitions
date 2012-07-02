@@ -1,3 +1,4 @@
+# Represents available search options
 SearchOptions: !Extends_InformationResource
   # Fields for simple field searches, e.g. ['color', 'author'] 
   attribute_match: [] 
@@ -10,6 +11,7 @@ SearchOptions: !Extends_InformationResource
 
 ---
 
+# Represents a structure of specific resources used for naviation and search.
 Catalog: !Extends_InformationResource
   # List of fields that can be searched in the entire catalog
   available_fields: [] 

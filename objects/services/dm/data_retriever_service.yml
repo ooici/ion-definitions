@@ -18,6 +18,11 @@ methods:
       replay_id: ""
       stream_id: ""
 
+  delete_replay:
+    in:
+      replay_id: ""
+    out:
+
   start_replay:
     docstring: Replays data from data store by streaming to an exchange name.
     in:
@@ -29,3 +34,12 @@ methods:
     in:
       replay_id: ""
     out:
+
+  start_retrieve:
+    docstring: Replays data as one chunk on a stream.
+    in:
+      dataset_id: ""
+      query: {}
+      delivery_format: {}
+    out:
+      retrieve_data: {}

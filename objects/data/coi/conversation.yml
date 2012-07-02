@@ -1,8 +1,11 @@
-# Resource describing an instance of conversation in the system
+# Describes an instance of conversation in the system. This is a set of messages exchanged
+# between specific participant processes, each fulfilling one of the ConversationType's
+# ConversationRoles
 Conversation: !Extends_InformationResource
 
 
-# Resource describing a type of conversation in the system
+# Describes a type of conversation in the system. Basically a communication protocol between
+# distributed participants acting as ConversationRoles
 ConversationType: !Extends_InformationResource
   definition_type: ""
   definition: ""
@@ -14,4 +17,4 @@ ConversationRole: !Extends_InformationResource
 
 # Resource describing an actor taking on a conversation role in a conversation (instance)
 ConverationRoleBinding:
-  exchange_name: ""
+  exchange_name: ""   # The address of the process to communicate with

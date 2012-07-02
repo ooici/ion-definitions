@@ -1,22 +1,25 @@
+# Describes a lookup strategy for resource attributes and information
 Index: !Extends_InformationResource
   # Devices, Instruments, Users etc.
   content_type:   "" 
   options:        !SearchOptions
 
 ---
-# A resource which contains a list of resources
+# Ordered collection of a list of resources
 Collection: !Extends_InformationResource
   resources: []
   options:   !SearchOptions
 
 ---
 
+# Specialization of Index used for CouchDB
 CouchDBIndex: !Extends_Index
   view_name: ""
   datastore_name: ""
 
 ---
 
+# Specialization of Index used for ElasticSearch
 ElasticSearchIndex: !Extends_Index
   index_name: ""
   index_type: ""

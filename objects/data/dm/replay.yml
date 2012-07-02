@@ -1,3 +1,4 @@
+# Internal - represents persistent information about a replay of data as messages
 Replay: !Extends_InformationResource
   query: {}
   delivery_format: {}

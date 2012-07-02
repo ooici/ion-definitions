@@ -1,5 +1,4 @@
-
-# A Persistent Archive is a description of a mountable filesystem volume
+# Describes a mountable filesystem volume
 PersistentArchive: !Extends_InformationResource
   # Integer Gigabytes
   size: 0
@@ -14,8 +13,8 @@ PersistentArchive: !Extends_InformationResource
 DataStoreType: !enum (values=(COUCHDB, ELASTICSEARCH, FILESYSTEM), default=FILESYSTEM)
 ---
 
-# A datastore is a description of a name space in a persistence system
-# A DataStore of type Filesystem is associated to a Persistent Archive
+# A datastore is a description of a name space in a persistence system.
+# A DataStore of type Filesystem is associated to a Persistent Archive.
 DataStore: !Extends_InformationResource
   type: !DataStoreType
   namespace: ''
@@ -26,17 +25,17 @@ DataStore: !Extends_InformationResource
 PersistenceType: !enum (values=(COUCHDB, ELASTICSEARCH, COMPELLANT), default=COUCHDB)
 ---
 
-# A PersistenceSystem is a cluster or database system capable of defining multiple namespaces to store information
-# A PersistenceSystem is associated to DataStores defined in it
-# A persistence system is associated to persistence instance
+# A PersistenceSystem is a cluster or database system capable of defining multiple namespaces to store information.
+# A PersistenceSystem is associated to DataStores defined in it.
+# A persistence system is associated to persistence instance.
 PersistenceSystem: !Extends_InformationResource
   type: !PersistenceType
   # used to define default values for Datastores
   defaults: {}
 ---
 
-# A PersistenceInstance is an instance in a cluster such as a couch instance in a big couch cluster
-# A Persistence Instance of type CouchDB or Elastic Search is associated to a Datastore of Type File System
+# A PersistenceInstance is an instance in a cluster such as a couch instance in a big couch cluster.
+# A Persistence Instance of type CouchDB or Elastic Search is associated to a Datastore of Type File System.
 PersistenceInstance: !Extends_InformationResource
   type: !PersistenceType
   host: ''

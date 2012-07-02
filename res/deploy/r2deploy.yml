@@ -85,6 +85,7 @@ apps:
     config:
       level: exchange_management
 
+
   ##################################
   # HIGHER LEVEL SERVICES - TODO: CORRECT ORDER NEEDS TO BE FIGURED OUT ONCE IMPLEMENTATION HAS BEEN COMPLETED
   ##################################
@@ -183,6 +184,12 @@ apps:
   - name: index_management
     version: 0.1
     processapp: [index_management, ion.services.dm.inventory.index_management_service, IndexManagementService]
+  
+  - name: bootstrap
+    version: 0.1
+    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
+    config: 
+        level: elasticsearch_indexes
 
   - name: user_notification
     version: 0.1

@@ -21,8 +21,6 @@ ProcessDefinition: !Extends_ExecutableResource
 Process: !Extends_TaskableResource
   label: ""     # Human legible label
   proctype: ""  # Indicates a specialized type of CC process
-  process_definition_id: ""
-  process_definition: !ProcessDefinition
   process_state: !ProcessStateEnum
   process_configuration: {}
   process_id: ""

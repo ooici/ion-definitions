@@ -101,3 +101,18 @@ methods:
       success: True
     throws:
       NotFound: object with specified id does not exist
+
+  read_process:
+    docstring: Returns a Process as an object.
+    in:
+      process_id: ""
+    out:
+      process: !Process
+    throws:
+      NotFound: object with specified id does not exist
+
+  list_processes:
+    docstring: Lists managed processes
+    in:
+    out:
+      processes: []

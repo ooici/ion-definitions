@@ -260,6 +260,7 @@ methods:
     docstring: Make the devices on this deployment the primary devices for the sites
     in:
       deployment_id: ""
+      activate_subscriptions: False
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -268,9 +269,7 @@ methods:
   transfer_site_subscription:
     docstring: Set a new primary device for a site and switch data collection
     in:
-      deployment_id: ""
       site_id: ""
-      device_id: ""
     out:
     throws:
       BadRequest: if objects' associations are not as expected

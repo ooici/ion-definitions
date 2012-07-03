@@ -12,6 +12,9 @@ ObjectType: !Extends_InformationResource
   # The actual object specification
   definition: ""
 
+  # Used to sort multiple object type definitions to maintain dependencies
+  definition_order: 0
+
   # The class of object (e.g is it an enum or a content object)
   object_type: !ObjectTypeEnum
 

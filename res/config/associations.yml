@@ -1,251 +1,324 @@
-# associations.yml
+# This is the authoritative definition of all permissible resource associations in the system
 
-# This is the authoritative definition of all permissible association predicates in the system
+# Order definitions alphabetically by subsystem
+# cardinality: 1,1 or 1,n or n,1 or n,n If absent n,n is assumed
 
-# WARNING: !!! Make sure the same predicate does NOT occur twice in the list below !!!
-
-PredicateTypes:
-#SA
-  hasAssignment: # DEPRECATE (use hasDevice)
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [InstrumentSite, PlatformSite]
-  hasDataset:
-    domain: [DataProducer, DataProduct]
-    range: [DataSet]
-  hasDataProducer:
-    domain: [DataProcess, Device, ExternalDataset, DataProduct]
-    range: [DataProducer]
-  hasDataProduct:
-    domain: [Site, Workflow]
-    range: [DataProduct]
-  hasDevice:
-    domain: [Site, Device]
-    range: [Device]
-  hasDeployment:
-    domain: [Device, InstrumentSite, PlatformSite]
-    range: [Deployment, InstrumentSite, PlatformSite]
-  hasInputDataProducer:
-    domain: [DataProducer]
-    range: [DataProducer]
-  hasInputProduct:
-    domain: [DataProcess, Workflow]
-    range: [DataProduct]
-  hasInstance: # DEPRECATE (use hasDefinition)
-    domain: [AgentDefinition, DataProcessDefinition]
-    range: [AgentInstance, DataProcess]
-  hasInstrument:  # DEPRECATE
-    domain: [PlatformDevice, PlatformSite]
-    range: [InstrumentDevice, InstrumentSite]
-  hasModel:
-    domain: [Device, Site, AgentDefinition, DataSource, ExternalDataset]
-    range: [DeviceModel]
-  hasObservatory: # DEPRECATE
-    domain: [Org]
-    range: [Observatory]
-  hasOutputProduct:
-    domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
-    range: [DataProduct]
-  hasParent:
-    domain: [DataProducer]
-    range: [DataProducer]
-  hasPrimaryDeployment: # DEPRECATE (use Deployment resource)
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [InstrumentSite, PlatformSite]
-  hasSensor: # DEPRECATE (use hasDevice)
-    domain: [InstrumentDevice]
-    range: [SensorDevice]
-  hasSite:
-    domain: [Site]
-    range: [Site]
-# DM
-  hasArchive:
-    domain: [DataStore]
-    range: [PersistentArchive]
-  hasCatalog:
-    domain: [View]
-    range: [Catalog]
-  hasDatastore:
-    domain: [View, Index, PersistenceSystem, PersistenceInstance]
-    range: [DataStore]
-  hasPersistenceInstance:
-    domain: [PersistenceSystem]
-    range: [PersistenceInstance]
-  hasElement:
-    domain: [Collection]
-    range: [Resource]
-  hasIndex:
-    domain: [Catalog, DataStore]
-    range: [Index]
-  hasIngestionConfiguration:
-    domain: [DataSet, DatasetIngestionConfiguration]
-    range: [IngestionConfiguration]
-  hasInputStreamDefinition:
-    domain: [DataProcessDefinition]
-    range: [StreamDefinition]
-  hasNotification:
-    domain: [ActorIdentity]
-    range: [NotificationRequest]
-  hasOutStream:
-    domain: [Transform]
-    range: [Stream]
-  hasStream:
-    domain: [Replay, DataProcess, DataProduct, DataSet, ExchangePoint, Subscription]
-    range: [Stream]
-  hasStreamDefinition:
-    domain: [Stream, InstrumentModel, DataProcessDefinition]
-    range: [StreamDefinition]
-  hasSubscription:
-    domain: [IngestionConfiguration, Transform, ExchangePoint]
-    range: [Subscription]
-  hasTopology:
-    domain: [ExchangePoint, Stream, Subscription]
-    range: [TopicTopology]
-  hasTransform:
-    domain: [DataProcess, IngestionConfiguration]
-    range: [Transform]
-  hasView:
-    domain: [View, Catalog]
-    range: [View]
-
-# COI
-  affiliatedWith:
-    domain: [Org]
-    range: [Org]
-  committedTo:
-    domain: [Commitment]
-    range: [ActorIdentity]
-  hasAgent: # DEPRECATE (don't use)
-    domain: [InstrumentSite, PlatformSite]
-    range: [InstrumentAgent, PlatformAgent]
-  hasAgentDefinition:
-    domain: [DeviceModel, Site, AgentInstance]
-    range: [AgentDefinition]
-  hasAgentInstance:
-    domain: [TaskableResource, Device, DataSource, ExternalDataset]
-    range: [AgentInstance]
-  hasAttachment:
-    domain: [Resource]
-    range: [Attachment]
-  hasCommitment:
-    domain: [ActorIdentity, Resource]
-    range: [Commitment]
-  hasConversationType:
-    domain: [Conversation, ServiceDefinition]
-    range: [ConversationType]
-  hasCredentials:
-    domain: [ActorIdentity]
-    range: [UserCredentials]
-  hasDefinition:
-    domain: [TaskableResource, Workflow]
-    range: [ExecutableResource, WorkflowDefinition]
-  hasExchangeBroker:
-    domain: [ExchangeSpace]
-    range: [ExchangeBroker]
-  hasExchangeName:
-    domain: [ExchangeSpace]
-    range: [ExchangeName]
-  hasExchangePoint:
-    domain: [ExchangeSpace]
-    range: [ExchangePoint]
-  hasExchangeSpace:
-    domain: [Org]
-    range: [ExchangeSpace]
-  hasInfo:
-    domain: [ActorIdentity]
-    range: [UserInfo]
-  hasLifecycle:
-    domain: [ResourceType]
-    range: [ResourceLifecycle]
-  hasMembership:
-    domain: [Org]
-    range: [ActorIdentity]
-  hasObjectType:
-    domain: [ResourceType, EventType]
-    range: [ObjectType]
-  hasOwner:
-    domain: [Resource]
-    range: [ActorIdentity]
-  hasPolicy:
-    domain: [Resource]
-    range: [Policy]
-  hasProcess:
-    domain: [CapabilityContainer, Service]
-    range: [Process]
-  hasRequest:
-    domain: [Org, ActorIdentity]
-    range: [UserRequest,UserRequest]
-  hasResource:
-    domain: [Org, Collection]
-    range: [Resource]
-  hasRole:
-    domain: [Conversation, ActorIdentity, Org]
-    range: [ConversationRole, UserRole]
-  hasServiceDefinition:
-    domain: [Service]
-    range: [ServiceDefinition]
-
-# CEI
-  hasProcessDefinition:
-    domain: [Resource]
-    range: [ProcessDefinition, DataProcessDefinition]
-  supportsExecutionEngine:
-    domain: [ProcessDefinition]
-    range: [ExecutionEngineDefinition]
-# EOI
-  hasProvider:
-    domain: [DataSource]
-    range: [ExternalDataProvider]
-  hasSource:
-    domain: [ExternalDataset]
-    range: [DataSource]
-# UX
-  hasUIGroup:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIScreenLabel:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIBlockAttribute:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIAttribute:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIBlockRepresentation:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIRepresentation:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIGroupBlock:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIBlock:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIViewGroup:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUISupertype:
-    domain: [UIResource]
-    range: [UIResource]
-  hasUIResource:
-    domain: [UIResource]
-    range: [UIResource]
-
+AssociationDefinitions:
 # AS
-  hasDataProcessDefinition:
-    domain: [WorkflowDefinition]
-    range: [DataProcessDefinition]
-
-  hasDataProcess:
+  - predicate: hasDataProcess
     domain: [Workflow]
     range: [DataProcess]
+    docstring: References a DataProcess (instance) belonging to a Workflow (instance)
+  - predicate: hasDataProcessDefinition
+    domain: [WorkflowDefinition]
+    range: [DataProcessDefinition]
+    docstring: References a DataProcessDefinition (type) used by WorkflowDefinition (type)
+#SA
+  - predicate: hasAssignment # DEPRECATE (use hasDevice)
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [InstrumentSite, PlatformSite]
+    docstring: DEPRECATED
+  - predicate: hasDataset
+    domain: [DataProducer, DataProduct]
+    range: [DataSet]
+    docstring: References a DataSet resource that keeps a persistent metadata/data coverage.
+  - predicate: hasDataProducer
+    domain: [DataProcess, Device, ExternalDataset, DataProduct]
+    range: [DataProducer]
+    docstring: References the DataProducer entiry to track a provenance relationship
+  - predicate: hasDataProduct
+    domain: [Site, Workflow]
+    range: [DataProduct]
+    docstring: References a resulting or intermediate DataProduct
+  - predicate: hasDevice
+    domain: [Site, Device]
+    range: [Device]
+    docstring: References an assigned or a composite Device
+  - predicate: hasDeployment
+    domain: [Device, InstrumentSite, PlatformSite]
+    range: [Deployment, InstrumentSite, PlatformSite]
+    docstring: References the Deployment (combination of Device and Site with temporal extent) associated with a Site or Device
+  - predicate: hasInputDataProducer
+    domain: [DataProducer]
+    range: [DataProducer]
+    docstring: References the a DataProducer's input DataProducer to express a provenance relationship
+  - predicate: hasInputProduct
+    domain: [DataProcess, Workflow]
+    range: [DataProduct]
+    docstring: References the DataProduct that provides input data for a processing resource
+  - predicate: hasInstance # DEPRECATE (use hasDefinition)
+    domain: [AgentDefinition, DataProcessDefinition]
+    range: [AgentInstance, DataProcess]
+    docstring: DEPRECATED
+  - predicate: hasInstrument  # DEPRECATE
+    domain: [PlatformDevice, PlatformSite]
+    range: [InstrumentDevice, InstrumentSite]
+    docstring: DEPRECATED
+  - predicate: hasModel
+    domain: [Device, Site, AgentDefinition, DataSource, ExternalDataset]
+    range: [DeviceModel]
+    docstring: References the model (aka type/class) resource for the resource
+  - predicate: hasObservatory # DEPRECATE
+    domain: [Org]
+    range: [Observatory]
+    docstring: DEPRECATED
+  - predicate: hasOutputProduct
+    domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
+    range: [DataProduct]
+    docstring: References the DataProduct produced by the given resource
+  - predicate: hasParent
+    domain: [DataProducer]
+    range: [DataProducer]
+    docstring: References the a DataProducer's parent DataProducer to express a provenance relationship
+  - predicate: hasPrimaryDeployment # DEPRECATE (use Deployment resource)
+    domain: [PlatformDevice, InstrumentDevice]
+    range: [InstrumentSite, PlatformSite]
+    docstring: DEPRECATED
+  - predicate: hasSensor # DEPRECATE (use hasDevice)
+    domain: [InstrumentDevice]
+    range: [SensorDevice]
+    docstring: DEPRECATED
+  - predicate: hasSite
+    domain: [Site]
+    range: [Site]
+    docstring: References a child Site for a Site. The extent of all these associations form a true tree with an Observatory as root.
+# DM
+  - predicate: hasArchive
+    domain: [DataStore]
+    range: [PersistentArchive]
+    docstring: References a PersistentArchive (storage location for data files) for a DataStore (logical persistence namespace)
+  - predicate: hasCatalog
+    domain: [View]
+    range: [Catalog]
+    docstring: References the Catalog structure used by a View
+  - predicate: hasDatastore
+    domain: [View, Index, PersistenceSystem, PersistenceInstance]
+    range: [DataStore]
+    docstring: References the DataStore (logical persistence namespace) that contains or provides the given resource
+  - predicate: hasPersistenceInstance
+    domain: [PersistenceSystem]
+    range: [PersistenceInstance]
+    docstring: References an instance that is part of a PersistenceSystem (a cluster)
+  - predicate: hasElement
+    domain: [Collection]
+    range: [Resource]
+    docstring: References one of a collection of resources
+  - predicate: hasIndex
+    domain: [Catalog, DataStore]
+    range: [Index]
+    docstring: References the Index resource assocated with a structure or DataStore
+  - predicate: hasIngestionConfiguration
+    domain: [DataSet, DatasetIngestionConfiguration]
+    range: [IngestionConfiguration]
+    docstring: References the configuration for the ingestion system
+  - predicate: hasInputStreamDefinition
+    domain: [DataProcessDefinition]
+    range: [StreamDefinition]
+    docstring: DEPRECATE
+  - predicate: hasNotification
+    domain: [ActorIdentity]
+    range: [NotificationRequest]
+    docstring: References a NotificationRequest (standing notification rule) for a user.
+  - predicate: hasOutStream
+    domain: [Transform]
+    range: [Stream]
+    docstring: References one Stream on which a Transform publishes on
+  - predicate: hasStream
+    domain: [Replay, DataProcess, DataProduct, DataSet, ExchangePoint, Subscription]
+    range: [Stream]
+    docstring: References a Stream used by a resource as input (or output)
+  - predicate: hasStreamDefinition
+    domain: [Stream, InstrumentModel, DataProcessDefinition]
+    range: [StreamDefinition]
+    docstring: References the precise definition of a Stream's contents
+  - predicate: hasSubscription
+    domain: [IngestionConfiguration, Transform, ExchangePoint]
+    range: [Subscription]
+    docstring: References a Subcription resulting in messages matching a defined criteria
+  - predicate: hasTopology
+    domain: [ExchangePoint, Stream, Subscription]
+    range: [TopicTopology]
+    docstring: References a structure that defines the buildup of Streams for an ExchangePoint
+  - predicate: hasTransform
+    domain: [DataProcess, IngestionConfiguration]
+    range: [Transform]
+    docstring: References the Transform resource
+  - predicate: hasView
+    domain: [View, Catalog]
+    range: [View]
+    docstring:
+
+# COI
+  - predicate: affiliatedWith
+    domain: [Org]
+    range: [Org]
+    docstring: References an Org that subject Org is affiliated with by electronic contract
+  - predicate: committedTo
+    domain: [Commitment]
+    range: [ActorIdentity]
+    docstring: References the ActorIdentity that this Commitment applies to
+  - predicate: hasAgent # DEPRECATE (don't use)
+    domain: [InstrumentSite, PlatformSite]
+    range: [InstrumentAgent, PlatformAgent]
+    docstring: DEPRECATED
+  - predicate: hasAgentDefinition
+    domain: [DeviceModel, Site, AgentInstance]
+    range: [AgentDefinition]
+    docstring: References the agent definition (type of agent) for given instance, indicates compatible agents
+  - predicate: hasAgentInstance
+    domain: [TaskableResource, Device, DataSource, ExternalDataset]
+    range: [AgentInstance]
+    docstring: References the responsible agent instance for given resource
+  - predicate: hasAttachment
+    domain: [Resource]
+    range: [Attachment]
+    docstring: References an Attachment for any given resource
+  - predicate: hasCommitment
+    domain: [ActorIdentity, Resource]
+    range: [Commitment]
+    docstring: References a Commitment for an identity (that is committed) or a resource (that is used)
+  - predicate: hasConversationType
+    domain: [Conversation, ServiceDefinition]
+    range: [ConversationType]
+    docstring: References the ConversationType (protocol definition)
+  - predicate: hasCredentials
+    domain: [ActorIdentity]
+    range: [UserCredentials]
+    docstring: References an external identity with credentials for an ION identity
+  - predicate: hasDefinition
+    domain: [TaskableResource, Workflow]
+    range: [ExecutableResource, WorkflowDefinition]
+    docstring:
+  - predicate: hasExchangeBroker
+    domain: [ExchangeSpace]
+    range: [ExchangeBroker]
+    docstring: References an ExchangeBroker, the given ExchangeSpace is replicated on
+  - predicate: hasExchangeName
+    domain: [ExchangeSpace]
+    range: [ExchangeName]
+    docstring: References an ExchangeName defined in the given ExchangeSpace
+  - predicate: hasExchangePoint
+    domain: [ExchangeSpace]
+    range: [ExchangePoint]
+    docstring: References an ExchangePoint defined in the given ExchangeSpace
+  - predicate: hasExchangeSpace
+    domain: [Org]
+    range: [ExchangeSpace]
+    docstring: References an ExchangeSpace that is the basis for the given Org
+  - predicate: hasInfo
+    domain: [ActorIdentity]
+    range: [UserInfo]
+    docstring: References a UserInfo (an individual) associated with an ION identity
+  - predicate: hasLifecycle
+    domain: [ResourceType]
+    range: [ResourceLifecycle]
+    docstring: References a ResourceLifecycle (a workflow definition) for the given ResourceType
+  - predicate: hasMembership
+    domain: [Org]
+    range: [ActorIdentity]
+    docstring: Indicates the the ION identity is a member of given Org.
+  - predicate: hasObjectType
+    domain: [ResourceType, EventType]
+    range: [ObjectType]
+    docstring: Indicates that the given resource uses an ObjectType
+  - predicate: hasOwner
+    domain: [Resource]
+    range: [ActorIdentity]
+    docstring: Indicates the owner (identity) for the resource
+  - predicate: hasPolicy
+    domain: [Resource]
+    range: [Policy]
+    docstring: Indicates the policy for the resource
+  - predicate: hasProcess
+    domain: [CapabilityContainer, Service]
+    range: [Process]
+    docstring: References a Process (instance) that is associated with the container or service
+  - predicate: hasRequest
+    domain: [Org, ActorIdentity]
+    range: [UserRequest,UserRequest]
+    docstring: References a Negotiation that with and within an Org, originated by a user
+  - predicate: hasResource
+    domain: [Org, Collection]
+    range: [Resource]
+    docstring: References a resource beloning to Org or a Collection
+  - predicate: hasRole
+    domain: [Conversation, ActorIdentity, Org]
+    range: [ConversationRole, UserRole]
+    docstring: Indicates the role definition fulfilled by a resource
+  - predicate: hasServiceDefinition
+    domain: [Service]
+    range: [ServiceDefinition]
+    docstring: References the ServiceDefinition (type) for a given Service (instance)
+
+# CEI
+  - predicate: hasProcessDefinition
+    domain: [Resource]
+    range: [ProcessDefinition, DataProcessDefinition]
+    docstring: References the ProcessDefinition (type of process with executable) that instantiated or defined the resource
+  - predicate: supportsExecutionEngine
+    domain: [ProcessDefinition]
+    range: [ExecutionEngineDefinition]
+    docstring: Indicates compatibility between a ProcessDefinition for and ExecutionEngineDefinition
+# EOI
+  - predicate: hasProvider
+    domain: [DataSource]
+    range: [ExternalDataProvider]
+    docstring: References the ExternalDataProvider (organization) for a DataSource (server)
+  - predicate: hasSource
+    domain: [ExternalDataset]
+    range: [DataSource]
+    docstring: References the DataSource (server) for an ExternalDataset (data entity)
+# UX
+  - predicate: hasUIGroup
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIScreenLabel
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIBlockAttribute
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIAttribute
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIBlockRepresentation
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIRepresentation
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIGroupBlock
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIBlock
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIViewGroup
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUISupertype
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
+  - predicate: hasUIResource
+    domain: [UIResource]
+    range: [UIResource]
+    docstring: Defines references between UI elements
 
 # Examples
-  hasAccount:
+  - predicate: hasAccount
     domain: [BankCustomer]
     range: [BankAccount]
+    docstring: References an account for a customer
   
 
 # This is a configuration for retrieving combinations of associations

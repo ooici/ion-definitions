@@ -1,7 +1,8 @@
 # Defines a type of data process including potential parameters and location of the executable
 DataProcessDefinition: !Extends_InformationResource
-  #module and class for source code
+  # (SYS) module for source code
   module: ""
+  # (SYS) class for source code
   class_name: ""
 
   process_source: ""

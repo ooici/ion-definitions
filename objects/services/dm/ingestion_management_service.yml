@@ -10,19 +10,24 @@ dependencies: [resource_registry, pubsub_management, transform_management, proce
 
 methods:
   create_ingestion_configuration:
+    docstring: Creates an ingestion configuration resource for a given exchange point. 
     in:
       name: ""
+      # Exchanges are represented by names for now but will use exchange objects in the future
       exchange_point_id: ""
+      # Each item in the queue should be an IngestionQueue object see obj/data/dm/ingestion.yml
       queues: []
     out:
       ingestion_configuration_id: ""
 
   update_ingestion_configuration:
+    docstring: Update the attributes of the ingestion configuration.
     in:
       ingestion_configuration: !IngestionConfiguration
     out:
 
   read_ingestion_configuration:
+    docstring: Retrieves an ingestion configuration object from the resource registry.
     in:
       ingestion_configuration_id: ""
     out:
@@ -31,11 +36,21 @@ methods:
       NotFound: if ingestion configuration did not exist
 
   delete_ingestion_configuration:
+    docstring: |
+        Deletes an ingestion configuration and all subscriptions which effectively 
+        halts all activity on the queues.
     in:
       ingestion_configuration_id: ""
     out:
     throws:
       NotFound: The ingestion configuration id did not exist
+
+  list_ingestion_configurations:
+    docstring: Retrieves all ingestion configurations.
+    in: 
+       id_only: False
+    out:
+       configs: []
 
   #-------------------------
 

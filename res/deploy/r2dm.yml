@@ -4,6 +4,10 @@ version: 0.1
 description: Data Management Services
 ion: 0.0.1
 apps:
+  - name: event_persister
+    version: 0.1
+    processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
+  
   - name: directory
     version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]

@@ -8,7 +8,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Process+Dispatcher+Service
 
-dependencies: [resource_registry]
+dependencies: []
 
 methods:
   create_process_definition:

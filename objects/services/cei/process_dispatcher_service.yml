@@ -20,16 +20,6 @@ methods:
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
-  update_process_definition:
-    docstring: Updates a Process Definition based on given object.
-    in:
-      process_definition: !ProcessDefinition
-    out:
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
-      NotFound: object with specified id does not exist
-      Conflict: object not based on latest persisted object version
-
   read_process_definition:
     docstring: Returns a Process Definition as object.
     in:

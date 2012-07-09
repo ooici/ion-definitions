@@ -61,7 +61,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-
   create_data_product_version:
     docstring: Define a new version of an existing set of information that represent an inprovement in the quality or understanding of the information.
     in:
@@ -75,17 +74,17 @@ methods:
 
    update_data_product_version:
     in:
-      data_product: !!DataProductVersion
+      data_product: !DataProductVersion
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  read_data_product:
+  read_data_product_version:
     docstring: Retrieve data product information
     in:
       data_product_version_id: ""
     out:
-      data_product: !!DataProductVersion
+      data_product: !DataProductVersion
 
   delete_data_product_version:
     docstring: Remove a version of an data product.
@@ -95,7 +94,6 @@ methods:
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
-
 
   execute_data_product_lifecycle:
     in:

@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry, process_dispatcher]
+dependencies: [resource_registry]
 
 methods:
   create_notification:

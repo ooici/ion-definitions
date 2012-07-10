@@ -72,7 +72,7 @@ methods:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
-   update_data_product_version:
+  update_data_product_version:
     in:
       data_product: !DataProductVersion
     out:

@@ -110,5 +110,9 @@ AgentInstance: !Extends_TaskableResource
 
 ---
 
+ProcessStateEnum: !enum (values=(SPAWN, TERMINATE, ERROR), default=SPAWN)
+
+---
+
 # Internal
 EndShared:

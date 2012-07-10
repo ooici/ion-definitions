@@ -36,8 +36,6 @@ ContainerConfigModifiedEvent: !Extends_Event
 
 ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
 
-ProcessStateEnum: !enum (values=(SPAWN, TERMINATE, ERROR), default=SPAWN)
-
 DeviceEvent: !Extends_Event
     # The origin is a device (resource) id
 

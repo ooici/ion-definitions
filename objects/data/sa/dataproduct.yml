@@ -90,9 +90,9 @@ DataProduct: !Extends_InformationResource
 
 
 
-
-
-
+# Describes a user visible data and metadata resource in the ION system. May be streamed only
+# or also persisted for later historic query.
+DataProductVersion: !Extends_InformationResource
 
 
 

@@ -167,7 +167,7 @@ methods:
       is sent to the user containing the digest of all the events.
 
     in:
-      start_time: 0.0
-      end_time: 10.0
+      start_time: 0
+      end_time: 10
     out:
 

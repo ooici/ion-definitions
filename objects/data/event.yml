@@ -254,9 +254,6 @@ SearchBufferExceededEvent: !Extends_Event
 ReloadUserInfoEvent: !Extends_Event
   notification_id: ""
 
----
-# Events that are of interest to notification workers
-NotificationEvent: !Extends_Event
 
 
 

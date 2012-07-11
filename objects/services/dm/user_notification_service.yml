@@ -30,28 +30,28 @@ methods:
       number_of_workers: 1
     out:
 
-  create_email:
-    docstring: |
-      Creates a NotificationRequest object for the specified User Id. Associate the Notification
-      resource with the user. Setup subscription and call back to send email
-      @todo - is the user email automatically selected from the user id?
-    in:
-      name: ""
-      description: ""
-      event_type: ""
-      event_subtype: ""
-      origin: ""
-      origin_type: ""
-      user_id: ""
-      email: ""
-      mode: !DeliveryMode
-      frequency: !Frequency
-      message_header: ""
-      parser: ""
-    out:
-      notification_id: ""
-    throws:
-      NotFound: if user does not exist, user info does not exist, or user email does not exist
+#  create_email:
+#    docstring: |
+#      Creates a NotificationRequest object for the specified User Id. Associate the Notification
+#      resource with the user. Setup subscription and call back to send email
+#      @todo - is the user email automatically selected from the user id?
+#    in:
+#      name: ""
+#      description: ""
+#      event_type: ""
+#      event_subtype: ""
+#      origin: ""
+#      origin_type: ""
+#      user_id: ""
+#      email: ""
+#      mode: !DeliveryMode
+#      frequency: !Frequency
+#      message_header: ""
+#      parser: ""
+#    out:
+#      notification_id: ""
+#    throws:
+#      NotFound: if user does not exist, user info does not exist, or user email does not exist
 
 #  create_sms:
 #    docstring: |

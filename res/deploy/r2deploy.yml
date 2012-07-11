@@ -1,73 +1,49 @@
 type: release
 name: r2deploy
-version: 0.1
+version: 0.2
 description: Release 2 deployment configuration
-ion: 0.0.1
+ion: 0.1
 apps:
   ##################################
   # CORE SERVICES
-  # Bootstrapper app performs initializations
+  # Bootstrap processes perform initializations
   ##################################
 
   - name: event_persister
     version: 0.1
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
 
-  - name: datastore
-    description: Data store service
+  - name: bootstrap_core
     version: 0.1
-    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
-
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: datastore
+    processapp: [bootstrap_core, ion.processes.bootstrap.bootstrap_core, BootstrapCore]
 
   - name: directory
     version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
 
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: directory
-
   - name: resource_registry
-    description: Resource registry service
     version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: resource_registry
 
   - name: identity_management
     version: 0.1
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
 
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: identity_management
-
   - name: policy_management
     version: 0.1
     processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
+
+  - name: exchange_management
+    version: 0.1
+    processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
 
   - name: org_management
     version: 0.1
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
 
-  - name: bootstrap
+  - name: bootstrap_org
     version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: org_management
+    processapp: [bootstrap_org, ion.processes.bootstrap.bootstrap_org, BootstrapOrg]
 
 #  - name: bootstrap
 #    version: 0.1
@@ -75,60 +51,50 @@ apps:
 #    config:
 #      level: load_system_policy
 
-  - name: exchange_management
-    version: 0.1
-    processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
-
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: exchange_management
-
 
   ##################################
   # HIGHER LEVEL SERVICES - TODO: CORRECT ORDER NEEDS TO BE FIGURED OUT ONCE IMPLEMENTATION HAS BEEN COMPLETED
   ##################################
 
   ##### COI SERVICES
-  - name: agent_management
-    version: 0.1
-    processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
-
-  - name: conversation_management
-    version: 0.1
-    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
-
-  - name: object_management
-    version: 0.1
-    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
-
-  - name: resource_management
-    version: 0.1
-    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
-
-  - name: service_management
-    version: 0.1
-    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
-
-  - name: state_repository
-    version: 0.1
-    processapp: [state_repository, ion.services.coi.state_repository_service, StateRepositoryService]
+#  - name: agent_management
+#    version: 0.1
+#    processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
+#
+#  - name: conversation_management
+#    version: 0.1
+#    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
+#
+#  - name: object_management
+#    version: 0.1
+#    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
+#
+#  - name: resource_management
+#    version: 0.1
+#    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
+#
+#  - name: service_management
+#    version: 0.1
+#    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
+#
+#  - name: state_repository
+#    version: 0.1
+#    processapp: [state_repository, ion.services.coi.state_repository_service, StateRepositoryService]
 
   # GATEWAY SERVICE MOVED TO THE END
 
   #### CEI Services
-  - name: epu_management
-    version: 0.1
-    processapp: [epu_management, ion.services.cei.epu_management_service, EpuManagementService]
-
-  - name: execution_engine_management
-    version: 0.1
-    processapp: [execution_engine_management, ion.services.cei.execution_engine_management_service, ExecutionEngineManagementService]
-
-  - name: process_dispatcher
-    version: 0.1
-    processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
+#  - name: epu_management
+#    version: 0.1
+#    processapp: [epu_management, ion.services.cei.epu_management_service, EpuManagementService]
+#
+#  - name: execution_engine_management
+#    version: 0.1
+#    processapp: [execution_engine_management, ion.services.cei.execution_engine_management_service, ExecutionEngineManagementService]
+#
+#  - name: process_dispatcher
+#    version: 0.1
+#    processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
 
   - name: bootstrap
     version: 0.1

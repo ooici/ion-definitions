@@ -1,4 +1,4 @@
-Scenario,ID,owner_id,lcstate,org_ids,platform_device_id,instrument_model_id,deployment_li_ids,primary_deployment_li_id,id/name,id/description,id/serial_number,id/firmware_version,id/hardware_version, id/manufacture_date,id/lot_number,id/datum_characterization
-R2_DEMO,ID3,USER_1,DEPLOYED_AVAILABLE,MF_3,PD3,IM2,LOGINS3,LOGINS3,CTD Simulator 1 Demo,Simulator 1 providing CTD data in the LCA demonstration,10003,0-00,0-00,,1,
-R2_DEMO,ID4,USER_1,DEPLOYED_AVAILABLE,MF_3,PD3,IM2,LOGINS3,,CTD Simulator 2 Demo,Simulator 2 replacement for 1 providing CTD data in the LCA demonstration,10004,0-00,0-00,,1,
-LCA_MANUAL,MANUAL,,,,,IM2,,,Seabird CTD for Demo,Seabird Conductivity-Temperature-Depth instrument used for demonstration,tbd,tbd,tbd,,,
+"Scenario","ID","owner_id","lcstate","org_ids","instrument_model_id","id/name","id/description","id/serial_number","id/firmware_version","id/hardware_version"," id/manufacture_date","id/lot_number","id/datum_characterization"
+"R2_DEMO","ID3","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2","CTD Simulator 1 Demo","Simulator 1 providing CTD data in the LCA demonstration",10003,"0-00","0-00",,1,
+"R2_DEMO","ID4","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2","CTD Simulator 2 Demo","Simulator 2 replacement for 1 providing CTD data in the LCA demonstration",10004,"0-00","0-00",,1,
+"LCA_MANUAL","MANUAL",,,,"IM2","Seabird CTD for Demo","Seabird Conductivity-Temperature-Depth instrument used for demonstration","tbd","tbd","tbd",,,

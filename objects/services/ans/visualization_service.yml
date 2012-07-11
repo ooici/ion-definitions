@@ -39,4 +39,11 @@ methods:
     throws:
       NotFound: Specified Data product or its visualization product does not exist
 
-
+  get_imagelist:
+    docstring: Request to fetch an image list available for a particular DP
+    in:
+      data_product_id: ""
+    out:
+      image_list: ""
+    throws:
+      NotFound: Specified Data product or its visualization product does not exist

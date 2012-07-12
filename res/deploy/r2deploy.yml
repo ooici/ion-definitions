@@ -18,7 +18,7 @@ apps:
     bootlevel: 2
     config:
       bootstrap_plugins:
-        - [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
 
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]

@@ -19,7 +19,7 @@ AssociationDefinitions:
     range: [InstrumentSite, PlatformSite]
     docstring: DEPRECATED
   - predicate: hasDataset
-    domain: [DataProducer, DataProduct]
+    domain: [DataProducer, DataProduct, DataProductVersion]
     range: [DataSet]
     docstring: References a DataSet resource that keeps a persistent metadata/data coverage.
   - predicate: hasDataProducer
@@ -132,7 +132,7 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References one Stream on which a Transform publishes on
   - predicate: hasStream
-    domain: [Replay, DataProcess, DataProduct, DataSet, ExchangePoint, Subscription]
+    domain: [Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint, Subscription]
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition

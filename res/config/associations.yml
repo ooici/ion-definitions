@@ -30,6 +30,10 @@ AssociationDefinitions:
     domain: [Site, Workflow]
     range: [DataProduct]
     docstring: References a resulting or intermediate DataProduct
+  - predicate: hasDependency
+    domain: [DataProducer]
+    range: [DataProducer]
+    docstring: References a prior DataProducer which this producer is based on (or derived from). Enable provenance of data versions.
   - predicate: hasDevice
     domain: [Site, Device]
     range: [Device]
@@ -82,6 +86,10 @@ AssociationDefinitions:
     domain: [Site]
     range: [Site]
     docstring: References a child Site for a Site. The extent of all these associations form a true tree with an Observatory as root.
+  - predicate: hasVersion
+    domain: [DataProduct]
+    range: [DataProductVersion]
+    docstring: References a version of a DataProduct. The first version is created with the DataProduct.
 # DM
   - predicate: hasArchive
     domain: [DataStore]

@@ -106,6 +106,8 @@ container:
   objects:
     validate: # TBD: move entries to here
 
+  org_name: ION  # The default is the ROOT ION Org
+
   filesystem:
       force_clean: False
       cache: /tmp/ion/run/cache

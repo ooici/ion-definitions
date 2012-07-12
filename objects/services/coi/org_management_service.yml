@@ -436,6 +436,16 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  find_org_containers:
+    docstring: |
+      Returns a list of containers associated with an Org. Will throw a not NotFound exception
+      if the specified id does not exist.
+    in:
+      org_id: ""
+    out:
+      container_list: []
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
 

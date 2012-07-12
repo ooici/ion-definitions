@@ -78,7 +78,7 @@ methods:
   publish_event:
     in:
       event:
-      time:
+      publish_time:
     out:
     throws:
       BadRequest: if there is anything wrong with the event object

@@ -255,5 +255,9 @@ ReloadUserInfoEvent: !Extends_Event
   notification_id: ""
 
 
+---
+# The Scheduler fires off this event so that services can react to it and perform tasks
+SchedulerEvent: !Extends_Event
+
 
 

@@ -83,8 +83,6 @@ DataProduct: !Extends_InformationResource
   # Further information about the exclusive rights hold, such as a justification for a permanent hold
   exclusive_rights_notes: ""
 
-  # (SYS) Dataset Id for the persisted product
-  dataset_id: ""
   # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""
 

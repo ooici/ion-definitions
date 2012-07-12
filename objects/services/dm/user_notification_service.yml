@@ -152,7 +152,7 @@ methods:
       type: ""
       min_datetime: ""
       max_datetime: ""
-      limit: 0
+      limit: -1
       descending: False
     out:
       event_list: []

@@ -1,3 +1,5 @@
+# Describes a user visible data and metadata resource in the ION system. May be streamed only
+# or also persisted for later historic query.
 DataProduct: !Extends_InformationResource
 
   # Current to version 140 of confluence resource page:  https://confluence.oceanobservatories.org/x/EYHsAQ
@@ -81,9 +83,9 @@ DataProduct: !Extends_InformationResource
   # Further information about the exclusive rights hold, such as a justification for a permanent hold
   exclusive_rights_notes: ""
 
-  # Dataset Id for the persisted product
+  # (SYS) Dataset Id for the persisted product
   dataset_id: ""
-  # Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
+  # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""
 
 

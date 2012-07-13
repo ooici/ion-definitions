@@ -1,7 +1,7 @@
 #LogicalInstrument: !Extends_InformationResource
 
 
-# This is the physical instrument
+# Describes a physical instrument
 InstrumentDevice: !Extends_Device
   serial_number: ""
   firmware_version: ""
@@ -10,7 +10,7 @@ InstrumentDevice: !Extends_Device
   lot_number: ""
   datum_characterization: "" #later will be an object
 
-#This defines the characteristics of an instrument model
+# Defines the characteristics of an instrument model
 InstrumentModel: !Extends_DeviceModel
   model_label: ""
   manufacturer: !Institution
@@ -25,15 +25,23 @@ InstrumentModel: !Extends_DeviceModel
   writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
   # more fields remain
 
+# Describes a type of instrument agent
 InstrumentAgent: !Extends_AgentDefinition
+  # (SYS) module for driver source code
   driver_module: ""
+  # (SYS) class for driver source code
   driver_class: ""
+  # (SYS) module for driver client source code
   driver_client_module: ""
+  # (SYS) class for driver client source code
   driver_class_client: ""
   time_source: ""
 
+# Describes parameters for an instance of an instrument agent.
 InstrumentAgentInstance: !Extends_AgentInstance
+  # (SYS) module for driver source code
   driver_module: ""
+  # (SYS) class for driver source code
   driver_class: ""
   svr_addr: ""
   cmd_port: ""
@@ -59,8 +67,8 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   attached_sensors: []  # list of sensors attached to this device
   #@Method
   location: !GeospatialBounds  # current geospatial (3D) location of instrument
-  #@hasSensor
-  sensor_count: 0   # example value for association count
+  #@hasDataProducer
+  data_producer_count: 0   # example value for association count
   #@Method=get_data_url
   data_produced: ""   # URL (public) / Resource _id
 

@@ -1,10 +1,11 @@
-
+# Base type to describe one step within a workflow definition
 WorkflowStep:
   name: ""
   description: ""
 
 ---
 
+# Describe one data process execution step within a workflow definition
 DataProcessWorkflowStep: !Extends_WorkflowStep
   data_process_definition_id: ""
   persist_process_output_data: True
@@ -13,8 +14,9 @@ DataProcessWorkflowStep: !Extends_WorkflowStep
 
 ---
 
+# Defines a workflow composed of steps
 WorkflowDefinition: !Extends_InformationResource
   workflow_steps: []  # A list of ordered workflow steps
 
-
+# Describes an instance of a WorkflowDefinition.
 Workflow: !Extends_InformationResource

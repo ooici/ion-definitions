@@ -1,6 +1,8 @@
 # Place shared objects in here that can be used by definitions in subdirectories
 
+# Data structure for representing contact information uniformly across resources
 ContactInformation:
+  first_name: ""
   name: ""
   address: ""
   city: ""
@@ -9,16 +11,18 @@ ContactInformation:
   country: ""
   phone: ""
   email: ""
-  variables:
+  variables:   # Extension set of name/value pairs
   - name: ""
     value: ""
 
+# Data structure for representing institution information uniformly across resources
 Institution:
   name: ""
   phone: ""
   email: ""
   website: ""
 
+# Data structure for representing geospatial bounds uniformly across resources
 GeospatialBounds:
   geospatiallatmin: 0.0
   geospatiallatmax: 0.0
@@ -106,4 +110,9 @@ AgentInstance: !Extends_TaskableResource
 
 ---
 
+ProcessStateEnum: !enum (values=(SPAWN, TERMINATE, ERROR), default=SPAWN)
+
+---
+
+# Internal
 EndShared:

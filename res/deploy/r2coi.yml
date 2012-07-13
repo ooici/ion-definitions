@@ -6,104 +6,75 @@ ion: 0.0.1
 apps:
   ##################################
   # CORE SERVICES
-  # Bootstrapper app performs initializations
+  # Bootstrap processes perform initializations
   ##################################
 
-  - name: datastore
-    description: Data store service
-    version: 0.1
-    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+  - name: event_persister
+    processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
+    bootlevel: 1
 
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
+  - name: bootstrapper
+    processapp: [bootstrapper, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 2
     config:
-      level: datastore
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
 
   - name: directory
-    version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: directory
+    bootlevel: 10
 
   - name: resource_registry
-    description: Resource registry service
-    version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: resource_registry
+    bootlevel: 10
 
   - name: identity_management
-    version: 0.1
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
-
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: identity_management
+    bootlevel: 10
 
   - name: policy_management
-    version: 0.1
     processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
-
-  - name: org_management
-    version: 0.1
-    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
-
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: org_management
+    bootlevel: 10
 
   - name: exchange_management
-    version: 0.1
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
+    bootlevel: 10
 
-  - name: bootstrap
-    version: 0.1
-    processapp: [bootstrap, ion.core.bootstrap_service, BootstrapService]
-    config:
-      level: exchange_management
+  - name: org_management
+    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
+    bootlevel: 10
+
 
   ##################################
-  # HIGHER LEVEL SERVICES - TODO: CORRECT ORDER NEEDS TO BE FIGURED OUT ONCE IMPLEMENTATION HAS BEEN COMPLETED
+  # HIGHER LEVEL SERVICES
   ##################################
 
   ##### COI SERVICES
-  - name: agent_management
-    version: 0.1
-    processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
+#  - name: agent_management
+#    processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
+#
+#  - name: conversation_management
+#    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
+#
+#  - name: object_management
+#    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
+#
+#  - name: resource_management
+#    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
+#
+#  - name: service_management
+#    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
 
-  - name: conversation_management
-    version: 0.1
-    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
+  - name: bootstrapper
+    processapp: [bootstrapper, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 20
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
-  - name: object_management
-    version: 0.1
-    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
-
-  - name: resource_management
-    version: 0.1
-    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
-
-  - name: service_management
-    version: 0.1
-    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
-
-  - name: state_repository
-    version: 0.1
-    processapp: [state_repository, ion.services.coi.state_repository_service, StateRepositoryService]
-
+  # LAST SERVICE GATEWAY SERVICE
   - name: service_gateway
-    version: 0.1
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+    bootlevel: 30

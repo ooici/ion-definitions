@@ -1,0 +1,5 @@
+"Scenario","ID","owner_id","org_ids","site_id","device_id","d/name","d/description","d/temporal_constraint"
+"R2_DEMO","DEP1","USER_1","MF_3","LOGINS3","ID3","dep1","deployment of first device",
+"R2_DEMO","DEP2","USER_1","MF_3","LOGINS4","ID4","dep2","deployment of second device",
+"R2_DEMO","DEP3","USER_1","MF_3","LP3","PD3","dep3","deployment of platform device 1",
+"R2_DEMO","DEP4","USER_1","MF_3","LP4","PD4","dep4","deployment of platform device 2",

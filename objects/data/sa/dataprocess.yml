@@ -1,19 +1,17 @@
+# Defines a type of data process including potential parameters and location of the executable
 DataProcessDefinition: !Extends_InformationResource
-  #module and class for source code
+  # (SYS) module for source code
   module: ""
+  # (SYS) class for source code
   class_name: ""
 
   process_source: ""
   parameters: {}
 
+# Describes an instance of a data process
 DataProcess: !Extends_InformationResource
 
-  # Current to version 20 of confluence resource page
-  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Data+Process
-
-  # Orchestrates processing of a stream, from transform definition to scheduling.
-
-  ATBD_reference: ""
-  source_code: ""
+  ATBD_reference: ""           # WRONG
+  source_code: ""              # WRONG
   input_subscription_id: ""
   configuration: {}

@@ -1,13 +1,8 @@
+# Defines an Elastic Processing Unit (EPU)
 EPUDefinition: !Extends_ExecutableResource
-  definition_type: ""
-  definition: {}
+  definition_type: ""   # Type of EPU
+  definition: {}        # Detailed definition of EPU
 
+# Describes an instance of an EPU
 EPU: !Extends_TaskableResource
 
-DeployableType: !Extends_ExecutableResource
-
-DeployableUnit: !Extends_ExecutableResource
-  tbd: ""
-
-OperationalUnit: !Extends_TaskableResource
-  tbd: ""

@@ -9,5 +9,3 @@ R2_DEMO,StreamDef17,MF_3,DPD3_out_temp_L1 demo,,prototype.sci_data.stream_defs,L
 R2_DEMO,StreamDef18,MF_3,DPD4_out_pressure_L1 demo,,prototype.sci_data.stream_defs,L1_pressure_stream_definition
 R2_DEMO,StreamDef19,MF_3,DPD5_out_practical_salinity_L2 demo,,prototype.sci_data.stream_defs,L2_practical_salinity_stream_definition
 R2_DEMO,StreamDef20,MF_3,DPD6_out_density_L2 demo,,prototype.sci_data.stream_defs,L2_density_stream_definition
-R2_DEMO,StreamDef21,,viz_sine_wave_sample,Sinusoid Wave Stream,prototype.sci_data.stream_defs,SBE37_RAW_stream_definition
-R2_DEMO,StreamDef22,,viz_netcdf_sample,NetCDF Sample file,prototype.sci_data.stream_defs,SBE37_RAW_stream_definition

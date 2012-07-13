@@ -2,8 +2,8 @@
 
 Comment_Example:
   # This is a comment.
-  # This additional comment
+  # This is an additional comment
   foo: '' # This is another comment
   #@Decorator
-  #Yet this is another comment
+  # This is another comment
   foo2: '1' 

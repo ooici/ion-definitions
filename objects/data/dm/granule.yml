@@ -1,6 +1,4 @@
-
-
-
+# Contains information describing terms within granules
 Taxonomy: !Extends_InformationResource
   map: {}
 
@@ -11,6 +9,8 @@ CompoundGranule:
 
 ---
 
+# Object containing data associated with a Taxonomy to be transported in messages between
+# distributed processes.
 Granule:
   data_producer_id: ''
   # Can be a reference or value

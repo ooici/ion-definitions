@@ -1,7 +1,4 @@
-# observatory.yml
-
-
-# An entity that encompasses a defined location, time, and/or data-producing entities
+# Base type for entities that encompass a defined location, deployed devices and/or data-producing entities
 Site: !Extends_Resource
   # Specified bounds in 2 or 3 dimensions within which entity exists
   # Mandatory
@@ -18,46 +15,15 @@ Site: !Extends_Resource
 ---
 # Represents an observatory and its physical and information resources (including Instruments),
 # providing Data Products, Event Detection and Instrument services
-# (Also: Marine Facility; Marine Observatory; Virtual Observatory)
 Observatory: !Extends_Site
 
   
 # An entity that encompasses a defined location, time, and/or data-producing entities
 Subsite: !Extends_Site
 
-# A sub-site of an observatory, providing a slot, definition and metadata for platform information,
-# based on a succession of functionally equivalent (physical) Platform resources at a single site
+# A sub-site of an observatory, providing a slot, definition and metadata for platform information.
 PlatformSite: !Extends_Site
 
-# An observatory sub-site, providing a slot, definition and metadata for instrument information,
-# based on a succession of functionally equivalent (physical) Instrument resources at a single site.
+# An observatory sub-site, providing a slot, definition and metadata for instrument information.
 InstrumentSite: !Extends_Site
-
-
----
-
-#This object contains additional information associated with an Observatory such as a Marine Facility
-ObservatoryExtension: !Extends_ExtendedInformationResource
-  #@hasResource=DataProduct
-  data_products: []
-  #@hasResource=PlatformDevice
-  platforms: []
-  #@hasResource=PlatformModel
-  platform_models: []
-  #@hasResource=InstrumentModel
-  instrument_models: []
-  #@hasResource=InstrumentDevice
-  instruments: []
-  #@hasResource=InstrumentAgent
-  instrument_agents: []
-  #@hasResource=DataProcessDefinition
-  data_process_definitions: []
-  #@Method=find_subordinate_frames_of_reference
-  subordinates: []
-  #@hasMembershipInfo
-  members: [] # The list of User Info objects
-  #@hasRole
-  roles: [] # The set of User Roles available in this Observatory
-  #@hasRequest
-  user_requests: [] # A list of requests associated with this user
 

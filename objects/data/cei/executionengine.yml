@@ -1,7 +1,7 @@
 # Describes a type of execution engine to be instantiated
 ExecutionEngineDefinition: !Extends_ExecutableResource
-  definition_type: ""
-  definition: {}
+  definition_type: ""   # Type of execution engine definition
+  definition: {}        # Detailed definition of execution engine (in the format of the type)
 
 # A running execution engine that is available to execute processes of matching type
 ExecutionEngine: !Extends_TaskableResource
@@ -11,3 +11,4 @@ CapabilityContainer: !Extends_TaskableResource
   version: "1.0"        # Version identifier for this container type
   technology: "Python"  # Class of technology
   cc_agent: ""          # Exchange name of the agent representing the container
+

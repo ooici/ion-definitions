@@ -1,0 +1,50 @@
+
+# Base type that all specific scheduler entries extend.
+AbstractSchedulerEntry:
+
+---
+
+# Base type for all SchedulerEntries that result in TimerEvents
+TimerSchedulerEntry: !Extends_AbstractSchedulerEntry
+
+  # String to put in origin of TimerEvent
+  event_origin: ""
+
+  # String to put in subtype field of TimerEvent
+  event_subtype: ""
+
+  # System timestamp (str of millis in UNIX epoch) when this timer will be cancelled
+  expires: ""
+
+---
+
+# Specific timer entry based on start time and intervals between events
+IntervalTimer: !Extends_TimerSchedulerEntry
+  # System timestamp (str of millis in UNIX epoch) for when to start the timer.
+  # If start_time is in the past, it will be skipped
+  start_time: ""
+
+  # If set, time in seconds between timer events, starting with start time.
+  # If start_time + n*interval is in the past, it will be skipped.
+  interval: 0
+
+  # Number of intervals to repeat, including the first event.
+  # Limits the number of timer events, or unlimited until cancelled if 0.
+  number_of_intervals: 0
+
+
+# Specific timer entry based on time of day
+TimeOfDayTimer: !Extends_TimerSchedulerEntry
+  # List of times of day when to send TimerEvent
+  times_of_day:
+    - hour: ""        # Hour of day, range [0,23]
+      minute: ""      # Minute in hour, range [0, 59]
+      second: ""      # Second in minute, range [0, 61]
+
+---
+
+# Represents one specific standing request for timer events
+SchedulerEntry: !Extends_SystemResource
+
+  # A specific subtype of AbstractSchedulerEntry defining the standing request
+  entry: !AbstractSchedulerEntry

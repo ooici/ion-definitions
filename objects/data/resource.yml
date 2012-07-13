@@ -26,6 +26,11 @@ ExecutableResource: !Extends_InformationResource
 
 ---
 
+# Base type for system internally used persistent resource objects. Abstract.
+SystemResource: !Extends_InformationResource
+
+---
+
 # Defined a named type of resource
 ResourceType: !Extends_InformationResource
 

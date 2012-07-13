@@ -156,3 +156,11 @@ ResourcePolicyEvent: !Extends_Event
 UserRoleModifiedEvent: !Extends_Event
   user_id: ""
   role_name: ""
+
+
+---
+
+# Used by DM UNS
+ExampleDetectableEvent: !Extends_Event
+  voltage: 0
+

@@ -1,0 +1,3 @@
+Scenario,ID,owner_id,mf_ids,instrument_agent_id,instrument_device_id,start_agent,iai/name,iai/description,iai/svr_addr,iai/cmd_port,iai/evt_port,iai/comms_method,iai/comms_device_address,iai/comms_device_port,iai/comms_server_address,iai/comms_server_port,iai/driver_module,iai/driver_class
+LCA_DEMO_PRE,IAI3,USER_1,MF_3,IA2,ID3,FALSE,CTD Simulator 1 Demo Agent Instance,,localhost,5560,5561,ethernet,localhost,4001,localhost,8890,ion.services.mi.drivers.sbe37_driver,SBE37Driver
+LCA_DEMO_PRE,IAI4,USER_1,MF_3,IA2,ID4,FALSE,CTD Simulator 2 Demo Agent Instance,,localhost,5562,5563,ethernet,localhost,4002,localhost,8888,ion.services.mi.drivers.sbe37_driver,SBE37Driver

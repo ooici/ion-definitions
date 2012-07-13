@@ -1,0 +1,37 @@
+type: release
+name: lcaviz
+version: 0.1
+description: Release 2 lca viz deployment configuration
+ion: 0.0.1
+apps:
+  ##################################
+  # CORE SERVICES
+  # Bootstrapper app performs initializations
+  ##################################
+
+##### AS SERVICE
+ - name: visualization_workflow_management
+   version: 0.1
+   processapp: [visualization_workflow_management, ion.services.ans.visualization_workflow_management_service, VisualizationWorkflowManagementService]
+
+ - name: visualization_service
+   description: Responsible for spawning and maintaining viz transform processes and resulting viz data
+   version: 0.1
+   processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
+
+ - name: viz_stream_realtime
+   description: A process that emulates a real time stream from a NetCDF file
+   version: 0.1
+   processapp: [viz_stream_realtime, ion.processes.data.vis_stream_launcher, VisStreamLauncher]
+   config:
+       name: viz_data_realtime_sinusoidal
+       dataset: sinusoidal
+
+
+ - name: viz_stream_realtime_sine
+   description: A process that emulates a real time stream from a sinusoidal source
+   version: 0.1
+   processapp: [viz_stream_realtime_sine, ion.processes.data.vis_stream_launcher, VisStreamLauncher]
+   config:
+       name: viz_data_realtime_B
+       dataset: B

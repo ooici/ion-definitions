@@ -7,24 +7,24 @@ apps:
 
   # dependencies
 
-  - name: bootstrapper
-    processapp: [bootstrapper, ion.processes.bootstrap.bootstrapper, Bootstrapper]
-    bootlevel: 2
-    config:
-      bootstrap_plugins:
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
-
   - name: directory
+    version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-    bootlevel: 10
+
+  - name: datastore
+    description: Data store service
+    version: 0.1
+    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
 
   - name: resource_registry
+    description: Resource registry service
+    version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-    bootlevel: 10
+
 
   # CEI services - only including ones with an actual implementation at this point
 
   - name: process_dispatcher
+    description: Process dispatcher service (bridge)
+    version: 0.1
     processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
-    bootlevel: 10
-

@@ -1,0 +1,8 @@
+name: presentation_service
+dependencies: []
+methods:
+  present_catalog:
+    in:
+
+    out:
+

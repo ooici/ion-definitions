@@ -1,0 +1,13 @@
+name: logger
+dependencies: []
+methods:
+  config:
+    in:
+
+    out:
+
+  logmsg:
+    in:
+
+    out:
+

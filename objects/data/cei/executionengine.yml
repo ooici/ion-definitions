@@ -11,4 +11,3 @@ CapabilityContainer: !Extends_TaskableResource
   version: "1.0"        # Version identifier for this container type
   technology: "Python"  # Class of technology
   cc_agent: ""          # Exchange name of the agent representing the container
-

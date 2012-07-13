@@ -5,12 +5,7 @@ All definitions exist in form of YAML files.
 ./services - Service definitions (in YAML), with implicit message object definitions
 
 Naming conventions:
-- Object types: CamelCase, no underscores
-- Object attributes: lower_case_underscores
-- Service names: lower_case_underscores
-- Service operations: lower_case_underscores
-- Service operation arguments: lower_case_underscores
+TBD
 
 Authoring conventions:
-- https://confluence.oceanobservatories.org/display/CIDev/R2+Service+Implementation+Guide
-- https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Development+Guide
+TBD

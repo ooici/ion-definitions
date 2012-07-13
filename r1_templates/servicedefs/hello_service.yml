@@ -1,0 +1,8 @@
+name: hello_service
+dependencies: []
+methods:
+  hello:
+    in:
+
+    out:
+

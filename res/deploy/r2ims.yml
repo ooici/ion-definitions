@@ -1,0 +1,40 @@
+type: release
+name: Release2Configuration COI services
+version: 0.1
+description: Release 2 IMS unit test configuration
+ion: 0.0.1
+apps:
+
+#  - name: datastore
+#    description: Data store service
+#    version: 0.1
+#    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+#    config:
+#        type: CouchDB
+#        forceClean: true
+
+#  - name: resource_registry
+#    version: 0.1
+#    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+
+  - name: datastore
+    description: Data store service
+    version: 0.1
+    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+
+  - name: resource_registry
+    description: Resource registry service
+    version: 0.1
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+
+  - name: PubSubResource
+    version: 0.1
+    processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+
+  - name: data_acquisition_management
+    version: 0.1
+    processapp: [data_acquisition_management, ion.services.sa.data_acquisition_management.data_acquisition_management_service, DataAcquisitionManagementService]
+
+  - name: data_product_management
+    version: 0.1
+    processapp: [data_product_management, ion.services.sa.data_product_management.data_product_management_service, DataProductManagementService]

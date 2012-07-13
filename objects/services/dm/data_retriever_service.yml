@@ -46,3 +46,11 @@ methods:
       delivery_format: {}
     out:
       retrieve_data: {}
+
+  retrieve_last_granule:
+    docstring: Retrieves the latest granule from a dataset.
+    in:
+      dataset_id: ""
+    out:
+      retrieve_data: {}
+

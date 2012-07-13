@@ -1,3 +1,21 @@
 # Describes a unique type of event
 EventType: !Extends_InformationResource
   pattern: ""
+
+
+TimerSchedule: !Extends_InformationResource
+  # Timestamp str in millis in UNIX epoch when this timer expires
+  expire: ""
+  # interval defined as hours + minutes + seconds from first expiry
+  interval_hours: ""
+  interval_minutes: ""
+  interval_seconds: ""
+  # Number of intervals to repeat.
+  # note: if an interval time has been defined and number_of_intervals = 0 then continuous until timer is cancelled.
+  number_of_intervals: 0
+
+TimeOfDaySchedule: !Extends_InformationResource
+  # Local time when this timer expires
+  hour: ""        # range [0,23]
+  minute: ""      # range [0, 59]
+  second: ""      # range [0, 61]

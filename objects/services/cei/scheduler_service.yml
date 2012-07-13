@@ -1,0 +1,36 @@
+name: scheduler
+
+docstring: |
+   The scheduler services provides a central scheduling capability.
+   In particular it provides a schedule based timer that triggers TimerEvents with
+   requested fields set so that the client can subscribe to these events.
+
+spec: https://confluence.oceanobservatories.org/display/CIDev/Scheduler+Service (needs updated)
+
+dependencies: [resource_registry]
+
+methods:
+  start_timer:
+    docstring: |
+      Create a timer which will send TimerEvents as requested for a given schedule.
+      The schedule request is expressed through a specific subtype of TimerSchedulerEntry.
+      The event is delivered as a TimeEvent to which processes can subscribe. The creator
+      defines the fields of the event. A GUID-based id prefixed by readable process name
+      is recommended for the origin. Because the delivery of the event is via the ION Exchange
+      there is potential for a small deviation in precision.
+      Returns a timer_id which can be used to cancel the timer.
+    in:
+      timer_schedule: !TimerSchedulerEntry
+    out:
+      timer_id: ""
+    throws:
+      BadRequest: if timer is misformed and can not be scheduled
+
+  cancel_timer:
+    docstring: |
+      Cancels an exisiting timer which has not reached its expire time.
+    in:
+      timer_id: ""
+    out:
+    throws:
+      NotFound: if timer_id doesn't exist

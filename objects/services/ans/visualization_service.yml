@@ -9,34 +9,54 @@ dependencies: [resource_registry, pubsub_management, transform_management, data_
 
 methods:
   # Interface available through the SGS
-  init_google_dt_realtime:
-    docstring: Request to search for the system transform handling the GDT conversion for the specified DP. Creates a queue to collect the data and a subscription to listen to the queue. Returns a token associate with the queue
+  initiate_realtime_visualization:
+    docstring: |
+      Initial request required to start a realtime chart for the specified data product. Returns a user specific token associated
+      with the request that will be required for subsequent requests when polling data.
     in:
       data_product_id: ""
       query: ""
     out:
       query_token: ""
     throws:
-      NotFound: Specified Data product or its visualization product does not exist
+      NotFound: Throws if specified data product id or its visualization product does not exist
 
-  get_google_dt_realtime:
-    docstring: Returns the latest 'delta' of the datatable available to be used by the client for preparing a realtime view
+  get_realtime_visualization_data:
+    docstring: |
+      This operation returns a block of visualization data for displaying data product in real time. This operation requires a
+      user specific token which was provided from a previsou request to the init_realtime_visualization operation.
     in:
       query_token: ""
     out:
       datatable: ""
     throws:
-      NotFound: Specified Data product or its visualization product does not exist
+      NotFound: Throws if specified query_token or its visualization product does not exist
+
+  terminate_realtime_visualization_data:
+    docstring: |
+      This operation terminates and cleans up resources associated with realtime visualization data. This operation requires a
+      user specific token which was provided from a previsou request to the init_realtime_visualization operation.
+    in:
+      query_token: ""
+    out:
+    throws:
+      NotFound: Throws if specified query_token or its visualization product does not exist
 
 
-  get_image:
+  get_visualization_image:
     docstring: Request to fetch an image for a particular DP
     in:
       data_product_id: ""
-      image_id: ""
     out:
       image_obj: ""
     throws:
-      NotFound: Specified Data product or its visualization product does not exist
+      NotFound: Throws if specified data product id or its visualization product does not exist
 
-
+  get_imagelist:
+    docstring: Request to fetch an image list available for a particular DP
+    in:
+      data_product_id: ""
+    out:
+      image_list: ""
+    throws:
+      NotFound: Throws if specified data product id or its visualization product does not exist

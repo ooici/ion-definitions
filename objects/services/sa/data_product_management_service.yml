@@ -61,6 +61,45 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
+  create_data_product_version:
+    docstring: |
+      Define a new version of an existing set of information that represent an inprovement in the quality or
+      understanding of the information. Only creates the second and higher versions of a DataProduct.
+      The first version is implicit in the crate_data_product() operation.
+    in:
+      data_product_id: ""
+      data_product_version: !DataProductVersion
+    out:
+      data_product_version_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_data_product_version:
+    in:
+      data_product: !DataProductVersion
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_data_product_version:
+    docstring: Retrieve data product information
+    in:
+      data_product_version_id: ""
+    out:
+      data_product: !DataProductVersion
+
+  delete_data_product_version:
+    docstring: Remove a version of an data product.
+    in:
+      data_product_version_id: ""
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+
   execute_data_product_lifecycle:
     in:
       data_product_id: ""

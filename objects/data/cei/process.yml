@@ -15,10 +15,15 @@ ProcessDefinition: !Extends_ExecutableResource
     class: ""    # The class name within the source code module
   arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
 
+---
+
 # Describes a running process
 Process: !Extends_TaskableResource
   label: ""     # Human legible label
   proctype: ""  # Indicates a specialized type of CC process
+  process_state: !ProcessStateEnum
+  process_configuration: {}
+  process_id: ""
 
 ---
 

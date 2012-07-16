@@ -9,7 +9,10 @@ dependencies: [resource_registry, pubsub_management, dataset_management, process
 
 methods:
   define_replay:
-    docstring: Define the stream that will contain the data from data store by streaming to an exchange name.
+    docstring: |
+      Creates and launches a process by which the data is to be 
+      retrieved as specified. It returns the id of the replay 
+      resource and the stream by which the data is to be replayed on.
     in:
       dataset_id: ""
       query: {}
@@ -35,11 +38,19 @@ methods:
       replay_id: ""
     out:
 
-  start_retrieve:
-    docstring: Replays data as one chunk on a stream.
+  retrieve:
+    docstring: Retrieves the data as a chunk of data from the dataset.
     in:
       dataset_id: ""
       query: {}
       delivery_format: {}
     out:
       retrieve_data: {}
+
+  retrieve_last_granule:
+    docstring: Retrieves the latest granule from a dataset.
+    in:
+      dataset_id: ""
+    out:
+      retrieve_data: {}
+

@@ -13,6 +13,8 @@ SampleObject:
   a_list: []
   an_enum: !SampleEnum
   another_enum: !enum (name=AnEnum, values=(VALUE1, VALUE2), default=VALUE2)
+  # attribute can be of any type that extends Resource
+  abstract_val: !InformationResource
 
 SampleResource: !Extends_Resource
   num: 0

@@ -156,3 +156,17 @@ ResourcePolicyEvent: !Extends_Event
 UserRoleModifiedEvent: !Extends_Event
   user_id: ""
   role_name: ""
+
+
+---
+
+# Used by DM UNS
+ExampleDetectableEvent: !Extends_Event
+  voltage: 0
+
+# output event from detection process
+DetectionEvent: !Extends_Event
+  message: ""             # Message field for this detection event
+  condition: ""           # Concatenate the filter and make it a message
+  original_origin: ""     # The origin from the event that was detected by the filter
+  original_type: ""       # The type of the event that was detected by the filter

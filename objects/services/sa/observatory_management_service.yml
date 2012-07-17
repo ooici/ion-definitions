@@ -266,6 +266,15 @@ methods:
       NotFound: object with specified id does not exist
       BadRequest: if object does not have _id or _rev attribute
 
+  deactivate_deployment:
+    docstring: Remove the primary device designation for the deployed devices at the sites
+    in:
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+      BadRequest: if devices can not be undeployed
+
   transfer_site_subscription:
     docstring: Set a new primary device for a site and switch data collection
     in:

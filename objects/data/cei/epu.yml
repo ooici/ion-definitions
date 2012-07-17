@@ -6,15 +6,3 @@ EPUDefinition: !Extends_ExecutableResource
 # Describes an instance of an EPU
 EPU: !Extends_TaskableResource
 
-# Describes a resource that can be instantiated into an Operational Unit (a virtual machine).
-# This typically specifies the base image and any contextualization type modification scripts to run.
-DeployableType: !Extends_ExecutableResource
-
-# Describes a deployable type that has been specialized for one target execution environment,
-# and which can be instantiated many times in this environment.
-DeployableUnit: !Extends_ExecutableResource
-  tbd: ""
-
-# Describes a running virtual compute node (a virtual machine), an instance of a deployable type and unit.
-OperationalUnit: !Extends_TaskableResource
-  tbd: ""

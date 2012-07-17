@@ -28,7 +28,7 @@ methods:
     in:
       query_token: ""
     out:
-      datatable: ""
+      visualization_data: {}
     throws:
       NotFound: Throws if specified query_token or its visualization product does not exist
 

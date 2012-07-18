@@ -13,8 +13,8 @@ apps:
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
     bootlevel: 1
 
-  - name: bootstrapper
-    processapp: [bootstrapper, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+  - name: bootstrapper1
+    processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
     bootlevel: 2
     config:
       bootstrap_plugins:
@@ -70,8 +70,8 @@ apps:
     processapp: [external_data_agent_management, ion.services.eoi.external_observatory_agent_service, ExternalObservatoryAgentService]
     bootlevel: 10
 
-  - name: bootstrapper
-    processapp: [bootstrapper, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+  - name: bootstrapper2
+    processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
     bootlevel: 20
     config:
       bootstrap_plugins:

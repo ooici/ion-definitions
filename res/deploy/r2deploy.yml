@@ -160,6 +160,7 @@ apps:
     description: Responsible managing visualization data
     version: 0.1
     processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
+    bootlevel: 10
 
 
   - name: bootstrapper2

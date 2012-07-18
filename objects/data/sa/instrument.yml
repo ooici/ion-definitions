@@ -88,19 +88,46 @@ InstrumentAgentInstance: !Extends_AgentInstance
 
 
 ---
-#Example set of computed attributes for an instrument device
+#Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
   software_version: ""  # identifier of software installed in unit
-  #@Method
-  attached_sensors: []  # list of sensors attached to this device
   #@Method
   location: !GeospatialBounds  # current geospatial (3D) location of instrument
   #@hasDataProducer
   data_producer_count: 0   # example value for association count
   #@Method=get_data_url
   data_produced: ""   # URL (public) / Resource _id
-
+  #@Method
+  last_data_received_time: ""
+  #@Method
+  photo: ""
+  #@Method
+  operational_state: ""   # from Device
+  #@Method
+  applicable_policies: []   # List of policies applicable to the device
+  #@Method
+  last_command_status: ""
+  #@Method
+  last_command_date: ""
+  #@Method
+  last_command: ""
+  #@Method
+  last_commanded_by: ""
+  #@Method
+  power_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  #@Method
+  communications_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  #@Method
+  data_status_roll_up: ""  # CV: BLACK, RED, GREEN, YELLOW
+  #@Method
+  location_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  #@Method
+  port_used: ""
+  #@Method
+  agent: "" # Messaging address of the agent
+  #@Method
+  recent_events: []  #List of the 10 most recent events for this device
 
 ---
 
@@ -110,5 +137,11 @@ InstrumentDeviceExtension: !Extends_ExtendedInformationResource
   data_products: [] # A list of associated data products
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasAgentInstance
-  instrument_agent: !InstrumentAgentInstance  # The associated agent instance
+  #@hasAgent
+  instrument_agent: !InstrumentAgent  # The associated agent
+  #@hasDevice=PlatformDevice
+  #platform_device: !PlatformDevice  # The associated agent
+  #@hasPlatformModel=PlatformModel
+  #platform_model: !PlatformModel  # The model associated to the parent platform
+  #@hasDevice=SensorDevice
+  sensor_device: []  # list of sensors attached to this device

@@ -70,9 +70,21 @@ DataFormat:
 
 # Base for a physical device with a serial number, such as sensor, instrument and platform.
 Device: !Extends_TaskableResource
+  # unique identifier of device provided by manufacturer
+  serial_number: ""
+  # Whether the device can be sent a control message
+  controllable: True
+  # A device that does not have a communication port for real-time monitoring
+  monitorable: True
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
 DeviceModel: !Extends_InformationResource
+  # weight of instrument in air, as configured for operation, in kg
+  weight: 0.0
+  # nominal voltage at which unit operates, in Volts
+  voltage: 0.0
+  # nominal wattage consumed by instrument, in Watts
+  wattage: 0.0
 
 ---
 

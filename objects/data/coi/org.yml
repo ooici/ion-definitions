@@ -83,8 +83,6 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   instrument_agents: []
   #@hasResource=DataProcessDefinition
   data_process_definitions: []
-  #@Method=find_subordinate_frames_of_reference
-  subordinates: []
   #@hasMembershipInfo
   members: [] # The list of User Info objects
   #@hasRole

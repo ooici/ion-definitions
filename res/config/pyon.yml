@@ -8,7 +8,7 @@
 # The "system" root entry defines settings for the distributed ION system that this
 # container starts or joins. A system comprises all containers with the same sysname.
 system:
-  # Override for sysname in tests. Usually set via pycc command line
+  # Set to define sysname in tests. Otherwise set via pycc --sysname or set to default
   name:
 
   # Name of the Org that bootstraps the system. Super-Org in Release 2
@@ -17,15 +17,15 @@ system:
   # The name of the ION System ActorIdentity
   system_actor: ionsystem
 
-  # Global flag indicating degraded mode during initial bootstrap phases
-  # (e.g. no use of RR, messaging, datastore, events, etc). Will be cleared when bootstrapped.
+  # If True, indicates system is currently in bootstrap and shortcuts can be taken to avoid
+  # resource dependencies (e.g. avoid events, messaging, datastore)
   bootstrapping: True
 
   # Global flag indicating debug mode. Code can perform more expensive operations if True
   debug: True
 
-  # If true, the first container started will bootstrap the system config and interfaces
-  # into the directory and resource registry to avoid explicit pre-initialization step.
+  # If true, the first pycc program will bootstrap the system config and interfaces
+  # into the directory and resource registry to avoid calling store_interfaces.
   auto_bootstrap: True
 
   # Global config for use of a Real SMTP server or a fake logging class
@@ -34,6 +34,9 @@ system:
 
   # Use ElasticSearch ?
   elasticsearch: False
+
+  # Indicates whether policy should be loaded during system bootstrap (False is for development only)
+  load_policy: False
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers
@@ -105,6 +108,8 @@ container:
 
   objects:
     validate: # TBD: move entries to here
+
+  org_name: ION  # The default is the ROOT ION Org
 
   filesystem:
       force_clean: False

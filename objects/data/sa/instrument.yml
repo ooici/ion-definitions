@@ -3,27 +3,56 @@
 
 # Describes a physical instrument
 InstrumentDevice: !Extends_Device
-  serial_number: ""
   firmware_version: ""
-  hardware_version: ""
+  # The length of the instrument device in meters
+  length: 0.0
+  # The width of the instrument device in meters
+  width: 0.0
+  # The height  of the instrument device in meters
+  height: 0.0
+  #hardware_version: ""
   manufacture_date: "" #later will be timeinstance object
   lot_number: ""
-  datum_characterization: "" #later will be an object
+  # Provides offset, orientation, etc. information needed to calculate device location from platform location
+  has_platform_position: ""
+  #datum_characterization: "" #later will be an object
 
 # Defines the characteristics of an instrument model
 InstrumentModel: !Extends_DeviceModel
   model_label: ""
   manufacturer: !Institution
+  # The URL of the manufacturer. Note that only one is allowed
+  manufacturer_url: ""
   reference_url: ""
   instrument_family: ""     # values= CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL, default=CAM
-  instrument_class: ""  # values=OPTAA, CAMDS, CAMHD, CTDAV, CTDBP, CTDGV, CTDMO, CTDPF, PPSDN, OTISF, FLORT, FLORD, FDCHP, FDCLP, HYDBB, HYDLF, HPIES, MASSP, METBK, NUTR4, NUTNR, DOFST, DOSTA, PARAD, PCO2A, PCO2W, PHSEN, ZPLSC, ZPLSG, BOTPT, PRESF, PREST, OSBSBB, OBSBK, OBSSP, OBSSK, SPKIR, THSPH, TRHPH, TMPSF, VELPT, VELPT, VEL3D, ADCPT, ADCPV, ADCPS, ADCPA, OSMOI, RASFL, WAVSS, default=OPTAA
-  data_record_description: "" #later will be an object
+  baud_rate_default: ""
+  # Polled vs...
+  mixed_sampling_mode: True
+  # Can you manage the system while it is operating
+  inline_management: True
+  clock_max_drift: 0.0
+  clock_notes: ""
+  operational_depth_maximum: 0.0
+  survival_depth_maximum: 0.0
+  operational_temperature_range: ""
+  internal_data_storage: True
+  # time system must be on before sampling.
+  required_ontime: ""
+  power_source: ""
+  electrical_notes: ""
+  hotel_current: ""
+  integrated_inductive_modem_available: True
+  internal_battery: True
+  # minimum voltage supported by internal power supply
+  power_supply_voltage_minimum: 0.0
+  # maximum voltage supported by internal power supply
+  power_supply_voltage_maximum: 0.0
+  #instrument_class: ""  # values=OPTAA, CAMDS, CAMHD, CTDAV, CTDBP, CTDGV, CTDMO, CTDPF, PPSDN, OTISF, FLORT, FLORD, FDCHP, FDCLP, HYDBB, HYDLF, HPIES, MASSP, METBK, NUTR4, NUTNR, DOFST, DOSTA, PARAD, PCO2A, PCO2W, PHSEN, ZPLSC, ZPLSG, BOTPT, PRESF, PREST, OSBSBB, OBSBK, OBSSP, OBSSK, SPKIR, THSPH, TRHPH, TMPSF, VELPT, VELPT, VEL3D, ADCPT, ADCPV, ADCPS, ADCPA, OSMOI, RASFL, WAVSS, default=OPTAA
+  #data_record_description: "" #later will be an object
   primary_interface: "" # values=RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE, default=RS232
-  secondary_interface: []
-  baud_default: ""
-  baud_supported: []
-  writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
-  # more fields remain
+  #secondary_interface: []
+  #baud_supported: []
+  #writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
 
 # Describes a type of instrument agent
 InstrumentAgent: !Extends_AgentDefinition
@@ -44,42 +73,16 @@ InstrumentAgentInstance: !Extends_AgentInstance
   # (SYS) class for driver source code
   driver_class: ""
   svr_addr: ""
-  cmd_port: ""
-  evt_port: ""
+  cmd_port: 0
+  evt_port: 0
   comms_method: ""
   comms_device_address: ""
   comms_device_port: 0
   comms_server_address: ""
-  comms_server_port: ""
+  comms_server_port: 0
   #replace all the individual items about with driver_config and agent_config dict
   driver_config: {}
   agent_config: {}
   port_agent_work_dir: ""
   port_agent_delimeter: []
 
-
----
-#Example set of computed attributes for an instrument device
-InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
-  #@Method
-  software_version: ""  # identifier of software installed in unit
-  #@Method
-  attached_sensors: []  # list of sensors attached to this device
-  #@Method
-  location: !GeospatialBounds  # current geospatial (3D) location of instrument
-  #@hasDataProducer
-  data_producer_count: 0   # example value for association count
-  #@Method=get_data_url
-  data_produced: ""   # URL (public) / Resource _id
-
-
----
-
-#This object contains additional information associated with an instrument device.
-InstrumentDeviceExtension: !Extends_ExtendedInformationResource
-  #@hasOutputProduct
-  data_products: [] # A list of associated data products
-  #@hasModel
-  instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasAgentInstance
-  instrument_agent: !InstrumentAgentInstance  # The associated agent instance

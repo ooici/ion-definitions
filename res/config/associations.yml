@@ -19,17 +19,21 @@ AssociationDefinitions:
     range: [InstrumentSite, PlatformSite]
     docstring: DEPRECATED
   - predicate: hasDataset
-    domain: [DataProducer, DataProduct]
+    domain: [DataProducer, DataProduct, DataProductVersion]
     range: [DataSet]
     docstring: References a DataSet resource that keeps a persistent metadata/data coverage.
   - predicate: hasDataProducer
-    domain: [DataProcess, Device, ExternalDataset, DataProduct]
+    domain: [DataProcess, Device, ExternalDataset, DataProduct, DataProductVersion]
     range: [DataProducer]
     docstring: References the DataProducer entiry to track a provenance relationship
   - predicate: hasDataProduct
     domain: [Site, Workflow]
     range: [DataProduct]
     docstring: References a resulting or intermediate DataProduct
+  - predicate: hasDependency
+    domain: [DataProducer]
+    range: [DataProducer]
+    docstring: References a prior DataProducer which this producer is based on (or derived from). Enable provenance of data versions.
   - predicate: hasDevice
     domain: [Site, Device]
     range: [Device]
@@ -64,7 +68,7 @@ AssociationDefinitions:
     docstring: DEPRECATED
   - predicate: hasOutputProduct
     domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
-    range: [DataProduct]
+    range: [DataProduct, DataProductVersion]
     docstring: References the DataProduct produced by the given resource
   - predicate: hasParent
     domain: [DataProducer]
@@ -82,6 +86,10 @@ AssociationDefinitions:
     domain: [Site]
     range: [Site]
     docstring: References a child Site for a Site. The extent of all these associations form a true tree with an Observatory as root.
+  - predicate: hasVersion
+    domain: [DataProduct]
+    range: [DataProductVersion]
+    docstring: References a version of a DataProduct. The first version is created with the DataProduct.
 # DM
   - predicate: hasArchive
     domain: [DataStore]
@@ -124,7 +132,7 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References one Stream on which a Transform publishes on
   - predicate: hasStream
-    domain: [Replay, DataProcess, DataProduct, DataSet, ExchangePoint, Subscription]
+    domain: [Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint, Subscription]
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition
@@ -328,4 +336,5 @@ CompoundAssociations:
     predicates: [hasOwner,hasInfo]
   hasMembershipInfo:
     predicates: [hasMembership,hasInfo]
-
+  hasPlatformModel:
+    predicates: [hasDevice,hasModel]

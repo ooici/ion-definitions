@@ -62,10 +62,20 @@ methods:
 
   delete:
     docstring: |
-      For now, permanently delete object and all previous versions of
-      object. Throws exception if object does not exist.
+      Permanently delete object in datastores.
+      Throws exception if object does not exist.
     in:
       object_id: ""
+    out:
+    throws:
+      NotFound: object does not exist
+
+  retire:
+    docstring: |
+      Sets resource lifecycle state to retired.
+      Throws exception if object does not exist.
+    in:
+      resource_id: ""
     out:
     throws:
       NotFound: object does not exist

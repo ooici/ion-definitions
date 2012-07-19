@@ -19,6 +19,13 @@ methods:
     out:
       process_id: ""
 
+  terminate_process:
+    docstring: |
+      Terminates a process and all its resources. Termination is graceful with timeout.
+    in:
+      process_id:
+    out:
+
   start_app:
     docstring: |
       Start a container application, i.e. a set of processes from a given app definition.

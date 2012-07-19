@@ -140,11 +140,13 @@ methods:
       @param exchange_name is the name (queue) where messages will be delivered for this subscription
       @param name (optional) is the name of the subscription
       @param description (optional) is the description of the subscription
+      @param exchange_point is the exchange point where the stream is being published to
     in:
       query: {}
       exchange_name: ""
       name: ""
       description: ""
+      exchange_point: "" 
     out:
       subscription_id: ""
     throws:

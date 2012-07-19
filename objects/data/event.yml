@@ -9,35 +9,43 @@ Event:
 
 ---
 
+# Base type for resource related events in the system
 ResourceEvent: !Extends_Event
   # The origin is the resource id
 
 ---
 
-# When a resource changes its life cycle and is created
+# Event indicating that a resource changed its life cycle or was created
 ResourceLifecycleEvent: !Extends_ResourceEvent
   old_state: ""
   new_state: ""
   transition_event: ""
   resource_type: ""
 
+# Event indicating that a (taskable) resource was commanded and a result is available
 ResourceCommandEvent: !Extends_ResourceEvent
   command: ""
   result: ""
 
+# Event created by an operator of a resource, for instance to manually indicate a modification or error.
 ResourceOperatorEvent: !Extends_ResourceEvent
 
 ---
 
+# Event indicating that resource metadata was changed or the resource was created or deleted
 ResourceModifiedEvent: !Extends_ResourceEvent
-  mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, DELETE), default=UPDATE)
+  mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, RETIRE, DELETE), default=UPDATE)
 
 ContainerConfigModifiedEvent: !Extends_Event
 
 ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
 
+# Base type of events related to physical devices such as instruments
 DeviceEvent: !Extends_Event
     # The origin is a device (resource) id
+
+# Event for the scheduler's timer functionality
+TimerEvent: !Extends_Event
 
 ---
 
@@ -130,7 +138,6 @@ RoleRequestStatusEvent: !Extends_RequestStatusEvent
 ResourceRequestStatusEvent: !Extends_RequestStatusEvent
   resource_id: ""
 
-
 ---
 
 # The ResourcePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
@@ -150,99 +157,16 @@ UserRoleModifiedEvent: !Extends_Event
   user_id: ""
   role_name: ""
 
-# ------------------------------------------------------------------------------------
-# FORMER R1 event types - delete if not needed
 
 ---
 
-TriggerEvent: !Extends_Event
-  task_id: ""               # task id in the scheduler service
-
-# extend this for other triggered events
-
----
-
-DatasourceUnavailableEvent: !Extends_ResourceModifiedEvent
-  datasource_id: ""
-  dataset_id: ""
-
-  title: ""
-  url: ""
-
-  error_explanation: ""
-
----
-
-DatasetSupplementAddedEvent: !Extends_ResourceModifiedEvent
-  datasource_id: ""
-  dataset_id: ""
-
-  title: ""
-  url: ""
-
-  start_datetime_millis: 0
-  end_datetime_millis: 0
-
-  number_of_timesteps: 0
-
----
-
-DatasetChangeEvent: !Extends_ResourceModifiedEvent
-  dataset_id: ""
-
----
-
-DatasourceChangeEvent: !Extends_ResourceModifiedEvent
-  datasource_id: ""
-
----
-
-IngestionProcessingEvent: !Extends_ResourceModifiedEvent
-  dataset_id: ""            # dataset being processed
-  ingestion_process_id: ""  # which ingestion process is handling this
-  conv_id: ""               # conversation id as known by ingestion
-  processing_step: ""       # string of "dataset", "chunk", "done"
-
----
-
-NewSubscriptionEvent: !Extends_Event
-  dispatcher_workflow: ""       # TODO: this is a link, how2do
-
----
-
-DelSubscriptionEvent: !Extends_Event
-  dispatcher_workflow: ""       # TODO: this is a link, how2do
-
----
-
-DataEvent: !Extends_Event
-  dataset_id: ""
-  datasource_id: ""
-  data_block: ""
-
----
-
-InstrumentSampleDataEvent: !Extends_DataEvent
-  could_not_find_this_original_event_type: ""       # please2fill in
-
----
-
-ExceptionEvent: !Extends_Event
-  exception_type: ""
-  exception_message: ""
-
----
-# input for example detection process
+# Used by DM UNS
 ExampleDetectableEvent: !Extends_Event
   voltage: 0
 
----
 # output event from detection process
 DetectionEvent: !Extends_Event
   message: ""             # Message field for this detection event
   condition: ""           # Concatenate the filter and make it a message
   original_origin: ""     # The origin from the event that was detected by the filter
   original_type: ""       # The type of the event that was detected by the filter
----
-
-SearchBufferExceededEvent: !Extends_Event

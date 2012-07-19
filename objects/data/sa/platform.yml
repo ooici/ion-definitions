@@ -5,10 +5,7 @@ PlatformDevice: !Extends_Device
 
   # A physical package with a manufacturer, model, and serial number, providing physical mountain locations for
   # one to many instruments
-  
-  # a unique number for that instance, typically assigned by the manufacturer
-  # Mandatory
-  serial_number: ""
+
 
   # identifier of a static definition of manufacturer and model for the platform
   # Mandatory

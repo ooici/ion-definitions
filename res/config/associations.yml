@@ -336,4 +336,5 @@ CompoundAssociations:
     predicates: [hasOwner,hasInfo]
   hasMembershipInfo:
     predicates: [hasMembership,hasInfo]
-
+  hasPlatformModel:
+    predicates: [hasDevice,hasModel]

@@ -13,10 +13,6 @@ SensorDevice: !Extends_Device
   # Identifier of hard-coded operating system in unit 
   firmware_version: ""
 
-  # Unique identifier of sensor provided by manufacturer
-  # Mandatory
-  serial_number: ""
-  
   # Date sensor was manufactured  
   manufacturer_date: ""          #datetime
   

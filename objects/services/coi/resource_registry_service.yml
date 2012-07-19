@@ -15,6 +15,7 @@ methods:
       Persist an instance of the resource passed in the object param.
       Returns a tuple (_id, _rev) for the persistend object.
     in:
+      #@ContentType=IonObjectBase
       object: {}
     out:
       tuple: []
@@ -50,6 +51,7 @@ methods:
       version of object does not exist or object passed is not based
       on the latest persisted version.
     in:
+      #@ContentType=IonObjectBase
       object: {}
     out:
       tuple: []
@@ -164,10 +166,12 @@ methods:
       for an association to the head revision and "R" stands for an association
       to a specific revision.
     in:
-      subject:
-      predicate:
-      object:
-      assoc_type:
+      #@ContentType=Resource,str
+      subject: ""
+      predicate: ""
+      #@ContentType=Resource,str
+      object: ""
+      assoc_type: "H2H"
     out:
       tuple: []
     throws:
@@ -180,6 +184,7 @@ methods:
       For now, permanently delete an association between two resources (IonObjects).
       Throws exception if association does not exist.
     in:
+      #@ContentType=Association,str
       association: ""
     out:
     throws:
@@ -216,6 +221,7 @@ methods:
         if id_only == True. Predicate and object_type are optional to narrow the
         search down. Object_type can only be set if predicate is set as well.
     in:
+      #@ContentType=Resource,str
       subject: ""
       predicate: ""
       object_type: ""
@@ -256,6 +262,7 @@ methods:
     in:
       subject_type: ""
       predicate: ""
+      #@ContentType=Resource,str
       object: ""
       id_only: False
     out:
@@ -273,8 +280,10 @@ methods:
         Or provide predicate only. Returns either a list
         of Association objects or a list of association ids.
     in:
+      #@ContentType=Resource,str
       subject: ""
       predicate: ""
+      #@ContentType=Resource,str
       object: ""
       assoc_type:
       id_only: False
@@ -285,7 +294,7 @@ methods:
 
   find_associations_mult:
     docstring: |
-      Find associtiations by a list of subjects.
+      Find associations by a list of subjects.
     in:
       subjects: []
       id_only: False
@@ -300,8 +309,10 @@ methods:
       and type tuple.  Throws exception if association not found or more than one
       association satisfies the tuple.
     in:
+      #@ContentType=Resource,str
       subject: ""
       predicate: ""
+      #@ContentType=Resource,str
       object: ""
       assoc_type:
       id_only: False

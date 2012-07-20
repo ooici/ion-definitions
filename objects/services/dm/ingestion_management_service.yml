@@ -67,3 +67,9 @@ methods:
       stream_id: ""
       ingestion_configuration_id: ""
     out:
+
+  is_persisted:
+    in:
+      stream_id: ""
+    out:
+      persisted: True

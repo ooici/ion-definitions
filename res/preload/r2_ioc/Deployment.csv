@@ -1,5 +1,8 @@
-"Scenario","ID","owner_id","org_ids","site_id","device_id","d/name","d/description","d/temporal_constraint"
-"R2_DEMO","DEP1","USER_1","MF_3","LOGINS3","ID3","dep1","deployment of first device",
-"R2_DEMO","DEP2","USER_1","MF_3","LOGINS4","ID4","dep2","deployment of second device",
-"R2_DEMO","DEP3","USER_1","MF_3","LP3","PD3","dep3","deployment of platform device 1",
-"R2_DEMO","DEP4","USER_1","MF_3","LP4","PD4","dep4","deployment of platform device 2",
+"Scenario","confluence","ID","owner_id","org_ids","site_id","device_id","activate","d/name","d/description","d/temporal_constraint"
+"R2_DEMO",,"DEP1","USER_1","MF_3","LOGINS3","ID3",FALSE,"dep1","deployment of first device",
+"R2_DEMO",,"DEP2","USER_1","MF_3","LOGINS4","ID4",FALSE,"dep2","deployment of second device",
+"R2_DEMO",,"DEP3","USER_1","MF_3","LP3","PD3",FALSE,"dep3","deployment of platform device 1",
+"R2_DEMO",,"DEP4","USER_1","MF_3","LP4","PD4",FALSE,"dep4","deployment of platform device 2",
+"R2_DEMO","https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3","Deploy1","USER_1","MF_3","D1PlatformSite1","D1PlatformDevice1",FALSE,"dep4","test deployment 1",
+"R2_DEMO","https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3","Deploy2","USER_1","MF_3","D2InstrumentSite1","D2InstrumentDevice3",FALSE,"dep4","test deployment 2",
+"R2_DEMO","https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3","Deploy3","USER_1","MF_3","D3InstrumentSite1","D3InstrumentDevice4",FALSE,"dep4","test deployment 3",

@@ -17,6 +17,7 @@ Stream: !Extends_InformationResource
 
   # managed by pubsub
   producers: []    # A list of processes permitted to produce on the stream
+  persisted: False
 
 # Description for accessing a stream via the Exchange
 StreamRoute:

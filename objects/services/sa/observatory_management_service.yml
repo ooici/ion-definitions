@@ -227,6 +227,8 @@ methods:
       deployment on a platform at an observatory site.
     in:
       deployment: !Deployment
+      site_id: ""
+      device_id: ""
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute

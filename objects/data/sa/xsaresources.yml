@@ -41,7 +41,7 @@ InstrumentDeviceExtension: !Extends_ExtendedInformationResource
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
   #@hasPlatformModel=PlatformDevice
-  platform_model: PlatformModel  # The model associated to the parent platform
+  platform_model: !PlatformModel  # The model associated to the parent platform
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
   #@hasAttachment

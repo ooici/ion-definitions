@@ -15,8 +15,7 @@ methods:
       Persist an instance of the resource passed in the object param.
       Returns a tuple (_id, _rev) for the persistend object.
     in:
-      #@ContentType=IonObjectBase
-      object: {}
+      object: !Resource
     out:
       tuple: []
     throws:
@@ -51,8 +50,7 @@ methods:
       version of object does not exist or object passed is not based
       on the latest persisted version.
     in:
-      #@ContentType=IonObjectBase
-      object: {}
+      object: !Resource
     out:
       tuple: []
     throws:

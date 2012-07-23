@@ -1,7 +1,7 @@
 # A resource type which allows the definition of a criteria to filter events and streams
 # so that special action can be taken for events or streams that satisfy the criteria
-TransformAlgorithm: !Extends_InformationResource
+Algorithm: !Extends_InformationResource
   query_statement: ""  # The query statement that provides a value or range against which we check parameters
   field_names: ""      # The names of relevant fields (event attributes or stream parameters)
-  _operator: ""       # The mathematical operator that can be applied successively to fields
-  _operator_list: []    # The successive mathematical operations that can be applied to fields
+  operator_: ""       # The mathematical operator that can be applied successively to fields
+  operator_list_: []    # The successive mathematical operations that can be applied to fields

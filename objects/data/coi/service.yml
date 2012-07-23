@@ -10,6 +10,9 @@ ServiceDefinition: !Extends_ExecutableResource
   # List of operations in this service.
   operations: []
 
+  # Relative path for specific service definition, e.g. "coi"
+  namespace: ""
+
 
 # Describes a service instance
 Service: !Extends_TaskableResource

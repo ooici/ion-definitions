@@ -92,4 +92,3 @@ loggers:
   coverage_model:
     handlers: [console, file]
     level: DEBUG
-

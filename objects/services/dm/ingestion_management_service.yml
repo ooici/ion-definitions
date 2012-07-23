@@ -58,6 +58,7 @@ methods:
     in:
       stream_id: ""
       ingestion_configuration_id: ""
+      dataset_id: ""
     out:
       dataset_id: ""
 
@@ -66,3 +67,9 @@ methods:
       stream_id: ""
       ingestion_configuration_id: ""
     out:
+
+  is_persisted:
+    in:
+      stream_id: ""
+    out:
+      persisted: True

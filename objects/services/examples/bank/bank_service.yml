@@ -7,7 +7,17 @@ methods:
   new_account:
     docstring: Create checking or savings account for user.  Creates new user if user does not already exists.
     in:
+      #@Required
       name: ""
+      # This attribue is decorated to define the required string pattern.
+      #@ValuePattern=(^\d{3}-\d{3}-\d{4}$)
+      #@Required
+      us_phone_number: ""
+      #@ContentType=str
+      #@ContentCount=3,5
+      #@Required
+      address: []
+      #@Required
       account_type: "Checking"
 
     out:
@@ -17,6 +27,7 @@ methods:
     docstring: Add cash to checking or savings account.
     in:
       account_id: ""
+      #@ValueRange=0.01,1000000.0
       amount: 0.0
 
     out:
@@ -26,6 +37,7 @@ methods:
     docstring: Remove cash from checking or savings account.
     in:
       account_id: ""
+      #@ValueRange=0.01,1000000.0
       amount: 0.0
 
     out:
@@ -44,6 +56,7 @@ methods:
     docstring: Buy specified cash amount of bonds. Bonds are deposited in account.
     in:
       account_id: ""
+      #@ValueRange=0.01,1000000.0
       cash_amount: 0.0
 
     out:
@@ -53,6 +66,7 @@ methods:
     docstring: Sell specified amount of bonds. Cash proceeds are deposited in account.
     in:
       account_id: ""
+      #@ValueRange=0.01,1000000.0
       quantity: 0
 
     out:

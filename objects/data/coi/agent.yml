@@ -18,7 +18,9 @@ AgentCommandResult:
   command_id: ""
   command: ""
   ts_execute: ""
+  #@ContentType=int,str
   status: ""
-  result: []
+  #@ContentType=list,str
+  result: ""
 
 

@@ -11,11 +11,11 @@ methods:
       and optional config override params. If no process_id is given, a new unique ID is generated for this
       process; otherwise the caller is responsible for making sure the ID is unique in the system.
     in:
-      name:
-      module:
-      cls:
-      config:
-      process_id:
+      name: ""
+      module: ""
+      cls: ""
+      config: {}
+      process_id: ""
     out:
       process_id: ""
 

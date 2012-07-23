@@ -97,6 +97,7 @@ methods:
       with id passed in the object_id param. Throws exception if
       object not found.
     in:
+      #@ContentType=Resource,str
       object_id: ""
       rev_id: ""
       datastore_name: ""
@@ -192,6 +193,7 @@ methods:
       For now, permanently delete an association between two resources (IonObjects).
       Throws exception if association does not exist.
     in:
+      #@ContentType=Association,str
       association: ""
     out:
     throws:

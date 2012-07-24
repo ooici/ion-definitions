@@ -99,7 +99,7 @@ AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
 Attachment: !Extends_InformationResource
   attachment_type: !AttachmentType
   content_type: ""  # MIME type
-  content: {}
+  content: ""
   object_id: ""   # Associated object (resource) ID, for easier indexing
   keywords: []
 

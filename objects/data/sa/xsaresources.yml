@@ -2,17 +2,11 @@
 #Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
-  software_version: ""  # identifier of software installed in unit
+  firmware_version: ""  # identifier of software installed in unit
   #@Method
   location: !GeospatialBounds  # current geospatial (3D) location of instrument
-  #@hasDataProducer
-  data_producer_count: 0   # example value for association count
-  #@Method=get_data_url
-  data_produced: ""   # URL (public) / Resource _id
   #@Method
   last_data_received_time: ""
-  #@Method
-  photo: !!binary
   #@Method
   operational_state: ""   # from Device
   #@Method
@@ -32,10 +26,6 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
   location_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  port_used: ""
-  #@Method
-  agent: "" # Messaging address of the agent
-  #@Method
   recent_events: []  #List of the 10 most recent events for this device
 
 ---
@@ -46,11 +36,13 @@ InstrumentDeviceExtension: !Extends_ExtendedInformationResource
   data_products: [] # A list of associated data products
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasAgentInstance
+  #@hasInstrumentAgentForInstrumentDevice
   instrument_agent: !InstrumentAgent  # The associated agent
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
   #@hasPlatformModel=PlatformDevice
-  platform_model: PlatformModel  # The model associated to the parent platform
+  platform_model: !PlatformModel  # The model associated to the parent platform
   #@hasDevice=SensorDevice
-  sensor_device: []  # list of sensors attached to this device
+  sensor_devices: []  # list of sensors attached to this device
+  #@hasAttachment
+  attachments: []  # list of sensors attached to this device

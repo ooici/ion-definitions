@@ -4,13 +4,6 @@
 # Describes a physical instrument
 InstrumentDevice: !Extends_Device
   firmware_version: ""
-  # The length of the instrument device in meters
-  length: 0.0
-  # The width of the instrument device in meters
-  width: 0.0
-  # The height  of the instrument device in meters
-  height: 0.0
-  #hardware_version: ""
   manufacture_date: "" #later will be timeinstance object
   lot_number: ""
   # Provides offset, orientation, etc. information needed to calculate device location from platform location
@@ -22,7 +15,7 @@ InstrumentModel: !Extends_DeviceModel
   model_label: ""
   manufacturer: !Institution
   # The URL of the manufacturer. Note that only one is allowed
-  manufacturer_url: ""
+  #manufacturer_url: ""
   reference_url: ""
   instrument_family: ""     # values= CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL, default=CAM
   baud_rate_default: ""

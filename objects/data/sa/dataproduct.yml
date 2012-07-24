@@ -8,7 +8,7 @@ DataProduct: !Extends_InformationResource
   # The presentation consists of a particular subset of the collection.
 
   # An entity that serves as a contact point
-  contact: !ContactInformation
+  point_of_contact_list: []    # a list of  !ContactInformation
 
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds
@@ -16,11 +16,15 @@ DataProduct: !Extends_InformationResource
   # lists key words and phrases that are relevant to the dataset
   keywords: {}
 
-  # The name of the project from which the data came.
-  provider_project: ""
+  # TODO: remove these from the gateway call
+  #provider_project: ""
+  #contact: ""
+
+  #provider_information: !ContactInformation
 
   # A place to acknowledge various types of support provided by the project that produced the data
-  provider_acknowledgement: ""
+  #provider_acknowledgement: ""
+  acknowledgement: ""
 
   # a link to the (time-varying) data product
   # Mandatory
@@ -30,6 +34,10 @@ DataProduct: !Extends_InformationResource
   # Mandatory
   iso_topic_category: ""
 
+  # From ISO:method used to spatially represent geographic information
+  # Code List: vector, grid, textTable, tin, stereoModel, video
+  iso_spatial_representation_type: ""
+
   # detailed description of data that makes up the Data Product; for raw data, includes formatting information
   # Mandatory
   data_format: !DataFormat
@@ -37,15 +45,16 @@ DataProduct: !Extends_InformationResource
   # OOI data processing level; L0, L1, or L2. The definitions of these levels are currently in revision,
   # and should be verified from the OOI Data Products document
   # Mandatory
-  data_product_level: ""
+  #data_product_level: ""
+  processing_level_code: ""
 
   # Provides the name and contact information for a person associated with the dataset
   # TODO: change this back to : A list of ContactInformation objects
-  data_contact: !ContactInformation
+  #data_contact: !ContactInformation
 
   # See OOI Data Products document for latest (not necessarily normative) definitions and controlled vocabulary
   # Mandatory
-  data_quality_control_level: ""
+  quality_control_level: ""
 
   # Indicates whether this is a deprecated dataset
   # Mandatory
@@ -62,7 +71,7 @@ DataProduct: !Extends_InformationResource
   # Describes the permissions and restrictions for access to and distribution of OOI data;
   # presumed to be legally enforceable language.
   # Mandatory
-  license: ""
+  #license: ""
 
   # Reference identifier to an explicit license, as described in License attribute.
   license_URI: ""
@@ -74,14 +83,14 @@ DataProduct: !Extends_InformationResource
 
   # For temporary data holds, the date on which the hold will expire
   # Mandatory
-  exclusive_rights_end_date: ""  #datetime
+  #exclusive_rights_end_date: ""  #datetime
 
   # The name and contact information of the person/entity who requested the exclusive rights
   # Mandatory
-  exclusive_rights_contact: !ContactInformation
+  #exclusive_rights_contact: !ContactInformation
 
   # Further information about the exclusive rights hold, such as a justification for a permanent hold
-  exclusive_rights_notes: ""
+ # exclusive_rights_notes: ""
 
   # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""

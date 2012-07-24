@@ -91,6 +91,11 @@ DeviceModel: !Extends_InformationResource
   width: 0.0
   # The height  of the instrument device in meters
   height: 0.0
+  # The name of the manufacturer
+  manufacturer_url: ""
+  # The model name/code provided by the manufacturer
+  model: ""
+  
 ---
 
 AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)

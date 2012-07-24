@@ -41,7 +41,6 @@ ExternalDataProvider: !Extends_InformationResource
 
 # Describes a type of data source
 DataSourceModel: !Extends_DeviceModel
-  model: ""
   data_handler_module: ""
   data_handler_class: ""
 

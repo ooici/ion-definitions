@@ -7,15 +7,12 @@ PlatformDevice: !Extends_Device
   # one to many instruments
 
 
-  # identifier of a static definition of manufacturer and model for the platform
-  # Mandatory
-  model: ""
+  # The family of platform, with term from the OOI Node Type list
+  platform_family: ""
 
   # deployment point of platforms; platform may vary in location around that point
   nominal_location: !GeospatialLocation
 
-  # Datetime when item was built
-  manufacture_date: "2011-07-27T02:59:43.1Z"
 
 # Describes a type of platform by common characteristics
 PlatformModel: !Extends_DeviceModel

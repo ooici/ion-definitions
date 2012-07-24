@@ -75,7 +75,7 @@ Device: !Extends_TaskableResource
   # Whether the device can be sent a control message
   controllable: True
   # A device that does not have a communication port for real-time monitoring
-  monitorable: True
+  #monitorable: True
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
 DeviceModel: !Extends_InformationResource
@@ -85,7 +85,12 @@ DeviceModel: !Extends_InformationResource
   voltage: 0.0
   # nominal wattage consumed by instrument, in Watts
   wattage: 0.0
-
+  # The length of the instrument device in meters
+  length: 0.0
+  # The width of the instrument device in meters
+  width: 0.0
+  # The height  of the instrument device in meters
+  height: 0.0
 ---
 
 AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)

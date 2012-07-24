@@ -18,6 +18,9 @@ Granule:
   taxonomy: !Taxonomy
   # Can be reference or a value
 
+  param_dictionary: {}
+  #ParameterDictionary object from coverage-model. Will eventually replace taxonomy
+
   record_dictionary: {}
   # can be a what?
 

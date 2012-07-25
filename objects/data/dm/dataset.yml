@@ -2,6 +2,7 @@
 # persistent data product.
 DataSet: !Extends_InformationResource
   datastore_name: ""        # the couch datastore name
+  view_name: ""
   primary_view_key: ""      # the primary key to access this dataset from the primary view
   parameter_dictionary: {}
   temporal_domain: {}

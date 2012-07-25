@@ -170,3 +170,13 @@ DetectionEvent: !Extends_Event
   condition: ""           # Concatenate the filter and make it a message
   original_origin: ""     # The origin from the event that was detected by the filter
   original_type: ""       # The type of the event that was detected by the filter
+
+---
+# a reload_user_info event generated when a notification is created, updated or deleted
+ReloadUserInfoEvent: !Extends_Event
+  notification_id: ""
+
+
+---
+# The Scheduler fires off this event so that services can react to it and perform tasks
+SchedulerEvent: !Extends_Event

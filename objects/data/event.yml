@@ -163,6 +163,8 @@ UserRoleModifiedEvent: !Extends_Event
 # Used by DM UNS
 ExampleDetectableEvent: !Extends_Event
   voltage: 0
+  telemetry: 0
+  temperature: 0
 
 # output event from detection process
 DetectionEvent: !Extends_Event

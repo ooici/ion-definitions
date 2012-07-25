@@ -46,3 +46,30 @@ InstrumentDeviceExtension: !Extends_ExtendedInformationResource
   sensor_devices: []  # list of sensors attached to this device
   #@hasAttachment
   attachments: []  # list of sensors attached to this device
+
+---
+
+#Computed attributes for an platform device
+PlatformDeviceComputedAttributes: !Extends_ComputedAttributes
+  #@Method
+  energy_generation: 0.0  # amount of energy being generated on the platform in Watts
+
+  #@Method
+  energy_consumption: 0.0  # amount of energy currently being consumed by the platform in Watts
+
+  #@Method
+  data_transmission_rate: ""
+
+  #@Method
+  speed_over_ground: ""
+
+---
+
+#This object contains additional information associated with an instrument device.
+PlatformDeviceExtension: !Extends_ExtendedInformationResource
+
+  #@hasDevice=InstrumentDevice
+  instrument_devices: []  # list of sensors attached to this device
+
+
+---

@@ -14,7 +14,7 @@ methods:
       Initial request required to start a realtime chart for the specified data product. Returns a user specific token associated
       with the request that will be required for subsequent requests when polling data.
     in:
-      data_product_id: ""
+      in_data_product_id: ""
       product_type: ""
       query: ""
       callback: ""

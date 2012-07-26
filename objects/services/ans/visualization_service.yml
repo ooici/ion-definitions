@@ -4,7 +4,7 @@ name: visualization_service
 
 docstring: Service is responsible for mantaining user sessions and collecting requested viz products, preparing them before returning them to the web client
 
-dependencies: [resource_registry, pubsub_management, transform_management, data_retriever, dataset_management, workflow_management]
+dependencies: [resource_registry, pubsub_management, transform_management, data_retriever, dataset_management, data_process_management, workflow_management]
 
 
 methods:
@@ -15,7 +15,9 @@ methods:
       with the request that will be required for subsequent requests when polling data.
     in:
       data_product_id: ""
+      product_type: ""
       query: ""
+      callback: ""
     out:
       query_token: ""
     throws:
@@ -47,16 +49,22 @@ methods:
     docstring: Request to fetch an image for a particular DP
     in:
       data_product_id: ""
+      image_id: ""
     out:
       image_obj: ""
     throws:
       NotFound: Throws if specified data product id or its visualization product does not exist
 
-  get_imagelist:
-    docstring: Request to fetch an image list available for a particular DP
+
+  get_visualization_data:
+    docstring: Request to fetch data and return it in the format requested
     in:
       data_product_id: ""
+      out_product_type: ""
+      query: ""
+      callback: ""
     out:
-      image_list: ""
+      data: ""
     throws:
       NotFound: Throws if specified data product id or its visualization product does not exist
+

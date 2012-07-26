@@ -142,13 +142,20 @@ ResourceRequestStatusEvent: !Extends_RequestStatusEvent
 
 # The ResourcePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
 # when the underlying policy object is updated in the resource registry but by business login in the Policy Management
-# Service as appropriate, like when it is assigned or removed from a resource or service
+# Service as appropriate, like when it is assigned or removed from a resource
 # The origin is the policy_id
 ResourcePolicyEvent: !Extends_Event
   resource_id: ""
   resource_type: ""
   resource_name: ""
 
+# The ServicePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
+# when the underlying policy object is updated in the resource registry but by business login in the Policy Management
+# Service as appropriate, like when it is assigned or removed from a service
+# The origin is the policy_id
+ServicePolicyEvent: !Extends_Event
+  #If the service_name is not set to a specific name, then all services are assumed.
+  service_name: ""
 
 # The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
 # The origin is the org_id
@@ -163,6 +170,8 @@ UserRoleModifiedEvent: !Extends_Event
 # Used by DM UNS
 ExampleDetectableEvent: !Extends_Event
   voltage: 0
+  telemetry: 0
+  temperature: 0
 
 # output event from detection process
 DetectionEvent: !Extends_Event
@@ -170,3 +179,13 @@ DetectionEvent: !Extends_Event
   condition: ""           # Concatenate the filter and make it a message
   original_origin: ""     # The origin from the event that was detected by the filter
   original_type: ""       # The type of the event that was detected by the filter
+
+---
+# a reload_user_info event generated when a notification is created, updated or deleted
+ReloadUserInfoEvent: !Extends_Event
+  notification_id: ""
+
+
+---
+# The Scheduler fires off this event so that services can react to it and perform tasks
+SchedulerEvent: !Extends_Event

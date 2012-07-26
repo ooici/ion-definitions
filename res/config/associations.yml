@@ -14,10 +14,6 @@ AssociationDefinitions:
     range: [DataProcessDefinition]
     docstring: References a DataProcessDefinition (type) used by WorkflowDefinition (type)
 #SA
-  - predicate: hasAssignment # DEPRECATE (use hasDevice)
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [InstrumentSite, PlatformSite]
-    docstring: DEPRECATED
   - predicate: hasDataset
     domain: [DataProducer, DataProduct, DataProductVersion]
     range: [DataSet]
@@ -50,22 +46,10 @@ AssociationDefinitions:
     domain: [DataProcess, Workflow]
     range: [DataProduct]
     docstring: References the DataProduct that provides input data for a processing resource
-  - predicate: hasInstance # DEPRECATE (use hasDefinition)
-    domain: [AgentDefinition, DataProcessDefinition]
-    range: [AgentInstance, DataProcess]
-    docstring: DEPRECATED
-  - predicate: hasInstrument  # DEPRECATE
-    domain: [PlatformDevice, PlatformSite]
-    range: [InstrumentDevice, InstrumentSite]
-    docstring: DEPRECATED
   - predicate: hasModel
     domain: [Device, Site, AgentDefinition, DataSource, ExternalDataset]
     range: [DeviceModel]
     docstring: References the model (aka type/class) resource for the resource
-  - predicate: hasObservatory # DEPRECATE
-    domain: [Org]
-    range: [Observatory]
-    docstring: DEPRECATED
   - predicate: hasOutputProduct
     domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
     range: [DataProduct, DataProductVersion]
@@ -74,14 +58,6 @@ AssociationDefinitions:
     domain: [DataProducer]
     range: [DataProducer]
     docstring: References the a DataProducer's parent DataProducer to express a provenance relationship
-  - predicate: hasPrimaryDeployment # DEPRECATE (use Deployment resource)
-    domain: [PlatformDevice, InstrumentDevice]
-    range: [InstrumentSite, PlatformSite]
-    docstring: DEPRECATED
-  - predicate: hasSensor # DEPRECATE (use hasDevice)
-    domain: [InstrumentDevice]
-    range: [SensorDevice]
-    docstring: DEPRECATED
   - predicate: hasSite
     domain: [Site]
     range: [Site]
@@ -338,3 +314,5 @@ CompoundAssociations:
     predicates: [hasMembership,hasInfo]
   hasPlatformModel:
     predicates: [hasDevice,hasModel]
+  hasInstrumentAgentForInstrumentDevice:
+    predicates: [hasModel,hasModel]

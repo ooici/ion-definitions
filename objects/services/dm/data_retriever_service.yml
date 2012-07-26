@@ -44,6 +44,9 @@ methods:
       dataset_id: ""
       query: {}
       delivery_format: {}
+      module: ''
+      cls: ''
+      kwargs: {}
     out:
       retrieve_data: {}
 

@@ -51,6 +51,22 @@ methods:
     throws:
       NotFound: if ingestion configuration did not exist
 
+#------------------
+
+  add_stream:
+    docstring: Adds a stream to a dataset
+    in:
+      dataset_id: ""
+      stream_id: ""
+    out:
+  remove_stream:
+    docstring: Adds a stream to a dataset
+    in:
+      dataset_id: ""
+      stream_id: ""
+    out:
+      
+
   get_dataset_bounds:
     docstring: |
         @brief Get the bounding coordinates of the dataset using a couch map/reduce query

@@ -12,7 +12,7 @@ PlatformDevice: !Extends_Device
 
   # deployment point of platforms; platform may vary in location around that point
   nominal_location: !GeospatialLocation
-
+  
 
 # Describes a type of platform by common characteristics
 PlatformModel: !Extends_DeviceModel
@@ -20,8 +20,7 @@ PlatformModel: !Extends_DeviceModel
   # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Model
 
   # A grouping of platforms, derived from the manufacturer's model number, based on common attributes
-  
-  manufacturer: !Institution
+
 
   # Categorization by OOI node type
   # Examples include: MJ (Medium-power Junction box), ID (Interface box HD camera), FJ (Float Junction Box),
@@ -33,7 +32,7 @@ PlatformModel: !Extends_DeviceModel
 
   # Whether ION software is run on platform resources
   # Mandatory
-  ION_onboard: True
+  ci_onboard: True
 
   # How platform is designed to be connected to shore
   # Mandatory

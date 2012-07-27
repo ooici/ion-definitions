@@ -5,5 +5,5 @@ R2_DEMO,DPD3,USER_1,MF_3,StreamDef14,StreamDef17,TEMPWAT L1 demo,L1 - Temperatur
 R2_DEMO,DPD4,USER_1,MF_3,StreamDef15,StreamDef18,PRESWAT L1 demo,L1 - Pressure (Depth),ion.processes.data.transforms.ctd.ctd_L1_pressure,CTDL1PressureTransform,,
 R2_DEMO,DPD5,USER_1,MF_3,StreamDef12,StreamDef19,PRACSAL L2 demo,L2 - Practical Salinity,ion.processes.data.transforms.ctd.ctd_L2_salinity,SalinityTransform,,
 R2_DEMO,DPD6,USER_1,MF_3,StreamDef12,StreamDef20,DENSITY L2 demo,L2 - Density,ion.processes.data.transforms.ctd.ctd_L2_density,DensityTransform,,
-R2_DEMO,DPD15,USER_1,MF_3,,StreamDef11,GOOGLE_DT,Raw stream containing google datatable components,ion.processes.data.transforms.viz.google_dt,VizTransformGoogleDT,,
-R2_DEMO,DPD16,USER_1,MF_3,,StreamDef11,MPL_IMAGES,Raw stream containing Matplotlib graphs,ion.processes.data.transforms.viz.matplotlib_graphs,VizTransformMatplotlibGraphs,,
+R2_DEMO,DPD15,USER_1,MF_3,,StreamDef11,GOOGLE_DT,Google datatable components,ion.processes.data.transforms.viz.google_dt,VizTransformGoogleDT,,
+R2_DEMO,DPD16,USER_1,MF_3,,StreamDef11,MPL_IMAGES,Matplotlib graphs,ion.processes.data.transforms.viz.matplotlib_graphs,VizTransformMatplotlibGraphs,,

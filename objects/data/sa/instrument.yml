@@ -12,8 +12,6 @@ InstrumentDevice: !Extends_Device
 
 # Defines the characteristics of an instrument model
 InstrumentModel: !Extends_DeviceModel
-  model_label: ""
-  manufacturer: !Institution
   # The URL of the manufacturer. Note that only one is allowed
   #manufacturer_url: ""
   reference_url: ""

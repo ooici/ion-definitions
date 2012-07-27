@@ -917,3 +917,15 @@ methods:
       BadRequest: A parameter is missing
       NotFound: An object with the specified instrument_device_id does not exist
 
+  get_platform_device_extension:
+    docstring: |
+      Returns an PlatformDeviceExtension object containing additional related information
+    in:
+      platform_device_id: ""
+      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: [] # An optional list of field names to exclude from retrieving
+    out:
+      platform_device: !PlatformDeviceExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified instrument_device_id does not exist

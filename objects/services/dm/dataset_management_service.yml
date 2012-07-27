@@ -58,6 +58,18 @@ methods:
       stream_id: ""
     out:
       
+  get_dataset_info:
+    in:
+      dataset_id: ""
+    out:
+      information: ""
+
+  get_dataset_parameters:
+    in:
+      dataset_id: ""
+    out:
+      parameter_dictionary: {}
+
 
   get_dataset_bounds:
     docstring: |
@@ -78,6 +90,7 @@ methods:
       dataset_id: ""
     out:
       metadata: {} # structure tbd... similar to datastream definition
+
 
   #-------------------------
   # Not implemented yet

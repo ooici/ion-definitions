@@ -74,7 +74,7 @@ DataProduct: !Extends_InformationResource
   #license: ""
 
   # Reference identifier to an explicit license, as described in License attribute.
-  license_URI: ""
+  license_uri: ""
 
   # Indicates whether the dataset is under proprietary hold or whether it is public
   # string: unrestricted, temporary_hold, permanent_hold

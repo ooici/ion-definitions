@@ -32,11 +32,11 @@ PlatformModel: !Extends_DeviceModel
 
   # Whether ION software is run on platform resources
   # Mandatory
-  ci_onboard: True
+  ci_onboard: ""
 
-  # How platform is designed to be connected to shore
+  # Whether the platform is typically connected to the terrestrial network - boolean
   # Mandatory
-  shore_networked: ""   # Always Fast, Always Slow, Intermittent, Never
+  shore_networked: True   # Always Fast, Always Slow, Intermittent, Never
 
   # Broad categorization of the platform into major functional category (AUV, Glider, Mooring, Profiler, ...)/
   # Mandatory

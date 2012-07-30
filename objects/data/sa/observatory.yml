@@ -17,6 +17,8 @@ Site: !Extends_Resource
 # providing Data Products, Event Detection and Instrument services
 Observatory: !Extends_Site
 
+  url: ""
+
   
 # An entity that encompasses a defined location, time, and/or data-producing entities
 Subsite: !Extends_Site
@@ -26,4 +28,5 @@ PlatformSite: !Extends_Site
 
 # An observatory sub-site, providing a slot, definition and metadata for instrument information.
 InstrumentSite: !Extends_Site
+
 

@@ -13,8 +13,6 @@ TimerSchedulerEntry: !Extends_AbstractSchedulerEntry
   # String to put in subtype field of TimerEvent
   event_subtype: ""
 
-  # System timestamp (str of millis in UNIX epoch) when this timer will be cancelled
-  expires: ""
 
 ---
 
@@ -40,6 +38,9 @@ TimeOfDayTimer: !Extends_TimerSchedulerEntry
     - hour: ""        # Hour of day, range [0,23]
       minute: ""      # Minute in hour, range [0, 59]
       second: ""      # Second in minute, range [0, 61]
+
+  # System timestamp (str of millis in UNIX epoch) when this timer will be cancelled
+  expires: ""
 
 ---
 

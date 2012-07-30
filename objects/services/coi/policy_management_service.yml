@@ -9,9 +9,52 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Polic
 dependencies: [resource_registry]
 
 methods:
+
+  create_resource_access_policy:
+    docstring: |
+      Helper operation for creating an access policy for a specific resource. The id string returned
+      is the internal id by which Policy will be identified in the data store.
+    in:
+      resource_id: ""
+      policy_name: ""
+      description: ""
+      policy_rule: ""
+    out:
+      policy_id: ""
+    throws:
+      BadRequest: If any of the paramaters are not set.
+
+  create_service_access_policy:
+    docstring: |
+      Helper operation for creating an access policy for a specific service. The id string returned
+      is the internal id by which Policy will be identified in the data store.
+    in:
+      service_name: ""
+      policy_name: ""
+      description: ""
+      policy_rule: ""
+    out:
+      policy_id: ""
+    throws:
+      BadRequest: If any of the paramaters are not set.
+
+  create_common_service_access_policy:
+    docstring: |
+      Helper operation for creating a service access policy common to all services. The id string returned
+      is the internal id by which Policy will be identified in the data store.
+    in:
+      policy_name: ""
+      description: ""
+      policy_rule: ""
+    out:
+      policy_id: ""
+    throws:
+      BadRequest: If any of the paramaters are not set.
+
+
   create_policy:
     docstring: |
-      Persists the provided Policy object for the specified Org id. The id string returned
+      Persists the provided Policy object The id string returned
       is the internal id by which Policy will be identified in the data store.
     in:
       policy: !Policy
@@ -67,7 +110,7 @@ methods:
 
   disable_policy:
     docstring: |
-      Resets a flag to disable the use of the policy rule
+      Resets a flag to disable the use of the policy
     in:
       policy_id: ""
     out:
@@ -76,7 +119,7 @@ methods:
 
   add_resource_policy:
     docstring: |
-      Associates a policy rule to a specific resource
+      Associates a policy to a specific resource
     in:
       resource_id: ""
       policy_id: ""
@@ -88,7 +131,7 @@ methods:
 
   remove_resource_policy:
     docstring: |
-      Removes an association for a policy rule to a specific resource
+      Removes an association for a policy to a specific resource
     in:
       resource_id: ""
       policy_id: ""
@@ -108,58 +151,27 @@ methods:
       NotFound: object with specified id does not exist
 
 
-  get_active_resource_policy_rules:
+  get_active_resource_access_policy_rules:
     docstring: |
-      Generates the set of all enabled policies for the specified resource
+      Generates the set of all enabled access policies for the specified resource within the specified Org. If the org_name
+      is not provided, then the root ION Org will be assumed.
     in:
       resource_id: ""
+      org_name: ""
     out:
-      policy: ""
+      policy_rules: ""
     throws:
       NotFound: object with specified id does not exist
 
-
-  add_service_policy:
+  get_active_service_access_policy_rules:
     docstring: |
-      Associates a policy rule to a specific service
+      Generates the set of all enabled access policies for the specified service within the specified Org. If the org_name
+      is not provided, then the root ION Org will be assumed.
     in:
       service_name: ""
-      policy_id: ""
+      org_name: ""
     out:
-      success: True
-    throws:
-      NotFound: object with specified id does not exist
-
-  remove_service_policy:
-    docstring: |
-      Removes an association for a policy rule to a specific service
-    in:
-      service_name: ""
-      policy_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: object with specified id does not exist
-
-  find_service_policies:
-    docstring: |
-      Finds all policies associated with a specific service
-    in:
-      service_name: ""
-    out:
-      policy_list: []
-    throws:
-      NotFound: object with specified id does not exist
-
-
-  get_active_service_policy_rules:
-    docstring: |
-      Generates the set of all enabled policies for the specified service
-    in:
-      org_id: ""
-      service_name: ""
-    out:
-      policy: ""
+      policy_rules: ""
     throws:
       NotFound: object with specified id does not exist
 

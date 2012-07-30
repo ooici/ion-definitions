@@ -97,7 +97,12 @@ container:
     server: couchdb
 
   exchange:
+    # @TODO rename to delegate or similar, used for management api calls too
     auto_register: True
+    management:
+      port: 55672
+      username: guest
+      password: guest
 
   messaging:
     server:

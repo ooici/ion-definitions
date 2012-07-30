@@ -4,13 +4,36 @@ UserRole: !Extends_InformationResource
   label: ""  # Can be human readable
 
 
+---
+#The base type for all specific policy types
+AbstractPolicyType:
+
+---
+
+# Holds a policy access rule for a specific resource
+ResourceAccessPolicy: !Extends_AbstractPolicyType
+  #Contains the text of the Access Policy Rule
+  policy_rule: ""
+
+---
+
+# Holds a policy access rule common for all Services
+CommonServiceAccessPolicy: !Extends_ResourceAccessPolicy
+
+# Holds a policy access rule for a specific Service
+ServiceAccessPolicy: !Extends_ResourceAccessPolicy
+  service_name: ""
+
+
+---
+
 # Holds policy applicable to a subset of resources within the system.
 Policy: !Extends_InformationResource
-  definition_type: ""
-  rule: ""
   enabled: True
   definition: {}
+  policy_type: !AbstractPolicyType
 
+---
 
 # Defines the scope of applicability of policy, i.e. the subset of resources
 RoleScope:

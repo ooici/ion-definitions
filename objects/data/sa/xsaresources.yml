@@ -6,7 +6,7 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
   location: !GeospatialBounds  # current geospatial (3D) location of instrument
   #@Method
-  last_data_received_time: ""
+  last_data_received_time: ""  # timestamp of most recent record, converted to ISO 8601
   #@Method
   operational_state: ""   # from Device
   #@Method
@@ -63,6 +63,9 @@ PlatformDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
   speed_over_ground: ""
 
+  #@Method
+  aggregated_status: ""  # The status roll-up that summarizes the entire status of the device  (CV:  RED, YELLOW, GREEN, BLACK)
+
 ---
 
 #This object contains additional information associated with an instrument device.
@@ -70,6 +73,39 @@ PlatformDeviceExtension: !Extends_ExtendedInformationResource
 
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
+
+
+---
+
+#Computed attributes for an platform device
+ObservatoryComputedAttributes: !Extends_ComputedAttributes
+  #@Method
+  number_data_sets: 0  # Total number of data sets (all types) in the Observatory
+
+  #@Method
+  number_instruments_deployed: 0  # How many instruments are in the water?
+
+  #@Method
+  number_instruments_operational: 0 # A count of How many instruments are deployed with lifecycle state of Active and execution state of Operational?
+
+  #@Method
+  number_instruments_inoperational: 0  # A count of how many instruments are deployed with lifecycle state not Active or execution state not Operational?
+
+  #@Method
+  number_instruments: 0  # the number of instruments for which the observatory is responsible
+
+  #@Method
+  number_platforms: 0   # the number of platforms for which the observatory is responsible
+
+  #@Method
+  number_platforms_deployed: 0  # How many platforms are in the water?
+
+---
+
+#This object contains additional information associated with an observatory.
+ObservatoryExtension: !Extends_ExtendedInformationResource
+
+
 
 
 ---

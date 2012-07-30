@@ -178,3 +178,17 @@ methods:
       filters: !ResourceFilter
     out:
       exchange_broker_list: []
+
+  call_management:
+    docstring: Makes a call to the RabbitMQ Management HTTP API
+    in:
+      url: ""
+      method: ""
+    out:
+      content: {}
+    throws:
+      Timeout: the call to the management API tiemed out
+      ServiceUnavailable: a connection error occured to the management API
+      ServerError: the management API responded with an HTTP error, or any other issue
+
+

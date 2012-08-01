@@ -15,6 +15,7 @@ methods:
     docstring: Creates a Process Definition based on given object.
     in:
       process_definition: !ProcessDefinition
+      process_definition_id: ""
     out:
       process_definition_id: ""
     throws:

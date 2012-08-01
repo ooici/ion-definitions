@@ -13,6 +13,12 @@ DataProduct: !Extends_InformationResource
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds
 
+  # temporal domain
+  temporal_domain: !GridDomain
+
+  # spatial domain
+  spatial_domain: !GridDomain
+
   # lists key words and phrases that are relevant to the dataset
   keywords: {}
 

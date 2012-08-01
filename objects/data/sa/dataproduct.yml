@@ -14,10 +14,10 @@ DataProduct: !Extends_InformationResource
   geospatial_bounds: !GeospatialBounds
 
   # temporal domain
-  temporal_domain: ''
+  temporal_domain: {}
 
   # spatial domain
-  spatial_domain: ''
+  spatial_domain: {}
 
   # lists key words and phrases that are relevant to the dataset
   keywords: {}

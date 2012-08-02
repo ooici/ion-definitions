@@ -34,3 +34,29 @@ methods:
     out:
     throws:
       NotFound: if timer_id doesn't exist
+
+  create_interval_timer:
+    docstring: |
+      Creates IntervalTimer object
+    in:
+      start_time: ""
+      interval : 0
+      number_of_intervals: 0
+      event_origin : ""
+      event_subtype : ""
+    out:
+      interval_timer: !IntervalTimer
+    throws:
+      BadRequest: if timer is misformed and can not be scheduled
+
+  create_time_of_day_timer:
+    docstring: |
+      Creates TimeOfDayTimer object
+    in:
+      times_of_day : []
+      event_origin : ""
+      event_subtype : ""
+    out:
+      time_of_day_timer: !TimeOfDayTimer
+    throws:
+      BadRequest: if timer is misformed and can not be scheduled

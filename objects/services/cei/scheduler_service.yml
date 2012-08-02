@@ -45,7 +45,7 @@ methods:
       event_origin : ""
       event_subtype : ""
     out:
-      interval_timer: !IntervalTimer
+      timer_id: ""
     throws:
       BadRequest: if timer is misformed and can not be scheduled
 
@@ -57,6 +57,6 @@ methods:
       event_origin : ""
       event_subtype : ""
     out:
-      time_of_day_timer: !TimeOfDayTimer
+      timer_id: ""
     throws:
       BadRequest: if timer is misformed and can not be scheduled

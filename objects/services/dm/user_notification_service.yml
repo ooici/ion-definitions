@@ -33,7 +33,7 @@ methods:
   publish_event:
     in:
       event:
-      publish_time:
+      scheduler_entry:
     out:
     throws:
       BadRequest: if there is anything wrong with the event object

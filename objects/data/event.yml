@@ -179,12 +179,20 @@ ResourceRequestStatusEvent: !Extends_RequestStatusEvent
 
 # The ResourcePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
 # when the underlying policy object is updated in the resource registry but by business login in the Policy Management
-# Service as appropriate, like when it is assigned or removed from a resource or service
+# Service as appropriate, like when it is assigned or removed from a resource
 # The origin is the policy_id
 ResourcePolicyEvent: !Extends_Event
   resource_id: ""
   resource_type: ""
   resource_name: ""
+
+# The ServicePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
+# when the underlying policy object is updated in the resource registry but by business login in the Policy Management
+# Service as appropriate, like when it is assigned or removed from a service
+# The origin is the policy_id
+ServicePolicyEvent: !Extends_Event
+  #If the service_name is not set to a specific name, then all services are assumed.
+  service_name: ""
 
 
 # The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.

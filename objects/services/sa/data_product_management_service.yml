@@ -13,6 +13,7 @@ methods:
     in:
       data_product: !DataProduct
       stream_definition_id: ""
+      parameter_dictionary: ""
     out:
       data_product_id: ""
 

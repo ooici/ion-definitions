@@ -10,25 +10,17 @@ dependencies: [resource_registry]
 
 methods:
   create_dataset:
-    docstring: |
-      @brief Create a resource which defines a dataset. For LCA it is assumed that datasets are organized by stream.
-      @param stream_id is the primary key used in the couch view to retrieve the content or metadata
-      @param datastore_name is the name of the datastore where this dataset resides.
-      @param view_name is the name of the view which joins the dataset definition to the dataset
-      @param contact is the contact information for the dataset adminstrator
-      @param user_metadata is user defined metadata which can be added to this dataset. Should be annotation via association
-      @param name is the name of the dataset resource
-      @param description is a description of the dataset resource
     in:
-      stream_id: ""
-      datastore_name: ""
-      view_name: ""
-      name: ""
-      description: ""
-      contact: !ContactInformation
-      user_metadata: {}
+      name:            ""
+      datastore_name:  ""
+      view_name:       ""
+      stream_id:       ""
+      parameter_dict:  {}
+      spatial_domain:  {}
+      temporal_domain: {}
+      description:     ""
     out:
-      dataset_id: ""
+      dataset_id:      ""
 
   update_dataset:
     in:
@@ -66,6 +58,18 @@ methods:
       stream_id: ""
     out:
       
+  get_dataset_info:
+    in:
+      dataset_id: ""
+    out:
+      information: ""
+
+  get_dataset_parameters:
+    in:
+      dataset_id: ""
+    out:
+      parameter_dictionary: {}
+
 
   get_dataset_bounds:
     docstring: |
@@ -86,6 +90,7 @@ methods:
       dataset_id: ""
     out:
       metadata: {} # structure tbd... similar to datastream definition
+
 
   #-------------------------
   # Not implemented yet

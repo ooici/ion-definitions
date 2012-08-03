@@ -76,6 +76,10 @@ Device: !Extends_TaskableResource
   controllable: True
   # A device that does not have a communication port for real-time monitoring
   #monitorable: True
+  # Additional attributes required for specific devices
+  # Recommended format: {attribute1_name:value, attribute2_name:value}
+  # The attribute names should align with those in the DeviceModel for this type of device.
+  custom_attributes: {}
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
 DeviceModel: !Extends_InformationResource
@@ -95,6 +99,11 @@ DeviceModel: !Extends_InformationResource
   manufacturer_url: ""
   # The model name/code provided by the manufacturer
   model: ""
+  # Additional attributes required for specific models
+  # Recommended format: {attribute1_name:description, attribute2_name:description}
+  # A device of this model should then store these attribute values in the corresponding custom_attributes
+  # of the device instance.
+  custom_attributes: {}
   
 ---
 

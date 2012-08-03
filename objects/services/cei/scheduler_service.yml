@@ -54,6 +54,7 @@ methods:
       Creates TimeOfDayTimer object
     in:
       times_of_day : []
+      expires : ""
       event_origin : ""
       event_subtype : ""
     out:

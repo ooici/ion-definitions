@@ -91,6 +91,43 @@ DeviceCommandEvent: !Extends_ResourceCommandEvent
 DeviceOperatorEvent: !Extends_ResourceOperatorEvent
 
 ---
+
+ResourceAgentEvent: !Extends_Event
+
+---
+
+ResourceAgentCommandEvent: !Extends_ResourceAgentEvent
+  command: ""
+  execute_command: ""
+  args: []
+  kwargs: {}
+  result: ""
+
+ResourceAgentErrorEvent: !Extends_ResourceAgentEvent
+  command: ""
+  execute_command: ""
+  args: []
+  kwargs: {}
+  error_type: ""
+  error_msg: ""
+  error_code: -1
+  
+ResourceAgentStateEvent: !Extends_ResourceAgentEvent
+  state: ""
+
+ResourceAgentResourceStateEvent: !Extends_ResourceAgentEvent
+  state: ""
+
+ResourceAgentResourceConfigEvent: !Extends_ResourceAgentEvent
+  config: {}
+
+ResourceAgentAsyncResultEvent: !Extends_ResourceAgentEvent
+  command: ""
+  desc: ""
+  result: ""  
+
+---
+
 # ------------------------------------------------------------------------------------
 # DataSource Events
 # ------------------------------------------------------------------------------------
@@ -156,6 +193,7 @@ ResourcePolicyEvent: !Extends_Event
 ServicePolicyEvent: !Extends_Event
   #If the service_name is not set to a specific name, then all services are assumed.
   service_name: ""
+
 
 # The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
 # The origin is the org_id

@@ -30,13 +30,15 @@ Process: !Extends_TaskableResource
 # Describes request scheduling a process on specific resources
 ProcessTarget:
   execution_engine_id: ""
-  execution_engine_group: ""
+  node_exclusive: ""
   constraints: {}
 
 ---
 
 # Describes request to schedule a process at a certain time or modality
 ProcessSchedule:
-  schedule_mode: !enum (name=ProcessScheduleMode, values=(FOREVER, IMMEDIATE, SCHEDULE), default=FOREVER)
+  schedule_mode: !enum (name=ProcessScheduleMode, values=(IMMEDIATE, SCHEDULE), default=IMMEDIATE)
+  restart_mode: !enum (name=ProcessRestartMode, values=(NEVER, ALWAYS, ABNORMAL), default=NEVER)
+  queueing_mode: !enum (name=ProcessQueueingMode, values=(NEVER, ALWAYS, START_ONLY, RESTART_ONLY), default=NEVER)
   schedule:
   target: !ProcessTarget

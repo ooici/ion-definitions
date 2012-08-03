@@ -1,19 +1,12 @@
 # Represents an internal persistent data and metadata coverage, most often associated with a
 # persistent data product.
 DataSet: !Extends_InformationResource
-  view_name: ""             # name of the primary view access in couch
-  view_keys: {}             # define the property keys used to access this data
   datastore_name: ""        # the couch datastore name
+  view_name: ""
   primary_view_key: ""      # the primary key to access this dataset from the primary view
-  bounds_query: ""          # couch map/reduce for bounds
-  bounds_query_args: ""     # couch arguments for bounds of this dataset
-  metadata_query: ""        # couch map/reduce to extract the metadata for this dataset
-  metadata_query_args: ""   # couch arguments for metadata about this dataset
-  # All bounds are calculated dynamically by couch
-  contact: !ContactInformation # Should this be an association to a user identity?
-  user_metadata: {} # this needs to be extended and defined - information that can be set by the owner of this dataset
-  # Maybe moved to an annotation?
-
+  parameter_dictionary: {}
+  temporal_domain: {}
+  spatial_domain: {}
 
 
 

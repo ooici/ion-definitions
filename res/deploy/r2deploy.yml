@@ -177,6 +177,7 @@ apps:
                 ingestion:
                   datastore_name: datasets
                   queue_name:     science_data.science_granule_ingestion
+                  workers: 1
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_transform, BootstrapTransform]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_index, BootstrapIndex]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_ingestion, BootstrapIngestion]

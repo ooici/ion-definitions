@@ -16,55 +16,66 @@ methods:
     in:
       data_product_id: ""
       in_product_type: ""
-      query: ""
+      visualization_parameters: {}
       callback: ""
     out:
       query_token: ""
     throws:
+      BadRequest: Throws if the data_product_id paramater is missing
       NotFound: Throws if specified data product id or its visualization product does not exist
 
   get_realtime_visualization_data:
     docstring: |
-      This operation returns a block of visualization data for displaying data product in real time. This operation requires a
-      user specific token which was provided from a previsou request to the init_realtime_visualization operation.
+      This operation returns a block of visualization chart data for displaying a data product in real time. This operation requires a
+      user specific token which was provided from a previous request to the init_realtime_visualization operation. It returns a
+      specialied JSONP data string.
     in:
       query_token: ""
     out:
-      visualization_data: {}
+      jsonp_visualization_data: ""
     throws:
+      BadRequest: Throws if the query_token paramater is missing
       NotFound: Throws if specified query_token or its visualization product does not exist
 
   terminate_realtime_visualization_data:
     docstring: |
       This operation terminates and cleans up resources associated with realtime visualization data. This operation requires a
-      user specific token which was provided from a previsou request to the init_realtime_visualization operation.
+      user specific token which was provided from a previous request to the init_realtime_visualization operation.
     in:
       query_token: ""
     out:
     throws:
-      NotFound: Throws if specified query_token or its visualization product does not exist
-
-
-  get_visualization_image:
-    docstring: Request to fetch an image for a particular DP
-    in:
-      data_product_id: ""
-      image_id: ""
-    out:
-      image_obj: ""
-    throws:
-      NotFound: Throws if specified data product id or its visualization product does not exist
+      BadsRequest: Throws if specified query_token or its visualization product does not exist
 
 
   get_visualization_data:
-    docstring: Request to fetch data and return it in the format requested
+    docstring: |
+      This operation returns a block of visualization chart data for displaying a data product based on the set of
+      visualization parameters. The visualization data is generated on demand and returns a specialied JSONP data string.
     in:
       data_product_id: ""
-      out_product_type: ""
-      query: ""
+      visualization_parameters: {}
       callback: ""
     out:
-      data: ""
+      jsonp_visualization_data: ""
     throws:
-      NotFound: Throws if specified data product id or its visualization product does not exist
+      NotFound: Throws if specified data product id does not exist
+
+
+  get_visualization_image:
+    docstring: |
+      This operation returns an image for a particular data product and set of visualization parameters. Depending on
+      the attributes of the data product, it will either return a persisted image or will generate one on demand
+      based on the set of visualization parameters. The return value should be a dict of the image content type
+      (mime type) and the binary image data.
+    in:
+      data_product_id: ""
+      visualization_parameters: {}
+      callback: ""
+    out:
+      image_obj: {}
+    throws:
+      NotFound: Throws if specified data product id does not exist
+
+
 

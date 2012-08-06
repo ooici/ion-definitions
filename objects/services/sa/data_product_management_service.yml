@@ -48,8 +48,6 @@ methods:
     docstring: Persist data product data into a data set
     in:
       data_product_id: ""
-      persist_data: True
-      persist_metadata: True
     out:
     throws:
       NotFound: object with specified id does not exist

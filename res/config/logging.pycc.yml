@@ -1,14 +1,15 @@
 handlers:
-  file:
+  pycc_file:
+    class: logging.FileHandler
     filename: logs/pycc_logfile.txt
 
 loggers:
   pyon:
-    handlers: [file]
+    handlers: [pycc_file]
     level: INFO
   ion:
-    handlers: [file]
+    handlers: [pycc_file]
     level: INFO
   prototype:
-    handlers: [file]
+    handlers: [pycc_file]
     level: INFO

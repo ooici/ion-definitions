@@ -194,3 +194,7 @@ apps:
   - name: service_gateway
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     bootlevel: 30
+
+  # Scheduler service
+  - name: scheduler
+    processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]

@@ -55,6 +55,7 @@ methods:
       with one Org. The Org is created and associated as part of this call.
     in:
       observatory: !Observatory
+      org_id: ""
     out:
       observatory_id: ""
     throws:

@@ -1,6 +1,9 @@
 handlers:
   pycc_file:
     class: logging.FileHandler
+    formatter: default
+    level: INFO
+    mode: w
     filename: logs/pycc_logfile.txt
 
 loggers:

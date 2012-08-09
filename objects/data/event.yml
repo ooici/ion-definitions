@@ -185,6 +185,7 @@ ResourcePolicyEvent: !Extends_Event
   resource_id: ""
   resource_type: ""
   resource_name: ""
+  op: ""      #Optional op name
 
 # The ServicePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
 # when the underlying policy object is updated in the resource registry but by business login in the Policy Management
@@ -193,7 +194,7 @@ ResourcePolicyEvent: !Extends_Event
 ServicePolicyEvent: !Extends_Event
   #If the service_name is not set to a specific name, then all services are assumed.
   service_name: ""
-
+  op: ""   #Optional op name
 
 # The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
 # The origin is the org_id

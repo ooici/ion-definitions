@@ -228,3 +228,11 @@ ReloadUserInfoEvent: !Extends_Event
 ---
 # The Scheduler fires off this event so that services can react to it and perform tasks
 SchedulerEvent: !Extends_Event
+
+---
+
+# Seems to be needed/used only by transforms when an error is encountered
+ExceptionEvent: !Extends_Event
+  exception_type: ""
+  exception_message: ""
+

@@ -67,28 +67,28 @@ handlers:
 loggers:
   pyon:
     handlers: [console, file]
-    level: DEBUG
+    level: INFO
 
   prototype:
     handlers: [console]
-    level: DEBUG
+    level: INFO
 
   ion:
     handlers: [console, file]
-    level: DEBUG
+    level: INFO
 
   examples:
     handlers: [console, file]
-    level: DEBUG
+    level: INFO
 
   prototype:
     handlers: [console, file]
-    level: DEBUG
+    level: INFO
 
   mi:
     handlers: [console, file]
-    level: DEBUG
+    level: INFO
 
   coverage_model:
     handlers: [console, file]
-    level: DEBUG
+    level: INFO

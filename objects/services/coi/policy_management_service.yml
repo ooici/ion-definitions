@@ -22,7 +22,7 @@ methods:
     out:
       policy_id: ""
     throws:
-      BadRequest: If any of the paramaters are not set.
+      BadRequest: If any of the parameters are not set.
 
   create_service_access_policy:
     docstring: |
@@ -36,7 +36,7 @@ methods:
     out:
       policy_id: ""
     throws:
-      BadRequest: If any of the paramaters are not set.
+      BadRequest: If any of the parameters are not set.
 
   create_common_service_access_policy:
     docstring: |
@@ -49,7 +49,21 @@ methods:
     out:
       policy_id: ""
     throws:
-      BadRequest: If any of the paramaters are not set.
+      BadRequest: If any of the parameters are not set.
+
+  add_process_operation_precondition_policy:
+    docstring: |
+      Helper operation for adding a precondition policy for a specific process operation; could be a service or agent.
+      The id string returned is the internal id by which Policy will be identified in the data store. The precondition
+      method must return a tuple (boolean, string).
+    in:
+      process_name: ""
+      op: ""
+      policy_content: ""  #Can be a local method name or snippet of code
+    out:
+      policy_id: ""
+    throws:
+      BadRequest: If any of the parameters are not set.
 
 
   create_policy:
@@ -163,6 +177,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
   get_active_service_access_policy_rules:
     docstring: |
       Generates the set of all enabled access policies for the specified service within the specified Org. If the org_name
@@ -172,6 +187,20 @@ methods:
       org_name: ""
     out:
       policy_rules: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  get_active_process_operation_preconditions:
+    docstring: |
+      Generates the set of all enabled precondition policies for the specified process operation within the specified
+      Org; could be a service or resource agent. If the org_name is not provided, then the root ION Org will be assumed.
+    in:
+      process_name: ""
+      op: ""
+      org_name: ""
+    out:
+      preconditions: []
     throws:
       NotFound: object with specified id does not exist
 

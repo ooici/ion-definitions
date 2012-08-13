@@ -19,8 +19,9 @@ Org: !Extends_TaskableResource
 # different type, or can be a composite of service agreement proposals.
 ServiceAgreementProposal:
   sap_id: ""
+  originator: ""
   sequence_num: 0
-  target_resource_ids: []
+  requested_resource_id: []
   conditions: {}
   clauses: {}
 ---
@@ -31,7 +32,8 @@ NegotiationDefinition: !Extends_InformationResource
 
 Negotiation: !Extends_InformationResource
   type: ""
-  sap: !ServiceAgreementProposal
+  #@ContentType=ServiceAgreementProposal
+  sap: []
 
 ---
 

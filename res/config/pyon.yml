@@ -108,11 +108,13 @@ container:
     server:
       primary: amqp
       priviledged:
-    endpoint: # TBD: move entries to here
-    interceptor: # TBD: move entries to here
+    endpoint: # TODO: move entries to here
+    interceptor: # TODO: move entries to here
 
   objects:
-    validate: # TBD: move entries to here
+    validate: # TODO: move entries to here
+
+  org_boundary: False  #If True, then check against policies related to the Org below; else do not.
 
   org_name: ION  # The default is the ROOT ION Org
 
@@ -133,7 +135,7 @@ container:
     user_cache_size: 2000    #The number of user's whos role data is cached in the gateway
 
       
-# TBD: Rename to "container". See there.
+# TODO: Rename to "container". See there.
 cc:
   timeout:
     shutdown: 30.0
@@ -180,7 +182,7 @@ interceptor:
     process_outgoing: [governance]
     process_incoming: [governance]
 
-# TBD: Rename system.exchange_spaces
+# TODO: Rename system.exchange_spaces
 exchange_spaces:
    # define the names and structure of exchange spaces and exchange points
     ioncore:
@@ -190,7 +192,7 @@ exchange_spaces:
             events:
                 type: topic_tree
 
-# TBD: Rename system.core_xps
+# TODO: Rename system.core_xps
 core_xps:
     # used as defaults by pyon.ion.endpoint and PubSub Mgmt Service
     science_data: ioncore.science_data
@@ -209,7 +211,7 @@ service:
     driver_release_directory: /var/www/releases
 
 
-# TBD: Remove (use global flags instead)
+# TODO: Remove (use global flags instead)
 external_data_agent_management:
   persistent: true
 
@@ -264,7 +266,7 @@ event:
             ingestion_processing, 
             stream_ingestion_policy]
 
-
+#TODO - can't this be moved to a RR object?
 device:
   sbe37:
     host: sbe37-simulator.oceanobservatories.org

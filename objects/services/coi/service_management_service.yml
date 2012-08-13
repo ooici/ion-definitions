@@ -45,10 +45,4 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_services:
-    docstring: Returns a list of Service Definition resources for the provided resource filter.
-    in:
-      filters: !ResourceFilter
-    out:
-      service_definition_list: []
 

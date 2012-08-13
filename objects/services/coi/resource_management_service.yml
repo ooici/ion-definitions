@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Resource+Management+Service
 
-dependencies: []
+dependencies: [resource_registry]
 
 # TODO:
 # - Find pattern
@@ -16,6 +16,7 @@ methods:
     docstring: Creates a Resource Type resource from the parameter ResourceType object.
     in:
       resource_type: !ResourceType
+      object_id: ""
     out:
       resource_type_id: ""
     throws:
@@ -47,13 +48,6 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
-  find_resource_types:
-    docstring: Returns a list of Resource Type resources for the provided resource filter.
-    in:
-      filters: !ResourceFilter
-    out:
-      resource_type_list: []
 
   # -----------------
 

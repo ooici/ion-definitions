@@ -56,14 +56,14 @@ apps:
 #  - name: conversation_management
 #    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
 #
-#  - name: object_management
-#    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
-#
-#  - name: resource_management
-#    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
-#
-#  - name: service_management
-#    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
+  - name: object_management
+    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
+
+  - name: resource_management
+    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
+
+  - name: service_management
+    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
 
 
   #### CEI Services

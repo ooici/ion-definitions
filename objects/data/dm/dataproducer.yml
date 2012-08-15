@@ -1,9 +1,32 @@
+#The base type for all producer context objects
+AbstractProducerContextType:
+---
+
+# Contains the context for a data process execution
+DataProcessProducerContext: !Extends_AbstractProducerContextType
+  parameters: {}
+  activation_time: ""
+  deactivation_time: ""
+  execution_configuration: {}
+  execution_host: ""
+
+# Contains the context for a data process execution
+InstrumentProducerContext: !Extends_AbstractProducerContextType
+  activation_time: ""
+  deactivation_time: ""
+  execution_configuration: {}
+
+# Contains the context for an external data set
+ExtDatasetProducerContext: !Extends_AbstractProducerContextType
+
+
+---
+
 # Describes an entity that acts as data producer in the system. This resource references the actual
 # data producing resource, such as an instrument device or a data process. Used to compute provenance.
 DataProducer: !Extends_InformationResource
   is_primary: False
-  stream_id: ""
-  routing_key: ""
-  exchange_name: ""
-  credentials: {}
-  
+  producer_context: !AbstractProducerContextType
+
+
+

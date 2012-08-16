@@ -1,32 +1,37 @@
 
+GeospatialBoundsWrap: !Extends_TypeWrap
+   value: !GeospatialBounds
+
+
+
 #Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
-  firmware_version: ""  # identifier of software installed in unit
+  firmware_version: !ComputedValue  # identifier of software installed in unit
   #@Method
-  location: !GeospatialBounds  # current geospatial (3D) location of instrument
+  location: !ComputedValue #!GeospatialBounds  # current geospatial (3D) location of instrument
   #@Method
-  last_data_received_time: ""  # timestamp of most recent record, converted to ISO 8601
+  last_data_received_time: !ComputedValue  # timestamp of most recent record, converted to ISO 8601
   #@Method
-  operational_state: ""   # from Device
+  operational_state: !ComputedValue   # from Device
   #@Method
-  last_command_status: ""
+  last_command_status: !ComputedValue
   #@Method
-  last_command_date: ""
+  last_command_date: !ComputedValue
   #@Method
-  last_command: ""
+  last_command: !ComputedValue
   #@Method
-  last_commanded_by: ""
+  last_commanded_by: !ComputedValue
   #@Method
-  power_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  power_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  communications_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  communications_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  data_status_roll_up: ""  # CV: BLACK, RED, GREEN, YELLOW
+  data_status_roll_up: !ComputedValue  # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  location_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  location_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  recent_events: []  #List of the 10 most recent events for this device
+  recent_events: !ComputedValue  #List of the 10 most recent events for this device
 
 ---
 

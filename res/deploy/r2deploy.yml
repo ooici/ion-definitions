@@ -20,12 +20,12 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
 
-  - name: directory
-    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-    bootlevel: 10
-
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    bootlevel: 5
+
+  - name: directory
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
     bootlevel: 10
 
   - name: identity_management

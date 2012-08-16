@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, scheduler]
 
 methods:
   create_notification:
@@ -33,7 +33,7 @@ methods:
   publish_event:
     in:
       event:
-      scheduler_entry:
+      interval_timer_params: {}
     out:
     throws:
       BadRequest: if there is anything wrong with the event object

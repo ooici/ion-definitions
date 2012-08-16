@@ -33,7 +33,7 @@ methods:
   publish_event:
     in:
       event:
-      interval_timer_params:
+      interval_timer_params: {}
     out:
     throws:
       BadRequest: if there is anything wrong with the event object

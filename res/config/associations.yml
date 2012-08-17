@@ -48,7 +48,7 @@ AssociationDefinitions:
     docstring: References the DataProduct that provides input data for a processing resource
   - predicate: hasModel
     domain: [Device, Site, AgentDefinition, DataSource, ExternalDataset]
-    range: [DeviceModel]
+    range: [DeviceModel, ExternalDatasetModel]
     docstring: References the model (aka type/class) resource for the resource
   - predicate: hasOutputProduct
     domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]

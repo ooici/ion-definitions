@@ -1,17 +1,16 @@
-# Describes an instance of conversation in the system. This is a set of messages exchanged
-# between specific participant processes, each fulfilling one of the ConversationType's
-# ConversationRoles
+# Represents an interaction between system participants. Conversation is an instance of a
+# conversation type, with actor identities bound to conversation roles.
 Conversation: !Extends_InformationResource
 
 
-# Describes a type of conversation in the system. Basically a communication protocol between
-# distributed participants acting as ConversationRoles
+#Defines an interaction pattern (aka conversation protocol) involving multiple participants
+# with defined roles. System interactions in conversation instances can be checked for compliance.
 ConversationType: !Extends_InformationResource
   definition_type: ""
   definition: ""
 
 
-# Resource describing the characteristics of in interacting party in a conversation type
+# Describes the characteristics of an interacting party in a conversation type.
 ConversationRole: !Extends_InformationResource
 
 

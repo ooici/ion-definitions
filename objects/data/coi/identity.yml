@@ -1,7 +1,7 @@
 ActorTypeEnum: !enum (values=(USER, AGENT, SYSTEM), default=USER)
 ---
 
-# An OOI internal user identity
+# A known user, resource or system identity within ION System.
 ActorIdentity: !Extends_InformationResource
 
   # The type of actor

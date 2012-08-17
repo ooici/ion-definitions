@@ -32,7 +32,8 @@ Dimension:
 
 ---
 
-# Represents an institutional entity providing data
+# an external institutional entity that provides and owns data, represented as
+# Data Sources with External Data Sets.
 ExternalDataProvider: !Extends_InformationResource
   institution: !Institution
   contact: !ContactInformation
@@ -58,7 +59,7 @@ DataSourceAgentInstance: !Extends_AgentInstance
   password: ""
 
 ---
-# Describes one dataset that is fetched from an external source into the system
+# Describes a dataset provided by an external collaborator or organization.
 ExternalDataset: !Extends_InformationResource
   dataset_description: !DatasetDescription
   update_description: !UpdateDescription

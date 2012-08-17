@@ -1,9 +1,9 @@
-# Describes a type of execution engine to be instantiated
+# Represents a type of execution engine, with the ability to execute a specific type of process.
 ExecutionEngineDefinition: !Extends_ExecutableResource
   definition_type: ""   # Type of execution engine definition
   definition: {}        # Detailed definition of execution engine (in the format of the type)
 
-# A running execution engine that is available to execute processes of matching type
+# Represents a managed computing platform for executing processes of specified type.
 ExecutionEngine: !Extends_TaskableResource
 
 # An ION capability container - a special type of execution engine with special treatment

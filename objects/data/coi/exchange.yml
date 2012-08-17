@@ -1,18 +1,21 @@
-# Resource describing a namespace within the Exchange
+# Represents a namespace of Exchange participants, operated within one domain of authority.
+# May be distributed across multiple Exchange Brokers.
 ExchangeSpace: !Extends_InformationResource
 
 
-# Resource describing a name within an ExchangeSpace
+# Represents a communicating participant within an Exchange Space. This includes processes,
+# services, agents, Exchange Points.
 ExchangeName: !Extends_InformationResource
   xn_type: "entity"
 
 
-# Resource describing an entity in an ExchangeSpace that acts as message router
+# Represents a message router within an Exchange Space. Message routing may occur based on
+# topic, headers or content.
 ExchangePoint: !Extends_InformationResource
   topology_type: "topic_tree"
 
 
-# Resource describing a single message broker instance (which itself may be a cluster of nodes)
+# Represents one message broker (may be a cluster of multiple nodes) or messaging appliance.
 ExchangeBroker: !Extends_InformationResource
   impl_type: "rabbitmq"
   impl_version: ""

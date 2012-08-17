@@ -13,8 +13,7 @@ PersistentArchive: !Extends_InformationResource
 DataStoreType: !enum (values=(COUCHDB, ELASTICSEARCH, FILESYSTEM), default=FILESYSTEM)
 ---
 
-# A datastore is a description of a name space in a persistence system.
-# A DataStore of type Filesystem is associated to a Persistent Archive.
+# Represents a separate partition (namespace) within a persistence system (database).
 DataStore: !Extends_InformationResource
   type: !DataStoreType
   namespace: ''

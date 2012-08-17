@@ -201,3 +201,5 @@ apps:
   # Scheduler service
   - name: scheduler
     processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]
+    bootlevel: 10
+

@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, scheduler]
 
 methods:
   create_notification:
@@ -33,7 +33,7 @@ methods:
   publish_event:
     in:
       event:
-      scheduler_entry:
+      interval_timer_params: {}
     out:
     throws:
       BadRequest: if there is anything wrong with the event object
@@ -106,3 +106,13 @@ methods:
       end_time: 10
     out:
 
+  set_process_batch_key:
+    docstring:  |
+      This method is used by the operator to set the process_batch_key, a string, that the UNS will listen
+      for as the origin of a timer event. When the scheduler publishes a timer event with origin set equal
+      to the value of the process_batch_key, the UNS will launch its process_batch() method, resulting
+      in an email being sent to the subscribed users with a message body that details all the relevant
+      events that have occurred in between timer events.
+    in:
+      process_batch_key: ""
+    out:

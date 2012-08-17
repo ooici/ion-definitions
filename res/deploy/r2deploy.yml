@@ -20,12 +20,12 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
 
-  - name: directory
-    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-    bootlevel: 10
-
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    bootlevel: 5
+
+  - name: directory
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
     bootlevel: 10
 
   - name: identity_management
@@ -56,14 +56,17 @@ apps:
 #  - name: conversation_management
 #    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
 #
-#  - name: object_management
-#    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
-#
-#  - name: resource_management
-#    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
-#
-#  - name: service_management
-#    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
+  - name: object_management
+    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
+    bootlevel: 10
+
+  - name: resource_management
+    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
+    bootlevel: 10
+
+  - name: service_management
+    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
+    bootlevel: 10
 
 
   #### CEI Services
@@ -194,3 +197,7 @@ apps:
   - name: service_gateway
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     bootlevel: 30
+
+  # Scheduler service
+  - name: scheduler
+    processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]

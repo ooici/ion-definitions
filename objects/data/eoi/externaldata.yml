@@ -65,7 +65,7 @@ ExternalDataset: !Extends_InformationResource
   contact: !ContactInformation
 
 # Describes a type of external dataset
-ExternalDatasetModel: !Extends_DeviceModel
+ExternalDatasetModel: !Extends_InformationResource
   #This defines the characteristics of a dataset class
   datset_type: ""
 

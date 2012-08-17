@@ -15,7 +15,6 @@ methods:
       with the request that will be required for subsequent requests when polling data.
     in:
       data_product_id: ""
-      in_product_type: ""
       visualization_parameters: {}
       callback: ""
     out:

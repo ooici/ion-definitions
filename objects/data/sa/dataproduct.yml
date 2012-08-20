@@ -8,7 +8,7 @@ DataProduct: !Extends_InformationResource
   # The presentation consists of a particular subset of the collection.
 
   # An entity that serves as a contact point
-  point_of_contact_list: []    # a list of  !ContactInformation
+  contacts: []    # a list of  !ContactInformation
 
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds

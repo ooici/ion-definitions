@@ -3,7 +3,8 @@ OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSRO
 ---
 
 
-# A domain of authority that is part of the system
+# Represents a domain of authority that provides the context within which policy applies to registered
+# member individuals and resources.
 Org: !Extends_TaskableResource
   # Specializes the type of Org
   org_type: !OrgTypeEnum

@@ -34,9 +34,10 @@ SystemResource: !Extends_InformationResource
 
 ---
 
-# Defined a named type of resource
+# Defines a type of system known resource.
 ResourceType: !Extends_InformationResource
 
+# Specifies a particular resource life-cycle workflow.
 ResourceLifeCycle: !Extends_InformationResource
   definition_type: ""
   definition: {}

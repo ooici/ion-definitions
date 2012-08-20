@@ -8,8 +8,8 @@ ActorIdentity: !Extends_InformationResource
   actor_type: !ActorTypeEnum
 
 
-# An external user identity.  In the case of CILogon, the identity taken from the subject
-# of the X.509 certificate. This identity is stored in the name attribute.
+# Represents one set of a user's credentials from an external identity provider.
+# An external user identity.
 UserCredentials: !Extends_InformationResource
 
   # Service that authenticates an actor
@@ -20,7 +20,8 @@ UserCredentials: !Extends_InformationResource
 
 ---
 
-# Represents a human user in the system and their preferences
+# Represents a human user registered with the system, with their contact information,
+# preferences and other profile data.
 UserInfo: !Extends_InformationResource
   contact: !ContactInformation
   variables:

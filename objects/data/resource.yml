@@ -43,23 +43,23 @@ ResourceFilter:
 
 ---
 
-TypeWrap:
+AbstractTypeWrap:
 
 ---
 
-IntWrap: !Extends_TypeWrap
+IntWrap: !Extends_AbstractTypeWrap
    value: 0
 
-FloatWrap: !Extends_TypeWrap
+FloatWrap: !Extends_AbstractTypeWrap
    value: 0.0
 
-StringWrap: !Extends_TypeWrap
+StringWrap: !Extends_AbstractTypeWrap
    value: ""
 
-ListWrap: !Extends_TypeWrap
+ListWrap: !Extends_AbstractTypeWrap
    value: []
 
-DictWrap: !Extends_TypeWrap
+DictWrap: !Extends_AbstractTypeWrap
    value: {}
 
 ---
@@ -69,7 +69,7 @@ ComputedValueAvailability: !enum (values=(PROVIDED,NOTAVAILABLE), default=NOTAVA
 ---
 
 ComputedValue:
-  result: !TypeWrap
+  result: !AbstractTypeWrap
   status: !ComputedValueAvailability
   reason: ""
 

@@ -79,6 +79,11 @@ apps:
   - name: process_dispatcher
     processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
     bootlevel: 10
+
+# Scheduler service
+  - name: scheduler
+    processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]
+    bootlevel: 10
 #
 #  - name: provisioner
 #    processapp: [provisioner, ion.services.cei.provisioner_service, ProvisionerService]
@@ -198,6 +203,5 @@ apps:
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     bootlevel: 30
 
-  # Scheduler service
-  - name: scheduler
-    processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]
+
+

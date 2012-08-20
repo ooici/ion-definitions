@@ -1,5 +1,5 @@
-# Represents an internal standing request for message delivery in real-time for messages
-# that match the given query expression. Messages are delivered into queues
+# Represents a standing consumer request to an Exchange Point for receiving a sequence of messages with a
+# provided set of common characteristics, such as being published on a Stream.
 Subscription: !Extends_InformationResource
   subscription_type: !enum (name=SubscriptionTypeEnum, values=(STREAM_QUERY, EXCHANGE_QUERY, CONTENT_QUERY), default=STREAM_QUERY)
   query: {}           # Specific query expression

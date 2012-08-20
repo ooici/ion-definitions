@@ -1,4 +1,4 @@
-# Describes a type of service that can be instantiated
+# Represents a type of service, available for instantiation within the OOI Integrated Observatory Network.
 ServiceDefinition: !Extends_ExecutableResource
 
   # The language of service specification. For future extensibility
@@ -14,7 +14,7 @@ ServiceDefinition: !Extends_ExecutableResource
   namespace: ""
 
 
-# Describes a service instance
+# Represents an instance of a service definition, available for use within the OOI Integrated Observatory Network.
 Service: !Extends_TaskableResource
 
   # The fully qualified name under which the service is available in the system

@@ -3,7 +3,8 @@ OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSRO
 ---
 
 
-# A domain of authority that is part of the system
+# Represents a domain of authority that provides the context within which policy applies to registered
+# member individuals and resources.
 Org: !Extends_TaskableResource
   # Specializes the type of Org
   org_type: !OrgTypeEnum
@@ -30,6 +31,8 @@ NegotiationDefinition: !Extends_InformationResource
   pre_condition: []
   accept_action: ""
 
+# Describes a negotiation between multiple system participants with the intent of agreeing
+# to a mutual contract with commitments if successful.
 Negotiation: !Extends_InformationResource
   type: ""
   #@ContentType=ServiceAgreementProposal
@@ -58,6 +61,8 @@ ResourceRequest: !Extends_UserRequest
 
 ---
 
+# Represents a standing obligation of one ION participant to another ION participant.
+# Commitments can be tracked and violations against commitments can be sanctioned.
 Commitment: !Extends_InformationResource
   org_id: ""
   user_id: ""

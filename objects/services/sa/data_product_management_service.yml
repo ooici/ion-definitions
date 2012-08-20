@@ -129,3 +129,18 @@ methods:
       last_update: {}
     throws:
       NotFound: Data product not found or cache for data product not found.
+
+#-------
+
+  get_data_product_extension:
+    docstring: |
+      Returns an DataProductExtension object containing additional related information
+    in:
+      data_product_id: ""
+      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: [] # An optional list of field names to exclude from retrieving
+    out:
+      data_product: !DataProductExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified data_product_id does not exist

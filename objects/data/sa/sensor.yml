@@ -1,4 +1,5 @@
-# Describes a physical sensor that is part of an instrument
+# Describes a physical device that can be deployed as part of an instrument, and reports its
+# data through that instrument.
 SensorDevice: !Extends_Device
 
   # Current to version 30 of confluence resource page:  
@@ -24,7 +25,7 @@ SensorDevice: !Extends_Device
   software_version: ""
 
 
-# Describes a type of sensor
+# Describes a distinguished type of sensor, derived from the manufacturer's model number and common attributes.
 SensorModel: !Extends_DeviceModel
 
   # Current to version 25 of confluence resource page:  

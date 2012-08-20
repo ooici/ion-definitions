@@ -1,4 +1,4 @@
-# Represents an external source of data and metadata, accessible by the ION system
+# Represents an external service that provides data and metadata for potential acquisition into the system.
 DataSource: !Extends_InformationResource
   type: ""
   connection_params: {}

@@ -21,8 +21,7 @@ DeliveryConfig:
 
 ---
 
-# Represents a user's standing request (a rule) to receive notifications when certain events
-# happen, to be delivered in chosen ways and modalities.
+# Describes a standing request for notifications by type and delivery modality for one user.
 NotificationRequest: !Extends_InformationResource
   type: !NotificationType
   origin: ""           # Event filter by origin

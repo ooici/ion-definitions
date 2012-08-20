@@ -41,8 +41,40 @@ ResourceLifeCycle: !Extends_InformationResource
 ResourceFilter:
   filters: {}
 
+---
+
+TypeWrap:
 
 ---
+
+IntWrap: !Extends_TypeWrap
+   value: 0
+
+FloatWrap: !Extends_TypeWrap
+   value: 0.0
+
+StringWrap: !Extends_TypeWrap
+   value: ""
+
+ListWrap: !Extends_TypeWrap
+   value: []
+
+DictWrap: !Extends_TypeWrap
+   value: {}
+
+---
+
+ComputedValueAvailability: !enum (values=(PROVIDED,NOTAVAILABLE), default=NOTAVAILABLE)
+
+---
+
+ComputedValue:
+  result: !TypeWrap
+  status: !ComputedValueAvailability
+  reason: ""
+
+---
+
 
 # The base type for computed attribute objects
 ComputedAttributes:

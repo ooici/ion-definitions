@@ -75,6 +75,13 @@ ComputedValue:
 
 ---
 
+ComputedStringValue: !Extends_ComputedValue
+  value: ""
+
+ComputedFloatValue: !Extends_ComputedValue
+  value: 0.0
+
+---
 
 # The base type for computed attribute objects
 ComputedAttributes:

@@ -1,4 +1,4 @@
-# Base type for entities that encompass a defined location, deployed devices and/or data-producing entities
+# Represents a reference designator within an observatory, with geospatial and temporal bounds. Abstract base type.
 Site: !Extends_Resource
   # Specified bounds in 2 or 3 dimensions within which entity exists
   # Mandatory
@@ -13,20 +13,22 @@ Site: !Extends_Resource
 
 
 ---
-# Represents an observatory and its physical and information resources (including Instruments),
-# providing Data Products, Event Detection and Instrument services
+# Represents a reference designator that designates a top-level observatory, with geospatial
+# and temporal bounds. This Observatory Site can have Subsites, Platform and Instrument Sites.
 Observatory: !Extends_Site
 
   url: ""
 
   
-# An entity that encompasses a defined location, time, and/or data-producing entities
+#Represents a reference designator that designates a hierarchical substructure within an observatory,
+# with geospatial and temporal bounds. Subsites mostly represent distinct geospatial areas
+# within an Observatory.
 Subsite: !Extends_Site
 
-# A sub-site of an observatory, providing a slot, definition and metadata for platform information.
+# Represents a reference designator within an observatory, designated for the deployment of functionally
+# equivalent platform devices, with geospatial and temporal bounds.
 PlatformSite: !Extends_Site
 
-# An observatory sub-site, providing a slot, definition and metadata for instrument information.
+# Represents a reference designator within an observatory, designated for the deployment of functionally
+# equivalent instrument devices, with geospatial and temporal bounds.
 InstrumentSite: !Extends_Site
-
-

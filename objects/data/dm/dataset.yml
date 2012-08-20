@@ -1,5 +1,4 @@
-# Represents an internal persistent data and metadata coverage, most often associated with a
-# persistent data product.
+# Represents a possibly open-ended coverage of science data that may be persistent.
 DataSet: !Extends_InformationResource
   datastore_name: ""        # the couch datastore name
   view_name: ""

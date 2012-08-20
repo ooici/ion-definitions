@@ -1,7 +1,5 @@
-#LogicalInstrument: !Extends_InformationResource
-
-
-# Describes a physical instrument
+# Represents a physical package with a manufacturer, model, and serial number, containing one to many
+# sensors that communicate through a single onboard data interface.
 InstrumentDevice: !Extends_Device
   firmware_version: ""
   manufacture_date: "" #later will be timeinstance object
@@ -10,7 +8,8 @@ InstrumentDevice: !Extends_Device
   has_platform_position: ""
   #datum_characterization: "" #later will be an object
 
-# Defines the characteristics of an instrument model
+# Specifies a distinguished type of instruments, derived from the manufacturer's
+# model number, based on common attributes.
 InstrumentModel: !Extends_DeviceModel
   # The URL of the manufacturer. Note that only one is allowed
   #manufacturer_url: ""
@@ -45,7 +44,7 @@ InstrumentModel: !Extends_DeviceModel
   #baud_supported: []
   #writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
 
-# Describes a type of instrument agent
+# Defines an agent/driver combination compatible with a specific instrument model.
 InstrumentAgent: !Extends_AgentDefinition
   # (SYS) module for driver source code
   driver_module: ""
@@ -57,7 +56,7 @@ InstrumentAgent: !Extends_AgentDefinition
   driver_class_client: ""
   time_source: ""
 
-# Describes parameters for an instance of an instrument agent.
+# Describes parameters for an instance of an instrument agent for a specific device.
 InstrumentAgentInstance: !Extends_AgentInstance
   # (SYS) module for driver source code
   driver_module: ""

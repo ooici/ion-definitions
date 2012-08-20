@@ -1,5 +1,5 @@
-# Represents a saved search expression for resources and information in the system.
-# Describes result, order and additional filter to be applied when view is evaluated.
+# Specifies a predefined, parametrized search for resources.
+# Describes order and additional filters to be applied when view is evaluated.
 View: !Extends_InformationResource
   order:   []
   filters: ""

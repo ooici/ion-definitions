@@ -11,7 +11,7 @@ SearchOptions: !Extends_InformationResource
 
 ---
 
-# Represents a structure of specific resources used for naviation and search.
+# Represents a structure to view and navigate resources.
 Catalog: !Extends_InformationResource
   # List of fields that can be searched in the entire catalog
   available_fields: [] 

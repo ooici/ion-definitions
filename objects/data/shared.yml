@@ -68,7 +68,7 @@ DataFormat:
 
 ---
 
-# Base for a physical device with a serial number, such as sensor, instrument and platform.
+# Describes a physical device with a serial number, such as sensor, instrument and platform. Abstract base type.
 Device: !Extends_TaskableResource
   # unique identifier of device provided by manufacturer
   serial_number: ""
@@ -81,7 +81,7 @@ Device: !Extends_TaskableResource
   # The attribute names should align with those in the DeviceModel for this type of device.
   custom_attributes: {}
 
-# Represents a grouping of devices by common characteristics, e.g. a vendor's make and model.
+# Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
 DeviceModel: !Extends_InformationResource
   # weight of instrument in air, as configured for operation, in kg
   weight: 0.0
@@ -114,7 +114,7 @@ AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
 
 ---
 
-# To identify attachments to resources
+# Represents a separate information attached to a resource, such as a PDF or image file.
 Attachment: !Extends_InformationResource
   attachment_type: !AttachmentType
   content_type: ""  # MIME type
@@ -126,13 +126,13 @@ DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 
 ---
 
-# Abstract base type for all agent type
+# Describes a type of agent. Abstract base type.
 AgentDefinition: !Extends_InformationResource
   agent_version: ""
   conection_method: ""
   event_publisher_origin: ""
 
-# Abstract base type for all agent instances
+# Describes a running or scheduled agent representing a single resource. Abstract base type.
 AgentInstance: !Extends_TaskableResource
   deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
   exchange_name: ""

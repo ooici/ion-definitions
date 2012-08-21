@@ -196,6 +196,10 @@ apps:
                 - name: science_granule_ingestion
                   type: SCIDATA
                   datastore_name: datasets
+                - name: binary_ingestion
+                  type: BINARY
+                  datastore_name: filesystem
+
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
   # LAST SERVICE GATEWAY SERVICE

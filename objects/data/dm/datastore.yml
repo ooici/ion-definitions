@@ -13,8 +13,7 @@ PersistentArchive: !Extends_InformationResource
 DataStoreType: !enum (values=(COUCHDB, ELASTICSEARCH, FILESYSTEM), default=FILESYSTEM)
 ---
 
-# A datastore is a description of a name space in a persistence system.
-# A DataStore of type Filesystem is associated to a Persistent Archive.
+# Represents a separate partition (namespace) within a persistence system (database).
 DataStore: !Extends_InformationResource
   type: !DataStoreType
   namespace: ''
@@ -25,9 +24,7 @@ DataStore: !Extends_InformationResource
 PersistenceType: !enum (values=(COUCHDB, ELASTICSEARCH, COMPELLANT), default=COUCHDB)
 ---
 
-# A PersistenceSystem is a cluster or database system capable of defining multiple namespaces to store information.
-# A PersistenceSystem is associated to DataStores defined in it.
-# A persistence system is associated to persistence instance.
+# Represents a system that persists data within Data Stores, such as a database installation that is part of ION.
 PersistenceSystem: !Extends_InformationResource
   type: !PersistenceType
   # used to define default values for Datastores

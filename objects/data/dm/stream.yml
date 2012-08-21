@@ -1,14 +1,14 @@
-# Represents a routing structure for topics.
-StreamTopology: !Extends_InformationResource
+# Describes the structure of topics used for message routing on one Exchange Point.
+TopicTopology: !Extends_InformationResource
   topology_type: "topic_tree"
   dimensions: []   # Components of a topic that can be routed
 
-# Describes a class of streams
+# Describes the format, structure, and characteristics of a stream and its granules (data records).
 StreamDefinition: !Extends_InformationResource
   # A bit awkward - the stream definition resource contains a stream definition container?
   container: !StreamDefinitionContainer
 
-# Represents one publisher stream of sequential, related messages
+# Represents an identified, unbounded sequence of data granules (messages) published with a unique topic.
 Stream: !Extends_InformationResource
   # Specified by create_stream
   url: ""

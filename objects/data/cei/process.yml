@@ -6,7 +6,8 @@ ProcessArgument:
   default:
 
 
-# Describes a type of process available to the system to schedule. Points to an executable.
+# Specifies a type of executable process of class service, agent or transformation process.
+# References the executable or source code.
 ProcessDefinition: !Extends_ExecutableResource
   definition_type: !enum (name=ProcessDefinitionType, values=(PYON_STREAM), default=PYON_STREAM)
   version: ""    # Version of the same process definition
@@ -17,7 +18,8 @@ ProcessDefinition: !Extends_ExecutableResource
 
 ---
 
-# Describes a running process
+# Represents an executing computational entity in the system, executed by an Execution Engine. An instance
+# of a process definition, of type service, agent or transformation process.
 Process: !Extends_TaskableResource
   label: ""     # Human legible label
   proctype: ""  # Indicates a specialized type of CC process

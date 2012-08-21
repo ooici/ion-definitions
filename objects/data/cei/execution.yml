@@ -5,8 +5,8 @@ ExecutionSite: !Extends_InformationResource
 # Describes one provider of execution, such as OOICI, Amazon, etc
 ExecutionProvider: !Extends_InformationResource
 
-# Describes a resource that can be instantiated into an Operational Unit (a virtual machine).
-# This typically specifies the base image and any contextualization type modification scripts to run.
+# Specifies a resource that can be instantiated into an Operational Unit (a virtual machine).
+# For instance specifies a base image and any contextualization type modification scripts to run.
 DeployableType: !Extends_ExecutableResource
 
 # Describes a deployable type that has been specialized for one target execution environment,

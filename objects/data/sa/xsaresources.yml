@@ -1,32 +1,43 @@
 
+GeospatialBoundsWrap: !Extends_TypeWrap
+   value: !GeospatialBounds
+
+
+
 #Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
-  firmware_version: ""  # identifier of software installed in unit
+  firmware_version: !ComputedValue  # identifier of software installed in unit
   #@Method
-  location: !GeospatialBounds  # current geospatial (3D) location of instrument
+  location: !ComputedValue #!GeospatialBounds  # current geospatial (3D) location of instrument
   #@Method
-  last_data_received_time: ""  # timestamp of most recent record, converted to ISO 8601
+  last_data_received_time: !ComputedValue  # timestamp of most recent record, converted to ISO 8601
   #@Method
-  operational_state: ""   # from Device
+  operational_state: !ComputedValue   # from Device
   #@Method
-  last_command_status: ""
+  last_command_status: !ComputedValue
   #@Method
-  last_command_date: ""
+  last_command_date: !ComputedValue
   #@Method
-  last_command: ""
+  last_command: !ComputedValue
   #@Method
-  last_commanded_by: ""
+  last_commanded_by: !ComputedValue
   #@Method
-  power_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  power_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  communications_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  communications_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  data_status_roll_up: ""  # CV: BLACK, RED, GREEN, YELLOW
+  data_status_roll_up: !ComputedValue  # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  location_status_roll_up: "" # CV: BLACK, RED, GREEN, YELLOW
+  location_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  recent_events: []  #List of the 10 most recent events for this device
+  aggregated_status: !ComputedValue # The status roll-up that summarizes the entire status of the device.
+  #@Method
+  recent_events: !ComputedValue  #List of the 10 most recent events for this device
+  #@Method
+  last_calibration_time: !ComputedValue  #List of the 10 most recent events for this device
+  #@Method
+  sites: !ComputedValue  #List of sites to which this instrument has been deployed
 
 ---
 
@@ -64,7 +75,19 @@ PlatformDeviceComputedAttributes: !Extends_ComputedAttributes
   speed_over_ground: ""
 
   #@Method
-  aggregated_status: ""  # The status roll-up that summarizes the entire status of the device  (CV:  RED, YELLOW, GREEN, BLACK)
+  power_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  communications_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  data_status_roll_up: !ComputedValue  # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  location_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  aggregated_status: !ComputedValue # The status roll-up that summarizes the entire status of the device. (CV:  RED, YELLOW, GREEN, BLACK)
 
 ---
 
@@ -105,6 +128,28 @@ ObservatoryComputedAttributes: !Extends_ComputedAttributes
 #This object contains additional information associated with an observatory.
 ObservatoryExtension: !Extends_ExtendedInformationResource
 
+
+
+
+---
+
+#Computed attributes for a data product
+DataProductComputedAttributes: !Extends_ComputedAttributes
+  #@Method
+  earliest_data_datetime: !ComputedValue  # the datetime of the earliest values in the data product
+
+  #@Method
+  product_download_size_estimated: !ComputedValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
+
+  #@Method
+  stored_data_size: !ComputedValue   # The storage size occupied by the data content of the resource, in bytes.
+
+
+
+---
+
+#This object contains additional information associated with a data product.
+DataProductExtension: !Extends_ExtendedInformationResource
 
 
 

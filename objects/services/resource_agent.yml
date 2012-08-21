@@ -4,7 +4,8 @@ docstring: Behaviors for any resource agent
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+CEI+OV+Resource+Agent
 
-dependencies: []
+dependencies: [directory, resource_registry]
+
 
 methods:
   # -----------------
@@ -27,56 +28,99 @@ methods:
 
   get_capabilities:
     docstring: |
-      Returns a dict of capabilities (AgentCapability objects) for this agent. Represents the current
-      capabilies. There is no guarantee that all of these capabilities are active in the current operational state.
+      Introspect for agent capabilities.
+      @param resource_id The id of the resource agent.
+      @param current_state Flag indicating to return capabilities for current
+      state only (default True).
+      @retval List of AgentCapabilities objects.
     in:
       resource_id: ""
-      # Leave types default for all
-      capability_types: []
+      current_state: True
     out:
       capability_list: []
-
+    throws:
+      
   # -----------------
   # Resource control interface
 
-  execute:
-    docstring: Execute a command on the resource represented by the agent
+  execute_resource:
     docstring: |
-      Execute a command against the resource and returns the result.
-      As a side effect, fire a ResourceCommandEvent (or sub-type) with the result of the command.
+      Execute command on the resource represented by agent.
+      @param resource_id The id of the resource agennt.
+      @param command An AgentCommand containing the command.
+      @retval result An AgentCommandResult containing the result.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the command is not available in current state.
+      @throws ResourceError if the resource produced an error during execution.
     in:
       resource_id: ""
       command: !AgentCommand
     out:
       result: !AgentCommandResult
     throws:
-      BadRequest: if the command was malformed
-      NotFound: if the command is not implemented in the agent
+      BadRequest: if the command was malformed.
+      NotFound: if the command is not implemented in the agent.
+      ResourceError: if the resource produced an error.
 
-  get_param:
-    docstring: Get the value of the given resource parameter
+  get_resource:
     docstring: |
-      Return the value of a device parameter.
+      Return the value of the given resource parameter.
+      @param resource_id The id of the resource agennt.
+      @param params A list of parameters names to query.
+      @retval A dict of parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the resource does not support the parameter.
     in:
       resource_id: ""
-      name: ""
+      params: []
     out:
-      value: ""
+      result: {}
     throws:
-      NotFound: if the parameter does not exist
+      NotFound: if the parameter does not exist.
 
-  set_param:
+  set_resource:
     docstring: |
-      Set the value of a device parameter.
+      Set the value of the given resource parameters.
+      @param resource_id The id of the resource agennt.
+      @param params A dict of resource parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if a parameter is not supported by the resource.
+      @throws ResourceError if the resource encountered an error while setting
+      the parameters.
     in:
       resource_id: ""
-      name: ""
-      value: ""
+      params: {}
     out:
-      prior_value: ""
     throws:
-      NotFound: if the parameter does not exist
+      BadRequest: if the command was malformed.
+      NotFound: if the parameter does not exist.
+      ResourceError: if the resource failed while trying to set the parameter.
+      
+  get_resource_state:
+    docstring: |
+      Return the current resource specific state, if available.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing the current resource specific state.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:
+      NotFound: if the resource does not utilize a specific state machine.
+      ResourceError: if the resource failed while trying to get the state.
 
+  ping_resource:
+    docstring: |
+      Ping the resource.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing a string representation of the resource and
+      timestamp.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:
+      
   # -----------------
   # Resource monitor interface
 
@@ -85,32 +129,72 @@ methods:
 
   execute_agent:
     docstring: |
-      Execute a command against the agent itself and returns the result.
+      Execute command on the agent.
+      @param resource_id The id of the resource agennt.
+      @param command An AgentCommand containing the command.
+      @retval result An AgentCommandResult containing the result.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the command is not available in current state.      
     in:
       resource_id: ""
       command: !AgentCommand
     out:
       result: !AgentCommandResult
+    throws:
+      BadRequest: if the command was malformed.
+      NotFound: if the command is not implemented in the agent.      
 
-  get_agent_param:
+  get_agent:
     docstring: |
-      Returns the value of an agent parameter.
+      Return the value of the given agent parameters.
+      @param resource_id The id of the resource agennt.
+      @param params A list of parameters names to query.
+      @retval A dict of parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the agent does not support the parameter.
     in:
       resource_id: ""
-      name: ""
+      params: []
     out:
-      value: ""
+      result: {}
     throws:
-      NotFound: if the parameter does not exist
+      BadRequest: if the command was malformed.
+      NotFound: if the parameter does not exist.
 
-  set_agent_param:
+  set_agent:
     docstring: |
-      Sets the value of an agent parameter.
+      Set the value of the given agent parameters.
+      @param resource_id The id of the resource agennt.
+      @param params A dict of resource parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if a parameter is not supported by the resource.
     in:
       resource_id: ""
-      name: ""
-      value: ""
+      params: {}
     out:
-      prior_value: ""
     throws:
-      NotFound: if the parameter does not exist
+      BadRequest: if the command was malformed.
+      NotFound: if the parameter does not exist.
+
+  get_agent_state:
+    docstring: |
+      Return the current resource agent common state.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing the current agent state.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:
+
+  ping_agent:
+    docstring: |
+      Ping the agent.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing a string representation of the agent
+      and a timestamp.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:

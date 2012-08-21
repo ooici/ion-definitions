@@ -1,11 +1,11 @@
-# Describes a lookup strategy for resource attributes and information
+# Represents information about an index (search path) in the system and how to access it.
 Index: !Extends_InformationResource
   # Devices, Instruments, Users etc.
   content_type:   "" 
   options:        !SearchOptions
 
 ---
-# Ordered collection of a list of resources
+# Represents a named set of resources. These may or may not be of the same type, and may or may not be ordered.
 Collection: !Extends_InformationResource
   resources: []
   options:   !SearchOptions

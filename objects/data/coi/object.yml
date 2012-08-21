@@ -3,7 +3,7 @@ ObjectTypeEnum: !enum (values=(OBJECT, ENUM), default=OBJECT)
 ---
 
 
-# An instance of this resource describes a type of YML defined object
+# Specifies a type of ION object.
 ObjectType: !Extends_InformationResource
 
   # The language of object specification. For future extensibility

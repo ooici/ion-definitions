@@ -1,4 +1,4 @@
-# Defines a type of data process including potential parameters and location of the executable
+# Defines a type of data transform computational process.
 DataProcessDefinition: !Extends_InformationResource
   # (SYS) module for source code
   module: ""
@@ -6,9 +6,11 @@ DataProcessDefinition: !Extends_InformationResource
   class_name: ""
 
   process_source: ""
+
   parameters: {}
 
-# Describes an instance of a data process
+# Represents a computational process receiving data granules from stream subscription and
+# produces output data products. Instance of DataProcessDefinition.
 DataProcess: !Extends_InformationResource
 
   ATBD_reference: ""           # WRONG

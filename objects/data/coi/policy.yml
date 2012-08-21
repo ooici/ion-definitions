@@ -1,4 +1,5 @@
- # An instance of this resource describes a role in an Org
+ # Defines a named set of responsibilities and authorities that a user may fulfill within one Org
+ # when interacting with resources.
 UserRole: !Extends_InformationResource
   org_id: ""    #TODO - perhaps replace when better indexing in couch is available.
   label: ""  # Can be human readable
@@ -40,7 +41,7 @@ ProcessOperationPreconditionPolicy: !Extends_OperationPreconditionPolicy
 
 ---
 
-# Holds policy applicable to a subset of resources within the system.
+# Specifies a set of rules applicable when interacting with designated OOI system resources.
 Policy: !Extends_InformationResource
   enabled: True
   required: True

@@ -45,6 +45,7 @@ methods:
     docstring: Deletes an existing Resource Type resource.
     in:
       resource_type_id: ""
+      object_type_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist

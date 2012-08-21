@@ -1,6 +1,7 @@
 # Place resource specific definitions in here
 
-# Common base type of all resource objects
+# Represents an entity associated with the Integrated Observatory that provides capability
+# and has a life cycle. Abstract base type.
 Resource:
   # _id: ""   - Unique identifier (comes with every object)
   # _rev: ""   - Revision identifier (comes with every object)
@@ -12,28 +13,31 @@ Resource:
 
 ---
 
-# Information resources are pure information artifacts. Abstract.
+# Describes a resource that exists as an electronic artifact, such as science data,
+# attachments, actor identities. Abstract base type.
 InformationResource: !Extends_Resource
 
 ---
 
-# Taskable resources are resources with behavior and state. This object describes them. Abstract.
+# Describes a resource that can be controlled and monitored, such as a physical device
+# or a computational process. Abstract base type.
 TaskableResource: !Extends_Resource
 ---
 
-# Executable resources are information resources that can be instantiated into (separate) taskable resources. Abstract.
+# Describes a resource that can be instantiated into a taskable resource. Abstract base type.
 ExecutableResource: !Extends_InformationResource
 
 ---
 
-# Base type for system internally used persistent resource objects. Abstract.
+# Describes a resource that represents a system internal component or function. Abstract base type.
 SystemResource: !Extends_InformationResource
 
 ---
 
-# Defined a named type of resource
+# Defines a type of system known resource.
 ResourceType: !Extends_InformationResource
 
+# Specifies a particular resource life-cycle workflow.
 ResourceLifeCycle: !Extends_InformationResource
   definition_type: ""
   definition: {}
@@ -75,6 +79,13 @@ ComputedValue:
 
 ---
 
+ComputedStringValue: !Extends_ComputedValue
+  value: ""
+
+ComputedFloatValue: !Extends_ComputedValue
+  value: 0.0
+
+---
 
 # The base type for computed attribute objects
 ComputedAttributes:

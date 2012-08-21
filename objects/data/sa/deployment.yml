@@ -1,4 +1,5 @@
-# Represents the deployment of one device on one site during a period of time
+# Describes an assignment of a device to a specific observatory position,
+# typically for a specified period of time.
 Deployment: !Extends_InformationResource
 
   # Specified time constraint within which entity exists

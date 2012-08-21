@@ -14,9 +14,10 @@ DataProcessWorkflowStep: !Extends_WorkflowStep
 
 ---
 
-# Defines a workflow composed of steps
+# Specifies a composite process definition for orchestrating a sequence of transformations, for instance as
+# needed to produce a visualization pipeline for an input data product stream.
 WorkflowDefinition: !Extends_InformationResource
   workflow_steps: []  # A list of ordered workflow steps
 
-# Describes an instance of a WorkflowDefinition.
+# Represents a composite process producing a derived data product, by orchestrating data process instances.
 Workflow: !Extends_InformationResource

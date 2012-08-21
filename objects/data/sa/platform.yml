@@ -1,11 +1,7 @@
-# Describes a physical platform
+# Represents a physical package with a manufacturer, model, and serial number, providing physical
+# mounting locations for one to many instruments. Platforms are also the primary units of deployment
+# of marine infrastructure.
 PlatformDevice: !Extends_Device
-  # Current to version 30 of confluence resource page:
-  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Device
-
-  # A physical package with a manufacturer, model, and serial number, providing physical mountain locations for
-  # one to many instruments
-
 
   # The family of platform, with term from the OOI Node Type list
   platform_family: ""
@@ -14,13 +10,9 @@ PlatformDevice: !Extends_Device
   nominal_location: !GeospatialLocation
   
 
-# Describes a type of platform by common characteristics
+# Specifies a distinguished type of platform, derived from the manufacturer's model number
+# and on common attributes.
 PlatformModel: !Extends_DeviceModel
-  # Current to version 23 of confluence resource page:
-  # https://confluence.oceanobservatories.org/display/CIDev/R2+Resource+Page+for+Platform+Model
-
-  # A grouping of platforms, derived from the manufacturer's model number, based on common attributes
-
 
   # Categorization by OOI node type
   # Examples include: MJ (Medium-power Junction box), ID (Interface box HD camera), FJ (Float Junction Box),

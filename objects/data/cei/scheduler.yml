@@ -44,7 +44,7 @@ TimeOfDayTimer: !Extends_TimerSchedulerEntry
 
 ---
 
-# Represents one specific standing request for timer events
+# Describes a request for scheduled actions such as timer events based on schedule.
 SchedulerEntry: !Extends_SystemResource
 
   # A specific subtype of AbstractSchedulerEntry defining the standing request

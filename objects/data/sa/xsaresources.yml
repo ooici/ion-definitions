@@ -31,7 +31,13 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
   location_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
+  aggregated_status: !ComputedValue # The status roll-up that summarizes the entire status of the device.
+  #@Method
   recent_events: !ComputedValue  #List of the 10 most recent events for this device
+  #@Method
+  last_calibration_time: !ComputedValue  #List of the 10 most recent events for this device
+  #@Method
+  sites: !ComputedValue  #List of sites to which this instrument has been deployed
 
 ---
 
@@ -69,7 +75,19 @@ PlatformDeviceComputedAttributes: !Extends_ComputedAttributes
   speed_over_ground: ""
 
   #@Method
-  aggregated_status: ""  # The status roll-up that summarizes the entire status of the device  (CV:  RED, YELLOW, GREEN, BLACK)
+  power_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  communications_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  data_status_roll_up: !ComputedValue  # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  location_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+
+  #@Method
+  aggregated_status: !ComputedValue # The status roll-up that summarizes the entire status of the device. (CV:  RED, YELLOW, GREEN, BLACK)
 
 ---
 

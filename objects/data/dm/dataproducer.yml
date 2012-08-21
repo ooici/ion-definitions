@@ -22,8 +22,8 @@ ExtDatasetProducerContext: !Extends_AbstractProducerContextType
 
 ---
 
-# Describes an entity that acts as data producer in the system. This resource references the actual
-# data producing resource, such as an instrument device or a data process. Used to compute provenance.
+# Represents provenance information within data flows for a data source such as a device,
+# data process, external data source. Captures input and parent relationships.
 DataProducer: !Extends_InformationResource
   is_primary: False
   producer_context: !AbstractProducerContextType

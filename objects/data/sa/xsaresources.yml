@@ -2,42 +2,42 @@
 ComputedGeospatialBoundsValue: !Extends_ComputedValue
    value: !GeospatialBounds
 
-
+---
 
 #Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
-  firmware_version: !ComputedValue  # identifier of software installed in unit
+  firmware_version: !ComputedFloatValue  # identifier of software installed in unit
   #@Method
-  location: !ComputedValue #!GeospatialBounds  # current geospatial (3D) location of instrument
+  location: !ComputedGeospatialBoundsValue # current geospatial (3D) location of instrument
   #@Method
-  last_data_received_time: !ComputedValue  # timestamp of most recent record, converted to ISO 8601
+  last_data_received_time: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
   #@Method
-  operational_state: !ComputedValue   # from Device
+  operational_state: !ComputedStringValue   # from Device
   #@Method
-  last_command_status: !ComputedValue
+  last_command_status: !ComputedIntValue
   #@Method
-  last_command_date: !ComputedValue
+  last_command_date: !ComputedFloatValue
   #@Method
-  last_command: !ComputedValue
+  last_command: !ComputedStringValue
   #@Method
-  last_commanded_by: !ComputedValue
+  last_commanded_by: !ComputedStringValue
   #@Method
-  power_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+  power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  communications_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+  communications_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  data_status_roll_up: !ComputedValue  # CV: BLACK, RED, GREEN, YELLOW
+  data_status_roll_up: !ComputedIntValue  # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  location_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+  location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
   #@Method
-  aggregated_status: !ComputedValue # The status roll-up that summarizes the entire status of the device.
+  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device.
   #@Method
-  recent_events: !ComputedValue  #List of the 10 most recent events for this device
+  recent_events: !ComputedListValue  #List of the 10 most recent events for this device
   #@Method
-  last_calibration_time: !ComputedValue  #List of the 10 most recent events for this device
+  last_calibration_time: !ComputedFloatValue  #
   #@Method
-  sites: !ComputedValue  #List of sites to which this instrument has been deployed
+  sites: !ComputedListValue  #List of sites to which this instrument has been deployed
 
 ---
 
@@ -75,19 +75,19 @@ PlatformDeviceComputedAttributes: !Extends_ComputedAttributes
   speed_over_ground: ""
 
   #@Method
-  power_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+  power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
 
   #@Method
-  communications_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+  communications_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
 
   #@Method
-  data_status_roll_up: !ComputedValue  # CV: BLACK, RED, GREEN, YELLOW
+  data_status_roll_up: !ComputedIntValue  # CV: BLACK, RED, GREEN, YELLOW
 
   #@Method
-  location_status_roll_up: !ComputedValue # CV: BLACK, RED, GREEN, YELLOW
+  location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
 
   #@Method
-  aggregated_status: !ComputedValue # The status roll-up that summarizes the entire status of the device. (CV:  RED, YELLOW, GREEN, BLACK)
+  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (CV:  RED, YELLOW, GREEN, BLACK)
 
 ---
 
@@ -136,13 +136,13 @@ ObservatoryExtension: !Extends_ExtendedInformationResource
 #Computed attributes for a data product
 DataProductComputedAttributes: !Extends_ComputedAttributes
   #@Method
-  earliest_data_datetime: !ComputedValue  # the datetime of the earliest values in the data product
+  earliest_data_datetime: !ComputedFloatValue  # the datetime of the earliest values in the data product
 
   #@Method
-  product_download_size_estimated: !ComputedValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
+  product_download_size_estimated: !ComputedIntValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
 
   #@Method
-  stored_data_size: !ComputedValue   # The storage size occupied by the data content of the resource, in bytes.
+  stored_data_size: !ComputedIntValue   # The storage size occupied by the data content of the resource, in bytes.
 
 
 

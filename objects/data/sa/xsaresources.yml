@@ -1,5 +1,5 @@
 
-GeospatialBoundsWrap: !Extends_TypeWrap
+ComputedGeospatialBoundsValue: !Extends_ComputedValue
    value: !GeospatialBounds
 
 

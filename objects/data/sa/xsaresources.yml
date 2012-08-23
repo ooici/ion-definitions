@@ -2,7 +2,7 @@
 ComputedGeospatialBoundsValue: !Extends_ComputedValue
    value: !GeospatialBounds
 
-
+---
 
 #Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes

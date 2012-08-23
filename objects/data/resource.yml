@@ -47,37 +47,18 @@ ResourceFilter:
 
 ---
 
-TypeWrap:
-
----
-
-IntWrap: !Extends_TypeWrap
-   value: 0
-
-FloatWrap: !Extends_TypeWrap
-   value: 0.0
-
-StringWrap: !Extends_TypeWrap
-   value: ""
-
-ListWrap: !Extends_TypeWrap
-   value: []
-
-DictWrap: !Extends_TypeWrap
-   value: {}
-
----
-
 ComputedValueAvailability: !enum (values=(PROVIDED,NOTAVAILABLE), default=NOTAVAILABLE)
 
 ---
 
 ComputedValue:
-  result: !TypeWrap
   status: !ComputedValueAvailability
   reason: ""
 
 ---
+
+ComputedIntValue: !Extends_ComputedValue
+  value: 0
 
 ComputedStringValue: !Extends_ComputedValue
   value: ""
@@ -85,6 +66,11 @@ ComputedStringValue: !Extends_ComputedValue
 ComputedFloatValue: !Extends_ComputedValue
   value: 0.0
 
+ComputedListValue: !Extends_ComputedValue
+  value: []
+
+ComputedDictValue: !Extends_ComputedValue
+  value: {}
 ---
 
 # The base type for computed attribute objects

@@ -1,56 +1,68 @@
 # Place parameter context definitions here
 
-lat:
-  param_type: ""
-  ref_frame: ""
-  uom: ""
-  fill_value: ""
+Lat:
+  param_type: QuantityType(value_encoding=np.float32)
+  ref_frame: AxisTypeEnum.LAT
+  uom: "degree_north"
+  fill_value: 0e0
+  docstring: References the latitude
 
 ---
 
-lon:
-  param_type: ""
-  ref_frame: ""
-  uom: ""
-  fill_value: ""
+Lon:
+  param_type: QuantityType(value_encoding=np.float32)
+  ref_frame: AxisTypeEnum.LON
+  uom: "degree_east"
+  fill_value: 0e0
+  docstring: References the longitude
 
 ---
 
-time:
-  param_type: ""
-  ref_frame: ""
-  uom: ""
-  fill_value: ""
+Time:
+  param_type: QuantityType(value_encoding=np.int64)
+  ref_frame: AxisTypeEnum.TIME
+  uom: "seconds since 1970-01-01"
+  fill_value: 0e0
+  docstring: References the time
 
 ---
 
-depth:
-  param_type: ""
-  ref_frame: ""
-  uom: ""
-  fill_value: ""
+Depth:
+  param_type: QuantityType(value_encoding=np.float32)
+  ref_frame: AxisTypeEnum.HEIGHT
+  uom: "meters"
+  fill_value: 0e0
+  docstring: References the depth
 
 ---
 
-temperature:
-  param_type: ""
-  ref_frame: ""
-  uom: ""
-  fill_value: ""
+Temperature:
+  param_type: QuantityType(value_encoding=np.float32)
+  uom: "degree_Celsius"
+  fill_value: 0e0
+  docstring: References the temperature
 
 ---
 
-conductivity:
-  param_type: ""
-  ref_frame: ""
-  uom: ""
-  fill_value: ""
+Conductivity:
+  param_type: QuantityType(value_encoding=np.float32)
+  uom: "siemens_per_meter"
+  fill_value: 0e0
+  docstring: References the conductivity
 
 ---
 
-salinity:
-  param_type: ""
-  ref_frame: ""
-  uom: ""
-  fill_value: ""
+Salinity:
+  param_type: QuantityType(value_encoding=np.float32)
+  uom: "PSU"
+  fill_value: 0e0
+  docstring: References the salinity
+
+---
+
+Pressure:
+  param_type: QuantityType(value_encoding=np.float32)
+  uom: "Pascal"
+  fill_value: 0e0
+  docstring: References the pressure
 

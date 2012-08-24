@@ -2,29 +2,30 @@
 
 # An example param dict definition for temperature
 temp_param_dict:
-  lat: ""
-  lon: ""
-  time: ""
-  depth: ""
-  temperature: ""
+  lat: !Lat
+  lon: !Lon
+  time: !Time
+  depth: !Depth
+  temperature: !Temperature
 
 ---
 
 # An example param dict definition for conductivity
 cond_param_dict:
-  lat: ""
-  lon: ""
-  time: ""
-  depth: ""
-  conductivity: ""
+  lat: !Lat
+  lon: !Lon
+  time: !Time
+  depth: !Depth
+  conductivity: !Conductivity
 
 ---
 
 # An example param dict definition for salinity
 sal_param_dict:
-  lat: ""
-  lon: ""
-  time: ""
-  depth: ""
-  salinity: ""
+  lat: !Lat
+  lon: !Lon
+  time: !Time
+  depth: !Depth
+  salinity: !Salinity
+
 

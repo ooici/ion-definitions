@@ -1,31 +1,36 @@
 # Place parameter dictionary definitions here
 
 # An example param dict definition for temperature
-temp_param_dict:
-  lat: !Lat
-  lon: !Lon
-  time: !Time
-  depth: !Depth
-  temperature: !Temperature
-
----
+TempParamDict:
+  lat: Lat
+  lon: Lon
+  time: Time
+  depth: Depth
+  temperature: Temperature
 
 # An example param dict definition for conductivity
-cond_param_dict:
-  lat: !Lat
-  lon: !Lon
-  time: !Time
-  depth: !Depth
-  conductivity: !Conductivity
-
----
+CondParamDict:
+  lat: Lat
+  lon: Lon
+  time: Time
+  depth: Depth
+  conductivity: Conductivity
 
 # An example param dict definition for salinity
-sal_param_dict:
-  lat: !Lat
-  lon: !Lon
-  time: !Time
-  depth: !Depth
-  salinity: !Salinity
+SalParamDict:
+  lat: Lat
+  lon: Lon
+  time: Time
+  depth: Depth
+  salinity: Salinity
+
+# An example param dict definition for pressure
+PressParamDict:
+  lat: Lat
+  lon: Lon
+  time: Time
+  depth: Depth
+  salinity: Pressure
+
 
 

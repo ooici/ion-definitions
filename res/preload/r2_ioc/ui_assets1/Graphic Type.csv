@@ -1,0 +1,6 @@
+__pk_GraphicType_ID,Description,Name
+"2040004","Iconic representation of concept or asset. Icons have uniform size.","Icon"
+"2040005","State indicator to be used on top of icons.","Badge"
+"2040006","Other graphic element, e.g, page banner.","Graphic"
+"2040007","Iconic representation of interaction. May have idiosyncratic sizes.","Interaction Icon"
+"2040008","Graphic used to draw interaction widget, e.g., down-arrow in scroll-bar or dropdown menu.","Widget Graphic"

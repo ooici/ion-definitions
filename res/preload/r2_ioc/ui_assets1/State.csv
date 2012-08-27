@@ -1,0 +1,12 @@
+__pk_State_ID,Description,Name
+"2080006","Available for selection or manipulation","Active"
+"2080007","Not available for selection or manipulation","Inactive"
+"2080008","Shown","Visible"
+"2080009","Not shown","Invisible"
+"2080010","Can enter edit mode","Editable"
+"2080011","Cannot enter edit mode","Not Editable"
+"2080018","Only partial information is being displayed","Closed"
+"2080019","All information is being displayed","Open"
+"2080023","Visually emphasized","Highlighted"
+"2080024","Has current focus of selection","Selected"
+"2080025","In edit mode","Editing"

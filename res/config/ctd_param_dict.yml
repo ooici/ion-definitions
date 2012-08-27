@@ -1,0 +1,9 @@
+# Place parameter dictionary definitions for ctd transforms here
+
+# An example param dict definition for raw data
+raw_param_dict:
+  lat: !Lat
+  lon: !Lon
+  time: !Time
+  depth: !Depth
+  raw_data: !Raw

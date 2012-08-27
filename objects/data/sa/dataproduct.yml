@@ -102,5 +102,18 @@ DataProduct: !Extends_InformationResource
   # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""
 
+
+---
+DataProductVersion:
+  # name of the version
+  name:
+  # description of the version
+  description:
+  # data product version id
+  data_product_id:
+
+---
+
 # Represents a collection of data products that describes a succession of derived versions from an original.
-DataProductVersion: !Extends_InformationResource
+DataProductCollection: !Extends_InformationResource
+  version_list: [] # a ordered set of DataProductVersion object

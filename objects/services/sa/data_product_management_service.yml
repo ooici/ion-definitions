@@ -78,41 +78,73 @@ methods:
       BadRequest: if provenance can not be retrieved
       NotFound: object with specified id does not exist
       
-  create_data_product_version:
+  create_data_product_collection:
     docstring: |
-      Define a new version of an existing set of information that represent an inprovement in the quality or
-      understanding of the information. Only creates the second and higher versions of a DataProduct.
-      The first version is implicit in the crate_data_product() operation.
+      Create a collection of data products with the given data_product as the base version.
     in:
       data_product_id: ""
-      data_product_version: !DataProductVersion
+      collection_name: ""
+      collection_description: ""
     out:
-      data_product_version_id: ""
+      data_product_collection_id: ""
     throws:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
-  update_data_product_version:
+  update_data_product_collection:
     in:
-      data_product: !DataProductVersion
+      data_product: !DataProductCollection
     out:
     throws:
       NotFound: object with specified id does not exist
 
-  read_data_product_version:
+  read_data_product_collection:
     docstring: Retrieve data product information
     in:
-      data_product_version_id: ""
+      data_product_collection_id: ""
     out:
-      data_product: !DataProductVersion
+      data_product: !DataProductCollection
 
-  delete_data_product_version:
-    docstring: Remove a version of an data product.
+  delete_data_product_collection:
+    docstring: Remove a data product but not the set of related data products.
     in:
-      data_product_version_id: ""
+      data_product_collection_id: ""
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  add_data_product_version_to_collection:
+    docstring: |
+      Append a version to the end of a series of data products
+    in:
+      data_product_id: ""
+      data_product_collection_id: ""
+      version_name: ""
+      version_description: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+  get_current_version:
+    docstring: |
+      Get the most recent version of the base data product in this collection. All versions build on the base data product in a cumulative fashion
+    in:
+      data_product_collection_id: ""
+    out:
+      data_product_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  get_base_version:
+    docstring: |
+      Get the original recent version of the data product in this collection. All versions build on the base data product in a cumulative fashion
+    in:
+      data_product_collection_id: ""
+    out:
+      data_product_id: ""
+    throws:
       NotFound: object with specified id does not exist
 
 

@@ -1,78 +1,70 @@
-# Base type for all UI resource objects
+# Base type for all UI definition resource objects
 UIResource: !Extends_Resource
   uirefid: ""   # UX database internal identifier
 
 ---
 
-# Back reference to ION resource type
-UIInternalResourceType: !Extends_UIResource
-    internal_resource_superclass: ""  # FK
-    alignment_status: ""
+# UI definition for a type of graphic element in the UI
+UIGraphicType: !Extends_UIResource
 
-# How important is an attribute
+# UI definition for graphic element in the UI
+UIGraphic: !Extends_UIResource
+  graphic_type_id: ""    # FK
+  filename: ""
+
+# UI definition for an information level in the UI
 UIInformationLevel: !Extends_UIResource
-    level: ""
+  level: ""
 
-# A text label in the UI
+# UI definition for an ION resource type
+UIResourceType: !Extends_UIResource
+  ci_id: ""
+
+# UI definition for an ION object type
+UIObjectType: !Extends_UIResource
+  ci_id: ""
+
+# UI definition for an ION resource attribute or object field that can occur within a screen element
+UIResourceAttribute: !Extends_UIResource
+  information_level: 0   # Direct inclusion of level as numeric value, not FK
+  object_type_id: ""     # FK
+  resource_type_id: ""   # FK
+  base_attribute: ""
+  ci_id: ""
+  default_widget_id: ""  # FK
+
+# UI definition for a visible element of the UI. Note this is a composite structure.
+UIScreenElement: !Extends_UIResource
+  graphic_id: ""
+  helptag_id: ""
+  message_string_id: ""
+  screen_label_id: ""
+  state_id: ""
+  widget_id: ""
+  default_value: ""
+
+# UI definition for a text label in the UI
 UIScreenLabel: !Extends_UIResource
     text: ""
     abbreviation: ""
 
-# An attribute within a resource object
-UIAttribute: !Extends_UIResource
-    information_level_id: ""       # FK
-    screen_label_id: ""            # FK
-    internal_resource_type_id: ""  # FK
-    value_generation: ""
-    alignment_status: ""
+# UI definition for possible screen element states
+UIState: !Extends_UIResource
 
-# A sequence of attributes
-UIBlock: !Extends_UIResource
-    resource_id: ""       # FK
-    group_id: ""          # FK
-    screen_label_id: ""   # FK
+# UI definition for known screen element widgets
+UIWidget: !Extends_UIResource
 
-# A group of blocks. For now a tab in the UI
-UIGroup: !Extends_UIResource
-    screen_label_id: ""   # FK
+# UI definition for the placement of resource attributes and object fields in screen elements
+UI_ScreenElement_InformationElement: !Extends_UIResource
+  screen_element_id: ""         # FK
+  information_element_id: ""    # FK
+  information_element_type: ""
 
-# A representation for a UI object (mostly block)
-UIRepresentation: !Extends_UIResource
-    screen_label_id: ""   # FK
-
-# A type of UI visible resource
-UIResourceType: !Extends_UIResource
-    screen_label_id: ""   # FK
-
-
-# A specification how to lay out a screen
-UIView: !Extends_UIResource
-    screen_label_id: ""   # FK
-
-# A positioned attribute in a block (N:M reference)
-UIBlockAttribute: !Extends_UIResource
-    block_id: ""          # FK
-    attribute_id:         # FK
-    position: ""
-
-# Join table (N:M) object, no own attributes
-UIBlockRepresentation: !Extends_UIResource
-    block_id: ""          # FK
-    representation_id: "" # FK
-
-# Join table (N:M) object, no own attributes
-UIGroupBlock: !Extends_UIResource
-    group_id: ""          # FK
-    block_id: ""          # FK
-
-
-# Join table (N:M) object, no own attributes
-UIViewGroup: !Extends_UIResource
-    view_id: ""           # FK
-    group_id: ""          # FK
-
-
-#UIScreen: !Extends_UIResource
-
-#UIInteraction: !Extends_UIResource
-
+# UI definition for a nested screen element within a screen element and contextual overrides
+UIEmbeddedScreenElement: !Extends_UIResource
+  embedding_screen_element_id: ""  # FK. Composite element (parent)
+  embedded_screen_element_id: ""   # FK. Embedded element (child)
+  graphic_id: ""                   # FK for override
+  information_level: 0             # Level override
+  screen_label_id: ""              # FK for override
+  position: ""                     # Position within parent

@@ -20,7 +20,8 @@ Org: !Extends_TaskableResource
 # different type, or can be a composite of service agreement proposals.
 ServiceAgreementProposal:
   sap_id: ""
-  originator: ""
+  originator: ""  #Who originated the SAP request
+  recipient: ""  #Who received the initial SAP request
   sequence_num: 0
   requested_resource_id: []
   conditions: {}
@@ -31,10 +32,21 @@ NegotiationDefinition: !Extends_InformationResource
   pre_condition: []
   accept_action: ""
 
+---
+
+# Enum for the different categories of Negotiations
+NegotiationTypeEnum: !enum (values=(ENROLLMENT, USER_ROLE, RESOURCE_USE), default=RESOURCE_USE)
+
+# Enum for the different categories of Negotiations
+NegotiationOriginationEnum: !enum (values=(REQUEST, INVITE), default=REQUEST)
+
+---
+
 # Describes a negotiation between multiple system participants with the intent of agreeing
 # to a mutual contract with commitments if successful.
 Negotiation: !Extends_InformationResource
-  type: ""
+  type: !NegotiationTypeEnum
+  origination: !NegotiationOriginationEnum
   #@ContentType=ServiceAgreementProposal
   sap: []
 

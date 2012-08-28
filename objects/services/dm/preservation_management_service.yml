@@ -226,3 +226,28 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+# --- Persistence Layer ---
+
+  persist_file:
+    in:
+      file_data: ""
+      digest: ""
+      metadata: !File
+    out:
+      file_id: ""
+
+  list_files:
+    in:
+      file_path: ""
+    out:
+      file_metadata: ""
+      file_id: ""
+
+  read_file:
+    in:
+      file_id: ""
+      cluster_id: ""
+    out:
+      file_data: "" 
+      digest: ""

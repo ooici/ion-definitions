@@ -133,7 +133,7 @@ AgentDefinition: !Extends_InformationResource
   event_publisher_origin: ""
 
 # Describes a running or scheduled agent representing a single resource. Abstract base type.
-AgentInstance: !Extends_TaskableResource
+AgentInstance: !Extends_InformationResource
   deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
   exchange_name: ""
   configuration: {}

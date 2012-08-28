@@ -15,11 +15,11 @@ AssociationDefinitions:
     docstring: References a DataProcessDefinition (type) used by WorkflowDefinition (type)
 #SA
   - predicate: hasDataset
-    domain: [DataProducer, DataProduct, DataProductVersion]
+    domain: [DataProducer, DataProduct]
     range: [DataSet]
     docstring: References a DataSet resource that keeps a persistent metadata/data coverage.
   - predicate: hasDataProducer
-    domain: [DataProcess, Device, ExternalDataset, DataProduct, DataProductVersion]
+    domain: [DataProcess, Device, ExternalDataset, DataProduct]
     range: [DataProducer]
     docstring: References the DataProducer entiry to track a provenance relationship
   - predicate: hasDataProduct
@@ -52,7 +52,7 @@ AssociationDefinitions:
     docstring: References the model (aka type/class) resource for the resource
   - predicate: hasOutputProduct
     domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
-    range: [DataProduct, DataProductVersion]
+    range: [DataProduct]
     docstring: References the DataProduct produced by the given resource
   - predicate: hasParent
     domain: [DataProducer]
@@ -63,9 +63,9 @@ AssociationDefinitions:
     range: [Site]
     docstring: References a child Site for a Site. The extent of all these associations form a true tree with an Observatory as root.
   - predicate: hasVersion
-    domain: [DataProduct]
-    range: [DataProductVersion]
-    docstring: References a version of a DataProduct. The first version is created with the DataProduct.
+    domain: [DataProductCollection]
+    range: [DataProduct]
+    docstring: References a version of a DataProduct. The first version is created with the DataProductCollection.
 # DM
   - predicate: hasArchive
     domain: [DataStore]

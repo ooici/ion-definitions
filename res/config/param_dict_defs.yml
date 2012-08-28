@@ -30,7 +30,7 @@ PressParamDict:
   lon: Lon
   time: Time
   depth: Depth
-  salinity: Pressure
+  pressure: Pressure
 
 
 

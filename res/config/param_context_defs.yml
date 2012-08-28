@@ -7,16 +7,12 @@ Lat:
   fill_value: 0e0
   docstring: References the latitude
 
----
-
 Lon:
   param_type: QuantityType(value_encoding=np.float32)
   ref_frame: AxisTypeEnum.LON
   uom: "degree_east"
   fill_value: 0e0
   docstring: References the longitude
-
----
 
 Time:
   param_type: QuantityType(value_encoding=np.int64)
@@ -25,8 +21,6 @@ Time:
   fill_value: 0e0
   docstring: References the time
 
----
-
 Depth:
   param_type: QuantityType(value_encoding=np.float32)
   ref_frame: AxisTypeEnum.HEIGHT
@@ -34,15 +28,11 @@ Depth:
   fill_value: 0e0
   docstring: References the depth
 
----
-
 Temperature:
   param_type: QuantityType(value_encoding=np.float32)
   uom: "degree_Celsius"
   fill_value: 0e0
   docstring: References the temperature
-
----
 
 Conductivity:
   param_type: QuantityType(value_encoding=np.float32)
@@ -50,23 +40,17 @@ Conductivity:
   fill_value: 0e0
   docstring: References the conductivity
 
----
-
 Salinity:
   param_type: QuantityType(value_encoding=np.float32)
   uom: "PSU"
   fill_value: 0e0
   docstring: References the salinity
 
----
-
 Pressure:
   param_type: QuantityType(value_encoding=np.float32)
   uom: "Pascal"
   fill_value: 0e0
   docstring: References the pressure
-
----
 
 Raw:
   param_type: QuantityType(value_encoding=np.float32)

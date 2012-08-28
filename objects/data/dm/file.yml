@@ -1,0 +1,30 @@
+
+File:
+  # Name of the file
+  name: ''
+  # Owner's User Identifier
+  owner_id: ''
+  # Owner's group identifier
+  group_id: ''
+  # File extension
+  extension: '.pyon'
+  # The MIME of the file
+  filetype: 'binary'
+  # Creation timestamp
+  created_date: ''
+  # Modified timestamp
+  modified_date: ''
+  # Persistence Flags
+  flags: ''
+  # Permissions (see unix permissions)
+  permissions: 0777
+  # Identifier for the cluster
+  cluster_id: ''
+  # Size in bytes the file occupies
+  size: 0
+  # Resource locator string
+  url: ''
+  # SHA224 Digest
+  digest: ''
+
+

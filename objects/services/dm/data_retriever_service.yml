@@ -17,6 +17,7 @@ methods:
       dataset_id: ""
       query: {}
       delivery_format: {}
+      replay_type: ""
     out:
       replay_id: ""
       stream_id: ""

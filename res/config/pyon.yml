@@ -207,8 +207,8 @@ core_stream_types:
 # The "service" root entry
 service:
   instrument_management:
-    driver_release_host: amoeba.ucsd.edu
-    driver_release_directory: /var/www/releases
+    driver_release_host: sddevrepo.oceanobservatories.org
+    driver_release_directory: /var/www/html/releases
 
 
 # TODO: Remove (use global flags instead)

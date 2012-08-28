@@ -253,47 +253,7 @@ AssociationDefinitions:
     range: [DataSource]
     docstring: References the DataSource (server) for an ExternalDataset (data entity)
 # UX
-  - predicate: hasUIGroup
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIScreenLabel
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIBlockAttribute
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIAttribute
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIBlockRepresentation
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIRepresentation
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIGroupBlock
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIBlock
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIViewGroup
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUISupertype
-    domain: [UIResource]
-    range: [UIResource]
-    docstring: Defines references between UI elements
-  - predicate: hasUIResource
+  - predicate: hasUIGraphicType
     domain: [UIResource]
     range: [UIResource]
     docstring: Defines references between UI elements

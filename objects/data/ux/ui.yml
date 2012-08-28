@@ -29,7 +29,7 @@ UIResourceAttribute: !Extends_UIResource
   information_level: 0   # Direct inclusion of level as numeric value, not FK
   object_type_id: ""     # FK
   resource_type_id: ""   # FK
-  base_attribute: ""
+  base_attribute_id: ""  # FK
   ci_id: ""
   default_widget_id: ""  # FK
 
@@ -55,7 +55,7 @@ UIState: !Extends_UIResource
 UIWidget: !Extends_UIResource
 
 # UI definition for the placement of resource attributes and object fields in screen elements
-UI_ScreenElement_InformationElement: !Extends_UIResource
+UIScreenElementInformationElement: !Extends_UIResource
   screen_element_id: ""         # FK
   information_element_id: ""    # FK
   information_element_type: ""

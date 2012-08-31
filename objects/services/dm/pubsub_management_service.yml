@@ -132,6 +132,18 @@ methods:
 
   # -----------------
 
+  get_stream_route_for_stream:
+    docstring: Returns StreamRoute object for a given stream and exchange point
+    in: 
+      stream_id: ""
+      exchange_point: ""
+    out:
+      stream_route: !StreamRoute
+
+  
+
+  # -----------------
+
   create_subscription:
     docstring: |
       @brief Create a new subscription. The id string returned is the ID of the new subscription

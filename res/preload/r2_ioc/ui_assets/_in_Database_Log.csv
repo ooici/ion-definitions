@@ -1,4 +1,6 @@
 __pk_DatabaseLog_ID,Last Modified,Modified by,Title,Entry
+"24000031","8/30/2012 8:00:26 PM","susanne jul","Alignment adjustments","- Deleted 66 bogus Attributes and associated screen elements- Spun out Site inherited attributes"
+"24000032","8/30/2012 5:53:21 PM","Carolanne Fisher","Completed Lists, Tables, Tiles",""
 "24000030","8/28/2012 5:21:27 PM","susanne jul","Screen Element WIdget validation","- Added validation check to ensure that all screen elements are assigned to a widget"
 "24000029","8/28/2012 5:13:36 PM","susanne jul","UI Preload cleanup","- _jt_ScreenElement_ScreenElement table	- Renamed soft association path field to Data Path Description	- Removed multi-step links for data retrieval path	- Renamed data retrieval path field to Data Path- Added Object Type, Object Field and Database Log tables to automatic export- Added sample placeholder records to help tag and message string tables so that there is something to export- Transferred Screen-Information element mappings to Object Field records where pre-load errors were happening, also added widget types to same set of screen elements"
 "24000028","8/28/2012 8:04:54 AM","susanne jul","Widget iisting","- Reviewed widget listing- Added links to visual examples"

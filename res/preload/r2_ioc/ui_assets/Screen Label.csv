@@ -457,3 +457,8 @@ __pk_ScreenLabel_ID,Abbreviation,Description,Name,Text
 "2090590","","","","Modified By"
 "2090591","","","Number Platforms","Number of Platforms"
 "2090592","","","Number Instruments","Number of Instruments"
+"2090594","","","","Event"
+"2090595","","","","Reference Table"
+"2090596","","","","% Total Failed"
+"2090597","","","","% Above Upper Limit"
+"2090598","","","","Lower Limit"

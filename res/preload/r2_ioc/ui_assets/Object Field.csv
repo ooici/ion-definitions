@@ -18,7 +18,7 @@ __pk_ObjectField_ID,CI ID,Object Type,Name,Object Field Type,Base Field,Descript
 "2490821","2490188","2480189","base_types","2480186","","List of event super types",""
 "2490822","2490189","2480189","description","2480187","","readable description of the event (not required)",""
 "2490823","2490190","2480189","origin","2480187","","the origin of the event (content specific to subtype). Mostly a resource id",""
-"2490824","2490191","2480189","origin_type","2480187","","the type of origin (e.g. resource type, etc) or empty",""
+"2490824","2490191","2480189","origin_type [Event]","2480187","","the type of origin (e.g. resource type, etc) or empty",""
 "2490825","2490192","2480189","sub_type","2480187","","A specialization of the event_type expressed by this object type (or empty)",""
 "2490826","2490193","2480189","ts_created","2480187","","timestamp of event created in millis in UNIX epoch",""
 "2490827","2490784","2480190","geospatial_latitude_limit_north","","","specifies one or both limits, for any or all of an entity's latitude, longitude, and vertical position, with respect to a geospatial CRS",""
@@ -76,3 +76,4 @@ __pk_ObjectField_ID,CI ID,Object Type,Name,Object Field Type,Base Field,Descript
 "2490879","2013440","2480195","applicable_range_max","","","If the value is only valid within a particular range, this gives the maximum. Must be in same units as the value.",""
 "2490880","2013441","2480195","source","","","Indicates the category of the source of the value, such as manufacturer, literature, etc",""
 "2490881","2013442","2480195","comments","","","Any additional important information about the characteristic",""
+"2490882","","2480189","name","2480189","","","0"

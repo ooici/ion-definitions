@@ -210,6 +210,9 @@ service:
     driver_release_host: sddevrepo.oceanobservatories.org
     driver_release_directory: /var/www/html/releases
 
+  directory:
+    default_uispecs_url: https://userexperience.oceanobservatories.org/database-exports/
+
 
 # TODO: Remove (use global flags instead)
 external_data_agent_management:

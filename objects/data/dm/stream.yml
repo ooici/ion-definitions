@@ -21,7 +21,7 @@ Stream: !Extends_InformationResource
 
 # Description for accessing a stream via the Exchange
 StreamRoute:
-  exchange_name: ""
+  exchange_point: ""
   routing_key: ""
   credentials: {}
 

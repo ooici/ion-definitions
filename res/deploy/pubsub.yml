@@ -1,0 +1,23 @@
+type: release
+name: r2deploy
+version: 0.2
+description: Release 2 deployment configuration
+ion: 0.1
+apps:
+  - name: event_persister
+    processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
+    deploy:
+      bootlevel: 1
+  - name: resource_registry
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    deploy:
+      bootlevel: 5
+  - name: exchange_management
+    processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
+    deploy:
+      bootlevel: 10
+  - name: pubsub_management
+    processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+    deploy:
+      bootlevel: 10
+

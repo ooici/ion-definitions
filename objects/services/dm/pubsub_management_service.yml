@@ -10,270 +10,186 @@ dependencies: [resource_registry]
 methods:
 
   create_stream_definition:
-    docstring: |
-      @brief Create a new stream definition which may be used to publish on one or more streams
-      @param container is a stream definition container object
-      @param name is the name of the definition resource
-      @param description is the description of the definition resource
-    in:
-      container: !StreamDefinitionContainer
+    docstring: ""
+    in: 
       name: ""
+      parameter_dictionary: {}
+      stream_type: ""
       description: ""
     out:
       stream_definition_id: ""
-
-  update_stream_definition:
-    docstring: Update an existing stream definition
-    in:
-      stream_definition: !StreamDefinition
-    out:
     throws:
-      NotFound: if stream_definition_id doesn't exist
-
-  find_stream_definition:
-    docstring: |
-      @brief Retrieves a stream definition from an existing stream_id
-      @param stream_id Stream ID
-      @param id_only True if you only want the stream definition id
-      @return stream definition object
-    in:
-      stream_id: ""
-      id_only: True
-    out:
-      stream_definition: ""
-    throws:
-      NotFound: if there is no association
-
+      Conflict: StreamDefinition with the specified name already exists.
+  
   read_stream_definition:
-    docstring: Get an existing stream definition.
+    docstring: ""
     in:
       stream_definition_id: ""
     out:
       stream_definition: !StreamDefinition
-    throws:
-      NotFound: if stream_definition_id doesn't exist
-
+  
   delete_stream_definition:
-    docstring: Delete an existing stream definition.
+    docstring: ""
     in:
       stream_definition_id: ""
     out:
-    throws:
-      NotFound: if stream_definition_id doesn't exist
+      success: True
 
-
+  #---------
+  
   create_stream:
-    docstring: |
-      @brief Creates a new stream. The id string returned is the ID of the new stream in the resource registry.
-      @param encoding the encoding for data on this stream
-      @param original is the data on this stream from a source or a transform
-      @param stream_definition_id the id of a stream definition resource which describes this stream
-      @param name (optional) the name of the stream
-      @param description (optional) the description of the stream
-      @param url (optional) the url where data from this stream can be found (Not implemented)
+    docstring: ""
     in:
-      encoding: ""
-      original: True
-      stream_definition_id: ""
       name: ""
-      description: ""
-      url: ""
-
+      exchange_point: ""
+      topic_ids: []
+      credentials: {}
+      stream_definition_id: ""
+      description: ''
     out:
       stream_id: ""
-
-  update_stream:
-    docstring: Update an existing stream.
-    in:
-      stream: !Stream
-    out:
     throws:
-      NotFound: if stream_id doesn't exist
+      Conflict: The named stream already exists
 
   read_stream:
-    docstring: Get an existing stream object.
+    docstring: ""
     in:
       stream_id: ""
     out:
       stream: !Stream
     throws:
-      NotFound: if stream_id doesn't exist
+      NotFound: Resource was not located.
 
   delete_stream:
-    docstring: Delete an existing stream.
-    in:
-      stream_id: ""
-    out:
-    throws:
-      NotFound: if stream_id doesn't exist
-
-  find_streams:
-    docstring: Find a stream in the resource_registry based on the filters provided.
-    in:
-      filter: !ResourceFilter
-    out:
-      stream_list: []
-
-  find_streams_by_producer:
-    docstring: Find all streams that contain a particular producer.
-    in:
-      producer_id: ""
-    out:
-      stream_list: []
-
-  find_streams_by_consumer:
-    docstring: Not implemented here.
-    in:
-      consumer_id: ""
-    out:
-      stream_list: []
-    throws:
-      NotImplementedError: Method not implemented
-
-  # -----------------
-
-  get_stream_route_for_stream:
-    docstring: Returns StreamRoute object for a given stream and exchange point
+    docstring: ""
     in: 
       stream_id: ""
+    out:
+      success: True
+  
+  #---------
+  
+  create_subscription:
+    docstring: ""
+    in: 
+      name: ""
+      stream_ids: []
+      exchange_points: []
+      topic_ids: []
+      exchange_name: ""
+      credentials: {}
+      description: ""
+    out:
+      subscription_id: ""
+    throws:
+      BadRequest: Not enough information to create a subscription or the parameters conflict.
+      Conflict: A subscription with this name already exists.
+
+  read_subscription:
+    docstring: ""
+    in:
+      subscription_id: ""
+    out: 
+      subscription: !Subscription
+
+  activate_subscription:
+    docstring: ""
+    in:
+      subscription_id: ""
+    out:
+      success: True
+
+  deactivate_subscription:
+    docstring: ""
+    in:
+      subscription_id: ""
+    out:
+      success: True
+
+  delete_subscription:
+    docstring: ""
+    in:
+      subscription_id: ""
+    out:
+      success: True
+
+  #---------
+
+  create_topic:
+    docstring: ""
+    in:
+      name: ""
       exchange_point: ""
+      description: ""
+    out:
+      topic_id: ""
+    throws:
+      BadRequest: A topic with the specified name already exists.
+
+  read_topic:
+    docstring: ""
+    in:
+      topic_id: ""
+    out:
+      topic: !Topic
+  
+  delete_topic:
+    dosctring: ""
+    in:
+      topic_id: ""
+    out:
+      success: True
+
+  #---------
+
+  read_stream_route:
+    docstring: ""
+    in:
+      stream_id: ""
     out:
       stream_route: !StreamRoute
+
+  subscription_is_active:
+    docstring: ""
+    in:
+      subscription_id:
+    out:
+      active: False
+  
+  #---------
+
+  find_streams_by_topic:
+    docstring: ""
+    in:
+      topic_ids: []
+      id_only: False
+    out:
+      streams: []
+  
+  find_topics_by_name:
+    docstring: ""
+    in:
+      topic_name: ""
+      id_only: False
+    out:
+      topics: []
+
+  find_streams_by_definition:
+    docstring: ""
+    in:
+      stream_definition_id: ""
+      id_only: False
+    out:
+      streams: []
 
   
 
-  # -----------------
 
-  create_subscription:
-    docstring: |
-      @brief Create a new subscription. The id string returned is the ID of the new subscription
-      in the resource registry.
-      @param query is a subscription query object (Stream Query, Exchange Query, etc...)
-      @param exchange_name is the name (queue) where messages will be delivered for this subscription
-      @param name (optional) is the name of the subscription
-      @param description (optional) is the description of the subscription
-      @param exchange_point is the exchange point where the stream is being published to
-    in:
-      query: {}
-      exchange_name: ""
-      name: ""
-      description: ""
-      exchange_point: "" 
-    out:
-      subscription_id: ""
-    throws:
-      BadRequestError: Throws when the subscription query object type is not found
+    
 
-  update_subscription:
-    docstring: |
-        Update an existing subscription.
-        @param subscription_id Identification for the subscription
-        @param query The new query
-        @throws NotFound if the resource doesn't exist
-        @retval True on success
-    in:
-      subscription_id: ""
-      query: {}
-    out:
-      success: True
 
-  read_subscription:
-    docstring: Get an existing subscription object.
-    in:
-      subscription_id: ""
-    out:
-      subscription: !Subscription
-    throws:
-      NotFound: if subscription_id doesn't exist
-
-  delete_subscription:
-    docstring: Delete an existing subscription.
-    in:
-      subscription_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: if subscription_id doesn't exist or subscription has no stream association
-
-  activate_subscription:
-    docstring: Bind a subscription using a channel layer.
-    in:
-      subscription_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: if subscription_id doesn't exist
-      BadRequest: Subscription is already active!
-
-  deactivate_subscription:
-    docstring: Unbinds a subscription using a channel layer.
-    in:
-      subscription_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: if subscription_id doesn't exist
-      BadRequest: Subscription is not active!
-  # -----------------
-
-  register_consumer:
-    docstring: Not implmented here.
-    in:
-      exchange_name: ""
-    out:
-      success: True
-    throws:
-      NotImplementedError: Method not implemented
-
-  unregister_consumer:
-    docstring: Not implemented here.
-    in:
-      exchange_name: ""
-    out:
-      success: True
-    throws:
-      NotImplementedError: Method not implemented
-
-  find_consumers_by_stream:
-    docstring: Not implemented here.
-    in:
-      stream_id: ""
-    out:
-      consumer_list: []
-    throws:
-      NotImplementedError: Method not implemented
-
-  # -----------------
-
-  # Note: a producer is not a resource, just a declaration
-
-  register_producer:
-    docstring: Register a producer with a stream.
-    in:
-      exchange_name: ""
-      stream_id: ""
-    out:
-      stream_route: !StreamRoute
-    throws:
-      NotFound: if stream_id doesn't exist
-
-  unregister_producer:
-    docstring: Unregister a producer from a stream.
-    in:
-      exchange_name: ""
-      stream_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: if stream_id doesn't exist
-      ValueError: if producer is not registered with the stream
-
-  find_producers_by_stream:
-    docstring: Returns a list of registered producers for a stream.
-    in:
-      stream_id: ""
-    out:
-      producer_list: []
-    throws:
-      NotFound: if stream_id doesn't exist
+  
+  
+    
+  
 

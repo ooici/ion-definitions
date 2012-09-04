@@ -119,6 +119,9 @@ AssociationDefinitions:
     domain: [Topic, Stream]
     range: [Subscription]
     docstring: References a Subcription resulting in messages matching a defined criteria
+  - predicate: hasTopic
+    domain: [Stream]
+    range: [Topic]
   - predicate: hasTopology
     domain: [ExchangePoint, Stream, Subscription]
     range: [TopicTopology]

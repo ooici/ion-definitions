@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
 
-dependencies: [resource_registry, data_acquisition_management, data_product_management, process_dispatcher, pubsub_management]
+dependencies: [resource_registry, data_acquisition_management, data_product_management, dataset_management, process_dispatcher, pubsub_management]
 
 methods:
   # -----------------
@@ -211,6 +211,8 @@ methods:
       platform specific agent/driver instance combination.
     in:
       platform_agent_instance: !PlatformAgentInstance
+      platform_agent_id: ""
+      platform_device_id: ""
     out:
       platform_agent_instance_id: ""
     throws:

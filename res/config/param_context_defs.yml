@@ -1,61 +1,304 @@
-# Place parameter context definitions here
-
-Lat:
-  param_type: QuantityType(value_encoding=np.float32)
-  ref_frame: AxisTypeEnum.LAT
-  uom: "degree_north"
-  fill_value: 0e0
-  docstring: References the latitude
-
-Lon:
-  param_type: QuantityType(value_encoding=np.float32)
-  ref_frame: AxisTypeEnum.LON
-  uom: "degree_east"
-  fill_value: 0e0
-  docstring: References the longitude
-
-Time:
-  param_type: QuantityType(value_encoding=np.int64)
-  ref_frame: AxisTypeEnum.TIME
-  uom: "seconds since 1970-01-01"
-  fill_value: 0e0
-  docstring: References the time
-
-Depth:
-  param_type: QuantityType(value_encoding=np.float32)
-  ref_frame: AxisTypeEnum.HEIGHT
-  uom: "meters"
-  fill_value: 0e0
-  docstring: References the depth
-
-Temperature:
-  param_type: QuantityType(value_encoding=np.float32)
-  uom: "degree_Celsius"
-  fill_value: 0e0
-  docstring: References the temperature
-
-Conductivity:
-  param_type: QuantityType(value_encoding=np.float32)
-  uom: "siemens_per_meter"
-  fill_value: 0e0
-  docstring: References the conductivity
-
-Salinity:
-  param_type: QuantityType(value_encoding=np.float32)
-  uom: "PSU"
-  fill_value: 0e0
-  docstring: References the salinity
-
-Pressure:
-  param_type: QuantityType(value_encoding=np.float32)
-  uom: "Pascal"
-  fill_value: 0e0
-  docstring: References the pressure
-
-Raw:
-  param_type: QuantityType(value_encoding=np.float32)
-  uom: "unknown"
-  fill_value: 0e0
-  docstring: References raw data
-
-
+temp:
+  comment: null
+  _derived_from_name: temp
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: degree_Celsius
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: temp
+  extension: {}
+  index_key: null
+  fill_value: 0.0
+  cdm_data_type: null
+  attributes: null
+  _id: null
+lon:
+  comment: null
+  _derived_from_name: lon
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: degree_east
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: 6
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: lon
+  extension: {}
+  index_key: null
+  fill_value: 0.0
+  cdm_data_type: null
+  attributes: null
+  _id: null
+salinity:
+  comment: null
+  _derived_from_name: salinity
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: PSU
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: salinity
+  extension: {}
+  index_key: null
+  fill_value: 0
+  cdm_data_type: null
+  attributes: null
+  _id: null
+pressure:
+  comment: null
+  _derived_from_name: pressure
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: Pascal
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: pressure
+  extension: {}
+  index_key: null
+  fill_value: 0
+  cdm_data_type: null
+  attributes: null
+  _id: null
+depth:
+  comment: null
+  _derived_from_name: depth
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: meters
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: 4
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: depth
+  extension: {}
+  index_key: null
+  fill_value: 0.0
+  cdm_data_type: null
+  attributes: null
+  _id: null
+time:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: seconds since 1970-01-01
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <i8
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: 12
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: time
+  extension: {}
+  index_key: null
+  fill_value: 0
+  cdm_data_type: null
+  attributes: null
+  _id: null
+lat:
+  comment: null
+  _derived_from_name: lat
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: degree_north
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: 5
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: lat
+  extension: {}
+  index_key: null
+  fill_value: 0.0
+  cdm_data_type: null
+  attributes: null
+  _id: null
+conductivity:
+  comment: null
+  _derived_from_name: conductivity
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: unknown
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: conductivity
+  extension: {}
+  index_key: null
+  fill_value: 0.0
+  cdm_data_type: null
+  attributes: null
+  _id: null

@@ -244,7 +244,24 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  start_platform_agent_instance:
+    docstring: |
+      Launch an platform agent instance process and return its process id. Agent instance resource
+      must exist and be associated with an PlatformDevice
+    in:
+      platform_agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
 
+  stop_platform_agent_instance:
+    docstring: Deactivate the platform agent instance process
+    in:
+      platform_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
   # -----------------
   # Working with PlatformAgent definition resources
 

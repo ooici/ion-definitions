@@ -1,0 +1,38 @@
+# Agent interface definitions for the agent management service.
+
+# The goal is that the AMS can represent a multitude of different resource types
+# through the generic agent interface, without having an actual agent.
+
+AgentInterface:
+  InstrumentDevice:
+    agent: True
+
+  PlatformDevice:
+    agent: True
+
+  Process:
+    service: process_dispatcher
+    params:
+    commands:
+      terminate:
+        execute: serviceop:process_dispatcher.terminate_process($RESOURCE_ID)
+
+  TaskableResource:
+
+  Resource:
+    params:
+      object_size:
+        get: self:get_resource_size($RESOURCE_ID)
+      object_size1:
+        get: func:ion.services.coi.agent_management_service.get_resource_size($RESOURCE_ID)
+
+  ExampleResource:
+    agent: False
+    params:
+      one:
+        get: serviceop:process_dispatcher.get_state()
+        set: serviceop:process_dispatcher.set_state()
+      two:
+        get: eval:return True
+      three:
+        get: func:pyon.ion.resource.get_res_size($RESOURCE_ID)

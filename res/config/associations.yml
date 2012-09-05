@@ -118,10 +118,6 @@ AssociationDefinitions:
   - predicate: hasTopic
     domain: [Stream, Topic, Subscription]
     range: [Topic]
-  - predicate: hasTopology
-    domain: [ExchangePoint, Stream, Subscription]
-    range: [TopicTopology]
-    docstring: References a structure that defines the buildup of Streams for an ExchangePoint
   - predicate: hasTransform
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]

@@ -120,6 +120,7 @@ methods:
     in:
       name: ""
       exchange_point: ""
+      parent_topic_id: ""
       description: ""
     out:
       topic_id: ""
@@ -181,6 +182,16 @@ methods:
       id_only: False
     out:
       streams: []
+
+
+  find_topics_by_topic:
+    docstring: ""
+    in:
+      topic_id: ""
+      id_only: False
+    out:
+      topics: []
+  
 
   
 

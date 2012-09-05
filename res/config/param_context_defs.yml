@@ -1,3 +1,41 @@
+binary:
+  comment: null
+  _derived_from_name: binary
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    description: ''
+    extension: {}
+    constraint: null
+    _template_attrs: {quality: null, uom: unspecified, nilValues: null, constraint: null}
+    label: ''
+    p_type: QuantityType
+    uom: unknown
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <i8
+    nilValues: null
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 1
+  reference_frame: unknown
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: ParameterContext
+  name: binary
+  extension: {}
+  index_key: null
+  fill_value: 0.0
+  cdm_data_type: null
+  attributes: null
+  _id: null
 temp:
   comment: null
   _derived_from_name: temp

@@ -20,11 +20,20 @@ AgentInterface:
   TaskableResource:
 
   Resource:
+    create: serviceop:resource_registry.create($RESOURCE)
+    update: serviceop:resource_registry.update($RESOURCE)
+    read: serviceop:resource_registry.read($RESOURCE_ID)
+    delete: serviceop:resource_registry.delete($RESOURCE_ID)
+
     params:
       object_size:
-        get: self:get_resource_size($RESOURCE_ID)
+        get: func:self.get_resource_size($RESOURCE_ID)
       object_size1:
         get: func:ion.services.coi.agent_management_service.get_resource_size($RESOURCE_ID)
+      description:
+        set: func:self.set_resource_description($RESOURCE_ID,$VALUE)
+      name:
+        get: serviceop:resource_registry.read($RESOURCE_ID)->name
 
   ExampleResource:
     agent: False

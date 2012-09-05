@@ -1,7 +1,9 @@
 name: agent_management
 
 docstring: |
-  The Agent Management Service is the service that manages the Agent Definitions and the running Agents in the system.
+  The Agent Management Service is the service that manages Agent Definitions, Agent Instance
+  configurations and running Agents in the system. It also provides an agent facade onto the
+  services by resource type.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Agent+Management+Service
 
@@ -86,6 +88,47 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
+  # -----------------
+  # Generic resource CRUD interface
+
+  create_resource:
+    docstring: |
+      Creates an arbitrary resource object via its defined create function, so that it
+      can successively can be accessed via the agent interface.
+    in:
+      resource: !Resource
+    out:
+      resource_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_resource:
+    docstring: Updates an existing resource via the configured service operation.
+    in:
+      resource: !Resource
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_resource:
+    docstring: Returns an existing resource via the configured service operation.
+    in:
+      resource_id: ""
+    out:
+      resource: !Resource
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_resource:
+    docstring: Deletes an existing resource via the configured service operation.
+    in:
+      resource_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Resource agent interface

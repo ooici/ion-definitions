@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Instrument+Management+Service
 
-dependencies: [resource_registry, data_acquisition_management, data_product_management, process_dispatcher, pubsub_management]
+dependencies: [resource_registry, data_acquisition_management, data_product_management, dataset_management, process_dispatcher, pubsub_management]
 
 methods:
   # -----------------
@@ -211,6 +211,8 @@ methods:
       platform specific agent/driver instance combination.
     in:
       platform_agent_instance: !PlatformAgentInstance
+      platform_agent_id: ""
+      platform_device_id: ""
     out:
       platform_agent_instance_id: ""
     throws:
@@ -242,7 +244,24 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  start_platform_agent_instance:
+    docstring: |
+      Launch an platform agent instance process and return its process id. Agent instance resource
+      must exist and be associated with an PlatformDevice
+    in:
+      platform_agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
 
+  stop_platform_agent_instance:
+    docstring: Deactivate the platform agent instance process
+    in:
+      platform_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
   # -----------------
   # Working with PlatformAgent definition resources
 

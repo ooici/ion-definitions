@@ -108,17 +108,13 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References one Stream on which a Transform publishes on
   - predicate: hasStream
-    domain: [Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint]
+    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint]
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition
     domain: [Stream, InstrumentModel, DataProcessDefinition]
     range: [StreamDefinition]
     docstring: References the precise definition of a Stream's contents
-  - predicate: hasSubscription
-    domain: [Stream]
-    range: [Subscription]
-    docstring: References a Subcription resulting in messages matching a defined criteria
   - predicate: hasTopic
     domain: [Stream, Topic, Subscription]
     range: [Topic]

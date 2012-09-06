@@ -48,6 +48,7 @@ methods:
       description: ''
     out:
       stream_id: ""
+      stream_route: {}
     throws:
       Conflict: The named stream already exists
 

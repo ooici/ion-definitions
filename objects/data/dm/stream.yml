@@ -10,3 +10,9 @@ StreamDefinition: !Extends_InformationResource
   stream_type: ""
 
 
+# Encapsulation for publishing on streams
+Packet:
+  route: !StreamRoute
+  stream_id: ""
+
+

@@ -14,5 +14,6 @@ StreamDefinition: !Extends_InformationResource
 Packet:
   route: !StreamRoute
   stream_id: ""
+  body: {}
 
 

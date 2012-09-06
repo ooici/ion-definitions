@@ -126,6 +126,15 @@ DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)
 
 ---
 
+# Describes a range or extent over the dimensions that it represents.
+# The frame of reference can include dimensions of geodetic (earth-based) space,
+# time, or other cardinal or ordinal axes, and can be specified in absolute terms
+# or relative to another frame of reference.
+FrameOfReference: !Extends_InformationResource
+  constraint_list: [] # set of constraints; GeospatialBounds, temporal bounds, composite, etc
+
+---
+
 # Describes a type of agent. Abstract base type.
 AgentDefinition: !Extends_InformationResource
   agent_version: ""

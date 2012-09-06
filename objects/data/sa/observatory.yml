@@ -1,5 +1,5 @@
 # Represents a reference designator within an observatory, with geospatial and temporal bounds. Abstract base type.
-Site: !Extends_Resource
+Site: !Extends_FrameOfReference
   # Specified bounds in 2 or 3 dimensions within which entity exists
   # Mandatory
   geospatial_constraint: !GeospatialBounds

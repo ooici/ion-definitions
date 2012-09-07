@@ -24,7 +24,7 @@ DeviceMountingPosition:
 
 # Describes an assignment of a device to a specific observatory position,
 # typically for a specified period of time.
-Deployment: !Extends_InformationResource
+Deployment: !Extends_FrameOfReference
 
   # Specified time constraint within which entity exists
   temporal_constraint: ""

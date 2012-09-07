@@ -91,3 +91,7 @@ UIEmbeddedScreenElement: !Extends_UIResource
   position: ""                     # Position within parent
   data_path: ""
   data_path_description: ""
+
+# UI specs as generated during import
+UISpec: !Extends_UIResource
+  spec: {}

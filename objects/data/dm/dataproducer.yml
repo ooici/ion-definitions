@@ -15,6 +15,7 @@ InstrumentProducerContext: !Extends_AbstractProducerContextType
   activation_time: ""
   deactivation_time: ""
   execution_configuration: {}
+  deployed_site_id: ""
 
 # Contains the context for an external data set
 ExtDatasetProducerContext: !Extends_AbstractProducerContextType

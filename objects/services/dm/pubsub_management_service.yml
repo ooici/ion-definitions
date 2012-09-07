@@ -67,6 +67,27 @@ methods:
       stream_id: ""
     out:
       success: True
+
+  persist_stream:
+    docstring: ""
+    in: 
+      stream_id: ""
+    out:
+      success: True
+
+  unpersist_stream:
+    docstring: ""
+    in: 
+      stream_id: ""
+    out:
+      success: True
+
+  is_persisted:
+    docstring: ""
+    in:
+      stream_id: ""
+    out:
+      persisted: False
   
   #---------
   

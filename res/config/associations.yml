@@ -103,6 +103,9 @@ AssociationDefinitions:
     domain: [ActorIdentity]
     range: [NotificationRequest]
     docstring: References a NotificationRequest (standing notification rule) for a user.
+  - predicate: hasSubscription
+    domain: [IngestionConfiguration]
+    range: [Subscription]
   - predicate: hasOutStream
     domain: [Transform]
     range: [Stream]

@@ -18,9 +18,9 @@ methods:
       query: {}
       delivery_format: {}
       replay_type: ""
+      stream_id: ""
     out:
       replay_id: ""
-      stream_id: ""
 
   delete_replay:
     in:

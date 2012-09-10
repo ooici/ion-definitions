@@ -1,0 +1,39 @@
+name: terrestrial_endpoint
+
+docstring: Interface for 2caa shoreside enpoint.
+
+dependencies: []
+
+
+methods:
+  enqueue_command:
+    docstring: |
+        Enqueue a command for remote processing.
+    in:
+        command: !RemoteCommand
+        link: False
+    out:
+        command: !RemoteCommand
+
+  get_queue:
+    docstring: |
+        Retrieve queue contents by resource id.
+    in:
+        resource_id: ''
+    out: []
+
+  clear_queue:
+    docstring: |
+        Clear queue by resource id.
+    in:
+        resource_id: ''
+    out:
+        
+  pop_queue:
+    docstring: |
+        Pop command from queue by resource id and command index.
+    in:
+        resource_id: ''
+        index: 0
+    out:
+        

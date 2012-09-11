@@ -20,7 +20,8 @@ methods:
         Retrieve queue contents by resource id.
     in:
         resource_id: ''
-    out: []
+    out:
+        queue: []
 
   clear_queue:
     docstring: |
@@ -37,3 +38,9 @@ methods:
         index: 0
     out:
         
+  get_port:
+    docstring: |
+        Get the terrestrial server port number.
+    in:
+    out:
+        port: 0

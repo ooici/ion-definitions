@@ -7,6 +7,9 @@ InstrumentDevice: !Extends_Device
   # Provides offset, orientation, etc. information needed to calculate device location from platform location
   has_platform_position: ""
   #datum_characterization: "" #later will be an object
+  hardware_version: ""
+  # The date of the last instrument calibration, expressed in ISO format. Manually managed in R2.
+  last_calibration_datetime: ""
 
 # Specifies a distinguished type of instruments, derived from the manufacturer's
 # model number, based on common attributes.
@@ -43,6 +46,8 @@ InstrumentModel: !Extends_DeviceModel
   #secondary_interface: []
   #baud_supported: []
   #writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
+  instrument_classes_supported: []  # The list of instrument classes this instrument model can support
+  
 
 # Defines an agent/driver combination compatible with a specific instrument model.
 InstrumentAgent: !Extends_AgentDefinition

@@ -117,9 +117,11 @@ AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
 # Represents a separate information attached to a resource, such as a PDF or image file.
 Attachment: !Extends_InformationResource
   attachment_type: !AttachmentType
+  # type of attachment (PDF document, PNG image, etc); expressed as standard MIME types
   content_type: ""  # MIME type
   content: ""
   object_id: ""   # Associated object (resource) ID, for easier indexing
+  # Keywords indicating the type of attachment (e.g. user manual, log)
   keywords: []
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=SERVICE)

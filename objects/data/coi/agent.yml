@@ -23,15 +23,6 @@ AgentCommandResult:
   #@ContentType=list,str
   result: ""
   
-RemoteCommand:
-  resource_id: ''
-  command: ''
-  args: []
-  kwargs: {}
-  command_id: 0
-  time_queued: 0
-  time_completed: 0
-  result: ''
     
 
 

@@ -96,6 +96,15 @@ ResourceAgentEvent: !Extends_Event
 
 ---
 
+PlatformEvent: !Extends_ResourceAgentEvent
+
+---
+
+PlatformTelemetryEvent: !Extends_PlatformEvent
+  status: !enum (name=TelemetryStatusType, values=(AVAILABLE, UNAVAILABLE), default=UNAVAILABLE)
+
+---
+
 ResourceAgentCommandEvent: !Extends_ResourceAgentEvent
   command: ""
   execute_command: ""

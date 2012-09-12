@@ -10,3 +10,12 @@ DeviceCommandResult:
 DeviceConfiguration:
   configuration: {}
 
+RemoteCommand:
+  resource_id: ''
+  command: ''
+  args: []
+  kwargs: {}
+  command_id: ''
+  time_queued: 0
+  time_completed: 0
+  result: ''

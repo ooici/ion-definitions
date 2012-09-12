@@ -134,7 +134,10 @@ ObservatoryComputedAttributes: !Extends_ComputedAttributes
 
   #@Method
   power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
-  
+
+  #@Method
+  data_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+
   #@Method
   location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
 

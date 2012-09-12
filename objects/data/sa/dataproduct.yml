@@ -28,6 +28,12 @@ DataProduct: !Extends_InformationResource
   # Miscellaneous information not already captured in attributes
   comment: ""
 
+  # core data product a short code like PRESWAT
+  ooi_short_name: ""
+
+  # synonyms to facilitate searching
+  synonyms: []  # a list of strings
+
   # TODO: remove these from the gateway call
   #provider_project: ""
   #contact: ""

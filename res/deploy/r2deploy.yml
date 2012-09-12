@@ -2,7 +2,7 @@ type: release
 name: r2deploy
 version: 0.2
 description: Release 2 deployment configuration
-ion: 0.1
+ion: 2.0
 apps:
   ##################################
   # CORE SERVICES
@@ -58,12 +58,16 @@ apps:
   ##################################
 
   ##### COI SERVICES
-#  - name: agent_management
-#    processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
-#
+  - name: agent_management
+    processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
+    deploy:
+      bootlevel: 10
+
 #  - name: conversation_management
 #    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
-#
+#    deploy:
+#      bootlevel: 10
+
   - name: object_management
     processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
     deploy:
@@ -81,11 +85,16 @@ apps:
 
 
   #### CEI Services
+
 #  - name: epu_management
 #    processapp: [epu_management, ion.services.cei.epu_management_service, EpuManagementService]
-#
+#    deploy:
+#      bootlevel: 10
+
 #  - name: execution_engine_management
 #    processapp: [execution_engine_management, ion.services.cei.execution_engine_management_service, ExecutionEngineManagementService]
+#    deploy:
+#      bootlevel: 10
 
   - name: process_dispatcher
     processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
@@ -101,13 +110,8 @@ apps:
 #
 #  - name: provisioner
 #    processapp: [provisioner, ion.services.cei.provisioner_service, ProvisionerService]
-#
-#  - name: taskable_resource_management
-#    processapp: [taskable_resource_management, ion.services.cei.taskable_resource_management_service, TaskableResourceManagementService]
-#
-#  - name: taskable_resource_planner
-#    processapp: [taskable_resource_planner, ion.services.cei.taskable_resource_planner_service, TaskableResourcePlannerService]
-
+#    deploy:
+#      bootlevel: 10
 
   #### DM Services
   - name: pubsub_management

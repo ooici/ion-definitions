@@ -22,104 +22,175 @@ apps:
     processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
 
 
-# COI services
+  ##################################
+  # CORE SERVICES
+  # Bootstrapper app performs initializations
+  ##################################
+
+  - name: event_persister
+    processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
+    deploy:
+      bootlevel: 1
+
+  - name: bootstrapper1
+    processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    deploy:
+      bootlevel: 2
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
 
   - name: resource_registry
-    description: Resource registry service
-    version: 0.1
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-
-  - name: identity_management
-    version: 0.1
-    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
-
-  - name: policy_management
-    version: 0.1
-    processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
-
-  - name: org_management
-    version: 0.1
-    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
-
-  - name: service_gateway
-    version: 0.1
-    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+    deploy:
+      bootlevel: 5
 
   - name: directory
-    version: 0.1
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+    deploy:
+      bootlevel: 10
 
-  - name: datastore
-    description: Data store service
-    version: 0.1
-    processapp: [datastore, ion.services.coi.datastore_service, DataStoreService]
+  - name: identity_management
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
+    deploy:
+      bootlevel: 10
 
-  - name: resource_registry
-    description: Resource registry service
-    version: 0.1
-    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+  - name: policy_management
+    processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
+    deploy:
+      bootlevel: 10
 
-        
+  - name: exchange_management
+    processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
+    deploy:
+      bootlevel: 10
+
+  - name: org_management
+    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
+    deploy:
+      bootlevel: 10
+
+  #### CEI Services
+
+  - name: process_dispatcher
+    processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
+    deploy:
+      bootlevel: 10
+
 
 # DM services
 
   - name: pubsub_management
-    version: 0.1
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
-
-  - name: transform_management
-    version: 0.1
-    processapp: [transform_management, ion.services.dm.transformation.transform_management_service, TransformManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: dataset_management
-    version: 0.1
     processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: ingestion_management
-    version: 0.1
     processapp: [ingestion_management, ion.services.dm.ingestion.ingestion_management_service, IngestionManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: data_retriever
-    version: 0.1
     processapp: [data_retriever, ion.services.dm.inventory.data_retriever_service, DataRetrieverService]
+    deploy:
+      bootlevel: 10
 
   - name: index_management
-    version: 0.1
     processapp: [index_management, ion.services.dm.inventory.index_management_service, IndexManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: user_notification
-    version: 0.1
     processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
+    deploy:
+      bootlevel: 10
 
-  - name: last_update_cache_launcher
-    version: 0.1
-    processapp: [cache_launcher, ion.processes.data.cache_launcher, CacheLauncher ]
-    config:
-      process:
-        number_of_workers: 4
+#  - name: preservation_management
+#    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
+#    deploy:
+#      bootlevel: 10
 
+  - name: catalog_management
+    processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
+    deploy:
+      bootlevel: 10
+
+  - name: discovery
+    processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
+    deploy:
+      bootlevel: 10
 
 
 # SA services
 
   - name: data_acquisition_management
-    version: 0.1
     processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: data_product_management
-    version: 0.1
     processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: data_process_management
-    version: 0.1
     processapp: [data_process_management, ion.services.sa.process.data_process_management_service, DataProcessManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: instrument_management
-    version: 0.1
     processapp: [instrument_management, ion.services.sa.instrument.instrument_management_service, InstrumentManagementService]
+    deploy:
+      bootlevel: 10
 
   - name: observatory_management
-    version: 0.1
     processapp: [observatory_management, ion.services.sa.observatory.observatory_management_service, ObservatoryManagementService]
+    deploy:
+      bootlevel: 10
+
+
+  - name: bootstrapper2
+    processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    deploy:
+      bootlevel: 20
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_process_dispatcher, BootstrapProcessDispatcher]
+          config:
+            bootstrap:
+              processes:
+                ingestion:
+                  datastore_name: datasets
+                  queue_name:     science_data.science_granule_ingestion
+                  workers: 1
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_transform, BootstrapTransform]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_index, BootstrapIndex]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_ingestion, BootstrapIngestion]
+          config:
+            ingestion:
+              exchange_point: science_data
+              queues:
+                - name: science_granule_ingestion
+                  type: SCIDATA
+                  datastore_name: datasets
+                - name: binary_ingestion
+                  type: BINARY
+                  datastore_name: filesystem
+
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
+
+  # LAST SERVICE GATEWAY SERVICE
+  - name: service_gateway
+    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+    deploy:
+      bootlevel: 30
+
 
     

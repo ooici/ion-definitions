@@ -354,6 +354,35 @@ methods:
     throws:
       BadRequest: incompatible parameters
       
+  find_resources_ext:
+    docstring: |
+      Utility method for finding resources via various attributes, including resource type,
+      life cycle state, name, keyword, nested object type. Allows to influence order and number
+      of results. Legal attribute combinations are:
+        restype (with optional lcstate)
+        lcstate
+        keyword (with optional restype)
+        nested_type (with optional restype)
+        name (with optional restype)
+      Returns a tuple (list_of_resources, list_of_matches) if id_only == False or
+      (list_of_resource_ids, list_of_matches) otherwise. List_of_matches is a list of
+      dicts with keys (type, lcstate, name, id), providing further information about the
+      matching resources.
+    in:
+      restype: ""
+      lcstate: ""
+      name: ""
+      keyword: ""
+      nested_type: ""
+      limit: 0
+      skip: 0
+      descending: False
+      id_only: False
+    out:
+      list: []
+    throws:
+      BadRequest: incompatible parameters
+
 #-------
 
   get_resource_extension:

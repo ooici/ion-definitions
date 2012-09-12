@@ -14,6 +14,8 @@ DataProduct: !Extends_InformationResource
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds
 
+  geospatial_coordinate_reference_system: 
+
   # temporal domain
   temporal_domain: {}
 
@@ -22,6 +24,9 @@ DataProduct: !Extends_InformationResource
 
   # lists key words and phrases that are relevant to the dataset
   keywords: {}
+
+  # Miscellaneous information not already captured in attributes
+  comment: ""
 
   # TODO: remove these from the gateway call
   #provider_project: ""
@@ -101,6 +106,12 @@ DataProduct: !Extends_InformationResource
 
   # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""
+
+  # The datetime the data were first created
+  data_creation_datetime: ""
+
+  # The datetime when the data were made publicly available
+  data_publish_datetime: ""
 
 
 ---

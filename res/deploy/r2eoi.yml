@@ -2,53 +2,63 @@ type: release
 name: Release2Configuration EOI services
 version: 0.1
 description: Release 2 EOI integration test configuration
-ion: 0.0.1
+ion: 2.0
 apps:
-##################################
+  ##################################
   # CORE SERVICES
   # Bootstrapper app performs initializations
   ##################################
 
   - name: event_persister
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
-    bootlevel: 1
+    deploy:
+      bootlevel: 1
 
   - name: bootstrapper1
     processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
-    bootlevel: 2
+    deploy:
+      bootlevel: 2
     config:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
 
-  - name: directory
-    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-    bootlevel: 10
-
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 5
+
+  - name: directory
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+    deploy:
+      bootlevel: 10
 
   - name: identity_management
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 10
 
   - name: policy_management
     processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
-    bootlevel: 10
-
-  - name: org_management
-    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 10
 
   - name: exchange_management
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 10
+
+  - name: org_management
+    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
+    deploy:
+      bootlevel: 10
+
 
 # DM services
 
   - name: pubsub_management
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 10
 
 #  - name: transform_management_service
 #    version: 0.1
@@ -58,21 +68,25 @@ apps:
 
   - name: data_acquisition_management
     processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 10
 
   - name: data_product_management
     processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 10
 
 # EOI services
 
   - name: external_data_agent_management
     processapp: [external_data_agent_management, ion.services.eoi.external_observatory_agent_service, ExternalObservatoryAgentService]
-    bootlevel: 10
+    deploy:
+      bootlevel: 10
 
   - name: bootstrapper2
     processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
-    bootlevel: 20
+    deploy:
+      bootlevel: 20
     config:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]

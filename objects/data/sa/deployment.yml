@@ -29,4 +29,12 @@ Deployment: !Extends_FrameOfReference
   # Specified time constraint within which entity exists
   temporal_constraint: ""
 
-  device_mounting_positions: [] # a list of DeviceMountingPosition objects
+  # a list of DeviceMountingPosition objects
+  device_mounting_positions: []
+
+  # The planned initiation of the deployment
+  start_datetime_planned: ""
+  # The planned end of the deployment
+  end_datetime_planned: ""
+
+  

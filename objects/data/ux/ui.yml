@@ -12,7 +12,6 @@ UIGraphicType: !Extends_UIResource
 # UI definition for graphic element in the UI
 UIGraphic: !Extends_UIResource
   graphic_type_id: ""    # FK
-  filename: ""
 
 # UI definition for an information level in the UI
 UIInformationLevel: !Extends_UIResource
@@ -31,7 +30,7 @@ UIObjectType: !Extends_UIResource
 # UI definition for an ION resource attribute or object field that can occur within a screen element
 UIResourceAttribute: !Extends_UIResource
   ci_id: ""              # FK. Reference to CI attributes database
-  information_level: 0   # Direct inclusion of level as numeric value, not FK
+  information_level: ""  # Direct inclusion of level as numeric value, not FK
   object_type_id: ""     # FK
   resource_type_id: ""   # FK
   base_attribute_id: ""  # FK
@@ -43,7 +42,7 @@ UIObjectField: !Extends_UIResource
   object_type_id: ""        # FK
   object_field_type_id: ""  # FK.
   base_field_id: ""         # FK.
-  information_level: 0      # Direct inclusion of level as numeric value, not FK
+  information_level: ""     # Direct inclusion of level as numeric value, not FK
 
 # UI definition for a visible element of the UI. Note this is a composite structure.
 UIScreenElement: !Extends_UIResource
@@ -86,7 +85,7 @@ UIEmbeddedScreenElement: !Extends_UIResource
   embedding_screen_element_id: ""  # FK. Composite element (parent)
   embedded_screen_element_id: ""   # FK. Embedded element (child)
   override_graphic_id: ""          # FK for override
-  override_information_level: 0    # Level override
+  override_information_level: ""   # Level override
   override_screen_label_id: ""     # FK for override
   position: ""                     # Position within parent
   data_path: ""

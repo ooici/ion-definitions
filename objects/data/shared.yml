@@ -4,13 +4,16 @@
 ContactInformation:
   first_name: ""
   name: ""
-  address: ""
+  street_address: ""
   city: ""
   postalcode: ""
   state: ""
   country: ""
   phone: ""
   email: ""
+  administrative_area: ""
+  position_name: ""
+  url: ""
   variables:   # Extension set of name/value pairs
   - name: ""
     value: ""
@@ -74,6 +77,8 @@ Device: !Extends_TaskableResource
   serial_number: ""
   # Whether the device can be sent a control message
   controllable: True
+  # References to pages about that individual device (e.g. Configuration diagram)
+  reference_urls: []
   # A device that does not have a communication port for real-time monitoring
   #monitorable: True
   # Additional attributes required for specific devices
@@ -97,6 +102,8 @@ DeviceModel: !Extends_InformationResource
   height: 0.0
   # The name of the manufacturer
   manufacturer_url: ""
+  # Location(s) where additional information about this model can be obtained
+  reference_urls: []
   # The model name/code provided by the manufacturer
   model: ""
   # Additional attributes required for specific models

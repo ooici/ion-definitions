@@ -1,4 +1,5 @@
-# base configuration for log levels
+#
+# base configuration for log levels for DEVELOPERS
 #
 # To define local overrides, add a file "logging.local.yml"
 #
@@ -11,8 +12,6 @@ formatters:
     (): 'pyon.util.log.RPCStackFormatter'
     format: '%(asctime)s %(levelname)s %(threadName)s %(name)s:%(lineno)d %(message)s'
     datefmt:
-  raw:
-    (): 'ooi.logging.format.RawRecordFormatter'
 
 handlers:
   console:
@@ -34,15 +33,6 @@ handlers:
     # or with DNS lookup in subdomain (ie- graylog.staging.oceanobservatories.org)
     host: graylog
 #    host: graylog.oceanobservatories.org
-#
-# LogRecord objects for later forwarding to graylog. see documentation for: ooi.logging.replay
-  raw:
-    class: logging.handlers.RotatingFileHandler
-    formatter: raw
-    level: TRACE
-    filename: logs/container-log.raw
-    maxBytes: 1024000
-    backupCount: 20
 
 root:
   handlers: [console, file]
@@ -57,4 +47,3 @@ root:
 #loggers:
 #  pyon.container.cc:
 #    level: TRACE
-#

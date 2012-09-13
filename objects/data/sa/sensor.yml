@@ -42,13 +42,5 @@ SensorModel: !Extends_DeviceModel
   # Mandatory
   manufacturer: !Institution
 
-  # When item was built
-  #manufacturer_date: ""
-
-  # Location(s) where additional information about this model can be obtained
-  #reference_url: []
-
-  # A description of the characteristics of the data contents such as accuracy and precision
-  #datum_characteristics: ""     # this is a DatumCharacterization object
   
   

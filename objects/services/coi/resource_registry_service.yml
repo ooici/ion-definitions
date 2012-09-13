@@ -150,6 +150,7 @@ methods:
       attachment first.
     in:
       resource_id: ""
+      keyword: ""
       limit: 0
       descending: False
       include_content: False

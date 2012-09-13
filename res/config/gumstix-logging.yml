@@ -45,7 +45,7 @@ handlers:
     backupCount: 20
 
 root:
-  handlers: [console, file]
+  handlers: [raw, file]
   level: INFO
 
 # specific overrides for packages

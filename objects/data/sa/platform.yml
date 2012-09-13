@@ -7,7 +7,7 @@ PlatformDevice: !Extends_Device
   platform_family: ""
 
   # deployment point of platforms; platform may vary in location around that point
-  nominal_location: !GeospatialLocation
+  nominal_location: !GeospatialPoint
   
 
 # Specifies a distinguished type of platform, derived from the manufacturer's model number

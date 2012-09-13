@@ -176,6 +176,13 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 
   #@Method
   metadata_update_datetime: !ComputedStringValue   # The time the data metadata (attributes) were last updated
+
+  #@Method
+  parameters: []   # A set of Parameter objects describing each variable in this data product
+
+  #@Method
+  data_url: []   # A unique id for this data product
+
 ---
 
 #This object contains additional information associated with a data product.

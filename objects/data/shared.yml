@@ -2,7 +2,10 @@
 
 # Data structure for representing contact information uniformly across resources
 ContactInformation:
+  organization_name: ""
   first_name: ""
+  individual_names_given: ""
+  individual_name_family: ""
   name: ""
   street_address: ""
   city: ""
@@ -12,8 +15,9 @@ ContactInformation:
   phone: ""
   email: ""
   administrative_area: ""
-  position_name: ""
-  url: ""
+  position_name: ""        # the position or role of the contact
+  roles: []
+  url: ""                  # url for the contact
   variables:   # Extension set of name/value pairs
   - name: ""
     value: ""
@@ -25,29 +29,36 @@ Institution:
   email: ""
   website: ""
 
+GeospatialCoordinateReferenceSystem:
+  geospatial_geodetic_crs: ""
+  geospatial_vertical_crs: ""
+  geospatial_latitude_units: ""
+  geospatial_longitude_units: ""
+  geospatial_vertical_units: ""
+  geospatial_vertical_positive: ""
+
+
 # Data structure for representing geospatial bounds uniformly across resources
 GeospatialBounds:
-  geospatiallatmin: 0.0
-  geospatiallatmax: 0.0
-  geospatiallatunits: ""
-  geospatiallatresolution: 0.0
-  geospatiallonmin: 0.0
-  geospatiallonmax: 0.0
-  geospatiallonunits: ""
-  geospatiallonresolution: 0.0
-  geospatialverticalmin: 0.0
-  geospatialverticalmax: 0.0
-  geospatialverticalunits: ""
-  geospatialverticalresolution: 0.0
-  geospatialverticalpositive: 0.0
-  minbottomdepth: 0.0
-  maxbottomdepth: 0.0
-  depthunits: ""
-  depthverticalpositive: 0.0
+  geospatial_latitude_limit_north: 0.0
+  geospatial_latitude_limit_south: 0.0
+  geospatial_latitude_limit_east: 0.0
+  geospatial_latitude_limit_west: 0.0
+  geospatial_vertical_min: 0.0
+  geospatial_vertical_max: 0.0
 
-GeospatialLocation:
-  lat: 0.0
-  lon: 0.0
+
+GeospatialPoint:
+  geospatial_vertical_location: ""
+  geospatial_vertical_accuracy: ""
+  geospatial_latitude: ""
+  geospatial_longitude: ""
+  geospatial_horizontal_accuracy: ""
+
+
+TemporalBounds:
+  start_time: ""
+  end_time: ""
 
 ---
 
@@ -68,6 +79,18 @@ DataFormat:
   value_format: ""
   nominal_sampling_rate_minimum: "" # Hz
   nominal_sampling_rate_maximum: "" # Hz
+
+
+Parameter:
+  standard_name: ""     # from CF standard names
+  long_name: ""
+  ooi_short_name: ""    # seven character code
+  units: ""
+  fill_value: ""
+  cdm_data_type: ""     # the THREDDS data type
+  variable_reports: ""  # information on the variable accuracy
+  axis: ""              # for CF compliance, holds X, Y, Z or T for vars holding lat, lon, depth and time info
+  code_reports: ""      # provide the meaning of flags
 
 ---
 

@@ -35,6 +35,14 @@ methods:
     out:
       success: True
 
+  compare_stream_definition:
+    docstring: ""
+    in:
+      stream_definition1_id: ""
+      stream_definition2_id: ""
+    out:
+      equal: False
+
   #---------
   
   create_stream:

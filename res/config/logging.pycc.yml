@@ -6,13 +6,6 @@ handlers:
     mode: w
     filename: logs/pycc_logfile.txt
 
-loggers:
-  pyon:
-    handlers: [pycc_file]
-    level: INFO
-  ion:
-    handlers: [pycc_file]
-    level: INFO
-  prototype:
-    handlers: [pycc_file]
-    level: INFO
+root:
+  handlers: [pycc_file]
+  level: INFO

@@ -14,7 +14,7 @@ DataProduct: !Extends_InformationResource
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds
 
-  geospatial_coordinate_reference_system: 
+  geospatial_coordinate_reference_system: !GeospatialCoordinateReferenceSystem
 
   # temporal domain
   temporal_domain: {}
@@ -44,9 +44,9 @@ DataProduct: !Extends_InformationResource
   #provider_acknowledgement: ""
   acknowledgement: ""
 
-  # a link to the (time-varying) data product
-  # Mandatory
-  data_url: ""
+    # a link to the (time-varying) data product
+    # Mandatory
+#    data_url: ""  moved to computed
 
   # one or more of the topic categories from ISO 19115
   # Mandatory

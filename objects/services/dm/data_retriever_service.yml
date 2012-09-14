@@ -27,6 +27,12 @@ methods:
       replay_id: ""
     out:
 
+  read_process_id:
+    in:
+      replay_id: ""
+    out:
+      process_id: ""
+
   start_replay:
     docstring: Replays data from data store by streaming to an exchange name.
     in:

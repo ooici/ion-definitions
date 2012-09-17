@@ -1,31 +1,19 @@
-# Describes the structure of topics used for message routing on one Exchange Point.
-TopicTopology: !Extends_InformationResource
-  topology_type: "topic_tree"
-  dimensions: []   # Components of a topic that can be routed
-
-# Describes the format, structure, and characteristics of a stream and its granules (data records).
-StreamDefinition: !Extends_InformationResource
-  # A bit awkward - the stream definition resource contains a stream definition container?
-  container: !StreamDefinitionContainer
-
-# Represents an identified, unbounded sequence of data granules (messages) published with a unique topic.
 Stream: !Extends_InformationResource
-  # Specified by create_stream
-  url: ""
-  encoding: ""
-  original: True
-
-  # managed by pubsub
-  producers: []    # A list of processes permitted to produce on the stream
+  stream_route: !StreamRoute
   persisted: False
 
-# Description for accessing a stream via the Exchange
-StreamRoute:
+Topic: !Extends_InformationResource
   exchange_point: ""
-  routing_key: ""
-  credentials: {}
+
+StreamDefinition: !Extends_InformationResource
+  parameter_dictionary: {}
+  stream_type: ""
 
 
-
+# Encapsulation for publishing on streams
+Packet:
+  route: !StreamRoute
+  stream_id: ""
+  body: {}
 
 

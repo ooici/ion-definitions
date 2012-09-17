@@ -103,26 +103,24 @@ AssociationDefinitions:
     domain: [ActorIdentity]
     range: [NotificationRequest]
     docstring: References a NotificationRequest (standing notification rule) for a user.
+  - predicate: hasSubscription
+    domain: [IngestionConfiguration]
+    range: [Subscription]
   - predicate: hasOutStream
     domain: [Transform]
     range: [Stream]
     docstring: References one Stream on which a Transform publishes on
   - predicate: hasStream
-    domain: [Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint, Subscription]
+    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint]
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition
     domain: [Stream, InstrumentModel, DataProcessDefinition]
     range: [StreamDefinition]
     docstring: References the precise definition of a Stream's contents
-  - predicate: hasSubscription
-    domain: [IngestionConfiguration, Transform, ExchangePoint]
-    range: [Subscription]
-    docstring: References a Subcription resulting in messages matching a defined criteria
-  - predicate: hasTopology
-    domain: [ExchangePoint, Stream, Subscription]
-    range: [TopicTopology]
-    docstring: References a structure that defines the buildup of Streams for an ExchangePoint
+  - predicate: hasTopic
+    domain: [Stream, Topic, Subscription]
+    range: [Topic]
   - predicate: hasTransform
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]

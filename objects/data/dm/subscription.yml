@@ -1,18 +1,5 @@
-# Represents a standing consumer request to an Exchange Point for receiving a sequence of messages with a
-# provided set of common characteristics, such as being published on a Stream.
 Subscription: !Extends_InformationResource
-  subscription_type: !enum (name=SubscriptionTypeEnum, values=(STREAM_QUERY, EXCHANGE_QUERY, CONTENT_QUERY), default=STREAM_QUERY)
-  query: {}           # Specific query expression
-  exchange_name: ""   # Exchange name of queue for message delivery
-  exchange_point: ""  # Exchange point where the messages come from
-  is_active: False    # Enabled or not
-
-# These objects do not yet specify the exchange point for the subscription. That will come later and be
-# expressed by association.
-
-StreamQuery:
-  stream_ids: []
-
-ExchangeQuery:
-  all: True
+  exchange_points: []
+  exchange_name: ""
+  activated: False
 

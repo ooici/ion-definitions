@@ -13,7 +13,8 @@ methods:
     in:
       data_product: !DataProduct
       stream_definition_id: ""
-      parameter_dictionary: ""
+      parameter_dictionary: {}
+      exchange_point: ""
     out:
       data_product_id: ""
 
@@ -37,6 +38,12 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  remove_streams:
+    in:
+      data_product_id: ""
+    out:
+      stream_ids: []
 
   find_data_products:
     in:

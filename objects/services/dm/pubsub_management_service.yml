@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+PubSub+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, exchange_management]
 
 methods:
 

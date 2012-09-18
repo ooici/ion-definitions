@@ -58,15 +58,15 @@ InstrumentAgent: !Extends_AgentDefinition
   # (SYS) module for driver client source code
   driver_client_module: ""
   # (SYS) class for driver client source code
-  driver_class_client: ""
-  time_source: ""
+#  driver_class_client: ""
+#  time_source: ""
 
 # Describes parameters for an instance of an instrument agent for a specific device.
 InstrumentAgentInstance: !Extends_AgentInstance
   # (SYS) module for driver source code
-  driver_module: ""
+#  driver_module: ""
   # (SYS) class for driver source code
-  driver_class: ""
+#  driver_class: ""
   svr_addr: ""
   cmd_port: 0
   evt_port: 0

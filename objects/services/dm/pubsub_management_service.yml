@@ -213,7 +213,6 @@ methods:
     out:
       streams: []
 
-
   find_topics_by_topic:
     docstring: ""
     in:
@@ -222,7 +221,13 @@ methods:
     out:
       topics: []
   
-
+  find_definition_for_stream:
+    docstring: ""
+    in:
+      stream_id: ""
+      id_only: False
+    out:
+      stream_definition: {}
   
 
 

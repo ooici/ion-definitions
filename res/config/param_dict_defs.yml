@@ -2,5 +2,5 @@
 
 # Example parameter dictionary definition
 sample_param_dict: ['lat', 'lon', 'time', 'depth', 'salinity', 'temp', 'pressure', 'conductivity']
-ctd_parsed_param_dict: ['depth', 'conductivity', 'temp']
+ctd_parsed_param_dict: ['lat', 'lon', 'time', 'depth', 'salinity', 'temp', 'pressure', 'conductivity']
 ctd_raw_param_dict: ['time']

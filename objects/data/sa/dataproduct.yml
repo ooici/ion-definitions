@@ -55,7 +55,7 @@ DataProduct: !Extends_InformationResource
 
   # one or more of the topic categories from ISO 19115
   # Mandatory
-  iso_topic_category: ""
+  iso_topic_category: []
 
   # Selection from IOOS controlled vocabulary for parameters
   ioos_category: ""
@@ -79,6 +79,7 @@ DataProduct: !Extends_InformationResource
   #data_contact: !ContactInformation
 
   # See OOI Data Products document for latest (not necessarily normative) definitions and controlled vocabulary
+  # The quality control level of the data product.  A = no QC, b = automated QC, c = human QC
   # Mandatory
   quality_control_level: ""
 

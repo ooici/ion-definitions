@@ -11,6 +11,13 @@ InstrumentDevice: !Extends_Device
   # The date of the last instrument calibration, expressed in ISO format. Manually managed in R2.
   last_calibration_datetime: ""
 
+
+
+
+---
+PrimaryInterface: !enum (values=(RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE), default=RS232)
+
+---
 # Specifies a distinguished type of instruments, derived from the manufacturer's
 # model number, based on common attributes.
 InstrumentModel: !Extends_DeviceModel
@@ -42,7 +49,8 @@ InstrumentModel: !Extends_DeviceModel
   power_supply_voltage_maximum: 0.0
   #instrument_class: ""  # values=OPTAA, CAMDS, CAMHD, CTDAV, CTDBP, CTDGV, CTDMO, CTDPF, PPSDN, OTISF, FLORT, FLORD, FDCHP, FDCLP, HYDBB, HYDLF, HPIES, MASSP, METBK, NUTR4, NUTNR, DOFST, DOSTA, PARAD, PCO2A, PCO2W, PHSEN, ZPLSC, ZPLSG, BOTPT, PRESF, PREST, OSBSBB, OBSBK, OBSSP, OBSSK, SPKIR, THSPH, TRHPH, TMPSF, VELPT, VELPT, VEL3D, ADCPT, ADCPV, ADCPS, ADCPA, OSMOI, RASFL, WAVSS, default=OPTAA
   #data_record_description: "" #later will be an object
-  primary_interface: "" # values=RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE, default=RS232
+  # the principal interface by which the instrument communicates (typically via its platform) with OOI
+  primary_interface: !PrimaryInterface   # values=RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE, default=RS232
   #secondary_interface: []
   #baud_supported: []
   #writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)

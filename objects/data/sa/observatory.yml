@@ -15,7 +15,7 @@ Site: !Extends_FrameOfReference
 # and temporal bounds. This Observatory Site can have Subsites, Platform and Instrument Sites.
 Observatory: !Extends_Site
 
-  url: ""
+  url: ""  # URL to an external homepage about the observatory
 
   
 #Represents a reference designator that designates a hierarchical substructure within an observatory,

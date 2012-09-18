@@ -134,6 +134,9 @@ container:
     trusted_originators: []  #Optional list of trusted addresses; an empty list means open system
     user_cache_size: 2000    #The number of user's whos role data is cached in the gateway
 
+  flask_webapp:
+    port: 8080
+
       
 # TODO: Rename to "container". See there.
 cc:

@@ -29,6 +29,11 @@ Institution:
   email: ""
   website: ""
 
+# Object representing the geospatial location in a searchable index
+GeospatialIndex:
+  lat: 0.0
+  lon: 0.0
+
 GeospatialCoordinateReferenceSystem:
   geospatial_geodetic_crs: ""
   geospatial_vertical_crs: ""

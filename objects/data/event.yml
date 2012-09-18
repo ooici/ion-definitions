@@ -92,10 +92,14 @@ DeviceOperatorEvent: !Extends_ResourceOperatorEvent
 
 ---
 
+RemoteCommandResult: !Extends_Event
+  command: ""
+  
+---
+
 ResourceAgentEvent: !Extends_Event
 
 ---
-
 PlatformEvent: !Extends_ResourceAgentEvent
 
 ---

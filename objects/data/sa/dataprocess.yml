@@ -16,4 +16,5 @@ DataProcess: !Extends_InformationResource
   ATBD_reference: ""           # WRONG
   source_code: ""              # WRONG
   input_subscription_id: ""
+  process_id: ""
   configuration: {}

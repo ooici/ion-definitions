@@ -18,14 +18,20 @@ methods:
       query: {}
       delivery_format: {}
       replay_type: ""
+      stream_id: ""
     out:
       replay_id: ""
-      stream_id: ""
 
   delete_replay:
     in:
       replay_id: ""
     out:
+
+  read_process_id:
+    in:
+      replay_id: ""
+    out:
+      process_id: ""
 
   start_replay:
     docstring: Replays data from data store by streaming to an exchange name.

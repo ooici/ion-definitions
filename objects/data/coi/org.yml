@@ -12,6 +12,8 @@ Org: !Extends_TaskableResource
   # Identifies the institution that operates the Org/Facility
   institution: !Institution
 
+  url: ""
+
   # An entity that serves as a contact point
   contact: !ContactInformation
 ---

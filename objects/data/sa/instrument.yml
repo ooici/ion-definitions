@@ -30,7 +30,7 @@ InstrumentModel: !Extends_DeviceModel
   operational_temperature_range: ""
   internal_data_storage: True
   # time system must be on before sampling.
-  required_ontime: ""
+  required_on_time: ""
   power_source: ""
   electrical_notes: ""
   hotel_current: ""

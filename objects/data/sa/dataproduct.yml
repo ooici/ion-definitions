@@ -14,6 +14,11 @@ DataProduct: !Extends_InformationResource
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds
 
+  # for data from fixed-location assets, is set according to the GeospatialPoint of the fixed asset creating the data;
+  # for data from mobile (even constrained) assets, is optionally calculated as the center of the data's bounding box,
+  # or an average location of
+  geospatial_point: !GeospatialPoint
+
   geospatial_coordinate_reference_system: !GeospatialCoordinateReferenceSystem
 
   # temporal domain
@@ -51,6 +56,9 @@ DataProduct: !Extends_InformationResource
   # one or more of the topic categories from ISO 19115
   # Mandatory
   iso_topic_category: ""
+
+  # Selection from IOOS controlled vocabulary for parameters
+  ioos_category: ""
 
   # From ISO:method used to spatially represent geographic information
   # Code List: vector, grid, textTable, tin, stereoModel, video
@@ -101,14 +109,14 @@ DataProduct: !Extends_InformationResource
 
   # For temporary data holds, the date on which the hold will expire
   # Mandatory
-  #exclusive_rights_end_date: ""  #datetime
+  exclusive_rights_end_date: ""  #datetime
 
   # The name and contact information of the person/entity who requested the exclusive rights
   # Mandatory
   #exclusive_rights_contact: !ContactInformation
 
   # Further information about the exclusive rights hold, such as a justification for a permanent hold
- # exclusive_rights_notes: ""
+  exclusive_rights_notes: ""
 
   # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""

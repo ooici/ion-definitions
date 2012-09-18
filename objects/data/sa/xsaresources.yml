@@ -183,6 +183,14 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   #@Method
   data_url: []   # A unique id for this data product
 
+  #@Method
+  provenance: !ComputedStringValue   # Provides an audit trail for modifications to the original data
+
+  #@Method
+  number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data
+
+  #@Method
+  descriptors: !ComputedListValue   # Returns a list of keyword/authority pairs with optional urls
 ---
 
 #This object contains additional information associated with a data product.

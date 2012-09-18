@@ -129,6 +129,7 @@ DeviceModel: !Extends_InformationResource
   # The height  of the instrument device in meters
   height: 0.0
   # The name of the manufacturer
+  manufacturer: ""
   manufacturer_url: ""
   # Location(s) where additional information about this model can be obtained
   reference_urls: []

@@ -10,6 +10,7 @@ Resource:
   lcstate: "DRAFT_PRIVATE"
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   ts_updated: ""
+  naming_authority_id: "" #Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID
 
 ---
 
@@ -22,6 +23,10 @@ InformationResource: !Extends_Resource
 # Describes a resource that can be controlled and monitored, such as a physical device
 # or a computational process. Abstract base type.
 TaskableResource: !Extends_Resource
+  message_controllable: ""    # can this resource be controlled by messages sent to it
+  monitorable: ""             # A device that has a communication port for real-time monitoring
+  
+  
 ---
 
 # Describes a resource that can be instantiated into a taskable resource. Abstract base type.

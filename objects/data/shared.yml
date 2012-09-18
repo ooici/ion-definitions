@@ -189,7 +189,7 @@ AgentInstance: !Extends_InformationResource
   deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
 #  exchange_name: ""
   configuration: {}
-#  agent_process_id: ""
+  agent_process_id: ""
 
 ---
 

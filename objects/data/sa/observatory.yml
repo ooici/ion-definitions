@@ -1,8 +1,14 @@
+SiteEnvironmentType:  !enum (values=(FIELD, TEST), default=FIELD)
+
+---
 # Represents a reference designator within an observatory, with geospatial and temporal bounds. Abstract base type.
 Site: !Extends_FrameOfReference
 #  # Specified bounds in 2 or 3 dimensions within which entity exists
 #  # Mandatory
 #  geospatial_constraint: !GeospatialBounds
+
+  # The environment of the site. Used to differentiate marine deployments from, e.g. "bucket" tests
+  environment: !SiteEnvironmentType
 #
 #  # Specified time constraint within which entity exists
 #  temporal_constraint: "" # what is TemporalConstraint object?

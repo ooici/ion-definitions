@@ -128,6 +128,11 @@ DataProduct: !Extends_InformationResource
   # The datetime when the data were made publicly available
   data_publish_datetime: ""
 
+  # Holds information on where and when the data product was submitted to an external archive.
+  external_archivings: ""
+
+  # List of URLs with information about the data product
+  reference_urls: []
 
 ---
 DataProductVersion:

@@ -37,4 +37,10 @@ Deployment: !Extends_FrameOfReference
   # The planned end of the deployment
   end_datetime_planned: ""
 
+  # An additional identification code used by the operators
+  auxiliary_identifier: ""
+
+  # An additional identification name used by the operators
+  auxiliary_name: ""
+
   

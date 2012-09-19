@@ -107,6 +107,8 @@ Device: !Extends_TaskableResource
   controllable: True
   # References to pages about that individual device (e.g. Configuration diagram)
   reference_urls: []
+  # Contacts for this device.  Multiple contacts are allowed, and can be differentiated by the role_list (e.g. pointOfContact, Provider)
+  contacts: []  # list of ContactInformation objects
   # A device that does not have a communication port for real-time monitoring
   #monitorable: True
   # Additional attributes required for specific devices

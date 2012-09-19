@@ -191,6 +191,10 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 
   #@Method
   descriptors: !ComputedListValue   # Returns a list of keyword/authority pairs with optional urls
+
+  #@Method
+  past_user_subscriptions: !ComputedListValue   # Provides information for users who have in the past acquired this data product, but for which that acquisition was terminated
+
 ---
 
 #This object contains additional information associated with a data product.

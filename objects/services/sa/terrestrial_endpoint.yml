@@ -29,14 +29,29 @@ methods:
     in:
         resource_id: ''
     out:
+        queue: []
         
   pop_queue:
     docstring: |
         Pop command from queue by resource id and command index.
     in:
-        resource_id: ''
-        index: 0
+        command_id: ''
     out:
+        command: !RemoteCommand
+
+  get_pending:
+    docstring: |
+        Return the list of pending commands.
+    in:
+    out:
+        pending: []
+
+  clear_pending:
+    docstring: |
+        Clear the list of pending commands.
+    in:
+    out:
+        pending: []
         
   get_port:
     docstring: |

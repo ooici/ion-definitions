@@ -84,6 +84,10 @@ server:
     river_shards:   1        # Defines the number of shards for the _river
     river_replicas: 0        # Defines the number of replicas (important) for the _river
                              # This number should be the number of nodes running exactly
+  zmq:
+    # In-process ZeroMQ based router
+    type: zeromq
+
 # Example of production-like configuration
 #    shards: 5
 #    replicas: 1

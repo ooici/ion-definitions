@@ -80,6 +80,47 @@ temp:
   cdm_data_type: null
   attributes: null
   _id: null
+port_timestamp:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: .nan
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: seconds
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: 12
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: port_timestamp
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
 lon:
   comment: null
   _derived_from_name: lon
@@ -244,6 +285,47 @@ depth:
   cdm_data_type: null
   attributes: null
   _id: null
+internal_timestamp:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    _template_attrs: {fill_value: -9999, quality: null, nilValues: null, uom: unspecified,
+      constraint: null}
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    fill_value: .nan
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: seconds
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <i8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: 12
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: internal_timestamp
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
 time:
   comment: null
   _derived_from_name: time
@@ -321,6 +403,47 @@ lat:
   _identifier: null
   cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
   name: lat
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+driver_timestamp:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    _template_attrs: {fill_value: -9999, quality: null, nilValues: null, uom: unspecified,
+      constraint: null}
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    fill_value: .nan
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: seconds
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <i8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: 12
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: driver_timestamp
   extension: {}
   index_key: null
   cdm_data_type: null

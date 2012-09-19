@@ -4,6 +4,10 @@
 PlatformDevice: !Extends_Device
 
   # The family of platform, with term from the OOI Node Type list
+  # Code List: Medium-power Junction Box, Interface Box HD Camera, Float Junction Box, Low-power Junction Box,
+  # Winch Junction Box, Profiler Junction Box, Multi-Function Node, Fixed Instruments, Surface Buoy
+  # Surface-Piercing Profiler, Wire-Following Profiler, Mid-Water Platform, AUV, Gliders, Benthic Package
+  # Deep Profiler
   platform_family: ""
 
   # deployment point of platforms; platform may vary in location around that point

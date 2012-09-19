@@ -1,3 +1,14 @@
+
+ExternalArchive:
+  archive_name: ""
+  submission_datetime: ""
+  archive_url: ""
+  id_in_archive: ""
+  archive_contact: !ContactInformation
+
+
+---
+
 # Represents a uniquely identified presentation of a defined collection of information.
 # The presentation consists of a particular subset of the collection. A DataProduct may
 # have a real-time stream and may have persisted historic data.
@@ -8,6 +19,9 @@ DataProduct: !Extends_InformationResource
   # The realization of a uniquely identified presentation of a defined collection of information.
   # The presentation consists of a particular subset of the collection.
 
+  #Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID
+  naming_authority_id: ""
+  
   # An entity that serves as a contact point
   contacts: []    # a list of  !ContactInformation
 
@@ -129,10 +143,14 @@ DataProduct: !Extends_InformationResource
   data_publish_datetime: ""
 
   # Holds information on where and when the data product was submitted to an external archive.
-  external_archivings: ""
+  # returns a list of objects of the ExternalArchiveType (ExternalArchive at the top of this yaml)
+  external_archivings: []
 
   # List of URLs with information about the data product
   reference_urls: []
+
+  # The end user formats for which the data product is available
+  available_formats: []   # a list of Term objects (see Shared.yml)
 
 ---
 DataProductVersion:

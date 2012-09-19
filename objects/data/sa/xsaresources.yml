@@ -11,7 +11,7 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   #@Method
   location: !ComputedGeospatialBoundsValue # current geospatial (3D) location of instrument
   #@Method
-  last_data_received_time: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
+  last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
   #@Method
   operational_state: !ComputedStringValue   # from Device
   #@Method
@@ -157,7 +157,10 @@ ObservatoryExtension: !Extends_ExtendedInformationResource
 #Computed attributes for a data product
 DataProductComputedAttributes: !Extends_ComputedAttributes
   #@Method
-  earliest_data_datetime: !ComputedFloatValue  # the datetime of the earliest values in the data product
+  data_datetime: !ComputedStringValue  # the datetime of the earliest values in the data product
+
+  #@Method
+  data_ingestion_datetime: !ComputedStringValue  # the datetime of the earliest values in the data product
 
   #@Method
   product_download_size_estimated: !ComputedIntValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
@@ -188,6 +191,9 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 
   #@Method
   number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data
+
+  #@Method
+  active_user_subscriptions: !ComputedListValue   # The UserSubscription objects for this data product
 
   #@Method
   descriptors: !ComputedListValue   # Returns a list of keyword/authority pairs with optional urls

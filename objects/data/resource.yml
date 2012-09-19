@@ -10,7 +10,6 @@ Resource:
   lcstate: "DRAFT_PRIVATE"
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   ts_updated: ""
-  naming_authority_id: "" #Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID
 
 ---
 

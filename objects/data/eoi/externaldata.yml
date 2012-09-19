@@ -64,6 +64,7 @@ ExternalDataset: !Extends_InformationResource
   dataset_description: !DatasetDescription
   update_description: !UpdateDescription
   contact: !ContactInformation
+  dataset_path: ""
 
 # Describes a type of external dataset
 ExternalDatasetModel: !Extends_InformationResource

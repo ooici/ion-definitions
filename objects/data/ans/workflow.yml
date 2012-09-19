@@ -18,6 +18,8 @@ DataProcessWorkflowStep: !Extends_WorkflowStep
 # needed to produce a visualization pipeline for an input data product stream.
 WorkflowDefinition: !Extends_InformationResource
   workflow_steps: []  # A list of ordered workflow steps
+  definition: ""
+  definition_type: ""
 
 # Represents a composite process producing a derived data product, by orchestrating data process instances.
 Workflow: !Extends_InformationResource

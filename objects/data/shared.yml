@@ -1,5 +1,13 @@
 # Place shared objects in here that can be used by definitions in subdirectories
 
+
+Phone:
+  phone_number: ""
+  phone_type: ""
+  sms: 0
+
+---
+
 # Data structure for representing contact information uniformly across resources
 ContactInformation:
   organization_name: ""
@@ -9,14 +17,14 @@ ContactInformation:
   name: ""
   street_address: ""
   city: ""
-  postalcode: ""
+  postal_code: ""
   state: ""
   country: ""
-  phone: ""
+  phones: []  # list of phone objects
   email: ""
   administrative_area: ""
   position_name: ""        # the position or role of the contact
-  roles: []
+  roles: []                # list of strings of role names
   url: ""                  # url for the contact
   variables:   # Extension set of name/value pairs
   - name: ""
@@ -47,23 +55,23 @@ GeospatialCoordinateReferenceSystem:
 GeospatialBounds:
   geospatial_latitude_limit_north: 0.0
   geospatial_latitude_limit_south: 0.0
-  geospatial_latitude_limit_east: 0.0
-  geospatial_latitude_limit_west: 0.0
+  geospatial_longitude_limit_east: 0.0
+  geospatial_longitude_limit_west: 0.0
   geospatial_vertical_min: 0.0
   geospatial_vertical_max: 0.0
 
 
 GeospatialPoint:
-  geospatial_vertical_location: ""
-  geospatial_vertical_accuracy: ""
-  geospatial_latitude: ""
-  geospatial_longitude: ""
-  geospatial_horizontal_accuracy: ""
+  geospatial_vertical_location: 0.0
+  geospatial_vertical_accuracy: 0.0
+  geospatial_latitude: 0.0
+  geospatial_longitude: 0.0
+  geospatial_horizontal_accuracy: 0.0
 
 
 TemporalBounds:
-  start_time: ""
-  end_time: ""
+  start_datetime: ""
+  end_datetime: ""
 
 ---
 
@@ -85,6 +93,12 @@ DataFormat:
   nominal_sampling_rate_minimum: "" # Hz
   nominal_sampling_rate_maximum: "" # Hz
 
+---
+CodeReport:
+  code_meaning: ""  # description of the meaning of the code value
+  code_value: ""
+
+---
 
 Parameter:
   standard_name: ""     # from CF standard names
@@ -95,7 +109,7 @@ Parameter:
   cdm_data_type: ""     # the THREDDS data type
   variable_reports: ""  # information on the variable accuracy
   axis: ""              # for CF compliance, holds X, Y, Z or T for vars holding lat, lon, depth and time info
-  code_reports: ""      # provide the meaning of flags
+  code_reports: []      # provide the meaning of flags in CodeReport objects
 
 ---
 
@@ -107,6 +121,8 @@ Device: !Extends_TaskableResource
   controllable: True
   # References to pages about that individual device (e.g. Configuration diagram)
   reference_urls: []
+  # the uuid provide by the manufacturer
+  uuid: ""
   # Contacts for this device.  Multiple contacts are allowed, and can be differentiated by the role_list (e.g. pointOfContact, Provider)
   contacts: []  # list of ContactInformation objects
   # A device that does not have a communication port for real-time monitoring
@@ -184,7 +200,7 @@ FrameOfReference: !Extends_InformationResource
 # Describes a type of agent. Abstract base type.
 AgentDefinition: !Extends_InformationResource
   agent_version: ""
-  conection_method: ""
+  connection_method: ""
   event_publisher_origin: ""
 
 # Describes a running or scheduled agent representing a single resource. Abstract base type.
@@ -199,6 +215,15 @@ AgentInstance: !Extends_InformationResource
 ProcessStateEnum: !enum (values=(SPAWN, TERMINATE, ERROR), default=SPAWN)
 
 ---
+
+Term:
+  term_value: ""
+  vocabulary_name: ""
+  term_url: ""
+  vocabulary_url: ""
+
+---
+
 
 # Internal
 EndShared:

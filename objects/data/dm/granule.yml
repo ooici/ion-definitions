@@ -12,17 +12,12 @@ CompoundGranule:
 # Object containing data associated with a Taxonomy to be transported in messages between
 # distributed processes.
 Granule:
-  data_producer_id: ''
-  # Can be a reference or value
-
-  taxonomy: !Taxonomy
-  # Can be reference or a value
-
   param_dictionary: {}
-  #ParameterDictionary object from coverage-model. Will eventually replace taxonomy
 
   record_dictionary: {}
-  # can be a what?
 
+  domain: {}
+
+  locator: {}
 
 

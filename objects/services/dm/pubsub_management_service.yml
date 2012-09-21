@@ -25,6 +25,7 @@ methods:
     docstring: ""
     in:
       stream_definition_id: ""
+      stream_id: ""
     out:
       stream_definition: !StreamDefinition
   

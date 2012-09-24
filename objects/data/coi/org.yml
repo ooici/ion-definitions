@@ -16,62 +16,62 @@ Org: !Extends_TaskableResource
 
   # An entity that serves as a contact point
   contact: !ContactInformation
+
+---
+
+# Enum for originator of the proposal
+ProposalOriginatorEnum: !enum (values=(CONSUMER, PROVIDER, BROKER), default=CONSUMER)
+
+# Enum for the status of the proposal
+ProposalStatusEnum: !enum (values=(INITIAL, COUNTER, ACCEPTED, REJECTED, GRANTED), default=INITIAL)
+
+# Enum for the different types of acquisition
+AcquisitionTypeEnum: !enum (values=(SHARED, EXCLUSIVE), default=SHARED)
+
 ---
 
 # Object representing a current proposal for a service agreement. The proposal may contain several items of
 # different type, or can be a composite of service agreement proposals.
 ServiceAgreementProposal:
-  sap_id: ""
-  originator: ""  #Who originated the SAP request
-  recipient: ""  #Who received the initial SAP request
+  negotiation_id: ""   #What negotiation resource is this part of
+  originator: !ProposalOriginatorEnum
+  consumer: ""     #Who will be the consumer of this proposal - typically a used id
+  provider: ""     #Who will be the provider of this proposal - typically an org id
+  broker: ""       #Optional identifier if proposal is brokered by third party
   sequence_num: 0
-  requested_resource_id: []
+  proposal_status: !ProposalStatusEnum
   conditions: {}
   clauses: {}
----
-
-NegotiationDefinition: !Extends_InformationResource
-  pre_condition: []
-  accept_action: ""
 
 ---
+#Various specific types of proposals
 
-# Enum for the different categories of Negotiations
-NegotiationTypeEnum: !enum (values=(ENROLLMENT, USER_ROLE, RESOURCE_USE), default=RESOURCE_USE)
+EnrollmentProposal: !Extends_ServiceAgreementProposal
 
-# Enum for the different categories of Negotiations
-NegotiationOriginationEnum: !enum (values=(REQUEST, INVITE), default=REQUEST)
+RequestRoleProposal: !Extends_ServiceAgreementProposal
+  role_name: ""
+
+AcquireResourceProposal: !Extends_ServiceAgreementProposal
+  acquisition_type: !AcquisitionTypeEnum
+  resource: ""
+
+---
+
+# Enum for the type of Negotiation
+NegotiationTypeEnum: !enum (values=(REQUEST, INVITATION, BROKERED), default=REQUEST)
+
+# Enum for the status of the Negotiation
+NegotiationStatusEnum: !enum (values=(OPEN, ACCEPTED, REJECTED), default=OPEN)
 
 ---
 
 # Describes a negotiation between multiple system participants with the intent of agreeing
 # to a mutual contract with commitments if successful.
 Negotiation: !Extends_InformationResource
-  type: !NegotiationTypeEnum
-  origination: !NegotiationOriginationEnum
+  negotiation_type: !NegotiationTypeEnum
+  negotiation_status: !NegotiationStatusEnum
   #@ContentType=ServiceAgreementProposal
-  sap: []
-
----
-
-NegotiationRequest: !Extends_InformationResource
-  status: "Open"
-  status_description: ""
-
----
-
-UserRequest: !Extends_NegotiationRequest
-  org_id: ""     # Will also keep an association but this makes it easier to filter on
-  user_id: ""    # Will also keep an association but this makes it easier to filter on
-
----
-EnrollmentRequest: !Extends_UserRequest
-
-RoleRequest: !Extends_UserRequest
-  role_name: ""
-
-ResourceRequest: !Extends_UserRequest
-  resource_id: ""
+  proposals: []  # The last SAP in the list is considered the most recent one
 
 ---
 

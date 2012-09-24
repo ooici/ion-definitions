@@ -123,128 +123,50 @@ methods:
 
   # -----------------
 
-
-  request_enroll:
+  negotiate:
     docstring: |
-      Requests for an enrollment with an Org which must be accepted or denied as a separate process.
-      Membership in the ION Org is implied by registration with the system, so a membership
-      association to the ION Org is not maintained. Throws a NotFound exception if neither id is found.
+      A generic operation for negotiating actions with an Org, such as for enrollment, role request or to acquire a
+      resource managed by the Org. The Service Agreement Proposal is used to specify conditions of the proposal as well
+      as counter proposals and the Org will create Negotiation Resource to track the history and status of the negotiation.
+    in:
+      sap: !ServiceAgreementProposal
+    out:
+      sap: !ServiceAgreementProposal
+    throws:
+      BadRequest: If an SAP is not provided or incomplete
+      Inconsistent: If an SAP has inconsistent information
+      NotFound: If any of the ids in the SAP do not exist
+
+
+  find_org_negotiations:
+    docstring: |
+      Returns a list of negotiations for an Org. An optional proposal_type can be supplied
+      or else all proposals will be returned. An optional negotiation_status can be supplied
+      or else all proposals will be returned. Will throw a not NotFound exception
+      if any of the specified ids do not exist.
     in:
       org_id: ""
-      user_id: ""
+      proposal_type: ""
+      negotiation_status: ""
     out:
-      request_id: ""
+      negotiation: []
     throws:
       NotFound: object with specified id does not exist
 
-  request_role:
+  find_user_negotiations:
     docstring: |
-      Requests for an role within an Org which must be accepted or denied as a separate process.
-      A role of Member is automatically implied with successfull enrollment.  Throws a
-      NotFound exception if neither id is found.
-    in:
-      org_id: ""
-      user_id: ""
-      role_name: ""
-    out:
-      request_id: ""
-    throws:
-      NotFound: object with specified id does not exist
-
-  request_acquire_resource:
-    docstring: |
-      Requests to acquire a resource within an Org which must be accepted or denied as a separate process.
-      Throws a NotFound exception if neither id is found.
-    in:
-      org_id: ""
-      user_id: ""
-      resource_id: ""
-    out:
-      request_id: ""
-    throws:
-      NotFound: object with specified id does not exist
-
-
-
-  find_requests:
-    docstring: |
-      Returns a list of open requests for an Org. An optional request_type can be supplied
-      or else all types will be returned. An optional request_status can be supplied
-      or else requests will be returned. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      request_type: ""
-      request_status: ""
-    out:
-      requests: []
-    throws:
-      NotFound: object with specified id does not exist
-
-  approve_request:
-    docstring: |
-      Approves a request made to an Org.  Will throw a not NotFound exception
-      if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      request_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: object with specified id does not exist
-
-  deny_request:
-    docstring: |
-      Denys a request made to an Org. An optional reason can be recorded with the denial.
-      Will throw a not NotFound exception if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      request_id: ""
-      reason: ""
-    out:
-      success: True
-    throws:
-      NotFound: object with specified id does not exist
-
-  find_user_requests:
-    docstring: |
-      Returns a list of requests for a specified User. All requests for all Orgs will be returned
-      unless an org_id is specified. An optional request_type can be supplied
-      or else all types will be returned. An optional request_status can be supplied
-      or else requests will be returned. Will throw a not NotFound exception
-      if none of the specified ids do not exist.
+      Returns a list of negotiations for a specified User. All negotiations for all Orgs will be returned
+      unless an org_id is specified. An optional proposal_type can be supplied
+      or else all proposals will be returned. An optional negotiation_status can be provided
+      or else all proposals will be returned. Will throw a not NotFound exception
+      if any of the specified ids do not exist.
     in:
       user_id: ""
       org_id: ""
-      request_type: ""
-      request_status: ""
+      proposal_type: ""
+      negotiation_status: ""
     out:
-      requests: []
-    throws:
-      NotFound: object with specified id does not exist
-
-  accept_request:
-    docstring: |
-      Accepts and invitation for a request made to an Org.  Will throw a not NotFound exception
-      if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      request_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: object with specified id does not exist
-
-  reject_request:
-    docstring: |
-      Rejects an invitation made to an Org. An optional reason can be recorded with the rejection.
-      Will throw a not NotFound exception if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      request_id: ""
-      reason: ""
-    out:
-      success: True
+      negotiation: []
     throws:
       NotFound: object with specified id does not exist
 
@@ -330,6 +252,19 @@ methods:
     docstring: |
       Revokes a defined Role within an organization to a specific user. Will throw a not NotFound exception
       if none of the specified ids or role_name does not exist.
+    in:
+      org_id: ""
+      user_id: ""
+      role_name: ""
+    out:
+      success: True
+    throws:
+      NotFound: object with specified id does not exist
+
+  has_role:
+    docstring: |
+       Returns True if the specified user_id has the specified role_name in the Org and False if not.
+       Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
       user_id: ""

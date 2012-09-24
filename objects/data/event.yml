@@ -182,24 +182,19 @@ ExternalDataSourceStatusEvent: !Extends_ExternalDataSourceEvent
 # ------------------------------------------------------------------------------------
 
 NegotiationEvent: !Extends_Event
-  # The origin is the id of the provider actor (e.g. org id, resource id)
+  # The origin is the id of the negotiation id
+  originator: ""
 
 ---
 
-RequestStatusEvent: !Extends_NegotiationEvent
-  # The origin is the org_id
-  request_id: ""
-  user_id: ""
+EnrollmentNegotiationStatusEvent: !Extends_NegotiationEvent
 
----
-
-EnrollmentRequestStatusEvent: !Extends_RequestStatusEvent
-
-RoleRequestStatusEvent: !Extends_RequestStatusEvent
+RequestRoleNegotiationStatusEvent: !Extends_NegotiationEvent
   role_name: ""
 
-ResourceRequestStatusEvent: !Extends_RequestStatusEvent
-  resource_id: ""
+AcquireResourceNegotiationStatusEvent: !Extends_NegotiationEvent
+  resource: ""
+  acquisition_type: ""
 
 ---
 

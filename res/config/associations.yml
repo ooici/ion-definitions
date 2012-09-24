@@ -215,14 +215,14 @@ AssociationDefinitions:
     domain: [CapabilityContainer, Service]
     range: [Process]
     docstring: References a Process (instance) that is associated with the container or service
-  - predicate: hasRequest
+  - predicate: hasNegotiation
     domain: [Org, ActorIdentity]
-    range: [UserRequest,UserRequest]
+    range: [Negotiation]
     docstring: References a Negotiation that with and within an Org, originated by a user
   - predicate: hasResource
     domain: [Org, Collection]
     range: [Resource]
-    docstring: References a resource beloning to Org or a Collection
+    docstring: References a resource belonging to Org or a Collection
   - predicate: hasRole
     domain: [Conversation, ActorIdentity, Org]
     range: [ConversationRole, UserRole]

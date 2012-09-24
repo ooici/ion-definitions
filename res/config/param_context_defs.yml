@@ -169,7 +169,7 @@ port_timestamp:
   standard_name: null
   code_reports: null
   param_type:
-    fill_value: .nan
+    fill_value: -1
     description: ''
     extension: {}
     constraint: null
@@ -251,7 +251,7 @@ timer:
   standard_name: null
   code_reports: null
   param_type:
-    fill_value: .nan
+    fill_value: -1
     description: ''
     extension: {}
     constraint: null
@@ -415,7 +415,7 @@ internal_timestamp:
   standard_name: null
   code_reports: null
   param_type:
-    fill_value: .nan
+    fill_value: -1
     description: ''
     extension: {}
     constraint: null
@@ -579,7 +579,7 @@ driver_timestamp:
   standard_name: null
   code_reports: null
   param_type:
-    fill_value: .nan
+    fill_value: -1
     description: ''
     extension: {}
     constraint: null

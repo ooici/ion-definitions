@@ -59,7 +59,6 @@ methods:
       stream_id: ""
       ingestion_configuration_id: ""
       dataset_id: ""
-      ingestion_type: ""
     out:
       dataset_id: ""
 

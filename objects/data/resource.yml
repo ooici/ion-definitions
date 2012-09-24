@@ -82,6 +82,13 @@ ComputedAttributes:
 
 ---
 
+# The base type for computed attribute objects
+TaskableComputedAttributes: !Extends_ComputedAttributes
+
+  #@Method
+  recent_events: !ComputedListValue
+  
+---
 # A non-persistable container for a resource and its related data
 ResourceContainer:
   _id: ""   #  Unique identifier (matchs the id of the internal persistable resource object)

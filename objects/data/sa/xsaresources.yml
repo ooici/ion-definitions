@@ -78,7 +78,7 @@ DeploymentExtension: !Extends_ExtendedInformationResource
 ####################################################################
 
 #Computed attributes for an instrument device
-InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
+InstrumentDeviceComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   firmware_version: !ComputedFloatValue  # identifier of software installed in unit
 
@@ -119,9 +119,6 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
   aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device.
 
   #@Method
-  recent_events: !ComputedListValue  #List of the 10 most recent events for this device
-
-  #@Method
   last_calibration_time: !ComputedFloatValue  #
 
   #@Method
@@ -134,7 +131,7 @@ InstrumentDeviceComputedAttributes: !Extends_ComputedAttributes
 
 
 #Computed attributes for an platform device
-PlatformDeviceComputedAttributes: !Extends_ComputedAttributes
+PlatformDeviceComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   energy_generation: !ComputedFloatValue  # amount of energy being generated on the platform in Watts
 
@@ -172,7 +169,7 @@ PlatformDeviceComputedAttributes: !Extends_ComputedAttributes
 
 
 #Computed attributes for an platform device
-ObservatoryComputedAttributes: !Extends_ComputedAttributes
+ObservatoryComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
 

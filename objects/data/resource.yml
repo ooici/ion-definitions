@@ -82,12 +82,26 @@ ComputedAttributes:
 
 ---
 
-# The base type for computed attribute objects
+# The base type for taskable computed attribute objects
 TaskableComputedAttributes: !Extends_ComputedAttributes
 
   #@Method
   recent_events: !ComputedListValue
   
+  #@Method
+  operational_state: !ComputedStringValue   # from Device
+
+---
+
+# The base type for taskable computed attribute objects
+DeviceComputedAttributes: !Extends_TaskableComputedAttributes
+
+  #@Method
+  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device.
+
+  #@Method
+  uptime: !ComputedStringValue # time since device was last restarted
+
 ---
 # A non-persistable container for a resource and its related data
 ResourceContainer:

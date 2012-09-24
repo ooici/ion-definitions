@@ -89,9 +89,6 @@ InstrumentDeviceComputedAttributes: !Extends_TaskableComputedAttributes
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
 
   #@Method
-  operational_state: !ComputedStringValue   # from Device
-
-  #@Method
   last_command_status: !ComputedIntValue
 
   #@Method
@@ -116,22 +113,17 @@ InstrumentDeviceComputedAttributes: !Extends_TaskableComputedAttributes
   location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
 
   #@Method
-  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device.
-
-  #@Method
   last_calibration_time: !ComputedFloatValue  #
 
   #@Method
   sites: !ComputedListValue  #List of sites to which this instrument has been deployed
 
-  #@Method
-  uptime: !ComputedStringValue # time since device was last restarted
 ---
 
 
 
 #Computed attributes for an platform device
-PlatformDeviceComputedAttributes: !Extends_TaskableComputedAttributes
+PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
   energy_generation: !ComputedFloatValue  # amount of energy being generated on the platform in Watts
 
@@ -155,14 +147,6 @@ PlatformDeviceComputedAttributes: !Extends_TaskableComputedAttributes
 
   #@Method
   location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
-
-  #@Method
-  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (CV:  RED, YELLOW, GREEN, BLACK)
-
-  #@Method
-  uptime: !ComputedStringValue # time since device was last restarted
-  #@Method
-  operational_state: !ComputedStringValue   # from Device
 
 ---
 

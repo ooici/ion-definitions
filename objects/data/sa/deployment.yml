@@ -22,15 +22,16 @@ DeviceMountingPosition:
   
 ---
 
+AbstractDeploymentContextType:
+
+---
+
 # Describes an assignment of a device to a specific observatory position,
 # typically for a specified period of time.
 Deployment: !Extends_FrameOfReference
 
-  # Specified time constraint within which entity exists
-  temporal_constraint: ""
-
-  # a list of DeviceMountingPosition objects
-  device_mounting_positions: []
+  # the specifics of this deployment type
+  context: !AbstractDeploymentContextType
 
   # The planned initiation of the deployment
   start_datetime_planned: ""
@@ -43,4 +44,37 @@ Deployment: !Extends_FrameOfReference
   # An additional identification name used by the operators
   auxiliary_name: ""
 
-  
+
+
+---
+
+BuoyDeploymentContext: !Extends_AbstractDeploymentContextType
+
+  # Specified time constraint within which entity exists, and others
+  constraint_set: []
+
+  # a list of DeviceMountingPosition objects
+  device_mounting_positions: []
+
+---
+
+
+
+MooringDeploymentContext: !Extends_AbstractDeploymentContextType
+
+  # Specified time constraint within which entity exists, and others
+  constraint_set: []
+
+---
+
+
+
+CruiseDeploymentContext: !Extends_AbstractDeploymentContextType
+
+---
+
+
+
+GliderDeploymentContext: !Extends_AbstractDeploymentContextType
+
+---

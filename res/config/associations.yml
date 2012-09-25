@@ -3,6 +3,7 @@
 # Order definitions alphabetically by subsystem
 # cardinality: 1,1 or 1,n or n,1 or n,n If absent n,n is assumed
 
+# All entries must have a docstring!!!
 AssociationDefinitions:
 # AS
   - predicate: hasDataProcess
@@ -106,6 +107,7 @@ AssociationDefinitions:
   - predicate: hasSubscription
     domain: [IngestionConfiguration]
     range: [Subscription]
+    docstring: References the Subscription used by the ingenestion system
   - predicate: hasOutStream
     domain: [Transform]
     range: [Stream]
@@ -121,6 +123,7 @@ AssociationDefinitions:
   - predicate: hasTopic
     domain: [Stream, Topic, Subscription]
     range: [Topic]
+    docstring: References the Exchange Topic associated with other routing elements
   - predicate: hasTransform
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
@@ -218,7 +221,7 @@ AssociationDefinitions:
   - predicate: hasNegotiation
     domain: [Org, ActorIdentity]
     range: [Negotiation]
-    docstring: References a Negotiation that with and within an Org, originated by a user
+    docstring: References a Negotiation between the Org, user and a resource
   - predicate: hasResource
     domain: [Org, Collection]
     range: [Resource]

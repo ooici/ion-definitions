@@ -1,3 +1,553 @@
+quality_flag:
+  comment: null
+  _derived_from_name: quality_flag
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: null
+    description: ''
+    extension: {}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    mutable: false
+    _identifier: null
+    _id: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, ArrayType]
+    _value_class: ArrayValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: flag indicating quality
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: quality_flag
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+raw:
+  comment: null
+  _derived_from_name: raw
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: 0
+    description: ''
+    extension: {}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    mutable: false
+    _identifier: null
+    _id: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, ArrayType]
+    _value_class: ArrayValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  uom: utf-8 byte string
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: raw binary string values
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: raw
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+driver_timestamp:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: -1
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: seconds
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: driver_timestamp
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+conductivity:
+  comment: null
+  _derived_from_name: conductivity
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: 0.0
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: unknown
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: conductivity
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+preferred_timestep:
+  comment: null
+  _derived_from_name: preferred_timestep
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: null
+    description: ''
+    extension: {}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    mutable: false
+    _identifier: null
+    _id: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, ArrayType]
+    _value_class: ArrayValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: name of preferred timestamp
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: preferred_timestep
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+lon:
+  comment: null
+  _derived_from_name: lon
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: 0.0
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: degree_east
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: 6
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: lon
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+serial_num:
+  comment: null
+  _derived_from_name: serial_num
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: -1
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: unspecified
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <i4
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: serial_num
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+internal_timestamp:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: -1
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: seconds
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: internal_timestamp
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+port_timestamp:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: -1
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: seconds
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: 12
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: port_timestamp
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+viz_timestamp:
+  comment: null
+  _derived_from_name: time
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: -1
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: seconds
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: 12
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: viz_timestamp
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+image_name:
+  comment: null
+  _derived_from_name: image_name
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: null
+    description: ''
+    extension: {}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    mutable: false
+    _identifier: null
+    _id: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, ArrayType]
+    _value_class: ArrayValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: image_name
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+pressure:
+  comment: null
+  _derived_from_name: pressure
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: 0
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: Pascal
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: pressure
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+content_type:
+  comment: null
+  _derived_from_name: content_type
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: null
+    description: ''
+    extension: {}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    mutable: false
+    _identifier: null
+    _id: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, ArrayType]
+    _value_class: ArrayValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: content_type
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+lat:
+  comment: null
+  _derived_from_name: lat
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: 0.0
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: degree_north
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <f4
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: 5
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: lat
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
 count:
   comment: null
   _derived_from_name: count
@@ -34,47 +584,6 @@ count:
   _identifier: null
   cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
   name: count
-  extension: {}
-  index_key: null
-  cdm_data_type: null
-  attributes: null
-  _id: null
-binary:
-  comment: null
-  _derived_from_name: binary
-  long_name: null
-  standard_name: null
-  code_reports: null
-  param_type:
-    fill_value: 0
-    description: ''
-    extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
-    _value_module: coverage_model.parameter_values
-    label: ''
-    uom: unknown
-    mutable: false
-    _identifier: null
-    _id: null
-    quality: null
-    _value_encoding: '|u1'
-    nilValues: null
-    _value_class: NumericValue
-  variable_reports: null
-  references_list: null
-  label: ''
-  mutable: false
-  variability: 3
-  reference_frame: null
-  ooi_short_name: null
-  description: ''
-  ion_name: null
-  _identifier: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: binary
   extension: {}
   index_key: null
   cdm_data_type: null
@@ -162,88 +671,6 @@ checksum:
   cdm_data_type: null
   attributes: null
   _id: null
-port_timestamp:
-  comment: null
-  _derived_from_name: time
-  long_name: null
-  standard_name: null
-  code_reports: null
-  param_type:
-    fill_value: -1
-    description: ''
-    extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
-    _value_module: coverage_model.parameter_values
-    label: ''
-    uom: seconds
-    mutable: false
-    _identifier: null
-    _id: null
-    quality: null
-    _value_encoding: <f8
-    nilValues: null
-    _value_class: NumericValue
-  variable_reports: null
-  references_list: null
-  label: ''
-  mutable: false
-  variability: 3
-  reference_frame: 12
-  ooi_short_name: null
-  description: ''
-  ion_name: null
-  _identifier: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: port_timestamp
-  extension: {}
-  index_key: null
-  cdm_data_type: null
-  attributes: null
-  _id: null
-lon:
-  comment: null
-  _derived_from_name: lon
-  long_name: null
-  standard_name: null
-  code_reports: null
-  param_type:
-    fill_value: 0.0
-    description: ''
-    extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
-    _value_module: coverage_model.parameter_values
-    label: ''
-    uom: degree_east
-    mutable: false
-    _identifier: null
-    _id: null
-    quality: null
-    _value_encoding: <f4
-    nilValues: null
-    _value_class: NumericValue
-  variable_reports: null
-  references_list: null
-  label: ''
-  mutable: false
-  variability: 3
-  reference_frame: 6
-  ooi_short_name: null
-  description: ''
-  ion_name: null
-  _identifier: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: lon
-  extension: {}
-  index_key: null
-  cdm_data_type: null
-  attributes: null
-  _id: null
 timer:
   comment: null
   _derived_from_name: timer
@@ -326,47 +753,6 @@ salinity:
   cdm_data_type: null
   attributes: null
   _id: null
-pressure:
-  comment: null
-  _derived_from_name: pressure
-  long_name: null
-  standard_name: null
-  code_reports: null
-  param_type:
-    fill_value: 0
-    description: ''
-    extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
-    _value_module: coverage_model.parameter_values
-    label: ''
-    uom: Pascal
-    mutable: false
-    _identifier: null
-    _id: null
-    quality: null
-    _value_encoding: <f4
-    nilValues: null
-    _value_class: NumericValue
-  variable_reports: null
-  references_list: null
-  label: ''
-  mutable: false
-  variability: 3
-  reference_frame: null
-  ooi_short_name: null
-  description: ''
-  ion_name: null
-  _identifier: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: pressure
-  extension: {}
-  index_key: null
-  cdm_data_type: null
-  attributes: null
-  _id: null
 depth:
   comment: null
   _derived_from_name: depth
@@ -408,30 +794,25 @@ depth:
   cdm_data_type: null
   attributes: null
   _id: null
-internal_timestamp:
+viz_product_type:
   comment: null
-  _derived_from_name: time
+  _derived_from_name: viz_product_type
   long_name: null
   standard_name: null
   code_reports: null
   param_type:
-    fill_value: -1
+    fill_value: null
     description: ''
     extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
     _value_module: coverage_model.parameter_values
     label: ''
-    uom: seconds
     mutable: false
     _identifier: null
     _id: null
-    quality: null
-    _value_encoding: <f8
-    nilValues: null
-    _value_class: NumericValue
+    cm_type: !!python/tuple [coverage_model.parameter_types, ArrayType]
+    _value_class: ArrayValue
   variable_reports: null
   references_list: null
   label: ''
@@ -443,48 +824,7 @@ internal_timestamp:
   ion_name: null
   _identifier: null
   cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: internal_timestamp
-  extension: {}
-  index_key: null
-  cdm_data_type: null
-  attributes: null
-  _id: null
-serial_num:
-  comment: null
-  _derived_from_name: serial_num
-  long_name: null
-  standard_name: null
-  code_reports: null
-  param_type:
-    fill_value: -1
-    description: ''
-    extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
-    _value_module: coverage_model.parameter_values
-    label: ''
-    uom: unspecified
-    mutable: false
-    _identifier: null
-    _id: null
-    quality: null
-    _value_encoding: <i4
-    nilValues: null
-    _value_class: NumericValue
-  variable_reports: null
-  references_list: null
-  label: ''
-  mutable: false
-  variability: 3
-  reference_frame: null
-  ooi_short_name: null
-  description: ''
-  ion_name: null
-  _identifier: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: serial_num
+  name: viz_product_type
   extension: {}
   index_key: null
   cdm_data_type: null
@@ -531,71 +871,25 @@ time:
   cdm_data_type: null
   attributes: null
   _id: null
-lat:
+image_obj:
   comment: null
-  _derived_from_name: lat
+  _derived_from_name: image_obj
   long_name: null
   standard_name: null
   code_reports: null
   param_type:
-    fill_value: 0.0
+    fill_value: null
     description: ''
     extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
     _value_module: coverage_model.parameter_values
     label: ''
-    uom: degree_north
     mutable: false
     _identifier: null
     _id: null
-    quality: null
-    _value_encoding: <f4
-    nilValues: null
-    _value_class: NumericValue
-  variable_reports: null
-  references_list: null
-  label: ''
-  mutable: false
-  variability: 3
-  reference_frame: 5
-  ooi_short_name: null
-  description: ''
-  ion_name: null
-  _identifier: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: lat
-  extension: {}
-  index_key: null
-  cdm_data_type: null
-  attributes: null
-  _id: null
-driver_timestamp:
-  comment: null
-  _derived_from_name: time
-  long_name: null
-  standard_name: null
-  code_reports: null
-  param_type:
-    fill_value: -1
-    description: ''
-    extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
-    _value_module: coverage_model.parameter_values
-    label: ''
-    uom: seconds
-    mutable: false
-    _identifier: null
-    _id: null
-    quality: null
-    _value_encoding: <f8
-    nilValues: null
-    _value_class: NumericValue
+    cm_type: !!python/tuple [coverage_model.parameter_types, ArrayType]
+    _value_class: ArrayValue
   variable_reports: null
   references_list: null
   label: ''
@@ -607,48 +901,7 @@ driver_timestamp:
   ion_name: null
   _identifier: null
   cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: driver_timestamp
-  extension: {}
-  index_key: null
-  cdm_data_type: null
-  attributes: null
-  _id: null
-conductivity:
-  comment: null
-  _derived_from_name: conductivity
-  long_name: null
-  standard_name: null
-  code_reports: null
-  param_type:
-    fill_value: 0.0
-    description: ''
-    extension: {}
-    constraint: null
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
-      constraint: null}
-    _value_module: coverage_model.parameter_values
-    label: ''
-    uom: unknown
-    mutable: false
-    _identifier: null
-    _id: null
-    quality: null
-    _value_encoding: <f4
-    nilValues: null
-    _value_class: NumericValue
-  variable_reports: null
-  references_list: null
-  label: ''
-  mutable: false
-  variability: 3
-  reference_frame: null
-  ooi_short_name: null
-  description: ''
-  ion_name: null
-  _identifier: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  name: conductivity
+  name: image_obj
   extension: {}
   index_key: null
   cdm_data_type: null

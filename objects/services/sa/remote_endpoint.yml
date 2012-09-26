@@ -1,0 +1,15 @@
+name: remote_endpoint
+
+docstring: Interface for 2caa remote enpoint.
+
+dependencies: []
+
+
+methods:
+
+  get_port:
+    docstring: |
+        Get the terrestrial server port number.
+    in:
+    out:
+        port: 0

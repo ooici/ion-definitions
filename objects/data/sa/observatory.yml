@@ -5,7 +5,8 @@ SiteEnvironmentType:  !enum (values=(FIELD, TEST), default=FIELD)
 Site: !Extends_FrameOfReference
 #  # Specified bounds in 2 or 3 dimensions within which entity exists
 #  # Mandatory
-  geospatial_constraint: !GeospatialBounds
+
+  # constraints are inherited from frame of reference obj
 
   # The environment of the site. Used to differentiate marine deployments from, e.g. "bucket" tests
   environment: !SiteEnvironmentType

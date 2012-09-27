@@ -20,4 +20,5 @@ Granule:
 
   locator: {}
 
+  data_producer_id: ""
 

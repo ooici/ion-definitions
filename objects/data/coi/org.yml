@@ -75,16 +75,27 @@ Negotiation: !Extends_InformationResource
 
 ---
 
+#A subtype for all specific commitments
+AbstractBaseCommitment:
+
+---
+
+#An internal specific commitment object for resources
+ResourceCommitment: !Extends_AbstractBaseCommitment
+  resource_id: ""
+  exclusive: False
+
+CommitmentStatusEnum: !enum (values=(ACTIVE, INACTIVE), default=ACTIVE)
+---
+
 # Represents a standing obligation of one ION participant to another ION participant.
 # Commitments can be tracked and violations against commitments can be sanctioned.
 Commitment: !Extends_InformationResource
-  org_id: ""
-  user_id: ""
----
-
-ResourceCommitment: !Extends_Commitment
-  resource_id: ""
-
+  status: !CommitmentStatusEnum
+  provider: ""
+  consumer: ""
+  expiriation: ""
+  commitment: !AbstractBaseCommitment
 
 ---
 

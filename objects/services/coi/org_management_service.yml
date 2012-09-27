@@ -300,24 +300,6 @@ methods:
 
 
 
-  # -----------------
-
-  has_permission:
-    docstring: |
-      Returns a boolean of the specified user has permission for the specified action on a specified resource. Will
-      throw a NotFound exception if none of the specified ids do not exist.
-    in:
-      org_id: ""
-      user_id: ""
-      action_id: ""
-      resource_id: ""
-    out:
-      has_permission: False
-    throws:
-      NotFound: object with specified id does not exist
-
-
-
   # ---------------------------
 
 
@@ -345,17 +327,17 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-
   acquire_resource:
     docstring: |
-      Acquire the specified resource for a specified user withing the specified Org. Once shared, the resource is
+      Creates a Commitment Resource to for the specified resource for a specified user withing the specified Org. Once shared, the resource is
       committed to the user. Throws a NotFound exception if none of the ids are found.
     in:
       org_id: ""
       user_id: ""
       resource_id: ""
+      exclusive: False
     out:
-      success: True
+      commitment_id: ""
     throws:
       NotFound: object with specified id does not exist
 
@@ -363,9 +345,7 @@ methods:
     docstring: |
       Release the specified resource from an existing commitment. Throws a NotFound exception if none of the ids are found.
     in:
-      org_id: ""
-      user_id: ""
-      resource_id: ""
+      commitment_id: ""
     out:
       success: True
     throws:

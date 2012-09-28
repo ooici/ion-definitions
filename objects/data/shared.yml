@@ -73,6 +73,12 @@ TemporalBounds:
   start_datetime: ""
   end_datetime: ""
 
+CustomAttribute:
+  name: ""
+  type: ""
+  description: ""
+  default:
+
 ---
 
 # TODO: Define
@@ -144,7 +150,7 @@ Device: !Extends_TaskableResource
   #monitorable: True
   # Additional attributes required for specific devices
   # Recommended format: {attribute1_name:value, attribute2_name:value}
-  # The attribute names should align with those in the DeviceModel for this type of device.
+  # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
@@ -169,10 +175,10 @@ DeviceModel: !Extends_InformationResource
   # The model name/code provided by the manufacturer
   model: ""
   # Additional attributes required for specific models
-  # Recommended format: {attribute1_name:description, attribute2_name:description}
+  # Each entry in the list is a CustomAttribute object (see above)
   # A device of this model should then store these attribute values in the corresponding custom_attributes
   # of the device instance.
-  custom_attributes: {}
+  custom_attributes: []
   
 ---
 

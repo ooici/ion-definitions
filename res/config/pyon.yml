@@ -281,3 +281,5 @@ device:
   sbe37:
     host: sbe37-simulator.oceanobservatories.org
     port: 4001
+    port_agent_data_port: 4000
+    port_agent_cmd_port: 4003

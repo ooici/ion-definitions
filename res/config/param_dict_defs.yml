@@ -8,3 +8,5 @@ data_particle_parsed_param_dict: ['port_timestamp', 'driver_timestamp', 'interna
 data_particle_raw_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'preferred_timestamp', 'quality_flag', 'raw']
 satlantic_par_parsed_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'serial_num', 'timer', 'counts', 'checksum', 'preferred_timestamp', 'quality_flag']
 graph_image_param_dict: ['viz_timestamp', 'viz_product_type', 'image_name', 'content_type', 'image_obj']
+simple_data_particle_parsed_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'depth', 'conductivity', 'temp']
+simple_data_particle_raw_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'raw']

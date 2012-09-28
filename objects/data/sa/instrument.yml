@@ -76,8 +76,6 @@ InstrumentAgentInstance: !Extends_AgentInstance
   # (SYS) class for driver source code
   driver_class: ""
   svr_addr: ""
-  cmd_port: 0
-  evt_port: 0
   comms_method: ""
   comms_device_address: ""
   comms_device_port: 0
@@ -86,6 +84,7 @@ InstrumentAgentInstance: !Extends_AgentInstance
   #replace all the individual items about with driver_config and agent_config dict
   driver_config: {}
   agent_config: {}
+  port_agent_config: {}
   port_agent_work_dir: ""
   port_agent_delimeter: []
 

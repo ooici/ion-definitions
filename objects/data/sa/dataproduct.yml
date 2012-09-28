@@ -41,8 +41,8 @@ DataProduct: !Extends_InformationResource
   # spatial domain
   spatial_domain: {}
 
-  # lists key words and phrases that are relevant to the dataset
-  keywords: {}
+  # a list of !Ternm objects (see Shared)
+  descriptors: []
 
   # Miscellaneous information not already captured in attributes
   comment: ""
@@ -78,10 +78,6 @@ DataProduct: !Extends_InformationResource
   # Code List: vector, grid, textTable, tin, stereoModel, video
   iso_spatial_representation_type: ""
 
-  # detailed description of data that makes up the Data Product; for raw data, includes formatting information
-  # Mandatory
-  data_format: !DataFormat
-
   # OOI data processing level; L0, L1, or L2. The definitions of these levels are currently in revision,
   # and should be verified from the OOI Data Products document
   # Mandatory
@@ -96,15 +92,6 @@ DataProduct: !Extends_InformationResource
   # The quality control level of the data product.  A = no QC, b = automated QC, c = human QC
   # Mandatory
   quality_control_level: ""
-
-  # Indicates whether this is a deprecated dataset
-  # Mandatory
-  # todo: is this deprecated? duplicates LCS?
-  version_status: ""
-
-  # THREDDS data type appropriate for this dataset. E.g., "Grid", "Image", "Station", "Trajectory", "Radial" (ACDD)
-  # Mandatory
-  CDM_data_type: ""
 
   # Optional for ISO 19115 (=> MD_DataIdentification.spatialRepresentationType
   ISO_spatial_representation_type: ""
@@ -136,15 +123,9 @@ DataProduct: !Extends_InformationResource
   # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""
 
-  # The datetime the data were first created
-  data_creation_datetime: ""
-
-  # The datetime when the data were made publicly available
-  data_publish_datetime: ""
-
   # Holds information on where and when the data product was submitted to an external archive.
   # returns a list of objects of the ExternalArchiveType (ExternalArchive at the top of this yaml)
-  external_archivings: []
+  external_archives: []
 
   # List of URLs with information about the data product
   reference_urls: []

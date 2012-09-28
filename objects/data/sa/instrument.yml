@@ -2,10 +2,6 @@
 # sensors that communicate through a single onboard data interface.
 InstrumentDevice: !Extends_Device
   firmware_version: ""
-  manufacture_date: "" #later will be timeinstance object
-  lot_number: ""
-  # Provides offset, orientation, etc. information needed to calculate device location from platform location
-  has_platform_position: ""
   #datum_characterization: "" #later will be an object
   hardware_version: ""
   # The date of the last instrument calibration, expressed in ISO format. Manually managed in R2.
@@ -21,9 +17,6 @@ PrimaryInterface: !enum (values=(RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT,
 # Specifies a distinguished type of instruments, derived from the manufacturer's
 # model number, based on common attributes.
 InstrumentModel: !Extends_DeviceModel
-  # The URL of the manufacturer. Note that only one is allowed
-  #manufacturer_url: ""
-  reference_url: ""
   instrument_family: ""     # values= CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL, default=CAM
   baud_rate_default: ""
   # Polled vs...
@@ -34,7 +27,6 @@ InstrumentModel: !Extends_DeviceModel
   clock_notes: ""
   operational_depth_maximum: 0.0
   survival_depth_maximum: 0.0
-  operational_temperature_range: ""
   internal_data_storage: True
   # time system must be on before sampling.
   required_on_time: ""

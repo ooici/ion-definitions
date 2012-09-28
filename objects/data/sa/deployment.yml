@@ -33,11 +33,6 @@ Deployment: !Extends_FrameOfReference
   # the specifics of this deployment type
   context: !AbstractDeploymentContextType
 
-  # The planned initiation of the deployment
-  start_datetime_planned: ""
-  # The planned end of the deployment
-  end_datetime_planned: ""
-
   # An additional identification code used by the operators
   auxiliary_identifier: ""
 

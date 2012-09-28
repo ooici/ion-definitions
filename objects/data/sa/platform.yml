@@ -9,9 +9,6 @@ PlatformDevice: !Extends_Device
   # Surface-Piercing Profiler, Wire-Following Profiler, Mid-Water Platform, AUV, Gliders, Benthic Package
   # Deep Profiler
   platform_family: ""
-
-  # deployment point of platforms; platform may vary in location around that point
-  nominal_location: !GeospatialPoint
    
   index_location: !GeospatialIndex
   
@@ -19,14 +16,6 @@ PlatformDevice: !Extends_Device
 # Specifies a distinguished type of platform, derived from the manufacturer's model number
 # and on common attributes.
 PlatformModel: !Extends_DeviceModel
-
-  # Categorization by OOI node type
-  # Examples include: MJ (Medium-power Junction box), ID (Interface box HD camera), FJ (Float Junction Box),
-  # LJ (Low-power Junction box), WJ (Winch Junction box), PJ (Profiler Junction box), MF (Multi-Function Node)
-  # FI (Fixed Instruments), SB (Surface Buoy), SP (Surface-Piercing Profiler), WF (Wire-Following Profiler)
-  # MP (Mid-Water Platform), AV (AUV), GL (Gliders), BP (Benthic Package), DP (Deep Profiler)
-  # Mandatory
-  OOI_node_type: ""
 
   # Whether ION software is run on platform resources
   # Mandatory
@@ -39,10 +28,6 @@ PlatformModel: !Extends_DeviceModel
   # Broad categorization of the platform into major functional category (AUV, Glider, Mooring, Profiler, ...)/
   # Mandatory
   platform_type: ""   #
-
-  # Maximum number of people who can travel on platform
-  # Mandatoy
-  maximum_crew: 0  
 
 # Describes a type of platform agent
 PlatformAgent: !Extends_AgentDefinition

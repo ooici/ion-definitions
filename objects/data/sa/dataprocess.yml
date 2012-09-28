@@ -13,7 +13,7 @@ DataProcessDefinition: !Extends_InformationResource
 # produces output data products. Instance of DataProcessDefinition.
 DataProcess: !Extends_InformationResource
 
-  ATBD_reference: ""           # WRONG
+  dps_reference: ""           # WRONG
   source_code: ""              # WRONG
   input_subscription_id: ""
   process_id: ""

@@ -6,16 +6,8 @@ Site: !Extends_FrameOfReference
 #  # Specified bounds in 2 or 3 dimensions within which entity exists
 #  # Mandatory
 
-  # constraints are inherited from frame of reference obj
-
   # The environment of the site. Used to differentiate marine deployments from, e.g. "bucket" tests
   environment: !SiteEnvironmentType
-#
-#  # Specified time constraint within which entity exists
-#  temporal_constraint: "" # what is TemporalConstraint object?
-#
-#  # Collection of entities which collectively constrain the entity
-#  entity_constraint: "" # what is EntityConstraint object
 
 ---
 # Represents a reference designator that designates a top-level observatory, with geospatial

@@ -11,10 +11,8 @@ Phone:
 # Data structure for representing contact information uniformly across resources
 ContactInformation:
   organization_name: ""
-  first_name: ""
   individual_names_given: ""
   individual_name_family: ""
-  name: ""
   street_address: ""
   city: ""
   postal_code: ""
@@ -70,6 +68,7 @@ GeospatialPoint:
 
 
 TemporalBounds:
+  name:
   start_datetime: ""
   end_datetime: ""
 
@@ -196,6 +195,10 @@ Attachment: !Extends_InformationResource
   content_type: ""  # MIME type
   content: ""
   object_id: ""   # Associated object (resource) ID, for easier indexing
+  # identity of the creator of the document (could be outside OOI)
+  created_by: ""
+  # identity of the last modifier of the document (could be outside OOI)
+  modified_by: ""
   # Keywords indicating the type of attachment (e.g. user manual, log)
   keywords: []
 

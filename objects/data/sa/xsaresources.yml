@@ -83,22 +83,7 @@ InstrumentDeviceComputedAttributes: !Extends_TaskableComputedAttributes
   firmware_version: !ComputedFloatValue  # identifier of software installed in unit
 
   #@Method
-  location: !ComputedGeospatialBoundsValue # current geospatial (3D) location of instrument
-
-  #@Method
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
-
-  #@Method
-  last_command_status: !ComputedIntValue
-
-  #@Method
-  last_command_date: !ComputedFloatValue
-
-  #@Method
-  last_command: !ComputedStringValue
-
-  #@Method
-  last_commanded_by: !ComputedStringValue
 
   #@Method
   power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
@@ -113,10 +98,7 @@ InstrumentDeviceComputedAttributes: !Extends_TaskableComputedAttributes
   location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
 
   #@Method
-  last_calibration_time: !ComputedFloatValue  #
-
-  #@Method
-  sites: !ComputedListValue  #List of sites to which this instrument has been deployed
+  last_calibration_datetime: !ComputedFloatValue  #
 
 ---
 
@@ -212,15 +194,6 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   data_contents_updated: !ComputedStringValue   # the datetime when the contents of the data were last modified in any way. This is distinct from modifications to the data product attributes
 
   #@Method
-  latest_data_datetime: !ComputedStringValue   # the datetime on which the most recent data reading was taken.
-
-  #@Method
-  metadata_creation_datetime: !ComputedStringValue   # The time the data metadata (attributes) was created
-
-  #@Method
-  metadata_update_datetime: !ComputedStringValue   # The time the data metadata (attributes) were last updated
-
-  #@Method
   parameters: !ComputedListValue   # A set of Parameter objects describing each variable in this data product
 
   #@Method
@@ -247,11 +220,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 
 #Computed attributes for a data product
 DeploymentComputedAttributes: !Extends_ComputedAttributes
-  #@Method
-  end_datetime_actual: !ComputedStringValue  # The actual end of the deployment, calculated from when the deployment was activatedt
 
-  #@Method
-  start_datetime_actual: !ComputedStringValue  # The actual initiation of the deployment, calculated from when the deployment was activated
 
 
 ---

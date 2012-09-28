@@ -14,3 +14,20 @@ methods:
     in:
     out:
       status: True
+
+  pause:
+    in:
+    out:
+      status: True
+
+  resume:
+    in:
+    out:
+      status: True
+
+  stop:
+    in:
+    out:
+      status: True
+
+

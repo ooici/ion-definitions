@@ -1,0 +1,7 @@
+Scenario,ID,owner_id,confluence,type,south,north,west,east,top,bottom,vertical_direction,start,end,entity
+,,,,,,,,,,,height or depth,date and time,,
+R2_DEMO,GEO1,USER_1,https://confluence.oceanobservatories.org/display/CIDev/Preload+constraints,geospatial,32.882375,32.882385,-117.2321465,-117.2321455,100,140,depth,,,
+R2_DEMO,GEO2,USER_1,https://confluence.oceanobservatories.org/display/CIDev/Preload+constraints,geospatial,44.5,44.7,-125.5,-125.3,0,3000,depth,,,
+R2_DEMO,GEO3,USER_1,https://confluence.oceanobservatories.org/display/CIDev/Preload+constraints,geospatial,44.5,44.7,-125.5,-125.3,0,5,depth,,,
+R2_DEMO,GEO4,USER_1,https://confluence.oceanobservatories.org/display/CIDev/Preload+constraints,geospatial,44.5,44.7,-125.2,-125,0,800,depth,,,
+R2_DEMO,GEO5,USER_1,https://confluence.oceanobservatories.org/display/CIDev/Preload+constraints,geospatial,44.45,44.55,-125.45,-125.35,2905,2907,depth,,,

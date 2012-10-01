@@ -16,7 +16,7 @@ ContactInformation:
   street_address: ""
   city: ""
   postal_code: ""
-  state: ""
+  #state: ""
   country: ""
   phones: []  # list of phone objects
   email: ""
@@ -68,7 +68,7 @@ GeospatialPoint:
 
 
 TemporalBounds:
-  name:
+  name: ""
   start_datetime: ""
   end_datetime: ""
 
@@ -79,25 +79,24 @@ CustomAttribute:
   default: ""
   units: ""
 
----
+#---
 
-# TODO: Define
-DataFormat:
-  name: ""
-  description: ""
-  format_version_identifier: ""
-  between_record_delimiter: ""
-  # Mandatory for OOI Core Data, optional for external provider data
-  character_set: ""
-  unique_short_name: ""
-  long_name: ""
-  units: ""
-  # what is inserted when a real measurement is unavailable)
-  missing_value: ""
-  # a Java-style format specification for parsing a value from a string
-  value_format: ""
-  nominal_sampling_rate_minimum: "" # Hz
-  nominal_sampling_rate_maximum: "" # Hz
+#DataFormat:
+#  name: ""
+#  description: ""
+#  format_version_identifier: ""
+#  between_record_delimiter: ""
+#  # Mandatory for OOI Core Data, optional for external provider data
+#  character_set: ""
+#  unique_short_name: ""
+#  long_name: ""
+#  units: ""
+#  # what is inserted when a real measurement is unavailable)
+#  missing_value: ""
+#  # a Java-style format specification for parsing a value from a string
+#  value_format: ""
+#  nominal_sampling_rate_minimum: "" # Hz
+#  nominal_sampling_rate_maximum: "" # Hz
 
 ---
 CodeReport:
@@ -129,8 +128,12 @@ Parameter:
   code_reports: []      # provide the meaning of flags in CodeReport objects
   comment: ""
   reference_urls: []    # List of URLs with information about the data parameter
-  
+  units: ""
+  ion_name: ""
   parameter_characteristic_reports: []    # list of ParameterCharacteristicsReport objects
+  custom_attributes: {}
+
+
 
 ---
 

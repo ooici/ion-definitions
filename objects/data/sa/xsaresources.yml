@@ -206,13 +206,13 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data
 
   #@Method
-  active_user_subscriptions: !ComputedListValue   # The UserSubscription objects for this data product
+  active_user_subscriptions: !ComputedListValue   # The NotificationRequest objects for this data product
 
   #@Method
   descriptors: !ComputedListValue   # Returns a list of keyword/authority pairs with optional urls
 
   #@Method
-  past_user_subscriptions: !ComputedListValue   # Provides information for users who have in the past acquired this data product, but for which that acquisition was terminated
+  past_user_subscriptions: !ComputedListValue   # Provides a list of NotificationRequest for users who have in the past acquired this data product, but for which that acquisition was terminated
 
 ---
 

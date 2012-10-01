@@ -76,7 +76,8 @@ CustomAttribute:
   name: ""
   type: ""
   description: ""
-  default:
+  default: ""
+  units: ""
 
 ---
 

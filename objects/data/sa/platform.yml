@@ -1,3 +1,16 @@
+
+PlatformPort:
+  port_id: ""
+  ip_address: ""
+
+
+PlatformMonitorAttributes:
+  id: ""
+  name: ""
+  #monitor rate in seconds
+  monitor_rate: 0
+  units: ""
+
 # Represents a physical package with a manufacturer, model, and serial number, providing physical
 # mounting locations for one to many instruments. Platforms are also the primary units of deployment
 # of marine infrastructure.
@@ -11,6 +24,11 @@ PlatformDevice: !Extends_Device
   platform_family: ""
    
   index_location: !GeospatialIndex
+
+  # a list of platform_port objects (see above)
+  ports: []
+  # a list of PlatformMonitorAttributes objects
+  platform_monitor_attributes: []
   
 
 # Specifies a distinguished type of platform, derived from the manufacturer's model number

@@ -49,10 +49,13 @@ ServiceAgreementProposal:
 EnrollmentProposal: !Extends_ServiceAgreementProposal
 
 RequestRoleProposal: !Extends_ServiceAgreementProposal
+  #@EventData
   role_name: ""
 
 AcquireResourceProposal: !Extends_ServiceAgreementProposal
+  #@EventData
   acquisition_type: !AcquisitionTypeEnum
+  #@EventData
   resource: ""
 
 ---

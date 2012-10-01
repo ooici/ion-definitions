@@ -9,6 +9,8 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Datase
 dependencies: [resource_registry]
 
 methods:
+#--------
+
   create_dataset:
     in:
       name:            ""
@@ -43,7 +45,7 @@ methods:
     throws:
       NotFound: if ingestion configuration did not exist
 
-#------------------
+#--------
 
   add_stream:
     docstring: Adds a stream to a dataset
@@ -51,12 +53,17 @@ methods:
       dataset_id: ""
       stream_id: ""
     out:
+      success: True
+    
   remove_stream:
     docstring: Adds a stream to a dataset
     in:
       dataset_id: ""
       stream_id: ""
     out:
+      success: True
+
+#--------
       
   get_dataset_info:
     in:
@@ -70,34 +77,72 @@ methods:
     out:
       parameter_dictionary: {}
 
+#--------
 
-  get_dataset_bounds:
-    docstring: |
-        @brief Get the bounding coordinates of the dataset using a couch map/reduce query
-        @param dataset_id
-        @result bounds is a dictionary containing spatial and temporal bounds of the dataset in standard units
+  create_parameter_context:
     in:
-      dataset_id: ""
+      name: ""
+      parameter_context: {}
+      description: ""
     out:
-      bounds: {} # {geo: [latmin, lonmin, latmax, lonmax], height:[min, max], time:[min, max]}
+      parameter_context_id: ""
 
-  get_dataset_metadata:
-    docstring: |
-      @brief Get the metadata for the dataset using a couch map/reduce query
-      @param dataset_id
-      @result the aggregated available metadata for the specified dataset
+  read_parameter_context:
     in:
-      dataset_id: ""
+      parameter_context_id: ""
     out:
-      metadata: {} # structure tbd... similar to datastream definition
+      parameter_context: {}
 
-
-  #-------------------------
-  # Not implemented yet
-
-
-  find_datasets:
+  delete_parameter_context:
     in:
-      filters: !ResourceFilter
+      parameter_context_id: ""
     out:
-      dataset_list: []
+      success: True
+
+#--------
+
+  create_parameter_dictionary:
+    in:
+      name: ""
+      parameter_context_ids: []
+      description: ""
+    out:
+      parameter_dictionary_id: ""
+      
+  read_parameter_dictionary:
+    in:
+      parameter_dictionary_id: ""
+    out:
+      parameter_dictionary: {}
+
+  delete_parameter_dictionary:
+    in:
+      parameter_dictionary_id: ""
+    out:
+      success: True
+
+#--------
+
+  add_context:
+    in:
+      parameter_dictionary_id: ""
+      parameter_context_ids: []
+    out:
+      success: True
+
+  remove_context:
+    in:
+      parameter_dictionary_id: ""
+      parameter_context_ids: []
+    out:
+      success: True
+
+#--------
+      
+  read_parameter_contexts:
+    in:
+      parameter_dictionary_id: ""
+      id_only: False
+    out:
+      parameter_contexts: []
+      

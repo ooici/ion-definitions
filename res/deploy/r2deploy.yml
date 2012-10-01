@@ -114,15 +114,16 @@ apps:
 #      bootlevel: 10
 
   #### DM Services
+  - name: dataset_management
+    processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
+    deploy:
+      bootlevel: 10
+
   - name: pubsub_management
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
     deploy:
       bootlevel: 10
 
-  - name: dataset_management
-    processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
-    deploy:
-      bootlevel: 10
 
   - name: ingestion_management
     processapp: [ingestion_management, ion.services.dm.ingestion.ingestion_management_service, IngestionManagementService]

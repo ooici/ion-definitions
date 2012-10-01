@@ -119,11 +119,6 @@ apps:
     deploy:
       bootlevel: 10
 
-  - name: parameter_management
-    processapp: [parameter_management, ion.services.dm.distribution.parameter_management_service, ParameterManagementService]
-    deploy:
-      bootlevel: 10
-  
   - name: dataset_management
     processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
     deploy:

@@ -132,9 +132,6 @@ AssociationDefinitions:
     domain: [View, Catalog]
     range: [View]
     docstring:
-  - predicate: hasParameterContext
-    domain: [ParameterDictionaryResource]
-    range: [ParameterContextResource]
 
 # COI
   - predicate: affiliatedWith

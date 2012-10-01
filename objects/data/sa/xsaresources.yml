@@ -107,18 +107,6 @@ InstrumentDeviceComputedAttributes: !Extends_TaskableComputedAttributes
 #Computed attributes for an platform device
 PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
-  energy_generation: !ComputedFloatValue  # amount of energy being generated on the platform in Watts
-
-  #@Method
-  energy_consumption: !ComputedFloatValue  # amount of energy currently being consumed by the platform in Watts
-
-  #@Method
-  data_transmission_rate: !ComputedStringValue
-
-  #@Method
-  speed_over_ground: !ComputedStringValue
-
-  #@Method
   power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
 
   #@Method

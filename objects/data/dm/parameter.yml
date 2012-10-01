@@ -1,6 +1,0 @@
-ParameterContextResource: !Extends_InformationResource
-  parameter_context: {}
-
-ParameterDictionaryResource: !Extends_InformationResource
-
-

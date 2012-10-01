@@ -85,13 +85,11 @@ ResourceCommitment: !Extends_AbstractBaseCommitment
   resource_id: ""
   exclusive: False
 
-CommitmentStatusEnum: !enum (values=(ACTIVE, INACTIVE), default=ACTIVE)
 ---
 
 # Represents a standing obligation of one ION participant to another ION participant.
 # Commitments can be tracked and violations against commitments can be sanctioned.
 Commitment: !Extends_InformationResource
-  status: !CommitmentStatusEnum
   provider: ""
   consumer: ""
   expiriation: ""

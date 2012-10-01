@@ -329,13 +329,10 @@ methods:
 
   acquire_resource:
     docstring: |
-      Creates a Commitment Resource to for the specified resource for a specified user withing the specified Org. Once shared, the resource is
-      committed to the user. Throws a NotFound exception if none of the ids are found.
+      Creates a Commitment Resource for the specified resource for a specified user withing the specified Org as defined in the
+      proposal. Once shared, the resource is committed to the user. Throws a NotFound exception if none of the ids are found.
     in:
-      org_id: ""
-      user_id: ""
-      resource_id: ""
-      exclusive: False
+      sap: !AcquireResourceProposal
     out:
       commitment_id: ""
     throws:

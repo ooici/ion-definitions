@@ -159,9 +159,13 @@ AssociationDefinitions:
     range: [Attachment]
     docstring: References an Attachment for any given resource
   - predicate: hasCommitment
-    domain: [ActorIdentity, Resource]
+    domain: [ActorIdentity, Resource, Org]
     range: [Commitment]
     docstring: References a Commitment for an identity (that is committed) or a resource (that is used)
+  - predicate: hasContract
+    domain: [Negotiation]
+    range: [Commitment]
+    docstring: References the Commitment associated with a succesful Negotiaion
   - predicate: hasConversationType
     domain: [Conversation, ServiceDefinition]
     range: [ConversationType]

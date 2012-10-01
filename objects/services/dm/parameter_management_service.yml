@@ -11,10 +11,7 @@ methods:
   create_parameter_context:
     in:
       name: ""
-      param_type: ""
-      reference_frame: {}
-      fill_value: {}
-      variability: {}
+      parameter_context: {}
       description: ""
     out:
       parameter_context_id: ""
@@ -30,6 +27,8 @@ methods:
       parameter_context_id: ""
     out:
       success: True
+
+#--------
 
   create_parameter_dictionary:
     in:
@@ -51,6 +50,8 @@ methods:
     out:
       success: True
 
+#--------
+
   add_context:
     in:
       parameter_dictionary_id: ""
@@ -65,5 +66,12 @@ methods:
     out:
       success: True
 
+#--------
       
+  read_parameter_contexts:
+    in:
+      parameter_dictionary_id: ""
+      id_only: False
+    out:
+      parameter_contexts: []
       

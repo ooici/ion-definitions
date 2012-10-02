@@ -12,6 +12,7 @@ DeviceConfiguration:
 
 RemoteCommand:
   resource_id: ''
+  svc_name = ''
   command: ''
   args: []
   kwargs: {}

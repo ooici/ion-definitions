@@ -136,11 +136,11 @@ DataProduct: !Extends_InformationResource
 ---
 DataProductVersion:
   # name of the version
-  name:
+  name: ""
   # description of the version
-  description:
+  description: ""
   # data product version id
-  data_product_id:
+  data_product_id: ""
 
 ---
 

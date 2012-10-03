@@ -182,7 +182,8 @@ DeviceModel: !Extends_InformationResource
   # A device of this model should then store these attribute values in the corresponding custom_attributes
   # of the device instance.
   custom_attributes: []
-  
+  # tag is the stream name that the driver uses and the value is the paramter dictionary name.
+  stream_configuration: {}
 ---
 
 AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)

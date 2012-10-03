@@ -210,6 +210,7 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_parameter_definitions, BootstrapParameterDefinitions]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_process_dispatcher, BootstrapProcessDispatcher]
           config:
             bootstrap:

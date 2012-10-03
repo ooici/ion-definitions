@@ -136,6 +136,10 @@ AssociationDefinitions:
     domain: [ParameterDictionaryResource]
     range: [ParameterContextResource]
     docstring: ParameterDictionaryResource -> ParameterContextResource
+  - predicate: hasParameterDictionary
+    domain: [StreamDefinition]
+    range: [ParameterDictionaryResource]
+    docstring: StreamDefinition -> ParameterDictionaryResource
 
 # COI
   - predicate: affiliatedWith

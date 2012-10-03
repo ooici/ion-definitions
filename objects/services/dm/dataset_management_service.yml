@@ -13,16 +13,17 @@ methods:
 
   create_dataset:
     in:
-      name:            ""
-      datastore_name:  ""
-      view_name:       ""
-      stream_id:       ""
-      parameter_dict:  {}
-      spatial_domain:  {}
-      temporal_domain: {}
-      description:     ""
+      name:                    ""
+      datastore_name:          ""
+      view_name:               ""
+      stream_id:               ""
+      parameter_dict:          {}
+      spatial_domain:          {}
+      temporal_domain:         {}
+      parameter_dictionary_id: ""
+      description:             ""
     out:
-      dataset_id:      ""
+      dataset_id:              ""
 
   update_dataset:
     in:
@@ -101,6 +102,15 @@ methods:
 
 #--------
 
+  read_parameter_context_by_name:
+    in:
+      name: ""
+      id_only: False
+    out:
+      parameter_context: {}
+
+#--------
+
   create_parameter_dictionary:
     in:
       name: ""
@@ -122,22 +132,6 @@ methods:
       success: True
 
 #--------
-
-  add_context:
-    in:
-      parameter_dictionary_id: ""
-      parameter_context_ids: []
-    out:
-      success: True
-
-  remove_context:
-    in:
-      parameter_dictionary_id: ""
-      parameter_context_ids: []
-    out:
-      success: True
-
-#--------
       
   read_parameter_contexts:
     in:
@@ -146,3 +140,10 @@ methods:
     out:
       parameter_contexts: []
       
+  read_parameter_dictionary_by_name:
+    in:
+      name: ""
+      id_only: False
+    out:
+      parameter_dictionary: {}
+

@@ -34,6 +34,47 @@ quality_flag:
   cdm_data_type: null
   attributes: null
   _id: null
+dummy:
+  comment: null
+  _derived_from_name: dummy
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: -9999
+    description: ''
+    extension: {}
+    constraint: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    _template_attrs: {fill_value: -9999, quality: null, uom: unspecified, nilValues: null,
+      constraint: null}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    uom: unspecified
+    mutable: false
+    _identifier: null
+    _id: null
+    quality: null
+    _value_encoding: <i8
+    nilValues: null
+    _value_class: NumericValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: dummy
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
 raw:
   comment: null
   _derived_from_name: raw
@@ -353,6 +394,42 @@ internal_timestamp:
   _identifier: null
   cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
   name: internal_timestamp
+  extension: {}
+  index_key: null
+  cdm_data_type: null
+  attributes: null
+  _id: null
+google_dt_components:
+  comment: null
+  _derived_from_name: google_dt_components
+  long_name: null
+  standard_name: null
+  code_reports: null
+  param_type:
+    fill_value: null
+    description: ''
+    extension: {}
+    value_encoding: '|O8'
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
+    _value_module: coverage_model.parameter_values
+    label: ''
+    mutable: false
+    _identifier: null
+    _id: null
+    cm_type: !!python/tuple [coverage_model.parameter_types, RecordType]
+    _value_class: RecordValue
+  variable_reports: null
+  references_list: null
+  label: ''
+  mutable: false
+  variability: 3
+  reference_frame: null
+  ooi_short_name: null
+  description: ''
+  ion_name: null
+  _identifier: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  name: google_dt_components
   extension: {}
   index_key: null
   cdm_data_type: null

@@ -1,10 +1,13 @@
+# Represents an identified, unbounded sequence of data granules (messages) published with a unique topic.
 Stream: !Extends_InformationResource
   stream_route: !StreamRoute
   persisted: False
 
+# Defines a well-known identifier within a TopicTopology
 Topic: !Extends_InformationResource
   exchange_point: ""
 
+# Describes the format, structure, and characteristics of a stream and its granules (data records).
 StreamDefinition: !Extends_InformationResource
   parameter_dictionary: {}
   stream_type: ""

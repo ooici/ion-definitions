@@ -91,6 +91,6 @@ UIEmbeddedScreenElement: !Extends_UIResource
   data_path: ""
   data_path_description: ""
 
-# UI specs as generated during import
+# Defines the structure and layout of user interface elements.
 UISpec: !Extends_UIResource
   spec: {}

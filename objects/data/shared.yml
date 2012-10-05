@@ -241,7 +241,7 @@ AgentInstance: !Extends_InformationResource
 
 ---
 
-ProcessStateEnum: !enum (values=(SPAWN, TERMINATE, ERROR), default=SPAWN)
+ProcessStateEnum: !enum (values=(REQUESTED, WAITING, PENDING, RUNNING, TERMINATING, TERMINATED, FAILED, REJECTED, EXITED), default=REQUESTED)
 
 ---
 

@@ -7,10 +7,6 @@ SensorDevice: !Extends_Device
   
   # A physical device that can be deployed on an instrument, and reports its data through that instrument
 
-  # Identifier of the model that uniquely types the sensor (SensorModel Resource_ID)
-  # Mandatory
-  model: "" 
-
   # Identifier of hard-coded operating system in unit 
   firmware_version: ""
   

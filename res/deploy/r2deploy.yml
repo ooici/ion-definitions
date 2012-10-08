@@ -13,6 +13,10 @@ apps:
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
     deploy:
       bootlevel: 1
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: bootstrapper1
     processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
@@ -26,31 +30,55 @@ apps:
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
     deploy:
       bootlevel: 5
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: identity_management
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: policy_management
     processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: exchange_management
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: org_management
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 
   ##################################
@@ -62,6 +90,10 @@ apps:
     processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 #  - name: conversation_management
 #    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
@@ -72,16 +104,28 @@ apps:
     processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: resource_management
     processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: service_management
     processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 
   #### CEI Services
@@ -107,6 +151,10 @@ apps:
     processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 #
 #  - name: provisioner
 #    processapp: [provisioner, ion.services.cei.provisioner_service, ProvisionerService]
@@ -118,47 +166,83 @@ apps:
     processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: pubsub_management
     processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 
   - name: ingestion_management
     processapp: [ingestion_management, ion.services.dm.ingestion.ingestion_management_service, IngestionManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: data_retriever
     processapp: [data_retriever, ion.services.dm.inventory.data_retriever_service, DataRetrieverService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: index_management
     processapp: [index_management, ion.services.dm.inventory.index_management_service, IndexManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: user_notification
     processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: preservation_management
     processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: catalog_management
     processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: discovery
     processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 
   ##### SA SERVICES
@@ -166,26 +250,46 @@ apps:
     processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: data_product_management
     processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: data_process_management
     processapp: [data_process_management, ion.services.sa.process.data_process_management_service, DataProcessManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: instrument_management
     processapp: [instrument_management, ion.services.sa.instrument.instrument_management_service, InstrumentManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: observatory_management
     processapp: [observatory_management, ion.services.sa.observatory.observatory_management_service, ObservatoryManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 
   ##### AS SERVICE
@@ -193,6 +297,10 @@ apps:
     processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
   - name: visualization_service
     description: Responsible managing visualization data
@@ -200,6 +308,10 @@ apps:
     processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
     deploy:
       bootlevel: 10
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 
   - name: bootstrapper2
@@ -240,6 +352,10 @@ apps:
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     deploy:
       bootlevel: 30
+      ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
 
 
 

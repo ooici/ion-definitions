@@ -11,6 +11,6 @@ graph_image_param_dict: ['viz_timestamp', 'viz_product_type', 'image_name', 'con
 simple_data_particle_parsed_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'depth', 'conductivity', 'temp']
 simple_data_particle_raw_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'raw']
 google_dt: ['google_dt_components']
-simple_density_param_dict: ['density', 'conductivity', 'pressure', 'temp', 'lat', 'lon']
-simple_salinity_param_dict: ['salinity', 'conductivity', 'pressure', 'temp']
+simple_density_param_dict: ['density', 'conductivity', 'pressure', 'temp', 'lat', 'lon', 'port_timestamp', 'driver_timestamp', 'internal_timestamp']
+simple_salinity_param_dict: ['salinity', 'conductivity', 'pressure', 'temp', 'port_timestamp', 'driver_timestamp', 'internal_timestamp']
 dummy_pd: ['dummy']

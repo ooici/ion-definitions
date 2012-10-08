@@ -5,7 +5,7 @@ docstring: |
    In particular it provides a schedule based timer that triggers TimerEvents with
    requested fields set so that the client can subscribe to these events.
 
-spec: https://confluence.oceanobservatories.org/display/CIDev/Scheduler+Service (needs updated)
+spec: https://confluence.oceanobservatories.org/display/CIDev/Scheduler+Service (needs update)
 
 dependencies: [resource_registry]
 
@@ -41,7 +41,7 @@ methods:
     in:
       start_time: ""
       interval : 0
-      number_of_intervals: 0
+      end_time: ""
       event_origin : ""
       event_subtype : ""
     out:
@@ -61,3 +61,9 @@ methods:
       timer_id: ""
     throws:
       BadRequest: if timer is misformed and can not be scheduled
+
+  on_system_restart:
+    docstring: |
+      Restores Scheduler state during a system restart
+    in:
+    out:

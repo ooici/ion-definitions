@@ -26,9 +26,9 @@ IntervalTimer: !Extends_TimerSchedulerEntry
   # If start_time + n*interval is in the past, it will be skipped.
   interval: 0
 
-  # Number of intervals to repeat, including the first event.
-  # Limits the number of timer events, or unlimited until cancelled if 0.
-  number_of_intervals: 0
+  # System timestamp (str of millis in UNIX epoch) for when to end the timer.
+  # If end_time is set to -1, it will run forever
+  end_time: ""
 
 
 # Specific timer entry based on time of day

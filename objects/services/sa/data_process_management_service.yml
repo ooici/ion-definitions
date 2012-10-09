@@ -68,6 +68,7 @@ methods:
     in:
       stream_definition_id: ""
       data_process_definition_id: ""
+      binding: ""
     out:
     throws:
       NotFound: object with specified id does not exist

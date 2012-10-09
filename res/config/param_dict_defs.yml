@@ -1,7 +1,7 @@
 # Place parameter dictionary definitions here
 
 # Example parameter dictionary definition
-sample_param_dict: ['lat', 'lon', 'time', 'depth', 'salinity', 'temp', 'pressure', 'conductivity']
+sample_param_dict: ['lat', 'lon', 'time', 'depth', 'salinity', 'temp', 'pressure', 'conductivity', 'density']
 ctd_parsed_param_dict: ['lat', 'lon', 'time', 'depth', 'salinity', 'temp', 'pressure', 'conductivity']
 ctd_raw_param_dict: ['time']
 data_particle_parsed_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'depth', 'conductivity', 'temp', 'preferred_timestamp', 'quality_flag']
@@ -11,5 +11,7 @@ graph_image_param_dict: ['viz_timestamp', 'viz_product_type', 'image_name', 'con
 simple_data_particle_parsed_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'depth', 'conductivity', 'temp']
 simple_data_particle_raw_param_dict: ['port_timestamp', 'driver_timestamp', 'internal_timestamp', 'raw']
 google_dt: ['google_dt_components']
-simple_salinity_density_param_dict: ['salinity', 'density']
+simple_density_param_dict: ['density', 'conductivity', 'pressure', 'temp', 'lat', 'lon', 'port_timestamp', 'driver_timestamp', 'internal_timestamp']
+simple_salinity_param_dict: ['salinity', 'conductivity', 'pressure', 'temp', 'port_timestamp', 'driver_timestamp', 'internal_timestamp']
 dummy_pd: ['dummy', 'time', 'lat', 'on']
+mpl_graph: ['mpl_graph']

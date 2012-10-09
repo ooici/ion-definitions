@@ -9,7 +9,7 @@ DataProcessDefinition: !Extends_InformationResource
 
   parameters: {}
 
-  output_bindings: []
+  output_bindings: {}
 
 # Represents a computational process receiving data granules from stream subscription and
 # produces output data products. Instance of DataProcessDefinition.

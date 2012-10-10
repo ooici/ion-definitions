@@ -127,6 +127,9 @@ TestExtendedResource: !Extends_ExtendedResource
   policy_count: 0
   #@Method
   resource_object: !Resource
+  #@Method=resource_registry.read
+  remote_resource_object: !Resource
+
 
 ---
 

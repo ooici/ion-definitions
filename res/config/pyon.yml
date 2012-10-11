@@ -146,9 +146,9 @@ container:
 cc:
   timeout:
     shutdown: 30.0
-    heartbeat: 3.0
-    heartbeat_proc_time_threshold: 30.0
-    heartbeat_proc_count_threshold: 30
+    heartbeat: 30.0
+    heartbeat_proc_time_threshold: 600.0
+    heartbeat_proc_count_threshold: 20
   proctype: green   # Type of ION process to spawn for new services/processes (green or python)
 
 validate:

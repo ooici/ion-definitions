@@ -13,3 +13,18 @@ methods:
     in:
     out:
         port: 0
+
+  set_client_port:
+    docstring: |
+        Set the remote client port number.
+    in:
+        port: 0
+    out:
+      
+  get_client_port:
+    docstring: |
+        Get the remote client port number.
+    in:
+    out:
+        port: 0
+        

@@ -39,6 +39,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_data_process_definition:
+    in:
+      data_process_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
   find_data_process_definitions:
     in:
       filters: !ResourceFilter
@@ -118,6 +125,13 @@ methods:
       out_data_product_id: ""
 
   delete_data_process:
+    in:
+      data_process_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_data_process:
     in:
       data_process_id: ""
     out:

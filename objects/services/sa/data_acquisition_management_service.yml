@@ -46,6 +46,14 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_external_data_provider:
+    in:
+      external_data_provider_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
   # -----------------
   # Manipulate data sources
 
@@ -75,6 +83,13 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_data_source:
+    in:
+      data_source_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_data_source:
     in:
       data_source_id: ""
     out:
@@ -116,6 +131,12 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_data_source_model:
+    in:
+      data_source_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulate data source agent instance
@@ -153,6 +174,12 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_data_source_agent:
+    in:
+      data_source_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Manipulate  data source agent instance : DataSourceAgentInstance
@@ -185,6 +212,13 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_data_source_agent_instance:
+    in:
+      data_source_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_data_source_agent_instance:
     in:
       data_source_agent_instance_id: ""
     out:
@@ -249,6 +283,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_external_dataset:
+    docstring: Read and delete specified ExternalDataset object
+    in:
+      external_dataset_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
   # -----------------
   # Manipulate external dataset model: ExternalDatasetModel
   create_external_dataset_model:
@@ -280,6 +321,14 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_external_dataset_model:
+    docstring: Read and delete specified ExternalDatasetModel object
+    in:
+      external_dataset_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_external_dataset_model:
     docstring: Read and delete specified ExternalDatasetModel object
     in:
       external_dataset_model_id: ""
@@ -326,6 +375,14 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_external_dataset_agent:
+    docstring: Read and delete specified ExternalDatasetAgent object
+    in:
+      external_dataset_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
   # -----------------
   # Manipulate external dataset agent instance : ExternalDatasetAgentInstance
   create_external_dataset_agent_instance:
@@ -359,6 +416,14 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_external_dataset_agent_instance:
+    docstring: Read and delete specified ExternalDatasetAgentInstance object
+    in:
+      external_dataset_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_external_dataset_agent_instance:
     docstring: Read and delete specified ExternalDatasetAgentInstance object
     in:
       external_dataset_agent_instance_id: ""

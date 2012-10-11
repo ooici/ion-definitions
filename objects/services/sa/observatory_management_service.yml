@@ -87,6 +87,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_observatory:
+    docstring: Delete a Observatory resource
+    in:
+      observatory_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   get_observatory_extension:
     docstring: |
@@ -142,7 +149,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-
+  force_delete_subsite:
+    docstring: Delete a LogicalPlatform resource, removes assocations to parents
+    in:
+      subsite_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
   # -----------------
   # Working with PlatformSite resources.
 
@@ -184,6 +197,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_platform_site:
+    docstring: Delete a PlatformSite resource, removes assocations to parents
+    in:
+      platform_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
 
   # -----------------
@@ -227,8 +247,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-
-
+  force_delete_instrument_site:
+    docstring: Delete an InstrumentSite resource, removes assocations to parents
+    in:
+      instrument_site_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
 
   # -----------------
@@ -265,6 +290,14 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_deployment:
+    docstring: Delete a Deployment resource
+    in:
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_deployment:
     docstring: Delete a Deployment resource
     in:
       deployment_id: ""

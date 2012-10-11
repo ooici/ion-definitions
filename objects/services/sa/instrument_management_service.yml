@@ -160,6 +160,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_instrument_device:
+    docstring: Delete an InstrumentDevice resource
+    in:
+      instrument_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Working with InstrumentModel resources
@@ -201,6 +208,15 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_instrument_model:
+    docstring: Delete an InstrumentModel resource
+    in:
+      instrument_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
 
   # -----------------
   # Working with PlatformAgentInstance resources
@@ -237,6 +253,14 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_platform_agent_instance:
+    docstring: Delete a PlatformAgentInstance resource
+    in:
+      platform_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_platform_agent_instance:
     docstring: Delete a PlatformAgentInstance resource
     in:
       platform_agent_instance_id: ""
@@ -302,6 +326,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_platform_agent:
+    docstring: Delete a PlatformAgent resource
+    in:
+      platform_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Working with PlatformDevice resources. These represent the physical platforms
@@ -343,7 +374,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-
+  force_delete_platform_device:
+    docstring: Delete a PlatformDevice resource
+    in:
+      platform_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
   # -----------------
   # Working with PlatformModel resources. These represent types of platforms
 
@@ -384,7 +421,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-
+  force_delete_platform_model:
+    docstring: Delete a PlatformModel resource
+    in:
+      platform_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
   # -----------------
   # Working with SensorDevice resources
 
@@ -425,6 +468,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_sensor_device:
+    docstring: Deleate a SensorDevice resource
+    in:
+      sensor_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # -----------------
   # Working with SensorModel resources, types of sensors
@@ -466,6 +516,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_sensor_model:
+    docstring: Delete a SensorModel resource
+    in:
+      sensor_model_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
   # ---------------------------
   # Associations

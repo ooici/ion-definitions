@@ -101,7 +101,7 @@ AssociationDefinitions:
     range: [StreamDefinition]
     docstring: DEPRECATE
   - predicate: hasNotification
-    domain: [ActorIdentity]
+    domain: [ActorIdentity, UserInfo]
     range: [NotificationRequest]
     docstring: References a NotificationRequest (standing notification rule) for a user.
   - predicate: hasSubscription

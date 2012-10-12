@@ -364,17 +364,21 @@ methods:
         lcstate
         keyword (with optional restype)
         nested_type (with optional restype)
+        attribute name (with optional value), only for specially indexed attribute names
         name (with optional restype)
       Returns a tuple (list_of_resources, list_of_matches) if id_only == False or
       (list_of_resource_ids, list_of_matches) otherwise. List_of_matches is a list of
       dicts with keys (type, lcstate, name, id), providing further information about the
       matching resources.
+      Note: Only use this operation with keyword args, never with positional args. Signature will be extended.
     in:
       restype: ""
       lcstate: ""
       name: ""
       keyword: ""
       nested_type: ""
+      attr_name: ""
+      attr_value: ""
       limit: 0
       skip: 0
       descending: False

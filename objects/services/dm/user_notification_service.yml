@@ -33,7 +33,6 @@ methods:
   publish_event:
     in:
       event:
-      interval_timer_params: {}
     out:
     throws:
       BadRequest: if there is anything wrong with the event object
@@ -87,6 +86,23 @@ methods:
       type: ""
       min_datetime: ""
       max_datetime: ""
+      limit: -1
+      descending: False
+    out:
+      event_list: []
+    throws:
+      NotFound: if object with specified parameters does not exist
+
+  find_events_extended:
+    docstring: |
+      Uses ElasticSearch. Returns a list of events that match the specified search criteria. Will throw a NotFound exception
+      if no events exist for the given parameters.
+      @todo can we replace this with discovery service?
+    in:
+      origin: ""
+      type: ""
+      min_time: ""
+      max_time: ""
       limit: -1
       descending: False
     out:

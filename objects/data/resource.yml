@@ -10,6 +10,7 @@ Resource:
   lcstate: "DRAFT_PRIVATE"
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   ts_updated: ""
+  alt_ids: []   # System internal - Used to assign alternate IDs to this resource, e.g. for preload
 
 ---
 

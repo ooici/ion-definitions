@@ -38,10 +38,11 @@ ServiceAgreementProposal:
   consumer: ""     #Who will be the consumer of this proposal - typically a used id
   provider: ""     #Who will be the provider of this proposal - typically an org id
   broker: ""       #Optional identifier if proposal is brokered by third party
-  sequence_num: 0
+  sequence_num: 0  #Keeps track of the sequence of proposals within a negotiation
   proposal_status: !ProposalStatusEnum
-  conditions: {}
-  clauses: {}
+  expiration: ""   #Optional expiration that will be used with resultant Commitment if accepted
+  conditions: {}   #Optional collection of additional conditions - not used in R2
+  clauses: {}      #Optional collection of additional clauses - not used in R2
 
 ---
 #Various specific types of proposals

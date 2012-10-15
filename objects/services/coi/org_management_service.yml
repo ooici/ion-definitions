@@ -338,9 +338,9 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  release_resource:
+  release_commitment:
     docstring: |
-      Release the specified resource from an existing commitment. Throws a NotFound exception if none of the ids are found.
+      Release the commitment that was created for resources. Throws a NotFound exception if none of the ids are found.
     in:
       commitment_id: ""
     out:

@@ -194,7 +194,10 @@ RequestRoleNegotiationStatusEvent: !Extends_NegotiationEvent
 
 AcquireResourceNegotiationStatusEvent: !Extends_NegotiationEvent
   resource: ""
-  acquisition_type: ""
+
+---
+
+AcquireResourceExclusiveNegotiationStatusEvent: !Extends_AcquireResourceNegotiationStatusEvent
 
 ---
 

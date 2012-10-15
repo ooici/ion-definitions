@@ -287,5 +287,7 @@ CompoundAssociations:
     predicates: [hasMembership,hasInfo]
   hasPlatformModel:
     predicates: [hasDevice,hasModel]
-  hasInstrumentAgentForInstrumentDevice:
+  hasAgentForDevice:
     predicates: [hasModel,hasModel]
+  hasModelForDeployment:
+    predicates: [hasDeployment,hasModel]

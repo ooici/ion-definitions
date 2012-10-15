@@ -2,6 +2,14 @@
 ComputedGeospatialBoundsValue: !Extends_ComputedValue
    value: !GeospatialBounds
 
+
+
+#This object contains additional information associated with an instrument device.
+DeviceExtension: !Extends_ExtendedInformationResource
+  #@hasOutputProduct
+  data_products: [] # A list of associated data products
+  #@hasSite
+  sites: []  # list of sites to which to which this device is attached
 ---
 
 
@@ -14,35 +22,35 @@ ComputedGeospatialBoundsValue: !Extends_ComputedValue
 
 
 #This object contains additional information associated with an instrument device.
-InstrumentDeviceExtension: !Extends_ExtendedInformationResource
-  #@hasOutputProduct
-  data_products: [] # A list of associated data products
+InstrumentDeviceExtension: !Extends_DeviceExtension
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasInstrumentAgentForInstrumentDevice
+  #@hasAgentForDevice
   instrument_agent: !InstrumentAgent  # The associated agent
+  #@hasSite=InstrumentSite
+  instrument_site: !InstrumentSite  # The associated site
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
   #@hasPlatformModel=PlatformDevice
   platform_model: !PlatformModel  # The model associated to the parent platform
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
-  #@hasAttachment
-  attachments: []  # list of sensors attached to this device
-  #@hasResource=Org
-  orgs: []
 
 ---
 
 
 
 #This object contains additional information associated with an instrument device.
-PlatformDeviceExtension: !Extends_ExtendedInformationResource
-
+PlatformDeviceExtension: !Extends_DeviceExtension
+  #@hasModel
+  platform_model: !PlatformModel  # The associated Instrument Model
+  #@hasAgentForDevice
+  platform_agent: !PlatformAgent  # The associated agent
+  #@hasSite=PlatformSite
+  platform_site: !PlatformSite  # The associated site]
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
-  #@hasResource=Org
-  orgs: []
+
 ---
 
 
@@ -52,24 +60,63 @@ ObservatoryExtension: !Extends_ExtendedInformationResource
 
 ---
 
-
-
 #This object contains additional information associated with a data product.
 DataProductExtension: !Extends_ExtendedInformationResource
+  #@hasVersion
+  version: !DataProductVersion  # The associated data product collection
+  #@hasDataProduct=Site
+  site: !Site  # Site which produces logical data products
+  #@hasOutputProduct=ExternalDataset
+  extdataset: !ExternalDataset  # The associated external data set
+
 
 ---
 
+#This object contains additional information associated with a instrument or platform model.
+DeviceModelExtension: !Extends_ExtendedInformationResource
+  #@hasModel
+  devices: []  # The associated device instances
+
+#This object contains additional information associated with a request for notification.
+NotificationRequestExtension: !Extends_ExtendedInformationResource
+  #@hasNotification=UserInfo
+  user_info: !UserInfo  # The associated user
 
 
-#This object contains additional information associated with a data product.
+#This object contains additional information associated with a deployment resource.
 DeploymentExtension: !Extends_ExtendedInformationResource
-
-
+  #@hasDeployment=InstrumentDevice
+  instrument_devices: []  # The associated Instrument devices
+  #@hasDeployment=InstrumentSite
+  instrument_sites: []  # The associated Instrument sites
+  #@hasDeployment=PlatformDevice
+  platform_devices: []  # The associated Platform devices
+  #@hasDeployment=PlatformSite
+  platform_sites: []  # The associated Platform sites
+  #@hasModelForDeployment
+  models: []  # The associated models
 
 ---
 
 
+#This object contains additional information associated with a Site resource.
+SiteExtension: !Extends_ExtendedInformationResource
+  #@hasDevice=InstrumentDevice
+  instrument_devices: []  # The associated Instrument devices
+  #@hasModel=InstrumentModel
+  instrument_models: []  # The associated Instrument models
+  #@hasDevice=PlatformDevice
+  platform_devices: []  # The associated Platform devices
+  #@hasModel=PlatformModel
+  platform_models: []  # The associated Platform models
+  #@hasDeployment
+  deployments: []  # The associated deployments
+  #@hasDataProduct
+  data_products: []  # The associated data products
+  #@hasSite
+  sites: []  # The associated parent and child sites
 
+---
 
 
 ####################################################################

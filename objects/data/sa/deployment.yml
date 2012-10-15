@@ -2,6 +2,7 @@
 # The mount orientation indicates which way a device is pointing (where the pointing direction
 # is defined as the direction in which its sensor is pointing, unless another direction has been
 # specified ) relative to the device (usually a platform) on which it is mounted.
+# !! THIS IS NOT USED IN R2.0, FOR LATER USE !!
 DeviceMountingPosition:
   # the id of the device to which this position applies relative to the parent device
   # (usually an instrument on a platform)

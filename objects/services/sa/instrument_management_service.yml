@@ -49,6 +49,14 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_instrument_agent_instance:
+    docstring: Delete an InstrumentAgentInstance resource
+    in:
+      instrument_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
 
   start_instrument_agent_instance:
     docstring: |
@@ -101,6 +109,14 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_instrument_agent:
+    docstring: Delete an InstrumentAgent resource
+    in:
+      instrument_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_instrument_agent:
     docstring: Delete an InstrumentAgent resource
     in:
       instrument_agent_id: ""

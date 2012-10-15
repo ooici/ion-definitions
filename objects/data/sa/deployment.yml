@@ -46,11 +46,10 @@ Deployment: !Extends_FrameOfReference
 
 
 ---
+# was BuoyDeploymentContext
+# Deployment of a bundled, integrated platform into a remote environment without direct comms capabilities
+RemotePlatformDeploymentContext: !Extends_AbstractDeploymentContextType
 
-BuoyDeploymentContext: !Extends_AbstractDeploymentContextType
-
-  # Specified time constraint within which entity exists, and others
-  constraint_set: []
 
   # a list of DeviceMountingPosition objects
   device_mounting_positions: []
@@ -58,14 +57,16 @@ BuoyDeploymentContext: !Extends_AbstractDeploymentContextType
 ---
 
 
-
-MooringDeploymentContext: !Extends_AbstractDeploymentContextType
-
-  # Specified time constraint within which entity exists, and others
-  constraint_set: []
+# was MooringDeploymentContext
+# The deployment of a single RSN node
+CabledNodeDeploymentContext: !Extends_AbstractDeploymentContextType
 
 ---
+# a one-to-one deployment of an instrument onto an RSN platform
+CabledInstrumentDeploymentContext: !Extends_AbstractDeploymentContextType
 
+
+---
 
 
 CruiseDeploymentContext: !Extends_AbstractDeploymentContextType
@@ -73,7 +74,7 @@ CruiseDeploymentContext: !Extends_AbstractDeploymentContextType
 ---
 
 
-
-GliderDeploymentContext: !Extends_AbstractDeploymentContextType
+#was GliderDeploymentContext
+MobileAssetDeploymentContext: !Extends_AbstractDeploymentContextType
 
 ---

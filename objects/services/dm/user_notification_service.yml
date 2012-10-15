@@ -115,6 +115,7 @@ methods:
       Returns a list of events that match the resource id
     in:
       resource_id: ""
+      limit: 100
     out:
       event_list: []
     throws:

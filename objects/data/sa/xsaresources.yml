@@ -29,6 +29,8 @@ InstrumentDeviceExtension: !Extends_ExtendedInformationResource
   sensor_devices: []  # list of sensors attached to this device
   #@hasAttachment
   attachments: []  # list of sensors attached to this device
+  #@hasResource=Org
+  orgs: []
 
 ---
 
@@ -39,7 +41,8 @@ PlatformDeviceExtension: !Extends_ExtendedInformationResource
 
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
-
+  #@hasResource=Org
+  orgs: []
 ---
 
 
@@ -78,7 +81,7 @@ DeploymentExtension: !Extends_ExtendedInformationResource
 ####################################################################
 
 #Computed attributes for an instrument device
-InstrumentDeviceComputedAttributes: !Extends_TaskableComputedAttributes
+InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
   firmware_version: !ComputedFloatValue  # identifier of software installed in unit
 

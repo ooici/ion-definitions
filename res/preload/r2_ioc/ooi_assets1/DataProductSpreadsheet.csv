@@ -1,0 +1,207 @@
+﻿Textbox8,tbToday
+Data Product Spreadsheet,Report Generated: 9/28/2012
+
+Textbox14
+
+
+Count
+"Total Active, Retired, Draft, Rejected Risks: 0"
+
+Data_Product_Identifier,Data_Product_Name,Data_Product_Level1,Units,DPS_DCN_s_,Processing_Flow_Diagram_DCN_s_,Instrument_Class,Instrument_Name,First_Deployment_Date
+ABSTHRM,PHSEN Thermistor Temperature,L0,volts,DCN 1341-00507,DCN 1342-00510,PHSEN,pH stable,2013-08
+BARPRES,Barometric Pressure,L0,mbar,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+BARPRES,Barometric Pressure,L1,Pa,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+BENTHFL,Benthic Flow Rates,L2,m/yr,DCN 1341-00220,DCN 1342-00220,FLOBN,Benthic Flow,2013-08
+BOTPRES,Pressure,L1,nanoPascal,DCN 1341-00070,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08
+BOTSFLU,Seafloor Uplift and Deflation,L2,meters,DCN 1341-00080,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08
+BOTTILT,"X Tilt, Y Tilt",L0,microradians,DCN 1341-00060,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08
+BOTTILT,"X Tilt, Y Tilt",L1,microradians,DCN 1341-00060,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08
+CAMSTIL,Still Image ,L1,Lossless compression Image File,DCN 1341-00830,n/a,CAMDS,Camera digital still strobe,2013-08
+CDOMFLO,Fluorometric CDOM Concentration,L0,counts,DCN 1341-00550,DCN 1342-00530,FLORT,Fluorometer three wavelength,2012-10
+CDOMFLO,Fluorometric CDOM Concentration,L1,ppm,DCN 1341-00550,DCN 1342-00530,FLORT,Fluorometer three wavelength,2012-10
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2012-10
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2012-10
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2012-10
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2012-10
+CO2ABS1,Optical Absorbance Ratio at 434nm,L0,unitless,DCN 1341-00487,DCN 1342-00490,PCO2W,pCO2 water,2013-08
+CO2ABS2,Optical Absorbance Ratio at 620nm,L0,unitless,DCN 1341-00488,DCN 1342-00490,PCO2W,pCO2 water,2013-08
+CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,L2,mol m-2 s-1,DCN 1341-00270,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09
+CO2THRM,PCO2W Thermistor Temperature,L0,volts,DCN 1341-00489,DCN 1342-00490,PCO2W,pCO2 water,2013-08
+CONDSRF,Sea Surface Conductivity,L0,S/m,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+CONDSRF,Sea Surface Conductivity,L1,S/m,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+DNASAMP,16s rRNA sequence of filtered physical sample,L2,2 micron filter,DCN 1341-00630,n/a,PPSDN,DNA particulate,2013-08
+DOCONCF,Oxygen Concentration from Stable DO Instrument,L1,uMol/l,DCN 1341-00521,DCN 1342-00521,DOFST,Oxygen dissolved fastresp,2013-09
+DOCONCS,Oxygen Concentration from Fastrep DO Instrument,L0,degrees; degrees Celcius,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2012-10
+DOCONCS,Oxygen Concentration from Fastrep DO Instrument,L2,uMol/l,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2012-10
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2012-10
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2012-10
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPT,Velocity profile Short Range,2012-10
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",VADCP,Velocity profile 50m turb,2012-10
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2012-10
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2012-10
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPT,Velocity profile Short Range,2012-10
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",VADCP,Velocity profile 50m turb,2012-10
+FLUBSCT,Optical Backscatter (Red Wavelengths),L0,counts,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2012-10
+FLUBSCT,Optical Backscatter (Red Wavelengths),L0,counts,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2012-10
+FLUBSCT,Optical Backscatter (Red Wavelengths),L1,1/m,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2012-10
+FLUBSCT,Optical Backscatter (Red Wavelengths),L1,1/m,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2012-10
+FLUXHOT,Direct Covariance Flux of Heat,L2,J m^(-2) s^(-1),DCN 1341-00330,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+FLUXHOT,Direct Covariance Flux of Heat,L2,J m^(-2) s^(-1),DCN 1341-00330,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+FLUXMOM,Direct Covariance Flux of Momentum,L2,kg m^(-1) s^(-2),DCN 1341-00320,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+FLUXMOM,Direct Covariance Flux of Momentum,L2,kg m^(-1) s^(-2),DCN 1341-00320,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+GRNDACC,Broadband Ground Acceleration,L1,m/s^2,DCN 1341-00100,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-08
+GRNDVEL,Broadband Ground Velocity,L1,m/s,DCN 1341-00090,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-08
+HDVIDEO,HD Video Image,L1,Lossless compression Image File,DCN 1341-00840,n/a,CAMHD,Camera digital video HD,2013-08
+HYDACPR,Acoustic Pressure Waves ,L0,TBD,"DCN 1341-00820 (HYDBB), 1341-00821 (HYDLF)","DCN 1342-00810 (HYDBB), DCN 1342-00821 (HYDLF)",HYDBB,Hydrophone BB passive,2013-08
+HYDACPR,Acoustic Pressure Waves ,L0,TBD,"DCN 1341-00820 (HYDBB), 1341-00821 (HYDLF)","DCN 1342-00810 (HYDBB), DCN 1342-00821 (HYDLF)",HYDLF,Hydrophone LF passive,2013-08
+HYDACPR,Acoustic Pressure Waves ,L1,dB//1uPa/V,"DCN 1341-00820 (HYDBB), 1341-00821 (HYDLF)","DCN 1342-00810 (HYDBB), DCN 1342-00821 (HYDLF)",HYDBB,Hydrophone BB passive,2013-08
+HYDACPR,Acoustic Pressure Waves ,L1,dB//1uPa/V,"DCN 1341-00820 (HYDBB), 1341-00821 (HYDLF)","DCN 1342-00810 (HYDBB), DCN 1342-00821 (HYDLF)",HYDLF,Hydrophone LF passive,2013-08
+HYDFREQ,Frequency,L0,TBD,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-08
+HYDFREQ,Frequency,L1,KHz,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-08
+IES_HEF,Horizontal Electric Fields,L0,TBD,DCN 1341-00580,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IES_HEF,Horizontal Electric Fields,L1,micro volt/cm,DCN 1341-00580,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IES_WPP,Water Property Profile Time Series,L2,"T (degree C), salinity (unitless), density (kgm-3)",DCN 1341-00600,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,L2,m/s,DCN 1341-00590,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IESHEAT,Water Column Heat Content,L2,Jm-2,DCN 1341-00610,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IESPRES,Bottom Pressure,L0,TBD,DCN 1341-00570,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IESPRES,Bottom Pressure,L1,Pa,DCN 1341-00570,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IESRATT,Roundtrip Acoustic Travel Time (RATT),L0,TBD,DCN 1341-00560,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+IESRATT,Roundtrip Acoustic Travel Time (RATT),L1,milliseconds,DCN 1341-00560,DCN 1342-00560,HPIES,IES pressure velocity,2014-08
+LONGIRR,Downwelling Longwave Irradiance,L0,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+LONGIRR,Downwelling Longwave Irradiance,L1,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,L0,TBD,DCN 1341-00240,DCN 1342-00240,MASSP,Mass Spectrometer,2013-08
+MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,L1,uM and daltons,DCN 1341-00240,DCN 1342-00240,MASSP,Mass Spectrometer,2013-08
+MOISTUR,Turbulent Humidity Fluctuation,L0,TBD,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+MOISTUR,Turbulent Humidity Fluctuation,L0,TBD,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+MOISTUR,Turbulent Humidity Fluctuation,L1,%,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+MOISTUR,Turbulent Humidity Fluctuation,L1,%,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+MOTFLUX,Platform Direction and Tilt (3 axes),L0,"TBD (FDCHP), degree (from north or vertical) (FDCLP)",DCN 1341-00301,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+MOTFLUX,Platform Direction and Tilt (3 axes),L0,"TBD (FDCHP), degree (from north or vertical) (FDCLP)",DCN 1341-00301,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+NITROPT,Nitrate Concentation,L1,µM,DCN 1341-00620,DCN 1342-00620,NUTNR,Nutrient nitrate,2013-08
+OPTABSN,Optical Absorption Coefficient,L2,1/m,DCN 1341-00700,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08
+OPTATTN,Optical Beam Attenuation Coefficient,L2,1/m,DCN 1341-00690,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08
+OPTATTS,Diffuse Attenuation Coefficient,L2,1/m,DCN 1341-00740,DCN 1342-00730,SPKIR,spectral irradiance,2013-08
+OPTCREF,Reference Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08
+OPTCSIG,Signal Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08
+OPTPARW,Photosynthetically Active Radiation (PAR),L0,"counts (Satl), volts (Bios)","DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2012-10
+OPTPARW,Photosynthetically Active Radiation (PAR),L1,µmol photons/m^2*s,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2012-10
+OPTTEMP,Temperature from OPTAA,L0,degrees C,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08
+PCO2ATM,Partial Pressure of CO2 in Atmosphere,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09
+PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09
+PCO2WAT,Patial Pressure of CO2 in Water,L1,µatm,DCN 1341-00490,DCN 1342-00490,PCO2W,pCO2 water,2013-08
+PH434SI,Optical Absorbance Signal Intensity at 434nm,L0,unitless,DCN 1341-00508,DCN 1342-00510,PHSEN,pH stable,2013-08
+PH578SI,Optical Absorbance Signal Intensity at 578nm,L0,unitless,DCN 1341-00509,DCN 1342-00510,PHSEN,pH stable,2013-08
+PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,OSMOI,Watersample chem trace,2013-08
+PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,RASFL,Watersample chem trace H2S pH,2013-08
+PHWATER,pH,L1,pH units,DCN 1341-00510,DCN 1342-00510,PHSEN,pH stable,2013-08
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+PRECIPM,Precipitation,L0,mm,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+PRECIPM,Precipitation,L1,mm,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+PRESAIR,PCO2A Gas Stream Pressure,L0,mbar,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+RELHUMI,Relative Humidity,L0,"TBD (FDCHP), % (METBK)","DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",FDCHP,Flux direct cov HP,2013-09
+RELHUMI,Relative Humidity,L0,"TBD (FDCHP), % (METBK)","DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",METBK,Meteorology bulk,2013-09
+RELHUMI,Relative Humidity,L1,%,"DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",FDCHP,Flux direct cov HP,2013-09
+RELHUMI,Relative Humidity,L1,%,"DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",METBK,Meteorology bulk,2013-09
+SFLPRES,Seafloor Pressure,L1,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST)",PRESF,Pressure SF,2013-08
+SFLPRES,Seafloor Pressure,L1,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST)",PREST,Pressure SF tidal,2013-08
+SGRDVEL,Short Period Ground Velocity,L1,m/s,DCN 1341-00110,DCN 1342-00110,OBSSP,Seismometer shortperiod,2013-08
+SHRTIRR,Downwelling Shortwave Irradiance ,L0,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+SHRTIRR,Downwelling Shortwave Irradiance ,L1,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+SONBSCA,Multi-Frequency Acoustic Backscatter,L0,TBD,DCN 1341-00800,DCN 1342-00800,ZPLSC,Plankton ZP sonar coastal,2013-08
+SONBSCA,Multi-Frequency Acoustic Backscatter,L0,TBD,DCN 1341-00800,DCN 1342-00800,ZPLSG,Plankton ZP sonar global,2013-08
+SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSC,Plankton ZP sonar coastal,2013-08
+SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSG,Plankton ZP sonar global,2013-08
+SPECHUM,Specific Humidity,L2,%,DCN 1341-00370,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+SPECTIR,Downwelling Spectral Irradiance ,L0,TBD,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-08
+SPECTIR,Downwelling Spectral Irradiance ,L1,µW*cm^-2*nm^-1,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-08
+TEMPAIR,Air Temperature,L0,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+TEMPAIR,Air Temperature,L1,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+TEMPSFL,Temperature Array in Spatial Grid,L0,TBD,DCN 1341-00130,DCN 1342-00130,TMPSF,Temperature seafloor,2013-08
+TEMPSFL,Temperature Array in Spatial Grid,L1,C,DCN 1341-00130,DCN 1342-00130,TMPSF,Temperature seafloor,2013-08
+TEMPSRF,Sea Surface Temperature,L0,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+TEMPSRF,Sea Surface Temperature,L1,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+TEMPVNT,Vent Fluid Temperature from RASFL,L0,TBD,DCN 1341-00140,DCN 1342-00140,RASFL,Watersample chem trace H2S pH,2013-08
+TEMPVNT,Vent Fluid Temperature from RASFL,L1,degrees C,DCN 1341-00140,DCN 1342-00140,RASFL,Watersample chem trace H2S pH,2013-08
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDAV,CTD AUV,2012-10
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2012-10
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDGV,CTD Glider,2012-10
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDMO,CTD Mooring,2012-10
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDPF,CTD Profiler,2012-10
+THSPHHC,Hydrogen Concentration,L0,V,DCN 1341-00210,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+THSPHHC,Hydrogen Concentration,L2,Moles/kg,DCN 1341-00210,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+THSPHHS,Hydrogen Sulfide Concentration,L0,V,DCN 1341-00200,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+THSPHHS,Hydrogen Sulfide Concentration,L2,Moles/kg,DCN 1341-00200,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+THSPHPH,pH,L0,V,DCN 1341-00190,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+THSPHPH,pH,L2,pH units,DCN 1341-00190,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+THSPHTE,Vent Fluid Temperature from THSPH,L0,V,DCN 1341-00120,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+THSPHTE,Vent Fluid Temperature from THSPH,L1,degrees C,DCN 1341-00120,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08
+TMPATUR,Turbulent Air Temperature,L0,TBD,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+TMPATUR,Turbulent Air Temperature,L0,TBD,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+TMPATUR,Turbulent Air Temperature,L1,degree C,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+TMPATUR,Turbulent Air Temperature,L1,degree C,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+TRHPHCC,Vent Fluid Chloride Concentration,L2,µM,DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),L1,mV,DCN 1341-00170,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHR1,Resistivity R1,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHR2,Resistivity R2,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHR3,Resistivity R3,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHTE,Vent Fluid Temperature from TRHPH,L1,C,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHVC,Thermocouple Temperature,L0,V,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHVO,ORP Volts,L0,V,DCN 1341-00170,DCN 1342-00150,TRHPH,Temp resist,2013-08
+TRHPHVS,Thermistor Temperature,L0,V,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-08
+VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPA,Velocity profile Mobile Asset,2012-10
+VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPS,Velocity profile Long Range,2012-10
+VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPT,Velocity profile Short Range,2012-10
+VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPA,Velocity profile Mobile Asset,2012-10
+VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPS,Velocity profile Long Range,2012-10
+VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPT,Velocity profile Short Range,2012-10
+VELPTMN,Mean Point Water Velocity,L1,m/s,DCN 1341-00790,DCN 1342-00790,VELPT,Velocity point,2013-09
+VELPTTU,Turbulent Point Water Velocity,L0,"cm/s (Nobska), m/s (Nortek)","DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)",DCN 1342-00780,VEL3D,Velocity point 3D turb,2013-08
+VELPTTU,Turbulent Point Water Velocity,L1,m/s,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)",DCN 1342-00780,VEL3D,Velocity point 3D turb,2013-08
+VELTURB,Turbulent Velocity Profile,L1,m/s,DCN 1341-00760,DCN 1342-00760,VADCP,Velocity profile 50m turb,2014-08
+WAVSTAT,Wave Spectral Properties,L0,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,WAVSS,Wave spectra surface,2013-09
+WAVSTAT,Wave Spectral Properties,L2,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,WAVSS,Wave spectra surface,2013-09
+WINDAVG,Mean Wind Velocity,L0,m/s,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+WINDAVG,Mean Wind Velocity,L1,m/s,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09
+WINDTUR,Wind Velocity in 3 Dimensions,L0,TBD,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+WINDTUR,Wind Velocity in 3 Dimensions,L0,TBD,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+WINDTUR,Wind Velocity in 3 Dimensions,L1,m/s,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct cov HP,2013-09
+WINDTUR,Wind Velocity in 3 Dimensions,L1,m/s,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP,2013-09
+XCO2ATM,CO2 Mole Fraction in Atmosphere,L0,ppm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09
+XCO2SSW,CO2 Mole Fraction in Surface Sea Water,L0,ppm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09
+

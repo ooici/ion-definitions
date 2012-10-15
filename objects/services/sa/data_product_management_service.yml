@@ -39,6 +39,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_data_product:
+    in:
+      data_product_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
   remove_streams:
     in:
       data_product_id: ""
@@ -113,6 +120,15 @@ methods:
       data_product: !DataProductCollection
 
   delete_data_product_collection:
+    docstring: Remove a data product but not the set of related data products.
+    in:
+      data_product_collection_id: ""
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  force_delete_data_product_collection:
     docstring: Remove a data product but not the set of related data products.
     in:
       data_product_collection_id: ""

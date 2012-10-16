@@ -33,6 +33,8 @@ AbstractDeploymentContextType:
 # Describes an assignment of a device to a specific observatory position,
 # typically for a specified period of time.
 Deployment: !Extends_FrameOfReference
+  # a string that defines the deployment: RemotePlatform, CabledNode, CabledInstrument, Cruise, MobileAsset
+  type: ""
 
   # the specifics of this deployment type
   context: !AbstractDeploymentContextType

@@ -27,7 +27,7 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   instrument_model: !InstrumentModel  # The associated Instrument Model
   #@hasAgentForDevice
   instrument_agent: !InstrumentAgent  # The associated agent
-  #@hasSite=InstrumentSite
+  #@hasDeployment=InstrumentSite
   instrument_site: !InstrumentSite  # The associated site
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
@@ -46,7 +46,7 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   platform_model: !PlatformModel  # The associated Instrument Model
   #@hasAgentForDevice
   platform_agent: !PlatformAgent  # The associated agent
-  #@hasSite=PlatformSite
+  #@hasDeployment=PlatformSite
   platform_site: !PlatformSite  # The associated site]
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device

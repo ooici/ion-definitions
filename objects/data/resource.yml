@@ -120,7 +120,7 @@ ExtendedResource: !Extends_ResourceContainer
   policies: []  # A list of any associated policies
   #@hasOwnerInfo
   owners: []  # A list of  owner information of this resource
-  #@hasResource
+  #@hasResource=Org
   orgs: []  # A list of orgs to which this resource belongs
   #@hasAttachment
   attachments: []  # list of sensors attached to this device

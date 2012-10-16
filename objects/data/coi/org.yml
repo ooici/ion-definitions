@@ -37,7 +37,7 @@ ServiceAgreementProposal:
   broker: ""       #Optional identifier if proposal is brokered by third party
   sequence_num: 0  #Keeps track of the sequence of proposals within a negotiation
   proposal_status: !ProposalStatusEnum
-  expiration: 0    #Optional expiration that will be used with resultant Commitment if accepted - 0 is unlimited
+  expiration: 0    #Expiration that will be used with resultant Commitment if accepted - 0 is unlimited
   conditions: {}   #Optional collection of additional conditions - not used in R2
   clauses: {}      #Optional collection of additional clauses - not used in R2
 
@@ -96,7 +96,7 @@ ResourceCommitment: !Extends_AbstractBaseCommitment
 Commitment: !Extends_InformationResource
   provider: ""
   consumer: ""
-  expiriation: ""
+  expiration: 0    #Expiration of the Commitment - 0 is unlimited
   commitment: !AbstractBaseCommitment
 
 ---

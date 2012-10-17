@@ -24,7 +24,7 @@ handlers:
     formatter: default
     level: TRACE
     filename: logs/container.log
-    maxBytes: 1024000
+    maxBytes: 10240000
     backupCount: 20
   cluster:
     class: graypy.GELFHandler
@@ -40,7 +40,7 @@ handlers:
     formatter: raw
     level: TRACE
     filename: logs/container-log.raw
-    maxBytes: 1024000
+    maxBytes: 10240000
     backupCount: 20
 
 root:

@@ -103,6 +103,8 @@ container:
   exchange:
     # @TODO rename to delegate or similar, used for management api calls too
     auto_register: True
+    names:
+      durable: False
     management:
       port: 55672
       username: guest

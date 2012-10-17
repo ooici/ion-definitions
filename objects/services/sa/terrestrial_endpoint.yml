@@ -45,13 +45,6 @@ methods:
     in:
     out:
         pending: []
-
-  clear_pending:
-    docstring: |
-        Clear the list of pending commands.
-    in:
-    out:
-        pending: []
         
   get_port:
     docstring: |

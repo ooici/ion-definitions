@@ -321,7 +321,6 @@ apps:
     config:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_parameter_definitions, BootstrapParameterDefinitions]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_process_dispatcher, BootstrapProcessDispatcher]
           config:
@@ -345,6 +344,7 @@ apps:
                   type: BINARY
                   datastore_name: filesystem
 
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
   # LAST SERVICE GATEWAY SERVICE

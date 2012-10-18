@@ -20,3 +20,11 @@ RemoteCommand:
   time_queued: 0
   time_completed: 0
   result: ''
+  
+RemoteCommandQueue: !Extends_InformationResource
+  queue: []
+  created: 0
+  updated: 0
+  
+  
+  

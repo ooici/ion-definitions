@@ -23,8 +23,8 @@ InformationResource: !Extends_Resource
 # Describes a resource that can be controlled and monitored, such as a physical device
 # or a computational process. Abstract base type.
 TaskableResource: !Extends_Resource
-  message_controllable: ""    # can this resource be controlled by messages sent to it
-  monitorable: ""             # A device that has a communication port for real-time monitoring
+  message_controllable: True    # can this resource be controlled by messages sent to it
+  monitorable: True             # A device that has a communication port for real-time monitoring
   
   
 ---

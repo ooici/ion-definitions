@@ -104,6 +104,12 @@ DeviceComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   uptime: !ComputedStringValue # time since device was last restarted
 
+  #@Method
+  data_product_set: !ComputedDictValue    # The set of data product with the processing_level_code as the key to identify   =instrument_management.get_data_product_set
+
+  #@Method
+  data_product_parameters_set: !ComputedDictValue    # A dictionary of data product contexts with the processing_level_code as the key to identify
+
 ---
 # A non-persistable container for a resource and its related data
 ResourceContainer:

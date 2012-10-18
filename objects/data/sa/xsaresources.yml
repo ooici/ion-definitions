@@ -8,8 +8,9 @@ ComputedGeospatialBoundsValue: !Extends_ComputedValue
 DeviceExtension: !Extends_ExtendedInformationResource
   #@hasOutputProduct
   data_products: [] # A list of associated data products
-  #@hasSite
-  sites: []  # list of sites to which to which this device is attached
+  #@hasDeployment
+  deployments: []  # list of deployment resources to which to which this device is attached
+
 ---
 
 
@@ -27,15 +28,14 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   instrument_model: !InstrumentModel  # The associated Instrument Model
   #@hasAgentForDevice
   instrument_agent: !InstrumentAgent  # The associated agent
-  #@hasDeployment=InstrumentSite
-  instrument_site: !InstrumentSite  # The associated site
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
   #@hasPlatformModel=PlatformDevice
   platform_model: !PlatformModel  # The model associated to the parent platform
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
-
+  #@hasDevice
+  deployed_site: !InstrumentSite  # The current sites to which to which this device is deployed
 ---
 
 
@@ -46,11 +46,10 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   platform_model: !PlatformModel  # The associated Instrument Model
   #@hasAgentForDevice
   platform_agent: !PlatformAgent  # The associated agent
-  #@hasDeployment=PlatformSite
-  platform_site: !PlatformSite  # The associated site]
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
-
+  #@hasDevice
+  deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
 ---
 
 

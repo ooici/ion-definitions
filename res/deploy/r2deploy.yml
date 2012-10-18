@@ -147,6 +147,7 @@ apps:
       bootlevel: 10
 
 # Scheduler service
+# WARNING: This is a singleton and preserve_n shouldn't have a value higher than 1
   - name: scheduler
     processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]
     deploy:

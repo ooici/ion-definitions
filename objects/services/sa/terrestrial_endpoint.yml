@@ -2,7 +2,7 @@ name: terrestrial_endpoint
 
 docstring: Interface for 2caa shoreside enpoint.
 
-dependencies: []
+dependencies: [resource_registry]
 
 
 methods:

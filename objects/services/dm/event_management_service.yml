@@ -1,0 +1,56 @@
+name: event_management
+
+docstring: |
+  Provides management of events within ION. Also provides access to the event capabilities of ION
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Event+Management+Service
+
+dependencies: [resource_registry]
+
+methods:
+  create_event:
+    docstring: |
+      Persists the provided Event object for the specified Org id. Associates the
+      Event resource with the use. The id string returned is the internal id
+      by which Event will be identified in the data store.
+    in:
+      event: !Event
+    out:
+      event_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_event:
+    docstring: |
+      Updates the provided Event object.  Throws NotFound exception if
+      an existing version of Event is not found.  Throws Conflict if
+      the provided Event object is not based on the latest persisted
+      version of the object.
+    in:
+      event: !Event
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: if object with specified id does not exist
+      Conflict: if object not based on latest persisted object version
+
+  read_event:
+    docstring: |
+      Returns the Event object for the specified event id.
+      Throws exception if id does not match any persisted Event objects.
+    in:
+      event_id: ""
+    out:
+      event: !Event
+    throws:
+      NotFound: if object with specified id does not exist
+
+  delete_event:
+    docstring: |
+      For now, permanently deletes Event object with the specified
+      id. Throws exception if id does not match any persisted Event.
+    in:
+      event_id: ""
+    out:
+    throws:
+      NotFound: if object with specified id does not exist

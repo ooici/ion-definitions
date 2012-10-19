@@ -1,6 +1,11 @@
 #The base type for all producer context objects
 AbstractProducerContextType:
+
 ---
+
+# Contains the context for an external data set
+ExtDatasetProducerContext: !Extends_AbstractProducerContextType
+
 
 # Contains the context for a data process execution
 DataProcessProducerContext: !Extends_AbstractProducerContextType
@@ -17,8 +22,7 @@ InstrumentProducerContext: !Extends_AbstractProducerContextType
   execution_configuration: {}
   deployed_site_id: ""
 
-# Contains the context for an external data set
-ExtDatasetProducerContext: !Extends_AbstractProducerContextType
+
 
 
 ---

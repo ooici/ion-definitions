@@ -10,11 +10,14 @@ dependencies: [resource_registry]
 methods:
   create_event:
     docstring: |
-      Persists the provided Event object for the specified Org id. Associate the
+      Creates an event and tersists the object for the specified Org id. Associates the
       Event resource with the use. The id string returned is the internal id
       by which Event will be identified in the data store.
     in:
-      event: !Event
+      type: ''
+      sub_type: ''
+      origin: ''
+      origin_type: ''
     out:
       event_id: ""
     throws:

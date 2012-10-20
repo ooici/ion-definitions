@@ -1,6 +1,8 @@
 #The base type for all producer context objects
 AbstractProducerContextType:
-
+  activation_time: ""
+  deactivation_time: ""
+  configuration: {}
 ---
 
 # Contains the context for an external data set
@@ -10,16 +12,10 @@ ExtDatasetProducerContext: !Extends_AbstractProducerContextType
 # Contains the context for a data process execution
 DataProcessProducerContext: !Extends_AbstractProducerContextType
   parameters: {}
-  activation_time: ""
-  deactivation_time: ""
-  execution_configuration: {}
   execution_host: ""
 
 # Contains the context for a data process execution
 InstrumentProducerContext: !Extends_AbstractProducerContextType
-  activation_time: ""
-  deactivation_time: ""
-  execution_configuration: {}
   deployed_site_id: ""
 
 
@@ -32,6 +28,7 @@ InstrumentProducerContext: !Extends_AbstractProducerContextType
 DataProducer: !Extends_InformationResource
   is_primary: False
   producer_context: !AbstractProducerContextType
+
 
 
 

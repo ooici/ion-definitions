@@ -57,25 +57,25 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  instrument_agent_config_snapshot:
+  agent_state_checkpoint:
     docstring: |
       Serialize the instrument agent configuration for an instrument device and save it as a JSON
       attachment with the given name
     in:
       instrument_device_id: ""
-      snapshot_name: ""
+      name: ""
     out:
       attachment_id: ""
     throws:
       NotFound: object with the specified ID does not exist
 
-  instrument_agent_config_restore:
+  agent_state_restore:
     docstring: |
       Deserialize the instrument agent configuration for an instrument device from an attachment 
       and store it to the current driver config
     in:
       instrument_device_id: ""
-      snapshot_attachment_id: ""
+      attachment_id: ""
     out:
     throws:
       NotFound: object with the specified ID does not exist

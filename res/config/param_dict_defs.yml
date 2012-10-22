@@ -1,7 +1,7 @@
 # Place parameter dictionary definitions here
 
 # Example parameter dictionary definition
-ctd_parsed_param_dict: [ 'time*','port_timestamp', 'driver_timestamp', 'internal_timestamp' 'preferred_timestamp', 'lat', 'lon', 'pressure', 'conductivity', 'temp', 'salinity','density', 'quality_flag']
+ctd_parsed_param_dict: ['time*','port_timestamp','driver_timestamp','internal_timestamp','preferred_timestamp', 'lat', 'lon', 'pressure', 'conductivity', 'temp', 'salinity','density', 'quality_flag']
 ctd_raw_param_dict: ['time*', 'port_timestamp', 'driver_timestamp', 'internal_timestamp', 'preferred_timestamp', 'lat', 'lon', 'quality_flag', 'raw']
 # Visualization param dict defs
 graph_image_param_dict: ['viz_timestamp*', 'viz_product_type', 'image_name', 'content_type', 'image_obj']

@@ -1,17 +1,9 @@
 # Place parameter dictionary definitions here
 
-# Example parameter dictionary definition
-sample_param_dict: ['lat', 'lon', 'time*', 'salinity', 'temp', 'pressure', 'conductivity', 'density']
-ctd_parsed_param_dict: ['lat', 'lon', 'time*', 'salinity', 'temp', 'pressure', 'conductivity']
-ctd_raw_param_dict: ['time*']
-data_particle_parsed_param_dict: ['port_timestamp', 'driver_timestamp*', 'internal_timestamp', 'conductivity', 'temp', 'preferred_timestamp', 'quality_flag']
-data_particle_raw_param_dict: ['port_timestamp', 'driver_timestamp*', 'internal_timestamp', 'preferred_timestamp', 'quality_flag', 'raw']
-satlantic_par_parsed_param_dict: ['port_timestamp', 'driver_timestamp*', 'internal_timestamp', 'serial_num', 'timer', 'counts', 'checksum', 'preferred_timestamp', 'quality_flag']
+# Parameter dictionary definitions for parsed and raw data
+ctd_parsed_param_dict: ['time*','port_timestamp','driver_timestamp','internal_timestamp','preferred_timestamp', 'lat', 'lon', 'pressure', 'conductivity', 'temp', 'salinity','density', 'quality_flag']
+ctd_raw_param_dict: ['time*', 'port_timestamp', 'driver_timestamp', 'internal_timestamp', 'preferred_timestamp', 'lat', 'lon', 'quality_flag', 'raw']
+# Visualization param dict defs
 graph_image_param_dict: ['viz_timestamp*', 'viz_product_type', 'image_name', 'content_type', 'image_obj']
-simple_data_particle_parsed_param_dict: ['port_timestamp', 'driver_timestamp*', 'internal_timestamp', 'conductivity', 'temp']
-simple_data_particle_raw_param_dict: ['port_timestamp', 'driver_timestamp*', 'internal_timestamp', 'raw']
 google_dt: ['google_dt_components'] # will never go into a coverage, do not try to ingest, it will die, painfully.
-simple_density_param_dict: ['density', 'conductivity', 'pressure', 'temp', 'lat', 'lon', 'port_timestamp', 'driver_timestamp*', 'internal_timestamp']
-simple_salinity_param_dict: ['salinity', 'conductivity', 'pressure', 'temp', 'port_timestamp', 'driver_timestamp*', 'internal_timestamp']
-dummy_pd: ['dummy', 'time*', 'lat', 'on']
 mpl_graph: ['mpl_graph'] # will never go into a coverage, do not try to ingest, it will die, painfully.

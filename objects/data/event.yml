@@ -124,8 +124,7 @@ RemoteQueueModifiedEvent: !Extends_PlatformEvent
 
 PlatformAlarmEvent: !Extends_PlatformEvent
   alarm_type: ""     # initially this will be the so called "ref_id" in the RSN case
-  timestamp: ""      # as reported from the RSN via OMS
-  group: ""          # ID of alarm categorization
+  x_timestamp: ""    # "external" timestamp: as reported from the RSN via OMS
 
 ---
 

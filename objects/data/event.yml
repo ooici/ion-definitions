@@ -122,6 +122,15 @@ RemoteQueueModifiedEvent: !Extends_PlatformEvent
   
 ---
 
+PlatformAlarmEvent: !Extends_PlatformEvent
+  alarm_type: ""     # initially this will be the so called "ref_id" in the RSN case
+  platform_id: ""    # ID of the platform where the alarm happens
+  message: ""        # some human-readable text
+  timestamp: ""      # as reported from the RSN via OMS
+  group: ""          # ID of alarm categorization
+
+---
+
 ResourceAgentCommandEvent: !Extends_ResourceAgentEvent
   command: ""
   execute_command: ""

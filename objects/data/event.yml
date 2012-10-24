@@ -123,8 +123,8 @@ RemoteQueueModifiedEvent: !Extends_PlatformEvent
 ---
 
 PlatformAlarmEvent: !Extends_PlatformEvent
-  alarm_type: ""     # initially this will be the so called "ref_id" in the RSN case
-  x_timestamp: ""    # "external" timestamp: as reported from the RSN via OMS
+  external_alarm_type: ""   # initially this will be the so called "ref_id" in the RSN case
+  external_timestamp: ""    # as reported from the RSN via OMS
 
 ---
 

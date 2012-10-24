@@ -4,8 +4,8 @@ DataProcessDefinition: !Extends_InformationResource
   module: ""
   # (SYS) class for source code
   class_name: ""
-
-  process_source: ""
+  # (SYS) uri of transform egg
+  uri: ""
 
   parameters: {}
 
@@ -14,9 +14,6 @@ DataProcessDefinition: !Extends_InformationResource
 # Represents a computational process receiving data granules from stream subscription and
 # produces output data products. Instance of DataProcessDefinition.
 DataProcess: !Extends_InformationResource
-
-  dps_reference: ""           # WRONG
-  source_code: ""              # WRONG
   input_subscription_id: ""
   process_id: ""
   configuration: {}

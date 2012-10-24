@@ -51,12 +51,8 @@ InstrumentModel: !Extends_DeviceModel
 
 # Defines an agent/driver combination compatible with a specific instrument model.
 InstrumentAgent: !Extends_AgentDefinition
-  # (SYS) module for driver source code
-  driver_module: ""
-  # (SYS) class for driver source code
-  driver_class: ""
   # (SYS) module for driver client source code
-  driver_client_module: ""
+#  driver_client_module: ""
   # (SYS) class for driver client source code
 #  driver_class_client: ""
 #  time_source: ""

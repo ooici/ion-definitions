@@ -644,7 +644,6 @@ methods:
     in:
       input_resource_id: ""
       data_product_id: ""
-      data_product_version_id: ""
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute
@@ -655,7 +654,6 @@ methods:
     in:
       input_resource_id: ""
       data_product_id: ""
-      data_product_version_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist

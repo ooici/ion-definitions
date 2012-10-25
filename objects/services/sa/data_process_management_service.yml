@@ -52,6 +52,13 @@ methods:
     out:
       data_process_definition_list: []
 
+  register_data_process_definition:
+    docstring: Upload a file (base64-encoded) and return the destination URI
+    in:
+      process_code: ""
+    out:
+      uri: ""
+
   assign_input_stream_definition_to_data_process_definition:
     docstring: Connect the input  stream with a data process definition
     in:

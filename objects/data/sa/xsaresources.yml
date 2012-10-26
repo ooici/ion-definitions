@@ -238,7 +238,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   data_contents_updated: !ComputedStringValue   # the datetime when the contents of the data were last modified in any way. This is distinct from modifications to the data product attributes
 
   #@Method
-  parameters: !ComputedListValue   # A set of Parameter objects describing each variable in this data product
+  parameters: !ComputedStringValue   # A set of Parameter objects describing each variable in this data product
 
   #@Method
   data_url: !ComputedStringValue   # A unique id for this data product

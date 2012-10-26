@@ -1,7 +1,7 @@
 # Describes a specific capability of an agent
 AgentCapability:
   name: ""
-  cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, CONV_TYPE), default=AGT_CMD)
+  cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, RES_IFACE, CONV_TYPE), default=AGT_CMD)
   restrictions: {}
 
 

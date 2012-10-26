@@ -19,11 +19,18 @@ UserCredentials: !Extends_InformationResource
   identity_provider: ""
 
 ---
+TokenInformation:
+  token_string: ""
+  expires : ""     # Timestamp (UNIX epoch) for when the token expires in UTC
+  status: ""       # OPEN, VERIFIED, EXPIRED
+  merge_email: ""  # Email address of merge account
+---
 
 # Represents a human user registered with the system, with their contact information,
 # preferences and other profile data.
 UserInfo: !Extends_InformationResource
   contact: !ContactInformation
+  tokens: []  # list of TokenInformation
   variables:
   - name: ""
     value: ""

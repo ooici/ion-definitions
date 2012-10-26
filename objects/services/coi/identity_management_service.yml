@@ -187,7 +187,6 @@ methods:
     throws:
       NotFound: failed to find UserCredential, ActorIdentity, association or UserInfo object
 
-
   # -----------------
   # Utility methods for users authenticating
   
@@ -231,3 +230,27 @@ methods:
     throws:
       BadRequest: A parameter is missing
       NotFound: An object with the specified user_id does not exist
+
+
+#------
+
+  initiate_account_merge:
+    docstring: |
+      Initiates account merge
+    in:
+      merge_user_email: ""
+    out:
+      throws:
+        BadRequest: A parameter is missing
+        NotFound: Merge user email address is not found
+
+#----
+  complete_account_merge:
+    docstring: |
+      Complete account merge by verifying the token string
+    in:
+      token_string: ""
+    out:
+      throws:
+        BadRequest: A parameter is missing
+        NotFound: Token string not found

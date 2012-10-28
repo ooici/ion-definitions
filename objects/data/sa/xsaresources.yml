@@ -21,6 +21,47 @@ DeviceExtension: !Extends_ExtendedInformationResource
 #
 ####################################################################
 
+#This object contains additional information associated with a data process.
+DataProcessExtension: !Extends_ExtendedInformationResource
+
+---
+#This object contains additional information associated with a data process definition.
+DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
+
+---
+
+#This object contains additional information associated with a data product.
+DataProductExtension: !Extends_ExtendedInformationResource
+  #@hasVersion
+  version: !DataProductVersion  # The associated data product collection
+  #@hasDataProduct=Site
+  site: !Site  # Site which produces logical data products
+  #@hasOutputProduct=ExternalDataset
+  extdataset: !ExternalDataset  # The associated external data set
+
+
+---
+#This object contains additional information associated with a deployment resource.
+DeploymentExtension: !Extends_ExtendedInformationResource
+  #@hasDeployment=InstrumentDevice
+  instrument_devices: []  # The associated Instrument devices
+  #@hasDeployment=InstrumentSite
+  instrument_sites: []  # The associated Instrument sites
+  #@hasDeployment=PlatformDevice
+  platform_devices: []  # The associated Platform devices
+  #@hasDeployment=PlatformSite
+  platform_sites: []  # The associated Platform sites
+  #@hasModelForDeployment
+  models: []  # The associated models
+
+---
+
+#This object contains additional information associated with a instrument or platform model.
+DeviceModelExtension: !Extends_ExtendedInformationResource
+  #@hasModel
+  devices: []  # The associated device instances
+
+---
 
 #This object contains additional information associated with an instrument device.
 InstrumentDeviceExtension: !Extends_DeviceExtension
@@ -38,7 +79,21 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   deployed_site: !InstrumentSite  # The current sites to which to which this device is deployed
 ---
 
+#This object contains additional information associated with a request for notification.
+NotificationRequestExtension: !Extends_ExtendedInformationResource
+  #@hasNotification=UserInfo
+  user_info: !UserInfo  # The associated user
 
+---
+
+#This object contains additional information associated with an observatory.
+ObservatoryExtension: !Extends_ExtendedInformationResource
+  #@hasSite
+  sites: []  # list of sites associated with this Observatory
+  #@hasDataProduct
+  data_products: []  # list of data products associated directly with this Observatory
+
+---
 
 #This object contains additional information associated with an instrument device.
 PlatformDeviceExtension: !Extends_DeviceExtension
@@ -50,60 +105,9 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   instrument_devices: []  # list of sensors attached to this device
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
----
-
-
-
-#This object contains additional information associated with an observatory.
-ObservatoryExtension: !Extends_ExtendedInformationResource
-  #@hasSite
-  sites: []  # list of sites associated with this Observatory
-  #@hasDataProduct
-  data_products: []  # list of data products associated directly with this Observatory
-
-
 
 
 ---
-
-#This object contains additional information associated with a data product.
-DataProductExtension: !Extends_ExtendedInformationResource
-  #@hasVersion
-  version: !DataProductVersion  # The associated data product collection
-  #@hasDataProduct=Site
-  site: !Site  # Site which produces logical data products
-  #@hasOutputProduct=ExternalDataset
-  extdataset: !ExternalDataset  # The associated external data set
-
-
----
-
-#This object contains additional information associated with a instrument or platform model.
-DeviceModelExtension: !Extends_ExtendedInformationResource
-  #@hasModel
-  devices: []  # The associated device instances
-
-#This object contains additional information associated with a request for notification.
-NotificationRequestExtension: !Extends_ExtendedInformationResource
-  #@hasNotification=UserInfo
-  user_info: !UserInfo  # The associated user
-
-
-#This object contains additional information associated with a deployment resource.
-DeploymentExtension: !Extends_ExtendedInformationResource
-  #@hasDeployment=InstrumentDevice
-  instrument_devices: []  # The associated Instrument devices
-  #@hasDeployment=InstrumentSite
-  instrument_sites: []  # The associated Instrument sites
-  #@hasDeployment=PlatformDevice
-  platform_devices: []  # The associated Platform devices
-  #@hasDeployment=PlatformSite
-  platform_sites: []  # The associated Platform sites
-  #@hasModelForDeployment
-  models: []  # The associated models
-
----
-
 
 #This object contains additional information associated with a Site resource.
 SiteExtension: !Extends_ExtendedInformationResource
@@ -247,6 +251,9 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   provenance: !ComputedStringValue   # Provides an audit trail for modifications to the original data
 
   #@Method
+  provenance_product_list: !ComputedListValue   # Provides an audit trail for modifications to the original data
+
+  #@Method
   number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data
 
   #@Method
@@ -258,9 +265,14 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   #@Method
   past_user_subscriptions: !ComputedListValue   # Provides a list of NotificationRequest for users who have in the past acquired this data product, but for which that acquisition was terminated
 
+
+  #@Method
+  last_granule: !ComputedDictValue   # Returns a RDT of parameters and values
+
+  #@Method
+  recent_granules: !ComputedDictValue   # Returns a set of  RDT of parameters and values
+
 ---
-
-
 
 #Computed attributes for a data product
 DeploymentComputedAttributes: !Extends_ComputedAttributes

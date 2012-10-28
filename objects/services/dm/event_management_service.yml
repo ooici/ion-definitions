@@ -62,7 +62,11 @@ methods:
   create_event_process_definition:
     docstring: Create a resource which defines the processing of events, from transform definition to scheduling
     in:
-      event_process_definition: !EventProcessDefinition
+      version: ""    # Version of the same process definition
+      module: ""   # The source code file in which the code is in
+      class_name: ""    # The class name within the source code module
+      uri: ""    # The URI location of the algorithm
+      arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
     out:
       event_process_definition_id: ""
     throws:
@@ -71,7 +75,12 @@ methods:
 
   update_event_process_definition:
     in:
-      event_process_definition: !EventProcessDefinition
+      event_process_definition_id: ""
+      version: ""    # Version of the same process definition
+      module: ""   # The source code file in which the code is in
+      class_name: ""   # The class name within the source code module
+      uri: ""  # The URI location of the algorithm
+      arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -80,7 +89,11 @@ methods:
     in:
       event_process_definition_id: ""
     out:
-      event_process: !EventProcessDefinition
+      version: ""    # Version of the same process definition
+      module: ""   # The source code file in which the code is in
+      class_name: ""    # The class name within the source code module
+      uri: ""    # The URI location of the algorithm
+      arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
 
   delete_event_process_definition:
     in:
@@ -92,12 +105,27 @@ methods:
   # -----------------
   #      Event Process
   # -----------------
-  create_event_process:
+
+  create_event_process_definition:
     docstring: Create an instance or realization of an event process definition.
     in:
       event_process_definition_id: ""
       event_types: []
+      sub_types: []
       origins: []
+      origin_types: []
+    out:
+      event_process_id: ""
+
+
+  create_event_process:
+    docstring: Create an instance or realization of an event process definition.
+    in:
+      process_definition_id: ""
+      event_types: []
+      sub_types: []
+      origins: []
+      origin_types: []
     out:
       event_process_id: ""
       
@@ -113,7 +141,9 @@ methods:
     in: 
       event_process_id: ""
       event_types: []
+      sub_types: []
       origins: []
+      origin_types: []
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -122,7 +152,10 @@ methods:
     in:
       event_process_id: ""
     out:
-      event_process: !EventProcess
+      event_types: []
+      sub_types: []
+      origins: []
+      origin_types: []
 
   delete_event_process:
     in:

@@ -95,15 +95,15 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  get_observatory_extension:
+  get_site_extension:
     docstring: |
-      Returns an ObservatoryExtension object containing additional related information
+      Returns an SiteExtension object containing additional related information
     in:
       observatory_id: ""
       ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
       ext_exclude: [] # An optional list of field names to exclude from retrieving
     out:
-      observatory: !ObservatoryExtension
+      observatory: !SiteExtension
     throws:
       BadRequest: A parameter is missing
       NotFound: An object with the specified observatory_id does not exist

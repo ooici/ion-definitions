@@ -101,15 +101,6 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 
 ---
 
-#This object contains additional information associated with an observatory.
-ObservatoryExtension: !Extends_ExtendedInformationResource
-  #@hasSite
-  sites: []  # list of sites associated with this Observatory
-  #@hasDataProduct
-  data_products: []  # list of data products associated directly with this Observatory
-
----
-
 #This object contains additional information associated with an instrument device.
 PlatformDeviceExtension: !Extends_DeviceExtension
   #@hasModel
@@ -198,7 +189,7 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 
 
 #Computed attributes for an platform device
-ObservatoryComputedAttributes: !Extends_TaskableComputedAttributes
+SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
 

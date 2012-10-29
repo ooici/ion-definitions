@@ -31,7 +31,7 @@ DataProduct: !Extends_InformationResource
   # for data from fixed-location assets, is set according to the GeospatialPoint of the fixed asset creating the data;
   # for data from mobile (even constrained) assets, is optionally calculated as the center of the data's bounding box,
   # or an average location of
-  geospatial_point: !GeospatialPoint
+  # geospatial_point: !GeospatialPoint  # used in R3
 
   geospatial_coordinate_reference_system: !GeospatialCoordinateReferenceSystem
 

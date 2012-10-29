@@ -12,24 +12,3 @@ EventType: !Extends_InformationResource
   producer: ""
 
 
-
-
-# Defines a type of event transform computational process.
-EventProcessDefinition: !Extends_InformationResource
-  # (SYS) module for source code
-  module: ""
-  # (SYS) class for source code
-  class_name: ""
-  # (SYS) uri of transform egg
-  uri: ""
-
-  parameters: {}
-
-
-# Represents a computational process receiving events and
-# produces output events or a data stream. Instance of EventProcessDefinition.
-EventProcess: !Extends_InformationResource
-  event_types: []
-  origins: []
-  process_id: ""
-  configuration: {}

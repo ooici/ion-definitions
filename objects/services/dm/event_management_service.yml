@@ -106,18 +106,6 @@ methods:
   #      Event Process
   # -----------------
 
-  create_event_process_definition:
-    docstring: Create an instance or realization of an event process definition.
-    in:
-      event_process_definition_id: ""
-      event_types: []
-      sub_types: []
-      origins: []
-      origin_types: []
-    out:
-      event_process_id: ""
-
-
   create_event_process:
     docstring: Create an instance or realization of an event process definition.
     in:

@@ -23,8 +23,8 @@ InformationResource: !Extends_Resource
 # Describes a resource that can be controlled and monitored, such as a physical device
 # or a computational process. Abstract base type.
 TaskableResource: !Extends_Resource
-  message_controllable: ""    # can this resource be controlled by messages sent to it
-  monitorable: ""             # A device that has a communication port for real-time monitoring
+  message_controllable: True    # can this resource be controlled by messages sent to it
+  monitorable: True             # A device that has a communication port for real-time monitoring
   
   
 ---
@@ -104,6 +104,12 @@ DeviceComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   uptime: !ComputedStringValue # time since device was last restarted
 
+  #@Method
+  data_product_set: !ComputedDictValue    # The set of data product with the processing_level_code as the key to identify   =instrument_management.get_data_product_set
+
+  #@Method
+  data_product_parameters_set: !ComputedDictValue    # A dictionary of data product contexts with the processing_level_code as the key to identify
+
 ---
 # A non-persistable container for a resource and its related data
 ResourceContainer:
@@ -120,6 +126,10 @@ ExtendedResource: !Extends_ResourceContainer
   policies: []  # A list of any associated policies
   #@hasOwnerInfo
   owners: []  # A list of  owner information of this resource
+  #@hasResource=Org
+  orgs: []  # A list of orgs to which this resource belongs
+  #@hasAttachment
+  attachments: []  # list of sensors attached to this device
 
 ---
 

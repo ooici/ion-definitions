@@ -103,6 +103,8 @@ container:
   exchange:
     # @TODO rename to delegate or similar, used for management api calls too
     auto_register: True
+    names:
+      durable: False
     management:
       port: 55672
       username: guest
@@ -176,7 +178,7 @@ interceptor:
       class: pyon.core.governance.governance_interceptor.GovernanceInterceptor
       config:
         enabled: true
-        interceptor_order: [conversation, information, policy]
+        interceptor_order: [conversation, policy]
         governance_interceptors:
           conversation:
             class: pyon.core.governance.conversation.conversation_monitor_interceptor.ConversationMonitorInterceptor
@@ -218,6 +220,10 @@ service:
   instrument_management:
     driver_release_host: sddevrepo.oceanobservatories.org
     driver_release_directory: /var/www/html/releases
+
+  data_process_management:
+    process_release_host: sddevrepo.oceanobservatories.org
+    process_release_directory: /var/www/html/releases
 
   directory:
     default_uispecs_url: https://userexperience.oceanobservatories.org/database-exports/

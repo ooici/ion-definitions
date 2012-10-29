@@ -49,6 +49,36 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  force_delete_instrument_agent_instance:
+    docstring: Delete an InstrumentAgentInstance resource
+    in:
+      instrument_agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  agent_state_checkpoint:
+    docstring: |
+      Serialize the instrument agent configuration for an instrument device and save it as a JSON
+      attachment with the given name
+    in:
+      instrument_device_id: ""
+      name: ""
+    out:
+      attachment_id: ""
+    throws:
+      NotFound: object with the specified ID does not exist
+
+  agent_state_restore:
+    docstring: |
+      Deserialize the instrument agent configuration for an instrument device from an attachment 
+      and store it to the current driver config
+    in:
+      instrument_device_id: ""
+      attachment_id: ""
+    out:
+    throws:
+      NotFound: object with the specified ID does not exist
 
   start_instrument_agent_instance:
     docstring: |
@@ -101,6 +131,14 @@ methods:
       NotFound: object with specified id does not exist
 
   delete_instrument_agent:
+    docstring: Delete an InstrumentAgent resource
+    in:
+      instrument_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_instrument_agent:
     docstring: Delete an InstrumentAgent resource
     in:
       instrument_agent_id: ""

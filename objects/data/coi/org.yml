@@ -25,9 +25,6 @@ ProposalOriginatorEnum: !enum (values=(CONSUMER, PROVIDER, BROKER), default=CONS
 # Enum for the status of the proposal
 ProposalStatusEnum: !enum (values=(INITIAL, COUNTER, ACCEPTED, REJECTED, GRANTED), default=INITIAL)
 
-# Enum for the different types of acquisition
-AcquisitionTypeEnum: !enum (values=(SHARED, EXCLUSIVE), default=SHARED)
-
 ---
 
 # Object representing a current proposal for a service agreement. The proposal may contain several items of
@@ -38,10 +35,11 @@ ServiceAgreementProposal:
   consumer: ""     #Who will be the consumer of this proposal - typically a used id
   provider: ""     #Who will be the provider of this proposal - typically an org id
   broker: ""       #Optional identifier if proposal is brokered by third party
-  sequence_num: 0
+  sequence_num: 0  #Keeps track of the sequence of proposals within a negotiation
   proposal_status: !ProposalStatusEnum
-  conditions: {}
-  clauses: {}
+  expiration: 0    #Expiration that will be used with resultant Commitment if accepted - 0 is unlimited
+  conditions: {}   #Optional collection of additional conditions - not used in R2
+  clauses: {}      #Optional collection of additional clauses - not used in R2
 
 ---
 #Various specific types of proposals
@@ -54,9 +52,11 @@ RequestRoleProposal: !Extends_ServiceAgreementProposal
 
 AcquireResourceProposal: !Extends_ServiceAgreementProposal
   #@EventData
-  acquisition_type: !AcquisitionTypeEnum
-  #@EventData
   resource: ""
+
+---
+
+AcquireResourceExclusiveProposal: !Extends_AcquireResourceProposal
 
 ---
 
@@ -73,6 +73,7 @@ NegotiationStatusEnum: !enum (values=(OPEN, ACCEPTED, REJECTED), default=OPEN)
 Negotiation: !Extends_InformationResource
   negotiation_type: !NegotiationTypeEnum
   negotiation_status: !NegotiationStatusEnum
+  reason: ""     #Optional field to include a reason for a status
   #@ContentType=ServiceAgreementProposal
   proposals: []  # The last SAP in the list is considered the most recent one
 
@@ -95,7 +96,7 @@ ResourceCommitment: !Extends_AbstractBaseCommitment
 Commitment: !Extends_InformationResource
   provider: ""
   consumer: ""
-  expiriation: ""
+  expiration: 0    #Expiration of the Commitment - 0 is unlimited
   commitment: !AbstractBaseCommitment
 
 ---

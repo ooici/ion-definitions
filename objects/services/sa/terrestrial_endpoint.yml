@@ -2,7 +2,7 @@ name: terrestrial_endpoint
 
 docstring: Interface for 2caa shoreside enpoint.
 
-dependencies: []
+dependencies: [resource_registry]
 
 
 methods:
@@ -20,6 +20,7 @@ methods:
         Retrieve queue contents by resource id.
     in:
         resource_id: ''
+        svc_name: ''
     out:
         queue: []
 
@@ -28,6 +29,7 @@ methods:
         Clear queue by resource id.
     in:
         resource_id: ''
+        svc_name: ''
     out:
         queue: []
         
@@ -43,13 +45,8 @@ methods:
     docstring: |
         Return the list of pending commands.
     in:
-    out:
-        pending: []
-
-  clear_pending:
-    docstring: |
-        Clear the list of pending commands.
-    in:
+        resource_id: ''
+        svc_name: ''
     out:
         pending: []
         

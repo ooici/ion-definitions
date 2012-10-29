@@ -1,0 +1,169 @@
+name: event_management
+
+docstring: |
+  Provides management of events within ION. Allows event transfroms to be defined and executed.
+  Also provides access to the event capabilities of ION
+
+spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Event+Management+Service
+
+dependencies: [resource_registry]
+
+methods:
+  create_event_type:
+    docstring: |
+      Persists the provided EventType object for the specified Org id. The id string returned is the internal id
+      by which EventType will be identified in the data store.
+    in:
+      event_type: !EventType
+    out:
+      event_type_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_event_type:
+    docstring: |
+      Updates the provided EventType resource.  Throws NotFound exception if
+      an existing version of Event is not found.  Throws Conflict if
+      the provided EventType object is not based on the latest persisted
+      version of the object.
+    in:
+      event_type: !EventType
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: if object with specified id does not exist
+      Conflict: if object not based on latest persisted object version
+
+  read_event_type:
+    docstring: |
+      Returns the EventType object for the specified event id.
+      Throws exception if id does not match any persisted Event objects.
+    in:
+      event_type_id: ""
+    out:
+      event_type: !EventType
+    throws:
+      NotFound: if object with specified id does not exist
+
+  delete_event_type:
+    docstring: |
+      For now, permanently deletes EventType resource with the specified
+      id. Throws exception if id does not match any persisted Event.
+    in:
+      event_type_id: ""
+    out:
+    throws:
+      NotFound: if object with specified id does not exist
+
+  # -----------------
+  #      Event Process Definition
+  # -----------------
+  
+  create_event_process_definition:
+    docstring: Create a resource which defines the processing of events, from transform definition to scheduling
+    in:
+      version: ""    # Version of the same process definition
+      module: ""   # The source code file in which the code is in
+      class_name: ""    # The class name within the source code module
+      uri: ""    # The URI location of the algorithm
+      arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
+    out:
+      event_process_definition_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_event_process_definition:
+    in:
+      event_process_definition_id: ""
+      version: ""    # Version of the same process definition
+      module: ""   # The source code file in which the code is in
+      class_name: ""   # The class name within the source code module
+      uri: ""  # The URI location of the algorithm
+      arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_event_process_definition:
+    in:
+      event_process_definition_id: ""
+    out:
+      version: ""    # Version of the same process definition
+      module: ""   # The source code file in which the code is in
+      class_name: ""    # The class name within the source code module
+      uri: ""    # The URI location of the algorithm
+      arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
+
+  delete_event_process_definition:
+    in:
+      event_process_definition_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+ 
+  # -----------------
+  #      Event Process
+  # -----------------
+
+  create_event_process:
+    docstring: Create an instance or realization of an event process definition.
+    in:
+      process_definition_id: ""
+      event_types: []
+      sub_types: []
+      origins: []
+      origin_types: []
+    out:
+      event_process_id: ""
+      
+  update_event_process:
+    #This op may not make sense at this time
+    in:
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  update_event_process_inputs:
+    docstring: Update the subscriptions of an event process
+    in: 
+      event_process_id: ""
+      event_types: []
+      sub_types: []
+      origins: []
+      origin_types: []
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_event_process:
+    in:
+      event_process_id: ""
+    out:
+      event_types: []
+      sub_types: []
+      origins: []
+      origin_types: []
+
+  delete_event_process:
+    in:
+      event_process_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  activate_event_process:
+    #Initiate processing
+    in:
+      event_process_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  deactivate_event_process:
+    #Suspend the data process
+    in:
+      event_process_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist

@@ -198,47 +198,6 @@ density:
   standard_name: null
   variability: 3
   variable_reports: null
-depth:
-  _derived_from_name: depth
-  _id: null
-  _identifier: null
-  attributes: null
-  cdm_data_type: null
-  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
-  code_reports: null
-  comment: null
-  description: ''
-  extension: {}
-  index_key: null
-  ion_name: null
-  label: ''
-  long_name: null
-  mutable: false
-  name: depth
-  ooi_short_name: null
-  param_type:
-    _id: null
-    _identifier: null
-    _template_attrs: {constraint: null, fill_value: -9999, nilValues: null, quality: null,
-      uom: unspecified}
-    _value_class: NumericValue
-    _value_encoding: <f4
-    _value_module: coverage_model.parameter_values
-    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
-    constraint: null
-    description: ''
-    extension: {}
-    fill_value: 0.0
-    label: ''
-    mutable: false
-    nilValues: null
-    quality: null
-    uom: meters
-  reference_frame: 4
-  references_list: null
-  standard_name: null
-  variability: 3
-  variable_reports: null
 driver_timestamp:
   _derived_from_name: time
   _id: null
@@ -275,6 +234,47 @@ driver_timestamp:
     nilValues: null
     quality: null
     uom: seconds
+  reference_frame: null
+  references_list: null
+  standard_name: null
+  variability: 3
+  variable_reports: null
+dummy:
+  _derived_from_name: dummy
+  _id: null
+  _identifier: null
+  attributes: null
+  cdm_data_type: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  code_reports: null
+  comment: null
+  description: ''
+  extension: {}
+  index_key: null
+  ion_name: null
+  label: ''
+  long_name: null
+  mutable: false
+  name: dummy
+  ooi_short_name: null
+  param_type:
+    _id: null
+    _identifier: null
+    _template_attrs: {constraint: null, fill_value: -9999, nilValues: null, quality: null,
+      uom: unspecified}
+    _value_class: NumericValue
+    _value_encoding: <i8
+    _value_module: coverage_model.parameter_values
+    cm_type: !!python/tuple [coverage_model.parameter_types, QuantityType]
+    constraint: null
+    description: ''
+    extension: {}
+    fill_value: -9999
+    label: ''
+    mutable: false
+    nilValues: null
+    quality: null
+    uom: unspecified
   reference_frame: null
   references_list: null
   standard_name: null
@@ -511,6 +511,42 @@ lon:
   standard_name: null
   variability: 3
   variable_reports: null
+mpl_graph:
+  _derived_from_name: mpl_graph
+  _id: null
+  _identifier: null
+  attributes: null
+  cdm_data_type: null
+  cm_type: !!python/tuple [coverage_model.parameter, ParameterContext]
+  code_reports: null
+  comment: null
+  description: ''
+  extension: {}
+  index_key: null
+  ion_name: null
+  label: ''
+  long_name: null
+  mutable: false
+  name: mpl_graph
+  ooi_short_name: null
+  param_type:
+    _id: null
+    _identifier: null
+    _template_attrs: {fill_value: null, value_encoding: '|O8'}
+    _value_class: RecordValue
+    _value_module: coverage_model.parameter_values
+    cm_type: !!python/tuple [coverage_model.parameter_types, RecordType]
+    description: ''
+    extension: {}
+    fill_value: null
+    label: ''
+    mutable: false
+    value_encoding: '|O8'
+  reference_frame: null
+  references_list: null
+  standard_name: null
+  variability: 3
+  variable_reports: null
 port_timestamp:
   _derived_from_name: time
   _id: null
@@ -547,7 +583,7 @@ port_timestamp:
     nilValues: null
     quality: null
     uom: seconds
-  reference_frame: 12
+  reference_frame: null
   references_list: null
   standard_name: null
   variability: 3
@@ -861,7 +897,7 @@ time:
     nilValues: null
     quality: null
     uom: seconds since 1970-01-01
-  reference_frame: 12
+  reference_frame: null
   references_list: null
   standard_name: null
   variability: 3
@@ -979,7 +1015,7 @@ viz_timestamp:
     nilValues: null
     quality: null
     uom: seconds
-  reference_frame: 12
+  reference_frame: null
   references_list: null
   standard_name: null
   variability: 3

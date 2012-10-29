@@ -1,3 +1,14 @@
+
+---
+
+OriginType: !enum (values=(RESOURCE, CAPABILITYCONTAINER, ORG), default=RESOURCE)
+---
 # Describes a unique type of event
 EventType: !Extends_InformationResource
   pattern: ""
+  category: ""
+  origin_type: !OriginType
+  origin: ""
+  producer: ""
+
+

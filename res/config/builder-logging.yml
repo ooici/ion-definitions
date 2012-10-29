@@ -1,0 +1,62 @@
+# base configuration for log levels
+#
+# To define local overrides, add a file "logging.local.yml"
+#
+version: 1
+
+formatters:
+  brief:
+    format: '%(asctime)s %(levelname)-8s %(name)-15s %(message)s'
+  default:
+    (): 'pyon.util.log.RPCStackFormatter'
+    format: '%(asctime)s %(levelname)s %(threadName)s %(name)s:%(lineno)d %(message)s'
+  raw:
+    (): 'ooi.logging.format.RawRecordFormatter'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: brief
+    level: TRACE
+    stream: ext://sys.stdout
+  file:
+    class: logging.handlers.RotatingFileHandler
+    formatter: default
+    level: TRACE
+    filename: logs/container.log
+    maxBytes: 10240000
+    backupCount: 20
+  cluster:
+    class: graypy.GELFHandler
+    # intentionally used partially qualified hostname, not FQDN,
+    # so server may define in /etc/hosts
+    # or with DNS lookup in subdomain (ie- graylog.staging.oceanobservatories.org)
+    host: graylog
+#    host: graylog.oceanobservatories.org
+#
+# LogRecord objects for later forwarding to graylog. see documentation for: ooi.logging.replay
+  raw:
+    class: logging.handlers.RotatingFileHandler
+    formatter: raw
+    level: TRACE
+    filename: logs/container-log.raw
+    maxBytes: 10240000
+    backupCount: 20
+
+root:
+  handlers: [file]
+  level: INFO
+
+# specific overrides for packages
+#
+# only needed if different than the root settings
+
+# example:
+#
+#loggers:
+#  pyon.container.cc:
+#    level: TRACE
+#
+loggers:
+  rpc:
+    level: DEBUG

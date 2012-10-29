@@ -28,7 +28,6 @@ NotificationRequest: !Extends_InformationResource
   origin_type: ""      # Event filter by origin type
   event_type: ""       # Event filter by event type
   event_subtype: ""    # Event filter by event subtype
-  delivery_config: !DeliveryConfig    # Detailed configuration of notification delivery
   temporal_bounds: !TemporalBounds    # the start and end time of this subscription
 
 ---

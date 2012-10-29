@@ -2,6 +2,7 @@
 # The mount orientation indicates which way a device is pointing (where the pointing direction
 # is defined as the direction in which its sensor is pointing, unless another direction has been
 # specified ) relative to the device (usually a platform) on which it is mounted.
+# !! THIS IS NOT USED IN R2.0, FOR LATER USE !!
 DeviceMountingPosition:
   # the id of the device to which this position applies relative to the parent device
   # (usually an instrument on a platform)
@@ -32,6 +33,8 @@ AbstractDeploymentContextType:
 # Describes an assignment of a device to a specific observatory position,
 # typically for a specified period of time.
 Deployment: !Extends_FrameOfReference
+  # a string that defines the deployment: RemotePlatform, CabledNode, CabledInstrument, Cruise, MobileAsset
+  type: ""
 
   # the specifics of this deployment type
   context: !AbstractDeploymentContextType
@@ -45,11 +48,10 @@ Deployment: !Extends_FrameOfReference
 
 
 ---
+# was BuoyDeploymentContext
+# Deployment of a bundled, integrated platform into a remote environment without direct comms capabilities
+RemotePlatformDeploymentContext: !Extends_AbstractDeploymentContextType
 
-BuoyDeploymentContext: !Extends_AbstractDeploymentContextType
-
-  # Specified time constraint within which entity exists, and others
-  constraint_set: []
 
   # a list of DeviceMountingPosition objects
   device_mounting_positions: []
@@ -57,14 +59,16 @@ BuoyDeploymentContext: !Extends_AbstractDeploymentContextType
 ---
 
 
-
-MooringDeploymentContext: !Extends_AbstractDeploymentContextType
-
-  # Specified time constraint within which entity exists, and others
-  constraint_set: []
+# was MooringDeploymentContext
+# The deployment of a single RSN node
+CabledNodeDeploymentContext: !Extends_AbstractDeploymentContextType
 
 ---
+# a one-to-one deployment of an instrument onto an RSN platform
+CabledInstrumentDeploymentContext: !Extends_AbstractDeploymentContextType
 
+
+---
 
 
 CruiseDeploymentContext: !Extends_AbstractDeploymentContextType
@@ -72,7 +76,7 @@ CruiseDeploymentContext: !Extends_AbstractDeploymentContextType
 ---
 
 
-
-GliderDeploymentContext: !Extends_AbstractDeploymentContextType
+#was GliderDeploymentContext
+MobileAssetDeploymentContext: !Extends_AbstractDeploymentContextType
 
 ---

@@ -100,7 +100,7 @@ RemoteCommandResult: !Extends_Event
 ResourceAgentEvent: !Extends_Event
 
 ---
-PlatformEvent: !Extends_ResourceAgentEvent
+PlatformEvent: !Extends_DeviceEvent
 
 ---
 
@@ -120,6 +120,12 @@ RemoteCommandTransmittedEvent: !Extends_PlatformEvent
 RemoteQueueModifiedEvent: !Extends_PlatformEvent
   queue_size: 0
   
+---
+
+PlatformAlarmEvent: !Extends_PlatformEvent
+  external_alarm_type: ""   # initially this will be the so called "ref_id" in the RSN case
+  external_timestamp: ""    # as reported from the RSN via OMS
+
 ---
 
 ResourceAgentCommandEvent: !Extends_ResourceAgentEvent
@@ -194,7 +200,10 @@ RequestRoleNegotiationStatusEvent: !Extends_NegotiationEvent
 
 AcquireResourceNegotiationStatusEvent: !Extends_NegotiationEvent
   resource: ""
-  acquisition_type: ""
+
+---
+
+AcquireResourceExclusiveNegotiationStatusEvent: !Extends_AcquireResourceNegotiationStatusEvent
 
 ---
 

@@ -78,6 +78,7 @@ methods:
       schedule: !ProcessSchedule
       configuration: {}
       process_id: ""
+      name: ""
     out:
       process_id: ""
     throws:

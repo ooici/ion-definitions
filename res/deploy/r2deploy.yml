@@ -147,6 +147,7 @@ apps:
       bootlevel: 10
 
 # Scheduler service
+# WARNING: This is a singleton and preserve_n shouldn't have a value higher than 1
   - name: scheduler
     processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]
     deploy:
@@ -321,7 +322,6 @@ apps:
     config:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_parameter_definitions, BootstrapParameterDefinitions]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_process_dispatcher, BootstrapProcessDispatcher]
           config:
@@ -345,9 +345,14 @@ apps:
                   type: BINARY
                   datastore_name: filesystem
 
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
   # LAST SERVICE GATEWAY SERVICE
+  #
+  # Note the use of node_exclusive policy parameter. This is to prevent multiple
+  # service gateway workers from being scheduled onto the same VM, because they
+  # all attempt to bind the same port.
   - name: service_gateway
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     deploy:
@@ -356,6 +361,7 @@ apps:
         policy: npreserving
         parameters:
           preserve_n: 1
+          node_exclusive: service_gateway
 
 
 

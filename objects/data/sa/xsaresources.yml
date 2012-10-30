@@ -254,7 +254,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   data_url: !ComputedStringValue   # A unique id for this data product
 
   #@Method
-  provenance: !ComputedStringValue   # Provides an audit trail for modifications to the original data
+  provenance: !ComputedDictValue   # Provides an audit trail for modifications to the original data
 
   #@Method
   provenance_product_list: !ComputedListValue   # Provides an audit trail for modifications to the original data

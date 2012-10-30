@@ -23,7 +23,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with a data process.
 DataProcessExtension: !Extends_ExtendedInformationResource
-  #@hasDataProcessDefinition
+  #@hasProcessDefinition
   data_process_definition: !DataProcessDefinition
   #@hasInputProduct
   input_data_products: []  # set of !DataProducts
@@ -34,7 +34,7 @@ DataProcessExtension: !Extends_ExtendedInformationResource
 ---
 #This object contains additional information associated with a data process definition.
 DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
-  #@hasDataProcessDefinition
+  #@hasProcessDefinition
   data_processes: [] # set of !DataProcess instances of this definition
   #@hasInputStreamDefinition
   input_stream_definitions: []  # set of !StreamDefinition
@@ -286,3 +286,10 @@ DeploymentComputedAttributes: !Extends_ComputedAttributes
 
 
 ---
+
+#Computed attributes for a data process definition
+DataProcessDefinitionComputedAttributes: !Extends_ComputedAttributes
+
+
+#Computed attributes for a data process
+DataProcessComputedAttributes: !Extends_ComputedAttributes

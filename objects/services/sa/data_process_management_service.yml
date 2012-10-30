@@ -46,6 +46,19 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  get_data_process_definition_extension:
+    docstring: |
+      Returns an DataProcessDefinitionExtension object containing additional related information
+    in:
+      data_process_definition_id: ""
+      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: [] # An optional list of field names to exclude from retrieving
+    out:
+      data_process_definition: !DataProcessDefinitionExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified data_product_id does not exist
+
   find_data_process_definitions:
     in:
       filters: !ResourceFilter
@@ -144,6 +157,19 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  get_data_process_extension:
+    docstring: |
+      Returns an DataProcessExtension object containing additional related information
+    in:
+      data_process_id: ""
+      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: [] # An optional list of field names to exclude from retrieving
+    out:
+      data_process: !DataProcessExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified data_product_id does not exist
 
   find_data_process:
     in:

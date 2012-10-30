@@ -51,3 +51,19 @@ ActorIdentityExtension: !Extends_ExtendedInformationResource
   user_requests: [] # A list of requests associated with this user
 
 
+---
+
+#This object contains additional information associated with an actor; typically a user.
+UserInfoExtension: !Extends_ExtendedInformationResource
+  #@hasCredentials
+  credentials: !UserCredentials  # The associated user's credentials
+  #@hasInfo=ActorIdentity
+  actor_identity: !ActorIdentity # The associated user's information
+  roles: []  # Any Org Roles associated with the user Can this be fulfilled with a decorator too?
+  #@hasOwner
+  owned_resources: [] # A list of any resources owned by this user
+  #recent_events: []  # Not sure about this one
+  #@hasRequest
+  user_requests: [] # A list of requests associated with this user
+
+

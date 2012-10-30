@@ -68,7 +68,7 @@ methods:
     docstring: Retrieves the last N data points in a dataset.
     in:
       dataset_id: ""
-      number_of_pints: 100
+      number_of_points: 100
     out:
       retrieve_data: {}
 

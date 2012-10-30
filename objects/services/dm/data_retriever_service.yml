@@ -64,3 +64,11 @@ methods:
     out:
       retrieve_data: {}
 
+  retrieve_last_data_points:
+    docstring: Retrieves the last N data points in a dataset.
+    in:
+      dataset_id: ""
+      number_of_pints: 100
+    out:
+      retrieve_data: {}
+

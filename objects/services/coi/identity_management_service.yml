@@ -217,16 +217,13 @@ methods:
 
 #-------
 
-  get_actor_identity_extension:
+  get_user_info_extension:
     docstring: |
-      Returns an ActorIdentityExtension object containing additional related information
+      Returns an UserInfoExtension object containing additional related information
     in:
-      user_id: ""
-      org_id: ""  # Optional - needed to get the assigned role(s) of the user within the specified Org
-      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
-      ext_exclude: [] # An optional list of field names to exclude from retrieving
+      user_info_id: ""
     out:
-      actor_identity: !ActorIdentityExtension
+      user_info: !UserInfoExtension
     throws:
       BadRequest: A parameter is missing
       NotFound: An object with the specified user_id does not exist

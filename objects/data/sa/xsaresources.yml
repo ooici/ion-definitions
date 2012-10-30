@@ -10,6 +10,8 @@ DeviceExtension: !Extends_ExtendedInformationResource
 #  data_products: [] # A list of associated data products
   #@hasDeployment
   deployments: []  # list of deployment resources to which to which this device is attached
+  #@hasAgentInstance
+  agent_instance: !AgentInstance
 
 ---
 
@@ -248,7 +250,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   data_contents_updated: !ComputedStringValue   # the datetime when the contents of the data were last modified in any way. This is distinct from modifications to the data product attributes
 
   #@Method
-  parameters: !ComputedStringValue   # A set of Parameter objects describing each variable in this data product
+  parameters: !ComputedListValue   # A set of Parameter objects describing each variable in this data product
 
   #@Method
   data_url: !ComputedStringValue   # A unique id for this data product
@@ -266,11 +268,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   active_user_subscriptions: !ComputedListValue   # The NotificationRequest objects for this data product
 
   #@Method
-  descriptors: !ComputedListValue   # Returns a list of keyword/authority pairs with optional urls
-
-  #@Method
   past_user_subscriptions: !ComputedListValue   # Provides a list of NotificationRequest for users who have in the past acquired this data product, but for which that acquisition was terminated
-
 
   #@Method
   last_granule: !ComputedDictValue   # Returns a RDT of parameters and values

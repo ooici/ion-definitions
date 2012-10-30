@@ -41,7 +41,7 @@ DataProduct: !Extends_InformationResource
   # spatial domain
   spatial_domain: {}
 
-  # a list of !Tenm objects (see Shared)
+  # a list of !Term objects (see Shared)
   descriptors: []
 
   # Miscellaneous information not already captured in attributes

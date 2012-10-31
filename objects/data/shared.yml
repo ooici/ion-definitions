@@ -175,8 +175,6 @@ DeviceModel: !Extends_InformationResource
   manufacturer_url: ""
   # Location(s) where additional information about this model can be obtained
   reference_urls: []
-  # The model name/code provided by the manufacturer
-  model: ""
   # Additional attributes required for specific models
   # Each entry in the list is a CustomAttribute object (see above)
   # A device of this model should then store these attribute values in the corresponding custom_attributes

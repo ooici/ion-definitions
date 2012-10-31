@@ -114,6 +114,7 @@ methods:
       sub_types: []
       origins: []
       origin_types: []
+      out_data_products: {}
     out:
       event_process_id: ""
       

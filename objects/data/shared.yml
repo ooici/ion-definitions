@@ -106,6 +106,7 @@ CodeReport:
 ---
 
 ParameterCharacteristicsReport:
+  parameter_name: ""        # The OOI ParameterDictionary name for the parameter being described.
   applicable_range_max: 0.0 # If the value is only valid within a particular range, this gives the maximum. Must be in same units as the value.
   applicable_range_min: 0.0 # If the value is only valid within a particular range, this gives the minimum. Must be in same units as the value.
   characteristic_name: ""   # Name of the characteristic being reported on. Common ones include accuracy, precision, and drift
@@ -130,7 +131,6 @@ Parameter:
   reference_urls: []    # List of URLs with information about the data parameter
   units: ""
   ion_name: ""
-  parameter_characteristic_reports: []    # list of ParameterCharacteristicsReport objects
   custom_attributes: {}
 
 
@@ -139,22 +139,16 @@ Parameter:
 
 # Describes a physical device with a serial number, such as sensor, instrument and platform. Abstract base type.
 Device: !Extends_TaskableResource
-  # unique identifier of device provided by manufacturer
-  serial_number: ""
-  # Whether the device can be sent a control message
-  controllable: True
-  # References to pages about that individual device (e.g. Configuration diagram)
-  reference_urls: []
-  # the uuid provide by the manufacturer
-  uuid: ""
-  # Contacts for this device.  Multiple contacts are allowed, and can be differentiated by the role_list (e.g. pointOfContact, Provider)
-  contacts: []  # list of ContactInformation objects
-  # A device that does not have a communication port for real-time monitoring
-  #monitorable: True
+  serial_number: ""    # unique identifier of device provided by manufacturer
+  controllable: True   # Whether the device can be sent a control message
+  reference_urls: []   # References to pages about that individual device (e.g. Configuration diagram)
+  uuid: ""             # the uuid provide by the manufacturer
+  contacts: []         # Contacts for this device.
   # Additional attributes required for specific devices
   # Recommended format: {attribute1_name:value, attribute2_name:value}
   # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
+  parameter_characteristic_reports: []    # list of ParameterCharacteristicsReport objects
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
 DeviceModel: !Extends_InformationResource

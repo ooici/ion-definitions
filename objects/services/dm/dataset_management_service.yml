@@ -78,6 +78,12 @@ methods:
     out:
       parameter_dictionary: {}
 
+  get_dataset_length:
+    in:
+      dataset_id: ""
+    out:
+      length: 0
+
 #--------
 
   create_parameter_context:

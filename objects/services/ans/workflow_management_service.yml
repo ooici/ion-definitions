@@ -62,6 +62,9 @@ methods:
     in:
       workflow_definition_id: ""
       input_data_product_id: ""
+      persist_workflow_data_product: True
+      output_data_product_name: ""  #Optional name to use for the result output data product for the step
+      configuration: {}    #Optional configuration dict passed to data process being created.
     out:
       workflow_id: ""
       output_data_product_id: ""

@@ -5,16 +5,33 @@ ProcessArgument:
   description: ""
   default:
 
+---
+
+AbstractProcessDetailType:
+
+---
+
+# Event transformation processes that may produce an event or a stream
+EventProcessDetail: !Extends_AbstractProcessDetailType
+  event_types: []
+  sub_types: []
+  origins: []
+  origin_types: []
+
+---
+
 
 # Specifies a type of executable process of class service, agent or transformation process.
 # References the executable or source code.
 ProcessDefinition: !Extends_ExecutableResource
-  definition_type: !enum (name=ProcessDefinitionType, values=(PYON_STREAM), default=PYON_STREAM)
+  definition_type: !enum (name=ProcessDefinitionType, values=(PYON_STREAM, PYON_EVENT), default=PYON_STREAM)
   version: ""    # Version of the same process definition
   executable:    # Describes where to find the code to run
     module: ""   # The source code file in which the code is in
     class: ""    # The class name within the source code module
+    url: ""      # location of the module in ION
   arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
+  definition: !AbstractProcessDetailType
 
 ---
 

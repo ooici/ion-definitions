@@ -6,16 +6,11 @@ OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSRO
 # Represents a domain of authority that provides the context within which policy applies to registered
 # member individuals and resources.
 Org: !Extends_TaskableResource
-  # Specializes the type of Org
-  org_type: !OrgTypeEnum
-
-  # Identifies the institution that operates the Org/Facility
-  institution: !Institution
-
+  org_type: !OrgTypeEnum      # Specializes the type of Or
+  institution: !Institution   # Identifies the institution that operates the Org/Facility
   url: ""
-
-  # An entity that serves as a contact point
-  contact: !ContactInformation
+  #@ContentType=ContactInformation
+  contacts: []                # A list of ContactInformation entities that serves as a contact point
 
 ---
 
@@ -126,3 +121,9 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   #@hasRequest
   user_requests: [] # A list of requests associated with this user
 
+#Computed attributes for a data product
+MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes
+  #@Method
+  instruments_not_deployed: !ComputedListValue  # a list of instrument devices owned by this Org but not currently deployed to a Site
+  #@Method
+  platforms_not_deployed: !ComputedListValue  # a list of platform devices owned by this Org but not currently deployed to a Site

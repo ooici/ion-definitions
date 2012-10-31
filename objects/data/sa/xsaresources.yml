@@ -10,6 +10,8 @@ DeviceExtension: !Extends_ExtendedInformationResource
 #  data_products: [] # A list of associated data products
   #@hasDeployment
   deployments: []  # list of deployment resources to which to which this device is attached
+  #@hasAgentInstance
+  agent_instance: !AgentInstance
 
 ---
 
@@ -23,7 +25,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with a data process.
 DataProcessExtension: !Extends_ExtendedInformationResource
-  #@hasDataProcessDefinition
+  #@hasProcessDefinition
   data_process_definition: !DataProcessDefinition
   #@hasInputProduct
   input_data_products: []  # set of !DataProducts
@@ -34,7 +36,7 @@ DataProcessExtension: !Extends_ExtendedInformationResource
 ---
 #This object contains additional information associated with a data process definition.
 DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
-  #@hasDataProcessDefinition
+  #@hasProcessDefinition
   data_processes: [] # set of !DataProcess instances of this definition
   #@hasInputStreamDefinition
   input_stream_definitions: []  # set of !StreamDefinition
@@ -188,7 +190,7 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 
 
 
-#Computed attributes for an platform device
+#Computed attributes for a Site
 SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
@@ -210,6 +212,9 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
 
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
+
+  #@Method
+  data_products: !ComputedListValue  # All the data products produced from devices at this Site and Site data products
 
   #@Method
   communications_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
@@ -248,7 +253,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   data_contents_updated: !ComputedStringValue   # the datetime when the contents of the data were last modified in any way. This is distinct from modifications to the data product attributes
 
   #@Method
-  parameters: !ComputedStringValue   # A set of Parameter objects describing each variable in this data product
+  parameters: !ComputedListValue   # A set of Parameter objects describing each variable in this data product
 
   #@Method
   data_url: !ComputedStringValue   # A unique id for this data product
@@ -266,11 +271,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   active_user_subscriptions: !ComputedListValue   # The NotificationRequest objects for this data product
 
   #@Method
-  descriptors: !ComputedListValue   # Returns a list of keyword/authority pairs with optional urls
-
-  #@Method
   past_user_subscriptions: !ComputedListValue   # Provides a list of NotificationRequest for users who have in the past acquired this data product, but for which that acquisition was terminated
-
 
   #@Method
   last_granule: !ComputedDictValue   # Returns a RDT of parameters and values
@@ -286,3 +287,10 @@ DeploymentComputedAttributes: !Extends_ComputedAttributes
 
 
 ---
+
+#Computed attributes for a data process definition
+DataProcessDefinitionComputedAttributes: !Extends_ComputedAttributes
+
+
+#Computed attributes for a data process
+DataProcessComputedAttributes: !Extends_ComputedAttributes

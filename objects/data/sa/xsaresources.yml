@@ -190,7 +190,7 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 
 
 
-#Computed attributes for an platform device
+#Computed attributes for a Site
 SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
@@ -212,6 +212,9 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
 
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
+
+  #@Method
+  data_products: !ComputedListValue  # All the data products produced from devices at this Site and Site data products
 
   #@Method
   communications_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW

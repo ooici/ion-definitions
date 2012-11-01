@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Event+Management+Service
 
-dependencies: [resource_registry]
+dependencies: [resource_registry, process_dispatcher, pubsub_management, data_acquisition_management]
 
 methods:
   create_event_type:
@@ -114,6 +114,7 @@ methods:
       sub_types: []
       origins: []
       origin_types: []
+      out_data_products: {}
     out:
       event_process_id: ""
       

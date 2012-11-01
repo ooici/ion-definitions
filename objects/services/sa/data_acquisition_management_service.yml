@@ -618,12 +618,28 @@ methods:
     out:
       data_producer_id: ""
 
+  register_event_process:
+    docstring: Register an existing process as data producer
+    in:
+      process_id: ""
+    out:
+      data_producer_id: ""
+
+
   unregister_process:
     in:
       data_process_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  unregister_event_process:
+    in:
+      process_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
 
   register_instrument:
     docstring: Register an existing instrument as data producer

@@ -1,6 +1,7 @@
 __pk_GraphicType_ID,Description,Name
-"2040004","Iconic representation of concept or asset. Icons have uniform size.","Icon"
-"2040005","State indicator to be used on top of icons.","Badge"
-"2040006","Other graphic element, e.g, page banner.","Graphic"
-"2040007","Iconic representation of interaction. May have idiosyncratic sizes.","Interaction Icon"
-"2040008","Graphic used to draw interaction widget, e.g., down-arrow in scroll-bar or dropdown menu.","Widget Graphic"
+"2040004","Large icon used on map, or other places where space is not an issue, and offset from underlying visuals is needed. On circular background. Has states for Selected, Highlighted, Active, Not Active, etc.","icon_large"
+"2040005","State indicator to be used on top of large icons. Has black outline.  Has multiple images to represent different values.","badge_map"
+"2040006","Other graphic element, e.g, page banner.","graphic"
+"2040007","Small icon used in tables and other places where space is a concern. No outlines.","icon_small"
+"2040008","Graphic used to draw interaction widget, e.g., down-arrow in scroll-bar or dropdown menu.","widget_graphic"
+"2040009","State indicator to be used in non-map locations. Has white outline. Has multiple images to represent different values.","badge_graphic"

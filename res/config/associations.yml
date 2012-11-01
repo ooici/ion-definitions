@@ -291,3 +291,5 @@ CompoundAssociations:
     predicates: [hasModel,hasModel]
   hasModelForDeployment:
     predicates: [hasDeployment,hasModel]
+  hasDataProductsForDataProcessDefinition:
+    predicates: [hasProcessDefinition, hasOutputProduct]

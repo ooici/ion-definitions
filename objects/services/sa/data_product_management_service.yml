@@ -74,6 +74,15 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  is_persisted:
+    docstring: Is the data product currently being persisted?
+    in:
+      data_product_id: ""
+    out:
+      persisted: False
+    throws:
+      NotFound: object with specified id does not exist
+
   get_data_product_provenance:
     in:
       data_product_id: ""

@@ -218,15 +218,6 @@ apps:
         parameters:
           preserve_n: 1
 
-  - name: event_management
-    processapp: [event_management, ion.services.dm.presentation.event_management_service, EventManagementService]
-    deploy:
-      bootlevel: 10
-      ha:
-        policy: npreserving
-        parameters:
-          preserve_n: 1
-
   - name: preservation_management
     processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
     deploy:
@@ -357,14 +348,13 @@ apps:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
-  - name: parameter_bootstrap
+  - name: preload
     version: 0.1
-    description: Boot straps the parameter definitions
-    processapp: [ion_loader1, ion.processes.bootstrap.ion_loader, IONLoader]
+    description: Preloader
+    processapp: [preload, ion.processes.bootstrap.ion_loader, IONLoader]
     config: 
       op: load
-      scenario: BASE
-      path: res/preload/r2_ioc
+      scenario: BASE,R2_DEMO
 
   # LAST SERVICE GATEWAY SERVICE
   #

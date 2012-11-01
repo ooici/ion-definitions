@@ -20,7 +20,7 @@ AssociationDefinitions:
     range: [DataSet]
     docstring: References a DataSet resource that keeps a persistent metadata/data coverage.
   - predicate: hasDataProducer
-    domain: [DataProcess, Device, ExternalDataset, DataProduct]
+    domain: [DataProcess, Process, Device, ExternalDataset, DataProduct]
     range: [DataProducer]
     docstring: References the DataProducer entiry to track a provenance relationship
   - predicate: hasDataProduct

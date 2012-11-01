@@ -1,0 +1,8 @@
+Scenario,ID,confluence,name,parameters,temporal_parameter
+BASE,PDICT1,,ctd_parsed_param_dict,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,pressure,conductivity,temp,salinity,density,quality_flag",time
+BASE,PDICT2,,ctd_raw_param_dict,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
+",time
+BASE,PDICT3,,graph_image_param_dict,"viz_timestamp,viz_product_type,image_name,content_type,image_obj",viz_timestamp
+BASE,PDICT4,,google_dt,google_dt_components,
+BASE,PDICT5,,mpl_graph,mpl_graph,
+TEST,PDICT6,,sample,sample_param,

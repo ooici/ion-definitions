@@ -11,15 +11,18 @@ DeviceMountingPosition:
   # unique identification of the port to which the device is attached
   connection_port: ""
 
-# offset location of the mounted device along the X|Y|Z axis of the mounting platform, with more
-# positive offsets indicating the device is further along the positive direction of that axis and
-# indicating the device is at the origin of the axis
+  # OOI code for the position of an instrument location on a platform. Ex: GA01SUMO-FI003-03-CTDMO0999
+  reference_designator: ""
+
+  # offset location of the mounted device along the X|Y|Z axis of the mounting platform, with more
+  # positive offsets indicating the device is further along the positive direction of that axis and
+  # indicating the device is at the origin of the axis
   offset_x: 0
   offset_y: 0
   offset_z: 0
 
-# indicates which way a device is pointing relative to its platform; specifies the rotation around the X|Y|Z axis
-# in degrees clockwise; assumes device is pointing out Z axis
+  # indicates which way a device is pointing relative to its platform; specifies the rotation around the X|Y|Z axis
+  # in degrees clockwise; assumes device is pointing out Z axis
   rotation_x: 0.0
   rotation_y: 0.0
   rotation_z: 0.0

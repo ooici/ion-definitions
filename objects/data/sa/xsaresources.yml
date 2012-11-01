@@ -42,12 +42,13 @@ DataProcessExtension: !Extends_ExtendedInformationResource
 #This object contains additional information associated with a data process definition.
 DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
   #@hasProcessDefinition
-  data_processes: [] # set of !DataProcess instances of this definition
+  data_processes: []            # set of !DataProcess instances of this definition
   #@hasInputStreamDefinition
   input_stream_definitions: []  # set of !StreamDefinition
   #@hasStreamDefinition
-  output_stream_definitions: []  # set of !StreamDefinition
-
+  output_stream_definitions: [] # set of !StreamDefinition
+  #@hasDataProductsForDataProcessDefinition
+  data_products: []             # set of DataProducts from all child data processes
 
 
 ---

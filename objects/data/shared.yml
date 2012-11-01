@@ -150,6 +150,7 @@ Device: !Extends_TaskableResource
   custom_attributes: {}
   parameter_characteristic_reports: []    # list of ParameterCharacteristicsReport objects
 
+
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
 DeviceModel: !Extends_InformationResource
   # weight of instrument in air, as configured for operation, in kg
@@ -176,6 +177,7 @@ DeviceModel: !Extends_InformationResource
   custom_attributes: []
   # tag is the stream name that the driver uses and the value is the paramter dictionary name.
   stream_configuration: {}
+  has_clock: True      # Indicates whether the device has an internal clock or not
 ---
 
 AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)

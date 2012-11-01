@@ -2,7 +2,12 @@
 ComputedGeospatialBoundsValue: !Extends_ComputedValue
    value: !GeospatialBounds
 
+---
 
+StatusType: !enum ( values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN ), default=STATUS_OK)
+  # see status by device on Confluence Device Status Roll-Ups and Aggregated Status page
+
+---
 
 #This object contains additional information associated with an instrument device.
 DeviceExtension: !Extends_ExtendedInformationResource
@@ -154,16 +159,16 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
 
   #@Method
-  power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  communications_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  data_status_roll_up: !ComputedIntValue  # CV: BLACK, RED, GREEN, YELLOW
+  data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
   last_calibration_datetime: !ComputedFloatValue  #
@@ -175,16 +180,16 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 #Computed attributes for an platform device
 PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
-  power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  communications_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  data_status_roll_up: !ComputedIntValue  # CV: BLACK, RED, GREEN, YELLOW
+  data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
 ---
 
@@ -217,19 +222,19 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   data_products: !ComputedListValue  # All the data products produced from devices at this Site and Site data products
 
   #@Method
-  communications_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  power_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  data_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  data_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  location_status_roll_up: !ComputedIntValue # CV: BLACK, RED, GREEN, YELLOW
+  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
   #@Method
-  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (CV:  RED, YELLOW, GREEN, BLACK)
+  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
 
 ---
 

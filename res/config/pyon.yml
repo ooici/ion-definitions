@@ -115,6 +115,7 @@ container:
       primary: amqp
       priviledged:
     endpoint: # TODO: move entries to here
+      rpc_conversation_enabled: True
     interceptor: # TODO: move entries to here
 
   objects:

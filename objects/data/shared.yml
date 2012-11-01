@@ -200,6 +200,7 @@ Attachment: !Extends_InformationResource
   modified_by: ""
   # Keywords indicating the type of attachment (e.g. user manual, log)
   keywords: []
+  attachment_size: 0 # size of the attachment content field, in bytes
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=PROCESS)
 

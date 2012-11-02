@@ -219,12 +219,16 @@ core_stream_types:
 # The "service" root entry
 service:
   instrument_management:
-    driver_release_host: sddevrepo.oceanobservatories.org
-    driver_release_directory: /var/www/html/releases
+    driver_release_host: "sddevrepo.oceanobservatories.org"
+    driver_release_directory: "/var/www/html/releases"
+    driver_release_wwwprefix: "http://sddevrepo.oceanobservatories.org/releases"
+                              #no trailing slash require
 
   data_process_management:
-    process_release_host: sddevrepo.oceanobservatories.org
-    process_release_directory: /var/www/html/releases
+    process_release_host: "sddevrepo.oceanobservatories.org"
+    process_release_directory: "/var/www/html/releases"
+    process_release_wwwprefix: "http://sddevrepo.oceanobservatories.org/releases"
+                              #no trailing slash
 
   directory:
     default_uispecs_url: https://userexperience.oceanobservatories.org/database-exports/

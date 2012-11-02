@@ -84,6 +84,13 @@ server:
     river_shards:   1        # Defines the number of shards for the _river
     river_replicas: 0        # Defines the number of replicas (important) for the _river
                              # This number should be the number of nodes running exactly
+  pydap:
+    type: pydap
+    host: localhost
+    port: 8001
+    data_path: RESOURCE:ext/pydap
+    datasets_xml_path: RESOURCE:ext/datasets.xml
+
   localrouter:
     # In-process router
     type: local

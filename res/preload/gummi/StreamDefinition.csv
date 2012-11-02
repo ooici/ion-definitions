@@ -1,0 +1,11 @@
+Scenario,ID,org_ids,sdef/name,sdef/description,StreamContainer_module,StreamContainer_method
+R2_DEMO,StreamDef11,MF_3,SeabirdSim_raw demo,,prototype.sci_data.stream_defs,SBE37_RAW_stream_definition
+R2_DEMO,StreamDef12,MF_3,SeabirdSim_parsed demo,,prototype.sci_data.stream_defs,SBE37_CDM_stream_definition
+R2_DEMO,StreamDef13,MF_3,DPD1_out_conductivity_L0 demo,,prototype.sci_data.stream_defs,L0_conductivity_stream_definition
+R2_DEMO,StreamDef14,MF_3,DPD1_out_temp_L0 demo,,prototype.sci_data.stream_defs,L0_temperature_stream_definition
+R2_DEMO,StreamDef15,MF_3,DPD1_out_pressure_L0 demo,,prototype.sci_data.stream_defs,L0_pressure_stream_definition
+R2_DEMO,StreamDef16,MF_3,DPD2_out_conductivity_L1 demo,,prototype.sci_data.stream_defs,L1_conductivity_stream_definition
+R2_DEMO,StreamDef17,MF_3,DPD3_out_temp_L1 demo,,prototype.sci_data.stream_defs,L1_temperature_stream_definition
+R2_DEMO,StreamDef18,MF_3,DPD4_out_pressure_L1 demo,,prototype.sci_data.stream_defs,L1_pressure_stream_definition
+R2_DEMO,StreamDef19,MF_3,DPD5_out_practical_salinity_L2 demo,,prototype.sci_data.stream_defs,L2_practical_salinity_stream_definition
+R2_DEMO,StreamDef20,MF_3,DPD6_out_density_L2 demo,,prototype.sci_data.stream_defs,L2_density_stream_definition

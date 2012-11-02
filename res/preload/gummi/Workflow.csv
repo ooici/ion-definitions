@@ -1,0 +1,17 @@
+Scenario,ID,owner_id,org_ids,wfd_id,in_dp_id,wf/description
+R2_DEMO,WF1,USER_1,MF_3,WFD1,DPROD13,Google DT for OOI Core L0 Conductivity Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF2,USER_1,MF_3,WFD2,DPROD13,MPL graphs for OOI Core L0 Conductivity Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF3,USER_1,MF_3,WFD1,DPROD14,Google DT for OOI Core L0 Temperature Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF4,USER_1,MF_3,WFD2,DPROD14,MPL graphs for OOI Core L0 Temperature Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF5,USER_1,MF_3,WFD1,DPROD15,Google DT for OOI Core L0 Pressure Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF6,USER_1,MF_3,WFD2,DPROD15,MPL graphs for OOI Core L0 Pressure Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF7,USER_1,MF_3,WFD1,DPROD16,Google DT for OOI Core L1 Conductivity Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF8,USER_1,MF_3,WFD2,DPROD16,MPL graphs for OOI Core L1 Conductivity Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF9,USER_1,MF_3,WFD1,DPROD17,Google DT for OOI Core L1 Temperature Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF10,USER_1,MF_3,WFD2,DPROD17,MPL graphs for OOI Core L1 Temperature Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF11,USER_1,MF_3,WFD1,DPROD18,Google DT for OOI Core L1 Pressure Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF12,USER_1,MF_3,WFD2,DPROD18,MPL graphs for OOI Core L1 Pressure Data Product from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF13,USER_1,MF_3,WFD1,DPROD19,Google DT for OOI Core L2 Calculated Practical Salinity from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF14,USER_1,MF_3,WFD2,DPROD19,MPL graphs for OOI Core L2 Calculated Practical Salinity from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF15,USER_1,MF_3,WFD1,DPROD20,Google DT for OOI Core L2 Calculated Density from the Endurance OR Offshore Benthic Pkg Site
+R2_DEMO,WF16,USER_1,MF_3,WFD2,DPROD20,MPL graphs for OOI Core L2 Calculated Density from the Endurance OR Offshore Benthic Pkg Site

@@ -1,0 +1,4 @@
+Scenario,ID,resource_id,file_path,att/name,att/description,att/attachment_type,att/content_type,att/content,att/keywords
+R2_DEMO,ATT1,ID3,att1.pdf,,,BLOB,application/pdf,,
+R2_DEMO,ATT2,ID3,att2.png,,,BLOB,image/png,,['IMAGE']
+R2_DEMO,ATT3,ID4,att3.csv,,,ASCII,text/csv,,

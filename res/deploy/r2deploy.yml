@@ -365,6 +365,7 @@ apps:
       op: load
       scenario: BASE
       path: res/preload/r2_ioc
+      categories: ParameterDefs,ParameterDictionary
 
   # LAST SERVICE GATEWAY SERVICE
   #

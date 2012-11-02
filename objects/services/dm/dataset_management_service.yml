@@ -46,6 +46,15 @@ methods:
     throws:
       NotFound: if ingestion configuration did not exist
 
+  register_dataset:
+    docstring: |
+      Registers a dataset with PyDAP
+    in: 
+      dataset_id: ""
+    out:
+    throws:
+      NotFound: if dataset does not exist
+
 #--------
 
   add_stream:

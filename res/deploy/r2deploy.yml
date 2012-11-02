@@ -361,6 +361,8 @@ apps:
     version: 0.1
     description: Boot straps the parameter definitions
     processapp: [ion_loader1, ion.processes.bootstrap.ion_loader, IONLoader]
+    deploy:
+      bootlevel: 25
     config: 
       op: load
       scenario: BASE

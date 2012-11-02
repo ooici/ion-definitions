@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Instrument Counts Per Class,Report Generated: 9/28/2012
+Instrument Counts Per Class,Report Generated: 11/1/2012
 
 Textbox14
 
@@ -19,18 +19,18 @@ CTD Bottom Pumped,CTDBP,CTDs equiped with a bottom pump,CTD,21,Total Classes (49
 CTD Glider,CTDGV,CTDs to be mounted on gliders,CTD,24,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 CTD Mooring,CTDMO,CTDs to be used in surface and subsurface moorings,CTD,132,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 CTD Profiler,CTDPF,CTDs to be mounted on a profiler,CTD,33,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
-Oxygen dissolved fastresp,DOFST,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients,DO2,16,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
-Oxygen dissolved stable,DOSTA,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings",DO2,70,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
+Oxygen dissolved fastresp,DOFST,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients,DO2,15,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
+Oxygen dissolved stable,DOSTA,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings",DO2,71,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Flux direct cov HP,FDCHP,Measures vertical fluxes associated with eddies in the flow over the ocean,FDC,7,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Flux direct cov LP,FDCLP,Measures vertical fluxes associated with eddies in the flow over the ocean,FDC,3,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Benthic Flow,FLOBN,Benthic fluid flow rate sampler. Measures benthic flow rates via optical injection tracer at the sediment-water interface,SFL,1,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
-Fluorometer two wavelength,FLORD,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter",FLO,36,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
-Fluorometer three wavelength,FLORT,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter",FLO,42,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
+Fluorometer two wavelength,FLORD,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter",FLO,25,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
+Fluorometer three wavelength,FLORT,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter",FLO,53,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 IES pressure velocity,HPIES,"Horizontal electric field, pressure, inverted echo sounder for: water column integration of velocity, acoustic travel time, pressure, water column structure",IES,2,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Hydrophone BB passive,HYDBB,"Broadband (Passive) Acoustic Receiver in the water column to measure acoustic signal ofmarine mammals, fish, wind, and rain",HYD,6,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Hydrophone LF passive,HYDLF,"Broadband (Passive) Acoustic Receiver to measure acoustic signal of wind, rain, and seismic t-phases",HYD,5,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Mass Spectrometer,MASSP,Mass Spectrometer for dissolved gases in hydrothermal and seep fluids,MSP,2,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
-Meteorology bulk,METBK,"Measures surface meteorology and provides the data required to compute air-sea fluxes of heat, freshwater, and momentum",MET,18,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
+Meteorology bulk,METBK,"Measures surface meteorology and provides the data required to compute air-sea fluxes of heat, freshwater, and momentum",MET,14,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Nutrient nitrate,NUTNR,Optical Nitrate measurements (fast response and appropriate for profilers),NIT,25,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Nutrient four channel,NUTR4,nutrient_four_channel,NUT,0,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Seismometer BB triaxial accel,OBSBB,Measures global/regional seismic events and harmonic tremors,OBS,3,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
@@ -42,7 +42,7 @@ Watersample chem trace,OSMOI,Collecting samples of diffuse flow and seep fluids 
 PAR,PARAD,Measures optical attenuation and absorption at 400-700nm wavelengths,OPT,30,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 pCO2 air-sea,PCO2A,Measures partial pressure of CO2 at the air-sea interface,CO2,10,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 pCO2 water,PCO2W,Measures partial pressure of CO2 in the water column,CO2,25,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
-pH stable,PHSEN,pH,CO2,33,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
+pH stable,PHSEN,pH,CO2,37,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 DNA particulate,PPSDN,Used to measure microbial community,RAS,1,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Pressure SF,PRESF,Measures seafloor pressure,PRS,7,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)
 Pressure SF tidal,PREST,Measures tidal pressure on the seafloor to mm scale,PRS,3,Total Classes (49),Total Classes With Instruments (47),Total Instruments (771)

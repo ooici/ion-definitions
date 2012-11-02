@@ -86,6 +86,7 @@ methods:
       must exist and be associated with an InstrumentDevice
     in:
       instrument_agent_instance_id: ""
+      start_port_agent: True
     out:
       process_id: ""
     throws:

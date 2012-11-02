@@ -1,0 +1,2762 @@
+﻿Textbox8,tbToday
+Subseries Attributes Report,Report Generated: 10/30/2012
+
+Textbox14
+
+
+Count
+"Total Active, Retired, Draft, Rejected Risks: 0"
+
+Class,Series,Subseries,Subseries_Name,Attribute,AttributeValue
+ADCPA,M,01,ADCPA Series M Sub 01,2009 Baseline Price*,
+ADCPA,M,01,ADCPA Series M Sub 01,2009 Deployed Instrument Count,3
+ADCPA,M,01,ADCPA Series M Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range) for mobile assets
+ADCPA,M,01,ADCPA Series M Sub 01,CE Spares,
+ADCPA,M,01,ADCPA Series M Sub 01,CGSN MREFC Spares,
+ADCPA,M,01,ADCPA Series M Sub 01,CGSN O&M Spares,
+ADCPA,M,01,ADCPA Series M Sub 01,CGSN P/N,3305-00009-00001
+ADCPA,M,01,ADCPA Series M Sub 01,ClassLongName,velocity_profile_mobile_asset
+ADCPA,M,01,ADCPA Series M Sub 01,Comments,TWR P/N: 4334 Rev. 01
+ADCPA,M,01,ADCPA Series M Sub 01,CP Spares,
+ADCPA,M,01,ADCPA Series M Sub 01,Description,ADCPs to be mounted on gliders and AUVs
+ADCPA,M,01,ADCPA Series M Sub 01,ECRs that changed the count,
+ADCPA,M,01,ADCPA Series M Sub 01,Global Spares,
+ADCPA,M,01,ADCPA Series M Sub 01,Instrument Configuration,Teledyne RDI Explorer DVL 600 kHz
+ADCPA,M,01,ADCPA Series M Sub 01,Link to the Specification,
+ADCPA,M,01,ADCPA Series M Sub 01,Notes,
+ADCPA,M,01,ADCPA Series M Sub 01,PrimaryScienceDiscipline,P
+ADCPA,M,01,ADCPA Series M Sub 01,Ready for 2013?,
+ADCPA,M,01,ADCPA Series M Sub 01,RSN O&M Spares,
+ADCPA,M,01,ADCPA Series M Sub 01,RSN Part Number,
+ADCPA,M,01,ADCPA Series M Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ADCPA,N,01,ADCPA Series N Sub 01,2009 Baseline Price*,
+ADCPA,N,01,ADCPA Series N Sub 01,2009 Deployed Instrument Count,3
+ADCPA,N,01,ADCPA Series N Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range) for mobile assets
+ADCPA,N,01,ADCPA Series N Sub 01,CE Spares,
+ADCPA,N,01,ADCPA Series N Sub 01,CGSN MREFC Spares,
+ADCPA,N,01,ADCPA Series N Sub 01,CGSN O&M Spares,
+ADCPA,N,01,ADCPA Series N Sub 01,CGSN P/N,3305-00009-00002
+ADCPA,N,01,ADCPA Series N Sub 01,ClassLongName,velocity_profile_mobile_asset
+ADCPA,N,01,ADCPA Series N Sub 01,Comments,up/down looking
+ADCPA,N,01,ADCPA Series N Sub 01,CP Spares,
+ADCPA,N,01,ADCPA Series N Sub 01,Description,ADCPs to be mounted on gliders and AUVs
+ADCPA,N,01,ADCPA Series N Sub 01,ECRs that changed the count,
+ADCPA,N,01,ADCPA Series N Sub 01,Global Spares,
+ADCPA,N,01,ADCPA Series N Sub 01,Instrument Configuration,Teledyne RDI Workhorse Navigator 600 kHz dual
+ADCPA,N,01,ADCPA Series N Sub 01,Link to the Specification,
+ADCPA,N,01,ADCPA Series N Sub 01,Notes,
+ADCPA,N,01,ADCPA Series N Sub 01,PrimaryScienceDiscipline,P
+ADCPA,N,01,ADCPA Series N Sub 01,Ready for 2013?,
+ADCPA,N,01,ADCPA Series N Sub 01,RSN O&M Spares,
+ADCPA,N,01,ADCPA Series N Sub 01,RSN Part Number,
+ADCPA,N,01,ADCPA Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ADCPS,A,01,ADCPS Series A Sub 01,2009 Baseline Price*,"$60,575.00"
+ADCPS,A,01,ADCPS Series A Sub 01,2009 Deployed Instrument Count,16
+ADCPS,A,01,ADCPS Series A Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
+ADCPS,A,01,ADCPS Series A Sub 01,CE Spares,
+ADCPS,A,01,ADCPS Series A Sub 01,CGSN MREFC Spares,
+ADCPS,A,01,ADCPS Series A Sub 01,CGSN O&M Spares,
+ADCPS,A,01,ADCPS Series A Sub 01,CGSN P/N,
+ADCPS,A,01,ADCPS Series A Sub 01,ClassLongName,Velocity_Profile_Long_Range
+ADCPS,A,01,ADCPS Series A Sub 01,Comments,
+ADCPS,A,01,ADCPS Series A Sub 01,CP Spares,
+ADCPS,A,01,ADCPS Series A Sub 01,Description,ADCPs capable of measuring 500 m or greater from the instrument
+ADCPS,A,01,ADCPS Series A Sub 01,ECRs that changed the count,
+ADCPS,A,01,ADCPS Series A Sub 01,Global Spares,
+ADCPS,A,01,ADCPS Series A Sub 01,Instrument Configuration,
+ADCPS,A,01,ADCPS Series A Sub 01,Link to the Specification,
+ADCPS,A,01,ADCPS Series A Sub 01,Notes,
+ADCPS,A,01,ADCPS Series A Sub 01,PrimaryScienceDiscipline,P
+ADCPS,A,01,ADCPS Series A Sub 01,Ready for 2013?,
+ADCPS,A,01,ADCPS Series A Sub 01,RSN O&M Spares,
+ADCPS,A,01,ADCPS Series A Sub 01,RSN Part Number,
+ADCPS,A,01,ADCPS Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ADCPS,I,01,ADCPS Series I Sub 01,2009 Baseline Price*,"$60,575.00"
+ADCPS,I,01,ADCPS Series I Sub 01,2009 Deployed Instrument Count,16
+ADCPS,I,01,ADCPS Series I Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
+ADCPS,I,01,ADCPS Series I Sub 01,CE Spares,1
+ADCPS,I,01,ADCPS Series I Sub 01,CGSN MREFC Spares,1
+ADCPS,I,01,ADCPS Series I Sub 01,CGSN O&M Spares,
+ADCPS,I,01,ADCPS Series I Sub 01,CGSN P/N,1336-00010-00009
+ADCPS,I,01,ADCPS Series I Sub 01,ClassLongName,Velocity_Profile_Long_Range
+ADCPS,I,01,ADCPS Series I Sub 01,Comments,WH LongRanger Monitor
+ADCPS,I,01,ADCPS Series I Sub 01,CP Spares,
+ADCPS,I,01,ADCPS Series I Sub 01,Description,ADCPs capable of measuring 500 m or greater from the instrument
+ADCPS,I,01,ADCPS Series I Sub 01,ECRs that changed the count,
+ADCPS,I,01,ADCPS Series I Sub 01,Global Spares,
+ADCPS,I,01,ADCPS Series I Sub 01,Instrument Configuration,Teledyne RDI WHLM75-1500 w/ Ti Hardware
+ADCPS,I,01,ADCPS Series I Sub 01,Link to the Specification,
+ADCPS,I,01,ADCPS Series I Sub 01,Notes,
+ADCPS,I,01,ADCPS Series I Sub 01,PrimaryScienceDiscipline,P
+ADCPS,I,01,ADCPS Series I Sub 01,Ready for 2013?,
+ADCPS,I,01,ADCPS Series I Sub 01,RSN O&M Spares,
+ADCPS,I,01,ADCPS Series I Sub 01,RSN Part Number,
+ADCPS,I,01,ADCPS Series I Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD09, I-WHM75-1500, I-Model#WHLQ-HWK (Ti hardware head)"
+ADCPS,J,01,ADCPS Series J Sub 01,2009 Baseline Price*,"$60,575.00"
+ADCPS,J,01,ADCPS Series J Sub 01,2009 Deployed Instrument Count,16
+ADCPS,J,01,ADCPS Series J Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
+ADCPS,J,01,ADCPS Series J Sub 01,CE Spares,1
+ADCPS,J,01,ADCPS Series J Sub 01,CGSN MREFC Spares,1
+ADCPS,J,01,ADCPS Series J Sub 01,CGSN O&M Spares,1
+ADCPS,J,01,ADCPS Series J Sub 01,CGSN P/N,1336-00010-00010
+ADCPS,J,01,ADCPS Series J Sub 01,ClassLongName,Velocity_Profile_Long_Range
+ADCPS,J,01,ADCPS Series J Sub 01,Comments,WH LongRanger Sentinel
+ADCPS,J,01,ADCPS Series J Sub 01,CP Spares,1
+ADCPS,J,01,ADCPS Series J Sub 01,Description,ADCPs capable of measuring 500 m or greater from the instrument
+ADCPS,J,01,ADCPS Series J Sub 01,ECRs that changed the count,
+ADCPS,J,01,ADCPS Series J Sub 01,Global Spares,
+ADCPS,J,01,ADCPS Series J Sub 01,Instrument Configuration,Teledyne RDI WHLS75-1500 w/ Ti Hardware
+ADCPS,J,01,ADCPS Series J Sub 01,Link to the Specification,
+ADCPS,J,01,ADCPS Series J Sub 01,Notes,
+ADCPS,J,01,ADCPS Series J Sub 01,PrimaryScienceDiscipline,P
+ADCPS,J,01,ADCPS Series J Sub 01,Ready for 2013?,
+ADCPS,J,01,ADCPS Series J Sub 01,RSN O&M Spares,
+ADCPS,J,01,ADCPS Series J Sub 01,RSN Part Number,
+ADCPS,J,01,ADCPS Series J Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD10, J-WHS75-1500, J-Model#WHLQ-HWK (Ti hardware head)"
+ADCPS,K,01,ADCPS Series K Sub 01,2009 Baseline Price*,"$60,575.00"
+ADCPS,K,01,ADCPS Series K Sub 01,2009 Deployed Instrument Count,16
+ADCPS,K,01,ADCPS Series K Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
+ADCPS,K,01,ADCPS Series K Sub 01,CE Spares,
+ADCPS,K,01,ADCPS Series K Sub 01,CGSN MREFC Spares,
+ADCPS,K,01,ADCPS Series K Sub 01,CGSN O&M Spares,
+ADCPS,K,01,ADCPS Series K Sub 01,CGSN P/N,
+ADCPS,K,01,ADCPS Series K Sub 01,ClassLongName,Velocity_Profile_Long_Range
+ADCPS,K,01,ADCPS Series K Sub 01,Comments,
+ADCPS,K,01,ADCPS Series K Sub 01,CP Spares,
+ADCPS,K,01,ADCPS Series K Sub 01,Description,ADCPs capable of measuring 500 m or greater from the instrument
+ADCPS,K,01,ADCPS Series K Sub 01,ECRs that changed the count,
+ADCPS,K,01,ADCPS Series K Sub 01,Global Spares,
+ADCPS,K,01,ADCPS Series K Sub 01,Instrument Configuration,[Workhorse 75 kHz Long Ranger|http://www.rdinstruments.com/longranger.aspx]
+ADCPS,K,01,ADCPS Series K Sub 01,Link to the Specification,
+ADCPS,K,01,ADCPS Series K Sub 01,Notes,
+ADCPS,K,01,ADCPS Series K Sub 01,PrimaryScienceDiscipline,P
+ADCPS,K,01,ADCPS Series K Sub 01,Ready for 2013?,
+ADCPS,K,01,ADCPS Series K Sub 01,RSN O&M Spares,1
+ADCPS,K,01,ADCPS Series K Sub 01,RSN Part Number,4830-58419
+ADCPS,K,01,ADCPS Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ADCPS,L,01,ADCPS Series L Sub 01,2009 Baseline Price*,"$60,575.00"
+ADCPS,L,01,ADCPS Series L Sub 01,2009 Deployed Instrument Count,16
+ADCPS,L,01,ADCPS Series L Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
+ADCPS,L,01,ADCPS Series L Sub 01,CE Spares,
+ADCPS,L,01,ADCPS Series L Sub 01,CGSN MREFC Spares,2
+ADCPS,L,01,ADCPS Series L Sub 01,CGSN O&M Spares,1
+ADCPS,L,01,ADCPS Series L Sub 01,CGSN P/N,1336-00010-00012
+ADCPS,L,01,ADCPS Series L Sub 01,ClassLongName,Velocity_Profile_Long_Range
+ADCPS,L,01,ADCPS Series L Sub 01,Comments,WH LongRanger Sentinel
+ADCPS,L,01,ADCPS Series L Sub 01,CP Spares,1
+ADCPS,L,01,ADCPS Series L Sub 01,Description,ADCPs capable of measuring 500 m or greater from the instrument
+ADCPS,L,01,ADCPS Series L Sub 01,ECRs that changed the count,
+ADCPS,L,01,ADCPS Series L Sub 01,Global Spares,2
+ADCPS,L,01,ADCPS Series L Sub 01,Instrument Configuration,Teledyne RDI WHLS75-1500-I (includes IM) w/ Ti Hardware
+ADCPS,L,01,ADCPS Series L Sub 01,Link to the Specification,
+ADCPS,L,01,ADCPS Series L Sub 01,Notes,
+ADCPS,L,01,ADCPS Series L Sub 01,PrimaryScienceDiscipline,P
+ADCPS,L,01,ADCPS Series L Sub 01,Ready for 2013?,
+ADCPS,L,01,ADCPS Series L Sub 01,RSN O&M Spares,
+ADCPS,L,01,ADCPS Series L Sub 01,RSN Part Number,
+ADCPS,L,01,ADCPS Series L Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD11, L-WHLS75-1500-I, L-Model#WHLQ-HWK (Ti hardware head)"
+ADCPS,N,01,ADCPS Series N Sub 01,2009 Baseline Price*,"$60,575.00"
+ADCPS,N,01,ADCPS Series N Sub 01,2009 Deployed Instrument Count,16
+ADCPS,N,01,ADCPS Series N Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
+ADCPS,N,01,ADCPS Series N Sub 01,CE Spares,
+ADCPS,N,01,ADCPS Series N Sub 01,CGSN MREFC Spares,
+ADCPS,N,01,ADCPS Series N Sub 01,CGSN O&M Spares,2
+ADCPS,N,01,ADCPS Series N Sub 01,CGSN P/N,1336-00010-00014
+ADCPS,N,01,ADCPS Series N Sub 01,ClassLongName,Velocity_Profile_Long_Range
+ADCPS,N,01,ADCPS Series N Sub 01,Comments,WH LongRanger Sentinel
+ADCPS,N,01,ADCPS Series N Sub 01,CP Spares,
+ADCPS,N,01,ADCPS Series N Sub 01,Description,ADCPs capable of measuring 500 m or greater from the instrument
+ADCPS,N,01,ADCPS Series N Sub 01,ECRs that changed the count,
+ADCPS,N,01,ADCPS Series N Sub 01,Global Spares,2
+ADCPS,N,01,ADCPS Series N Sub 01,Instrument Configuration,Teledyne RDI WHLS75-6KS-I (includes IM) w/ Ti Hardware
+ADCPS,N,01,ADCPS Series N Sub 01,Link to the Specification,
+ADCPS,N,01,ADCPS Series N Sub 01,Notes,
+ADCPS,N,01,ADCPS Series N Sub 01,PrimaryScienceDiscipline,P
+ADCPS,N,01,ADCPS Series N Sub 01,Ready for 2013?,
+ADCPS,N,01,ADCPS Series N Sub 01,RSN O&M Spares,
+ADCPS,N,01,ADCPS Series N Sub 01,RSN Part Number,
+ADCPS,N,01,ADCPS Series N Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD11, L-WHLS75-6KS-I, L-Model#WHLQ-HWK (Ti hardware head)"
+ADCPT,A,01,ADCPT Series A Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,A,01,ADCPT Series A Sub 01,2009 Deployed Instrument Count,18
+ADCPT,A,01,ADCPT Series A Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,A,01,ADCPT Series A Sub 01,CE Spares,1
+ADCPT,A,01,ADCPT Series A Sub 01,CGSN MREFC Spares,1
+ADCPT,A,01,ADCPT Series A Sub 01,CGSN O&M Spares,
+ADCPT,A,01,ADCPT Series A Sub 01,CGSN P/N,1336-00010-00001
+ADCPT,A,01,ADCPT Series A Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,A,01,ADCPT Series A Sub 01,Comments,WH Sentinel (includes batteries)
+ADCPT,A,01,ADCPT Series A Sub 01,CP Spares,
+ADCPT,A,01,ADCPT Series A Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,A,01,ADCPT Series A Sub 01,ECRs that changed the count,
+ADCPT,A,01,ADCPT Series A Sub 01,Global Spares,
+ADCPT,A,01,ADCPT Series A Sub 01,Instrument Configuration,Teledyne RDI WHS600-500 w/ Ti Hardware
+ADCPT,A,01,ADCPT Series A Sub 01,Link to the Specification,
+ADCPT,A,01,ADCPT Series A Sub 01,Notes,
+ADCPT,A,01,ADCPT Series A Sub 01,PrimaryScienceDiscipline,P
+ADCPT,A,01,ADCPT Series A Sub 01,Ready for 2013?,
+ADCPT,A,01,ADCPT Series A Sub 01,RSN O&M Spares,
+ADCPT,A,01,ADCPT Series A Sub 01,RSN Part Number,
+ADCPT,A,01,ADCPT Series A Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD01, A-WHS600-500, A-Model#WHSM-HWK (Ti hardware body)"
+ADCPT,B,01,ADCPT Series B Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,B,01,ADCPT Series B Sub 01,2009 Deployed Instrument Count,18
+ADCPT,B,01,ADCPT Series B Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,B,01,ADCPT Series B Sub 01,CE Spares,1
+ADCPT,B,01,ADCPT Series B Sub 01,CGSN MREFC Spares,1
+ADCPT,B,01,ADCPT Series B Sub 01,CGSN O&M Spares,
+ADCPT,B,01,ADCPT Series B Sub 01,CGSN P/N,1336-00010-00002
+ADCPT,B,01,ADCPT Series B Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,B,01,ADCPT Series B Sub 01,Comments,"WH Monitor (shorter housing, no batteries)"
+ADCPT,B,01,ADCPT Series B Sub 01,CP Spares,
+ADCPT,B,01,ADCPT Series B Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,B,01,ADCPT Series B Sub 01,ECRs that changed the count,
+ADCPT,B,01,ADCPT Series B Sub 01,Global Spares,
+ADCPT,B,01,ADCPT Series B Sub 01,Instrument Configuration,Teledyne RDI WHM300-500 w/ Ti Hardware
+ADCPT,B,01,ADCPT Series B Sub 01,Link to the Specification,
+ADCPT,B,01,ADCPT Series B Sub 01,Notes,
+ADCPT,B,01,ADCPT Series B Sub 01,PrimaryScienceDiscipline,P
+ADCPT,B,01,ADCPT Series B Sub 01,Ready for 2013?,
+ADCPT,B,01,ADCPT Series B Sub 01,RSN O&M Spares,
+ADCPT,B,01,ADCPT Series B Sub 01,RSN Part Number,
+ADCPT,B,01,ADCPT Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD02, B-WHM300-500, B-Model#WHSM-HWK (Ti hardware head)"
+ADCPT,C,01,ADCPT Series C Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,C,01,ADCPT Series C Sub 01,2009 Deployed Instrument Count,18
+ADCPT,C,01,ADCPT Series C Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,C,01,ADCPT Series C Sub 01,CE Spares,1
+ADCPT,C,01,ADCPT Series C Sub 01,CGSN MREFC Spares,
+ADCPT,C,01,ADCPT Series C Sub 01,CGSN O&M Spares,1
+ADCPT,C,01,ADCPT Series C Sub 01,CGSN P/N,1336-00010-00003
+ADCPT,C,01,ADCPT Series C Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,C,01,ADCPT Series C Sub 01,Comments,WH Sentinel (includes batteries)
+ADCPT,C,01,ADCPT Series C Sub 01,CP Spares,
+ADCPT,C,01,ADCPT Series C Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,C,01,ADCPT Series C Sub 01,ECRs that changed the count,
+ADCPT,C,01,ADCPT Series C Sub 01,Global Spares,
+ADCPT,C,01,ADCPT Series C Sub 01,Instrument Configuration,Teledyne RDI WHS300-500 w/ Ti Hardware
+ADCPT,C,01,ADCPT Series C Sub 01,Link to the Specification,
+ADCPT,C,01,ADCPT Series C Sub 01,Notes,
+ADCPT,C,01,ADCPT Series C Sub 01,PrimaryScienceDiscipline,P
+ADCPT,C,01,ADCPT Series C Sub 01,Ready for 2013?,
+ADCPT,C,01,ADCPT Series C Sub 01,RSN O&M Spares,
+ADCPT,C,01,ADCPT Series C Sub 01,RSN Part Number,
+ADCPT,C,01,ADCPT Series C Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD03, C-WHS300-500, C-Model#WHSM-HWK (Ti hardware head)"
+ADCPT,D,01,ADCPT Series D Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,D,01,ADCPT Series D Sub 01,2009 Deployed Instrument Count,18
+ADCPT,D,01,ADCPT Series D Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,D,01,ADCPT Series D Sub 01,CE Spares,
+ADCPT,D,01,ADCPT Series D Sub 01,CGSN MREFC Spares,
+ADCPT,D,01,ADCPT Series D Sub 01,CGSN O&M Spares,
+ADCPT,D,01,ADCPT Series D Sub 01,CGSN P/N,
+ADCPT,D,01,ADCPT Series D Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,D,01,ADCPT Series D Sub 01,Comments,
+ADCPT,D,01,ADCPT Series D Sub 01,CP Spares,
+ADCPT,D,01,ADCPT Series D Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,D,01,ADCPT Series D Sub 01,ECRs that changed the count,
+ADCPT,D,01,ADCPT Series D Sub 01,Global Spares,
+ADCPT,D,01,ADCPT Series D Sub 01,Instrument Configuration,[Quartermaster (150 kHz) with plastic housing|http://www.rdinstruments.com/quartermaster.aspx]
+ADCPT,D,01,ADCPT Series D Sub 01,Link to the Specification,
+ADCPT,D,01,ADCPT Series D Sub 01,Notes,
+ADCPT,D,01,ADCPT Series D Sub 01,PrimaryScienceDiscipline,P
+ADCPT,D,01,ADCPT Series D Sub 01,Ready for 2013?,
+ADCPT,D,01,ADCPT Series D Sub 01,RSN O&M Spares,1
+ADCPT,D,01,ADCPT Series D Sub 01,RSN Part Number,4830-58315
+ADCPT,D,01,ADCPT Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ADCPT,E,01,ADCPT Series E Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,E,01,ADCPT Series E Sub 01,2009 Deployed Instrument Count,18
+ADCPT,E,01,ADCPT Series E Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,E,01,ADCPT Series E Sub 01,CE Spares,
+ADCPT,E,01,ADCPT Series E Sub 01,CGSN MREFC Spares,
+ADCPT,E,01,ADCPT Series E Sub 01,CGSN O&M Spares,
+ADCPT,E,01,ADCPT Series E Sub 01,CGSN P/N,
+ADCPT,E,01,ADCPT Series E Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,E,01,ADCPT Series E Sub 01,Comments,
+ADCPT,E,01,ADCPT Series E Sub 01,CP Spares,
+ADCPT,E,01,ADCPT Series E Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,E,01,ADCPT Series E Sub 01,ECRs that changed the count,
+ADCPT,E,01,ADCPT Series E Sub 01,Global Spares,
+ADCPT,E,01,ADCPT Series E Sub 01,Instrument Configuration,[Quartermaster (150 kHz) with titanium housing|http://www.rdinstruments.com/quartermaster.aspx]
+ADCPT,E,01,ADCPT Series E Sub 01,Link to the Specification,
+ADCPT,E,01,ADCPT Series E Sub 01,Notes,
+ADCPT,E,01,ADCPT Series E Sub 01,PrimaryScienceDiscipline,P
+ADCPT,E,01,ADCPT Series E Sub 01,Ready for 2013?,
+ADCPT,E,01,ADCPT Series E Sub 01,RSN O&M Spares,1
+ADCPT,E,01,ADCPT Series E Sub 01,RSN Part Number,4830-68076
+ADCPT,E,01,ADCPT Series E Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ADCPT,F,01,ADCPT Series F Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,F,01,ADCPT Series F Sub 01,2009 Deployed Instrument Count,18
+ADCPT,F,01,ADCPT Series F Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,F,01,ADCPT Series F Sub 01,CE Spares,
+ADCPT,F,01,ADCPT Series F Sub 01,CGSN MREFC Spares,1
+ADCPT,F,01,ADCPT Series F Sub 01,CGSN O&M Spares,
+ADCPT,F,01,ADCPT Series F Sub 01,CGSN P/N,1336-00010-00006
+ADCPT,F,01,ADCPT Series F Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,F,01,ADCPT Series F Sub 01,Comments,WH Sentinel (includes batteries)
+ADCPT,F,01,ADCPT Series F Sub 01,CP Spares,1
+ADCPT,F,01,ADCPT Series F Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,F,01,ADCPT Series F Sub 01,ECRs that changed the count,
+ADCPT,F,01,ADCPT Series F Sub 01,Global Spares,
+ADCPT,F,01,ADCPT Series F Sub 01,Instrument Configuration,Teledyne RDI WHS150-1500 w/ Ti Hardware
+ADCPT,F,01,ADCPT Series F Sub 01,Link to the Specification,
+ADCPT,F,01,ADCPT Series F Sub 01,Notes,
+ADCPT,F,01,ADCPT Series F Sub 01,PrimaryScienceDiscipline,P
+ADCPT,F,01,ADCPT Series F Sub 01,Ready for 2013?,
+ADCPT,F,01,ADCPT Series F Sub 01,RSN O&M Spares,
+ADCPT,F,01,ADCPT Series F Sub 01,RSN Part Number,
+ADCPT,F,01,ADCPT Series F Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD06, F-WHS150-1500, F-Model#WHLQ-HWK (Ti hardware head)"
+ADCPT,G,01,ADCPT Series G Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,G,01,ADCPT Series G Sub 01,2009 Deployed Instrument Count,18
+ADCPT,G,01,ADCPT Series G Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,G,01,ADCPT Series G Sub 01,CE Spares,
+ADCPT,G,01,ADCPT Series G Sub 01,CGSN MREFC Spares,
+ADCPT,G,01,ADCPT Series G Sub 01,CGSN O&M Spares,1
+ADCPT,G,01,ADCPT Series G Sub 01,CGSN P/N,1336-00010-00007
+ADCPT,G,01,ADCPT Series G Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,G,01,ADCPT Series G Sub 01,Comments,WH Sentinel -- Quartermaster
+ADCPT,G,01,ADCPT Series G Sub 01,CP Spares,1
+ADCPT,G,01,ADCPT Series G Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,G,01,ADCPT Series G Sub 01,ECRs that changed the count,
+ADCPT,G,01,ADCPT Series G Sub 01,Global Spares,
+ADCPT,G,01,ADCPT Series G Sub 01,Instrument Configuration,Teledyne RDI WHS150-1500 w/ Ti Hardware w/ Inductive Modem
+ADCPT,G,01,ADCPT Series G Sub 01,Link to the Specification,
+ADCPT,G,01,ADCPT Series G Sub 01,Notes,
+ADCPT,G,01,ADCPT Series G Sub 01,PrimaryScienceDiscipline,P
+ADCPT,G,01,ADCPT Series G Sub 01,Ready for 2013?,
+ADCPT,G,01,ADCPT Series G Sub 01,RSN O&M Spares,
+ADCPT,G,01,ADCPT Series G Sub 01,RSN Part Number,
+ADCPT,G,01,ADCPT Series G Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD07, G-WHS150-1500, G-Model#WHQL-IMMUG-OPT, G-Model#WHLQ-HWK (Ti hardware head)"
+ADCPT,M,01,ADCPT Series M Sub 01,2009 Baseline Price*,"$38,625.00"
+ADCPT,M,01,ADCPT Series M Sub 01,2009 Deployed Instrument Count,18
+ADCPT,M,01,ADCPT Series M Sub 01,Alternate Instrument Class Name,Velocity Profiler (short range)
+ADCPT,M,01,ADCPT Series M Sub 01,CE Spares,1
+ADCPT,M,01,ADCPT Series M Sub 01,CGSN MREFC Spares,
+ADCPT,M,01,ADCPT Series M Sub 01,CGSN O&M Spares,1
+ADCPT,M,01,ADCPT Series M Sub 01,CGSN P/N,1336-00010-00013
+ADCPT,M,01,ADCPT Series M Sub 01,ClassLongName,Velocity_Profile_Short_Range
+ADCPT,M,01,ADCPT Series M Sub 01,Comments,WH Sentinel (includes batteries) Need wave measuring capability
+ADCPT,M,01,ADCPT Series M Sub 01,CP Spares,
+ADCPT,M,01,ADCPT Series M Sub 01,Description,ADCPs capable of measuring 300 m or greater from the instrument
+ADCPT,M,01,ADCPT Series M Sub 01,ECRs that changed the count,
+ADCPT,M,01,ADCPT Series M Sub 01,Global Spares,
+ADCPT,M,01,ADCPT Series M Sub 01,Instrument Configuration,Teledyne RDI WHS600-500 w/ wave option (50 m pressure sensor range) w/ Ti Hardware
+ADCPT,M,01,ADCPT Series M Sub 01,Link to the Specification,
+ADCPT,M,01,ADCPT Series M Sub 01,Notes,
+ADCPT,M,01,ADCPT Series M Sub 01,PrimaryScienceDiscipline,P
+ADCPT,M,01,ADCPT Series M Sub 01,Ready for 2013?,
+ADCPT,M,01,ADCPT Series M Sub 01,RSN O&M Spares,
+ADCPT,M,01,ADCPT Series M Sub 01,RSN Part Number,
+ADCPT,M,01,ADCPT Series M Sub 01,"Vendor CLIN, SubCLIN or Model #","ADYD01, A-WHS600-500, A-Model#WHWDS-50, A-Model#WHSM-HWK (Ti hardware body)"
+BOTPT,A,01,BOTPT Series A Sub 01,2009 Baseline Price*,
+BOTPT,A,01,BOTPT Series A Sub 01,2009 Deployed Instrument Count,3
+BOTPT,A,01,BOTPT Series A Sub 01,Alternate Instrument Class Name,Bottom Pressure and Tilt
+BOTPT,A,01,BOTPT Series A Sub 01,CE Spares,
+BOTPT,A,01,BOTPT Series A Sub 01,CGSN MREFC Spares,
+BOTPT,A,01,BOTPT Series A Sub 01,CGSN O&M Spares,
+BOTPT,A,01,BOTPT Series A Sub 01,CGSN P/N,
+BOTPT,A,01,BOTPT Series A Sub 01,ClassLongName,pressure_bottom_tilt
+BOTPT,A,01,BOTPT Series A Sub 01,Comments,
+BOTPT,A,01,BOTPT Series A Sub 01,CP Spares,
+BOTPT,A,01,BOTPT Series A Sub 01,Description,Measures seafloor inflation and deflation due to magmatic processes
+BOTPT,A,01,BOTPT Series A Sub 01,ECRs that changed the count,
+BOTPT,A,01,BOTPT Series A Sub 01,Global Spares,
+BOTPT,A,01,BOTPT Series A Sub 01,Instrument Configuration,
+BOTPT,A,01,BOTPT Series A Sub 01,Link to the Specification,
+BOTPT,A,01,BOTPT Series A Sub 01,Notes,
+BOTPT,A,01,BOTPT Series A Sub 01,PrimaryScienceDiscipline,G
+BOTPT,A,01,BOTPT Series A Sub 01,Ready for 2013?,
+BOTPT,A,01,BOTPT Series A Sub 01,RSN O&M Spares,1
+BOTPT,A,01,BOTPT Series A Sub 01,RSN Part Number,4830-58316
+BOTPT,A,01,BOTPT Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CAMDS,A,01,CAMDS Series A Sub 01,2009 Baseline Price*,"$55,590.00"
+CAMDS,A,01,CAMDS Series A Sub 01,2009 Deployed Instrument Count,9
+CAMDS,A,01,CAMDS Series A Sub 01,Alternate Instrument Class Name,Digital Still Camera with Strobes
+CAMDS,A,01,CAMDS Series A Sub 01,CE Spares,1
+CAMDS,A,01,CAMDS Series A Sub 01,CGSN MREFC Spares,1
+CAMDS,A,01,CAMDS Series A Sub 01,CGSN O&M Spares,
+CAMDS,A,01,CAMDS Series A Sub 01,CGSN P/N,3305-00013-00001
+CAMDS,A,01,CAMDS Series A Sub 01,ClassLongName,camera_digital_still_strobe
+CAMDS,A,01,CAMDS Series A Sub 01,Comments,Uncabled version
+CAMDS,A,01,CAMDS Series A Sub 01,CP Spares,
+CAMDS,A,01,CAMDS Series A Sub 01,Description,"Ethernet Camera with strobes for digital still imagery of water column biology, vents, diffuse flow, seeps, macrofauna"
+CAMDS,A,01,CAMDS Series A Sub 01,ECRs that changed the count,ECR 1300-00177
+CAMDS,A,01,CAMDS Series A Sub 01,Global Spares,
+CAMDS,A,01,CAMDS Series A Sub 01,Instrument Configuration,
+CAMDS,A,01,CAMDS Series A Sub 01,Link to the Specification,
+CAMDS,A,01,CAMDS Series A Sub 01,Notes,
+CAMDS,A,01,CAMDS Series A Sub 01,PrimaryScienceDiscipline,B
+CAMDS,A,01,CAMDS Series A Sub 01,Ready for 2013?,Yes for RSN.  Maybe for EA.
+CAMDS,A,01,CAMDS Series A Sub 01,RSN O&M Spares,
+CAMDS,A,01,CAMDS Series A Sub 01,RSN Part Number,
+CAMDS,A,01,CAMDS Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CAMDS,B,01,CAMDS Series B Sub 01,2009 Baseline Price*,"$55,590.00"
+CAMDS,B,01,CAMDS Series B Sub 01,2009 Deployed Instrument Count,9
+CAMDS,B,01,CAMDS Series B Sub 01,Alternate Instrument Class Name,Digital Still Camera with Strobes
+CAMDS,B,01,CAMDS Series B Sub 01,CE Spares,1
+CAMDS,B,01,CAMDS Series B Sub 01,CGSN MREFC Spares,1
+CAMDS,B,01,CAMDS Series B Sub 01,CGSN O&M Spares,
+CAMDS,B,01,CAMDS Series B Sub 01,CGSN P/N,3305-00013-00002
+CAMDS,B,01,CAMDS Series B Sub 01,ClassLongName,camera_digital_still_strobe
+CAMDS,B,01,CAMDS Series B Sub 01,Comments,Cabled version
+CAMDS,B,01,CAMDS Series B Sub 01,CP Spares,
+CAMDS,B,01,CAMDS Series B Sub 01,Description,"Ethernet Camera with strobes for digital still imagery of water column biology, vents, diffuse flow, seeps, macrofauna"
+CAMDS,B,01,CAMDS Series B Sub 01,ECRs that changed the count,ECR 1300-00177
+CAMDS,B,01,CAMDS Series B Sub 01,Global Spares,
+CAMDS,B,01,CAMDS Series B Sub 01,Instrument Configuration,
+CAMDS,B,01,CAMDS Series B Sub 01,Link to the Specification,
+CAMDS,B,01,CAMDS Series B Sub 01,Notes,
+CAMDS,B,01,CAMDS Series B Sub 01,PrimaryScienceDiscipline,B
+CAMDS,B,01,CAMDS Series B Sub 01,Ready for 2013?,Maybe
+CAMDS,B,01,CAMDS Series B Sub 01,RSN O&M Spares,2
+CAMDS,B,01,CAMDS Series B Sub 01,RSN Part Number,4830-58317
+CAMDS,B,01,CAMDS Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CAMHD,A,01,CAMHD Series A Sub 01,2009 Baseline Price*,
+CAMHD,A,01,CAMHD Series A Sub 01,2009 Deployed Instrument Count,1
+CAMHD,A,01,CAMHD Series A Sub 01,Alternate Instrument Class Name,HD Digital Video Camera with Strobes
+CAMHD,A,01,CAMHD Series A Sub 01,CE Spares,
+CAMHD,A,01,CAMHD Series A Sub 01,CGSN MREFC Spares,
+CAMHD,A,01,CAMHD Series A Sub 01,CGSN O&M Spares,
+CAMHD,A,01,CAMHD Series A Sub 01,CGSN P/N,
+CAMHD,A,01,CAMHD Series A Sub 01,ClassLongName,camera_digital_video_HD
+CAMHD,A,01,CAMHD Series A Sub 01,Comments,
+CAMHD,A,01,CAMHD Series A Sub 01,CP Spares,
+CAMHD,A,01,CAMHD Series A Sub 01,Description,"HD Camera with strobes, pan, and tilt for high definition video imagery of vents, diffuse flow, seeps, macrofauna"
+CAMHD,A,01,CAMHD Series A Sub 01,ECRs that changed the count,
+CAMHD,A,01,CAMHD Series A Sub 01,Global Spares,
+CAMHD,A,01,CAMHD Series A Sub 01,Instrument Configuration,
+CAMHD,A,01,CAMHD Series A Sub 01,Link to the Specification,
+CAMHD,A,01,CAMHD Series A Sub 01,Notes,
+CAMHD,A,01,CAMHD Series A Sub 01,PrimaryScienceDiscipline,B
+CAMHD,A,01,CAMHD Series A Sub 01,Ready for 2013?,
+CAMHD,A,01,CAMHD Series A Sub 01,RSN O&M Spares,1
+CAMHD,A,01,CAMHD Series A Sub 01,RSN Part Number,4830-58318
+CAMHD,A,01,CAMHD Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDAV,N,01,CTDAV Series N Sub 01,2009 Baseline Price*,
+CTDAV,N,01,CTDAV Series N Sub 01,2009 Deployed Instrument Count,3
+CTDAV,N,01,CTDAV Series N Sub 01,Alternate Instrument Class Name,CTD AUV
+CTDAV,N,01,CTDAV Series N Sub 01,CE Spares,
+CTDAV,N,01,CTDAV Series N Sub 01,CGSN MREFC Spares,
+CTDAV,N,01,CTDAV Series N Sub 01,CGSN O&M Spares,
+CTDAV,N,01,CTDAV Series N Sub 01,CGSN P/N,1331-00001-00004
+CTDAV,N,01,CTDAV Series N Sub 01,ClassLongName,CTD_AUV
+CTDAV,N,01,CTDAV Series N Sub 01,Comments,Hydroid P/N: 60-168
+CTDAV,N,01,CTDAV Series N Sub 01,CP Spares,
+CTDAV,N,01,CTDAV Series N Sub 01,Description,CTDs to be mounted on AUVs
+CTDAV,N,01,CTDAV Series N Sub 01,ECRs that changed the count,
+CTDAV,N,01,CTDAV Series N Sub 01,Global Spares,
+CTDAV,N,01,CTDAV Series N Sub 01,Instrument Configuration,SBE Glider Payload CTD (GP-CTD)
+CTDAV,N,01,CTDAV Series N Sub 01,Link to the Specification,
+CTDAV,N,01,CTDAV Series N Sub 01,Notes,
+CTDAV,N,01,CTDAV Series N Sub 01,PrimaryScienceDiscipline,P
+CTDAV,N,01,CTDAV Series N Sub 01,Ready for 2013?,
+CTDAV,N,01,CTDAV Series N Sub 01,RSN O&M Spares,
+CTDAV,N,01,CTDAV Series N Sub 01,RSN Part Number,
+CTDAV,N,01,CTDAV Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDBP,C,01,CTDBP Series C Sub 01,2009 Baseline Price*,"$10,630.00"
+CTDBP,C,01,CTDBP Series C Sub 01,2009 Deployed Instrument Count,15
+CTDBP,C,01,CTDBP Series C Sub 01,Alternate Instrument Class Name,CTD Pumped
+CTDBP,C,01,CTDBP Series C Sub 01,CE Spares,2
+CTDBP,C,01,CTDBP Series C Sub 01,CGSN MREFC Spares,1
+CTDBP,C,01,CTDBP Series C Sub 01,CGSN O&M Spares,2
+CTDBP,C,01,CTDBP Series C Sub 01,CGSN P/N,1336-00001-00003
+CTDBP,C,01,CTDBP Series C Sub 01,ClassLongName,CTD_bottom_pumped
+CTDBP,C,01,CTDBP Series C Sub 01,Comments,
+CTDBP,C,01,CTDBP Series C Sub 01,CP Spares,1
+CTDBP,C,01,CTDBP Series C Sub 01,Description,CTDs equiped with a bottom pump
+CTDBP,C,01,CTDBP Series C Sub 01,ECRs that changed the count,
+CTDBP,C,01,CTDBP Series C Sub 01,Global Spares,
+CTDBP,C,01,CTDBP Series C Sub 01,Instrument Configuration,"SBE 16plusV2 (600 m plastic housing; 100 m strain gauge; MCBH 6-pin connectors, 5P plastic pump w/ MCBH)"
+CTDBP,C,01,CTDBP Series C Sub 01,Link to the Specification,
+CTDBP,C,01,CTDBP Series C Sub 01,Notes,
+CTDBP,C,01,CTDBP Series C Sub 01,PrimaryScienceDiscipline,P
+CTDBP,C,01,CTDBP Series C Sub 01,Ready for 2013?,
+CTDBP,C,01,CTDBP Series C Sub 01,RSN O&M Spares,
+CTDBP,C,01,CTDBP Series C Sub 01,RSN Part Number,
+CTDBP,C,01,CTDBP Series C Sub 01,"Vendor CLIN, SubCLIN or Model #","YD03 16plusV2, YD03 16p-1a, YD03 16p-2b, YD03 16p-5, YD03 16p-4h"
+CTDBP,D,01,CTDBP Series D Sub 01,2009 Baseline Price*,"$10,630.00"
+CTDBP,D,01,CTDBP Series D Sub 01,2009 Deployed Instrument Count,15
+CTDBP,D,01,CTDBP Series D Sub 01,Alternate Instrument Class Name,CTD Pumped
+CTDBP,D,01,CTDBP Series D Sub 01,CE Spares,
+CTDBP,D,01,CTDBP Series D Sub 01,CGSN MREFC Spares,
+CTDBP,D,01,CTDBP Series D Sub 01,CGSN O&M Spares,1
+CTDBP,D,01,CTDBP Series D Sub 01,CGSN P/N,1336-00001-00004
+CTDBP,D,01,CTDBP Series D Sub 01,ClassLongName,CTD_bottom_pumped
+CTDBP,D,01,CTDBP Series D Sub 01,Comments,
+CTDBP,D,01,CTDBP Series D Sub 01,CP Spares,1
+CTDBP,D,01,CTDBP Series D Sub 01,Description,CTDs equiped with a bottom pump
+CTDBP,D,01,CTDBP Series D Sub 01,ECRs that changed the count,
+CTDBP,D,01,CTDBP Series D Sub 01,Global Spares,
+CTDBP,D,01,CTDBP Series D Sub 01,Instrument Configuration,"SBE 16plusV2 (600 m plastic housing; 350 m strain gauge; MCBH 6-pin connectors, 5P plastic pump w/ MCBH)"
+CTDBP,D,01,CTDBP Series D Sub 01,Link to the Specification,
+CTDBP,D,01,CTDBP Series D Sub 01,Notes,
+CTDBP,D,01,CTDBP Series D Sub 01,PrimaryScienceDiscipline,P
+CTDBP,D,01,CTDBP Series D Sub 01,Ready for 2013?,
+CTDBP,D,01,CTDBP Series D Sub 01,RSN O&M Spares,
+CTDBP,D,01,CTDBP Series D Sub 01,RSN Part Number,
+CTDBP,D,01,CTDBP Series D Sub 01,"Vendor CLIN, SubCLIN or Model #","YD04 16plusV2, YD04 16p-1a, YD04 16p-2c, YD04 16p-5, YD04 16p-4h"
+CTDBP,E,01,CTDBP Series E Sub 01,2009 Baseline Price*,"$10,630.00"
+CTDBP,E,01,CTDBP Series E Sub 01,2009 Deployed Instrument Count,15
+CTDBP,E,01,CTDBP Series E Sub 01,Alternate Instrument Class Name,CTD Pumped
+CTDBP,E,01,CTDBP Series E Sub 01,CE Spares,1
+CTDBP,E,01,CTDBP Series E Sub 01,CGSN MREFC Spares,1
+CTDBP,E,01,CTDBP Series E Sub 01,CGSN O&M Spares,1
+CTDBP,E,01,CTDBP Series E Sub 01,CGSN P/N,1336-00001-00005
+CTDBP,E,01,CTDBP Series E Sub 01,ClassLongName,CTD_bottom_pumped
+CTDBP,E,01,CTDBP Series E Sub 01,Comments,
+CTDBP,E,01,CTDBP Series E Sub 01,CP Spares,1
+CTDBP,E,01,CTDBP Series E Sub 01,Description,CTDs equiped with a bottom pump
+CTDBP,E,01,CTDBP Series E Sub 01,ECRs that changed the count,
+CTDBP,E,01,CTDBP Series E Sub 01,Global Spares,
+CTDBP,E,01,CTDBP Series E Sub 01,Instrument Configuration,"SBE 16plusV2 (600 m plastic housing; 600 m strain gauge; MCBH 6-pin connectors, 5P plastic pump w/ MCBH)"
+CTDBP,E,01,CTDBP Series E Sub 01,Link to the Specification,
+CTDBP,E,01,CTDBP Series E Sub 01,Notes,
+CTDBP,E,01,CTDBP Series E Sub 01,PrimaryScienceDiscipline,P
+CTDBP,E,01,CTDBP Series E Sub 01,Ready for 2013?,
+CTDBP,E,01,CTDBP Series E Sub 01,RSN O&M Spares,
+CTDBP,E,01,CTDBP Series E Sub 01,RSN Part Number,
+CTDBP,E,01,CTDBP Series E Sub 01,"Vendor CLIN, SubCLIN or Model #","YD05 16plusV2, YD05 16p-1a, YD05 16p-2s, YD05 16p-5, YD05 16p-4h"
+CTDBP,F,01,CTDBP Series F Sub 01,2009 Baseline Price*,"$10,630.00"
+CTDBP,F,01,CTDBP Series F Sub 01,2009 Deployed Instrument Count,15
+CTDBP,F,01,CTDBP Series F Sub 01,Alternate Instrument Class Name,CTD Pumped
+CTDBP,F,01,CTDBP Series F Sub 01,CE Spares,
+CTDBP,F,01,CTDBP Series F Sub 01,CGSN MREFC Spares,1
+CTDBP,F,01,CTDBP Series F Sub 01,CGSN O&M Spares,1
+CTDBP,F,01,CTDBP Series F Sub 01,CGSN P/N,1336-00001-00006
+CTDBP,F,01,CTDBP Series F Sub 01,ClassLongName,CTD_bottom_pumped
+CTDBP,F,01,CTDBP Series F Sub 01,Comments,
+CTDBP,F,01,CTDBP Series F Sub 01,CP Spares,
+CTDBP,F,01,CTDBP Series F Sub 01,Description,CTDs equiped with a bottom pump
+CTDBP,F,01,CTDBP Series F Sub 01,ECRs that changed the count,
+CTDBP,F,01,CTDBP Series F Sub 01,Global Spares,2
+CTDBP,F,01,CTDBP Series F Sub 01,Instrument Configuration,"SBE 16plusV2 (7000 m titanium housing; 100 m strain gauge; MCBH 6-pin connectors, 5T titanium pump w/ MCBH)"
+CTDBP,F,01,CTDBP Series F Sub 01,Link to the Specification,
+CTDBP,F,01,CTDBP Series F Sub 01,Notes,
+CTDBP,F,01,CTDBP Series F Sub 01,PrimaryScienceDiscipline,P
+CTDBP,F,01,CTDBP Series F Sub 01,Ready for 2013?,
+CTDBP,F,01,CTDBP Series F Sub 01,RSN O&M Spares,
+CTDBP,F,01,CTDBP Series F Sub 01,RSN Part Number,
+CTDBP,F,01,CTDBP Series F Sub 01,"Vendor CLIN, SubCLIN or Model #","YD06 16plusV2, YD06 16p-1b, YD06 16p-2b, YD06 16p-5, YD06 16p-4d"
+CTDBP,N,01,CTDBP Series N Sub 01,2009 Baseline Price*,"$10,630.00"
+CTDBP,N,01,CTDBP Series N Sub 01,2009 Deployed Instrument Count,15
+CTDBP,N,01,CTDBP Series N Sub 01,Alternate Instrument Class Name,CTD Pumped
+CTDBP,N,01,CTDBP Series N Sub 01,CE Spares,1
+CTDBP,N,01,CTDBP Series N Sub 01,CGSN MREFC Spares,1
+CTDBP,N,01,CTDBP Series N Sub 01,CGSN O&M Spares,
+CTDBP,N,01,CTDBP Series N Sub 01,CGSN P/N,1336-00001-00014
+CTDBP,N,01,CTDBP Series N Sub 01,ClassLongName,CTD_bottom_pumped
+CTDBP,N,01,CTDBP Series N Sub 01,Comments,
+CTDBP,N,01,CTDBP Series N Sub 01,CP Spares,
+CTDBP,N,01,CTDBP Series N Sub 01,Description,CTDs equiped with a bottom pump
+CTDBP,N,01,CTDBP Series N Sub 01,ECRs that changed the count,
+CTDBP,N,01,CTDBP Series N Sub 01,Global Spares,
+CTDBP,N,01,CTDBP Series N Sub 01,Instrument Configuration,"SBE 16plusV2 (600 m plastic housing; 130 m digiquartz sensor; MCBH 6-pin connectors, 5P plastic pump w/ MCBH)"
+CTDBP,N,01,CTDBP Series N Sub 01,Link to the Specification,
+CTDBP,N,01,CTDBP Series N Sub 01,Notes,
+CTDBP,N,01,CTDBP Series N Sub 01,PrimaryScienceDiscipline,P
+CTDBP,N,01,CTDBP Series N Sub 01,Ready for 2013?,
+CTDBP,N,01,CTDBP Series N Sub 01,RSN O&M Spares,
+CTDBP,N,01,CTDBP Series N Sub 01,RSN Part Number,
+CTDBP,N,01,CTDBP Series N Sub 01,"Vendor CLIN, SubCLIN or Model #","16plusV2, 16p-1a, 16p-???, 16p-5, 16p-4h"
+CTDBP,O,01,CTDBP Series O Sub 01,2009 Baseline Price*,"$10,630.00"
+CTDBP,O,01,CTDBP Series O Sub 01,2009 Deployed Instrument Count,15
+CTDBP,O,01,CTDBP Series O Sub 01,Alternate Instrument Class Name,CTD Pumped
+CTDBP,O,01,CTDBP Series O Sub 01,CE Spares,1
+CTDBP,O,01,CTDBP Series O Sub 01,CGSN MREFC Spares,
+CTDBP,O,01,CTDBP Series O Sub 01,CGSN O&M Spares,1
+CTDBP,O,01,CTDBP Series O Sub 01,CGSN P/N,1336-00001-00015
+CTDBP,O,01,CTDBP Series O Sub 01,ClassLongName,CTD_bottom_pumped
+CTDBP,O,01,CTDBP Series O Sub 01,Comments,
+CTDBP,O,01,CTDBP Series O Sub 01,CP Spares,
+CTDBP,O,01,CTDBP Series O Sub 01,Description,CTDs equiped with a bottom pump
+CTDBP,O,01,CTDBP Series O Sub 01,ECRs that changed the count,
+CTDBP,O,01,CTDBP Series O Sub 01,Global Spares,
+CTDBP,O,01,CTDBP Series O Sub 01,Instrument Configuration,"SBE 16plusV2 (600 m plastic housing; 680 m digiquartz sensor; MCBH 6-pin connectors, 5P plastic pump w/ MCBH)"
+CTDBP,O,01,CTDBP Series O Sub 01,Link to the Specification,
+CTDBP,O,01,CTDBP Series O Sub 01,Notes,
+CTDBP,O,01,CTDBP Series O Sub 01,PrimaryScienceDiscipline,P
+CTDBP,O,01,CTDBP Series O Sub 01,Ready for 2013?,
+CTDBP,O,01,CTDBP Series O Sub 01,RSN O&M Spares,
+CTDBP,O,01,CTDBP Series O Sub 01,RSN Part Number,
+CTDBP,O,01,CTDBP Series O Sub 01,"Vendor CLIN, SubCLIN or Model #","16plusV2, 16p-1a, 16p-???, 16p-5, 16p-4h"
+CTDGV,M,01,CTDGV Series M Sub 01,2009 Baseline Price*,
+CTDGV,M,01,CTDGV Series M Sub 01,2009 Deployed Instrument Count,24
+CTDGV,M,01,CTDGV Series M Sub 01,Alternate Instrument Class Name,CTD Glider
+CTDGV,M,01,CTDGV Series M Sub 01,CE Spares,
+CTDGV,M,01,CTDGV Series M Sub 01,CGSN MREFC Spares,
+CTDGV,M,01,CTDGV Series M Sub 01,CGSN O&M Spares,
+CTDGV,M,01,CTDGV Series M Sub 01,CGSN P/N,1331-00001-00003
+CTDGV,M,01,CTDGV Series M Sub 01,ClassLongName,CTD_glider
+CTDGV,M,01,CTDGV Series M Sub 01,Comments,TWR P/N: G-1451 (Rev. A)
+CTDGV,M,01,CTDGV Series M Sub 01,CP Spares,
+CTDGV,M,01,CTDGV Series M Sub 01,Description,CTDs to be mounted on gliders
+CTDGV,M,01,CTDGV Series M Sub 01,ECRs that changed the count,
+CTDGV,M,01,CTDGV Series M Sub 01,Global Spares,
+CTDGV,M,01,CTDGV Series M Sub 01,Instrument Configuration,SBE Slocum Glider Payload CTD
+CTDGV,M,01,CTDGV Series M Sub 01,Link to the Specification,
+CTDGV,M,01,CTDGV Series M Sub 01,Notes,
+CTDGV,M,01,CTDGV Series M Sub 01,PrimaryScienceDiscipline,P
+CTDGV,M,01,CTDGV Series M Sub 01,Ready for 2013?,
+CTDGV,M,01,CTDGV Series M Sub 01,RSN O&M Spares,
+CTDGV,M,01,CTDGV Series M Sub 01,RSN Part Number,
+CTDGV,M,01,CTDGV Series M Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDMO,F,01,CTDMO Series F Sub 01,2009 Baseline Price*,"$5,760.00"
+CTDMO,F,01,CTDMO Series F Sub 01,2009 Deployed Instrument Count,138
+CTDMO,F,01,CTDMO Series F Sub 01,Alternate Instrument Class Name,CTD Mooring (Inductive)
+CTDMO,F,01,CTDMO Series F Sub 01,CE Spares,
+CTDMO,F,01,CTDMO Series F Sub 01,CGSN MREFC Spares,
+CTDMO,F,01,CTDMO Series F Sub 01,CGSN O&M Spares,
+CTDMO,F,01,CTDMO Series F Sub 01,CGSN P/N,
+CTDMO,F,01,CTDMO Series F Sub 01,ClassLongName,CTD_mooring
+CTDMO,F,01,CTDMO Series F Sub 01,Comments,
+CTDMO,F,01,CTDMO Series F Sub 01,CP Spares,
+CTDMO,F,01,CTDMO Series F Sub 01,Description,CTDs to be used in surface and subsurface moorings
+CTDMO,F,01,CTDMO Series F Sub 01,ECRs that changed the count,
+CTDMO,F,01,CTDMO Series F Sub 01,Global Spares,
+CTDMO,F,01,CTDMO Series F Sub 01,Instrument Configuration,
+CTDMO,F,01,CTDMO Series F Sub 01,Link to the Specification,
+CTDMO,F,01,CTDMO Series F Sub 01,Notes,
+CTDMO,F,01,CTDMO Series F Sub 01,PrimaryScienceDiscipline,P
+CTDMO,F,01,CTDMO Series F Sub 01,Ready for 2013?,
+CTDMO,F,01,CTDMO Series F Sub 01,RSN O&M Spares,
+CTDMO,F,01,CTDMO Series F Sub 01,RSN Part Number,
+CTDMO,F,01,CTDMO Series F Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDMO,G,01,CTDMO Series G Sub 01,2009 Baseline Price*,"$5,760.00"
+CTDMO,G,01,CTDMO Series G Sub 01,2009 Deployed Instrument Count,138
+CTDMO,G,01,CTDMO Series G Sub 01,Alternate Instrument Class Name,CTD Mooring (Inductive)
+CTDMO,G,01,CTDMO Series G Sub 01,CE Spares,
+CTDMO,G,01,CTDMO Series G Sub 01,CGSN MREFC Spares,6
+CTDMO,G,01,CTDMO Series G Sub 01,CGSN O&M Spares,6
+CTDMO,G,01,CTDMO Series G Sub 01,CGSN P/N,1336-00001-00007
+CTDMO,G,01,CTDMO Series G Sub 01,ClassLongName,CTD_mooring
+CTDMO,G,01,CTDMO Series G Sub 01,Comments,"Wire rope clamp size FLMA/B 5/16 wire, 7/16 O.D."
+CTDMO,G,01,CTDMO Series G Sub 01,CP Spares,
+CTDMO,G,01,CTDMO Series G Sub 01,Description,CTDs to be used in surface and subsurface moorings
+CTDMO,G,01,CTDMO Series G Sub 01,ECRs that changed the count,
+CTDMO,G,01,CTDMO Series G Sub 01,Global Spares,12
+CTDMO,G,01,CTDMO Series G Sub 01,Instrument Configuration,SBE 37IM (1000 m pressure sensor) 7/16 in. wire rope guide
+CTDMO,G,01,CTDMO Series G Sub 01,Link to the Specification,
+CTDMO,G,01,CTDMO Series G Sub 01,Notes,
+CTDMO,G,01,CTDMO Series G Sub 01,PrimaryScienceDiscipline,P
+CTDMO,G,01,CTDMO Series G Sub 01,Ready for 2013?,
+CTDMO,G,01,CTDMO Series G Sub 01,RSN O&M Spares,
+CTDMO,G,01,CTDMO Series G Sub 01,RSN Part Number,
+CTDMO,G,01,CTDMO Series G Sub 01,"Vendor CLIN, SubCLIN or Model #","YD07 37IM, YD07 37IM-1x 7/16", YD07 37IM-3d"
+CTDMO,H,01,CTDMO Series H Sub 01,2009 Baseline Price*,"$5,760.00"
+CTDMO,H,01,CTDMO Series H Sub 01,2009 Deployed Instrument Count,138
+CTDMO,H,01,CTDMO Series H Sub 01,Alternate Instrument Class Name,CTD Mooring (Inductive)
+CTDMO,H,01,CTDMO Series H Sub 01,CE Spares,
+CTDMO,H,01,CTDMO Series H Sub 01,CGSN MREFC Spares,2
+CTDMO,H,01,CTDMO Series H Sub 01,CGSN O&M Spares,2
+CTDMO,H,01,CTDMO Series H Sub 01,CGSN P/N,1336-00001-00008
+CTDMO,H,01,CTDMO Series H Sub 01,ClassLongName,CTD_mooring
+CTDMO,H,01,CTDMO Series H Sub 01,Comments,"Wire rope clamp size FLMA/B 5/16 wire, 7/16 O.D."
+CTDMO,H,01,CTDMO Series H Sub 01,CP Spares,
+CTDMO,H,01,CTDMO Series H Sub 01,Description,CTDs to be used in surface and subsurface moorings
+CTDMO,H,01,CTDMO Series H Sub 01,ECRs that changed the count,
+CTDMO,H,01,CTDMO Series H Sub 01,Global Spares,4
+CTDMO,H,01,CTDMO Series H Sub 01,Instrument Configuration,SBE 37IM (3500 m pressure sensor) 7/16 in. wire rope guide
+CTDMO,H,01,CTDMO Series H Sub 01,Link to the Specification,
+CTDMO,H,01,CTDMO Series H Sub 01,Notes,
+CTDMO,H,01,CTDMO Series H Sub 01,PrimaryScienceDiscipline,P
+CTDMO,H,01,CTDMO Series H Sub 01,Ready for 2013?,
+CTDMO,H,01,CTDMO Series H Sub 01,RSN O&M Spares,
+CTDMO,H,01,CTDMO Series H Sub 01,RSN Part Number,
+CTDMO,H,01,CTDMO Series H Sub 01,"Vendor CLIN, SubCLIN or Model #","YD08 37IM, YD08 37IM-1x 7/16", YD08 37IM-3f"
+CTDMO,Q,01,CTDMO Series Q Sub 01,2009 Baseline Price*,"$5,760.00"
+CTDMO,Q,01,CTDMO Series Q Sub 01,2009 Deployed Instrument Count,138
+CTDMO,Q,01,CTDMO Series Q Sub 01,Alternate Instrument Class Name,CTD Mooring (Inductive)
+CTDMO,Q,01,CTDMO Series Q Sub 01,CE Spares,
+CTDMO,Q,01,CTDMO Series Q Sub 01,CGSN MREFC Spares,3
+CTDMO,Q,01,CTDMO Series Q Sub 01,CGSN O&M Spares,3
+CTDMO,Q,01,CTDMO Series Q Sub 01,CGSN P/N,1336-00001-00017
+CTDMO,Q,01,CTDMO Series Q Sub 01,ClassLongName,CTD_mooring
+CTDMO,Q,01,CTDMO Series Q Sub 01,Comments,"Wire rope clamp size GSM 7/16 wire, 9/16 O.D."
+CTDMO,Q,01,CTDMO Series Q Sub 01,CP Spares,
+CTDMO,Q,01,CTDMO Series Q Sub 01,Description,CTDs to be used in surface and subsurface moorings
+CTDMO,Q,01,CTDMO Series Q Sub 01,ECRs that changed the count,
+CTDMO,Q,01,CTDMO Series Q Sub 01,Global Spares,6
+CTDMO,Q,01,CTDMO Series Q Sub 01,Instrument Configuration,SBE 37IM (1000 m pressure sensor) 9/16 in. wire rope guide
+CTDMO,Q,01,CTDMO Series Q Sub 01,Link to the Specification,
+CTDMO,Q,01,CTDMO Series Q Sub 01,Notes,
+CTDMO,Q,01,CTDMO Series Q Sub 01,PrimaryScienceDiscipline,P
+CTDMO,Q,01,CTDMO Series Q Sub 01,Ready for 2013?,
+CTDMO,Q,01,CTDMO Series Q Sub 01,RSN O&M Spares,
+CTDMO,Q,01,CTDMO Series Q Sub 01,RSN Part Number,
+CTDMO,Q,01,CTDMO Series Q Sub 01,"Vendor CLIN, SubCLIN or Model #","YD07 37IM, YD07 37IM-1x 9/16", YD07 37IM-3d"
+CTDMO,R,01,CTDMO Series R Sub 01,2009 Baseline Price*,"$5,760.00"
+CTDMO,R,01,CTDMO Series R Sub 01,2009 Deployed Instrument Count,138
+CTDMO,R,01,CTDMO Series R Sub 01,Alternate Instrument Class Name,CTD Mooring (Inductive)
+CTDMO,R,01,CTDMO Series R Sub 01,CE Spares,
+CTDMO,R,01,CTDMO Series R Sub 01,CGSN MREFC Spares,1
+CTDMO,R,01,CTDMO Series R Sub 01,CGSN O&M Spares,1
+CTDMO,R,01,CTDMO Series R Sub 01,CGSN P/N,1336-00001-00018
+CTDMO,R,01,CTDMO Series R Sub 01,ClassLongName,CTD_mooring
+CTDMO,R,01,CTDMO Series R Sub 01,Comments,"Wire rope clamp size GSM 7/16 wire, 9/16 O.D."
+CTDMO,R,01,CTDMO Series R Sub 01,CP Spares,
+CTDMO,R,01,CTDMO Series R Sub 01,Description,CTDs to be used in surface and subsurface moorings
+CTDMO,R,01,CTDMO Series R Sub 01,ECRs that changed the count,
+CTDMO,R,01,CTDMO Series R Sub 01,Global Spares,2
+CTDMO,R,01,CTDMO Series R Sub 01,Instrument Configuration,SBE 37IM (3500 m pressure sensor) 9/16 in. wire rope guide
+CTDMO,R,01,CTDMO Series R Sub 01,Link to the Specification,
+CTDMO,R,01,CTDMO Series R Sub 01,Notes,
+CTDMO,R,01,CTDMO Series R Sub 01,PrimaryScienceDiscipline,P
+CTDMO,R,01,CTDMO Series R Sub 01,Ready for 2013?,
+CTDMO,R,01,CTDMO Series R Sub 01,RSN O&M Spares,
+CTDMO,R,01,CTDMO Series R Sub 01,RSN Part Number,
+CTDMO,R,01,CTDMO Series R Sub 01,"Vendor CLIN, SubCLIN or Model #","YD08 37IM, YD08 37IM-1x 9/16", YD08 37IM-3f"
+CTDPF,0,01,CTDPF Series 0 Sub 01,2009 Baseline Price*,
+CTDPF,0,01,CTDPF Series 0 Sub 01,2009 Deployed Instrument Count,30
+CTDPF,0,01,CTDPF Series 0 Sub 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,0,01,CTDPF Series 0 Sub 01,CE Spares,
+CTDPF,0,01,CTDPF Series 0 Sub 01,CGSN MREFC Spares,
+CTDPF,0,01,CTDPF Series 0 Sub 01,CGSN O&M Spares,
+CTDPF,0,01,CTDPF Series 0 Sub 01,CGSN P/N,
+CTDPF,0,01,CTDPF Series 0 Sub 01,ClassLongName,CTD_profiler
+CTDPF,0,01,CTDPF Series 0 Sub 01,Comments,
+CTDPF,0,01,CTDPF Series 0 Sub 01,CP Spares,
+CTDPF,0,01,CTDPF Series 0 Sub 01,Description,CTDs to be mounted on a profiler
+CTDPF,0,01,CTDPF Series 0 Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,0,01,CTDPF Series 0 Sub 01,Global Spares,
+CTDPF,0,01,CTDPF Series 0 Sub 01,Instrument Configuration,
+CTDPF,0,01,CTDPF Series 0 Sub 01,Link to the Specification,
+CTDPF,0,01,CTDPF Series 0 Sub 01,Notes,
+CTDPF,0,01,CTDPF Series 0 Sub 01,PrimaryScienceDiscipline,P
+CTDPF,0,01,CTDPF Series 0 Sub 01,Ready for 2013?,
+CTDPF,0,01,CTDPF Series 0 Sub 01,RSN O&M Spares,
+CTDPF,0,01,CTDPF Series 0 Sub 01,RSN Part Number,
+CTDPF,0,01,CTDPF Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,A,01,CTDPF Series A Sub 01,2009 Baseline Price*,
+CTDPF,A,01,CTDPF Series A Sub 01,2009 Deployed Instrument Count,30
+CTDPF,A,01,CTDPF Series A Sub 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,A,01,CTDPF Series A Sub 01,CE Spares,
+CTDPF,A,01,CTDPF Series A Sub 01,CGSN MREFC Spares,
+CTDPF,A,01,CTDPF Series A Sub 01,CGSN O&M Spares,
+CTDPF,A,01,CTDPF Series A Sub 01,CGSN P/N,
+CTDPF,A,01,CTDPF Series A Sub 01,ClassLongName,CTD_profiler
+CTDPF,A,01,CTDPF Series A Sub 01,Comments,"Measures Conductivity, Temperature and Depth, model options include: shallow, 600m-rated plastic housing, profiling firmware (19plus V2), and 5P pump"
+CTDPF,A,01,CTDPF Series A Sub 01,CP Spares,
+CTDPF,A,01,CTDPF Series A Sub 01,Description,CTDs to be mounted on a profiler
+CTDPF,A,01,CTDPF Series A Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,A,01,CTDPF Series A Sub 01,Global Spares,
+CTDPF,A,01,CTDPF Series A Sub 01,Instrument Configuration,"SBE 16plusV2 (19plus FW; 600 m housing; 350 m strain gauge; MCBH 6-pin connectors, 5P pump w/ MCBH)"
+CTDPF,A,01,CTDPF Series A Sub 01,Link to the Specification,
+CTDPF,A,01,CTDPF Series A Sub 01,Notes,
+CTDPF,A,01,CTDPF Series A Sub 01,PrimaryScienceDiscipline,P
+CTDPF,A,01,CTDPF Series A Sub 01,Ready for 2013?,
+CTDPF,A,01,CTDPF Series A Sub 01,RSN O&M Spares,2
+CTDPF,A,01,CTDPF Series A Sub 01,RSN Part Number,4830-67627
+CTDPF,A,01,CTDPF Series A Sub 01,"Vendor CLIN, SubCLIN or Model #","16plusV2, 16p-1a, 16p-2c, 16p-5, 16p-4h, 16p-8x short housing (no batt), 16p-8y profiling mode option"
+CTDPF,B,01,CTDPF Series B Sub 01,2009 Baseline Price*,
+CTDPF,B,01,CTDPF Series B Sub 01,2009 Deployed Instrument Count,30
+CTDPF,B,01,CTDPF Series B Sub 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,B,01,CTDPF Series B Sub 01,CE Spares,
+CTDPF,B,01,CTDPF Series B Sub 01,CGSN MREFC Spares,
+CTDPF,B,01,CTDPF Series B Sub 01,CGSN O&M Spares,
+CTDPF,B,01,CTDPF Series B Sub 01,CGSN P/N,
+CTDPF,B,01,CTDPF Series B Sub 01,ClassLongName,CTD_profiler
+CTDPF,B,01,CTDPF Series B Sub 01,Comments,"Measures Conductivity, Temperature and Depth, model options include: deep, 7000m-rated titanium housing, profiling firmware (19plus V2), and 5T pump"
+CTDPF,B,01,CTDPF Series B Sub 01,CP Spares,
+CTDPF,B,01,CTDPF Series B Sub 01,Description,CTDs to be mounted on a profiler
+CTDPF,B,01,CTDPF Series B Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,B,01,CTDPF Series B Sub 01,Global Spares,
+CTDPF,B,01,CTDPF Series B Sub 01,Instrument Configuration,"16plus V2 (7000m, with 19plus V2profiling firmware)"
+CTDPF,B,01,CTDPF Series B Sub 01,Link to the Specification,
+CTDPF,B,01,CTDPF Series B Sub 01,Notes,
+CTDPF,B,01,CTDPF Series B Sub 01,PrimaryScienceDiscipline,P
+CTDPF,B,01,CTDPF Series B Sub 01,Ready for 2013?,
+CTDPF,B,01,CTDPF Series B Sub 01,RSN O&M Spares,1
+CTDPF,B,01,CTDPF Series B Sub 01,RSN Part Number,4830-67977
+CTDPF,B,01,CTDPF Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,K,01,CTDPF Series K Sub 01,2009 Baseline Price*,
+CTDPF,K,01,CTDPF Series K Sub 01,2009 Deployed Instrument Count,30
+CTDPF,K,01,CTDPF Series K Sub 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,K,01,CTDPF Series K Sub 01,CE Spares,
+CTDPF,K,01,CTDPF Series K Sub 01,CGSN MREFC Spares,
+CTDPF,K,01,CTDPF Series K Sub 01,CGSN O&M Spares,
+CTDPF,K,01,CTDPF Series K Sub 01,CGSN P/N,1331-00001-00001
+CTDPF,K,01,CTDPF Series K Sub 01,ClassLongName,CTD_profiler
+CTDPF,K,01,CTDPF Series K Sub 01,Comments,McLane P/N: 200-1311
+CTDPF,K,01,CTDPF Series K Sub 01,CP Spares,
+CTDPF,K,01,CTDPF Series K Sub 01,Description,CTDs to be mounted on a profiler
+CTDPF,K,01,CTDPF Series K Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,K,01,CTDPF Series K Sub 01,Global Spares,
+CTDPF,K,01,CTDPF Series K Sub 01,Instrument Configuration,SBE-52MP w/ SBE-43F Dissolved O2
+CTDPF,K,01,CTDPF Series K Sub 01,Link to the Specification,
+CTDPF,K,01,CTDPF Series K Sub 01,Notes,
+CTDPF,K,01,CTDPF Series K Sub 01,PrimaryScienceDiscipline,P
+CTDPF,K,01,CTDPF Series K Sub 01,Ready for 2013?,
+CTDPF,K,01,CTDPF Series K Sub 01,RSN O&M Spares,
+CTDPF,K,01,CTDPF Series K Sub 01,RSN Part Number,
+CTDPF,K,01,CTDPF Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,L,01,CTDPF Series L Sub 01,2009 Baseline Price*,
+CTDPF,L,01,CTDPF Series L Sub 01,2009 Deployed Instrument Count,30
+CTDPF,L,01,CTDPF Series L Sub 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,L,01,CTDPF Series L Sub 01,CE Spares,
+CTDPF,L,01,CTDPF Series L Sub 01,CGSN MREFC Spares,
+CTDPF,L,01,CTDPF Series L Sub 01,CGSN O&M Spares,
+CTDPF,L,01,CTDPF Series L Sub 01,CGSN P/N,1331-00001-00002
+CTDPF,L,01,CTDPF Series L Sub 01,ClassLongName,CTD_profiler
+CTDPF,L,01,CTDPF Series L Sub 01,Comments,McLane P/N: 200-1008
+CTDPF,L,01,CTDPF Series L Sub 01,CP Spares,
+CTDPF,L,01,CTDPF Series L Sub 01,Description,CTDs to be mounted on a profiler
+CTDPF,L,01,CTDPF Series L Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,L,01,CTDPF Series L Sub 01,Global Spares,
+CTDPF,L,01,CTDPF Series L Sub 01,Instrument Configuration,SBE-52MP
+CTDPF,L,01,CTDPF Series L Sub 01,Link to the Specification,
+CTDPF,L,01,CTDPF Series L Sub 01,Notes,
+CTDPF,L,01,CTDPF Series L Sub 01,PrimaryScienceDiscipline,P
+CTDPF,L,01,CTDPF Series L Sub 01,Ready for 2013?,
+CTDPF,L,01,CTDPF Series L Sub 01,RSN O&M Spares,
+CTDPF,L,01,CTDPF Series L Sub 01,RSN Part Number,
+CTDPF,L,01,CTDPF Series L Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,R,01,CTDPF Series R Sub 01,2009 Baseline Price*,
+CTDPF,R,01,CTDPF Series R Sub 01,2009 Deployed Instrument Count,30
+CTDPF,R,01,CTDPF Series R Sub 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,R,01,CTDPF Series R Sub 01,CE Spares,
+CTDPF,R,01,CTDPF Series R Sub 01,CGSN MREFC Spares,
+CTDPF,R,01,CTDPF Series R Sub 01,CGSN O&M Spares,
+CTDPF,R,01,CTDPF Series R Sub 01,CGSN P/N,
+CTDPF,R,01,CTDPF Series R Sub 01,ClassLongName,CTD_profiler
+CTDPF,R,01,CTDPF Series R Sub 01,Comments,SBE 52MP from Mclain for Profiler
+CTDPF,R,01,CTDPF Series R Sub 01,CP Spares,
+CTDPF,R,01,CTDPF Series R Sub 01,Description,CTDs to be mounted on a profiler
+CTDPF,R,01,CTDPF Series R Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,R,01,CTDPF Series R Sub 01,Global Spares,
+CTDPF,R,01,CTDPF Series R Sub 01,Instrument Configuration,
+CTDPF,R,01,CTDPF Series R Sub 01,Link to the Specification,
+CTDPF,R,01,CTDPF Series R Sub 01,Notes,
+CTDPF,R,01,CTDPF Series R Sub 01,PrimaryScienceDiscipline,P
+CTDPF,R,01,CTDPF Series R Sub 01,Ready for 2013?,
+CTDPF,R,01,CTDPF Series R Sub 01,RSN O&M Spares,1
+CTDPF,R,01,CTDPF Series R Sub 01,RSN Part Number,4830-67977
+CTDPF,R,01,CTDPF Series R Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOFST,0,01,DOFST Series 0 Sub 01,2009 Baseline Price*,
+DOFST,0,01,DOFST Series 0 Sub 01,2009 Deployed Instrument Count,21
+DOFST,0,01,DOFST Series 0 Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Fast Response
+DOFST,0,01,DOFST Series 0 Sub 01,CE Spares,
+DOFST,0,01,DOFST Series 0 Sub 01,CGSN MREFC Spares,
+DOFST,0,01,DOFST Series 0 Sub 01,CGSN O&M Spares,
+DOFST,0,01,DOFST Series 0 Sub 01,CGSN P/N,
+DOFST,0,01,DOFST Series 0 Sub 01,ClassLongName,oxygen_dissolved_fastresp
+DOFST,0,01,DOFST Series 0 Sub 01,Comments,
+DOFST,0,01,DOFST Series 0 Sub 01,CP Spares,
+DOFST,0,01,DOFST Series 0 Sub 01,Description,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients
+DOFST,0,01,DOFST Series 0 Sub 01,ECRs that changed the count,
+DOFST,0,01,DOFST Series 0 Sub 01,Global Spares,
+DOFST,0,01,DOFST Series 0 Sub 01,Instrument Configuration,
+DOFST,0,01,DOFST Series 0 Sub 01,Link to the Specification,
+DOFST,0,01,DOFST Series 0 Sub 01,Notes,
+DOFST,0,01,DOFST Series 0 Sub 01,PrimaryScienceDiscipline,C
+DOFST,0,01,DOFST Series 0 Sub 01,Ready for 2013?,
+DOFST,0,01,DOFST Series 0 Sub 01,RSN O&M Spares,
+DOFST,0,01,DOFST Series 0 Sub 01,RSN Part Number,
+DOFST,0,01,DOFST Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOFST,A,01,DOFST Series A Sub 01,2009 Baseline Price*,
+DOFST,A,01,DOFST Series A Sub 01,2009 Deployed Instrument Count,21
+DOFST,A,01,DOFST Series A Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Fast Response
+DOFST,A,01,DOFST Series A Sub 01,CE Spares,
+DOFST,A,01,DOFST Series A Sub 01,CGSN MREFC Spares,
+DOFST,A,01,DOFST Series A Sub 01,CGSN O&M Spares,
+DOFST,A,01,DOFST Series A Sub 01,CGSN P/N,
+DOFST,A,01,DOFST Series A Sub 01,ClassLongName,oxygen_dissolved_fastresp
+DOFST,A,01,DOFST Series A Sub 01,Comments,
+DOFST,A,01,DOFST Series A Sub 01,CP Spares,
+DOFST,A,01,DOFST Series A Sub 01,Description,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients
+DOFST,A,01,DOFST Series A Sub 01,ECRs that changed the count,
+DOFST,A,01,DOFST Series A Sub 01,Global Spares,
+DOFST,A,01,DOFST Series A Sub 01,Instrument Configuration,SBE-43F attached to CTDPF
+DOFST,A,01,DOFST Series A Sub 01,Link to the Specification,
+DOFST,A,01,DOFST Series A Sub 01,Notes,
+DOFST,A,01,DOFST Series A Sub 01,PrimaryScienceDiscipline,C
+DOFST,A,01,DOFST Series A Sub 01,Ready for 2013?,
+DOFST,A,01,DOFST Series A Sub 01,RSN O&M Spares,1
+DOFST,A,01,DOFST Series A Sub 01,RSN Part Number,4830-58694
+DOFST,A,01,DOFST Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOFST,K,01,DOFST Series K Sub 01,2009 Baseline Price*,
+DOFST,K,01,DOFST Series K Sub 01,2009 Deployed Instrument Count,21
+DOFST,K,01,DOFST Series K Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Fast Response
+DOFST,K,01,DOFST Series K Sub 01,CE Spares,
+DOFST,K,01,DOFST Series K Sub 01,CGSN MREFC Spares,
+DOFST,K,01,DOFST Series K Sub 01,CGSN O&M Spares,
+DOFST,K,01,DOFST Series K Sub 01,CGSN P/N,1331-00002-00001
+DOFST,K,01,DOFST Series K Sub 01,ClassLongName,oxygen_dissolved_fastresp
+DOFST,K,01,DOFST Series K Sub 01,Comments,Purchased as a part of 1331-00001-00001
+DOFST,K,01,DOFST Series K Sub 01,CP Spares,
+DOFST,K,01,DOFST Series K Sub 01,Description,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients
+DOFST,K,01,DOFST Series K Sub 01,ECRs that changed the count,
+DOFST,K,01,DOFST Series K Sub 01,Global Spares,
+DOFST,K,01,DOFST Series K Sub 01,Instrument Configuration,SBE-43F Dissolved O2 (part of CTD)
+DOFST,K,01,DOFST Series K Sub 01,Link to the Specification,
+DOFST,K,01,DOFST Series K Sub 01,Notes,
+DOFST,K,01,DOFST Series K Sub 01,PrimaryScienceDiscipline,C
+DOFST,K,01,DOFST Series K Sub 01,Ready for 2013?,
+DOFST,K,01,DOFST Series K Sub 01,RSN O&M Spares,
+DOFST,K,01,DOFST Series K Sub 01,RSN Part Number,
+DOFST,K,01,DOFST Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,0,01,DOSTA Series 0 Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,0,01,DOSTA Series 0 Sub 01,2009 Deployed Instrument Count,61
+DOSTA,0,01,DOSTA Series 0 Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,0,01,DOSTA Series 0 Sub 01,CE Spares,
+DOSTA,0,01,DOSTA Series 0 Sub 01,CGSN MREFC Spares,
+DOSTA,0,01,DOSTA Series 0 Sub 01,CGSN O&M Spares,
+DOSTA,0,01,DOSTA Series 0 Sub 01,CGSN P/N,
+DOSTA,0,01,DOSTA Series 0 Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,0,01,DOSTA Series 0 Sub 01,Comments,
+DOSTA,0,01,DOSTA Series 0 Sub 01,CP Spares,
+DOSTA,0,01,DOSTA Series 0 Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,0,01,DOSTA Series 0 Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,0,01,DOSTA Series 0 Sub 01,Global Spares,
+DOSTA,0,01,DOSTA Series 0 Sub 01,Instrument Configuration,
+DOSTA,0,01,DOSTA Series 0 Sub 01,Link to the Specification,
+DOSTA,0,01,DOSTA Series 0 Sub 01,Notes,
+DOSTA,0,01,DOSTA Series 0 Sub 01,PrimaryScienceDiscipline,C
+DOSTA,0,01,DOSTA Series 0 Sub 01,Ready for 2013?,
+DOSTA,0,01,DOSTA Series 0 Sub 01,RSN O&M Spares,
+DOSTA,0,01,DOSTA Series 0 Sub 01,RSN Part Number,
+DOSTA,0,01,DOSTA Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,A,01,DOSTA Series A Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,A,01,DOSTA Series A Sub 01,2009 Deployed Instrument Count,61
+DOSTA,A,01,DOSTA Series A Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,A,01,DOSTA Series A Sub 01,CE Spares,
+DOSTA,A,01,DOSTA Series A Sub 01,CGSN MREFC Spares,
+DOSTA,A,01,DOSTA Series A Sub 01,CGSN O&M Spares,
+DOSTA,A,01,DOSTA Series A Sub 01,CGSN P/N,
+DOSTA,A,01,DOSTA Series A Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,A,01,DOSTA Series A Sub 01,Comments,(deep profiler)
+DOSTA,A,01,DOSTA Series A Sub 01,CP Spares,
+DOSTA,A,01,DOSTA Series A Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,A,01,DOSTA Series A Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,A,01,DOSTA Series A Sub 01,Global Spares,
+DOSTA,A,01,DOSTA Series A Sub 01,Instrument Configuration,
+DOSTA,A,01,DOSTA Series A Sub 01,Link to the Specification,
+DOSTA,A,01,DOSTA Series A Sub 01,Notes,
+DOSTA,A,01,DOSTA Series A Sub 01,PrimaryScienceDiscipline,C
+DOSTA,A,01,DOSTA Series A Sub 01,Ready for 2013?,
+DOSTA,A,01,DOSTA Series A Sub 01,RSN O&M Spares,0
+DOSTA,A,01,DOSTA Series A Sub 01,RSN Part Number,
+DOSTA,A,01,DOSTA Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,B,01,DOSTA Series B Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,B,01,DOSTA Series B Sub 01,2009 Deployed Instrument Count,61
+DOSTA,B,01,DOSTA Series B Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,B,01,DOSTA Series B Sub 01,CE Spares,
+DOSTA,B,01,DOSTA Series B Sub 01,CGSN MREFC Spares,
+DOSTA,B,01,DOSTA Series B Sub 01,CGSN O&M Spares,
+DOSTA,B,01,DOSTA Series B Sub 01,CGSN P/N,
+DOSTA,B,01,DOSTA Series B Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,B,01,DOSTA Series B Sub 01,Comments,
+DOSTA,B,01,DOSTA Series B Sub 01,CP Spares,
+DOSTA,B,01,DOSTA Series B Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,B,01,DOSTA Series B Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,B,01,DOSTA Series B Sub 01,Global Spares,
+DOSTA,B,01,DOSTA Series B Sub 01,Instrument Configuration,
+DOSTA,B,01,DOSTA Series B Sub 01,Link to the Specification,
+DOSTA,B,01,DOSTA Series B Sub 01,Notes,
+DOSTA,B,01,DOSTA Series B Sub 01,PrimaryScienceDiscipline,C
+DOSTA,B,01,DOSTA Series B Sub 01,Ready for 2013?,
+DOSTA,B,01,DOSTA Series B Sub 01,RSN O&M Spares,2
+DOSTA,B,01,DOSTA Series B Sub 01,RSN Part Number,4830-58320
+DOSTA,B,01,DOSTA Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,C,01,DOSTA Series C Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,C,01,DOSTA Series C Sub 01,2009 Deployed Instrument Count,61
+DOSTA,C,01,DOSTA Series C Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,C,01,DOSTA Series C Sub 01,CE Spares,
+DOSTA,C,01,DOSTA Series C Sub 01,CGSN MREFC Spares,
+DOSTA,C,01,DOSTA Series C Sub 01,CGSN O&M Spares,
+DOSTA,C,01,DOSTA Series C Sub 01,CGSN P/N,
+DOSTA,C,01,DOSTA Series C Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,C,01,DOSTA Series C Sub 01,Comments,
+DOSTA,C,01,DOSTA Series C Sub 01,CP Spares,
+DOSTA,C,01,DOSTA Series C Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,C,01,DOSTA Series C Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,C,01,DOSTA Series C Sub 01,Global Spares,
+DOSTA,C,01,DOSTA Series C Sub 01,Instrument Configuration,
+DOSTA,C,01,DOSTA Series C Sub 01,Link to the Specification,
+DOSTA,C,01,DOSTA Series C Sub 01,Notes,
+DOSTA,C,01,DOSTA Series C Sub 01,PrimaryScienceDiscipline,C
+DOSTA,C,01,DOSTA Series C Sub 01,Ready for 2013?,
+DOSTA,C,01,DOSTA Series C Sub 01,RSN O&M Spares,
+DOSTA,C,01,DOSTA Series C Sub 01,RSN Part Number,
+DOSTA,C,01,DOSTA Series C Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,D,01,DOSTA Series D Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,D,01,DOSTA Series D Sub 01,2009 Deployed Instrument Count,61
+DOSTA,D,01,DOSTA Series D Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,D,01,DOSTA Series D Sub 01,CE Spares,3
+DOSTA,D,01,DOSTA Series D Sub 01,CGSN MREFC Spares,3
+DOSTA,D,01,DOSTA Series D Sub 01,CGSN O&M Spares,3
+DOSTA,D,01,DOSTA Series D Sub 01,CGSN P/N,1336-00002-00004
+DOSTA,D,01,DOSTA Series D Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,D,01,DOSTA Series D Sub 01,Comments,4831 has Serial RS-232 and Analog Option for 4831 with Subcon connector
+DOSTA,D,01,DOSTA Series D Sub 01,CP Spares,1
+DOSTA,D,01,DOSTA Series D Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,D,01,DOSTA Series D Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,D,01,DOSTA Series D Sub 01,Global Spares,2
+DOSTA,D,01,DOSTA Series D Sub 01,Instrument Configuration,Aanderaa optode 4831
+DOSTA,D,01,DOSTA Series D Sub 01,Link to the Specification,
+DOSTA,D,01,DOSTA Series D Sub 01,Notes,
+DOSTA,D,01,DOSTA Series D Sub 01,PrimaryScienceDiscipline,C
+DOSTA,D,01,DOSTA Series D Sub 01,Ready for 2013?,
+DOSTA,D,01,DOSTA Series D Sub 01,RSN O&M Spares,
+DOSTA,D,01,DOSTA Series D Sub 01,RSN Part Number,
+DOSTA,D,01,DOSTA Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,K,01,DOSTA Series K Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,K,01,DOSTA Series K Sub 01,2009 Deployed Instrument Count,61
+DOSTA,K,01,DOSTA Series K Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,K,01,DOSTA Series K Sub 01,CE Spares,
+DOSTA,K,01,DOSTA Series K Sub 01,CGSN MREFC Spares,
+DOSTA,K,01,DOSTA Series K Sub 01,CGSN O&M Spares,
+DOSTA,K,01,DOSTA Series K Sub 01,CGSN P/N,
+DOSTA,K,01,DOSTA Series K Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,K,01,DOSTA Series K Sub 01,Comments,
+DOSTA,K,01,DOSTA Series K Sub 01,CP Spares,
+DOSTA,K,01,DOSTA Series K Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,K,01,DOSTA Series K Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,K,01,DOSTA Series K Sub 01,Global Spares,
+DOSTA,K,01,DOSTA Series K Sub 01,Instrument Configuration,
+DOSTA,K,01,DOSTA Series K Sub 01,Link to the Specification,
+DOSTA,K,01,DOSTA Series K Sub 01,Notes,
+DOSTA,K,01,DOSTA Series K Sub 01,PrimaryScienceDiscipline,C
+DOSTA,K,01,DOSTA Series K Sub 01,Ready for 2013?,
+DOSTA,K,01,DOSTA Series K Sub 01,RSN O&M Spares,
+DOSTA,K,01,DOSTA Series K Sub 01,RSN Part Number,
+DOSTA,K,01,DOSTA Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,L,01,DOSTA Series L Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,L,01,DOSTA Series L Sub 01,2009 Deployed Instrument Count,61
+DOSTA,L,01,DOSTA Series L Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,L,01,DOSTA Series L Sub 01,CE Spares,
+DOSTA,L,01,DOSTA Series L Sub 01,CGSN MREFC Spares,
+DOSTA,L,01,DOSTA Series L Sub 01,CGSN O&M Spares,
+DOSTA,L,01,DOSTA Series L Sub 01,CGSN P/N,1331-00002-00002
+DOSTA,L,01,DOSTA Series L Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,L,01,DOSTA Series L Sub 01,Comments,McLane P/N: 200-1365
+DOSTA,L,01,DOSTA Series L Sub 01,CP Spares,
+DOSTA,L,01,DOSTA Series L Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,L,01,DOSTA Series L Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,L,01,DOSTA Series L Sub 01,Global Spares,
+DOSTA,L,01,DOSTA Series L Sub 01,Instrument Configuration,Aanderaa optode 4330
+DOSTA,L,01,DOSTA Series L Sub 01,Link to the Specification,
+DOSTA,L,01,DOSTA Series L Sub 01,Notes,
+DOSTA,L,01,DOSTA Series L Sub 01,PrimaryScienceDiscipline,C
+DOSTA,L,01,DOSTA Series L Sub 01,Ready for 2013?,
+DOSTA,L,01,DOSTA Series L Sub 01,RSN O&M Spares,
+DOSTA,L,01,DOSTA Series L Sub 01,RSN Part Number,
+DOSTA,L,01,DOSTA Series L Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,M,01,DOSTA Series M Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,M,01,DOSTA Series M Sub 01,2009 Deployed Instrument Count,61
+DOSTA,M,01,DOSTA Series M Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,M,01,DOSTA Series M Sub 01,CE Spares,
+DOSTA,M,01,DOSTA Series M Sub 01,CGSN MREFC Spares,
+DOSTA,M,01,DOSTA Series M Sub 01,CGSN O&M Spares,
+DOSTA,M,01,DOSTA Series M Sub 01,CGSN P/N,1331-00002-00003
+DOSTA,M,01,DOSTA Series M Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,M,01,DOSTA Series M Sub 01,Comments,TWR P/N: G-4663 Rev. 01
+DOSTA,M,01,DOSTA Series M Sub 01,CP Spares,
+DOSTA,M,01,DOSTA Series M Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,M,01,DOSTA Series M Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,M,01,DOSTA Series M Sub 01,Global Spares,
+DOSTA,M,01,DOSTA Series M Sub 01,Instrument Configuration,Aanderaa optode 4831
+DOSTA,M,01,DOSTA Series M Sub 01,Link to the Specification,
+DOSTA,M,01,DOSTA Series M Sub 01,Notes,
+DOSTA,M,01,DOSTA Series M Sub 01,PrimaryScienceDiscipline,C
+DOSTA,M,01,DOSTA Series M Sub 01,Ready for 2013?,
+DOSTA,M,01,DOSTA Series M Sub 01,RSN O&M Spares,
+DOSTA,M,01,DOSTA Series M Sub 01,RSN Part Number,
+DOSTA,M,01,DOSTA Series M Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,N,01,DOSTA Series N Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,N,01,DOSTA Series N Sub 01,2009 Deployed Instrument Count,61
+DOSTA,N,01,DOSTA Series N Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,N,01,DOSTA Series N Sub 01,CE Spares,
+DOSTA,N,01,DOSTA Series N Sub 01,CGSN MREFC Spares,
+DOSTA,N,01,DOSTA Series N Sub 01,CGSN O&M Spares,
+DOSTA,N,01,DOSTA Series N Sub 01,CGSN P/N,1331-00002-00004
+DOSTA,N,01,DOSTA Series N Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,N,01,DOSTA Series N Sub 01,Comments,Hydroid P/N: 
+DOSTA,N,01,DOSTA Series N Sub 01,CP Spares,
+DOSTA,N,01,DOSTA Series N Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,N,01,DOSTA Series N Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,N,01,DOSTA Series N Sub 01,Global Spares,
+DOSTA,N,01,DOSTA Series N Sub 01,Instrument Configuration,Aanderaa optode 4330
+DOSTA,N,01,DOSTA Series N Sub 01,Link to the Specification,
+DOSTA,N,01,DOSTA Series N Sub 01,Notes,
+DOSTA,N,01,DOSTA Series N Sub 01,PrimaryScienceDiscipline,C
+DOSTA,N,01,DOSTA Series N Sub 01,Ready for 2013?,
+DOSTA,N,01,DOSTA Series N Sub 01,RSN O&M Spares,
+DOSTA,N,01,DOSTA Series N Sub 01,RSN Part Number,
+DOSTA,N,01,DOSTA Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FDCHP,0,01,FDCHP Series 0 Sub 01,2009 Baseline Price*,"$55,900.00"
+FDCHP,0,01,FDCHP Series 0 Sub 01,2009 Deployed Instrument Count,7
+FDCHP,0,01,FDCHP Series 0 Sub 01,Alternate Instrument Class Name,Direct Covariance Flux (High Power)
+FDCHP,0,01,FDCHP Series 0 Sub 01,CE Spares,
+FDCHP,0,01,FDCHP Series 0 Sub 01,CGSN MREFC Spares,
+FDCHP,0,01,FDCHP Series 0 Sub 01,CGSN O&M Spares,
+FDCHP,0,01,FDCHP Series 0 Sub 01,CGSN P/N,
+FDCHP,0,01,FDCHP Series 0 Sub 01,ClassLongName,flux_direct_cov_HP
+FDCHP,0,01,FDCHP Series 0 Sub 01,Comments,
+FDCHP,0,01,FDCHP Series 0 Sub 01,CP Spares,
+FDCHP,0,01,FDCHP Series 0 Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
+FDCHP,0,01,FDCHP Series 0 Sub 01,ECRs that changed the count,
+FDCHP,0,01,FDCHP Series 0 Sub 01,Global Spares,
+FDCHP,0,01,FDCHP Series 0 Sub 01,Instrument Configuration,
+FDCHP,0,01,FDCHP Series 0 Sub 01,Link to the Specification,
+FDCHP,0,01,FDCHP Series 0 Sub 01,Notes,
+FDCHP,0,01,FDCHP Series 0 Sub 01,PrimaryScienceDiscipline,P
+FDCHP,0,01,FDCHP Series 0 Sub 01,Ready for 2013?,Maybe
+FDCHP,0,01,FDCHP Series 0 Sub 01,RSN O&M Spares,
+FDCHP,0,01,FDCHP Series 0 Sub 01,RSN Part Number,
+FDCHP,0,01,FDCHP Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FDCHP,A,01,FDCHP Series A Sub 01,2009 Baseline Price*,"$55,900.00"
+FDCHP,A,01,FDCHP Series A Sub 01,2009 Deployed Instrument Count,7
+FDCHP,A,01,FDCHP Series A Sub 01,Alternate Instrument Class Name,Direct Covariance Flux (High Power)
+FDCHP,A,01,FDCHP Series A Sub 01,CE Spares,1
+FDCHP,A,01,FDCHP Series A Sub 01,CGSN MREFC Spares,1
+FDCHP,A,01,FDCHP Series A Sub 01,CGSN O&M Spares,2
+FDCHP,A,01,FDCHP Series A Sub 01,CGSN P/N,3305-00004-00001
+FDCHP,A,01,FDCHP Series A Sub 01,ClassLongName,flux_direct_cov_HP
+FDCHP,A,01,FDCHP Series A Sub 01,Comments,
+FDCHP,A,01,FDCHP Series A Sub 01,CP Spares,
+FDCHP,A,01,FDCHP Series A Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
+FDCHP,A,01,FDCHP Series A Sub 01,ECRs that changed the count,
+FDCHP,A,01,FDCHP Series A Sub 01,Global Spares,2
+FDCHP,A,01,FDCHP Series A Sub 01,Instrument Configuration,
+FDCHP,A,01,FDCHP Series A Sub 01,Link to the Specification,
+FDCHP,A,01,FDCHP Series A Sub 01,Notes,
+FDCHP,A,01,FDCHP Series A Sub 01,PrimaryScienceDiscipline,P
+FDCHP,A,01,FDCHP Series A Sub 01,Ready for 2013?,Maybe
+FDCHP,A,01,FDCHP Series A Sub 01,RSN O&M Spares,
+FDCHP,A,01,FDCHP Series A Sub 01,RSN Part Number,
+FDCHP,A,01,FDCHP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FDCLP,0,01,FDCLP Series 0 Sub 01,2009 Baseline Price*,"$30,000.00"
+FDCLP,0,01,FDCLP Series 0 Sub 01,2009 Deployed Instrument Count,3
+FDCLP,0,01,FDCLP Series 0 Sub 01,Alternate Instrument Class Name,Direct Covariance Flux (Low Power)
+FDCLP,0,01,FDCLP Series 0 Sub 01,CE Spares,
+FDCLP,0,01,FDCLP Series 0 Sub 01,CGSN MREFC Spares,
+FDCLP,0,01,FDCLP Series 0 Sub 01,CGSN O&M Spares,
+FDCLP,0,01,FDCLP Series 0 Sub 01,CGSN P/N,
+FDCLP,0,01,FDCLP Series 0 Sub 01,ClassLongName,flux_direct_cov_LP
+FDCLP,0,01,FDCLP Series 0 Sub 01,Comments,
+FDCLP,0,01,FDCLP Series 0 Sub 01,CP Spares,
+FDCLP,0,01,FDCLP Series 0 Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
+FDCLP,0,01,FDCLP Series 0 Sub 01,ECRs that changed the count,
+FDCLP,0,01,FDCLP Series 0 Sub 01,Global Spares,
+FDCLP,0,01,FDCLP Series 0 Sub 01,Instrument Configuration,
+FDCLP,0,01,FDCLP Series 0 Sub 01,Link to the Specification,
+FDCLP,0,01,FDCLP Series 0 Sub 01,Notes,
+FDCLP,0,01,FDCLP Series 0 Sub 01,PrimaryScienceDiscipline,P
+FDCLP,0,01,FDCLP Series 0 Sub 01,Ready for 2013?,Maybe
+FDCLP,0,01,FDCLP Series 0 Sub 01,RSN O&M Spares,
+FDCLP,0,01,FDCLP Series 0 Sub 01,RSN Part Number,
+FDCLP,0,01,FDCLP Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FDCLP,A,01,FDCLP Series A Sub 01,2009 Baseline Price*,"$30,000.00"
+FDCLP,A,01,FDCLP Series A Sub 01,2009 Deployed Instrument Count,3
+FDCLP,A,01,FDCLP Series A Sub 01,Alternate Instrument Class Name,Direct Covariance Flux (Low Power)
+FDCLP,A,01,FDCLP Series A Sub 01,CE Spares,
+FDCLP,A,01,FDCLP Series A Sub 01,CGSN MREFC Spares,1
+FDCLP,A,01,FDCLP Series A Sub 01,CGSN O&M Spares,
+FDCLP,A,01,FDCLP Series A Sub 01,CGSN P/N,3305-00004-00001
+FDCLP,A,01,FDCLP Series A Sub 01,ClassLongName,flux_direct_cov_LP
+FDCLP,A,01,FDCLP Series A Sub 01,Comments,
+FDCLP,A,01,FDCLP Series A Sub 01,CP Spares,1
+FDCLP,A,01,FDCLP Series A Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
+FDCLP,A,01,FDCLP Series A Sub 01,ECRs that changed the count,
+FDCLP,A,01,FDCLP Series A Sub 01,Global Spares,
+FDCLP,A,01,FDCLP Series A Sub 01,Instrument Configuration,
+FDCLP,A,01,FDCLP Series A Sub 01,Link to the Specification,
+FDCLP,A,01,FDCLP Series A Sub 01,Notes,
+FDCLP,A,01,FDCLP Series A Sub 01,PrimaryScienceDiscipline,P
+FDCLP,A,01,FDCLP Series A Sub 01,Ready for 2013?,Maybe
+FDCLP,A,01,FDCLP Series A Sub 01,RSN O&M Spares,
+FDCLP,A,01,FDCLP Series A Sub 01,RSN Part Number,
+FDCLP,A,01,FDCLP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLOBN,A,01,FLOBN Series A Sub 01,2009 Baseline Price*,
+FLOBN,A,01,FLOBN Series A Sub 01,2009 Deployed Instrument Count,1
+FLOBN,A,01,FLOBN Series A Sub 01,Alternate Instrument Class Name,Benthic Fluid Flow
+FLOBN,A,01,FLOBN Series A Sub 01,CE Spares,
+FLOBN,A,01,FLOBN Series A Sub 01,CGSN MREFC Spares,
+FLOBN,A,01,FLOBN Series A Sub 01,CGSN O&M Spares,
+FLOBN,A,01,FLOBN Series A Sub 01,CGSN P/N,
+FLOBN,A,01,FLOBN Series A Sub 01,ClassLongName,flow_benthic
+FLOBN,A,01,FLOBN Series A Sub 01,Comments,
+FLOBN,A,01,FLOBN Series A Sub 01,CP Spares,
+FLOBN,A,01,FLOBN Series A Sub 01,Description,Benthic fluid flow rate sampler. Measures benthic flow rates via optical injection tracer at the sediment-water interface
+FLOBN,A,01,FLOBN Series A Sub 01,ECRs that changed the count,
+FLOBN,A,01,FLOBN Series A Sub 01,Global Spares,
+FLOBN,A,01,FLOBN Series A Sub 01,Instrument Configuration,
+FLOBN,A,01,FLOBN Series A Sub 01,Link to the Specification,
+FLOBN,A,01,FLOBN Series A Sub 01,Notes,
+FLOBN,A,01,FLOBN Series A Sub 01,PrimaryScienceDiscipline,C
+FLOBN,A,01,FLOBN Series A Sub 01,Ready for 2013?,
+FLOBN,A,01,FLOBN Series A Sub 01,RSN O&M Spares,1
+FLOBN,A,01,FLOBN Series A Sub 01,RSN Part Number,4830-58334
+FLOBN,A,01,FLOBN Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORD,0,01,FLORD Series 0 Sub 01,2009 Baseline Price*,"$5,600.00"
+FLORD,0,01,FLORD Series 0 Sub 01,2009 Deployed Instrument Count,35
+FLORD,0,01,FLORD Series 0 Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,0,01,FLORD Series 0 Sub 01,CE Spares,
+FLORD,0,01,FLORD Series 0 Sub 01,CGSN MREFC Spares,
+FLORD,0,01,FLORD Series 0 Sub 01,CGSN O&M Spares,
+FLORD,0,01,FLORD Series 0 Sub 01,CGSN P/N,
+FLORD,0,01,FLORD Series 0 Sub 01,ClassLongName,Fluorometer_two_wavelength
+FLORD,0,01,FLORD Series 0 Sub 01,Comments,
+FLORD,0,01,FLORD Series 0 Sub 01,CP Spares,
+FLORD,0,01,FLORD Series 0 Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,0,01,FLORD Series 0 Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,0,01,FLORD Series 0 Sub 01,Global Spares,
+FLORD,0,01,FLORD Series 0 Sub 01,Instrument Configuration,
+FLORD,0,01,FLORD Series 0 Sub 01,Link to the Specification,
+FLORD,0,01,FLORD Series 0 Sub 01,Notes,
+FLORD,0,01,FLORD Series 0 Sub 01,PrimaryScienceDiscipline,B
+FLORD,0,01,FLORD Series 0 Sub 01,Ready for 2013?,
+FLORD,0,01,FLORD Series 0 Sub 01,RSN O&M Spares,
+FLORD,0,01,FLORD Series 0 Sub 01,RSN Part Number,
+FLORD,0,01,FLORD Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORD,A,01,FLORD Series A Sub 01,2009 Baseline Price*,"$5,600.00"
+FLORD,A,01,FLORD Series A Sub 01,2009 Deployed Instrument Count,35
+FLORD,A,01,FLORD Series A Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,A,01,FLORD Series A Sub 01,CE Spares,
+FLORD,A,01,FLORD Series A Sub 01,CGSN MREFC Spares,
+FLORD,A,01,FLORD Series A Sub 01,CGSN O&M Spares,
+FLORD,A,01,FLORD Series A Sub 01,CGSN P/N,
+FLORD,A,01,FLORD Series A Sub 01,ClassLongName,Fluorometer_two_wavelength
+FLORD,A,01,FLORD Series A Sub 01,Comments,
+FLORD,A,01,FLORD Series A Sub 01,CP Spares,
+FLORD,A,01,FLORD Series A Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,A,01,FLORD Series A Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,A,01,FLORD Series A Sub 01,Global Spares,
+FLORD,A,01,FLORD Series A Sub 01,Instrument Configuration,
+FLORD,A,01,FLORD Series A Sub 01,Link to the Specification,
+FLORD,A,01,FLORD Series A Sub 01,Notes,
+FLORD,A,01,FLORD Series A Sub 01,PrimaryScienceDiscipline,B
+FLORD,A,01,FLORD Series A Sub 01,Ready for 2013?,
+FLORD,A,01,FLORD Series A Sub 01,RSN O&M Spares,1
+FLORD,A,01,FLORD Series A Sub 01,RSN Part Number,4830-58321
+FLORD,A,01,FLORD Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORD,E,01,FLORD Series E Sub 01,2009 Baseline Price*,"$5,600.00"
+FLORD,E,01,FLORD Series E Sub 01,2009 Deployed Instrument Count,35
+FLORD,E,01,FLORD Series E Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,E,01,FLORD Series E Sub 01,CE Spares,
+FLORD,E,01,FLORD Series E Sub 01,CGSN MREFC Spares,1
+FLORD,E,01,FLORD Series E Sub 01,CGSN O&M Spares,1
+FLORD,E,01,FLORD Series E Sub 01,CGSN P/N,1336-00003-00005
+FLORD,E,01,FLORD Series E Sub 01,ClassLongName,Fluorometer_two_wavelength
+FLORD,E,01,FLORD Series E Sub 01,Comments,
+FLORD,E,01,FLORD Series E Sub 01,CP Spares,
+FLORD,E,01,FLORD Series E Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,E,01,FLORD Series E Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,E,01,FLORD Series E Sub 01,Global Spares,2
+FLORD,E,01,FLORD Series E Sub 01,Instrument Configuration,"WET Labs ECO Triplet-w (will need IM, batt)"
+FLORD,E,01,FLORD Series E Sub 01,Link to the Specification,
+FLORD,E,01,FLORD Series E Sub 01,Notes,
+FLORD,E,01,FLORD Series E Sub 01,PrimaryScienceDiscipline,B
+FLORD,E,01,FLORD Series E Sub 01,Ready for 2013?,
+FLORD,E,01,FLORD Series E Sub 01,RSN O&M Spares,
+FLORD,E,01,FLORD Series E Sub 01,RSN Part Number,
+FLORD,E,01,FLORD Series E Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORD,L,01,FLORD Series L Sub 01,2009 Baseline Price*,"$5,600.00"
+FLORD,L,01,FLORD Series L Sub 01,2009 Deployed Instrument Count,35
+FLORD,L,01,FLORD Series L Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,L,01,FLORD Series L Sub 01,CE Spares,
+FLORD,L,01,FLORD Series L Sub 01,CGSN MREFC Spares,
+FLORD,L,01,FLORD Series L Sub 01,CGSN O&M Spares,
+FLORD,L,01,FLORD Series L Sub 01,CGSN P/N,1331-00003-00002
+FLORD,L,01,FLORD Series L Sub 01,ClassLongName,Fluorometer_two_wavelength
+FLORD,L,01,FLORD Series L Sub 01,Comments,McLane P/N: 200-1367
+FLORD,L,01,FLORD Series L Sub 01,CP Spares,
+FLORD,L,01,FLORD Series L Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,L,01,FLORD Series L Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,L,01,FLORD Series L Sub 01,Global Spares,
+FLORD,L,01,FLORD Series L Sub 01,Instrument Configuration,"WET Labs FLBBRTD (700 nm backscatter, 470/695 Chl)"
+FLORD,L,01,FLORD Series L Sub 01,Link to the Specification,
+FLORD,L,01,FLORD Series L Sub 01,Notes,
+FLORD,L,01,FLORD Series L Sub 01,PrimaryScienceDiscipline,B
+FLORD,L,01,FLORD Series L Sub 01,Ready for 2013?,
+FLORD,L,01,FLORD Series L Sub 01,RSN O&M Spares,
+FLORD,L,01,FLORD Series L Sub 01,RSN Part Number,
+FLORD,L,01,FLORD Series L Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORD,M,01,FLORD Series M Sub 01,2009 Baseline Price*,"$5,600.00"
+FLORD,M,01,FLORD Series M Sub 01,2009 Deployed Instrument Count,35
+FLORD,M,01,FLORD Series M Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,M,01,FLORD Series M Sub 01,CE Spares,
+FLORD,M,01,FLORD Series M Sub 01,CGSN MREFC Spares,
+FLORD,M,01,FLORD Series M Sub 01,CGSN O&M Spares,
+FLORD,M,01,FLORD Series M Sub 01,CGSN P/N,
+FLORD,M,01,FLORD Series M Sub 01,ClassLongName,Fluorometer_two_wavelength
+FLORD,M,01,FLORD Series M Sub 01,Comments,
+FLORD,M,01,FLORD Series M Sub 01,CP Spares,
+FLORD,M,01,FLORD Series M Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,M,01,FLORD Series M Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,M,01,FLORD Series M Sub 01,Global Spares,
+FLORD,M,01,FLORD Series M Sub 01,Instrument Configuration,
+FLORD,M,01,FLORD Series M Sub 01,Link to the Specification,
+FLORD,M,01,FLORD Series M Sub 01,Notes,
+FLORD,M,01,FLORD Series M Sub 01,PrimaryScienceDiscipline,B
+FLORD,M,01,FLORD Series M Sub 01,Ready for 2013?,
+FLORD,M,01,FLORD Series M Sub 01,RSN O&M Spares,
+FLORD,M,01,FLORD Series M Sub 01,RSN Part Number,
+FLORD,M,01,FLORD Series M Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,0,01,FLORT Series 0 Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,0,01,FLORT Series 0 Sub 01,2009 Deployed Instrument Count,42
+FLORT,0,01,FLORT Series 0 Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,0,01,FLORT Series 0 Sub 01,CE Spares,
+FLORT,0,01,FLORT Series 0 Sub 01,CGSN MREFC Spares,
+FLORT,0,01,FLORT Series 0 Sub 01,CGSN O&M Spares,
+FLORT,0,01,FLORT Series 0 Sub 01,CGSN P/N,
+FLORT,0,01,FLORT Series 0 Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,0,01,FLORT Series 0 Sub 01,Comments,
+FLORT,0,01,FLORT Series 0 Sub 01,CP Spares,
+FLORT,0,01,FLORT Series 0 Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,0,01,FLORT Series 0 Sub 01,ECRs that changed the count,
+FLORT,0,01,FLORT Series 0 Sub 01,Global Spares,
+FLORT,0,01,FLORT Series 0 Sub 01,Instrument Configuration,
+FLORT,0,01,FLORT Series 0 Sub 01,Link to the Specification,
+FLORT,0,01,FLORT Series 0 Sub 01,Notes,
+FLORT,0,01,FLORT Series 0 Sub 01,PrimaryScienceDiscipline,B
+FLORT,0,01,FLORT Series 0 Sub 01,Ready for 2013?,
+FLORT,0,01,FLORT Series 0 Sub 01,RSN O&M Spares,
+FLORT,0,01,FLORT Series 0 Sub 01,RSN Part Number,
+FLORT,0,01,FLORT Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,A,01,FLORT Series A Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,A,01,FLORT Series A Sub 01,2009 Deployed Instrument Count,42
+FLORT,A,01,FLORT Series A Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,A,01,FLORT Series A Sub 01,CE Spares,
+FLORT,A,01,FLORT Series A Sub 01,CGSN MREFC Spares,
+FLORT,A,01,FLORT Series A Sub 01,CGSN O&M Spares,
+FLORT,A,01,FLORT Series A Sub 01,CGSN P/N,
+FLORT,A,01,FLORT Series A Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,A,01,FLORT Series A Sub 01,Comments,
+FLORT,A,01,FLORT Series A Sub 01,CP Spares,
+FLORT,A,01,FLORT Series A Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,A,01,FLORT Series A Sub 01,ECRs that changed the count,
+FLORT,A,01,FLORT Series A Sub 01,Global Spares,
+FLORT,A,01,FLORT Series A Sub 01,Instrument Configuration,
+FLORT,A,01,FLORT Series A Sub 01,Link to the Specification,
+FLORT,A,01,FLORT Series A Sub 01,Notes,
+FLORT,A,01,FLORT Series A Sub 01,PrimaryScienceDiscipline,B
+FLORT,A,01,FLORT Series A Sub 01,Ready for 2013?,
+FLORT,A,01,FLORT Series A Sub 01,RSN O&M Spares,
+FLORT,A,01,FLORT Series A Sub 01,RSN Part Number,
+FLORT,A,01,FLORT Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,B,01,FLORT Series B Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,B,01,FLORT Series B Sub 01,2009 Deployed Instrument Count,42
+FLORT,B,01,FLORT Series B Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,B,01,FLORT Series B Sub 01,CE Spares,
+FLORT,B,01,FLORT Series B Sub 01,CGSN MREFC Spares,
+FLORT,B,01,FLORT Series B Sub 01,CGSN O&M Spares,
+FLORT,B,01,FLORT Series B Sub 01,CGSN P/N,
+FLORT,B,01,FLORT Series B Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,B,01,FLORT Series B Sub 01,Comments,
+FLORT,B,01,FLORT Series B Sub 01,CP Spares,
+FLORT,B,01,FLORT Series B Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,B,01,FLORT Series B Sub 01,ECRs that changed the count,
+FLORT,B,01,FLORT Series B Sub 01,Global Spares,
+FLORT,B,01,FLORT Series B Sub 01,Instrument Configuration,WET Labs ECO Triplet
+FLORT,B,01,FLORT Series B Sub 01,Link to the Specification,
+FLORT,B,01,FLORT Series B Sub 01,Notes,
+FLORT,B,01,FLORT Series B Sub 01,PrimaryScienceDiscipline,B
+FLORT,B,01,FLORT Series B Sub 01,Ready for 2013?,
+FLORT,B,01,FLORT Series B Sub 01,RSN O&M Spares,2
+FLORT,B,01,FLORT Series B Sub 01,RSN Part Number,4830-58322
+FLORT,B,01,FLORT Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,D,01,FLORT Series D Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,D,01,FLORT Series D Sub 01,2009 Deployed Instrument Count,42
+FLORT,D,01,FLORT Series D Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,D,01,FLORT Series D Sub 01,CE Spares,2
+FLORT,D,01,FLORT Series D Sub 01,CGSN MREFC Spares,1
+FLORT,D,01,FLORT Series D Sub 01,CGSN O&M Spares,2
+FLORT,D,01,FLORT Series D Sub 01,CGSN P/N,1336-00003-00004
+FLORT,D,01,FLORT Series D Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,D,01,FLORT Series D Sub 01,Comments,
+FLORT,D,01,FLORT Series D Sub 01,CP Spares,1
+FLORT,D,01,FLORT Series D Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,D,01,FLORT Series D Sub 01,ECRs that changed the count,
+FLORT,D,01,FLORT Series D Sub 01,Global Spares,
+FLORT,D,01,FLORT Series D Sub 01,Instrument Configuration,WET Labs ECO Triplet-w
+FLORT,D,01,FLORT Series D Sub 01,Link to the Specification,
+FLORT,D,01,FLORT Series D Sub 01,Notes,
+FLORT,D,01,FLORT Series D Sub 01,PrimaryScienceDiscipline,B
+FLORT,D,01,FLORT Series D Sub 01,Ready for 2013?,
+FLORT,D,01,FLORT Series D Sub 01,RSN O&M Spares,
+FLORT,D,01,FLORT Series D Sub 01,RSN Part Number,
+FLORT,D,01,FLORT Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,K,01,FLORT Series K Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,K,01,FLORT Series K Sub 01,2009 Deployed Instrument Count,42
+FLORT,K,01,FLORT Series K Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,K,01,FLORT Series K Sub 01,CE Spares,
+FLORT,K,01,FLORT Series K Sub 01,CGSN MREFC Spares,
+FLORT,K,01,FLORT Series K Sub 01,CGSN O&M Spares,
+FLORT,K,01,FLORT Series K Sub 01,CGSN P/N,1331-00003-00001
+FLORT,K,01,FLORT Series K Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,K,01,FLORT Series K Sub 01,Comments,McLane P/N: 200-1299
+FLORT,K,01,FLORT Series K Sub 01,CP Spares,
+FLORT,K,01,FLORT Series K Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,K,01,FLORT Series K Sub 01,ECRs that changed the count,
+FLORT,K,01,FLORT Series K Sub 01,Global Spares,
+FLORT,K,01,FLORT Series K Sub 01,Instrument Configuration,"WET Labs ECO Triplet (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)"
+FLORT,K,01,FLORT Series K Sub 01,Link to the Specification,
+FLORT,K,01,FLORT Series K Sub 01,Notes,
+FLORT,K,01,FLORT Series K Sub 01,PrimaryScienceDiscipline,B
+FLORT,K,01,FLORT Series K Sub 01,Ready for 2013?,
+FLORT,K,01,FLORT Series K Sub 01,RSN O&M Spares,
+FLORT,K,01,FLORT Series K Sub 01,RSN Part Number,
+FLORT,K,01,FLORT Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,M,01,FLORT Series M Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,M,01,FLORT Series M Sub 01,2009 Deployed Instrument Count,42
+FLORT,M,01,FLORT Series M Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,M,01,FLORT Series M Sub 01,CE Spares,
+FLORT,M,01,FLORT Series M Sub 01,CGSN MREFC Spares,
+FLORT,M,01,FLORT Series M Sub 01,CGSN O&M Spares,
+FLORT,M,01,FLORT Series M Sub 01,CGSN P/N,1331-00003-00003
+FLORT,M,01,FLORT Series M Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,M,01,FLORT Series M Sub 01,Comments,TWR P/N: G-1815 Rev 01c
+FLORT,M,01,FLORT Series M Sub 01,CP Spares,
+FLORT,M,01,FLORT Series M Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,M,01,FLORT Series M Sub 01,ECRs that changed the count,
+FLORT,M,01,FLORT Series M Sub 01,Global Spares,
+FLORT,M,01,FLORT Series M Sub 01,Instrument Configuration,WET Labs ECO Puck FLBBCD-SLK
+FLORT,M,01,FLORT Series M Sub 01,Link to the Specification,
+FLORT,M,01,FLORT Series M Sub 01,Notes,
+FLORT,M,01,FLORT Series M Sub 01,PrimaryScienceDiscipline,B
+FLORT,M,01,FLORT Series M Sub 01,Ready for 2013?,
+FLORT,M,01,FLORT Series M Sub 01,RSN O&M Spares,
+FLORT,M,01,FLORT Series M Sub 01,RSN Part Number,
+FLORT,M,01,FLORT Series M Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,N,01,FLORT Series N Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,N,01,FLORT Series N Sub 01,2009 Deployed Instrument Count,42
+FLORT,N,01,FLORT Series N Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,N,01,FLORT Series N Sub 01,CE Spares,
+FLORT,N,01,FLORT Series N Sub 01,CGSN MREFC Spares,
+FLORT,N,01,FLORT Series N Sub 01,CGSN O&M Spares,
+FLORT,N,01,FLORT Series N Sub 01,CGSN P/N,1331-00003-00004
+FLORT,N,01,FLORT Series N Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,N,01,FLORT Series N Sub 01,Comments,Hydroid P/N: 
+FLORT,N,01,FLORT Series N Sub 01,CP Spares,
+FLORT,N,01,FLORT Series N Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,N,01,FLORT Series N Sub 01,ECRs that changed the count,
+FLORT,N,01,FLORT Series N Sub 01,Global Spares,
+FLORT,N,01,FLORT Series N Sub 01,Instrument Configuration,"WET Labs ECO Triplet (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)"
+FLORT,N,01,FLORT Series N Sub 01,Link to the Specification,
+FLORT,N,01,FLORT Series N Sub 01,Notes,
+FLORT,N,01,FLORT Series N Sub 01,PrimaryScienceDiscipline,B
+FLORT,N,01,FLORT Series N Sub 01,Ready for 2013?,
+FLORT,N,01,FLORT Series N Sub 01,RSN O&M Spares,
+FLORT,N,01,FLORT Series N Sub 01,RSN Part Number,
+FLORT,N,01,FLORT Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+HPIES,A,01,HPIES Series A Sub 01,2009 Baseline Price*,
+HPIES,A,01,HPIES Series A Sub 01,2009 Deployed Instrument Count,2
+HPIES,A,01,HPIES Series A Sub 01,Alternate Instrument Class Name,"Horizontal Electric Field, Pressure and Inverted Echo Sounder"
+HPIES,A,01,HPIES Series A Sub 01,CE Spares,
+HPIES,A,01,HPIES Series A Sub 01,CGSN MREFC Spares,
+HPIES,A,01,HPIES Series A Sub 01,CGSN O&M Spares,
+HPIES,A,01,HPIES Series A Sub 01,CGSN P/N,
+HPIES,A,01,HPIES Series A Sub 01,ClassLongName,IES_pressure_velocity
+HPIES,A,01,HPIES Series A Sub 01,Comments,
+HPIES,A,01,HPIES Series A Sub 01,CP Spares,
+HPIES,A,01,HPIES Series A Sub 01,Description,"Horizontal electric field, pressure, inverted echo sounder for: water column integration of velocity, acoustic travel time, pressure, water column structure"
+HPIES,A,01,HPIES Series A Sub 01,ECRs that changed the count,
+HPIES,A,01,HPIES Series A Sub 01,Global Spares,
+HPIES,A,01,HPIES Series A Sub 01,Instrument Configuration,
+HPIES,A,01,HPIES Series A Sub 01,Link to the Specification,
+HPIES,A,01,HPIES Series A Sub 01,Notes,
+HPIES,A,01,HPIES Series A Sub 01,PrimaryScienceDiscipline,P
+HPIES,A,01,HPIES Series A Sub 01,Ready for 2013?,
+HPIES,A,01,HPIES Series A Sub 01,RSN O&M Spares,1
+HPIES,A,01,HPIES Series A Sub 01,RSN Part Number,4830-58323
+HPIES,A,01,HPIES Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+HYDBB,A,01,HYDBB Series A Sub 01,2009 Baseline Price*,"$100,092.00"
+HYDBB,A,01,HYDBB Series A Sub 01,2009 Deployed Instrument Count,6
+HYDBB,A,01,HYDBB Series A Sub 01,Alternate Instrument Class Name,Broadband Acoustic Receiver (Hydrophone)
+HYDBB,A,01,HYDBB Series A Sub 01,CE Spares,1
+HYDBB,A,01,HYDBB Series A Sub 01,CGSN MREFC Spares,1
+HYDBB,A,01,HYDBB Series A Sub 01,CGSN O&M Spares,
+HYDBB,A,01,HYDBB Series A Sub 01,CGSN P/N,4320-64418-00001
+HYDBB,A,01,HYDBB Series A Sub 01,ClassLongName,Hydrophone_BB_passive
+HYDBB,A,01,HYDBB Series A Sub 01,Comments,
+HYDBB,A,01,HYDBB Series A Sub 01,CP Spares,
+HYDBB,A,01,HYDBB Series A Sub 01,Description,"Broadband (Passive) Acoustic Receiver in the water column to measure acoustic signal ofmarine mammals, fish, wind, and rain"
+HYDBB,A,01,HYDBB Series A Sub 01,ECRs that changed the count,
+HYDBB,A,01,HYDBB Series A Sub 01,Global Spares,
+HYDBB,A,01,HYDBB Series A Sub 01,Instrument Configuration,
+HYDBB,A,01,HYDBB Series A Sub 01,Link to the Specification,
+HYDBB,A,01,HYDBB Series A Sub 01,Notes,
+HYDBB,A,01,HYDBB Series A Sub 01,PrimaryScienceDiscipline,P
+HYDBB,A,01,HYDBB Series A Sub 01,Ready for 2013?,
+HYDBB,A,01,HYDBB Series A Sub 01,RSN O&M Spares,1
+HYDBB,A,01,HYDBB Series A Sub 01,RSN Part Number,4830-58324
+HYDBB,A,01,HYDBB Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+HYDLF,A,01,HYDLF Series A Sub 01,2009 Baseline Price*,
+HYDLF,A,01,HYDLF Series A Sub 01,2009 Deployed Instrument Count,9
+HYDLF,A,01,HYDLF Series A Sub 01,Alternate Instrument Class Name,Low Frequency Broadband Acoustic Receiver (Hydrophone) on Seafloor
+HYDLF,A,01,HYDLF Series A Sub 01,CE Spares,
+HYDLF,A,01,HYDLF Series A Sub 01,CGSN MREFC Spares,
+HYDLF,A,01,HYDLF Series A Sub 01,CGSN O&M Spares,
+HYDLF,A,01,HYDLF Series A Sub 01,CGSN P/N,
+HYDLF,A,01,HYDLF Series A Sub 01,ClassLongName,Hydrophone_LF_passive
+HYDLF,A,01,HYDLF Series A Sub 01,Comments,
+HYDLF,A,01,HYDLF Series A Sub 01,CP Spares,
+HYDLF,A,01,HYDLF Series A Sub 01,Description,"Broadband (Passive) Acoustic Receiver to measure acoustic signal of wind, rain, and seismic t-phases"
+HYDLF,A,01,HYDLF Series A Sub 01,ECRs that changed the count,
+HYDLF,A,01,HYDLF Series A Sub 01,Global Spares,
+HYDLF,A,01,HYDLF Series A Sub 01,Instrument Configuration,
+HYDLF,A,01,HYDLF Series A Sub 01,Link to the Specification,
+HYDLF,A,01,HYDLF Series A Sub 01,Notes,
+HYDLF,A,01,HYDLF Series A Sub 01,PrimaryScienceDiscipline,P
+HYDLF,A,01,HYDLF Series A Sub 01,Ready for 2013?,
+HYDLF,A,01,HYDLF Series A Sub 01,RSN O&M Spares,1
+HYDLF,A,01,HYDLF Series A Sub 01,RSN Part Number,4830-58693
+HYDLF,A,01,HYDLF Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+MASSP,A,01,MASSP Series A Sub 01,2009 Baseline Price*,
+MASSP,A,01,MASSP Series A Sub 01,2009 Deployed Instrument Count,2
+MASSP,A,01,MASSP Series A Sub 01,Alternate Instrument Class Name,Mass Spectrometer
+MASSP,A,01,MASSP Series A Sub 01,CE Spares,
+MASSP,A,01,MASSP Series A Sub 01,CGSN MREFC Spares,
+MASSP,A,01,MASSP Series A Sub 01,CGSN O&M Spares,
+MASSP,A,01,MASSP Series A Sub 01,CGSN P/N,
+MASSP,A,01,MASSP Series A Sub 01,ClassLongName,mass_spectrometer
+MASSP,A,01,MASSP Series A Sub 01,Comments,
+MASSP,A,01,MASSP Series A Sub 01,CP Spares,
+MASSP,A,01,MASSP Series A Sub 01,Description,Mass Spectrometer for dissolved gases in hydrothermal and seep fluids
+MASSP,A,01,MASSP Series A Sub 01,ECRs that changed the count,
+MASSP,A,01,MASSP Series A Sub 01,Global Spares,
+MASSP,A,01,MASSP Series A Sub 01,Instrument Configuration,
+MASSP,A,01,MASSP Series A Sub 01,Link to the Specification,
+MASSP,A,01,MASSP Series A Sub 01,Notes,
+MASSP,A,01,MASSP Series A Sub 01,PrimaryScienceDiscipline,C
+MASSP,A,01,MASSP Series A Sub 01,Ready for 2013?,Maybe
+MASSP,A,01,MASSP Series A Sub 01,RSN O&M Spares,1
+MASSP,A,01,MASSP Series A Sub 01,RSN Part Number,4830-58325
+MASSP,A,01,MASSP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+METBK,A,01,METBK Series A Sub 01,2009 Baseline Price*,"$51,716.00"
+METBK,A,01,METBK Series A Sub 01,2009 Deployed Instrument Count,18
+METBK,A,01,METBK Series A Sub 01,Alternate Instrument Class Name,Bulk Meteorology Instrument Package
+METBK,A,01,METBK Series A Sub 01,CE Spares,3
+METBK,A,01,METBK Series A Sub 01,CGSN MREFC Spares,3
+METBK,A,01,METBK Series A Sub 01,CGSN O&M Spares,4
+METBK,A,01,METBK Series A Sub 01,CGSN P/N,3305-00003-00001
+METBK,A,01,METBK Series A Sub 01,ClassLongName,Meteorology_bulk
+METBK,A,01,METBK Series A Sub 01,Comments,Sole Source: Star Engineering
+METBK,A,01,METBK Series A Sub 01,CP Spares,2
+METBK,A,01,METBK Series A Sub 01,Description,"Measures surface meteorology and provides the data required to compute air-sea fluxes of heat, freshwater, and momentum"
+METBK,A,01,METBK Series A Sub 01,ECRs that changed the count,
+METBK,A,01,METBK Series A Sub 01,Global Spares,2
+METBK,A,01,METBK Series A Sub 01,Instrument Configuration,Star Engineering ASIMET
+METBK,A,01,METBK Series A Sub 01,Link to the Specification,
+METBK,A,01,METBK Series A Sub 01,Notes,
+METBK,A,01,METBK Series A Sub 01,PrimaryScienceDiscipline,P
+METBK,A,01,METBK Series A Sub 01,Ready for 2013?,
+METBK,A,01,METBK Series A Sub 01,RSN O&M Spares,
+METBK,A,01,METBK Series A Sub 01,RSN Part Number,
+METBK,A,01,METBK Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+NUTNR,0,01,NUTNR Series 0 Sub 01,2009 Baseline Price*,"$30,990.00"
+NUTNR,0,01,NUTNR Series 0 Sub 01,2009 Deployed Instrument Count,22
+NUTNR,0,01,NUTNR Series 0 Sub 01,Alternate Instrument Class Name,Nitrate
+NUTNR,0,01,NUTNR Series 0 Sub 01,CE Spares,
+NUTNR,0,01,NUTNR Series 0 Sub 01,CGSN MREFC Spares,
+NUTNR,0,01,NUTNR Series 0 Sub 01,CGSN O&M Spares,
+NUTNR,0,01,NUTNR Series 0 Sub 01,CGSN P/N,
+NUTNR,0,01,NUTNR Series 0 Sub 01,ClassLongName,nutrient_Nitrate
+NUTNR,0,01,NUTNR Series 0 Sub 01,Comments,
+NUTNR,0,01,NUTNR Series 0 Sub 01,CP Spares,
+NUTNR,0,01,NUTNR Series 0 Sub 01,Description,Optical Nitrate measurements (fast response and appropriate for profilers)
+NUTNR,0,01,NUTNR Series 0 Sub 01,ECRs that changed the count,ECR 1303-00511
+NUTNR,0,01,NUTNR Series 0 Sub 01,Global Spares,
+NUTNR,0,01,NUTNR Series 0 Sub 01,Instrument Configuration,
+NUTNR,0,01,NUTNR Series 0 Sub 01,Link to the Specification,
+NUTNR,0,01,NUTNR Series 0 Sub 01,Notes,
+NUTNR,0,01,NUTNR Series 0 Sub 01,PrimaryScienceDiscipline,C
+NUTNR,0,01,NUTNR Series 0 Sub 01,Ready for 2013?,
+NUTNR,0,01,NUTNR Series 0 Sub 01,RSN O&M Spares,
+NUTNR,0,01,NUTNR Series 0 Sub 01,RSN Part Number,
+NUTNR,0,01,NUTNR Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+NUTNR,A,01,NUTNR Series A Sub 01,2009 Baseline Price*,"$30,990.00"
+NUTNR,A,01,NUTNR Series A Sub 01,2009 Deployed Instrument Count,22
+NUTNR,A,01,NUTNR Series A Sub 01,Alternate Instrument Class Name,Nitrate
+NUTNR,A,01,NUTNR Series A Sub 01,CE Spares,
+NUTNR,A,01,NUTNR Series A Sub 01,CGSN MREFC Spares,
+NUTNR,A,01,NUTNR Series A Sub 01,CGSN O&M Spares,
+NUTNR,A,01,NUTNR Series A Sub 01,CGSN P/N,
+NUTNR,A,01,NUTNR Series A Sub 01,ClassLongName,nutrient_Nitrate
+NUTNR,A,01,NUTNR Series A Sub 01,Comments,
+NUTNR,A,01,NUTNR Series A Sub 01,CP Spares,
+NUTNR,A,01,NUTNR Series A Sub 01,Description,Optical Nitrate measurements (fast response and appropriate for profilers)
+NUTNR,A,01,NUTNR Series A Sub 01,ECRs that changed the count,ECR 1303-00511
+NUTNR,A,01,NUTNR Series A Sub 01,Global Spares,
+NUTNR,A,01,NUTNR Series A Sub 01,Instrument Configuration,[deep SUNA|http://www.satlantic.com/suna-deep]
+NUTNR,A,01,NUTNR Series A Sub 01,Link to the Specification,
+NUTNR,A,01,NUTNR Series A Sub 01,Notes,
+NUTNR,A,01,NUTNR Series A Sub 01,PrimaryScienceDiscipline,C
+NUTNR,A,01,NUTNR Series A Sub 01,Ready for 2013?,
+NUTNR,A,01,NUTNR Series A Sub 01,RSN O&M Spares,1
+NUTNR,A,01,NUTNR Series A Sub 01,RSN Part Number,4830-68020
+NUTNR,A,01,NUTNR Series A Sub 01,"Vendor CLIN, SubCLIN or Model #","NUYDO1 Deep SUNA, NUYD17 Copper Foul Guard"
+NUTNR,B,01,NUTNR Series B Sub 01,2009 Baseline Price*,"$30,990.00"
+NUTNR,B,01,NUTNR Series B Sub 01,2009 Deployed Instrument Count,22
+NUTNR,B,01,NUTNR Series B Sub 01,Alternate Instrument Class Name,Nitrate
+NUTNR,B,01,NUTNR Series B Sub 01,CE Spares,1
+NUTNR,B,01,NUTNR Series B Sub 01,CGSN MREFC Spares,1
+NUTNR,B,01,NUTNR Series B Sub 01,CGSN O&M Spares,1
+NUTNR,B,01,NUTNR Series B Sub 01,CGSN P/N,1336-00014-00002
+NUTNR,B,01,NUTNR Series B Sub 01,ClassLongName,nutrient_Nitrate
+NUTNR,B,01,NUTNR Series B Sub 01,Comments,Battery in separate housing Biofouling uses SBE 5P pump
+NUTNR,B,01,NUTNR Series B Sub 01,CP Spares,1
+NUTNR,B,01,NUTNR Series B Sub 01,Description,Optical Nitrate measurements (fast response and appropriate for profilers)
+NUTNR,B,01,NUTNR Series B Sub 01,ECRs that changed the count,ECR 1303-00511
+NUTNR,B,01,NUTNR Series B Sub 01,Global Spares,
+NUTNR,B,01,NUTNR Series B Sub 01,Instrument Configuration,Satlantic ISUS (battery and biofouling options) MCBH connector (not standard pin-out)
+NUTNR,B,01,NUTNR Series B Sub 01,Link to the Specification,
+NUTNR,B,01,NUTNR Series B Sub 01,Notes,
+NUTNR,B,01,NUTNR Series B Sub 01,PrimaryScienceDiscipline,C
+NUTNR,B,01,NUTNR Series B Sub 01,Ready for 2013?,
+NUTNR,B,01,NUTNR Series B Sub 01,RSN O&M Spares,
+NUTNR,B,01,NUTNR Series B Sub 01,RSN Part Number,
+NUTNR,B,01,NUTNR Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","NUYD02 ISUS, NUYD13 ISUS Flow Cell, NUYD15 Pump, NUYD10 Battery Pack, NUYD11 Battery Cable"
+NUTNR,N,01,NUTNR Series N Sub 01,2009 Baseline Price*,"$30,990.00"
+NUTNR,N,01,NUTNR Series N Sub 01,2009 Deployed Instrument Count,22
+NUTNR,N,01,NUTNR Series N Sub 01,Alternate Instrument Class Name,Nitrate
+NUTNR,N,01,NUTNR Series N Sub 01,CE Spares,
+NUTNR,N,01,NUTNR Series N Sub 01,CGSN MREFC Spares,
+NUTNR,N,01,NUTNR Series N Sub 01,CGSN O&M Spares,
+NUTNR,N,01,NUTNR Series N Sub 01,CGSN P/N,1331-00014-00004
+NUTNR,N,01,NUTNR Series N Sub 01,ClassLongName,nutrient_Nitrate
+NUTNR,N,01,NUTNR Series N Sub 01,Comments,
+NUTNR,N,01,NUTNR Series N Sub 01,CP Spares,
+NUTNR,N,01,NUTNR Series N Sub 01,Description,Optical Nitrate measurements (fast response and appropriate for profilers)
+NUTNR,N,01,NUTNR Series N Sub 01,ECRs that changed the count,ECR 1303-00511
+NUTNR,N,01,NUTNR Series N Sub 01,Global Spares,
+NUTNR,N,01,NUTNR Series N Sub 01,Instrument Configuration,Satlantic SUNA
+NUTNR,N,01,NUTNR Series N Sub 01,Link to the Specification,
+NUTNR,N,01,NUTNR Series N Sub 01,Notes,
+NUTNR,N,01,NUTNR Series N Sub 01,PrimaryScienceDiscipline,C
+NUTNR,N,01,NUTNR Series N Sub 01,Ready for 2013?,
+NUTNR,N,01,NUTNR Series N Sub 01,RSN O&M Spares,
+NUTNR,N,01,NUTNR Series N Sub 01,RSN Part Number,
+NUTNR,N,01,NUTNR Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OBSBB,A,01,OBSBB Series A Sub 01,2009 Baseline Price*,
+OBSBB,A,01,OBSBB Series A Sub 01,2009 Deployed Instrument Count,4
+OBSBB,A,01,OBSBB Series A Sub 01,Alternate Instrument Class Name,Broadband Ocean Bottom Seismometer
+OBSBB,A,01,OBSBB Series A Sub 01,CE Spares,
+OBSBB,A,01,OBSBB Series A Sub 01,CGSN MREFC Spares,
+OBSBB,A,01,OBSBB Series A Sub 01,CGSN O&M Spares,
+OBSBB,A,01,OBSBB Series A Sub 01,CGSN P/N,
+OBSBB,A,01,OBSBB Series A Sub 01,ClassLongName,Seismometer_BB_triaxial_accel
+OBSBB,A,01,OBSBB Series A Sub 01,Comments,"Ocean Bottom Seismometer, includes broadband seismometer, strong motion, and LF hydrophone"
+OBSBB,A,01,OBSBB Series A Sub 01,CP Spares,
+OBSBB,A,01,OBSBB Series A Sub 01,Description,Measures global/regional seismic events and harmonic tremors
+OBSBB,A,01,OBSBB Series A Sub 01,ECRs that changed the count,
+OBSBB,A,01,OBSBB Series A Sub 01,Global Spares,
+OBSBB,A,01,OBSBB Series A Sub 01,Instrument Configuration,CMG-3T w/ hydrophone
+OBSBB,A,01,OBSBB Series A Sub 01,Link to the Specification,
+OBSBB,A,01,OBSBB Series A Sub 01,Notes,
+OBSBB,A,01,OBSBB Series A Sub 01,PrimaryScienceDiscipline,G
+OBSBB,A,01,OBSBB Series A Sub 01,Ready for 2013?,
+OBSBB,A,01,OBSBB Series A Sub 01,RSN O&M Spares,1
+OBSBB,A,01,OBSBB Series A Sub 01,RSN Part Number,4830-58328
+OBSBB,A,01,OBSBB Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OBSBK,A,01,OBSBK Series A Sub 01,2009 Baseline Price*,
+OBSBK,A,01,OBSBK Series A Sub 01,2009 Deployed Instrument Count,
+OBSBK,A,01,OBSBK Series A Sub 01,Alternate Instrument Class Name,Broadband Ocean Bottom Seismometer
+OBSBK,A,01,OBSBK Series A Sub 01,CE Spares,
+OBSBK,A,01,OBSBK Series A Sub 01,CGSN MREFC Spares,
+OBSBK,A,01,OBSBK Series A Sub 01,CGSN O&M Spares,
+OBSBK,A,01,OBSBK Series A Sub 01,CGSN P/N,
+OBSBK,A,01,OBSBK Series A Sub 01,ClassLongName,Seismometer_BB_triaxial_keck
+OBSBK,A,01,OBSBK Series A Sub 01,Comments,
+OBSBK,A,01,OBSBK Series A Sub 01,CP Spares,
+OBSBK,A,01,OBSBK Series A Sub 01,Description,Measures global/regional seismic events and harmonic tremors
+OBSBK,A,01,OBSBK Series A Sub 01,ECRs that changed the count,
+OBSBK,A,01,OBSBK Series A Sub 01,Global Spares,
+OBSBK,A,01,OBSBK Series A Sub 01,Instrument Configuration,
+OBSBK,A,01,OBSBK Series A Sub 01,Link to the Specification,
+OBSBK,A,01,OBSBK Series A Sub 01,Notes,
+OBSBK,A,01,OBSBK Series A Sub 01,PrimaryScienceDiscipline,G
+OBSBK,A,01,OBSBK Series A Sub 01,Ready for 2013?,
+OBSBK,A,01,OBSBK Series A Sub 01,RSN O&M Spares,0
+OBSBK,A,01,OBSBK Series A Sub 01,RSN Part Number,4830-58329
+OBSBK,A,01,OBSBK Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OBSSK,A,01,OBSSK Series A Sub 01,2009 Baseline Price*,
+OBSSK,A,01,OBSSK Series A Sub 01,2009 Deployed Instrument Count,
+OBSSK,A,01,OBSSK Series A Sub 01,Alternate Instrument Class Name,Short-Period Ocean Bottom Seismometer
+OBSSK,A,01,OBSSK Series A Sub 01,CE Spares,
+OBSSK,A,01,OBSSK Series A Sub 01,CGSN MREFC Spares,
+OBSSK,A,01,OBSSK Series A Sub 01,CGSN O&M Spares,
+OBSSK,A,01,OBSSK Series A Sub 01,CGSN P/N,
+OBSSK,A,01,OBSSK Series A Sub 01,ClassLongName,Seismometer_shortperiod_keck
+OBSSK,A,01,OBSSK Series A Sub 01,Comments,
+OBSSK,A,01,OBSSK Series A Sub 01,CP Spares,
+OBSSK,A,01,OBSSK Series A Sub 01,Description,Seismometer_shortperiod_keck
+OBSSK,A,01,OBSSK Series A Sub 01,ECRs that changed the count,
+OBSSK,A,01,OBSSK Series A Sub 01,Global Spares,
+OBSSK,A,01,OBSSK Series A Sub 01,Instrument Configuration,
+OBSSK,A,01,OBSSK Series A Sub 01,Link to the Specification,
+OBSSK,A,01,OBSSK Series A Sub 01,Notes,
+OBSSK,A,01,OBSSK Series A Sub 01,PrimaryScienceDiscipline,G
+OBSSK,A,01,OBSSK Series A Sub 01,Ready for 2013?,
+OBSSK,A,01,OBSSK Series A Sub 01,RSN O&M Spares,0
+OBSSK,A,01,OBSSK Series A Sub 01,RSN Part Number,4830-58330
+OBSSK,A,01,OBSSK Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OBSSP,A,01,OBSSP Series A Sub 01,2009 Baseline Price*,
+OBSSP,A,01,OBSSP Series A Sub 01,2009 Deployed Instrument Count,9
+OBSSP,A,01,OBSSP Series A Sub 01,Alternate Instrument Class Name,Short-Period Ocean Bottom Seismometer
+OBSSP,A,01,OBSSP Series A Sub 01,CE Spares,
+OBSSP,A,01,OBSSP Series A Sub 01,CGSN MREFC Spares,
+OBSSP,A,01,OBSSP Series A Sub 01,CGSN O&M Spares,
+OBSSP,A,01,OBSSP Series A Sub 01,CGSN P/N,
+OBSSP,A,01,OBSSP Series A Sub 01,ClassLongName,Seismometer_shortperiod
+OBSSP,A,01,OBSSP Series A Sub 01,Comments,
+OBSSP,A,01,OBSSP Series A Sub 01,CP Spares,
+OBSSP,A,01,OBSSP Series A Sub 01,Description,Measures regional/local seismic activity
+OBSSP,A,01,OBSSP Series A Sub 01,ECRs that changed the count,
+OBSSP,A,01,OBSSP Series A Sub 01,Global Spares,
+OBSSP,A,01,OBSSP Series A Sub 01,Instrument Configuration,
+OBSSP,A,01,OBSSP Series A Sub 01,Link to the Specification,
+OBSSP,A,01,OBSSP Series A Sub 01,Notes,
+OBSSP,A,01,OBSSP Series A Sub 01,PrimaryScienceDiscipline,G
+OBSSP,A,01,OBSSP Series A Sub 01,Ready for 2013?,
+OBSSP,A,01,OBSSP Series A Sub 01,RSN O&M Spares,2
+OBSSP,A,01,OBSSP Series A Sub 01,RSN Part Number,4830-58331
+OBSSP,A,01,OBSSP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OPTAA,0,01,OPTAA Series 0 Sub 01,2009 Baseline Price*,"$17,500.00"
+OPTAA,0,01,OPTAA Series 0 Sub 01,2009 Deployed Instrument Count,35
+OPTAA,0,01,OPTAA Series 0 Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
+OPTAA,0,01,OPTAA Series 0 Sub 01,CE Spares,
+OPTAA,0,01,OPTAA Series 0 Sub 01,CGSN MREFC Spares,
+OPTAA,0,01,OPTAA Series 0 Sub 01,CGSN O&M Spares,
+OPTAA,0,01,OPTAA Series 0 Sub 01,CGSN P/N,
+OPTAA,0,01,OPTAA Series 0 Sub 01,ClassLongName,attenuation_absorption_optical
+OPTAA,0,01,OPTAA Series 0 Sub 01,Comments,
+OPTAA,0,01,OPTAA Series 0 Sub 01,CP Spares,
+OPTAA,0,01,OPTAA Series 0 Sub 01,Description,Measures optical attenuation and absorption
+OPTAA,0,01,OPTAA Series 0 Sub 01,ECRs that changed the count,
+OPTAA,0,01,OPTAA Series 0 Sub 01,Global Spares,
+OPTAA,0,01,OPTAA Series 0 Sub 01,Instrument Configuration,
+OPTAA,0,01,OPTAA Series 0 Sub 01,Link to the Specification,
+OPTAA,0,01,OPTAA Series 0 Sub 01,Notes,
+OPTAA,0,01,OPTAA Series 0 Sub 01,PrimaryScienceDiscipline,B
+OPTAA,0,01,OPTAA Series 0 Sub 01,Ready for 2013?,
+OPTAA,0,01,OPTAA Series 0 Sub 01,RSN O&M Spares,
+OPTAA,0,01,OPTAA Series 0 Sub 01,RSN Part Number,
+OPTAA,0,01,OPTAA Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OPTAA,A,01,OPTAA Series A Sub 01,2009 Baseline Price*,"$17,500.00"
+OPTAA,A,01,OPTAA Series A Sub 01,2009 Deployed Instrument Count,35
+OPTAA,A,01,OPTAA Series A Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
+OPTAA,A,01,OPTAA Series A Sub 01,CE Spares,
+OPTAA,A,01,OPTAA Series A Sub 01,CGSN MREFC Spares,
+OPTAA,A,01,OPTAA Series A Sub 01,CGSN O&M Spares,
+OPTAA,A,01,OPTAA Series A Sub 01,CGSN P/N,
+OPTAA,A,01,OPTAA Series A Sub 01,ClassLongName,attenuation_absorption_optical
+OPTAA,A,01,OPTAA Series A Sub 01,Comments,
+OPTAA,A,01,OPTAA Series A Sub 01,CP Spares,
+OPTAA,A,01,OPTAA Series A Sub 01,Description,Measures optical attenuation and absorption
+OPTAA,A,01,OPTAA Series A Sub 01,ECRs that changed the count,
+OPTAA,A,01,OPTAA Series A Sub 01,Global Spares,
+OPTAA,A,01,OPTAA Series A Sub 01,Instrument Configuration,WET Labs AC-S
+OPTAA,A,01,OPTAA Series A Sub 01,Link to the Specification,
+OPTAA,A,01,OPTAA Series A Sub 01,Notes,
+OPTAA,A,01,OPTAA Series A Sub 01,PrimaryScienceDiscipline,B
+OPTAA,A,01,OPTAA Series A Sub 01,Ready for 2013?,
+OPTAA,A,01,OPTAA Series A Sub 01,RSN O&M Spares,1
+OPTAA,A,01,OPTAA Series A Sub 01,RSN Part Number,4830-58332
+OPTAA,A,01,OPTAA Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OPTAA,B,01,OPTAA Series B Sub 01,2009 Baseline Price*,"$17,500.00"
+OPTAA,B,01,OPTAA Series B Sub 01,2009 Deployed Instrument Count,35
+OPTAA,B,01,OPTAA Series B Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
+OPTAA,B,01,OPTAA Series B Sub 01,CE Spares,
+OPTAA,B,01,OPTAA Series B Sub 01,CGSN MREFC Spares,
+OPTAA,B,01,OPTAA Series B Sub 01,CGSN O&M Spares,
+OPTAA,B,01,OPTAA Series B Sub 01,CGSN P/N,
+OPTAA,B,01,OPTAA Series B Sub 01,ClassLongName,attenuation_absorption_optical
+OPTAA,B,01,OPTAA Series B Sub 01,Comments,
+OPTAA,B,01,OPTAA Series B Sub 01,CP Spares,
+OPTAA,B,01,OPTAA Series B Sub 01,Description,Measures optical attenuation and absorption
+OPTAA,B,01,OPTAA Series B Sub 01,ECRs that changed the count,
+OPTAA,B,01,OPTAA Series B Sub 01,Global Spares,
+OPTAA,B,01,OPTAA Series B Sub 01,Instrument Configuration,
+OPTAA,B,01,OPTAA Series B Sub 01,Link to the Specification,
+OPTAA,B,01,OPTAA Series B Sub 01,Notes,
+OPTAA,B,01,OPTAA Series B Sub 01,PrimaryScienceDiscipline,B
+OPTAA,B,01,OPTAA Series B Sub 01,Ready for 2013?,
+OPTAA,B,01,OPTAA Series B Sub 01,RSN O&M Spares,1
+OPTAA,B,01,OPTAA Series B Sub 01,RSN Part Number,
+OPTAA,B,01,OPTAA Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OPTAA,C,01,OPTAA Series C Sub 01,2009 Baseline Price*,"$17,500.00"
+OPTAA,C,01,OPTAA Series C Sub 01,2009 Deployed Instrument Count,35
+OPTAA,C,01,OPTAA Series C Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
+OPTAA,C,01,OPTAA Series C Sub 01,CE Spares,1
+OPTAA,C,01,OPTAA Series C Sub 01,CGSN MREFC Spares,1
+OPTAA,C,01,OPTAA Series C Sub 01,CGSN O&M Spares,
+OPTAA,C,01,OPTAA Series C Sub 01,CGSN P/N,1336-00007-00003
+OPTAA,C,01,OPTAA Series C Sub 01,ClassLongName,attenuation_absorption_optical
+OPTAA,C,01,OPTAA Series C Sub 01,Comments,
+OPTAA,C,01,OPTAA Series C Sub 01,CP Spares,
+OPTAA,C,01,OPTAA Series C Sub 01,Description,Measures optical attenuation and absorption
+OPTAA,C,01,OPTAA Series C Sub 01,ECRs that changed the count,
+OPTAA,C,01,OPTAA Series C Sub 01,Global Spares,
+OPTAA,C,01,OPTAA Series C Sub 01,Instrument Configuration,WET Labs AC-S Deep
+OPTAA,C,01,OPTAA Series C Sub 01,Link to the Specification,
+OPTAA,C,01,OPTAA Series C Sub 01,Notes,
+OPTAA,C,01,OPTAA Series C Sub 01,PrimaryScienceDiscipline,B
+OPTAA,C,01,OPTAA Series C Sub 01,Ready for 2013?,
+OPTAA,C,01,OPTAA Series C Sub 01,RSN O&M Spares,
+OPTAA,C,01,OPTAA Series C Sub 01,RSN Part Number,
+OPTAA,C,01,OPTAA Series C Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OPTAA,D,01,OPTAA Series D Sub 01,2009 Baseline Price*,"$17,500.00"
+OPTAA,D,01,OPTAA Series D Sub 01,2009 Deployed Instrument Count,35
+OPTAA,D,01,OPTAA Series D Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
+OPTAA,D,01,OPTAA Series D Sub 01,CE Spares,2
+OPTAA,D,01,OPTAA Series D Sub 01,CGSN MREFC Spares,1
+OPTAA,D,01,OPTAA Series D Sub 01,CGSN O&M Spares,2
+OPTAA,D,01,OPTAA Series D Sub 01,CGSN P/N,1336-00007-00004
+OPTAA,D,01,OPTAA Series D Sub 01,ClassLongName,attenuation_absorption_optical
+OPTAA,D,01,OPTAA Series D Sub 01,Comments,
+OPTAA,D,01,OPTAA Series D Sub 01,CP Spares,1
+OPTAA,D,01,OPTAA Series D Sub 01,Description,Measures optical attenuation and absorption
+OPTAA,D,01,OPTAA Series D Sub 01,ECRs that changed the count,
+OPTAA,D,01,OPTAA Series D Sub 01,Global Spares,
+OPTAA,D,01,OPTAA Series D Sub 01,Instrument Configuration,WET Labs AC-S Deep
+OPTAA,D,01,OPTAA Series D Sub 01,Link to the Specification,
+OPTAA,D,01,OPTAA Series D Sub 01,Notes,
+OPTAA,D,01,OPTAA Series D Sub 01,PrimaryScienceDiscipline,B
+OPTAA,D,01,OPTAA Series D Sub 01,Ready for 2013?,
+OPTAA,D,01,OPTAA Series D Sub 01,RSN O&M Spares,
+OPTAA,D,01,OPTAA Series D Sub 01,RSN Part Number,
+OPTAA,D,01,OPTAA Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OSMOI,A,01,OSMOI Series A Sub 01,2009 Baseline Price*,
+OSMOI,A,01,OSMOI Series A Sub 01,2009 Deployed Instrument Count,2
+OSMOI,A,01,OSMOI Series A Sub 01,Alternate Instrument Class Name,Osmosis-Based Water Sampler
+OSMOI,A,01,OSMOI Series A Sub 01,CE Spares,
+OSMOI,A,01,OSMOI Series A Sub 01,CGSN MREFC Spares,
+OSMOI,A,01,OSMOI Series A Sub 01,CGSN O&M Spares,
+OSMOI,A,01,OSMOI Series A Sub 01,CGSN P/N,
+OSMOI,A,01,OSMOI Series A Sub 01,ClassLongName,watersample_chem_trace
+OSMOI,A,01,OSMOI Series A Sub 01,Comments,
+OSMOI,A,01,OSMOI Series A Sub 01,CP Spares,
+OSMOI,A,01,OSMOI Series A Sub 01,Description,Collecting samples of diffuse flow and seep fluids for major/trace element chemistry
+OSMOI,A,01,OSMOI Series A Sub 01,ECRs that changed the count,
+OSMOI,A,01,OSMOI Series A Sub 01,Global Spares,
+OSMOI,A,01,OSMOI Series A Sub 01,Instrument Configuration,
+OSMOI,A,01,OSMOI Series A Sub 01,Link to the Specification,
+OSMOI,A,01,OSMOI Series A Sub 01,Notes,
+OSMOI,A,01,OSMOI Series A Sub 01,PrimaryScienceDiscipline,C
+OSMOI,A,01,OSMOI Series A Sub 01,Ready for 2013?,
+OSMOI,A,01,OSMOI Series A Sub 01,RSN O&M Spares,1
+OSMOI,A,01,OSMOI Series A Sub 01,RSN Part Number,4830-58333
+OSMOI,A,01,OSMOI Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PARAD,0,01,PARAD Series 0 Sub 01,2009 Baseline Price*,
+PARAD,0,01,PARAD Series 0 Sub 01,2009 Deployed Instrument Count,21
+PARAD,0,01,PARAD Series 0 Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
+PARAD,0,01,PARAD Series 0 Sub 01,CE Spares,
+PARAD,0,01,PARAD Series 0 Sub 01,CGSN MREFC Spares,
+PARAD,0,01,PARAD Series 0 Sub 01,CGSN O&M Spares,
+PARAD,0,01,PARAD Series 0 Sub 01,CGSN P/N,
+PARAD,0,01,PARAD Series 0 Sub 01,ClassLongName,PAR
+PARAD,0,01,PARAD Series 0 Sub 01,Comments,
+PARAD,0,01,PARAD Series 0 Sub 01,CP Spares,
+PARAD,0,01,PARAD Series 0 Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
+PARAD,0,01,PARAD Series 0 Sub 01,ECRs that changed the count,
+PARAD,0,01,PARAD Series 0 Sub 01,Global Spares,
+PARAD,0,01,PARAD Series 0 Sub 01,Instrument Configuration,
+PARAD,0,01,PARAD Series 0 Sub 01,Link to the Specification,
+PARAD,0,01,PARAD Series 0 Sub 01,Notes,
+PARAD,0,01,PARAD Series 0 Sub 01,PrimaryScienceDiscipline,B
+PARAD,0,01,PARAD Series 0 Sub 01,Ready for 2013?,
+PARAD,0,01,PARAD Series 0 Sub 01,RSN O&M Spares,
+PARAD,0,01,PARAD Series 0 Sub 01,RSN Part Number,
+PARAD,0,01,PARAD Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PARAD,1,01,PARAD Series TBD Sub 01,2009 Baseline Price*,
+PARAD,1,01,PARAD Series TBD Sub 01,2009 Deployed Instrument Count,21
+PARAD,1,01,PARAD Series TBD Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
+PARAD,1,01,PARAD Series TBD Sub 01,CE Spares,
+PARAD,1,01,PARAD Series TBD Sub 01,CGSN MREFC Spares,
+PARAD,1,01,PARAD Series TBD Sub 01,CGSN O&M Spares,
+PARAD,1,01,PARAD Series TBD Sub 01,CGSN P/N,
+PARAD,1,01,PARAD Series TBD Sub 01,ClassLongName,PAR
+PARAD,1,01,PARAD Series TBD Sub 01,Comments,
+PARAD,1,01,PARAD Series TBD Sub 01,CP Spares,
+PARAD,1,01,PARAD Series TBD Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
+PARAD,1,01,PARAD Series TBD Sub 01,ECRs that changed the count,
+PARAD,1,01,PARAD Series TBD Sub 01,Global Spares,
+PARAD,1,01,PARAD Series TBD Sub 01,Instrument Configuration,
+PARAD,1,01,PARAD Series TBD Sub 01,Link to the Specification,
+PARAD,1,01,PARAD Series TBD Sub 01,Notes,
+PARAD,1,01,PARAD Series TBD Sub 01,PrimaryScienceDiscipline,B
+PARAD,1,01,PARAD Series TBD Sub 01,Ready for 2013?,
+PARAD,1,01,PARAD Series TBD Sub 01,RSN O&M Spares,
+PARAD,1,01,PARAD Series TBD Sub 01,RSN Part Number,
+PARAD,1,01,PARAD Series TBD Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PARAD,A,01,PARAD Series A Sub 01,2009 Baseline Price*,
+PARAD,A,01,PARAD Series A Sub 01,2009 Deployed Instrument Count,21
+PARAD,A,01,PARAD Series A Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
+PARAD,A,01,PARAD Series A Sub 01,CE Spares,
+PARAD,A,01,PARAD Series A Sub 01,CGSN MREFC Spares,
+PARAD,A,01,PARAD Series A Sub 01,CGSN O&M Spares,
+PARAD,A,01,PARAD Series A Sub 01,CGSN P/N,
+PARAD,A,01,PARAD Series A Sub 01,ClassLongName,PAR
+PARAD,A,01,PARAD Series A Sub 01,Comments,
+PARAD,A,01,PARAD Series A Sub 01,CP Spares,
+PARAD,A,01,PARAD Series A Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
+PARAD,A,01,PARAD Series A Sub 01,ECRs that changed the count,
+PARAD,A,01,PARAD Series A Sub 01,Global Spares,
+PARAD,A,01,PARAD Series A Sub 01,Instrument Configuration,Satlantic digital PAR?
+PARAD,A,01,PARAD Series A Sub 01,Link to the Specification,
+PARAD,A,01,PARAD Series A Sub 01,Notes,
+PARAD,A,01,PARAD Series A Sub 01,PrimaryScienceDiscipline,B
+PARAD,A,01,PARAD Series A Sub 01,Ready for 2013?,
+PARAD,A,01,PARAD Series A Sub 01,RSN O&M Spares,1
+PARAD,A,01,PARAD Series A Sub 01,RSN Part Number,4830-66645
+PARAD,A,01,PARAD Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PARAD,K,01,PARAD Series K Sub 01,2009 Baseline Price*,
+PARAD,K,01,PARAD Series K Sub 01,2009 Deployed Instrument Count,21
+PARAD,K,01,PARAD Series K Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
+PARAD,K,01,PARAD Series K Sub 01,CE Spares,
+PARAD,K,01,PARAD Series K Sub 01,CGSN MREFC Spares,
+PARAD,K,01,PARAD Series K Sub 01,CGSN O&M Spares,
+PARAD,K,01,PARAD Series K Sub 01,CGSN P/N,1331-00005-00001
+PARAD,K,01,PARAD Series K Sub 01,ClassLongName,PAR
+PARAD,K,01,PARAD Series K Sub 01,Comments,McLane P/N: 200-1011 (?)
+PARAD,K,01,PARAD Series K Sub 01,CP Spares,
+PARAD,K,01,PARAD Series K Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
+PARAD,K,01,PARAD Series K Sub 01,ECRs that changed the count,
+PARAD,K,01,PARAD Series K Sub 01,Global Spares,
+PARAD,K,01,PARAD Series K Sub 01,Instrument Configuration,Biospherical QSP-2200
+PARAD,K,01,PARAD Series K Sub 01,Link to the Specification,
+PARAD,K,01,PARAD Series K Sub 01,Notes,
+PARAD,K,01,PARAD Series K Sub 01,PrimaryScienceDiscipline,B
+PARAD,K,01,PARAD Series K Sub 01,Ready for 2013?,
+PARAD,K,01,PARAD Series K Sub 01,RSN O&M Spares,
+PARAD,K,01,PARAD Series K Sub 01,RSN Part Number,
+PARAD,K,01,PARAD Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PARAD,M,01,PARAD Series M Sub 01,2009 Baseline Price*,
+PARAD,M,01,PARAD Series M Sub 01,2009 Deployed Instrument Count,21
+PARAD,M,01,PARAD Series M Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
+PARAD,M,01,PARAD Series M Sub 01,CE Spares,
+PARAD,M,01,PARAD Series M Sub 01,CGSN MREFC Spares,
+PARAD,M,01,PARAD Series M Sub 01,CGSN O&M Spares,
+PARAD,M,01,PARAD Series M Sub 01,CGSN P/N,1331-00005-00002
+PARAD,M,01,PARAD Series M Sub 01,ClassLongName,PAR
+PARAD,M,01,PARAD Series M Sub 01,Comments,TWR P/N: 4333 Rev. 01
+PARAD,M,01,PARAD Series M Sub 01,CP Spares,
+PARAD,M,01,PARAD Series M Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
+PARAD,M,01,PARAD Series M Sub 01,ECRs that changed the count,
+PARAD,M,01,PARAD Series M Sub 01,Global Spares,
+PARAD,M,01,PARAD Series M Sub 01,Instrument Configuration,Biospherical QSP-2155
+PARAD,M,01,PARAD Series M Sub 01,Link to the Specification,
+PARAD,M,01,PARAD Series M Sub 01,Notes,
+PARAD,M,01,PARAD Series M Sub 01,PrimaryScienceDiscipline,B
+PARAD,M,01,PARAD Series M Sub 01,Ready for 2013?,
+PARAD,M,01,PARAD Series M Sub 01,RSN O&M Spares,
+PARAD,M,01,PARAD Series M Sub 01,RSN Part Number,
+PARAD,M,01,PARAD Series M Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PARAD,N,01,PARAD Series N Sub 01,2009 Baseline Price*,
+PARAD,N,01,PARAD Series N Sub 01,2009 Deployed Instrument Count,21
+PARAD,N,01,PARAD Series N Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
+PARAD,N,01,PARAD Series N Sub 01,CE Spares,
+PARAD,N,01,PARAD Series N Sub 01,CGSN MREFC Spares,
+PARAD,N,01,PARAD Series N Sub 01,CGSN O&M Spares,
+PARAD,N,01,PARAD Series N Sub 01,CGSN P/N,1331-00005-00003
+PARAD,N,01,PARAD Series N Sub 01,ClassLongName,PAR
+PARAD,N,01,PARAD Series N Sub 01,Comments,Hydroid P/N: 60-167
+PARAD,N,01,PARAD Series N Sub 01,CP Spares,
+PARAD,N,01,PARAD Series N Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
+PARAD,N,01,PARAD Series N Sub 01,ECRs that changed the count,
+PARAD,N,01,PARAD Series N Sub 01,Global Spares,
+PARAD,N,01,PARAD Series N Sub 01,Instrument Configuration,Biospherical QSP-2150
+PARAD,N,01,PARAD Series N Sub 01,Link to the Specification,
+PARAD,N,01,PARAD Series N Sub 01,Notes,
+PARAD,N,01,PARAD Series N Sub 01,PrimaryScienceDiscipline,B
+PARAD,N,01,PARAD Series N Sub 01,Ready for 2013?,
+PARAD,N,01,PARAD Series N Sub 01,RSN O&M Spares,
+PARAD,N,01,PARAD Series N Sub 01,RSN Part Number,
+PARAD,N,01,PARAD Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PCO2A,A,01,PCO2A Series A Sub 01,2009 Baseline Price*,"$39,300.00"
+PCO2A,A,01,PCO2A Series A Sub 01,2009 Deployed Instrument Count,10
+PCO2A,A,01,PCO2A Series A Sub 01,Alternate Instrument Class Name,pCO2 Air-Sea
+PCO2A,A,01,PCO2A Series A Sub 01,CE Spares,1
+PCO2A,A,01,PCO2A Series A Sub 01,CGSN MREFC Spares,2
+PCO2A,A,01,PCO2A Series A Sub 01,CGSN O&M Spares,2
+PCO2A,A,01,PCO2A Series A Sub 01,CGSN P/N,3305-00006-00001
+PCO2A,A,01,PCO2A Series A Sub 01,ClassLongName,pCO2_air-sea
+PCO2A,A,01,PCO2A Series A Sub 01,Comments,
+PCO2A,A,01,PCO2A Series A Sub 01,CP Spares,1
+PCO2A,A,01,PCO2A Series A Sub 01,Description,Measures partial pressure of CO2 at the air-sea interface
+PCO2A,A,01,PCO2A Series A Sub 01,ECRs that changed the count,
+PCO2A,A,01,PCO2A Series A Sub 01,Global Spares,2
+PCO2A,A,01,PCO2A Series A Sub 01,Instrument Configuration,Pro-Oceanus pCO2-pro
+PCO2A,A,01,PCO2A Series A Sub 01,Link to the Specification,
+PCO2A,A,01,PCO2A Series A Sub 01,Notes,
+PCO2A,A,01,PCO2A Series A Sub 01,PrimaryScienceDiscipline,C
+PCO2A,A,01,PCO2A Series A Sub 01,Ready for 2013?,
+PCO2A,A,01,PCO2A Series A Sub 01,RSN O&M Spares,
+PCO2A,A,01,PCO2A Series A Sub 01,RSN Part Number,
+PCO2A,A,01,PCO2A Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",PSI CO2-Pro w/ Atmosphere option PCO2/ATM-50A(P)
+PCO2W,0,01,PCO2W Series 0 Sub 01,2009 Baseline Price*,"$18,375.00"
+PCO2W,0,01,PCO2W Series 0 Sub 01,2009 Deployed Instrument Count,25
+PCO2W,0,01,PCO2W Series 0 Sub 01,Alternate Instrument Class Name,pCO2 Water
+PCO2W,0,01,PCO2W Series 0 Sub 01,CE Spares,
+PCO2W,0,01,PCO2W Series 0 Sub 01,CGSN MREFC Spares,
+PCO2W,0,01,PCO2W Series 0 Sub 01,CGSN O&M Spares,
+PCO2W,0,01,PCO2W Series 0 Sub 01,CGSN P/N,
+PCO2W,0,01,PCO2W Series 0 Sub 01,ClassLongName,pCO2_water
+PCO2W,0,01,PCO2W Series 0 Sub 01,Comments,
+PCO2W,0,01,PCO2W Series 0 Sub 01,CP Spares,
+PCO2W,0,01,PCO2W Series 0 Sub 01,Description,Measures partial pressure of CO2 in the water column
+PCO2W,0,01,PCO2W Series 0 Sub 01,ECRs that changed the count,
+PCO2W,0,01,PCO2W Series 0 Sub 01,Global Spares,
+PCO2W,0,01,PCO2W Series 0 Sub 01,Instrument Configuration,
+PCO2W,0,01,PCO2W Series 0 Sub 01,Link to the Specification,
+PCO2W,0,01,PCO2W Series 0 Sub 01,Notes,
+PCO2W,0,01,PCO2W Series 0 Sub 01,PrimaryScienceDiscipline,C
+PCO2W,0,01,PCO2W Series 0 Sub 01,Ready for 2013?,
+PCO2W,0,01,PCO2W Series 0 Sub 01,RSN O&M Spares,
+PCO2W,0,01,PCO2W Series 0 Sub 01,RSN Part Number,
+PCO2W,0,01,PCO2W Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PCO2W,A,01,PCO2W Series A Sub 01,2009 Baseline Price*,"$18,375.00"
+PCO2W,A,01,PCO2W Series A Sub 01,2009 Deployed Instrument Count,25
+PCO2W,A,01,PCO2W Series A Sub 01,Alternate Instrument Class Name,pCO2 Water
+PCO2W,A,01,PCO2W Series A Sub 01,CE Spares,
+PCO2W,A,01,PCO2W Series A Sub 01,CGSN MREFC Spares,
+PCO2W,A,01,PCO2W Series A Sub 01,CGSN O&M Spares,
+PCO2W,A,01,PCO2W Series A Sub 01,CGSN P/N,1336-00012-00001
+PCO2W,A,01,PCO2W Series A Sub 01,ClassLongName,pCO2_water
+PCO2W,A,01,PCO2W Series A Sub 01,Comments,
+PCO2W,A,01,PCO2W Series A Sub 01,CP Spares,
+PCO2W,A,01,PCO2W Series A Sub 01,Description,Measures partial pressure of CO2 in the water column
+PCO2W,A,01,PCO2W Series A Sub 01,ECRs that changed the count,
+PCO2W,A,01,PCO2W Series A Sub 01,Global Spares,
+PCO2W,A,01,PCO2W Series A Sub 01,Instrument Configuration,Sunburst SAMI-pCO2 (MCBH connector option) passive bio-fouling included
+PCO2W,A,01,PCO2W Series A Sub 01,Link to the Specification,
+PCO2W,A,01,PCO2W Series A Sub 01,Notes,
+PCO2W,A,01,PCO2W Series A Sub 01,PrimaryScienceDiscipline,C
+PCO2W,A,01,PCO2W Series A Sub 01,Ready for 2013?,
+PCO2W,A,01,PCO2W Series A Sub 01,RSN O&M Spares,1
+PCO2W,A,01,PCO2W Series A Sub 01,RSN Part Number,4830-58336
+PCO2W,A,01,PCO2W Series A Sub 01,"Vendor CLIN, SubCLIN or Model #","PCY301 SAMI-CO2 (1.4 L), PCY317 Wet-plug, PCY324 Case"
+PCO2W,B,01,PCO2W Series B Sub 01,2009 Baseline Price*,"$18,375.00"
+PCO2W,B,01,PCO2W Series B Sub 01,2009 Deployed Instrument Count,25
+PCO2W,B,01,PCO2W Series B Sub 01,Alternate Instrument Class Name,pCO2 Water
+PCO2W,B,01,PCO2W Series B Sub 01,CE Spares,2
+PCO2W,B,01,PCO2W Series B Sub 01,CGSN MREFC Spares,1
+PCO2W,B,01,PCO2W Series B Sub 01,CGSN O&M Spares,2
+PCO2W,B,01,PCO2W Series B Sub 01,CGSN P/N,1336-00012-00002
+PCO2W,B,01,PCO2W Series B Sub 01,ClassLongName,pCO2_water
+PCO2W,B,01,PCO2W Series B Sub 01,Comments,Biofouling uses SBE 5M pump 1 liter bag for reagent
+PCO2W,B,01,PCO2W Series B Sub 01,CP Spares,1
+PCO2W,B,01,PCO2W Series B Sub 01,Description,Measures partial pressure of CO2 in the water column
+PCO2W,B,01,PCO2W Series B Sub 01,ECRs that changed the count,
+PCO2W,B,01,PCO2W Series B Sub 01,Global Spares,
+PCO2W,B,01,PCO2W Series B Sub 01,Instrument Configuration,"Sunburst SAMI-pCO2 (MCBH connector option) passive bio-fouling included (reagent bag will last for 1 year, with hourly samples)"
+PCO2W,B,01,PCO2W Series B Sub 01,Link to the Specification,
+PCO2W,B,01,PCO2W Series B Sub 01,Notes,
+PCO2W,B,01,PCO2W Series B Sub 01,PrimaryScienceDiscipline,C
+PCO2W,B,01,PCO2W Series B Sub 01,Ready for 2013?,
+PCO2W,B,01,PCO2W Series B Sub 01,RSN O&M Spares,
+PCO2W,B,01,PCO2W Series B Sub 01,RSN Part Number,
+PCO2W,B,01,PCO2W Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","PCYD01 SAMI-CO2 (1 L), PCYD12 foul-pkg, PCYD17 Wet-plug, PCYD24 Case, (D = 1 for WHOI, 3 for OSU)"
+PHSEN,A,01,PHSEN Series A Sub 01,2009 Baseline Price*,"$17,500.00"
+PHSEN,A,01,PHSEN Series A Sub 01,2009 Deployed Instrument Count,33
+PHSEN,A,01,PHSEN Series A Sub 01,Alternate Instrument Class Name,Seawater pH
+PHSEN,A,01,PHSEN Series A Sub 01,CE Spares,
+PHSEN,A,01,PHSEN Series A Sub 01,CGSN MREFC Spares,
+PHSEN,A,01,PHSEN Series A Sub 01,CGSN O&M Spares,
+PHSEN,A,01,PHSEN Series A Sub 01,CGSN P/N,
+PHSEN,A,01,PHSEN Series A Sub 01,ClassLongName,pH_stable
+PHSEN,A,01,PHSEN Series A Sub 01,Comments,Reagent-based measurement of pH in seawater
+PHSEN,A,01,PHSEN Series A Sub 01,CP Spares,
+PHSEN,A,01,PHSEN Series A Sub 01,Description,pH
+PHSEN,A,01,PHSEN Series A Sub 01,ECRs that changed the count,
+PHSEN,A,01,PHSEN Series A Sub 01,Global Spares,
+PHSEN,A,01,PHSEN Series A Sub 01,Instrument Configuration,"[SAMI2 pH, Current client revision is 1.06 and f/w is 46, though these will soon rev|http://www.sunburstsensors.com/SAMI_prod.html]"
+PHSEN,A,01,PHSEN Series A Sub 01,Link to the Specification,
+PHSEN,A,01,PHSEN Series A Sub 01,Notes,
+PHSEN,A,01,PHSEN Series A Sub 01,PrimaryScienceDiscipline,C
+PHSEN,A,01,PHSEN Series A Sub 01,Ready for 2013?,
+PHSEN,A,01,PHSEN Series A Sub 01,RSN O&M Spares,1
+PHSEN,A,01,PHSEN Series A Sub 01,RSN Part Number,4830-58337
+PHSEN,A,01,PHSEN Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PHSEN,B,01,PHSEN Series B Sub 01,2009 Baseline Price*,"$17,500.00"
+PHSEN,B,01,PHSEN Series B Sub 01,2009 Deployed Instrument Count,33
+PHSEN,B,01,PHSEN Series B Sub 01,Alternate Instrument Class Name,Seawater pH
+PHSEN,B,01,PHSEN Series B Sub 01,CE Spares,
+PHSEN,B,01,PHSEN Series B Sub 01,CGSN MREFC Spares,
+PHSEN,B,01,PHSEN Series B Sub 01,CGSN O&M Spares,
+PHSEN,B,01,PHSEN Series B Sub 01,CGSN P/N,
+PHSEN,B,01,PHSEN Series B Sub 01,ClassLongName,pH_stable
+PHSEN,B,01,PHSEN Series B Sub 01,Comments,
+PHSEN,B,01,PHSEN Series B Sub 01,CP Spares,
+PHSEN,B,01,PHSEN Series B Sub 01,Description,pH
+PHSEN,B,01,PHSEN Series B Sub 01,ECRs that changed the count,
+PHSEN,B,01,PHSEN Series B Sub 01,Global Spares,
+PHSEN,B,01,PHSEN Series B Sub 01,Instrument Configuration,Sunburst SAMI-pH (MCBH connector option)
+PHSEN,B,01,PHSEN Series B Sub 01,Link to the Specification,
+PHSEN,B,01,PHSEN Series B Sub 01,Notes,
+PHSEN,B,01,PHSEN Series B Sub 01,PrimaryScienceDiscipline,C
+PHSEN,B,01,PHSEN Series B Sub 01,Ready for 2013?,
+PHSEN,B,01,PHSEN Series B Sub 01,RSN O&M Spares,
+PHSEN,B,01,PHSEN Series B Sub 01,RSN Part Number,
+PHSEN,B,01,PHSEN Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","PHY304 SAMI-pH (1.5 L), PHY318 Wet-plug, PHY324 Case"
+PHSEN,C,01,PHSEN Series C Sub 01,2009 Baseline Price*,"$17,500.00"
+PHSEN,C,01,PHSEN Series C Sub 01,2009 Deployed Instrument Count,33
+PHSEN,C,01,PHSEN Series C Sub 01,Alternate Instrument Class Name,Seawater pH
+PHSEN,C,01,PHSEN Series C Sub 01,CE Spares,
+PHSEN,C,01,PHSEN Series C Sub 01,CGSN MREFC Spares,
+PHSEN,C,01,PHSEN Series C Sub 01,CGSN O&M Spares,
+PHSEN,C,01,PHSEN Series C Sub 01,CGSN P/N,
+PHSEN,C,01,PHSEN Series C Sub 01,ClassLongName,pH_stable
+PHSEN,C,01,PHSEN Series C Sub 01,Comments,
+PHSEN,C,01,PHSEN Series C Sub 01,CP Spares,
+PHSEN,C,01,PHSEN Series C Sub 01,Description,pH
+PHSEN,C,01,PHSEN Series C Sub 01,ECRs that changed the count,
+PHSEN,C,01,PHSEN Series C Sub 01,Global Spares,
+PHSEN,C,01,PHSEN Series C Sub 01,Instrument Configuration,
+PHSEN,C,01,PHSEN Series C Sub 01,Link to the Specification,
+PHSEN,C,01,PHSEN Series C Sub 01,Notes,
+PHSEN,C,01,PHSEN Series C Sub 01,PrimaryScienceDiscipline,C
+PHSEN,C,01,PHSEN Series C Sub 01,Ready for 2013?,
+PHSEN,C,01,PHSEN Series C Sub 01,RSN O&M Spares,
+PHSEN,C,01,PHSEN Series C Sub 01,RSN Part Number,
+PHSEN,C,01,PHSEN Series C Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PHSEN,D,01,PHSEN Series D Sub 01,2009 Baseline Price*,"$17,500.00"
+PHSEN,D,01,PHSEN Series D Sub 01,2009 Deployed Instrument Count,33
+PHSEN,D,01,PHSEN Series D Sub 01,Alternate Instrument Class Name,Seawater pH
+PHSEN,D,01,PHSEN Series D Sub 01,CE Spares,1
+PHSEN,D,01,PHSEN Series D Sub 01,CGSN MREFC Spares,1
+PHSEN,D,01,PHSEN Series D Sub 01,CGSN O&M Spares,1
+PHSEN,D,01,PHSEN Series D Sub 01,CGSN P/N,1336-00013-00004
+PHSEN,D,01,PHSEN Series D Sub 01,ClassLongName,pH_stable
+PHSEN,D,01,PHSEN Series D Sub 01,Comments,"Active bio-fouling package not an option. Instruments have a standard battery, and a back-up battery for a tidy shut-down. 1 liter bag for reagent Direct: SAMI spits out data after sampling."
+PHSEN,D,01,PHSEN Series D Sub 01,CP Spares,1
+PHSEN,D,01,PHSEN Series D Sub 01,Description,pH
+PHSEN,D,01,PHSEN Series D Sub 01,ECRs that changed the count,
+PHSEN,D,01,PHSEN Series D Sub 01,Global Spares,
+PHSEN,D,01,PHSEN Series D Sub 01,Instrument Configuration,"Sunburst SAMI-pH (MCBH connector option) (reagent bag will last for 1 year, with hourly samples)"
+PHSEN,D,01,PHSEN Series D Sub 01,Link to the Specification,
+PHSEN,D,01,PHSEN Series D Sub 01,Notes,
+PHSEN,D,01,PHSEN Series D Sub 01,PrimaryScienceDiscipline,C
+PHSEN,D,01,PHSEN Series D Sub 01,Ready for 2013?,
+PHSEN,D,01,PHSEN Series D Sub 01,RSN O&M Spares,
+PHSEN,D,01,PHSEN Series D Sub 01,RSN Part Number,
+PHSEN,D,01,PHSEN Series D Sub 01,"Vendor CLIN, SubCLIN or Model #","PHYD04 SAMI-pH (1 L), PHYD18 Wet-plug, PHYD24 Case, (D = 1 for WHOI, 3 for OSU)"
+PHSEN,E,01,PHSEN Series E Sub 01,2009 Baseline Price*,"$17,500.00"
+PHSEN,E,01,PHSEN Series E Sub 01,2009 Deployed Instrument Count,33
+PHSEN,E,01,PHSEN Series E Sub 01,Alternate Instrument Class Name,Seawater pH
+PHSEN,E,01,PHSEN Series E Sub 01,CE Spares,
+PHSEN,E,01,PHSEN Series E Sub 01,CGSN MREFC Spares,1
+PHSEN,E,01,PHSEN Series E Sub 01,CGSN O&M Spares,1
+PHSEN,E,01,PHSEN Series E Sub 01,CGSN P/N,1336-00013-00005
+PHSEN,E,01,PHSEN Series E Sub 01,ClassLongName,pH_stable
+PHSEN,E,01,PHSEN Series E Sub 01,Comments,"Active bio-fouling package not an option. Instruments have a standard battery, and a back-up battery for a tidy shut-down. 1 liter bag for reagent IM: SAMI sends out data, can't talk to SAMI from controller."
+PHSEN,E,01,PHSEN Series E Sub 01,CP Spares,
+PHSEN,E,01,PHSEN Series E Sub 01,Description,pH
+PHSEN,E,01,PHSEN Series E Sub 01,ECRs that changed the count,
+PHSEN,E,01,PHSEN Series E Sub 01,Global Spares,2
+PHSEN,E,01,PHSEN Series E Sub 01,Instrument Configuration,Sunburst SAMI-pH (MCBH connectors; extra battery for 1 yr deployment; inductive modem connection) Housing is 2.5 in. longer for extra battery. (The IM is not included and must be ordered separately from SeaBird.)
+PHSEN,E,01,PHSEN Series E Sub 01,Link to the Specification,
+PHSEN,E,01,PHSEN Series E Sub 01,Notes,
+PHSEN,E,01,PHSEN Series E Sub 01,PrimaryScienceDiscipline,C
+PHSEN,E,01,PHSEN Series E Sub 01,Ready for 2013?,
+PHSEN,E,01,PHSEN Series E Sub 01,RSN O&M Spares,
+PHSEN,E,01,PHSEN Series E Sub 01,RSN Part Number,
+PHSEN,E,01,PHSEN Series E Sub 01,"Vendor CLIN, SubCLIN or Model #","PHYD05 SAMI-pH (1 L), PHYD13 ext_batt, PHYD15 UIMM, PHYD18 Wet-plug, PHYD24 Case"
+PHSEN,F,01,PHSEN Series F Sub 01,2009 Baseline Price*,"$17,500.00"
+PHSEN,F,01,PHSEN Series F Sub 01,2009 Deployed Instrument Count,33
+PHSEN,F,01,PHSEN Series F Sub 01,Alternate Instrument Class Name,Seawater pH
+PHSEN,F,01,PHSEN Series F Sub 01,CE Spares,
+PHSEN,F,01,PHSEN Series F Sub 01,CGSN MREFC Spares,1
+PHSEN,F,01,PHSEN Series F Sub 01,CGSN O&M Spares,1
+PHSEN,F,01,PHSEN Series F Sub 01,CGSN P/N,1336-00013-00006
+PHSEN,F,01,PHSEN Series F Sub 01,ClassLongName,pH_stable
+PHSEN,F,01,PHSEN Series F Sub 01,Comments,"Active bio-fouling package not an option. Instruments have a standard battery, and a back-up battery for a tidy shut-down. 1 liter bag for reagent Direct: SAMI spits out data after sampling. No IM needed; will plug into secondary controller"
+PHSEN,F,01,PHSEN Series F Sub 01,CP Spares,
+PHSEN,F,01,PHSEN Series F Sub 01,Description,pH
+PHSEN,F,01,PHSEN Series F Sub 01,ECRs that changed the count,
+PHSEN,F,01,PHSEN Series F Sub 01,Global Spares,2
+PHSEN,F,01,PHSEN Series F Sub 01,Instrument Configuration,Sunburst SAMI-pH (MCBH connectors; extra battery for 1 yr deployment) 
+PHSEN,F,01,PHSEN Series F Sub 01,Link to the Specification,
+PHSEN,F,01,PHSEN Series F Sub 01,Notes,
+PHSEN,F,01,PHSEN Series F Sub 01,PrimaryScienceDiscipline,C
+PHSEN,F,01,PHSEN Series F Sub 01,Ready for 2013?,
+PHSEN,F,01,PHSEN Series F Sub 01,RSN O&M Spares,
+PHSEN,F,01,PHSEN Series F Sub 01,RSN Part Number,
+PHSEN,F,01,PHSEN Series F Sub 01,"Vendor CLIN, SubCLIN or Model #","PHYD05 SAMI-pH (1 L), PHYD13 ext_batt, PHYD18 Wet-plug, PHYD24 Case"
+PHSEN,G,01,PHSEN Series G Sub 01,2009 Baseline Price*,"$17,500.00"
+PHSEN,G,01,PHSEN Series G Sub 01,2009 Deployed Instrument Count,33
+PHSEN,G,01,PHSEN Series G Sub 01,Alternate Instrument Class Name,Seawater pH
+PHSEN,G,01,PHSEN Series G Sub 01,CE Spares,
+PHSEN,G,01,PHSEN Series G Sub 01,CGSN MREFC Spares,
+PHSEN,G,01,PHSEN Series G Sub 01,CGSN O&M Spares,
+PHSEN,G,01,PHSEN Series G Sub 01,CGSN P/N,
+PHSEN,G,01,PHSEN Series G Sub 01,ClassLongName,pH_stable
+PHSEN,G,01,PHSEN Series G Sub 01,Comments,
+PHSEN,G,01,PHSEN Series G Sub 01,CP Spares,
+PHSEN,G,01,PHSEN Series G Sub 01,Description,pH
+PHSEN,G,01,PHSEN Series G Sub 01,ECRs that changed the count,
+PHSEN,G,01,PHSEN Series G Sub 01,Global Spares,
+PHSEN,G,01,PHSEN Series G Sub 01,Instrument Configuration,
+PHSEN,G,01,PHSEN Series G Sub 01,Link to the Specification,
+PHSEN,G,01,PHSEN Series G Sub 01,Notes,
+PHSEN,G,01,PHSEN Series G Sub 01,PrimaryScienceDiscipline,C
+PHSEN,G,01,PHSEN Series G Sub 01,Ready for 2013?,
+PHSEN,G,01,PHSEN Series G Sub 01,RSN O&M Spares,
+PHSEN,G,01,PHSEN Series G Sub 01,RSN Part Number,
+PHSEN,G,01,PHSEN Series G Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PPSDN,A,01,PPSDN Series A Sub 01,2009 Baseline Price*,
+PPSDN,A,01,PPSDN Series A Sub 01,2009 Deployed Instrument Count,
+PPSDN,A,01,PPSDN Series A Sub 01,Alternate Instrument Class Name,Particulate DNA Sampler
+PPSDN,A,01,PPSDN Series A Sub 01,CE Spares,
+PPSDN,A,01,PPSDN Series A Sub 01,CGSN MREFC Spares,
+PPSDN,A,01,PPSDN Series A Sub 01,CGSN O&M Spares,
+PPSDN,A,01,PPSDN Series A Sub 01,CGSN P/N,
+PPSDN,A,01,PPSDN Series A Sub 01,ClassLongName,DNA_particulate
+PPSDN,A,01,PPSDN Series A Sub 01,Comments,
+PPSDN,A,01,PPSDN Series A Sub 01,CP Spares,
+PPSDN,A,01,PPSDN Series A Sub 01,Description,Used to measure microbial community
+PPSDN,A,01,PPSDN Series A Sub 01,ECRs that changed the count,
+PPSDN,A,01,PPSDN Series A Sub 01,Global Spares,
+PPSDN,A,01,PPSDN Series A Sub 01,Instrument Configuration,
+PPSDN,A,01,PPSDN Series A Sub 01,Link to the Specification,
+PPSDN,A,01,PPSDN Series A Sub 01,Notes,
+PPSDN,A,01,PPSDN Series A Sub 01,PrimaryScienceDiscipline,B
+PPSDN,A,01,PPSDN Series A Sub 01,Ready for 2013?,
+PPSDN,A,01,PPSDN Series A Sub 01,RSN O&M Spares,1
+PPSDN,A,01,PPSDN Series A Sub 01,RSN Part Number,4830-58338
+PPSDN,A,01,PPSDN Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PRESF,A,01,PRESF Series A Sub 01,2009 Baseline Price*,"$17,625.00"
+PRESF,A,01,PRESF Series A Sub 01,2009 Deployed Instrument Count,9
+PRESF,A,01,PRESF Series A Sub 01,Alternate Instrument Class Name,Seafloor Pressure
+PRESF,A,01,PRESF Series A Sub 01,CE Spares,1
+PRESF,A,01,PRESF Series A Sub 01,CGSN MREFC Spares,
+PRESF,A,01,PRESF Series A Sub 01,CGSN O&M Spares,1
+PRESF,A,01,PRESF Series A Sub 01,CGSN P/N,3305-00012-00001
+PRESF,A,01,PRESF Series A Sub 01,ClassLongName,pressure_SF
+PRESF,A,01,PRESF Series A Sub 01,Comments,
+PRESF,A,01,PRESF Series A Sub 01,CP Spares,
+PRESF,A,01,PRESF Series A Sub 01,Description,Measures seafloor pressure
+PRESF,A,01,PRESF Series A Sub 01,ECRs that changed the count,ECR 1303-00654
+PRESF,A,01,PRESF Series A Sub 01,Global Spares,
+PRESF,A,01,PRESF Series A Sub 01,Instrument Configuration,SeaBird 26plus (100 psia; MCBH)
+PRESF,A,01,PRESF Series A Sub 01,Link to the Specification,
+PRESF,A,01,PRESF Series A Sub 01,Notes,
+PRESF,A,01,PRESF Series A Sub 01,PrimaryScienceDiscipline,P
+PRESF,A,01,PRESF Series A Sub 01,Ready for 2013?,
+PRESF,A,01,PRESF Series A Sub 01,RSN O&M Spares,
+PRESF,A,01,PRESF Series A Sub 01,RSN Part Number,
+PRESF,A,01,PRESF Series A Sub 01,"Vendor CLIN, SubCLIN or Model #","26plus, 26p-1f 100 psia Digiquartz, 26p-4a MCBH"
+PRESF,B,01,PRESF Series B Sub 01,2009 Baseline Price*,"$17,625.00"
+PRESF,B,01,PRESF Series B Sub 01,2009 Deployed Instrument Count,9
+PRESF,B,01,PRESF Series B Sub 01,Alternate Instrument Class Name,Seafloor Pressure
+PRESF,B,01,PRESF Series B Sub 01,CE Spares,1
+PRESF,B,01,PRESF Series B Sub 01,CGSN MREFC Spares,1
+PRESF,B,01,PRESF Series B Sub 01,CGSN O&M Spares,1
+PRESF,B,01,PRESF Series B Sub 01,CGSN P/N,3305-00012-00002
+PRESF,B,01,PRESF Series B Sub 01,ClassLongName,pressure_SF
+PRESF,B,01,PRESF Series B Sub 01,Comments,
+PRESF,B,01,PRESF Series B Sub 01,CP Spares,1
+PRESF,B,01,PRESF Series B Sub 01,Description,Measures seafloor pressure
+PRESF,B,01,PRESF Series B Sub 01,ECRs that changed the count,ECR 1303-00654
+PRESF,B,01,PRESF Series B Sub 01,Global Spares,
+PRESF,B,01,PRESF Series B Sub 01,Instrument Configuration,SeaBird 26plus (300 psia; MCBH)
+PRESF,B,01,PRESF Series B Sub 01,Link to the Specification,
+PRESF,B,01,PRESF Series B Sub 01,Notes,
+PRESF,B,01,PRESF Series B Sub 01,PrimaryScienceDiscipline,P
+PRESF,B,01,PRESF Series B Sub 01,Ready for 2013?,
+PRESF,B,01,PRESF Series B Sub 01,RSN O&M Spares,
+PRESF,B,01,PRESF Series B Sub 01,RSN Part Number,
+PRESF,B,01,PRESF Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","26plus, 26p-1h 300 psia Digiquartz, 26p-4a MCBH"
+PRESF,C,01,PRESF Series C Sub 01,2009 Baseline Price*,"$17,625.00"
+PRESF,C,01,PRESF Series C Sub 01,2009 Deployed Instrument Count,9
+PRESF,C,01,PRESF Series C Sub 01,Alternate Instrument Class Name,Seafloor Pressure
+PRESF,C,01,PRESF Series C Sub 01,CE Spares,1
+PRESF,C,01,PRESF Series C Sub 01,CGSN MREFC Spares,1
+PRESF,C,01,PRESF Series C Sub 01,CGSN O&M Spares,1
+PRESF,C,01,PRESF Series C Sub 01,CGSN P/N,3305-00012-00003
+PRESF,C,01,PRESF Series C Sub 01,ClassLongName,pressure_SF
+PRESF,C,01,PRESF Series C Sub 01,Comments,
+PRESF,C,01,PRESF Series C Sub 01,CP Spares,1
+PRESF,C,01,PRESF Series C Sub 01,Description,Measures seafloor pressure
+PRESF,C,01,PRESF Series C Sub 01,ECRs that changed the count,ECR 1303-00654
+PRESF,C,01,PRESF Series C Sub 01,Global Spares,
+PRESF,C,01,PRESF Series C Sub 01,Instrument Configuration,SeaBird 26plus (1000 psia; MCBH)
+PRESF,C,01,PRESF Series C Sub 01,Link to the Specification,
+PRESF,C,01,PRESF Series C Sub 01,Notes,
+PRESF,C,01,PRESF Series C Sub 01,PrimaryScienceDiscipline,P
+PRESF,C,01,PRESF Series C Sub 01,Ready for 2013?,
+PRESF,C,01,PRESF Series C Sub 01,RSN O&M Spares,
+PRESF,C,01,PRESF Series C Sub 01,RSN Part Number,
+PRESF,C,01,PRESF Series C Sub 01,"Vendor CLIN, SubCLIN or Model #","26plus, 26p-1j 1000 psia Digiquartz, 26p-4a MCBH"
+PREST,A,01,PREST Series A Sub 01,2009 Baseline Price*,
+PREST,A,01,PREST Series A Sub 01,2009 Deployed Instrument Count,3
+PREST,A,01,PREST Series A Sub 01,Alternate Instrument Class Name,Tidal Seafloor Pressure
+PREST,A,01,PREST Series A Sub 01,CE Spares,
+PREST,A,01,PREST Series A Sub 01,CGSN MREFC Spares,
+PREST,A,01,PREST Series A Sub 01,CGSN O&M Spares,
+PREST,A,01,PREST Series A Sub 01,CGSN P/N,
+PREST,A,01,PREST Series A Sub 01,ClassLongName,pressure_SF_tidal
+PREST,A,01,PREST Series A Sub 01,Comments,Measures ambient seafloor pressure using internal Paroscientific Digiquartz® transducer
+PREST,A,01,PREST Series A Sub 01,CP Spares,
+PREST,A,01,PREST Series A Sub 01,Description,Measures tidal pressure on the seafloor to mm scale
+PREST,A,01,PREST Series A Sub 01,ECRs that changed the count,
+PREST,A,01,PREST Series A Sub 01,Global Spares,
+PREST,A,01,PREST Series A Sub 01,Instrument Configuration,[SBE 54 Tsunami Pressure Sensor (externally powered)|http://www.seabird.com/products/spec_sheets/54data.htm]
+PREST,A,01,PREST Series A Sub 01,Link to the Specification,
+PREST,A,01,PREST Series A Sub 01,Notes,
+PREST,A,01,PREST Series A Sub 01,PrimaryScienceDiscipline,P
+PREST,A,01,PREST Series A Sub 01,Ready for 2013?,
+PREST,A,01,PREST Series A Sub 01,RSN O&M Spares,1
+PREST,A,01,PREST Series A Sub 01,RSN Part Number,4830-67639
+PREST,A,01,PREST Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+RASFL,A,01,RASFL Series A Sub 01,2009 Baseline Price*,
+RASFL,A,01,RASFL Series A Sub 01,2009 Deployed Instrument Count,1
+RASFL,A,01,RASFL Series A Sub 01,Alternate Instrument Class Name,Hydrothermal Vent Fluid Interactive Sampler
+RASFL,A,01,RASFL Series A Sub 01,CE Spares,
+RASFL,A,01,RASFL Series A Sub 01,CGSN MREFC Spares,
+RASFL,A,01,RASFL Series A Sub 01,CGSN O&M Spares,
+RASFL,A,01,RASFL Series A Sub 01,CGSN P/N,
+RASFL,A,01,RASFL Series A Sub 01,ClassLongName,watersample_chem_trace_H2S_pH
+RASFL,A,01,RASFL Series A Sub 01,Comments,
+RASFL,A,01,RASFL Series A Sub 01,CP Spares,
+RASFL,A,01,RASFL Series A Sub 01,Description,"Used for measuring major/trace element chemistry, temperature, H2S, pH"
+RASFL,A,01,RASFL Series A Sub 01,ECRs that changed the count,
+RASFL,A,01,RASFL Series A Sub 01,Global Spares,
+RASFL,A,01,RASFL Series A Sub 01,Instrument Configuration,
+RASFL,A,01,RASFL Series A Sub 01,Link to the Specification,
+RASFL,A,01,RASFL Series A Sub 01,Notes,
+RASFL,A,01,RASFL Series A Sub 01,PrimaryScienceDiscipline,C
+RASFL,A,01,RASFL Series A Sub 01,Ready for 2013?,
+RASFL,A,01,RASFL Series A Sub 01,RSN O&M Spares,1
+RASFL,A,01,RASFL Series A Sub 01,RSN Part Number,4830-58340
+RASFL,A,01,RASFL Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+SPKIR,0,01,SPKIR Series 0 Sub 01,2009 Baseline Price*,"$11,080.00"
+SPKIR,0,01,SPKIR Series 0 Sub 01,2009 Deployed Instrument Count,22
+SPKIR,0,01,SPKIR Series 0 Sub 01,Alternate Instrument Class Name,Spectral Irradiance
+SPKIR,0,01,SPKIR Series 0 Sub 01,CE Spares,
+SPKIR,0,01,SPKIR Series 0 Sub 01,CGSN MREFC Spares,
+SPKIR,0,01,SPKIR Series 0 Sub 01,CGSN O&M Spares,
+SPKIR,0,01,SPKIR Series 0 Sub 01,CGSN P/N,
+SPKIR,0,01,SPKIR Series 0 Sub 01,ClassLongName,spectral_irradiance
+SPKIR,0,01,SPKIR Series 0 Sub 01,Comments,
+SPKIR,0,01,SPKIR Series 0 Sub 01,CP Spares,
+SPKIR,0,01,SPKIR Series 0 Sub 01,Description,Measures downwelling spectral irradiance
+SPKIR,0,01,SPKIR Series 0 Sub 01,ECRs that changed the count,
+SPKIR,0,01,SPKIR Series 0 Sub 01,Global Spares,
+SPKIR,0,01,SPKIR Series 0 Sub 01,Instrument Configuration,
+SPKIR,0,01,SPKIR Series 0 Sub 01,Link to the Specification,
+SPKIR,0,01,SPKIR Series 0 Sub 01,Notes,
+SPKIR,0,01,SPKIR Series 0 Sub 01,PrimaryScienceDiscipline,P
+SPKIR,0,01,SPKIR Series 0 Sub 01,Ready for 2013?,
+SPKIR,0,01,SPKIR Series 0 Sub 01,RSN O&M Spares,
+SPKIR,0,01,SPKIR Series 0 Sub 01,RSN Part Number,
+SPKIR,0,01,SPKIR Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+SPKIR,A,01,SPKIR Series A Sub 01,2009 Baseline Price*,"$11,080.00"
+SPKIR,A,01,SPKIR Series A Sub 01,2009 Deployed Instrument Count,22
+SPKIR,A,01,SPKIR Series A Sub 01,Alternate Instrument Class Name,Spectral Irradiance
+SPKIR,A,01,SPKIR Series A Sub 01,CE Spares,
+SPKIR,A,01,SPKIR Series A Sub 01,CGSN MREFC Spares,
+SPKIR,A,01,SPKIR Series A Sub 01,CGSN O&M Spares,
+SPKIR,A,01,SPKIR Series A Sub 01,CGSN P/N,
+SPKIR,A,01,SPKIR Series A Sub 01,ClassLongName,spectral_irradiance
+SPKIR,A,01,SPKIR Series A Sub 01,Comments,
+SPKIR,A,01,SPKIR Series A Sub 01,CP Spares,
+SPKIR,A,01,SPKIR Series A Sub 01,Description,Measures downwelling spectral irradiance
+SPKIR,A,01,SPKIR Series A Sub 01,ECRs that changed the count,
+SPKIR,A,01,SPKIR Series A Sub 01,Global Spares,
+SPKIR,A,01,SPKIR Series A Sub 01,Instrument Configuration,Satlantic OCR507 ICSW
+SPKIR,A,01,SPKIR Series A Sub 01,Link to the Specification,
+SPKIR,A,01,SPKIR Series A Sub 01,Notes,
+SPKIR,A,01,SPKIR Series A Sub 01,PrimaryScienceDiscipline,P
+SPKIR,A,01,SPKIR Series A Sub 01,Ready for 2013?,
+SPKIR,A,01,SPKIR Series A Sub 01,RSN O&M Spares,1
+SPKIR,A,01,SPKIR Series A Sub 01,RSN Part Number,4830-58341
+SPKIR,A,01,SPKIR Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+SPKIR,B,01,SPKIR Series B Sub 01,2009 Baseline Price*,"$11,080.00"
+SPKIR,B,01,SPKIR Series B Sub 01,2009 Deployed Instrument Count,22
+SPKIR,B,01,SPKIR Series B Sub 01,Alternate Instrument Class Name,Spectral Irradiance
+SPKIR,B,01,SPKIR Series B Sub 01,CE Spares,2
+SPKIR,B,01,SPKIR Series B Sub 01,CGSN MREFC Spares,1
+SPKIR,B,01,SPKIR Series B Sub 01,CGSN O&M Spares,2
+SPKIR,B,01,SPKIR Series B Sub 01,CGSN P/N,1336-00006-00002
+SPKIR,B,01,SPKIR Series B Sub 01,ClassLongName,spectral_irradiance
+SPKIR,B,01,SPKIR Series B Sub 01,Comments,
+SPKIR,B,01,SPKIR Series B Sub 01,CP Spares,1
+SPKIR,B,01,SPKIR Series B Sub 01,Description,Measures downwelling spectral irradiance
+SPKIR,B,01,SPKIR Series B Sub 01,ECRs that changed the count,
+SPKIR,B,01,SPKIR Series B Sub 01,Global Spares,
+SPKIR,B,01,SPKIR Series B Sub 01,Instrument Configuration,Satlantic OCR507 ICSW
+SPKIR,B,01,SPKIR Series B Sub 01,Link to the Specification,
+SPKIR,B,01,SPKIR Series B Sub 01,Notes,
+SPKIR,B,01,SPKIR Series B Sub 01,PrimaryScienceDiscipline,P
+SPKIR,B,01,SPKIR Series B Sub 01,Ready for 2013?,
+SPKIR,B,01,SPKIR Series B Sub 01,RSN O&M Spares,
+SPKIR,B,01,SPKIR Series B Sub 01,RSN Part Number,
+SPKIR,B,01,SPKIR Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+THSPH,A,01,THSPH Series A Sub 01,2009 Baseline Price*,
+THSPH,A,01,THSPH Series A Sub 01,2009 Deployed Instrument Count,1
+THSPH,A,01,THSPH Series A Sub 01,Alternate Instrument Class Name,Hydrothermal Vent Fluid In-situ Chemistry
+THSPH,A,01,THSPH Series A Sub 01,CE Spares,
+THSPH,A,01,THSPH Series A Sub 01,CGSN MREFC Spares,
+THSPH,A,01,THSPH Series A Sub 01,CGSN O&M Spares,
+THSPH,A,01,THSPH Series A Sub 01,CGSN P/N,
+THSPH,A,01,THSPH Series A Sub 01,ClassLongName,Temp_H2_H2S_pH
+THSPH,A,01,THSPH Series A Sub 01,Comments,
+THSPH,A,01,THSPH Series A Sub 01,CP Spares,
+THSPH,A,01,THSPH Series A Sub 01,Description,"Measures hydrothermal vent fluid temperature, hydrogen, hydrogen sulfide and pH"
+THSPH,A,01,THSPH Series A Sub 01,ECRs that changed the count,
+THSPH,A,01,THSPH Series A Sub 01,Global Spares,
+THSPH,A,01,THSPH Series A Sub 01,Instrument Configuration,
+THSPH,A,01,THSPH Series A Sub 01,Link to the Specification,
+THSPH,A,01,THSPH Series A Sub 01,Notes,
+THSPH,A,01,THSPH Series A Sub 01,PrimaryScienceDiscipline,C
+THSPH,A,01,THSPH Series A Sub 01,Ready for 2013?,No
+THSPH,A,01,THSPH Series A Sub 01,RSN O&M Spares,1
+THSPH,A,01,THSPH Series A Sub 01,RSN Part Number,4830-58342
+THSPH,A,01,THSPH Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+TMPSF,A,01,TMPSF Series A Sub 01,2009 Baseline Price*,
+TMPSF,A,01,TMPSF Series A Sub 01,2009 Deployed Instrument Count,1
+TMPSF,A,01,TMPSF Series A Sub 01,Alternate Instrument Class Name,Diffuse Vent Fluid 3-D Temperature Array
+TMPSF,A,01,TMPSF Series A Sub 01,CE Spares,
+TMPSF,A,01,TMPSF Series A Sub 01,CGSN MREFC Spares,
+TMPSF,A,01,TMPSF Series A Sub 01,CGSN O&M Spares,
+TMPSF,A,01,TMPSF Series A Sub 01,CGSN P/N,
+TMPSF,A,01,TMPSF Series A Sub 01,ClassLongName,Temperature_seafloor
+TMPSF,A,01,TMPSF Series A Sub 01,Comments,
+TMPSF,A,01,TMPSF Series A Sub 01,CP Spares,
+TMPSF,A,01,TMPSF Series A Sub 01,Description,Measures temperatures of diffuse flow across the seafloor
+TMPSF,A,01,TMPSF Series A Sub 01,ECRs that changed the count,
+TMPSF,A,01,TMPSF Series A Sub 01,Global Spares,
+TMPSF,A,01,TMPSF Series A Sub 01,Instrument Configuration,
+TMPSF,A,01,TMPSF Series A Sub 01,Link to the Specification,
+TMPSF,A,01,TMPSF Series A Sub 01,Notes,
+TMPSF,A,01,TMPSF Series A Sub 01,PrimaryScienceDiscipline,P
+TMPSF,A,01,TMPSF Series A Sub 01,Ready for 2013?,
+TMPSF,A,01,TMPSF Series A Sub 01,RSN O&M Spares,1
+TMPSF,A,01,TMPSF Series A Sub 01,RSN Part Number,4830-58343
+TMPSF,A,01,TMPSF Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+TRHPH,A,01,TRHPH Series A Sub 01,2009 Baseline Price*,
+TRHPH,A,01,TRHPH Series A Sub 01,2009 Deployed Instrument Count,1
+TRHPH,A,01,TRHPH Series A Sub 01,Alternate Instrument Class Name,Hydrothermal Vent Fluid Temperature and Resistivity
+TRHPH,A,01,TRHPH Series A Sub 01,CE Spares,
+TRHPH,A,01,TRHPH Series A Sub 01,CGSN MREFC Spares,
+TRHPH,A,01,TRHPH Series A Sub 01,CGSN O&M Spares,
+TRHPH,A,01,TRHPH Series A Sub 01,CGSN P/N,
+TRHPH,A,01,TRHPH Series A Sub 01,ClassLongName,Temp_resist
+TRHPH,A,01,TRHPH Series A Sub 01,Comments,Measures temperature and resistivity in high temperature vent fluids as proxy for chloride concentration (with options for Eh and Hydrogen)
+TRHPH,A,01,TRHPH Series A Sub 01,CP Spares,
+TRHPH,A,01,TRHPH Series A Sub 01,Description,"Measures hydrothermal vent fluid temperature, resistivity, and eH"
+TRHPH,A,01,TRHPH Series A Sub 01,ECRs that changed the count,
+TRHPH,A,01,TRHPH Series A Sub 01,Global Spares,
+TRHPH,A,01,TRHPH Series A Sub 01,Instrument Configuration,Benthic and Resistivity Sensors (BARS)
+TRHPH,A,01,TRHPH Series A Sub 01,Link to the Specification,
+TRHPH,A,01,TRHPH Series A Sub 01,Notes,
+TRHPH,A,01,TRHPH Series A Sub 01,PrimaryScienceDiscipline,G
+TRHPH,A,01,TRHPH Series A Sub 01,Ready for 2013?,
+TRHPH,A,01,TRHPH Series A Sub 01,RSN O&M Spares,1
+TRHPH,A,01,TRHPH Series A Sub 01,RSN Part Number,4830-67653
+TRHPH,A,01,TRHPH Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VADCP,A,01,VADCP Series A Sub 01,2009 Baseline Price*,
+VADCP,A,01,VADCP Series A Sub 01,2009 Deployed Instrument Count,2
+VADCP,A,01,VADCP Series A Sub 01,Alternate Instrument Class Name,"5-Beam, 600 kHz Acoustic Doppler Current Profiler (= 50 m range)"
+VADCP,A,01,VADCP Series A Sub 01,CE Spares,
+VADCP,A,01,VADCP Series A Sub 01,CGSN MREFC Spares,
+VADCP,A,01,VADCP Series A Sub 01,CGSN O&M Spares,
+VADCP,A,01,VADCP Series A Sub 01,CGSN P/N,
+VADCP,A,01,VADCP Series A Sub 01,ClassLongName,Velocity_profile_50m_turb
+VADCP,A,01,VADCP Series A Sub 01,Comments,Measures water velocity profiles over a range of ~50m
+VADCP,A,01,VADCP Series A Sub 01,CP Spares,
+VADCP,A,01,VADCP Series A Sub 01,Description,"3-D (U,V,W) velocity profile at resolutions that are appropriate to estimate turbulence parameters"
+VADCP,A,01,VADCP Series A Sub 01,ECRs that changed the count,
+VADCP,A,01,VADCP Series A Sub 01,Global Spares,
+VADCP,A,01,VADCP Series A Sub 01,Instrument Configuration,[600 kHz 5 Beam Workhorse ADCP (custom based on WH Sentinel)|http://www.rdinstruments.com/sen.aspx]
+VADCP,A,01,VADCP Series A Sub 01,Link to the Specification,
+VADCP,A,01,VADCP Series A Sub 01,Notes,
+VADCP,A,01,VADCP Series A Sub 01,PrimaryScienceDiscipline,P
+VADCP,A,01,VADCP Series A Sub 01,Ready for 2013?,
+VADCP,A,01,VADCP Series A Sub 01,RSN O&M Spares,1
+VADCP,A,01,VADCP Series A Sub 01,RSN Part Number,4830-58345
+VADCP,A,01,VADCP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VEL3D,0,01,VEL3D Series 0 Sub 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,0,01,VEL3D Series 0 Sub 01,2009 Deployed Instrument Count,33
+VEL3D,0,01,VEL3D Series 0 Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,0,01,VEL3D Series 0 Sub 01,CE Spares,
+VEL3D,0,01,VEL3D Series 0 Sub 01,CGSN MREFC Spares,
+VEL3D,0,01,VEL3D Series 0 Sub 01,CGSN O&M Spares,
+VEL3D,0,01,VEL3D Series 0 Sub 01,CGSN P/N,
+VEL3D,0,01,VEL3D Series 0 Sub 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,0,01,VEL3D Series 0 Sub 01,Comments,
+VEL3D,0,01,VEL3D Series 0 Sub 01,CP Spares,
+VEL3D,0,01,VEL3D Series 0 Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,0,01,VEL3D Series 0 Sub 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,0,01,VEL3D Series 0 Sub 01,Global Spares,
+VEL3D,0,01,VEL3D Series 0 Sub 01,Instrument Configuration,
+VEL3D,0,01,VEL3D Series 0 Sub 01,Link to the Specification,
+VEL3D,0,01,VEL3D Series 0 Sub 01,Notes,
+VEL3D,0,01,VEL3D Series 0 Sub 01,PrimaryScienceDiscipline,P
+VEL3D,0,01,VEL3D Series 0 Sub 01,Ready for 2013?,
+VEL3D,0,01,VEL3D Series 0 Sub 01,RSN O&M Spares,
+VEL3D,0,01,VEL3D Series 0 Sub 01,RSN Part Number,
+VEL3D,0,01,VEL3D Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VEL3D,A,01,VEL3D Series A Sub 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,A,01,VEL3D Series A Sub 01,2009 Deployed Instrument Count,33
+VEL3D,A,01,VEL3D Series A Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,A,01,VEL3D Series A Sub 01,CE Spares,
+VEL3D,A,01,VEL3D Series A Sub 01,CGSN MREFC Spares,
+VEL3D,A,01,VEL3D Series A Sub 01,CGSN O&M Spares,
+VEL3D,A,01,VEL3D Series A Sub 01,CGSN P/N,
+VEL3D,A,01,VEL3D Series A Sub 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,A,01,VEL3D Series A Sub 01,Comments,MAVS with custom 90° mast
+VEL3D,A,01,VEL3D Series A Sub 01,CP Spares,
+VEL3D,A,01,VEL3D Series A Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,A,01,VEL3D Series A Sub 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,A,01,VEL3D Series A Sub 01,Global Spares,
+VEL3D,A,01,VEL3D Series A Sub 01,Instrument Configuration,Nobska MAVS
+VEL3D,A,01,VEL3D Series A Sub 01,Link to the Specification,
+VEL3D,A,01,VEL3D Series A Sub 01,Notes,
+VEL3D,A,01,VEL3D Series A Sub 01,PrimaryScienceDiscipline,P
+VEL3D,A,01,VEL3D Series A Sub 01,Ready for 2013?,
+VEL3D,A,01,VEL3D Series A Sub 01,RSN O&M Spares,1
+VEL3D,A,01,VEL3D Series A Sub 01,RSN Part Number,4830-58346
+VEL3D,A,01,VEL3D Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VEL3D,B,01,VEL3D Series B Sub 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,B,01,VEL3D Series B Sub 01,2009 Deployed Instrument Count,33
+VEL3D,B,01,VEL3D Series B Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,B,01,VEL3D Series B Sub 01,CE Spares,
+VEL3D,B,01,VEL3D Series B Sub 01,CGSN MREFC Spares,
+VEL3D,B,01,VEL3D Series B Sub 01,CGSN O&M Spares,
+VEL3D,B,01,VEL3D Series B Sub 01,CGSN P/N,
+VEL3D,B,01,VEL3D Series B Sub 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,B,01,VEL3D Series B Sub 01,Comments,Vector Averaging 3 Axis Acoustic Current Meter
+VEL3D,B,01,VEL3D Series B Sub 01,CP Spares,
+VEL3D,B,01,VEL3D Series B Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,B,01,VEL3D Series B Sub 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,B,01,VEL3D Series B Sub 01,Global Spares,
+VEL3D,B,01,VEL3D Series B Sub 01,Instrument Configuration,MAVS-4Firmware Version is 41_0 which implies version 1.0
+VEL3D,B,01,VEL3D Series B Sub 01,Link to the Specification,
+VEL3D,B,01,VEL3D Series B Sub 01,Notes,
+VEL3D,B,01,VEL3D Series B Sub 01,PrimaryScienceDiscipline,P
+VEL3D,B,01,VEL3D Series B Sub 01,Ready for 2013?,
+VEL3D,B,01,VEL3D Series B Sub 01,RSN O&M Spares,2
+VEL3D,B,01,VEL3D Series B Sub 01,RSN Part Number,4830-67979
+VEL3D,B,01,VEL3D Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VEL3D,C,01,VEL3D Series C Sub 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,C,01,VEL3D Series C Sub 01,2009 Deployed Instrument Count,33
+VEL3D,C,01,VEL3D Series C Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,C,01,VEL3D Series C Sub 01,CE Spares,1
+VEL3D,C,01,VEL3D Series C Sub 01,CGSN MREFC Spares,
+VEL3D,C,01,VEL3D Series C Sub 01,CGSN O&M Spares,1
+VEL3D,C,01,VEL3D Series C Sub 01,CGSN P/N,1336-00008-00003
+VEL3D,C,01,VEL3D Series C Sub 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,C,01,VEL3D Series C Sub 01,Comments,Connector w/ Nortek's standard pinout
+VEL3D,C,01,VEL3D Series C Sub 01,CP Spares,
+VEL3D,C,01,VEL3D Series C Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,C,01,VEL3D Series C Sub 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,C,01,VEL3D Series C Sub 01,Global Spares,
+VEL3D,C,01,VEL3D Series C Sub 01,Instrument Configuration,"Nortek VECTOR (Fixed stem, 4000 m, 0 batteries)"
+VEL3D,C,01,VEL3D Series C Sub 01,Link to the Specification,
+VEL3D,C,01,VEL3D Series C Sub 01,Notes,
+VEL3D,C,01,VEL3D Series C Sub 01,PrimaryScienceDiscipline,P
+VEL3D,C,01,VEL3D Series C Sub 01,Ready for 2013?,
+VEL3D,C,01,VEL3D Series C Sub 01,RSN O&M Spares,
+VEL3D,C,01,VEL3D Series C Sub 01,RSN Part Number,
+VEL3D,C,01,VEL3D Series C Sub 01,"Vendor CLIN, SubCLIN or Model #","VEYD03 VECTOR, VEYD03 375 mm Ti housing, VEYD03 Ti MCBH(WB)-8-FS"
+VEL3D,D,01,VEL3D Series D Sub 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,D,01,VEL3D Series D Sub 01,2009 Deployed Instrument Count,33
+VEL3D,D,01,VEL3D Series D Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,D,01,VEL3D Series D Sub 01,CE Spares,2
+VEL3D,D,01,VEL3D Series D Sub 01,CGSN MREFC Spares,1
+VEL3D,D,01,VEL3D Series D Sub 01,CGSN O&M Spares,1
+VEL3D,D,01,VEL3D Series D Sub 01,CGSN P/N,1336-00008-00004
+VEL3D,D,01,VEL3D Series D Sub 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,D,01,VEL3D Series D Sub 01,Comments,"Connector w/ Nortek's standard pinout 0, 1, or 2 battery housing options Alkaline, Li-ion (rechargeable) or Li battery options"
+VEL3D,D,01,VEL3D Series D Sub 01,CP Spares,
+VEL3D,D,01,VEL3D Series D Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,D,01,VEL3D Series D Sub 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,D,01,VEL3D Series D Sub 01,Global Spares,
+VEL3D,D,01,VEL3D Series D Sub 01,Instrument Configuration,"Nortek VECTOR w/ ProLog (Fixed stem, 4000 m, 2 Li-ion recharegeable batteries)"
+VEL3D,D,01,VEL3D Series D Sub 01,Link to the Specification,
+VEL3D,D,01,VEL3D Series D Sub 01,Notes,
+VEL3D,D,01,VEL3D Series D Sub 01,PrimaryScienceDiscipline,P
+VEL3D,D,01,VEL3D Series D Sub 01,Ready for 2013?,
+VEL3D,D,01,VEL3D Series D Sub 01,RSN O&M Spares,
+VEL3D,D,01,VEL3D Series D Sub 01,RSN Part Number,
+VEL3D,D,01,VEL3D Series D Sub 01,"Vendor CLIN, SubCLIN or Model #","VEYD04 VECTOR w/ 4 Gb ProLog, VEYD04 595 mm Ti housing, VEYD04 Two 50 Wh Li-ion rechargeable battery module, VEYD04 Ti MCBH(WB)-8-FS"
+VEL3D,K,01,VEL3D Series K Sub 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,K,01,VEL3D Series K Sub 01,2009 Deployed Instrument Count,33
+VEL3D,K,01,VEL3D Series K Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,K,01,VEL3D Series K Sub 01,CE Spares,
+VEL3D,K,01,VEL3D Series K Sub 01,CGSN MREFC Spares,
+VEL3D,K,01,VEL3D Series K Sub 01,CGSN O&M Spares,
+VEL3D,K,01,VEL3D Series K Sub 01,CGSN P/N,1331-00008-00001
+VEL3D,K,01,VEL3D Series K Sub 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,K,01,VEL3D Series K Sub 01,Comments,McLane P/N: 200-1366
+VEL3D,K,01,VEL3D Series K Sub 01,CP Spares,
+VEL3D,K,01,VEL3D Series K Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,K,01,VEL3D Series K Sub 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,K,01,VEL3D Series K Sub 01,Global Spares,
+VEL3D,K,01,VEL3D Series K Sub 01,Instrument Configuration,Nortek Aquadopp HR Profiler
+VEL3D,K,01,VEL3D Series K Sub 01,Link to the Specification,
+VEL3D,K,01,VEL3D Series K Sub 01,Notes,
+VEL3D,K,01,VEL3D Series K Sub 01,PrimaryScienceDiscipline,P
+VEL3D,K,01,VEL3D Series K Sub 01,Ready for 2013?,
+VEL3D,K,01,VEL3D Series K Sub 01,RSN O&M Spares,
+VEL3D,K,01,VEL3D Series K Sub 01,RSN Part Number,
+VEL3D,K,01,VEL3D Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VEL3D,L,01,VEL3D Series L Sub 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,L,01,VEL3D Series L Sub 01,2009 Deployed Instrument Count,33
+VEL3D,L,01,VEL3D Series L Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,L,01,VEL3D Series L Sub 01,CE Spares,
+VEL3D,L,01,VEL3D Series L Sub 01,CGSN MREFC Spares,
+VEL3D,L,01,VEL3D Series L Sub 01,CGSN O&M Spares,
+VEL3D,L,01,VEL3D Series L Sub 01,CGSN P/N,1331-00008-00002
+VEL3D,L,01,VEL3D Series L Sub 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,L,01,VEL3D Series L Sub 01,Comments,McLane P/N: 200-1293
+VEL3D,L,01,VEL3D Series L Sub 01,CP Spares,
+VEL3D,L,01,VEL3D Series L Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,L,01,VEL3D Series L Sub 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,L,01,VEL3D Series L Sub 01,Global Spares,
+VEL3D,L,01,VEL3D Series L Sub 01,Instrument Configuration,Nobska MAVS4
+VEL3D,L,01,VEL3D Series L Sub 01,Link to the Specification,
+VEL3D,L,01,VEL3D Series L Sub 01,Notes,
+VEL3D,L,01,VEL3D Series L Sub 01,PrimaryScienceDiscipline,P
+VEL3D,L,01,VEL3D Series L Sub 01,Ready for 2013?,
+VEL3D,L,01,VEL3D Series L Sub 01,RSN O&M Spares,
+VEL3D,L,01,VEL3D Series L Sub 01,RSN Part Number,
+VEL3D,L,01,VEL3D Series L Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VELPT,A,01,VELPT Series A Sub 01,2009 Baseline Price*,"$14,700.00"
+VELPT,A,01,VELPT Series A Sub 01,2009 Deployed Instrument Count,29
+VELPT,A,01,VELPT Series A Sub 01,Alternate Instrument Class Name,Single Point Velocity Meter
+VELPT,A,01,VELPT Series A Sub 01,CE Spares,1
+VELPT,A,01,VELPT Series A Sub 01,CGSN MREFC Spares,1
+VELPT,A,01,VELPT Series A Sub 01,CGSN O&M Spares,1
+VELPT,A,01,VELPT Series A Sub 01,CGSN P/N,3305-00010-00001
+VELPT,A,01,VELPT Series A Sub 01,ClassLongName,Velocity_point
+VELPT,A,01,VELPT Series A Sub 01,Comments,
+VELPT,A,01,VELPT Series A Sub 01,CP Spares,1
+VELPT,A,01,VELPT Series A Sub 01,Description,Measures Mean U and V single point velocity
+VELPT,A,01,VELPT Series A Sub 01,ECRs that changed the count,
+VELPT,A,01,VELPT Series A Sub 01,Global Spares,
+VELPT,A,01,VELPT Series A Sub 01,Instrument Configuration,Nortek Aquadopp Current Meter (300 m) w/ symmetric head
+VELPT,A,01,VELPT Series A Sub 01,Link to the Specification,
+VELPT,A,01,VELPT Series A Sub 01,Notes,
+VELPT,A,01,VELPT Series A Sub 01,PrimaryScienceDiscipline,P
+VELPT,A,01,VELPT Series A Sub 01,Ready for 2013?,
+VELPT,A,01,VELPT Series A Sub 01,RSN O&M Spares,
+VELPT,A,01,VELPT Series A Sub 01,RSN Part Number,
+VELPT,A,01,VELPT Series A Sub 01,"Vendor CLIN, SubCLIN or Model #","Aquadopp (300 m) w/ symmetric head, Product Code: 901101-ALD"
+VELPT,B,01,VELPT Series B Sub 01,2009 Baseline Price*,"$14,700.00"
+VELPT,B,01,VELPT Series B Sub 01,2009 Deployed Instrument Count,29
+VELPT,B,01,VELPT Series B Sub 01,Alternate Instrument Class Name,Single Point Velocity Meter
+VELPT,B,01,VELPT Series B Sub 01,CE Spares,1
+VELPT,B,01,VELPT Series B Sub 01,CGSN MREFC Spares,2
+VELPT,B,01,VELPT Series B Sub 01,CGSN O&M Spares,2
+VELPT,B,01,VELPT Series B Sub 01,CGSN P/N,3305-00010-00002
+VELPT,B,01,VELPT Series B Sub 01,ClassLongName,Velocity_point
+VELPT,B,01,VELPT Series B Sub 01,Comments,
+VELPT,B,01,VELPT Series B Sub 01,CP Spares,1
+VELPT,B,01,VELPT Series B Sub 01,Description,Measures Mean U and V single point velocity
+VELPT,B,01,VELPT Series B Sub 01,ECRs that changed the count,
+VELPT,B,01,VELPT Series B Sub 01,Global Spares,2
+VELPT,B,01,VELPT Series B Sub 01,Instrument Configuration,Nortek Aquadopp Current Meter (3000 m) w/ symmetric head
+VELPT,B,01,VELPT Series B Sub 01,Link to the Specification,
+VELPT,B,01,VELPT Series B Sub 01,Notes,
+VELPT,B,01,VELPT Series B Sub 01,PrimaryScienceDiscipline,P
+VELPT,B,01,VELPT Series B Sub 01,Ready for 2013?,
+VELPT,B,01,VELPT Series B Sub 01,RSN O&M Spares,
+VELPT,B,01,VELPT Series B Sub 01,RSN Part Number,
+VELPT,B,01,VELPT Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","Aquadopp (3,000 m) w/ symmetric head, Product Code: 901102-A3L"
+WAVSS,A,01,WAVSS Series A Sub 01,2009 Baseline Price*,"$17,279.00"
+WAVSS,A,01,WAVSS Series A Sub 01,2009 Deployed Instrument Count,10
+WAVSS,A,01,WAVSS Series A Sub 01,Alternate Instrument Class Name,Surface Wave Spectra
+WAVSS,A,01,WAVSS Series A Sub 01,CE Spares,1
+WAVSS,A,01,WAVSS Series A Sub 01,CGSN MREFC Spares,2
+WAVSS,A,01,WAVSS Series A Sub 01,CGSN O&M Spares,2
+WAVSS,A,01,WAVSS Series A Sub 01,CGSN P/N,3305-00005-00001
+WAVSS,A,01,WAVSS Series A Sub 01,ClassLongName,wave_spectra_surface
+WAVSS,A,01,WAVSS Series A Sub 01,Comments,
+WAVSS,A,01,WAVSS Series A Sub 01,CP Spares,1
+WAVSS,A,01,WAVSS Series A Sub 01,Description,"Non-directional and directional wave characteristics, SurfaceWave Spectra"
+WAVSS,A,01,WAVSS Series A Sub 01,ECRs that changed the count,ECR 1303-00475
+WAVSS,A,01,WAVSS Series A Sub 01,Global Spares,2
+WAVSS,A,01,WAVSS Series A Sub 01,Instrument Configuration,TRIAXYS Directional Wave Sensor
+WAVSS,A,01,WAVSS Series A Sub 01,Link to the Specification,
+WAVSS,A,01,WAVSS Series A Sub 01,Notes,
+WAVSS,A,01,WAVSS Series A Sub 01,PrimaryScienceDiscipline,P
+WAVSS,A,01,WAVSS Series A Sub 01,Ready for 2013?,
+WAVSS,A,01,WAVSS Series A Sub 01,RSN O&M Spares,
+WAVSS,A,01,WAVSS Series A Sub 01,RSN Part Number,
+WAVSS,A,01,WAVSS Series A Sub 01,"Vendor CLIN, SubCLIN or Model #","TRIAXYS NW Sensor, Al Encl., LPMBH-7 MPSS (OOI Version), P/N 402003"
+ZPLSC,A,01,ZPLSC Series A Sub 01,2009 Baseline Price*,"$46,000.00"
+ZPLSC,A,01,ZPLSC Series A Sub 01,2009 Deployed Instrument Count,8
+ZPLSC,A,01,ZPLSC Series A Sub 01,Alternate Instrument Class Name,Bio-acoustic Sonar (Coastal)
+ZPLSC,A,01,ZPLSC Series A Sub 01,CE Spares,
+ZPLSC,A,01,ZPLSC Series A Sub 01,CGSN MREFC Spares,
+ZPLSC,A,01,ZPLSC Series A Sub 01,CGSN O&M Spares,
+ZPLSC,A,01,ZPLSC Series A Sub 01,CGSN P/N,
+ZPLSC,A,01,ZPLSC Series A Sub 01,ClassLongName,plankton_ZP_sonar_coastal
+ZPLSC,A,01,ZPLSC Series A Sub 01,Comments,
+ZPLSC,A,01,ZPLSC Series A Sub 01,CP Spares,
+ZPLSC,A,01,ZPLSC Series A Sub 01,Description,Measures acoustic signal of plankton and zooplankton on coastal arrays
+ZPLSC,A,01,ZPLSC Series A Sub 01,ECRs that changed the count,
+ZPLSC,A,01,ZPLSC Series A Sub 01,Global Spares,
+ZPLSC,A,01,ZPLSC Series A Sub 01,Instrument Configuration,
+ZPLSC,A,01,ZPLSC Series A Sub 01,Link to the Specification,
+ZPLSC,A,01,ZPLSC Series A Sub 01,Notes,
+ZPLSC,A,01,ZPLSC Series A Sub 01,PrimaryScienceDiscipline,B
+ZPLSC,A,01,ZPLSC Series A Sub 01,Ready for 2013?,
+ZPLSC,A,01,ZPLSC Series A Sub 01,RSN O&M Spares,0
+ZPLSC,A,01,ZPLSC Series A Sub 01,RSN Part Number,4830-63259
+ZPLSC,A,01,ZPLSC Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ZPLSC,B,01,ZPLSC Series B Sub 01,2009 Baseline Price*,"$46,000.00"
+ZPLSC,B,01,ZPLSC Series B Sub 01,2009 Deployed Instrument Count,8
+ZPLSC,B,01,ZPLSC Series B Sub 01,Alternate Instrument Class Name,Bio-acoustic Sonar (Coastal)
+ZPLSC,B,01,ZPLSC Series B Sub 01,CE Spares,1
+ZPLSC,B,01,ZPLSC Series B Sub 01,CGSN MREFC Spares,1
+ZPLSC,B,01,ZPLSC Series B Sub 01,CGSN O&M Spares,
+ZPLSC,B,01,ZPLSC Series B Sub 01,CGSN P/N,3305-00008-00002
+ZPLSC,B,01,ZPLSC Series B Sub 01,ClassLongName,plankton_ZP_sonar_coastal
+ZPLSC,B,01,ZPLSC Series B Sub 01,Comments,
+ZPLSC,B,01,ZPLSC Series B Sub 01,CP Spares,
+ZPLSC,B,01,ZPLSC Series B Sub 01,Description,Measures acoustic signal of plankton and zooplankton on coastal arrays
+ZPLSC,B,01,ZPLSC Series B Sub 01,ECRs that changed the count,
+ZPLSC,B,01,ZPLSC Series B Sub 01,Global Spares,
+ZPLSC,B,01,ZPLSC Series B Sub 01,Instrument Configuration,
+ZPLSC,B,01,ZPLSC Series B Sub 01,Link to the Specification,
+ZPLSC,B,01,ZPLSC Series B Sub 01,Notes,
+ZPLSC,B,01,ZPLSC Series B Sub 01,PrimaryScienceDiscipline,B
+ZPLSC,B,01,ZPLSC Series B Sub 01,Ready for 2013?,Maybe
+ZPLSC,B,01,ZPLSC Series B Sub 01,RSN O&M Spares,
+ZPLSC,B,01,ZPLSC Series B Sub 01,RSN Part Number,
+ZPLSC,B,01,ZPLSC Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ZPLSC,C,01,ZPLSC Series C Sub 01,2009 Baseline Price*,"$46,000.00"
+ZPLSC,C,01,ZPLSC Series C Sub 01,2009 Deployed Instrument Count,8
+ZPLSC,C,01,ZPLSC Series C Sub 01,Alternate Instrument Class Name,Bio-acoustic Sonar (Coastal)
+ZPLSC,C,01,ZPLSC Series C Sub 01,CE Spares,1
+ZPLSC,C,01,ZPLSC Series C Sub 01,CGSN MREFC Spares,1
+ZPLSC,C,01,ZPLSC Series C Sub 01,CGSN O&M Spares,1
+ZPLSC,C,01,ZPLSC Series C Sub 01,CGSN P/N,3305-00008-00003
+ZPLSC,C,01,ZPLSC Series C Sub 01,ClassLongName,plankton_ZP_sonar_coastal
+ZPLSC,C,01,ZPLSC Series C Sub 01,Comments,
+ZPLSC,C,01,ZPLSC Series C Sub 01,CP Spares,1
+ZPLSC,C,01,ZPLSC Series C Sub 01,Description,Measures acoustic signal of plankton and zooplankton on coastal arrays
+ZPLSC,C,01,ZPLSC Series C Sub 01,ECRs that changed the count,
+ZPLSC,C,01,ZPLSC Series C Sub 01,Global Spares,
+ZPLSC,C,01,ZPLSC Series C Sub 01,Instrument Configuration,
+ZPLSC,C,01,ZPLSC Series C Sub 01,Link to the Specification,
+ZPLSC,C,01,ZPLSC Series C Sub 01,Notes,
+ZPLSC,C,01,ZPLSC Series C Sub 01,PrimaryScienceDiscipline,B
+ZPLSC,C,01,ZPLSC Series C Sub 01,Ready for 2013?,Maybe
+ZPLSC,C,01,ZPLSC Series C Sub 01,RSN O&M Spares,
+ZPLSC,C,01,ZPLSC Series C Sub 01,RSN Part Number,
+ZPLSC,C,01,ZPLSC Series C Sub 01,"Vendor CLIN, SubCLIN or Model #",
+ZPLSG,A,01,ZPLSG Series A Sub 01,2009 Baseline Price*,"$95,000.00"
+ZPLSG,A,01,ZPLSG Series A Sub 01,2009 Deployed Instrument Count,4
+ZPLSG,A,01,ZPLSG Series A Sub 01,Alternate Instrument Class Name,Bio-acoustic Sonar (Global)
+ZPLSG,A,01,ZPLSG Series A Sub 01,CE Spares,
+ZPLSG,A,01,ZPLSG Series A Sub 01,CGSN MREFC Spares,
+ZPLSG,A,01,ZPLSG Series A Sub 01,CGSN O&M Spares,2
+ZPLSG,A,01,ZPLSG Series A Sub 01,CGSN P/N,3305-00008-00001
+ZPLSG,A,01,ZPLSG Series A Sub 01,ClassLongName,plankton_ZP_sonar_global
+ZPLSG,A,01,ZPLSG Series A Sub 01,Comments,
+ZPLSG,A,01,ZPLSG Series A Sub 01,CP Spares,
+ZPLSG,A,01,ZPLSG Series A Sub 01,Description,Measures acoustic signal of plankton and zooplankton on global arrays
+ZPLSG,A,01,ZPLSG Series A Sub 01,ECRs that changed the count,
+ZPLSG,A,01,ZPLSG Series A Sub 01,Global Spares,2
+ZPLSG,A,01,ZPLSG Series A Sub 01,Instrument Configuration,
+ZPLSG,A,01,ZPLSG Series A Sub 01,Link to the Specification,
+ZPLSG,A,01,ZPLSG Series A Sub 01,Notes,
+ZPLSG,A,01,ZPLSG Series A Sub 01,PrimaryScienceDiscipline,B
+ZPLSG,A,01,ZPLSG Series A Sub 01,Ready for 2013?,Maybe
+ZPLSG,A,01,ZPLSG Series A Sub 01,RSN O&M Spares,
+ZPLSG,A,01,ZPLSG Series A Sub 01,RSN Part Number,
+ZPLSG,A,01,ZPLSG Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+

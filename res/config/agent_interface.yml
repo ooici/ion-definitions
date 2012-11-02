@@ -27,7 +27,7 @@ AgentInterface:
 
     params:
       object_size:
-        get: func:self.get_resource_size($RESOURCE_ID)
+          get: func:self.get_resource_size($RESOURCE_ID)
       object_size1:
         get: func:ion.services.coi.agent_management_service.get_resource_size($RESOURCE_ID)
       description:

@@ -285,6 +285,8 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   #@Method
   recent_granules: !ComputedDictValue   # Returns a set of  RDT of parameters and values
 
+  #@Method
+  is_persisted: !ComputedIntValue   # Returns True if data product is currently being persisted
 ---
 
 #Computed attributes for a data product

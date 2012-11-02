@@ -301,11 +301,22 @@ methods:
     throws:
       BadRequest: missing parameters, or object id field missing in subject or object
 
-  find_associations_mult:
+  find_objects_mult:
     docstring: |
       Find associations by a list of subjects.
     in:
       subjects: []
+      id_only: False
+    out:
+      results: []
+    throws:
+      BadRequest: subjects is not a list
+
+  find_subjects_mult:
+    docstring: |
+      Find associations by a list of objects.
+    in:
+      objects: []
       id_only: False
     out:
       results: []

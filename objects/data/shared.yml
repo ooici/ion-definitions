@@ -124,7 +124,6 @@ Parameter:
   ioos_category: ""     # Selection from IOOS controlled vocabulary for parameters
   fill_value: ""        # A value used to represent missing or undefined data
   cdm_data_type: ""     # the THREDDS data type
-  variable_reports: ""  # information on the variable accuracy
   axis: ""              # for CF compliance, holds X, Y, Z or T for vars holding lat, lon, depth and time info
   code_reports: []      # provide the meaning of flags in CodeReport objects
   comment: ""

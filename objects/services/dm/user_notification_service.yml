@@ -82,14 +82,14 @@ methods:
       if no events exist for the given parameters.
       @todo can we replace this with discovery service?
     in:
-      origins: []
+      origin: ""
       type: ""
       min_datetime: ""
       max_datetime: ""
       limit: -1
       descending: False
     out:
-      event_dict: {}
+      event_list: []
     throws:
       NotFound: if object with specified parameters does not exist
 

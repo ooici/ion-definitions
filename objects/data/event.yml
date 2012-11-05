@@ -268,7 +268,7 @@ ExceptionEvent: !Extends_Event
 
 ---
 
-DeviceStatusType: !enum (values=(IN_RANGE, OUT_OF_RANGE, NO_DATA), default=OUT_OF_RANGE)
+DeviceStatusType: !enum (values=(OK, OUT_OF_RANGE, NO_DATA), default=OK)
 
 ---
 

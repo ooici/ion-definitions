@@ -268,7 +268,18 @@ ExceptionEvent: !Extends_Event
 
 ---
 
-DeviceStatusType: !enum (values=(OK, OUT_OF_RANGE, NO_DATA), default=OK)
+DeviceCommsType: !enum (values=(DATA_DELIVERY_INTERRUPTION, OK), default=OK)
+
+---
+
+# To be used by transforms monitoring the health of data producers to report the status of the producers
+DeviceCommsEvent: !Extends_Event
+  state: !DeviceCommsType
+  lapse_interval: "6 seconds"
+
+---
+
+DeviceStatusType: !enum (values=(OUT_OF_RANGE, OK), default=OUT_OF_RANGE)
 
 ---
 
@@ -277,6 +288,7 @@ DeviceStatusEvent: !Extends_Event
   state: !DeviceStatusType
   value: -200
   valid_values: ""
+
 
 
 

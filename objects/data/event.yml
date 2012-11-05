@@ -266,3 +266,13 @@ ExceptionEvent: !Extends_Event
   exception_type: ""
   exception_message: ""
 
+---
+
+# To be used by transforms monitoring the health of data producers to report the status of the producers
+DeviceStatusEvent: !Extends_Event
+  state: !enum (values=(IN_RANGE, OUT_OF_RANGE, NO_DATA), default=OUT_OF_RANGE)
+  value: -200
+  valid_values: ""
+
+
+

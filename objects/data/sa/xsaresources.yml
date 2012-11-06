@@ -139,7 +139,8 @@ SiteExtension: !Extends_ExtendedInformationResource
   data_products: []  # The associated data products
   #@hasSite
   sites: []  # The associated parent and child sites
-
+  #@hasDataProductsForSite
+  device_data_products: []  # All the data products produced from devices at this Site and Site data products
 ---
 
 
@@ -218,9 +219,6 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
 
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
-
-  #@Method
-  data_products: !ComputedListValue  # All the data products produced from devices at this Site and Site data products
 
   #@Method
   communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN

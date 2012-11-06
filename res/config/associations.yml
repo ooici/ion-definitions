@@ -295,3 +295,5 @@ CompoundAssociations:
     predicates: [hasProcessDefinition, hasOutputProduct]
   hasDataProductsForSite:
     predicates: [hasDevice,hasOutputProduct]
+  hasProcessInputDataProductsForDataProduct:
+    predicates: [hasOutputProduct,hasInputProduct]

@@ -1,0 +1,5 @@
+Scenario,ID,owner_id,org_ids,obs/name,obs/description,obs/geospatial_constraint/geospatiallatmin,obs/geospatial_constraint/geospatiallatmax,obs/geospatial_constraint/geospatiallonmin,obs/geospatial_constraint/geospatiallonmax,obs/geospatial_constraint/minbottomdepth,obs/geospatial_constraint/maxbottomdepth,obs/geospatial_constraint/geospatialverticalpositive,obs/temporal_constraint,obs/entity_constraint
+R2_DEMO,OBS_RSN,USER_10,MF_RSN,RSN Observatory,Regional Scale Node Observatory,,,,,,,,,
+R2_DEMO,OBS_CGSN,USER_20,MF_CGSN,CGSN Observatory,Coastal Global Scale Node Observatory,,,,,,,,,
+R2_DEMO,OBS_3,USER_1,MF_3,RSN_Demo Observatory,LCA Demonstration of RSN Observatory,,,,,,,,,
+R2_MANUAL,OBS_4,USER_1,MF_4,RSN_Demo_Create,Demonstration of RSN Observatory creation,,,,,,,,,

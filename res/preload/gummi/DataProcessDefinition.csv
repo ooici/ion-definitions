@@ -1,0 +1,9 @@
+Scenario,ID,owner_id,org_ids,input_stream_defs,output_stream_defs,dpd/name,dpd/description,dpd/module,dpd/class_name,dpd/process_source,dpd/parameters
+R2_DEMO,DPD1,USER_1,MF_3,StreamDef12,"StreamDef13,StreamDef14,StreamDef15",CTD_L0 demo,L0 - Conductivity/Temp/Pressure,ion.processes.data.transforms.ctd.ctd_L0_all,ctd_L0_all,,
+R2_DEMO,DPD2,USER_1,MF_3,StreamDef13,StreamDef16,CONDWAT L1 demo,L1 - Conductivity,ion.processes.data.transforms.ctd.ctd_L1_conductivity,CTDL1ConductivityTransform,,
+R2_DEMO,DPD3,USER_1,MF_3,StreamDef14,StreamDef17,TEMPWAT L1 demo,L1 - Temperature,ion.processes.data.transforms.ctd.ctd_L1_temperature,CTDL1TemperatureTransform,,
+R2_DEMO,DPD4,USER_1,MF_3,StreamDef15,StreamDef18,PRESWAT L1 demo,L1 - Pressure (Depth),ion.processes.data.transforms.ctd.ctd_L1_pressure,CTDL1PressureTransform,,
+R2_DEMO,DPD5,USER_1,MF_3,StreamDef12,StreamDef19,PRACSAL L2 demo,L2 - Practical Salinity,ion.processes.data.transforms.ctd.ctd_L2_salinity,SalinityTransform,,
+R2_DEMO,DPD6,USER_1,MF_3,StreamDef12,StreamDef20,DENSITY L2 demo,L2 - Density,ion.processes.data.transforms.ctd.ctd_L2_density,DensityTransform,,
+R2_DEMO,DPD15,USER_1,MF_3,,StreamDef11,GOOGLE_DT,Google datatable components,ion.processes.data.transforms.viz.google_dt,VizTransformGoogleDT,,
+R2_DEMO,DPD16,USER_1,MF_3,,StreamDef11,MPL_IMAGES,Matplotlib graphs,ion.processes.data.transforms.viz.matplotlib_graphs,VizTransformMatplotlibGraphs,,

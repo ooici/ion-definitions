@@ -46,6 +46,15 @@ methods:
     throws:
       NotFound: if ingestion configuration did not exist
 
+  register_dataset:
+    docstring: |
+      Registers a dataset with PyDAP
+    in: 
+      dataset_id: ""
+    out:
+    throws:
+      NotFound: if dataset does not exist
+
 #--------
 
   add_stream:
@@ -153,4 +162,89 @@ methods:
       id_only: False
     out:
       parameter_dictionary: {}
+
+#--------
+
+  dataset_bounds:
+    docstring: |
+      Returns the bounds (min, max) for the parameter(s) indicated by <i>parameter_name</i>
+      If <i>parameter_name</i> is None, all parameters in the coverage are included
+      If more than one parameter is indicated by <i>parameter_name</i>, a dict of {key:(min,max)} is returned;
+      otherwise, only the (min, max) tuple is returned
+      @param dataset_id       Identifier string for dataset
+      @param parameter_name   A string parameter name; may be an iterable of such members
+    in:
+      dataset_id: ""
+      parameters: []
+    out: 
+      bounds: {}
+
+  dataset_bounds_by_axis:
+    docstring: |
+      Returns the bounds (min, max) for the coordinate parameter(s) indicated by <i>axis</i>
+      If <i>axis</i> is None, all coordinate parameters are included
+      If more than one parameter is indicated by <i>axis</i>, a dict of {key:(min,max)} is returned;
+      otherwise, only the (min, max) tuple is returned
+      @param dataset_id  Identifier string for dataset
+      @param axis        A member of AxisTypeEnum; may be an iterable of such members
+    in:
+      dataset_id: ""
+      axis: 0
+    out: 
+      bounds: {}
+
+  dataset_extents:
+    docstring: |
+      Returns the extents (dim_0,dim_1,...,dim_n) for the parameter(s) indicated by <i>parameter_name</i>
+      If <i>parameter_name</i> is None, all parameters in the coverage are included
+      If more than one parameter is indicated by <i>parameter_name</i>, a dict of {key:(dim_0,dim_1,...,dim_n)} is returned;
+      otherwise, only the (dim_0,dim_1,...,dim_n) tuple is returned
+      @param dataset_id       Identifier string for dataset
+      @param parameter_name   A string parameter name; may be an iterable of such members
+    in:
+      dataset_id: ""
+      parameters: []
+    out:
+      extents: {}
+
+  dataset_extents_by_axis:
+    docstring: |
+      Returns the extents (dim_0,dim_1,...,dim_n) for the coordinate parameter(s) indicated by <i>axis</i>
+      If <i>axis</i> is None, all coordinate parameters are included
+      If more than one parameter is indicated by <i>axis</i>, a dict of {key:(dim_0,dim_1,...,dim_n)} is returned;
+      otherwise, only the (dim_0,dim_1,...,dim_n) tuple is returned
+      @param dataset_id       Identifier string for dataset
+      @param axis             A member of AxisTypeEnum; may be an iterable of such members
+    in:
+      dataset_id: ""
+      parameters: []
+    out:
+      extents: {}
+
+  dataset_size:
+    docstring: |
+      Returns the size of the <b>data values</b> for the parameter(s) indicated by <i>parameter_name</i>.
+      ParameterContext and Coverage metadata is <b>NOT</b> included in the returned size.
+      If <i>parameter_name</i> is None, all parameters in the coverage are included
+      If more than one parameter is indicated by <i>parameter_name</i>, the sum of the indicated parameters is returned
+      If <i>slice_</i> is not None, it is applied to each parameter (after being run through utils.fix_slice) before
+      calculation of size
+      Sizes are calculated as:
+      size = itemsize * total_extent_size
+      where
+      itemsize == the per-item size based on the data type of the parameter
+      total_extent_size == the total number of elements after slicing is applied (if applicable)
+      Sizes are in MB unless <i>in_bytes</i> == True
+      @param dataset_id       Identifier string for dataset
+      @param parameter_name   A string parameter name; may be an iterable of such members
+      @param slice_           If not None, applied to each parameter before calculation of size
+      @param in_bytes         If True, returns the size in bytes; otherwise, returns the size in MB (default)
+    in:
+      dataset_id: ""
+      parameters: []
+      slice_: {}
+      in_bytes: False
+    out:
+      size: 0
+
 

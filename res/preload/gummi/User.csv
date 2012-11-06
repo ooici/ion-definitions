@@ -1,0 +1,14 @@
+Scenario,ID,subject,name,email,_comment
+R2_DEMO,USER_1,/DC=org/DC=cilogon/C=US/O=Google/CN=Owen Ownerrep A893,Owen Ownerrep,owenownerrep@gmail.com,RSN_Demo 
+R2_DEMO,USER_2,/DC=org/DC=cilogon/C=US/O=Google/CN=Mike Manager A892,Mike Manager,mikemanagerooi@gmail.com,RSN_Demo 
+R2_DEMO,USER_3,/DC=org/DC=cilogon/C=US/O=Google/CN=Tim Ampe A448,Tim Ampe,tampe@ucsd.edu,MF_3 Observatory Manager
+R2_DEMO,USER_10,TBD_subject,User 10,,MF_RSN Manager
+R2_DEMO,USER_11,TBD_subject,User 11,,MF_RSN Observatory Operator
+R2_DEMO,USER_12,TBD_subject,User 12,,MF_RSN Instrument Operator
+R2_DEMO,USER_13,TBD_subject,User 13,,MF_RSN Data Operator
+R2_DEMO,USER_14,TBD_subject,User 14,,MF_RSN Member
+R2_DEMO,USER_20,TBD_subject,User 20,,MF_CGSN Manager
+R2_DEMO,USER_21,TBD_subject,User 21,,MF_CGSN Observatory Operator
+R2_DEMO,USER_22,TBD_subject,User 22,,MF_CGSN Instrument Operator
+R2_DEMO,USER_23,TBD_subject,User 23,,MF_CGSN Data Operator
+R2_DEMO,USER_24,TBD_subject,User 24,,MF_CGSN Member

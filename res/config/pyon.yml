@@ -84,6 +84,13 @@ server:
     river_shards:   1        # Defines the number of shards for the _river
     river_replicas: 0        # Defines the number of replicas (important) for the _river
                              # This number should be the number of nodes running exactly
+  pydap:
+    type: pydap
+    host: localhost
+    port: 8001
+    data_path: RESOURCE:ext/pydap
+    datasets_xml_path: RESOURCE:ext/datasets.xml
+
   localrouter:
     # In-process router
     type: local
@@ -115,6 +122,7 @@ container:
       primary: amqp
       priviledged:
     endpoint: # TODO: move entries to here
+      rpc_conversation_enabled: True
     interceptor: # TODO: move entries to here
 
   objects:
@@ -218,12 +226,16 @@ core_stream_types:
 # The "service" root entry
 service:
   instrument_management:
-    driver_release_host: sddevrepo.oceanobservatories.org
-    driver_release_directory: /var/www/html/releases
+    driver_release_host: "sddevrepo.oceanobservatories.org"
+    driver_release_directory: "/var/www/html/releases"
+    driver_release_wwwprefix: "http://sddevrepo.oceanobservatories.org/releases"
+                              #no trailing slash require
 
   data_process_management:
-    process_release_host: sddevrepo.oceanobservatories.org
-    process_release_directory: /var/www/html/releases
+    process_release_host: "sddevrepo.oceanobservatories.org"
+    process_release_directory: "/var/www/html/releases"
+    process_release_wwwprefix: "http://sddevrepo.oceanobservatories.org/releases"
+                              #no trailing slash
 
   directory:
     default_uispecs_url: https://userexperience.oceanobservatories.org/database-exports/

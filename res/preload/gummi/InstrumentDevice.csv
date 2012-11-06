@@ -1,0 +1,48 @@
+"Scenario","ID","confluence","owner_id","lcstate","org_ids","instrument_model_id","platform_device_id","id/name","id/description","id/serial_number","id/firmware_version"
+"R2_DEMO","ID3",,"USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"CTD Simulator 1 Demo","Simulator 1 providing CTD data in the LCA demonstration",10003,"0-00"
+"R2_DEMO","ID4",,"USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"CTD Simulator 2 Demo","Simulator 2 replacement for 1 providing CTD data in the LCA demonstration",10004,"0-00"
+"R2_DEMO","D1InstrumentDevice1","https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2","D1PlatformDevice1","CTD Simulator 1 for deployment1","Simulator 1 providing CTD data in the LCA demonstration",10003,"0-00"
+"R2_DEMO","D1InstrumentDevice2","https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2","D1PlatformDevice1","CTD Simulator 2 for deployment1","Simulator 1 providing CTD data in the LCA demonstration",10003,"0-00"
+"R2_DEMO","D2InstrumentDevice3","https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"CTD Simulator for deployment 2","Simulator 1 providing CTD data in the LCA demonstration",10003,"0-00"
+"R2_DEMO","D3InstrumentDevice4","https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"CTD Simulator for deployment 3","Simulator 1 providing CTD data in the LCA demonstration",10003,"0-00"
+"LCA_MANUAL","MANUAL",,,,,"IM2",,"Seabird CTD for Demo","Seabird Conductivity-Temperature-Depth instrument used for demonstration","tbd","tbd"
+"R2_DEMO","GumDevice1","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi Flavor, Color, Softness sensor",,,
+"R2_DEMO","GumDevice2","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 2",,,
+"R2_DEMO","GumDevice3","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 3",,,
+"R2_DEMO","GumDevice4","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 4",,,
+"R2_DEMO","GumDevice5","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 5",,,
+"R2_DEMO","GumDevice6","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 6",,,
+"R2_DEMO","GumDevice7","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 7",,,
+"R2_DEMO","GumDevice8","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 8",,,
+"R2_DEMO","GumDevice9","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 9",,,
+"R2_DEMO","GumDevice10","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 10",,,
+"R2_DEMO","GumDevice11","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 11",,,
+"R2_DEMO","GumDevice12","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 12",,,
+"R2_DEMO","GumDevice13","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 13",,,
+"R2_DEMO","GumDevice14","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 14",,,
+"R2_DEMO","GumDevice15","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 15",,,
+"R2_DEMO","GumDevice16","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 16",,,
+"R2_DEMO","GumDevice17","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 17",,,
+"R2_DEMO","GumDevice18","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 18",,,
+"R2_DEMO","GumDevice19","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 19",,,
+"R2_DEMO","GumDevice20","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 20",,,
+"R2_DEMO","GumDevice21","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 21",,,
+"R2_DEMO","GumDevice22","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 22",,,
+"R2_DEMO","GumDevice23","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 23",,,
+"R2_DEMO","GumDevice24","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 24",,,
+"R2_DEMO","GumDevice25","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 25",,,
+"R2_DEMO","GumDevice26","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 26",,,
+"R2_DEMO","GumDevice27","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 27",,,
+"R2_DEMO","GumDevice28","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 28",,,
+"R2_DEMO","GumDevice29","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 29",,,
+"R2_DEMO","GumDevice30","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 30",,,
+"R2_DEMO","GumDevice31","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 31",,,
+"R2_DEMO","GumDevice32","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 32",,,
+"R2_DEMO","GumDevice33","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 33",,,
+"R2_DEMO","GumDevice34","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 34",,,
+"R2_DEMO","GumDevice35","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 35",,,
+"R2_DEMO","GumDevice36","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 36",,,
+"R2_DEMO","GumDevice37","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 37",,,
+"R2_DEMO","GumDevice38","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 38",,,
+"R2_DEMO","GumDevice39","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 39",,,
+"R2_DEMO","GumDevice40","https://confluence.oceanobservatories.org/display/CIDev/gumstix+capacity+testing+preload","USER_1","DEPLOYED_AVAILABLE","MF_3","IM2",,"Gummi FCS sensor 40",,,

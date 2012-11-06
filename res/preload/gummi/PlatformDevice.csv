@@ -1,0 +1,5 @@
+Scenario,ID,confluence,owner_id,lcstate,org_ids,platform_model_id,pd/name,pd/description,pd/serial_number,pd/nominal_location,pd/platform_family
+DOC,,,,,,,,,,,
+R2_DEMO,PD3,,USER_1,DEPLOYED_AVAILABLE,MF_3,PM13,Profiler 200m Platform 103,200-meter Platform for Shallow Profiler,103,,
+R2_DEMO,PD4,,USER_1,DEPLOYED_AVAILABLE,MF_3,PM13,Profiler 200m Platform 104,200-meter Platform for Shallow Profiler,104,,
+R2_DEMO,D1PlatformDevice1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,PM13,platform device for test deployment 1,200-meter Platform for Shallow Profiler,104,,

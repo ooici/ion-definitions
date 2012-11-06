@@ -1,0 +1,8 @@
+Scenario,ID,owner_id,org_ids,pm/name,pm/description,pm/manufacturer_url,pm/model,pm/OOI_node_type,pm/ci_onboard,pm/shore_networked,pm/platform_type,pm/maximum_crew
+DOC,,,marine facility ID or virtual observatory ID,,,,,,,is this boolean or?,,
+R2_DEMO,PM11,USER_1,MF_3,Shallow Profilern Demo,Shallow Profiler Model w/200M platform,RSN,,SP,FALSE,Intermittent,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+R2_DEMO,PM12,USER_1,MF_3,Medium Power J-Box Demo,Medium Power Junction Box (J-Box) Model,RSN,,MJ,FALSE,Always Fast,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+R2_DEMO,PM13,USER_1,MF_3,200m Platform Demo,200-meter Platform for Shallow Profiler Model,RSN,,FI,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/mooring,0
+R2_DEMO,PM14,USER_1,MF_3,Deep Profiler Demo,Wire-following Deep Profiler Model,RSN,,WF,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
+R2_DEMO,PM15,USER_1,MF_3,Low Power J-Box Demo,Low Power Junction Box (J-Box) Model,RSN,,LJ,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+R2_DEMO,PM16,USER_1,MF_3,Low Voltage Node Demo,Low Voltage Node Model,RSN,,??,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0

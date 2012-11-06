@@ -16,13 +16,6 @@ PlatformMonitorAttributes:
 # of marine infrastructure.
 PlatformDevice: !Extends_Device
 
-  # The family of platform, with term from the OOI Node Type list
-  # Code List: Medium-power Junction Box, Interface Box HD Camera, Float Junction Box, Low-power Junction Box,
-  # Winch Junction Box, Profiler Junction Box, Multi-Function Node, Fixed Instruments, Surface Buoy
-  # Surface-Piercing Profiler, Wire-Following Profiler, Mid-Water Platform, AUV, Gliders, Benthic Package
-  # Deep Profiler
-  platform_family: ""
-   
   index_location: !GeospatialIndex
 
   # a list of platform_port objects (see above)
@@ -34,7 +27,13 @@ PlatformDevice: !Extends_Device
 # Specifies a distinguished type of platform, derived from the manufacturer's model number
 # and on common attributes.
 PlatformModel: !Extends_DeviceModel
-
+  # The family of platform, with term from the OOI Node Type list
+  # Code List: Medium-power Junction Box, Interface Box HD Camera, Float Junction Box, Low-power Junction Box,
+  # Winch Junction Box, Profiler Junction Box, Multi-Function Node, Fixed Instruments, Surface Buoy
+  # Surface-Piercing Profiler, Wire-Following Profiler, Mid-Water Platform, AUV, Gliders, Benthic Package
+  # Deep Profiler
+  platform_family: ""
+  
   # Whether ION software is run on platform resources
   # Mandatory
   ci_onboard: ""

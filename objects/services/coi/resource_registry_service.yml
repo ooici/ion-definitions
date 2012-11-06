@@ -113,7 +113,7 @@ methods:
 
   create_attachment:
     docstring: |
-      Add an attachment to a resource. The attachment is of specified type.
+      Create an Attachment resource associated with another resource.
       If no resource_id is provided, the attachment is created standalone.
     in:
       resource_id: ""
@@ -126,9 +126,10 @@ methods:
 
   read_attachment:
     docstring: |
-      Reads an attachment by id.
+      Reads an attachment by id, excludes content unless indicated otherwise.
     in:
       attachment_id: ""
+      include_content: False
     out:
       attachment: !Attachment
     throws:
@@ -136,7 +137,7 @@ methods:
 
   delete_attachment:
     docstring: |
-      Remove an attachment from a resource.
+      Delete an attachment resource and resource associations.
     in:
       attachment_id: ""
     out:
@@ -145,7 +146,7 @@ methods:
 
   find_attachments:
     docstring: |
-      Returns list of attachment from given resource id.
+      Returns list of attachment resources for given associated resource id.
       Can limit the number of results and reverse the sort order. Default result order is oldest
       attachment first.
     in:

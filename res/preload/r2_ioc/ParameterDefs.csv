@@ -5,7 +5,7 @@ BASE,,pressure,float32,dbar,-9999,,,,PRESWAT,sea_water_pressure,Pressure (Depth)
 BASE,,salinity,float32,,-9999,,,,PRACSAL,sea_water_practical_salinity,Practical Salinity,,float,,,,,"The OOI Level 2 Salinity core data product is computed using the TEOS-10 equations for practical salinity with data from the conductivity, temperature, and depth (CTD) family of instruments."
 BASE,,density,float32,kg m-3,-9999,,,,DENSITY,sea_water_pressure,Density,,float,,,,,"The OOI Level 2 Density core data product is computed using the TEOS-10 equations with data from the conductivity, temperature and depth (CTD) family of instruments."
 BASE,,temp,float32,C,-9999,,,,TEMPWAT,sea_water_temperature,Water temperature,,float,,,,,"The OOI Level 1 Pressure (Depth) core data product is computed by converting raw hexadecimal pressure data from the conductivity, temperature and depth (CTD) family of instruments into decibars."
-BASE,,time,float64,s,-9999,,,,,time,Seconds since 1970-01-01,,float,,,,,
+BASE,,time,float64,seconds since 1970-01-01,-9999,,,,,time,Seconds since 1970-01-01,,float,,,,,
 BASE,,lat,float32,degree_north,-9999,Y,,,,latitude,Latitude,,float,,,,,
 BASE,,lon,float32,degree_east,-9999,X,,,,longitude,Longitude,,float,,,,,
 BASE,,port_timestamp,float64,seconds since 1970-01-01,-9999,T,,,,,Port timestamp in seconds since 1970-01-01,,float,,,,,

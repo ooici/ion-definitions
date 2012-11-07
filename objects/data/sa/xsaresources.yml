@@ -11,8 +11,8 @@ StatusType: !enum ( values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_U
 
 #This object contains additional information associated with an instrument device.
 DeviceExtension: !Extends_ExtendedInformationResource
-#  #@hasOutputProduct
-#  data_products: [] # A list of associated data products
+  #@hasOutputProduct
+  data_products: [] # A list of associated data products
   #@hasDeployment
   deployments: []  # list of deployment resources to which to which this device is attached
   #@hasAgentInstance
@@ -30,6 +30,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with a data process.
 DataProcessExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'DataProcess'
   #@hasProcessDefinition
   data_process_definition: !DataProcessDefinition
   #@hasInputProduct
@@ -41,6 +42,7 @@ DataProcessExtension: !Extends_ExtendedInformationResource
 ---
 #This object contains additional information associated with a data process definition.
 DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'DataProcessDefinition'
   #@hasProcessDefinition
   data_processes: []            # set of !DataProcess instances of this definition
   #@hasInputStreamDefinition
@@ -55,6 +57,7 @@ DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with a data product.
 DataProductExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'DataProduct'
   #@hasVersion
   version: !DataProductVersion  # The associated data product collection
   #@hasDataProduct=Site
@@ -65,11 +68,13 @@ DataProductExtension: !Extends_ExtendedInformationResource
   data_processes: []
   #@hasProcessInputDataProductsForDataProduct
   process_input_data_products: []
-
+  # defined in get_data_product_extention
+  provenance_product_list: []
 
 ---
 #This object contains additional information associated with a deployment resource.
 DeploymentExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'Deployment'
   #@hasDeployment=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
   #@hasDeployment=InstrumentSite
@@ -85,6 +90,7 @@ DeploymentExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with a instrument or platform model.
 DeviceModelExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'DeviceModel'
   #@hasModel
   devices: []  # The associated device instances
 
@@ -92,6 +98,7 @@ DeviceModelExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with an instrument device.
 InstrumentDeviceExtension: !Extends_DeviceExtension
+  origin_resource_type: 'InstrumentDevice'
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
   #@hasAgentForDevice
@@ -108,6 +115,7 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
 
 #This object contains additional information associated with a request for notification.
 NotificationRequestExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'NotificationRequest'
   #@hasNotification=UserInfo
   user_info: !UserInfo  # The associated user
 
@@ -115,6 +123,7 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with an instrument device.
 PlatformDeviceExtension: !Extends_DeviceExtension
+  origin_resource_type: 'PlatformDevice'
   #@hasModel
   platform_model: !PlatformModel  # The associated Instrument Model
   #@hasAgentForDevice
@@ -128,6 +137,7 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 ---
 
 #This object contains additional information associated with a Site resource.
+#THIS IS NOT A CALLABLE OBJECT BUT INSTEAD MUST BE CALLED BY ONE OF THE EXTENSIONS BELOW
 SiteExtension: !Extends_ExtendedInformationResource
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
@@ -147,6 +157,17 @@ SiteExtension: !Extends_ExtendedInformationResource
   device_data_products: []  # All the data products produced from devices at this Site and Site data products
 ---
 
+ObservatoryExtension: !Extends_SiteExtension
+  origin_resource_type: 'Observatory'
+
+SubsiteExtension: !Extends_SiteExtension
+  origin_resource_type: 'Subsite'
+
+PlatformSiteExtension: !Extends_SiteExtension
+  origin_resource_type: 'PlatformSite'
+
+InstrumentSiteExtension: !Extends_SiteExtension
+  origin_resource_type: 'InstrumentSite'
 
 ####################################################################
 #
@@ -268,9 +289,6 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 
   #@Method
   provenance: !ComputedDictValue   # Provides an audit trail for modifications to the original data
-
-  #@Method
-  provenance_product_list: !ComputedListValue   # Provides an audit trail for modifications to the original data
 
   #@Method
   number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data

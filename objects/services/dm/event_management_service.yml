@@ -67,6 +67,9 @@ methods:
       class_name: ""    # The class name within the source code module
       uri: ""    # The URI location of the algorithm
       arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
+      event_types: [] # This is a list of event types
+      sub_types: []
+      origin_types: []
     out:
       event_process_definition_id: ""
     throws:
@@ -81,6 +84,9 @@ methods:
       class_name: ""   # The class name within the source code module
       uri: ""  # The URI location of the algorithm
       arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
+      event_types: []
+      sub_types: []
+      origin_types: []
     out:
     throws:
       NotFound: object with specified id does not exist

@@ -136,8 +136,8 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 ---
 
 #This object contains additional information associated with a Site resource.
+#THIS IS NOT A CALLABLE OBJECT BUT INSTEAD MUST BE CALLED BY ONE OF THE EXTENSIONS BELOW
 SiteExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'Site'
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
   #@hasModel=InstrumentModel
@@ -156,6 +156,17 @@ SiteExtension: !Extends_ExtendedInformationResource
   device_data_products: []  # All the data products produced from devices at this Site and Site data products
 ---
 
+ObservatoryExtension: !Extends_SiteExtension
+  origin_resource_type: 'Observatory'
+
+SubsiteExtension: !Extends_SiteExtension
+  origin_resource_type: 'Subsite'
+
+PlatformSiteExtension: !Extends_SiteExtension
+  origin_resource_type: 'PlatformSite'
+
+InstrumentSiteExtension: !Extends_SiteExtension
+  origin_resource_type: 'InstrumentSite'
 
 ####################################################################
 #

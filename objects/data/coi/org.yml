@@ -98,6 +98,7 @@ Commitment: !Extends_InformationResource
 
 #This object contains additional information associated with a Marine Facility Org
 MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'Org'
   #@hasResource=DataProduct
   data_products: []
   #@hasResource=PlatformDevice

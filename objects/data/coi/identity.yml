@@ -39,6 +39,7 @@ UserInfo: !Extends_InformationResource
 
 #This object contains additional information associated with an actor; typically a user.
 ActorIdentityExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'ActorIdentity'
   #@hasCredentials
   credentials: !UserCredentials  # The associated user's credentials
   #@hasInfo
@@ -56,6 +57,7 @@ ActorIdentityExtension: !Extends_ExtendedInformationResource
 
 #This object contains additional information associated with an actor; typically a user.
 UserInfoExtension: !Extends_ExtendedInformationResource
+  origin_resource_type: 'UserInfo'
   #@hasCredentials
   credentials: !UserCredentials  # The associated user's credentials
   #@hasInfo=ActorIdentity

@@ -68,7 +68,8 @@ DataProductExtension: !Extends_ExtendedInformationResource
   data_processes: []
   #@hasProcessInputDataProductsForDataProduct
   process_input_data_products: []
-
+  # defined in get_data_product_extention
+  provenance_product_list: []
 
 ---
 #This object contains additional information associated with a deployment resource.
@@ -288,9 +289,6 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 
   #@Method
   provenance: !ComputedDictValue   # Provides an audit trail for modifications to the original data
-
-  #@Method
-  provenance_product_list: !ComputedListValue   # Provides an audit trail for modifications to the original data
 
   #@Method
   number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data

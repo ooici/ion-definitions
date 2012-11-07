@@ -11,8 +11,8 @@ StatusType: !enum ( values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_U
 
 #This object contains additional information associated with an instrument device.
 DeviceExtension: !Extends_ExtendedInformationResource
-#  #@hasOutputProduct
-#  data_products: [] # A list of associated data products
+  #@hasOutputProduct
+  data_products: [] # A list of associated data products
   #@hasDeployment
   deployments: []  # list of deployment resources to which to which this device is attached
   #@hasAgentInstance

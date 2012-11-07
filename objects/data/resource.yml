@@ -135,6 +135,7 @@ ExtendedResource: !Extends_ResourceContainer
 
 # An object used for testing of the framework
 TestExtendedResource: !Extends_ExtendedResource
+  origin_resource_type: 'InstrumentDevice'
   #@hasPolicy
   policy_count: 0
   #@Method

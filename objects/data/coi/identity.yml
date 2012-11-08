@@ -44,8 +44,7 @@ ActorIdentityExtension: !Extends_ExtendedInformationResource
   credentials: !UserCredentials  # The associated user's credentials
   #@hasInfo
   user_info: !UserInfo # The associated user's information
-  #@hasRole=UserRole
-  roles: []  # Any Org Roles associated with the user Can this be fulfilled with a decorator too?
+  roles: []  #Any Org Roles associated with the user - not filled out using only asscociations.
   #@hasOwner
   owned_resources: [] # A list of any resources owned by this user
   #recent_events: []  # Not sure about this one
@@ -62,8 +61,7 @@ UserInfoExtension: !Extends_ExtendedInformationResource
   credentials: !UserCredentials  # The associated user's credentials
   #@hasInfo=ActorIdentity
   actor_identity: !ActorIdentity # The associated user's information
-  #@hasRoleForUser
-  roles: []  # Any Org Roles associated with the user Can this be fulfilled with a decorator too?
+  roles: []  # Any Org Roles associated with the user - not filled out using only asscociations.
   #@hasResourcesForUser
   owned_resources: [] # A list of any resources owned by this user
   #recent_events: []  # Not sure about this one

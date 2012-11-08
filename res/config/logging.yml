@@ -16,7 +16,7 @@ formatters:
 handlers:
   console:
     class: logging.StreamHandler
-    formatter: brief
+    formatter: default
     level: TRACE
     stream: ext://sys.stdout
   file:

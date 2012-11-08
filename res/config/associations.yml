@@ -292,8 +292,7 @@ CompoundAssociations:
   hasModelForDeployment:
     predicates: [hasDeployment,hasModel]
   hasDataProductsForDataProcessDefinition:
-    predicates: [hasDataProcessDefinition, hasOutputProduct]
-  hasDataProductsForSite:
+    predicates: [hasProcessDefinition, hasOutputProduct]  hasDataProductsForSite:
     predicates: [hasDevice,hasOutputProduct]
   hasProcessInputDataProductsForDataProduct:
     predicates: [hasOutputProduct,hasInputProduct]

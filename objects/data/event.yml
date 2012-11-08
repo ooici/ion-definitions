@@ -275,7 +275,7 @@ DeviceCommsType: !enum (values=(DATA_DELIVERY_INTERRUPTION, OK), default=OK)
 # To be used by transforms monitoring the health of data producers to report the status of the producers
 DeviceCommsEvent: !Extends_Event
   state: !DeviceCommsType
-  lapse_interval: "6 seconds"
+  lapse_interval_seconds: 0
 
 ---
 
@@ -286,7 +286,7 @@ DeviceStatusType: !enum (values=(OUT_OF_RANGE, OK), default=OUT_OF_RANGE)
 # To be used by transforms monitoring the health of data producers to report the status of the producers
 DeviceStatusEvent: !Extends_Event
   state: !DeviceStatusType
-  value: -200
+  value: 0
   time_stamp: 0
   valid_values: []
 

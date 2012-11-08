@@ -131,7 +131,3 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
 
 #Computed attributes for a data product
 MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes
-  #@Method
-  instruments_not_deployed: !ComputedListValue  # a list of instrument devices owned by this Org but not currently deployed to a Site
-  #@Method
-  platforms_not_deployed: !ComputedListValue  # a list of platform devices owned by this Org but not currently deployed to a Site

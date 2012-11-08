@@ -67,7 +67,7 @@ methods:
     throws:
       NotFound: object with specified name does not exist
 
-  get_org_extension:
+  get_marine_facility_extension:
     docstring: |
       Returns an MarineFacilityOrgExtension object containing additional related information
     in:

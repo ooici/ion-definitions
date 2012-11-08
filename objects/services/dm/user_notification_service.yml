@@ -154,3 +154,36 @@ methods:
     in:
       process_batch_key: ""
     out:
+
+  get_subscriptions:
+    docstring:  |
+      This method is used to get the subscriptions to resource id. The method will return a list of NotificationRequest
+      objects for whom the origin is set to this resource id. This way all the users who were interested in listening to
+      events with origin equal to this resource id, will be known and all their subscriptions will be known.
+    in:
+      resource_id: ""
+      include_retired: False
+    out:
+      notification_requests: []
+      number_of_subscriptions: 0
+
+  get_active_subscriptions:
+    docstring:  |
+      This method is used to get the active subscriptions to a resource id. The method will return a list of NotificationRequest
+      objects for whom the origin is set to this resource id.
+    in:
+      resource_id: ""
+    out:
+      active_notifications: []
+      number_of_subscriptions: 0
+
+  get_past_subscriptions:
+    docstring:  |
+      This method is used to get the past subscriptions to a resource id. The method will return a list of retired
+      NotificationRequest objects for whom the origin is set to this resource id.
+    in:
+      resource_id: ""
+    out:
+      past_notifications: []
+      number_of_subscriptions: 0
+

@@ -154,3 +154,39 @@ methods:
     in:
       process_batch_key: ""
     out:
+
+  get_subscriptions_for_data_product:
+    docstring:  |
+      This method is used to get the subscriptions to a data product. The method will return a list of NotificationRequest
+      objects for whom the origin is set to this data product. This way all the users who were interested in listening to
+      events with origin equal to this data product, will be known and all their subscriptions will be known.
+    in:
+      data_product_id: ""
+      include_retired: False
+    out:
+      number_of_subscriptions: 0
+      notification_requests: []
+
+  get_active_subscriptions_for_data_product:
+    docstring:  |
+      This method is used to get the active subscriptions to a data product. The method will return a list of NotificationRequest
+      objects for whom the origin is set to this data product.
+    in:
+      data_product_id: ""
+    out:
+      number_of_subscriptions: 0
+      active_notifications: []
+
+  get_past_subscriptions_for_data_product:
+    docstring:  |
+      This method is used to get the past subscriptions to a data product. The method will return a list of retired
+      NotificationRequest objects for whom the origin is set to this data product.
+    in:
+      data_product_id: ""
+    out:
+      number_of_subscriptions: 0
+      past_notifications: []
+
+
+
+

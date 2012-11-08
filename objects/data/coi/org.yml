@@ -121,11 +121,11 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   roles: [] # The set of User Roles available in this Observatory
   #@hasRequest
   user_requests: [] # A list of requests associated with this user
-  #@hasDeployedDeviceForOrg
+  #@hasDeployedDeviceForOrg=InstrumentSite
   instruments_deployed: []  # a list of instrument devices owned by this Org and currently deployed to a Site
   instruments_not_deployed: []  # a list of instrument devices owned by this Org but not currently deployed to a Site
 
-  #@hasDeployedDeviceForOrg
+  #@hasDeployedDeviceForOrg=PlatformSite
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
   platforms_not_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
 

@@ -1,36 +1,62 @@
 Scenario,confluence,Name,Parameter Type,Unit of Measure,Fill Value,Axis,Attributes,Index Key,Ion Name,Standard name,Long Name,OOI Short Name,CDM Data Type,Variable Reports,References List,Comment,Code Reports,Description
-DOC,,names must be unique.  ParameterDictionary entries will refer to these names.,,,"Please ensure that the fill_value is NOT a valid value for the parameter. For example, 0 is typically a very poor fill_value since it is usually valid (i.e. for temp, lat, lon, pressure, salinity, etc)",,,,,,,,,,,,,
-BASE,,conductivity,float32,S m-1,-9999,,,,CONDWAT,sea_water_electrical_conductivity,Conductivity,,float,,,,,"The OOI Level 1 Conductivity data product is computed by converting raw hexadecimal conductivity data from the conductivity, temperature and depth (CTD) family of instruments into Siemens/meter."
-BASE,,pressure,float32,dbar,-9999,,,,PRESWAT,sea_water_pressure,Pressure (Depth),,float,,,,,"The OOI Level 1 Pressure (Depth) core data product is computed by converting raw hexadecimal pressure data from the conductivity, temperature and depth (CTD) family of instruments into decibars."
-BASE,,salinity,float32,,-9999,,,,PRACSAL,sea_water_practical_salinity,Practical Salinity,,float,,,,,"The OOI Level 2 Salinity core data product is computed using the TEOS-10 equations for practical salinity with data from the conductivity, temperature, and depth (CTD) family of instruments."
-BASE,,density,float32,kg m-3,-9999,,,,DENSITY,sea_water_pressure,Density,,float,,,,,"The OOI Level 2 Density core data product is computed using the TEOS-10 equations with data from the conductivity, temperature and depth (CTD) family of instruments."
-BASE,,temp,float32,C,-9999,,,,TEMPWAT,sea_water_temperature,Water temperature,,float,,,,,"The OOI Level 1 Pressure (Depth) core data product is computed by converting raw hexadecimal pressure data from the conductivity, temperature and depth (CTD) family of instruments into decibars."
-BASE,,time,float64,seconds since 1970-01-01,-9999,,,,,time,Seconds since 1970-01-01,,float,,,,,
-BASE,,lat,float32,degree_north,-9999,Y,,,,latitude,Latitude,,float,,,,,
-BASE,,lon,float32,degree_east,-9999,X,,,,longitude,Longitude,,float,,,,,
-BASE,,port_timestamp,float64,seconds since 1970-01-01,-9999,T,,,,,Port timestamp in seconds since 1970-01-01,,float,,,,,
-BASE,,driver_timestamp,float64,seconds since 1970-01-01,-9999,T,,,,,Driver timestamp in seconds since 1970-01-01,,float,,,,,
-BASE,,internal_timestamp,float64,seconds since 1970-01-01,-9999,T,,,,,Internal timestamp in seconds since 1970-01-01,,float,,,,,
-BASE,,serial_num,array,identifier,,,,,,,Serial number,,String,,,,,
+DOC,,"?? description wanted, apply here ??",,,"Please ensure that the fill_value is NOT a valid value for the parameter. For example, 0 is typically a very poor fill_value since it is usually valid (i.e. for temp, lat, lon, pressure, salinity, etc)",,,,The expected display name for R2.1 and beyond. Will be a required field in R2.1 and beyond. May not be used in 2.0,The CF standard name for this parameter: http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/20/cf-standard-name-table.html,OOI documentation long name for L0,OOI documentation short name (abbreviation) for L0,,,,,,
+BASE,,conductivity,float32,S m-1,-9999,,,,Conductivity,sea_water_electrical_conductivity,Conductivity,CONDWAT,float,,,,,"The OOI Level 1 Conductivity data product is computed by converting raw hexadecimal conductivity data from the conductivity, temperature and depth (CTD) family of instruments into Siemens/meter."
+BASE,,pressure,float32,dbar,-9999,,,,Pressure,sea_water_pressure,Pressure (Depth),PRESWAT,float,,,,,"The OOI Level 1 Pressure (Depth) core data product is computed by converting raw hexadecimal pressure data from the conductivity, temperature and depth (CTD) family of instruments into decibars."
+BASE,,salinity,float32,,-9999,,,,Salinity,sea_water_practical_salinity,Practical Salinity,PRACSAL,float,,,,,"The OOI Level 2 Salinity core data product is computed using the TEOS-10 equations for practical salinity with data from the conductivity, temperature, and depth (CTD) family of instruments."
+BASE,,density,float32,kg m-3,-9999,,,,Density,sea_water_pressure,Density,DENSITY,float,,,,,"The OOI Level 2 Density core data product is computed using the TEOS-10 equations with data from the conductivity, temperature and depth (CTD) family of instruments."
+BASE,,temp,float32,C,-9999,,,,Temperature,sea_water_temperature,Water temperature,TEMPWAT,float,,,,,"The OOI Level 1 Pressure (Depth) core data product is computed by converting raw hexadecimal pressure data from the conductivity, temperature and depth (CTD) family of instruments into decibars."
+BASE,,time,float64,seconds since 1900-01-01,-9999,,,,Time,time,,,float,,,,,Time in seconds since 1970-01-01
+BASE,,lat,float32,degree_north,-9999,Y,,,Latitude,latitude,,,float,,,,,
+BASE,,lon,float32,degree_east,-9999,X,,,Longitude,longitude,,,float,,,,,
+BASE,,port_timestamp,float64,seconds since 1900-01-01,-9999,T,,,Port timstamp,,,,float,,,,,Port timestamp in seconds since 1970-01-01
+BASE,,driver_timestamp,float64,seconds since 1900-01-01,-9999,T,,,Driver timestamp,,,,float,,,,,Driver timestamp in seconds since 1970-01-01
+BASE,,internal_timestamp,float64,seconds since 1900-01-01,-9999,T,,,Internal timestamp,,,,float,,,,,Internal timestamp in seconds since 1970-01-01
+BASE,,serial_num,array,identifier,,,,,Serial number,,,,String,,,,,
 BASE,,counts,uint64,positive_Integer,0,,,,,,,,,,,,,
-BASE,,checksum,int32,,0,,,,,,Checksum,,int,,,,,
-BASE,,preferred_timestamp,array,,,,,,,,Preferred timestamp,,,,,,,
+BASE,,checksum,int32,,0,,,,Checksum,,,,int,,,,,
+BASE,,preferred_timestamp,array,,,,,,Preferred timestamp,,,,,,,,,
 BASE,,quality_flag,array,,,,,,,,,,,,,,,
-KAREN_IN_PROGRESS,,CONDWAT_GLBLRNG_QC,uint16?,,9,,,,,,Conductivity global range test QC flag,,short,,,,,The OOI Global Range Test quality control algorithm generates a QC flag for each conductivity data point indicating whether it falls within a given range.
-KAREN_IN_PROGRESS,,CONDWAT_LOCLRNG_QC,uint16?,,9,,,,,,Conductivity local range test QC flag,,short,,,,,
-KAREN_IN_PROGRESS,,CONDWAT_SPKETST_QC,uint16?,,9,,,,,,Conductivity spike test test QC flag,,short,,,,,
-KAREN_IN_PROGRESS,,CONDWAT_STUCKVL_QC,uint16?,,9,,,,,,Conductivity Stuck Value test QC flag,,short,,,,,
-KAREN_IN_PROGRESS,,CONDWAT_SPTL_GRADTST_QC,uint16?,,9,,,,,,Conductivity spatial gradient test QC flag,,short,,,,,
-KAREN_IN_PROGRESS,,CONDWAT_TMPL_GRADTST_QC,uint16?,,9,,,,,,Conductivity temporal gradient test QC flag,,short,,,,,
-BASE,,viz_timestamp,float64,seconds since 1970-01-01,-1,T,,,,,,,float,,,,,
+BASE,,viz_timestamp,float64,seconds since 1900-01-01,-1,T,,,,,,,float,,,,,
 BASE,,viz_product_type,array,,,,,,,,,,,,,,,
-BASE,,image_obj,array,,,,,,,,Image object,,,,,,,
-BASE,,image_name,array,,,,,,,,Image name,,,,,,,
-BASE,,content_type,array,,,,,,,,Content type,,,,,,,
+BASE,,image_obj,array,,,,,,Image object,,,,,,,,,
+BASE,,image_name,array,,,,,,Image name,,,,,,,,,
+BASE,,content_type,array,,,,,,Content type,,,,,,,,,
 BASE,,google_dt_components,record,,,,,,,,,,,,,,,
 BASE,,mpl_graph,record,,,,,,,,,,,,,,,
 BASE,,dummy,int64,,0,,,,,,,,long,,,,,
-BASE,,raw,array,utf8 binary string,,,,,,,,,,,,,,
-BASE,,input_voltage,float64,volts,-1,,,,,,Input voltage,,float,,,,,
-BF_DEMO,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,par_sensor_count,int64,no clue,,,,,,,,,long,,,,,
+BASE,,raw,array,utf8 binary string,,,,,raw data,,,,,,,,,
+BASE,,input_voltage,float64,volts,-1,,,,Input voltage,,,,float,,,,,
+BASE,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,par_sensor_count,int64,,,,,,PAR sensor counts,,,,long,,,,,
+BASE,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,elapsed_time,float64,seconds,-1,,,,Time since reset,,,,float,,,,,
+BASE,,pressure_temp,float32,C,-9999,,,,Temperature,sea_water_temperature,Water temperature,TEMPWAT,float,,,,,"The OOI Level 1 Pressure (Depth) core data product is computed by converting raw hexadecimal pressure data from the conductivity, temperature and depth (CTD) family of instruments into decibars."
 TEST,,sample_param,uint16,shouldnt work ,-1,,,,,,,,,,,,,
+KAREN_IN_PROGRESS,,CONDWAT_GLBLRNG_QC,int8,,9,,,,Conductivity global range QC,,,CONDWAT_GLBLRNG_QC,short,,,,,The OOI Global Range quality control algorithm generates a QC flag for the input data point indicating whether it falls within a given range.
+KAREN_IN_PROGRESS,,CONDWAT_LOCLRNG_QC,int8,,9,,,,Conductivity local range QC,,,CONDWAT_LOCLRNG_QC,short,,,,,The local range test is a QC test that reports whether input data points fall within given ranges
+KAREN_IN_PROGRESS,,CONDWAT_SPKETST_QC,int8,,9,,,,Conductivity spike test QC,,,CONDWAT_SPKETST_QC,short,,,,,The OOI Spike Test quality control algorithm generates a flag for individual data values that deviate significantly from surrounding data values.
+KAREN_IN_PROGRESS,,CONDWAT_STUCKVL_QC,int8,,9,,,,Conductivity Stuck Value QC,,,CONDWAT_STUCKVL_QC,short,,,,,The OOI Stuck Value Test quality control algorithm generates a flag for repeated occurrence of one value in a time series.
+KAREN_IN_PROGRESS,,CONDWAT_SPTL_GRADTST_QC,int8,,9,,,,Conductivity spatial gradient QC,,,CONDWAT_SPTL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in space fall within a given range.
+KAREN_IN_PROGRESS,,CONDWAT_TMPL_GRADTST_QC,int8,,9,,,,Conductivity temporal gradient QC,,,CONDWAT_TMPL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in time fall within a given range.
+KAREN_IN_PROGRESS,,PRESWAT_GLBLRNG_QC,int8,,9,,,,Pressure global range QC ,,,PRESWAT_GLBLRNG_QC,short,,,,,The OOI Global Range Test quality control algorithm generates a QC flag for the input data point indicating whether it falls within a given range.
+KAREN_IN_PROGRESS,,PRESWAT_LOCLRNG_QC,int8,,9,,,,Pressure local range QC,,,PRESWAT_LOCLRNG_QC,short,,,,,The local range test is a QC test that reports whether input data points fall within given ranges
+KAREN_IN_PROGRESS,,PRESWAT_SPKETST_QC,int8,,9,,,,Pressure spike test QC,,,PRESWAT_SPKETST_QC,short,,,,,The OOI Spike Test quality control algorithm generates a flag for individual data values that deviate significantly from surrounding data values.
+KAREN_IN_PROGRESS,,PRESWAT_STUCKVL_QC,int8,,9,,,,Pressure Stuck Value QC,,,PRESWAT_STUCKVL_QC,short,,,,,The OOI Stuck Value Test quality control algorithm generates a flag for repeated occurrence of one value in a time series.
+KAREN_IN_PROGRESS,,PRESWAT_SPTL_GRADTST_QC,int8,,9,,,,Pressure spatial gradient QC,,,PRESWAT_SPTL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in space fall within a given range.
+KAREN_IN_PROGRESS,,PRESWAT_TMPL_GRADTST_QC,int8,,9,,,,Pressure temporal gradient QC,,,PRESWAT_TMPL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in time fall within a given range.
+KAREN_IN_PROGRESS,,TEMPWAT_GLBLRNG_QC,int8,,9,,,,Temperature global range QC,,,TEMPWAT_GLBLRNG_QC,short,,,,,The OOI Global Range Test quality control algorithm generates a QC flag for the input data point indicating whether it falls within a given range.
+KAREN_IN_PROGRESS,,TEMPWAT_LOCLRNG_QC,int8,,9,,,,Temperature local range QC,,,TEMPWAT_LOCLRNG_QC,short,,,,,The local range test is a QC test that reports whether input data points fall within given ranges
+KAREN_IN_PROGRESS,,TEMPWAT_SPKETST_QC,int8,,9,,,,Temperature spike test QC,,,TEMPWAT_SPKETST_QC,short,,,,,The OOI Spike Test quality control algorithm generates a flag for individual data values that deviate significantly from surrounding data values.
+KAREN_IN_PROGRESS,,TEMPWAT_STUCKVL_QC,int8,,9,,,,Temperature Stuck Value QC,,,TEMPWAT_STUCKVL_QC,short,,,,,The OOI Stuck Value Test quality control algorithm generates a flag for repeated occurrence of one value in a time series.
+KAREN_IN_PROGRESS,,TEMPWAT_SPTL_GRADTST_QC,int8,,9,,,,Temperature spatial gradient QC,,,TEMPWAT_SPTL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in space fall within a given range.
+KAREN_IN_PROGRESS,,TEMPWAT_TMPL_GRADTST_QC,int8,,9,,,,Temperature temporal gradient QC,,,TEMPWAT_TMPL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in time fall within a given range.
+KAREN_IN_PROGRESS,,PRACSAL_GLBLRNG_QC,int8,,9,,,,Practical salinity global range QC,,,PRACSAL_GLBLRNG_QC,short,,,,,The OOI Global Range Test quality control algorithm generates a QC flag for the input data point indicating whether it falls within a given range.
+KAREN_IN_PROGRESS,,PRACSAL_LOCLRNG_QC,int8,,9,,,,Practical salinity local range QC,,,PRACSAL_LOCLRNG_QC,short,,,,,The local range test is a QC test that reports whether input data points fall within given ranges
+KAREN_IN_PROGRESS,,PRACSAL_SPKETST_QC,int8,,9,,,,Practical salinity spike test QC,,,PRACSAL_SPKETST_QC,short,,,,,The OOI Spike Test quality control algorithm generates a flag for individual data values that deviate significantly from surrounding data values.
+KAREN_IN_PROGRESS,,PRACSAL_STUCKVL_QC,int8,,9,,,,Practical salinity Stuck Value QC,,,PRACSAL_STUCKVL_QC,short,,,,,The OOI Stuck Value Test quality control algorithm generates a flag for repeated occurrence of one value in a time series.
+KAREN_IN_PROGRESS,,PRACSAL_SPTL_GRADTST_QC,int8,,9,,,,Practical salinity spatial gradient QC,,,PRACSAL_SPTL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in space fall within a given range.
+KAREN_IN_PROGRESS,,PRACSAL_TMPL_GRADTST_QC,int8,,9,,,,Practical salinity temporal gradient QC,,,PRACSAL_TMPL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in time fall within a given range.
+KAREN_IN_PROGRESS,,DENSITY_GLBLRNG_QC,int8,,9,,,,Density global range QC,,,DENSITY_GLBLRNG_QC,short,,,,,The OOI Global Range Test quality control algorithm generates a QC flag for the input data point indicating whether it falls within a given range.
+KAREN_IN_PROGRESS,,DENSITY_LOCLRNG_QC,int8,,9,,,,Density local range QC,,,DENSITY_LOCLRNG_QC,short,,,,,The local range test is a QC test that reports whether input data points fall within given ranges
+KAREN_IN_PROGRESS,,DENSITY_SPKETST_QC,int8,,9,,,,Density spike test QC,,,DENSITY_SPKETST_QC,short,,,,,The OOI Spike Test quality control algorithm generates a flag for individual data values that deviate significantly from surrounding data values.
+KAREN_IN_PROGRESS,,DENSITY_STUCKVL_QC,int8,,9,,,,Density Stuck Value QC,,,DENSITY_STUCKVL_QC,short,,,,,The OOI Stuck Value Test quality control algorithm generates a flag for repeated occurrence of one value in a time series.
+KAREN_IN_PROGRESS,,DENSITY_SPTL_GRADTST_QC,int8,,9,,,,Density spatial gradient QC,,,DENSITY_SPTL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in space fall within a given range.
+KAREN_IN_PROGRESS,,DENSITY_TMPL_GRADTST_QC,int8,,9,,,,Density temporal gradient QC,,,DENSITY_TMPL_GRADTST_QC,short,,,,,The OOI Gradient Test quality control algorithm generates QC flags indicating whether changes between successive data points in time fall within a given range.

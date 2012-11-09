@@ -113,7 +113,7 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   instrument_agents: []
   #@hasResource=DataProcessDefinition
   data_process_definitions: []
-  #@hasResource=Site
+  #@hasResource=Observatory
   sites: []
   #@hasMembershipInfo
   members: [] # The list of User Info objects

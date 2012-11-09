@@ -71,6 +71,7 @@ DataProductExtension: !Extends_ExtendedInformationResource
   # defined in get_data_product_extention
   provenance_product_list: []
 
+  data_ingestion_datetime: ""
 ---
 #This object contains additional information associated with a deployment resource.
 DeploymentExtension: !Extends_ExtendedInformationResource
@@ -124,6 +125,8 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 #This object contains additional information associated with an instrument device.
 PlatformDeviceExtension: !Extends_DeviceExtension
   origin_resource_type: 'PlatformDevice'
+  #@hasDevice=PlatformDevice
+  platforms: []  # The list of child platforms
   #@hasModel
   platform_model: !PlatformModel  # The associated Instrument Model
   #@hasAgentForDevice
@@ -255,10 +258,10 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
 #Computed attributes for a data product
 DataProductComputedAttributes: !Extends_ComputedAttributes
   #@Method
-  data_datetime: !ComputedStringValue  # the datetime of the earliest values in the data product
+  data_datetime: !ComputedListValue  # the datetime of the earliest  and most recent values in the data product
 
-  #@Method
-  data_ingestion_datetime: !ComputedStringValue  # the datetime of the earliest values in the data product
+#  #@Method
+#  data_ingestion_datetime: !ComputedStringValue  # the datetime of the earliest values in the data product
 
   #@Method
   product_download_size_estimated: !ComputedIntValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form

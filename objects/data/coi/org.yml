@@ -129,5 +129,12 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
   platforms_not_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
 
+  number_of_data_products: 0
+  number_of_platforms: 0
+  number_of_platforms_deployed: 0
+  number_of_instruments: 0
+  number_of_instruments_deployed: 0
+
+
 #Computed attributes for a data product
 MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes

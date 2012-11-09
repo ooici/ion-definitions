@@ -19,3 +19,4 @@ Service: !Extends_TaskableResource
 
   # The fully qualified name under which the service is available in the system
   exchange_name: ""
+  state: !ServiceStateEnum

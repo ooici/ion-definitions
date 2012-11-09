@@ -242,6 +242,7 @@ AgentInstance: !Extends_InformationResource
 ---
 
 ProcessStateEnum: !enum (values=(REQUESTED, WAITING, PENDING, RUNNING, TERMINATING, TERMINATED, FAILED, REJECTED, EXITED), default=REQUESTED)
+ServiceStateEnum: !enum (values=(PENDING, READY, STEADY, FAILED), default=PENDING)
 
 ---
 

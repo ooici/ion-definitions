@@ -102,7 +102,7 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   origin_resource_type: 'InstrumentDevice'
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasAgentForDevice
+  #@hasAgentForDevice=PlatformModel
   instrument_agent: !InstrumentAgent  # The associated agent
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
@@ -135,6 +135,8 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   instrument_devices: []  # list of sensors attached to this device
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
+
+  aggregated_status: !StatusType
 
 
 ---

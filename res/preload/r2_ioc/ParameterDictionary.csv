@@ -1,9 +1,13 @@
 Scenario,confluence,name,parameters,temporal_parameter
 BASE,,ctd_parsed_param_dict,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,pressure,conductivity,temp,salinity,density,quality_flag",time
-BASE,,ctd_raw_param_dict,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
+BASE,"OBSOLETE: use ""raw""",ctd_raw_param_dict,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
 ",time
 BASE,,graph_image_param_dict,"viz_timestamp,viz_product_type,image_name,content_type,image_obj",viz_timestamp
 BASE,,google_dt,google_dt_components,
-BASE,,mpl_graph,mpl_graph,
+BASE,ISSUE: Needs time param,mpl_graph,mpl_graph,
 TEST,,sample,sample_param,
-BASE,,platform_eng_parsed,"time,internal_timestamp, preferred_timestamp, lat, lon, input_voltage",time
+BASE,,platform_eng_parsed,"time,internal_timestamp,preferred_timestamp,lat,lon,input_voltage",time
+BASE,,parad_parsed,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,serial_num,elapsed_time,par_sensor_count,checksum",time
+BASE,,presf_parsed_tidesample,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,pressure,pressure_temp,temp,conductivity,salinity",time
+BASE,,raw,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
+",time

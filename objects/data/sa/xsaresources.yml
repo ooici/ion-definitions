@@ -161,6 +161,9 @@ SiteExtension: !Extends_ExtendedInformationResource
   #@hasDataProductsForSite
   device_data_products: []  # All the data products produced from devices at this Site and Site data products
 
+  instruments_not_operational: []  # instruments are deployed with lifecycle state not Active or execution state not Operational
+
+  instruments_operational: []  # instruments are deployed with lifecycle state of Active and execution state of Operational
 
 ###################################################################
 #
@@ -253,6 +256,7 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
 
+
 ---
 
 
@@ -278,7 +282,7 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   parameters: !ComputedListValue   # A set of Parameter objects describing each variable in this data product
 
   #@Method
-  data_url: !ComputedStringValue   # A unique id for this data product
+  data_url: !ComputedStringValue   # a link to the (time-varying) data product
 
   #@Method
   provenance: !ComputedDictValue   # Provides an audit trail for modifications to the original data

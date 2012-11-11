@@ -7,7 +7,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Observatory+Management
 
-dependencies: [resource_registry, instrument_management, data_product_management, org_management, data_process_management]
+dependencies: [resource_registry, instrument_management, data_product_management, org_management, data_process_management, user_notification]
 
 methods:
   # -----------------

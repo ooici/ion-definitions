@@ -133,6 +133,8 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   platform_agent: !PlatformAgent  # The associated agent
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
+  #@hasDevice=SensorDevice
+  sensor_devices: []  # list of sensors attached to this device
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
 

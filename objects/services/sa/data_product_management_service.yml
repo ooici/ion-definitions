@@ -5,7 +5,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Product+Management+Service
 
-dependencies: [resource_registry, pubsub_management, data_acquisition_management, dataset_management, ingestion_management, data_retriever]
+dependencies: [resource_registry, pubsub_management, data_acquisition_management, dataset_management, ingestion_management, data_retriever, user_notification]
 
 methods:
   create_data_product:

@@ -290,13 +290,11 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
   provenance: !ComputedDictValue   # Provides an audit trail for modifications to the original data
 
   #@Method
-  number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data
-
-  #@Method
   active_user_subscriptions: !ComputedListValue   # The NotificationRequest objects for this data product
 
-  #@Method
   past_user_subscriptions: !ComputedListValue   # Provides a list of NotificationRequest for users who have in the past acquired this data product, but for which that acquisition was terminated
+
+  number_active_subscriptions: !ComputedIntValue   # The number of current subscriptions to the data
 
   #@Method
   last_granule: !ComputedDictValue   # Returns a RDT of parameters and values

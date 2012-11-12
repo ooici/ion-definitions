@@ -295,11 +295,11 @@ CompoundAssociations:
     predicates: [hasProcessDefinition,hasOutputProduct]
   hasDataProductsForSite:
     predicates: [hasDevice,hasOutputProduct]
+  hasDataProductsForOrg:
+    predicates: [hasResource,hasOutputProduct]
   hasProcessInputDataProductsForDataProduct:
     predicates: [hasOutputProduct,hasInputProduct]
   hasDeployedDeviceForOrg:
     predicates: [hasResource,hasDevice]
-  hasRoleForUser:
-    predicates: [hasInfo,hasRole]
   hasResourcesForUser:
     predicates: [hasInfo,hasOwner]

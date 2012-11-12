@@ -44,7 +44,7 @@ methods:
       query_token: ""
     out:
     throws:
-      BadsRequest: Throws if specified query_token or its visualization product does not exist
+      BadRequest: Throws if specified query_token or its visualization product does not exist
 
 
   get_visualization_data:
@@ -77,4 +77,14 @@ methods:
       NotFound: Throws if specified data product id does not exist
 
 
+  get_dataproduct_kml:
+    docstring: |
+      This operation returns a KML file containing geo-references for all the dataproducts active in the system.
+      The KML file can be used for populating Google maps/earth.
+    in:
+      visualization_parameters: {}
+    out:
+      kml_file: ""
+    throws:
+      BadRequest: Throws if the KML could not be generated
 

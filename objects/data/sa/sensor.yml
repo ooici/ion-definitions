@@ -9,10 +9,6 @@ SensorDevice: !Extends_Device
 
   # Identifier of hard-coded operating system in unit 
   firmware_version: ""
-  
-  # Information about accuracy, precision, drift, etc. as assessed for this device. 
-  # (Signal characterization for the model is in that resource.) 
-  signal_characteristics: ""     # this is a DatumCharacterization object
 
 
 

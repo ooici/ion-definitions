@@ -91,6 +91,11 @@ server:
     data_path: RESOURCE:ext/pydap
     datasets_xml_path: RESOURCE:ext/datasets.xml
 
+  erddap:
+    type: erddap
+    host: localhost
+    port: 8081
+
   localrouter:
     # In-process router
     type: local

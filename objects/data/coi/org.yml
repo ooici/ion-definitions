@@ -99,7 +99,7 @@ Commitment: !Extends_InformationResource
 #This object contains additional information associated with a Marine Facility Org
 MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'Org'
-  #@hasResource=DataProduct
+  #@hasDataProductsForOrg
   data_products: []
   #@hasResource=PlatformDevice
   platforms: []
@@ -123,11 +123,8 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   user_requests: [] # A list of requests associated with this user
   #@hasDeployedDeviceForOrg=InstrumentSite
   instruments_deployed: []  # a list of instrument devices owned by this Org and currently deployed to a Site
-  instruments_not_deployed: []  # a list of instrument devices owned by this Org but not currently deployed to a Site
-
   #@hasDeployedDeviceForOrg=PlatformSite
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
-  platforms_not_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
 
   number_of_data_products: 0
   number_of_platforms: 0

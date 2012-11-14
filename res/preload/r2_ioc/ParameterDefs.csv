@@ -26,7 +26,6 @@ BASE,,mpl_graph,record,,,,,,,,,,,,,,,
 BASE,,dummy,int64,,0,,,,,,,,long,,,,,
 BASE,,raw,array,utf8 binary string,,,,,raw data,,,,,,,,,
 BASE,,input_voltage,float64,volts,-1,,,,Input voltage,,,,float,,,,,
-BASE,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,par_sensor_count,int64,,,,,,PAR sensor counts,,,,long,,,,,
 BASE,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,elapsed_time,float64,seconds,-1,,,,Time since reset,,,,float,,,,,
 BASE,,pressure_temp,float32,C,-9999,,,,Temperature,sea_water_temperature,Water temperature,TEMPWAT,float,,,,,"The OOI Level 1 Pressure (Depth) core data product is computed by converting raw hexadecimal pressure data from the conductivity, temperature and depth (CTD) family of instruments into decibars."
 TEST,,sample_param,uint16,shouldnt work ,-1,,,,,,,,,,,,,

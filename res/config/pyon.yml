@@ -171,7 +171,7 @@ validate:
 
 endpoint:
   receive:
-    timeout: 10   # RPC receive timeout in seconds
+    timeout: 30   # RPC receive timeout in seconds
 
 interceptor:
   interceptors:

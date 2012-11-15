@@ -293,7 +293,7 @@ DeviceStatusEvent: !Extends_Event
 
 ---
 
-InvestionOverflow: !Extends_Event
+IngestionOverflow: !Extends_Event
   process_id: ""
 
 

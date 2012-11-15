@@ -291,6 +291,9 @@ DeviceStatusEvent: !Extends_Event
   time_stamp: 0
   valid_values: []
 
+---
 
+InvestionOverflow: !Extends_Event
+  process_id: ""
 
 

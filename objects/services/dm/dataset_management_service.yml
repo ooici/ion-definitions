@@ -51,6 +51,7 @@ methods:
       Registers a dataset with PyDAP
     in: 
       dataset_id: ""
+      external_data_product_name: ""
     out:
     throws:
       NotFound: if dataset does not exist

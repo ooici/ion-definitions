@@ -145,6 +145,14 @@ methods:
     out:
       success: True
 
+  move_subscription:
+    docstring: ""
+    in:
+      subscription_id: ""
+      exchange_name: ""
+    out:
+      success: True
+
   #---------
 
   create_topic:

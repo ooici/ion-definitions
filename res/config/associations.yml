@@ -105,7 +105,7 @@ AssociationDefinitions:
     range: [NotificationRequest]
     docstring: References a NotificationRequest (standing notification rule) for a user.
   - predicate: hasSubscription
-    domain: [IngestionConfiguration]
+    domain: [IngestionConfiguration, ExchangeName]
     range: [Subscription]
     docstring: References the Subscription used by the ingenestion system
   - predicate: hasOutStream

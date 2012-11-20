@@ -140,6 +140,10 @@ AssociationDefinitions:
     domain: [StreamDefinition]
     range: [ParameterDictionaryResource]
     docstring: StreamDefinition -> ParameterDictionaryResource
+  - predicate: hasIngestionWorker
+    domain: [ExchangeName]
+    range: [Process]
+    docstring: IngestionConfiguration -> Process, links the two so that resources can be cleaned up.
 
 # COI
   - predicate: affiliatedWith

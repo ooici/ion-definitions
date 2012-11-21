@@ -135,3 +135,5 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
 
 #Computed attributes for a data product
 MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes
+  instrument_status: []
+  platform_status: []

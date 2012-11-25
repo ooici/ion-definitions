@@ -216,6 +216,9 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
   location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
+  platform_status: []
+  instrument_status: []
+
 ---
 
 
@@ -258,6 +261,8 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
 
+  platform_status: []
+  instrument_status: []
 
 ---
 

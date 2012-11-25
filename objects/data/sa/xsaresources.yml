@@ -9,7 +9,7 @@ StatusType: !enum ( values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_U
 
 ---
 
-#This object contains additional information associated with an instrument device.
+# This object contains additional information associated with an instrument device.
 DeviceExtension: !Extends_ExtendedInformationResource
   #@hasOutputProduct
   data_products: [] # A list of associated data products
@@ -28,7 +28,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
 #
 ####################################################################
 
-#This object contains additional information associated with a data process.
+# This object contains additional information associated with a data process.
 DataProcessExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'DataProcess'
   #@hasProcessDefinition
@@ -38,9 +38,8 @@ DataProcessExtension: !Extends_ExtendedInformationResource
   #@hasOutputProduct
   output_data_products: []  # set of !DataProducts
 
-
 ---
-#This object contains additional information associated with a data process definition.
+# This object contains additional information associated with a data process definition.
 DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'DataProcessDefinition'
   #@hasProcessDefinition
@@ -52,10 +51,9 @@ DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
   #@hasDataProductsForDataProcessDefinition
   data_products: []             # set of DataProducts from all child data processes
 
-
 ---
 
-#This object contains additional information associated with a data product.
+# This object contains additional information associated with a data product.
 DataProductExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'DataProduct'
   #@hasVersion
@@ -72,8 +70,10 @@ DataProductExtension: !Extends_ExtendedInformationResource
   provenance_product_list: []
 
   data_ingestion_datetime: ""
+
 ---
-#This object contains additional information associated with a deployment resource.
+
+# This object contains additional information associated with a deployment resource.
 DeploymentExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'Deployment'
   #@hasDeployment=InstrumentDevice
@@ -89,7 +89,7 @@ DeploymentExtension: !Extends_ExtendedInformationResource
 
 ---
 
-#This object contains additional information associated with a instrument or platform model.
+# This object contains additional information associated with a instrument or platform model.
 DeviceModelExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'DeviceModel'
   #@hasModel
@@ -97,7 +97,7 @@ DeviceModelExtension: !Extends_ExtendedInformationResource
 
 ---
 
-#This object contains additional information associated with an instrument device.
+# This object contains additional information associated with an instrument device.
 InstrumentDeviceExtension: !Extends_DeviceExtension
   origin_resource_type: 'InstrumentDevice'
   #@hasModel
@@ -112,9 +112,10 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   sensor_devices: []  # list of sensors attached to this device
   #@hasDevice=InstrumentSite
   deployed_site: !InstrumentSite  # The current sites to which to which this device is deployed
+
 ---
 
-#This object contains additional information associated with a request for notification.
+# This object contains additional information associated with a request for notification.
 NotificationRequestExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'NotificationRequest'
   #@hasNotification=UserInfo
@@ -122,7 +123,7 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 
 ---
 
-#This object contains additional information associated with an instrument device.
+# This object contains additional information associated with an instrument device.
 PlatformDeviceExtension: !Extends_DeviceExtension
   origin_resource_type: 'PlatformDevice'
   #@hasDevice=PlatformDevice
@@ -140,10 +141,9 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 
   aggregated_status: !StatusType
 
-
 ---
 
-#This object contains additional information associated with a Site resource.
+# This object contains additional information associated with a Site resource.
 SiteExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'Site'
   #@hasDevice=InstrumentDevice
@@ -175,7 +175,7 @@ SiteExtension: !Extends_ExtendedInformationResource
 #
 ####################################################################
 
-#Computed attributes for an instrument device
+# Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
   firmware_version: !ComputedFloatValue  # identifier of software installed in unit
@@ -184,46 +184,28 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
 
   #@Method
-  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
-  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
-  data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
-  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   last_calibration_datetime: !ComputedFloatValue  #
 
----
-
-
-
-#Computed attributes for an platform device
-PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
-  #@Method
   power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
-  platform_status: []
-  instrument_status: []
+---
+
+# Computed attributes for an platform device
+PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
+  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+
+  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
+  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
 
 ---
 
-
-
-#Computed attributes for a Site
+# Computed attributes for a Site (abstract type)
 SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
@@ -246,29 +228,18 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
 
-  #@Method
   communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   data_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-
-  #@Method
   aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
 
-  platform_status: []
-  instrument_status: []
+  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
+  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
 
 ---
 
-
-
-#Computed attributes for a data product
+# Computed attributes for a data product
 DataProductComputedAttributes: !Extends_ComputedAttributes
   #@Method
   data_datetime: !ComputedListValue  # the datetime of the earliest  and most recent values in the data product
@@ -313,8 +284,6 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 
 #Computed attributes for a data product
 DeploymentComputedAttributes: !Extends_ComputedAttributes
-
-
 
 ---
 

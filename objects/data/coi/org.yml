@@ -135,5 +135,5 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
 
 #Computed attributes for a data product
 MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes
-  instrument_status: []
-  platform_status: []
+  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
+  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)

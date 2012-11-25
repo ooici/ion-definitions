@@ -27,7 +27,6 @@ TaskableResource: !Extends_Resource
   message_controllable: True    # can this resource be controlled by messages sent to it
   monitorable: True             # A device that has a communication port for real-time monitoring
   
-  
 ---
 
 # Describes a resource that can be instantiated into a taskable resource. Abstract base type.
@@ -77,6 +76,7 @@ ComputedListValue: !Extends_ComputedValue
 
 ComputedDictValue: !Extends_ComputedValue
   value: {}
+
 ---
 
 # The base type for computed attribute objects
@@ -99,7 +99,6 @@ TaskableComputedAttributes: !Extends_ComputedAttributes
 # The base type for taskable computed attribute objects
 DeviceComputedAttributes: !Extends_TaskableComputedAttributes
 
-  #@Method
   aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device.
 
   #@Method
@@ -112,9 +111,10 @@ DeviceComputedAttributes: !Extends_TaskableComputedAttributes
   data_product_parameters_set: !ComputedDictValue    # A dictionary of data product contexts with the processing_level_code as the key to identify
 
 ---
+
 # A non-persistable container for a resource and its related data
 ResourceContainer:
-  _id: ""   #  Unique identifier (matchs the id of the internal persistable resource object)
+  _id: ""   #  Unique identifier (matches the id of the internal persistable resource object)
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   resource: !Resource
   computed: !ComputedAttributes
@@ -143,7 +143,6 @@ TestExtendedResource: !Extends_ExtendedResource
   resource_object: !Resource
   #@Method=resource_registry.read
   remote_resource_object: !Resource
-
 
 ---
 

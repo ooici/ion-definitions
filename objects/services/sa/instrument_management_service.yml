@@ -57,7 +57,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  agent_state_checkpoint:
+  save_resource_state:
     docstring: |
       Serialize the instrument agent configuration for an instrument device and save it as a JSON
       attachment with the given name
@@ -69,7 +69,7 @@ methods:
     throws:
       NotFound: object with the specified ID does not exist
 
-  agent_state_restore:
+  restore_resource_state:
     docstring: |
       Deserialize the instrument agent configuration for an instrument device from an attachment 
       and store it to the current driver config

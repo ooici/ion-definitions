@@ -1,6 +1,1 @@
-__pk_InformationLevel_ID,Description,Level
-"2020001","Always - abbreviated","0"
-"2020002","Callout preview","1"
-"2020003","First level drill down","2"
-"2020006","Buried deep","3"
-"2020007","Not used","4"
+__pk_InformationLevel_ID,Description,Level"2020001","Always - abbreviated","0""2020002","Callout preview","1""2020003","First level drill down","2""2020006","Buried deep","3""2020007","Not used","4"

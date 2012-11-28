@@ -3,6 +3,7 @@ UIResource: !Extends_Resource
   #name: ""    - inherited
   #description: ""     - inherited
   uirefid: ""   # UX database internal identifier
+  ordinal: 0    # Maintains an ordering of UI elements based on import order
 
 ---
 

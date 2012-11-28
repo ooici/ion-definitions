@@ -95,11 +95,11 @@ apps:
         parameters:
           preserve_n: 1
 
-#  - name: conversation_management
-#    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
-#    deploy:
-#      bootlevel: 10
-
+  - name: conversation_management
+    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
+    deploy:
+      bootlevel: 10
+      
   - name: object_management
     processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
     deploy:

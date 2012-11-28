@@ -7,7 +7,11 @@ Conversation: !Extends_InformationResource
 #Defines an interaction pattern (aka conversation protocol) involving multiple participants
 # with defined roles. System interactions in conversation instances can be checked for compliance.
 ConversationType: !Extends_InformationResource
-  protocol_definition: ""
+  # The language of service specification. For future extensibility
+  definition_type: "Scribble/0.2"
+
+  # The actual service specification
+  definition: ""
 
 
 # Describes the characteristics of an interacting party in a conversation type.

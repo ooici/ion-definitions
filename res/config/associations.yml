@@ -243,7 +243,7 @@ AssociationDefinitions:
     range: [Resource]
     docstring: References a resource belonging to Org or a Collection
   - predicate: hasRole
-    domain: [Conversation, ActorIdentity, Org]
+    domain: [Conversation, ConversationType, ActorIdentity, Org]
     range: [ConversationRole, UserRole]
     docstring: Indicates the role definition fulfilled by a resource
   - predicate: hasServiceDefinition

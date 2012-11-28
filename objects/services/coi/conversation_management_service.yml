@@ -8,8 +8,7 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Conve
 
 dependencies: [resource_registry]
 
-# TODO:
-# - Define query
+# TODO - Determine if we really need the CRUD functions for conversation objects - not sure of their usefulness as currently defined
 
 methods:
   create_conversation:
@@ -48,12 +47,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  find_conversations:
-    docstring: Returns a list of Conversation resources for the provided resource filter.
-    in:
-      filters: !ResourceFilter
-    out:
-      conversation_list: []
 
   # -----------------
 
@@ -92,11 +85,61 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  bind_conversation_type_to_role:
+    docstring: Binds an existing Conversation Type resource to a Conversation Role
+    in:
+      conversation_type_id: ""
+      conversation_role_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unbind_conversation_type_to_role:
+    docstring: Removes the binding between an existing Conversation Type resource and a Conversation Role
+    in:
+      conversation_type_id: ""
+      conversation_role_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
   # -----------------
 
-  log_message:
-    docstring: Logs a message to the system Conversation Log
+  create_conversation_role:
+    docstring: Creates a Conversation Role resource from the parameter ConversationRole object.
     in:
-      message: {}
+      conversation_role: !ConversationRole
     out:
+      conversation_role_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_conversation_role:
+    docstring: Updates an existing Conversation Role resource.
+    in:
+      conversation_role: !ConversationRole
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_conversation_role:
+    docstring: Returns an existing Conversation Role resource.
+    in:
+      conversation_role_id: ""
+    out:
+      conversation_role: !ConversationRole
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_conversation_role:
+    docstring: Deletes an existing Conversation Role resource.
+    in:
+      conversation_role_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 

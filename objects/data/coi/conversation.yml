@@ -1,13 +1,13 @@
 # Represents an interaction between system participants. Conversation is an instance of a
 # conversation type, with actor identities bound to conversation roles.
+#TODO - determine the need for this object
 Conversation: !Extends_InformationResource
 
 
 #Defines an interaction pattern (aka conversation protocol) involving multiple participants
 # with defined roles. System interactions in conversation instances can be checked for compliance.
 ConversationType: !Extends_InformationResource
-  definition_type: ""
-  definition: ""
+  protocol_definition: ""
 
 
 # Describes the characteristics of an interacting party in a conversation type.
@@ -15,5 +15,6 @@ ConversationRole: !Extends_InformationResource
 
 
 # Resource describing an actor taking on a conversation role in a conversation (instance)
+#TODO - determine the need for this object
 ConverationRoleBinding:
   exchange_name: ""   # The address of the process to communicate with

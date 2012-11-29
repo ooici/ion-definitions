@@ -126,7 +126,7 @@ Parameter:
   cdm_data_type: ""     # the THREDDS data type
   axis: ""              # for CF compliance, holds X, Y, Z or T for vars holding lat, lon, depth and time info
   code_reports: []      # provide the meaning of flags in CodeReport objects
-  comment: ""
+  description: ""           # a human-readable description of the parameter
   reference_urls: []    # List of URLs with information about the data parameter
   units: ""
   ion_name: ""

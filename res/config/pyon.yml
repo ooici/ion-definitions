@@ -72,8 +72,8 @@ server:
     type: smtp
     host: localhost
     port: 25
-    sender: me@email.com
-    password: Iwillnotell
+    sender: data_alerts@oceanobservatories.org
+    password: ""
   elasticsearch:
     # Search index server
     type:           elasticsearch

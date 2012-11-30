@@ -354,7 +354,6 @@ apps:
                   type: BINARY
                   datastore_name: filesystem
 
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
   - name: parameter_bootstrap
@@ -368,6 +367,16 @@ apps:
       scenario: BASE
       path: res/preload/r2_ioc
       categories: ParameterDefs,ParameterDictionary
+
+  #The bootstrap for loading policy should be the final bootstrap process.
+  - name: policy_bootstrap
+    processapp: [policy_bootstrap, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    deploy:
+      bootlevel: 29
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
+
 
   # LAST SERVICE GATEWAY SERVICE
   #

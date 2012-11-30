@@ -12,32 +12,9 @@ Org: !Extends_TaskableResource
   #@ContentType=ContactInformation
   contacts: []                # A list of ContactInformation entities that serves as a contact point
 
----
-
-# Enum for originator of the proposal
-ProposalOriginatorEnum: !enum (values=(CONSUMER, PROVIDER, BROKER), default=CONSUMER)
-
-# Enum for the status of the proposal
-ProposalStatusEnum: !enum (values=(INITIAL, COUNTER, ACCEPTED, REJECTED, GRANTED), default=INITIAL)
 
 ---
-
-# Object representing a current proposal for a service agreement. The proposal may contain several items of
-# different type, or can be a composite of service agreement proposals.
-ServiceAgreementProposal:
-  negotiation_id: ""   #What negotiation resource is this part of
-  originator: !ProposalOriginatorEnum
-  consumer: ""     #Who will be the consumer of this proposal - typically a used id
-  provider: ""     #Who will be the provider of this proposal - typically an org id
-  broker: ""       #Optional identifier if proposal is brokered by third party
-  sequence_num: 0  #Keeps track of the sequence of proposals within a negotiation
-  proposal_status: !ProposalStatusEnum
-  expiration: 0    #Expiration that will be used with resultant Commitment if accepted - 0 is unlimited
-  conditions: {}   #Optional collection of additional conditions - not used in R2
-  clauses: {}      #Optional collection of additional clauses - not used in R2
-
----
-#Various specific types of proposals
+#Various specific types of proposals managed by the Org
 
 EnrollmentProposal: !Extends_ServiceAgreementProposal
 
@@ -53,29 +30,6 @@ AcquireResourceProposal: !Extends_ServiceAgreementProposal
 
 AcquireResourceExclusiveProposal: !Extends_AcquireResourceProposal
 
----
-
-# Enum for the type of Negotiation
-NegotiationTypeEnum: !enum (values=(REQUEST, INVITATION, BROKERED), default=REQUEST)
-
-# Enum for the status of the Negotiation
-NegotiationStatusEnum: !enum (values=(OPEN, ACCEPTED, REJECTED), default=OPEN)
-
----
-
-# Describes a negotiation between multiple system participants with the intent of agreeing
-# to a mutual contract with commitments if successful.
-Negotiation: !Extends_InformationResource
-  negotiation_type: !NegotiationTypeEnum
-  negotiation_status: !NegotiationStatusEnum
-  reason: ""     #Optional field to include a reason for a status
-  #@ContentType=ServiceAgreementProposal
-  proposals: []  # The last SAP in the list is considered the most recent one
-
----
-
-#A subtype for all specific commitments
-AbstractBaseCommitment:
 
 ---
 
@@ -83,16 +37,6 @@ AbstractBaseCommitment:
 ResourceCommitment: !Extends_AbstractBaseCommitment
   resource_id: ""
   exclusive: False
-
----
-
-# Represents a standing obligation of one ION participant to another ION participant.
-# Commitments can be tracked and violations against commitments can be sanctioned.
-Commitment: !Extends_InformationResource
-  provider: ""
-  consumer: ""
-  expiration: 0    #Expiration of the Commitment - 0 is unlimited
-  commitment: !AbstractBaseCommitment
 
 ---
 

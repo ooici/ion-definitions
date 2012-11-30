@@ -70,7 +70,7 @@ server:
   smtp:
     # Outgoing email server
     type: smtp
-    host: localhost
+    host: mail.oceanobservatories.org
     port: 25
     sender: data_alerts@oceanobservatories.org
     password: ""

@@ -147,7 +147,7 @@ Device: !Extends_TaskableResource
   # Recommended format: {attribute1_name:value, attribute2_name:value}
   # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
-  parameter_characteristic_reports: []    # list of ParameterCharacteristicsReport objects
+
 
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
@@ -177,6 +177,7 @@ DeviceModel: !Extends_InformationResource
   # tag is the stream name that the driver uses and the value is the paramter dictionary name.
   stream_configuration: {}
   has_clock: True      # Indicates whether the device has an internal clock or not
+  parameter_characteristics_reports: []    # list of ParameterCharacteristicsReport objects
 ---
 
 AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
@@ -238,6 +239,19 @@ AgentInstance: !Extends_InformationResource
 #  exchange_name: ""
   configuration: {}
   agent_process_id: ""
+
+---
+
+StreamConfiguration:
+  stream_name: ""
+  parameter_dictionary_id: ""
+  records_per_granule: 0
+  granule_publish_rate: 0  #seconds
+
+# Describes a running or scheduled  agent representing a single device. Abstract base type.
+DeviceAgentInstance: !Extends_AgentInstance
+  # set of streams that this agent/driver produces
+  stream_configurations: [] #set of StreamConfiguration objects
 
 ---
 

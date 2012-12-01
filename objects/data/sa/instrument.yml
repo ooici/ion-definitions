@@ -53,7 +53,7 @@ InstrumentModel: !Extends_DeviceModel
 InstrumentAgent: !Extends_AgentDefinition
 
 # Describes parameters for an instance of an instrument agent for a specific device.
-InstrumentAgentInstance: !Extends_AgentInstance
+InstrumentAgentInstance: !Extends_DeviceAgentInstance
   svr_addr: ""
   comms_method: ""
   comms_device_address: ""

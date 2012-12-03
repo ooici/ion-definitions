@@ -287,8 +287,8 @@ DeviceStatusType: !enum (values=(OUT_OF_RANGE, OK), default=OUT_OF_RANGE)
 # To be used by transforms monitoring the health of data producers to report the status of the producers
 DeviceStatusEvent: !Extends_Event
   state: !DeviceStatusType
-  value: 0
-  time_stamp: 0
+  values: []
+  time_stamps: []
   valid_values: []
 
 ---

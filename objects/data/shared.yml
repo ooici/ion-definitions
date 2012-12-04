@@ -174,8 +174,6 @@ DeviceModel: !Extends_InformationResource
   # A device of this model should then store these attribute values in the corresponding custom_attributes
   # of the device instance.
   custom_attributes: []
-  # tag is the stream name that the driver uses and the value is the paramter dictionary name.
-  stream_configuration: {}
   has_clock: True      # Indicates whether the device has an internal clock or not
   parameter_characteristics_reports: []    # list of ParameterCharacteristicsReport objects
 ---
@@ -243,15 +241,16 @@ AgentInstance: !Extends_InformationResource
 ---
 
 StreamConfiguration:
-  stream_name: ""
-  parameter_dictionary_id: ""
-  records_per_granule: 0
-  granule_publish_rate: 0  #seconds
+  stream_name: ""                 # the tag that the driver uses to reference this stream
+  parameter_dictionary_name: ""   # the name of the parameter dictionary that defines the contents of the stream
+  records_per_granule: 0          # recommended number of records/samples to place in a single granule
+  granule_publish_rate: 0         # max recommended seconds between publishing granules
+
+---
 
 # Describes a running or scheduled  agent representing a single device. Abstract base type.
 DeviceAgentInstance: !Extends_AgentInstance
-  # set of streams that this agent/driver produces
-  stream_configurations: [] #set of StreamConfiguration objects
+  stream_configurations: []     #set of StreamConfiguration objects that this agent/driver produces
 
 ---
 

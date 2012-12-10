@@ -116,6 +116,7 @@ DeviceComputedAttributes: !Extends_TaskableComputedAttributes
 ResourceContainer:
   _id: ""   #  Unique identifier (matches the id of the internal persistable resource object)
   ts_created: ""  # Timestamp str in millis in UNIX epoch
+  lcstate_transitions: {}  # Available lcstate transitions (key event, value target state)
   resource: !Resource
   computed: !ComputedAttributes
   ext_associations: {}  # An optional dict of names and associated objects to get other associations on the fly

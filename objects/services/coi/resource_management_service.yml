@@ -2,16 +2,18 @@ name: resource_management
 
 docstring: |
   The Resource Management Service is the service that manages the Resource Types and Lifecycles
-  workflows associated with Resource Types.
+  workflows associated with Resource Types.  It also provides operations that manage any kind of
+  resource, their lifecycle. The service also proces a resource agent interface to any resource,
+  configured by resource type.
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Resource+Management+Service
 
 dependencies: [resource_registry]
 
-# TODO:
-# - Find pattern
-
 methods:
+  # -----------------
+  # Working with resource types
+
   create_resource_type:
     docstring: Creates a Resource Type resource from the parameter ResourceType object.
     in:
@@ -51,6 +53,7 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
+  # Working with resource lifecycle definitions
 
   create_resource_lifecycle:
     docstring: Creates a Resource LifeCycle resource from the parameter ResourceLifeCycle object.
@@ -87,3 +90,266 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  # -----------------
+  # Generic resource CRUD interface for any resource
+
+  create_resource:
+    docstring: |
+      Creates an arbitrary resource object via its defined create function, so that it
+      can successively can be accessed via the agent interface.
+    in:
+      resource: !Resource
+    out:
+      resource_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_resource:
+    docstring: Updates an existing resource via the configured service operation.
+    in:
+      resource: !Resource
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+
+  read_resource:
+    docstring: Returns an existing resource via the configured service operation.
+    in:
+      resource_id: ""
+    out:
+      resource: !Resource
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_resource:
+    docstring: Deletes an existing resource via the configured service operation.
+    in:
+      resource_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  # -----------------
+  # Other common resource operations for any resource
+
+  execute_lifecycle_transition:
+    docstring: |
+      Alter object lifecycle according to given transition event. Throws exception
+      if resource object does not exist or given transition_event is unknown/illegal.
+      The new life cycle state after applying the transition is returned.
+    in:
+      resource_id: ""
+      transition_event: ""
+    out:
+      lcstate: ""
+    throws:
+      NotFound: resource object does not exist
+      BadRequest: transition event unknown or illegal in current state; resource type has no lifecycle
+      Conflict: race condition while trying to update
+
+  get_lifecycle_events:
+    docstring: |
+      For a given resource, return a list of possible lifecycle transition events.
+    in:
+      resource_id: ""
+    out:
+      transition_events: []
+    throws:
+      NotFound: resource object does not exist
+      BadRequest: transition event unknown or illegal in current state; resource type has no lifecycle
+
+  # -----------------
+  # Resource agent interface
+
+  # Governance interface
+
+  negotiate:
+    docstring: |
+      Initiate a negotiation with this agent. The subject of this negotiation is the given
+      ServiceAgreementProposal. The response is either a new ServiceAgreementProposal as counter-offer,
+      or the same ServiceAgreementProposal indicating the offer has been accepted.
+      NEEDS REFINEMENT.
+    in:
+      resource_id: ""
+      sap_in: !ServiceAgreementProposal
+    out:
+      sap_out: !ServiceAgreementProposal
+
+  # -----------------
+  # Capabilities interface
+
+  get_capabilities:
+    docstring: |
+      Introspect for agent capabilities.
+      @param resource_id The id of the resource agent.
+      @param current_state Flag indicating to return capabilities for current
+      state only (default True).
+      @retval List of AgentCapabilities objects.
+    in:
+      resource_id: ""
+      current_state: True
+    out:
+      capability_list: []
+    throws:
+
+  # -----------------
+  # Resource control interface
+
+  execute_resource:
+    docstring: |
+      Execute command on the resource represented by agent.
+      @param resource_id The id of the resource agennt.
+      @param command An AgentCommand containing the command.
+      @retval result An AgentCommandResult containing the result.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the command is not available in current state.
+      @throws ResourceError if the resource produced an error during execution.
+    in:
+      resource_id: ""
+      command: !AgentCommand
+    out:
+      result: !AgentCommandResult
+    throws:
+      BadRequest: if the command was malformed.
+      NotFound: if the command is not implemented in the agent.
+      ResourceError: if the resource produced an error.
+
+  get_resource:
+    docstring: |
+      Return the value of the given resource parameter.
+      @param resource_id The id of the resource agennt.
+      @param params A list of parameters names to query.
+      @retval A dict of parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the resource does not support the parameter.
+    in:
+      resource_id: ""
+      params: []
+    out:
+      result: {}
+    throws:
+      NotFound: if the parameter does not exist.
+
+  set_resource:
+    docstring: |
+      Set the value of the given resource parameters.
+      @param resource_id The id of the resource agennt.
+      @param params A dict of resource parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if a parameter is not supported by the resource.
+      @throws ResourceError if the resource encountered an error while setting
+      the parameters.
+    in:
+      resource_id: ""
+      params: {}
+    out:
+    throws:
+      BadRequest: if the command was malformed.
+      NotFound: if the parameter does not exist.
+      ResourceError: if the resource failed while trying to set the parameter.
+
+  get_resource_state:
+    docstring: |
+      Return the current resource specific state, if available.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing the current resource specific state.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:
+      NotFound: if the resource does not utilize a specific state machine.
+      ResourceError: if the resource failed while trying to get the state.
+
+  ping_resource:
+    docstring: |
+      Ping the resource.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing a string representation of the resource and
+      timestamp.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:
+
+  # -----------------
+  # Resource monitor interface
+
+  # -----------------
+  # Agent control interface
+
+  execute_agent:
+    docstring: |
+      Execute command on the agent.
+      @param resource_id The id of the resource agennt.
+      @param command An AgentCommand containing the command.
+      @retval result An AgentCommandResult containing the result.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the command is not available in current state.
+    in:
+      resource_id: ""
+      command: !AgentCommand
+    out:
+      result: !AgentCommandResult
+    throws:
+      BadRequest: if the command was malformed.
+      NotFound: if the command is not implemented in the agent.
+
+  get_agent:
+    docstring: |
+      Return the value of the given agent parameters.
+      @param resource_id The id of the resource agennt.
+      @param params A list of parameters names to query.
+      @retval A dict of parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if the agent does not support the parameter.
+    in:
+      resource_id: ""
+      params: []
+    out:
+      result: {}
+    throws:
+      BadRequest: if the command was malformed.
+      NotFound: if the parameter does not exist.
+
+  set_agent:
+    docstring: |
+      Set the value of the given agent parameters.
+      @param resource_id The id of the resource agennt.
+      @param params A dict of resource parameter name-value pairs.
+      @throws BadRequest if the command was malformed.
+      @throws NotFound if a parameter is not supported by the resource.
+    in:
+      resource_id: ""
+      params: {}
+    out:
+    throws:
+      BadRequest: if the command was malformed.
+      NotFound: if the parameter does not exist.
+
+  get_agent_state:
+    docstring: |
+      Return the current resource agent common state.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing the current agent state.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:
+
+  ping_agent:
+    docstring: |
+      Ping the agent.
+      @param resource_id The id of the resource agennt.
+      @retval A str containing a string representation of the agent
+      and a timestamp.
+    in:
+      resource_id: ""
+    out:
+      result: str
+    throws:

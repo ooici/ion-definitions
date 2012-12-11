@@ -140,8 +140,8 @@ methods:
       is sent to the user containing the digest of all the events.
 
     in:
-      start_time: 0
-      end_time: 10
+      start_time: ''
+      end_time: ''
     out:
 
   set_process_batch_key:

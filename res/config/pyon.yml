@@ -158,6 +158,8 @@ container:
     endpoint: # TODO: move entries to here
       rpc_conversation_enabled: True
     interceptor: # TODO: move entries to here
+    conversation_log:
+          header_fields: []
 
   objects:
     validate: # TODO: move entries to here

@@ -1,14 +1,25 @@
-# Agent interface definitions for the agent management service.
+# Resource management definitions for the resource management service (RMS).
+# This includes the agent interface definitions
 
-# The goal is that the AMS can represent a multitude of different resource types
-# through the generic agent interface, without having an actual agent.
+# One goal is that the RMS can represent a multitude of different resource types
+# through a generic management interface and through a resource agent interface,
+# without having an actual agent.
 
-AgentInterface:
+ResourceInterface:
+
   InstrumentDevice:
     agent: True
+    execute_lifecycle_transition: serviceop:instrument_management.execute_instrument_device_lifecycle($RESOURCE_ID,$VALUE)
+
+  InstrumentAgent:
+    execute_lifecycle_transition: serviceop:instrument_management.execute_instrument_agent_lifecycle($RESOURCE_ID,$VALUE)
 
   PlatformDevice:
     agent: True
+    execute_lifecycle_transition: serviceop:instrument_management.execute_platform_device_lifecycle($RESOURCE_ID,$VALUE)
+
+  PlatformAgent:
+    execute_lifecycle_transition: serviceop:instrument_management.execute_platform_agent_lifecycle($RESOURCE_ID,$VALUE)
 
   Process:
     service: process_dispatcher
@@ -24,6 +35,7 @@ AgentInterface:
     update: serviceop:resource_registry.update($RESOURCE)
     read: serviceop:resource_registry.read($RESOURCE_ID)
     delete: serviceop:resource_registry.delete($RESOURCE_ID)
+    execute_lifecycle_transition: serviceop:resource_registry.execute_lifecycle_transition($RESOURCE_ID,$VALUE)
 
     params:
       object_size:

@@ -47,10 +47,10 @@ PlatformModel: !Extends_DeviceModel
   platform_type: ""   #
 
 # Describes a type of platform agent
-PlatformAgent: !Extends_AgentDefinition
+PlatformAgent: !Extends_DeviceAgent
 
 # Describes parameters for a platform agent instance
-PlatformAgentInstance: !Extends_DeviceAgentInstance
+PlatformAgentInstance: !Extends_AgentInstance
   #replace all the individual items about with driver_config and agent_config dict
   driver_config: {}
   agent_config: {}

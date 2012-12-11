@@ -50,10 +50,10 @@ InstrumentModel: !Extends_DeviceModel
   
 
 # Defines an agent/driver combination compatible with a specific instrument model.
-InstrumentAgent: !Extends_AgentDefinition
+InstrumentAgent: !Extends_DeviceAgent
 
 # Describes parameters for an instance of an instrument agent for a specific device.
-InstrumentAgentInstance: !Extends_DeviceAgentInstance
+InstrumentAgentInstance: !Extends_AgentInstance
   svr_addr: ""
   comms_method: ""
   comms_device_address: ""

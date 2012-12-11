@@ -39,7 +39,7 @@ ProcessDefinition: !Extends_ExecutableResource
     class: ""    # The class name within the source code module
     url: ""      # location of the module in ION
   arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
-  definition: !EventProcessDefinitionDetail   # process definition specific information  that is true for all processes of this type
+  definition: !AbstractProcessDefinitionDetailType   # process definition specific information  that is true for all processes of this type
 
 ---
 
@@ -51,7 +51,7 @@ Process: !Extends_TaskableResource
   process_state: !ProcessStateEnum
   process_configuration: {}
   process_id: ""
-  detail: !EventProcessDetail   # instance specific information
+  detail: !AbstractProcessDetailType   # instance specific information
 
 ---
 

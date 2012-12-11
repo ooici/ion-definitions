@@ -249,7 +249,7 @@ StreamConfiguration:
 ---
 
 # Describes a running or scheduled  agent representing a single device. Abstract base type.
-DeviceAgentInstance: !Extends_AgentInstance
+DeviceAgent: !Extends_AgentDefinition
   stream_configurations: []     #set of StreamConfiguration objects that this agent/driver produces
 
 ---

@@ -26,6 +26,15 @@ TokenInformation:
   merge_email: ""  # Email address of merge account
 ---
 
+NotificationDeliveryModeEnum: !enum (values=(REALTIME, BATCH), default=REALTIME)
+
+---
+# Provides details on notification deliver. Contained in UserInfo:variables with name as 'notification_preferences'
+NotificationPreferences:
+  delivery_mode: !NotificationDeliveryModeEnum
+  delivery_enabled: True   #set to disabled by user or by system if email overflow
+
+
 # Represents a human user registered with the system, with their contact information,
 # preferences and other profile data.
 UserInfo: !Extends_InformationResource

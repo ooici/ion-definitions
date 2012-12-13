@@ -3,7 +3,6 @@
 #   CFG.server.amqp.host
 # Do not modify this file! Set overrides in pyon.local.yml or in rel files
 
-
 # ----------------------------------------------------------------------------------
 # The "system" root entry defines settings for the distributed ION system that this
 # container starts or joins. A system comprises all containers with the same sysname.
@@ -251,11 +250,14 @@ service:
   directory:
     default_uispecs_url: https://userexperience.oceanobservatories.org/database-exports/
 
+  ingestion_management:
+    buffer_limit: 1
+    time_limit:   10
+
 
 # TODO: Remove (use global flags instead)
 external_data_agent_management:
   persistent: true
-
 
 # ----------------------------------------------------------------------------------
 # The "event" root entry defines event types and event originators, and it

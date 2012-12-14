@@ -220,8 +220,7 @@ apps:
 
   - name: lightweight_pydap
     processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
-    deploy:
-      bootlevel: 30
+    bootlevel: 30
 
   # LAST SERVICE GATEWAY SERVICE
   #

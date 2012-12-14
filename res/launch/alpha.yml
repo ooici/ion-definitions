@@ -50,6 +50,15 @@ apps:
           preserve_n: 1
           queueing_mode: START_ONLY
 
+  # event_persister needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  event_persister:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+          queueing_mode: START_ONLY
+
   # gateway uses special engine
   service_gateway:
     ha:

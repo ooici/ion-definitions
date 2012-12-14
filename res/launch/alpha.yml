@@ -16,7 +16,7 @@ execution_engines:
       unique_key: ddns_hostname
       unique_values: ${gateway_ddns_hosts}
     replicas: 1
-    slots: 1
+    slots: 2
 
 default_execution_engine: default
 
@@ -50,6 +50,15 @@ apps:
           preserve_n: 1
           queueing_mode: START_ONLY
 
+  # event_persister needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  event_persister:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+          queueing_mode: START_ONLY
+
   # gateway uses special engine
   service_gateway:
     ha:
@@ -58,4 +67,14 @@ apps:
         preserve_n: 4
         queueing_mode: START_ONLY
         node_exclusive: service_gateway
+        execution_engine_id: service_gateway
+
+  # lightweight_pydap uses special engine
+  lightweight_pydap:
+    ha:
+      policy: npreserving
+      parameters:
+        preserve_n: 4
+        queueing_mode: START_ONLY
+        node_exclusive: pydap
         execution_engine_id: service_gateway

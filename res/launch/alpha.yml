@@ -1,6 +1,52 @@
 type: launch
 name: alpha
 version: 0.2
+
+#############################################################################
+# PYON CONFIGURATION
+#############################################################################
+
+# this configuration block is merged into a base pyon.yml including common
+# parameters like RabbitMQ and CouchDB blocks.
+
+config:
+  bootstrap:
+    use_es: true
+    use_pydap: true
+  container:
+    filesystem:
+      cache: /ion-alpha/r2/data/ion/run/cache
+      force_clean: false
+      library: /ion-alpha/r2/data/ion/lib
+      log: /ion-alpha/r2/data/ion/run/log
+      resource: /ion-alpha/r2/data/ion/res
+      run: /ion-alpha/r2/data/ion/run
+      temp: /ion-alpha/r2/data/ion/tmp
+      users: /ion-alpha/r2/data/ion/usr
+    sflow:
+      enabled: true
+      hsflowd_port: 36343
+    pydap_gateway:
+      web_server:
+        host: 0.0.0.0
+        port: 10999
+  endpoint:
+    receive:
+      timeout: 60
+  server:
+    elasticsearch:
+      host: bc01.a.oceanobservatories.org
+    erddap:
+      host: erddap-test.oceanobservatories.org
+      port: 8080
+      type: erddap
+    pydap:
+      host: sg.a.oceanobservatories.org
+      port: 10999
+  system:
+    elasticsearch: true
+    smtp: true
+
 #############################################################################
 ## EXECUTION ENGINES
 ##############################################################################

@@ -2,6 +2,16 @@ type: launch
 name: nightly
 version: 0.2
 #############################################################################
+# PYON CONFIGURATION
+#############################################################################
+config:
+  endpoint:
+    receive:
+      timeout: 60
+
+# this configuration block is merged into a base pyon.yml including common
+# parameters like RabbitMQ and CouchDB blocks.
+#############################################################################
 ## EXECUTION ENGINES
 ##############################################################################
 

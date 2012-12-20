@@ -65,13 +65,13 @@ ExternalDatasetModel: !Extends_InformationResource
   dataset_type: ""
 
 # Describes a type of external dataset agent
-ExternalDatasetAgent: !Extends_AgentDefinition
+ExternalDatasetAgent: !Extends_DeviceAgent
   handler_module: ""
   handler_class: ""
   time_source: ""
 
 # Describes an instance of external dataset agent
-ExternalDatasetAgentInstance: !Extends_DeviceAgentInstance
+ExternalDatasetAgentInstance: !Extends_AgentInstance
   handler_module: ""
   handler_class: ""
   dataset_driver_config: {}

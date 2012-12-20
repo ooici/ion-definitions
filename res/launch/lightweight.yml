@@ -1,0 +1,35 @@
+type: launch
+name: lightweight
+version: 0.2
+#############################################################################
+## EXECUTION ENGINES
+##############################################################################
+
+execution_engines:
+  default:
+    base_need: 1
+    replicas: 1
+    slots: 200
+
+default_execution_engine: default
+
+#############################################################################
+#  APPS
+#############################################################################
+
+app_defaults:
+  ha:
+    policy: npreserving
+    parameters:
+      preserve_n: 1
+      queueing_mode: START_ONLY
+
+# apps included below override the app_defaults block. apps present in the REL
+# but not below use the app_defaults block
+apps:
+
+  # bootstrap processes do not deploy with HA so we override the defaults
+  bootstrapper1: {}
+  bootstrapper2: {}
+  parameter_bootstrap: {}
+  policy_bootstrap: {}

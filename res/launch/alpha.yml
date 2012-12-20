@@ -1,0 +1,126 @@
+type: launch
+name: alpha
+version: 0.2
+
+#############################################################################
+# PYON CONFIGURATION
+#############################################################################
+
+# this configuration block is merged into a base pyon.yml including common
+# parameters like RabbitMQ and CouchDB blocks.
+
+config:
+  bootstrap:
+    use_es: true
+    use_pydap: true
+  container:
+    filesystem:
+      cache: /ion-alpha/r2/data/ion/run/cache
+      force_clean: false
+      library: /ion-alpha/r2/data/ion/lib
+      log: /ion-alpha/r2/data/ion/run/log
+      resource: /ion-alpha/r2/data/ion/res
+      run: /ion-alpha/r2/data/ion/run
+      temp: /ion-alpha/r2/data/ion/tmp
+      users: /ion-alpha/r2/data/ion/usr
+    sflow:
+      enabled: true
+      hsflowd_port: 36343
+    pydap_gateway:
+      web_server:
+        host: 0.0.0.0
+        port: 10999
+  endpoint:
+    receive:
+      timeout: 60
+  server:
+    elasticsearch:
+      host: bc01.a.oceanobservatories.org
+    erddap:
+      host: erddap-test.oceanobservatories.org
+      port: 8080
+      type: erddap
+    pydap:
+      host: sg.a.oceanobservatories.org
+      port: 10999
+  system:
+    elasticsearch: true
+    smtp: true
+
+#############################################################################
+## EXECUTION ENGINES
+##############################################################################
+
+execution_engines:
+  default:
+    base_need: 2
+    replicas: 4
+    slots: 25
+  service_gateway:
+    base_need: 4
+    config:
+      unique_key: ddns_hostname
+      unique_values: ${gateway_ddns_hosts}
+    replicas: 1
+    slots: 2
+
+default_execution_engine: default
+
+#############################################################################
+#  APPS
+#############################################################################
+
+app_defaults:
+  ha:
+    policy: npreserving
+    parameters:
+      preserve_n: 4
+      queueing_mode: START_ONLY
+
+# apps included below override the app_defaults block. apps present in the REL
+# but not below use the app_defaults block
+apps:
+
+  # bootstrap processes do not deploy with HA so we override the defaults
+  bootstrapper1: {}
+  bootstrapper2: {}
+  parameter_bootstrap: {}
+  policy_bootstrap: {}
+
+  # scheduler needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  scheduler:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+          queueing_mode: START_ONLY
+
+  # event_persister needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  event_persister:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+          queueing_mode: START_ONLY
+
+  # gateway uses special engine
+  service_gateway:
+    ha:
+      policy: npreserving
+      parameters:
+        preserve_n: 4
+        queueing_mode: START_ONLY
+        node_exclusive: service_gateway
+        execution_engine_id: service_gateway
+
+  # lightweight_pydap uses special engine
+  lightweight_pydap:
+    ha:
+      policy: npreserving
+      parameters:
+        preserve_n: 4
+        queueing_mode: START_ONLY
+        node_exclusive: pydap
+        execution_engine_id: service_gateway

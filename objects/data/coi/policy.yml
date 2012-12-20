@@ -1,7 +1,7 @@
  # Defines a named set of responsibilities and authorities that a user may fulfill within one Org
  # when interacting with resources.
 UserRole: !Extends_InformationResource
-  org_id: ""    #TODO - perhaps replace when better indexing in couch is available.
+  org_name: ""  #TODO - perhaps replace when better indexing across associations in couch is available
   label: ""  # Can be human readable
 
 

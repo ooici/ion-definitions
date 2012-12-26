@@ -237,6 +237,8 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
   instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
 
+  site_status: [] # List of aggregate status for child sites (list index see extended attribute)
+
 ---
 
 # Computed attributes for a data product

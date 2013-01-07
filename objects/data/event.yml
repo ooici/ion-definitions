@@ -160,6 +160,31 @@ ResourceAgentAsyncResultEvent: !Extends_ResourceAgentEvent
 
 ---
 
+StreamAlarmType: !enum (values=(WARNING, ALERT, ALL_CLEAR), default=ALL_CLEAR)
+
+---
+
+StreamAlarmEvent: !Extends_Event
+  name: ''
+  message: ''
+  expr: ''
+  stream_id: ''
+  value_id: ''
+  value: None
+
+---
+
+StreamWarningAlaramEvent: !Extends_StreamAlarmEvent
+  type: StreamAlaramType.WARNING
+
+StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
+  type: StreamAlaramType.ALERT
+  
+StreamAllClearAlarrmEvent: !Extends_StreamAlarmEvent
+  type: StreamAlaramType.ALL_CLEAR
+
+---
+
 # ------------------------------------------------------------------------------------
 # DataSource Events
 # ------------------------------------------------------------------------------------

@@ -168,7 +168,7 @@ StreamAlarmEvent: !Extends_Event
   name: ''
   message: ''
   expr: ''
-  stream_id: ''
+  stream_name: ''
   value_id: ''
   value: None
 

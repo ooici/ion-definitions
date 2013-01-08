@@ -1,0 +1,24 @@
+AlarmDef:
+  name: ''
+  stream_name: ''
+  value_id: ''
+  message: ''
+  type: 0
+  expr: ''
+  status: None
+  current_val: None
+  
+---
+
+IntervalAlarmDef: !Extends_AlarmDef
+  lower_bound: None
+  lower_rel_op: ''
+  upper_bound: None
+  upper_rel_op: ''
+
+DoubleIntervalAlarmDef: !Extends_AlarmDef
+
+SetMembershipAlarmDef: !Extends_AlarmDef
+
+UserDefinedAlarmDef: !Extends_AlarmDef
+   

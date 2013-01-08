@@ -180,7 +180,7 @@ StreamWarningAlaramEvent: !Extends_StreamAlarmEvent
 StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
   type: StreamAlaramType.ALERT
   
-StreamAllClearAlarrmEvent: !Extends_StreamAlarmEvent
+StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
   type: StreamAlaramType.ALL_CLEAR
 
 ---

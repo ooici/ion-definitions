@@ -3,18 +3,18 @@ AlarmDef:
   stream_name: ''
   value_id: ''
   message: ''
-  type: 0
+  type:
   expr: ''
-  status: None
-  current_val: None
+  status:
+  current_val:
   
 ---
 
 IntervalAlarmDef: !Extends_AlarmDef
-  lower_bound: None
-  lower_rel_op: ''
-  upper_bound: None
-  upper_rel_op: ''
+  lower_bound: 
+  lower_rel_op: 
+  upper_bound: 
+  upper_rel_op:
 
 DoubleIntervalAlarmDef: !Extends_AlarmDef
 

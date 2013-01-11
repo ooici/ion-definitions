@@ -148,11 +148,11 @@ SiteExtension: !Extends_ExtendedInformationResource
   origin_resource_type: 'Site'
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
-  #@hasModel=InstrumentModel
+  # supplied in ObservatoryManagementService.get_site_extension
   instrument_models: []  # The associated Instrument models
   #@hasDevice=PlatformDevice
   platform_devices: []  # The associated Platform devices
-  #@hasModel=PlatformModel
+  # supplied in ObservatoryManagementService.get_site_extension
   platform_models: []  # The associated Platform models
   #@hasDeployment
   deployments: []  # The associated deployments

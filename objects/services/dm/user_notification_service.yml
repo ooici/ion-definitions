@@ -160,8 +160,11 @@ methods:
       This method is used to get the subscriptions to resource id. The method will return a list of NotificationRequest
       objects for whom the origin is set to this resource id. This way all the users who were interested in listening to
       events with origin equal to this resource id, will be known and all their subscriptions will be known.
+      This method takes the user-id as an input parameter. The logic will first find all notification requests for this resource
+      then if a user_id is present, it will filter on those that this user is associated with.
     in:
       resource_id: ""
+      user_id: ""
       include_nonactive: False
     out:
       notification_requests: []

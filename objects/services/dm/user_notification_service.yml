@@ -165,3 +165,14 @@ methods:
       include_nonactive: False
     out:
       notification_requests: []
+
+  get_subscriptions_for_user:
+    docstring:  |
+      This method takes the user-id as an input parameter. The logic will first find all notification requests for this resource
+      then if a user_id is present, it will filter on those that this user is associated with.
+    in:
+      resource_id: ""
+      user_id: ""
+      include_nonactive: False
+    out:
+      notification_requests: []

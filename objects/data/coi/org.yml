@@ -47,9 +47,9 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   data_products: []
   #@hasResource=PlatformDevice
   platforms: []
-  #@hasResource=PlatformModel
+  # defined in get_marine_facility_extension
   platform_models: []
-  #@hasResource=InstrumentModel
+  # defined in get_marine_facility_extension
   instrument_models: []
   #@hasResource=InstrumentDevice
   instruments: []

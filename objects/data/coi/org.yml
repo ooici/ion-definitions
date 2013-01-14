@@ -81,3 +81,10 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
 MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes
   instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
   platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
+  site_status: []       # List of aggregate status for child platforms
+  communications_status_roll_up: !ComputedIntValue    # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  power_status_roll_up: !ComputedIntValue             # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  data_status_roll_up: !ComputedIntValue              # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  location_status_roll_up: !ComputedIntValue          # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  aggregated_status: !ComputedIntValue                # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
+

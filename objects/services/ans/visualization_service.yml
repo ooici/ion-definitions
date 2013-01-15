@@ -55,6 +55,7 @@ methods:
       data_product_id: ""
       visualization_parameters: {}
       callback: ""
+      tqx: ""
     out:
       jsonp_visualization_data: ""
     throws:
@@ -97,3 +98,15 @@ methods:
       google_dt: ""
     throws:
       BadRequest: Throws something
+
+
+  get_dataproduct_metadata:
+    docstring: |
+      Returns metadata about the dataproduct from the coverage
+    in:
+      data_product_id: ""
+      callback: ""
+    out:
+      dp_meta_data_json: ""
+    throws:
+      NotFound: Throws if specified data product id does not exist

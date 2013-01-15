@@ -164,7 +164,7 @@ StreamAlarmType: !enum (values=(WARNING, ALERT, ALL_CLEAR), default=ALL_CLEAR)
 
 ---
 
-StreamAlarmEvent: !Extends_Event
+StreamAlarmEvent: !Extends_ResourceEvent
   name: ''
   message: ''
   expr: ''

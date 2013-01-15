@@ -8,7 +8,7 @@ formatters:
   brief:
     format: '%(asctime)s %(levelname)-8s %(name)-15s %(message)s'
   default:
-    (): 'pyon.util.log.RPCStackFormatter'
+    (): 'ooi.logging.format.StackFormatter'
     format: '%(asctime)s %(levelname)s %(threadName)s %(name)s:%(lineno)d %(message)s'
   raw:
     (): 'ooi.logging.format.RawRecordFormatter'

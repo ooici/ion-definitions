@@ -358,7 +358,7 @@ apps:
       loadui: true
       ui_path: res/preload/r2_ioc/ui_assets
       attachments: res/preload/r2_ioc/attachments
-      scenario: BASE,R2_DEMO,EER2
+      scenario: BASE,BETA,R2_DEMO,EER2
 
   # LAST SERVICE GATEWAY SERVICE
   #

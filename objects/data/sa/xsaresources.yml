@@ -129,11 +129,15 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   #@hasDevice=PlatformDevice
   platforms: []  # The list of child platforms
   #@hasModel
-  platform_model: !PlatformModel  # The associated Instrument Model
+  platform_model: !PlatformModel  # The associated Platform Model
   #@hasAgentForDevice=PlatformModel
   platform_agent: !PlatformAgent  # The associated agent
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
+  # defined in InstrumentManagementService.get_platform_extension
+  instrument_models: [] # list of models, aligns with instrument_devices
+  # defined in InstrumentManagementService.get_platform_extension
+  platform_models: [] # list of models, aligns with platforms
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
   #@hasDevice=PlatformSite

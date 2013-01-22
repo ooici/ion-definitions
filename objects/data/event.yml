@@ -7,6 +7,10 @@ Event:
   base_types: []    # List of event super types
   sub_type: ""      # A specialization of the event_type expressed by this object type (or empty)
 
+
+      
+
+    
 ---
 
 # Base type for resource related events in the system
@@ -321,4 +325,10 @@ DeviceStatusEvent: !Extends_Event
 IngestionOverflow: !Extends_Event
   process_id: ""
 
+---
+# event to be published for exceptions
+ExceptionEvent: !Extends_Event
+  exception_type: ""
+  message: ""
+---
 

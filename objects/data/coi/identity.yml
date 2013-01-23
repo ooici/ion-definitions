@@ -73,8 +73,8 @@ UserInfoExtension: !Extends_ExtendedInformationResource
   roles: []  # Any Org Roles associated with the user - not filled out using only asscociations.
   #@hasResourcesForUser
   owned_resources: [] # A list of any resources owned by this user
-  #recent_events: []  # Not sure about this one
   #@hasRequest
   user_requests: [] # A list of requests associated with this user
-
+  # computed in get_user_info_extension
+  negotiations: [] # The list of Negotiations for this user
 

@@ -1023,8 +1023,9 @@ methods:
       Returns an InstrumentDeviceExtension object containing additional related information
     in:
       instrument_device_id: ""
-      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
-      ext_exclude: [] # An optional list of field names to exclude from retrieving
+      ext_associations: {}   # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: []        # An optional list of field names to exclude from retrieving
+      requesting_user_id: "" # An optional user id associated with the requesting user
     out:
       instrument_device: !InstrumentDeviceExtension
     throws:
@@ -1036,8 +1037,9 @@ methods:
       Returns an PlatformDeviceExtension object containing additional related information
     in:
       platform_device_id: ""
-      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
-      ext_exclude: [] # An optional list of field names to exclude from retrieving
+      ext_associations: {}    # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: []         # An optional list of field names to exclude from retrieving
+      requesting_user_id: ""  # An optional user id associated with the requesting user
     out:
       platform_device: !PlatformDeviceExtension
     throws:

@@ -69,6 +69,8 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   instruments_deployed: []  # a list of instrument devices owned by this Org and currently deployed to a Site
   #@hasDeployedDeviceForOrg=PlatformSite
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
+  #@hasNegotiation=Negotiation
+  negotiations: [] # The list of Negotiations for this marine facility
 
   number_of_data_products: 0
   number_of_platforms: 0

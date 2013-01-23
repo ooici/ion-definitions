@@ -51,8 +51,9 @@ methods:
       Returns an DataProcessDefinitionExtension object containing additional related information
     in:
       data_process_definition_id: ""
-      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
-      ext_exclude: [] # An optional list of field names to exclude from retrieving
+      ext_associations: {}   # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: []        # An optional list of field names to exclude from retrieving
+      requesting_user_id: "" # An optional user id associated with the requesting user
     out:
       data_process_definition: !DataProcessDefinitionExtension
     throws:
@@ -163,8 +164,9 @@ methods:
       Returns an DataProcessExtension object containing additional related information
     in:
       data_process_id: ""
-      ext_associations: {}  # An optional dict of names and associations to get other associations dynamically
-      ext_exclude: [] # An optional list of field names to exclude from retrieving
+      ext_associations: {}    # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: []         # An optional list of field names to exclude from retrieving
+      requesting_user_id: ""  # An optional user id associated with the requesting user
     out:
       data_process: !DataProcessExtension
     throws:

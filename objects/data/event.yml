@@ -1,4 +1,8 @@
 # Base type for all events in the system
+#
+# See Events and Notification hierarchy here:
+#   https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+SV+Events+and+Notifications
+#
 Event:
   origin: ""        # the origin of the event (content specific to subtype). Mostly a resource id
   origin_type: ""   # the type of origin (e.g. resource type, etc) or empty
@@ -9,12 +13,25 @@ Event:
 
 ---
 
+# ------------------------------------------------------------------------------------
+#                                  ION Events
+# ------------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------------
+# Resource Events
+# Events about the registration of a resource in the registry and its lifecycle
+#
+# origin: set to the resource_id
+# origin_type: the type of resource
+# sub_type: event specific
+# ------------------------------------------------------------------------------------
+
 # Base type for resource related events in the system
 ResourceEvent: !Extends_Event
   # The origin is the resource id
 
 ---
-
 # Event indicating that a resource changed its life cycle or was created
 ResourceLifecycleEvent: !Extends_ResourceEvent
   old_state: ""
@@ -30,164 +47,12 @@ ResourceCommandEvent: !Extends_ResourceEvent
 # Event created by an operator of a resource, for instance to manually indicate a modification or error.
 ResourceOperatorEvent: !Extends_ResourceEvent
 
----
-
 # Event indicating that resource metadata was changed or the resource was created or deleted
 ResourceModifiedEvent: !Extends_ResourceEvent
   mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, RETIRE, DELETE), default=UPDATE)
 
-ContainerConfigModifiedEvent: !Extends_Event
-
-ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
-
-# Base type of events related to physical devices such as instruments
-DeviceEvent: !Extends_Event
-    # The origin is a device (resource) id
-
-# Event for the scheduler's timer functionality
-TimerEvent: !Extends_Event
-
 ---
-
-ContainerLifecycleEvent: !Extends_Event
-  # The origin is the container id
-  state: !ContainerStateEnum
-  host: ""
-
-ProcessLifecycleEvent: !Extends_Event
-  # The origin is the process id
-  state: !ProcessStateEnum
-  container_id: ""
-  process_type: ""
-  process_name: ""
-
-IngestionEvent: !Extends_ResourceModifiedEvent
-  # origin: dataset id
-  stream_id: ""
-  status: 0
-
----
-
-GranuleIngestedEvent: !Extends_IngestionEvent
-  ingest_attributes: {}
-
-GranuleIngestionErrorEvent: !Extends_IngestionEvent
-  error_msg: ""
-
-
-DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
-  type: !DatasetIngestionTypeEnum
-  configuration: {}
-  deleted: False # Temporary - until we have resource life cycle events
-  resource_id: ""
-
----
-DeviceSpecificLifecycleEvent: !Extends_DeviceEvent
-
-DeviceCommonLifecycleEvent: !Extends_DeviceEvent
-
-DeviceCommandEvent: !Extends_ResourceCommandEvent
-
-DeviceOperatorEvent: !Extends_ResourceOperatorEvent
-
----
-
-RemoteCommandResult: !Extends_Event
-  command: ""
-  
----
-
-ResourceAgentEvent: !Extends_Event
-
----
-PlatformEvent: !Extends_DeviceEvent
-
----
-
-TelemetryStatusType: !enum (values=(AVAILABLE, UNAVAILABLE), default=UNAVAILABLE)
-
----
-
-PlatformTelemetryEvent: !Extends_PlatformEvent
-  status: !TelemetryStatusType
-
-PublicPlatformTelemetryEvent: !Extends_PlatformEvent
-  status: !TelemetryStatusType
-
-RemoteCommandTransmittedEvent: !Extends_PlatformEvent
-  queue_size: 0
-
-RemoteQueueModifiedEvent: !Extends_PlatformEvent
-  queue_size: 0
-  
----
-
-PlatformAlarmEvent: !Extends_PlatformEvent
-  external_alarm_type: ""   # initially this will be the so called "ref_id" in the RSN case
-  external_timestamp: ""    # as reported from the RSN via OMS
-
----
-
-ResourceAgentCommandEvent: !Extends_ResourceAgentEvent
-  command: ""
-  execute_command: ""
-  args: []
-  kwargs: {}
-  result: ""
-
-ResourceAgentErrorEvent: !Extends_ResourceAgentEvent
-  command: ""
-  execute_command: ""
-  args: []
-  kwargs: {}
-  error_type: ""
-  error_msg: ""
-  error_code: -1
-  
-ResourceAgentStateEvent: !Extends_ResourceAgentEvent
-  state: ""
-
-ResourceAgentResourceStateEvent: !Extends_ResourceAgentEvent
-  state: ""
-
-ResourceAgentResourceConfigEvent: !Extends_ResourceAgentEvent
-  config: {}
-
-ResourceAgentAsyncResultEvent: !Extends_ResourceAgentEvent
-  command: ""
-  desc: ""
-  result: ""  
-
----
-
-StreamAlarmType: !enum (values=(WARNING, ALERT, ALL_CLEAR), default=ALL_CLEAR)
-
----
-
-StreamAlarmEvent: !Extends_ResourceEvent
-  name: ''
-  message: ''
-  expr: ''
-  stream_name: ''
-  value_id: ''
-  value: None
-
----
-
-StreamWarningAlaramEvent: !Extends_StreamAlarmEvent
-  type: StreamAlaramType.WARNING
-
-StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
-  type: StreamAlaramType.ALERT
-  
-StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
-  type: StreamAlaramType.ALL_CLEAR
-
----
-
-# ------------------------------------------------------------------------------------
 # DataSource Events
-# ------------------------------------------------------------------------------------
 ExternalDataSourceEvent: !Extends_ResourceEvent
 
 ExternalDataSourceStatusEnum: !enum (values=(ONLINE, OFFLINE), default=OFFLINE)
@@ -207,9 +72,174 @@ ExternalDataSourceStatusEvent: !Extends_ExternalDataSourceEvent
   status: !ExternalDataSourceStatusEnum
 
 
----
 # ------------------------------------------------------------------------------------
-# Governance Events
+# Agent Events
+# Events about an agent in the system (but not about the controlled device or the registry entry)
+# origin: the resource_id of the agent
+#  origin_type: type of agent resource
+#  sub_type: event specific
+# ------------------------------------------------------------------------------------
+
+ResourceAgentEvent: !Extends_Event
+---
+
+ResourceAgentCommandEvent: !Extends_ResourceAgentEvent
+  command: ""
+  execute_command: ""
+  args: []
+  kwargs: {}
+  result: ""
+
+ResourceAgentErrorEvent: !Extends_ResourceAgentEvent
+  command: ""
+  execute_command: ""
+  args: []
+  kwargs: {}
+  error_type: ""
+  error_msg: ""
+  error_code: -1
+
+ResourceAgentStateEvent: !Extends_ResourceAgentEvent
+  state: ""
+
+ResourceAgentResourceStateEvent: !Extends_ResourceAgentEvent
+  state: ""
+
+ResourceAgentResourceConfigEvent: !Extends_ResourceAgentEvent
+  config: {}
+
+ResourceAgentAsyncResultEvent: !Extends_ResourceAgentEvent
+  command: ""
+  desc: ""
+  result: ""
+
+---
+
+# ------------------------------------------------------------------------------------
+# Device Events
+# Events from a resource agent about the manipulation of an external taskable resource (called "device")
+# origin: resource_id of the device
+#  origin_type: type of device resource
+#  sub_type: event specific
+# ------------------------------------------------------------------------------------
+
+# Base type of events related to physical devices such as instruments
+DeviceEvent: !Extends_Event
+    # The origin is a device (resource) id
+
+---
+DeviceSpecificLifecycleEvent: !Extends_DeviceEvent
+
+DeviceCommonLifecycleEvent: !Extends_DeviceEvent
+
+DeviceCommandEvent: !Extends_ResourceCommandEvent
+
+DeviceOperatorEvent: !Extends_ResourceOperatorEvent
+
+---
+PlatformEvent: !Extends_DeviceEvent
+
+---
+
+TelemetryStatusType: !enum (values=(AVAILABLE, UNAVAILABLE), default=UNAVAILABLE)
+
+---
+
+PlatformTelemetryEvent: !Extends_PlatformEvent
+  status: !TelemetryStatusType
+
+PublicPlatformTelemetryEvent: !Extends_PlatformEvent
+  status: !TelemetryStatusType
+
+RemoteCommandTransmittedEvent: !Extends_PlatformEvent
+  queue_size: 0
+
+
+
+RemoteCommandResult: !Extends_Event
+  command: ""
+
+---
+PlatformAlarmEvent: !Extends_PlatformEvent
+  external_alarm_type: ""   # initially this will be the so called "ref_id" in the RSN case
+  external_timestamp: ""    # as reported from the RSN via OMS
+
+DeviceCommsType: !enum (values=(DATA_DELIVERY_INTERRUPTION, OK), default=OK)
+---
+# To be used by transforms monitoring the health of data producers to report the status of the producers
+DeviceCommsEvent: !Extends_Event
+  state: !DeviceCommsType
+  time_stamp: 0
+  lapse_interval_seconds: 0
+---
+
+DeviceStatusType: !enum (values=(OUT_OF_RANGE, OK), default=OUT_OF_RANGE)
+---
+
+# To be used by transforms monitoring the health of data producers to report the status of the producers
+DeviceStatusEvent: !Extends_Event
+  state: !DeviceStatusType
+  values: []
+  time_stamps: []
+  valid_values: []
+
+
+
+
+
+
+# ------------------------------------------------------------------------------------
+#                                  Infrastructure Level Events
+# ------------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------------
+# Exchange Event
+# Events about Exchange Spaces and their communicating members
+# ------------------------------------------------------------------------------------
+
+
+RemoteQueueModifiedEvent: !Extends_PlatformEvent
+  queue_size: 0
+
+# ------------------------------------------------------------------------------------
+# Org Event
+# Events from an Org about its members or resources
+# ------------------------------------------------------------------------------------
+# The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
+# The origin is the org_id
+# the sub_type is GRANT or REVOKE
+UserRoleModifiedEvent: !Extends_Event
+  user_id: ""
+  role_name: ""
+
+
+# ------------------------------------------------------------------------------------
+# Ingestion Event
+# Events about Ingestion of streams into datasets
+# ------------------------------------------------------------------------------------
+IngestionEvent: !Extends_ResourceModifiedEvent
+  # origin: dataset id
+  stream_id: ""
+  status: 0
+---
+
+GranuleIngestedEvent: !Extends_IngestionEvent
+  ingest_attributes: {}
+
+GranuleIngestionErrorEvent: !Extends_IngestionEvent
+  error_msg: ""
+
+
+DatasetIngestionConfigurationEvent: !Extends_ResourceModifiedEvent
+  type: !DatasetIngestionTypeEnum
+  configuration: {}
+  deleted: False # Temporary - until we have resource life cycle events
+  resource_id: ""
+
+
+# ------------------------------------------------------------------------------------
+# Policy / Governance Event
+# Events about policy in the system
 # ------------------------------------------------------------------------------------
 
 NegotiationEvent: !Extends_Event
@@ -251,13 +281,65 @@ ServicePolicyEvent: !Extends_Event
   service_name: ""
   op: ""   #Optional op name
 
-# The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
-# The origin is the org_id
-# the sub_type is GRANT or REVOKE
-UserRoleModifiedEvent: !Extends_Event
-  user_id: ""
-  role_name: ""
 
+# ------------------------------------------------------------------------------------
+# Execution Event
+# Events about compute resources (containers, processes, EPUs, EEs)
+# ------------------------------------------------------------------------------------
+
+ContainerConfigModifiedEvent: !Extends_Event
+
+ContainerStateEnum: !enum (values=(START, STOP, TERMINATE, ERROR), default=START)
+
+---
+ContainerLifecycleEvent: !Extends_Event
+  # The origin is the container id
+  state: !ContainerStateEnum
+  host: ""
+
+ProcessLifecycleEvent: !Extends_Event
+  # The origin is the process id
+  state: !ProcessStateEnum
+  container_id: ""
+  process_type: ""
+  process_name: ""
+
+# Event for the scheduler's timer functionality
+TimerEvent: !Extends_Event
+# The Scheduler fires off this event so that services can react to it and perform tasks
+SchedulerEvent: !Extends_Event
+
+# a reload_user_info event generated when a notification is created, updated or deleted
+ReloadUserInfoEvent: !Extends_Event
+  notification_id: ""
+
+
+
+# ------------------------------------------------------------------------------------
+# !!! UNCATEGORIZED !!!! Events
+# ------------------------------------------------------------------------------------
+
+
+StreamAlarmType: !enum (values=(WARNING, ALERT, ALL_CLEAR), default=ALL_CLEAR)
+---
+StreamAlarmEvent: !Extends_ResourceEvent
+  name: ''
+  message: ''
+  expr: ''
+  stream_name: ''
+  value_id: ''
+  value: None
+
+---
+
+StreamWarningAlaramEvent: !Extends_StreamAlarmEvent
+  type: StreamAlaramType.WARNING
+
+StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
+  type: StreamAlaramType.ALERT
+  
+StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
+  type: StreamAlaramType.ALL_CLEAR
 
 ---
 
@@ -274,15 +356,6 @@ DetectionEvent: !Extends_Event
   original_origin: ""     # The origin from the event that was detected by the filter
   original_type: ""       # The type of the event that was detected by the filter
 
----
-# a reload_user_info event generated when a notification is created, updated or deleted
-ReloadUserInfoEvent: !Extends_Event
-  notification_id: ""
-
-
----
-# The Scheduler fires off this event so that services can react to it and perform tasks
-SchedulerEvent: !Extends_Event
 
 ---
 
@@ -290,31 +363,6 @@ SchedulerEvent: !Extends_Event
 ExceptionEvent: !Extends_Event
   exception_type: ""
   exception_message: ""
-
----
-
-DeviceCommsType: !enum (values=(DATA_DELIVERY_INTERRUPTION, OK), default=OK)
-
----
-
-# To be used by transforms monitoring the health of data producers to report the status of the producers
-DeviceCommsEvent: !Extends_Event
-  state: !DeviceCommsType
-  time_stamp: 0
-  lapse_interval_seconds: 0
-
----
-
-DeviceStatusType: !enum (values=(OUT_OF_RANGE, OK), default=OUT_OF_RANGE)
-
----
-
-# To be used by transforms monitoring the health of data producers to report the status of the producers
-DeviceStatusEvent: !Extends_Event
-  state: !DeviceStatusType
-  values: []
-  time_stamps: []
-  valid_values: []
 
 ---
 

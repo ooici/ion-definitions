@@ -83,7 +83,7 @@ ComputedDictValue: !Extends_ComputedValue
 ComputedAttributes:
   #@Method=user_notification.get_recent_events
   recent_events: !ComputedListValue    # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first
-  #@Method=user_notification.get_user_notifications
+  #@Method=user_notification.get_subscriptions
   user_notification_requests:  !ComputedListValue      # A list of NotificationRequest objects, for the current user, where origin equals current resource id
 
 ---

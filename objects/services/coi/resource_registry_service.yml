@@ -413,7 +413,7 @@ methods:
       resource_extension: ""  # The name of the resource extension to fill out.
       ext_associations: {}    # An optional dict of names and associations to get other associations dynamically
       ext_exclude: []         # An optional list of field names to exclude from retrieving
-      requesting_user_id: ""  # An optional user id associated with the requesting user
+      user_id: ""  # An optional user id associated with the requesting user
     out:
       actor_identity: !ExtendedResource
     throws:

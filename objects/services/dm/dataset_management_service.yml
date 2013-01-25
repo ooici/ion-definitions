@@ -166,6 +166,12 @@ methods:
 
 #--------
 
+  dataset_temporal_bounds:
+    in:
+      dataset_id: ""
+    out:
+      bounds: {}
+
   dataset_bounds:
     docstring: |
       Returns the bounds (min, max) for the parameter(s) indicated by <i>parameter_name</i>

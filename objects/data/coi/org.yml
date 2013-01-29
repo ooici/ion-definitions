@@ -31,12 +31,6 @@ AcquireResourceProposal: !Extends_ServiceAgreementProposal
 AcquireResourceExclusiveProposal: !Extends_AcquireResourceProposal
 
 
----
-
-#An internal specific commitment object for resources
-ResourceCommitment: !Extends_AbstractBaseCommitment
-  resource_id: ""
-  exclusive: False
 
 ---
 

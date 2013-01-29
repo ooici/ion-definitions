@@ -209,6 +209,16 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  is_registered:
+    docstring: |
+      Returns True if the specified user_id is registered with the ION system; otherwise False.
+    in:
+      user_id: ""
+    out:
+      is_registered: False
+    throws:
+      BadRequest: if the user_id is not specified.
+
   is_enrolled:
     docstring: |
       Returns True if the specified user_id is enrolled in the Org and False if not.
@@ -339,6 +349,17 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  is_resource_shared:
+    docstring: |
+       Returns True if the specified resource_id has been shared in the specified org_id; otherwise False is returned.
+    in:
+      org_id: ""
+      resource_id: ""
+    out:
+      success: True
+    throws:
+      BadRequest: if either org_id or resource_id is not specified
+
   acquire_resource:
     docstring: |
       Creates a Commitment Resource for the specified resource for a specified user withing the specified Org as defined in the
@@ -359,6 +380,34 @@ methods:
       success: True
     throws:
       NotFound: object with specified id does not exist
+
+  is_resource_acquired:
+    docstring: |
+       Returns True if the specified resource_id has been acquired. The user_id is optional, as the operation can
+       return True if the resource is acquired by any user or specifically by the specified user_id, otherwise
+       False is returned.
+    in:
+      user_id: ""
+      resource_id: ""
+    out:
+      success: True
+    throws:
+      BadRequest: if resource_id is not specified
+
+  is_resource_acquired_exclusively:
+    docstring: |
+       Returns True if the specified resource_id has been acquired exclusively. The user_id is optional, as the operation can
+       return True if the resource is acquired exclusively by any user or specifically by the specified user_id,
+       otherwise False is returned.
+    in:
+      user_id: ""
+      resource_id: ""
+    out:
+      success: True
+    throws:
+      BadRequest: if resource_id is not specified
+
+  # -------
 
   find_org_containers:
     docstring: |

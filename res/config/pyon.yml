@@ -31,12 +31,16 @@ system:
   # True is Real, False is fake
   smtp: False
 
-  # Use ElasticSearch ?
+  # Use ElasticSearch ? (also set bootstrap.use_es if the container should build
+  # the search indices
   elasticsearch: False
 
   # Indicates whether policy should be loaded during system bootstrap (False is for development only)
   load_policy: False
 
+bootstrap:
+  # Launches a bootstrap instance to build the search indices.
+  use_es: False
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.

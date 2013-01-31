@@ -1,6 +1,14 @@
-Scenario,ID,owner_id,org_ids,obs/name,obs/description,constraint_ids
-DOC,,,,,,list of IDs
-R2_DEMO,OBS_RSN,USER_10,MF_RSN,RSN Observatory,Regional Scale Node Observatory,
-R2_DEMO,OBS_CGSN,USER_20,MF_CGSN,CGSN Observatory,Coastal Global Scale Node Observatory,
-R2_DEMO,OBS_3,USER_1,MF_3,RSN_Demo Observatory,LCA Demonstration of RSN Observatory,
-R2_MANUAL,OBS_4,USER_1,MF_4,RSN_Demo_Create,Demonstration of RSN Observatory creation,
+Scenario,ID,owner_id,org_ids,obs/name,obs/description,constraint_ids,coordinate_system
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,
+DOC,,,,,,list of IDs,
+BETA,OBS_RSN,USER_1,MF_3,Regional Cable Demonstration,Regional Cable Demonstration Site,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,OBS_CGSN,USER_20,MF_CGSN,Global Argentine Basin,Global Argentine Basin Array Site,"GEO4,TEMP1",SUBMERGED
+R2_DEMO,OBS_3,USER_1,MF_3,RSN_Demo Observatory,Beta RSN Demonstration Observatory Site,"GEO3,TEMP1",SUBMERGED
+R2_MANUAL,OBS_4,USER_1,MF_4,RSN_Demo_Create,Demonstration of RSN Observatory creation,"GEO3,TEMP1",SUBMERGED
+R2_DEMO,OBS_CE,,MF_EA,Coastal Endurance,Coastal Endurance Array Site,"GEO4,TEMP1",SUBMERGED
+R2_DEMO,OBS_CP,,MF_CGSN,Coastal Pioneer,Coastal Pioneer Array  Site,"GEO4,TEMP1",SUBMERGED
+R2_DEMO,OBS_GI,,MF_CGSN,Global Irminger Sea,Global Irminger Sea Array  Site,"GEO4,TEMP1",SUBMERGED
+R2_DEMO,OBS_GP,,MF_CGSN,Global Station Papa,Global Station Papa Array  Site,"GEO4,TEMP1",SUBMERGED
+R2_DEMO,OBS_GS,,MF_CGSN,Global Southern Ocean,Global Southern Ocean Array Site,"GEO4,TEMP1",SUBMERGED
+R2_DEMO,OBS_RSS,,MF_RSN,Regional Terrestrial,Regional Shore Site,"GEO3,TEMP1",SUBMERGED
+IDK,IDK_OBS,IDK_USER,IDK_ORG,IDK Observatory,"Your desk, your office","GEO_IDK,TEMP_IDK",SUBMERGED1

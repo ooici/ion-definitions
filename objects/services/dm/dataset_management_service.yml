@@ -101,6 +101,9 @@ methods:
       name: ""
       parameter_context: {}
       description: ""
+      parameter_type: ""
+      value_encoding: ""
+      unit_of_measure: ""
     out:
       parameter_context_id: ""
 

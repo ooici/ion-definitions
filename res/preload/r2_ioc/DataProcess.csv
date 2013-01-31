@@ -1,7 +1,29 @@
 Scenario,ID,owner_id,org_ids,data_process_definition_id,in_data_product_id,out_data_products,configuration,comment
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,
 R2_DEMO,DPROC1,USER_1,MF_3,DPD1,DPROD12,"{'conductivity':'DPROD13','temperature':'DPROD14','pressure':'DPROD15'}",,CTD_L0 demo
 R2_DEMO,DPROC2,USER_1,MF_3,DPD2,DPROD13,{'conductivity':'DPROD16'},,CONDWAT demo
 R2_DEMO,DPROC3,USER_1,MF_3,DPD3,DPROD14,{'temperature':'DPROD17'},,TEMPWAT demo
 R2_DEMO,DPROC4,USER_1,MF_3,DPD4,DPROD15,{'pressure':'DPROD18'},,PRESWAT demo
 R2_DEMO,DPROC5,USER_1,MF_3,DPD5,DPROD12,{'salinity':'DPROD19'},,PRACSAL demo
 R2_DEMO,DPROC6,USER_1,MF_3,DPD6,DPROD12,{'density':'DPROD20'},,DENSITY demo
+BETA,DPROC8,USER_1,MF_3,DPD17,DP_PD3,{ },"{ 'process':{ 'timer_interval': 5, 'queue_name': 'a_queue', 'variable_name': 'input_voltage', 'time_field_name': 'preferred_timestamp', 'valid_values': [-100, 100], 'timer_origin': 'Interval Timer' } }",Platform Agent Events demo
+BETA,DPROC11,USER_1,MF_3,DPD1,DP_ID12,"{'conductivity':'DPROD24','temperature':'DPROD25','pressure':'DPROD26'}",,CTD_L0 demo SBE37
+BETA,DPROC12,USER_1,MF_3,DPD2,DPROD24,{'conductivity':'DPROD27'},,CONDWAT demo SBE37
+BETA,DPROC13,USER_1,MF_3,DPD3,DPROD25,{'temperature':'DPROD28'},,TEMPWAT demo SBE37
+BETA,DPROC14,USER_1,MF_3,DPD4,DPROD26,{'pressure':'DPROD29'},,PRESWAT demo SBE37
+BETA,DPROC15,USER_1,MF_3,DPD5,DP_ID12,{'salinity':'DPROD30'},,PRACSAL demo SBE37
+BETA,DPROC16,USER_1,MF_3,DPD6,DP_ID12,{'density':'DPROD31'},,DENSITY demo SBE37
+,,,,,,,,
+ALPHA_SYS,DPROC21,USER_1,MF_3,DPD1,DPROD42,"{'conductivity':'DPROD43','temperature':'DPROD44','pressure':'DPROD45'}",,CTD_L0 Alpha
+ALPHA_SYS,DPROC22,USER_1,MF_3,DPD2,DPROD43,{'conductivity':'DPROD46'},,CONDWAT Alpha
+ALPHA_SYS,DPROC23,USER_1,MF_3,DPD3,DPROD44,{'temperature':'DPROD47'},,TEMPWAT Alpha
+ALPHA_SYS,DPROC24,USER_1,MF_3,DPD4,DPROD45,{'pressure':'DPROD48'},,PRESWAT Alpha
+ALPHA_SYS,DPROC25,USER_1,MF_3,DPD5,DPROD42,{'salinity':'DPROD49'},,PRACSAL Alpha
+ALPHA_SYS,DPROC26,USER_1,MF_3,DPD6,DPROD42,{'density':'DPROD50'},,DENSITY Alpha
+,,,,,,,,
+BETA_SYS,DPROC31,USER_1,MF_3,DPD1,DPROD52,"{'conductivity':'DPROD53','temperature':'DPROD54','pressure':'DPROD55'}",,CTD_L0 Beta
+BETA_SYS,DPROC32,USER_1,MF_3,DPD2,DPROD53,{'conductivity':'DPROD56'},,CONDWAT Beta
+BETA_SYS,DPROC33,USER_1,MF_3,DPD3,DPROD54,{'temperature':'DPROD57'},,TEMPWAT Beta
+BETA_SYS,DPROC34,USER_1,MF_3,DPD4,DPROD55,{'pressure':'DPROD58'},,PRESWAT Beta
+BETA_SYS,DPROC35,USER_1,MF_3,DPD5,DPROD52,{'salinity':'DPROD59'},,PRACSAL Beta
+BETA_SYS,DPROC36,USER_1,MF_3,DPD6,DPROD52,{'density':'DPROD60'},,DENSITY Beta

@@ -1,7 +1,14 @@
-Scenario,ID,confluence,owner_id,org_ids,parent_site_id,instrument_model_ids,is/name,is/description,constraint_ids
-R2_DEMO,LOGINS3,,USER_1,MF_3,LP3,IM2,Logical instrument 1 Demo,First logical simulator of CTD,['GEO1']
-R2_DEMO,LOGINS4,,USER_1,MF_3,LP4,IM2,Logical instrument 2 Demo,Second logical simulator of CTD,['GEO1']
-R2_DEMO,D1PlatformSite1Instrument1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,D1PlatformSite1,IM2,logical instrument 1 for test deployment 1,Second logical simulator of CTD,['GEO1']
-R2_DEMO,D1PlatformSite1Instrument2,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,D1PlatformSite1,IM2,logical instrument 2 for test deployment 1,Second logical simulator of CTD,['GEO1']
-R2_DEMO,D2InstrumentSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,,IM2,logical instrument for test deployment 2,Second logical simulator of CTD,['GEO1']
-R2_DEMO,D3InstrumentSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,,IM2,logical instrument for test deployment 3,Second logical simulator of CTD,['GEO1']
+Scenario,ID,confluence,owner_id,org_ids,parent_site_id,instrument_model_ids,is/name,is/description,constraint_ids,coordinate_system
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,
+R2_DEMO,LOGINS3,,USER_1,MF_3,LP3,IM2,Instrument site 1 Demonstration,First simulator of CTD site,"GEO1,TEMP1",SUBMERGED
+BETA,LOGINS4,,USER_1,MF_3,LP3,IM2,Instrument site 2 Demonstration,SBE37SMP CTD Instrument site,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,D1PlatformSite1Instrument1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,D1PlatformSite1,IM2,Instrument site 1 for test deployment 1,Second simulator of CTD site,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,D1PlatformSite1Instrument2,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,D1PlatformSite1,IM2,Instrument site 2 for test deployment 1,Second simulator of CTD site,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,D2InstrumentSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,,IM2,Instrument site for test deployment 2,Second simulator of CTD site,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,D3InstrumentSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,,IM2,Instrument site for test deployment 3,Second simulator of CTD site,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,EEInstrumentSite,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,EEPlatformSite,IM2,Instrument site for R2 end to end tests,Second simulator of CTD site,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,LOGINS5,,USER_1,MF_3,LP3,IM2,Instrument site 5 Demo,Site for SBE37SMP CTD,"GEO1,TEMP1",SUBMERGED
+NOSE,IS_TEST,,USER_1,MF_TEST,LP3,IM2,Test Instrument Site,First simulator of CTD site,"GEO1,TEMP1",SUBMERGED
+ALPHA_SYS,LOGINS6,,USER_1,MF_3,LP3,IM2,Instrument site for Simulator on Alpha System,ALPHA simulator CTD Instrument site,"GEO1,TEMP1",SUBMERGED
+BETA_SYS,LOGINS7,,USER_1,MF_3,LP3,IM2,Instrument site for Simulator on Beta System,BETA simulator CTD Instrument site,"GEO1,TEMP1",SUBMERGED
+IDK,IDK_SITE,,IDK_USER,IDK_ORG,IDK_PS,IDK_MODEL,Instrument site for IDK,,"GEO_IDK,TEMP_IDK",SUBMERGED1

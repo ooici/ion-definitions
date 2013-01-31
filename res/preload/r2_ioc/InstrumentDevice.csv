@@ -1,8 +1,22 @@
-Scenario,ID,confluence,owner_id,lcstate,org_ids,instrument_model_id,platform_device_id,id/name,id/description,id/serial_number,id/firmware_version
-R2_DEMO,ID3,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,,CTD Simulator 1 Demo,Simulator 1 providing CTD data in the LCA demonstration,10003,0-00
-R2_DEMO,ID4,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,,CTD Simulator 2 Demo,Simulator 2 replacement for 1 providing CTD data in the LCA demonstration,10004,0-00
-R2_DEMO,D1InstrumentDevice1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,D1PlatformDevice1,CTD Simulator 1 for deployment1,Simulator 1 providing CTD data in the LCA demonstration,10003,0-00
-R2_DEMO,D1InstrumentDevice2,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,D1PlatformDevice1,CTD Simulator 2 for deployment1,Simulator 1 providing CTD data in the LCA demonstration,10003,0-00
-R2_DEMO,D2InstrumentDevice3,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,,CTD Simulator for deployment 2,Simulator 1 providing CTD data in the LCA demonstration,10003,0-00
-R2_DEMO,D3InstrumentDevice4,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,,CTD Simulator for deployment 3,Simulator 1 providing CTD data in the LCA demonstration,10003,0-00
-LCA_MANUAL,MANUAL,,,,,IM2,,Seabird CTD for Demo,Seabird Conductivity-Temperature-Depth instrument used for demonstration,tbd,tbd
+Scenario,ID,confluence,owner_id,lcstate,org_ids,instrument_model_id,platform_device_id,contact_ids,id/name,id/description,id/serial_number,id/firmware_version,id/hardware_version,id/controllable,id/monitorable,id/message_controllable,id/reference_urls
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,,,,,,
+R2_DEMO,ID3,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,PDEV3,"M_MANAGER,O_OWNERREP",CTD Simulator 1 Demo,Simulator 1 providing CTD data in the R2 Demonstration,10003,0-00,0-00,TRUE,TRUE,TRUE,
+ALPHA_SYS,ID13,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,PDEV3,"M_MANAGER,O_OWNERREP",CTD Simulator for Alpha,Simulator providing CTD data in the Alpha System,10003,0-00,0-00,TRUE,TRUE,TRUE,
+BETA_SYS,ID14,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,PDEV3,"M_MANAGER,O_OWNERREP",CTD Simulator for Beta,Simulator providing CTD data in the Beta System,10003,0-00,0-00,TRUE,TRUE,TRUE,
+R2_DEMO,ID4,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,PDEV4,"M_MANAGER,O_OWNERREP",CTD Simulator 2 Demo,Simulator 2 replacement for 1 providing CTD data in the R2 Demonstration,10004,0-00,0-00,TRUE,TRUE,TRUE,
+R2_DEMO,D1InstrumentDevice1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,D1PlatformDevice1,"T_AMPE,J_ORCUTT",CTD Simulator 1 for deployment1,Simulator 1 providing CTD data in the R2 Demonstration,10003,0-00,0-00,TRUE,TRUE,TRUE,
+R2_DEMO,D1InstrumentDevice2,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,D1PlatformDevice1,"T_AMPE,J_ORCUTT",CTD Simulator 2 for deployment1,Simulator 1 providing CTD data in the R2 Demonstration,10003,0-00,0-00,TRUE,TRUE,TRUE,
+R2_DEMO,D2InstrumentDevice3,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,,"T_AMPE,J_ORCUTT",CTD Simulator for deployment 2,Simulator 1 providing CTD data in the R2 Demonstration,10003,0-00,0-00,TRUE,TRUE,TRUE,
+R2_DEMO,D3InstrumentDevice4,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,,"T_AMPE,J_ORCUTT",CTD Simulator for deployment 3,Simulator 1 providing CTD data in the R2 Demonstration,10003,0-00,0-00,TRUE,TRUE,TRUE,
+R2_DEMO,MANUAL,,,,,IM2,,"T_AMPE,J_ORCUTT",Seabird CTD for Demo,Seabird Conductivity-Temperature-Depth instrument used for demonstration,tbd,tbd,tbd,TRUE,TRUE,TRUE,
+R2_DEMO,EEInstrumentDevice,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,EEPlatformDevice1,"T_AMPE,J_ORCUTT",CTD Simulator end to end R2 testing,Simulator 1 providing CTD data in the R2 Demonstration,10003,0-00,0-00,TRUE,TRUE,TRUE,http://www.yahoo.com
+DEVS,ID5,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM4,,"M_MANAGER,O_OWNERREP",PARAD,PAR-SER-600M,10003,0-00,0-00,TRUE,TRUE,TRUE,
+DEVS,ID6,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM5,,"M_MANAGER,O_OWNERREP",PRESF,SeaBird 26plus ,10003,0-00,0-00,TRUE,TRUE,TRUE,
+DEVS,ID7,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM6,,"M_MANAGER,O_OWNERREP",CTDBP,SBE 16plusV2,10003,0-00,0-00,TRUE,TRUE,TRUE,
+DEVS,ID8,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM7,,"M_MANAGER,O_OWNERREP",TRHPH,Temperature and Resistivity Probe,10003,0-00,0-00,TRUE,TRUE,TRUE,
+DEVS,ID9,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM8,,"M_MANAGER,O_OWNERREP",PREST,SBE 54 Tsunami Pressure Sensor,10003,0-00,0-00,TRUE,TRUE,TRUE,
+DEVS,ID10,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM9,,"M_MANAGER,O_OWNERREP",VELPT,Aquadopp Current Meters,10003,0-00,0-00,TRUE,TRUE,TRUE,
+DEVS,ID11,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM10,,"M_MANAGER,O_OWNERREP",NUTNR,Satlantic ISUS V3 Nitrate Sensor,10003,0-00,0-00,TRUE,TRUE,TRUE,
+BETA,ID12,,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,PDEV3,"M_MANAGER,O_OWNERREP",SBE37SMP,SeaBird 37 SMP CTD for R2 Beta Testing,10003,0-00,0-00,TRUE,TRUE,TRUE,
+NOSE,ID_TEST,,USER_1,DEPLOYED_AVAILABLE,MF_TEST,IM2,PDEV3,"TEST_USER,O_OWNERREP",Unit Test SMB37,SeaBird 37 SMP CTD for code unit tests,10003,0-00,0-00,TRUE,TRUE,TRUE,
+IDK,DEVICE_IDK,,IDK_USER,DEPLOYED_AVAILABLE,IDK_ORG,IDK_MODEL,IDK_PD,"IDK_USER1,IDK_USER2",IDK Test Device,Device currently under IDK testing and driver development,10003,0-00,0-00,TRUE,TRUE,TRUE,

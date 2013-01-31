@@ -1,0 +1,244 @@
+type: release
+name: r2deploy
+version: 0.2
+description: Release 2 deployment configuration
+ion: 2.0
+apps:
+  ##################################
+  # CORE SERVICES
+  # Bootstrap processes perform initializations
+  ##################################
+
+  - name: event_persister
+    processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
+    bootlevel: 1
+
+  - name: bootstrapper1
+    processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 2
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
+
+  - name: resource_registry
+    processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    bootlevel: 5
+
+  - name: directory
+    processapp: [directory, ion.services.coi.directory_service, DirectoryService]
+    bootlevel: 10
+
+  - name: identity_management
+    processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
+    bootlevel: 10
+
+  - name: policy_management
+    processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
+    bootlevel: 10
+
+  - name: exchange_management
+    processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
+    bootlevel: 10
+
+  - name: org_management
+    processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
+    bootlevel: 10
+
+
+  ##################################
+  # HIGHER LEVEL SERVICES
+  ##################################
+
+  ##### COI SERVICES
+  - name: agent_management
+    processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
+    bootlevel: 10
+
+  - name: conversation_management
+    processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
+    bootlevel: 10
+
+  - name: object_management
+    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
+    bootlevel: 10
+
+  - name: resource_management
+    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
+    bootlevel: 10
+
+  - name: service_management
+    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
+    bootlevel: 10
+
+  #### CEI Services
+
+#  - name: epu_management
+#    processapp: [epu_management, ion.services.cei.epu_management_service, EpuManagementService]
+#    bootlevel: 10
+
+#  - name: execution_engine_management
+#    processapp: [execution_engine_management, ion.services.cei.execution_engine_management_service, ExecutionEngineManagementService]
+#    bootlevel: 10
+
+  - name: process_dispatcher
+    processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
+    bootlevel: 10
+
+# Scheduler service
+# WARNING: This is a singleton and preserve_n shouldn't have a value higher than 1
+  - name: scheduler
+    processapp: [scheduler, ion.services.cei.scheduler_service, SchedulerService]
+    bootlevel: 10
+#
+#  - name: provisioner
+#    processapp: [provisioner, ion.services.cei.provisioner_service, ProvisionerService]
+#    bootlevel: 10
+
+  #### DM Services
+  - name: dataset_management
+    processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
+    bootlevel: 10
+
+  - name: pubsub_management
+    processapp: [pubsub_management, ion.services.dm.distribution.pubsub_management_service, PubsubManagementService]
+    bootlevel: 10
+
+  - name: ingestion_management
+    processapp: [ingestion_management, ion.services.dm.ingestion.ingestion_management_service, IngestionManagementService]
+    bootlevel: 10
+
+  - name: data_retriever
+    processapp: [data_retriever, ion.services.dm.inventory.data_retriever_service, DataRetrieverService]
+    bootlevel: 10
+
+  - name: index_management
+    processapp: [index_management, ion.services.dm.inventory.index_management_service, IndexManagementService]
+    bootlevel: 10
+
+  - name: user_notification
+    processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
+    bootlevel: 10
+
+  - name: event_management
+    processapp: [event_management, ion.services.dm.presentation.event_management_service, EventManagementService]
+    bootlevel: 10
+
+  - name: preservation_management
+    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
+    bootlevel: 10
+
+  - name: catalog_management
+    processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
+    bootlevel: 10
+
+  - name: discovery
+    processapp: [discovery, ion.services.dm.presentation.discovery_service, DiscoveryService]
+    bootlevel: 10
+
+
+  ##### SA SERVICES
+  - name: data_acquisition_management
+    processapp: [data_acquisition_management, ion.services.sa.acquisition.data_acquisition_management_service, DataAcquisitionManagementService]
+    bootlevel: 10
+
+  - name: data_product_management
+    processapp: [data_product_management, ion.services.sa.product.data_product_management_service, DataProductManagementService]
+    bootlevel: 10
+
+  - name: data_process_management
+    processapp: [data_process_management, ion.services.sa.process.data_process_management_service, DataProcessManagementService]
+    bootlevel: 10
+
+  - name: instrument_management
+    processapp: [instrument_management, ion.services.sa.instrument.instrument_management_service, InstrumentManagementService]
+    bootlevel: 10
+
+  - name: observatory_management
+    processapp: [observatory_management, ion.services.sa.observatory.observatory_management_service, ObservatoryManagementService]
+    bootlevel: 10
+
+
+  ##### AS SERVICE
+  - name: workflow_management
+    processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
+    bootlevel: 10
+
+  - name: visualization_service
+    description: Responsible managing visualization data
+    version: 0.1
+    processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
+    bootlevel: 10
+
+  - name: bootstrapper2
+    processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 20
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_process_dispatcher, BootstrapProcessDispatcher]
+          config:
+            bootstrap:
+              processes:
+                ingestion:
+                  datastore_name: datasets
+                  queue_name:     science_data.science_granule_ingestion
+                  workers: 1
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_transform, BootstrapTransform]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_index, BootstrapIndex]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_ingestion, BootstrapIngestion]
+          config:
+            ingestion:
+              exchange_point: science_data
+              queues:
+                - name: science_granule_ingestion
+                  type: SCIDATA
+                  datastore_name: datasets
+                - name: binary_ingestion
+                  type: BINARY
+                  datastore_name: filesystem
+
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
+
+  - name: parameter_bootstrap
+    version: 0.1
+    description: Boot straps the parameter definitions
+    processapp: [ion_loader1, ion.processes.bootstrap.ion_loader, IONLoader]
+    bootlevel: 25
+    config:
+      op: load
+      scenario: BASE
+      path: res/preload/r2_ioc
+      categories: ParameterDefs
+  
+  - name: parameter_bootstrap
+    version: 0.1
+    description: Boot straps the parameter definitions
+    processapp: [ion_loader1, ion.processes.bootstrap.ion_loader, IONLoader]
+    bootlevel: 25
+    config:
+      op: load
+      #scenario: BASE,LC_TEST
+      scenario: CW_TEST,SP_TEST,BF_DEMO,KAREN_IN_PROGRESS,BASE
+      categories: ParameterDefs,ParameterDictionary
+
+  #The bootstrap for loading policy should be the final bootstrap process.
+  - name: policy_bootstrap
+    processapp: [policy_bootstrap, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 29
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
+
+  - name: lightweight_pydap
+    processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
+    bootlevel: 30
+
+  # LAST SERVICE GATEWAY SERVICE
+  #
+  # Note the use of node_exclusive policy parameter. This is to prevent multiple
+  # service gateway workers from being scheduled onto the same VM, because they
+  # all attempt to bind the same port.
+  - name: service_gateway
+    processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
+    bootlevel: 30
+

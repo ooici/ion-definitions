@@ -1,5 +1,33 @@
-Scenario,ID,data_product_id,input_resource_id,comment
-R2_DEMO,,DPROD11,ID3,CTD Sim 1 Raw
-R2_DEMO,,DPROD12,ID3,CTD Sim 1 Parsed
-R2_DEMO,,DPROD21,ID4,CTD Sim 2 Raw
-R2_DEMO,,DPROD22,ID4,CTD Sim 2 Parsed
+Scenario,ID,data_product_id,input_resource_id,resource_type,create_stream,comment
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,
+R2_DEMO,,DPROD11,ID3,InstrumentDevice,FALSE,CTD Sim 1 Raw
+R2_DEMO,,DPROD12,ID3,InstrumentDevice,FALSE,CTD Sim 1 Parsed
+R2_DEMO,,DPROD21,ID4,InstrumentDevice,FALSE,CTD Sim 2 Raw
+R2_DEMO,,DPROD22,ID4,InstrumentDevice,FALSE,CTD Sim 2 Parsed
+R2_DEMO,,EEDP1,EEInstrumentDevice,InstrumentDevice,FALSE,CTD EER2 Parsed
+R2_DEMO,,EEDP2,EEInstrumentDevice,InstrumentDevice,FALSE,CTD EER2 Raw
+R2_DEMO,,EEDP3,EEInstrumentSite,InstrumentSite,FALSE,CTD EER2 Parsed
+disable,,EEDP4,EEInstrumentSite,InstrumentSite,FALSE,CTD EER2 Raw
+DEVS,,DP_ID5,ID5,InstrumentDevice,FALSE,PARAD Parsed
+DEVS,,DP_ID6,ID6,InstrumentDevice,FALSE,PRESF Parsed
+DEVS,,DP_ID7,ID7,InstrumentDevice,FALSE,CTD sb16+v2 Parsed
+DEVS,,DP_ID5_RAW,ID5,InstrumentDevice,FALSE,PARAD Raw
+DEVS,,DP_ID6_RAW,ID6,InstrumentDevice,FALSE,PRESF Raw
+DEVS,,DP_ID7_RAW,ID7,InstrumentDevice,FALSE,CTD sb16+v2 Raw
+BETA,,DP_PD3,PDEV3,PlatformDevice,FALSE,not loading
+DEVS,,DP_ID8,ID8,InstrumentDevice,FALSE,TRHPH Parsed
+DEVS,,DP_ID9,ID9,InstrumentDevice,FALSE,PREST Parsed
+DEVS,,DP_ID10,ID10,InstrumentDevice,FALSE,VELPT Parsed
+DEVS,,DP_ID11,ID11,InstrumentDevice,FALSE,NUTNR Parsed
+DEVS,,DP_ID8_RAW,ID8,InstrumentDevice,FALSE,TRHPH Raw
+DEVS,,DP_ID9_RAW,ID9,InstrumentDevice,FALSE,PREST Raw
+DEVS,,DP_ID10_RAW,ID10,InstrumentDevice,FALSE,VELPT Raw
+DEVS,,DP_ID11_RAW,ID11,InstrumentDevice,FALSE,NUTNR Raw
+BETA,,DP_ID12_RAW,ID12,InstrumentDevice,FALSE,SBE37SMP Raw
+BETA,,DP_ID12,ID12,InstrumentDevice,FALSE,SBE37SMP Parsed
+ALPHA_SYS,,DPROD41,ID13,InstrumentDevice,FALSE,CTD Sim Alpha Raw
+ALPHA_SYS,,DPROD42,ID13,InstrumentDevice,FALSE,CTD Sim Alpha Parsed
+BETA_SYS,,DPROD51,ID14,InstrumentDevice,FALSE,CTD Sim Beta Raw
+BETA_SYS,,DPROD52,ID14,InstrumentDevice,FALSE,CTD Sim Beta Parsed
+IDK,,DPROD_IDK_RAW,DEVICE_IDK,InstrumentDevice,FALSE,
+IDK,,DPROD_IDK_PARSED,DEVICE_IDK,InstrumentDevice,FALSE,

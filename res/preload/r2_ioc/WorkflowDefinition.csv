@@ -1,3 +1,4 @@
 Scenario,ID,owner_id,org_ids,steps,wfd/name,wfd/description
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,
 R2_DEMO,WFD1,USER_1,MF_3,[DPD15],Realtime_Google_DT,Convert incoming data stream to Google Datatables. 
 R2_DEMO,WFD2,USER_1,MF_3,[DPD16],Matplotlib_graphs,Convert incoming data stream to Matplotlib graphs. 

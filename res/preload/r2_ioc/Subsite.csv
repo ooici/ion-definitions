@@ -1,5 +1,7 @@
-Scenario,ID,owner_id,org_ids,parent_site_id,site/name,site/description,constraint_ids
-DOC,,,,,site name,site description,
-R2_DEMO,SITE_CE02SH,USER_1,MF_3,OBS_RSN,Endurance Shelf Demo,"Endurance Shelf Site. the CE02SH is made up, to encompass all Endurance Shelf sites",['GEO2']
-R2_DEMO,SITE_CE02SHSM,USER_1,MF_3,SITE_CE02SH,Endurance Shelf Surface Mooring Demo,Endurance Shelf Surface Mooring,['GEO3']
-R2_DEMO,SITE_RS01HR,USER_1,MF_3,OBS_RSN,Hydrate Ridge Demo,"Hydrate Ridge site. The RS01HR is made up, to encompass all Hydrate Ridge sites",['GEO4']
+Scenario,ID,owner_id,org_ids,parent_site_id,site/name,site/description,constraint_ids,coordinate_system
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,
+DOC,,,,,site name,site description,,
+BETA,SITE_CE02SH,USER_1,MF_3,OBS_RSN,Beta Demonstration Subsite Sample,Beta Demonstration Subsite Sample description,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,SITE_CE02SHSM,USER_1,MF_3,SITE_CE02SH,Coastal Endurance Oregon Shelf Surface Mooring,Coastal Endurance Oregon Shelf Surface Mooring description,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,SITE_RS01HR,USER_1,MF_3,OBS_3,Hydrate Ridge Demo,"Hydrate Ridge site. The RS01HR is made up, to encompass all Hydrate Ridge sites","GEO4,TEMP1",SUBMERGED
+IDK,IDK_SUBSITE,IDK_USER,IDK_ORG,IDK_OBS,IDK subsite,,"GEO_IDK,TEMP_IDK",SUBMERGED1

@@ -371,6 +371,21 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  create_resource_commitment:
+    docstring: |
+      Creates a Commitment Resource for the specified resource for a specified user withing the specified Org. Once shared,
+      the resource is committed to the user. Throws a NotFound exception if none of the ids are found.
+    in:
+      org_id: ""
+      actor_id: ""
+      resource_id: ""
+      exclusive: False
+      expiration: 0
+    out:
+      commitment_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
   release_commitment:
     docstring: |
       Release the commitment that was created for resources. Throws a NotFound exception if none of the ids are found.

@@ -64,7 +64,8 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   #@hasDeployedDeviceForOrg=PlatformSite
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
   #@hasNegotiation=Negotiation
-  negotiations: [] # The list of Negotiations for this marine facility
+  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN
+  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED
 
   number_of_data_products: 0
   number_of_platforms: 0

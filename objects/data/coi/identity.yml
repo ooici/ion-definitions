@@ -76,5 +76,5 @@ UserInfoExtension: !Extends_ExtendedInformationResource
   #@hasRequest
   user_requests: [] # A list of requests associated with this user
   # computed in get_user_info_extension
-  negotiations: [] # The list of Negotiations for this user
-
+  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN
+  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED

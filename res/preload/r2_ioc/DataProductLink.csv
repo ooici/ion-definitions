@@ -9,10 +9,10 @@ R2_DEMO,,EEDP2,EEInstrumentDevice,InstrumentDevice,FALSE,CTD EER2 Raw
 R2_DEMO,,EEDP3,EEInstrumentSite,InstrumentSite,FALSE,CTD EER2 Parsed
 disable,,EEDP4,EEInstrumentSite,InstrumentSite,FALSE,CTD EER2 Raw
 DEVS,,DP_ID5,ID5,InstrumentDevice,FALSE,PARAD Parsed
-DEVS,,DP_ID6,ID6,InstrumentDevice,FALSE,PRESF Parsed
+ALPHA_SYS,,DP_ID6,ID6,InstrumentDevice,FALSE,PRESF Parsed
 DEVS,,DP_ID7,ID7,InstrumentDevice,FALSE,CTD sb16+v2 Parsed
 DEVS,,DP_ID5_RAW,ID5,InstrumentDevice,FALSE,PARAD Raw
-DEVS,,DP_ID6_RAW,ID6,InstrumentDevice,FALSE,PRESF Raw
+ALPHA_SYS,,DP_ID6_RAW,ID6,InstrumentDevice,FALSE,PRESF Raw
 DEVS,,DP_ID7_RAW,ID7,InstrumentDevice,FALSE,CTD sb16+v2 Raw
 BETA,,DP_PD3,PDEV3,PlatformDevice,FALSE,not loading
 DEVS,,DP_ID8,ID8,InstrumentDevice,FALSE,TRHPH Parsed

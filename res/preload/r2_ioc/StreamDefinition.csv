@@ -1,26 +1,26 @@
-Scenario,COMMENT,ID,org_ids,sdef/name,sdef/description,param_dict_name
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,
-BETA,,StreamDef11,MF_3,SeabirdSim_raw demo,,raw
-BETA,,StreamDef12,MF_3,SeabirdSim_parsed demo,,ctd_parsed_param_dict
-BETA,,StreamDef13,MF_3,DPD1_out_conductivity_L0 demo,,ctd_parsed_param_dict
-BETA,,StreamDef14,MF_3,DPD1_out_temp_L0 demo,,ctd_parsed_param_dict
-BETA,,StreamDef15,MF_3,DPD1_out_pressure_L0 demo,,ctd_parsed_param_dict
-BETA,,StreamDef16,MF_3,DPD2_out_conductivity_L1 demo,,ctd_parsed_param_dict
-BETA,,StreamDef17,MF_3,DPD3_out_temp_L1 demo,,ctd_parsed_param_dict
-BETA,,StreamDef18,MF_3,DPD4_out_pressure_L1 demo,,ctd_parsed_param_dict
-BETA,,StreamDef19,MF_3,DPD5_out_practical_salinity_L2 demo,,ctd_parsed_param_dict
-BETA,,StreamDef20,MF_3,DPD6_out_density_L2 demo,,ctd_parsed_param_dict
-R2_DEMO,,StreamDef21,MF_3,GoogleDT_out,,google_dt
-R2_DEMO,,StreamDef22,MF_3,Matplotlib graphs,,graph_image_param_dict
-BETA,,StreamDef23,MF_3,Raw Stream for any instrument,,raw
-DEVS,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,StreamDef24,MF_3,Parsed Photosynthetically Active Radiation,,parad_parsed
-DEVS,https://confluence.oceanobservatories.org/display/instruments/PRESF+Driver,StreamDef25,MF_3,Seafloor Pressure Instrument,,presf_parsed_tidesample
-BETA,,SD_PLATFORM1,MF_3,Platform Engineering Data,,platform_eng_parsed
-DEVS,,StreamDef26,MF_3,Parsed TRHPH,,trhph_parsed
-DEVS,,StreamDef27,MF_3,Parsed PREST,,prest_parsed
-DEVS,,StreamDef28,MF_3,Parsed VELPT,,velpt_parsed
-DEVS,,StreamDef29,MF_3,Parsed NUTNR,,nutnr_parsed
-BETA,,StreamDef30,MF_3,Seabird37SMP_raw,,raw
-BETA,,StreamDef31,MF_3,Seabird37SMP_parsed,,ctd_parsed_param_dict
-IDK,,SD_IDK_RAW,IDK_ORG,IDK raw stream def,,idk_raw_param_dict
-IDK,,SD_IDK_PARSED,IDK_ORG,IDK parsed stream def,,idk_parsed_param_dict
+Scenario,COMMENT,ID,org_ids,sdef/name,sdef/description,param_dict_name,,Review Status
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,
+BETA,,StreamDef11,MF_3,SeabirdSim_raw demo,,raw,,
+BETA,,StreamDef12,MF_3,SeabirdSim_parsed demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef13,MF_3,DPD1_out_conductivity_L0 demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef14,MF_3,DPD1_out_temp_L0 demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef15,MF_3,DPD1_out_pressure_L0 demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef16,MF_3,DPD2_out_conductivity_L1 demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef17,MF_3,DPD3_out_temp_L1 demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef18,MF_3,DPD4_out_pressure_L1 demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef19,MF_3,DPD5_out_practical_salinity_L2 demo,,ctd_parsed_param_dict,,
+BETA,,StreamDef20,MF_3,DPD6_out_density_L2 demo,,ctd_parsed_param_dict,,
+R2_DEMO,,StreamDef21,MF_3,GoogleDT_out,,google_dt,,
+R2_DEMO,,StreamDef22,MF_3,Matplotlib graphs,,graph_image_param_dict,,
+BETA,,StreamDef23,MF_3,Raw Stream for any instrument,,raw,,
+DEVS,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,StreamDef24,MF_3,Parsed Photosynthetically Active Radiation,,parad_parsed,,
+ALPHA_SYS,https://confluence.oceanobservatories.org/display/instruments/PRESF+Driver,StreamDef25,MF_3,Seafloor Pressure Instrument,,tide_parsed,,
+BETA,,SD_PLATFORM1,MF_3,Platform Engineering Data,,platform_eng_parsed,,
+DEVS,,StreamDef26,MF_3,Parsed TRHPH,,trhph_parsed,,
+DEVS,,StreamDef27,MF_3,Parsed PREST,,prest_parsed,,
+DEVS,,StreamDef28,MF_3,Parsed VELPT,,velpt_parsed,,
+DEVS,,StreamDef29,MF_3,Parsed NUTNR,,nutnr_parsed,,
+BETA,,StreamDef30,MF_3,Seabird37SMP_raw,,raw,,
+BETA,,StreamDef31,MF_3,Seabird37SMP_parsed,,ctd_parsed_param_dict,,
+IDK,,SD_IDK_RAW,IDK_ORG,IDK raw stream def,,idk_raw_param_dict,,
+IDK,,SD_IDK_PARSED,IDK_ORG,IDK parsed stream def,,idk_parsed_param_dict,,

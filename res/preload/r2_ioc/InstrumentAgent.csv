@@ -1,11 +1,12 @@
-Scenario,ID,owner_id,lcstate,org_ids,instrument_model_ids,ia/name,ia/description,ia/agent_version,ia/driver_module,ia/driver_class,obsolete/driver_client_module,obsolete/driver_class_client,obsolete/conection_method,obsolete/time_source,obsolete/event_publisher_origin,stream_configurations
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,,,,,
-BETA,IA2,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,SBE37SMP Instrument Agent,Seabird 37 CTD Instrument Agent,0.1,mi.instrument.seabird.sbe37smb.ooicore.driver,SBE37Driver,,,,,,"SC1,SC2"
-DEVS,IA3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM4,PARAD Instrument Agent,,0.1,mi.instrument.satlantic.par_ser_600m.ooicore.driver,InstrumentDriver,,,,,,"SC1,SC3"
-DEVS,IA4,USER_1,DEPLOYED_AVAILABLE,MF_3,IM5,PRESF Instrument Agent,,0.1,mi.instrument.seabird.sbe26plus.ooicore.driver,InstrumentDriver,,,,,,"SC1,SC4"
-DEVS,IA5,USER_1,DEPLOYED_AVAILABLE,MF_3,IM6,CTDBP Instrument Agent,CTD for SBE16plusV2,0.1,mi.instrument.seabird.sbe16plus_v2.ooicore.driver,InstrumentDriver,,,,,,"SC1,SC2"
-DEVS,IA7,USER_1,DEPLOYED_AVAILABLE,MF_3,IM8,PREST Instrument Agent,SBE 54 Tsunami Pressure Sensor,0.1,mi.instrument.seabird.sbe54tps.ooicore.driver,InstrumentDriver,,,,,,"SC1,SC6"
-DEVS,IA8,USER_1,DEPLOYED_AVAILABLE,MF_3,IM9,VELPT Instrument Agent,Aquadopp Current Meters,0.1,mi.instrument.nortek.aquadopp.ooicore.driver,InstrumentDriver,,,,,,"SC1,SC7"
-DEVS,IA6,USER_1,DEPLOYED_AVAILABLE,MF_3,IM7,TRHPH Instrument Agent,Temperature and Resistivity Probe,0.1,mi.instrument.uw.bars.ooicore.driver,ooicoreInstrumentDriver,,,,,,"SC1,SC5"
-DEVS,IA9,USER_1,DEPLOYED_AVAILABLE,MF_3,IM10,NUTNR Instrument Agent,Satlantic ISUS V3 Nitrate Sensor,0.1,mi.instrument.satlantic.isusv3.ooicore.driver,InstrumentDriver,,,,,,"SC1,SC8"
-IDK,IDK_AGENT,IDK_USER,DEPLOYED_AVAILABLE,IDK_ORG,IDK_MODEL,IDK Agent,Placeholder definition for IDK definition of instrument driver,0.1,UNKNOWN,InstrumentDriver,,,,,,"IDK_SC_RAW,IDK_SC_PARSED"
+Scenario,ID,owner_id,lcstate,org_ids,instrument_model_ids,ia/name,ia/description,ia/agent_version,ia/driver_uri,ia/driver_module,ia/driver_class,stream_configurations
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,
+BETA,IA2,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,SBE37SMP Instrument Agent,Seabird 37 CTD Instrument Agent,0.1,,mi.instrument.seabird.sbe37smb.ooicore.driver,SBE37Driver,"SC1,SC2"
+DEVS,IA3,USER_1,DEPLOYED_AVAILABLE,MF_3,IM4,PARAD Instrument Agent,,0.1,,mi.instrument.satlantic.par_ser_600m.ooicore.driver,InstrumentDriver,"SC1,SC3"
+ALPHA_SYS,IA4,USER_1,DEPLOYED_AVAILABLE,MF_3,IM5,PRESF Instrument Agent,SBE 26plus,0.1,http://sddevrepo.oceanobservatories.org/releases/seabird_sbe26plus_ooicore-0.0.1-py2.7.egg,,,"SC1,SC4"
+DEVS,IA5,USER_1,DEPLOYED_AVAILABLE,MF_3,IM6,CTDBP Instrument Agent,CTD for SBE16plusV2,0.1,,mi.instrument.seabird.sbe16plus_v2.ooicore.driver,InstrumentDriver,"SC1,SC2"
+DEVS,IA7,USER_1,DEPLOYED_AVAILABLE,MF_3,IM8,PREST Instrument Agent,SBE 54 Tsunami Pressure Sensor,0.1,,mi.instrument.seabird.sbe54tps.ooicore.driver,InstrumentDriver,"SC1,SC6"
+DEVS,IA8,USER_1,DEPLOYED_AVAILABLE,MF_3,IM9,VELPT Instrument Agent,Aquadopp Current Meters,0.1,,mi.instrument.nortek.aquadopp.ooicore.driver,InstrumentDriver,"SC1,SC7"
+DEVS,IA6,USER_1,DEPLOYED_AVAILABLE,MF_3,IM7,TRHPH Instrument Agent,Temperature and Resistivity Probe,0.1,,mi.instrument.uw.bars.ooicore.driver,ooicoreInstrumentDriver,"SC1,SC5"
+DEVS,IA9,USER_1,DEPLOYED_AVAILABLE,MF_3,IM10,NUTNR Instrument Agent,Satlantic ISUS V3 Nitrate Sensor,0.1,,mi.instrument.satlantic.isusv3.ooicore.driver,InstrumentDriver,"SC1,SC8"
+IDK,IDK_AGENT,IDK_USER,DEPLOYED_AVAILABLE,IDK_ORG,IDK_MODEL,IDK Agent,Placeholder definition for IDK definition of instrument driver,0.1,,UNKNOWN,InstrumentDriver,"IDK_SC_RAW,IDK_SC_PARSED"
+xxx,xxx,USER_1,DEPLOYED_AVAILABLE,MF_3,IM2,SBE37SMP Instrument Omelette,Seabird 37 CTD Instrument Agent,0.2,http://sddevrepo.oceanobservatories.org/releases/seabird_sbe37smb_ooicore-0.0.2-py2.7.egg,mi.instrument.seabird.sbe37smb.ooicore.driver,SBE37Driver,"SC1,SC2"

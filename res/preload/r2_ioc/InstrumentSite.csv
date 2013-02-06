@@ -12,3 +12,4 @@ NOSE,IS_TEST,,USER_1,MF_TEST,LP3,IM2,Test Instrument Site,First simulator of CTD
 ALPHA_SYS,LOGINS6,,USER_1,MF_3,LP3,IM2,Instrument site for Simulator on Alpha System,ALPHA simulator CTD Instrument site,"GEO1,TEMP1",SUBMERGED
 BETA_SYS,LOGINS7,,USER_1,MF_3,LP3,IM2,Instrument site for Simulator on Beta System,BETA simulator CTD Instrument site,"GEO1,TEMP1",SUBMERGED
 IDK,IDK_SITE,,IDK_USER,IDK_ORG,IDK_PS,IDK_MODEL,Instrument site for IDK,,"GEO_IDK,TEMP_IDK",SUBMERGED1
+ALPHA_SYS,LOGINS8,,USER_1,MF_3,LP3,IM5,Instrument site for PRESF on Alpha System,ALPHA PRESF Instrument site,"GEO_WHOI2,TEMP1",SUBMERGED

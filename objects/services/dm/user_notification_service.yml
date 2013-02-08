@@ -37,7 +37,6 @@ methods:
       event: !Event
     throws:
       BadRequest: if there is anything wrong with the event object
-      Conflict: if there is another event scheduled to be published in exactly the same time
 
   publish_event:
     in:
@@ -51,7 +50,6 @@ methods:
       event: !Event
     throws:
       BadRequest: if there is anything wrong with the event object
-      Conflict: if there is another event scheduled to be published in exactly the same time
 
 
   update_notification:

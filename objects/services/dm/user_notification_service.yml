@@ -30,13 +30,29 @@ methods:
       number_of_workers: 1
     out:
 
-  publish_event:
+  publish_event_object:
     in:
-      event:
+      event: !Event
     out:
+      event: !Event
     throws:
       BadRequest: if there is anything wrong with the event object
       Conflict: if there is another event scheduled to be published in exactly the same time
+
+  publish_event:
+    in:
+      event_type: ""
+      origin: ""
+      origin_type: ""
+      sub_type: ""
+      description: ""
+      event_attrs: {}
+    out:
+      event: !Event
+    throws:
+      BadRequest: if there is anything wrong with the event object
+      Conflict: if there is another event scheduled to be published in exactly the same time
+
 
   update_notification:
     docstring: |

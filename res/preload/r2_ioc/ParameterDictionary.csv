@@ -9,8 +9,7 @@ BASE,DICT5,ISSUE: Needs time param,mpl_graph,"PD18,PD24",,viz_timestamp,
 TEST,DICT6,,sample,PD30,,,
 BASE,DICT7,,platform_eng_parsed,"PD7,PD12,PD16,PD8,PD9,PD27",,time,
 BASE,DICT8,,parad_parsed,"PD7,PD10,PD11,PD12,PD16,PD13,PD28,PD14,PD15","time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,serial_num,elapsed_time,counts,checksum",time,
-BASE,DICT9,,raw,"PD7,PD10,PD11,PD12,PD16,PD8,PD9,PD17,PD26
-","time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
+BASE,DICT9,,raw,"PD7,PD10,PD11,PD12,PD16,PD8,PD9,PD17,PD26","time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
 ",time,
 BASE,DICT10,,trhph_parsed,"PD7,PD10,PD11,PD12,PD16,PD61,PD62,PD63,PD64,PD65,PD66,PD67,PD68,PD69,PD70,PD71,PD72","time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,Resistivity5,ResistivityX1,ResistivityX5,Hydrogen5,HydrogenX1,HydrogenX5,EhSensor,RefTempVolts,RefTempDegC,ResistivityTempVolts,ResistivityTempDegC,BatteryVoltage",time,
 BASE,DICT11,,prest_parsed,"PD7,PD10,PD11,PD12,PD16,PD73,PD74,PD75,PD2,PD76","time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,sample_number,sample_type,InstTime,pressure,pressure_temp",time,

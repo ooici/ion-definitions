@@ -205,17 +205,6 @@ DeviceStatusEvent: !Extends_Event
 RemoteQueueModifiedEvent: !Extends_PlatformEvent
   queue_size: 0
 
-# ------------------------------------------------------------------------------------
-# Org Event
-# Events from an Org about its members or resources
-# ------------------------------------------------------------------------------------
-# The UserRoleModifiedEvent is a specialized event that gets published whenever a user's role within an Org changes.
-# The origin is the org_id
-# the sub_type is GRANT or REVOKE
-UserRoleModifiedEvent: !Extends_Event
-  user_id: ""
-  role_name: ""
-
 
 # ------------------------------------------------------------------------------------
 # Ingestion Event
@@ -258,7 +247,7 @@ RequestRoleNegotiationStatusEvent: !Extends_NegotiationEvent
   role_name: ""
 
 AcquireResourceNegotiationStatusEvent: !Extends_NegotiationEvent
-  resource: ""
+  resource_id: ""
 
 ---
 
@@ -266,11 +255,16 @@ AcquireResourceExclusiveNegotiationStatusEvent: !Extends_AcquireResourceNegotiat
 
 ---
 
+#Base Policy Event
+PolicyEvent: !Extends_Event
+
+---
+
 # The ResourcePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
 # when the underlying policy object is updated in the resource registry but by business login in the Policy Management
 # Service as appropriate, like when it is assigned or removed from a resource
 # The origin is the policy_id
-ResourcePolicyEvent: !Extends_Event
+ResourcePolicyEvent: !Extends_PolicyEvent
   resource_id: ""
   resource_type: ""
   resource_name: ""
@@ -280,10 +274,54 @@ ResourcePolicyEvent: !Extends_Event
 # when the underlying policy object is updated in the resource registry but by business login in the Policy Management
 # Service as appropriate, like when it is assigned or removed from a service
 # The origin is the policy_id
-ServicePolicyEvent: !Extends_Event
+ServicePolicyEvent: !Extends_PolicyEvent
   #If the service_name is not set to a specific name, then all services are assumed.
   service_name: ""
   op: ""   #Optional op name
+
+# ------------------------------------------------------------------------------------
+# Org Event
+# Events from an Org about its members or resources
+# ------------------------------------------------------------------------------------
+
+
+#Base Org Event
+OrgEvent: !Extends_Event
+
+---
+
+UserRoleModifiedEvent: !Extends_OrgEvent
+  actor_id: ""
+  role_name: ""
+
+---
+
+#The following events are published when Org operations occur
+#The origin is the org_id
+OrgMembershipGrantedEvent: !Extends_OrgEvent
+  actor_id: ""
+
+OrgMembershipCancelledEvent: !Extends_OrgEvent
+  actor_id: ""
+
+UserRoleGrantedEvent: !Extends_UserRoleModifiedEvent
+
+UserRoleRevokedEvent: !Extends_UserRoleModifiedEvent
+
+ResourceSharedEvent: !Extends_OrgEvent
+  resource_id: ""
+
+ResourceUnsharedEvent: !Extends_OrgEvent
+  resource_id: ""
+
+ResourceCommitmentCreatedEvent: !Extends_OrgEvent
+  resource_id: ""
+
+ResourceCommitmentReleasedEvent: !Extends_OrgEvent
+  resource_id: ""
+
+
+---
 
 
 # ------------------------------------------------------------------------------------

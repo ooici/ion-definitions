@@ -24,7 +24,7 @@ RequestRoleProposal: !Extends_ServiceAgreementProposal
 
 AcquireResourceProposal: !Extends_ServiceAgreementProposal
   #@EventData
-  resource: ""
+  resource_id: ""
 
 ---
 

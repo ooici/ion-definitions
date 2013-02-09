@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Node Attributes Report,Report Generated: 10/30/2012
+Node Attributes Report,Report Generated: 2/8/2013
 
 Textbox14
 
@@ -163,7 +163,7 @@ CE04OSSM-SB001,SB,001,Relative Depth,
 CE05MOAS-GL001,GL,001,depth_port_max,
 CE05MOAS-GL001,GL,001,depth_port_min,
 CE05MOAS-GL001,GL,001,depth_subsite,
-CE05MOAS-GL001,GL,001,First Deployment Date,2012-10
+CE05MOAS-GL001,GL,001,First Deployment Date,2013-06
 CE05MOAS-GL001,GL,001,latitude,
 CE05MOAS-GL001,GL,001,longitude,
 CE05MOAS-GL001,GL,001,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -171,7 +171,7 @@ CE05MOAS-GL001,GL,001,Relative Depth,
 CE05MOAS-GL002,GL,002,depth_port_max,
 CE05MOAS-GL002,GL,002,depth_port_min,
 CE05MOAS-GL002,GL,002,depth_subsite,
-CE05MOAS-GL002,GL,002,First Deployment Date,2012-10
+CE05MOAS-GL002,GL,002,First Deployment Date,2013-06
 CE05MOAS-GL002,GL,002,latitude,
 CE05MOAS-GL002,GL,002,longitude,
 CE05MOAS-GL002,GL,002,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -179,7 +179,7 @@ CE05MOAS-GL002,GL,002,Relative Depth,
 CE05MOAS-GL003,GL,003,depth_port_max,
 CE05MOAS-GL003,GL,003,depth_port_min,
 CE05MOAS-GL003,GL,003,depth_subsite,
-CE05MOAS-GL003,GL,003,First Deployment Date,2012-10
+CE05MOAS-GL003,GL,003,First Deployment Date,2013-06
 CE05MOAS-GL003,GL,003,latitude,
 CE05MOAS-GL003,GL,003,longitude,
 CE05MOAS-GL003,GL,003,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -187,7 +187,7 @@ CE05MOAS-GL003,GL,003,Relative Depth,
 CE05MOAS-GL004,GL,004,depth_port_max,
 CE05MOAS-GL004,GL,004,depth_port_min,
 CE05MOAS-GL004,GL,004,depth_subsite,
-CE05MOAS-GL004,GL,004,First Deployment Date,2012-10
+CE05MOAS-GL004,GL,004,First Deployment Date,2013-06
 CE05MOAS-GL004,GL,004,latitude,
 CE05MOAS-GL004,GL,004,longitude,
 CE05MOAS-GL004,GL,004,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -195,7 +195,7 @@ CE05MOAS-GL004,GL,004,Relative Depth,
 CE05MOAS-GL005,GL,005,depth_port_max,
 CE05MOAS-GL005,GL,005,depth_port_min,
 CE05MOAS-GL005,GL,005,depth_subsite,
-CE05MOAS-GL005,GL,005,First Deployment Date,2012-10
+CE05MOAS-GL005,GL,005,First Deployment Date,2013-06
 CE05MOAS-GL005,GL,005,latitude,
 CE05MOAS-GL005,GL,005,longitude,
 CE05MOAS-GL005,GL,005,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -203,7 +203,7 @@ CE05MOAS-GL005,GL,005,Relative Depth,
 CE05MOAS-GL006,GL,006,depth_port_max,
 CE05MOAS-GL006,GL,006,depth_port_min,
 CE05MOAS-GL006,GL,006,depth_subsite,
-CE05MOAS-GL006,GL,006,First Deployment Date,2012-10
+CE05MOAS-GL006,GL,006,First Deployment Date,2013-06
 CE05MOAS-GL006,GL,006,latitude,
 CE05MOAS-GL006,GL,006,longitude,
 CE05MOAS-GL006,GL,006,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -707,7 +707,7 @@ GA03FLMB-RI001,RI,001,Relative Depth,
 GA05MOAS-GL001,GL,001,depth_port_max,
 GA05MOAS-GL001,GL,001,depth_port_min,
 GA05MOAS-GL001,GL,001,depth_subsite,
-GA05MOAS-GL001,GL,001,First Deployment Date,2014-02
+GA05MOAS-GL001,GL,001,First Deployment Date,2015-01
 GA05MOAS-GL001,GL,001,latitude,
 GA05MOAS-GL001,GL,001,longitude,
 GA05MOAS-GL001,GL,001,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
@@ -715,7 +715,7 @@ GA05MOAS-GL001,GL,001,Relative Depth,
 GA05MOAS-GL002,GL,002,depth_port_max,
 GA05MOAS-GL002,GL,002,depth_port_min,
 GA05MOAS-GL002,GL,002,depth_subsite,
-GA05MOAS-GL002,GL,002,First Deployment Date,2014-02
+GA05MOAS-GL002,GL,002,First Deployment Date,2015-01
 GA05MOAS-GL002,GL,002,latitude,
 GA05MOAS-GL002,GL,002,longitude,
 GA05MOAS-GL002,GL,002,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
@@ -723,7 +723,7 @@ GA05MOAS-GL002,GL,002,Relative Depth,
 GA05MOAS-GL003,GL,003,depth_port_max,
 GA05MOAS-GL003,GL,003,depth_port_min,
 GA05MOAS-GL003,GL,003,depth_subsite,
-GA05MOAS-GL003,GL,003,First Deployment Date,2014-02
+GA05MOAS-GL003,GL,003,First Deployment Date,2015-01
 GA05MOAS-GL003,GL,003,latitude,
 GA05MOAS-GL003,GL,003,longitude,
 GA05MOAS-GL003,GL,003,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server

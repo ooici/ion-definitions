@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Class Attributes Report,Report Generated: 10/30/2012
+Class Attributes Report,Report Generated: 2/8/2013
 
 Textbox14
 
@@ -25,9 +25,11 @@ ADCPA,Velocity profile Mobile Asset,Instrument Configuration,
 ADCPA,Velocity profile Mobile Asset,Link to the Specification,
 ADCPA,Velocity profile Mobile Asset,Notes,
 ADCPA,Velocity profile Mobile Asset,PrimaryScienceDiscipline,P
+ADCPA,Velocity profile Mobile Asset,Produces Acoustic Interference,
 ADCPA,Velocity profile Mobile Asset,Ready for 2013?,
 ADCPA,Velocity profile Mobile Asset,RSN O&M Spares,
 ADCPA,Velocity profile Mobile Asset,RSN Part Number,
+ADCPA,Velocity profile Mobile Asset,Susceptible to Acoustic Interference,Yes
 ADCPA,Velocity profile Mobile Asset,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,Velocity profile Long Range,2009 Baseline Price*,"$60,575.00"
 ADCPS,Velocity profile Long Range,2009 Deployed Instrument Count,16
@@ -46,9 +48,11 @@ ADCPS,Velocity profile Long Range,Instrument Configuration,
 ADCPS,Velocity profile Long Range,Link to the Specification,
 ADCPS,Velocity profile Long Range,Notes,
 ADCPS,Velocity profile Long Range,PrimaryScienceDiscipline,P
+ADCPS,Velocity profile Long Range,Produces Acoustic Interference,
 ADCPS,Velocity profile Long Range,Ready for 2013?,
 ADCPS,Velocity profile Long Range,RSN O&M Spares,
 ADCPS,Velocity profile Long Range,RSN Part Number,
+ADCPS,Velocity profile Long Range,Susceptible to Acoustic Interference,Yes
 ADCPS,Velocity profile Long Range,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,Velocity profile Short Range,2009 Baseline Price*,"$38,625.00"
 ADCPT,Velocity profile Short Range,2009 Deployed Instrument Count,18
@@ -67,9 +71,11 @@ ADCPT,Velocity profile Short Range,Instrument Configuration,
 ADCPT,Velocity profile Short Range,Link to the Specification,
 ADCPT,Velocity profile Short Range,Notes,
 ADCPT,Velocity profile Short Range,PrimaryScienceDiscipline,P
+ADCPT,Velocity profile Short Range,Produces Acoustic Interference,
 ADCPT,Velocity profile Short Range,Ready for 2013?,
 ADCPT,Velocity profile Short Range,RSN O&M Spares,
 ADCPT,Velocity profile Short Range,RSN Part Number,
+ADCPT,Velocity profile Short Range,Susceptible to Acoustic Interference,Yes
 ADCPT,Velocity profile Short Range,"Vendor CLIN, SubCLIN or Model #",
 BOTPT,Pressure bottom tilt,2009 Baseline Price*,
 BOTPT,Pressure bottom tilt,2009 Deployed Instrument Count,3
@@ -88,9 +94,11 @@ BOTPT,Pressure bottom tilt,Instrument Configuration,
 BOTPT,Pressure bottom tilt,Link to the Specification,
 BOTPT,Pressure bottom tilt,Notes,
 BOTPT,Pressure bottom tilt,PrimaryScienceDiscipline,G
+BOTPT,Pressure bottom tilt,Produces Acoustic Interference,
 BOTPT,Pressure bottom tilt,Ready for 2013?,
 BOTPT,Pressure bottom tilt,RSN O&M Spares,
 BOTPT,Pressure bottom tilt,RSN Part Number,
+BOTPT,Pressure bottom tilt,Susceptible to Acoustic Interference,
 BOTPT,Pressure bottom tilt,"Vendor CLIN, SubCLIN or Model #",
 CAMDS,Camera digital still strobe,2009 Baseline Price*,"$55,590.00"
 CAMDS,Camera digital still strobe,2009 Deployed Instrument Count,9
@@ -109,9 +117,11 @@ CAMDS,Camera digital still strobe,Instrument Configuration,
 CAMDS,Camera digital still strobe,Link to the Specification,
 CAMDS,Camera digital still strobe,Notes,
 CAMDS,Camera digital still strobe,PrimaryScienceDiscipline,B
+CAMDS,Camera digital still strobe,Produces Acoustic Interference,
 CAMDS,Camera digital still strobe,Ready for 2013?,
 CAMDS,Camera digital still strobe,RSN O&M Spares,
 CAMDS,Camera digital still strobe,RSN Part Number,
+CAMDS,Camera digital still strobe,Susceptible to Acoustic Interference,
 CAMDS,Camera digital still strobe,"Vendor CLIN, SubCLIN or Model #",
 CAMHD,Camera digital video HD,2009 Baseline Price*,
 CAMHD,Camera digital video HD,2009 Deployed Instrument Count,1
@@ -130,9 +140,11 @@ CAMHD,Camera digital video HD,Instrument Configuration,
 CAMHD,Camera digital video HD,Link to the Specification,
 CAMHD,Camera digital video HD,Notes,
 CAMHD,Camera digital video HD,PrimaryScienceDiscipline,B
+CAMHD,Camera digital video HD,Produces Acoustic Interference,
 CAMHD,Camera digital video HD,Ready for 2013?,
 CAMHD,Camera digital video HD,RSN O&M Spares,
 CAMHD,Camera digital video HD,RSN Part Number,
+CAMHD,Camera digital video HD,Susceptible to Acoustic Interference,
 CAMHD,Camera digital video HD,"Vendor CLIN, SubCLIN or Model #",
 CTDAV,CTD AUV,2009 Baseline Price*,
 CTDAV,CTD AUV,2009 Deployed Instrument Count,3
@@ -151,9 +163,11 @@ CTDAV,CTD AUV,Instrument Configuration,
 CTDAV,CTD AUV,Link to the Specification,
 CTDAV,CTD AUV,Notes,
 CTDAV,CTD AUV,PrimaryScienceDiscipline,P
+CTDAV,CTD AUV,Produces Acoustic Interference,
 CTDAV,CTD AUV,Ready for 2013?,
 CTDAV,CTD AUV,RSN O&M Spares,
 CTDAV,CTD AUV,RSN Part Number,
+CTDAV,CTD AUV,Susceptible to Acoustic Interference,
 CTDAV,CTD AUV,"Vendor CLIN, SubCLIN or Model #",
 CTDBP,CTD Bottom Pumped,2009 Baseline Price*,"$10,630.00"
 CTDBP,CTD Bottom Pumped,2009 Deployed Instrument Count,15
@@ -172,9 +186,11 @@ CTDBP,CTD Bottom Pumped,Instrument Configuration,
 CTDBP,CTD Bottom Pumped,Link to the Specification,
 CTDBP,CTD Bottom Pumped,Notes,
 CTDBP,CTD Bottom Pumped,PrimaryScienceDiscipline,P
+CTDBP,CTD Bottom Pumped,Produces Acoustic Interference,
 CTDBP,CTD Bottom Pumped,Ready for 2013?,
 CTDBP,CTD Bottom Pumped,RSN O&M Spares,
 CTDBP,CTD Bottom Pumped,RSN Part Number,
+CTDBP,CTD Bottom Pumped,Susceptible to Acoustic Interference,
 CTDBP,CTD Bottom Pumped,"Vendor CLIN, SubCLIN or Model #",
 CTDGV,CTD Glider,2009 Baseline Price*,
 CTDGV,CTD Glider,2009 Deployed Instrument Count,24
@@ -193,9 +209,11 @@ CTDGV,CTD Glider,Instrument Configuration,
 CTDGV,CTD Glider,Link to the Specification,
 CTDGV,CTD Glider,Notes,
 CTDGV,CTD Glider,PrimaryScienceDiscipline,P
+CTDGV,CTD Glider,Produces Acoustic Interference,
 CTDGV,CTD Glider,Ready for 2013?,
 CTDGV,CTD Glider,RSN O&M Spares,
 CTDGV,CTD Glider,RSN Part Number,
+CTDGV,CTD Glider,Susceptible to Acoustic Interference,
 CTDGV,CTD Glider,"Vendor CLIN, SubCLIN or Model #",
 CTDMO,CTD Mooring,2009 Baseline Price*,"$5,760.00"
 CTDMO,CTD Mooring,2009 Deployed Instrument Count,138
@@ -214,9 +232,11 @@ CTDMO,CTD Mooring,Instrument Configuration,
 CTDMO,CTD Mooring,Link to the Specification,
 CTDMO,CTD Mooring,Notes,
 CTDMO,CTD Mooring,PrimaryScienceDiscipline,P
+CTDMO,CTD Mooring,Produces Acoustic Interference,
 CTDMO,CTD Mooring,Ready for 2013?,
 CTDMO,CTD Mooring,RSN O&M Spares,
 CTDMO,CTD Mooring,RSN Part Number,
+CTDMO,CTD Mooring,Susceptible to Acoustic Interference,
 CTDMO,CTD Mooring,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,CTD Profiler,2009 Baseline Price*,
 CTDPF,CTD Profiler,2009 Deployed Instrument Count,30
@@ -235,9 +255,11 @@ CTDPF,CTD Profiler,Instrument Configuration,
 CTDPF,CTD Profiler,Link to the Specification,
 CTDPF,CTD Profiler,Notes,
 CTDPF,CTD Profiler,PrimaryScienceDiscipline,P
+CTDPF,CTD Profiler,Produces Acoustic Interference,
 CTDPF,CTD Profiler,Ready for 2013?,
 CTDPF,CTD Profiler,RSN O&M Spares,
 CTDPF,CTD Profiler,RSN Part Number,
+CTDPF,CTD Profiler,Susceptible to Acoustic Interference,
 CTDPF,CTD Profiler,"Vendor CLIN, SubCLIN or Model #",
 DOFST,Oxygen dissolved fastresp,2009 Baseline Price*,
 DOFST,Oxygen dissolved fastresp,2009 Deployed Instrument Count,21
@@ -256,9 +278,11 @@ DOFST,Oxygen dissolved fastresp,Instrument Configuration,
 DOFST,Oxygen dissolved fastresp,Link to the Specification,
 DOFST,Oxygen dissolved fastresp,Notes,
 DOFST,Oxygen dissolved fastresp,PrimaryScienceDiscipline,C
+DOFST,Oxygen dissolved fastresp,Produces Acoustic Interference,
 DOFST,Oxygen dissolved fastresp,Ready for 2013?,
 DOFST,Oxygen dissolved fastresp,RSN O&M Spares,
 DOFST,Oxygen dissolved fastresp,RSN Part Number,
+DOFST,Oxygen dissolved fastresp,Susceptible to Acoustic Interference,
 DOFST,Oxygen dissolved fastresp,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,Oxygen dissolved stable,2009 Baseline Price*,"$6,000.00"
 DOSTA,Oxygen dissolved stable,2009 Deployed Instrument Count,61
@@ -277,52 +301,58 @@ DOSTA,Oxygen dissolved stable,Instrument Configuration,
 DOSTA,Oxygen dissolved stable,Link to the Specification,
 DOSTA,Oxygen dissolved stable,Notes,
 DOSTA,Oxygen dissolved stable,PrimaryScienceDiscipline,C
+DOSTA,Oxygen dissolved stable,Produces Acoustic Interference,
 DOSTA,Oxygen dissolved stable,Ready for 2013?,
 DOSTA,Oxygen dissolved stable,RSN O&M Spares,
 DOSTA,Oxygen dissolved stable,RSN Part Number,
+DOSTA,Oxygen dissolved stable,Susceptible to Acoustic Interference,
 DOSTA,Oxygen dissolved stable,"Vendor CLIN, SubCLIN or Model #",
-FDCHP,Flux direct cov HP,2009 Baseline Price*,"$55,900.00"
-FDCHP,Flux direct cov HP,2009 Deployed Instrument Count,7
-FDCHP,Flux direct cov HP,Alternate Instrument Class Name,Direct Covariance Flux (High Power)
-FDCHP,Flux direct cov HP,CE Spares,
-FDCHP,Flux direct cov HP,CGSN MREFC Spares,
-FDCHP,Flux direct cov HP,CGSN O&M Spares,
-FDCHP,Flux direct cov HP,CGSN P/N,
-FDCHP,Flux direct cov HP,ClassLongName,flux_direct_cov_HP
-FDCHP,Flux direct cov HP,Comments,
-FDCHP,Flux direct cov HP,CP Spares,
-FDCHP,Flux direct cov HP,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,Flux direct cov HP,ECRs that changed the count,
-FDCHP,Flux direct cov HP,Global Spares,
-FDCHP,Flux direct cov HP,Instrument Configuration,
-FDCHP,Flux direct cov HP,Link to the Specification,
-FDCHP,Flux direct cov HP,Notes,
-FDCHP,Flux direct cov HP,PrimaryScienceDiscipline,P
-FDCHP,Flux direct cov HP,Ready for 2013?,Maybe
-FDCHP,Flux direct cov HP,RSN O&M Spares,
-FDCHP,Flux direct cov HP,RSN Part Number,
-FDCHP,Flux direct cov HP,"Vendor CLIN, SubCLIN or Model #",
-FDCLP,Flux direct cov LP,2009 Baseline Price*,"$30,000.00"
-FDCLP,Flux direct cov LP,2009 Deployed Instrument Count,3
-FDCLP,Flux direct cov LP,Alternate Instrument Class Name,Direct Covariance Flux (Low Power)
-FDCLP,Flux direct cov LP,CE Spares,
-FDCLP,Flux direct cov LP,CGSN MREFC Spares,
-FDCLP,Flux direct cov LP,CGSN O&M Spares,
-FDCLP,Flux direct cov LP,CGSN P/N,
-FDCLP,Flux direct cov LP,ClassLongName,flux_direct_cov_LP
-FDCLP,Flux direct cov LP,Comments,
-FDCLP,Flux direct cov LP,CP Spares,
-FDCLP,Flux direct cov LP,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCLP,Flux direct cov LP,ECRs that changed the count,
-FDCLP,Flux direct cov LP,Global Spares,
-FDCLP,Flux direct cov LP,Instrument Configuration,
-FDCLP,Flux direct cov LP,Link to the Specification,
-FDCLP,Flux direct cov LP,Notes,
-FDCLP,Flux direct cov LP,PrimaryScienceDiscipline,P
-FDCLP,Flux direct cov LP,Ready for 2013?,Maybe
-FDCLP,Flux direct cov LP,RSN O&M Spares,
-FDCLP,Flux direct cov LP,RSN Part Number,
-FDCLP,Flux direct cov LP,"Vendor CLIN, SubCLIN or Model #",
+FDCHP,Flux direct covariance,2009 Baseline Price*,"$55,900.00"
+FDCHP,Flux direct covariance,2009 Deployed Instrument Count,7
+FDCHP,Flux direct covariance,Alternate Instrument Class Name,Direct Covariance Flux
+FDCHP,Flux direct covariance,CE Spares,
+FDCHP,Flux direct covariance,CGSN MREFC Spares,
+FDCHP,Flux direct covariance,CGSN O&M Spares,
+FDCHP,Flux direct covariance,CGSN P/N,
+FDCHP,Flux direct covariance,ClassLongName,flux_direct_cov_HP
+FDCHP,Flux direct covariance,Comments,
+FDCHP,Flux direct covariance,CP Spares,
+FDCHP,Flux direct covariance,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
+FDCHP,Flux direct covariance,ECRs that changed the count,
+FDCHP,Flux direct covariance,Global Spares,
+FDCHP,Flux direct covariance,Instrument Configuration,
+FDCHP,Flux direct covariance,Link to the Specification,
+FDCHP,Flux direct covariance,Notes,
+FDCHP,Flux direct covariance,PrimaryScienceDiscipline,P
+FDCHP,Flux direct covariance,Produces Acoustic Interference,
+FDCHP,Flux direct covariance,Ready for 2013?,Maybe
+FDCHP,Flux direct covariance,RSN O&M Spares,
+FDCHP,Flux direct covariance,RSN Part Number,
+FDCHP,Flux direct covariance,Susceptible to Acoustic Interference,
+FDCHP,Flux direct covariance,"Vendor CLIN, SubCLIN or Model #",
+FDCLP,Flux direct cov LP - DEPRECATED,2009 Baseline Price*,"$30,000.00"
+FDCLP,Flux direct cov LP - DEPRECATED,2009 Deployed Instrument Count,3
+FDCLP,Flux direct cov LP - DEPRECATED,Alternate Instrument Class Name,Direct Covariance Flux (Low Power) - DEPRECATED
+FDCLP,Flux direct cov LP - DEPRECATED,CE Spares,
+FDCLP,Flux direct cov LP - DEPRECATED,CGSN MREFC Spares,
+FDCLP,Flux direct cov LP - DEPRECATED,CGSN O&M Spares,
+FDCLP,Flux direct cov LP - DEPRECATED,CGSN P/N,
+FDCLP,Flux direct cov LP - DEPRECATED,ClassLongName,flux_direct_cov_LP
+FDCLP,Flux direct cov LP - DEPRECATED,Comments,
+FDCLP,Flux direct cov LP - DEPRECATED,CP Spares,
+FDCLP,Flux direct cov LP - DEPRECATED,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
+FDCLP,Flux direct cov LP - DEPRECATED,ECRs that changed the count,
+FDCLP,Flux direct cov LP - DEPRECATED,Global Spares,
+FDCLP,Flux direct cov LP - DEPRECATED,Instrument Configuration,
+FDCLP,Flux direct cov LP - DEPRECATED,Link to the Specification,
+FDCLP,Flux direct cov LP - DEPRECATED,Notes,
+FDCLP,Flux direct cov LP - DEPRECATED,PrimaryScienceDiscipline,P
+FDCLP,Flux direct cov LP - DEPRECATED,Produces Acoustic Interference,
+FDCLP,Flux direct cov LP - DEPRECATED,Ready for 2013?,Maybe
+FDCLP,Flux direct cov LP - DEPRECATED,RSN O&M Spares,
+FDCLP,Flux direct cov LP - DEPRECATED,RSN Part Number,
+FDCLP,Flux direct cov LP - DEPRECATED,Susceptible to Acoustic Interference,
+FDCLP,Flux direct cov LP - DEPRECATED,"Vendor CLIN, SubCLIN or Model #",
 FLOBN,Benthic Flow,2009 Baseline Price*,
 FLOBN,Benthic Flow,2009 Deployed Instrument Count,1
 FLOBN,Benthic Flow,Alternate Instrument Class Name,Benthic Fluid Flow
@@ -340,9 +370,11 @@ FLOBN,Benthic Flow,Instrument Configuration,
 FLOBN,Benthic Flow,Link to the Specification,
 FLOBN,Benthic Flow,Notes,
 FLOBN,Benthic Flow,PrimaryScienceDiscipline,C
+FLOBN,Benthic Flow,Produces Acoustic Interference,
 FLOBN,Benthic Flow,Ready for 2013?,
 FLOBN,Benthic Flow,RSN O&M Spares,
 FLOBN,Benthic Flow,RSN Part Number,
+FLOBN,Benthic Flow,Susceptible to Acoustic Interference,
 FLOBN,Benthic Flow,"Vendor CLIN, SubCLIN or Model #",
 FLORD,Fluorometer two wavelength,2009 Baseline Price*,"$5,600.00"
 FLORD,Fluorometer two wavelength,2009 Deployed Instrument Count,35
@@ -361,9 +393,11 @@ FLORD,Fluorometer two wavelength,Instrument Configuration,
 FLORD,Fluorometer two wavelength,Link to the Specification,
 FLORD,Fluorometer two wavelength,Notes,
 FLORD,Fluorometer two wavelength,PrimaryScienceDiscipline,B
+FLORD,Fluorometer two wavelength,Produces Acoustic Interference,
 FLORD,Fluorometer two wavelength,Ready for 2013?,
 FLORD,Fluorometer two wavelength,RSN O&M Spares,
 FLORD,Fluorometer two wavelength,RSN Part Number,
+FLORD,Fluorometer two wavelength,Susceptible to Acoustic Interference,
 FLORD,Fluorometer two wavelength,"Vendor CLIN, SubCLIN or Model #",
 FLORT,Fluorometer three wavelength,2009 Baseline Price*,"$13,905.00"
 FLORT,Fluorometer three wavelength,2009 Deployed Instrument Count,42
@@ -382,9 +416,11 @@ FLORT,Fluorometer three wavelength,Instrument Configuration,
 FLORT,Fluorometer three wavelength,Link to the Specification,
 FLORT,Fluorometer three wavelength,Notes,
 FLORT,Fluorometer three wavelength,PrimaryScienceDiscipline,B
+FLORT,Fluorometer three wavelength,Produces Acoustic Interference,
 FLORT,Fluorometer three wavelength,Ready for 2013?,
 FLORT,Fluorometer three wavelength,RSN O&M Spares,
 FLORT,Fluorometer three wavelength,RSN Part Number,
+FLORT,Fluorometer three wavelength,Susceptible to Acoustic Interference,
 FLORT,Fluorometer three wavelength,"Vendor CLIN, SubCLIN or Model #",
 HPIES,IES pressure velocity,2009 Baseline Price*,
 HPIES,IES pressure velocity,2009 Deployed Instrument Count,2
@@ -403,9 +439,11 @@ HPIES,IES pressure velocity,Instrument Configuration,
 HPIES,IES pressure velocity,Link to the Specification,
 HPIES,IES pressure velocity,Notes,
 HPIES,IES pressure velocity,PrimaryScienceDiscipline,P
+HPIES,IES pressure velocity,Produces Acoustic Interference,
 HPIES,IES pressure velocity,Ready for 2013?,
 HPIES,IES pressure velocity,RSN O&M Spares,
 HPIES,IES pressure velocity,RSN Part Number,
+HPIES,IES pressure velocity,Susceptible to Acoustic Interference,
 HPIES,IES pressure velocity,"Vendor CLIN, SubCLIN or Model #",
 HYDBB,Hydrophone BB passive,2009 Baseline Price*,"$100,092.00"
 HYDBB,Hydrophone BB passive,2009 Deployed Instrument Count,6
@@ -424,9 +462,11 @@ HYDBB,Hydrophone BB passive,Instrument Configuration,
 HYDBB,Hydrophone BB passive,Link to the Specification,
 HYDBB,Hydrophone BB passive,Notes,
 HYDBB,Hydrophone BB passive,PrimaryScienceDiscipline,P
+HYDBB,Hydrophone BB passive,Produces Acoustic Interference,
 HYDBB,Hydrophone BB passive,Ready for 2013?,
 HYDBB,Hydrophone BB passive,RSN O&M Spares,
 HYDBB,Hydrophone BB passive,RSN Part Number,
+HYDBB,Hydrophone BB passive,Susceptible to Acoustic Interference,Yes
 HYDBB,Hydrophone BB passive,"Vendor CLIN, SubCLIN or Model #",
 HYDLF,Hydrophone LF passive,2009 Baseline Price*,
 HYDLF,Hydrophone LF passive,2009 Deployed Instrument Count,9
@@ -445,9 +485,11 @@ HYDLF,Hydrophone LF passive,Instrument Configuration,
 HYDLF,Hydrophone LF passive,Link to the Specification,
 HYDLF,Hydrophone LF passive,Notes,
 HYDLF,Hydrophone LF passive,PrimaryScienceDiscipline,P
+HYDLF,Hydrophone LF passive,Produces Acoustic Interference,
 HYDLF,Hydrophone LF passive,Ready for 2013?,
 HYDLF,Hydrophone LF passive,RSN O&M Spares,
 HYDLF,Hydrophone LF passive,RSN Part Number,
+HYDLF,Hydrophone LF passive,Susceptible to Acoustic Interference,Yes
 HYDLF,Hydrophone LF passive,"Vendor CLIN, SubCLIN or Model #",
 MASSP,Mass Spectrometer,2009 Baseline Price*,
 MASSP,Mass Spectrometer,2009 Deployed Instrument Count,2
@@ -466,9 +508,11 @@ MASSP,Mass Spectrometer,Instrument Configuration,
 MASSP,Mass Spectrometer,Link to the Specification,
 MASSP,Mass Spectrometer,Notes,
 MASSP,Mass Spectrometer,PrimaryScienceDiscipline,C
+MASSP,Mass Spectrometer,Produces Acoustic Interference,
 MASSP,Mass Spectrometer,Ready for 2013?,
 MASSP,Mass Spectrometer,RSN O&M Spares,
 MASSP,Mass Spectrometer,RSN Part Number,
+MASSP,Mass Spectrometer,Susceptible to Acoustic Interference,
 MASSP,Mass Spectrometer,"Vendor CLIN, SubCLIN or Model #",
 METBK,Meteorology bulk,2009 Baseline Price*,"$51,716.00"
 METBK,Meteorology bulk,2009 Deployed Instrument Count,18
@@ -487,9 +531,11 @@ METBK,Meteorology bulk,Instrument Configuration,
 METBK,Meteorology bulk,Link to the Specification,
 METBK,Meteorology bulk,Notes,
 METBK,Meteorology bulk,PrimaryScienceDiscipline,P
+METBK,Meteorology bulk,Produces Acoustic Interference,
 METBK,Meteorology bulk,Ready for 2013?,
 METBK,Meteorology bulk,RSN O&M Spares,
 METBK,Meteorology bulk,RSN Part Number,
+METBK,Meteorology bulk,Susceptible to Acoustic Interference,
 METBK,Meteorology bulk,"Vendor CLIN, SubCLIN or Model #",
 NUTNR,Nutrient nitrate,2009 Baseline Price*,"$30,990.00"
 NUTNR,Nutrient nitrate,2009 Deployed Instrument Count,22
@@ -508,9 +554,11 @@ NUTNR,Nutrient nitrate,Instrument Configuration,
 NUTNR,Nutrient nitrate,Link to the Specification,
 NUTNR,Nutrient nitrate,Notes,
 NUTNR,Nutrient nitrate,PrimaryScienceDiscipline,C
+NUTNR,Nutrient nitrate,Produces Acoustic Interference,
 NUTNR,Nutrient nitrate,Ready for 2013?,
 NUTNR,Nutrient nitrate,RSN O&M Spares,
 NUTNR,Nutrient nitrate,RSN Part Number,
+NUTNR,Nutrient nitrate,Susceptible to Acoustic Interference,
 NUTNR,Nutrient nitrate,"Vendor CLIN, SubCLIN or Model #",
 NUTR4,Nutrient four channel,2009 Baseline Price*,
 NUTR4,Nutrient four channel,2009 Deployed Instrument Count,3
@@ -529,9 +577,11 @@ NUTR4,Nutrient four channel,Instrument Configuration,
 NUTR4,Nutrient four channel,Link to the Specification,
 NUTR4,Nutrient four channel,Notes,
 NUTR4,Nutrient four channel,PrimaryScienceDiscipline,C
+NUTR4,Nutrient four channel,Produces Acoustic Interference,
 NUTR4,Nutrient four channel,Ready for 2013?,
 NUTR4,Nutrient four channel,RSN O&M Spares,
 NUTR4,Nutrient four channel,RSN Part Number,
+NUTR4,Nutrient four channel,Susceptible to Acoustic Interference,
 NUTR4,Nutrient four channel,"Vendor CLIN, SubCLIN or Model #",
 OBSBB,Seismometer BB triaxial accel,2009 Baseline Price*,
 OBSBB,Seismometer BB triaxial accel,2009 Deployed Instrument Count,4
@@ -550,9 +600,11 @@ OBSBB,Seismometer BB triaxial accel,Instrument Configuration,
 OBSBB,Seismometer BB triaxial accel,Link to the Specification,
 OBSBB,Seismometer BB triaxial accel,Notes,
 OBSBB,Seismometer BB triaxial accel,PrimaryScienceDiscipline,G
+OBSBB,Seismometer BB triaxial accel,Produces Acoustic Interference,
 OBSBB,Seismometer BB triaxial accel,Ready for 2013?,
 OBSBB,Seismometer BB triaxial accel,RSN O&M Spares,
 OBSBB,Seismometer BB triaxial accel,RSN Part Number,
+OBSBB,Seismometer BB triaxial accel,Susceptible to Acoustic Interference,
 OBSBB,Seismometer BB triaxial accel,"Vendor CLIN, SubCLIN or Model #",
 OBSBK,Seismometer BB triaxial keck,2009 Baseline Price*,
 OBSBK,Seismometer BB triaxial keck,2009 Deployed Instrument Count,
@@ -571,9 +623,11 @@ OBSBK,Seismometer BB triaxial keck,Instrument Configuration,
 OBSBK,Seismometer BB triaxial keck,Link to the Specification,
 OBSBK,Seismometer BB triaxial keck,Notes,
 OBSBK,Seismometer BB triaxial keck,PrimaryScienceDiscipline,G
+OBSBK,Seismometer BB triaxial keck,Produces Acoustic Interference,
 OBSBK,Seismometer BB triaxial keck,Ready for 2013?,
 OBSBK,Seismometer BB triaxial keck,RSN O&M Spares,
 OBSBK,Seismometer BB triaxial keck,RSN Part Number,
+OBSBK,Seismometer BB triaxial keck,Susceptible to Acoustic Interference,
 OBSBK,Seismometer BB triaxial keck,"Vendor CLIN, SubCLIN or Model #",
 OBSSK,Seismometer shortperiod keck,2009 Baseline Price*,
 OBSSK,Seismometer shortperiod keck,2009 Deployed Instrument Count,
@@ -592,9 +646,11 @@ OBSSK,Seismometer shortperiod keck,Instrument Configuration,
 OBSSK,Seismometer shortperiod keck,Link to the Specification,
 OBSSK,Seismometer shortperiod keck,Notes,
 OBSSK,Seismometer shortperiod keck,PrimaryScienceDiscipline,G
+OBSSK,Seismometer shortperiod keck,Produces Acoustic Interference,
 OBSSK,Seismometer shortperiod keck,Ready for 2013?,
 OBSSK,Seismometer shortperiod keck,RSN O&M Spares,
 OBSSK,Seismometer shortperiod keck,RSN Part Number,
+OBSSK,Seismometer shortperiod keck,Susceptible to Acoustic Interference,
 OBSSK,Seismometer shortperiod keck,"Vendor CLIN, SubCLIN or Model #",
 OBSSP,Seismometer shortperiod,2009 Baseline Price*,
 OBSSP,Seismometer shortperiod,2009 Deployed Instrument Count,9
@@ -613,9 +669,11 @@ OBSSP,Seismometer shortperiod,Instrument Configuration,
 OBSSP,Seismometer shortperiod,Link to the Specification,
 OBSSP,Seismometer shortperiod,Notes,
 OBSSP,Seismometer shortperiod,PrimaryScienceDiscipline,G
+OBSSP,Seismometer shortperiod,Produces Acoustic Interference,
 OBSSP,Seismometer shortperiod,Ready for 2013?,
 OBSSP,Seismometer shortperiod,RSN O&M Spares,
 OBSSP,Seismometer shortperiod,RSN Part Number,
+OBSSP,Seismometer shortperiod,Susceptible to Acoustic Interference,
 OBSSP,Seismometer shortperiod,"Vendor CLIN, SubCLIN or Model #",
 OPTAA,Attenuation absorption optical,2009 Baseline Price*,"$17,500.00"
 OPTAA,Attenuation absorption optical,2009 Deployed Instrument Count,35
@@ -634,9 +692,11 @@ OPTAA,Attenuation absorption optical,Instrument Configuration,
 OPTAA,Attenuation absorption optical,Link to the Specification,
 OPTAA,Attenuation absorption optical,Notes,
 OPTAA,Attenuation absorption optical,PrimaryScienceDiscipline,B
+OPTAA,Attenuation absorption optical,Produces Acoustic Interference,
 OPTAA,Attenuation absorption optical,Ready for 2013?,
 OPTAA,Attenuation absorption optical,RSN O&M Spares,
 OPTAA,Attenuation absorption optical,RSN Part Number,
+OPTAA,Attenuation absorption optical,Susceptible to Acoustic Interference,
 OPTAA,Attenuation absorption optical,"Vendor CLIN, SubCLIN or Model #",
 OSMOI,Watersample chem trace,2009 Baseline Price*,
 OSMOI,Watersample chem trace,2009 Deployed Instrument Count,2
@@ -655,9 +715,11 @@ OSMOI,Watersample chem trace,Instrument Configuration,
 OSMOI,Watersample chem trace,Link to the Specification,
 OSMOI,Watersample chem trace,Notes,
 OSMOI,Watersample chem trace,PrimaryScienceDiscipline,C
+OSMOI,Watersample chem trace,Produces Acoustic Interference,
 OSMOI,Watersample chem trace,Ready for 2013?,
 OSMOI,Watersample chem trace,RSN O&M Spares,
 OSMOI,Watersample chem trace,RSN Part Number,
+OSMOI,Watersample chem trace,Susceptible to Acoustic Interference,
 OSMOI,Watersample chem trace,"Vendor CLIN, SubCLIN or Model #",
 PARAD,PAR,2009 Baseline Price*,
 PARAD,PAR,2009 Deployed Instrument Count,21
@@ -676,9 +738,11 @@ PARAD,PAR,Instrument Configuration,
 PARAD,PAR,Link to the Specification,
 PARAD,PAR,Notes,
 PARAD,PAR,PrimaryScienceDiscipline,B
+PARAD,PAR,Produces Acoustic Interference,
 PARAD,PAR,Ready for 2013?,
 PARAD,PAR,RSN O&M Spares,
 PARAD,PAR,RSN Part Number,
+PARAD,PAR,Susceptible to Acoustic Interference,
 PARAD,PAR,"Vendor CLIN, SubCLIN or Model #",
 PCO2A,pCO2 air-sea,2009 Baseline Price*,"$39,300.00"
 PCO2A,pCO2 air-sea,2009 Deployed Instrument Count,10
@@ -697,9 +761,11 @@ PCO2A,pCO2 air-sea,Instrument Configuration,
 PCO2A,pCO2 air-sea,Link to the Specification,
 PCO2A,pCO2 air-sea,Notes,
 PCO2A,pCO2 air-sea,PrimaryScienceDiscipline,C
+PCO2A,pCO2 air-sea,Produces Acoustic Interference,
 PCO2A,pCO2 air-sea,Ready for 2013?,
 PCO2A,pCO2 air-sea,RSN O&M Spares,
 PCO2A,pCO2 air-sea,RSN Part Number,
+PCO2A,pCO2 air-sea,Susceptible to Acoustic Interference,
 PCO2A,pCO2 air-sea,"Vendor CLIN, SubCLIN or Model #",
 PCO2W,pCO2 water,2009 Baseline Price*,"$18,375.00"
 PCO2W,pCO2 water,2009 Deployed Instrument Count,25
@@ -718,9 +784,11 @@ PCO2W,pCO2 water,Instrument Configuration,
 PCO2W,pCO2 water,Link to the Specification,
 PCO2W,pCO2 water,Notes,
 PCO2W,pCO2 water,PrimaryScienceDiscipline,C
+PCO2W,pCO2 water,Produces Acoustic Interference,
 PCO2W,pCO2 water,Ready for 2013?,
 PCO2W,pCO2 water,RSN O&M Spares,
 PCO2W,pCO2 water,RSN Part Number,
+PCO2W,pCO2 water,Susceptible to Acoustic Interference,
 PCO2W,pCO2 water,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,pH stable,2009 Baseline Price*,"$17,500.00"
 PHSEN,pH stable,2009 Deployed Instrument Count,33
@@ -739,9 +807,11 @@ PHSEN,pH stable,Instrument Configuration,
 PHSEN,pH stable,Link to the Specification,
 PHSEN,pH stable,Notes,
 PHSEN,pH stable,PrimaryScienceDiscipline,C
+PHSEN,pH stable,Produces Acoustic Interference,
 PHSEN,pH stable,Ready for 2013?,
 PHSEN,pH stable,RSN O&M Spares,
 PHSEN,pH stable,RSN Part Number,
+PHSEN,pH stable,Susceptible to Acoustic Interference,
 PHSEN,pH stable,"Vendor CLIN, SubCLIN or Model #",
 PPSDN,DNA particulate,2009 Baseline Price*,
 PPSDN,DNA particulate,2009 Deployed Instrument Count,
@@ -760,9 +830,11 @@ PPSDN,DNA particulate,Instrument Configuration,
 PPSDN,DNA particulate,Link to the Specification,
 PPSDN,DNA particulate,Notes,
 PPSDN,DNA particulate,PrimaryScienceDiscipline,B
+PPSDN,DNA particulate,Produces Acoustic Interference,
 PPSDN,DNA particulate,Ready for 2013?,
 PPSDN,DNA particulate,RSN O&M Spares,
 PPSDN,DNA particulate,RSN Part Number,
+PPSDN,DNA particulate,Susceptible to Acoustic Interference,
 PPSDN,DNA particulate,"Vendor CLIN, SubCLIN or Model #",
 PRESF,Pressure SF,2009 Baseline Price*,"$17,625.00"
 PRESF,Pressure SF,2009 Deployed Instrument Count,9
@@ -781,9 +853,11 @@ PRESF,Pressure SF,Instrument Configuration,
 PRESF,Pressure SF,Link to the Specification,
 PRESF,Pressure SF,Notes,
 PRESF,Pressure SF,PrimaryScienceDiscipline,P
+PRESF,Pressure SF,Produces Acoustic Interference,
 PRESF,Pressure SF,Ready for 2013?,
 PRESF,Pressure SF,RSN O&M Spares,
 PRESF,Pressure SF,RSN Part Number,
+PRESF,Pressure SF,Susceptible to Acoustic Interference,
 PRESF,Pressure SF,"Vendor CLIN, SubCLIN or Model #",
 PREST,Pressure SF tidal,2009 Baseline Price*,
 PREST,Pressure SF tidal,2009 Deployed Instrument Count,3
@@ -802,9 +876,11 @@ PREST,Pressure SF tidal,Instrument Configuration,
 PREST,Pressure SF tidal,Link to the Specification,
 PREST,Pressure SF tidal,Notes,
 PREST,Pressure SF tidal,PrimaryScienceDiscipline,P
+PREST,Pressure SF tidal,Produces Acoustic Interference,
 PREST,Pressure SF tidal,Ready for 2013?,
 PREST,Pressure SF tidal,RSN O&M Spares,
 PREST,Pressure SF tidal,RSN Part Number,
+PREST,Pressure SF tidal,Susceptible to Acoustic Interference,
 PREST,Pressure SF tidal,"Vendor CLIN, SubCLIN or Model #",
 RASFL,Watersample chem trace H2S pH,2009 Baseline Price*,
 RASFL,Watersample chem trace H2S pH,2009 Deployed Instrument Count,1
@@ -823,9 +899,11 @@ RASFL,Watersample chem trace H2S pH,Instrument Configuration,
 RASFL,Watersample chem trace H2S pH,Link to the Specification,
 RASFL,Watersample chem trace H2S pH,Notes,
 RASFL,Watersample chem trace H2S pH,PrimaryScienceDiscipline,C
+RASFL,Watersample chem trace H2S pH,Produces Acoustic Interference,
 RASFL,Watersample chem trace H2S pH,Ready for 2013?,
 RASFL,Watersample chem trace H2S pH,RSN O&M Spares,
 RASFL,Watersample chem trace H2S pH,RSN Part Number,
+RASFL,Watersample chem trace H2S pH,Susceptible to Acoustic Interference,
 RASFL,Watersample chem trace H2S pH,"Vendor CLIN, SubCLIN or Model #",
 SPKIR,spectral irradiance,2009 Baseline Price*,"$11,080.00"
 SPKIR,spectral irradiance,2009 Deployed Instrument Count,22
@@ -844,9 +922,11 @@ SPKIR,spectral irradiance,Instrument Configuration,
 SPKIR,spectral irradiance,Link to the Specification,
 SPKIR,spectral irradiance,Notes,
 SPKIR,spectral irradiance,PrimaryScienceDiscipline,P
+SPKIR,spectral irradiance,Produces Acoustic Interference,
 SPKIR,spectral irradiance,Ready for 2013?,
 SPKIR,spectral irradiance,RSN O&M Spares,
 SPKIR,spectral irradiance,RSN Part Number,
+SPKIR,spectral irradiance,Susceptible to Acoustic Interference,
 SPKIR,spectral irradiance,"Vendor CLIN, SubCLIN or Model #",
 THSPH,Temp H2 H2S pH,2009 Baseline Price*,
 THSPH,Temp H2 H2S pH,2009 Deployed Instrument Count,1
@@ -865,9 +945,11 @@ THSPH,Temp H2 H2S pH,Instrument Configuration,
 THSPH,Temp H2 H2S pH,Link to the Specification,
 THSPH,Temp H2 H2S pH,Notes,
 THSPH,Temp H2 H2S pH,PrimaryScienceDiscipline,C
+THSPH,Temp H2 H2S pH,Produces Acoustic Interference,
 THSPH,Temp H2 H2S pH,Ready for 2013?,
 THSPH,Temp H2 H2S pH,RSN O&M Spares,
 THSPH,Temp H2 H2S pH,RSN Part Number,
+THSPH,Temp H2 H2S pH,Susceptible to Acoustic Interference,
 THSPH,Temp H2 H2S pH,"Vendor CLIN, SubCLIN or Model #",
 TMPSF,Temperature seafloor,2009 Baseline Price*,
 TMPSF,Temperature seafloor,2009 Deployed Instrument Count,1
@@ -886,9 +968,11 @@ TMPSF,Temperature seafloor,Instrument Configuration,
 TMPSF,Temperature seafloor,Link to the Specification,
 TMPSF,Temperature seafloor,Notes,
 TMPSF,Temperature seafloor,PrimaryScienceDiscipline,P
+TMPSF,Temperature seafloor,Produces Acoustic Interference,
 TMPSF,Temperature seafloor,Ready for 2013?,
 TMPSF,Temperature seafloor,RSN O&M Spares,
 TMPSF,Temperature seafloor,RSN Part Number,
+TMPSF,Temperature seafloor,Susceptible to Acoustic Interference,
 TMPSF,Temperature seafloor,"Vendor CLIN, SubCLIN or Model #",
 TRHPH,Temp resist,2009 Baseline Price*,
 TRHPH,Temp resist,2009 Deployed Instrument Count,1
@@ -907,9 +991,11 @@ TRHPH,Temp resist,Instrument Configuration,
 TRHPH,Temp resist,Link to the Specification,
 TRHPH,Temp resist,Notes,
 TRHPH,Temp resist,PrimaryScienceDiscipline,G
+TRHPH,Temp resist,Produces Acoustic Interference,
 TRHPH,Temp resist,Ready for 2013?,
 TRHPH,Temp resist,RSN O&M Spares,
 TRHPH,Temp resist,RSN Part Number,
+TRHPH,Temp resist,Susceptible to Acoustic Interference,
 TRHPH,Temp resist,"Vendor CLIN, SubCLIN or Model #",
 VADCP,Velocity profile 50m turb,2009 Baseline Price*,
 VADCP,Velocity profile 50m turb,2009 Deployed Instrument Count,2
@@ -928,9 +1014,11 @@ VADCP,Velocity profile 50m turb,Instrument Configuration,
 VADCP,Velocity profile 50m turb,Link to the Specification,
 VADCP,Velocity profile 50m turb,Notes,
 VADCP,Velocity profile 50m turb,PrimaryScienceDiscipline,P
+VADCP,Velocity profile 50m turb,Produces Acoustic Interference,
 VADCP,Velocity profile 50m turb,Ready for 2013?,
 VADCP,Velocity profile 50m turb,RSN O&M Spares,
 VADCP,Velocity profile 50m turb,RSN Part Number,
+VADCP,Velocity profile 50m turb,Susceptible to Acoustic Interference,
 VADCP,Velocity profile 50m turb,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,Velocity point 3D turb,2009 Baseline Price*,"$10,805.00"
 VEL3D,Velocity point 3D turb,2009 Deployed Instrument Count,33
@@ -949,9 +1037,11 @@ VEL3D,Velocity point 3D turb,Instrument Configuration,
 VEL3D,Velocity point 3D turb,Link to the Specification,
 VEL3D,Velocity point 3D turb,Notes,
 VEL3D,Velocity point 3D turb,PrimaryScienceDiscipline,P
+VEL3D,Velocity point 3D turb,Produces Acoustic Interference,
 VEL3D,Velocity point 3D turb,Ready for 2013?,
 VEL3D,Velocity point 3D turb,RSN O&M Spares,
 VEL3D,Velocity point 3D turb,RSN Part Number,
+VEL3D,Velocity point 3D turb,Susceptible to Acoustic Interference,Yes
 VEL3D,Velocity point 3D turb,"Vendor CLIN, SubCLIN or Model #",
 VELPT,Velocity point,2009 Baseline Price*,"$14,700.00"
 VELPT,Velocity point,2009 Deployed Instrument Count,29
@@ -970,9 +1060,11 @@ VELPT,Velocity point,Instrument Configuration,
 VELPT,Velocity point,Link to the Specification,
 VELPT,Velocity point,Notes,
 VELPT,Velocity point,PrimaryScienceDiscipline,P
+VELPT,Velocity point,Produces Acoustic Interference,
 VELPT,Velocity point,Ready for 2013?,
 VELPT,Velocity point,RSN O&M Spares,
 VELPT,Velocity point,RSN Part Number,
+VELPT,Velocity point,Susceptible to Acoustic Interference,Yes
 VELPT,Velocity point,"Vendor CLIN, SubCLIN or Model #",
 WAVSS,Wave spectra surface,2009 Baseline Price*,"$17,279.00"
 WAVSS,Wave spectra surface,2009 Deployed Instrument Count,10
@@ -991,9 +1083,11 @@ WAVSS,Wave spectra surface,Instrument Configuration,
 WAVSS,Wave spectra surface,Link to the Specification,
 WAVSS,Wave spectra surface,Notes,
 WAVSS,Wave spectra surface,PrimaryScienceDiscipline,P
+WAVSS,Wave spectra surface,Produces Acoustic Interference,
 WAVSS,Wave spectra surface,Ready for 2013?,
 WAVSS,Wave spectra surface,RSN O&M Spares,
 WAVSS,Wave spectra surface,RSN Part Number,
+WAVSS,Wave spectra surface,Susceptible to Acoustic Interference,
 WAVSS,Wave spectra surface,"Vendor CLIN, SubCLIN or Model #",
 ZPLSC,Plankton ZP sonar coastal,2009 Baseline Price*,"$46,000.00"
 ZPLSC,Plankton ZP sonar coastal,2009 Deployed Instrument Count,8
@@ -1012,9 +1106,11 @@ ZPLSC,Plankton ZP sonar coastal,Instrument Configuration,
 ZPLSC,Plankton ZP sonar coastal,Link to the Specification,
 ZPLSC,Plankton ZP sonar coastal,Notes,
 ZPLSC,Plankton ZP sonar coastal,PrimaryScienceDiscipline,B
+ZPLSC,Plankton ZP sonar coastal,Produces Acoustic Interference,
 ZPLSC,Plankton ZP sonar coastal,Ready for 2013?,
 ZPLSC,Plankton ZP sonar coastal,RSN O&M Spares,
 ZPLSC,Plankton ZP sonar coastal,RSN Part Number,
+ZPLSC,Plankton ZP sonar coastal,Susceptible to Acoustic Interference,Yes
 ZPLSC,Plankton ZP sonar coastal,"Vendor CLIN, SubCLIN or Model #",
 ZPLSG,Plankton ZP sonar global,2009 Baseline Price*,"$95,000.00"
 ZPLSG,Plankton ZP sonar global,2009 Deployed Instrument Count,4
@@ -1033,8 +1129,10 @@ ZPLSG,Plankton ZP sonar global,Instrument Configuration,
 ZPLSG,Plankton ZP sonar global,Link to the Specification,
 ZPLSG,Plankton ZP sonar global,Notes,
 ZPLSG,Plankton ZP sonar global,PrimaryScienceDiscipline,B
+ZPLSG,Plankton ZP sonar global,Produces Acoustic Interference,
 ZPLSG,Plankton ZP sonar global,Ready for 2013?,
 ZPLSG,Plankton ZP sonar global,RSN O&M Spares,
 ZPLSG,Plankton ZP sonar global,RSN Part Number,
+ZPLSG,Plankton ZP sonar global,Susceptible to Acoustic Interference,Yes
 ZPLSG,Plankton ZP sonar global,"Vendor CLIN, SubCLIN or Model #",
 

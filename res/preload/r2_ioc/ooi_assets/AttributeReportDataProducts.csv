@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Attributes Report,Report Generated: 10/30/2012
+Data Product Attributes Report,Report Generated: 2/8/2013
 
 Textbox14
 
@@ -16,7 +16,7 @@ ABSTHRM,PHSEN Thermistor Temperature,0,DOORS L2 Science Requirement Text,none
 ABSTHRM,PHSEN Thermistor Temperature,0,DPS DCN(s),DCN 1341-00507
 ABSTHRM,PHSEN Thermistor Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 ABSTHRM,PHSEN Thermistor Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-ABSTHRM,PHSEN Thermistor Temperature,0,Gradient Test (GREDTST) QC,not applicable
+ABSTHRM,PHSEN Thermistor Temperature,0,Gradient Test (GRADTST) QC,not applicable
 ABSTHRM,PHSEN Thermistor Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 ABSTHRM,PHSEN Thermistor Temperature,0,Modulus (MODULUS) QC,not applicable
 ABSTHRM,PHSEN Thermistor Temperature,0,Notes,
@@ -35,7 +35,7 @@ BARPRES,Barometric Pressure,0,DOORS L2 Science Requirement Text,Barometric Press
 BARPRES,Barometric Pressure,0,DPS DCN(s),DCN 1341-00360
 BARPRES,Barometric Pressure,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 BARPRES,Barometric Pressure,0,Global Range Test (GLBLRNG) QC,not applicable
-BARPRES,Barometric Pressure,0,Gradient Test (GREDTST) QC,not applicable
+BARPRES,Barometric Pressure,0,Gradient Test (GRADTST) QC,not applicable
 BARPRES,Barometric Pressure,0,Local Range Test (LOCLRNG) QC,not applicable
 BARPRES,Barometric Pressure,0,Modulus (MODULUS) QC,not applicable
 BARPRES,Barometric Pressure,0,Notes,
@@ -54,7 +54,7 @@ BENTHFL,Benthic Flow Rates,2,DOORS L2 Science Requirement Text,Fluid Flow - into
 BENTHFL,Benthic Flow Rates,2,DPS DCN(s),DCN 1341-00220
 BENTHFL,Benthic Flow Rates,2,Evaluate Polynomial (POLYVAL) QC,TBD
 BENTHFL,Benthic Flow Rates,2,Global Range Test (GLBLRNG) QC,TBD
-BENTHFL,Benthic Flow Rates,2,Gradient Test (GREDTST) QC,TBD
+BENTHFL,Benthic Flow Rates,2,Gradient Test (GRADTST) QC,TBD
 BENTHFL,Benthic Flow Rates,2,Local Range Test (LOCLRNG) QC,TBD
 BENTHFL,Benthic Flow Rates,2,Modulus (MODULUS) QC,TBD
 BENTHFL,Benthic Flow Rates,2,Notes,
@@ -65,25 +65,25 @@ BENTHFL,Benthic Flow Rates,2,Spike Test (SPKETST) QC,TBD
 BENTHFL,Benthic Flow Rates,2,Stuck Value Test (STUCKVL) QC,TBD
 BENTHFL,Benthic Flow Rates,2,Trend Test (TRNDTST) QC,TBD
 BENTHFL,Benthic Flow Rates,2,Units,m/yr
-BOTPRES,Pressure,1,1-D Interpolation (INTERP1) QC,TBD
-BOTPRES,Pressure,1,Combine QC Flags (CMBNFLG) QC,TBD
-BOTPRES,Pressure,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
-BOTPRES,Pressure,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
-BOTPRES,Pressure,1,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
-BOTPRES,Pressure,1,DPS DCN(s),DCN 1341-00070
-BOTPRES,Pressure,1,Evaluate Polynomial (POLYVAL) QC,TBD
-BOTPRES,Pressure,1,Global Range Test (GLBLRNG) QC,TBD
-BOTPRES,Pressure,1,Gradient Test (GREDTST) QC,TBD
-BOTPRES,Pressure,1,Local Range Test (LOCLRNG) QC,TBD
-BOTPRES,Pressure,1,Modulus (MODULUS) QC,TBD
-BOTPRES,Pressure,1,Notes,
-BOTPRES,Pressure,1,Processing Flow Diagram DCN(s),DCN 1342-00060
-BOTPRES,Pressure,1,Regime(s),Seafloor/Crust
-BOTPRES,Pressure,1,Solar Elevation (SOLAREL) QC,TBD
-BOTPRES,Pressure,1,Spike Test (SPKETST) QC,TBD
-BOTPRES,Pressure,1,Stuck Value Test (STUCKVL) QC,TBD
-BOTPRES,Pressure,1,Trend Test (TRNDTST) QC,TBD
-BOTPRES,Pressure,1,Units,nanoPascal
+BOTPRES,Nano-resolution Bottom Pressure,1,1-D Interpolation (INTERP1) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Combine QC Flags (CMBNFLG) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
+BOTPRES,Nano-resolution Bottom Pressure,1,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
+BOTPRES,Nano-resolution Bottom Pressure,1,DPS DCN(s),DCN 1341-00070
+BOTPRES,Nano-resolution Bottom Pressure,1,Evaluate Polynomial (POLYVAL) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Global Range Test (GLBLRNG) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Gradient Test (GRADTST) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Local Range Test (LOCLRNG) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Modulus (MODULUS) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Notes,
+BOTPRES,Nano-resolution Bottom Pressure,1,Processing Flow Diagram DCN(s),DCN 1342-00060
+BOTPRES,Nano-resolution Bottom Pressure,1,Regime(s),Seafloor/Crust
+BOTPRES,Nano-resolution Bottom Pressure,1,Solar Elevation (SOLAREL) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Spike Test (SPKETST) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Stuck Value Test (STUCKVL) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Trend Test (TRNDTST) QC,TBD
+BOTPRES,Nano-resolution Bottom Pressure,1,Units,nanoPascal
 BOTSFLU,Seafloor Uplift and Deflation,2,1-D Interpolation (INTERP1) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Combine QC Flags (CMBNFLG) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
@@ -92,7 +92,7 @@ BOTSFLU,Seafloor Uplift and Deflation,2,DOORS L2 Science Requirement Text,Couple
 BOTSFLU,Seafloor Uplift and Deflation,2,DPS DCN(s),DCN 1341-00080
 BOTSFLU,Seafloor Uplift and Deflation,2,Evaluate Polynomial (POLYVAL) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Global Range Test (GLBLRNG) QC,TBD
-BOTSFLU,Seafloor Uplift and Deflation,2,Gradient Test (GREDTST) QC,TBD
+BOTSFLU,Seafloor Uplift and Deflation,2,Gradient Test (GRADTST) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Local Range Test (LOCLRNG) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Modulus (MODULUS) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Notes,
@@ -111,7 +111,7 @@ BOTTILT,"X Tilt, Y Tilt",0,DOORS L2 Science Requirement Text,Coupled near bottom
 BOTTILT,"X Tilt, Y Tilt",0,DPS DCN(s),DCN 1341-00060
 BOTTILT,"X Tilt, Y Tilt",0,Evaluate Polynomial (POLYVAL) QC,not applicable
 BOTTILT,"X Tilt, Y Tilt",0,Global Range Test (GLBLRNG) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Gradient Test (GREDTST) QC,not applicable
+BOTTILT,"X Tilt, Y Tilt",0,Gradient Test (GRADTST) QC,not applicable
 BOTTILT,"X Tilt, Y Tilt",0,Local Range Test (LOCLRNG) QC,not applicable
 BOTTILT,"X Tilt, Y Tilt",0,Modulus (MODULUS) QC,not applicable
 BOTTILT,"X Tilt, Y Tilt",0,Notes,
@@ -130,7 +130,7 @@ CAMSTIL,Still Image ,1,DOORS L2 Science Requirement Text,"Imagery, Still"
 CAMSTIL,Still Image ,1,DPS DCN(s),DCN 1341-00830
 CAMSTIL,Still Image ,1,Evaluate Polynomial (POLYVAL) QC,not applicable
 CAMSTIL,Still Image ,1,Global Range Test (GLBLRNG) QC,not applicable
-CAMSTIL,Still Image ,1,Gradient Test (GREDTST) QC,not applicable
+CAMSTIL,Still Image ,1,Gradient Test (GRADTST) QC,not applicable
 CAMSTIL,Still Image ,1,Local Range Test (LOCLRNG) QC,not applicable
 CAMSTIL,Still Image ,1,Modulus (MODULUS) QC,not applicable
 CAMSTIL,Still Image ,1,Notes,
@@ -149,7 +149,7 @@ CDOMFLO,Fluorometric CDOM Concentration,0,DOORS L2 Science Requirement Text,Colo
 CDOMFLO,Fluorometric CDOM Concentration,0,DPS DCN(s),[DCN 1341-00550|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/3a5d525b-59d8-4f1e-b901-20e43e6c8d26/1341-00550_Data_Product_SPEC_CDOMFLO_OOI.pdf]
 CDOMFLO,Fluorometric CDOM Concentration,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 CDOMFLO,Fluorometric CDOM Concentration,0,Global Range Test (GLBLRNG) QC,not applicable
-CDOMFLO,Fluorometric CDOM Concentration,0,Gradient Test (GREDTST) QC,not applicable
+CDOMFLO,Fluorometric CDOM Concentration,0,Gradient Test (GRADTST) QC,not applicable
 CDOMFLO,Fluorometric CDOM Concentration,0,Local Range Test (LOCLRNG) QC,not applicable
 CDOMFLO,Fluorometric CDOM Concentration,0,Modulus (MODULUS) QC,not applicable
 CDOMFLO,Fluorometric CDOM Concentration,0,Notes,
@@ -168,7 +168,7 @@ CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,DOORS L2 Science Requirement 
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,DPS DCN(s),[DCN 1341-00530|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/de7bff13-c7a6-4e50-8a13-8c9e52c9b83f/1341-00530_Data_Product_SPEC_CHLAFLO_OOI.pdf]
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,Global Range Test (GLBLRNG) QC,not applicable
-CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,Gradient Test (GREDTST) QC,not applicable
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,Gradient Test (GRADTST) QC,not applicable
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,Local Range Test (LOCLRNG) QC,not applicable
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,Modulus (MODULUS) QC,not applicable
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,0,Notes,
@@ -187,7 +187,7 @@ CO2ABS1,Optical Absorbance Ratio at 434nm,0,DOORS L2 Science Requirement Text,no
 CO2ABS1,Optical Absorbance Ratio at 434nm,0,DPS DCN(s),[DCN 1341-00487|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/80a7f169-8d1d-47d1-96b8-1eef13f333a8/1341-00490_Data_Product_Spec_PCO2WAT_OOI.pdf]
 CO2ABS1,Optical Absorbance Ratio at 434nm,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 CO2ABS1,Optical Absorbance Ratio at 434nm,0,Global Range Test (GLBLRNG) QC,not applicable
-CO2ABS1,Optical Absorbance Ratio at 434nm,0,Gradient Test (GREDTST) QC,not applicable
+CO2ABS1,Optical Absorbance Ratio at 434nm,0,Gradient Test (GRADTST) QC,not applicable
 CO2ABS1,Optical Absorbance Ratio at 434nm,0,Local Range Test (LOCLRNG) QC,not applicable
 CO2ABS1,Optical Absorbance Ratio at 434nm,0,Modulus (MODULUS) QC,not applicable
 CO2ABS1,Optical Absorbance Ratio at 434nm,0,Notes,
@@ -206,7 +206,7 @@ CO2ABS2,Optical Absorbance Ratio at 620nm,0,DOORS L2 Science Requirement Text,no
 CO2ABS2,Optical Absorbance Ratio at 620nm,0,DPS DCN(s),[DCN 1341-00488|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/80a7f169-8d1d-47d1-96b8-1eef13f333a8/1341-00490_Data_Product_Spec_PCO2WAT_OOI.pdf]
 CO2ABS2,Optical Absorbance Ratio at 620nm,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 CO2ABS2,Optical Absorbance Ratio at 620nm,0,Global Range Test (GLBLRNG) QC,not applicable
-CO2ABS2,Optical Absorbance Ratio at 620nm,0,Gradient Test (GREDTST) QC,not applicable
+CO2ABS2,Optical Absorbance Ratio at 620nm,0,Gradient Test (GRADTST) QC,not applicable
 CO2ABS2,Optical Absorbance Ratio at 620nm,0,Local Range Test (LOCLRNG) QC,not applicable
 CO2ABS2,Optical Absorbance Ratio at 620nm,0,Modulus (MODULUS) QC,not applicable
 CO2ABS2,Optical Absorbance Ratio at 620nm,0,Notes,
@@ -225,7 +225,7 @@ CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,DOORS L2 Science Requir
 CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,DPS DCN(s),[DCN 1341-00270|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/f13cc476-0dcf-4d5c-a0d6-2738ba48b86f/1341-00270_Data_Product_SPEC_CO2FLUX_OOI.pdf]
 CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,Evaluate Polynomial (POLYVAL) QC,not applicable
 CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,Global Range Test (GLBLRNG) QC,applicable
-CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,Gradient Test (GREDTST) QC,not applicable
+CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,Gradient Test (GRADTST) QC,not applicable
 CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,Local Range Test (LOCLRNG) QC,not applicable
 CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,Modulus (MODULUS) QC,not applicable
 CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,2,Notes,
@@ -244,7 +244,7 @@ CO2THRM,PCO2W Thermistor Temperature,0,DOORS L2 Science Requirement Text,none
 CO2THRM,PCO2W Thermistor Temperature,0,DPS DCN(s),[DCN 1341-00489|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/80a7f169-8d1d-47d1-96b8-1eef13f333a8/1341-00490_Data_Product_Spec_PCO2WAT_OOI.pdf]
 CO2THRM,PCO2W Thermistor Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 CO2THRM,PCO2W Thermistor Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-CO2THRM,PCO2W Thermistor Temperature,0,Gradient Test (GREDTST) QC,not applicable
+CO2THRM,PCO2W Thermistor Temperature,0,Gradient Test (GRADTST) QC,not applicable
 CO2THRM,PCO2W Thermistor Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 CO2THRM,PCO2W Thermistor Temperature,0,Modulus (MODULUS) QC,not applicable
 CO2THRM,PCO2W Thermistor Temperature,0,Notes,
@@ -263,7 +263,7 @@ CONDSRF,Sea Surface Conductivity,0,DOORS L2 Science Requirement Text,The OOI sha
 CONDSRF,Sea Surface Conductivity,0,DPS DCN(s),DCN 1341-00360
 CONDSRF,Sea Surface Conductivity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 CONDSRF,Sea Surface Conductivity,0,Global Range Test (GLBLRNG) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Gradient Test (GREDTST) QC,not applicable
+CONDSRF,Sea Surface Conductivity,0,Gradient Test (GRADTST) QC,not applicable
 CONDSRF,Sea Surface Conductivity,0,Local Range Test (LOCLRNG) QC,not applicable
 CONDSRF,Sea Surface Conductivity,0,Modulus (MODULUS) QC,not applicable
 CONDSRF,Sea Surface Conductivity,0,Notes,
@@ -282,7 +282,7 @@ CONDWAT,Conductivity,0,DOORS L2 Science Requirement Text,Conductivity
 CONDWAT,Conductivity,0,DPS DCN(s),[DCN 1341-00030|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/d8318ad7-b189-4ff1-acd9-6acdd295f4f5/1341-00030_Data_Product_SPEC_CONDWAT_OOI.pdf]
 CONDWAT,Conductivity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 CONDWAT,Conductivity,0,Global Range Test (GLBLRNG) QC,not applicable
-CONDWAT,Conductivity,0,Gradient Test (GREDTST) QC,not applicable
+CONDWAT,Conductivity,0,Gradient Test (GRADTST) QC,not applicable
 CONDWAT,Conductivity,0,Local Range Test (LOCLRNG) QC,not applicable
 CONDWAT,Conductivity,0,Modulus (MODULUS) QC,not applicable
 CONDWAT,Conductivity,0,Notes,
@@ -301,7 +301,7 @@ DENSITY,Density,2,DOORS L2 Science Requirement Text,Density
 DENSITY,Density,2,DPS DCN(s),[DCN 1341-00050|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/bafd6f75-4a29-457a-a243-a2b77d2ee1ec/1341-00050_Data_Product_SPEC_DENSITY_OOI.pdf]
 DENSITY,Density,2,Evaluate Polynomial (POLYVAL) QC,not applicable
 DENSITY,Density,2,Global Range Test (GLBLRNG) QC,applicable
-DENSITY,Density,2,Gradient Test (GREDTST) QC,applicable
+DENSITY,Density,2,Gradient Test (GRADTST) QC,applicable
 DENSITY,Density,2,Local Range Test (LOCLRNG) QC,applicable
 DENSITY,Density,2,Modulus (MODULUS) QC,not applicable
 DENSITY,Density,2,Notes,
@@ -320,7 +320,7 @@ DNASAMP,16s rRNA sequence of filtered physical sample,2,DOORS L2 Science Require
 DNASAMP,16s rRNA sequence of filtered physical sample,2,DPS DCN(s),DCN 1341-00630
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Evaluate Polynomial (POLYVAL) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Global Range Test (GLBLRNG) QC,not applicable
-DNASAMP,16s rRNA sequence of filtered physical sample,2,Gradient Test (GREDTST) QC,not applicable
+DNASAMP,16s rRNA sequence of filtered physical sample,2,Gradient Test (GRADTST) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Local Range Test (LOCLRNG) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Modulus (MODULUS) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Notes,
@@ -331,44 +331,44 @@ DNASAMP,16s rRNA sequence of filtered physical sample,2,Spike Test (SPKETST) QC,
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Stuck Value Test (STUCKVL) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Trend Test (TRNDTST) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Units,2 micron filter
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,1-D Interpolation (INTERP1) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Combine QC Flags (CMBNFLG) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3048
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,DOORS L2 Science Requirement Text,Dissolved Oxygen
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,DPS DCN(s),DCN 1341-00521
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Evaluate Polynomial (POLYVAL) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Global Range Test (GLBLRNG) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Gradient Test (GREDTST) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Local Range Test (LOCLRNG) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Modulus (MODULUS) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Notes,
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Processing Flow Diagram DCN(s),DCN 1342-00521
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Regime(s),Water Column
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Solar Elevation (SOLAREL) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Spike Test (SPKETST) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Stuck Value Test (STUCKVL) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Trend Test (TRNDTST) QC,TBD
-DOCONCF,Oxygen Concentration from Stable DO Instrument,1,Units,uMol/l
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,1-D Interpolation (INTERP1) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Combine QC Flags (CMBNFLG) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3048
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,DOORS L2 Science Requirement Text,Dissolved Oxygen
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,DPS DCN(s),[DCN 1341-00520|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/97f4bfbb-b075-4b1d-993f-b1df24adf369/1341-00520_Data_Product_SPEC_DOCONCS_OOI.pdf]
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Global Range Test (GLBLRNG) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Gradient Test (GREDTST) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Local Range Test (LOCLRNG) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Modulus (MODULUS) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Notes,
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Processing Flow Diagram DCN(s),[DCN 1342-00520|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/047d2339-e8e3-44c8-b1b7-4b4a575016b9/1342-00520_Data_Processing_Flow_DOSTA_OOI.pdf]
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Regime(s),Water Column
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Solar Elevation (SOLAREL) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Spike Test (SPKETST) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Stuck Value Test (STUCKVL) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Trend Test (TRNDTST) QC,not applicable
-DOCONCS,Oxygen Concentration from Fastrep DO Instrument,0,Units,degrees; degrees Celcius
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,1-D Interpolation (INTERP1) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Combine QC Flags (CMBNFLG) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,DOORS L2 Science Requirement #(s),L2-SR-RQ-3048
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,DOORS L2 Science Requirement Text,Dissolved Oxygen
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,DPS DCN(s),DCN 1341-00521
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Evaluate Polynomial (POLYVAL) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Global Range Test (GLBLRNG) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Gradient Test (GRADTST) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Local Range Test (LOCLRNG) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Modulus (MODULUS) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Notes,
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Processing Flow Diagram DCN(s),DCN 1342-00521
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Regime(s),Water Column
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Solar Elevation (SOLAREL) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Spike Test (SPKETST) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Stuck Value Test (STUCKVL) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Trend Test (TRNDTST) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Units,uMol/l
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,1-D Interpolation (INTERP1) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Combine QC Flags (CMBNFLG) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3048
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,DOORS L2 Science Requirement Text,Dissolved Oxygen
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,DPS DCN(s),[DCN 1341-00520|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/97f4bfbb-b075-4b1d-993f-b1df24adf369/1341-00520_Data_Product_SPEC_DOCONCS_OOI.pdf]
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Evaluate Polynomial (POLYVAL) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Global Range Test (GLBLRNG) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Gradient Test (GRADTST) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Local Range Test (LOCLRNG) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Modulus (MODULUS) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Notes,
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Processing Flow Diagram DCN(s),[DCN 1342-00520|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/047d2339-e8e3-44c8-b1b7-4b4a575016b9/1342-00520_Data_Processing_Flow_DOSTA_OOI.pdf]
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Regime(s),Water Column
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Solar Elevation (SOLAREL) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Spike Test (SPKETST) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Stuck Value Test (STUCKVL) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Trend Test (TRNDTST) QC,not applicable
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Units,degrees; degrees Celcius
 ECHOINT,Echo Intensity,0,1-D Interpolation (INTERP1) QC,not applicable
 ECHOINT,Echo Intensity,0,Combine QC Flags (CMBNFLG) QC,not applicable
 ECHOINT,Echo Intensity,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -377,7 +377,7 @@ ECHOINT,Echo Intensity,0,DOORS L2 Science Requirement Text,Velocity profile meas
 ECHOINT,Echo Intensity,0,DPS DCN(s),"[DCN 1341-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/7ea90727-c1b4-4d73-b565-0ae4227da451/1341-00750_Data_Product_SPEC_VELPROF_ECHOINT_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 ECHOINT,Echo Intensity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 ECHOINT,Echo Intensity,0,Global Range Test (GLBLRNG) QC,not applicable
-ECHOINT,Echo Intensity,0,Gradient Test (GREDTST) QC,not applicable
+ECHOINT,Echo Intensity,0,Gradient Test (GRADTST) QC,not applicable
 ECHOINT,Echo Intensity,0,Local Range Test (LOCLRNG) QC,not applicable
 ECHOINT,Echo Intensity,0,Modulus (MODULUS) QC,not applicable
 ECHOINT,Echo Intensity,0,Notes,
@@ -396,7 +396,7 @@ FLUBSCT,Optical Backscatter (Red Wavelengths),0,DOORS L2 Science Requirement Tex
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,DPS DCN(s),[DCN 1341-00540|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/2872f757-3ac4-4401-9728-d6ded25c5fa6/1341-00540_Data_Product_SPEC_FLUBSCT_OOI.pdf]
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Evaluate Polynomial (POLYVAL) QC,not applicable
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Global Range Test (GLBLRNG) QC,not applicable
-FLUBSCT,Optical Backscatter (Red Wavelengths),0,Gradient Test (GREDTST) QC,not applicable
+FLUBSCT,Optical Backscatter (Red Wavelengths),0,Gradient Test (GRADTST) QC,not applicable
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Local Range Test (LOCLRNG) QC,not applicable
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Modulus (MODULUS) QC,not applicable
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Notes,
@@ -415,7 +415,7 @@ FLUXHOT,Direct Covariance Flux of Heat,2,DOORS L2 Science Requirement Text,Platf
 FLUXHOT,Direct Covariance Flux of Heat,2,DPS DCN(s),DCN 1341-00330
 FLUXHOT,Direct Covariance Flux of Heat,2,Evaluate Polynomial (POLYVAL) QC,TBD
 FLUXHOT,Direct Covariance Flux of Heat,2,Global Range Test (GLBLRNG) QC,TBD
-FLUXHOT,Direct Covariance Flux of Heat,2,Gradient Test (GREDTST) QC,TBD
+FLUXHOT,Direct Covariance Flux of Heat,2,Gradient Test (GRADTST) QC,TBD
 FLUXHOT,Direct Covariance Flux of Heat,2,Local Range Test (LOCLRNG) QC,TBD
 FLUXHOT,Direct Covariance Flux of Heat,2,Modulus (MODULUS) QC,TBD
 FLUXHOT,Direct Covariance Flux of Heat,2,Notes,
@@ -434,7 +434,7 @@ FLUXMOM,Direct Covariance Flux of Momentum,2,DOORS L2 Science Requirement Text,D
 FLUXMOM,Direct Covariance Flux of Momentum,2,DPS DCN(s),DCN 1341-00320
 FLUXMOM,Direct Covariance Flux of Momentum,2,Evaluate Polynomial (POLYVAL) QC,TBD
 FLUXMOM,Direct Covariance Flux of Momentum,2,Global Range Test (GLBLRNG) QC,TBD
-FLUXMOM,Direct Covariance Flux of Momentum,2,Gradient Test (GREDTST) QC,TBD
+FLUXMOM,Direct Covariance Flux of Momentum,2,Gradient Test (GRADTST) QC,TBD
 FLUXMOM,Direct Covariance Flux of Momentum,2,Local Range Test (LOCLRNG) QC,TBD
 FLUXMOM,Direct Covariance Flux of Momentum,2,Modulus (MODULUS) QC,TBD
 FLUXMOM,Direct Covariance Flux of Momentum,2,Notes,
@@ -453,7 +453,7 @@ FLUXWET,Direct Covariance Flux of Moisture,2,DOORS L2 Science Requirement Text,D
 FLUXWET,Direct Covariance Flux of Moisture,2,DPS DCN(s),DCN 1341-00340
 FLUXWET,Direct Covariance Flux of Moisture,2,Evaluate Polynomial (POLYVAL) QC,TBD
 FLUXWET,Direct Covariance Flux of Moisture,2,Global Range Test (GLBLRNG) QC,TBD
-FLUXWET,Direct Covariance Flux of Moisture,2,Gradient Test (GREDTST) QC,TBD
+FLUXWET,Direct Covariance Flux of Moisture,2,Gradient Test (GRADTST) QC,TBD
 FLUXWET,Direct Covariance Flux of Moisture,2,Local Range Test (LOCLRNG) QC,TBD
 FLUXWET,Direct Covariance Flux of Moisture,2,Modulus (MODULUS) QC,TBD
 FLUXWET,Direct Covariance Flux of Moisture,2,Notes,
@@ -472,7 +472,7 @@ GRNDACC,Broadband Ground Acceleration,1,DOORS L2 Science Requirement Text,Strong
 GRNDACC,Broadband Ground Acceleration,1,DPS DCN(s),DCN 1341-00100
 GRNDACC,Broadband Ground Acceleration,1,Evaluate Polynomial (POLYVAL) QC,TBD
 GRNDACC,Broadband Ground Acceleration,1,Global Range Test (GLBLRNG) QC,TBD
-GRNDACC,Broadband Ground Acceleration,1,Gradient Test (GREDTST) QC,TBD
+GRNDACC,Broadband Ground Acceleration,1,Gradient Test (GRADTST) QC,TBD
 GRNDACC,Broadband Ground Acceleration,1,Local Range Test (LOCLRNG) QC,TBD
 GRNDACC,Broadband Ground Acceleration,1,Modulus (MODULUS) QC,TBD
 GRNDACC,Broadband Ground Acceleration,1,Notes,
@@ -491,7 +491,7 @@ GRNDVEL,Broadband Ground Velocity,1,DOORS L2 Science Requirement Text,Broadband 
 GRNDVEL,Broadband Ground Velocity,1,DPS DCN(s),DCN 1341-00090
 GRNDVEL,Broadband Ground Velocity,1,Evaluate Polynomial (POLYVAL) QC,TBD
 GRNDVEL,Broadband Ground Velocity,1,Global Range Test (GLBLRNG) QC,TBD
-GRNDVEL,Broadband Ground Velocity,1,Gradient Test (GREDTST) QC,TBD
+GRNDVEL,Broadband Ground Velocity,1,Gradient Test (GRADTST) QC,TBD
 GRNDVEL,Broadband Ground Velocity,1,Local Range Test (LOCLRNG) QC,TBD
 GRNDVEL,Broadband Ground Velocity,1,Modulus (MODULUS) QC,TBD
 GRNDVEL,Broadband Ground Velocity,1,Notes,
@@ -510,7 +510,7 @@ HDVIDEO,HD Video Image,1,DOORS L2 Science Requirement Text,"Imagery, HD Video"
 HDVIDEO,HD Video Image,1,DPS DCN(s),DCN 1341-00840
 HDVIDEO,HD Video Image,1,Evaluate Polynomial (POLYVAL) QC,not applicable
 HDVIDEO,HD Video Image,1,Global Range Test (GLBLRNG) QC,not applicable
-HDVIDEO,HD Video Image,1,Gradient Test (GREDTST) QC,not applicable
+HDVIDEO,HD Video Image,1,Gradient Test (GRADTST) QC,not applicable
 HDVIDEO,HD Video Image,1,Local Range Test (LOCLRNG) QC,not applicable
 HDVIDEO,HD Video Image,1,Modulus (MODULUS) QC,not applicable
 HDVIDEO,HD Video Image,1,Notes,These are not considered data to be archived - only live streaming
@@ -521,44 +521,63 @@ HDVIDEO,HD Video Image,1,Spike Test (SPKETST) QC,not applicable
 HDVIDEO,HD Video Image,1,Stuck Value Test (STUCKVL) QC,not applicable
 HDVIDEO,HD Video Image,1,Trend Test (TRNDTST) QC,not applicable
 HDVIDEO,HD Video Image,1,Units,Lossless compression Image File
-HYDACPR,Acoustic Pressure Waves ,0,1-D Interpolation (INTERP1) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Combine QC Flags (CMBNFLG) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3086
-HYDACPR,Acoustic Pressure Waves ,0,DOORS L2 Science Requirement Text,Acoustic Pressure Waves
-HYDACPR,Acoustic Pressure Waves ,0,DPS DCN(s),"DCN 1341-00820 (HYDBB), 1341-00821 (HYDLF)"
-HYDACPR,Acoustic Pressure Waves ,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Global Range Test (GLBLRNG) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Gradient Test (GREDTST) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Local Range Test (LOCLRNG) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Modulus (MODULUS) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Notes,
-HYDACPR,Acoustic Pressure Waves ,0,Processing Flow Diagram DCN(s),"DCN 1342-00810 (HYDBB), DCN 1342-00821 (HYDLF)"
-HYDACPR,Acoustic Pressure Waves ,0,Regime(s),"Water Column, Seafloor/Crust"
-HYDACPR,Acoustic Pressure Waves ,0,Solar Elevation (SOLAREL) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Spike Test (SPKETST) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Stuck Value Test (STUCKVL) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Trend Test (TRNDTST) QC,not applicable
-HYDACPR,Acoustic Pressure Waves ,0,Units,TBD
-HYDFREQ,Frequency,0,1-D Interpolation (INTERP1) QC,not applicable
-HYDFREQ,Frequency,0,Combine QC Flags (CMBNFLG) QC,not applicable
-HYDFREQ,Frequency,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-HYDFREQ,Frequency,0,DOORS L2 Science Requirement #(s),Derived from design to achieve HYDACR
-HYDFREQ,Frequency,0,DOORS L2 Science Requirement Text,none
-HYDFREQ,Frequency,0,DPS DCN(s),DCN 1341-00810
-HYDFREQ,Frequency,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-HYDFREQ,Frequency,0,Global Range Test (GLBLRNG) QC,not applicable
-HYDFREQ,Frequency,0,Gradient Test (GREDTST) QC,not applicable
-HYDFREQ,Frequency,0,Local Range Test (LOCLRNG) QC,not applicable
-HYDFREQ,Frequency,0,Modulus (MODULUS) QC,not applicable
-HYDFREQ,Frequency,0,Notes,
-HYDFREQ,Frequency,0,Processing Flow Diagram DCN(s),DCN 1342-00810
-HYDFREQ,Frequency,0,Regime(s),"Water Column, Seafloor/Crust"
-HYDFREQ,Frequency,0,Solar Elevation (SOLAREL) QC,not applicable
-HYDFREQ,Frequency,0,Spike Test (SPKETST) QC,not applicable
-HYDFREQ,Frequency,0,Stuck Value Test (STUCKVL) QC,not applicable
-HYDFREQ,Frequency,0,Trend Test (TRNDTST) QC,not applicable
-HYDFREQ,Frequency,0,Units,TBD
+HYDAPBB,Broadband Acoustic pressure waves ,0,1-D Interpolation (INTERP1) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Combine QC Flags (CMBNFLG) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3086
+HYDAPBB,Broadband Acoustic pressure waves ,0,DOORS L2 Science Requirement Text,Acoustic Pressure Waves
+HYDAPBB,Broadband Acoustic pressure waves ,0,DPS DCN(s),DCN 1341-00820
+HYDAPBB,Broadband Acoustic pressure waves ,0,Evaluate Polynomial (POLYVAL) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Global Range Test (GLBLRNG) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Gradient Test (GRADTST) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Local Range Test (LOCLRNG) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Modulus (MODULUS) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Notes,
+HYDAPBB,Broadband Acoustic pressure waves ,0,Processing Flow Diagram DCN(s),DCN 1342-00810
+HYDAPBB,Broadband Acoustic pressure waves ,0,Regime(s),"Water Column, Seafloor/Crust"
+HYDAPBB,Broadband Acoustic pressure waves ,0,Solar Elevation (SOLAREL) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Spike Test (SPKETST) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Stuck Value Test (STUCKVL) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Trend Test (TRNDTST) QC,not applicable
+HYDAPBB,Broadband Acoustic pressure waves ,0,Units,TBD
+HYDAPLF,Low Frequency Acoustic pressure waves,0,1-D Interpolation (INTERP1) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Combine QC Flags (CMBNFLG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Conductivity Compressibility Compensation (CONDCMP) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,DOORS L2 Science Requirement #(s),
+HYDAPLF,Low Frequency Acoustic pressure waves,0,DOORS L2 Science Requirement Text,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,DPS DCN(s),DCN 1341-00821
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Evaluate Polynomial (POLYVAL) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Global Range Test (GLBLRNG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Gradient Test (GRADTST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Local Range Test (LOCLRNG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Modulus (MODULUS) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Notes,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Processing Flow Diagram DCN(s),DCN 1341-00821
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Regime(s),
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Solar Elevation (SOLAREL) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Spike Test (SPKETST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Stuck Value Test (STUCKVL) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Trend Test (TRNDTST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Units,
+HYDFRBB,Broadband Frequency,0,1-D Interpolation (INTERP1) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Combine QC Flags (CMBNFLG) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+HYDFRBB,Broadband Frequency,0,DOORS L2 Science Requirement #(s),Derived from design to achieve HYDACR
+HYDFRBB,Broadband Frequency,0,DOORS L2 Science Requirement Text,none
+HYDFRBB,Broadband Frequency,0,DPS DCN(s),DCN 1341-00810
+HYDFRBB,Broadband Frequency,0,Evaluate Polynomial (POLYVAL) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Global Range Test (GLBLRNG) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Gradient Test (GRADTST) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Local Range Test (LOCLRNG) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Modulus (MODULUS) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Notes,
+HYDFRBB,Broadband Frequency,0,Processing Flow Diagram DCN(s),DCN 1342-00810
+HYDFRBB,Broadband Frequency,0,Regime(s),"Water Column, Seafloor/Crust"
+HYDFRBB,Broadband Frequency,0,Solar Elevation (SOLAREL) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Spike Test (SPKETST) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Stuck Value Test (STUCKVL) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Trend Test (TRNDTST) QC,not applicable
+HYDFRBB,Broadband Frequency,0,Units,TBD
 IES_HEF,Horizontal Electric Fields,0,1-D Interpolation (INTERP1) QC,not applicable
 IES_HEF,Horizontal Electric Fields,0,Combine QC Flags (CMBNFLG) QC,not applicable
 IES_HEF,Horizontal Electric Fields,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -567,7 +586,7 @@ IES_HEF,Horizontal Electric Fields,0,DOORS L2 Science Requirement Text,Horizonta
 IES_HEF,Horizontal Electric Fields,0,DPS DCN(s),DCN 1341-00580
 IES_HEF,Horizontal Electric Fields,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 IES_HEF,Horizontal Electric Fields,0,Global Range Test (GLBLRNG) QC,not applicable
-IES_HEF,Horizontal Electric Fields,0,Gradient Test (GREDTST) QC,not applicable
+IES_HEF,Horizontal Electric Fields,0,Gradient Test (GRADTST) QC,not applicable
 IES_HEF,Horizontal Electric Fields,0,Local Range Test (LOCLRNG) QC,not applicable
 IES_HEF,Horizontal Electric Fields,0,Modulus (MODULUS) QC,not applicable
 IES_HEF,Horizontal Electric Fields,0,Notes,
@@ -586,7 +605,7 @@ IES_WPP,Water Property Profile Time Series,2,DOORS L2 Science Requirement Text,W
 IES_WPP,Water Property Profile Time Series,2,DPS DCN(s),DCN 1341-00600
 IES_WPP,Water Property Profile Time Series,2,Evaluate Polynomial (POLYVAL) QC,TBD
 IES_WPP,Water Property Profile Time Series,2,Global Range Test (GLBLRNG) QC,TBD
-IES_WPP,Water Property Profile Time Series,2,Gradient Test (GREDTST) QC,TBD
+IES_WPP,Water Property Profile Time Series,2,Gradient Test (GRADTST) QC,TBD
 IES_WPP,Water Property Profile Time Series,2,Local Range Test (LOCLRNG) QC,TBD
 IES_WPP,Water Property Profile Time Series,2,Modulus (MODULUS) QC,TBD
 IES_WPP,Water Property Profile Time Series,2,Notes,
@@ -605,7 +624,7 @@ IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,DOORS L2 Scienc
 IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,DPS DCN(s),DCN 1341-00590
 IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,Evaluate Polynomial (POLYVAL) QC,TBD
 IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,Global Range Test (GLBLRNG) QC,TBD
-IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,Gradient Test (GREDTST) QC,TBD
+IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,Gradient Test (GRADTST) QC,TBD
 IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,Local Range Test (LOCLRNG) QC,TBD
 IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,Modulus (MODULUS) QC,TBD
 IESAHWV,Vertically Averaged Horizontal Water Velocity (VAHWV) ,2,Notes,
@@ -624,7 +643,7 @@ IESHEAT,Water Column Heat Content,2,DOORS L2 Science Requirement Text,Water Colu
 IESHEAT,Water Column Heat Content,2,DPS DCN(s),DCN 1341-00610
 IESHEAT,Water Column Heat Content,2,Evaluate Polynomial (POLYVAL) QC,TBD
 IESHEAT,Water Column Heat Content,2,Global Range Test (GLBLRNG) QC,TBD
-IESHEAT,Water Column Heat Content,2,Gradient Test (GREDTST) QC,TBD
+IESHEAT,Water Column Heat Content,2,Gradient Test (GRADTST) QC,TBD
 IESHEAT,Water Column Heat Content,2,Local Range Test (LOCLRNG) QC,TBD
 IESHEAT,Water Column Heat Content,2,Modulus (MODULUS) QC,TBD
 IESHEAT,Water Column Heat Content,2,Notes,
@@ -643,7 +662,7 @@ IESPRES,Bottom Pressure,0,DOORS L2 Science Requirement Text,HPIES Bottom Pressur
 IESPRES,Bottom Pressure,0,DPS DCN(s),DCN 1341-00570
 IESPRES,Bottom Pressure,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 IESPRES,Bottom Pressure,0,Global Range Test (GLBLRNG) QC,not applicable
-IESPRES,Bottom Pressure,0,Gradient Test (GREDTST) QC,not applicable
+IESPRES,Bottom Pressure,0,Gradient Test (GRADTST) QC,not applicable
 IESPRES,Bottom Pressure,0,Local Range Test (LOCLRNG) QC,not applicable
 IESPRES,Bottom Pressure,0,Modulus (MODULUS) QC,not applicable
 IESPRES,Bottom Pressure,0,Notes,
@@ -662,7 +681,7 @@ IESRATT,Roundtrip Acoustic Travel Time (RATT),0,DOORS L2 Science Requirement Tex
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,DPS DCN(s),DCN 1341-00560
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Evaluate Polynomial (POLYVAL) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Global Range Test (GLBLRNG) QC,not applicable
-IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Gradient Test (GREDTST) QC,not applicable
+IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Gradient Test (GRADTST) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Local Range Test (LOCLRNG) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Modulus (MODULUS) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Notes,
@@ -681,7 +700,7 @@ LONGIRR,Downwelling Longwave Irradiance,0,DOORS L2 Science Requirement Text,Down
 LONGIRR,Downwelling Longwave Irradiance,0,DPS DCN(s),DCN 1341-00360
 LONGIRR,Downwelling Longwave Irradiance,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 LONGIRR,Downwelling Longwave Irradiance,0,Global Range Test (GLBLRNG) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Gradient Test (GREDTST) QC,not applicable
+LONGIRR,Downwelling Longwave Irradiance,0,Gradient Test (GRADTST) QC,not applicable
 LONGIRR,Downwelling Longwave Irradiance,0,Local Range Test (LOCLRNG) QC,not applicable
 LONGIRR,Downwelling Longwave Irradiance,0,Modulus (MODULUS) QC,not applicable
 LONGIRR,Downwelling Longwave Irradiance,0,Notes,
@@ -700,7 +719,7 @@ MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,DPS DCN(s),DCN 1341-00240
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Global Range Test (GLBLRNG) QC,not applicable
-MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Gradient Test (GREDTST) QC,not applicable
+MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Gradient Test (GRADTST) QC,not applicable
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Local Range Test (LOCLRNG) QC,not applicable
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Modulus (MODULUS) QC,not applicable
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Notes,
@@ -719,7 +738,7 @@ MOISTUR,Turbulent Humidity Fluctuation,0,DOORS L2 Science Requirement Text,Turbu
 MOISTUR,Turbulent Humidity Fluctuation,0,DPS DCN(s),DCN 1341-00300
 MOISTUR,Turbulent Humidity Fluctuation,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 MOISTUR,Turbulent Humidity Fluctuation,0,Global Range Test (GLBLRNG) QC,not applicable
-MOISTUR,Turbulent Humidity Fluctuation,0,Gradient Test (GREDTST) QC,not applicable
+MOISTUR,Turbulent Humidity Fluctuation,0,Gradient Test (GRADTST) QC,not applicable
 MOISTUR,Turbulent Humidity Fluctuation,0,Local Range Test (LOCLRNG) QC,not applicable
 MOISTUR,Turbulent Humidity Fluctuation,0,Modulus (MODULUS) QC,not applicable
 MOISTUR,Turbulent Humidity Fluctuation,0,Notes,
@@ -738,7 +757,7 @@ MOTFLUX,Platform Direction and Tilt (3 axes),0,DOORS L2 Science Requirement Text
 MOTFLUX,Platform Direction and Tilt (3 axes),0,DPS DCN(s),DCN 1341-00301
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Evaluate Polynomial (POLYVAL) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Global Range Test (GLBLRNG) QC,not applicable
-MOTFLUX,Platform Direction and Tilt (3 axes),0,Gradient Test (GREDTST) QC,not applicable
+MOTFLUX,Platform Direction and Tilt (3 axes),0,Gradient Test (GRADTST) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Local Range Test (LOCLRNG) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Modulus (MODULUS) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Notes,
@@ -749,25 +768,25 @@ MOTFLUX,Platform Direction and Tilt (3 axes),0,Spike Test (SPKETST) QC,not appli
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Stuck Value Test (STUCKVL) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Trend Test (TRNDTST) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Units,"TBD (FDCHP), degree (from north or vertical) (FDCLP)"
-NITROPT,Nitrate Concentation,1,1-D Interpolation (INTERP1) QC,TBD
-NITROPT,Nitrate Concentation,1,Combine QC Flags (CMBNFLG) QC,TBD
-NITROPT,Nitrate Concentation,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
-NITROPT,Nitrate Concentation,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3050
-NITROPT,Nitrate Concentation,1,DOORS L2 Science Requirement Text,Nitrate
-NITROPT,Nitrate Concentation,1,DPS DCN(s),DCN 1341-00620
-NITROPT,Nitrate Concentation,1,Evaluate Polynomial (POLYVAL) QC,TBD
-NITROPT,Nitrate Concentation,1,Global Range Test (GLBLRNG) QC,TBD
-NITROPT,Nitrate Concentation,1,Gradient Test (GREDTST) QC,TBD
-NITROPT,Nitrate Concentation,1,Local Range Test (LOCLRNG) QC,TBD
-NITROPT,Nitrate Concentation,1,Modulus (MODULUS) QC,TBD
-NITROPT,Nitrate Concentation,1,Notes,
-NITROPT,Nitrate Concentation,1,Processing Flow Diagram DCN(s),DCN 1342-00620
-NITROPT,Nitrate Concentation,1,Regime(s),Water Column
-NITROPT,Nitrate Concentation,1,Solar Elevation (SOLAREL) QC,TBD
-NITROPT,Nitrate Concentation,1,Spike Test (SPKETST) QC,TBD
-NITROPT,Nitrate Concentation,1,Stuck Value Test (STUCKVL) QC,TBD
-NITROPT,Nitrate Concentation,1,Trend Test (TRNDTST) QC,TBD
-NITROPT,Nitrate Concentation,1,Units,µM
+NITROPT,Nitrate Concentration,1,1-D Interpolation (INTERP1) QC,TBD
+NITROPT,Nitrate Concentration,1,Combine QC Flags (CMBNFLG) QC,TBD
+NITROPT,Nitrate Concentration,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+NITROPT,Nitrate Concentration,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3050
+NITROPT,Nitrate Concentration,1,DOORS L2 Science Requirement Text,Nitrate
+NITROPT,Nitrate Concentration,1,DPS DCN(s),DCN 1341-00620
+NITROPT,Nitrate Concentration,1,Evaluate Polynomial (POLYVAL) QC,TBD
+NITROPT,Nitrate Concentration,1,Global Range Test (GLBLRNG) QC,TBD
+NITROPT,Nitrate Concentration,1,Gradient Test (GRADTST) QC,TBD
+NITROPT,Nitrate Concentration,1,Local Range Test (LOCLRNG) QC,TBD
+NITROPT,Nitrate Concentration,1,Modulus (MODULUS) QC,TBD
+NITROPT,Nitrate Concentration,1,Notes,
+NITROPT,Nitrate Concentration,1,Processing Flow Diagram DCN(s),DCN 1342-00620
+NITROPT,Nitrate Concentration,1,Regime(s),Water Column
+NITROPT,Nitrate Concentration,1,Solar Elevation (SOLAREL) QC,TBD
+NITROPT,Nitrate Concentration,1,Spike Test (SPKETST) QC,TBD
+NITROPT,Nitrate Concentration,1,Stuck Value Test (STUCKVL) QC,TBD
+NITROPT,Nitrate Concentration,1,Trend Test (TRNDTST) QC,TBD
+NITROPT,Nitrate Concentration,1,Units,µM
 OPTABSN,Optical Absorption Coefficient,2,1-D Interpolation (INTERP1) QC,not applicable
 OPTABSN,Optical Absorption Coefficient,2,Combine QC Flags (CMBNFLG) QC,not applicable
 OPTABSN,Optical Absorption Coefficient,2,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -776,7 +795,7 @@ OPTABSN,Optical Absorption Coefficient,2,DOORS L2 Science Requirement Text,Optic
 OPTABSN,Optical Absorption Coefficient,2,DPS DCN(s),[DCN 1341-00700|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/464dee40-a810-4fbc-bcd1-4874e787bbca/1341-00700_Data_Product_SPEC_OPTABSN_OOI.pdf]
 OPTABSN,Optical Absorption Coefficient,2,Evaluate Polynomial (POLYVAL) QC,applicable
 OPTABSN,Optical Absorption Coefficient,2,Global Range Test (GLBLRNG) QC,applicable
-OPTABSN,Optical Absorption Coefficient,2,Gradient Test (GREDTST) QC,not applicable
+OPTABSN,Optical Absorption Coefficient,2,Gradient Test (GRADTST) QC,not applicable
 OPTABSN,Optical Absorption Coefficient,2,Local Range Test (LOCLRNG) QC,applicable
 OPTABSN,Optical Absorption Coefficient,2,Modulus (MODULUS) QC,not applicable
 OPTABSN,Optical Absorption Coefficient,2,Notes,
@@ -795,7 +814,7 @@ OPTATTN,Optical Beam Attenuation Coefficient,2,DOORS L2 Science Requirement Text
 OPTATTN,Optical Beam Attenuation Coefficient,2,DPS DCN(s),[DCN 1341-00690|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/28089882-716e-4fa8-b4b6-c703f5630882/1341-00690_Data_Product_SPEC_OPTATTN_OOI.pdf]
 OPTATTN,Optical Beam Attenuation Coefficient,2,Evaluate Polynomial (POLYVAL) QC,applicable
 OPTATTN,Optical Beam Attenuation Coefficient,2,Global Range Test (GLBLRNG) QC,applicable
-OPTATTN,Optical Beam Attenuation Coefficient,2,Gradient Test (GREDTST) QC,not applicable
+OPTATTN,Optical Beam Attenuation Coefficient,2,Gradient Test (GRADTST) QC,not applicable
 OPTATTN,Optical Beam Attenuation Coefficient,2,Local Range Test (LOCLRNG) QC,applicable
 OPTATTN,Optical Beam Attenuation Coefficient,2,Modulus (MODULUS) QC,not applicable
 OPTATTN,Optical Beam Attenuation Coefficient,2,Notes,
@@ -814,7 +833,7 @@ OPTATTS,Diffuse Attenuation Coefficient,2,DOORS L2 Science Requirement Text,Diff
 OPTATTS,Diffuse Attenuation Coefficient,2,DPS DCN(s),DCN 1341-00740
 OPTATTS,Diffuse Attenuation Coefficient,2,Evaluate Polynomial (POLYVAL) QC,TBD
 OPTATTS,Diffuse Attenuation Coefficient,2,Global Range Test (GLBLRNG) QC,TBD
-OPTATTS,Diffuse Attenuation Coefficient,2,Gradient Test (GREDTST) QC,TBD
+OPTATTS,Diffuse Attenuation Coefficient,2,Gradient Test (GRADTST) QC,TBD
 OPTATTS,Diffuse Attenuation Coefficient,2,Local Range Test (LOCLRNG) QC,TBD
 OPTATTS,Diffuse Attenuation Coefficient,2,Modulus (MODULUS) QC,TBD
 OPTATTS,Diffuse Attenuation Coefficient,2,Notes,
@@ -833,7 +852,7 @@ OPTCREF,Reference Beam Attenuation,0,DOORS L2 Science Requirement Text,"Optical 
 OPTCREF,Reference Beam Attenuation,0,DPS DCN(s),"[DCN 1341-00690|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/28089882-716e-4fa8-b4b6-c703f5630882/1341-00690_Data_Product_SPEC_OPTATTN_OOI.pdf], [DCN 1341-00700|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/464dee40-a810-4fbc-bcd1-4874e787bbca/1341-00700_Data_Product_SPEC_OPTABSN_OOI.pdf]"
 OPTCREF,Reference Beam Attenuation,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 OPTCREF,Reference Beam Attenuation,0,Global Range Test (GLBLRNG) QC,not applicable
-OPTCREF,Reference Beam Attenuation,0,Gradient Test (GREDTST) QC,not applicable
+OPTCREF,Reference Beam Attenuation,0,Gradient Test (GRADTST) QC,not applicable
 OPTCREF,Reference Beam Attenuation,0,Local Range Test (LOCLRNG) QC,not applicable
 OPTCREF,Reference Beam Attenuation,0,Modulus (MODULUS) QC,not applicable
 OPTCREF,Reference Beam Attenuation,0,Notes,
@@ -852,7 +871,7 @@ OPTCSIG,Signal Beam Attenuation,0,DOORS L2 Science Requirement Text,"Optical Abs
 OPTCSIG,Signal Beam Attenuation,0,DPS DCN(s),"[DCN 1341-00690|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/28089882-716e-4fa8-b4b6-c703f5630882/1341-00690_Data_Product_SPEC_OPTATTN_OOI.pdf], [DCN 1341-00700|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/464dee40-a810-4fbc-bcd1-4874e787bbca/1341-00700_Data_Product_SPEC_OPTABSN_OOI.pdf]"
 OPTCSIG,Signal Beam Attenuation,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 OPTCSIG,Signal Beam Attenuation,0,Global Range Test (GLBLRNG) QC,not applicable
-OPTCSIG,Signal Beam Attenuation,0,Gradient Test (GREDTST) QC,not applicable
+OPTCSIG,Signal Beam Attenuation,0,Gradient Test (GRADTST) QC,not applicable
 OPTCSIG,Signal Beam Attenuation,0,Local Range Test (LOCLRNG) QC,not applicable
 OPTCSIG,Signal Beam Attenuation,0,Modulus (MODULUS) QC,not applicable
 OPTCSIG,Signal Beam Attenuation,0,Notes,
@@ -863,25 +882,25 @@ OPTCSIG,Signal Beam Attenuation,0,Spike Test (SPKETST) QC,not applicable
 OPTCSIG,Signal Beam Attenuation,0,Stuck Value Test (STUCKVL) QC,not applicable
 OPTCSIG,Signal Beam Attenuation,0,Trend Test (TRNDTST) QC,not applicable
 OPTCSIG,Signal Beam Attenuation,0,Units,unitless
-OPTPARW,Photosynthetically Active Radiation (PAR),0,1-D Interpolation (INTERP1) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Combine QC Flags (CMBNFLG) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3670
-OPTPARW,Photosynthetically Active Radiation (PAR),0,DOORS L2 Science Requirement Text,Photosynthically Available Radiation (PAR)
-OPTPARW,Photosynthetically Active Radiation (PAR),0,DPS DCN(s),"[DCN 1341-00720|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/b6fe37ee-41e2-420a-aca3-41437edb78d4/1341-00720_Data_Product_SPEC_OPTPARW_Satl_OOI.pdf] (Satl), [DCN 1341-00721|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/88fe21cf-a9ea-40ff-9cd7-8813057cae73/1341-00721_Data_Product_SPEC_OPTPARW_Bios_OOI.pdf] (Bios)"
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Evaluate Polynomial (POLYVAL) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Global Range Test (GLBLRNG) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Gradient Test (GREDTST) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Local Range Test (LOCLRNG) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Modulus (MODULUS) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Notes,
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Processing Flow Diagram DCN(s),[DCN 1342-00720|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/134f177d-9604-476e-9039-f2e3dfb63331/1342-00720_Data_Processing_Flow_PARAD_OOI.pdf]
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Regime(s),Water Column
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Solar Elevation (SOLAREL) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Spike Test (SPKETST) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Stuck Value Test (STUCKVL) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Trend Test (TRNDTST) QC,not applicable
-OPTPARW,Photosynthetically Active Radiation (PAR),0,Units,"counts (Satl), volts (Bios)"
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,1-D Interpolation (INTERP1) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Combine QC Flags (CMBNFLG) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3670
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,DOORS L2 Science Requirement Text,Photosynthically Available Radiation (PAR)
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,DPS DCN(s),"[DCN 1341-00720|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/b6fe37ee-41e2-420a-aca3-41437edb78d4/1341-00720_Data_Product_SPEC_OPTPARW_Satl_OOI.pdf] (Satl), [DCN 1341-00721|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/88fe21cf-a9ea-40ff-9cd7-8813057cae73/1341-00721_Data_Product_SPEC_OPTPARW_Bios_OOI.pdf] (Bios)"
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Evaluate Polynomial (POLYVAL) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Global Range Test (GLBLRNG) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Gradient Test (GRADTST) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Local Range Test (LOCLRNG) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Modulus (MODULUS) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Notes,
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Processing Flow Diagram DCN(s),[DCN 1342-00720|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/134f177d-9604-476e-9039-f2e3dfb63331/1342-00720_Data_Processing_Flow_PARAD_OOI.pdf]
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Regime(s),Water Column
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Solar Elevation (SOLAREL) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Spike Test (SPKETST) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Stuck Value Test (STUCKVL) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Trend Test (TRNDTST) QC,not applicable
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),0,Units,"counts (Satl), volts (Bios)"
 OPTTEMP,Temperature from OPTAA,0,1-D Interpolation (INTERP1) QC,not applicable
 OPTTEMP,Temperature from OPTAA,0,Combine QC Flags (CMBNFLG) QC,not applicable
 OPTTEMP,Temperature from OPTAA,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -890,7 +909,7 @@ OPTTEMP,Temperature from OPTAA,0,DOORS L2 Science Requirement Text,"Optical Abso
 OPTTEMP,Temperature from OPTAA,0,DPS DCN(s),"[DCN 1341-00690|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/28089882-716e-4fa8-b4b6-c703f5630882/1341-00690_Data_Product_SPEC_OPTATTN_OOI.pdf], [DCN 1341-00700|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/464dee40-a810-4fbc-bcd1-4874e787bbca/1341-00700_Data_Product_SPEC_OPTABSN_OOI.pdf]"
 OPTTEMP,Temperature from OPTAA,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 OPTTEMP,Temperature from OPTAA,0,Global Range Test (GLBLRNG) QC,not applicable
-OPTTEMP,Temperature from OPTAA,0,Gradient Test (GREDTST) QC,not applicable
+OPTTEMP,Temperature from OPTAA,0,Gradient Test (GRADTST) QC,not applicable
 OPTTEMP,Temperature from OPTAA,0,Local Range Test (LOCLRNG) QC,not applicable
 OPTTEMP,Temperature from OPTAA,0,Modulus (MODULUS) QC,not applicable
 OPTTEMP,Temperature from OPTAA,0,Notes,
@@ -909,7 +928,7 @@ PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,DOORS L2 Science Requirement Tex
 PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,DPS DCN(s),[DCN 1341-00260|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/295440da-24e6-4279-90f5-03055a5b5a31/1341-00260_Data_Product_SPEC_PCO2SSW_PCO2ATM_OOI.pdf]
 PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,Evaluate Polynomial (POLYVAL) QC,applicable
 PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,Global Range Test (GLBLRNG) QC,applicable
-PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,Gradient Test (GREDTST) QC,not applicable
+PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,Gradient Test (GRADTST) QC,not applicable
 PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,Local Range Test (LOCLRNG) QC,not applicable
 PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,Modulus (MODULUS) QC,not applicable
 PCO2ATM,Partial Pressure of CO2 in Atmosphere,1,Notes,
@@ -928,7 +947,7 @@ PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,DOORS L2 Science Requirem
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,DPS DCN(s),[DCN 1341-00260|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/295440da-24e6-4279-90f5-03055a5b5a31/1341-00260_Data_Product_SPEC_PCO2SSW_PCO2ATM_OOI.pdf]
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Evaluate Polynomial (POLYVAL) QC,applicable
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Global Range Test (GLBLRNG) QC,applicable
-PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Gradient Test (GREDTST) QC,not applicable
+PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Gradient Test (GRADTST) QC,not applicable
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Local Range Test (LOCLRNG) QC,not applicable
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Modulus (MODULUS) QC,not applicable
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Notes,
@@ -939,25 +958,25 @@ PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Spike Test (SPKETST) QC,a
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Stuck Value Test (STUCKVL) QC,applicable
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Trend Test (TRNDTST) QC,not applicable
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,1,Units,µatm
-PCO2WAT,Patial Pressure of CO2 in Water,1,1-D Interpolation (INTERP1) QC,not applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Combine QC Flags (CMBNFLG) QC,not applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3049
-PCO2WAT,Patial Pressure of CO2 in Water,1,DOORS L2 Science Requirement Text,pCO2 Seawater
-PCO2WAT,Patial Pressure of CO2 in Water,1,DPS DCN(s),[DCN 1341-00490|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/80a7f169-8d1d-47d1-96b8-1eef13f333a8/1341-00490_Data_Product_Spec_PCO2WAT_OOI.pdf]
-PCO2WAT,Patial Pressure of CO2 in Water,1,Evaluate Polynomial (POLYVAL) QC,applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Global Range Test (GLBLRNG) QC,applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Gradient Test (GREDTST) QC,not applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Local Range Test (LOCLRNG) QC,applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Modulus (MODULUS) QC,not applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Notes,
-PCO2WAT,Patial Pressure of CO2 in Water,1,Processing Flow Diagram DCN(s),[DCN 1342-00490|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/37041aff-4f16-4023-8b04-d3810ca2905f/1342-00490_PCO2W_Data_Processing_Flow_OOI.pdf]
-PCO2WAT,Patial Pressure of CO2 in Water,1,Regime(s),Water Column
-PCO2WAT,Patial Pressure of CO2 in Water,1,Solar Elevation (SOLAREL) QC,not applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Spike Test (SPKETST) QC,applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Stuck Value Test (STUCKVL) QC,applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Trend Test (TRNDTST) QC,not applicable
-PCO2WAT,Patial Pressure of CO2 in Water,1,Units,µatm
+PCO2WAT,Partial Pressure of CO2 in Water,1,1-D Interpolation (INTERP1) QC,not applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Combine QC Flags (CMBNFLG) QC,not applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3049
+PCO2WAT,Partial Pressure of CO2 in Water,1,DOORS L2 Science Requirement Text,pCO2 Seawater
+PCO2WAT,Partial Pressure of CO2 in Water,1,DPS DCN(s),[DCN 1341-00490|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/80a7f169-8d1d-47d1-96b8-1eef13f333a8/1341-00490_Data_Product_Spec_PCO2WAT_OOI.pdf]
+PCO2WAT,Partial Pressure of CO2 in Water,1,Evaluate Polynomial (POLYVAL) QC,applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Global Range Test (GLBLRNG) QC,applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Gradient Test (GRADTST) QC,not applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Local Range Test (LOCLRNG) QC,applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Modulus (MODULUS) QC,not applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Notes,
+PCO2WAT,Partial Pressure of CO2 in Water,1,Processing Flow Diagram DCN(s),[DCN 1342-00490|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/37041aff-4f16-4023-8b04-d3810ca2905f/1342-00490_PCO2W_Data_Processing_Flow_OOI.pdf]
+PCO2WAT,Partial Pressure of CO2 in Water,1,Regime(s),Water Column
+PCO2WAT,Partial Pressure of CO2 in Water,1,Solar Elevation (SOLAREL) QC,not applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Spike Test (SPKETST) QC,applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Stuck Value Test (STUCKVL) QC,applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Trend Test (TRNDTST) QC,not applicable
+PCO2WAT,Partial Pressure of CO2 in Water,1,Units,µatm
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,1-D Interpolation (INTERP1) QC,not applicable
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Combine QC Flags (CMBNFLG) QC,not applicable
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -966,7 +985,7 @@ PH434SI,Optical Absorbance Signal Intensity at 434nm,0,DOORS L2 Science Requirem
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,DPS DCN(s),DCN 1341-00508
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Global Range Test (GLBLRNG) QC,not applicable
-PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Gradient Test (GREDTST) QC,not applicable
+PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Gradient Test (GRADTST) QC,not applicable
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Local Range Test (LOCLRNG) QC,not applicable
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Modulus (MODULUS) QC,not applicable
 PH434SI,Optical Absorbance Signal Intensity at 434nm,0,Notes,
@@ -985,7 +1004,7 @@ PH578SI,Optical Absorbance Signal Intensity at 578nm,0,DOORS L2 Science Requirem
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,DPS DCN(s),DCN 1341-00509
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Global Range Test (GLBLRNG) QC,not applicable
-PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Gradient Test (GREDTST) QC,not applicable
+PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Gradient Test (GRADTST) QC,not applicable
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Local Range Test (LOCLRNG) QC,not applicable
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Modulus (MODULUS) QC,not applicable
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Notes,
@@ -1004,7 +1023,7 @@ PHSSAMP,Physical Fluid Sample,2,DOORS L2 Science Requirement Text,Interactive Sa
 PHSSAMP,Physical Fluid Sample,2,DPS DCN(s),"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)"
 PHSSAMP,Physical Fluid Sample,2,Evaluate Polynomial (POLYVAL) QC,not applicable
 PHSSAMP,Physical Fluid Sample,2,Global Range Test (GLBLRNG) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Gradient Test (GREDTST) QC,not applicable
+PHSSAMP,Physical Fluid Sample,2,Gradient Test (GRADTST) QC,not applicable
 PHSSAMP,Physical Fluid Sample,2,Local Range Test (LOCLRNG) QC,not applicable
 PHSSAMP,Physical Fluid Sample,2,Modulus (MODULUS) QC,not applicable
 PHSSAMP,Physical Fluid Sample,2,Notes,
@@ -1023,7 +1042,7 @@ PHWATER,pH,1,DOORS L2 Science Requirement Text,pH
 PHWATER,pH,1,DPS DCN(s),DCN 1341-00510
 PHWATER,pH,1,Evaluate Polynomial (POLYVAL) QC,TBD
 PHWATER,pH,1,Global Range Test (GLBLRNG) QC,TBD
-PHWATER,pH,1,Gradient Test (GREDTST) QC,TBD
+PHWATER,pH,1,Gradient Test (GRADTST) QC,TBD
 PHWATER,pH,1,Local Range Test (LOCLRNG) QC,TBD
 PHWATER,pH,1,Modulus (MODULUS) QC,TBD
 PHWATER,pH,1,Notes,
@@ -1042,7 +1061,7 @@ PRACSAL,Practical Salinity,2,DOORS L2 Science Requirement Text,Salinity
 PRACSAL,Practical Salinity,2,DPS DCN(s),[DCN 1341-00040|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/bab9685d-bb16-44c2-88a5-1e8e8f0508fe/1341-00040_Data_Product_SPEC_PRACSAL_OOI.pdf]
 PRACSAL,Practical Salinity,2,Evaluate Polynomial (POLYVAL) QC,not applicable
 PRACSAL,Practical Salinity,2,Global Range Test (GLBLRNG) QC,applicable
-PRACSAL,Practical Salinity,2,Gradient Test (GREDTST) QC,applicable
+PRACSAL,Practical Salinity,2,Gradient Test (GRADTST) QC,applicable
 PRACSAL,Practical Salinity,2,Local Range Test (LOCLRNG) QC,applicable
 PRACSAL,Practical Salinity,2,Modulus (MODULUS) QC,not applicable
 PRACSAL,Practical Salinity,2,Notes,
@@ -1061,7 +1080,7 @@ PRECIPM,Precipitation,0,DOORS L2 Science Requirement Text,Precipitation
 PRECIPM,Precipitation,0,DPS DCN(s),DCN 1341-00360
 PRECIPM,Precipitation,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 PRECIPM,Precipitation,0,Global Range Test (GLBLRNG) QC,not applicable
-PRECIPM,Precipitation,0,Gradient Test (GREDTST) QC,not applicable
+PRECIPM,Precipitation,0,Gradient Test (GRADTST) QC,not applicable
 PRECIPM,Precipitation,0,Local Range Test (LOCLRNG) QC,not applicable
 PRECIPM,Precipitation,0,Modulus (MODULUS) QC,not applicable
 PRECIPM,Precipitation,0,Notes,
@@ -1080,7 +1099,7 @@ PRESAIR,PCO2A Gas Stream Pressure,0,DOORS L2 Science Requirement Text,none
 PRESAIR,PCO2A Gas Stream Pressure,0,DPS DCN(s),[DCN 1341-00260|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/295440da-24e6-4279-90f5-03055a5b5a31/1341-00260_Data_Product_SPEC_PCO2SSW_PCO2ATM_OOI.pdf]
 PRESAIR,PCO2A Gas Stream Pressure,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 PRESAIR,PCO2A Gas Stream Pressure,0,Global Range Test (GLBLRNG) QC,not applicable
-PRESAIR,PCO2A Gas Stream Pressure,0,Gradient Test (GREDTST) QC,not applicable
+PRESAIR,PCO2A Gas Stream Pressure,0,Gradient Test (GRADTST) QC,not applicable
 PRESAIR,PCO2A Gas Stream Pressure,0,Local Range Test (LOCLRNG) QC,not applicable
 PRESAIR,PCO2A Gas Stream Pressure,0,Modulus (MODULUS) QC,not applicable
 PRESAIR,PCO2A Gas Stream Pressure,0,Notes,
@@ -1099,7 +1118,7 @@ PRESWAT,Pressure (Depth),0,DOORS L2 Science Requirement Text,Pressure (Depth)
 PRESWAT,Pressure (Depth),0,DPS DCN(s),[DCN 1341-00020|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/542fd002-8a79-4681-a121-e8aa2b52fce1/1341-00020_Data_Product_SPEC_PRESWAT_OOI.pdf]
 PRESWAT,Pressure (Depth),0,Evaluate Polynomial (POLYVAL) QC,not applicable
 PRESWAT,Pressure (Depth),0,Global Range Test (GLBLRNG) QC,not applicable
-PRESWAT,Pressure (Depth),0,Gradient Test (GREDTST) QC,not applicable
+PRESWAT,Pressure (Depth),0,Gradient Test (GRADTST) QC,not applicable
 PRESWAT,Pressure (Depth),0,Local Range Test (LOCLRNG) QC,not applicable
 PRESWAT,Pressure (Depth),0,Modulus (MODULUS) QC,not applicable
 PRESWAT,Pressure (Depth),0,Notes,
@@ -1118,7 +1137,7 @@ RELHUMI,Relative Humidity,0,DOORS L2 Science Requirement Text,Relative humidity
 RELHUMI,Relative Humidity,0,DPS DCN(s),"DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)"
 RELHUMI,Relative Humidity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 RELHUMI,Relative Humidity,0,Global Range Test (GLBLRNG) QC,not applicable
-RELHUMI,Relative Humidity,0,Gradient Test (GREDTST) QC,not applicable
+RELHUMI,Relative Humidity,0,Gradient Test (GRADTST) QC,not applicable
 RELHUMI,Relative Humidity,0,Local Range Test (LOCLRNG) QC,not applicable
 RELHUMI,Relative Humidity,0,Modulus (MODULUS) QC,not applicable
 RELHUMI,Relative Humidity,0,Notes,
@@ -1137,7 +1156,7 @@ SFLPRES,Seafloor Pressure,1,DOORS L2 Science Requirement Text,Bottom Pressure
 SFLPRES,Seafloor Pressure,1,DPS DCN(s),"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 SFLPRES,Seafloor Pressure,1,Evaluate Polynomial (POLYVAL) QC,TBD
 SFLPRES,Seafloor Pressure,1,Global Range Test (GLBLRNG) QC,TBD
-SFLPRES,Seafloor Pressure,1,Gradient Test (GREDTST) QC,TBD
+SFLPRES,Seafloor Pressure,1,Gradient Test (GRADTST) QC,TBD
 SFLPRES,Seafloor Pressure,1,Local Range Test (LOCLRNG) QC,TBD
 SFLPRES,Seafloor Pressure,1,Modulus (MODULUS) QC,TBD
 SFLPRES,Seafloor Pressure,1,Notes,
@@ -1156,7 +1175,7 @@ SGRDVEL,Short Period Ground Velocity,1,DOORS L2 Science Requirement Text,Short p
 SGRDVEL,Short Period Ground Velocity,1,DPS DCN(s),DCN 1341-00110
 SGRDVEL,Short Period Ground Velocity,1,Evaluate Polynomial (POLYVAL) QC,TBD
 SGRDVEL,Short Period Ground Velocity,1,Global Range Test (GLBLRNG) QC,TBD
-SGRDVEL,Short Period Ground Velocity,1,Gradient Test (GREDTST) QC,TBD
+SGRDVEL,Short Period Ground Velocity,1,Gradient Test (GRADTST) QC,TBD
 SGRDVEL,Short Period Ground Velocity,1,Local Range Test (LOCLRNG) QC,TBD
 SGRDVEL,Short Period Ground Velocity,1,Modulus (MODULUS) QC,TBD
 SGRDVEL,Short Period Ground Velocity,1,Notes,
@@ -1175,7 +1194,7 @@ SHRTIRR,Downwelling Shortwave Irradiance ,0,DOORS L2 Science Requirement Text,Do
 SHRTIRR,Downwelling Shortwave Irradiance ,0,DPS DCN(s),DCN 1341-00360
 SHRTIRR,Downwelling Shortwave Irradiance ,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 SHRTIRR,Downwelling Shortwave Irradiance ,0,Global Range Test (GLBLRNG) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Gradient Test (GREDTST) QC,not applicable
+SHRTIRR,Downwelling Shortwave Irradiance ,0,Gradient Test (GRADTST) QC,not applicable
 SHRTIRR,Downwelling Shortwave Irradiance ,0,Local Range Test (LOCLRNG) QC,not applicable
 SHRTIRR,Downwelling Shortwave Irradiance ,0,Modulus (MODULUS) QC,not applicable
 SHRTIRR,Downwelling Shortwave Irradiance ,0,Notes,
@@ -1194,7 +1213,7 @@ SONBSCA,Multi-Frequency Acoustic Backscatter,0,DOORS L2 Science Requirement Text
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,DPS DCN(s),DCN 1341-00800
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,Global Range Test (GLBLRNG) QC,not applicable
-SONBSCA,Multi-Frequency Acoustic Backscatter,0,Gradient Test (GREDTST) QC,not applicable
+SONBSCA,Multi-Frequency Acoustic Backscatter,0,Gradient Test (GRADTST) QC,not applicable
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,Local Range Test (LOCLRNG) QC,not applicable
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,Modulus (MODULUS) QC,not applicable
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,Notes,
@@ -1213,7 +1232,7 @@ SPECHUM,Specific Humidity,2,DOORS L2 Science Requirement Text,Specific Humidity
 SPECHUM,Specific Humidity,2,DPS DCN(s),DCN 1341-00370
 SPECHUM,Specific Humidity,2,Evaluate Polynomial (POLYVAL) QC,TBD
 SPECHUM,Specific Humidity,2,Global Range Test (GLBLRNG) QC,TBD
-SPECHUM,Specific Humidity,2,Gradient Test (GREDTST) QC,TBD
+SPECHUM,Specific Humidity,2,Gradient Test (GRADTST) QC,TBD
 SPECHUM,Specific Humidity,2,Local Range Test (LOCLRNG) QC,TBD
 SPECHUM,Specific Humidity,2,Modulus (MODULUS) QC,TBD
 SPECHUM,Specific Humidity,2,Notes,
@@ -1232,7 +1251,7 @@ SPECTIR,Downwelling Spectral Irradiance ,0,DOORS L2 Science Requirement Text,Dow
 SPECTIR,Downwelling Spectral Irradiance ,0,DPS DCN(s),DCN 1341-00730
 SPECTIR,Downwelling Spectral Irradiance ,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Global Range Test (GLBLRNG) QC,not applicable
-SPECTIR,Downwelling Spectral Irradiance ,0,Gradient Test (GREDTST) QC,not applicable
+SPECTIR,Downwelling Spectral Irradiance ,0,Gradient Test (GRADTST) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Local Range Test (LOCLRNG) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Modulus (MODULUS) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Notes,
@@ -1251,7 +1270,7 @@ TEMPAIR,Air Temperature,0,DOORS L2 Science Requirement Text,Direct Covariance Fl
 TEMPAIR,Air Temperature,0,DPS DCN(s),DCN 1341-00360
 TEMPAIR,Air Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TEMPAIR,Air Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TEMPAIR,Air Temperature,0,Gradient Test (GREDTST) QC,not applicable
+TEMPAIR,Air Temperature,0,Gradient Test (GRADTST) QC,not applicable
 TEMPAIR,Air Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 TEMPAIR,Air Temperature,0,Modulus (MODULUS) QC,not applicable
 TEMPAIR,Air Temperature,0,Notes,
@@ -1270,7 +1289,7 @@ TEMPSFL,Temperature Array in Spatial Grid,0,DOORS L2 Science Requirement Text,Di
 TEMPSFL,Temperature Array in Spatial Grid,0,DPS DCN(s),DCN 1341-00130
 TEMPSFL,Temperature Array in Spatial Grid,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Global Range Test (GLBLRNG) QC,not applicable
-TEMPSFL,Temperature Array in Spatial Grid,0,Gradient Test (GREDTST) QC,not applicable
+TEMPSFL,Temperature Array in Spatial Grid,0,Gradient Test (GRADTST) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Local Range Test (LOCLRNG) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Modulus (MODULUS) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Notes,
@@ -1289,7 +1308,7 @@ TEMPSRF,Sea Surface Temperature,0,DOORS L2 Science Requirement Text,The OOI shal
 TEMPSRF,Sea Surface Temperature,0,DPS DCN(s),DCN 1341-00360
 TEMPSRF,Sea Surface Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TEMPSRF,Sea Surface Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Gradient Test (GREDTST) QC,not applicable
+TEMPSRF,Sea Surface Temperature,0,Gradient Test (GRADTST) QC,not applicable
 TEMPSRF,Sea Surface Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 TEMPSRF,Sea Surface Temperature,0,Modulus (MODULUS) QC,not applicable
 TEMPSRF,Sea Surface Temperature,0,Notes,
@@ -1308,7 +1327,7 @@ TEMPVNT,Vent Fluid Temperature from RASFL,0,DOORS L2 Science Requirement Text,In
 TEMPVNT,Vent Fluid Temperature from RASFL,0,DPS DCN(s),DCN 1341-00140
 TEMPVNT,Vent Fluid Temperature from RASFL,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TEMPVNT,Vent Fluid Temperature from RASFL,0,Global Range Test (GLBLRNG) QC,not applicable
-TEMPVNT,Vent Fluid Temperature from RASFL,0,Gradient Test (GREDTST) QC,not applicable
+TEMPVNT,Vent Fluid Temperature from RASFL,0,Gradient Test (GRADTST) QC,not applicable
 TEMPVNT,Vent Fluid Temperature from RASFL,0,Local Range Test (LOCLRNG) QC,not applicable
 TEMPVNT,Vent Fluid Temperature from RASFL,0,Modulus (MODULUS) QC,not applicable
 TEMPVNT,Vent Fluid Temperature from RASFL,0,Notes,
@@ -1327,7 +1346,7 @@ TEMPWAT,Temperature,0,DOORS L2 Science Requirement Text,Water Temperature
 TEMPWAT,Temperature,0,DPS DCN(s),[DCN 1341-00010|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/009f4f2f-55ea-46af-b980-e8f612a5831d/1341-00010_Data_Product_SPEC_TEMPWAT_OOI.pdf]
 TEMPWAT,Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TEMPWAT,Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TEMPWAT,Temperature,0,Gradient Test (GREDTST) QC,not applicable
+TEMPWAT,Temperature,0,Gradient Test (GRADTST) QC,not applicable
 TEMPWAT,Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 TEMPWAT,Temperature,0,Modulus (MODULUS) QC,not applicable
 TEMPWAT,Temperature,0,Notes,
@@ -1346,7 +1365,7 @@ THSPHHC,Hydrogen Concentration,0,DOORS L2 Science Requirement Text,Vent Fluid pH
 THSPHHC,Hydrogen Concentration,0,DPS DCN(s),DCN 1341-00210
 THSPHHC,Hydrogen Concentration,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 THSPHHC,Hydrogen Concentration,0,Global Range Test (GLBLRNG) QC,not applicable
-THSPHHC,Hydrogen Concentration,0,Gradient Test (GREDTST) QC,not applicable
+THSPHHC,Hydrogen Concentration,0,Gradient Test (GRADTST) QC,not applicable
 THSPHHC,Hydrogen Concentration,0,Local Range Test (LOCLRNG) QC,not applicable
 THSPHHC,Hydrogen Concentration,0,Modulus (MODULUS) QC,not applicable
 THSPHHC,Hydrogen Concentration,0,Notes,
@@ -1365,7 +1384,7 @@ THSPHHS,Hydrogen Sulfide Concentration,0,DOORS L2 Science Requirement Text,Vent 
 THSPHHS,Hydrogen Sulfide Concentration,0,DPS DCN(s),DCN 1341-00200
 THSPHHS,Hydrogen Sulfide Concentration,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 THSPHHS,Hydrogen Sulfide Concentration,0,Global Range Test (GLBLRNG) QC,not applicable
-THSPHHS,Hydrogen Sulfide Concentration,0,Gradient Test (GREDTST) QC,not applicable
+THSPHHS,Hydrogen Sulfide Concentration,0,Gradient Test (GRADTST) QC,not applicable
 THSPHHS,Hydrogen Sulfide Concentration,0,Local Range Test (LOCLRNG) QC,not applicable
 THSPHHS,Hydrogen Sulfide Concentration,0,Modulus (MODULUS) QC,not applicable
 THSPHHS,Hydrogen Sulfide Concentration,0,Notes,
@@ -1384,7 +1403,7 @@ THSPHPH,pH,0,DOORS L2 Science Requirement Text,Vent Fluid pH-temperature-H2 chem
 THSPHPH,pH,0,DPS DCN(s),DCN 1341-00190
 THSPHPH,pH,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 THSPHPH,pH,0,Global Range Test (GLBLRNG) QC,not applicable
-THSPHPH,pH,0,Gradient Test (GREDTST) QC,not applicable
+THSPHPH,pH,0,Gradient Test (GRADTST) QC,not applicable
 THSPHPH,pH,0,Local Range Test (LOCLRNG) QC,not applicable
 THSPHPH,pH,0,Modulus (MODULUS) QC,not applicable
 THSPHPH,pH,0,Notes,
@@ -1403,7 +1422,7 @@ THSPHTE,Vent Fluid Temperature from THSPH,0,DOORS L2 Science Requirement Text,Ve
 THSPHTE,Vent Fluid Temperature from THSPH,0,DPS DCN(s),DCN 1341-00120
 THSPHTE,Vent Fluid Temperature from THSPH,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 THSPHTE,Vent Fluid Temperature from THSPH,0,Global Range Test (GLBLRNG) QC,not applicable
-THSPHTE,Vent Fluid Temperature from THSPH,0,Gradient Test (GREDTST) QC,not applicable
+THSPHTE,Vent Fluid Temperature from THSPH,0,Gradient Test (GRADTST) QC,not applicable
 THSPHTE,Vent Fluid Temperature from THSPH,0,Local Range Test (LOCLRNG) QC,not applicable
 THSPHTE,Vent Fluid Temperature from THSPH,0,Modulus (MODULUS) QC,not applicable
 THSPHTE,Vent Fluid Temperature from THSPH,0,Notes,
@@ -1422,7 +1441,7 @@ TMPATUR,Turbulent Air Temperature,0,DOORS L2 Science Requirement Text,Turbulent 
 TMPATUR,Turbulent Air Temperature,0,DPS DCN(s),DCN 1341-00290
 TMPATUR,Turbulent Air Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TMPATUR,Turbulent Air Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TMPATUR,Turbulent Air Temperature,0,Gradient Test (GREDTST) QC,not applicable
+TMPATUR,Turbulent Air Temperature,0,Gradient Test (GRADTST) QC,not applicable
 TMPATUR,Turbulent Air Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 TMPATUR,Turbulent Air Temperature,0,Modulus (MODULUS) QC,not applicable
 TMPATUR,Turbulent Air Temperature,0,Notes,
@@ -1441,7 +1460,7 @@ TRHPHCC,Vent Fluid Chloride Concentration,2,DOORS L2 Science Requirement Text,Ve
 TRHPHCC,Vent Fluid Chloride Concentration,2,DPS DCN(s),[DCN 1341-00160|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/6879d629-e938-4546-8ed6-edd67583aa5f/1341-00160_Data_Product_Spec_TRHPHCC_OOI.pdf]
 TRHPHCC,Vent Fluid Chloride Concentration,2,Evaluate Polynomial (POLYVAL) QC,applicable
 TRHPHCC,Vent Fluid Chloride Concentration,2,Global Range Test (GLBLRNG) QC,applicable
-TRHPHCC,Vent Fluid Chloride Concentration,2,Gradient Test (GREDTST) QC,applicable
+TRHPHCC,Vent Fluid Chloride Concentration,2,Gradient Test (GRADTST) QC,applicable
 TRHPHCC,Vent Fluid Chloride Concentration,2,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHCC,Vent Fluid Chloride Concentration,2,Modulus (MODULUS) QC,not applicable
 TRHPHCC,Vent Fluid Chloride Concentration,2,Notes,
@@ -1460,7 +1479,7 @@ TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,DOORS L2 Science Requir
 TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,DPS DCN(s),[DCN 1341-00170|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/5c359aaa-9a4d-4f55-88d3-17a9c4e7082f/1341-00170_Data_Product_Spec_TRHPHEH_OOI.pdf]
 TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,Global Range Test (GLBLRNG) QC,applicable
-TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,Gradient Test (GREDTST) QC,applicable
+TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,Gradient Test (GRADTST) QC,applicable
 TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,Modulus (MODULUS) QC,not applicable
 TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),1,Notes,
@@ -1479,7 +1498,7 @@ TRHPHR1,Resistivity R1,0,DOORS L2 Science Requirement Text,Vent Fluid chloride c
 TRHPHR1,Resistivity R1,0,DPS DCN(s),[DCN 1341-00160|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/6879d629-e938-4546-8ed6-edd67583aa5f/1341-00160_Data_Product_Spec_TRHPHCC_OOI.pdf]
 TRHPHR1,Resistivity R1,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHR1,Resistivity R1,0,Global Range Test (GLBLRNG) QC,not applicable
-TRHPHR1,Resistivity R1,0,Gradient Test (GREDTST) QC,not applicable
+TRHPHR1,Resistivity R1,0,Gradient Test (GRADTST) QC,not applicable
 TRHPHR1,Resistivity R1,0,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHR1,Resistivity R1,0,Modulus (MODULUS) QC,not applicable
 TRHPHR1,Resistivity R1,0,Notes,
@@ -1498,7 +1517,7 @@ TRHPHR2,Resistivity R2,0,DOORS L2 Science Requirement Text,Vent Fluid chloride c
 TRHPHR2,Resistivity R2,0,DPS DCN(s),[DCN 1341-00160|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/6879d629-e938-4546-8ed6-edd67583aa5f/1341-00160_Data_Product_Spec_TRHPHCC_OOI.pdf]
 TRHPHR2,Resistivity R2,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHR2,Resistivity R2,0,Global Range Test (GLBLRNG) QC,not applicable
-TRHPHR2,Resistivity R2,0,Gradient Test (GREDTST) QC,not applicable
+TRHPHR2,Resistivity R2,0,Gradient Test (GRADTST) QC,not applicable
 TRHPHR2,Resistivity R2,0,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHR2,Resistivity R2,0,Modulus (MODULUS) QC,not applicable
 TRHPHR2,Resistivity R2,0,Notes,
@@ -1517,7 +1536,7 @@ TRHPHR3,Resistivity R3,0,DOORS L2 Science Requirement Text,Vent Fluid chloride c
 TRHPHR3,Resistivity R3,0,DPS DCN(s),[DCN 1341-00160|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/6879d629-e938-4546-8ed6-edd67583aa5f/1341-00160_Data_Product_Spec_TRHPHCC_OOI.pdf]
 TRHPHR3,Resistivity R3,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHR3,Resistivity R3,0,Global Range Test (GLBLRNG) QC,not applicable
-TRHPHR3,Resistivity R3,0,Gradient Test (GREDTST) QC,not applicable
+TRHPHR3,Resistivity R3,0,Gradient Test (GRADTST) QC,not applicable
 TRHPHR3,Resistivity R3,0,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHR3,Resistivity R3,0,Modulus (MODULUS) QC,not applicable
 TRHPHR3,Resistivity R3,0,Notes,
@@ -1536,7 +1555,7 @@ TRHPHTE,Vent Fluid Temperature from TRHPH,1,DOORS L2 Science Requirement Text,Ve
 TRHPHTE,Vent Fluid Temperature from TRHPH,1,DPS DCN(s),[DCN 1341-00150|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/23624e5a-09c7-4aaf-b681-04584c9f9e48/1341-00150_Data_Product_Spec_TRHPHTE_OOI.pdf]
 TRHPHTE,Vent Fluid Temperature from TRHPH,1,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHTE,Vent Fluid Temperature from TRHPH,1,Global Range Test (GLBLRNG) QC,applicable
-TRHPHTE,Vent Fluid Temperature from TRHPH,1,Gradient Test (GREDTST) QC,applicable
+TRHPHTE,Vent Fluid Temperature from TRHPH,1,Gradient Test (GRADTST) QC,applicable
 TRHPHTE,Vent Fluid Temperature from TRHPH,1,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHTE,Vent Fluid Temperature from TRHPH,1,Modulus (MODULUS) QC,not applicable
 TRHPHTE,Vent Fluid Temperature from TRHPH,1,Notes,
@@ -1555,7 +1574,7 @@ TRHPHVC,Thermocouple Temperature,0,DOORS L2 Science Requirement Text,Vent Fluid 
 TRHPHVC,Thermocouple Temperature,0,DPS DCN(s),[DCN 1341-00150|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/23624e5a-09c7-4aaf-b681-04584c9f9e48/1341-00150_Data_Product_Spec_TRHPHTE_OOI.pdf]
 TRHPHVC,Thermocouple Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHVC,Thermocouple Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TRHPHVC,Thermocouple Temperature,0,Gradient Test (GREDTST) QC,not applicable
+TRHPHVC,Thermocouple Temperature,0,Gradient Test (GRADTST) QC,not applicable
 TRHPHVC,Thermocouple Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHVC,Thermocouple Temperature,0,Modulus (MODULUS) QC,not applicable
 TRHPHVC,Thermocouple Temperature,0,Notes,
@@ -1574,7 +1593,7 @@ TRHPHVO,ORP Volts,0,DOORS L2 Science Requirement Text,Vent Fluid chloride concen
 TRHPHVO,ORP Volts,0,DPS DCN(s),[DCN 1341-00170|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/5c359aaa-9a4d-4f55-88d3-17a9c4e7082f/1341-00170_Data_Product_Spec_TRHPHEH_OOI.pdf]
 TRHPHVO,ORP Volts,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHVO,ORP Volts,0,Global Range Test (GLBLRNG) QC,not applicable
-TRHPHVO,ORP Volts,0,Gradient Test (GREDTST) QC,not applicable
+TRHPHVO,ORP Volts,0,Gradient Test (GRADTST) QC,not applicable
 TRHPHVO,ORP Volts,0,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHVO,ORP Volts,0,Modulus (MODULUS) QC,not applicable
 TRHPHVO,ORP Volts,0,Notes,
@@ -1593,7 +1612,7 @@ TRHPHVS,Thermistor Temperature,0,DOORS L2 Science Requirement Text,Vent Fluid ch
 TRHPHVS,Thermistor Temperature,0,DPS DCN(s),[DCN 1341-00150|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/23624e5a-09c7-4aaf-b681-04584c9f9e48/1341-00150_Data_Product_Spec_TRHPHTE_OOI.pdf]
 TRHPHVS,Thermistor Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 TRHPHVS,Thermistor Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TRHPHVS,Thermistor Temperature,0,Gradient Test (GREDTST) QC,not applicable
+TRHPHVS,Thermistor Temperature,0,Gradient Test (GRADTST) QC,not applicable
 TRHPHVS,Thermistor Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
 TRHPHVS,Thermistor Temperature,0,Modulus (MODULUS) QC,not applicable
 TRHPHVS,Thermistor Temperature,0,Notes,
@@ -1612,7 +1631,7 @@ VELPROF,Velocity Profile,0,DOORS L2 Science Requirement Text,Water Velocity Prof
 VELPROF,Velocity Profile,0,DPS DCN(s),[DCN 1341-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/7ea90727-c1b4-4d73-b565-0ae4227da451/1341-00750_Data_Product_SPEC_VELPROF_ECHOINT_OOI.pdf]
 VELPROF,Velocity Profile,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 VELPROF,Velocity Profile,0,Global Range Test (GLBLRNG) QC,not applicable
-VELPROF,Velocity Profile,0,Gradient Test (GREDTST) QC,not applicable
+VELPROF,Velocity Profile,0,Gradient Test (GRADTST) QC,not applicable
 VELPROF,Velocity Profile,0,Local Range Test (LOCLRNG) QC,not applicable
 VELPROF,Velocity Profile,0,Modulus (MODULUS) QC,not applicable
 VELPROF,Velocity Profile,0,Notes,
@@ -1631,7 +1650,7 @@ VELPTMN,Mean Point Water Velocity,1,DOORS L2 Science Requirement Text,Single Poi
 VELPTMN,Mean Point Water Velocity,1,DPS DCN(s),[DCN 1341-00790|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/e47c753f-e4a4-4ed2-8ffa-7c7222246ecb/1341-00790_Data_Product_SPEC_VELPTMN_OOI.pdf]
 VELPTMN,Mean Point Water Velocity,1,Evaluate Polynomial (POLYVAL) QC,applicable
 VELPTMN,Mean Point Water Velocity,1,Global Range Test (GLBLRNG) QC,applicable
-VELPTMN,Mean Point Water Velocity,1,Gradient Test (GREDTST) QC,not applicable
+VELPTMN,Mean Point Water Velocity,1,Gradient Test (GRADTST) QC,not applicable
 VELPTMN,Mean Point Water Velocity,1,Local Range Test (LOCLRNG) QC,applicable
 VELPTMN,Mean Point Water Velocity,1,Modulus (MODULUS) QC,not applicable
 VELPTMN,Mean Point Water Velocity,1,Notes,
@@ -1650,7 +1669,7 @@ VELPTTU,Turbulent Point Water Velocity,0,DOORS L2 Science Requirement Text,Turbu
 VELPTTU,Turbulent Point Water Velocity,0,DPS DCN(s),"[DCN 1341-00781|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/ff4b0896-321e-4811-9137-400a75b0b908/1341-00781_Data_Product_SPEC_VELPTTU_Nobska_OOI.pdf] (Nobska), [DCN 1341-00780|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/969c8edd-d2c7-493d-abbb-e59198941942/1341-00780_Data_Product_SPEC_VELPTTU_Nortek_OOI.pdf] (Nortek)"
 VELPTTU,Turbulent Point Water Velocity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 VELPTTU,Turbulent Point Water Velocity,0,Global Range Test (GLBLRNG) QC,not applicable
-VELPTTU,Turbulent Point Water Velocity,0,Gradient Test (GREDTST) QC,not applicable
+VELPTTU,Turbulent Point Water Velocity,0,Gradient Test (GRADTST) QC,not applicable
 VELPTTU,Turbulent Point Water Velocity,0,Local Range Test (LOCLRNG) QC,not applicable
 VELPTTU,Turbulent Point Water Velocity,0,Modulus (MODULUS) QC,not applicable
 VELPTTU,Turbulent Point Water Velocity,0,Notes,
@@ -1669,7 +1688,7 @@ VELTURB,Turbulent Velocity Profile,1,DOORS L2 Science Requirement Text,Turbulent
 VELTURB,Turbulent Velocity Profile,1,DPS DCN(s),DCN 1341-00760
 VELTURB,Turbulent Velocity Profile,1,Evaluate Polynomial (POLYVAL) QC,TBD
 VELTURB,Turbulent Velocity Profile,1,Global Range Test (GLBLRNG) QC,TBD
-VELTURB,Turbulent Velocity Profile,1,Gradient Test (GREDTST) QC,TBD
+VELTURB,Turbulent Velocity Profile,1,Gradient Test (GRADTST) QC,TBD
 VELTURB,Turbulent Velocity Profile,1,Local Range Test (LOCLRNG) QC,TBD
 VELTURB,Turbulent Velocity Profile,1,Modulus (MODULUS) QC,TBD
 VELTURB,Turbulent Velocity Profile,1,Notes,
@@ -1688,7 +1707,7 @@ WAVSTAT,Wave Spectral Properties,0,DOORS L2 Science Requirement Text,"The OOI sh
 WAVSTAT,Wave Spectral Properties,0,DPS DCN(s),DCN 1341-00450
 WAVSTAT,Wave Spectral Properties,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Global Range Test (GLBLRNG) QC,not applicable
-WAVSTAT,Wave Spectral Properties,0,Gradient Test (GREDTST) QC,not applicable
+WAVSTAT,Wave Spectral Properties,0,Gradient Test (GRADTST) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Local Range Test (LOCLRNG) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Modulus (MODULUS) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Notes,
@@ -1707,7 +1726,7 @@ WINDAVG,Mean Wind Velocity,0,DOORS L2 Science Requirement Text,Mean Wind Velocit
 WINDAVG,Mean Wind Velocity,0,DPS DCN(s),DCN 1341-00360
 WINDAVG,Mean Wind Velocity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 WINDAVG,Mean Wind Velocity,0,Global Range Test (GLBLRNG) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Gradient Test (GREDTST) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,Gradient Test (GRADTST) QC,not applicable
 WINDAVG,Mean Wind Velocity,0,Local Range Test (LOCLRNG) QC,not applicable
 WINDAVG,Mean Wind Velocity,0,Modulus (MODULUS) QC,not applicable
 WINDAVG,Mean Wind Velocity,0,Notes,
@@ -1726,7 +1745,7 @@ WINDTUR,Wind Velocity in 3 Dimensions,0,DOORS L2 Science Requirement Text,Turbul
 WINDTUR,Wind Velocity in 3 Dimensions,0,DPS DCN(s),DCN 1341-00310
 WINDTUR,Wind Velocity in 3 Dimensions,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 WINDTUR,Wind Velocity in 3 Dimensions,0,Global Range Test (GLBLRNG) QC,not applicable
-WINDTUR,Wind Velocity in 3 Dimensions,0,Gradient Test (GREDTST) QC,not applicable
+WINDTUR,Wind Velocity in 3 Dimensions,0,Gradient Test (GRADTST) QC,not applicable
 WINDTUR,Wind Velocity in 3 Dimensions,0,Local Range Test (LOCLRNG) QC,not applicable
 WINDTUR,Wind Velocity in 3 Dimensions,0,Modulus (MODULUS) QC,not applicable
 WINDTUR,Wind Velocity in 3 Dimensions,0,Notes,
@@ -1745,7 +1764,7 @@ XCO2ATM,CO2 Mole Fraction in Atmosphere,0,DOORS L2 Science Requirement Text,none
 XCO2ATM,CO2 Mole Fraction in Atmosphere,0,DPS DCN(s),[DCN 1341-00260|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/295440da-24e6-4279-90f5-03055a5b5a31/1341-00260_Data_Product_SPEC_PCO2SSW_PCO2ATM_OOI.pdf]
 XCO2ATM,CO2 Mole Fraction in Atmosphere,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 XCO2ATM,CO2 Mole Fraction in Atmosphere,0,Global Range Test (GLBLRNG) QC,not applicable
-XCO2ATM,CO2 Mole Fraction in Atmosphere,0,Gradient Test (GREDTST) QC,not applicable
+XCO2ATM,CO2 Mole Fraction in Atmosphere,0,Gradient Test (GRADTST) QC,not applicable
 XCO2ATM,CO2 Mole Fraction in Atmosphere,0,Local Range Test (LOCLRNG) QC,not applicable
 XCO2ATM,CO2 Mole Fraction in Atmosphere,0,Modulus (MODULUS) QC,not applicable
 XCO2ATM,CO2 Mole Fraction in Atmosphere,0,Notes,
@@ -1764,7 +1783,7 @@ XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,DOORS L2 Science Requirement Te
 XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,DPS DCN(s),[DCN 1341-00260|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/295440da-24e6-4279-90f5-03055a5b5a31/1341-00260_Data_Product_SPEC_PCO2SSW_PCO2ATM_OOI.pdf]
 XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,Evaluate Polynomial (POLYVAL) QC,not applicable
 XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,Global Range Test (GLBLRNG) QC,not applicable
-XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,Gradient Test (GREDTST) QC,not applicable
+XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,Gradient Test (GRADTST) QC,not applicable
 XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,Local Range Test (LOCLRNG) QC,not applicable
 XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,Modulus (MODULUS) QC,not applicable
 XCO2SSW,CO2 Mole Fraction in Surface Sea Water,0,Notes,

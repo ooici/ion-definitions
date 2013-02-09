@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Series Attributes Report,Report Generated: 10/30/2012
+Series Attributes Report,Report Generated: 2/8/2013
 
 Textbox14
 
@@ -25,9 +25,11 @@ ADCPA,M,ADCPA Series M,Instrument Configuration,
 ADCPA,M,ADCPA Series M,Link to the Specification,
 ADCPA,M,ADCPA Series M,Notes,
 ADCPA,M,ADCPA Series M,PrimaryScienceDiscipline,P
+ADCPA,M,ADCPA Series M,Produces Acoustic Interference,
 ADCPA,M,ADCPA Series M,Ready for 2013?,
 ADCPA,M,ADCPA Series M,RSN O&M Spares,
 ADCPA,M,ADCPA Series M,RSN Part Number,
+ADCPA,M,ADCPA Series M,Susceptible to Acoustic Interference,Yes
 ADCPA,M,ADCPA Series M,"Vendor CLIN, SubCLIN or Model #",
 ADCPA,N,ADCPA Series N,2009 Baseline Price*,
 ADCPA,N,ADCPA Series N,2009 Deployed Instrument Count,3
@@ -46,9 +48,11 @@ ADCPA,N,ADCPA Series N,Instrument Configuration,
 ADCPA,N,ADCPA Series N,Link to the Specification,
 ADCPA,N,ADCPA Series N,Notes,
 ADCPA,N,ADCPA Series N,PrimaryScienceDiscipline,P
+ADCPA,N,ADCPA Series N,Produces Acoustic Interference,
 ADCPA,N,ADCPA Series N,Ready for 2013?,
 ADCPA,N,ADCPA Series N,RSN O&M Spares,
 ADCPA,N,ADCPA Series N,RSN Part Number,
+ADCPA,N,ADCPA Series N,Susceptible to Acoustic Interference,Yes
 ADCPA,N,ADCPA Series N,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,A,ADCPS Series A,2009 Baseline Price*,"$60,575.00"
 ADCPS,A,ADCPS Series A,2009 Deployed Instrument Count,16
@@ -67,9 +71,11 @@ ADCPS,A,ADCPS Series A,Instrument Configuration,
 ADCPS,A,ADCPS Series A,Link to the Specification,
 ADCPS,A,ADCPS Series A,Notes,
 ADCPS,A,ADCPS Series A,PrimaryScienceDiscipline,P
+ADCPS,A,ADCPS Series A,Produces Acoustic Interference,
 ADCPS,A,ADCPS Series A,Ready for 2013?,
 ADCPS,A,ADCPS Series A,RSN O&M Spares,
 ADCPS,A,ADCPS Series A,RSN Part Number,
+ADCPS,A,ADCPS Series A,Susceptible to Acoustic Interference,Yes
 ADCPS,A,ADCPS Series A,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,I,ADCPS Series I,2009 Baseline Price*,"$60,575.00"
 ADCPS,I,ADCPS Series I,2009 Deployed Instrument Count,16
@@ -88,9 +94,11 @@ ADCPS,I,ADCPS Series I,Instrument Configuration,
 ADCPS,I,ADCPS Series I,Link to the Specification,
 ADCPS,I,ADCPS Series I,Notes,
 ADCPS,I,ADCPS Series I,PrimaryScienceDiscipline,P
+ADCPS,I,ADCPS Series I,Produces Acoustic Interference,
 ADCPS,I,ADCPS Series I,Ready for 2013?,
 ADCPS,I,ADCPS Series I,RSN O&M Spares,
 ADCPS,I,ADCPS Series I,RSN Part Number,
+ADCPS,I,ADCPS Series I,Susceptible to Acoustic Interference,Yes
 ADCPS,I,ADCPS Series I,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,J,ADCPS Series J,2009 Baseline Price*,"$60,575.00"
 ADCPS,J,ADCPS Series J,2009 Deployed Instrument Count,16
@@ -109,9 +117,11 @@ ADCPS,J,ADCPS Series J,Instrument Configuration,
 ADCPS,J,ADCPS Series J,Link to the Specification,
 ADCPS,J,ADCPS Series J,Notes,
 ADCPS,J,ADCPS Series J,PrimaryScienceDiscipline,P
+ADCPS,J,ADCPS Series J,Produces Acoustic Interference,
 ADCPS,J,ADCPS Series J,Ready for 2013?,
 ADCPS,J,ADCPS Series J,RSN O&M Spares,
 ADCPS,J,ADCPS Series J,RSN Part Number,
+ADCPS,J,ADCPS Series J,Susceptible to Acoustic Interference,Yes
 ADCPS,J,ADCPS Series J,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,K,ADCPS Series K,2009 Baseline Price*,"$60,575.00"
 ADCPS,K,ADCPS Series K,2009 Deployed Instrument Count,16
@@ -130,9 +140,11 @@ ADCPS,K,ADCPS Series K,Instrument Configuration,
 ADCPS,K,ADCPS Series K,Link to the Specification,
 ADCPS,K,ADCPS Series K,Notes,
 ADCPS,K,ADCPS Series K,PrimaryScienceDiscipline,P
+ADCPS,K,ADCPS Series K,Produces Acoustic Interference,
 ADCPS,K,ADCPS Series K,Ready for 2013?,
 ADCPS,K,ADCPS Series K,RSN O&M Spares,
 ADCPS,K,ADCPS Series K,RSN Part Number,
+ADCPS,K,ADCPS Series K,Susceptible to Acoustic Interference,Yes
 ADCPS,K,ADCPS Series K,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,L,ADCPS Series L,2009 Baseline Price*,"$60,575.00"
 ADCPS,L,ADCPS Series L,2009 Deployed Instrument Count,16
@@ -151,9 +163,11 @@ ADCPS,L,ADCPS Series L,Instrument Configuration,
 ADCPS,L,ADCPS Series L,Link to the Specification,
 ADCPS,L,ADCPS Series L,Notes,
 ADCPS,L,ADCPS Series L,PrimaryScienceDiscipline,P
+ADCPS,L,ADCPS Series L,Produces Acoustic Interference,
 ADCPS,L,ADCPS Series L,Ready for 2013?,
 ADCPS,L,ADCPS Series L,RSN O&M Spares,
 ADCPS,L,ADCPS Series L,RSN Part Number,
+ADCPS,L,ADCPS Series L,Susceptible to Acoustic Interference,Yes
 ADCPS,L,ADCPS Series L,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,N,ADCPS Series N,2009 Baseline Price*,"$60,575.00"
 ADCPS,N,ADCPS Series N,2009 Deployed Instrument Count,16
@@ -172,9 +186,11 @@ ADCPS,N,ADCPS Series N,Instrument Configuration,
 ADCPS,N,ADCPS Series N,Link to the Specification,
 ADCPS,N,ADCPS Series N,Notes,
 ADCPS,N,ADCPS Series N,PrimaryScienceDiscipline,P
+ADCPS,N,ADCPS Series N,Produces Acoustic Interference,
 ADCPS,N,ADCPS Series N,Ready for 2013?,
 ADCPS,N,ADCPS Series N,RSN O&M Spares,
 ADCPS,N,ADCPS Series N,RSN Part Number,
+ADCPS,N,ADCPS Series N,Susceptible to Acoustic Interference,Yes
 ADCPS,N,ADCPS Series N,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,A,ADCPT Series A,2009 Baseline Price*,"$38,625.00"
 ADCPT,A,ADCPT Series A,2009 Deployed Instrument Count,18
@@ -193,9 +209,11 @@ ADCPT,A,ADCPT Series A,Instrument Configuration,
 ADCPT,A,ADCPT Series A,Link to the Specification,
 ADCPT,A,ADCPT Series A,Notes,
 ADCPT,A,ADCPT Series A,PrimaryScienceDiscipline,P
+ADCPT,A,ADCPT Series A,Produces Acoustic Interference,
 ADCPT,A,ADCPT Series A,Ready for 2013?,
 ADCPT,A,ADCPT Series A,RSN O&M Spares,
 ADCPT,A,ADCPT Series A,RSN Part Number,
+ADCPT,A,ADCPT Series A,Susceptible to Acoustic Interference,Yes
 ADCPT,A,ADCPT Series A,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,B,ADCPT Series B,2009 Baseline Price*,"$38,625.00"
 ADCPT,B,ADCPT Series B,2009 Deployed Instrument Count,18
@@ -214,9 +232,11 @@ ADCPT,B,ADCPT Series B,Instrument Configuration,
 ADCPT,B,ADCPT Series B,Link to the Specification,
 ADCPT,B,ADCPT Series B,Notes,
 ADCPT,B,ADCPT Series B,PrimaryScienceDiscipline,P
+ADCPT,B,ADCPT Series B,Produces Acoustic Interference,
 ADCPT,B,ADCPT Series B,Ready for 2013?,
 ADCPT,B,ADCPT Series B,RSN O&M Spares,
 ADCPT,B,ADCPT Series B,RSN Part Number,
+ADCPT,B,ADCPT Series B,Susceptible to Acoustic Interference,Yes
 ADCPT,B,ADCPT Series B,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,C,ADCPT Series C,2009 Baseline Price*,"$38,625.00"
 ADCPT,C,ADCPT Series C,2009 Deployed Instrument Count,18
@@ -235,9 +255,11 @@ ADCPT,C,ADCPT Series C,Instrument Configuration,
 ADCPT,C,ADCPT Series C,Link to the Specification,
 ADCPT,C,ADCPT Series C,Notes,
 ADCPT,C,ADCPT Series C,PrimaryScienceDiscipline,P
+ADCPT,C,ADCPT Series C,Produces Acoustic Interference,
 ADCPT,C,ADCPT Series C,Ready for 2013?,
 ADCPT,C,ADCPT Series C,RSN O&M Spares,
 ADCPT,C,ADCPT Series C,RSN Part Number,
+ADCPT,C,ADCPT Series C,Susceptible to Acoustic Interference,Yes
 ADCPT,C,ADCPT Series C,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,D,ADCPT Series D,2009 Baseline Price*,"$38,625.00"
 ADCPT,D,ADCPT Series D,2009 Deployed Instrument Count,18
@@ -256,9 +278,11 @@ ADCPT,D,ADCPT Series D,Instrument Configuration,
 ADCPT,D,ADCPT Series D,Link to the Specification,
 ADCPT,D,ADCPT Series D,Notes,
 ADCPT,D,ADCPT Series D,PrimaryScienceDiscipline,P
+ADCPT,D,ADCPT Series D,Produces Acoustic Interference,
 ADCPT,D,ADCPT Series D,Ready for 2013?,
 ADCPT,D,ADCPT Series D,RSN O&M Spares,
 ADCPT,D,ADCPT Series D,RSN Part Number,
+ADCPT,D,ADCPT Series D,Susceptible to Acoustic Interference,Yes
 ADCPT,D,ADCPT Series D,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,E,ADCPT Series E,2009 Baseline Price*,"$38,625.00"
 ADCPT,E,ADCPT Series E,2009 Deployed Instrument Count,18
@@ -277,9 +301,11 @@ ADCPT,E,ADCPT Series E,Instrument Configuration,
 ADCPT,E,ADCPT Series E,Link to the Specification,
 ADCPT,E,ADCPT Series E,Notes,
 ADCPT,E,ADCPT Series E,PrimaryScienceDiscipline,P
+ADCPT,E,ADCPT Series E,Produces Acoustic Interference,
 ADCPT,E,ADCPT Series E,Ready for 2013?,
 ADCPT,E,ADCPT Series E,RSN O&M Spares,
 ADCPT,E,ADCPT Series E,RSN Part Number,
+ADCPT,E,ADCPT Series E,Susceptible to Acoustic Interference,Yes
 ADCPT,E,ADCPT Series E,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,F,ADCPT Series F,2009 Baseline Price*,"$38,625.00"
 ADCPT,F,ADCPT Series F,2009 Deployed Instrument Count,18
@@ -298,9 +324,11 @@ ADCPT,F,ADCPT Series F,Instrument Configuration,
 ADCPT,F,ADCPT Series F,Link to the Specification,
 ADCPT,F,ADCPT Series F,Notes,
 ADCPT,F,ADCPT Series F,PrimaryScienceDiscipline,P
+ADCPT,F,ADCPT Series F,Produces Acoustic Interference,
 ADCPT,F,ADCPT Series F,Ready for 2013?,
 ADCPT,F,ADCPT Series F,RSN O&M Spares,
 ADCPT,F,ADCPT Series F,RSN Part Number,
+ADCPT,F,ADCPT Series F,Susceptible to Acoustic Interference,Yes
 ADCPT,F,ADCPT Series F,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,G,ADCPT Series G,2009 Baseline Price*,"$38,625.00"
 ADCPT,G,ADCPT Series G,2009 Deployed Instrument Count,18
@@ -319,9 +347,11 @@ ADCPT,G,ADCPT Series G,Instrument Configuration,
 ADCPT,G,ADCPT Series G,Link to the Specification,
 ADCPT,G,ADCPT Series G,Notes,
 ADCPT,G,ADCPT Series G,PrimaryScienceDiscipline,P
+ADCPT,G,ADCPT Series G,Produces Acoustic Interference,
 ADCPT,G,ADCPT Series G,Ready for 2013?,
 ADCPT,G,ADCPT Series G,RSN O&M Spares,
 ADCPT,G,ADCPT Series G,RSN Part Number,
+ADCPT,G,ADCPT Series G,Susceptible to Acoustic Interference,Yes
 ADCPT,G,ADCPT Series G,"Vendor CLIN, SubCLIN or Model #",
 ADCPT,M,ADCPT Series M,2009 Baseline Price*,"$38,625.00"
 ADCPT,M,ADCPT Series M,2009 Deployed Instrument Count,18
@@ -340,9 +370,11 @@ ADCPT,M,ADCPT Series M,Instrument Configuration,
 ADCPT,M,ADCPT Series M,Link to the Specification,
 ADCPT,M,ADCPT Series M,Notes,
 ADCPT,M,ADCPT Series M,PrimaryScienceDiscipline,P
+ADCPT,M,ADCPT Series M,Produces Acoustic Interference,
 ADCPT,M,ADCPT Series M,Ready for 2013?,
 ADCPT,M,ADCPT Series M,RSN O&M Spares,
 ADCPT,M,ADCPT Series M,RSN Part Number,
+ADCPT,M,ADCPT Series M,Susceptible to Acoustic Interference,Yes
 ADCPT,M,ADCPT Series M,"Vendor CLIN, SubCLIN or Model #",
 BOTPT,A,BOTPT Series A,2009 Baseline Price*,
 BOTPT,A,BOTPT Series A,2009 Deployed Instrument Count,3
@@ -361,9 +393,11 @@ BOTPT,A,BOTPT Series A,Instrument Configuration,
 BOTPT,A,BOTPT Series A,Link to the Specification,
 BOTPT,A,BOTPT Series A,Notes,
 BOTPT,A,BOTPT Series A,PrimaryScienceDiscipline,G
+BOTPT,A,BOTPT Series A,Produces Acoustic Interference,
 BOTPT,A,BOTPT Series A,Ready for 2013?,
 BOTPT,A,BOTPT Series A,RSN O&M Spares,
 BOTPT,A,BOTPT Series A,RSN Part Number,
+BOTPT,A,BOTPT Series A,Susceptible to Acoustic Interference,
 BOTPT,A,BOTPT Series A,"Vendor CLIN, SubCLIN or Model #",
 CAMDS,A,CAMDS Series A,2009 Baseline Price*,"$55,590.00"
 CAMDS,A,CAMDS Series A,2009 Deployed Instrument Count,9
@@ -382,9 +416,11 @@ CAMDS,A,CAMDS Series A,Instrument Configuration,
 CAMDS,A,CAMDS Series A,Link to the Specification,
 CAMDS,A,CAMDS Series A,Notes,
 CAMDS,A,CAMDS Series A,PrimaryScienceDiscipline,B
-CAMDS,A,CAMDS Series A,Ready for 2013?,
+CAMDS,A,CAMDS Series A,Produces Acoustic Interference,
+CAMDS,A,CAMDS Series A,Ready for 2013?,No
 CAMDS,A,CAMDS Series A,RSN O&M Spares,
 CAMDS,A,CAMDS Series A,RSN Part Number,
+CAMDS,A,CAMDS Series A,Susceptible to Acoustic Interference,
 CAMDS,A,CAMDS Series A,"Vendor CLIN, SubCLIN or Model #",
 CAMDS,B,CAMDS Series B,2009 Baseline Price*,"$55,590.00"
 CAMDS,B,CAMDS Series B,2009 Deployed Instrument Count,9
@@ -403,10 +439,35 @@ CAMDS,B,CAMDS Series B,Instrument Configuration,
 CAMDS,B,CAMDS Series B,Link to the Specification,
 CAMDS,B,CAMDS Series B,Notes,
 CAMDS,B,CAMDS Series B,PrimaryScienceDiscipline,B
+CAMDS,B,CAMDS Series B,Produces Acoustic Interference,
 CAMDS,B,CAMDS Series B,Ready for 2013?,
 CAMDS,B,CAMDS Series B,RSN O&M Spares,
 CAMDS,B,CAMDS Series B,RSN Part Number,
+CAMDS,B,CAMDS Series B,Susceptible to Acoustic Interference,
 CAMDS,B,CAMDS Series B,"Vendor CLIN, SubCLIN or Model #",
+CAMDS,C,CAMDS Series C,2009 Baseline Price*,"$55,590.00"
+CAMDS,C,CAMDS Series C,2009 Deployed Instrument Count,9
+CAMDS,C,CAMDS Series C,Alternate Instrument Class Name,Digital Still Camera with Strobes
+CAMDS,C,CAMDS Series C,CE Spares,
+CAMDS,C,CAMDS Series C,CGSN MREFC Spares,
+CAMDS,C,CAMDS Series C,CGSN O&M Spares,
+CAMDS,C,CAMDS Series C,CGSN P/N,
+CAMDS,C,CAMDS Series C,ClassLongName,camera_digital_still_strobe
+CAMDS,C,CAMDS Series C,Comments,
+CAMDS,C,CAMDS Series C,CP Spares,
+CAMDS,C,CAMDS Series C,Description,"Ethernet Camera with strobes for digital still imagery of water column biology, vents, diffuse flow, seeps, macrofauna"
+CAMDS,C,CAMDS Series C,ECRs that changed the count,ECR 1300-00177
+CAMDS,C,CAMDS Series C,Global Spares,
+CAMDS,C,CAMDS Series C,Instrument Configuration,
+CAMDS,C,CAMDS Series C,Link to the Specification,
+CAMDS,C,CAMDS Series C,Notes,
+CAMDS,C,CAMDS Series C,PrimaryScienceDiscipline,B
+CAMDS,C,CAMDS Series C,Produces Acoustic Interference,
+CAMDS,C,CAMDS Series C,Ready for 2013?,
+CAMDS,C,CAMDS Series C,RSN O&M Spares,
+CAMDS,C,CAMDS Series C,RSN Part Number,
+CAMDS,C,CAMDS Series C,Susceptible to Acoustic Interference,
+CAMDS,C,CAMDS Series C,"Vendor CLIN, SubCLIN or Model #",
 CAMHD,A,CAMHD Series A,2009 Baseline Price*,
 CAMHD,A,CAMHD Series A,2009 Deployed Instrument Count,1
 CAMHD,A,CAMHD Series A,Alternate Instrument Class Name,HD Digital Video Camera with Strobes
@@ -424,9 +485,11 @@ CAMHD,A,CAMHD Series A,Instrument Configuration,
 CAMHD,A,CAMHD Series A,Link to the Specification,
 CAMHD,A,CAMHD Series A,Notes,
 CAMHD,A,CAMHD Series A,PrimaryScienceDiscipline,B
+CAMHD,A,CAMHD Series A,Produces Acoustic Interference,
 CAMHD,A,CAMHD Series A,Ready for 2013?,
 CAMHD,A,CAMHD Series A,RSN O&M Spares,
 CAMHD,A,CAMHD Series A,RSN Part Number,
+CAMHD,A,CAMHD Series A,Susceptible to Acoustic Interference,
 CAMHD,A,CAMHD Series A,"Vendor CLIN, SubCLIN or Model #",
 CTDAV,N,CTDAV Series N,2009 Baseline Price*,
 CTDAV,N,CTDAV Series N,2009 Deployed Instrument Count,3
@@ -445,9 +508,11 @@ CTDAV,N,CTDAV Series N,Instrument Configuration,
 CTDAV,N,CTDAV Series N,Link to the Specification,
 CTDAV,N,CTDAV Series N,Notes,
 CTDAV,N,CTDAV Series N,PrimaryScienceDiscipline,P
+CTDAV,N,CTDAV Series N,Produces Acoustic Interference,
 CTDAV,N,CTDAV Series N,Ready for 2013?,
 CTDAV,N,CTDAV Series N,RSN O&M Spares,
 CTDAV,N,CTDAV Series N,RSN Part Number,
+CTDAV,N,CTDAV Series N,Susceptible to Acoustic Interference,
 CTDAV,N,CTDAV Series N,"Vendor CLIN, SubCLIN or Model #",
 CTDBP,C,CTDBP Series C,2009 Baseline Price*,"$10,630.00"
 CTDBP,C,CTDBP Series C,2009 Deployed Instrument Count,15
@@ -466,9 +531,11 @@ CTDBP,C,CTDBP Series C,Instrument Configuration,
 CTDBP,C,CTDBP Series C,Link to the Specification,
 CTDBP,C,CTDBP Series C,Notes,
 CTDBP,C,CTDBP Series C,PrimaryScienceDiscipline,P
+CTDBP,C,CTDBP Series C,Produces Acoustic Interference,
 CTDBP,C,CTDBP Series C,Ready for 2013?,
 CTDBP,C,CTDBP Series C,RSN O&M Spares,
 CTDBP,C,CTDBP Series C,RSN Part Number,
+CTDBP,C,CTDBP Series C,Susceptible to Acoustic Interference,
 CTDBP,C,CTDBP Series C,"Vendor CLIN, SubCLIN or Model #",
 CTDBP,D,CTDBP Series D,2009 Baseline Price*,"$10,630.00"
 CTDBP,D,CTDBP Series D,2009 Deployed Instrument Count,15
@@ -487,9 +554,11 @@ CTDBP,D,CTDBP Series D,Instrument Configuration,
 CTDBP,D,CTDBP Series D,Link to the Specification,
 CTDBP,D,CTDBP Series D,Notes,
 CTDBP,D,CTDBP Series D,PrimaryScienceDiscipline,P
+CTDBP,D,CTDBP Series D,Produces Acoustic Interference,
 CTDBP,D,CTDBP Series D,Ready for 2013?,
 CTDBP,D,CTDBP Series D,RSN O&M Spares,
 CTDBP,D,CTDBP Series D,RSN Part Number,
+CTDBP,D,CTDBP Series D,Susceptible to Acoustic Interference,
 CTDBP,D,CTDBP Series D,"Vendor CLIN, SubCLIN or Model #",
 CTDBP,E,CTDBP Series E,2009 Baseline Price*,"$10,630.00"
 CTDBP,E,CTDBP Series E,2009 Deployed Instrument Count,15
@@ -508,9 +577,11 @@ CTDBP,E,CTDBP Series E,Instrument Configuration,
 CTDBP,E,CTDBP Series E,Link to the Specification,
 CTDBP,E,CTDBP Series E,Notes,
 CTDBP,E,CTDBP Series E,PrimaryScienceDiscipline,P
+CTDBP,E,CTDBP Series E,Produces Acoustic Interference,
 CTDBP,E,CTDBP Series E,Ready for 2013?,
 CTDBP,E,CTDBP Series E,RSN O&M Spares,
 CTDBP,E,CTDBP Series E,RSN Part Number,
+CTDBP,E,CTDBP Series E,Susceptible to Acoustic Interference,
 CTDBP,E,CTDBP Series E,"Vendor CLIN, SubCLIN or Model #",
 CTDBP,F,CTDBP Series F,2009 Baseline Price*,"$10,630.00"
 CTDBP,F,CTDBP Series F,2009 Deployed Instrument Count,15
@@ -529,9 +600,11 @@ CTDBP,F,CTDBP Series F,Instrument Configuration,
 CTDBP,F,CTDBP Series F,Link to the Specification,
 CTDBP,F,CTDBP Series F,Notes,
 CTDBP,F,CTDBP Series F,PrimaryScienceDiscipline,P
+CTDBP,F,CTDBP Series F,Produces Acoustic Interference,
 CTDBP,F,CTDBP Series F,Ready for 2013?,
 CTDBP,F,CTDBP Series F,RSN O&M Spares,
 CTDBP,F,CTDBP Series F,RSN Part Number,
+CTDBP,F,CTDBP Series F,Susceptible to Acoustic Interference,
 CTDBP,F,CTDBP Series F,"Vendor CLIN, SubCLIN or Model #",
 CTDBP,N,CTDBP Series N,2009 Baseline Price*,"$10,630.00"
 CTDBP,N,CTDBP Series N,2009 Deployed Instrument Count,15
@@ -550,9 +623,11 @@ CTDBP,N,CTDBP Series N,Instrument Configuration,
 CTDBP,N,CTDBP Series N,Link to the Specification,
 CTDBP,N,CTDBP Series N,Notes,
 CTDBP,N,CTDBP Series N,PrimaryScienceDiscipline,P
+CTDBP,N,CTDBP Series N,Produces Acoustic Interference,
 CTDBP,N,CTDBP Series N,Ready for 2013?,
 CTDBP,N,CTDBP Series N,RSN O&M Spares,
 CTDBP,N,CTDBP Series N,RSN Part Number,
+CTDBP,N,CTDBP Series N,Susceptible to Acoustic Interference,
 CTDBP,N,CTDBP Series N,"Vendor CLIN, SubCLIN or Model #",
 CTDBP,O,CTDBP Series O,2009 Baseline Price*,"$10,630.00"
 CTDBP,O,CTDBP Series O,2009 Deployed Instrument Count,15
@@ -571,9 +646,11 @@ CTDBP,O,CTDBP Series O,Instrument Configuration,
 CTDBP,O,CTDBP Series O,Link to the Specification,
 CTDBP,O,CTDBP Series O,Notes,
 CTDBP,O,CTDBP Series O,PrimaryScienceDiscipline,P
+CTDBP,O,CTDBP Series O,Produces Acoustic Interference,
 CTDBP,O,CTDBP Series O,Ready for 2013?,
 CTDBP,O,CTDBP Series O,RSN O&M Spares,
 CTDBP,O,CTDBP Series O,RSN Part Number,
+CTDBP,O,CTDBP Series O,Susceptible to Acoustic Interference,
 CTDBP,O,CTDBP Series O,"Vendor CLIN, SubCLIN or Model #",
 CTDGV,M,CTDGV Series M,2009 Baseline Price*,
 CTDGV,M,CTDGV Series M,2009 Deployed Instrument Count,24
@@ -592,31 +669,12 @@ CTDGV,M,CTDGV Series M,Instrument Configuration,
 CTDGV,M,CTDGV Series M,Link to the Specification,
 CTDGV,M,CTDGV Series M,Notes,
 CTDGV,M,CTDGV Series M,PrimaryScienceDiscipline,P
+CTDGV,M,CTDGV Series M,Produces Acoustic Interference,
 CTDGV,M,CTDGV Series M,Ready for 2013?,
 CTDGV,M,CTDGV Series M,RSN O&M Spares,
 CTDGV,M,CTDGV Series M,RSN Part Number,
+CTDGV,M,CTDGV Series M,Susceptible to Acoustic Interference,
 CTDGV,M,CTDGV Series M,"Vendor CLIN, SubCLIN or Model #",
-CTDMO,F,CTDMO Series F,2009 Baseline Price*,"$5,760.00"
-CTDMO,F,CTDMO Series F,2009 Deployed Instrument Count,138
-CTDMO,F,CTDMO Series F,Alternate Instrument Class Name,CTD Mooring (Inductive)
-CTDMO,F,CTDMO Series F,CE Spares,
-CTDMO,F,CTDMO Series F,CGSN MREFC Spares,
-CTDMO,F,CTDMO Series F,CGSN O&M Spares,
-CTDMO,F,CTDMO Series F,CGSN P/N,
-CTDMO,F,CTDMO Series F,ClassLongName,CTD_mooring
-CTDMO,F,CTDMO Series F,Comments,
-CTDMO,F,CTDMO Series F,CP Spares,
-CTDMO,F,CTDMO Series F,Description,CTDs to be used in surface and subsurface moorings
-CTDMO,F,CTDMO Series F,ECRs that changed the count,
-CTDMO,F,CTDMO Series F,Global Spares,
-CTDMO,F,CTDMO Series F,Instrument Configuration,
-CTDMO,F,CTDMO Series F,Link to the Specification,
-CTDMO,F,CTDMO Series F,Notes,
-CTDMO,F,CTDMO Series F,PrimaryScienceDiscipline,P
-CTDMO,F,CTDMO Series F,Ready for 2013?,
-CTDMO,F,CTDMO Series F,RSN O&M Spares,
-CTDMO,F,CTDMO Series F,RSN Part Number,
-CTDMO,F,CTDMO Series F,"Vendor CLIN, SubCLIN or Model #",
 CTDMO,G,CTDMO Series G,2009 Baseline Price*,"$5,760.00"
 CTDMO,G,CTDMO Series G,2009 Deployed Instrument Count,138
 CTDMO,G,CTDMO Series G,Alternate Instrument Class Name,CTD Mooring (Inductive)
@@ -634,9 +692,11 @@ CTDMO,G,CTDMO Series G,Instrument Configuration,
 CTDMO,G,CTDMO Series G,Link to the Specification,
 CTDMO,G,CTDMO Series G,Notes,
 CTDMO,G,CTDMO Series G,PrimaryScienceDiscipline,P
+CTDMO,G,CTDMO Series G,Produces Acoustic Interference,
 CTDMO,G,CTDMO Series G,Ready for 2013?,
 CTDMO,G,CTDMO Series G,RSN O&M Spares,
 CTDMO,G,CTDMO Series G,RSN Part Number,
+CTDMO,G,CTDMO Series G,Susceptible to Acoustic Interference,
 CTDMO,G,CTDMO Series G,"Vendor CLIN, SubCLIN or Model #",
 CTDMO,H,CTDMO Series H,2009 Baseline Price*,"$5,760.00"
 CTDMO,H,CTDMO Series H,2009 Deployed Instrument Count,138
@@ -655,9 +715,11 @@ CTDMO,H,CTDMO Series H,Instrument Configuration,
 CTDMO,H,CTDMO Series H,Link to the Specification,
 CTDMO,H,CTDMO Series H,Notes,
 CTDMO,H,CTDMO Series H,PrimaryScienceDiscipline,P
+CTDMO,H,CTDMO Series H,Produces Acoustic Interference,
 CTDMO,H,CTDMO Series H,Ready for 2013?,
 CTDMO,H,CTDMO Series H,RSN O&M Spares,
 CTDMO,H,CTDMO Series H,RSN Part Number,
+CTDMO,H,CTDMO Series H,Susceptible to Acoustic Interference,
 CTDMO,H,CTDMO Series H,"Vendor CLIN, SubCLIN or Model #",
 CTDMO,Q,CTDMO Series Q,2009 Baseline Price*,"$5,760.00"
 CTDMO,Q,CTDMO Series Q,2009 Deployed Instrument Count,138
@@ -676,9 +738,11 @@ CTDMO,Q,CTDMO Series Q,Instrument Configuration,
 CTDMO,Q,CTDMO Series Q,Link to the Specification,
 CTDMO,Q,CTDMO Series Q,Notes,
 CTDMO,Q,CTDMO Series Q,PrimaryScienceDiscipline,P
+CTDMO,Q,CTDMO Series Q,Produces Acoustic Interference,
 CTDMO,Q,CTDMO Series Q,Ready for 2013?,
 CTDMO,Q,CTDMO Series Q,RSN O&M Spares,
 CTDMO,Q,CTDMO Series Q,RSN Part Number,
+CTDMO,Q,CTDMO Series Q,Susceptible to Acoustic Interference,
 CTDMO,Q,CTDMO Series Q,"Vendor CLIN, SubCLIN or Model #",
 CTDMO,R,CTDMO Series R,2009 Baseline Price*,"$5,760.00"
 CTDMO,R,CTDMO Series R,2009 Deployed Instrument Count,138
@@ -697,9 +761,11 @@ CTDMO,R,CTDMO Series R,Instrument Configuration,
 CTDMO,R,CTDMO Series R,Link to the Specification,
 CTDMO,R,CTDMO Series R,Notes,
 CTDMO,R,CTDMO Series R,PrimaryScienceDiscipline,P
+CTDMO,R,CTDMO Series R,Produces Acoustic Interference,
 CTDMO,R,CTDMO Series R,Ready for 2013?,
 CTDMO,R,CTDMO Series R,RSN O&M Spares,
 CTDMO,R,CTDMO Series R,RSN Part Number,
+CTDMO,R,CTDMO Series R,Susceptible to Acoustic Interference,
 CTDMO,R,CTDMO Series R,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,0,CTDPF Series 0,2009 Baseline Price*,
 CTDPF,0,CTDPF Series 0,2009 Deployed Instrument Count,30
@@ -718,9 +784,11 @@ CTDPF,0,CTDPF Series 0,Instrument Configuration,
 CTDPF,0,CTDPF Series 0,Link to the Specification,
 CTDPF,0,CTDPF Series 0,Notes,
 CTDPF,0,CTDPF Series 0,PrimaryScienceDiscipline,P
+CTDPF,0,CTDPF Series 0,Produces Acoustic Interference,
 CTDPF,0,CTDPF Series 0,Ready for 2013?,
 CTDPF,0,CTDPF Series 0,RSN O&M Spares,
 CTDPF,0,CTDPF Series 0,RSN Part Number,
+CTDPF,0,CTDPF Series 0,Susceptible to Acoustic Interference,
 CTDPF,0,CTDPF Series 0,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,A,CTDPF Series A,2009 Baseline Price*,
 CTDPF,A,CTDPF Series A,2009 Deployed Instrument Count,30
@@ -739,9 +807,11 @@ CTDPF,A,CTDPF Series A,Instrument Configuration,
 CTDPF,A,CTDPF Series A,Link to the Specification,
 CTDPF,A,CTDPF Series A,Notes,
 CTDPF,A,CTDPF Series A,PrimaryScienceDiscipline,P
+CTDPF,A,CTDPF Series A,Produces Acoustic Interference,
 CTDPF,A,CTDPF Series A,Ready for 2013?,
 CTDPF,A,CTDPF Series A,RSN O&M Spares,
 CTDPF,A,CTDPF Series A,RSN Part Number,
+CTDPF,A,CTDPF Series A,Susceptible to Acoustic Interference,
 CTDPF,A,CTDPF Series A,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,B,CTDPF Series B,2009 Baseline Price*,
 CTDPF,B,CTDPF Series B,2009 Deployed Instrument Count,30
@@ -760,10 +830,35 @@ CTDPF,B,CTDPF Series B,Instrument Configuration,
 CTDPF,B,CTDPF Series B,Link to the Specification,
 CTDPF,B,CTDPF Series B,Notes,
 CTDPF,B,CTDPF Series B,PrimaryScienceDiscipline,P
+CTDPF,B,CTDPF Series B,Produces Acoustic Interference,
 CTDPF,B,CTDPF Series B,Ready for 2013?,
 CTDPF,B,CTDPF Series B,RSN O&M Spares,
 CTDPF,B,CTDPF Series B,RSN Part Number,
+CTDPF,B,CTDPF Series B,Susceptible to Acoustic Interference,
 CTDPF,B,CTDPF Series B,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,C,CTDPF Series C,2009 Baseline Price*,
+CTDPF,C,CTDPF Series C,2009 Deployed Instrument Count,30
+CTDPF,C,CTDPF Series C,Alternate Instrument Class Name,CTD Profiler
+CTDPF,C,CTDPF Series C,CE Spares,
+CTDPF,C,CTDPF Series C,CGSN MREFC Spares,
+CTDPF,C,CTDPF Series C,CGSN O&M Spares,
+CTDPF,C,CTDPF Series C,CGSN P/N,
+CTDPF,C,CTDPF Series C,ClassLongName,CTD_profiler
+CTDPF,C,CTDPF Series C,Comments,
+CTDPF,C,CTDPF Series C,CP Spares,
+CTDPF,C,CTDPF Series C,Description,CTDs to be mounted on a profiler
+CTDPF,C,CTDPF Series C,ECRs that changed the count,ECR 1303-00796
+CTDPF,C,CTDPF Series C,Global Spares,
+CTDPF,C,CTDPF Series C,Instrument Configuration,
+CTDPF,C,CTDPF Series C,Link to the Specification,
+CTDPF,C,CTDPF Series C,Notes,
+CTDPF,C,CTDPF Series C,PrimaryScienceDiscipline,P
+CTDPF,C,CTDPF Series C,Produces Acoustic Interference,
+CTDPF,C,CTDPF Series C,Ready for 2013?,
+CTDPF,C,CTDPF Series C,RSN O&M Spares,
+CTDPF,C,CTDPF Series C,RSN Part Number,
+CTDPF,C,CTDPF Series C,Susceptible to Acoustic Interference,
+CTDPF,C,CTDPF Series C,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,K,CTDPF Series K,2009 Baseline Price*,
 CTDPF,K,CTDPF Series K,2009 Deployed Instrument Count,30
 CTDPF,K,CTDPF Series K,Alternate Instrument Class Name,CTD Profiler
@@ -781,9 +876,11 @@ CTDPF,K,CTDPF Series K,Instrument Configuration,
 CTDPF,K,CTDPF Series K,Link to the Specification,
 CTDPF,K,CTDPF Series K,Notes,
 CTDPF,K,CTDPF Series K,PrimaryScienceDiscipline,P
+CTDPF,K,CTDPF Series K,Produces Acoustic Interference,
 CTDPF,K,CTDPF Series K,Ready for 2013?,
 CTDPF,K,CTDPF Series K,RSN O&M Spares,
 CTDPF,K,CTDPF Series K,RSN Part Number,
+CTDPF,K,CTDPF Series K,Susceptible to Acoustic Interference,
 CTDPF,K,CTDPF Series K,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,L,CTDPF Series L,2009 Baseline Price*,
 CTDPF,L,CTDPF Series L,2009 Deployed Instrument Count,30
@@ -802,9 +899,11 @@ CTDPF,L,CTDPF Series L,Instrument Configuration,
 CTDPF,L,CTDPF Series L,Link to the Specification,
 CTDPF,L,CTDPF Series L,Notes,
 CTDPF,L,CTDPF Series L,PrimaryScienceDiscipline,P
+CTDPF,L,CTDPF Series L,Produces Acoustic Interference,
 CTDPF,L,CTDPF Series L,Ready for 2013?,
 CTDPF,L,CTDPF Series L,RSN O&M Spares,
 CTDPF,L,CTDPF Series L,RSN Part Number,
+CTDPF,L,CTDPF Series L,Susceptible to Acoustic Interference,
 CTDPF,L,CTDPF Series L,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,R,CTDPF Series R,2009 Baseline Price*,
 CTDPF,R,CTDPF Series R,2009 Deployed Instrument Count,30
@@ -823,9 +922,11 @@ CTDPF,R,CTDPF Series R,Instrument Configuration,
 CTDPF,R,CTDPF Series R,Link to the Specification,
 CTDPF,R,CTDPF Series R,Notes,
 CTDPF,R,CTDPF Series R,PrimaryScienceDiscipline,P
+CTDPF,R,CTDPF Series R,Produces Acoustic Interference,
 CTDPF,R,CTDPF Series R,Ready for 2013?,
 CTDPF,R,CTDPF Series R,RSN O&M Spares,
 CTDPF,R,CTDPF Series R,RSN Part Number,
+CTDPF,R,CTDPF Series R,Susceptible to Acoustic Interference,
 CTDPF,R,CTDPF Series R,"Vendor CLIN, SubCLIN or Model #",
 DOFST,0,DOFST Series 0,2009 Baseline Price*,
 DOFST,0,DOFST Series 0,2009 Deployed Instrument Count,21
@@ -844,9 +945,11 @@ DOFST,0,DOFST Series 0,Instrument Configuration,
 DOFST,0,DOFST Series 0,Link to the Specification,
 DOFST,0,DOFST Series 0,Notes,
 DOFST,0,DOFST Series 0,PrimaryScienceDiscipline,C
+DOFST,0,DOFST Series 0,Produces Acoustic Interference,
 DOFST,0,DOFST Series 0,Ready for 2013?,
 DOFST,0,DOFST Series 0,RSN O&M Spares,
 DOFST,0,DOFST Series 0,RSN Part Number,
+DOFST,0,DOFST Series 0,Susceptible to Acoustic Interference,
 DOFST,0,DOFST Series 0,"Vendor CLIN, SubCLIN or Model #",
 DOFST,A,DOFST Series A,2009 Baseline Price*,
 DOFST,A,DOFST Series A,2009 Deployed Instrument Count,21
@@ -865,9 +968,11 @@ DOFST,A,DOFST Series A,Instrument Configuration,
 DOFST,A,DOFST Series A,Link to the Specification,
 DOFST,A,DOFST Series A,Notes,
 DOFST,A,DOFST Series A,PrimaryScienceDiscipline,C
+DOFST,A,DOFST Series A,Produces Acoustic Interference,
 DOFST,A,DOFST Series A,Ready for 2013?,
 DOFST,A,DOFST Series A,RSN O&M Spares,
 DOFST,A,DOFST Series A,RSN Part Number,
+DOFST,A,DOFST Series A,Susceptible to Acoustic Interference,
 DOFST,A,DOFST Series A,"Vendor CLIN, SubCLIN or Model #",
 DOFST,K,DOFST Series K,2009 Baseline Price*,
 DOFST,K,DOFST Series K,2009 Deployed Instrument Count,21
@@ -886,9 +991,11 @@ DOFST,K,DOFST Series K,Instrument Configuration,
 DOFST,K,DOFST Series K,Link to the Specification,
 DOFST,K,DOFST Series K,Notes,
 DOFST,K,DOFST Series K,PrimaryScienceDiscipline,C
+DOFST,K,DOFST Series K,Produces Acoustic Interference,
 DOFST,K,DOFST Series K,Ready for 2013?,
 DOFST,K,DOFST Series K,RSN O&M Spares,
 DOFST,K,DOFST Series K,RSN Part Number,
+DOFST,K,DOFST Series K,Susceptible to Acoustic Interference,
 DOFST,K,DOFST Series K,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,0,DOSTA Series 0,2009 Baseline Price*,"$6,000.00"
 DOSTA,0,DOSTA Series 0,2009 Deployed Instrument Count,61
@@ -907,9 +1014,11 @@ DOSTA,0,DOSTA Series 0,Instrument Configuration,
 DOSTA,0,DOSTA Series 0,Link to the Specification,
 DOSTA,0,DOSTA Series 0,Notes,
 DOSTA,0,DOSTA Series 0,PrimaryScienceDiscipline,C
+DOSTA,0,DOSTA Series 0,Produces Acoustic Interference,
 DOSTA,0,DOSTA Series 0,Ready for 2013?,
 DOSTA,0,DOSTA Series 0,RSN O&M Spares,
 DOSTA,0,DOSTA Series 0,RSN Part Number,
+DOSTA,0,DOSTA Series 0,Susceptible to Acoustic Interference,
 DOSTA,0,DOSTA Series 0,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,A,DOSTA Series A,2009 Baseline Price*,"$6,000.00"
 DOSTA,A,DOSTA Series A,2009 Deployed Instrument Count,61
@@ -928,9 +1037,11 @@ DOSTA,A,DOSTA Series A,Instrument Configuration,
 DOSTA,A,DOSTA Series A,Link to the Specification,
 DOSTA,A,DOSTA Series A,Notes,
 DOSTA,A,DOSTA Series A,PrimaryScienceDiscipline,C
+DOSTA,A,DOSTA Series A,Produces Acoustic Interference,
 DOSTA,A,DOSTA Series A,Ready for 2013?,
 DOSTA,A,DOSTA Series A,RSN O&M Spares,
 DOSTA,A,DOSTA Series A,RSN Part Number,
+DOSTA,A,DOSTA Series A,Susceptible to Acoustic Interference,
 DOSTA,A,DOSTA Series A,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,B,DOSTA Series B,2009 Baseline Price*,"$6,000.00"
 DOSTA,B,DOSTA Series B,2009 Deployed Instrument Count,61
@@ -949,9 +1060,11 @@ DOSTA,B,DOSTA Series B,Instrument Configuration,
 DOSTA,B,DOSTA Series B,Link to the Specification,
 DOSTA,B,DOSTA Series B,Notes,
 DOSTA,B,DOSTA Series B,PrimaryScienceDiscipline,C
+DOSTA,B,DOSTA Series B,Produces Acoustic Interference,
 DOSTA,B,DOSTA Series B,Ready for 2013?,
 DOSTA,B,DOSTA Series B,RSN O&M Spares,
 DOSTA,B,DOSTA Series B,RSN Part Number,
+DOSTA,B,DOSTA Series B,Susceptible to Acoustic Interference,
 DOSTA,B,DOSTA Series B,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,C,DOSTA Series C,2009 Baseline Price*,"$6,000.00"
 DOSTA,C,DOSTA Series C,2009 Deployed Instrument Count,61
@@ -970,9 +1083,11 @@ DOSTA,C,DOSTA Series C,Instrument Configuration,
 DOSTA,C,DOSTA Series C,Link to the Specification,
 DOSTA,C,DOSTA Series C,Notes,
 DOSTA,C,DOSTA Series C,PrimaryScienceDiscipline,C
+DOSTA,C,DOSTA Series C,Produces Acoustic Interference,
 DOSTA,C,DOSTA Series C,Ready for 2013?,
 DOSTA,C,DOSTA Series C,RSN O&M Spares,
 DOSTA,C,DOSTA Series C,RSN Part Number,
+DOSTA,C,DOSTA Series C,Susceptible to Acoustic Interference,
 DOSTA,C,DOSTA Series C,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,D,DOSTA Series D,2009 Baseline Price*,"$6,000.00"
 DOSTA,D,DOSTA Series D,2009 Deployed Instrument Count,61
@@ -991,9 +1106,11 @@ DOSTA,D,DOSTA Series D,Instrument Configuration,
 DOSTA,D,DOSTA Series D,Link to the Specification,
 DOSTA,D,DOSTA Series D,Notes,
 DOSTA,D,DOSTA Series D,PrimaryScienceDiscipline,C
+DOSTA,D,DOSTA Series D,Produces Acoustic Interference,
 DOSTA,D,DOSTA Series D,Ready for 2013?,
 DOSTA,D,DOSTA Series D,RSN O&M Spares,
 DOSTA,D,DOSTA Series D,RSN Part Number,
+DOSTA,D,DOSTA Series D,Susceptible to Acoustic Interference,
 DOSTA,D,DOSTA Series D,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,K,DOSTA Series K,2009 Baseline Price*,"$6,000.00"
 DOSTA,K,DOSTA Series K,2009 Deployed Instrument Count,61
@@ -1012,9 +1129,11 @@ DOSTA,K,DOSTA Series K,Instrument Configuration,
 DOSTA,K,DOSTA Series K,Link to the Specification,
 DOSTA,K,DOSTA Series K,Notes,
 DOSTA,K,DOSTA Series K,PrimaryScienceDiscipline,C
+DOSTA,K,DOSTA Series K,Produces Acoustic Interference,
 DOSTA,K,DOSTA Series K,Ready for 2013?,
 DOSTA,K,DOSTA Series K,RSN O&M Spares,
 DOSTA,K,DOSTA Series K,RSN Part Number,
+DOSTA,K,DOSTA Series K,Susceptible to Acoustic Interference,
 DOSTA,K,DOSTA Series K,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,L,DOSTA Series L,2009 Baseline Price*,"$6,000.00"
 DOSTA,L,DOSTA Series L,2009 Deployed Instrument Count,61
@@ -1033,9 +1152,11 @@ DOSTA,L,DOSTA Series L,Instrument Configuration,
 DOSTA,L,DOSTA Series L,Link to the Specification,
 DOSTA,L,DOSTA Series L,Notes,
 DOSTA,L,DOSTA Series L,PrimaryScienceDiscipline,C
+DOSTA,L,DOSTA Series L,Produces Acoustic Interference,
 DOSTA,L,DOSTA Series L,Ready for 2013?,
 DOSTA,L,DOSTA Series L,RSN O&M Spares,
 DOSTA,L,DOSTA Series L,RSN Part Number,
+DOSTA,L,DOSTA Series L,Susceptible to Acoustic Interference,
 DOSTA,L,DOSTA Series L,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,M,DOSTA Series M,2009 Baseline Price*,"$6,000.00"
 DOSTA,M,DOSTA Series M,2009 Deployed Instrument Count,61
@@ -1054,9 +1175,11 @@ DOSTA,M,DOSTA Series M,Instrument Configuration,
 DOSTA,M,DOSTA Series M,Link to the Specification,
 DOSTA,M,DOSTA Series M,Notes,
 DOSTA,M,DOSTA Series M,PrimaryScienceDiscipline,C
+DOSTA,M,DOSTA Series M,Produces Acoustic Interference,
 DOSTA,M,DOSTA Series M,Ready for 2013?,
 DOSTA,M,DOSTA Series M,RSN O&M Spares,
 DOSTA,M,DOSTA Series M,RSN Part Number,
+DOSTA,M,DOSTA Series M,Susceptible to Acoustic Interference,
 DOSTA,M,DOSTA Series M,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,N,DOSTA Series N,2009 Baseline Price*,"$6,000.00"
 DOSTA,N,DOSTA Series N,2009 Deployed Instrument Count,61
@@ -1075,13 +1198,15 @@ DOSTA,N,DOSTA Series N,Instrument Configuration,
 DOSTA,N,DOSTA Series N,Link to the Specification,
 DOSTA,N,DOSTA Series N,Notes,
 DOSTA,N,DOSTA Series N,PrimaryScienceDiscipline,C
+DOSTA,N,DOSTA Series N,Produces Acoustic Interference,
 DOSTA,N,DOSTA Series N,Ready for 2013?,
 DOSTA,N,DOSTA Series N,RSN O&M Spares,
 DOSTA,N,DOSTA Series N,RSN Part Number,
+DOSTA,N,DOSTA Series N,Susceptible to Acoustic Interference,
 DOSTA,N,DOSTA Series N,"Vendor CLIN, SubCLIN or Model #",
 FDCHP,0,FDCHP Series 0,2009 Baseline Price*,"$55,900.00"
 FDCHP,0,FDCHP Series 0,2009 Deployed Instrument Count,7
-FDCHP,0,FDCHP Series 0,Alternate Instrument Class Name,Direct Covariance Flux (High Power)
+FDCHP,0,FDCHP Series 0,Alternate Instrument Class Name,Direct Covariance Flux
 FDCHP,0,FDCHP Series 0,CE Spares,
 FDCHP,0,FDCHP Series 0,CGSN MREFC Spares,
 FDCHP,0,FDCHP Series 0,CGSN O&M Spares,
@@ -1096,13 +1221,15 @@ FDCHP,0,FDCHP Series 0,Instrument Configuration,
 FDCHP,0,FDCHP Series 0,Link to the Specification,
 FDCHP,0,FDCHP Series 0,Notes,
 FDCHP,0,FDCHP Series 0,PrimaryScienceDiscipline,P
+FDCHP,0,FDCHP Series 0,Produces Acoustic Interference,
 FDCHP,0,FDCHP Series 0,Ready for 2013?,Maybe
 FDCHP,0,FDCHP Series 0,RSN O&M Spares,
 FDCHP,0,FDCHP Series 0,RSN Part Number,
+FDCHP,0,FDCHP Series 0,Susceptible to Acoustic Interference,
 FDCHP,0,FDCHP Series 0,"Vendor CLIN, SubCLIN or Model #",
 FDCHP,A,FDCHP Series A,2009 Baseline Price*,"$55,900.00"
 FDCHP,A,FDCHP Series A,2009 Deployed Instrument Count,7
-FDCHP,A,FDCHP Series A,Alternate Instrument Class Name,Direct Covariance Flux (High Power)
+FDCHP,A,FDCHP Series A,Alternate Instrument Class Name,Direct Covariance Flux
 FDCHP,A,FDCHP Series A,CE Spares,
 FDCHP,A,FDCHP Series A,CGSN MREFC Spares,
 FDCHP,A,FDCHP Series A,CGSN O&M Spares,
@@ -1117,13 +1244,15 @@ FDCHP,A,FDCHP Series A,Instrument Configuration,
 FDCHP,A,FDCHP Series A,Link to the Specification,
 FDCHP,A,FDCHP Series A,Notes,
 FDCHP,A,FDCHP Series A,PrimaryScienceDiscipline,P
-FDCHP,A,FDCHP Series A,Ready for 2013?,Maybe
+FDCHP,A,FDCHP Series A,Produces Acoustic Interference,
+FDCHP,A,FDCHP Series A,Ready for 2013?,No
 FDCHP,A,FDCHP Series A,RSN O&M Spares,
 FDCHP,A,FDCHP Series A,RSN Part Number,
+FDCHP,A,FDCHP Series A,Susceptible to Acoustic Interference,
 FDCHP,A,FDCHP Series A,"Vendor CLIN, SubCLIN or Model #",
 FDCLP,0,FDCLP Series 0,2009 Baseline Price*,"$30,000.00"
 FDCLP,0,FDCLP Series 0,2009 Deployed Instrument Count,3
-FDCLP,0,FDCLP Series 0,Alternate Instrument Class Name,Direct Covariance Flux (Low Power)
+FDCLP,0,FDCLP Series 0,Alternate Instrument Class Name,Direct Covariance Flux (Low Power) - DEPRECATED
 FDCLP,0,FDCLP Series 0,CE Spares,
 FDCLP,0,FDCLP Series 0,CGSN MREFC Spares,
 FDCLP,0,FDCLP Series 0,CGSN O&M Spares,
@@ -1131,20 +1260,22 @@ FDCLP,0,FDCLP Series 0,CGSN P/N,
 FDCLP,0,FDCLP Series 0,ClassLongName,flux_direct_cov_LP
 FDCLP,0,FDCLP Series 0,Comments,
 FDCLP,0,FDCLP Series 0,CP Spares,
-FDCLP,0,FDCLP Series 0,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
+FDCLP,0,FDCLP Series 0,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
 FDCLP,0,FDCLP Series 0,ECRs that changed the count,
 FDCLP,0,FDCLP Series 0,Global Spares,
 FDCLP,0,FDCLP Series 0,Instrument Configuration,
 FDCLP,0,FDCLP Series 0,Link to the Specification,
 FDCLP,0,FDCLP Series 0,Notes,
 FDCLP,0,FDCLP Series 0,PrimaryScienceDiscipline,P
+FDCLP,0,FDCLP Series 0,Produces Acoustic Interference,
 FDCLP,0,FDCLP Series 0,Ready for 2013?,Maybe
 FDCLP,0,FDCLP Series 0,RSN O&M Spares,
 FDCLP,0,FDCLP Series 0,RSN Part Number,
+FDCLP,0,FDCLP Series 0,Susceptible to Acoustic Interference,
 FDCLP,0,FDCLP Series 0,"Vendor CLIN, SubCLIN or Model #",
 FDCLP,A,FDCLP Series A,2009 Baseline Price*,"$30,000.00"
 FDCLP,A,FDCLP Series A,2009 Deployed Instrument Count,3
-FDCLP,A,FDCLP Series A,Alternate Instrument Class Name,Direct Covariance Flux (Low Power)
+FDCLP,A,FDCLP Series A,Alternate Instrument Class Name,Direct Covariance Flux (Low Power) - DEPRECATED
 FDCLP,A,FDCLP Series A,CE Spares,
 FDCLP,A,FDCLP Series A,CGSN MREFC Spares,
 FDCLP,A,FDCLP Series A,CGSN O&M Spares,
@@ -1152,16 +1283,18 @@ FDCLP,A,FDCLP Series A,CGSN P/N,
 FDCLP,A,FDCLP Series A,ClassLongName,flux_direct_cov_LP
 FDCLP,A,FDCLP Series A,Comments,
 FDCLP,A,FDCLP Series A,CP Spares,
-FDCLP,A,FDCLP Series A,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
+FDCLP,A,FDCLP Series A,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
 FDCLP,A,FDCLP Series A,ECRs that changed the count,
 FDCLP,A,FDCLP Series A,Global Spares,
 FDCLP,A,FDCLP Series A,Instrument Configuration,
 FDCLP,A,FDCLP Series A,Link to the Specification,
 FDCLP,A,FDCLP Series A,Notes,
 FDCLP,A,FDCLP Series A,PrimaryScienceDiscipline,P
+FDCLP,A,FDCLP Series A,Produces Acoustic Interference,
 FDCLP,A,FDCLP Series A,Ready for 2013?,Maybe
 FDCLP,A,FDCLP Series A,RSN O&M Spares,
 FDCLP,A,FDCLP Series A,RSN Part Number,
+FDCLP,A,FDCLP Series A,Susceptible to Acoustic Interference,
 FDCLP,A,FDCLP Series A,"Vendor CLIN, SubCLIN or Model #",
 FLOBN,A,FLOBN Series A,2009 Baseline Price*,
 FLOBN,A,FLOBN Series A,2009 Deployed Instrument Count,1
@@ -1180,9 +1313,11 @@ FLOBN,A,FLOBN Series A,Instrument Configuration,
 FLOBN,A,FLOBN Series A,Link to the Specification,
 FLOBN,A,FLOBN Series A,Notes,
 FLOBN,A,FLOBN Series A,PrimaryScienceDiscipline,C
+FLOBN,A,FLOBN Series A,Produces Acoustic Interference,
 FLOBN,A,FLOBN Series A,Ready for 2013?,
 FLOBN,A,FLOBN Series A,RSN O&M Spares,
 FLOBN,A,FLOBN Series A,RSN Part Number,
+FLOBN,A,FLOBN Series A,Susceptible to Acoustic Interference,
 FLOBN,A,FLOBN Series A,"Vendor CLIN, SubCLIN or Model #",
 FLORD,0,FLORD Series 0,2009 Baseline Price*,"$5,600.00"
 FLORD,0,FLORD Series 0,2009 Deployed Instrument Count,35
@@ -1201,9 +1336,11 @@ FLORD,0,FLORD Series 0,Instrument Configuration,
 FLORD,0,FLORD Series 0,Link to the Specification,
 FLORD,0,FLORD Series 0,Notes,
 FLORD,0,FLORD Series 0,PrimaryScienceDiscipline,B
+FLORD,0,FLORD Series 0,Produces Acoustic Interference,
 FLORD,0,FLORD Series 0,Ready for 2013?,
 FLORD,0,FLORD Series 0,RSN O&M Spares,
 FLORD,0,FLORD Series 0,RSN Part Number,
+FLORD,0,FLORD Series 0,Susceptible to Acoustic Interference,
 FLORD,0,FLORD Series 0,"Vendor CLIN, SubCLIN or Model #",
 FLORD,A,FLORD Series A,2009 Baseline Price*,"$5,600.00"
 FLORD,A,FLORD Series A,2009 Deployed Instrument Count,35
@@ -1222,10 +1359,35 @@ FLORD,A,FLORD Series A,Instrument Configuration,
 FLORD,A,FLORD Series A,Link to the Specification,
 FLORD,A,FLORD Series A,Notes,
 FLORD,A,FLORD Series A,PrimaryScienceDiscipline,B
+FLORD,A,FLORD Series A,Produces Acoustic Interference,
 FLORD,A,FLORD Series A,Ready for 2013?,
 FLORD,A,FLORD Series A,RSN O&M Spares,
 FLORD,A,FLORD Series A,RSN Part Number,
+FLORD,A,FLORD Series A,Susceptible to Acoustic Interference,
 FLORD,A,FLORD Series A,"Vendor CLIN, SubCLIN or Model #",
+FLORD,D,FLORD Series D,2009 Baseline Price*,"$5,600.00"
+FLORD,D,FLORD Series D,2009 Deployed Instrument Count,35
+FLORD,D,FLORD Series D,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,D,FLORD Series D,CE Spares,
+FLORD,D,FLORD Series D,CGSN MREFC Spares,
+FLORD,D,FLORD Series D,CGSN O&M Spares,
+FLORD,D,FLORD Series D,CGSN P/N,
+FLORD,D,FLORD Series D,ClassLongName,Fluorometer_two_wavelength
+FLORD,D,FLORD Series D,Comments,
+FLORD,D,FLORD Series D,CP Spares,
+FLORD,D,FLORD Series D,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,D,FLORD Series D,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,D,FLORD Series D,Global Spares,
+FLORD,D,FLORD Series D,Instrument Configuration,
+FLORD,D,FLORD Series D,Link to the Specification,
+FLORD,D,FLORD Series D,Notes,
+FLORD,D,FLORD Series D,PrimaryScienceDiscipline,B
+FLORD,D,FLORD Series D,Produces Acoustic Interference,
+FLORD,D,FLORD Series D,Ready for 2013?,
+FLORD,D,FLORD Series D,RSN O&M Spares,
+FLORD,D,FLORD Series D,RSN Part Number,
+FLORD,D,FLORD Series D,Susceptible to Acoustic Interference,
+FLORD,D,FLORD Series D,"Vendor CLIN, SubCLIN or Model #",
 FLORD,E,FLORD Series E,2009 Baseline Price*,"$5,600.00"
 FLORD,E,FLORD Series E,2009 Deployed Instrument Count,35
 FLORD,E,FLORD Series E,Alternate Instrument Class Name,2-Wavelength Fluorometer
@@ -1243,9 +1405,11 @@ FLORD,E,FLORD Series E,Instrument Configuration,
 FLORD,E,FLORD Series E,Link to the Specification,
 FLORD,E,FLORD Series E,Notes,
 FLORD,E,FLORD Series E,PrimaryScienceDiscipline,B
+FLORD,E,FLORD Series E,Produces Acoustic Interference,
 FLORD,E,FLORD Series E,Ready for 2013?,
 FLORD,E,FLORD Series E,RSN O&M Spares,
 FLORD,E,FLORD Series E,RSN Part Number,
+FLORD,E,FLORD Series E,Susceptible to Acoustic Interference,
 FLORD,E,FLORD Series E,"Vendor CLIN, SubCLIN or Model #",
 FLORD,L,FLORD Series L,2009 Baseline Price*,"$5,600.00"
 FLORD,L,FLORD Series L,2009 Deployed Instrument Count,35
@@ -1264,9 +1428,11 @@ FLORD,L,FLORD Series L,Instrument Configuration,
 FLORD,L,FLORD Series L,Link to the Specification,
 FLORD,L,FLORD Series L,Notes,
 FLORD,L,FLORD Series L,PrimaryScienceDiscipline,B
+FLORD,L,FLORD Series L,Produces Acoustic Interference,
 FLORD,L,FLORD Series L,Ready for 2013?,
 FLORD,L,FLORD Series L,RSN O&M Spares,
 FLORD,L,FLORD Series L,RSN Part Number,
+FLORD,L,FLORD Series L,Susceptible to Acoustic Interference,
 FLORD,L,FLORD Series L,"Vendor CLIN, SubCLIN or Model #",
 FLORD,M,FLORD Series M,2009 Baseline Price*,"$5,600.00"
 FLORD,M,FLORD Series M,2009 Deployed Instrument Count,35
@@ -1285,9 +1451,11 @@ FLORD,M,FLORD Series M,Instrument Configuration,
 FLORD,M,FLORD Series M,Link to the Specification,
 FLORD,M,FLORD Series M,Notes,
 FLORD,M,FLORD Series M,PrimaryScienceDiscipline,B
+FLORD,M,FLORD Series M,Produces Acoustic Interference,
 FLORD,M,FLORD Series M,Ready for 2013?,
 FLORD,M,FLORD Series M,RSN O&M Spares,
 FLORD,M,FLORD Series M,RSN Part Number,
+FLORD,M,FLORD Series M,Susceptible to Acoustic Interference,
 FLORD,M,FLORD Series M,"Vendor CLIN, SubCLIN or Model #",
 FLORT,0,FLORT Series 0,2009 Baseline Price*,"$13,905.00"
 FLORT,0,FLORT Series 0,2009 Deployed Instrument Count,42
@@ -1306,9 +1474,11 @@ FLORT,0,FLORT Series 0,Instrument Configuration,
 FLORT,0,FLORT Series 0,Link to the Specification,
 FLORT,0,FLORT Series 0,Notes,
 FLORT,0,FLORT Series 0,PrimaryScienceDiscipline,B
+FLORT,0,FLORT Series 0,Produces Acoustic Interference,
 FLORT,0,FLORT Series 0,Ready for 2013?,
 FLORT,0,FLORT Series 0,RSN O&M Spares,
 FLORT,0,FLORT Series 0,RSN Part Number,
+FLORT,0,FLORT Series 0,Susceptible to Acoustic Interference,
 FLORT,0,FLORT Series 0,"Vendor CLIN, SubCLIN or Model #",
 FLORT,A,FLORT Series A,2009 Baseline Price*,"$13,905.00"
 FLORT,A,FLORT Series A,2009 Deployed Instrument Count,42
@@ -1327,9 +1497,11 @@ FLORT,A,FLORT Series A,Instrument Configuration,
 FLORT,A,FLORT Series A,Link to the Specification,
 FLORT,A,FLORT Series A,Notes,
 FLORT,A,FLORT Series A,PrimaryScienceDiscipline,B
+FLORT,A,FLORT Series A,Produces Acoustic Interference,
 FLORT,A,FLORT Series A,Ready for 2013?,
 FLORT,A,FLORT Series A,RSN O&M Spares,
 FLORT,A,FLORT Series A,RSN Part Number,
+FLORT,A,FLORT Series A,Susceptible to Acoustic Interference,
 FLORT,A,FLORT Series A,"Vendor CLIN, SubCLIN or Model #",
 FLORT,B,FLORT Series B,2009 Baseline Price*,"$13,905.00"
 FLORT,B,FLORT Series B,2009 Deployed Instrument Count,42
@@ -1348,9 +1520,11 @@ FLORT,B,FLORT Series B,Instrument Configuration,
 FLORT,B,FLORT Series B,Link to the Specification,
 FLORT,B,FLORT Series B,Notes,
 FLORT,B,FLORT Series B,PrimaryScienceDiscipline,B
+FLORT,B,FLORT Series B,Produces Acoustic Interference,
 FLORT,B,FLORT Series B,Ready for 2013?,
 FLORT,B,FLORT Series B,RSN O&M Spares,
 FLORT,B,FLORT Series B,RSN Part Number,
+FLORT,B,FLORT Series B,Susceptible to Acoustic Interference,
 FLORT,B,FLORT Series B,"Vendor CLIN, SubCLIN or Model #",
 FLORT,D,FLORT Series D,2009 Baseline Price*,"$13,905.00"
 FLORT,D,FLORT Series D,2009 Deployed Instrument Count,42
@@ -1369,9 +1543,11 @@ FLORT,D,FLORT Series D,Instrument Configuration,
 FLORT,D,FLORT Series D,Link to the Specification,
 FLORT,D,FLORT Series D,Notes,
 FLORT,D,FLORT Series D,PrimaryScienceDiscipline,B
+FLORT,D,FLORT Series D,Produces Acoustic Interference,
 FLORT,D,FLORT Series D,Ready for 2013?,
 FLORT,D,FLORT Series D,RSN O&M Spares,
 FLORT,D,FLORT Series D,RSN Part Number,
+FLORT,D,FLORT Series D,Susceptible to Acoustic Interference,
 FLORT,D,FLORT Series D,"Vendor CLIN, SubCLIN or Model #",
 FLORT,K,FLORT Series K,2009 Baseline Price*,"$13,905.00"
 FLORT,K,FLORT Series K,2009 Deployed Instrument Count,42
@@ -1390,9 +1566,11 @@ FLORT,K,FLORT Series K,Instrument Configuration,
 FLORT,K,FLORT Series K,Link to the Specification,
 FLORT,K,FLORT Series K,Notes,
 FLORT,K,FLORT Series K,PrimaryScienceDiscipline,B
+FLORT,K,FLORT Series K,Produces Acoustic Interference,
 FLORT,K,FLORT Series K,Ready for 2013?,
 FLORT,K,FLORT Series K,RSN O&M Spares,
 FLORT,K,FLORT Series K,RSN Part Number,
+FLORT,K,FLORT Series K,Susceptible to Acoustic Interference,
 FLORT,K,FLORT Series K,"Vendor CLIN, SubCLIN or Model #",
 FLORT,M,FLORT Series M,2009 Baseline Price*,"$13,905.00"
 FLORT,M,FLORT Series M,2009 Deployed Instrument Count,42
@@ -1411,9 +1589,11 @@ FLORT,M,FLORT Series M,Instrument Configuration,
 FLORT,M,FLORT Series M,Link to the Specification,
 FLORT,M,FLORT Series M,Notes,
 FLORT,M,FLORT Series M,PrimaryScienceDiscipline,B
+FLORT,M,FLORT Series M,Produces Acoustic Interference,
 FLORT,M,FLORT Series M,Ready for 2013?,
 FLORT,M,FLORT Series M,RSN O&M Spares,
 FLORT,M,FLORT Series M,RSN Part Number,
+FLORT,M,FLORT Series M,Susceptible to Acoustic Interference,
 FLORT,M,FLORT Series M,"Vendor CLIN, SubCLIN or Model #",
 FLORT,N,FLORT Series N,2009 Baseline Price*,"$13,905.00"
 FLORT,N,FLORT Series N,2009 Deployed Instrument Count,42
@@ -1432,9 +1612,11 @@ FLORT,N,FLORT Series N,Instrument Configuration,
 FLORT,N,FLORT Series N,Link to the Specification,
 FLORT,N,FLORT Series N,Notes,
 FLORT,N,FLORT Series N,PrimaryScienceDiscipline,B
+FLORT,N,FLORT Series N,Produces Acoustic Interference,
 FLORT,N,FLORT Series N,Ready for 2013?,
 FLORT,N,FLORT Series N,RSN O&M Spares,
 FLORT,N,FLORT Series N,RSN Part Number,
+FLORT,N,FLORT Series N,Susceptible to Acoustic Interference,
 FLORT,N,FLORT Series N,"Vendor CLIN, SubCLIN or Model #",
 HPIES,A,HPIES Series A,2009 Baseline Price*,
 HPIES,A,HPIES Series A,2009 Deployed Instrument Count,2
@@ -1453,9 +1635,11 @@ HPIES,A,HPIES Series A,Instrument Configuration,
 HPIES,A,HPIES Series A,Link to the Specification,
 HPIES,A,HPIES Series A,Notes,
 HPIES,A,HPIES Series A,PrimaryScienceDiscipline,P
+HPIES,A,HPIES Series A,Produces Acoustic Interference,
 HPIES,A,HPIES Series A,Ready for 2013?,
 HPIES,A,HPIES Series A,RSN O&M Spares,
 HPIES,A,HPIES Series A,RSN Part Number,
+HPIES,A,HPIES Series A,Susceptible to Acoustic Interference,
 HPIES,A,HPIES Series A,"Vendor CLIN, SubCLIN or Model #",
 HYDBB,A,HYDBB Series A,2009 Baseline Price*,"$100,092.00"
 HYDBB,A,HYDBB Series A,2009 Deployed Instrument Count,6
@@ -1474,9 +1658,11 @@ HYDBB,A,HYDBB Series A,Instrument Configuration,
 HYDBB,A,HYDBB Series A,Link to the Specification,
 HYDBB,A,HYDBB Series A,Notes,
 HYDBB,A,HYDBB Series A,PrimaryScienceDiscipline,P
+HYDBB,A,HYDBB Series A,Produces Acoustic Interference,
 HYDBB,A,HYDBB Series A,Ready for 2013?,
 HYDBB,A,HYDBB Series A,RSN O&M Spares,
 HYDBB,A,HYDBB Series A,RSN Part Number,
+HYDBB,A,HYDBB Series A,Susceptible to Acoustic Interference,Yes
 HYDBB,A,HYDBB Series A,"Vendor CLIN, SubCLIN or Model #",
 HYDLF,A,HYDLF Series A,2009 Baseline Price*,
 HYDLF,A,HYDLF Series A,2009 Deployed Instrument Count,9
@@ -1495,9 +1681,11 @@ HYDLF,A,HYDLF Series A,Instrument Configuration,
 HYDLF,A,HYDLF Series A,Link to the Specification,
 HYDLF,A,HYDLF Series A,Notes,
 HYDLF,A,HYDLF Series A,PrimaryScienceDiscipline,P
+HYDLF,A,HYDLF Series A,Produces Acoustic Interference,
 HYDLF,A,HYDLF Series A,Ready for 2013?,
 HYDLF,A,HYDLF Series A,RSN O&M Spares,
 HYDLF,A,HYDLF Series A,RSN Part Number,
+HYDLF,A,HYDLF Series A,Susceptible to Acoustic Interference,Yes
 HYDLF,A,HYDLF Series A,"Vendor CLIN, SubCLIN or Model #",
 MASSP,A,MASSP Series A,2009 Baseline Price*,
 MASSP,A,MASSP Series A,2009 Deployed Instrument Count,2
@@ -1516,9 +1704,11 @@ MASSP,A,MASSP Series A,Instrument Configuration,
 MASSP,A,MASSP Series A,Link to the Specification,
 MASSP,A,MASSP Series A,Notes,
 MASSP,A,MASSP Series A,PrimaryScienceDiscipline,C
+MASSP,A,MASSP Series A,Produces Acoustic Interference,
 MASSP,A,MASSP Series A,Ready for 2013?,
 MASSP,A,MASSP Series A,RSN O&M Spares,
 MASSP,A,MASSP Series A,RSN Part Number,
+MASSP,A,MASSP Series A,Susceptible to Acoustic Interference,
 MASSP,A,MASSP Series A,"Vendor CLIN, SubCLIN or Model #",
 METBK,A,METBK Series A,2009 Baseline Price*,"$51,716.00"
 METBK,A,METBK Series A,2009 Deployed Instrument Count,18
@@ -1537,9 +1727,11 @@ METBK,A,METBK Series A,Instrument Configuration,
 METBK,A,METBK Series A,Link to the Specification,
 METBK,A,METBK Series A,Notes,
 METBK,A,METBK Series A,PrimaryScienceDiscipline,P
+METBK,A,METBK Series A,Produces Acoustic Interference,
 METBK,A,METBK Series A,Ready for 2013?,
 METBK,A,METBK Series A,RSN O&M Spares,
 METBK,A,METBK Series A,RSN Part Number,
+METBK,A,METBK Series A,Susceptible to Acoustic Interference,
 METBK,A,METBK Series A,"Vendor CLIN, SubCLIN or Model #",
 NUTNR,0,NUTNR Series 0,2009 Baseline Price*,"$30,990.00"
 NUTNR,0,NUTNR Series 0,2009 Deployed Instrument Count,22
@@ -1558,9 +1750,11 @@ NUTNR,0,NUTNR Series 0,Instrument Configuration,
 NUTNR,0,NUTNR Series 0,Link to the Specification,
 NUTNR,0,NUTNR Series 0,Notes,
 NUTNR,0,NUTNR Series 0,PrimaryScienceDiscipline,C
+NUTNR,0,NUTNR Series 0,Produces Acoustic Interference,
 NUTNR,0,NUTNR Series 0,Ready for 2013?,
 NUTNR,0,NUTNR Series 0,RSN O&M Spares,
 NUTNR,0,NUTNR Series 0,RSN Part Number,
+NUTNR,0,NUTNR Series 0,Susceptible to Acoustic Interference,
 NUTNR,0,NUTNR Series 0,"Vendor CLIN, SubCLIN or Model #",
 NUTNR,A,NUTNR Series A,2009 Baseline Price*,"$30,990.00"
 NUTNR,A,NUTNR Series A,2009 Deployed Instrument Count,22
@@ -1579,9 +1773,11 @@ NUTNR,A,NUTNR Series A,Instrument Configuration,
 NUTNR,A,NUTNR Series A,Link to the Specification,
 NUTNR,A,NUTNR Series A,Notes,
 NUTNR,A,NUTNR Series A,PrimaryScienceDiscipline,C
+NUTNR,A,NUTNR Series A,Produces Acoustic Interference,
 NUTNR,A,NUTNR Series A,Ready for 2013?,
 NUTNR,A,NUTNR Series A,RSN O&M Spares,
 NUTNR,A,NUTNR Series A,RSN Part Number,
+NUTNR,A,NUTNR Series A,Susceptible to Acoustic Interference,
 NUTNR,A,NUTNR Series A,"Vendor CLIN, SubCLIN or Model #",
 NUTNR,B,NUTNR Series B,2009 Baseline Price*,"$30,990.00"
 NUTNR,B,NUTNR Series B,2009 Deployed Instrument Count,22
@@ -1600,9 +1796,11 @@ NUTNR,B,NUTNR Series B,Instrument Configuration,
 NUTNR,B,NUTNR Series B,Link to the Specification,
 NUTNR,B,NUTNR Series B,Notes,
 NUTNR,B,NUTNR Series B,PrimaryScienceDiscipline,C
+NUTNR,B,NUTNR Series B,Produces Acoustic Interference,
 NUTNR,B,NUTNR Series B,Ready for 2013?,
 NUTNR,B,NUTNR Series B,RSN O&M Spares,
 NUTNR,B,NUTNR Series B,RSN Part Number,
+NUTNR,B,NUTNR Series B,Susceptible to Acoustic Interference,
 NUTNR,B,NUTNR Series B,"Vendor CLIN, SubCLIN or Model #",
 NUTNR,N,NUTNR Series N,2009 Baseline Price*,"$30,990.00"
 NUTNR,N,NUTNR Series N,2009 Deployed Instrument Count,22
@@ -1621,9 +1819,11 @@ NUTNR,N,NUTNR Series N,Instrument Configuration,
 NUTNR,N,NUTNR Series N,Link to the Specification,
 NUTNR,N,NUTNR Series N,Notes,
 NUTNR,N,NUTNR Series N,PrimaryScienceDiscipline,C
+NUTNR,N,NUTNR Series N,Produces Acoustic Interference,
 NUTNR,N,NUTNR Series N,Ready for 2013?,
 NUTNR,N,NUTNR Series N,RSN O&M Spares,
 NUTNR,N,NUTNR Series N,RSN Part Number,
+NUTNR,N,NUTNR Series N,Susceptible to Acoustic Interference,
 NUTNR,N,NUTNR Series N,"Vendor CLIN, SubCLIN or Model #",
 OBSBB,A,OBSBB Series A,2009 Baseline Price*,
 OBSBB,A,OBSBB Series A,2009 Deployed Instrument Count,4
@@ -1642,9 +1842,11 @@ OBSBB,A,OBSBB Series A,Instrument Configuration,
 OBSBB,A,OBSBB Series A,Link to the Specification,
 OBSBB,A,OBSBB Series A,Notes,
 OBSBB,A,OBSBB Series A,PrimaryScienceDiscipline,G
+OBSBB,A,OBSBB Series A,Produces Acoustic Interference,
 OBSBB,A,OBSBB Series A,Ready for 2013?,
 OBSBB,A,OBSBB Series A,RSN O&M Spares,
 OBSBB,A,OBSBB Series A,RSN Part Number,
+OBSBB,A,OBSBB Series A,Susceptible to Acoustic Interference,
 OBSBB,A,OBSBB Series A,"Vendor CLIN, SubCLIN or Model #",
 OBSBK,A,OBSBK Series A,2009 Baseline Price*,
 OBSBK,A,OBSBK Series A,2009 Deployed Instrument Count,
@@ -1663,9 +1865,11 @@ OBSBK,A,OBSBK Series A,Instrument Configuration,
 OBSBK,A,OBSBK Series A,Link to the Specification,
 OBSBK,A,OBSBK Series A,Notes,
 OBSBK,A,OBSBK Series A,PrimaryScienceDiscipline,G
+OBSBK,A,OBSBK Series A,Produces Acoustic Interference,
 OBSBK,A,OBSBK Series A,Ready for 2013?,
 OBSBK,A,OBSBK Series A,RSN O&M Spares,
 OBSBK,A,OBSBK Series A,RSN Part Number,
+OBSBK,A,OBSBK Series A,Susceptible to Acoustic Interference,
 OBSBK,A,OBSBK Series A,"Vendor CLIN, SubCLIN or Model #",
 OBSSK,A,OBSSK Series A,2009 Baseline Price*,
 OBSSK,A,OBSSK Series A,2009 Deployed Instrument Count,
@@ -1684,9 +1888,11 @@ OBSSK,A,OBSSK Series A,Instrument Configuration,
 OBSSK,A,OBSSK Series A,Link to the Specification,
 OBSSK,A,OBSSK Series A,Notes,
 OBSSK,A,OBSSK Series A,PrimaryScienceDiscipline,G
+OBSSK,A,OBSSK Series A,Produces Acoustic Interference,
 OBSSK,A,OBSSK Series A,Ready for 2013?,
 OBSSK,A,OBSSK Series A,RSN O&M Spares,
 OBSSK,A,OBSSK Series A,RSN Part Number,
+OBSSK,A,OBSSK Series A,Susceptible to Acoustic Interference,
 OBSSK,A,OBSSK Series A,"Vendor CLIN, SubCLIN or Model #",
 OBSSP,A,OBSSP Series A,2009 Baseline Price*,
 OBSSP,A,OBSSP Series A,2009 Deployed Instrument Count,9
@@ -1705,9 +1911,11 @@ OBSSP,A,OBSSP Series A,Instrument Configuration,
 OBSSP,A,OBSSP Series A,Link to the Specification,
 OBSSP,A,OBSSP Series A,Notes,
 OBSSP,A,OBSSP Series A,PrimaryScienceDiscipline,G
+OBSSP,A,OBSSP Series A,Produces Acoustic Interference,
 OBSSP,A,OBSSP Series A,Ready for 2013?,
 OBSSP,A,OBSSP Series A,RSN O&M Spares,
 OBSSP,A,OBSSP Series A,RSN Part Number,
+OBSSP,A,OBSSP Series A,Susceptible to Acoustic Interference,
 OBSSP,A,OBSSP Series A,"Vendor CLIN, SubCLIN or Model #",
 OPTAA,0,OPTAA Series 0,2009 Baseline Price*,"$17,500.00"
 OPTAA,0,OPTAA Series 0,2009 Deployed Instrument Count,35
@@ -1726,9 +1934,11 @@ OPTAA,0,OPTAA Series 0,Instrument Configuration,
 OPTAA,0,OPTAA Series 0,Link to the Specification,
 OPTAA,0,OPTAA Series 0,Notes,
 OPTAA,0,OPTAA Series 0,PrimaryScienceDiscipline,B
+OPTAA,0,OPTAA Series 0,Produces Acoustic Interference,
 OPTAA,0,OPTAA Series 0,Ready for 2013?,
 OPTAA,0,OPTAA Series 0,RSN O&M Spares,
 OPTAA,0,OPTAA Series 0,RSN Part Number,
+OPTAA,0,OPTAA Series 0,Susceptible to Acoustic Interference,
 OPTAA,0,OPTAA Series 0,"Vendor CLIN, SubCLIN or Model #",
 OPTAA,A,OPTAA Series A,2009 Baseline Price*,"$17,500.00"
 OPTAA,A,OPTAA Series A,2009 Deployed Instrument Count,35
@@ -1747,9 +1957,11 @@ OPTAA,A,OPTAA Series A,Instrument Configuration,
 OPTAA,A,OPTAA Series A,Link to the Specification,
 OPTAA,A,OPTAA Series A,Notes,
 OPTAA,A,OPTAA Series A,PrimaryScienceDiscipline,B
+OPTAA,A,OPTAA Series A,Produces Acoustic Interference,
 OPTAA,A,OPTAA Series A,Ready for 2013?,
 OPTAA,A,OPTAA Series A,RSN O&M Spares,
 OPTAA,A,OPTAA Series A,RSN Part Number,
+OPTAA,A,OPTAA Series A,Susceptible to Acoustic Interference,
 OPTAA,A,OPTAA Series A,"Vendor CLIN, SubCLIN or Model #",
 OPTAA,B,OPTAA Series B,2009 Baseline Price*,"$17,500.00"
 OPTAA,B,OPTAA Series B,2009 Deployed Instrument Count,35
@@ -1768,9 +1980,11 @@ OPTAA,B,OPTAA Series B,Instrument Configuration,
 OPTAA,B,OPTAA Series B,Link to the Specification,
 OPTAA,B,OPTAA Series B,Notes,
 OPTAA,B,OPTAA Series B,PrimaryScienceDiscipline,B
+OPTAA,B,OPTAA Series B,Produces Acoustic Interference,
 OPTAA,B,OPTAA Series B,Ready for 2013?,
 OPTAA,B,OPTAA Series B,RSN O&M Spares,
 OPTAA,B,OPTAA Series B,RSN Part Number,
+OPTAA,B,OPTAA Series B,Susceptible to Acoustic Interference,
 OPTAA,B,OPTAA Series B,"Vendor CLIN, SubCLIN or Model #",
 OPTAA,C,OPTAA Series C,2009 Baseline Price*,"$17,500.00"
 OPTAA,C,OPTAA Series C,2009 Deployed Instrument Count,35
@@ -1789,9 +2003,11 @@ OPTAA,C,OPTAA Series C,Instrument Configuration,
 OPTAA,C,OPTAA Series C,Link to the Specification,
 OPTAA,C,OPTAA Series C,Notes,
 OPTAA,C,OPTAA Series C,PrimaryScienceDiscipline,B
+OPTAA,C,OPTAA Series C,Produces Acoustic Interference,
 OPTAA,C,OPTAA Series C,Ready for 2013?,
 OPTAA,C,OPTAA Series C,RSN O&M Spares,
 OPTAA,C,OPTAA Series C,RSN Part Number,
+OPTAA,C,OPTAA Series C,Susceptible to Acoustic Interference,
 OPTAA,C,OPTAA Series C,"Vendor CLIN, SubCLIN or Model #",
 OPTAA,D,OPTAA Series D,2009 Baseline Price*,"$17,500.00"
 OPTAA,D,OPTAA Series D,2009 Deployed Instrument Count,35
@@ -1810,9 +2026,11 @@ OPTAA,D,OPTAA Series D,Instrument Configuration,
 OPTAA,D,OPTAA Series D,Link to the Specification,
 OPTAA,D,OPTAA Series D,Notes,
 OPTAA,D,OPTAA Series D,PrimaryScienceDiscipline,B
+OPTAA,D,OPTAA Series D,Produces Acoustic Interference,
 OPTAA,D,OPTAA Series D,Ready for 2013?,
 OPTAA,D,OPTAA Series D,RSN O&M Spares,
 OPTAA,D,OPTAA Series D,RSN Part Number,
+OPTAA,D,OPTAA Series D,Susceptible to Acoustic Interference,
 OPTAA,D,OPTAA Series D,"Vendor CLIN, SubCLIN or Model #",
 OSMOI,A,OSMOI Series A,2009 Baseline Price*,
 OSMOI,A,OSMOI Series A,2009 Deployed Instrument Count,2
@@ -1831,9 +2049,11 @@ OSMOI,A,OSMOI Series A,Instrument Configuration,
 OSMOI,A,OSMOI Series A,Link to the Specification,
 OSMOI,A,OSMOI Series A,Notes,
 OSMOI,A,OSMOI Series A,PrimaryScienceDiscipline,C
+OSMOI,A,OSMOI Series A,Produces Acoustic Interference,
 OSMOI,A,OSMOI Series A,Ready for 2013?,
 OSMOI,A,OSMOI Series A,RSN O&M Spares,
 OSMOI,A,OSMOI Series A,RSN Part Number,
+OSMOI,A,OSMOI Series A,Susceptible to Acoustic Interference,
 OSMOI,A,OSMOI Series A,"Vendor CLIN, SubCLIN or Model #",
 PARAD,0,PARAD Series 0,2009 Baseline Price*,
 PARAD,0,PARAD Series 0,2009 Deployed Instrument Count,21
@@ -1852,9 +2072,11 @@ PARAD,0,PARAD Series 0,Instrument Configuration,
 PARAD,0,PARAD Series 0,Link to the Specification,
 PARAD,0,PARAD Series 0,Notes,
 PARAD,0,PARAD Series 0,PrimaryScienceDiscipline,B
+PARAD,0,PARAD Series 0,Produces Acoustic Interference,
 PARAD,0,PARAD Series 0,Ready for 2013?,
 PARAD,0,PARAD Series 0,RSN O&M Spares,
 PARAD,0,PARAD Series 0,RSN Part Number,
+PARAD,0,PARAD Series 0,Susceptible to Acoustic Interference,
 PARAD,0,PARAD Series 0,"Vendor CLIN, SubCLIN or Model #",
 PARAD,1,PARAD Series TBD,2009 Baseline Price*,
 PARAD,1,PARAD Series TBD,2009 Deployed Instrument Count,21
@@ -1873,9 +2095,11 @@ PARAD,1,PARAD Series TBD,Instrument Configuration,
 PARAD,1,PARAD Series TBD,Link to the Specification,
 PARAD,1,PARAD Series TBD,Notes,
 PARAD,1,PARAD Series TBD,PrimaryScienceDiscipline,B
+PARAD,1,PARAD Series TBD,Produces Acoustic Interference,
 PARAD,1,PARAD Series TBD,Ready for 2013?,
 PARAD,1,PARAD Series TBD,RSN O&M Spares,
 PARAD,1,PARAD Series TBD,RSN Part Number,
+PARAD,1,PARAD Series TBD,Susceptible to Acoustic Interference,
 PARAD,1,PARAD Series TBD,"Vendor CLIN, SubCLIN or Model #",
 PARAD,A,PARAD Series A,2009 Baseline Price*,
 PARAD,A,PARAD Series A,2009 Deployed Instrument Count,21
@@ -1894,9 +2118,11 @@ PARAD,A,PARAD Series A,Instrument Configuration,
 PARAD,A,PARAD Series A,Link to the Specification,
 PARAD,A,PARAD Series A,Notes,
 PARAD,A,PARAD Series A,PrimaryScienceDiscipline,B
+PARAD,A,PARAD Series A,Produces Acoustic Interference,
 PARAD,A,PARAD Series A,Ready for 2013?,
 PARAD,A,PARAD Series A,RSN O&M Spares,
 PARAD,A,PARAD Series A,RSN Part Number,
+PARAD,A,PARAD Series A,Susceptible to Acoustic Interference,
 PARAD,A,PARAD Series A,"Vendor CLIN, SubCLIN or Model #",
 PARAD,K,PARAD Series K,2009 Baseline Price*,
 PARAD,K,PARAD Series K,2009 Deployed Instrument Count,21
@@ -1915,9 +2141,11 @@ PARAD,K,PARAD Series K,Instrument Configuration,
 PARAD,K,PARAD Series K,Link to the Specification,
 PARAD,K,PARAD Series K,Notes,
 PARAD,K,PARAD Series K,PrimaryScienceDiscipline,B
+PARAD,K,PARAD Series K,Produces Acoustic Interference,
 PARAD,K,PARAD Series K,Ready for 2013?,
 PARAD,K,PARAD Series K,RSN O&M Spares,
 PARAD,K,PARAD Series K,RSN Part Number,
+PARAD,K,PARAD Series K,Susceptible to Acoustic Interference,
 PARAD,K,PARAD Series K,"Vendor CLIN, SubCLIN or Model #",
 PARAD,M,PARAD Series M,2009 Baseline Price*,
 PARAD,M,PARAD Series M,2009 Deployed Instrument Count,21
@@ -1936,9 +2164,11 @@ PARAD,M,PARAD Series M,Instrument Configuration,
 PARAD,M,PARAD Series M,Link to the Specification,
 PARAD,M,PARAD Series M,Notes,
 PARAD,M,PARAD Series M,PrimaryScienceDiscipline,B
+PARAD,M,PARAD Series M,Produces Acoustic Interference,
 PARAD,M,PARAD Series M,Ready for 2013?,
 PARAD,M,PARAD Series M,RSN O&M Spares,
 PARAD,M,PARAD Series M,RSN Part Number,
+PARAD,M,PARAD Series M,Susceptible to Acoustic Interference,
 PARAD,M,PARAD Series M,"Vendor CLIN, SubCLIN or Model #",
 PARAD,N,PARAD Series N,2009 Baseline Price*,
 PARAD,N,PARAD Series N,2009 Deployed Instrument Count,21
@@ -1957,9 +2187,11 @@ PARAD,N,PARAD Series N,Instrument Configuration,
 PARAD,N,PARAD Series N,Link to the Specification,
 PARAD,N,PARAD Series N,Notes,
 PARAD,N,PARAD Series N,PrimaryScienceDiscipline,B
+PARAD,N,PARAD Series N,Produces Acoustic Interference,
 PARAD,N,PARAD Series N,Ready for 2013?,
 PARAD,N,PARAD Series N,RSN O&M Spares,
 PARAD,N,PARAD Series N,RSN Part Number,
+PARAD,N,PARAD Series N,Susceptible to Acoustic Interference,
 PARAD,N,PARAD Series N,"Vendor CLIN, SubCLIN or Model #",
 PCO2A,A,PCO2A Series A,2009 Baseline Price*,"$39,300.00"
 PCO2A,A,PCO2A Series A,2009 Deployed Instrument Count,10
@@ -1978,9 +2210,11 @@ PCO2A,A,PCO2A Series A,Instrument Configuration,
 PCO2A,A,PCO2A Series A,Link to the Specification,
 PCO2A,A,PCO2A Series A,Notes,
 PCO2A,A,PCO2A Series A,PrimaryScienceDiscipline,C
+PCO2A,A,PCO2A Series A,Produces Acoustic Interference,
 PCO2A,A,PCO2A Series A,Ready for 2013?,
 PCO2A,A,PCO2A Series A,RSN O&M Spares,
 PCO2A,A,PCO2A Series A,RSN Part Number,
+PCO2A,A,PCO2A Series A,Susceptible to Acoustic Interference,
 PCO2A,A,PCO2A Series A,"Vendor CLIN, SubCLIN or Model #",
 PCO2W,0,PCO2W Series 0,2009 Baseline Price*,"$18,375.00"
 PCO2W,0,PCO2W Series 0,2009 Deployed Instrument Count,25
@@ -1999,9 +2233,11 @@ PCO2W,0,PCO2W Series 0,Instrument Configuration,
 PCO2W,0,PCO2W Series 0,Link to the Specification,
 PCO2W,0,PCO2W Series 0,Notes,
 PCO2W,0,PCO2W Series 0,PrimaryScienceDiscipline,C
+PCO2W,0,PCO2W Series 0,Produces Acoustic Interference,
 PCO2W,0,PCO2W Series 0,Ready for 2013?,
 PCO2W,0,PCO2W Series 0,RSN O&M Spares,
 PCO2W,0,PCO2W Series 0,RSN Part Number,
+PCO2W,0,PCO2W Series 0,Susceptible to Acoustic Interference,
 PCO2W,0,PCO2W Series 0,"Vendor CLIN, SubCLIN or Model #",
 PCO2W,A,PCO2W Series A,2009 Baseline Price*,"$18,375.00"
 PCO2W,A,PCO2W Series A,2009 Deployed Instrument Count,25
@@ -2020,9 +2256,11 @@ PCO2W,A,PCO2W Series A,Instrument Configuration,
 PCO2W,A,PCO2W Series A,Link to the Specification,
 PCO2W,A,PCO2W Series A,Notes,
 PCO2W,A,PCO2W Series A,PrimaryScienceDiscipline,C
+PCO2W,A,PCO2W Series A,Produces Acoustic Interference,
 PCO2W,A,PCO2W Series A,Ready for 2013?,
 PCO2W,A,PCO2W Series A,RSN O&M Spares,
 PCO2W,A,PCO2W Series A,RSN Part Number,
+PCO2W,A,PCO2W Series A,Susceptible to Acoustic Interference,
 PCO2W,A,PCO2W Series A,"Vendor CLIN, SubCLIN or Model #",
 PCO2W,B,PCO2W Series B,2009 Baseline Price*,"$18,375.00"
 PCO2W,B,PCO2W Series B,2009 Deployed Instrument Count,25
@@ -2041,9 +2279,11 @@ PCO2W,B,PCO2W Series B,Instrument Configuration,
 PCO2W,B,PCO2W Series B,Link to the Specification,
 PCO2W,B,PCO2W Series B,Notes,
 PCO2W,B,PCO2W Series B,PrimaryScienceDiscipline,C
+PCO2W,B,PCO2W Series B,Produces Acoustic Interference,
 PCO2W,B,PCO2W Series B,Ready for 2013?,
 PCO2W,B,PCO2W Series B,RSN O&M Spares,
 PCO2W,B,PCO2W Series B,RSN Part Number,
+PCO2W,B,PCO2W Series B,Susceptible to Acoustic Interference,
 PCO2W,B,PCO2W Series B,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,A,PHSEN Series A,2009 Baseline Price*,"$17,500.00"
 PHSEN,A,PHSEN Series A,2009 Deployed Instrument Count,33
@@ -2062,9 +2302,11 @@ PHSEN,A,PHSEN Series A,Instrument Configuration,
 PHSEN,A,PHSEN Series A,Link to the Specification,
 PHSEN,A,PHSEN Series A,Notes,
 PHSEN,A,PHSEN Series A,PrimaryScienceDiscipline,C
+PHSEN,A,PHSEN Series A,Produces Acoustic Interference,
 PHSEN,A,PHSEN Series A,Ready for 2013?,
 PHSEN,A,PHSEN Series A,RSN O&M Spares,
 PHSEN,A,PHSEN Series A,RSN Part Number,
+PHSEN,A,PHSEN Series A,Susceptible to Acoustic Interference,
 PHSEN,A,PHSEN Series A,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,B,PHSEN Series B,2009 Baseline Price*,"$17,500.00"
 PHSEN,B,PHSEN Series B,2009 Deployed Instrument Count,33
@@ -2083,9 +2325,11 @@ PHSEN,B,PHSEN Series B,Instrument Configuration,
 PHSEN,B,PHSEN Series B,Link to the Specification,
 PHSEN,B,PHSEN Series B,Notes,
 PHSEN,B,PHSEN Series B,PrimaryScienceDiscipline,C
+PHSEN,B,PHSEN Series B,Produces Acoustic Interference,
 PHSEN,B,PHSEN Series B,Ready for 2013?,
 PHSEN,B,PHSEN Series B,RSN O&M Spares,
 PHSEN,B,PHSEN Series B,RSN Part Number,
+PHSEN,B,PHSEN Series B,Susceptible to Acoustic Interference,
 PHSEN,B,PHSEN Series B,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,C,PHSEN Series C,2009 Baseline Price*,"$17,500.00"
 PHSEN,C,PHSEN Series C,2009 Deployed Instrument Count,33
@@ -2104,9 +2348,11 @@ PHSEN,C,PHSEN Series C,Instrument Configuration,
 PHSEN,C,PHSEN Series C,Link to the Specification,
 PHSEN,C,PHSEN Series C,Notes,
 PHSEN,C,PHSEN Series C,PrimaryScienceDiscipline,C
+PHSEN,C,PHSEN Series C,Produces Acoustic Interference,
 PHSEN,C,PHSEN Series C,Ready for 2013?,
 PHSEN,C,PHSEN Series C,RSN O&M Spares,
 PHSEN,C,PHSEN Series C,RSN Part Number,
+PHSEN,C,PHSEN Series C,Susceptible to Acoustic Interference,
 PHSEN,C,PHSEN Series C,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,D,PHSEN Series D,2009 Baseline Price*,"$17,500.00"
 PHSEN,D,PHSEN Series D,2009 Deployed Instrument Count,33
@@ -2125,9 +2371,11 @@ PHSEN,D,PHSEN Series D,Instrument Configuration,
 PHSEN,D,PHSEN Series D,Link to the Specification,
 PHSEN,D,PHSEN Series D,Notes,
 PHSEN,D,PHSEN Series D,PrimaryScienceDiscipline,C
+PHSEN,D,PHSEN Series D,Produces Acoustic Interference,
 PHSEN,D,PHSEN Series D,Ready for 2013?,
 PHSEN,D,PHSEN Series D,RSN O&M Spares,
 PHSEN,D,PHSEN Series D,RSN Part Number,
+PHSEN,D,PHSEN Series D,Susceptible to Acoustic Interference,
 PHSEN,D,PHSEN Series D,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,E,PHSEN Series E,2009 Baseline Price*,"$17,500.00"
 PHSEN,E,PHSEN Series E,2009 Deployed Instrument Count,33
@@ -2146,9 +2394,11 @@ PHSEN,E,PHSEN Series E,Instrument Configuration,
 PHSEN,E,PHSEN Series E,Link to the Specification,
 PHSEN,E,PHSEN Series E,Notes,
 PHSEN,E,PHSEN Series E,PrimaryScienceDiscipline,C
-PHSEN,E,PHSEN Series E,Ready for 2013?,
+PHSEN,E,PHSEN Series E,Produces Acoustic Interference,
+PHSEN,E,PHSEN Series E,Ready for 2013?,No
 PHSEN,E,PHSEN Series E,RSN O&M Spares,
 PHSEN,E,PHSEN Series E,RSN Part Number,
+PHSEN,E,PHSEN Series E,Susceptible to Acoustic Interference,
 PHSEN,E,PHSEN Series E,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,F,PHSEN Series F,2009 Baseline Price*,"$17,500.00"
 PHSEN,F,PHSEN Series F,2009 Deployed Instrument Count,33
@@ -2167,9 +2417,11 @@ PHSEN,F,PHSEN Series F,Instrument Configuration,
 PHSEN,F,PHSEN Series F,Link to the Specification,
 PHSEN,F,PHSEN Series F,Notes,
 PHSEN,F,PHSEN Series F,PrimaryScienceDiscipline,C
+PHSEN,F,PHSEN Series F,Produces Acoustic Interference,
 PHSEN,F,PHSEN Series F,Ready for 2013?,
 PHSEN,F,PHSEN Series F,RSN O&M Spares,
 PHSEN,F,PHSEN Series F,RSN Part Number,
+PHSEN,F,PHSEN Series F,Susceptible to Acoustic Interference,
 PHSEN,F,PHSEN Series F,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,G,PHSEN Series G,2009 Baseline Price*,"$17,500.00"
 PHSEN,G,PHSEN Series G,2009 Deployed Instrument Count,33
@@ -2188,9 +2440,11 @@ PHSEN,G,PHSEN Series G,Instrument Configuration,
 PHSEN,G,PHSEN Series G,Link to the Specification,
 PHSEN,G,PHSEN Series G,Notes,
 PHSEN,G,PHSEN Series G,PrimaryScienceDiscipline,C
+PHSEN,G,PHSEN Series G,Produces Acoustic Interference,
 PHSEN,G,PHSEN Series G,Ready for 2013?,
 PHSEN,G,PHSEN Series G,RSN O&M Spares,
 PHSEN,G,PHSEN Series G,RSN Part Number,
+PHSEN,G,PHSEN Series G,Susceptible to Acoustic Interference,
 PHSEN,G,PHSEN Series G,"Vendor CLIN, SubCLIN or Model #",
 PPSDN,A,PPSDN Series A,2009 Baseline Price*,
 PPSDN,A,PPSDN Series A,2009 Deployed Instrument Count,
@@ -2209,9 +2463,11 @@ PPSDN,A,PPSDN Series A,Instrument Configuration,
 PPSDN,A,PPSDN Series A,Link to the Specification,
 PPSDN,A,PPSDN Series A,Notes,
 PPSDN,A,PPSDN Series A,PrimaryScienceDiscipline,B
+PPSDN,A,PPSDN Series A,Produces Acoustic Interference,
 PPSDN,A,PPSDN Series A,Ready for 2013?,
 PPSDN,A,PPSDN Series A,RSN O&M Spares,
 PPSDN,A,PPSDN Series A,RSN Part Number,
+PPSDN,A,PPSDN Series A,Susceptible to Acoustic Interference,
 PPSDN,A,PPSDN Series A,"Vendor CLIN, SubCLIN or Model #",
 PRESF,A,PRESF Series A,2009 Baseline Price*,"$17,625.00"
 PRESF,A,PRESF Series A,2009 Deployed Instrument Count,9
@@ -2230,9 +2486,11 @@ PRESF,A,PRESF Series A,Instrument Configuration,
 PRESF,A,PRESF Series A,Link to the Specification,
 PRESF,A,PRESF Series A,Notes,
 PRESF,A,PRESF Series A,PrimaryScienceDiscipline,P
+PRESF,A,PRESF Series A,Produces Acoustic Interference,
 PRESF,A,PRESF Series A,Ready for 2013?,
 PRESF,A,PRESF Series A,RSN O&M Spares,
 PRESF,A,PRESF Series A,RSN Part Number,
+PRESF,A,PRESF Series A,Susceptible to Acoustic Interference,
 PRESF,A,PRESF Series A,"Vendor CLIN, SubCLIN or Model #",
 PRESF,B,PRESF Series B,2009 Baseline Price*,"$17,625.00"
 PRESF,B,PRESF Series B,2009 Deployed Instrument Count,9
@@ -2251,9 +2509,11 @@ PRESF,B,PRESF Series B,Instrument Configuration,
 PRESF,B,PRESF Series B,Link to the Specification,
 PRESF,B,PRESF Series B,Notes,
 PRESF,B,PRESF Series B,PrimaryScienceDiscipline,P
+PRESF,B,PRESF Series B,Produces Acoustic Interference,
 PRESF,B,PRESF Series B,Ready for 2013?,
 PRESF,B,PRESF Series B,RSN O&M Spares,
 PRESF,B,PRESF Series B,RSN Part Number,
+PRESF,B,PRESF Series B,Susceptible to Acoustic Interference,
 PRESF,B,PRESF Series B,"Vendor CLIN, SubCLIN or Model #",
 PRESF,C,PRESF Series C,2009 Baseline Price*,"$17,625.00"
 PRESF,C,PRESF Series C,2009 Deployed Instrument Count,9
@@ -2272,9 +2532,11 @@ PRESF,C,PRESF Series C,Instrument Configuration,
 PRESF,C,PRESF Series C,Link to the Specification,
 PRESF,C,PRESF Series C,Notes,
 PRESF,C,PRESF Series C,PrimaryScienceDiscipline,P
+PRESF,C,PRESF Series C,Produces Acoustic Interference,
 PRESF,C,PRESF Series C,Ready for 2013?,
 PRESF,C,PRESF Series C,RSN O&M Spares,
 PRESF,C,PRESF Series C,RSN Part Number,
+PRESF,C,PRESF Series C,Susceptible to Acoustic Interference,
 PRESF,C,PRESF Series C,"Vendor CLIN, SubCLIN or Model #",
 PREST,A,PREST Series A,2009 Baseline Price*,
 PREST,A,PREST Series A,2009 Deployed Instrument Count,3
@@ -2293,10 +2555,35 @@ PREST,A,PREST Series A,Instrument Configuration,
 PREST,A,PREST Series A,Link to the Specification,
 PREST,A,PREST Series A,Notes,
 PREST,A,PREST Series A,PrimaryScienceDiscipline,P
+PREST,A,PREST Series A,Produces Acoustic Interference,
 PREST,A,PREST Series A,Ready for 2013?,
 PREST,A,PREST Series A,RSN O&M Spares,
 PREST,A,PREST Series A,RSN Part Number,
+PREST,A,PREST Series A,Susceptible to Acoustic Interference,
 PREST,A,PREST Series A,"Vendor CLIN, SubCLIN or Model #",
+PREST,B,PREST Series B,2009 Baseline Price*,
+PREST,B,PREST Series B,2009 Deployed Instrument Count,3
+PREST,B,PREST Series B,Alternate Instrument Class Name,Tidal Seafloor Pressure
+PREST,B,PREST Series B,CE Spares,
+PREST,B,PREST Series B,CGSN MREFC Spares,
+PREST,B,PREST Series B,CGSN O&M Spares,
+PREST,B,PREST Series B,CGSN P/N,
+PREST,B,PREST Series B,ClassLongName,pressure_SF_tidal
+PREST,B,PREST Series B,Comments,
+PREST,B,PREST Series B,CP Spares,
+PREST,B,PREST Series B,Description,Measures tidal pressure on the seafloor to mm scale
+PREST,B,PREST Series B,ECRs that changed the count,
+PREST,B,PREST Series B,Global Spares,
+PREST,B,PREST Series B,Instrument Configuration,
+PREST,B,PREST Series B,Link to the Specification,
+PREST,B,PREST Series B,Notes,
+PREST,B,PREST Series B,PrimaryScienceDiscipline,P
+PREST,B,PREST Series B,Produces Acoustic Interference,
+PREST,B,PREST Series B,Ready for 2013?,
+PREST,B,PREST Series B,RSN O&M Spares,
+PREST,B,PREST Series B,RSN Part Number,
+PREST,B,PREST Series B,Susceptible to Acoustic Interference,
+PREST,B,PREST Series B,"Vendor CLIN, SubCLIN or Model #",
 RASFL,A,RASFL Series A,2009 Baseline Price*,
 RASFL,A,RASFL Series A,2009 Deployed Instrument Count,1
 RASFL,A,RASFL Series A,Alternate Instrument Class Name,Hydrothermal Vent Fluid Interactive Sampler
@@ -2314,9 +2601,11 @@ RASFL,A,RASFL Series A,Instrument Configuration,
 RASFL,A,RASFL Series A,Link to the Specification,
 RASFL,A,RASFL Series A,Notes,
 RASFL,A,RASFL Series A,PrimaryScienceDiscipline,C
+RASFL,A,RASFL Series A,Produces Acoustic Interference,
 RASFL,A,RASFL Series A,Ready for 2013?,
 RASFL,A,RASFL Series A,RSN O&M Spares,
 RASFL,A,RASFL Series A,RSN Part Number,
+RASFL,A,RASFL Series A,Susceptible to Acoustic Interference,
 RASFL,A,RASFL Series A,"Vendor CLIN, SubCLIN or Model #",
 SPKIR,0,SPKIR Series 0,2009 Baseline Price*,"$11,080.00"
 SPKIR,0,SPKIR Series 0,2009 Deployed Instrument Count,22
@@ -2335,9 +2624,11 @@ SPKIR,0,SPKIR Series 0,Instrument Configuration,
 SPKIR,0,SPKIR Series 0,Link to the Specification,
 SPKIR,0,SPKIR Series 0,Notes,
 SPKIR,0,SPKIR Series 0,PrimaryScienceDiscipline,P
+SPKIR,0,SPKIR Series 0,Produces Acoustic Interference,
 SPKIR,0,SPKIR Series 0,Ready for 2013?,
 SPKIR,0,SPKIR Series 0,RSN O&M Spares,
 SPKIR,0,SPKIR Series 0,RSN Part Number,
+SPKIR,0,SPKIR Series 0,Susceptible to Acoustic Interference,
 SPKIR,0,SPKIR Series 0,"Vendor CLIN, SubCLIN or Model #",
 SPKIR,A,SPKIR Series A,2009 Baseline Price*,"$11,080.00"
 SPKIR,A,SPKIR Series A,2009 Deployed Instrument Count,22
@@ -2356,9 +2647,11 @@ SPKIR,A,SPKIR Series A,Instrument Configuration,
 SPKIR,A,SPKIR Series A,Link to the Specification,
 SPKIR,A,SPKIR Series A,Notes,
 SPKIR,A,SPKIR Series A,PrimaryScienceDiscipline,P
+SPKIR,A,SPKIR Series A,Produces Acoustic Interference,
 SPKIR,A,SPKIR Series A,Ready for 2013?,
 SPKIR,A,SPKIR Series A,RSN O&M Spares,
 SPKIR,A,SPKIR Series A,RSN Part Number,
+SPKIR,A,SPKIR Series A,Susceptible to Acoustic Interference,
 SPKIR,A,SPKIR Series A,"Vendor CLIN, SubCLIN or Model #",
 SPKIR,B,SPKIR Series B,2009 Baseline Price*,"$11,080.00"
 SPKIR,B,SPKIR Series B,2009 Deployed Instrument Count,22
@@ -2377,9 +2670,11 @@ SPKIR,B,SPKIR Series B,Instrument Configuration,
 SPKIR,B,SPKIR Series B,Link to the Specification,
 SPKIR,B,SPKIR Series B,Notes,
 SPKIR,B,SPKIR Series B,PrimaryScienceDiscipline,P
+SPKIR,B,SPKIR Series B,Produces Acoustic Interference,
 SPKIR,B,SPKIR Series B,Ready for 2013?,
 SPKIR,B,SPKIR Series B,RSN O&M Spares,
 SPKIR,B,SPKIR Series B,RSN Part Number,
+SPKIR,B,SPKIR Series B,Susceptible to Acoustic Interference,
 SPKIR,B,SPKIR Series B,"Vendor CLIN, SubCLIN or Model #",
 THSPH,A,THSPH Series A,2009 Baseline Price*,
 THSPH,A,THSPH Series A,2009 Deployed Instrument Count,1
@@ -2398,9 +2693,11 @@ THSPH,A,THSPH Series A,Instrument Configuration,
 THSPH,A,THSPH Series A,Link to the Specification,
 THSPH,A,THSPH Series A,Notes,
 THSPH,A,THSPH Series A,PrimaryScienceDiscipline,C
+THSPH,A,THSPH Series A,Produces Acoustic Interference,
 THSPH,A,THSPH Series A,Ready for 2013?,
 THSPH,A,THSPH Series A,RSN O&M Spares,
 THSPH,A,THSPH Series A,RSN Part Number,
+THSPH,A,THSPH Series A,Susceptible to Acoustic Interference,
 THSPH,A,THSPH Series A,"Vendor CLIN, SubCLIN or Model #",
 TMPSF,A,TMPSF Series A,2009 Baseline Price*,
 TMPSF,A,TMPSF Series A,2009 Deployed Instrument Count,1
@@ -2419,9 +2716,11 @@ TMPSF,A,TMPSF Series A,Instrument Configuration,
 TMPSF,A,TMPSF Series A,Link to the Specification,
 TMPSF,A,TMPSF Series A,Notes,
 TMPSF,A,TMPSF Series A,PrimaryScienceDiscipline,P
+TMPSF,A,TMPSF Series A,Produces Acoustic Interference,
 TMPSF,A,TMPSF Series A,Ready for 2013?,
 TMPSF,A,TMPSF Series A,RSN O&M Spares,
 TMPSF,A,TMPSF Series A,RSN Part Number,
+TMPSF,A,TMPSF Series A,Susceptible to Acoustic Interference,
 TMPSF,A,TMPSF Series A,"Vendor CLIN, SubCLIN or Model #",
 TRHPH,A,TRHPH Series A,2009 Baseline Price*,
 TRHPH,A,TRHPH Series A,2009 Deployed Instrument Count,1
@@ -2440,9 +2739,11 @@ TRHPH,A,TRHPH Series A,Instrument Configuration,
 TRHPH,A,TRHPH Series A,Link to the Specification,
 TRHPH,A,TRHPH Series A,Notes,
 TRHPH,A,TRHPH Series A,PrimaryScienceDiscipline,G
+TRHPH,A,TRHPH Series A,Produces Acoustic Interference,
 TRHPH,A,TRHPH Series A,Ready for 2013?,
 TRHPH,A,TRHPH Series A,RSN O&M Spares,
 TRHPH,A,TRHPH Series A,RSN Part Number,
+TRHPH,A,TRHPH Series A,Susceptible to Acoustic Interference,
 TRHPH,A,TRHPH Series A,"Vendor CLIN, SubCLIN or Model #",
 VADCP,A,VADCP Series A,2009 Baseline Price*,
 VADCP,A,VADCP Series A,2009 Deployed Instrument Count,2
@@ -2461,9 +2762,11 @@ VADCP,A,VADCP Series A,Instrument Configuration,
 VADCP,A,VADCP Series A,Link to the Specification,
 VADCP,A,VADCP Series A,Notes,
 VADCP,A,VADCP Series A,PrimaryScienceDiscipline,P
+VADCP,A,VADCP Series A,Produces Acoustic Interference,
 VADCP,A,VADCP Series A,Ready for 2013?,
 VADCP,A,VADCP Series A,RSN O&M Spares,
 VADCP,A,VADCP Series A,RSN Part Number,
+VADCP,A,VADCP Series A,Susceptible to Acoustic Interference,
 VADCP,A,VADCP Series A,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,0,VEL3D Series 0,2009 Baseline Price*,"$10,805.00"
 VEL3D,0,VEL3D Series 0,2009 Deployed Instrument Count,33
@@ -2482,9 +2785,11 @@ VEL3D,0,VEL3D Series 0,Instrument Configuration,
 VEL3D,0,VEL3D Series 0,Link to the Specification,
 VEL3D,0,VEL3D Series 0,Notes,
 VEL3D,0,VEL3D Series 0,PrimaryScienceDiscipline,P
+VEL3D,0,VEL3D Series 0,Produces Acoustic Interference,
 VEL3D,0,VEL3D Series 0,Ready for 2013?,
 VEL3D,0,VEL3D Series 0,RSN O&M Spares,
 VEL3D,0,VEL3D Series 0,RSN Part Number,
+VEL3D,0,VEL3D Series 0,Susceptible to Acoustic Interference,Yes
 VEL3D,0,VEL3D Series 0,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,A,VEL3D Series A,2009 Baseline Price*,"$10,805.00"
 VEL3D,A,VEL3D Series A,2009 Deployed Instrument Count,33
@@ -2503,9 +2808,11 @@ VEL3D,A,VEL3D Series A,Instrument Configuration,
 VEL3D,A,VEL3D Series A,Link to the Specification,
 VEL3D,A,VEL3D Series A,Notes,
 VEL3D,A,VEL3D Series A,PrimaryScienceDiscipline,P
+VEL3D,A,VEL3D Series A,Produces Acoustic Interference,
 VEL3D,A,VEL3D Series A,Ready for 2013?,
 VEL3D,A,VEL3D Series A,RSN O&M Spares,
 VEL3D,A,VEL3D Series A,RSN Part Number,
+VEL3D,A,VEL3D Series A,Susceptible to Acoustic Interference,Yes
 VEL3D,A,VEL3D Series A,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,B,VEL3D Series B,2009 Baseline Price*,"$10,805.00"
 VEL3D,B,VEL3D Series B,2009 Deployed Instrument Count,33
@@ -2524,9 +2831,11 @@ VEL3D,B,VEL3D Series B,Instrument Configuration,
 VEL3D,B,VEL3D Series B,Link to the Specification,
 VEL3D,B,VEL3D Series B,Notes,
 VEL3D,B,VEL3D Series B,PrimaryScienceDiscipline,P
+VEL3D,B,VEL3D Series B,Produces Acoustic Interference,
 VEL3D,B,VEL3D Series B,Ready for 2013?,
 VEL3D,B,VEL3D Series B,RSN O&M Spares,
 VEL3D,B,VEL3D Series B,RSN Part Number,
+VEL3D,B,VEL3D Series B,Susceptible to Acoustic Interference,Yes
 VEL3D,B,VEL3D Series B,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,C,VEL3D Series C,2009 Baseline Price*,"$10,805.00"
 VEL3D,C,VEL3D Series C,2009 Deployed Instrument Count,33
@@ -2545,9 +2854,11 @@ VEL3D,C,VEL3D Series C,Instrument Configuration,
 VEL3D,C,VEL3D Series C,Link to the Specification,
 VEL3D,C,VEL3D Series C,Notes,
 VEL3D,C,VEL3D Series C,PrimaryScienceDiscipline,P
+VEL3D,C,VEL3D Series C,Produces Acoustic Interference,
 VEL3D,C,VEL3D Series C,Ready for 2013?,
 VEL3D,C,VEL3D Series C,RSN O&M Spares,
 VEL3D,C,VEL3D Series C,RSN Part Number,
+VEL3D,C,VEL3D Series C,Susceptible to Acoustic Interference,Yes
 VEL3D,C,VEL3D Series C,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,D,VEL3D Series D,2009 Baseline Price*,"$10,805.00"
 VEL3D,D,VEL3D Series D,2009 Deployed Instrument Count,33
@@ -2566,9 +2877,11 @@ VEL3D,D,VEL3D Series D,Instrument Configuration,
 VEL3D,D,VEL3D Series D,Link to the Specification,
 VEL3D,D,VEL3D Series D,Notes,
 VEL3D,D,VEL3D Series D,PrimaryScienceDiscipline,P
+VEL3D,D,VEL3D Series D,Produces Acoustic Interference,
 VEL3D,D,VEL3D Series D,Ready for 2013?,
 VEL3D,D,VEL3D Series D,RSN O&M Spares,
 VEL3D,D,VEL3D Series D,RSN Part Number,
+VEL3D,D,VEL3D Series D,Susceptible to Acoustic Interference,Yes
 VEL3D,D,VEL3D Series D,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,K,VEL3D Series K,2009 Baseline Price*,"$10,805.00"
 VEL3D,K,VEL3D Series K,2009 Deployed Instrument Count,33
@@ -2587,9 +2900,11 @@ VEL3D,K,VEL3D Series K,Instrument Configuration,
 VEL3D,K,VEL3D Series K,Link to the Specification,
 VEL3D,K,VEL3D Series K,Notes,
 VEL3D,K,VEL3D Series K,PrimaryScienceDiscipline,P
+VEL3D,K,VEL3D Series K,Produces Acoustic Interference,
 VEL3D,K,VEL3D Series K,Ready for 2013?,
 VEL3D,K,VEL3D Series K,RSN O&M Spares,
 VEL3D,K,VEL3D Series K,RSN Part Number,
+VEL3D,K,VEL3D Series K,Susceptible to Acoustic Interference,Yes
 VEL3D,K,VEL3D Series K,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,L,VEL3D Series L,2009 Baseline Price*,"$10,805.00"
 VEL3D,L,VEL3D Series L,2009 Deployed Instrument Count,33
@@ -2608,9 +2923,11 @@ VEL3D,L,VEL3D Series L,Instrument Configuration,
 VEL3D,L,VEL3D Series L,Link to the Specification,
 VEL3D,L,VEL3D Series L,Notes,
 VEL3D,L,VEL3D Series L,PrimaryScienceDiscipline,P
+VEL3D,L,VEL3D Series L,Produces Acoustic Interference,
 VEL3D,L,VEL3D Series L,Ready for 2013?,
 VEL3D,L,VEL3D Series L,RSN O&M Spares,
 VEL3D,L,VEL3D Series L,RSN Part Number,
+VEL3D,L,VEL3D Series L,Susceptible to Acoustic Interference,Yes
 VEL3D,L,VEL3D Series L,"Vendor CLIN, SubCLIN or Model #",
 VELPT,A,VELPT Series A,2009 Baseline Price*,"$14,700.00"
 VELPT,A,VELPT Series A,2009 Deployed Instrument Count,29
@@ -2629,9 +2946,11 @@ VELPT,A,VELPT Series A,Instrument Configuration,
 VELPT,A,VELPT Series A,Link to the Specification,
 VELPT,A,VELPT Series A,Notes,
 VELPT,A,VELPT Series A,PrimaryScienceDiscipline,P
+VELPT,A,VELPT Series A,Produces Acoustic Interference,
 VELPT,A,VELPT Series A,Ready for 2013?,
 VELPT,A,VELPT Series A,RSN O&M Spares,
 VELPT,A,VELPT Series A,RSN Part Number,
+VELPT,A,VELPT Series A,Susceptible to Acoustic Interference,Yes
 VELPT,A,VELPT Series A,"Vendor CLIN, SubCLIN or Model #",
 VELPT,B,VELPT Series B,2009 Baseline Price*,"$14,700.00"
 VELPT,B,VELPT Series B,2009 Deployed Instrument Count,29
@@ -2650,10 +2969,35 @@ VELPT,B,VELPT Series B,Instrument Configuration,
 VELPT,B,VELPT Series B,Link to the Specification,
 VELPT,B,VELPT Series B,Notes,
 VELPT,B,VELPT Series B,PrimaryScienceDiscipline,P
+VELPT,B,VELPT Series B,Produces Acoustic Interference,
 VELPT,B,VELPT Series B,Ready for 2013?,
 VELPT,B,VELPT Series B,RSN O&M Spares,
 VELPT,B,VELPT Series B,RSN Part Number,
+VELPT,B,VELPT Series B,Susceptible to Acoustic Interference,Yes
 VELPT,B,VELPT Series B,"Vendor CLIN, SubCLIN or Model #",
+VELPT,D,VELPT Series D,2009 Baseline Price*,"$14,700.00"
+VELPT,D,VELPT Series D,2009 Deployed Instrument Count,29
+VELPT,D,VELPT Series D,Alternate Instrument Class Name,Single Point Velocity Meter
+VELPT,D,VELPT Series D,CE Spares,
+VELPT,D,VELPT Series D,CGSN MREFC Spares,
+VELPT,D,VELPT Series D,CGSN O&M Spares,
+VELPT,D,VELPT Series D,CGSN P/N,
+VELPT,D,VELPT Series D,ClassLongName,Velocity_point
+VELPT,D,VELPT Series D,Comments,
+VELPT,D,VELPT Series D,CP Spares,
+VELPT,D,VELPT Series D,Description,Measures Mean U and V single point velocity
+VELPT,D,VELPT Series D,ECRs that changed the count,
+VELPT,D,VELPT Series D,Global Spares,
+VELPT,D,VELPT Series D,Instrument Configuration,
+VELPT,D,VELPT Series D,Link to the Specification,
+VELPT,D,VELPT Series D,Notes,
+VELPT,D,VELPT Series D,PrimaryScienceDiscipline,P
+VELPT,D,VELPT Series D,Produces Acoustic Interference,
+VELPT,D,VELPT Series D,Ready for 2013?,
+VELPT,D,VELPT Series D,RSN O&M Spares,
+VELPT,D,VELPT Series D,RSN Part Number,
+VELPT,D,VELPT Series D,Susceptible to Acoustic Interference,Yes
+VELPT,D,VELPT Series D,"Vendor CLIN, SubCLIN or Model #",
 WAVSS,A,WAVSS Series A,2009 Baseline Price*,"$17,279.00"
 WAVSS,A,WAVSS Series A,2009 Deployed Instrument Count,10
 WAVSS,A,WAVSS Series A,Alternate Instrument Class Name,Surface Wave Spectra
@@ -2671,9 +3015,11 @@ WAVSS,A,WAVSS Series A,Instrument Configuration,
 WAVSS,A,WAVSS Series A,Link to the Specification,
 WAVSS,A,WAVSS Series A,Notes,
 WAVSS,A,WAVSS Series A,PrimaryScienceDiscipline,P
+WAVSS,A,WAVSS Series A,Produces Acoustic Interference,
 WAVSS,A,WAVSS Series A,Ready for 2013?,
 WAVSS,A,WAVSS Series A,RSN O&M Spares,
 WAVSS,A,WAVSS Series A,RSN Part Number,
+WAVSS,A,WAVSS Series A,Susceptible to Acoustic Interference,
 WAVSS,A,WAVSS Series A,"Vendor CLIN, SubCLIN or Model #",
 ZPLSC,A,ZPLSC Series A,2009 Baseline Price*,"$46,000.00"
 ZPLSC,A,ZPLSC Series A,2009 Deployed Instrument Count,8
@@ -2692,9 +3038,11 @@ ZPLSC,A,ZPLSC Series A,Instrument Configuration,
 ZPLSC,A,ZPLSC Series A,Link to the Specification,
 ZPLSC,A,ZPLSC Series A,Notes,
 ZPLSC,A,ZPLSC Series A,PrimaryScienceDiscipline,B
+ZPLSC,A,ZPLSC Series A,Produces Acoustic Interference,
 ZPLSC,A,ZPLSC Series A,Ready for 2013?,
 ZPLSC,A,ZPLSC Series A,RSN O&M Spares,
 ZPLSC,A,ZPLSC Series A,RSN Part Number,
+ZPLSC,A,ZPLSC Series A,Susceptible to Acoustic Interference,Yes
 ZPLSC,A,ZPLSC Series A,"Vendor CLIN, SubCLIN or Model #",
 ZPLSC,B,ZPLSC Series B,2009 Baseline Price*,"$46,000.00"
 ZPLSC,B,ZPLSC Series B,2009 Deployed Instrument Count,8
@@ -2713,9 +3061,11 @@ ZPLSC,B,ZPLSC Series B,Instrument Configuration,
 ZPLSC,B,ZPLSC Series B,Link to the Specification,
 ZPLSC,B,ZPLSC Series B,Notes,
 ZPLSC,B,ZPLSC Series B,PrimaryScienceDiscipline,B
+ZPLSC,B,ZPLSC Series B,Produces Acoustic Interference,
 ZPLSC,B,ZPLSC Series B,Ready for 2013?,
 ZPLSC,B,ZPLSC Series B,RSN O&M Spares,
 ZPLSC,B,ZPLSC Series B,RSN Part Number,
+ZPLSC,B,ZPLSC Series B,Susceptible to Acoustic Interference,Yes
 ZPLSC,B,ZPLSC Series B,"Vendor CLIN, SubCLIN or Model #",
 ZPLSC,C,ZPLSC Series C,2009 Baseline Price*,"$46,000.00"
 ZPLSC,C,ZPLSC Series C,2009 Deployed Instrument Count,8
@@ -2734,9 +3084,11 @@ ZPLSC,C,ZPLSC Series C,Instrument Configuration,
 ZPLSC,C,ZPLSC Series C,Link to the Specification,
 ZPLSC,C,ZPLSC Series C,Notes,
 ZPLSC,C,ZPLSC Series C,PrimaryScienceDiscipline,B
-ZPLSC,C,ZPLSC Series C,Ready for 2013?,
+ZPLSC,C,ZPLSC Series C,Produces Acoustic Interference,
+ZPLSC,C,ZPLSC Series C,Ready for 2013?,No
 ZPLSC,C,ZPLSC Series C,RSN O&M Spares,
 ZPLSC,C,ZPLSC Series C,RSN Part Number,
+ZPLSC,C,ZPLSC Series C,Susceptible to Acoustic Interference,Yes
 ZPLSC,C,ZPLSC Series C,"Vendor CLIN, SubCLIN or Model #",
 ZPLSG,A,ZPLSG Series A,2009 Baseline Price*,"$95,000.00"
 ZPLSG,A,ZPLSG Series A,2009 Deployed Instrument Count,4
@@ -2755,8 +3107,10 @@ ZPLSG,A,ZPLSG Series A,Instrument Configuration,
 ZPLSG,A,ZPLSG Series A,Link to the Specification,
 ZPLSG,A,ZPLSG Series A,Notes,
 ZPLSG,A,ZPLSG Series A,PrimaryScienceDiscipline,B
-ZPLSG,A,ZPLSG Series A,Ready for 2013?,
+ZPLSG,A,ZPLSG Series A,Produces Acoustic Interference,
+ZPLSG,A,ZPLSG Series A,Ready for 2013?,No
 ZPLSG,A,ZPLSG Series A,RSN O&M Spares,
 ZPLSG,A,ZPLSG Series A,RSN Part Number,
+ZPLSG,A,ZPLSG Series A,Susceptible to Acoustic Interference,Yes
 ZPLSG,A,ZPLSG Series A,"Vendor CLIN, SubCLIN or Model #",
 

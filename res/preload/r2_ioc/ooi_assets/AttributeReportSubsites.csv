@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subsite Attributes Report,Report Generated: 10/30/2012
+Subsite Attributes Report,Report Generated: 2/8/2013
 
 Textbox14
 
@@ -75,7 +75,7 @@ CE04OSSM,Endurance OR Offshore Surface Mooring,Relative Depth,
 CE05MOAS,Endurance Mobile Assets,depth_port_max,
 CE05MOAS,Endurance Mobile Assets,depth_port_min,
 CE05MOAS,Endurance Mobile Assets,depth_subsite,
-CE05MOAS,Endurance Mobile Assets,First Deployment Date,2012-10
+CE05MOAS,Endurance Mobile Assets,First Deployment Date,2013-06
 CE05MOAS,Endurance Mobile Assets,latitude,
 CE05MOAS,Endurance Mobile Assets,longitude,
 CE05MOAS,Endurance Mobile Assets,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -251,7 +251,7 @@ GA03FLMB,Argentine Basin Mesoscale Flanking Mooring B,Relative Depth,
 GA05MOAS,Argentine Basin Mobile Assets,depth_port_max,
 GA05MOAS,Argentine Basin Mobile Assets,depth_port_min,
 GA05MOAS,Argentine Basin Mobile Assets,depth_subsite,
-GA05MOAS,Argentine Basin Mobile Assets,First Deployment Date,2014-02
+GA05MOAS,Argentine Basin Mobile Assets,First Deployment Date,2015-01
 GA05MOAS,Argentine Basin Mobile Assets,latitude,
 GA05MOAS,Argentine Basin Mobile Assets,longitude,
 GA05MOAS,Argentine Basin Mobile Assets,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server

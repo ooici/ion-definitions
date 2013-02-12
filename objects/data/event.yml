@@ -279,6 +279,14 @@ ServicePolicyEvent: !Extends_PolicyEvent
   service_name: ""
   op: ""   #Optional op name
 
+
+#The following events are used to flush various policy related caches
+#This event is used to flush the policy caches in each container
+PolicyCacheResetEvent: !Extends_PolicyEvent
+
+#This event is used to flush the caches containing user roles
+UserRoleCacheResetEvent: !Extends_PolicyEvent
+
 # ------------------------------------------------------------------------------------
 # Org Event
 # Events from an Org about its members or resources
@@ -286,10 +294,12 @@ ServicePolicyEvent: !Extends_PolicyEvent
 
 
 #Base Org Event
+#The origin is the org_id for all events based off of this OrgEvent
 OrgEvent: !Extends_Event
 
 ---
 
+#This event is used as a parent event for User Role related events
 UserRoleModifiedEvent: !Extends_OrgEvent
   actor_id: ""
   role_name: ""
@@ -297,7 +307,7 @@ UserRoleModifiedEvent: !Extends_OrgEvent
 ---
 
 #The following events are published when Org operations occur
-#The origin is the org_id
+
 OrgMembershipGrantedEvent: !Extends_OrgEvent
   actor_id: ""
 

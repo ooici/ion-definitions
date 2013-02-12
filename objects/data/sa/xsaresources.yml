@@ -190,6 +190,9 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
   last_calibration_datetime: !ComputedFloatValue  #
 
+  #@Method
+  autosample_duration: !ComputedIntValue  #number of seconds that this device has been in autosample mode. zero if not currently in autosample mode.
+
   power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN

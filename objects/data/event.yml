@@ -12,9 +12,14 @@ Event:
   sub_type: ""      # A specialization of the event_type expressed by this object type (or empty)
 
 
-      
+# Object containing additional computed information about one Event
+EventComputedAttributes:
+  event_id: ""            # The event id of the described Event
+  ts_computed: ""         # Timestamp when event attributes were computed
+  event_summary: ""       # A summary str describing event based on type and core attributes
+  special_attributes: ""  # A str with additional event attributes in printable form
 
-    
+
 ---
 
 # ------------------------------------------------------------------------------------

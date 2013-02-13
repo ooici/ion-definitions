@@ -17,6 +17,7 @@ methods:
       parameter_dictionary_id: ""
       stream_type: ""
       description: ""
+      available_fields: []
     out:
       stream_definition_id: ""
     throws:

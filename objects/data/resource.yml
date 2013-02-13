@@ -3,15 +3,16 @@
 # Represents an entity associated with the Integrated Observatory that provides capability
 # and has a life cycle. Abstract base type.
 Resource:
-  # _id: ""   - Unique identifier (comes with every object)
-  # _rev: ""   - Revision identifier (comes with every object)
-  name: ""
-  description: ""
+  # _id: ""       - Unique identifier (comes with every object)
+  # _rev: ""      - Revision identifier (comes with every object)
+  # type_: ""     - Object type name (comes with every object)
+  name: ""        # Human readable long name of the resource, displayable in lists
+  description: "" # A more verbose description if needed
   lcstate: "DRAFT_PRIVATE"
-  ts_created: ""  # Timestamp str in millis in UNIX epoch
-  ts_updated: ""
-  alt_ids: []   # System internal - Used to assign alternate IDs to this resource, e.g. for preload
-  addl: {}     # System internal - Additional attributes from preload import
+  ts_created: ""  # Timestamp str in millis in UNIX epoch when resource was created
+  ts_updated: ""  # Timestamp str in millis in UNIX epoch when resource was last updated
+  alt_ids: []     # System internal - Used to assign alternate IDs to this resource, e.g. for preload
+  addl: {}        # System internal - Additional attributes from preload import
 
 ---
 
@@ -83,6 +84,7 @@ ComputedDictValue: !Extends_ComputedValue
 ComputedAttributes:
   #@Method=user_notification.get_recent_events
   recent_events: !ComputedListValue    # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first
+
   #@Method=user_notification.get_subscriptions_attribute
   user_notification_requests:  !ComputedListValue      # A list of NotificationRequest objects, for the current user, where origin equals current resource id
 

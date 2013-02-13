@@ -19,6 +19,8 @@ EventComputedAttributes:
   event_summary: ""       # A summary str describing event based on type and core attributes
   special_attributes: ""  # A str with additional event attributes in printable form
 
+ComputedEventListValue: !Extends_ComputedListValue
+  computed_list: []    # List of EventComputedAttributes in same order than list of events
 
 ---
 

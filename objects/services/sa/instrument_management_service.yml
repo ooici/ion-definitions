@@ -85,6 +85,7 @@ methods:
       Launch an instument agent instance process and return its process id. Agent instance resource
       must exist and be associated with an InstrumentDevice
     in:
+      #@ResourceId
       instrument_agent_instance_id: ""
     out:
       process_id: ""
@@ -94,6 +95,7 @@ methods:
   stop_instrument_agent_instance:
     docstring: Deactivate the instrument agent instance process
     in:
+      #@ResourceId
       instrument_agent_instance_id: ""
     out:
     throws:
@@ -311,6 +313,7 @@ methods:
       Launch an platform agent instance process and return its process id. Agent instance resource
       must exist and be associated with an PlatformDevice
     in:
+      #@ResourceId
       platform_agent_instance_id: ""
     out:
       process_id: ""
@@ -320,6 +323,7 @@ methods:
   stop_platform_agent_instance:
     docstring: Deactivate the platform agent instance process
     in:
+      #@ResourceId
       platform_agent_instance_id: ""
     out:
     throws:

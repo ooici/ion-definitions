@@ -13,7 +13,7 @@ Deco_Example:
 
   # This attribute is decorated to define the type(s)
   # which can be present in the list attribute.
-  #@ContentType=int,float
+  #@ContentType=ContactInformation
   list1: []
 
   # This attribute is decorated to define the valid length
@@ -34,6 +34,7 @@ Deco_Example:
   # This attribute is decorated to indicate the attribute
   # cannot be null.
   #@Required
+  #@ValuePattern=(^(CAM|CO2|CTD|DO2)$)
   an_important_value:
 
   # This attribue is decorated to define the required string pattern.

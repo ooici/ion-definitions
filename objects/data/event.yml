@@ -18,6 +18,7 @@ EventComputedAttributes:
   ts_computed: ""         # Timestamp when event attributes were computed
   event_summary: ""       # A summary str describing event based on type and core attributes
   special_attributes: ""  # A str with additional event attributes in printable form
+  event_attributes_formatted: ""  # A str with event attributes in pretty printed form with newlines
 
 ComputedEventListValue: !Extends_ComputedListValue
   computed_list: []    # List of EventComputedAttributes in same order than list of events
@@ -50,6 +51,10 @@ ResourceLifecycleEvent: !Extends_ResourceEvent
   transition_event: ""
   resource_type: ""
 
+# Event indicating that resource attributes were changed or the resource was created or deleted
+ResourceModifiedEvent: !Extends_ResourceEvent
+  mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, RETIRE, DELETE), default=UPDATE)
+
 # Event indicating that a (taskable) resource was commanded and a result is available
 ResourceCommandEvent: !Extends_ResourceEvent
   command: ""
@@ -58,9 +63,6 @@ ResourceCommandEvent: !Extends_ResourceEvent
 # Event created by an operator of a resource, for instance to manually indicate a modification or error.
 ResourceOperatorEvent: !Extends_ResourceEvent
 
-# Event indicating that resource metadata was changed or the resource was created or deleted
-ResourceModifiedEvent: !Extends_ResourceEvent
-  mod_type: !enum (name=ResourceModificationType, values=(CREATE, UPDATE, RETIRE, DELETE), default=UPDATE)
 
 ---
 # DataSource Events
@@ -303,6 +305,7 @@ UserRoleCacheResetEvent: !Extends_PolicyEvent
 #Base Org Event
 #The origin is the org_id for all events based off of this OrgEvent
 OrgEvent: !Extends_Event
+  org_name: ""
 
 ---
 
@@ -333,9 +336,13 @@ ResourceUnsharedEvent: !Extends_OrgEvent
 
 ResourceCommitmentCreatedEvent: !Extends_OrgEvent
   resource_id: ""
+  commitment_id: ""
+  commitment_type: ""
 
 ResourceCommitmentReleasedEvent: !Extends_OrgEvent
   resource_id: ""
+  commitment_id: ""
+  commitment_type: ""
 
 
 ---

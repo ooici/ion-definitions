@@ -17,3 +17,9 @@ DataProcess: !Extends_InformationResource
   input_subscription_id: ""
   process_id: ""
   configuration: {}
+
+TransformFunction: !Extends_InformationResource
+  input_stream_definition: 
+  output_stream_definition:
+  module:
+  cls:

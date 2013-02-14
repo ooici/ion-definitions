@@ -10,6 +10,7 @@ DataProcessDefinition: !Extends_InformationResource
   parameters: {}
 
   output_bindings: {}
+  data_process_type: "" #Will be an enum
 
 # Represents a computational process receiving data granules from stream subscription and
 # produces output data products. Instance of DataProcessDefinition.
@@ -19,7 +20,7 @@ DataProcess: !Extends_InformationResource
   configuration: {}
 
 TransformFunction: !Extends_InformationResource
-  input_stream_definition: 
-  output_stream_definition:
-  module:
-  cls:
+  module: ""
+  cls:    ""
+  uri:    ""
+

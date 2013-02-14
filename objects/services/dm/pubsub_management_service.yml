@@ -46,6 +46,16 @@ methods:
     out:
       equal: False
 
+  compatible_stream_definitions:
+    docstring: |
+      Determines compatibility between an input stream definition
+      and an output stream definition.
+    in:
+      in_stream_definition_id: ""
+      out_stream_definition_id: ""
+    out:
+      equal: False
+
   #---------
   
   create_stream:

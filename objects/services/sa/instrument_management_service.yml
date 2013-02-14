@@ -35,6 +35,7 @@ methods:
   read_instrument_agent_instance:
     docstring: Read an InstrumentAgentInstance resource
     in:
+      #@ResourceId
       instrument_agent_instance_id: ""
     out:
       instrument_agent_instance: !InstrumentAgentInstance
@@ -44,6 +45,7 @@ methods:
   delete_instrument_agent_instance:
     docstring: Delete an InstrumentAgentInstance resource
     in:
+      #@ResourceId
       instrument_agent_instance_id: ""
     out:
     throws:
@@ -52,6 +54,7 @@ methods:
   force_delete_instrument_agent_instance:
     docstring: Delete an InstrumentAgentInstance resource
     in:
+      #@ResourceId
       instrument_agent_instance_id: ""
     out:
     throws:
@@ -62,6 +65,7 @@ methods:
       Serialize the instrument agent configuration for an instrument device and save it as a JSON
       attachment with the given name
     in:
+      #@ResourceId
       instrument_device_id: ""
       name: ""
     out:
@@ -74,6 +78,7 @@ methods:
       Deserialize the instrument agent configuration for an instrument device from an attachment 
       and store it to the current driver config
     in:
+      #@ResourceId
       instrument_device_id: ""
       attachment_id: ""
     out:
@@ -126,6 +131,7 @@ methods:
   read_instrument_agent:
     docstring: Read an InstrumentAgent resource
     in:
+      #@ResourceId
       instrument_agent_id: ""
     out:
       instrument_agent: !InstrumentAgent
@@ -135,6 +141,7 @@ methods:
   delete_instrument_agent:
     docstring: Delete an InstrumentAgent resource
     in:
+      #@ResourceId
       instrument_agent_id: ""
     out:
     throws:
@@ -143,6 +150,7 @@ methods:
   force_delete_instrument_agent:
     docstring: Delete an InstrumentAgent resource
     in:
+      #@ResourceId
       instrument_agent_id: ""
     out:
     throws:
@@ -151,6 +159,7 @@ methods:
   register_instrument_agent:
     docstring: Register an InstrumentAgent egg, attach IDK validation docs and move the state to integrated
     in:
+      #@ResourceId
       instrument_agent_id: ""
       agent_egg: ""
       qa_documents: ""
@@ -186,6 +195,7 @@ methods:
   read_instrument_device:
     docstring: Read an InstrumentDevice resource
     in:
+      #@ResourceId
       instrument_device_id: ""
     out:
       instrument_device: !InstrumentDevice
@@ -195,6 +205,7 @@ methods:
   delete_instrument_device:
     docstring: Delete an InstrumentDevice resource
     in:
+      #@ResourceId
       instrument_device_id: ""
     out:
     throws:
@@ -203,6 +214,7 @@ methods:
   force_delete_instrument_device:
     docstring: Delete an InstrumentDevice resource
     in:
+      #@ResourceId
       instrument_device_id: ""
     out:
     throws:
@@ -234,6 +246,7 @@ methods:
   read_instrument_model:
     docstring: Read an InstrumentModel resource
     in:
+      #@ResourceId
       instrument_model_id: ""
     out:
       instrument_model: !InstrumentModel
@@ -251,6 +264,7 @@ methods:
   force_delete_instrument_model:
     docstring: Delete an InstrumentModel resource
     in:
+      #@ResourceId
       instrument_model_id: ""
     out:
     throws:
@@ -286,6 +300,7 @@ methods:
   read_platform_agent_instance:
     docstring: Read a PlatformAgentInstance resource
     in:
+      #@ResourceId
       platform_agent_instance_id: ""
     out:
       platform_agent_instance: !PlatformAgentInstance
@@ -295,6 +310,7 @@ methods:
   delete_platform_agent_instance:
     docstring: Delete a PlatformAgentInstance resource
     in:
+      #@ResourceId
       platform_agent_instance_id: ""
     out:
     throws:
@@ -303,6 +319,7 @@ methods:
   force_delete_platform_agent_instance:
     docstring: Delete a PlatformAgentInstance resource
     in:
+      #@ResourceId
       platform_agent_instance_id: ""
     out:
     throws:
@@ -354,6 +371,7 @@ methods:
   read_platform_agent:
     docstring: Read a PlatformAgent resource
     in:
+      #@ResourceId
       platform_agent_id: ""
     out:
       platform_agent: !PlatformAgent
@@ -363,6 +381,7 @@ methods:
   delete_platform_agent:
     docstring: Delete a PlatformAgent resource
     in:
+      #@ResourceId
       platform_agent_id: ""
     out:
     throws:
@@ -371,6 +390,7 @@ methods:
   force_delete_platform_agent:
     docstring: Delete a PlatformAgent resource
     in:
+      #@ResourceId
       platform_agent_id: ""
     out:
     throws:
@@ -402,6 +422,7 @@ methods:
   read_platform_device:
     docstring: Read a PlatformDevice resource
     in:
+      #@ResourceId
       platform_device_id: ""
     out:
       platform_device: !PlatformDevice
@@ -411,6 +432,7 @@ methods:
   delete_platform_device:
     docstring: Delete a PlatformDevice resource
     in:
+      #@ResourceId
       platform_device_id: ""
     out:
     throws:
@@ -419,6 +441,7 @@ methods:
   force_delete_platform_device:
     docstring: Delete a PlatformDevice resource
     in:
+      #@ResourceId
       platform_device_id: ""
     out:
     throws:
@@ -449,6 +472,7 @@ methods:
   read_platform_model:
     docstring: Read a PlatformModel resource
     in:
+      #@ResourceId
       platform_model_id: ""
     out:
       platform_model: !PlatformModel
@@ -458,6 +482,7 @@ methods:
   delete_platform_model:
     docstring: Delete a PlatformModel resource
     in:
+      #@ResourceId
       platform_model_id: ""
     out:
     throws:
@@ -466,6 +491,7 @@ methods:
   force_delete_platform_model:
     docstring: Delete a PlatformModel resource
     in:
+      #@ResourceId
       platform_model_id: ""
     out:
     throws:
@@ -496,6 +522,7 @@ methods:
   read_sensor_device:
     docstring: Read a SensorDevice resource
     in:
+      #@ResourceId
       sensor_device_id: ""
     out:
       sensor_device: !SensorDevice
@@ -505,6 +532,7 @@ methods:
   delete_sensor_device:
     docstring: Deleate a SensorDevice resource
     in:
+      #@ResourceId
       sensor_device_id: ""
     out:
     throws:
@@ -513,6 +541,7 @@ methods:
   force_delete_sensor_device:
     docstring: Deleate a SensorDevice resource
     in:
+      #@ResourceId
       sensor_device_id: ""
     out:
     throws:
@@ -544,6 +573,7 @@ methods:
   read_sensor_model:
     docstring: Read a SensorModel resource
     in:
+      #@ResourceId
       sensor_model_id: ""
     out:
       sensor_model: !SensorModel
@@ -553,6 +583,7 @@ methods:
   delete_sensor_model:
     docstring: Delete a SensorModel resource
     in:
+      #@ResourceId
       sensor_model_id: ""
     out:
     throws:
@@ -561,6 +592,7 @@ methods:
   force_delete_sensor_model:
     docstring: Delete a SensorModel resource
     in:
+      #@ResourceId
       sensor_model_id: ""
     out:
     throws:
@@ -934,11 +966,13 @@ methods:
 
   request_direct_access:
     in:
+      #@ResourceId
       instrument_device_id: ""
     out:
 
   stop_direct_access:
     in:
+      #@ResourceId
       instrument_device_id: ""
     out:
 
@@ -952,6 +986,7 @@ methods:
   execute_instrument_agent_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       instrument_agent_id: ""
       lifecycle_event: ""
     out:
@@ -959,6 +994,7 @@ methods:
   execute_instrument_agent_instance_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       instrument_agent_instance_id: ""
       lifecycle_event: ""
     out:
@@ -966,6 +1002,7 @@ methods:
   execute_instrument_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       instrument_model_id: ""
       lifecycle_event: ""
     out:
@@ -973,6 +1010,7 @@ methods:
   execute_instrument_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       instrument_device_id: ""
       lifecycle_event: ""
     out:
@@ -980,6 +1018,7 @@ methods:
   execute_platform_agent_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       platform_agent_id: ""
       lifecycle_event: ""
     out:
@@ -987,6 +1026,7 @@ methods:
   execute_platform_agent_instance_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       platform_agent_instance_id: ""
       lifecycle_event: ""
     out:
@@ -994,6 +1034,7 @@ methods:
   execute_platform_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       platform_model_id: ""
       lifecycle_event: ""
     out:
@@ -1001,6 +1042,7 @@ methods:
   execute_platform_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       platform_device_id: ""
       lifecycle_event: ""
     out:
@@ -1008,6 +1050,7 @@ methods:
   execute_sensor_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       sensor_model_id: ""
       lifecycle_event: ""
     out:
@@ -1015,6 +1058,7 @@ methods:
   execute_sensor_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
+      #@ResourceId
       sensor_device_id: ""
       lifecycle_event: ""
     out:
@@ -1026,6 +1070,7 @@ methods:
     docstring: |
       Returns an InstrumentDeviceExtension object containing additional related information
     in:
+      #@ResourceId
       instrument_device_id: ""
       ext_associations: {}   # An optional dict of names and associations to get other associations dynamically
       ext_exclude: []        # An optional list of field names to exclude from retrieving
@@ -1040,6 +1085,7 @@ methods:
     docstring: |
       Returns an PlatformDeviceExtension object containing additional related information
     in:
+      #@ResourceId
       platform_device_id: ""
       ext_associations: {}    # An optional dict of names and associations to get other associations dynamically
       ext_exclude: []         # An optional list of field names to exclude from retrieving

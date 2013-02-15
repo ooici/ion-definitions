@@ -202,9 +202,11 @@ apps:
   - name: parameter_bootstrap
     version: 0.1
     description: Boot straps the parameter definitions
-    processapp: [ion_loader1, ion.processes.bootstrap.ion_loader, IONLoader]
+    processapp: [parameter_bootstrap, ion.processes.bootstrap.bootstrapper, Bootstrapper]
     bootlevel: 25
     config:
+      bootstrap_plugins: 
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_parameters, BootstrapParameters]
       op: load
       scenario: BASE
       path: res/preload/r2_ioc

@@ -17,6 +17,7 @@ methods:
       or the same ServiceAgreementProposal indicating the offer has been accepted.
       NEEDS REFINEMENT.
     in:
+      #@ResourceId
       resource_id: ""
       sap_in: !ServiceAgreementProposal
     out:
@@ -30,6 +31,7 @@ methods:
       Returns a dict of capabilities (AgentCapability objects) for this agent. Represents the current
       capabilies. There is no guarantee that all of these capabilities are active in the current operational state.
     in:
+      #@ResourceId
       resource_id: ""
       # Leave types default for all
       capability_types: []
@@ -45,6 +47,7 @@ methods:
       Execute a command against the resource and returns the result.
       As a side effect, fire a ResourceCommandEvent (or sub-type) with the result of the command.
     in:
+      #@ResourceId
       resource_id: ""
       command: !AgentCommand
     out:
@@ -58,6 +61,7 @@ methods:
     docstring: |
       Return the value of a device parameter.
     in:
+      #@ResourceId
       resource_id: ""
       name: ""
     out:
@@ -69,6 +73,7 @@ methods:
     docstring: |
       Set the value of a device parameter.
     in:
+      #@ResourceId
       resource_id: ""
       name: ""
       value: ""
@@ -87,6 +92,7 @@ methods:
     docstring: |
       Execute a command against the agent itself and returns the result.
     in:
+      #@ResourceId
       resource_id: ""
       command: !AgentCommand
     out:
@@ -96,6 +102,7 @@ methods:
     docstring: |
       Returns the value of an agent parameter.
     in:
+      #@ResourceId
       resource_id: ""
       name: ""
     out:
@@ -107,6 +114,7 @@ methods:
     docstring: |
       Sets the value of an agent parameter.
     in:
+      #@ResourceId
       resource_id: ""
       name: ""
       value: ""

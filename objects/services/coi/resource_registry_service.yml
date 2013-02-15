@@ -27,6 +27,7 @@ methods:
       with id passed in the object_id param. Throws exception if
       object not found.
     in:
+      #@ResourceId
       object_id: ""
       rev_id: ""
     out:
@@ -38,6 +39,7 @@ methods:
     docstring: |
         Read the latest resources specified in the paramter.
     in:
+      #@ResourceId
       object_ids: []
     out:
       objects: []
@@ -50,6 +52,7 @@ methods:
       version of object does not exist or object passed is not based
       on the latest persisted version.
     in:
+      #@ResourceId=_id
       object: !Resource
     out:
       tuple: []
@@ -63,6 +66,7 @@ methods:
       Permanently delete object in datastores.
       Throws exception if object does not exist.
     in:
+      #@ResourceId
       object_id: ""
     out:
     throws:
@@ -73,6 +77,7 @@ methods:
       Sets resource lifecycle state to retired.
       Throws exception if object does not exist.
     in:
+      #@ResourceId
       resource_id: ""
     out:
     throws:
@@ -86,6 +91,7 @@ methods:
       if resource object does not exist or given transition_event is unknown/illegal.
       The new life cycle state after applying the transition is returned.
     in:
+      #@ResourceId
       resource_id: ""
       transition_event: ""
     out:
@@ -101,6 +107,7 @@ methods:
       if resource object does not exist or given state is unknown/illegal.
       The optional lcstate argument asserts that the current life cycle state matches.
     in:
+      #@ResourceId
       resource_id: ""
       target_lcstate: ""
     out:
@@ -116,6 +123,7 @@ methods:
       Create an Attachment resource associated with another resource.
       If no resource_id is provided, the attachment is created standalone.
     in:
+      #@ResourceId
       resource_id: ""
       attachment: !Attachment
     out:
@@ -409,6 +417,7 @@ methods:
     docstring: |
       Returns any ExtendedResource object containing additional related information derived from associations
     in:
+      #@ResourceId
       resource_id: ""         # The id of the resource to be extended
       resource_extension: ""  # The name of the resource extension to fill out.
       ext_associations: {}    # An optional dict of names and associations to get other associations dynamically

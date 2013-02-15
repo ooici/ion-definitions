@@ -13,7 +13,6 @@ methods:
     in:
       data_product: !DataProduct
       stream_definition_id: ""
-      parameter_dictionary: {}
       exchange_point: ""
     out:
       data_product_id: ""

@@ -67,11 +67,14 @@ methods:
       data_process_definition_list: []
 
   register_data_process_definition:
-    docstring: Upload a file (base64-encoded) and return the destination URI
+    docstring: Register a DataProcessDefinition egg, attach any relevant docs and move the state to integrated
     in:
-      process_code: ""
+      data_process_definition_id: ""
+      process_egg: ""
+      qa_documents: ""
     out:
-      uri: ""
+    throws:
+      NotFound: object with specified id does not exist
 
   assign_input_stream_definition_to_data_process_definition:
     docstring: Connect the input  stream with a data process definition

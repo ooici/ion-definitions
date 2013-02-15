@@ -8,7 +8,8 @@ Resource:
   # type_: ""     - Object type name (comes with every object)
   name: ""        # Human readable long name of the resource, displayable in lists
   description: "" # A more verbose description if needed
-  lcstate: "DRAFT_PRIVATE"
+  lcstate: "DRAFT"       # Resource life cycle state (maturity)
+  visibility: "PRIVATE"  # Resource visibility
   ts_created: ""  # Timestamp str in millis in UNIX epoch when resource was created
   ts_updated: ""  # Timestamp str in millis in UNIX epoch when resource was last updated
   alt_ids: []     # System internal - Used to assign alternate IDs to this resource, e.g. for preload

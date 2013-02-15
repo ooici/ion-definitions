@@ -55,6 +55,8 @@ ResourceEvent: !Extends_Event
 ResourceLifecycleEvent: !Extends_ResourceEvent
   old_state: ""
   new_state: ""
+  old_visibility: ""
+  new_visibility: ""
   transition_event: ""
   resource_type: ""
 

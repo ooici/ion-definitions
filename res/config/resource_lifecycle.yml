@@ -13,11 +13,13 @@ LifecycleResourceTypes:
 LifecycleWorkflowDefinitions:
   - name: ResourceLCSM
     lcsm_class: pyon.ion.resource.CommonResourceLifeCycleSM
-    initial_state: DRAFT_PRIVATE
+    initial_state: DRAFT
+    initial_visibility: PRIVATE
 
   - name: InformationResourceLCSM
     based_on: ResourceLCSM
-    initial_state: DEPLOYED_PRIVATE
+    initial_state: DEPLOYED
+    initial_visibility: PRIVATE
     illegal_states: []
     illegal_transitions: []
 

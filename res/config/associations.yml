@@ -17,8 +17,8 @@ AssociationDefinitions:
 #SA
   - predicate: hasDataset
     domain: [DataProducer, DataProduct]
-    range: [DataSet]
-    docstring: References a DataSet resource that keeps a persistent metadata/data coverage.
+    range: [Dataset]
+    docstring: References a Dataset resource that keeps a persistent metadata/data coverage.
   - predicate: hasDataProducer
     domain: [DataProcess, Process, Device, ExternalDataset, DataProduct]
     range: [DataProducer]
@@ -93,7 +93,7 @@ AssociationDefinitions:
     range: [Index]
     docstring: References the Index resource assocated with a structure or DataStore
   - predicate: hasIngestionConfiguration
-    domain: [DataSet, DatasetIngestionConfiguration]
+    domain: [Dataset, DatasetIngestionConfiguration]
     range: [IngestionConfiguration]
     docstring: References the configuration for the ingestion system
   - predicate: hasInputStreamDefinition
@@ -113,7 +113,7 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References one Stream on which a Transform publishes on
   - predicate: hasStream
-    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint]
+    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, Dataset, ExchangePoint]
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition

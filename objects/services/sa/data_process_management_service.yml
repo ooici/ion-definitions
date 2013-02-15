@@ -111,6 +111,34 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
+
+  create_transform_function:
+    docstring: Creates a new transform function
+    in:
+      transform_function: {}
+    out:
+      transform_function_id: ""
+
+  read_transform_function:
+    docstring: Reads an existing transform function
+    in:
+      transform_function_id: ""
+    out: 
+      transform_function: {}
+    throws:
+      NotFound: If TransformFunction does not exist
+
+  delete_transform_function:
+    docstring: Removes a transform function from the resource registry
+    in:
+      transform_function_id: ""
+    out:
+    throws:
+      BadRequst: If TransformFunction does not exist
+
+
+  # -----------------
+  
   create_data_process:
     docstring: Create an instance or realization of a data process definition.
     in:

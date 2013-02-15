@@ -20,7 +20,8 @@ DataProcess: !Extends_InformationResource
   configuration: {}
 
 TransformFunction: !Extends_InformationResource
-  module: ""
-  cls:    ""
-  uri:    ""
+  module:        ""
+  cls:           ""
+  uri:           ""
+  function_type: !TransformFunctionType
 

@@ -13,7 +13,7 @@ Deco_Example:
 
   # This attribute is decorated to define the type(s)
   # which can be present in the list attribute.
-  #@ContentType=ContactInformation
+  #@ContentType=ContactInformation, int
   list1: []
 
   # This attribute is decorated to define the valid length

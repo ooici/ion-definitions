@@ -133,13 +133,13 @@ AssociationDefinitions:
     range: [View]
     docstring:
   - predicate: hasParameterContext
-    domain: [ParameterDictionaryResource]
-    range: [ParameterContextResource]
-    docstring: ParameterDictionaryResource -> ParameterContextResource
+    domain: [ParameterDictionary]
+    range: [ParameterContext]
+    docstring: ParameterDictionary -> ParameterContext
   - predicate: hasParameterDictionary
     domain: [StreamDefinition]
-    range: [ParameterDictionaryResource]
-    docstring: StreamDefinition -> ParameterDictionaryResource
+    range: [ParameterDictionary]
+    docstring: StreamDefinition -> ParameterDictionary
   - predicate: hasIngestionWorker
     domain: [ExchangeName]
     range: [Process]

@@ -1,7 +1,7 @@
 type: release
-name: r2deploy
+name: r2idk
 version: 0.2
-description: Release 2 deployment configuration
+description: Release 2 idk configuration
 ion: 2.0
 apps:
   ##################################
@@ -353,13 +353,14 @@ apps:
     version: 0.1
     description: Preloader
     processapp: [preload, ion.processes.bootstrap.idk_loader, IDKLoader]
-    config: 
+    config:
+      path: master
       op: load
       loadui: true
-      path: https://docs.google.com/spreadsheet/pub?key=0AttCeOvLP6XMdG82NHZfSEJJOGdQTkgzb05aRjkzMEE&output=xls
       ui_path: res/preload/r2_ioc/ui_assets
       attachments: res/preload/r2_ioc/attachments
-      scenario: BASE,BETA,IDK
+      scenario: BASE,BETA,IDK,ALPHA_SYS
+      categories: Constraint,Contact,User,Org,UserRole,CoordinateSystem,ParameterDefs,ParameterDictionary,StreamConfiguration,SensorModel,PlatformModel,InstrumentModel,Observatory,Subsite,PlatformSite,InstrumentSite,StreamDefinition,PlatformDevice,PlatformAgent,PlatformAgentInstance,InstrumentAgent,InstrumentDevice,SensorDevice,InstrumentAgentInstance,DataProduct,DataProcessDefinition,DataProcess,DataProductLink,Attachment,WorkflowDefinition,Workflow
 
   # LAST SERVICE GATEWAY SERVICE
   #
@@ -376,14 +377,4 @@ apps:
           preserve_n: 1
           node_exclusive: service_gateway
 
-  - name: testing_agent
-    version: 0.1
-    processapp: [testing_agent, ape.agent.configurable_agent, ConfigurableAgent]
-    config:
-      unique_id: my_id
-      connector:
-        type: AQMPConnector
-        inbound_exchange: ape-requests
-        outbound_exchange: ape-results
-    bootlevel: 35
 

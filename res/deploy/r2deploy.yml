@@ -13,13 +13,6 @@ apps:
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
     bootlevel: 1
 
-  - name: bootstrapper1
-    processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
-    bootlevel: 2
-    config:
-      bootstrap_plugins:
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
-
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
     bootlevel: 5
@@ -44,6 +37,13 @@ apps:
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
     bootlevel: 10
 
+  - name: bootstrapper1
+    processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 2
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
 
   ##################################
   # HIGHER LEVEL SERVICES
@@ -174,7 +174,6 @@ apps:
     bootlevel: 20
     config:
       bootstrap_plugins:
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_process_dispatcher, BootstrapProcessDispatcher]
           config:
             bootstrap:

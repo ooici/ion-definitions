@@ -7,7 +7,7 @@
 AssociationDefinitions:
 # AS
   - predicate: hasDataProcess
-    domain: [Workflow]
+    domain: [Workflow, DataProcessDefinition]
     range: [DataProcess]
     docstring: References a DataProcess (instance) belonging to a Workflow (instance)
   - predicate: hasDataProcessDefinition
@@ -105,7 +105,7 @@ AssociationDefinitions:
     range: [NotificationRequest]
     docstring: References a NotificationRequest (standing notification rule) for a user.
   - predicate: hasSubscription
-    domain: [IngestionConfiguration, ExchangeName]
+    domain: [DataProcess, IngestionConfiguration, ExchangeName]
     range: [Subscription]
     docstring: References the Subscription used by the ingenestion system
   - predicate: hasOutStream
@@ -124,6 +124,10 @@ AssociationDefinitions:
     domain: [Stream, Topic, Subscription]
     range: [Topic]
     docstring: References the Exchange Topic associated with other routing elements
+  - predicate: hasTransformFunction
+    domain: [DataProcessDefinition]
+    range: [TransformFunction]
+    docstring: DataProcessDefinition -> TransformFunction
   - predicate: hasTransform
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
@@ -140,6 +144,12 @@ AssociationDefinitions:
     domain: [StreamDefinition]
     range: [ParameterDictionary]
     docstring: StreamDefinition -> ParameterDictionary
+  - predicate: hasParameterFunction
+    domain: [ParameterContext, DataProcessDefinition]
+    range: [ParameterFunction]
+    docstring: | 
+      Links ParameterFunctions to the contexts and the data process framework.
+      This may go away and DPDs may link to stream definitions instead.
   - predicate: hasIngestionWorker
     domain: [ExchangeName]
     range: [Process]

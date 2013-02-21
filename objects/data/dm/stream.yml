@@ -11,6 +11,7 @@ Topic: !Extends_InformationResource
 StreamDefinition: !Extends_InformationResource
   parameter_dictionary: {}
   stream_type: ""
+  available_fields: []
 
 
 # Encapsulation for publishing on streams

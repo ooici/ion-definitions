@@ -442,3 +442,13 @@ ExceptionEvent: !Extends_Event
   message: ""
 ---
 
+DatasetModified: !Extends_Event
+  dataset_id: ""
+  # The new dataset extents
+  extents:    []
+  # The slice of the dataset modificationsc
+  window:     []
+
+---
+
+

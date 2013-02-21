@@ -17,6 +17,7 @@ methods:
       parameter_dictionary_id: ""
       stream_type: ""
       description: ""
+      available_fields: []
     out:
       stream_definition_id: ""
     throws:
@@ -42,6 +43,16 @@ methods:
     in:
       stream_definition1_id: ""
       stream_definition2_id: ""
+    out:
+      equal: False
+
+  compatible_stream_definitions:
+    docstring: |
+      Determines compatibility between an input stream definition
+      and an output stream definition.
+    in:
+      in_stream_definition_id: ""
+      out_stream_definition_id: ""
     out:
       equal: False
 

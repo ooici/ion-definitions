@@ -27,7 +27,7 @@ methods:
 
   update_dataset:
     in:
-      dataset: !DataSet
+      dataset: !Dataset
     out:
 
   read_dataset:
@@ -35,7 +35,7 @@ methods:
     in:
       dataset_id: ""
     out:
-      dataset: !DataSet
+      dataset: !Dataset
     throws:
       NotFound: if ingestion configuration did not exist
 

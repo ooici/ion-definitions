@@ -1,5 +1,5 @@
 # Represents a possibly open-ended coverage of science data that may be persistent.
-DataSet: !Extends_InformationResource
+Dataset: !Extends_InformationResource
   datastore_name: ""        # the couch datastore name
   view_name: ""
   primary_view_key: ""      # the primary key to access this dataset from the primary view

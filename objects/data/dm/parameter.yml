@@ -1,10 +1,10 @@
-ParameterContextResource: !Extends_InformationResource
+ParameterContext: !Extends_InformationResource
   parameter_context: {}
   parameter_type: ""
   value_encoding: ""
   unit_of_measure: ""
 
 
-ParameterDictionaryResource: !Extends_InformationResource
+ParameterDictionary: !Extends_InformationResource
   temporal_context: ""
 

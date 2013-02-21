@@ -7,7 +7,7 @@
 AssociationDefinitions:
 # AS
   - predicate: hasDataProcess
-    domain: [Workflow]
+    domain: [Workflow, DataProcessDefinition]
     range: [DataProcess]
     docstring: References a DataProcess (instance) belonging to a Workflow (instance)
   - predicate: hasDataProcessDefinition
@@ -17,8 +17,8 @@ AssociationDefinitions:
 #SA
   - predicate: hasDataset
     domain: [DataProducer, DataProduct]
-    range: [DataSet]
-    docstring: References a DataSet resource that keeps a persistent metadata/data coverage.
+    range: [Dataset]
+    docstring: References a Dataset resource that keeps a persistent metadata/data coverage.
   - predicate: hasDataProducer
     domain: [DataProcess, Process, Device, ExternalDataset, DataProduct]
     range: [DataProducer]
@@ -93,7 +93,7 @@ AssociationDefinitions:
     range: [Index]
     docstring: References the Index resource assocated with a structure or DataStore
   - predicate: hasIngestionConfiguration
-    domain: [DataSet, DatasetIngestionConfiguration]
+    domain: [Dataset, DatasetIngestionConfiguration]
     range: [IngestionConfiguration]
     docstring: References the configuration for the ingestion system
   - predicate: hasInputStreamDefinition
@@ -105,7 +105,7 @@ AssociationDefinitions:
     range: [NotificationRequest]
     docstring: References a NotificationRequest (standing notification rule) for a user.
   - predicate: hasSubscription
-    domain: [IngestionConfiguration, ExchangeName]
+    domain: [DataProcess, IngestionConfiguration, ExchangeName]
     range: [Subscription]
     docstring: References the Subscription used by the ingenestion system
   - predicate: hasOutStream
@@ -113,7 +113,7 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References one Stream on which a Transform publishes on
   - predicate: hasStream
-    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, DataSet, ExchangePoint]
+    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, Dataset, ExchangePoint]
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition
@@ -124,6 +124,10 @@ AssociationDefinitions:
     domain: [Stream, Topic, Subscription]
     range: [Topic]
     docstring: References the Exchange Topic associated with other routing elements
+  - predicate: hasTransformFunction
+    domain: [DataProcessDefinition]
+    range: [TransformFunction]
+    docstring: DataProcessDefinition -> TransformFunction
   - predicate: hasTransform
     domain: [DataProcess, IngestionConfiguration]
     range: [Transform]
@@ -133,13 +137,19 @@ AssociationDefinitions:
     range: [View]
     docstring:
   - predicate: hasParameterContext
-    domain: [ParameterDictionaryResource]
-    range: [ParameterContextResource]
-    docstring: ParameterDictionaryResource -> ParameterContextResource
+    domain: [ParameterDictionary]
+    range: [ParameterContext]
+    docstring: ParameterDictionary -> ParameterContext
   - predicate: hasParameterDictionary
     domain: [StreamDefinition]
-    range: [ParameterDictionaryResource]
-    docstring: StreamDefinition -> ParameterDictionaryResource
+    range: [ParameterDictionary]
+    docstring: StreamDefinition -> ParameterDictionary
+  - predicate: hasParameterFunction
+    domain: [ParameterContext, DataProcessDefinition]
+    range: [ParameterFunction]
+    docstring: | 
+      Links ParameterFunctions to the contexts and the data process framework.
+      This may go away and DPDs may link to stream definitions instead.
   - predicate: hasIngestionWorker
     domain: [ExchangeName]
     range: [Process]

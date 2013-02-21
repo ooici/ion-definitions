@@ -348,3 +348,8 @@ ResourceCommitmentStatus:
 
 ComputedResourceCommitmentStatusValue: !Extends_ComputedValue
    value: !ResourceCommitmentStatus
+
+---
+
+TransformFunctionType: !enum (values=(PYTHON,SYSTEM), default=PYTHON)
+

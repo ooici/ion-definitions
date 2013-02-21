@@ -111,6 +111,46 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
+
+  create_transform_function:
+    docstring: Creates a new transform function
+    in:
+      transform_function: {}
+    out:
+      transform_function_id: ""
+
+  read_transform_function:
+    docstring: Reads an existing transform function
+    in:
+      transform_function_id: ""
+    out: 
+      transform_function: {}
+    throws:
+      NotFound: If TransformFunction does not exist
+
+  delete_transform_function:
+    docstring: Removes a transform function from the resource registry
+    in:
+      transform_function_id: ""
+    out:
+    throws:
+      BadRequst: If TransformFunction does not exist
+
+
+  # -----------------
+  
+  create_data_process2:
+    docstring: Create an instance or realization of a data process definition.
+    in:
+      data_process_definition_id: ""
+      in_data_product_ids: []
+      out_data_product_ids: []
+      configuration: {}
+    out:
+      data_process_id: ""
+      
+
+
   create_data_process:
     docstring: Create an instance or realization of a data process definition.
     in:
@@ -203,3 +243,18 @@ methods:
     out:
     throws:
       BadRequest: if object does not have _id or _rev attribute
+
+  # -----------------
+
+  validate_compatibility:
+    in:
+      in_data_product_ids: []
+      out_data_product_ids: []
+      routes: {}
+    out:
+      compatible: False
+    throws:
+      BadRequest: If a data product identifier does not correspond to a resource in the system.
+
+ 
+

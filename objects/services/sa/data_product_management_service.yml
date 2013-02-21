@@ -82,6 +82,15 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  get_data_product_stream_definition:
+    in:
+      data_product_id: ""
+    out:
+      stream_definition_id: ""
+    throws:
+      BadRequest: If data product doesn't exist
+      NotFound: If no stream definition is associated
+      
   get_data_product_provenance:
     in:
       data_product_id: ""

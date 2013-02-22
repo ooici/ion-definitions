@@ -380,7 +380,26 @@ ReloadUserInfoEvent: !Extends_Event
   notification_id: ""
 
 
+---
 
+InformationContentEvent: !Extends_Event
+  author: ""
+
+InformationStatus: !enum (values=(NORMAL,ERROR,OFFLINE), default=NORMAL)
+
+---
+
+InformationContentModifiedEvent: !Extends_InformationContentEvent
+  # origin is the resource identifier
+  # ts created should reflect when the change occurred
+
+
+
+InformationContentStatusEvent: !Extends_InformationContentEvent
+  # description should be filled in
+  # New status of the information
+  status: !InformationStatus
+  
 # ------------------------------------------------------------------------------------
 # !!! UNCATEGORIZED !!!! Events
 # ------------------------------------------------------------------------------------
@@ -442,8 +461,7 @@ ExceptionEvent: !Extends_Event
   message: ""
 ---
 
-DatasetModified: !Extends_Event
-  dataset_id: ""
+DatasetModified: !Extends_InformationContentEvent
   # The new dataset extents
   extents:    []
   # The slice of the dataset modificationsc

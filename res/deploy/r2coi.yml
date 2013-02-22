@@ -11,46 +11,45 @@ apps:
 
   - name: event_persister
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
-    deploy:
-      bootlevel: 1
+    bootlevel: 1
 
   - name: bootstrapper1
     processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
-    deploy:
-      bootlevel: 2
+    bootlevel: 2
     config:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_core, BootstrapCore]
 
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
-    deploy:
-      bootlevel: 5
+    bootlevel: 5
 
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-    deploy:
-      bootlevel: 10
+    bootlevel: 8
 
   - name: identity_management
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
-    deploy:
-      bootlevel: 10
+    bootlevel: 8
 
   - name: policy_management
     processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
-    deploy:
-      bootlevel: 10
+    bootlevel: 8
 
   - name: exchange_management
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
-    deploy:
-      bootlevel: 10
+    bootlevel: 8
 
   - name: org_management
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
-    deploy:
-      bootlevel: 10
+    bootlevel: 8
+
+  - name: bootstrapper2
+    processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 9
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
 
   ##################################
   # HIGHER LEVEL SERVICES
@@ -59,38 +58,39 @@ apps:
   ##### COI SERVICES
   - name: agent_management
     processapp: [agent_management, ion.services.coi.agent_management_service, AgentManagementService]
-    deploy:
-      bootlevel: 10
+    bootlevel: 10
 
   - name: conversation_management
     processapp: [conversation_management, ion.services.coi.conversation_management_service, ConversationManagementService]
-    deploy:
-      bootlevel: 10
+    bootlevel: 10
 
 #  - name: object_management
 #    processapp: [object_management, ion.services.coi.object_management_service, ObjectManagementService]
-#    deploy:
-#      bootlevel: 10
+#    bootlevel: 10
 #
 #  - name: resource_management
 #    processapp: [resource_management, ion.services.coi.resource_management_service, ResourceManagementService]
-#    deploy:
-#      bootlevel: 10
+#    bootlevel: 10
 #
 #  - name: service_management
 #    processapp: [service_management, ion.services.coi.service_management_service, ServiceManagementService]
-#    deploy:
-#      bootlevel: 10
+#    bootlevel: 10
 
-  - name: bootstrapper2
-    processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+  - name: bootstrapper3
+    processapp: [bootstrapper3, ion.processes.bootstrap.bootstrapper, Bootstrapper]
     deploy:
       bootlevel: 20
     config:
       bootstrap_plugins:
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
+
+  #The bootstrap for loading policy should be the final bootstrap process.
+  - name: policy_bootstrap
+    processapp: [policy_bootstrap, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 29
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
 
   # LAST SERVICE GATEWAY SERVICE
   - name: service_gateway

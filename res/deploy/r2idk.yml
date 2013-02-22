@@ -38,7 +38,7 @@ apps:
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
     deploy:
-      bootlevel: 10
+      bootlevel: 8
       ha:
         policy: npreserving
         parameters:
@@ -47,7 +47,7 @@ apps:
   - name: identity_management
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
     deploy:
-      bootlevel: 10
+      bootlevel: 8
       ha:
         policy: npreserving
         parameters:
@@ -56,7 +56,7 @@ apps:
   - name: policy_management
     processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
     deploy:
-      bootlevel: 10
+      bootlevel: 8
       ha:
         policy: npreserving
         parameters:
@@ -65,7 +65,7 @@ apps:
   - name: exchange_management
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
     deploy:
-      bootlevel: 10
+      bootlevel: 8
       ha:
         policy: npreserving
         parameters:
@@ -74,12 +74,20 @@ apps:
   - name: org_management
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
     deploy:
-      bootlevel: 10
+      bootlevel: 8
       ha:
         policy: npreserving
         parameters:
           preserve_n: 1
 
+
+  - name: bootstrapper2
+    processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    deploy:
+      bootlevel: 9
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
 
   ##################################
   # HIGHER LEVEL SERVICES
@@ -316,13 +324,12 @@ apps:
     
 
 
-  - name: bootstrapper2
-    processapp: [bootstrapper2, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+  - name: bootstrapper3
+    processapp: [bootstrapper3, ion.processes.bootstrap.bootstrapper, Bootstrapper]
     deploy:
       bootlevel: 20
     config:
       bootstrap_plugins:
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_process_dispatcher, BootstrapProcessDispatcher]
           config:
             bootstrap:
@@ -345,7 +352,6 @@ apps:
                   type: BINARY
                   datastore_name: filesystem
 
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
 

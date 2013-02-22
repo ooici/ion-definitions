@@ -84,6 +84,7 @@ apps:
   # bootstrap processes do not deploy with HA so we override the defaults
   bootstrapper1: {}
   bootstrapper2: {}
+  bootstrapper3: {}
   parameter_bootstrap: {}
   policy_bootstrap: {}
 

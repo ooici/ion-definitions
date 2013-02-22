@@ -18,12 +18,12 @@ apps:
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
     deploy:
-      bootlevel: 10
+      bootlevel: 8
 
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
     deploy:
-      bootlevel: 10
+      bootlevel: 8
 
   # CEI services - only including ones with an actual implementation at this point
 

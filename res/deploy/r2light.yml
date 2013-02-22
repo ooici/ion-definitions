@@ -19,24 +19,23 @@ apps:
 
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
-    bootlevel: 10
+    bootlevel: 8
 
   - name: identity_management
     processapp: [identity_management, ion.services.coi.identity_management_service, IdentityManagementService]
-    bootlevel: 10
+    bootlevel: 8
 
   - name: policy_management
     processapp: [policy_management, ion.services.coi.policy_management_service, PolicyManagementService]
-    bootlevel: 10
+    bootlevel: 8
 
   - name: exchange_management
     processapp: [exchange_management, ion.services.coi.exchange_management_service, ExchangeManagementService]
-    bootlevel: 10
+    bootlevel: 8
 
   - name: org_management
     processapp: [org_management, ion.services.coi.org_management_service, OrgManagementService]
-    bootlevel: 10
-
+    bootlevel: 8
 
   ##################################
   # HIGHER LEVEL SERVICES

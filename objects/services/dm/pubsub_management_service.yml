@@ -55,6 +55,15 @@ methods:
       out_stream_definition_id: ""
     out:
       equal: False
+  
+  validate_transform:
+    docstring: |
+      Validates transform based on the input and output stream definition
+    in:
+      in_stream_definition_id: ""
+      out_stream_definition_id: ""
+    out:
+      success: False
 
   #---------
   

@@ -241,7 +241,7 @@ AssociationDefinitions:
     range: [Policy]
     docstring: Indicates the policy for the resource
   - predicate: hasProcess
-    domain: [CapabilityContainer, Service]
+    domain: [CapabilityContainer, Service, DataProcess]
     range: [Process]
     docstring: References a Process (instance) that is associated with the container or service
   - predicate: hasNegotiation

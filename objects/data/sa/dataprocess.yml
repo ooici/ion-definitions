@@ -1,3 +1,7 @@
+---
+DataProcessTypeEnum: !enum (values=(TRANSFORM, EXTERNAL, DATA_PROCESS), default=DATA_PROCESS)
+---
+
 # Defines a type of data transform computational process.
 DataProcessDefinition: !Extends_InformationResource
   # (SYS) module for source code
@@ -10,7 +14,8 @@ DataProcessDefinition: !Extends_InformationResource
   parameters: {}
 
   output_bindings: {}
-  data_process_type: "" #Will be an enum
+  data_process_type: !DataProcessTypeEnum  
+
 
 # Represents a computational process receiving data granules from stream subscription and
 # produces output data products. Instance of DataProcessDefinition.

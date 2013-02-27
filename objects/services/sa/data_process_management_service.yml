@@ -162,8 +162,10 @@ methods:
       data_process_id: ""
       
   update_data_process:
-    #This op may not make sense at this time
+    docstring: |
+      Pauses/cancels a running a data process, updates it with new params, restarts the data process. The data process id remains same.
     in:
+      data_process: !DataProcess
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -189,6 +191,21 @@ methods:
     in:
       data_process_id: ""
     out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  replace_data_process:
+    docstring: |
+      Cancels a running process corresponding to a data process object, updates the data process object with new params, and then
+      restarts the process corresponding to the data process object. The data process id remains same.
+    in:
+      data_process_id: ""       # the id of the old data process object which is being replaced
+      data_process_definition: !DataProcessDefinition   # new data process definition to use
+      in_data_product_ids: []          # new input data products to use
+      out_data_products: {}            # new output data products to use
+      configuration: {}                # new configurations
+    out:
+      data_process_id: ""              # if the op is successful it returns the data process id, which is the same as the original
     throws:
       NotFound: object with specified id does not exist
 

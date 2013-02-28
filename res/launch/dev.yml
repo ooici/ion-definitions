@@ -61,8 +61,8 @@ execution_engines:
     config:
       unique_key: ddns_hostname
       unique_values: ${gateway_ddns_hosts}
-    replicas: 1
-    slots: 2
+    replicas: 2
+    slots: 1
 
 default_execution_engine: default
 

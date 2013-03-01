@@ -142,13 +142,7 @@ container:
 
   filesystem:
       force_clean: False
-      cache: /tmp/ion/run/cache
-      temp: /tmp/ion/tmp
-      run: /tmp/ion/run
-      log: /tmp/ion/run/log
-      users: /tmp/ion/usr
-      resource: /tmp/ion/res
-      library: /tmp/ion/lib
+      root: /tmp/ion
 
   service_gateway:
     web_server:

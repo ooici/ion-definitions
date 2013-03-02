@@ -1,0 +1,27 @@
+name: container_management
+
+docstring: |
+  Allow operators to perform administrative actions throughout the system.
+
+spec: 
+
+dependencies: []
+
+methods:
+  perform_action:
+    docstring: perform arbitrary string-encoded action (allow addition of new actions without adding service methods)
+    in:
+      action: ""
+    out:
+    throws:
+      BadRequest:
+  set_log_level:
+    docstring: Sets a log level.
+    in:
+      host_filter: ""
+      loggers: []
+      level: ""
+      recursive: True
+    out:
+    throws:
+      BadRequest:

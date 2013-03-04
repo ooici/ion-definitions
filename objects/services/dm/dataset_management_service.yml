@@ -31,7 +31,8 @@ methods:
     out:
 
   read_dataset:
-    # Read the dataset resource including metadata
+    docstring: |
+     Read the dataset resource including metadata
     in:
       dataset_id: ""
     out:
@@ -77,18 +78,24 @@ methods:
 #--------
       
   get_dataset_info:
+    docstring: |
+      Retrieves metadata information about a particular dataset
     in:
       dataset_id: ""
     out:
       information: ""
 
   get_dataset_parameters:
+    docstring: |
+      Retrieves a list of parameters in a particular dataset
     in:
       dataset_id: ""
     out:
       parameter_dictionary: {}
 
   get_dataset_length:
+    docstring: |
+      Retrieves the length of a particular dataset
     in:
       dataset_id: ""
     out:
@@ -97,6 +104,8 @@ methods:
 #--------
 
   create_parameter_context:
+    docstring: |
+      Creates a new parameter context resource. The context defines the parameter in a dataset. This method accepts a dumped ParameterContext instance as its argument.
     in:
       name: ""
       parameter_context: {}
@@ -109,12 +118,16 @@ methods:
       parameter_context_id: ""
 
   read_parameter_context:
+    docstring: |
+      Reads the parameter context resource object from the registry
     in:
       parameter_context_id: ""
     out:
       parameter_context: {}
 
   delete_parameter_context:
+    docstring: |
+      Deletes a particular parameter context resource object.
     in:
       parameter_context_id: ""
     out:
@@ -123,6 +136,8 @@ methods:
 #--------
 
   read_parameter_context_by_name:
+    docstring: |
+      Retrieves a parameter context resource using the name as a lookup key.
     in:
       name: ""
       id_only: False
@@ -132,6 +147,8 @@ methods:
 #--------
 
   create_parameter_function:
+    docstring: |
+      Creates a new parameter function resource based. This method accepts a dumped parameter function as its argument.
     in:
       name: ""
       parameter_function: {}
@@ -140,12 +157,16 @@ methods:
       parameter_function_id: ""
 
   read_parameter_function:
+    docstring: |
+      Reads a parameter function resource from the registry.
     in:
       parameter_function_id: ""
     out:
       parameter_function: {}
 
   delete_parameter_function: 
+    docstring: |
+      Deletes a parameter function resource from the registry.
     in:
       parameter_function_id: ""
     out:
@@ -154,6 +175,8 @@ methods:
 #--------
 
   read_parameter_function_by_name:
+    docstring: |
+      Reads a parameter function resource from the registry using the name as a lookup.
     in:
       name: ""
       id_only: False
@@ -163,6 +186,8 @@ methods:
 #--------
 
   create_parameter_dictionary:
+    docstring: |
+      Creates a container for a set of parameter contexts known as a parameter dictionary. Parameter dictionaries define the parameters of a particular dataset.
     in:
       name: ""
       parameter_context_ids: []
@@ -172,12 +197,16 @@ methods:
       parameter_dictionary_id: ""
       
   read_parameter_dictionary:
+    docstring: | 
+      Reads a particular parameter dictionary from the resource registry.
     in:
       parameter_dictionary_id: ""
     out:
       parameter_dictionary: {}
 
   delete_parameter_dictionary:
+    docstring: |
+      Removes a particular parameter dictionary from the resource registry.
     in:
       parameter_dictionary_id: ""
     out:
@@ -186,6 +215,8 @@ methods:
 #--------
       
   read_parameter_contexts:
+    docstring: |
+      Retrieves a list of parameter contexts for a given parameter dictionary.
     in:
       parameter_dictionary_id: ""
       id_only: False
@@ -193,6 +224,8 @@ methods:
       parameter_contexts: []
       
   read_parameter_dictionary_by_name:
+    docstring: |
+      Retrieves a parameter dictionary resource from the resource registry using the name as a lookup key.
     in:
       name: ""
       id_only: False
@@ -202,6 +235,8 @@ methods:
 #--------
 
   dataset_temporal_bounds:
+    docstring: |
+      Retrieves the temporal bounds in system time for a particular dataset.
     in:
       dataset_id: ""
     out:

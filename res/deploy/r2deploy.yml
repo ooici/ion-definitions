@@ -12,6 +12,13 @@ apps:
   - name: event_persister
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
     bootlevel: 1
+    
+  - name: container_manager
+    processapp: [container_manager, ion.processes.event.container_manager, ContainerManager]
+    bootlevel: 1
+    config:
+      process:
+        event_type: ContainerManagementRequest
 
   - name: bootstrapper1
     processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
@@ -22,6 +29,10 @@ apps:
 
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    bootlevel: 5
+    
+  - name: container_management
+    processapp: [container_management, ion.services.coi.container_management_service, ContainerManagementService]
     bootlevel: 5
 
   - name: directory

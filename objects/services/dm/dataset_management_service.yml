@@ -130,6 +130,28 @@ methods:
 
 #--------
 
+  create_parameter_function:
+    in:
+      name: ""
+      parameter_function: {}
+      description: ""
+    out:
+      parameter_function_id: ""
+
+  read_parameter_function:
+    in:
+      parameter_function_id: ""
+    out:
+      parameter_function: {}
+
+  delete_parameter_function: 
+    in:
+      parameter_function_id: ""
+    out:
+      success: True
+
+#--------
+
   create_parameter_dictionary:
     in:
       name: ""

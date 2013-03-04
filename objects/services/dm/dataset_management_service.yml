@@ -104,6 +104,7 @@ methods:
       parameter_type: ""
       value_encoding: ""
       unit_of_measure: ""
+      parameter_function_ids: []
     out:
       parameter_context_id: ""
 

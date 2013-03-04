@@ -106,6 +106,7 @@ methods:
   create_parameter_context:
     docstring: |
       Creates a new parameter context resource. The context defines the parameter in a dataset. This method accepts a dumped ParameterContext instance as its argument.
+      https://confluence.oceanobservatories.org/display/CIDev/Defining+Parameter+Dictionaries+and+Contexts
     in:
       name: ""
       parameter_context: {}
@@ -149,6 +150,7 @@ methods:
   create_parameter_function:
     docstring: |
       Creates a new parameter function resource based. This method accepts a dumped parameter function as its argument.
+      https://confluence.oceanobservatories.org/display/CIDev/Defining+Parameter+Functions
     in:
       name: ""
       parameter_function: {}

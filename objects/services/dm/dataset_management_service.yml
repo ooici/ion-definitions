@@ -152,6 +152,15 @@ methods:
 
 #--------
 
+  read_parameter_function_by_name:
+    in:
+      name: ""
+      id_only: False
+    out:
+      parameter_function: {}
+
+#--------
+
   create_parameter_dictionary:
     in:
       name: ""

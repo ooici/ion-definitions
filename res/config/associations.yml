@@ -136,10 +136,6 @@ AssociationDefinitions:
     domain: [View, Catalog]
     range: [View]
     docstring:
-  - predicate: hasParameterFunction
-    domain: [ParameterContext]
-    range: [ParameterFunction]
-    docstring: ParameterContext -> ParameterFunction
   - predicate: hasParameterContext
     domain: [ParameterDictionary]
     range: [ParameterContext]

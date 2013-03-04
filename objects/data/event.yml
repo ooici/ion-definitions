@@ -29,8 +29,12 @@ ComputedEventListValue: !Extends_ComputedListValue
 #                                  ION Events
 # ------------------------------------------------------------------------------------
 
-ContainerManagementRequest: !Extends_Event
+ContainerManagementRequestEvent: !Extends_Event
   request: ""   # request in string format, unpacked with AdminMessage.from_string()
+
+ContainerManagementEvent: !Extends_Event
+  request: ""   # request in string format, unpacked with AdminMessage.from_string()
+  outcome: ""
 
 # ------------------------------------------------------------------------------------
 # Resource Events

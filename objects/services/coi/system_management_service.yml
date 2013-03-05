@@ -1,4 +1,4 @@
-name: container_management
+name: system_management
 
 docstring: |
   Allow operators to perform administrative actions throughout the system.

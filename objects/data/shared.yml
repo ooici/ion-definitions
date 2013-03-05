@@ -353,3 +353,10 @@ ComputedResourceCommitmentStatusValue: !Extends_ComputedValue
 
 TransformFunctionType: !enum (values=(PYTHON,SYSTEM), default=PYTHON)
 
+---
+
+# base class for all predicate types that select which containers should run a particular requested action
+ContainerManagementPredicate:
+
+# base class for all requested actions for container management
+ContainerManagementAction:

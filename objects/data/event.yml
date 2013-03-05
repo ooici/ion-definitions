@@ -29,11 +29,12 @@ ComputedEventListValue: !Extends_ComputedListValue
 #                                  ION Events
 # ------------------------------------------------------------------------------------
 
-ContainerManagementRequestEvent: !Extends_Event
-  request: ""   # request in string format, unpacked with AdminMessage.from_string()
+ContainerManagementRequest: !Extends_Event
+  predicate: !ContainerManagementPredicate
+  action: !ContainerManagementAction
 
-ContainerManagementEvent: !Extends_Event
-  request: ""   # request in string format, unpacked with AdminMessage.from_string()
+ContainerManagementResult: !Extends_Event
+  action: !ContainerManagementAction
   outcome: ""
 
 # ------------------------------------------------------------------------------------

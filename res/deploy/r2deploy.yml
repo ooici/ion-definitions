@@ -24,9 +24,9 @@ apps:
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
     bootlevel: 5
     
-  - name: container_management
-    processapp: [container_management, ion.services.coi.container_management_service, ContainerManagementService]
-    bootlevel: 5
+#  - name: container_management
+#    processapp: [container_management, ion.services.coi.container_management_service, ContainerManagementService]
+#    bootlevel: 5
 
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]

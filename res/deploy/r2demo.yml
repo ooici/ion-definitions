@@ -204,17 +204,6 @@ apps:
 
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_service, BootstrapService]
 
-  - name: parameter_bootstrap
-    version: 0.1
-    description: Boot straps the parameter definitions
-    processapp: [ion_loader1, ion.processes.bootstrap.ion_loader, IONLoader]
-    bootlevel: 25
-    config:
-      op: load
-      scenario: BASE
-      path: res/preload/r2_ioc
-      categories: ParameterDefs,ParameterDictionary
-
   #The bootstrap for loading policy should be the final bootstrap process.
   - name: policy_bootstrap
     processapp: [policy_bootstrap, ion.processes.bootstrap.bootstrapper, Bootstrapper]

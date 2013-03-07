@@ -1,0 +1,19 @@
+Scenario,ID,HID,Name,Instrument Class,Instrument Series,Function Type,Function,Owner,Args,Kwargs,Description,SKIP
+DOC,Unique Identifier,"Human readable Unique Identifier
+
+Name + _ + InstCls + _ + InstSer",Cannonical Name for the Function,,,NumexprFunction or PythonFunction,"for NumexprFunction:
+A string algorithm containing #'s, operators, and variables.  Variables must be in the associated Parameter Map
+
+for PythonFunction:
+The string name of the function contained in Owner","ONLY FOR PythonFunction
+
+The package/module that contains the function","
+
+The list of arguments to feed into the function.  These must be available keys in the associated Parameter Map.","ONLY FOR PythonFunction
+
+A dictionary of keyword arguments to feed into the function
+
+NOT YET SUPPORTED",,
+LC_TEST,PFID1,TEMPWAT_L1_CTDMO_,TEMPWAT_L1,CTDMO,,NumexprFunction,(T / 10000) - 10,,['T'],,,
+LC_TEST,PFID2,,CONDWAT_L1,CTDMO,,NumexprFunction,(C / 100000) - 0.5,,['C'],,,
+LC_TEST,PFID3,,PRESWAT_L1,CTDMO,,NumexprFunction,(P * p_range / (0.85 * 65536)) - (0.05 * p_range),,"['P', 'p_range']",,,

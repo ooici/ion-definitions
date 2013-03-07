@@ -244,6 +244,9 @@ methods:
       predicate: ""
       object_type: ""
       id_only: False
+      limit: 0
+      skip: 0
+      descending: False
     out:
       list: []
     throws:
@@ -283,6 +286,9 @@ methods:
       #@ContentType=Resource,str
       object: ""
       id_only: False
+      limit: 0
+      skip: 0
+      descending: False
     out:
       list: []
     throws:
@@ -305,6 +311,9 @@ methods:
       object: ""
       assoc_type:
       id_only: False
+      limit: 0
+      skip: 0
+      descending: False
     out:
       list: []
     throws:

@@ -235,7 +235,8 @@ AgentDefinition: !Extends_InformationResource
 AgentInstance: !Extends_InformationResource
   deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
 #  exchange_name: ""
-  configuration: {}
+  driver_config: {}
+  agent_config: {}
   agent_process_id: ""
 
 ---
@@ -245,7 +246,7 @@ StreamConfiguration:
   parameter_dictionary_name: ""   # the name of the parameter dictionary that defines the contents of the stream
   records_per_granule: 0          # recommended number of records/samples to place in a single granule
   granule_publish_rate: 0         # max recommended seconds between publishing granules
-
+  alarms: []                      # list of alarm objects for this stream
 ---
 
 # Describes a running or scheduled  agent representing a single device. Abstract base type.

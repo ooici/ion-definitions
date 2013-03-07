@@ -8,3 +8,6 @@ ParameterContext: !Extends_InformationResource
 ParameterDictionary: !Extends_InformationResource
   temporal_context: ""
 
+ParameterFunction: !Extends_InformationResource
+  parameter_function: {}
+

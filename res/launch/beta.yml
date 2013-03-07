@@ -53,7 +53,7 @@ config:
 
 execution_engines:
   default:
-    base_need: 2
+    base_need: 3
     replicas: 4
     slots: 25
   service_gateway:
@@ -61,8 +61,8 @@ execution_engines:
     config:
       unique_key: ddns_hostname
       unique_values: ${gateway_ddns_hosts}
-    replicas: 1
-    slots: 2
+    replicas: 2
+    slots: 1
 
 default_execution_engine: default
 

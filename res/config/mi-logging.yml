@@ -1,0 +1,41 @@
+# DEFAULT LOGGING CONFIGURATION FOR MARINE INTEGRATION PROJECT
+#
+# NOTE: this file might not be used!
+#       this file is a backup packaged with marine-integrations
+#       only in the case res/config/mi-logging.yml is not found.
+#       this guarantees the logging will not be completely disabled if the environment is not configured properly.
+#
+# NOTE: this configuration writes logfiles in the current working directory!
+#       if we are using this file at all, we don't know how the environment has been configured and
+#       don't want to assume there is a log/ subdirectory.
+
+version: 1
+formatters:
+  brief:
+    format: '%(asctime)s %(levelname)-8s %(name)-15s %(message)s'
+  default:
+    (): 'ooi.logging.format.StackFormatter'
+    format: '%(asctime)s %(levelname)s %(threadName)s %(name)s:%(lineno)d %(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: brief
+    level: TRACE
+    stream: ext://sys.stdout
+  file:
+    class: logging.handlers.RotatingFileHandler
+    formatter: default
+    level: TRACE
+    ### end of BOILERPLATE -- change logfile location and size below:
+    filename: mi-drivers.log
+    maxBytes: 10240000
+    backupCount: 3
+
+### default for all loggers not otherwise specified
+root:
+  handlers: [console, file]
+  level: WARNING
+
+loggers:
+  mi:
+    level: INFO

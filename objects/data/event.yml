@@ -416,7 +416,7 @@ StreamAlarmEvent: !Extends_ResourceEvent
 
 ---
 
-StreamWarningAlaramEvent: !Extends_StreamAlarmEvent
+StreamWarningAlarmEvent: !Extends_StreamAlarmEvent
   type: StreamAlaramType.WARNING
 
 StreamAlertAlarmEvent: !Extends_StreamAlarmEvent

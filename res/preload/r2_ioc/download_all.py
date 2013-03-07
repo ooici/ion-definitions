@@ -19,6 +19,7 @@ categories = {
     'Org.csv'                     : '%s&single=true&gid=9&output=csv'% base_url,
     'ParameterDefs.csv'           : '%s&single=true&gid=57&output=csv'% base_url,
     'ParameterDictionary.csv'     : '%s&single=true&gid=58&output=csv'% base_url,
+    'ParameterFunctions.csv'      : '%s&single=true&gid=68&output=csv'% base_url,
     'PlatformDevice.csv'          : '%s&single=true&gid=11&output=csv'% base_url,
     'PlatformModel.csv'           : '%s&single=true&gid=12&output=csv'% base_url,
     'PlatformSite.csv'            : '%s&single=true&gid=19&output=csv'% base_url,

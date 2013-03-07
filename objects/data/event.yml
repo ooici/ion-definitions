@@ -29,6 +29,13 @@ ComputedEventListValue: !Extends_ComputedListValue
 #                                  ION Events
 # ------------------------------------------------------------------------------------
 
+ContainerManagementRequest: !Extends_Event
+  predicate: !ContainerManagementPredicate
+  action: !ContainerManagementAction
+
+ContainerManagementResult: !Extends_Event
+  action: !ContainerManagementAction
+  outcome: ""
 
 # ------------------------------------------------------------------------------------
 # Resource Events

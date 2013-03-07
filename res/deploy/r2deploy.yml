@@ -24,9 +24,9 @@ apps:
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
     bootlevel: 5
     
-#  - name: container_management
-#    processapp: [container_management, ion.services.coi.container_management_service, ContainerManagementService]
-#    bootlevel: 5
+  - name: system_management
+    processapp: [system_management, ion.services.coi.system_management_service, SystemManagementService]
+    bootlevel: 5
 
   - name: directory
     processapp: [directory, ion.services.coi.directory_service, DirectoryService]
@@ -229,9 +229,9 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
 
-  - name: lightweight_pydap
-    processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
-    bootlevel: 30
+#  - name: lightweight_pydap
+#    processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
+#    bootlevel: 30
 
   # LAST SERVICE GATEWAY SERVICE
   #

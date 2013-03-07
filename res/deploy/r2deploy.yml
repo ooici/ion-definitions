@@ -12,7 +12,7 @@ apps:
   - name: event_persister
     processapp: [event_persister, ion.processes.event.event_persister, EventPersister]
     bootlevel: 1
-
+    
   - name: bootstrapper1
     processapp: [bootstrapper1, ion.processes.bootstrap.bootstrapper, Bootstrapper]
     bootlevel: 2
@@ -22,6 +22,10 @@ apps:
 
   - name: resource_registry
     processapp: [resource_registry, ion.services.coi.resource_registry_service, ResourceRegistryService]
+    bootlevel: 5
+    
+  - name: system_management
+    processapp: [system_management, ion.services.coi.system_management_service, SystemManagementService]
     bootlevel: 5
 
   - name: directory
@@ -225,9 +229,9 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
 
-  - name: lightweight_pydap
-    processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
-    bootlevel: 30
+#  - name: lightweight_pydap
+#    processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
+#    bootlevel: 30
 
   # LAST SERVICE GATEWAY SERVICE
   #

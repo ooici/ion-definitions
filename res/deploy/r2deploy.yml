@@ -229,9 +229,9 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
 
-#  - name: lightweight_pydap
-#    processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
-#    bootlevel: 30
+  - name: lightweight_pydap
+    processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
+    bootlevel: 30
 
   # LAST SERVICE GATEWAY SERVICE
   #

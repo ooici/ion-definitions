@@ -23,6 +23,7 @@ DataProduct: !Extends_InformationResource
   naming_authority_id: ""
   
   # An entity that serves as a contact point
+  #@ContentType=ContactInformation
   contacts: []    # a list of  !ContactInformation
 
   # limits expressed relative to earth
@@ -42,6 +43,7 @@ DataProduct: !Extends_InformationResource
   spatial_domain: {}
 
   # a list of !Term objects (see Shared)
+  #@ContentType=Term
   descriptors: []
 
   # Miscellaneous information not already captured in attributes
@@ -51,6 +53,7 @@ DataProduct: !Extends_InformationResource
   ooi_short_name: ""
 
   # synonyms to facilitate searching
+  #@ContentType=str
   synonyms: []  # a list of strings
 
   # TODO: remove these from the gateway call
@@ -69,6 +72,7 @@ DataProduct: !Extends_InformationResource
 
   # one or more of the topic categories from ISO 19115
   # Mandatory
+  #@ContentType=str
   iso_topic_category: []
 
   # Selection from IOOS controlled vocabulary for parameters
@@ -125,12 +129,14 @@ DataProduct: !Extends_InformationResource
 
   # Holds information on where and when the data product was submitted to an external archive.
   # returns a list of objects of the ExternalArchiveType (ExternalArchive at the top of this yaml)
+  #@ContentType=ExternalArchive
   external_archives: []
 
   # List of URLs with information about the data product
   reference_urls: []
 
   # The end user formats for which the data product is available
+  #@ContentType=Term
   available_formats: []   # a list of Term objects (see Shared.yml)
 
 ---

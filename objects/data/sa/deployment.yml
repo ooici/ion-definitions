@@ -57,6 +57,7 @@ RemotePlatformDeploymentContext: !Extends_AbstractDeploymentContextType
 
 
   # a list of DeviceMountingPosition objects
+  #@ContentType=DeviceMountingPosition
   device_mounting_positions: []
 
 ---

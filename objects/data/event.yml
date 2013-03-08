@@ -26,18 +26,6 @@ ComputedEventListValue: !Extends_ComputedListValue
 ---
 
 # ------------------------------------------------------------------------------------
-#                                  ION Events
-# ------------------------------------------------------------------------------------
-
-ContainerManagementRequest: !Extends_Event
-  predicate: !ContainerManagementPredicate
-  action: !ContainerManagementAction
-
-ContainerManagementResult: !Extends_Event
-  action: !ContainerManagementAction
-  outcome: ""
-
-# ------------------------------------------------------------------------------------
 # Resource Events
 # Events about the registration of a resource in the registry and its lifecycle
 #
@@ -46,19 +34,18 @@ ContainerManagementResult: !Extends_Event
 # sub_type: event specific
 # ------------------------------------------------------------------------------------
 
-# Base type for resource related events in the system
+# Base type for resource related events in the system.
 ResourceEvent: !Extends_Event
-  # The origin is the resource id
 
 ---
-# Event indicating that a resource changed its life cycle or was created
+# Event indicating that a resource changed its life cycle or was created.
+# The subtype is lcstate.availability (allowing *.PRIVATE queries)
 ResourceLifecycleEvent: !Extends_ResourceEvent
-  old_state: ""
-  new_state: ""
-  old_visibility: ""
-  new_visibility: ""
+  lcstate: ""
+  lcstate_before: ""
+  availability: ""
+  availability_before: ""
   transition_event: ""
-  resource_type: ""
 
 # Event indicating that resource attributes were changed or the resource was created or deleted
 ResourceModifiedEvent: !Extends_ResourceEvent
@@ -71,7 +58,6 @@ ResourceCommandEvent: !Extends_ResourceEvent
 
 # Event created by an operator of a resource, for instance to manually indicate a modification or error.
 ResourceOperatorEvent: !Extends_ResourceEvent
-
 
 ---
 # DataSource Events
@@ -176,8 +162,6 @@ PublicPlatformTelemetryEvent: !Extends_PlatformEvent
 RemoteCommandTransmittedEvent: !Extends_PlatformEvent
   queue_size: 0
 
-
-
 RemoteCommandResult: !Extends_Event
   command: ""
 
@@ -205,29 +189,31 @@ DeviceStatusEvent: !Extends_Event
   time_stamps: []
   valid_values: []
 
-
 ---
+
+# ------------------------------------------------------------------------------------
+# Information Content Events
+# Events about the content of an information resource
+#
+# origin: set to the resource_id
+# origin_type: the type of resource
+# ------------------------------------------------------------------------------------
 
 InformationContentEvent: !Extends_Event
   author: ""
 
 InformationStatus: !enum (values=(NORMAL,ERROR,OFFLINE), default=NORMAL)
-
 ---
 
 InformationContentModifiedEvent: !Extends_InformationContentEvent
   # origin is the resource identifier
   # ts created should reflect when the change occurred
 
-
-
 InformationContentStatusEvent: !Extends_InformationContentEvent
   # description should be filled in
   # New status of the information
   status: !InformationStatus
   
-
-
 
 # ------------------------------------------------------------------------------------
 #                                  Infrastructure Level Events
@@ -372,9 +358,7 @@ ResourceCommitmentReleasedEvent: !Extends_OrgEvent
   commitment_id: ""
   commitment_type: ""
 
-
 ---
-
 
 # ------------------------------------------------------------------------------------
 # Execution Event
@@ -406,6 +390,19 @@ SchedulerEvent: !Extends_Event
 # a reload_user_info event generated when a notification is created, updated or deleted
 ReloadUserInfoEvent: !Extends_Event
   notification_id: ""
+
+
+# ------------------------------------------------------------------------------------
+#                                  ION Events
+# ------------------------------------------------------------------------------------
+
+ContainerManagementRequest: !Extends_Event
+  predicate: !ContainerManagementPredicate
+  action: !ContainerManagementAction
+
+ContainerManagementResult: !Extends_Event
+  action: !ContainerManagementAction
+  outcome: ""
 
 
 # ------------------------------------------------------------------------------------

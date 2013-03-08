@@ -19,8 +19,10 @@ PlatformDevice: !Extends_Device
   index_location: !GeospatialIndex
 
   # a list of platform_port objects (see above)
+  #@ContentType=PlatformPort
   ports: []
   # a list of PlatformMonitorAttributes objects
+  #@ContentType=PlatformMonitorAttributes
   platform_monitor_attributes: []
   
 

@@ -1,7 +1,14 @@
 
+PortTypeEnum: !enum (values=(PAYLOAD, EXPANSION, UPLINK), default=PAYLOAD)
+---
+
+
 PlatformPort:
   port_id: ""
   ip_address: ""
+  port_type: !PortTypeEnum
+  reference_designator: ""
+
 
 
 PlatformMonitorAttributes:
@@ -24,6 +31,10 @@ PlatformDevice: !Extends_Device
   # a list of PlatformMonitorAttributes objects
   #@ContentType=PlatformMonitorAttributes
   platform_monitor_attributes: []
+
+  # one DeviceStatus object for each child device, keyed by the objects device_id
+  # { device_1 : DeviceStatus, etc}
+  child_device_status: {}
   
 
 # Specifies a distinguished type of platform, derived from the manufacturer's model number

@@ -14,6 +14,9 @@ config:
     use_es: true
     use_pydap: true
   container:
+    exchange:
+      names:
+        durable: true
     filesystem:
       cache: /ion-dev/r2/data/ion/run/cache
       force_clean: false

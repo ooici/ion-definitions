@@ -6,14 +6,12 @@ Response:
 
 # Associations refer to "subject" and "object" objects
 Association:
-  at: "H2H" # Association type: H2H, R2R, H2R, R2H (ONLY USE DEFAULT H2H)
   s: ""     # Subject ID
   st: ""    # Subject type
-  srv: ""   # Subject revision - DO NOT USE
   p: ""     # Predicate
   o: ""     # Object ID
   ot: ""    # Object type
-  orv: ""   # Object revision - DO NOT USE
   ts: ""    # Timestamp
   order: ""          # A value that can be ordered lexicographically if needed to provide association precendence
   attributes: {}     # Arbitrary set of key-value arguments providing details to the association
+  retired: False     # Flag identifying retired associations

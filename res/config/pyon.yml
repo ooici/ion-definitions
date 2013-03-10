@@ -41,6 +41,7 @@ system:
 bootstrap:
   # Launches a bootstrap instance to build the search indices.
   use_es: False
+
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials to external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.
@@ -66,6 +67,13 @@ server:
   couchdb:
     # The basic CouchDB connection
     type: couchdb
+    host: localhost
+    port: 5984
+    username:
+    password:
+  couchbase:
+    # The basic Couchbase connection
+    type: couchbase
     host: localhost
     port: 5984
     username:
@@ -112,8 +120,12 @@ server:
 # ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container
 container:
-  directory:
-    server: couchdb
+  capability:
+    profile: res/profile/development.yml      # Capability profile to use
+    #profile: res/profile/gumstix.yml      # Capability profile to use
+
+  datastore:
+    default_server: couchdb       # Which server connection to use to
 
   exchange:
     # @TODO rename to delegate or similar, used for management api calls too

@@ -1,0 +1,56 @@
+# ION Capability Container Profile - defines the capabilities to start for a container variant
+
+type: profile
+name: development
+version: 0.1
+
+# Definition of profiles
+profile:
+  capabilities:
+    STATS_MANAGER:
+      enable: False
+
+  start_order:
+  - PID_FILE
+  - SIGNAL_HANDLER
+  - DATASTORE_MANAGER
+  - DIRECTORY
+  - EVENT_REPOSITORY
+  - EVENT_PUBLISHER
+  - RESOURCE_REGISTRY
+  - OBJECTS_STORE
+  - STATE_REPOSITORY
+  - LOCAL_ROUTER
+  - EXCHANGE_MANAGER
+  - PROC_MANAGER
+  - APP_MANAGER
+  - FILE_SYSTEM
+  - GOVERNANCE_CONTROLLER
+  - STATS_MANAGER
+  - CONTAINER_MANAGER
+  - CONTAINER_AGENT
+
+
+  init_order:
+  - DATASTORE_MANAGER
+  - DIRECTORY
+  - LOCAL_ROUTER
+  - EXCHANGE_MANAGER
+  - PROC_MANAGER
+  - APP_MANAGER
+  - FILE_SYSTEM
+  - GOVERNANCE_CONTROLLER
+  - STATS_MANAGER
+  - CONTAINER_MANAGER
+
+#  - PID_FILE
+#  - SIGNAL_HANDLER
+#  - EVENT_REPOSITORY
+#  - EVENT_PUBLISHER
+#  - RESOURCE_REGISTRY
+#  - OBJECTS_STORE
+#  - STATE_REPOSITORY
+
+
+  # Changes to pyon.yml for specific profile
+  config:

@@ -9,84 +9,66 @@ capabilities:
   #   field: (optional). If given the name of the self.container.<field>
   APP_MANAGER:
     docstring:
-    enable: True
     class: pyon.container.apps.AppManager
     field: app_manager
   CONTAINER_AGENT:
     docstring:
-    enable: True
     class: pyon.container.cc.ContainerAgentCapability
   CONTAINER_MANAGER:
     docstring: Container command executive
-    enable: True
     class: pyon.container.management.ContainerManager
     field: cc_manager
   DATASTORE_MANAGER:
     docstring: Controls access to Datastores (both couchdb and couchbase backends)
-    enable: True
     class: pyon.datastore.datastore.DatastoreManager
     field: datastore_manager
   DIRECTORY:
     docstring:
-    enable: True
     class: pyon.ion.directory.Directory
     field: directory
   EVENT_PUBLISHER:
     docstring:
-    enable: True
     class: pyon.container.cc.EventPublisherCapability
   EVENT_REPOSITORY:
     docstring:
-    enable: True
     class: pyon.event.event.EventRepository
     field: event_repository
   EXCHANGE_MANAGER:
     docstring:
-    enable: True
     class: pyon.ion.exchange.ExchangeManager
     field: ex_manager
   FILE_SYSTEM:
     docstring: Interface to the OS File System, using correct path names and setups
-    enable: True
     class: pyon.container.cc.FileSystemCapability
   GOVERNANCE_CONTROLLER:
     docstring: Manages the governance related interceptors
-    enable: True
     class: pyon.core.governance.governance_controller.GovernanceController
     field: governance_controller
   LOCAL_ROUTER:
     docstring:
-    enable: True
     class: pyon.container.cc.LocalRouterCapability
-  OBJECTS_STORE:
+  OBJECT_STORE:
     docstring:
-    enable: True
     class: pyon.container.cc.ObjectsStoreCapability
   PID_FILE:
     docstring:
-    enable: True
     class: pyon.container.cc.PidfileCapability
   PROC_MANAGER:
     docstring:
-    enable: True
     class: pyon.container.procs.ProcManager
     field: proc_manager
   RESOURCE_REGISTRY:
     docstring:
-    enable: True
     class: pyon.ion.resregistry.ResourceRegistry
     field: resource_registry
   SIGNAL_HANDLER:
     docstring:
-    enable: True
     class: pyon.container.cc.SignalHandlerCapability
   STATE_REPOSITORY:
     docstring:
-    enable: True
     class: pyon.ion.state.StateRepository
     field: state_repository
   STATS_MANAGER:
     docstring: Controls sFlow stat emission
-    enable: False
     class: pyon.util.sflow.SFlowManager
     field: sflow_manager

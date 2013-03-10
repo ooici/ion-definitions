@@ -1,0 +1,29 @@
+# ION Capability Container Profile - defines the capabilities to start for a container variant
+
+type: profile
+name: gumstix
+version: 0.1
+
+# Definition of profiles
+profile:
+  capabilities:
+    EVENT_PUBLISHER:
+      class: pyon.container.embedded.cc.EmbeddedEventPublisherCapability
+    RESOURCE_REGISTRY:
+      class: pyon.container.embedded.cc.EmbeddedResourceRegistryCapability
+      field:
+
+  start_order:
+  - PID_FILE
+  - SIGNAL_HANDLER
+  - DATASTORE_MANAGER
+  - EVENT_PUBLISHER
+  - RESOURCE_REGISTRY
+  #- STATE_REPOSITORY
+  - LOCAL_ROUTER
+  - PROC_MANAGER
+  - APP_MANAGER
+  - FILE_SYSTEM
+
+  # Changes to pyon.yml for specific profile
+  config:

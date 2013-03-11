@@ -81,6 +81,16 @@ CustomAttribute:
   default: ""
   units: ""
 
+---
+
+ServiceRequest:
+  #@Required
+  service_name: ""  #The name of the service
+  #@Required
+  service_operation: ""    #The name of the service operation
+  query_string_params: {}  #Optional dict of name=value pairs to be passed on query string
+  post_data: {}            #Optional dict of name=value pairs to be passed as posted data
+
 #---
 
 #DataFormat:

@@ -35,10 +35,10 @@ AcquireResourceExclusiveProposal: !Extends_AcquireResourceProposal
 ---
 
 #This object contains additional information associated with a Marine Facility Org
+#@OriginResourceType=Org
 MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'Org'
-  #@hasResource=DataProduct
-  data_products: []
+  data_products: []   #TODO - remove when asych calls in UI are implemented
+  data_products_request: !ServiceRequest
   #@hasResource=PlatformDevice
   platforms: []
   # defined in get_marine_facility_extension
@@ -64,8 +64,10 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   #@hasDeployedDeviceForOrg=PlatformSite
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
   #@hasNegotiation=Negotiation
-  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN
-  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED
+  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN TODO - remove at some point
+  open_negotiations_request: !ServiceRequest
+  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED TODO - remove at some point
+  closed_negotiations_request: !ServiceRequest
 
   number_of_data_products: 0
   number_of_platforms: 0

@@ -139,14 +139,26 @@ ExtendedResource: !Extends_ResourceContainer
 ---
 
 # An object used for testing of the framework
+#@OriginResourceType=InstrumentDevice
 TestExtendedResource: !Extends_ExtendedResource
-  origin_resource_type: 'InstrumentDevice'
   #@hasPolicy
   policy_count: 0
   #@Method
   resource_object: !Resource
   #@Method=resource_registry.read
   remote_resource_object: !Resource
+
+# An object used for testing of the framework
+#@OriginResourceType=Device
+TestExtendedResourceDevice: !Extends_ExtendedResource
+  #@hasPolicy
+  policy_count: 0
+
+# An object used for testing of the framework
+#@OriginResourceType=Org
+TestExtendedResourceBad: !Extends_ExtendedResource
+  #@hasPolicy
+  policy_count: 0
 
 ---
 

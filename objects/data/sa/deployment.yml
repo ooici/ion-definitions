@@ -48,6 +48,10 @@ Deployment: !Extends_FrameOfReference
   # An additional identification name used by the operators
   auxiliary_name: ""
 
+  # device ids and keys, port reference designators as values
+  port_assignments: {}
+
+
 
 
 ---

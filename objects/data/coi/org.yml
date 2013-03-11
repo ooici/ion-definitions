@@ -37,6 +37,7 @@ AcquireResourceExclusiveProposal: !Extends_AcquireResourceProposal
 #This object contains additional information associated with a Marine Facility Org
 #@OriginResourceType=Org
 MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
+  #@hasResource=DataProduct
   data_products: []   #TODO - remove when asych calls in UI are implemented
   data_products_request: !ServiceRequest
   #@hasResource=PlatformDevice

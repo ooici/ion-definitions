@@ -29,8 +29,8 @@ DeviceExtension: !Extends_ExtendedInformationResource
 ####################################################################
 
 # This object contains additional information associated with a data process.
+#@OriginResourceType=DataProcess
 DataProcessExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DataProcess'
   #@hasProcessDefinition
   data_process_definition: !DataProcessDefinition
   #@hasInputProduct
@@ -40,8 +40,8 @@ DataProcessExtension: !Extends_ExtendedInformationResource
 
 ---
 # This object contains additional information associated with a data process definition.
+#@OriginResourceType=DataProcessDefinition
 DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DataProcessDefinition'
   #@hasProcessDefinition
   data_processes: []            # set of !DataProcess instances of this definition
   #@hasInputStreamDefinition
@@ -54,8 +54,8 @@ DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
 ---
 
 # This object contains additional information associated with a data product.
+#@OriginResourceType=DataProduct
 DataProductExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DataProduct'
   #@hasVersion
   version: !DataProductVersion  # The associated data product collection
   #@hasDataProduct=Site
@@ -74,8 +74,8 @@ DataProductExtension: !Extends_ExtendedInformationResource
 ---
 
 # This object contains additional information associated with a deployment resource.
+#@OriginResourceType=Deployment
 DeploymentExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'Deployment'
   #@hasDeployment=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
   #@hasDeployment=InstrumentSite
@@ -90,16 +90,16 @@ DeploymentExtension: !Extends_ExtendedInformationResource
 ---
 
 # This object contains additional information associated with a instrument or platform model.
+#@OriginResourceType=DeviceModel
 DeviceModelExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DeviceModel'
   #@hasModel
   devices: []  # The associated device instances
 
 ---
 
 # This object contains additional information associated with an instrument device.
+#@OriginResourceType=InstrumentDevice
 InstrumentDeviceExtension: !Extends_DeviceExtension
-  origin_resource_type: 'InstrumentDevice'
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
   #@hasAgentForDevice=InstrumentModel
@@ -116,16 +116,16 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
 ---
 
 # This object contains additional information associated with a request for notification.
+#@OriginResourceType=NotificationRequest
 NotificationRequestExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'NotificationRequest'
   #@hasNotification=UserInfo
   user_info: !UserInfo  # The associated user
 
 ---
 
 # This object contains additional information associated with an instrument device.
+#@OriginResourceType=PlatformDevice
 PlatformDeviceExtension: !Extends_DeviceExtension
-  origin_resource_type: 'PlatformDevice'
   #@hasDevice=PlatformDevice
   platforms: []  # The list of child platforms
   #@hasModel
@@ -148,8 +148,8 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 ---
 
 # This object contains additional information associated with a Site resource.
+#@OriginResourceType=Site
 SiteExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'Site'
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
   # supplied in ObservatoryManagementService.get_site_extension

@@ -134,7 +134,17 @@ Parameter:
   ion_name: ""
   custom_attributes: {}
 
+---
 
+DeviceStatusEnum: !enum (values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN), default=STATUS_UNKNOWN)
+
+---
+
+DeviceStatus:
+  communications: !DeviceStatusEnum
+  data: !DeviceStatusEnum
+  location: !DeviceStatusEnum
+  power: !DeviceStatusEnum
 
 ---
 
@@ -150,6 +160,8 @@ Device: !Extends_TaskableResource
   # Recommended format: {attribute1_name:value, attribute2_name:value}
   # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
+  #defines the current state for this device based on status paramters received
+  status: !DeviceStatus
 
 
 

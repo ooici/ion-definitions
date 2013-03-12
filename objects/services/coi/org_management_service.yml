@@ -165,6 +165,19 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  find_org_closed_negotiations:
+    docstring: |
+      Returns a list of closed negotiations for an Org - those which are Accepted or Rejected.
+      Will throw a not NotFound exception if any of the specified ids do not exist.
+    in:
+      org_id: ""
+      proposal_type: ""
+    out:
+      negotiation: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
   find_user_negotiations:
     docstring: |
       Returns a list of negotiations for a specified User. All negotiations for all Orgs will be returned

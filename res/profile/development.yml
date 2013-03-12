@@ -32,4 +32,3 @@ profile:
 
   # Changes applied on top of pyon.yml for specific profile
   config:
-    AAAAAAAAAAAA: 1

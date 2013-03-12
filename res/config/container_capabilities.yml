@@ -4,16 +4,18 @@
 capabilities:
   # CAPNAME:
   #   docstring: Documentation
-  #   enable: True or False
   #   class: The module.class name of the ContainerCapability
   #   field: (optional). If given the name of the self.container.<field>
+  #   depends_on: (optional). If given a comma-separated list of capability names that must be present before
   APP_MANAGER:
-    docstring:
+    docstring: Provides capability to start and stop deploy files and apps
     class: pyon.container.apps.AppManager
     field: app_manager
+    depends_on: PROC_MANAGER
   CONTAINER_AGENT:
-    docstring:
+    docstring: Provides the container agent RPC interface
     class: pyon.container.cc.ContainerAgentCapability
+    depends_on: EXCHANGE_MANAGER
   CONTAINER_MANAGER:
     docstring: Container command executive
     class: pyon.container.management.ContainerManager
@@ -23,18 +25,19 @@ capabilities:
     class: pyon.datastore.datastore.DatastoreManager
     field: datastore_manager
   DIRECTORY:
-    docstring:
+    docstring: Provides a key/value lookup capability based by the datastore
     class: pyon.ion.directory.Directory
     field: directory
+    depends_on: DATASTORE_MANAGER
   EVENT_PUBLISHER:
-    docstring:
+    docstring: Provides the capability to publish events
     class: pyon.container.cc.EventPublisherCapability
   EVENT_REPOSITORY:
-    docstring:
+    docstring: Provides the capability to store and find events in a persistent datastore
     class: pyon.event.event.EventRepository
     field: event_repository
   EXCHANGE_MANAGER:
-    docstring:
+    docstring: Manages communication endpoints (via pyon.net) of various transport
     class: pyon.ion.exchange.ExchangeManager
     field: ex_manager
   FILE_SYSTEM:
@@ -45,29 +48,32 @@ capabilities:
     class: pyon.core.governance.governance_controller.GovernanceController
     field: governance_controller
   LOCAL_ROUTER:
-    docstring:
+    docstring: Provides a synchronized in-memory transport between container processes
     class: pyon.container.cc.LocalRouterCapability
   OBJECT_STORE:
-    docstring:
+    docstring: Provides access to a simple persistent key/value store
     class: pyon.container.cc.ObjectStoreCapability
+    depends_on: DATASTORE_MANAGER
   PID_FILE:
-    docstring:
+    docstring: Creates a pidfile while the container is running
     class: pyon.container.cc.PidfileCapability
   PROC_MANAGER:
-    docstring:
+    docstring: Manages spawn and terminate of processes
     class: pyon.container.procs.ProcManager
     field: proc_manager
   RESOURCE_REGISTRY:
-    docstring:
+    docstring: Provides a resource registry interface backed by a persistent datastore
     class: pyon.ion.resregistry.ResourceRegistry
     field: resource_registry
+    depends_on: DATASTORE_MANAGER
   SIGNAL_HANDLER:
-    docstring:
+    docstring: Provides UNIX signal handler for TERM and other signals
     class: pyon.container.cc.SignalHandlerCapability
   STATE_REPOSITORY:
-    docstring:
+    docstring: Provides persistent state management for container processes
     class: pyon.ion.state.StateRepository
     field: state_repository
+    depends_on: DATASTORE_MANAGER
   STATS_MANAGER:
     docstring: Controls sFlow stat emission
     class: pyon.util.sflow.SFlowManager

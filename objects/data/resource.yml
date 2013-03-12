@@ -54,6 +54,14 @@ ResourceFilter:
 
 ---
 
+ServiceRequest:
+  service_name: ""  #The name of the service
+  service_operation: ""    #The name of the service operation
+  query_string_params: {}  #Optional dict of name=value pairs to be passed on query string
+  post_data: {}            #Optional dict of name=value pairs to be passed as posted data
+
+---
+
 ComputedValueAvailability: !enum (values=(PROVIDED,NOTAVAILABLE), default=NOTAVAILABLE)
 
 ---
@@ -85,9 +93,12 @@ ComputedDictValue: !Extends_ComputedValue
 ComputedAttributes:
   #@Method=user_notification.get_recent_events
   recent_events: !ComputedListValue    # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first
-
+  #@ServiceRequest=user_notification.get_recent_events
+  recent_events_request: !ServiceRequest
   #@Method=user_notification.get_subscriptions_attribute
   user_notification_requests:  !ComputedListValue      # A list of NotificationRequest objects, for the current user, where origin equals current resource id
+  #@ServiceRequest=user_notification.get_subscriptions_attribute
+  user_notifications_request: !ServiceRequest
 
 ---
 
@@ -161,11 +172,11 @@ TestExtendedResourceBad: !Extends_ExtendedResource
   policy_count: 0
 
 ---
-
+#@OriginResourceType=InformationResource
 ExtendedInformationResource: !Extends_ExtendedResource
 
 ---
-
+#@OriginResourceType=TaskableResource
 ExtendedTaskableResource: !Extends_ExtendedResource
 
 

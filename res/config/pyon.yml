@@ -120,9 +120,10 @@ server:
 # ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container
 container:
-  capability:
-    #profile: res/profile/development.yml      # Capability profile to use
-    profile: res/profile/gumstix.yml      # Capability profile to use
+  # Capability profile to use (assumes a file in res/profile/<name>.yml unless a path is specified)
+  #profile: development   # Profile for
+  profile: gumstix
+  #profile: res/profile/dataadmin.yml
 
   datastore:
     default_server: couchdb       # Which server connection to use to

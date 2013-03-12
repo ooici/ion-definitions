@@ -1,9 +1,9 @@
 # ION Capability Container Profile - defines the capabilities to start for a container variant
 
-# This is for a developer's container variant
+# This is for a the production system CyberPoP container variant
 
 type: profile
-name: development
+name: production
 version: 0.1
 
 # Definition of profiles
@@ -26,10 +26,9 @@ profile:
   - APP_MANAGER
   - FILE_SYSTEM
   - GOVERNANCE_CONTROLLER
-  #- STATS_MANAGER
+  - STATS_MANAGER
   - CONTAINER_MANAGER
   - CONTAINER_AGENT
 
   # Changes applied on top of pyon.yml for specific profile
   config:
-    AAAAAAAAAAAA: 1

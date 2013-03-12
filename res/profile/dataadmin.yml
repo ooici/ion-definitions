@@ -1,9 +1,9 @@
 # ION Capability Container Profile - defines the capabilities to start for a container variant
 
-# This is for a developer's container variant
+# This is for a minimal container that can do database and coverage manipulation
 
 type: profile
-name: development
+name: dataadmin
 version: 0.1
 
 # Definition of profiles
@@ -32,4 +32,3 @@ profile:
 
   # Changes applied on top of pyon.yml for specific profile
   config:
-    AAAAAAAAAAAA: 1

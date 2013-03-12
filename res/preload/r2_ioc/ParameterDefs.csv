@@ -214,81 +214,81 @@ SP_TEST,PARAD,par_coeff_imc,PD189,0,par_coeff_imc_quantity_float32_1,0,quantity,
 SP_TEST,PARAD,par_coeff_a1,PD190,0,par_coeff_a1_quantity_float32_umol_photons_m_2_s_1_count_1,0,quantity,float32,,umol photons m-2 s-1 count-1,-9999,PAR scaling factor,,,,,,,"The PAR scaling factor, a1 is a calibration parameter used in converting PAR digital voltage counts to PAR in engineering units (µmol photons m-2 s-1).",,,
 SP_TEST,PARAD,par_coeff_a0,PD191,0,par_coeff_a0_quantity_float32_count,0,quantity,float32,,count,-9999,PAR voltage offset,,,,,,,"The PAR voltage offset, a0 is a calibration parameter used in converting PAR digital voltage counts to PAR in engineering units (µmol photons m-2 s-1).",,,
 SP_TEST,PARAD,par,PD192,0,par_quantity_float32_umol_photons_m_2_s_1,0,quantity,float32,,umol photons m-2 s-1,-9999,Photosynthetic Active Radiation (PAR),,,downwelling_photosynthetic_photon_flux_in_sea_water,PAR,OPTPARW,//alfresco/ooi/control/1000sys/1341-00720_Data_Product_SPEC_OPTPARW_Satl_OOI.pdf,The OOI Level 1 Photosynthetic Active Radiation (PAR) data product which is computed from either the Satlantic or Biospherical PAR instruments used.,,,
-BETA,CTDBP,temperature,PD193,0,temperature_quantity_int32_counts,0,quantity,int32,,counts,-9999,Temperature A/D counts,,,,,TEMPWAT,,,,,
-BETA,CTDBP,conductivity,PD194,0,conductivity_quantity_int32_counts,0,quantity,int32,,counts,-9999,Conductivity A/D counts,,,,,CONDWAT,,,,,
-BETA,CTDBP,pressure,PD195,0,pressure_quantity_int32_counts,0,quantity,int32,,counts,-9999,Pressure A/D counts,,,,,PRESWAT,,,,,
-BETA,CTDBP,pressure_temp,PD196,0,pressure_temp_quantity_int32_counts,0,quantity,int32,,counts,-9999,Pressure temperature compensation A/D counts,,,,,,,,,,
-BETA,CTDBP,oxygen,PD197,0,oxygen_quantity_int32_counts,0,quantity,int32,,counts,-9999,External oxygen counts,,,,,DOCONCS,,,,,
-BETA,CTDBP,ctd_time,PD198,0,ctd_time_quantity_int32_seconds_since_2000_01_01,0,quantity,int32,,seconds since 2000-01-01,-9999,Time in seconds since 01/01/2000,,,,,,,,,,
-BETA,CTDBP,pump_current,PD199,0,pump_current_quantity_float32_mA,0,quantity,float32,,mA,-9999,Pump current,,,,,,,,,,
-BETA,CTDBP,ext_v01_current,PD200,0,ext_v01_current_quantity_float32_mA,0,quantity,float32,,mA,-9999,Current from external voltage sensors 0 & 1,,,,,,,,,,
-BETA,CTDBP,serial_current,PD201,0,serial_current_quantity_float32_mA,0,quantity,float32,,mA,-9999,Auxiliary serial instrument current,,,,,,,,,,
-BETA,CTDBP,logging_status,PD202,0,logging_status_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'not logging', 1:'logging', 2:'waiting to start at ...', 3:'unknown',-99:'empty'}",1,-99,Logging status category,,,,,,,,,,
-BETA,CTDBP,num_samples,PD203,0,num_samples_quantity_int32_counts,0,quantity,int32,,counts,-9999,Number of samples,,,,,,,,,,
-BETA,CTDBP,mem_free,PD204,0,mem_free_quantity_int32_bytes,0,quantity,int32,,bytes,-9,Available memory,,,,,,,,,,
-BETA,CTDBP,sample_interval ,PD205,0,sample_interval_quantity_int16_s,0,quantity,int16,,s,-9999,Sampling interval,,,,,,,,,,
-BETA,CTDBP,measurements_per_sample ,PD206,0,measurements_per_sample_quantity_int8_counts,0,quantity,int8,,counts,-99,Number of measurements per sample,,,,,,,,,,
-BETA,CTDBP,pump_mode,PD207,0,pump_mode_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'no pump', 1:'run pump for 0.5 sec before sample', 2:'run pump during sample',-99:'empty'}",1,-99,CTD pump mode,,,,,,,,,,
-BETA,CTDBP,delay_before_sampling ,PD208,0,delay_before_sampling_quantity_float32_s,0,quantity,float32,,s,-9999,Seconds delay before sampling,,,,,,,,,,
-BETA,CTDBP,delay_after_sampling,PD209,0,delay_after_sampling_quantity_float32_s,0,quantity,float32,,s,-9999,Seconds delay after sampling,,,,,,,,,,
-BETA,CTDBP,tx_real_time ,PD210,0,tx_real_time_boolean_int8_1,0,boolean,int8,,1,-9,Transmit in real time flag,,,,,,,,,,
-BETA,CTDBP,battery_cutoff ,PD211,0,battery_cutoff_quantity_float32_V,0,quantity,float32,,V,-9999,Battery cutoff voltage,,,,,,,,,,
-BETA,CTDBP,pressure_sensor_type,PD212,0,pressure_sensor_type_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'none', 1:'strain gauge', 2:'quartz with temp comp',-99:'empty'}",1,-99,Pressure sensor type category,,,,,,,,,,
-BETA,CTDBP,sbe38 ,PD213,0,sbe38_boolean_int8_1,0,boolean,int8,,1,-9,External sbe38 flag,,,,,,,,,,
-BETA,CTDBP,sbe50 ,PD214,0,sbe50_boolean_int8_1,0,boolean,int8,,1,-9,External sbe50 flag,,,,,,,,,,
-BETA,CTDBP,wetlabs ,PD215,0,wetlabs_boolean_int8_1,0,boolean,int8,,1,-9,External wetlabs flag,,,,,,,,,,
-BETA,CTDBP,optode ,PD216,0,optode_boolean_int8_1,0,boolean,int8,,1,-9,External optode flag,,,,,,,,,,
-BETA,CTDBP,gas_tension_device ,PD217,0,gas_tension_device_boolean_int8_1,0,boolean,int8,,1,-9,External gas tension device flag,,,,,,,,,,
-BETA,CTDBP,ext_volt_0 ,PD218,0,ext_volt_0_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 0 sensor flag,,,,,,,,,,
-BETA,CTDBP,ext_volt_1 ,PD219,0,ext_volt_1_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 1 sensor flag,,,,,,,,,,
-BETA,CTDBP,ext_volt_2 ,PD220,0,ext_volt_2_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 2 sensor flag,,,,,,,,,,
-BETA,CTDBP,ext_volt_3 ,PD221,0,ext_volt_3_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 3 sensor flag,,,,,,,,,,
-BETA,CTDBP,ext_volt_4 ,PD222,0,ext_volt_4_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 4 sensor flag,,,,,,,,,,
-BETA,CTDBP,ext_volt_5 ,PD223,0,ext_volt_5_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 5 sensor flag,,,,,,,,,,
-BETA,CTDBP,echo_characters ,PD224,0,echo_characters_boolean_int8_1,0,boolean,int8,,1,-9,Echo characters flag,,,,,,,,,,
-BETA,CTDBP,output_format ,PD225,0,output_format_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'raw Hex', 1:'converted Hex', 2:'raw decimal', 3:'converted decimal', 5:'converted XML VVIC',-99:'empty'}",1,-99,Data output format category,,,,,,,,,,
-BETA,CTDBP,output_salinity ,PD226,0,output_salinity_boolean_int8_1,0,boolean,int8,,1,-9,Output salinity data flag,,,,,,,,,,
-BETA,CTDBP,output_sound_velocity ,PD227,0,output_sound_velocity_boolean_int8_1,0,boolean,int8,,1,-9,Output sound velocity data flag,,,,,,,,,,
-BETA,CTDBP,serial_sync_mode ,PD228,0,serial_sync_mode_boolean_int8_1,0,boolean,int8,,1,-9,Serial sync mode,,,,,,,,,,
-BETA,CTDBP,temp_coeff_offset,PD229,0,temp_coeff_offset_quantity_float32_1,0,quantity,float32,,1,-9999,Temperature Coefficient Offset,,,,,,,,,,
-BETA,CTDBP,press_serial_number,PD230,0,press_serial_number_quantity_int32_1,0,quantity,int32,,1,-9999,Pressure Sensor Serial Number,,,,,,,,,,
-BETA,CTDBP,press_coeff_pa0,PD231,0,press_coeff_pa0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PA0,,,,,,,,,,
-BETA,CTDBP,press_coeff_pa1,PD232,0,press_coeff_pa1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PA1,,,,,,,,,,
-BETA,CTDBP,press_coeff_pa2,PD233,0,press_coeff_pa2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PA2,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptempa0,PD234,0,press_coeff_ptempa0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTempA0,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptempa1,PD235,0,press_coeff_ptempa1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTempA1,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptempa2,PD236,0,press_coeff_ptempa2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTempA2,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptca0,PD237,0,press_coeff_ptca0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCA0,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptca1,PD238,0,press_coeff_ptca1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCA1,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptca2,PD239,0,press_coeff_ptca2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCA2,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptcb0,PD240,0,press_coeff_ptcb0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCB0,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptcb1,PD241,0,press_coeff_ptcb1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCB1,,,,,,,,,,
-BETA,CTDBP,press_coeff_ptcb2,PD242,0,press_coeff_ptcb2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCB2,,,,,,,,,,
-BETA,CTDBP,ext_volt0_slope,PD243,0,ext_volt0_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 0 Slope,,,,,,,,,,
-BETA,CTDBP,ext_volt0_offset,PD244,0,ext_volt0_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 0 Offset,,,,,,,,,,
-BETA,CTDBP,ext_volt1_slope,PD245,0,ext_volt1_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 1 Slope,,,,,,,,,,
-BETA,CTDBP,ext_volt1_offset,PD246,0,ext_volt1_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 1 Offset,,,,,,,,,,
-BETA,CTDBP,ext_volt2_slope,PD247,0,ext_volt2_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 2 Slope,,,,,,,,,,
-BETA,CTDBP,ext_volt2_offset,PD248,0,ext_volt2_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 2 Offset,,,,,,,,,,
-BETA,CTDBP,ext_volt3_slope,PD249,0,ext_volt3_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 3 Slope,,,,,,,,,,
-BETA,CTDBP,ext_volt3_offset,PD250,0,ext_volt3_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 3 Offset,,,,,,,,,,
-BETA,CTDBP,ext_volt4_slope,PD251,0,ext_volt4_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 4 Slope,,,,,,,,,,
-BETA,CTDBP,ext_volt4_offset,PD252,0,ext_volt4_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 4 Offset,,,,,,,,,,
-BETA,CTDBP,ext_volt5_slope,PD253,0,ext_volt5_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 5 Slope,,,,,,,,,,
-BETA,CTDBP,ext_volt5_offset,PD254,0,ext_volt5_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 5 Offset,,,,,,,,,,
-BETA,CTDBP,ext_freq_sf,PD255,0,ext_freq_sf_quantity_float32_1,0,quantity,float32,,1,-9999,External Frequency Channel,,,,,,,,,,
-BETA,CTDBP,press_coeff_pslope,PD256,0,press_coeff_pslope_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient pslope,,,,,,,,,,
-BETA,CTDBP,temp_sensor_serial_number,PD257,0,temp_sensor_serial_number_quantity_int32_1,0,quantity,int32,,1,-9999,Temperature Sensor Serial Number,,,,,,,,,,
-BETA,CTDBP,cond_sensor_serial_number,PD258,0,cond_sensor_serial_number_quantity_int32_1,0,quantity,int32,,1,-9999,Conductivity Sensor Serial Number,,,,,,,,,,
-BETA,CTDBP,command_set_version,PD259,0,command_set_version_array_quantity_str_1,0,array<quantity>,str,,1,-9999,Command Set Version,,,,,,,,,,
-BETA,CTDBP,paros_integration,PD260,0,paros_integration_quantity_float32_s,0,quantity,float32,,s,-9999,Integration Time for Quartz Pressure Sensor,,,,,,,Configuration value: Integration time in seconds to wait for the internal Quart pressure sensor,,,
-BETA,CTDBP,assembly_number,PD261,0,assembly_number_array_quantity_str_1,0,array<quantity>,str,,1,empty,PC Board Assembly Number,,,,,,,,,,
-BETA,CTDBP,output_sigmat,PD262,0,output_sigmat_boolean_int8_1,0,boolean,int8,,1,-9,Output Sigma T flag,,,,,,,,,,
-BETA,CTDBP,num_events,PD263,0,num_events_quantity_int32_counts,0,quantity,int32,,counts,-9999,Number of Events,,,,,,,,,,
-BETA,CTDBP,samples_free,PD264,0,samples_free_quantity_int32_counts,0,quantity,int32,,counts,-9999,Number of Samples Free,,,,,,,,,,
-BETA,CTDBP,sample_length,PD265,0,sample_length_quantity_int32_bytes,0,quantity,int32,,bytes,-9999,Bytes per Sample,,,,,,,,,,
-BETA,CTDBP,headers,PD266,0,headers_quantity_int32_counts,0,quantity,int32,,counts,-9999,Headers,,,,,,,,,,
-BETA,CTDBP,output_executed_tag,PD267,0,output_executed_tag_boolean_int8_1,0,boolean,int8,,1,-9,Output Executed Tag flag,,,,,,,,,,
+BETA,CTDBP,temperature,PD193,0,temperature_quantity_int32_counts,0,quantity,int32,,counts,-9999,Temperature A/D counts,,,,,TEMPWAT,,,,,Ready for Review
+BETA,CTDBP,conductivity,PD194,0,conductivity_quantity_int32_counts,0,quantity,int32,,counts,-9999,Conductivity A/D counts,,,,,CONDWAT,,,,,Ready for Review
+BETA,CTDBP,pressure,PD195,0,pressure_quantity_int32_counts,0,quantity,int32,,counts,-9999,Pressure A/D counts,,,,,PRESWAT,,,,,Ready for Review
+BETA,CTDBP,pressure_temp,PD196,0,pressure_temp_quantity_int32_counts,0,quantity,int32,,counts,-9999,Pressure temperature compensation A/D counts,,,,,,,,,,Ready for Review
+BETA,CTDBP,oxygen,PD197,0,oxygen_quantity_int32_counts,0,quantity,int32,,counts,-9999,External oxygen counts,,,,,DOCONCS,,,,,Ready for Review
+BETA,CTDBP,ctd_time,PD198,0,ctd_time_quantity_int32_seconds_since_2000_01_01,0,quantity,int32,,seconds since 2000-01-01,-9999,Time in seconds since 01/01/2000,,,,,,,,,,Ready for Review
+BETA,CTDBP,pump_current,PD199,0,pump_current_quantity_float32_mA,0,quantity,float32,,mA,-9999,Pump current,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_v01_current,PD200,0,ext_v01_current_quantity_float32_mA,0,quantity,float32,,mA,-9999,Current from external voltage sensors 0 & 1,,,,,,,,,,Ready for Review
+BETA,CTDBP,serial_current,PD201,0,serial_current_quantity_float32_mA,0,quantity,float32,,mA,-9999,Auxiliary serial instrument current,,,,,,,,,,Ready for Review
+BETA,CTDBP,logging_status,PD202,0,logging_status_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'not logging', 1:'logging', 2:'waiting to start at ...', 3:'unknown',-99:'empty'}",1,-99,Logging status category,,,,,,,,,,Ready for Review
+BETA,CTDBP,num_samples,PD203,0,num_samples_quantity_int32_counts,0,quantity,int32,,counts,-9999,Number of samples,,,,,,,,,,Ready for Review
+BETA,CTDBP,mem_free,PD204,0,mem_free_quantity_int32_bytes,0,quantity,int32,,bytes,-9,Available memory,,,,,,,,,,Ready for Review
+BETA,CTDBP,sample_interval ,PD205,0,sample_interval_quantity_int16_s,0,quantity,int16,,s,-9999,Sampling interval,,,,,,,,,,Ready for Review
+BETA,CTDBP,measurements_per_sample ,PD206,0,measurements_per_sample_quantity_int8_counts,0,quantity,int8,,counts,-99,Number of measurements per sample,,,,,,,,,,Ready for Review
+BETA,CTDBP,pump_mode,PD207,0,pump_mode_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'no pump', 1:'run pump for 0.5 sec before sample', 2:'run pump during sample',-99:'empty'}",1,-99,CTD pump mode,,,,,,,,,,Ready for Review
+BETA,CTDBP,delay_before_sampling ,PD208,0,delay_before_sampling_quantity_float32_s,0,quantity,float32,,s,-9999,Seconds delay before sampling,,,,,,,,,,Ready for Review
+BETA,CTDBP,delay_after_sampling,PD209,0,delay_after_sampling_quantity_float32_s,0,quantity,float32,,s,-9999,Seconds delay after sampling,,,,,,,,,,Ready for Review
+BETA,CTDBP,tx_real_time ,PD210,0,tx_real_time_boolean_int8_1,0,boolean,int8,,1,-9,Transmit in real time flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,battery_cutoff ,PD211,0,battery_cutoff_quantity_float32_V,0,quantity,float32,,V,-9999,Battery cutoff voltage,,,,,,,,,,Ready for Review
+BETA,CTDBP,pressure_sensor_type,PD212,0,pressure_sensor_type_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'none', 1:'strain gauge', 2:'quartz with temp comp',-99:'empty'}",1,-99,Pressure sensor type category,,,,,,,,,,Ready for Review
+BETA,CTDBP,sbe38 ,PD213,0,sbe38_boolean_int8_1,0,boolean,int8,,1,-9,External sbe38 flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,sbe50 ,PD214,0,sbe50_boolean_int8_1,0,boolean,int8,,1,-9,External sbe50 flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,wetlabs ,PD215,0,wetlabs_boolean_int8_1,0,boolean,int8,,1,-9,External wetlabs flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,optode ,PD216,0,optode_boolean_int8_1,0,boolean,int8,,1,-9,External optode flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,gas_tension_device ,PD217,0,gas_tension_device_boolean_int8_1,0,boolean,int8,,1,-9,External gas tension device flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt_0 ,PD218,0,ext_volt_0_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 0 sensor flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt_1 ,PD219,0,ext_volt_1_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 1 sensor flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt_2 ,PD220,0,ext_volt_2_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 2 sensor flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt_3 ,PD221,0,ext_volt_3_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 3 sensor flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt_4 ,PD222,0,ext_volt_4_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 4 sensor flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt_5 ,PD223,0,ext_volt_5_boolean_int8_1,0,boolean,int8,,1,-9,External voltage 5 sensor flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,echo_characters ,PD224,0,echo_characters_boolean_int8_1,0,boolean,int8,,1,-9,Echo characters flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,output_format ,PD225,0,output_format_category_int8_str_int8_1,0,category<int8:str>,int8,"{0:'raw Hex', 1:'converted Hex', 2:'raw decimal', 3:'converted decimal', 5:'converted XML VVIC',-99:'empty'}",1,-99,Data output format category,,,,,,,,,,Ready for Review
+BETA,CTDBP,output_salinity ,PD226,0,output_salinity_boolean_int8_1,0,boolean,int8,,1,-9,Output salinity data flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,output_sound_velocity ,PD227,0,output_sound_velocity_boolean_int8_1,0,boolean,int8,,1,-9,Output sound velocity data flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,serial_sync_mode ,PD228,0,serial_sync_mode_boolean_int8_1,0,boolean,int8,,1,-9,Serial sync mode,,,,,,,,,,Ready for Review
+BETA,CTDBP,temp_coeff_offset,PD229,0,temp_coeff_offset_quantity_float32_1,0,quantity,float32,,1,-9999,Temperature Coefficient Offset,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_serial_number,PD230,0,press_serial_number_quantity_int32_1,0,quantity,int32,,1,-9999,Pressure Sensor Serial Number,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_pa0,PD231,0,press_coeff_pa0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PA0,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_pa1,PD232,0,press_coeff_pa1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PA1,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_pa2,PD233,0,press_coeff_pa2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PA2,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptempa0,PD234,0,press_coeff_ptempa0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTempA0,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptempa1,PD235,0,press_coeff_ptempa1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTempA1,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptempa2,PD236,0,press_coeff_ptempa2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTempA2,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptca0,PD237,0,press_coeff_ptca0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCA0,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptca1,PD238,0,press_coeff_ptca1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCA1,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptca2,PD239,0,press_coeff_ptca2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCA2,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptcb0,PD240,0,press_coeff_ptcb0_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCB0,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptcb1,PD241,0,press_coeff_ptcb1_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCB1,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_ptcb2,PD242,0,press_coeff_ptcb2_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient PTCB2,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt0_slope,PD243,0,ext_volt0_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 0 Slope,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt0_offset,PD244,0,ext_volt0_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 0 Offset,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt1_slope,PD245,0,ext_volt1_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 1 Slope,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt1_offset,PD246,0,ext_volt1_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 1 Offset,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt2_slope,PD247,0,ext_volt2_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 2 Slope,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt2_offset,PD248,0,ext_volt2_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 2 Offset,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt3_slope,PD249,0,ext_volt3_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 3 Slope,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt3_offset,PD250,0,ext_volt3_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 3 Offset,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt4_slope,PD251,0,ext_volt4_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 4 Slope,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt4_offset,PD252,0,ext_volt4_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 4 Offset,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt5_slope,PD253,0,ext_volt5_slope_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 5 Slope,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_volt5_offset,PD254,0,ext_volt5_offset_quantity_float32_1,0,quantity,float32,,1,-9999,External Voltage Sensor 5 Offset,,,,,,,,,,Ready for Review
+BETA,CTDBP,ext_freq_sf,PD255,0,ext_freq_sf_quantity_float32_1,0,quantity,float32,,1,-9999,External Frequency Channel,,,,,,,,,,Ready for Review
+BETA,CTDBP,press_coeff_pslope,PD256,0,press_coeff_pslope_quantity_float32_1,0,quantity,float32,,1,-9999,Pressure Coefficient pslope,,,,,,,,,,Ready for Review
+BETA,CTDBP,temp_sensor_serial_number,PD257,0,temp_sensor_serial_number_quantity_int32_1,0,quantity,int32,,1,-9999,Temperature Sensor Serial Number,,,,,,,,,,Ready for Review
+BETA,CTDBP,cond_sensor_serial_number,PD258,0,cond_sensor_serial_number_quantity_int32_1,0,quantity,int32,,1,-9999,Conductivity Sensor Serial Number,,,,,,,,,,Ready for Review
+BETA,CTDBP,command_set_version,PD259,0,command_set_version_array_quantity_str_1,0,array<quantity>,str,,1,-9999,Command Set Version,,,,,,,,,,Ready for Review
+BETA,CTDBP,paros_integration,PD260,0,paros_integration_quantity_float32_s,0,quantity,float32,,s,-9999,Integration Time for Quartz Pressure Sensor,,,,,,,Configuration value: Integration time in seconds to wait for the internal Quart pressure sensor,,,Ready for Review
+BETA,CTDBP,assembly_number,PD261,0,assembly_number_array_quantity_str_1,0,array<quantity>,str,,1,empty,PC Board Assembly Number,,,,,,,,,,Ready for Review
+BETA,CTDBP,output_sigmat,PD262,0,output_sigmat_boolean_int8_1,0,boolean,int8,,1,-9,Output Sigma T flag,,,,,,,,,,Ready for Review
+BETA,CTDBP,num_events,PD263,0,num_events_quantity_int32_counts,0,quantity,int32,,counts,-9999,Number of Events,,,,,,,,,,Ready for Review
+BETA,CTDBP,samples_free,PD264,0,samples_free_quantity_int32_counts,0,quantity,int32,,counts,-9999,Number of Samples Free,,,,,,,,,,Ready for Review
+BETA,CTDBP,sample_length,PD265,0,sample_length_quantity_int32_bytes,0,quantity,int32,,bytes,-9999,Bytes per Sample,,,,,,,,,,Ready for Review
+BETA,CTDBP,headers,PD266,0,headers_quantity_int32_counts,0,quantity,int32,,counts,-9999,Headers,,,,,,,,,,Ready for Review
+BETA,CTDBP,output_executed_tag,PD267,0,output_executed_tag_boolean_int8_1,0,boolean,int8,,1,-9,Output Executed Tag flag,,,,,,,,,,Ready for Review
 BETA,PREST,set_timeout,PD268,0,set_timeout_quantity_int32_ms,0,quantity,int32,,ms,-9999,Set Timeout,,,,,,,Not determined at this time. ,,,ready for review
 BETA,PREST,set_timeout_max,PD269,0,set_timeout_max_quantity_int32_ms,0,quantity,int32,,ms,-9999,"Set Timeout, Max",,,,,,,Not determined at this time. ,,,ready for review
 BETA,PREST,set_timeout_icd,PD270,0,set_timeout_icd_quantity_int32_ms,0,quantity,int32,,ms,-9999,Set Timeout ICD,,,,,,,Not determined at this time. ,,,ready for review
@@ -850,6 +850,7 @@ SP_TEST,BOTPT,iris_temp,PD850,0,iris_temp_quantity_float32_deg_C,0,quantity,floa
 SP_TEST,BOTPT,heat_temp,PD851,0,heat_temp_quantity_int16_deg_C,0,quantity,int16,,deg_C,-9999,,,,,,CRTTEMP,,,,,
 SP_TEST,BOTPT,seafloor_tilt_magnitude,PD852,0,seafloor_tilt_magnitude_quantity_float32_µrad,0,quantity,float32,,µrad,-9999,Seafloor Tilt Magnitude,,,,Seafloor Tilt Magnitude,BOTTILT-TMAG,,The OOI Level 1 Seafloor High-Resolution Tilt (BOTTILT) core data product is produced by the BOTPT instrument class. The ,,,
 SP_TEST,BOTPT,seafloor_tilt_direction,PD853,0,seafloor_tilt_direction_quantity_float32_degrees,0,quantity,float32,,degrees,-9999,Seafloor Tilt Direction,,,,Seafloor Tilt Direction,BOTTILT-TDIR,,,,,
+DOC,"Below are LC_TEST parameters used to validate code segments, they should not be used as examples, they are completely fictional and only serve to validate the parser's ability to read entries. Thanks! -Luke",,,,,,,,,,,,,,,,,,,,,
 LC_TEST,,TEMPWAT_L0,PD857,,,,quantity,float64,,deg_C,-9999,,,,,,,,,,,
 LC_TEST,,CONDWAT_L0,PD858,,,,quantity,float64,,,-9999,,,,,,,,,,,
 LC_TEST,,PRESWAT_L0,PD859,,,,quantity,float64,,,-9999,,,,,,,,,,,
@@ -859,3 +860,4 @@ LC_TEST,,PRESWAT_L1,PD856,,,,function,float64,,,-9999,,PFID3,"{'P': 'PD859', 'p_
 LC_TEST,,PRACSAL_L2,PD860,,,,function,float64,,,-9999,,PFID5,"{'C': {'PFID4': {'C': 'PD855'}}, 't': 'PD854', 'p': 'PD856'}",,,,,,,,
 LC_TEST,,absolute_salinity,PD861,,,,function,float64,,,-9999,,PFID7,"{'sp':{'PFID5':{'C': {'PFID4': {'C': 'PD855'}}, 't': 'PD854', 'p': 'PD856'}},'p':'PD856', 'lon':'PD9','lat':'PD8'}",,,,,,,,
 LC_TEST,,rho,PD862,,,,function,float64,,,-9999,,PFID8,"{'SP':{'PFID5':{'C': {'PFID4': {'C': 'PD855'}}, 't': 'PD854', 'p': 'PD856'}}, 'p':'PD856', 't':'PD854', 'lat':'PD8','lon':'PD9'}",,,,,,,,
+BASE,,ingestion_timestamp,PD863,,,,quantity,float64,,seconds since 1900-01-01,-1,Ingestion Timestamp,,,,,,,The NTP Timestamp for when the granule was ingested,,,

@@ -49,7 +49,7 @@ capabilities:
     class: pyon.container.cc.LocalRouterCapability
   OBJECT_STORE:
     docstring:
-    class: pyon.container.cc.ObjectsStoreCapability
+    class: pyon.container.cc.ObjectStoreCapability
   PID_FILE:
     docstring:
     class: pyon.container.cc.PidfileCapability

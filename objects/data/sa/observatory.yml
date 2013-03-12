@@ -22,10 +22,27 @@ Observatory: !Extends_Site
 # within an Observatory.
 Subsite: !Extends_Site
 
+---
+
+PortTypeEnum: !enum (values=(PAYLOAD, EXPANSION, UPLINK), default=PAYLOAD)
+
+---
+
+PlatformPort:
+  port_id: ""
+  ip_address: ""
+  port_type: !PortTypeEnum
+  reference_designator: ""
+
+---
+
 # Represents a reference designator within an observatory, designated for the deployment of functionally
 # equivalent platform devices, with geospatial and temporal bounds.
 PlatformSite: !Extends_Site
+  planned_uplink_port: !PlatformPort
 
 # Represents a reference designator within an observatory, designated for the deployment of functionally
 # equivalent instrument devices, with geospatial and temporal bounds.
 InstrumentSite: !Extends_Site
+  planned_uplink_port: !PlatformPort
+

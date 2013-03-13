@@ -14,3 +14,8 @@ DIRECTORY STRUCTURE:
 
 ./deploy/   Container startup (deploy) files (YML format and extension).
 
+./launch/   CEI launch configurations
+
+./preload/  Files used to preload resources into a fresh system
+
+./profile/  Capability container profile definitions

@@ -30,6 +30,8 @@ methods:
       specialied JSONP data string.
     in:
       query_token: ""
+      callback: ""
+      tqx: ""
     out:
       jsonp_visualization_data: ""
     throws:
@@ -88,16 +90,6 @@ methods:
       kml_file: ""
     throws:
       BadRequest: Throws if the KML could not be generated
-
-  get_dummy_googledt:
-    docstring: |
-      Temp test method
-    in:
-      dt_size: 0
-    out:
-      google_dt: ""
-    throws:
-      BadRequest: Throws something
 
 
   get_data_product_metadata:

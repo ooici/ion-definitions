@@ -52,13 +52,6 @@ ResourceLifeCycle: !Extends_InformationResource
 ResourceFilter:
   filters: {}
 
----
-
-ServiceRequest:
-  service_name: ""  #The name of the service
-  service_operation: ""    #The name of the service operation
-  query_string_params: {}  #Optional dict of name=value pairs to be passed on query string
-  post_data: {}            #Optional dict of name=value pairs to be passed as posted data
 
 ---
 
@@ -132,12 +125,13 @@ ResourceContainer:
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   lcstate_transitions: {}  # Available lcstate transitions (key event, value target state)
   resource: !Resource
-  computed: !ComputedAttributes
   ext_associations: {}  # An optional dict of names and associated objects to get other associations on the fly
 
 ---
 
+# A derived object containing common fields for all extended resource objects
 ExtendedResource: !Extends_ResourceContainer
+  computed: !ComputedAttributes
   #@hasPolicy
   policies: []  # A list of any associated policies
   #@hasOwnerInfo
@@ -146,6 +140,10 @@ ExtendedResource: !Extends_ResourceContainer
   orgs: []  # A list of orgs to which this resource belongs
   #@hasAttachment
   attachments: []  # list of sensors attached to this device
+
+
+#A derived object containing common fields for all prepare update objects
+PrepareUpdateResource: !Extends_ResourceContainer
 
 ---
 

@@ -15,3 +15,10 @@ Association:
   order: ""          # A value that can be ordered lexicographically if needed to provide association precendence
   attributes: {}     # Arbitrary set of key-value arguments providing details to the association
   retired: False     # Flag identifying retired associations
+
+
+
+ServiceRequest:
+  service_name: ""  #The name of the service
+  service_operation: ""    #The name of the service operation
+  request_parameters: {}  #Optional dict of name=value pairs to be passed on query string

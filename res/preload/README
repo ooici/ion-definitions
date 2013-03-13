@@ -1,17 +1,38 @@
-This directory and subdirectories contain dumped CouchDB data that will get preloaded
-back into the datastores for quick initialization and sample data. Preload happens
-automatically under certain start conditions, e.g. ION start with r2deploy.yml
+This directory and subdirectories contain information to preload resources within
+a fresh system or incrementally. It also contains database dumps for later restore.
 
-The convention is to load from a subdirectory with a logical datastore name, e.g.
-"resources", "objects" etc.
+Preload Data:
+-------------
+
+The program performing the preload is the ion_loader process.
+Note: the default mode of operation for preload is for going aginst GoogleDoc
+spreadsheets on the Internet. File based preload is for testing and version control only.
+
+Each subdirectory within this directory contains the files for a specific variant
+of a loaded system.
+
+The general directory structure for each variant is as follows (note: some variants are
+historic and ):
+
+./<variant>/              Contains all files for a preload variant
+
+./<variant>/attachments   Contains attachment contents
+./<variant>/ooi_assets    Contains OOI SAF export files and an override spreadsheet
+./<variant>/ui_assets     Contains UI database export CSV files
+
+
+Database Dumps:
+---------------
+
+A special directory is ./local/ which is not under configuration control. It is used to
+dump and reload object contents from the database.
+
+./local/<dump_timestamp>/                   Set of dumps at a given time
+
+./local/<dump_timestamp>/<database name>    Dump for a specific database such as resources, events
 
 The contents of the local subdirectory are not under version control and can be used
 to dump data and to keep data for local testing.
 
 
-How to do it?
-=============
-
-Preload with the DatastoreLoader process.
-
-Dump with the DatastoreLoader process
+The DatastoreLoader process is used to dump and restore.

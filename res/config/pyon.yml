@@ -43,7 +43,7 @@ bootstrap:
   use_es: False
 
 # ----------------------------------------------------------------------------------
-# The "server" root entry defines profiles for connections/credentials to external servers
+# The "server" root entry defines profiles for connections/credentials TO external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.
 server:
   amqp:
@@ -75,9 +75,15 @@ server:
     # The basic Couchbase connection
     type: couchbase
     host: localhost
-    port: 5984
-    username:
-    password:
+    port: 8091
+    api_port: 8092
+    username: default
+    password: default
+    bucket_password:
+    bucket_ram_quota_samll_mb: 128
+    bucket_ram_quota_medium_mb: 512
+    bucket_ram_quota_big_mb: 1024
+    bucket_ram_quota_xbig_mb: 2048
   smtp:
     # Outgoing email server
     type: smtp
@@ -128,7 +134,14 @@ container:
   #profile: dataadmin    # Profile for a database admin
 
   datastore:
-    default_server: couchdb       # Which server connection to use to
+    default_server: couchdb     # Which server connection (and type) to use as primary datastore
+    server_types:               # Definition of the known server types and how to start them
+      couchdb:
+        base: pyon.datastore.couchdb.couchdb_standalone.CouchDataStore
+        full: pyon.datastore.couchdb.couchdb_datastore.CouchDB_DataStore
+      couchbase:
+        base: pyon.datastore.couchbase.couchbase_base.CouchDataStore
+        full: pyon.datastore.couchbase.couchbase_full.CouchDataStore
 
   exchange:
     # @TODO rename to delegate or similar, used for management api calls too

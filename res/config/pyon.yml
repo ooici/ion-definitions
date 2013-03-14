@@ -325,6 +325,13 @@ event:
             ingestion_processing, 
             stream_ingestion_policy]
 
+process:
+  event_persister:
+    persist_interval: 1.0
+    persist_blacklist:
+    - event_type: TimerEvent
+    - event_type: SchedulerEvent
+
 #TODO - can't this be moved to a RR object?
 device:
   sbe37:

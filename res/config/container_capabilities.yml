@@ -7,6 +7,10 @@ capabilities:
   #   class: The module.class name of the ContainerCapability
   #   field: (optional). If given the name of the self.container.<field>
   #   depends_on: (optional). If given a comma-separated list of capability names that must be present before
+  #   enabled_config: (optional). CFG key to a specially named boolean flag to enable/disable capability.
+  #                   Default enable CFG key: container.<CAPABILITY>.enabled.
+  #                   Default value is True unless enabled_default=False
+  #   enabled_default: (optional) Boolean indicating default enabled status if no CFG given
   APP_MANAGER:
     docstring: Provides capability to start and stop deploy files and apps
     class: pyon.container.apps.AppManager
@@ -78,3 +82,5 @@ capabilities:
     docstring: Controls sFlow stat emission
     class: pyon.util.sflow.SFlowManager
     field: sflow_manager
+    enabled_config: container.sflow.enabled
+    enabled_default: False

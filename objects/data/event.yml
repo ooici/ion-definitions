@@ -415,6 +415,9 @@ ContainerManagementResult: !Extends_Event
 
 
 StreamAlarmType: !enum (values=(WARNING, ALERT, ALL_CLEAR), default=ALL_CLEAR)
+
+StreamAlertType: !enum (values=(WARNING, ALARM, ALL_CLEAR), default=ALL_CLEAR)
+
 ---
 StreamAlarmEvent: !Extends_ResourceEvent
   name: ''
@@ -437,6 +440,25 @@ StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
 
 ---
 
+StreamAlertEvent: !Extends_ResourceEvent
+  name: ''
+  message: ''
+  stream_name: ''
+  value_id: ''
+  value: None
+
+---
+
+StreamWarningAlertEvent: !Extends_StreamAlertEvent
+  type: StreamAlertType.WARNING
+
+StreamAlertAlarmEvent: !Extends_StreamAlertEvent
+  type: StreamAlertType.ALARM
+  
+StreamAllClearAlarmEvent: !Extends_StreamAlertEvent
+  type: StreamAlertType.ALL_CLEAR
+
+---
 
 # Used by DM UNS
 ExampleDetectableEvent: !Extends_Event

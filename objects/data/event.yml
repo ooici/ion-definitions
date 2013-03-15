@@ -452,10 +452,10 @@ StreamAlertEvent: !Extends_ResourceEvent
 StreamWarningAlertEvent: !Extends_StreamAlertEvent
   type: StreamAlertType.WARNING
 
-StreamAlertAlarmEvent: !Extends_StreamAlertEvent
+StreamAlertAlertEvent: !Extends_StreamAlertEvent
   type: StreamAlertType.ALARM
   
-StreamAllClearAlarmEvent: !Extends_StreamAlertEvent
+StreamAllClearAlertEvent: !Extends_StreamAlertEvent
   type: StreamAlertType.ALL_CLEAR
 
 ---

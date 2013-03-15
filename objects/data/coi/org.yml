@@ -6,7 +6,7 @@ OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSRO
 # Represents a domain of authority that provides the context within which policy applies to registered
 # member individuals and resources.
 Org: !Extends_TaskableResource
-  org_governance_id: ""       # An identifier for the Org used by governance that should not be changed.
+  org_governance_name: ""     # An identifier for the Org used by governance that should not be changed.
   org_type: !OrgTypeEnum      # Specializes the type of Or
   institution: !Institution   # Identifies the institution that operates the Org/Facility
   url: ""

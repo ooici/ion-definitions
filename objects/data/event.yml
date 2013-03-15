@@ -435,28 +435,8 @@ StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
 StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
   type: StreamAlaramType.ALL_CLEAR
 
-StreamAlertType: !enum (values=(WARNING, ALARM, ALL_CLEAR), default=ALL_CLEAR)
----
-StreamAlertEvent: !Extends_ResourceEvent
-  name: ''
-  message: ''
-  stream_name: ''
-  value: None
-  value_id: ''
-  value: None
-
 ---
 
-StreamWarningAlertEvent: !Extends_StreamAlarmEvent
-  type: StreamAlertType.WARNING
-
-StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
-  type: StreamAlertType.ALARM
-  
-StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
-  type: StreamAlertType.ALL_CLEAR
-
----
 
 # Used by DM UNS
 ExampleDetectableEvent: !Extends_Event

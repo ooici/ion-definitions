@@ -1,8 +1,16 @@
 ParameterContext: !Extends_InformationResource
   parameter_context: {}
-  parameter_type: ""
+  reference_urls: []
+  internal_name: ""
   value_encoding: ""
-  unit_of_measure: ""
+  code_report: {}
+  units: ""
+  fill_value: ""
+  display_name: ""
+  parameter_function_id: ""
+  parameter_function_map: {}
+  standard_name: ""
+  ooi_short_name: ""
 
 
 ParameterDictionary: !Extends_InformationResource

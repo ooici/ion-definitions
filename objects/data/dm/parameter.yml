@@ -1,6 +1,7 @@
 ParameterContext: !Extends_InformationResource
   parameter_context: {}
   reference_urls: []
+  parameter_type: ""
   internal_name: ""
   value_encoding: ""
   code_report: {}

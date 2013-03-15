@@ -112,6 +112,7 @@ methods:
       parameter_context: {}
       description: ""
       reference_urls: []
+      parameter_type: ""
       internal_name: ""
       value_encoding: ""
       code_report: {}

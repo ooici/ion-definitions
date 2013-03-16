@@ -26,3 +26,9 @@ Granule:
 
   creation_timestamp: ""
 
+  # UUID for Connection (instrument)
+  connection_id: ""
+  # Connection window index
+  connection_index: ""
+
+

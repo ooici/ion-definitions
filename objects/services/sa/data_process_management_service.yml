@@ -148,7 +148,40 @@ methods:
       configuration: {}
     out:
       data_process_id: ""
+
+  read_data_process2:
+    docstring: Reads a data process resource
+    in:
+      data_process_id: ""
+    out:
+      data_process: {}
+    throws:
+      NotFound: If the data process doesn't exist
+
+  delete_data_process2:
+    docstring: Deletes an instance of a data process
+    in:
+      data_process_id: ""
+    out:
+      sucess: True
+    throws:
+      BadRequest: If the data process doesn't exist
+
+  activate_data_process2:
+    docstring: Activates an instance of a data process
+    in:
+      data_process_id: ""
+    out:
+      success: True
+
+  deactivate_data_process2:
+    docstring: Deactivates an instance of a data process
+    in:
+      data_process_id: ""
+    out:
+      success: True
       
+  # -----------------
 
 
   create_data_process:

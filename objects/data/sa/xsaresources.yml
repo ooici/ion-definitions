@@ -304,7 +304,7 @@ DataProcessComputedAttributes: !Extends_ComputedAttributes
 ---
 
 #This object contains additional information needed to create or update devices
-DeviceUpdatePreperation: !Extends_PrepareUpdateResource
+DeviceUpdatePreparation: !Extends_PrepareUpdateResource
   #@ResourceType=Deployment
   deployments: []  # list of deployment resources to which to which this device is attached
   assign_deployment_request: !DeploymentServiceRequest
@@ -314,7 +314,7 @@ DeviceUpdatePreperation: !Extends_PrepareUpdateResource
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=InstrumentDevice
-InstrumentDeviceUpdatePreperation: !Extends_DeviceUpdatePreperation
+InstrumentDeviceUpdatePreparation: !Extends_DeviceUpdatePreparation
   #@ResourceType=InstrumentModel
   instrument_models: []  # The set of available instrument models
   assign_instrument_model_request: !InstrumentModelServiceRequest
@@ -333,7 +333,7 @@ InstrumentDeviceUpdatePreperation: !Extends_DeviceUpdatePreperation
 
 #This object contains additional information needed to create or update platform devices
 #@OriginResourceType=PlatformDevice
-PlatformDeviceUpdatePreperation: !Extends_DeviceUpdatePreperation
+PlatformDeviceUpdatePreparation: !Extends_DeviceUpdatePreparation
   #@ResourceType=PlatformModel
   platform_models: []  # The set of available instrument models
   assign_platform_model_request: !PlatformModelServiceRequest

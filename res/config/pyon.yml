@@ -135,10 +135,10 @@ container:
     server_types:               # Definition of the known server types and how to start them
       couchdb:
         base: pyon.datastore.couchdb.base_store.CouchDataStore
-        full: pyon.datastore.couchdb.datastore.CouchDataStore
+        full: pyon.datastore.couchdb.datastore.CouchPyonDataStore
       couchbase:
-        base: pyon.datastore.couchbase.base_store.CouchDataStore
-        full: pyon.datastore.couchbase.datastore.CouchDataStore
+        base: pyon.datastore.couchbase.base_store.CouchbaseDataStore
+        full: pyon.datastore.couchbase.datastore.CouchbasePyonDataStore
 
   exchange:
     # @TODO rename to delegate or similar, used for management api calls too

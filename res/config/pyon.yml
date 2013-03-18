@@ -76,7 +76,7 @@ server:
     username: default
     password: default
     bucket_password:
-    bucket_ram_quota_samll_mb: 128
+    bucket_ram_quota_small_mb: 128
     bucket_ram_quota_medium_mb: 512
     bucket_ram_quota_big_mb: 1024
     bucket_ram_quota_xbig_mb: 2048

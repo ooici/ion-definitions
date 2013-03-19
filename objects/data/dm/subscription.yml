@@ -3,3 +3,5 @@ Subscription: !Extends_InformationResource
   exchange_name: ""
   activated: False
 
+DataSubscription: !Extends_InformationResource
+  activated: False

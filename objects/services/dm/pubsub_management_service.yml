@@ -122,7 +122,7 @@ methods:
   #---------
   
   create_subscription:
-    docstring: ""
+    docstring: "Create a subscription for a variety of resources that can be subscribed to"
     in: 
       name: ""
       stream_ids: []
@@ -131,6 +131,7 @@ methods:
       exchange_name: ""
       credentials: {}
       description: ""
+      data_product_ids: []
     out:
       subscription_id: ""
     throws:

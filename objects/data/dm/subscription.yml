@@ -2,4 +2,3 @@ Subscription: !Extends_InformationResource
   exchange_points: []
   exchange_name: ""
   activated: False
-

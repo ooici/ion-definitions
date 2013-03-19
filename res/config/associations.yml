@@ -24,7 +24,7 @@ AssociationDefinitions:
     range: [DataProducer]
     docstring: References the DataProducer entiry to track a provenance relationship
   - predicate: hasDataProduct
-    domain: [Site, Workflow]
+    domain: [Subscription, Site, Workflow]
     range: [DataProduct]
     docstring: References a resulting or intermediate DataProduct
   - predicate: hasDependency

@@ -122,7 +122,7 @@ methods:
   #---------
   
   create_subscription:
-    docstring: ""
+    docstring: "Create a subscription for a variety of resources that can be subscribed to"
     in: 
       name: ""
       stream_ids: []
@@ -131,6 +131,7 @@ methods:
       exchange_name: ""
       credentials: {}
       description: ""
+      data_product_ids: []
     out:
       subscription_id: ""
     throws:
@@ -172,53 +173,6 @@ methods:
       exchange_name: ""
     out:
       success: True
-
-  #---------
-
-  create_data_subscription:
-    docstring: "Creates a subscription to a specific data product"
-    in:
-      data_product_id: ""
-    out:
-      data_subscription_id: ""
-
-  read_data_subscription:
-    docstring: "Reads a data subscription from the resource registry"
-    in:
-      data_subscription_id: ""
-    out:
-      data_subscription: {}
-    throws:
-      NotFound: If the resource does not exist
-
-  delete_data_subsription:
-    docstring: "Deletes a data subscription from the resource registry"
-    in:
-      data_subscription_id: ""
-    out:
-      success: True
-    throws:
-      BadRequest: If the resource does not exist
-
-  activate_data_subscription:
-    docstring: "Binds the data product's stream(s) to the queue"
-    in:
-      data_subscription_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: If the resource does not exist
-      BadRequest: If the subscription is already activated
-
-  deactivate_data_subscription:
-    docstring: "Unbinds the data product's stream(s) from the queue"
-    in:
-      data_subscription_id: ""
-    out:
-      success: True
-    throws:
-      NotFound: If the resource does not exist
-      BadRequest: If the subscription is already daectivated
 
   #---------
 

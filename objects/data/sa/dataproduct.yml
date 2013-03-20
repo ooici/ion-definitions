@@ -29,6 +29,8 @@ DataProduct: !Extends_InformationResource
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds
 
+  geospatial_point_center: !GeospatialIndex
+
   # for data from fixed-location assets, is set according to the GeospatialPoint of the fixed asset creating the data;
   # for data from mobile (even constrained) assets, is optionally calculated as the center of the data's bounding box,
   # or an average location of

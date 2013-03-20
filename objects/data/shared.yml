@@ -235,6 +235,7 @@ FrameOfReference: !Extends_InformationResource
   # GeospatialCoordinateReferenceSystem object, and zero to many GeospatialBounds, and that the
   # GeospatialCoordinateReferenceSystem would apply to all of the GeospatialBounds. 
   coordinate_reference_system: !GeospatialCoordinateReferenceSystem
+  geospatial_point_center: !GeospatialIndex
 
 ---
 

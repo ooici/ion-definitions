@@ -123,6 +123,7 @@ methods:
       parameter_function_map: {}
       standard_name: ""
       ooi_short_name: ""
+      precision: ""
     out:
       parameter_context_id: ""
 

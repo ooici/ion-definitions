@@ -12,6 +12,7 @@ ParameterContext: !Extends_InformationResource
   parameter_function_map: {}
   standard_name: ""
   ooi_short_name: ""
+  precision: ""
 
 
 ParameterDictionary: !Extends_InformationResource

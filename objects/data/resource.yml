@@ -156,6 +156,10 @@ TestExtendedResource: !Extends_ExtendedResource
   resource_object: !Resource
   #@Method=resource_registry.read
   remote_resource_object: !Resource
+  #@hasOwnerInfo
+  single_owner: !Resource  # single owner
+  #@hasOwnerInfo
+  owner_count: 0  #count of owners
 
 # An object used for testing of the framework
 #@OriginResourceType=Device

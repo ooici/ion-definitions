@@ -183,44 +183,11 @@ methods:
       
   # -----------------
 
-
-  create_data_process:
-    docstring: Create an instance or realization of a data process definition.
-    in:
-      data_process_definition_id: ""
-      in_data_product_ids: []
-      out_data_products: {}
-      configuration: {}
-    out:
-      data_process_id: ""
-      
-  update_data_process:
-    #This op may not make sense at this time
-    in:
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
   update_data_process_inputs:
     docstring: Update the subscriptions of a data process
     in: 
       data_process_id: ""
       in_stream_ids: []
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  read_data_process:
-    in:
-      data_process_id: ""
-    out:
-      data_process_definition_id: ""
-      in_subscription_id: ""
-      out_data_product_id: ""
-
-  delete_data_process:
-    in:
-      data_process_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist

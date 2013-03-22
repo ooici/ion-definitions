@@ -41,14 +41,20 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   #@hasResource=DataProduct
   data_products: []   #TODO - remove when asych calls in UI are implemented
   data_products_request: !ServiceRequest
+  #@hasResource=DataProduct
+  number_of_data_products: 0
   #@hasResource=PlatformDevice
   platforms: []
+  #@hasResource=PlatformDevice
+  number_of_platforms: 0
   # defined in get_marine_facility_extension
   platform_models: []
   # defined in get_marine_facility_extension
   instrument_models: []
   #@hasResource=InstrumentDevice
   instruments: []
+  #@hasResource=InstrumentDevice
+  number_of_instruments: 0
   #@hasResource=InstrumentAgent
   instrument_agents: []
   #@hasResource=DataProcessDefinition
@@ -63,19 +69,18 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   user_requests: [] # A list of requests associated with this user
   #@hasDeployedDeviceForOrg=InstrumentSite
   instruments_deployed: []  # a list of instrument devices owned by this Org and currently deployed to a Site
+  #@hasDeployedDeviceForOrg=InstrumentSite
+  number_of_instruments_deployed: 0
   #@hasDeployedDeviceForOrg=PlatformSite
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
-  #@hasNegotiation=Negotiation
+  #@hasDeployedDeviceForOrg=PlatformSite
+  number_of_platforms_deployed: 0
+  #@Method=find_org_negotiations
   open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN TODO - remove at some point
   open_negotiations_request: !ServiceRequest
+  #@Method=find_org_closed_negotiations
   closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED TODO - remove at some point
   closed_negotiations_request: !ServiceRequest
-
-  number_of_data_products: 0
-  number_of_platforms: 0
-  number_of_platforms_deployed: 0
-  number_of_instruments: 0
-  number_of_instruments_deployed: 0
 
 
 #Computed attributes for a data product

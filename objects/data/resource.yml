@@ -83,6 +83,7 @@ ComputedDictValue: !Extends_ComputedValue
 ---
 
 # The base type for computed attribute objects
+# IMPORTANT!!! NOTHING IN HERE SHOULD REFERENCE LOCAL FUNCTIONS SINCE THIS IS USED ACROSS SERVICES
 ComputedAttributes:
   #@Method=user_notification.get_recent_events
   recent_events: !ComputedListValue    # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first

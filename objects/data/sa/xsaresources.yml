@@ -102,11 +102,11 @@ DeviceModelExtension: !Extends_ExtendedInformationResource
 InstrumentDeviceExtension: !Extends_DeviceExtension
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasAgentForDevice=InstrumentModel
+  #@hasAgentForDevice=InstrumentModel,InstrumentAgent
   instrument_agent: !InstrumentAgent  # The associated agent
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
-  #@hasPlatformModel=PlatformDevice
+  #@hasPlatformModel=PlatformDevice,PlatformModel
   platform_model: !PlatformModel  # The model associated to the parent platform
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
@@ -130,7 +130,7 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   platforms: []  # The list of child platforms
   #@hasModel
   platform_model: !PlatformModel  # The associated Platform Model
-  #@hasAgentForDevice=PlatformModel
+  #@hasAgentForDevice=PlatformModel,PlatformAgent
   platform_agent: !PlatformAgent  # The associated agent
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device

@@ -675,3 +675,22 @@ methods:
       NotFound: object with specified id does not exist
 
 
+  assign_data_product_source:
+    docstring: Connect a Data Product to the data source, either a Site or a Device
+    in:
+      data_product_id: ""
+      source_id: ""
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  unassign_data_product_source:
+    docstring: Disconnect the Data Product from the data source
+    in:
+      data_product_id: ""
+      source_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+

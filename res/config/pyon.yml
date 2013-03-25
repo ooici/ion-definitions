@@ -269,6 +269,7 @@ process:
     persist_blacklist:
     - event_type: TimerEvent
     - event_type: SchedulerEvent
+    - event_type: DatasetModified
 
 
 # ----------------------------------------------------------------------------------

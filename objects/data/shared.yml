@@ -138,6 +138,8 @@ Parameter:
 
 DeviceStatusEnum: !enum (values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN), default=STATUS_UNKNOWN)
 
+AggregateStatusType: !enum (values=(AGGREGATE_COMMS, AGGREGATE_DATA, AGGREGATE_LOCATION, AGGREGATE_POWER, AGGREGATE_OTHER), default=AGGREGATE_OTHER)
+
 ---
 
 DeviceStatus:

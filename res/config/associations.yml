@@ -24,7 +24,7 @@ AssociationDefinitions:
     range: [DataProducer]
     docstring: References the DataProducer entiry to track a provenance relationship
   - predicate: hasDataProduct
-    domain: [Site, Workflow]
+    domain: [Subscription, Site, Workflow]
     range: [DataProduct]
     docstring: References a resulting or intermediate DataProduct
   - predicate: hasDependency
@@ -62,6 +62,10 @@ AssociationDefinitions:
   - predicate: hasSite
     domain: [Site]
     range: [Site]
+    docstring: References a child Site for a Site. The extent of all these associations form a true tree with an Observatory as root.
+  - predicate: hasSource
+    domain: [DataProduct]
+    range: [Device, Site]
     docstring: References a child Site for a Site. The extent of all these associations form a true tree with an Observatory as root.
   - predicate: hasVersion
     domain: [DataProductCollection]
@@ -275,7 +279,7 @@ AssociationDefinitions:
     domain: [DataSource]
     range: [ExternalDataProvider]
     docstring: References the ExternalDataProvider (organization) for a DataSource (server)
-  - predicate: hasSource
+  - predicate: hasDataSource
     domain: [ExternalDataset]
     range: [DataSource]
     docstring: References the DataSource (server) for an ExternalDataset (data entity)

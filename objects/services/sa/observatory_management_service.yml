@@ -483,7 +483,6 @@ methods:
   # find methods
 
 
-
   find_org_by_observatory:
     docstring: Return the Org resource id for a specific Observatory resource.
     in:
@@ -503,3 +502,38 @@ methods:
       output_resource_lists: {}
       
 
+  find_related_sites:
+    docstring: |
+      For a given parent resource id (site or org), find child sites and optionally parent sites by traversing
+      the existing associations.
+      exclude_site_types is a list of Site resource type names to not include in the result (e.g. InstrumentSite).
+      The result is a tuple of the following elements:
+      site_resources is a dict mapping site_id to Site object (or to None if id_only==True).
+      site_children is a dict mapping site_id to a list of direct child site_id. Parent sites will be in if requested.
+    in:
+      parent_resource_id: ""
+      exclude_site_types: []
+      include_parents: False
+      id_only: False
+    out:
+      site_resources: {}
+      site_children: {}
+
+
+  get_sites_devices_status:
+    docstring: |
+      For a given parent resource id, compute related sites (child sites, parent sites),
+      related devices (if requested), and site/device status (if requested). The content is provided
+      for all higher parent and child sites of given parent id.
+      The result is a dict that has the following keys in it:
+      - site_resources: dict with key site id, value Site resource object
+      - site_children: dict with key site/org id, value list of site ids for children
+      - site_devices: dict with key site id, value (site type, device id, device type)
+      - device_resources: dict with key device id, value Device resource object
+      - site_status: dict with key site id, status dict (containing keys agg, power, comms, data, loc)
+    in:
+      parent_resource_id: ""
+      include_devices: False
+      include_status: False
+    out:
+      result: {}

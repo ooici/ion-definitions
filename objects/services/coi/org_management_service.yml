@@ -165,15 +165,28 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  find_org_closed_negotiations:
+    docstring: |
+      Returns a list of closed negotiations for an Org - those which are Accepted or Rejected.
+      Will throw a not NotFound exception if any of the specified ids do not exist.
+    in:
+      org_id: ""
+      proposal_type: ""
+    out:
+      negotiation: []
+    throws:
+      NotFound: object with specified id does not exist
+
+
   find_user_negotiations:
     docstring: |
-      Returns a list of negotiations for a specified User. All negotiations for all Orgs will be returned
+      Returns a list of negotiations for a specified Actor. All negotiations for all Orgs will be returned
       unless an org_id is specified. An optional proposal_type can be supplied
       or else all proposals will be returned. An optional negotiation_status can be provided
       or else all proposals will be returned. Will throw a not NotFound exception
       if any of the specified ids do not exist.
     in:
-      user_id: ""
+      actor_id: ""
       org_id: ""
       proposal_type: ""
       negotiation_status: ""
@@ -186,12 +199,12 @@ methods:
 
   enroll_member:
     docstring: |
-      Enrolls a specified user into the specified Org so that they may find and negotiate to use resources
+      Enrolls a specified actor into the specified Org so that they may find and negotiate to use resources
       of the Org. Membership in the ION Org is implied by registration with the system, so a membership
       association to the ION Org is not maintained. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
-      user_id: ""
+      actor_id: ""
     out:
       success: True
     throws:
@@ -199,11 +212,11 @@ methods:
 
   cancel_member_enrollment:
     docstring: |
-      Cancels the membership of a specifid user within the specified Org. Once canceled, the user will no longer
+      Cancels the membership of a specific actor actor within the specified Org. Once canceled, the actor will no longer
       have access to the resource of that Org. Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
-      user_id: ""
+      actor_id: ""
     out:
       success: True
     throws:
@@ -211,21 +224,21 @@ methods:
 
   is_registered:
     docstring: |
-      Returns True if the specified user_id is registered with the ION system; otherwise False.
+      Returns True if the specified actor_id is registered with the ION system; otherwise False.
     in:
-      user_id: ""
+      actor_id: ""
     out:
       is_registered: False
     throws:
-      BadRequest: if the user_id is not specified.
+      BadRequest: if the actor_id is not specified.
 
   is_enrolled:
     docstring: |
-      Returns True if the specified user_id is enrolled in the Org and False if not.
+      Returns True if the specified actor_id is enrolled in the Org and False if not.
       Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
-      user_id: ""
+      actor_id: ""
     out:
       is_enrolled: False
     throws:
@@ -233,21 +246,21 @@ methods:
 
   find_enrolled_users:
     docstring: |
-      Returns a list of users enrolled in an Org. Will throw a not NotFound exception
+      Returns a list of actors enrolled in an Org. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
       org_id: ""
     out:
-      user_list: []
+      actor_list: []
     throws:
       NotFound: object with specified id does not exist
 
   find_enrolled_orgs:
     docstring: |
-      Returns a list of Orgs that the user is enrolled in. Will throw a not NotFound exception
+      Returns a list of Orgs that the actor is enrolled in. Will throw a not NotFound exception
       if none of the specified ids do not exist.
     in:
-      user_id: ""
+      actor_id: ""
     out:
       org_list: []
     throws:
@@ -257,12 +270,12 @@ methods:
 
   grant_role:
     docstring: |
-      Grants a defined role within an organization to a specific user. A role of Member is
-      automatically implied with successfull enrollment. Will throw a not NotFound exception
+      Grants a defined role within an organization to a specific actor. A role of Member is
+      automatically implied with successful enrollment. Will throw a not NotFound exception
       if none of the specified ids or role_name does not exist.
     in:
       org_id: ""
-      user_id: ""
+      actor_id: ""
       role_name: ""
       scope: !RoleScope
     out:
@@ -272,11 +285,11 @@ methods:
 
   revoke_role:
     docstring: |
-      Revokes a defined Role within an organization to a specific user. Will throw a not NotFound exception
+      Revokes a defined Role within an organization to a specific actor. Will throw a not NotFound exception
       if none of the specified ids or role_name does not exist.
     in:
       org_id: ""
-      user_id: ""
+      actor_id: ""
       role_name: ""
     out:
       success: True
@@ -285,11 +298,11 @@ methods:
 
   has_role:
     docstring: |
-       Returns True if the specified user_id has the specified role_name in the Org and False if not.
+       Returns True if the specified actor_id has the specified role_name in the Org and False if not.
        Throws a NotFound exception if neither id is found.
     in:
       org_id: ""
-      user_id: ""
+      actor_id: ""
       role_name: ""
     out:
       success: True
@@ -298,11 +311,11 @@ methods:
 
   find_org_roles_by_user:
     docstring: |
-      Returns a list of User Roles for a specific user in an Org.
+      Returns a list of User Roles for a specific actor in an Org.
       Will throw a not NotFound exception if either of the IDs do not exist.
     in:
       org_id: ""
-      user_id: ""
+      actor_id: ""
     out:
       user_role_list: []
     throws:
@@ -311,10 +324,10 @@ methods:
 
   find_all_roles_by_user:
     docstring: |
-      Returns a list of all User Roles roles by Org associated with the specified user.
+      Returns a list of all User Roles roles by Org associated with the specified actor.
       Will throw a not NotFound exception if either of the IDs do not exist.
     in:
-      user_id: ""
+      actor_id: ""
     out:
       user_roles_by_org: {}
     throws:
@@ -362,8 +375,8 @@ methods:
 
   acquire_resource:
     docstring: |
-      Creates a Commitment Resource for the specified resource for a specified user withing the specified Org as defined in the
-      proposal. Once shared, the resource is committed to the user. Throws a NotFound exception if none of the ids are found.
+      Creates a Commitment Resource for the specified resource for a specified actor withing the specified Org as defined in the
+      proposal. Once shared, the resource is committed to the actor. Throws a NotFound exception if none of the ids are found.
     in:
       sap: !AcquireResourceProposal
     out:
@@ -373,8 +386,8 @@ methods:
 
   create_resource_commitment:
     docstring: |
-      Creates a Commitment Resource for the specified resource for a specified user withing the specified Org. Once shared,
-      the resource is committed to the user. Throws a NotFound exception if none of the ids are found.
+      Creates a Commitment Resource for the specified resource for a specified actor withing the specified Org. Once shared,
+      the resource is committed to the actor. Throws a NotFound exception if none of the ids are found.
     in:
       org_id: ""
       actor_id: ""
@@ -398,11 +411,11 @@ methods:
 
   is_resource_acquired:
     docstring: |
-       Returns True if the specified resource_id has been acquired. The user_id is optional, as the operation can
-       return True if the resource is acquired by any user or specifically by the specified user_id, otherwise
+       Returns True if the specified resource_id has been acquired. The actor_id is optional, as the operation can
+       return True if the resource is acquired by any actor or specifically by the specified actor_id, otherwise
        False is returned.
     in:
-      user_id: ""
+      actor_id: ""
       resource_id: ""
     out:
       success: True
@@ -411,11 +424,11 @@ methods:
 
   is_resource_acquired_exclusively:
     docstring: |
-       Returns True if the specified resource_id has been acquired exclusively. The user_id is optional, as the operation can
-       return True if the resource is acquired exclusively by any user or specifically by the specified user_id,
+       Returns True if the specified resource_id has been acquired exclusively. The actor_id is optional, as the operation can
+       return True if the resource is acquired exclusively by any actor or specifically by the specified actor_id,
        otherwise False is returned.
     in:
-      user_id: ""
+      actor_id: ""
       resource_id: ""
     out:
       success: True

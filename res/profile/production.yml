@@ -1,0 +1,34 @@
+# ION Capability Container Profile - defines the capabilities to start for a container variant
+
+# This is for a the production system CyberPoP container variant
+
+type: profile
+name: production
+version: 0.1
+
+# Definition of profiles
+profile:
+  capabilities:
+
+  start_order:
+  - PID_FILE
+  - SIGNAL_HANDLER
+  - DATASTORE_MANAGER
+  - DIRECTORY
+  - EVENT_REPOSITORY
+  - EVENT_PUBLISHER
+  - RESOURCE_REGISTRY
+  - OBJECT_STORE
+  - STATE_REPOSITORY
+  - LOCAL_ROUTER
+  - EXCHANGE_MANAGER
+  - PROC_MANAGER
+  - APP_MANAGER
+  - FILE_SYSTEM
+  - GOVERNANCE_CONTROLLER
+  - STATS_MANAGER
+  - CONTAINER_MANAGER
+  - CONTAINER_AGENT
+
+  # Changes applied on top of pyon.yml for specific profile
+  config:

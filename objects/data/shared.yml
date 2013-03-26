@@ -18,10 +18,12 @@ ContactInformation:
   postal_code: ""
   #state: ""
   country: ""
+  #@ContentType=Phone
   phones: []  # list of phone objects
   email: ""
   administrative_area: ""
   position_name: ""        # the position or role of the contact
+  #@ContentType=str
   roles: []                # list of strings of role names
   url: ""                  # url for the contact
   variables:   # Extension set of name/value pairs
@@ -132,7 +134,17 @@ Parameter:
   ion_name: ""
   custom_attributes: {}
 
+---
 
+DeviceStatusEnum: !enum (values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN), default=STATUS_UNKNOWN)
+
+---
+
+DeviceStatus:
+  communications: !DeviceStatusEnum
+  data: !DeviceStatusEnum
+  location: !DeviceStatusEnum
+  power: !DeviceStatusEnum
 
 ---
 
@@ -142,11 +154,14 @@ Device: !Extends_TaskableResource
   controllable: True   # Whether the device can be sent a control message
   reference_urls: []   # References to pages about that individual device (e.g. Configuration diagram)
   uuid: ""             # the uuid provide by the manufacturer
+  #@ContentType=ContactInformation
   contacts: []         # Contacts for this device.
   # Additional attributes required for specific devices
   # Recommended format: {attribute1_name:value, attribute2_name:value}
   # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
+  #defines the current state for this device based on status paramters received
+  status: !DeviceStatus
 
 
 
@@ -173,8 +188,10 @@ DeviceModel: !Extends_InformationResource
   # Each entry in the list is a CustomAttribute object (see above)
   # A device of this model should then store these attribute values in the corresponding custom_attributes
   # of the device instance.
+  #@ContentType=CustomAttribute
   custom_attributes: []
   has_clock: True      # Indicates whether the device has an internal clock or not
+  #@ContentType=ParameterCharacteristicsReport
   parameter_characteristics_reports: []    # list of ParameterCharacteristicsReport objects
 ---
 
@@ -197,6 +214,7 @@ Attachment: !Extends_InformationResource
   # identity of the last modifier of the document (could be outside OOI)
   modified_by: ""
   # Keywords indicating the type of attachment (e.g. user manual, log)
+  #@ContentType=str
   keywords: []
   attachment_size: 0 # size of the attachment content field, in bytes
 
@@ -209,6 +227,7 @@ DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=PROCESS)
 # time, or other cardinal or ordinal axes, and can be specified in absolute terms
 # or relative to another frame of reference.
 FrameOfReference: !Extends_InformationResource
+  #@ContentType=GeospatialBounds,GeospatialPoint,TemporalBounds
   constraint_list: [] # set of constraints; GeospatialBounds, temporal bounds, composite, etc
   # KStocks: My assumption is that within a FrameOfReference, the coordinate reference system will not change.
   # So that there may be several geospatial bounds defined (I.e. several boxes defined) but that they will all
@@ -216,6 +235,7 @@ FrameOfReference: !Extends_InformationResource
   # GeospatialCoordinateReferenceSystem object, and zero to many GeospatialBounds, and that the
   # GeospatialCoordinateReferenceSystem would apply to all of the GeospatialBounds. 
   coordinate_reference_system: !GeospatialCoordinateReferenceSystem
+  geospatial_point_center: !GeospatialIndex
 
 ---
 
@@ -235,8 +255,10 @@ AgentDefinition: !Extends_InformationResource
 AgentInstance: !Extends_InformationResource
   deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
 #  exchange_name: ""
-  configuration: {}
+  driver_config: {}
+  agent_config: {}
   agent_process_id: ""
+  alerts: []
 
 ---
 
@@ -245,11 +267,13 @@ StreamConfiguration:
   parameter_dictionary_name: ""   # the name of the parameter dictionary that defines the contents of the stream
   records_per_granule: 0          # recommended number of records/samples to place in a single granule
   granule_publish_rate: 0         # max recommended seconds between publishing granules
-
+  #@ContentType=dict
+  alarms: []                      # list of alarm objects for this stream, currently a list of dicts
 ---
 
 # Describes a running or scheduled  agent representing a single device. Abstract base type.
 DeviceAgent: !Extends_AgentDefinition
+  #@ContentType=StreamConfiguration
   stream_configurations: []     #set of StreamConfiguration objects that this agent/driver produces
 
 ---
@@ -265,8 +289,8 @@ Term:
   term_url: ""
   vocabulary_url: ""
 
----
 
+---
 
 # Internal
 EndShared:
@@ -353,3 +377,10 @@ ComputedResourceCommitmentStatusValue: !Extends_ComputedValue
 
 TransformFunctionType: !enum (values=(PYTHON,SYSTEM), default=PYTHON)
 
+---
+
+# base class for all predicate types that select which containers should run a particular requested action
+ContainerManagementPredicate:
+
+# base class for all requested actions for container management
+ContainerManagementAction:

@@ -48,6 +48,10 @@ Deployment: !Extends_FrameOfReference
   # An additional identification name used by the operators
   auxiliary_name: ""
 
+  # device ids and keys, port reference designators as values
+  port_assignments: {}
+
+
 
 
 ---
@@ -57,6 +61,7 @@ RemotePlatformDeploymentContext: !Extends_AbstractDeploymentContextType
 
 
   # a list of DeviceMountingPosition objects
+  #@ContentType=DeviceMountingPosition
   device_mounting_positions: []
 
 ---

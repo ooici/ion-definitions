@@ -1,14 +1,9 @@
 # Minimal configuration file for bootstrapping the ION container,
 # system and services via the directory.
-# Note: override with pyon.local.yml
+# Note: override with pyon.local.yml and pycc command line args
 system:
   root_org: ION
   auto_bootstrap: True
-
-# Config values to allow discovery of the directory
-container:
-  directory:
-    server: couchdb
 
 server:
   couchdb:
@@ -18,3 +13,7 @@ server:
     port: 5984
     username:
     password:
+
+# Config values to allow discovery of the directory
+container:
+  profile: development

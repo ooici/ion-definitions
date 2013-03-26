@@ -11,6 +11,20 @@ config:
 
 # this configuration block is merged into a base pyon.yml including common
 # parameters like RabbitMQ and CouchDB blocks.
+
+#############################################################################
+## CEI BASE NODE
+##############################################################################
+basenodes:
+  basenode:
+    process_dispatcher:
+      replicas: 2
+    epum:
+      replicas: 2
+    provisioner:
+      replicas: 2
+
+
 #############################################################################
 ## EXECUTION ENGINES
 ##############################################################################

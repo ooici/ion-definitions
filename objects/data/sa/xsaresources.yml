@@ -17,6 +17,8 @@ DeviceExtension: !Extends_ExtendedInformationResource
   deployments: []  # list of deployment resources to which to which this device is attached
   #@hasAgentInstance
   agent_instance: !AgentInstance
+  #@hasCommitment
+  commitments: [] # list of resource commitments 
 
 ---
 
@@ -29,8 +31,8 @@ DeviceExtension: !Extends_ExtendedInformationResource
 ####################################################################
 
 # This object contains additional information associated with a data process.
+#@OriginResourceType=DataProcess
 DataProcessExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DataProcess'
   #@hasProcessDefinition
   data_process_definition: !DataProcessDefinition
   #@hasInputProduct
@@ -40,8 +42,8 @@ DataProcessExtension: !Extends_ExtendedInformationResource
 
 ---
 # This object contains additional information associated with a data process definition.
+#@OriginResourceType=DataProcessDefinition
 DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DataProcessDefinition'
   #@hasProcessDefinition
   data_processes: []            # set of !DataProcess instances of this definition
   #@hasInputStreamDefinition
@@ -54,8 +56,8 @@ DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
 ---
 
 # This object contains additional information associated with a data product.
+#@OriginResourceType=DataProduct
 DataProductExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DataProduct'
   #@hasVersion
   version: !DataProductVersion  # The associated data product collection
   #@hasDataProduct=Site
@@ -66,6 +68,8 @@ DataProductExtension: !Extends_ExtendedInformationResource
   data_processes: []
   #@hasProcessInputDataProductsForDataProduct
   process_input_data_products: []
+  #@hasCommitment
+  commitments: [] # list of resource commitments 
   # defined in get_data_product_extention
   provenance_product_list: []
 
@@ -74,8 +78,8 @@ DataProductExtension: !Extends_ExtendedInformationResource
 ---
 
 # This object contains additional information associated with a deployment resource.
+#@OriginResourceType=Deployment
 DeploymentExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'Deployment'
   #@hasDeployment=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
   #@hasDeployment=InstrumentSite
@@ -90,23 +94,23 @@ DeploymentExtension: !Extends_ExtendedInformationResource
 ---
 
 # This object contains additional information associated with a instrument or platform model.
+#@OriginResourceType=DeviceModel
 DeviceModelExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'DeviceModel'
   #@hasModel
   devices: []  # The associated device instances
 
 ---
 
 # This object contains additional information associated with an instrument device.
+#@OriginResourceType=InstrumentDevice
 InstrumentDeviceExtension: !Extends_DeviceExtension
-  origin_resource_type: 'InstrumentDevice'
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasAgentForDevice=InstrumentModel
+  #@hasAgentForDevice=InstrumentModel,InstrumentAgent
   instrument_agent: !InstrumentAgent  # The associated agent
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The associated agent
-  #@hasPlatformModel=PlatformDevice
+  #@hasPlatformModel=PlatformDevice,PlatformModel
   platform_model: !PlatformModel  # The model associated to the parent platform
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
@@ -116,21 +120,21 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
 ---
 
 # This object contains additional information associated with a request for notification.
+#@OriginResourceType=NotificationRequest
 NotificationRequestExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'NotificationRequest'
   #@hasNotification=UserInfo
   user_info: !UserInfo  # The associated user
 
 ---
 
 # This object contains additional information associated with an instrument device.
+#@OriginResourceType=PlatformDevice
 PlatformDeviceExtension: !Extends_DeviceExtension
-  origin_resource_type: 'PlatformDevice'
   #@hasDevice=PlatformDevice
   platforms: []  # The list of child platforms
   #@hasModel
   platform_model: !PlatformModel  # The associated Platform Model
-  #@hasAgentForDevice=PlatformModel
+  #@hasAgentForDevice=PlatformModel,PlatformAgent
   platform_agent: !PlatformAgent  # The associated agent
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
@@ -148,8 +152,8 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 ---
 
 # This object contains additional information associated with a Site resource.
+#@OriginResourceType=Site
 SiteExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'Site'
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
   # supplied in ObservatoryManagementService.get_site_extension
@@ -299,3 +303,52 @@ DataProcessDefinitionComputedAttributes: !Extends_ComputedAttributes
 
 #Computed attributes for a data process
 DataProcessComputedAttributes: !Extends_ComputedAttributes
+
+
+---
+
+#This object contains additional information needed to create or update devices
+DeviceUpdatePreparation: !Extends_PrepareUpdateResource
+  #@ResourceType=Deployment
+  deployments: []  # list of deployment resources to which to which this device is attached
+  assign_deployment_request: !DeploymentServiceRequest
+  unassign_deployment_request: !DeploymentServiceRequest
+
+---
+
+#This object contains additional information needed to create or update instrument devices
+#@OriginResourceType=InstrumentDevice
+InstrumentDeviceUpdatePreparation: !Extends_DeviceUpdatePreparation
+  #@ResourceType=InstrumentModel
+  instrument_models: []  # The set of available instrument models
+  assign_instrument_model_request: !InstrumentModelServiceRequest
+  unassign_instrument_model_request: !InstrumentModelServiceRequest
+  #@ResourceType=InstrumentAgent
+  instrument_agent_instances: []   # The set of available instrument agents
+  assign_instrument_agent_instances_request: !InstrumentAgentInstanceServiceRequest
+  unassign_instrument_agent_instances_request: !InstrumentAgentInstanceServiceRequest
+  #@Association=hasModel
+  instrument_agent_models: []  # The set of hasModel Associations  #TODO - think about this one some more
+  #@ResourceType=SensorDevice
+  sensor_devices: []
+  assign_sensor_request: !SensorDeviceServiceRequest
+  unassign_sensor_request: !SensorDeviceServiceRequest
+
+
+#This object contains additional information needed to create or update platform devices
+#@OriginResourceType=PlatformDevice
+PlatformDeviceUpdatePreparation: !Extends_DeviceUpdatePreparation
+  #@ResourceType=PlatformModel
+  platform_models: []  # The set of available instrument models
+  assign_platform_model_request: !PlatformModelServiceRequest
+  unassign_platform_model_request: !PlatformModelServiceRequest
+  #@ResourceType=PlatformAgent
+  platform_agents: []   # The set of available instrument agents
+  assign_platform_agent_request: !PlatformAgentServiceRequest
+  unassign_platform_agent_request: !PlatformAgentServiceRequest
+  #@Association=hasModel
+  instrument_agent_models: []  # The set of hasModel Associations  #TODO - think about this one some more
+  #@ResourceType=InstrumentDevice
+  instrument_devices: []
+  assign_instrument_request: !InstrumentDeviceServiceRequest
+  unassign_instrument_request: !InstrumentDeviceServiceRequest

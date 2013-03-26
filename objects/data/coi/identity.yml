@@ -47,8 +47,8 @@ UserInfo: !Extends_InformationResource
 ---
 
 #This object contains additional information associated with an actor; typically a user.
+#@OriginResourceType=ActorIdentity
 ActorIdentityExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'ActorIdentity'
   #@hasCredentials
   credentials: !UserCredentials  # The associated user's credentials
   #@hasInfo
@@ -64,8 +64,8 @@ ActorIdentityExtension: !Extends_ExtendedInformationResource
 ---
 
 #This object contains additional information associated with an actor; typically a user.
+#@OriginResourceType=UserInfo
 UserInfoExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'UserInfo'
   #@hasCredentials
   credentials: !UserCredentials  # The associated user's credentials
   #@hasInfo=ActorIdentity
@@ -75,6 +75,9 @@ UserInfoExtension: !Extends_ExtendedInformationResource
   owned_resources: [] # A list of any resources owned by this user
   #@hasRequest
   user_requests: [] # A list of requests associated with this user
-  # computed in get_user_info_extension
-  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN
-  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED
+  #@Method=org_management.find_org_negotiations
+  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN TODO - remove at some point
+  open_negotiations_request: !ServiceRequest
+  #@Method=org_management.find_org_closed_negotiations
+  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED TODO - remove at some point
+  closed_negotiations_request: !ServiceRequest

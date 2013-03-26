@@ -30,6 +30,8 @@ methods:
       specialied JSONP data string.
     in:
       query_token: ""
+      callback: ""
+      tqx: ""
     out:
       jsonp_visualization_data: ""
     throws:
@@ -78,9 +80,9 @@ methods:
       NotFound: Throws if specified data product id does not exist
 
 
-  get_dataproduct_kml:
+  get_data_product_kml:
     docstring: |
-      This operation returns a KML file containing geo-references for all the dataproducts active in the system.
+      This operation returns a KML file containing geo-references for all the data_products active in the system.
       The KML file can be used for populating Google maps/earth.
     in:
       visualization_parameters: {}
@@ -89,20 +91,10 @@ methods:
     throws:
       BadRequest: Throws if the KML could not be generated
 
-  get_dummy_googledt:
-    docstring: |
-      Temp test method
-    in:
-      dt_size: 0
-    out:
-      google_dt: ""
-    throws:
-      BadRequest: Throws something
 
-
-  get_dataproduct_metadata:
+  get_data_product_metadata:
     docstring: |
-      Returns metadata about the dataproduct from the coverage
+      Returns metadata about the data_product from the coverage
     in:
       data_product_id: ""
       callback: ""

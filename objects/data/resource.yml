@@ -8,7 +8,8 @@ Resource:
   # type_: ""     - Object type name (comes with every object)
   name: ""        # Human readable long name of the resource, displayable in lists
   description: "" # A more verbose description if needed
-  lcstate: "DRAFT_PRIVATE"
+  lcstate: "DRAFT"         # Resource life cycle state (maturity)
+  availability: "PRIVATE"  # Resource availability
   ts_created: ""  # Timestamp str in millis in UNIX epoch when resource was created
   ts_updated: ""  # Timestamp str in millis in UNIX epoch when resource was last updated
   alt_ids: []     # System internal - Used to assign alternate IDs to this resource, e.g. for preload
@@ -51,6 +52,7 @@ ResourceLifeCycle: !Extends_InformationResource
 ResourceFilter:
   filters: {}
 
+
 ---
 
 ComputedValueAvailability: !enum (values=(PROVIDED,NOTAVAILABLE), default=NOTAVAILABLE)
@@ -81,12 +83,16 @@ ComputedDictValue: !Extends_ComputedValue
 ---
 
 # The base type for computed attribute objects
+# IMPORTANT!!! NOTHING IN HERE SHOULD REFERENCE LOCAL FUNCTIONS SINCE THIS IS USED ACROSS SERVICES
 ComputedAttributes:
   #@Method=user_notification.get_recent_events
   recent_events: !ComputedListValue    # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first
-
+  #@ServiceRequest=user_notification.get_recent_events
+  recent_events_request: !ServiceRequest
   #@Method=user_notification.get_subscriptions_attribute
   user_notification_requests:  !ComputedListValue      # A list of NotificationRequest objects, for the current user, where origin equals current resource id
+  #@ServiceRequest=user_notification.get_subscriptions_attribute
+  user_notifications_request: !ServiceRequest
 
 ---
 
@@ -120,12 +126,13 @@ ResourceContainer:
   ts_created: ""  # Timestamp str in millis in UNIX epoch
   lcstate_transitions: {}  # Available lcstate transitions (key event, value target state)
   resource: !Resource
-  computed: !ComputedAttributes
   ext_associations: {}  # An optional dict of names and associated objects to get other associations on the fly
 
 ---
 
+# A derived object containing common fields for all extended resource objects
 ExtendedResource: !Extends_ResourceContainer
+  computed: !ComputedAttributes
   #@hasPolicy
   policies: []  # A list of any associated policies
   #@hasOwnerInfo
@@ -135,24 +142,49 @@ ExtendedResource: !Extends_ResourceContainer
   #@hasAttachment
   attachments: []  # list of sensors attached to this device
 
+
+#A derived object containing common fields for all prepare update objects
+PrepareUpdateResource: !Extends_ResourceContainer
+
 ---
 
 # An object used for testing of the framework
+#@OriginResourceType=InstrumentDevice
 TestExtendedResource: !Extends_ExtendedResource
-  origin_resource_type: 'InstrumentDevice'
   #@hasPolicy
   policy_count: 0
   #@Method
   resource_object: !Resource
   #@Method=resource_registry.read
   remote_resource_object: !Resource
+  #@hasOwnerInfo
+  single_owner: !Resource  # single owner
+  #@hasOwnerInfo
+  owner_count: 0  #count of owners
+
+# An object used for testing of the framework
+#@OriginResourceType=Device
+TestExtendedResourceDevice: !Extends_ExtendedResource
+  #@hasPolicy
+  policy_count: 0
+
+# An object used for testing of the framework
+#@OriginResourceType=Org
+TestExtendedResourceBad: !Extends_ExtendedResource
+  #@hasPolicy
+  policy_count: 0
+
+#@OriginResourceType=InformationResource
+TestExtendedInformationResource: !Extends_ExtendedResource
+  #@Method=get_user_id_test
+  user_id: ""
 
 ---
-
+#@OriginResourceType=InformationResource
 ExtendedInformationResource: !Extends_ExtendedResource
 
 ---
-
+#@OriginResourceType=TaskableResource
 ExtendedTaskableResource: !Extends_ExtendedResource
 
 

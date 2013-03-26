@@ -16,10 +16,6 @@ system:
   # The name of the ION System ActorIdentity
   system_actor: ionsystem
 
-  # If True, indicates system is currently in bootstrap and shortcuts can be taken to avoid
-  # resource dependencies (e.g. avoid events, messaging, datastore)
-  bootstrapping: True
-
   # Global flag indicating debug mode. Code can perform more expensive operations if True
   debug: True
 
@@ -41,8 +37,9 @@ system:
 bootstrap:
   # Launches a bootstrap instance to build the search indices.
   use_es: False
+
 # ----------------------------------------------------------------------------------
-# The "server" root entry defines profiles for connections/credentials to external servers
+# The "server" root entry defines profiles for connections/credentials TO external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.
 server:
   amqp:
@@ -70,6 +67,19 @@ server:
     port: 5984
     username:
     password:
+  couchbase:
+    # The basic Couchbase connection
+    type: couchbase
+    host: localhost
+    port: 8091
+    api_port: 8092
+    username: default
+    password: default
+    bucket_password:
+    bucket_ram_quota_small_mb: 128
+    bucket_ram_quota_medium_mb: 512
+    bucket_ram_quota_big_mb: 1024
+    bucket_ram_quota_xbig_mb: 2048
   smtp:
     # Outgoing email server
     type: smtp
@@ -87,33 +97,48 @@ server:
     river_shards:   1        # Defines the number of shards for the _river
     river_replicas: 0        # Defines the number of replicas (important) for the _river
                              # This number should be the number of nodes running exactly
-  pydap:
-    type: pydap
-    host: localhost
-    port: 8001
-    data_path: RESOURCE:ext/pydap
-    datasets_xml_path: RESOURCE:ext/datasets.xml
-
-  erddap:
-    type: erddap
-    host: localhost
-    port: 8081
-
-  localrouter:
-    # In-process router
-    type: local
-
 # Example of production-like configuration
 #    shards: 5
 #    replicas: 1
 #    river_shards: 5
 #    replicas: 1
 
+  pydap:
+    # Python DAP server
+    type: pydap
+    host: localhost
+    port: 8001
+    data_path: RESOURCE:ext/pydap
+    datasets_xml_path: RESOURCE:ext/datasets.xml
+  erddap:
+    # ERDDAP DAP server and data catalog
+    type: erddap
+    host: localhost
+    port: 8081
+  localrouter:
+    # In-process router
+    type: local
+
+
 # ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container
 container:
-  directory:
-    server: couchdb
+  # Capability profile to use (assumes a file in res/profile/<name>.yml unless a path is specified)
+  # NOTE: This can affect the configuration if there is a config section in the profile file!!!
+  profile: development   # Profile for development purposes
+  #profile: production   # Profile for gumstix container
+  #profile: gumstix      # Profile for gumstix container
+  #profile: dataadmin    # Profile for a database admin
+
+  datastore:
+    default_server: couchdb     # Which server connection (and type) to use as primary datastore
+    server_types:               # Definition of the known server types and how to start them
+      couchdb:
+        base: pyon.datastore.couchdb.base_store.CouchDataStore
+        full: pyon.datastore.couchdb.datastore.CouchPyonDataStore
+      couchbase:
+        base: pyon.datastore.couchbase.base_store.CouchbaseDataStore
+        full: pyon.datastore.couchbase.datastore.CouchbasePyonDataStore
 
   exchange:
     # @TODO rename to delegate or similar, used for management api calls too
@@ -136,25 +161,26 @@ container:
   objects:
     validate: # TODO: move entries to here
 
-  org_boundary: False  #If True, then check against policies related to the Org below; else do not.
+  org_boundary: False  # If True, then check against policies related to the Org below; else do not.
 
   org_name: ION  # The default is the ROOT ION Org
 
   filesystem:
-      force_clean: False
-      cache: /tmp/ion/run/cache
-      temp: /tmp/ion/tmp
-      run: /tmp/ion/run
-      log: /tmp/ion/run/log
-      users: /tmp/ion/usr
-      resource: /tmp/ion/res
-      library: /tmp/ion/lib
+    force_clean: False
+    cache: /tmp/ion/run/cache
+    temp: /tmp/ion/tmp
+    run: /tmp/ion/run
+    log: /tmp/ion/run/log
+    users: /tmp/ion/usr
+    resource: /tmp/ion/res
+    library: /tmp/ion/lib
+    filestore: /tmp/ion/filestore
 
   service_gateway:
     web_server:
       port: 5000
-    trusted_originators: []  #Optional list of trusted addresses; an empty list means open system
-    user_cache_size: 2000    #The number of user's whos role data is cached in the gateway
+    trusted_originators: []  # Optional list of trusted addresses; an empty list means open system
+    user_cache_size: 2000    # The number of user's whos role data is cached in the gateway
 
   pydap_gateway:
     web_server:
@@ -172,7 +198,6 @@ cc:
     heartbeat: 30.0
     heartbeat_proc_time_threshold: 600.0
     heartbeat_proc_count_threshold: 20
-  proctype: green   # Type of ION process to spawn for new services/processes (green or python)
 
 validate:
   setattr: True
@@ -237,6 +262,17 @@ core_stream_types:
 
 
 # ----------------------------------------------------------------------------------
+# The "process" root entry with config for specific process types
+process:
+  event_persister:
+    persist_interval: 1.0
+    persist_blacklist:
+    - event_type: TimerEvent
+    - event_type: SchedulerEvent
+    - event_type: DatasetModified
+
+
+# ----------------------------------------------------------------------------------
 # The "service" root entry
 service:
   instrument_management:
@@ -252,7 +288,7 @@ service:
                               #no trailing slash
 
   directory:
-    default_uispecs_url: https://userexperience.oceanobservatories.org/database-exports/
+    default_uispecs_url: "https://userexperience.oceanobservatories.org/database-exports/"
 
 
 # TODO: Remove (use global flags instead)
@@ -309,7 +345,7 @@ event:
             ingestion_processing, 
             stream_ingestion_policy]
 
-#TODO - can't this be moved to a RR object?
+
 device:
   sbe37:
     host: sbe37-simulator.oceanobservatories.org

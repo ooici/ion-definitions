@@ -26,11 +26,6 @@ ComputedEventListValue: !Extends_ComputedListValue
 ---
 
 # ------------------------------------------------------------------------------------
-#                                  ION Events
-# ------------------------------------------------------------------------------------
-
-
-# ------------------------------------------------------------------------------------
 # Resource Events
 # Events about the registration of a resource in the registry and its lifecycle
 #
@@ -39,17 +34,18 @@ ComputedEventListValue: !Extends_ComputedListValue
 # sub_type: event specific
 # ------------------------------------------------------------------------------------
 
-# Base type for resource related events in the system
+# Base type for resource related events in the system.
 ResourceEvent: !Extends_Event
-  # The origin is the resource id
 
 ---
-# Event indicating that a resource changed its life cycle or was created
+# Event indicating that a resource changed its life cycle or was created.
+# The subtype is lcstate.availability (allowing *.PRIVATE queries)
 ResourceLifecycleEvent: !Extends_ResourceEvent
-  old_state: ""
-  new_state: ""
+  lcstate: ""
+  lcstate_before: ""
+  availability: ""
+  availability_before: ""
   transition_event: ""
-  resource_type: ""
 
 # Event indicating that resource attributes were changed or the resource was created or deleted
 ResourceModifiedEvent: !Extends_ResourceEvent
@@ -62,7 +58,6 @@ ResourceCommandEvent: !Extends_ResourceEvent
 
 # Event created by an operator of a resource, for instance to manually indicate a modification or error.
 ResourceOperatorEvent: !Extends_ResourceEvent
-
 
 ---
 # DataSource Events
@@ -110,6 +105,10 @@ ResourceAgentErrorEvent: !Extends_ResourceAgentEvent
   kwargs: {}
   error_type: ""
   error_msg: ""
+  error_code: -1
+
+ResourceAgentConnectionLostErrorEvent: !Extends_ResourceAgentEvent
+  error_msg: "Connection to resource device was lost."
   error_code: -1
 
 ResourceAgentStateEvent: !Extends_ResourceAgentEvent
@@ -167,8 +166,6 @@ PublicPlatformTelemetryEvent: !Extends_PlatformEvent
 RemoteCommandTransmittedEvent: !Extends_PlatformEvent
   queue_size: 0
 
-
-
 RemoteCommandResult: !Extends_Event
   command: ""
 
@@ -196,29 +193,31 @@ DeviceStatusEvent: !Extends_Event
   time_stamps: []
   valid_values: []
 
-
 ---
+
+# ------------------------------------------------------------------------------------
+# Information Content Events
+# Events about the content of an information resource
+#
+# origin: set to the resource_id
+# origin_type: the type of resource
+# ------------------------------------------------------------------------------------
 
 InformationContentEvent: !Extends_Event
   author: ""
 
 InformationStatus: !enum (values=(NORMAL,ERROR,OFFLINE), default=NORMAL)
-
 ---
 
 InformationContentModifiedEvent: !Extends_InformationContentEvent
   # origin is the resource identifier
   # ts created should reflect when the change occurred
 
-
-
 InformationContentStatusEvent: !Extends_InformationContentEvent
   # description should be filled in
   # New status of the information
   status: !InformationStatus
   
-
-
 
 # ------------------------------------------------------------------------------------
 #                                  Infrastructure Level Events
@@ -363,9 +362,7 @@ ResourceCommitmentReleasedEvent: !Extends_OrgEvent
   commitment_id: ""
   commitment_type: ""
 
-
 ---
-
 
 # ------------------------------------------------------------------------------------
 # Execution Event
@@ -400,11 +397,27 @@ ReloadUserInfoEvent: !Extends_Event
 
 
 # ------------------------------------------------------------------------------------
+#                                  ION Events
+# ------------------------------------------------------------------------------------
+
+ContainerManagementRequest: !Extends_Event
+  predicate: !ContainerManagementPredicate
+  action: !ContainerManagementAction
+
+ContainerManagementResult: !Extends_Event
+  action: !ContainerManagementAction
+  outcome: ""
+
+
+# ------------------------------------------------------------------------------------
 # !!! UNCATEGORIZED !!!! Events
 # ------------------------------------------------------------------------------------
 
 
 StreamAlarmType: !enum (values=(WARNING, ALERT, ALL_CLEAR), default=ALL_CLEAR)
+
+StreamAlertType: !enum (values=(WARNING, ALARM, ALL_CLEAR), default=ALL_CLEAR)
+
 ---
 StreamAlarmEvent: !Extends_ResourceEvent
   name: ''
@@ -416,7 +429,7 @@ StreamAlarmEvent: !Extends_ResourceEvent
 
 ---
 
-StreamWarningAlaramEvent: !Extends_StreamAlarmEvent
+StreamWarningAlarmEvent: !Extends_StreamAlarmEvent
   type: StreamAlaramType.WARNING
 
 StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
@@ -424,6 +437,26 @@ StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
   
 StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
   type: StreamAlaramType.ALL_CLEAR
+
+---
+
+StreamAlertEvent: !Extends_ResourceEvent
+  name: ''
+  message: ''
+  stream_name: ''
+  value_id: ''
+  value: None
+
+---
+
+StreamWarningAlertEvent: !Extends_StreamAlertEvent
+  type: StreamAlertType.WARNING
+
+StreamAlertAlertEvent: !Extends_StreamAlertEvent
+  type: StreamAlertType.ALARM
+  
+StreamAllClearAlertEvent: !Extends_StreamAlertEvent
+  type: StreamAlertType.ALL_CLEAR
 
 ---
 
@@ -460,7 +493,7 @@ ExceptionEvent: !Extends_Event
   message: ""
 ---
 
-DatasetModified: !Extends_InformationContentEvent
+DatasetModified: !Extends_InformationContentModifiedEvent
   # The new dataset extents
   extents:    []
   # The slice of the dataset modificationsc

@@ -1,0 +1,37 @@
+#This file defines the extended ServiceRequest objects
+
+ResourceServiceRequest: !Extends_ServiceRequest
+
+---
+
+InstrumentDeviceServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "InstrumentDevice"
+  resource_identifier: "instrument_device_id"
+
+InstrumentModelServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "InstrumentModel"
+  resource_identifier: "instrument_model_id"
+
+InstrumentAgentServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "InstrumentAgent"
+  resource_identifier: "instrument_agent_id"
+
+InstrumentAgentInstanceServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "InstrumentAgentInstance"
+  resource_identifier: "instrument_agent_instance_id"
+
+SensorDeviceServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "SensorDevice"
+  resource_identifier: "sensor_device_id"
+
+DeploymentServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "Deployment"
+  resource_identifier: "deployment_id"
+
+PlatformModelServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "PlatformModel"
+  resource_identifier: "platform_model_id"
+
+PlatformAgentServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "PlatformAgent"
+  resource_identifier: "platform_agent_id"

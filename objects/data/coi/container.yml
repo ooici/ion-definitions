@@ -1,0 +1,15 @@
+########### PREDICATE TYPES #############
+
+# indicate that the request should be run on all containers
+
+AllContainers: !Extends_ContainerManagementPredicate
+  #@module=pyon.container.management
+  #@class=AllContainers
+  peer:
+
+########### ACTION TYPES #############
+
+ChangeLogLevel: !Extends_ContainerManagementAction
+  logger: ""
+  level: ""
+  recursive: True

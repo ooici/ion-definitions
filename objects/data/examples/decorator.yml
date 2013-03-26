@@ -1,5 +1,18 @@
-# This is example for adding decorators
 
+# These are used for tests - do not remove!
+
+ExtendedPhone: !Extends_Phone
+
+Bad_Phone:
+  phone_number: ""
+  phone_type: ""
+  sms: 0
+
+---
+
+# This is example for adding decorators
+#@SpecialObject
+#@OriginResourceType=MyObject
 Deco_Example:
   # This attribute is decorated to define the valid value
   # range for the numeric type (int in this case).
@@ -13,7 +26,7 @@ Deco_Example:
 
   # This attribute is decorated to define the type(s)
   # which can be present in the list attribute.
-  #@ContentType=ContactInformation, int
+  #@ContentType=Phone, int
   list1: []
 
   # This attribute is decorated to define the valid length

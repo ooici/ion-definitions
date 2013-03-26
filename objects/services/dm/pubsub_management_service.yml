@@ -55,6 +55,15 @@ methods:
       out_stream_definition_id: ""
     out:
       equal: False
+  
+  validate_stream_defs:
+    docstring: |
+      Validates stream defs based on the input and output stream definition
+    in:
+      in_stream_definition_id: ""
+      out_stream_definition_id: ""
+    out:
+      success: False
 
   #---------
   
@@ -113,7 +122,7 @@ methods:
   #---------
   
   create_subscription:
-    docstring: ""
+    docstring: "Create a subscription for a variety of resources that can be subscribed to"
     in: 
       name: ""
       stream_ids: []
@@ -122,6 +131,7 @@ methods:
       exchange_name: ""
       credentials: {}
       description: ""
+      data_product_ids: []
     out:
       subscription_id: ""
     throws:

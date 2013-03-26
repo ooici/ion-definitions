@@ -6,6 +6,7 @@ OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSRO
 # Represents a domain of authority that provides the context within which policy applies to registered
 # member individuals and resources.
 Org: !Extends_TaskableResource
+  org_governance_name: ""     # An identifier for the Org used by governance that should not be changed.
   org_type: !OrgTypeEnum      # Specializes the type of Or
   institution: !Institution   # Identifies the institution that operates the Org/Facility
   url: ""
@@ -35,18 +36,25 @@ AcquireResourceExclusiveProposal: !Extends_AcquireResourceProposal
 ---
 
 #This object contains additional information associated with a Marine Facility Org
+#@OriginResourceType=Org
 MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
-  origin_resource_type: 'Org'
   #@hasResource=DataProduct
-  data_products: []
+  data_products: []   #TODO - remove when asych calls in UI are implemented
+  data_products_request: !ServiceRequest
+  #@hasResource=DataProduct
+  number_of_data_products: 0
   #@hasResource=PlatformDevice
   platforms: []
+  #@hasResource=PlatformDevice
+  number_of_platforms: 0
   # defined in get_marine_facility_extension
   platform_models: []
   # defined in get_marine_facility_extension
   instrument_models: []
   #@hasResource=InstrumentDevice
   instruments: []
+  #@hasResource=InstrumentDevice
+  number_of_instruments: 0
   #@hasResource=InstrumentAgent
   instrument_agents: []
   #@hasResource=DataProcessDefinition
@@ -61,17 +69,18 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   user_requests: [] # A list of requests associated with this user
   #@hasDeployedDeviceForOrg=InstrumentSite
   instruments_deployed: []  # a list of instrument devices owned by this Org and currently deployed to a Site
+  #@hasDeployedDeviceForOrg=InstrumentSite
+  number_of_instruments_deployed: 0
   #@hasDeployedDeviceForOrg=PlatformSite
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
-  #@hasNegotiation=Negotiation
-  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN
-  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED
-
-  number_of_data_products: 0
-  number_of_platforms: 0
+  #@hasDeployedDeviceForOrg=PlatformSite
   number_of_platforms_deployed: 0
-  number_of_instruments: 0
-  number_of_instruments_deployed: 0
+  #@Method=find_org_negotiations
+  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN TODO - remove at some point
+  open_negotiations_request: !ServiceRequest
+  #@Method=find_org_closed_negotiations
+  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED TODO - remove at some point
+  closed_negotiations_request: !ServiceRequest
 
 
 #Computed attributes for a data product

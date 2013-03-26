@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Attributes Report,Report Generated: 2/8/2013
+Data Product Attributes Report,Report Generated: 3/26/2013
 
 Textbox14
 
@@ -103,25 +103,25 @@ BOTSFLU,Seafloor Uplift and Deflation,2,Spike Test (SPKETST) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Stuck Value Test (STUCKVL) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Trend Test (TRNDTST) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Units,meters
-BOTTILT,"X Tilt, Y Tilt",0,1-D Interpolation (INTERP1) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Combine QC Flags (CMBNFLG) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
-BOTTILT,"X Tilt, Y Tilt",0,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
-BOTTILT,"X Tilt, Y Tilt",0,DPS DCN(s),DCN 1341-00060
-BOTTILT,"X Tilt, Y Tilt",0,Evaluate Polynomial (POLYVAL) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Global Range Test (GLBLRNG) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Gradient Test (GRADTST) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Local Range Test (LOCLRNG) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Modulus (MODULUS) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Notes,
-BOTTILT,"X Tilt, Y Tilt",0,Processing Flow Diagram DCN(s),DCN 1342-00060
-BOTTILT,"X Tilt, Y Tilt",0,Regime(s),Seafloor/Crust
-BOTTILT,"X Tilt, Y Tilt",0,Solar Elevation (SOLAREL) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Spike Test (SPKETST) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Stuck Value Test (STUCKVL) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Trend Test (TRNDTST) QC,not applicable
-BOTTILT,"X Tilt, Y Tilt",0,Units,microradians
+BOTTILT,Seafloor High-Resolution Tilt,0,1-D Interpolation (INTERP1) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Combine QC Flags (CMBNFLG) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
+BOTTILT,Seafloor High-Resolution Tilt,0,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
+BOTTILT,Seafloor High-Resolution Tilt,0,DPS DCN(s),DCN 1341-00060
+BOTTILT,Seafloor High-Resolution Tilt,0,Evaluate Polynomial (POLYVAL) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Global Range Test (GLBLRNG) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Gradient Test (GRADTST) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Local Range Test (LOCLRNG) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Modulus (MODULUS) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Notes,
+BOTTILT,Seafloor High-Resolution Tilt,0,Processing Flow Diagram DCN(s),DCN 1342-00060
+BOTTILT,Seafloor High-Resolution Tilt,0,Regime(s),Seafloor/Crust
+BOTTILT,Seafloor High-Resolution Tilt,0,Solar Elevation (SOLAREL) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Spike Test (SPKETST) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Stuck Value Test (STUCKVL) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Trend Test (TRNDTST) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Units,microradians
 CAMSTIL,Still Image ,1,1-D Interpolation (INTERP1) QC,not applicable
 CAMSTIL,Still Image ,1,Combine QC Flags (CMBNFLG) QC,not applicable
 CAMSTIL,Still Image ,1,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -464,6 +464,25 @@ FLUXWET,Direct Covariance Flux of Moisture,2,Spike Test (SPKETST) QC,TBD
 FLUXWET,Direct Covariance Flux of Moisture,2,Stuck Value Test (STUCKVL) QC,TBD
 FLUXWET,Direct Covariance Flux of Moisture,2,Trend Test (TRNDTST) QC,TBD
 FLUXWET,Direct Covariance Flux of Moisture,2,Units,kg m^(-1) s^(-1)
+FRSHFLX ,Freshwater Flux,2,1-D Interpolation (INTERP1) QC,
+FRSHFLX ,Freshwater Flux,2,Combine QC Flags (CMBNFLG) QC,
+FRSHFLX ,Freshwater Flux,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+FRSHFLX ,Freshwater Flux,2,DOORS L2 Science Requirement #(s),
+FRSHFLX ,Freshwater Flux,2,DOORS L2 Science Requirement Text,
+FRSHFLX ,Freshwater Flux,2,DPS DCN(s),
+FRSHFLX ,Freshwater Flux,2,Evaluate Polynomial (POLYVAL) QC,
+FRSHFLX ,Freshwater Flux,2,Global Range Test (GLBLRNG) QC,
+FRSHFLX ,Freshwater Flux,2,Gradient Test (GRADTST) QC,
+FRSHFLX ,Freshwater Flux,2,Local Range Test (LOCLRNG) QC,
+FRSHFLX ,Freshwater Flux,2,Modulus (MODULUS) QC,
+FRSHFLX ,Freshwater Flux,2,Notes,
+FRSHFLX ,Freshwater Flux,2,Processing Flow Diagram DCN(s),
+FRSHFLX ,Freshwater Flux,2,Regime(s),
+FRSHFLX ,Freshwater Flux,2,Solar Elevation (SOLAREL) QC,
+FRSHFLX ,Freshwater Flux,2,Spike Test (SPKETST) QC,
+FRSHFLX ,Freshwater Flux,2,Stuck Value Test (STUCKVL) QC,
+FRSHFLX ,Freshwater Flux,2,Trend Test (TRNDTST) QC,
+FRSHFLX ,Freshwater Flux,2,Units,m3/s
 GRNDACC,Broadband Ground Acceleration,1,1-D Interpolation (INTERP1) QC,TBD
 GRNDACC,Broadband Ground Acceleration,1,Combine QC Flags (CMBNFLG) QC,TBD
 GRNDACC,Broadband Ground Acceleration,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
@@ -521,6 +540,25 @@ HDVIDEO,HD Video Image,1,Spike Test (SPKETST) QC,not applicable
 HDVIDEO,HD Video Image,1,Stuck Value Test (STUCKVL) QC,not applicable
 HDVIDEO,HD Video Image,1,Trend Test (TRNDTST) QC,not applicable
 HDVIDEO,HD Video Image,1,Units,Lossless compression Image File
+HEATFLX ,Net Heat Flux,2,1-D Interpolation (INTERP1) QC,
+HEATFLX ,Net Heat Flux,2,Combine QC Flags (CMBNFLG) QC,
+HEATFLX ,Net Heat Flux,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+HEATFLX ,Net Heat Flux,2,DOORS L2 Science Requirement #(s),
+HEATFLX ,Net Heat Flux,2,DOORS L2 Science Requirement Text,
+HEATFLX ,Net Heat Flux,2,DPS DCN(s),
+HEATFLX ,Net Heat Flux,2,Evaluate Polynomial (POLYVAL) QC,
+HEATFLX ,Net Heat Flux,2,Global Range Test (GLBLRNG) QC,
+HEATFLX ,Net Heat Flux,2,Gradient Test (GRADTST) QC,
+HEATFLX ,Net Heat Flux,2,Local Range Test (LOCLRNG) QC,
+HEATFLX ,Net Heat Flux,2,Modulus (MODULUS) QC,
+HEATFLX ,Net Heat Flux,2,Notes,
+HEATFLX ,Net Heat Flux,2,Processing Flow Diagram DCN(s),
+HEATFLX ,Net Heat Flux,2,Regime(s),
+HEATFLX ,Net Heat Flux,2,Solar Elevation (SOLAREL) QC,
+HEATFLX ,Net Heat Flux,2,Spike Test (SPKETST) QC,
+HEATFLX ,Net Heat Flux,2,Stuck Value Test (STUCKVL) QC,
+HEATFLX ,Net Heat Flux,2,Trend Test (TRNDTST) QC,
+HEATFLX ,Net Heat Flux,2,Units,W/m2
 HYDAPBB,Broadband Acoustic pressure waves ,0,1-D Interpolation (INTERP1) QC,not applicable
 HYDAPBB,Broadband Acoustic pressure waves ,0,Combine QC Flags (CMBNFLG) QC,not applicable
 HYDAPBB,Broadband Acoustic pressure waves ,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -692,6 +730,25 @@ IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Spike Test (SPKETST) QC,not appl
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Stuck Value Test (STUCKVL) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Trend Test (TRNDTST) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Units,TBD
+LATNFLX ,Latent Heat Flux,2,1-D Interpolation (INTERP1) QC,
+LATNFLX ,Latent Heat Flux,2,Combine QC Flags (CMBNFLG) QC,
+LATNFLX ,Latent Heat Flux,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+LATNFLX ,Latent Heat Flux,2,DOORS L2 Science Requirement #(s),
+LATNFLX ,Latent Heat Flux,2,DOORS L2 Science Requirement Text,
+LATNFLX ,Latent Heat Flux,2,DPS DCN(s),
+LATNFLX ,Latent Heat Flux,2,Evaluate Polynomial (POLYVAL) QC,
+LATNFLX ,Latent Heat Flux,2,Global Range Test (GLBLRNG) QC,
+LATNFLX ,Latent Heat Flux,2,Gradient Test (GRADTST) QC,
+LATNFLX ,Latent Heat Flux,2,Local Range Test (LOCLRNG) QC,
+LATNFLX ,Latent Heat Flux,2,Modulus (MODULUS) QC,
+LATNFLX ,Latent Heat Flux,2,Notes,
+LATNFLX ,Latent Heat Flux,2,Processing Flow Diagram DCN(s),
+LATNFLX ,Latent Heat Flux,2,Regime(s),
+LATNFLX ,Latent Heat Flux,2,Solar Elevation (SOLAREL) QC,
+LATNFLX ,Latent Heat Flux,2,Spike Test (SPKETST) QC,
+LATNFLX ,Latent Heat Flux,2,Stuck Value Test (STUCKVL) QC,
+LATNFLX ,Latent Heat Flux,2,Trend Test (TRNDTST) QC,
+LATNFLX ,Latent Heat Flux,2,Units,W/m2
 LONGIRR,Downwelling Longwave Irradiance,0,1-D Interpolation (INTERP1) QC,not applicable
 LONGIRR,Downwelling Longwave Irradiance,0,Combine QC Flags (CMBNFLG) QC,not applicable
 LONGIRR,Downwelling Longwave Irradiance,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -749,6 +806,25 @@ MOISTUR,Turbulent Humidity Fluctuation,0,Spike Test (SPKETST) QC,not applicable
 MOISTUR,Turbulent Humidity Fluctuation,0,Stuck Value Test (STUCKVL) QC,not applicable
 MOISTUR,Turbulent Humidity Fluctuation,0,Trend Test (TRNDTST) QC,not applicable
 MOISTUR,Turbulent Humidity Fluctuation,0,Units,TBD
+MOMMFLX,Momentum Flux (Wind Stress) ,2,1-D Interpolation (INTERP1) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Combine QC Flags (CMBNFLG) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,DOORS L2 Science Requirement #(s),
+MOMMFLX,Momentum Flux (Wind Stress) ,2,DOORS L2 Science Requirement Text,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,DPS DCN(s),
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Evaluate Polynomial (POLYVAL) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Global Range Test (GLBLRNG) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Gradient Test (GRADTST) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Local Range Test (LOCLRNG) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Modulus (MODULUS) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Notes,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Processing Flow Diagram DCN(s),
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Regime(s),
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Solar Elevation (SOLAREL) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Spike Test (SPKETST) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Stuck Value Test (STUCKVL) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Trend Test (TRNDTST) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Units,N/m2
 MOTFLUX,Platform Direction and Tilt (3 axes),0,1-D Interpolation (INTERP1) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Combine QC Flags (CMBNFLG) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -768,6 +844,44 @@ MOTFLUX,Platform Direction and Tilt (3 axes),0,Spike Test (SPKETST) QC,not appli
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Stuck Value Test (STUCKVL) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Trend Test (TRNDTST) QC,not applicable
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Units,"TBD (FDCHP), degree (from north or vertical) (FDCLP)"
+NETLIRR ,Net Longwave Irradiance ,2,1-D Interpolation (INTERP1) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Combine QC Flags (CMBNFLG) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+NETLIRR ,Net Longwave Irradiance ,2,DOORS L2 Science Requirement #(s),
+NETLIRR ,Net Longwave Irradiance ,2,DOORS L2 Science Requirement Text,
+NETLIRR ,Net Longwave Irradiance ,2,DPS DCN(s),
+NETLIRR ,Net Longwave Irradiance ,2,Evaluate Polynomial (POLYVAL) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Global Range Test (GLBLRNG) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Gradient Test (GRADTST) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Local Range Test (LOCLRNG) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Modulus (MODULUS) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Notes,
+NETLIRR ,Net Longwave Irradiance ,2,Processing Flow Diagram DCN(s),
+NETLIRR ,Net Longwave Irradiance ,2,Regime(s),
+NETLIRR ,Net Longwave Irradiance ,2,Solar Elevation (SOLAREL) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Spike Test (SPKETST) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Stuck Value Test (STUCKVL) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Trend Test (TRNDTST) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Units,W/m2
+NETSIRR ,Net Shortwave Irradiance ,2,1-D Interpolation (INTERP1) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Combine QC Flags (CMBNFLG) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,DOORS L2 Science Requirement #(s),
+NETSIRR ,Net Shortwave Irradiance ,2,DOORS L2 Science Requirement Text,
+NETSIRR ,Net Shortwave Irradiance ,2,DPS DCN(s),
+NETSIRR ,Net Shortwave Irradiance ,2,Evaluate Polynomial (POLYVAL) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Global Range Test (GLBLRNG) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Gradient Test (GRADTST) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Local Range Test (LOCLRNG) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Modulus (MODULUS) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Notes,
+NETSIRR ,Net Shortwave Irradiance ,2,Processing Flow Diagram DCN(s),
+NETSIRR ,Net Shortwave Irradiance ,2,Regime(s),
+NETSIRR ,Net Shortwave Irradiance ,2,Solar Elevation (SOLAREL) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Spike Test (SPKETST) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Stuck Value Test (STUCKVL) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Trend Test (TRNDTST) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Units,W/m2
 NITROPT,Nitrate Concentration,1,1-D Interpolation (INTERP1) QC,TBD
 NITROPT,Nitrate Concentration,1,Combine QC Flags (CMBNFLG) QC,TBD
 NITROPT,Nitrate Concentration,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
@@ -1129,6 +1243,44 @@ PRESWAT,Pressure (Depth),0,Spike Test (SPKETST) QC,not applicable
 PRESWAT,Pressure (Depth),0,Stuck Value Test (STUCKVL) QC,not applicable
 PRESWAT,Pressure (Depth),0,Trend Test (TRNDTST) QC,not applicable
 PRESWAT,Pressure (Depth),0,Units,unitless
+RAINFLX,Rain Heat Flux,2,1-D Interpolation (INTERP1) QC,
+RAINFLX,Rain Heat Flux,2,Combine QC Flags (CMBNFLG) QC,
+RAINFLX,Rain Heat Flux,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+RAINFLX,Rain Heat Flux,2,DOORS L2 Science Requirement #(s),
+RAINFLX,Rain Heat Flux,2,DOORS L2 Science Requirement Text,
+RAINFLX,Rain Heat Flux,2,DPS DCN(s),
+RAINFLX,Rain Heat Flux,2,Evaluate Polynomial (POLYVAL) QC,
+RAINFLX,Rain Heat Flux,2,Global Range Test (GLBLRNG) QC,
+RAINFLX,Rain Heat Flux,2,Gradient Test (GRADTST) QC,
+RAINFLX,Rain Heat Flux,2,Local Range Test (LOCLRNG) QC,
+RAINFLX,Rain Heat Flux,2,Modulus (MODULUS) QC,
+RAINFLX,Rain Heat Flux,2,Notes,
+RAINFLX,Rain Heat Flux,2,Processing Flow Diagram DCN(s),
+RAINFLX,Rain Heat Flux,2,Regime(s),
+RAINFLX,Rain Heat Flux,2,Solar Elevation (SOLAREL) QC,
+RAINFLX,Rain Heat Flux,2,Spike Test (SPKETST) QC,
+RAINFLX,Rain Heat Flux,2,Stuck Value Test (STUCKVL) QC,
+RAINFLX,Rain Heat Flux,2,Trend Test (TRNDTST) QC,
+RAINFLX,Rain Heat Flux,2,Units,W/m2
+RAINRTE,Rain rate,2,1-D Interpolation (INTERP1) QC,
+RAINRTE,Rain rate,2,Combine QC Flags (CMBNFLG) QC,
+RAINRTE,Rain rate,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+RAINRTE,Rain rate,2,DOORS L2 Science Requirement #(s),
+RAINRTE,Rain rate,2,DOORS L2 Science Requirement Text,
+RAINRTE,Rain rate,2,DPS DCN(s),
+RAINRTE,Rain rate,2,Evaluate Polynomial (POLYVAL) QC,
+RAINRTE,Rain rate,2,Global Range Test (GLBLRNG) QC,
+RAINRTE,Rain rate,2,Gradient Test (GRADTST) QC,
+RAINRTE,Rain rate,2,Local Range Test (LOCLRNG) QC,
+RAINRTE,Rain rate,2,Modulus (MODULUS) QC,
+RAINRTE,Rain rate,2,Notes,
+RAINRTE,Rain rate,2,Processing Flow Diagram DCN(s),
+RAINRTE,Rain rate,2,Regime(s),
+RAINRTE,Rain rate,2,Solar Elevation (SOLAREL) QC,
+RAINRTE,Rain rate,2,Spike Test (SPKETST) QC,
+RAINRTE,Rain rate,2,Stuck Value Test (STUCKVL) QC,
+RAINRTE,Rain rate,2,Trend Test (TRNDTST) QC,
+RAINRTE,Rain rate,2,Units,mm/hr
 RELHUMI,Relative Humidity,0,1-D Interpolation (INTERP1) QC,not applicable
 RELHUMI,Relative Humidity,0,Combine QC Flags (CMBNFLG) QC,not applicable
 RELHUMI,Relative Humidity,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -1148,6 +1300,44 @@ RELHUMI,Relative Humidity,0,Spike Test (SPKETST) QC,not applicable
 RELHUMI,Relative Humidity,0,Stuck Value Test (STUCKVL) QC,not applicable
 RELHUMI,Relative Humidity,0,Trend Test (TRNDTST) QC,not applicable
 RELHUMI,Relative Humidity,0,Units,"TBD (FDCHP), % (METBK)"
+SALSURF,Sea Surface Salinity ,2,1-D Interpolation (INTERP1) QC,
+SALSURF,Sea Surface Salinity ,2,Combine QC Flags (CMBNFLG) QC,
+SALSURF,Sea Surface Salinity ,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+SALSURF,Sea Surface Salinity ,2,DOORS L2 Science Requirement #(s),
+SALSURF,Sea Surface Salinity ,2,DOORS L2 Science Requirement Text,
+SALSURF,Sea Surface Salinity ,2,DPS DCN(s),
+SALSURF,Sea Surface Salinity ,2,Evaluate Polynomial (POLYVAL) QC,
+SALSURF,Sea Surface Salinity ,2,Global Range Test (GLBLRNG) QC,
+SALSURF,Sea Surface Salinity ,2,Gradient Test (GRADTST) QC,
+SALSURF,Sea Surface Salinity ,2,Local Range Test (LOCLRNG) QC,
+SALSURF,Sea Surface Salinity ,2,Modulus (MODULUS) QC,
+SALSURF,Sea Surface Salinity ,2,Notes,
+SALSURF,Sea Surface Salinity ,2,Processing Flow Diagram DCN(s),
+SALSURF,Sea Surface Salinity ,2,Regime(s),
+SALSURF,Sea Surface Salinity ,2,Solar Elevation (SOLAREL) QC,
+SALSURF,Sea Surface Salinity ,2,Spike Test (SPKETST) QC,
+SALSURF,Sea Surface Salinity ,2,Stuck Value Test (STUCKVL) QC,
+SALSURF,Sea Surface Salinity ,2,Trend Test (TRNDTST) QC,
+SALSURF,Sea Surface Salinity ,2,Units,unitless
+SENSFLX ,Sensible Heat Flux ,2,1-D Interpolation (INTERP1) QC,
+SENSFLX ,Sensible Heat Flux ,2,Combine QC Flags (CMBNFLG) QC,
+SENSFLX ,Sensible Heat Flux ,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+SENSFLX ,Sensible Heat Flux ,2,DOORS L2 Science Requirement #(s),
+SENSFLX ,Sensible Heat Flux ,2,DOORS L2 Science Requirement Text,
+SENSFLX ,Sensible Heat Flux ,2,DPS DCN(s),
+SENSFLX ,Sensible Heat Flux ,2,Evaluate Polynomial (POLYVAL) QC,
+SENSFLX ,Sensible Heat Flux ,2,Global Range Test (GLBLRNG) QC,
+SENSFLX ,Sensible Heat Flux ,2,Gradient Test (GRADTST) QC,
+SENSFLX ,Sensible Heat Flux ,2,Local Range Test (LOCLRNG) QC,
+SENSFLX ,Sensible Heat Flux ,2,Modulus (MODULUS) QC,
+SENSFLX ,Sensible Heat Flux ,2,Notes,
+SENSFLX ,Sensible Heat Flux ,2,Processing Flow Diagram DCN(s),
+SENSFLX ,Sensible Heat Flux ,2,Regime(s),
+SENSFLX ,Sensible Heat Flux ,2,Solar Elevation (SOLAREL) QC,
+SENSFLX ,Sensible Heat Flux ,2,Spike Test (SPKETST) QC,
+SENSFLX ,Sensible Heat Flux ,2,Stuck Value Test (STUCKVL) QC,
+SENSFLX ,Sensible Heat Flux ,2,Trend Test (TRNDTST) QC,
+SENSFLX ,Sensible Heat Flux ,2,Units,W/m2
 SFLPRES,Seafloor Pressure,1,1-D Interpolation (INTERP1) QC,TBD
 SFLPRES,Seafloor Pressure,1,Combine QC Flags (CMBNFLG) QC,TBD
 SFLPRES,Seafloor Pressure,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
@@ -1262,6 +1452,44 @@ SPECTIR,Downwelling Spectral Irradiance ,0,Spike Test (SPKETST) QC,not applicabl
 SPECTIR,Downwelling Spectral Irradiance ,0,Stuck Value Test (STUCKVL) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Trend Test (TRNDTST) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Units,TBD
+SPHUM2M,Specific Humidity at 2 m,2,1-D Interpolation (INTERP1) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Combine QC Flags (CMBNFLG) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+SPHUM2M,Specific Humidity at 2 m,2,DOORS L2 Science Requirement #(s),
+SPHUM2M,Specific Humidity at 2 m,2,DOORS L2 Science Requirement Text,
+SPHUM2M,Specific Humidity at 2 m,2,DPS DCN(s),
+SPHUM2M,Specific Humidity at 2 m,2,Evaluate Polynomial (POLYVAL) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Global Range Test (GLBLRNG) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Gradient Test (GRADTST) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Local Range Test (LOCLRNG) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Modulus (MODULUS) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Notes,
+SPHUM2M,Specific Humidity at 2 m,2,Processing Flow Diagram DCN(s),
+SPHUM2M,Specific Humidity at 2 m,2,Regime(s),
+SPHUM2M,Specific Humidity at 2 m,2,Solar Elevation (SOLAREL) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Spike Test (SPKETST) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Stuck Value Test (STUCKVL) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Trend Test (TRNDTST) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Units,%
+TEMPA2M,Air Temperature at 2 m,2,1-D Interpolation (INTERP1) QC,
+TEMPA2M,Air Temperature at 2 m,2,Combine QC Flags (CMBNFLG) QC,
+TEMPA2M,Air Temperature at 2 m,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+TEMPA2M,Air Temperature at 2 m,2,DOORS L2 Science Requirement #(s),
+TEMPA2M,Air Temperature at 2 m,2,DOORS L2 Science Requirement Text,
+TEMPA2M,Air Temperature at 2 m,2,DPS DCN(s),
+TEMPA2M,Air Temperature at 2 m,2,Evaluate Polynomial (POLYVAL) QC,
+TEMPA2M,Air Temperature at 2 m,2,Global Range Test (GLBLRNG) QC,
+TEMPA2M,Air Temperature at 2 m,2,Gradient Test (GRADTST) QC,
+TEMPA2M,Air Temperature at 2 m,2,Local Range Test (LOCLRNG) QC,
+TEMPA2M,Air Temperature at 2 m,2,Modulus (MODULUS) QC,
+TEMPA2M,Air Temperature at 2 m,2,Notes,
+TEMPA2M,Air Temperature at 2 m,2,Processing Flow Diagram DCN(s),
+TEMPA2M,Air Temperature at 2 m,2,Regime(s),
+TEMPA2M,Air Temperature at 2 m,2,Solar Elevation (SOLAREL) QC,
+TEMPA2M,Air Temperature at 2 m,2,Spike Test (SPKETST) QC,
+TEMPA2M,Air Temperature at 2 m,2,Stuck Value Test (STUCKVL) QC,
+TEMPA2M,Air Temperature at 2 m,2,Trend Test (TRNDTST) QC,
+TEMPA2M,Air Temperature at 2 m,2,Units,degrees C
 TEMPAIR,Air Temperature,0,1-D Interpolation (INTERP1) QC,not applicable
 TEMPAIR,Air Temperature,0,Combine QC Flags (CMBNFLG) QC,not applicable
 TEMPAIR,Air Temperature,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -1718,6 +1946,25 @@ WAVSTAT,Wave Spectral Properties,0,Spike Test (SPKETST) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Stuck Value Test (STUCKVL) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Trend Test (TRNDTST) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Units,m; s; degrees; Hz; m^2 Hz^-1
+WIND10M,Wind Velocity at 10 m  ,2,1-D Interpolation (INTERP1) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Combine QC Flags (CMBNFLG) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Conductivity Compressibility Compensation (CONDCMP) QC,
+WIND10M,Wind Velocity at 10 m  ,2,DOORS L2 Science Requirement #(s),
+WIND10M,Wind Velocity at 10 m  ,2,DOORS L2 Science Requirement Text,
+WIND10M,Wind Velocity at 10 m  ,2,DPS DCN(s),
+WIND10M,Wind Velocity at 10 m  ,2,Evaluate Polynomial (POLYVAL) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Global Range Test (GLBLRNG) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Gradient Test (GRADTST) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Local Range Test (LOCLRNG) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Modulus (MODULUS) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Notes,
+WIND10M,Wind Velocity at 10 m  ,2,Processing Flow Diagram DCN(s),
+WIND10M,Wind Velocity at 10 m  ,2,Regime(s),
+WIND10M,Wind Velocity at 10 m  ,2,Solar Elevation (SOLAREL) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Spike Test (SPKETST) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Stuck Value Test (STUCKVL) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Trend Test (TRNDTST) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Units,m/s
 WINDAVG,Mean Wind Velocity,0,1-D Interpolation (INTERP1) QC,not applicable
 WINDAVG,Mean Wind Velocity,0,Combine QC Flags (CMBNFLG) QC,not applicable
 WINDAVG,Mean Wind Velocity,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable

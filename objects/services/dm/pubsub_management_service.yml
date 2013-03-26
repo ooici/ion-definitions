@@ -259,7 +259,13 @@ methods:
       id_only: False
     out:
       stream_definition: {}
-  
+
+  has_lookup_values:
+    docstring: ""
+    in:
+      stream_definition_id: ""
+    out:
+      lookup_values: []
 
 
     

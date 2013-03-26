@@ -366,7 +366,7 @@ apps:
       ui_path: res/preload/r2_ioc/ui_assets
       attachments: res/preload/r2_ioc/attachments
       scenario: BASE,BETA,IDK,ALPHA_SYS
-      categories: Constraint,Contact,User,Org,UserRole,CoordinateSystem,ParameterDefs,ParameterDictionary,StreamConfiguration,SensorModel,PlatformModel,InstrumentModel,Observatory,Subsite,PlatformSite,InstrumentSite,StreamDefinition,PlatformDevice,PlatformAgent,PlatformAgentInstance,InstrumentAgent,InstrumentDevice,SensorDevice,InstrumentAgentInstance,DataProduct,DataProcessDefinition,DataProcess,DataProductLink,Attachment,WorkflowDefinition,Workflow
+      #categories: Constraint,Contact,User,Org,UserRole,CoordinateSystem,ParameterDefs,ParameterDictionary,StreamConfiguration,SensorModel,PlatformModel,InstrumentModel,Observatory,Subsite,PlatformSite,InstrumentSite,StreamDefinition,PlatformDevice,PlatformAgent,PlatformAgentInstance,InstrumentAgent,InstrumentDevice,SensorDevice,InstrumentAgentInstance,DataProduct,DataProcessDefinition,DataProcess,DataProductLink,Attachment,WorkflowDefinition,Workflow
 
   # LAST SERVICE GATEWAY SERVICE
   #

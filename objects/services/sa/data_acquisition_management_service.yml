@@ -694,3 +694,36 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
+  # -----------------
+  # The following operations work on parsers
+  create_parser:
+    docstring: ""
+    in:
+      name: ""
+      description: ""
+      module: ""
+      method: ""
+      config: {}
+    out:
+      parser_id: ""
+
+  read_parser:
+    docstring: ""
+    in:
+      parser_id: ""
+    out:
+      parser: !Parser
+
+  delete_parser:
+    docstring: ""
+    in:
+      parser_id: ""
+    out:
+      success: True
+
+  update_parser:
+    docstring: ""
+    in:
+      parser: !Parser
+    out:

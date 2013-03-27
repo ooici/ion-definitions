@@ -1,0 +1,4 @@
+Parser: !Extends_InformationResource
+  module: ""
+  method: ""
+  config: {}

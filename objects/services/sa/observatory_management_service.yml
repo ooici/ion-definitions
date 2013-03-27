@@ -373,6 +373,25 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  assign_device_to_network_parent:
+    docstring: Connects a device (any type) to parent in the RSN network
+    in:
+      child_device_id: ""
+      parent_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_device_from_network_parent:
+    docstring: Disconnects a child device (any type) from parent in the RSN network
+    in:
+      child_device_id: ""
+      parent_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
   # -----------------
   # Assigning resources to observatory Orgs
 

@@ -1,0 +1,34 @@
+﻿Textbox8,tbToday
+Node Types,Report Generated: 3/27/2013
+
+Textbox14
+
+
+Count
+"Total Active, Retired, Draft, Rejected Risks: 0"
+
+LNodeType,Name
+AV,AUV
+BP,Benthic Package
+CS,Commissioning Support Hardware
+DP,Deep Profiler
+FJ,200 m Platform
+GL,Gliders
+IC,Interface Box Camera
+ID,IF box HD camera
+LJ,LP Jbox
+LV,Low Voltage Node
+MF,Multi-Function Node
+MJ,MP Jbox
+MP,Mid-Water Platform
+PC,Platform Interface Controller
+PD,Deep Profiler Docking Station
+PL,Platform
+PN,Primary Node
+RI,Mooring Riser
+SB,Surface Buoy
+SC,Shallow Profiler Controller
+SF,Shallow Profiler Science Float
+SP,Surface-Piercing Profiler
+WF,Wire-Following Profiler
+

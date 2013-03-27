@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Series Attributes Report,Report Generated: 2/8/2013
+Series Attributes Report,Report Generated: 3/26/2013
 
 Textbox14
 
@@ -417,7 +417,7 @@ CAMDS,A,CAMDS Series A,Link to the Specification,
 CAMDS,A,CAMDS Series A,Notes,
 CAMDS,A,CAMDS Series A,PrimaryScienceDiscipline,B
 CAMDS,A,CAMDS Series A,Produces Acoustic Interference,
-CAMDS,A,CAMDS Series A,Ready for 2013?,No
+CAMDS,A,CAMDS Series A,Ready for 2013?,No. Waiver 1303-00956.
 CAMDS,A,CAMDS Series A,RSN O&M Spares,
 CAMDS,A,CAMDS Series A,RSN Part Number,
 CAMDS,A,CAMDS Series A,Susceptible to Acoustic Interference,
@@ -1222,7 +1222,7 @@ FDCHP,0,FDCHP Series 0,Link to the Specification,
 FDCHP,0,FDCHP Series 0,Notes,
 FDCHP,0,FDCHP Series 0,PrimaryScienceDiscipline,P
 FDCHP,0,FDCHP Series 0,Produces Acoustic Interference,
-FDCHP,0,FDCHP Series 0,Ready for 2013?,Maybe
+FDCHP,0,FDCHP Series 0,Ready for 2013?,No. ECR 1303-00996.
 FDCHP,0,FDCHP Series 0,RSN O&M Spares,
 FDCHP,0,FDCHP Series 0,RSN Part Number,
 FDCHP,0,FDCHP Series 0,Susceptible to Acoustic Interference,
@@ -1705,7 +1705,7 @@ MASSP,A,MASSP Series A,Link to the Specification,
 MASSP,A,MASSP Series A,Notes,
 MASSP,A,MASSP Series A,PrimaryScienceDiscipline,C
 MASSP,A,MASSP Series A,Produces Acoustic Interference,
-MASSP,A,MASSP Series A,Ready for 2013?,
+MASSP,A,MASSP Series A,Ready for 2013?,Maybe.
 MASSP,A,MASSP Series A,RSN O&M Spares,
 MASSP,A,MASSP Series A,RSN Part Number,
 MASSP,A,MASSP Series A,Susceptible to Acoustic Interference,
@@ -2694,7 +2694,7 @@ THSPH,A,THSPH Series A,Link to the Specification,
 THSPH,A,THSPH Series A,Notes,
 THSPH,A,THSPH Series A,PrimaryScienceDiscipline,C
 THSPH,A,THSPH Series A,Produces Acoustic Interference,
-THSPH,A,THSPH Series A,Ready for 2013?,
+THSPH,A,THSPH Series A,Ready for 2013?,No. (Waiver Pending)
 THSPH,A,THSPH Series A,RSN O&M Spares,
 THSPH,A,THSPH Series A,RSN Part Number,
 THSPH,A,THSPH Series A,Susceptible to Acoustic Interference,
@@ -3039,7 +3039,7 @@ ZPLSC,A,ZPLSC Series A,Link to the Specification,
 ZPLSC,A,ZPLSC Series A,Notes,
 ZPLSC,A,ZPLSC Series A,PrimaryScienceDiscipline,B
 ZPLSC,A,ZPLSC Series A,Produces Acoustic Interference,
-ZPLSC,A,ZPLSC Series A,Ready for 2013?,
+ZPLSC,A,ZPLSC Series A,Ready for 2013?,No.  Waiver 1303-00954.
 ZPLSC,A,ZPLSC Series A,RSN O&M Spares,
 ZPLSC,A,ZPLSC Series A,RSN Part Number,
 ZPLSC,A,ZPLSC Series A,Susceptible to Acoustic Interference,Yes
@@ -3062,7 +3062,7 @@ ZPLSC,B,ZPLSC Series B,Link to the Specification,
 ZPLSC,B,ZPLSC Series B,Notes,
 ZPLSC,B,ZPLSC Series B,PrimaryScienceDiscipline,B
 ZPLSC,B,ZPLSC Series B,Produces Acoustic Interference,
-ZPLSC,B,ZPLSC Series B,Ready for 2013?,
+ZPLSC,B,ZPLSC Series B,Ready for 2013?,No.  Waiver 1303-00954.
 ZPLSC,B,ZPLSC Series B,RSN O&M Spares,
 ZPLSC,B,ZPLSC Series B,RSN Part Number,
 ZPLSC,B,ZPLSC Series B,Susceptible to Acoustic Interference,Yes

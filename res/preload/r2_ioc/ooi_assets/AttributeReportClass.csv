@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Class Attributes Report,Report Generated: 2/8/2013
+Class Attributes Report,Report Generated: 3/26/2013
 
 Textbox14
 
@@ -325,7 +325,7 @@ FDCHP,Flux direct covariance,Link to the Specification,
 FDCHP,Flux direct covariance,Notes,
 FDCHP,Flux direct covariance,PrimaryScienceDiscipline,P
 FDCHP,Flux direct covariance,Produces Acoustic Interference,
-FDCHP,Flux direct covariance,Ready for 2013?,Maybe
+FDCHP,Flux direct covariance,Ready for 2013?,No. ECR 1303-00996.
 FDCHP,Flux direct covariance,RSN O&M Spares,
 FDCHP,Flux direct covariance,RSN Part Number,
 FDCHP,Flux direct covariance,Susceptible to Acoustic Interference,
@@ -509,7 +509,7 @@ MASSP,Mass Spectrometer,Link to the Specification,
 MASSP,Mass Spectrometer,Notes,
 MASSP,Mass Spectrometer,PrimaryScienceDiscipline,C
 MASSP,Mass Spectrometer,Produces Acoustic Interference,
-MASSP,Mass Spectrometer,Ready for 2013?,
+MASSP,Mass Spectrometer,Ready for 2013?,Maybe.
 MASSP,Mass Spectrometer,RSN O&M Spares,
 MASSP,Mass Spectrometer,RSN Part Number,
 MASSP,Mass Spectrometer,Susceptible to Acoustic Interference,
@@ -946,7 +946,7 @@ THSPH,Temp H2 H2S pH,Link to the Specification,
 THSPH,Temp H2 H2S pH,Notes,
 THSPH,Temp H2 H2S pH,PrimaryScienceDiscipline,C
 THSPH,Temp H2 H2S pH,Produces Acoustic Interference,
-THSPH,Temp H2 H2S pH,Ready for 2013?,
+THSPH,Temp H2 H2S pH,Ready for 2013?,No. (Waiver Pending)
 THSPH,Temp H2 H2S pH,RSN O&M Spares,
 THSPH,Temp H2 H2S pH,RSN Part Number,
 THSPH,Temp H2 H2S pH,Susceptible to Acoustic Interference,
@@ -1107,7 +1107,7 @@ ZPLSC,Plankton ZP sonar coastal,Link to the Specification,
 ZPLSC,Plankton ZP sonar coastal,Notes,
 ZPLSC,Plankton ZP sonar coastal,PrimaryScienceDiscipline,B
 ZPLSC,Plankton ZP sonar coastal,Produces Acoustic Interference,
-ZPLSC,Plankton ZP sonar coastal,Ready for 2013?,
+ZPLSC,Plankton ZP sonar coastal,Ready for 2013?,No.  Waiver 1303-00954.
 ZPLSC,Plankton ZP sonar coastal,RSN O&M Spares,
 ZPLSC,Plankton ZP sonar coastal,RSN Part Number,
 ZPLSC,Plankton ZP sonar coastal,Susceptible to Acoustic Interference,Yes
@@ -1130,7 +1130,7 @@ ZPLSG,Plankton ZP sonar global,Link to the Specification,
 ZPLSG,Plankton ZP sonar global,Notes,
 ZPLSG,Plankton ZP sonar global,PrimaryScienceDiscipline,B
 ZPLSG,Plankton ZP sonar global,Produces Acoustic Interference,
-ZPLSG,Plankton ZP sonar global,Ready for 2013?,
+ZPLSG,Plankton ZP sonar global,Ready for 2013?,No. Waiver 1303-00954.
 ZPLSG,Plankton ZP sonar global,RSN O&M Spares,
 ZPLSG,Plankton ZP sonar global,RSN Part Number,
 ZPLSG,Plankton ZP sonar global,Susceptible to Acoustic Interference,Yes

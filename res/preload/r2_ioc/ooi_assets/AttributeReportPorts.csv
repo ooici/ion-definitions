@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Port Attributes Report,Report Generated: 2/8/2013
+Port Attributes Report,Report Generated: 3/26/2013
 
 Textbox14
 
@@ -243,7 +243,7 @@ CE01ISSP-SP001-10,Relative Depth,Sea surface to 2m above bottom
 CE02SHBP-LJ01D-05,depth_port_max,78
 CE02SHBP-LJ01D-05,depth_port_min,78
 CE02SHBP-LJ01D-05,depth_subsite,80
-CE02SHBP-LJ01D-05,First Deployment Date,2013-08
+CE02SHBP-LJ01D-05,First Deployment Date,2014
 CE02SHBP-LJ01D-05,latitude,44.64
 CE02SHBP-LJ01D-05,longitude,124.3
 CE02SHBP-LJ01D-05,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -251,7 +251,7 @@ CE02SHBP-LJ01D-05,Relative Depth,"Mounted 2m above bottom, uplooking"
 CE02SHBP-LJ01D-06,depth_port_max,78
 CE02SHBP-LJ01D-06,depth_port_min,78
 CE02SHBP-LJ01D-06,depth_subsite,80
-CE02SHBP-LJ01D-06,First Deployment Date,2013-08
+CE02SHBP-LJ01D-06,First Deployment Date,2014
 CE02SHBP-LJ01D-06,latitude,44.64
 CE02SHBP-LJ01D-06,longitude,124.3
 CE02SHBP-LJ01D-06,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -259,7 +259,7 @@ CE02SHBP-LJ01D-06,Relative Depth,2m above bottom
 CE02SHBP-LJ01D-07,depth_port_max,78
 CE02SHBP-LJ01D-07,depth_port_min,78
 CE02SHBP-LJ01D-07,depth_subsite,80
-CE02SHBP-LJ01D-07,First Deployment Date,2013-08
+CE02SHBP-LJ01D-07,First Deployment Date,2014
 CE02SHBP-LJ01D-07,latitude,44.64
 CE02SHBP-LJ01D-07,longitude,124.3
 CE02SHBP-LJ01D-07,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -267,7 +267,7 @@ CE02SHBP-LJ01D-07,Relative Depth,2m above bottom
 CE02SHBP-LJ01D-08,depth_port_max,78
 CE02SHBP-LJ01D-08,depth_port_min,78
 CE02SHBP-LJ01D-08,depth_subsite,80
-CE02SHBP-LJ01D-08,First Deployment Date,2013-08
+CE02SHBP-LJ01D-08,First Deployment Date,2014
 CE02SHBP-LJ01D-08,latitude,44.64
 CE02SHBP-LJ01D-08,longitude,124.3
 CE02SHBP-LJ01D-08,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -275,7 +275,7 @@ CE02SHBP-LJ01D-08,Relative Depth,2m above bottom
 CE02SHBP-LJ01D-09,depth_port_max,78
 CE02SHBP-LJ01D-09,depth_port_min,78
 CE02SHBP-LJ01D-09,depth_subsite,80
-CE02SHBP-LJ01D-09,First Deployment Date,2013-08
+CE02SHBP-LJ01D-09,First Deployment Date,2014
 CE02SHBP-LJ01D-09,latitude,44.64
 CE02SHBP-LJ01D-09,longitude,124.3
 CE02SHBP-LJ01D-09,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -283,7 +283,7 @@ CE02SHBP-LJ01D-09,Relative Depth,2m above bottom
 CE02SHBP-LJ01D-10,depth_port_max,78
 CE02SHBP-LJ01D-10,depth_port_min,78
 CE02SHBP-LJ01D-10,depth_subsite,80
-CE02SHBP-LJ01D-10,First Deployment Date,2013-08
+CE02SHBP-LJ01D-10,First Deployment Date,2014
 CE02SHBP-LJ01D-10,latitude,44.64
 CE02SHBP-LJ01D-10,longitude,124.3
 CE02SHBP-LJ01D-10,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -291,7 +291,7 @@ CE02SHBP-LJ01D-10,Relative Depth,2m above bottom
 CE02SHBP-LJ01D-11,depth_port_max,78
 CE02SHBP-LJ01D-11,depth_port_min,78
 CE02SHBP-LJ01D-11,depth_subsite,80
-CE02SHBP-LJ01D-11,First Deployment Date,2013-08
+CE02SHBP-LJ01D-11,First Deployment Date,2014
 CE02SHBP-LJ01D-11,latitude,44.64
 CE02SHBP-LJ01D-11,longitude,124.3
 CE02SHBP-LJ01D-11,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -299,7 +299,7 @@ CE02SHBP-LJ01D-11,Relative Depth,2m above bottom
 CE02SHBP-LJ01D-12,depth_port_max,78
 CE02SHBP-LJ01D-12,depth_port_min,78
 CE02SHBP-LJ01D-12,depth_subsite,80
-CE02SHBP-LJ01D-12,First Deployment Date,2013-08
+CE02SHBP-LJ01D-12,First Deployment Date,2014
 CE02SHBP-LJ01D-12,latitude,44.64
 CE02SHBP-LJ01D-12,longitude,124.3
 CE02SHBP-LJ01D-12,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -307,7 +307,7 @@ CE02SHBP-LJ01D-12,Relative Depth,2m above bottom
 CE02SHBP-MJ01C-07,depth_port_max,78
 CE02SHBP-MJ01C-07,depth_port_min,78
 CE02SHBP-MJ01C-07,depth_subsite,80
-CE02SHBP-MJ01C-07,First Deployment Date,2013-08
+CE02SHBP-MJ01C-07,First Deployment Date,2014
 CE02SHBP-MJ01C-07,latitude,44.64
 CE02SHBP-MJ01C-07,longitude,124.3
 CE02SHBP-MJ01C-07,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -608,6 +608,14 @@ CE04OSHY-PC01B-12,latitude,44.65
 CE04OSHY-PC01B-12,longitude,124.9
 CE04OSHY-PC01B-12,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
 CE04OSHY-PC01B-12,Relative Depth,200m below sea surface
+CE04OSHY-PC01B-4A,depth_port_max,
+CE04OSHY-PC01B-4A,depth_port_min,
+CE04OSHY-PC01B-4A,depth_subsite,500
+CE04OSHY-PC01B-4A,First Deployment Date,2014-08
+CE04OSHY-PC01B-4A,latitude,44.65
+CE04OSHY-PC01B-4A,longitude,124.9
+CE04OSHY-PC01B-4A,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
+CE04OSHY-PC01B-4A,Relative Depth,
 CE04OSHY-SF01B-02,depth_port_max,200
 CE04OSHY-SF01B-02,depth_port_min,20
 CE04OSHY-SF01B-02,depth_subsite,500
@@ -779,7 +787,7 @@ CE04OSSM-SB001-06,Relative Depth,Sea Surface
 CE05MOAS-GL001-01,depth_port_max,1000
 CE05MOAS-GL001-01,depth_port_min,0
 CE05MOAS-GL001-01,depth_subsite,
-CE05MOAS-GL001-01,First Deployment Date,2013-06
+CE05MOAS-GL001-01,First Deployment Date,2013-10
 CE05MOAS-GL001-01,latitude,
 CE05MOAS-GL001-01,longitude,
 CE05MOAS-GL001-01,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -787,7 +795,7 @@ CE05MOAS-GL001-01,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL001-02,depth_port_max,1000
 CE05MOAS-GL001-02,depth_port_min,0
 CE05MOAS-GL001-02,depth_subsite,
-CE05MOAS-GL001-02,First Deployment Date,2013-06
+CE05MOAS-GL001-02,First Deployment Date,2013-10
 CE05MOAS-GL001-02,latitude,
 CE05MOAS-GL001-02,longitude,
 CE05MOAS-GL001-02,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -795,7 +803,7 @@ CE05MOAS-GL001-02,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL001-03,depth_port_max,1000
 CE05MOAS-GL001-03,depth_port_min,0
 CE05MOAS-GL001-03,depth_subsite,
-CE05MOAS-GL001-03,First Deployment Date,2013-06
+CE05MOAS-GL001-03,First Deployment Date,2013-10
 CE05MOAS-GL001-03,latitude,
 CE05MOAS-GL001-03,longitude,
 CE05MOAS-GL001-03,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -803,7 +811,7 @@ CE05MOAS-GL001-03,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL001-04,depth_port_max,1000
 CE05MOAS-GL001-04,depth_port_min,0
 CE05MOAS-GL001-04,depth_subsite,
-CE05MOAS-GL001-04,First Deployment Date,2013-06
+CE05MOAS-GL001-04,First Deployment Date,2013-10
 CE05MOAS-GL001-04,latitude,
 CE05MOAS-GL001-04,longitude,
 CE05MOAS-GL001-04,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -811,7 +819,7 @@ CE05MOAS-GL001-04,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL001-05,depth_port_max,1000
 CE05MOAS-GL001-05,depth_port_min,0
 CE05MOAS-GL001-05,depth_subsite,
-CE05MOAS-GL001-05,First Deployment Date,2013-06
+CE05MOAS-GL001-05,First Deployment Date,2013-10
 CE05MOAS-GL001-05,latitude,
 CE05MOAS-GL001-05,longitude,
 CE05MOAS-GL001-05,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -819,7 +827,7 @@ CE05MOAS-GL001-05,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL002-01,depth_port_max,1000
 CE05MOAS-GL002-01,depth_port_min,0
 CE05MOAS-GL002-01,depth_subsite,
-CE05MOAS-GL002-01,First Deployment Date,2013-06
+CE05MOAS-GL002-01,First Deployment Date,2013-10
 CE05MOAS-GL002-01,latitude,
 CE05MOAS-GL002-01,longitude,
 CE05MOAS-GL002-01,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -827,7 +835,7 @@ CE05MOAS-GL002-01,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL002-02,depth_port_max,1000
 CE05MOAS-GL002-02,depth_port_min,0
 CE05MOAS-GL002-02,depth_subsite,
-CE05MOAS-GL002-02,First Deployment Date,2013-06
+CE05MOAS-GL002-02,First Deployment Date,2013-10
 CE05MOAS-GL002-02,latitude,
 CE05MOAS-GL002-02,longitude,
 CE05MOAS-GL002-02,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -835,7 +843,7 @@ CE05MOAS-GL002-02,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL002-03,depth_port_max,1000
 CE05MOAS-GL002-03,depth_port_min,0
 CE05MOAS-GL002-03,depth_subsite,
-CE05MOAS-GL002-03,First Deployment Date,2013-06
+CE05MOAS-GL002-03,First Deployment Date,2013-10
 CE05MOAS-GL002-03,latitude,
 CE05MOAS-GL002-03,longitude,
 CE05MOAS-GL002-03,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -843,7 +851,7 @@ CE05MOAS-GL002-03,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL002-04,depth_port_max,1000
 CE05MOAS-GL002-04,depth_port_min,0
 CE05MOAS-GL002-04,depth_subsite,
-CE05MOAS-GL002-04,First Deployment Date,2013-06
+CE05MOAS-GL002-04,First Deployment Date,2013-10
 CE05MOAS-GL002-04,latitude,
 CE05MOAS-GL002-04,longitude,
 CE05MOAS-GL002-04,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -851,7 +859,7 @@ CE05MOAS-GL002-04,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL002-05,depth_port_max,1000
 CE05MOAS-GL002-05,depth_port_min,0
 CE05MOAS-GL002-05,depth_subsite,
-CE05MOAS-GL002-05,First Deployment Date,2013-06
+CE05MOAS-GL002-05,First Deployment Date,2013-10
 CE05MOAS-GL002-05,latitude,
 CE05MOAS-GL002-05,longitude,
 CE05MOAS-GL002-05,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -859,7 +867,7 @@ CE05MOAS-GL002-05,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL003-01,depth_port_max,1000
 CE05MOAS-GL003-01,depth_port_min,0
 CE05MOAS-GL003-01,depth_subsite,
-CE05MOAS-GL003-01,First Deployment Date,2013-06
+CE05MOAS-GL003-01,First Deployment Date,2013-10
 CE05MOAS-GL003-01,latitude,
 CE05MOAS-GL003-01,longitude,
 CE05MOAS-GL003-01,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -867,7 +875,7 @@ CE05MOAS-GL003-01,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL003-02,depth_port_max,1000
 CE05MOAS-GL003-02,depth_port_min,0
 CE05MOAS-GL003-02,depth_subsite,
-CE05MOAS-GL003-02,First Deployment Date,2013-06
+CE05MOAS-GL003-02,First Deployment Date,2013-10
 CE05MOAS-GL003-02,latitude,
 CE05MOAS-GL003-02,longitude,
 CE05MOAS-GL003-02,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -875,7 +883,7 @@ CE05MOAS-GL003-02,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL003-03,depth_port_max,1000
 CE05MOAS-GL003-03,depth_port_min,0
 CE05MOAS-GL003-03,depth_subsite,
-CE05MOAS-GL003-03,First Deployment Date,2013-06
+CE05MOAS-GL003-03,First Deployment Date,2013-10
 CE05MOAS-GL003-03,latitude,
 CE05MOAS-GL003-03,longitude,
 CE05MOAS-GL003-03,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -883,7 +891,7 @@ CE05MOAS-GL003-03,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL003-04,depth_port_max,1000
 CE05MOAS-GL003-04,depth_port_min,0
 CE05MOAS-GL003-04,depth_subsite,
-CE05MOAS-GL003-04,First Deployment Date,2013-06
+CE05MOAS-GL003-04,First Deployment Date,2013-10
 CE05MOAS-GL003-04,latitude,
 CE05MOAS-GL003-04,longitude,
 CE05MOAS-GL003-04,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -891,7 +899,7 @@ CE05MOAS-GL003-04,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL003-05,depth_port_max,1000
 CE05MOAS-GL003-05,depth_port_min,0
 CE05MOAS-GL003-05,depth_subsite,
-CE05MOAS-GL003-05,First Deployment Date,2013-06
+CE05MOAS-GL003-05,First Deployment Date,2013-10
 CE05MOAS-GL003-05,latitude,
 CE05MOAS-GL003-05,longitude,
 CE05MOAS-GL003-05,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -899,7 +907,7 @@ CE05MOAS-GL003-05,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL004-01,depth_port_max,1000
 CE05MOAS-GL004-01,depth_port_min,0
 CE05MOAS-GL004-01,depth_subsite,
-CE05MOAS-GL004-01,First Deployment Date,2013-06
+CE05MOAS-GL004-01,First Deployment Date,2013-10
 CE05MOAS-GL004-01,latitude,
 CE05MOAS-GL004-01,longitude,
 CE05MOAS-GL004-01,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -907,7 +915,7 @@ CE05MOAS-GL004-01,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL004-02,depth_port_max,1000
 CE05MOAS-GL004-02,depth_port_min,0
 CE05MOAS-GL004-02,depth_subsite,
-CE05MOAS-GL004-02,First Deployment Date,2013-06
+CE05MOAS-GL004-02,First Deployment Date,2013-10
 CE05MOAS-GL004-02,latitude,
 CE05MOAS-GL004-02,longitude,
 CE05MOAS-GL004-02,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -915,7 +923,7 @@ CE05MOAS-GL004-02,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL004-03,depth_port_max,1000
 CE05MOAS-GL004-03,depth_port_min,0
 CE05MOAS-GL004-03,depth_subsite,
-CE05MOAS-GL004-03,First Deployment Date,2013-06
+CE05MOAS-GL004-03,First Deployment Date,2013-10
 CE05MOAS-GL004-03,latitude,
 CE05MOAS-GL004-03,longitude,
 CE05MOAS-GL004-03,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -923,7 +931,7 @@ CE05MOAS-GL004-03,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL004-04,depth_port_max,1000
 CE05MOAS-GL004-04,depth_port_min,0
 CE05MOAS-GL004-04,depth_subsite,
-CE05MOAS-GL004-04,First Deployment Date,2013-06
+CE05MOAS-GL004-04,First Deployment Date,2013-10
 CE05MOAS-GL004-04,latitude,
 CE05MOAS-GL004-04,longitude,
 CE05MOAS-GL004-04,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -931,7 +939,7 @@ CE05MOAS-GL004-04,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL004-05,depth_port_max,1000
 CE05MOAS-GL004-05,depth_port_min,0
 CE05MOAS-GL004-05,depth_subsite,
-CE05MOAS-GL004-05,First Deployment Date,2013-06
+CE05MOAS-GL004-05,First Deployment Date,2013-10
 CE05MOAS-GL004-05,latitude,
 CE05MOAS-GL004-05,longitude,
 CE05MOAS-GL004-05,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -939,7 +947,7 @@ CE05MOAS-GL004-05,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL005-01,depth_port_max,1000
 CE05MOAS-GL005-01,depth_port_min,0
 CE05MOAS-GL005-01,depth_subsite,
-CE05MOAS-GL005-01,First Deployment Date,2013-06
+CE05MOAS-GL005-01,First Deployment Date,2013-10
 CE05MOAS-GL005-01,latitude,
 CE05MOAS-GL005-01,longitude,
 CE05MOAS-GL005-01,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -947,7 +955,7 @@ CE05MOAS-GL005-01,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL005-02,depth_port_max,1000
 CE05MOAS-GL005-02,depth_port_min,0
 CE05MOAS-GL005-02,depth_subsite,
-CE05MOAS-GL005-02,First Deployment Date,2013-06
+CE05MOAS-GL005-02,First Deployment Date,2013-10
 CE05MOAS-GL005-02,latitude,
 CE05MOAS-GL005-02,longitude,
 CE05MOAS-GL005-02,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -955,7 +963,7 @@ CE05MOAS-GL005-02,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL005-03,depth_port_max,1000
 CE05MOAS-GL005-03,depth_port_min,0
 CE05MOAS-GL005-03,depth_subsite,
-CE05MOAS-GL005-03,First Deployment Date,2013-06
+CE05MOAS-GL005-03,First Deployment Date,2013-10
 CE05MOAS-GL005-03,latitude,
 CE05MOAS-GL005-03,longitude,
 CE05MOAS-GL005-03,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -963,7 +971,7 @@ CE05MOAS-GL005-03,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL005-04,depth_port_max,1000
 CE05MOAS-GL005-04,depth_port_min,0
 CE05MOAS-GL005-04,depth_subsite,
-CE05MOAS-GL005-04,First Deployment Date,2013-06
+CE05MOAS-GL005-04,First Deployment Date,2013-10
 CE05MOAS-GL005-04,latitude,
 CE05MOAS-GL005-04,longitude,
 CE05MOAS-GL005-04,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -971,7 +979,7 @@ CE05MOAS-GL005-04,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL005-05,depth_port_max,1000
 CE05MOAS-GL005-05,depth_port_min,0
 CE05MOAS-GL005-05,depth_subsite,
-CE05MOAS-GL005-05,First Deployment Date,2013-06
+CE05MOAS-GL005-05,First Deployment Date,2013-10
 CE05MOAS-GL005-05,latitude,
 CE05MOAS-GL005-05,longitude,
 CE05MOAS-GL005-05,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -979,7 +987,7 @@ CE05MOAS-GL005-05,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL006-01,depth_port_max,1000
 CE05MOAS-GL006-01,depth_port_min,0
 CE05MOAS-GL006-01,depth_subsite,
-CE05MOAS-GL006-01,First Deployment Date,2013-06
+CE05MOAS-GL006-01,First Deployment Date,2013-10
 CE05MOAS-GL006-01,latitude,
 CE05MOAS-GL006-01,longitude,
 CE05MOAS-GL006-01,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -987,7 +995,7 @@ CE05MOAS-GL006-01,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL006-02,depth_port_max,1000
 CE05MOAS-GL006-02,depth_port_min,0
 CE05MOAS-GL006-02,depth_subsite,
-CE05MOAS-GL006-02,First Deployment Date,2013-06
+CE05MOAS-GL006-02,First Deployment Date,2013-10
 CE05MOAS-GL006-02,latitude,
 CE05MOAS-GL006-02,longitude,
 CE05MOAS-GL006-02,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -995,7 +1003,7 @@ CE05MOAS-GL006-02,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL006-03,depth_port_max,1000
 CE05MOAS-GL006-03,depth_port_min,0
 CE05MOAS-GL006-03,depth_subsite,
-CE05MOAS-GL006-03,First Deployment Date,2013-06
+CE05MOAS-GL006-03,First Deployment Date,2013-10
 CE05MOAS-GL006-03,latitude,
 CE05MOAS-GL006-03,longitude,
 CE05MOAS-GL006-03,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -1003,7 +1011,7 @@ CE05MOAS-GL006-03,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL006-04,depth_port_max,1000
 CE05MOAS-GL006-04,depth_port_min,0
 CE05MOAS-GL006-04,depth_subsite,
-CE05MOAS-GL006-04,First Deployment Date,2013-06
+CE05MOAS-GL006-04,First Deployment Date,2013-10
 CE05MOAS-GL006-04,latitude,
 CE05MOAS-GL006-04,longitude,
 CE05MOAS-GL006-04,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -1011,7 +1019,7 @@ CE05MOAS-GL006-04,Relative Depth,Sea surface to near seafloor or <= 1000m
 CE05MOAS-GL006-05,depth_port_max,1000
 CE05MOAS-GL006-05,depth_port_min,0
 CE05MOAS-GL006-05,depth_subsite,
-CE05MOAS-GL006-05,First Deployment Date,2013-06
+CE05MOAS-GL006-05,First Deployment Date,2013-10
 CE05MOAS-GL006-05,latitude,
 CE05MOAS-GL006-05,longitude,
 CE05MOAS-GL006-05,Platform Agent Type,Shore CyberPoP - Coastal Glider Dock Server
@@ -1435,7 +1443,7 @@ CE07SHSM-SB001-06,Relative Depth,Sea Surface
 CE07SHSP-SP001-01,depth_port_max,78
 CE07SHSP-SP001-01,depth_port_min,0
 CE07SHSP-SP001-01,depth_subsite,80
-CE07SHSP-SP001-01,First Deployment Date,2013-10
+CE07SHSP-SP001-01,First Deployment Date,2014
 CE07SHSP-SP001-01,latitude,47
 CE07SHSP-SP001-01,longitude,124.27
 CE07SHSP-SP001-01,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1443,7 +1451,7 @@ CE07SHSP-SP001-01,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-02,depth_port_max,78
 CE07SHSP-SP001-02,depth_port_min,0
 CE07SHSP-SP001-02,depth_subsite,80
-CE07SHSP-SP001-02,First Deployment Date,2013-10
+CE07SHSP-SP001-02,First Deployment Date,2014
 CE07SHSP-SP001-02,latitude,47
 CE07SHSP-SP001-02,longitude,124.27
 CE07SHSP-SP001-02,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1451,7 +1459,7 @@ CE07SHSP-SP001-02,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-03,depth_port_max,78
 CE07SHSP-SP001-03,depth_port_min,0
 CE07SHSP-SP001-03,depth_subsite,80
-CE07SHSP-SP001-03,First Deployment Date,2013-10
+CE07SHSP-SP001-03,First Deployment Date,2014
 CE07SHSP-SP001-03,latitude,47
 CE07SHSP-SP001-03,longitude,124.27
 CE07SHSP-SP001-03,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1459,7 +1467,7 @@ CE07SHSP-SP001-03,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-04,depth_port_max,78
 CE07SHSP-SP001-04,depth_port_min,0
 CE07SHSP-SP001-04,depth_subsite,80
-CE07SHSP-SP001-04,First Deployment Date,2013-10
+CE07SHSP-SP001-04,First Deployment Date,2014
 CE07SHSP-SP001-04,latitude,47
 CE07SHSP-SP001-04,longitude,124.27
 CE07SHSP-SP001-04,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1467,7 +1475,7 @@ CE07SHSP-SP001-04,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-05,depth_port_max,78
 CE07SHSP-SP001-05,depth_port_min,0
 CE07SHSP-SP001-05,depth_subsite,80
-CE07SHSP-SP001-05,First Deployment Date,2013-10
+CE07SHSP-SP001-05,First Deployment Date,2014
 CE07SHSP-SP001-05,latitude,47
 CE07SHSP-SP001-05,longitude,124.27
 CE07SHSP-SP001-05,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1475,7 +1483,7 @@ CE07SHSP-SP001-05,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-06,depth_port_max,78
 CE07SHSP-SP001-06,depth_port_min,0
 CE07SHSP-SP001-06,depth_subsite,80
-CE07SHSP-SP001-06,First Deployment Date,2013-10
+CE07SHSP-SP001-06,First Deployment Date,2014
 CE07SHSP-SP001-06,latitude,47
 CE07SHSP-SP001-06,longitude,124.27
 CE07SHSP-SP001-06,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1483,7 +1491,7 @@ CE07SHSP-SP001-06,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-07,depth_port_max,78
 CE07SHSP-SP001-07,depth_port_min,0
 CE07SHSP-SP001-07,depth_subsite,80
-CE07SHSP-SP001-07,First Deployment Date,2013-10
+CE07SHSP-SP001-07,First Deployment Date,2014
 CE07SHSP-SP001-07,latitude,47
 CE07SHSP-SP001-07,longitude,124.27
 CE07SHSP-SP001-07,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1491,7 +1499,7 @@ CE07SHSP-SP001-07,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-08,depth_port_max,78
 CE07SHSP-SP001-08,depth_port_min,0
 CE07SHSP-SP001-08,depth_subsite,80
-CE07SHSP-SP001-08,First Deployment Date,2013-10
+CE07SHSP-SP001-08,First Deployment Date,2014
 CE07SHSP-SP001-08,latitude,47
 CE07SHSP-SP001-08,longitude,124.27
 CE07SHSP-SP001-08,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -1499,7 +1507,7 @@ CE07SHSP-SP001-08,Relative Depth,Sea surface to 2m above bottom
 CE07SHSP-SP001-09,depth_port_max,78
 CE07SHSP-SP001-09,depth_port_min,0
 CE07SHSP-SP001-09,depth_subsite,80
-CE07SHSP-SP001-09,First Deployment Date,2013-10
+CE07SHSP-SP001-09,First Deployment Date,2014
 CE07SHSP-SP001-09,latitude,47
 CE07SHSP-SP001-09,longitude,124.27
 CE07SHSP-SP001-09,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -5531,7 +5539,7 @@ RS01SLBS-MJ01A-07,Relative Depth,
 RS01SUM1-LJ01B-05,depth_port_max,807
 RS01SUM1-LJ01B-05,depth_port_min,807
 RS01SUM1-LJ01B-05,depth_subsite,807
-RS01SUM1-LJ01B-05,First Deployment Date,2013-08
+RS01SUM1-LJ01B-05,First Deployment Date,2014
 RS01SUM1-LJ01B-05,latitude,44.568
 RS01SUM1-LJ01B-05,longitude,125.15
 RS01SUM1-LJ01B-05,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5539,7 +5547,7 @@ RS01SUM1-LJ01B-05,Relative Depth,Bottom
 RS01SUM1-LJ01B-06,depth_port_max,807
 RS01SUM1-LJ01B-06,depth_port_min,807
 RS01SUM1-LJ01B-06,depth_subsite,807
-RS01SUM1-LJ01B-06,First Deployment Date,2013-08
+RS01SUM1-LJ01B-06,First Deployment Date,2014
 RS01SUM1-LJ01B-06,latitude,44.568
 RS01SUM1-LJ01B-06,longitude,125.15
 RS01SUM1-LJ01B-06,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5547,7 +5555,7 @@ RS01SUM1-LJ01B-06,Relative Depth,Bottom
 RS01SUM1-LJ01B-07,depth_port_max,807
 RS01SUM1-LJ01B-07,depth_port_min,807
 RS01SUM1-LJ01B-07,depth_subsite,807
-RS01SUM1-LJ01B-07,First Deployment Date,2013-08
+RS01SUM1-LJ01B-07,First Deployment Date,2014
 RS01SUM1-LJ01B-07,latitude,44.568
 RS01SUM1-LJ01B-07,longitude,125.15
 RS01SUM1-LJ01B-07,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5555,7 +5563,7 @@ RS01SUM1-LJ01B-07,Relative Depth,Bottom
 RS01SUM1-LJ01B-08,depth_port_max,807
 RS01SUM1-LJ01B-08,depth_port_min,807
 RS01SUM1-LJ01B-08,depth_subsite,807
-RS01SUM1-LJ01B-08,First Deployment Date,2013-08
+RS01SUM1-LJ01B-08,First Deployment Date,2014
 RS01SUM1-LJ01B-08,latitude,44.568
 RS01SUM1-LJ01B-08,longitude,125.15
 RS01SUM1-LJ01B-08,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5563,7 +5571,7 @@ RS01SUM1-LJ01B-08,Relative Depth,Bottom
 RS01SUM1-LJ01B-09,depth_port_max,807
 RS01SUM1-LJ01B-09,depth_port_min,807
 RS01SUM1-LJ01B-09,depth_subsite,807
-RS01SUM1-LJ01B-09,First Deployment Date,2013-08
+RS01SUM1-LJ01B-09,First Deployment Date,2014
 RS01SUM1-LJ01B-09,latitude,44.568
 RS01SUM1-LJ01B-09,longitude,125.15
 RS01SUM1-LJ01B-09,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5571,7 +5579,7 @@ RS01SUM1-LJ01B-09,Relative Depth,Bottom
 RS01SUM1-LJ01B-10,depth_port_max,
 RS01SUM1-LJ01B-10,depth_port_min,
 RS01SUM1-LJ01B-10,depth_subsite,807
-RS01SUM1-LJ01B-10,First Deployment Date,2013-08
+RS01SUM1-LJ01B-10,First Deployment Date,2014
 RS01SUM1-LJ01B-10,latitude,44.568
 RS01SUM1-LJ01B-10,longitude,125.15
 RS01SUM1-LJ01B-10,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5579,7 +5587,7 @@ RS01SUM1-LJ01B-10,Relative Depth,
 RS01SUM2-MJ01B-00,depth_port_max,811
 RS01SUM2-MJ01B-00,depth_port_min,811
 RS01SUM2-MJ01B-00,depth_subsite,811
-RS01SUM2-MJ01B-00,First Deployment Date,2013-08
+RS01SUM2-MJ01B-00,First Deployment Date,2014
 RS01SUM2-MJ01B-00,latitude,44.57
 RS01SUM2-MJ01B-00,longitude,125.147
 RS01SUM2-MJ01B-00,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5587,7 +5595,7 @@ RS01SUM2-MJ01B-00,Relative Depth,Bottom
 RS01SUM2-MJ01B-05,depth_port_max,811
 RS01SUM2-MJ01B-05,depth_port_min,811
 RS01SUM2-MJ01B-05,depth_subsite,811
-RS01SUM2-MJ01B-05,First Deployment Date,2013-08
+RS01SUM2-MJ01B-05,First Deployment Date,2014
 RS01SUM2-MJ01B-05,latitude,44.57
 RS01SUM2-MJ01B-05,longitude,125.147
 RS01SUM2-MJ01B-05,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5595,7 +5603,7 @@ RS01SUM2-MJ01B-05,Relative Depth,"Bottom mount, uplooking"
 RS01SUM2-MJ01B-07,depth_port_max,
 RS01SUM2-MJ01B-07,depth_port_min,
 RS01SUM2-MJ01B-07,depth_subsite,811
-RS01SUM2-MJ01B-07,First Deployment Date,2013-08
+RS01SUM2-MJ01B-07,First Deployment Date,2014
 RS01SUM2-MJ01B-07,latitude,44.57
 RS01SUM2-MJ01B-07,longitude,125.147
 RS01SUM2-MJ01B-07,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -5603,7 +5611,7 @@ RS01SUM2-MJ01B-07,Relative Depth,
 RS01SUM2-MJ01B-08,depth_port_max,
 RS01SUM2-MJ01B-08,depth_port_min,
 RS01SUM2-MJ01B-08,depth_subsite,811
-RS01SUM2-MJ01B-08,First Deployment Date,2013-08
+RS01SUM2-MJ01B-08,First Deployment Date,2014
 RS01SUM2-MJ01B-08,latitude,44.57
 RS01SUM2-MJ01B-08,longitude,125.147
 RS01SUM2-MJ01B-08,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System

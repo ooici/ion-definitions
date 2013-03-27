@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subseries Attributes Report,Report Generated: 2/8/2013
+Subseries Attributes Report,Report Generated: 3/26/2013
 
 Textbox14
 
@@ -417,7 +417,7 @@ CAMDS,A,01,CAMDS Series A Sub 01,Link to the Specification,
 CAMDS,A,01,CAMDS Series A Sub 01,Notes,
 CAMDS,A,01,CAMDS Series A Sub 01,PrimaryScienceDiscipline,B
 CAMDS,A,01,CAMDS Series A Sub 01,Produces Acoustic Interference,
-CAMDS,A,01,CAMDS Series A Sub 01,Ready for 2013?,Yes for RSN.  Maybe for EA.
+CAMDS,A,01,CAMDS Series A Sub 01,Ready for 2013?,No. Waiver 1303-00956.
 CAMDS,A,01,CAMDS Series A Sub 01,RSN O&M Spares,
 CAMDS,A,01,CAMDS Series A Sub 01,RSN Part Number,
 CAMDS,A,01,CAMDS Series A Sub 01,Susceptible to Acoustic Interference,
@@ -1222,7 +1222,7 @@ FDCHP,0,01,FDCHP Series 0 Sub 01,Link to the Specification,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Notes,
 FDCHP,0,01,FDCHP Series 0 Sub 01,PrimaryScienceDiscipline,P
 FDCHP,0,01,FDCHP Series 0 Sub 01,Produces Acoustic Interference,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Ready for 2013?,Maybe
+FDCHP,0,01,FDCHP Series 0 Sub 01,Ready for 2013?,No. ECR 1303-00996.
 FDCHP,0,01,FDCHP Series 0 Sub 01,RSN O&M Spares,
 FDCHP,0,01,FDCHP Series 0 Sub 01,RSN Part Number,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Susceptible to Acoustic Interference,
@@ -1705,7 +1705,7 @@ MASSP,A,01,MASSP Series A Sub 01,Link to the Specification,
 MASSP,A,01,MASSP Series A Sub 01,Notes,
 MASSP,A,01,MASSP Series A Sub 01,PrimaryScienceDiscipline,C
 MASSP,A,01,MASSP Series A Sub 01,Produces Acoustic Interference,
-MASSP,A,01,MASSP Series A Sub 01,Ready for 2013?,Maybe
+MASSP,A,01,MASSP Series A Sub 01,Ready for 2013?,Maybe.
 MASSP,A,01,MASSP Series A Sub 01,RSN O&M Spares,1
 MASSP,A,01,MASSP Series A Sub 01,RSN Part Number,4830-58325
 MASSP,A,01,MASSP Series A Sub 01,Susceptible to Acoustic Interference,
@@ -2694,7 +2694,7 @@ THSPH,A,01,THSPH Series A Sub 01,Link to the Specification,
 THSPH,A,01,THSPH Series A Sub 01,Notes,
 THSPH,A,01,THSPH Series A Sub 01,PrimaryScienceDiscipline,C
 THSPH,A,01,THSPH Series A Sub 01,Produces Acoustic Interference,
-THSPH,A,01,THSPH Series A Sub 01,Ready for 2013?,No
+THSPH,A,01,THSPH Series A Sub 01,Ready for 2013?,No. (Waiver Pending)
 THSPH,A,01,THSPH Series A Sub 01,RSN O&M Spares,1
 THSPH,A,01,THSPH Series A Sub 01,RSN Part Number,4830-58342
 THSPH,A,01,THSPH Series A Sub 01,Susceptible to Acoustic Interference,
@@ -3039,7 +3039,7 @@ ZPLSC,A,01,ZPLSC Series A Sub 01,Link to the Specification,
 ZPLSC,A,01,ZPLSC Series A Sub 01,Notes,
 ZPLSC,A,01,ZPLSC Series A Sub 01,PrimaryScienceDiscipline,B
 ZPLSC,A,01,ZPLSC Series A Sub 01,Produces Acoustic Interference,
-ZPLSC,A,01,ZPLSC Series A Sub 01,Ready for 2013?,
+ZPLSC,A,01,ZPLSC Series A Sub 01,Ready for 2013?,No.  Waiver 1303-00954.
 ZPLSC,A,01,ZPLSC Series A Sub 01,RSN O&M Spares,0
 ZPLSC,A,01,ZPLSC Series A Sub 01,RSN Part Number,4830-63259
 ZPLSC,A,01,ZPLSC Series A Sub 01,Susceptible to Acoustic Interference,Yes

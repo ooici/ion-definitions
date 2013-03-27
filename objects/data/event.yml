@@ -195,6 +195,12 @@ DeviceStatusEvent: !Extends_Event
 
 ---
 
+DeviceAggregateStatusEvent: !Extends_ResourceEvent
+  status_name: !AggregateStatusType
+  status: !DeviceStatusEnum
+  prev_status: !DeviceStatusEnum
+
+
 # ------------------------------------------------------------------------------------
 # Information Content Events
 # Events about the content of an information resource

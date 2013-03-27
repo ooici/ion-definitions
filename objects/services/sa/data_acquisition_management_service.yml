@@ -727,3 +727,10 @@ methods:
     in:
       parser: !Parser
     out:
+
+  parse_document:
+    docstring: ""
+    in:
+      parser_id: ""
+      document:
+    out:

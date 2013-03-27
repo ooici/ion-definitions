@@ -223,8 +223,7 @@ methods:
       Returns an UserInfoExtension object containing additional related information
     in:
       user_info_id: ""
-      user_id: ""  # An optional user id associated with the requesting user - TODO - this may be redundant and can be removed
-      actor_id: "" # An optional actor id associated with the requesting user actor
+      org_id: "" # An optional org id that the user is interested in filtering against.
     out:
       user_info: !UserInfoExtension
     throws:

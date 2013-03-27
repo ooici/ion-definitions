@@ -139,7 +139,7 @@ ExtendedResource: !Extends_ResourceContainer
   #@hasOwnerInfo
   owners: []  # A list of  owner information of this resource
   #@hasResource=Org
-  orgs: []  # A list of orgs to which this resource belongs
+  orgs: []  # A list of orgs to which this resource belongs - NOTE this does not apply to Users!
   #@hasAttachment
   attachments: []  # list of sensors attached to this device
 

@@ -747,3 +747,10 @@ methods:
     out:
       keys: []
 
+  list_qc_references:
+    docstring: "Retrieves a list of stored reference keys in the data provenance"
+    in:
+      data_product_id: ""
+    out:
+      keys: []
+

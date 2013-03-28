@@ -13,3 +13,7 @@ ChangeLogLevel: !Extends_ContainerManagementAction
   logger: ""
   level: ""
   recursive: True
+
+ReportStatistics: !Extends_ContainerManagementAction
+
+ClearStatistics: !Extends_ContainerManagementAction

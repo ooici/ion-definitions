@@ -730,7 +730,7 @@ methods:
 
   # -----------------
 
-  register_producer_qc_table:
+  register_producer_qc_reference:
     docstring: "Parses a QC lookup table attachment and stores the record values and updates the producer with the document keys"
     in:
       producer_id:   ""
@@ -739,7 +739,7 @@ methods:
     out:
       success: True
 
-  parse_document:
+  parse_qc_reference:
     docstring: "Parses QC lookup table and returns a list of document keys"
     in:
       parser_id: ""

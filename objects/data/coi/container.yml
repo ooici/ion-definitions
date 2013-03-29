@@ -13,3 +13,8 @@ ChangeLogLevel: !Extends_ContainerManagementAction
   logger: ""
   level: ""
   recursive: True
+
+
+
+#This event is used to flush the policy caches in each container
+ResetPolicyCache: !Extends_ContainerManagementAction

@@ -313,10 +313,6 @@ ServicePolicyEvent: !Extends_PolicyEvent
   op: ""   #Optional op name
 
 
-#The following events are used to flush various policy related caches
-#This event is used to flush the policy caches in each container
-PolicyCacheResetEvent: !Extends_PolicyEvent
-
 #This event is used to flush the caches containing user roles
 UserRoleCacheResetEvent: !Extends_PolicyEvent
 

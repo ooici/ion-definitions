@@ -52,7 +52,14 @@ DataProduct: !Extends_InformationResource
   comment: ""
 
   # core data product a short code like PRESWAT
+  #@ContentType=str
   ooi_short_name: ""
+
+  # provided in section 2.2.1 of the DPS, and also in the column "Data Product Name"
+  # in the Data Product Catalog that is part of the Instrument Application in SAF
+  # OOI core data product descriptive name
+  #@ContentType=str
+  ooi_product_name: ""
 
   # synonyms to facilitate searching
   #@ContentType=str

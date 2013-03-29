@@ -15,5 +15,6 @@ ChangeLogLevel: !Extends_ContainerManagementAction
   recursive: True
 
 ReportStatistics: !Extends_ContainerManagementAction
-
 ClearStatistics: !Extends_ContainerManagementAction
+ResetPolicyCache: !Extends_ContainerManagementAction
+TriggerGarbageCollection: !Extends_ContainerManagementAction

@@ -25,3 +25,18 @@ methods:
     out:
     throws:
       BadRequest:
+
+  reset_policy_cache:
+    docstring: Clears and reloads the policy caches in all of the containers.
+    in:
+    out:
+    throws:
+      BadRequest:
+
+  trigger_garbage_collection:
+    docstring: Triggers a garbage collection in all containers
+    in:
+    out:
+    throws:
+      BadRequest:
+

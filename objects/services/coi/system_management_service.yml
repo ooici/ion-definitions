@@ -32,3 +32,11 @@ methods:
     out:
     throws:
       BadRequest:
+
+  trigger_garbage_collection:
+    docstring: Triggers a garbage collection in all containers
+    in:
+    out:
+    throws:
+      BadRequest:
+

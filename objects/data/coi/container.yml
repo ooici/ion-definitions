@@ -16,5 +16,8 @@ ChangeLogLevel: !Extends_ContainerManagementAction
 
 
 
-#This event is used to flush the policy caches in each container
+#This action is used to refresh the policy caches in the container
 ResetPolicyCache: !Extends_ContainerManagementAction
+
+#This action is used to trigger a garbage collection
+TriggerGarbageCollection: !Extends_ContainerManagementAction

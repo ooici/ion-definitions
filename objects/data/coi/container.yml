@@ -14,10 +14,7 @@ ChangeLogLevel: !Extends_ContainerManagementAction
   level: ""
   recursive: True
 
-
-
-#This action is used to refresh the policy caches in the container
+ReportStatistics: !Extends_ContainerManagementAction
+ClearStatistics: !Extends_ContainerManagementAction
 ResetPolicyCache: !Extends_ContainerManagementAction
-
-#This action is used to trigger a garbage collection
 TriggerGarbageCollection: !Extends_ContainerManagementAction

@@ -125,7 +125,7 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition
-    domain: [Stream, InstrumentModel, DataProcessDefinition]
+    domain: [DataProduct,Stream, InstrumentModel, DataProcessDefinition]
     range: [StreamDefinition]
     docstring: References the precise definition of a Stream's contents
   - predicate: hasTopic

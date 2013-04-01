@@ -16,7 +16,7 @@ methods:
     in:
       dataset_id: ""
       query: {}
-      delivery_format: {}
+      delivery_format: ""
       stream_id: ""
     out:
       replay_id: ""
@@ -50,7 +50,7 @@ methods:
     in:
       dataset_id: ""
       query: {}
-      delivery_format: {}
+      delivery_format: ""
       module: ''
       cls: ''
       kwargs: {}
@@ -61,6 +61,7 @@ methods:
     docstring: Retrieves the latest granule from a dataset.
     in:
       dataset_id: ""
+      delivery_format: ""
     out:
       retrieve_data: {}
 
@@ -69,6 +70,7 @@ methods:
     in:
       dataset_id: ""
       number_of_points: 100
+      delivery_format: ""
     out:
       retrieve_data: {}
 

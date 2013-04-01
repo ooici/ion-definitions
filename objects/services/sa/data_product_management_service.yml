@@ -14,6 +14,7 @@ methods:
       data_product: !DataProduct
       stream_definition_id: ""
       exchange_point: ""
+      dataset_id: ""
     out:
       data_product_id: ""
 

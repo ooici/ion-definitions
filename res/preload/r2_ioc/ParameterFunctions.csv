@@ -30,7 +30,7 @@ LC_TEST,PFID13,,salinity_L2,TEST,,PythonFunction,data_l2_salinity,ion_functions.
 LC_TEST,PFID14,,calibrated_temperature,TEST,,NumexprFunction,(temperature + offset),,"['temperature', 'offset']",,,,,,,,,,,,,,,,,,
 LC_TEST,PFID15,,explicit_lookup,TEST,,NumexprFunction,lookup,,['lookup'],,,,,,,,,,,,,,,,,,
 LC_TEST,PFID16,,extended_calibrated_temperature,TEST,,NumexprFunction,lookup1 + lookup2,,"['lookup1', 'lookup2']",,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LC_TEST,PFID17,,global_range_test,TEST,,PythonFunction,dataqc_globalrangetest_minmax,ion_functions.qc.qc_functions,"['dat','dat_min','dat_max']",,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,

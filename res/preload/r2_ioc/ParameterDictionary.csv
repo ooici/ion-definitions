@@ -1,6 +1,8 @@
 Scenario,ID,confluence,name,parameter_ids,temporal_parameter,parameters,Review Status,SKIP
 DOC,Internal ID,Confluence reference,Canonical name of the parameter dictionary,Parameter Definition IDs,Temporal Domain Parameter Identifier,THIS COLUMN IS FOR READABILITY ONLY,,
 BASE,DICT1,,ctd_parsed_param_dict,"PD863,PD7,PD10,PD11,PD12,PD16,PD8,PD9,PD2,PD1,PD6,PD3,PD5,PD17",PD7,,,
+BASE,DICT2,"OBSOLETE: use ""raw""",ctd_raw_param_dict,"PD7,PD10,PD11,PD12,PD16,PD8,PD9,PD17,PD26,PD863",PD7,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
+",,
 BASE,DICT3,,graph_image_param_dict,"PD18,PD19,PD21,PD22,PD20,PD863",PD18,,,
 BASE,DICT4,,google_dt,"PD18,PD23,PD863",PD18,,,
 BASE,DICT5,ISSUE: Needs time param,mpl_graph,"PD18,PD24,PD863",PD18,,,

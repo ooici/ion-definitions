@@ -1,8 +1,6 @@
-Scenario,ID,confluence,name,parameter_ids,temporal_parameter,parameters,SKIP,Review Status
+Scenario,ID,confluence,name,parameter_ids,temporal_parameter,parameters,Review Status,SKIP
 DOC,Internal ID,Confluence reference,Canonical name of the parameter dictionary,Parameter Definition IDs,Temporal Domain Parameter Identifier,THIS COLUMN IS FOR READABILITY ONLY,,
 BASE,DICT1,,ctd_parsed_param_dict,"PD863,PD7,PD10,PD11,PD12,PD16,PD8,PD9,PD2,PD1,PD6,PD3,PD5,PD17",PD7,,,
-BASE,DICT2,"OBSOLETE: use ""raw""",ctd_raw_param_dict,"PD7,PD10,PD11,PD12,PD16,PD8,PD9,PD17,PD26,PD863",PD7,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,lat,lon,quality_flag,raw
-",,
 BASE,DICT3,,graph_image_param_dict,"PD18,PD19,PD21,PD22,PD20,PD863",PD18,,,
 BASE,DICT4,,google_dt,"PD18,PD23,PD863",PD18,,,
 BASE,DICT5,ISSUE: Needs time param,mpl_graph,"PD18,PD24,PD863",PD18,,,
@@ -67,7 +65,6 @@ CW_TEST,DICT62,,optaa_status,"PD7,PD10,PD11,PD12,PD16,PD599,PD293,PD600,PD601,PD
 VOID,DICT63,,tmpsf_raw,"PD7,PD10,PD11,PD12,PD16,PD26,PD863",PD7,"time_quantity_float64_seconds_since_1900-01-01,port_timestamp_quantity_float64_seconds_since_1900-01-01,driver_timestamp_quantity_float64_seconds_since_1900-01-01,preferred_timestamp_category_int8_string_int8_1,raw_array_quantity_opaque_1",,
 TMPSF,DICT64,,tmpsf_sample,"PD7,PD10,PD11,PD12,PD16,PD93,PD603,PD432,PD863",PD7,"time_quantity_float64_seconds_since_1900-01-01, port_timestamp_quantity_float64_seconds_since_1900-01-01, driver_timestamp_quantity_float64_seconds_since_1900-01-01, preferred_timestamp_category_int8_string_int8_1, date_time_string_array_quantity_str_1, temperature_array_quantity_float32_degC, battery_voltage_quantity_float32_V",,
 TMPSF,DICT65,,tmpsf_engineering,"PD7,PD10,PD11,PD12,PD16,PD604,PD432,PD863",PD7,"time_quantity_float64_seconds_since_1900-01-01, port_timestamp_quantity_float64_seconds_since_1900-01-01, driver_timestamp_quantity_float64_seconds_since_1900-01-01, preferred_timestamp_category_int8_string_int8_1, tmpsf_cal_coeffs_array_quantity_float32_1, battery_voltage_quantity_float32_V",,
-OBSOLETE,DICT66,DUPLICATE!,tide_parsed,"PD7,PD10,PD11,PD12,PD16,PD2,PD29,PD6,PD1,PD3,PD863",PD7,"time,port_timestamp,driver_timestamp,internal_timestamp,preferred_timestamp,pressure,pressure_temp,temp,conductivity,salinity",DUPLICATE,
 VEL3D_B,DICT67,,vel3d_b_sample,"PD7, PD10, PD11, PD12, PD16, PD93, PD535, PD536, PD537, PD538, PD539, PD540, PD541, PD440, PD542, PD543, PD437, PD438,PD863",PD7,,,
 VEL3D_B,DICT68,,vel3d_b_engineering,"PD7, PD10, PD11, PD12, PD16, PD733, PD734, PD735, PD736, PD737, PD738, PD739, PD740, PD741,PD863",PD7,,,
 BETA,DICT69,,presf_tide_converted,"PD7,PD95,PD863",PD7,,,
@@ -104,6 +101,7 @@ SP_TEST,DICT99,,vel3d_b_L0,"PD7, PD539, PD540, PD541 , PD863",PD7,,,
 SP_TEST,DICT100,,vel3d_b_L1,"PD7, PD878, PD879, PD880 , PD863",PD7,,,
 SP_TEST,DICT101,,ctdbp_no_L0,,PD7,,,
 SP_TEST,DICT102,,ctdbp_no_L1,,PD7,,,
-TMPSF,DICT103,,tmpsf_L1,"PD7, PD603, PD863",PD7,,,ready for review
-LC_TEST,DICT104,,lookup_value_test,"PD7,PD6,PD889",PD7,,,
-LC_TEST,DICT105,,lookup_value_static_test,"PD7,PD890",PD7,,,
+TMPSF,DICT103,,tmpsf_L1,"PD7, PD603, PD863",PD7,,ready for review,
+LC_TEST,DICT104,,lookup_value_test,"PD7,PD6,PD889,PD893,PD863",PD7,,,
+LC_TEST,DICT105,,lookup_value_static_test,"PD7,PD890,PD863",PD7,,,
+LC_TEST,DICT106,,explicit_lookup_value,"PD7,PD892,PD863",PD7,,,

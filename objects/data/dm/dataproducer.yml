@@ -18,7 +18,8 @@ DataProcessProducerContext: !Extends_AbstractProducerContextType
 InstrumentProducerContext: !Extends_AbstractProducerContextType
   deployed_site_id: ""
 
-
+DataProductProductContext: !Extends_AbstractProducerContextType
+  fields: []
 
 
 ---

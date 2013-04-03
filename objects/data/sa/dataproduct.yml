@@ -38,6 +38,10 @@ DataProduct: !Extends_InformationResource
 
   geospatial_coordinate_reference_system: !GeospatialCoordinateReferenceSystem
 
+  # A nominal representation of the date span of when the observations within the data product were actually made.
+  # For instruments that are not real-time, this will not be the same as the earliest and latest ingestion of data into ION.
+  nominal_datetime: !TemporalBounds
+
   # temporal domain
   temporal_domain: {}
 

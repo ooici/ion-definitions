@@ -3,6 +3,8 @@
 name: hello
 dependencies: []
 methods:
+
+  #@OperationVerb=READ
   hello:
     in:
       text: ""
@@ -10,6 +12,7 @@ methods:
     out:
       text: ""
 
+  #@OperationVerb=INERT
   noop:
     in:
       text: ""

@@ -24,15 +24,14 @@ Subsite: !Extends_Site
 
 ---
 
-PortTypeEnum: !enum (values=(PAYLOAD, EXPANSION, UPLINK), default=PAYLOAD)
+PortTypeEnum: !enum (values=(NONE, PAYLOAD, EXPANSION, UPLINK), default=NONE)
 
 ---
 
 PlatformPort:
-  port_id: ""
-  ip_address: ""
-  port_type: !PortTypeEnum
   reference_designator: ""
+  port_type: !PortTypeEnum
+  ip_address: ""
 
 ---
 

@@ -314,13 +314,13 @@ ProposalStatusEnum: !enum (values=(INITIAL, COUNTER, ACCEPTED, REJECTED, GRANTED
 ServiceAgreementProposal:
   negotiation_id: ""   #What negotiation resource is this part of
   originator: !ProposalOriginatorEnum
-  consumer: ""     #Who will be the consumer of this proposal - typically a used id
-  provider: ""     #Who will be the provider of this proposal - typically an org id
+  consumer: ""     #Who will be the consumer of this proposal - such as an actor id
+  provider: ""     #Who will be the provider of this proposal - such as an org id
   broker: ""       #Optional identifier if proposal is brokered by third party
   sequence_num: 0  #Keeps track of the sequence of proposals within a negotiation
   proposal_status: !ProposalStatusEnum
   expiration: 0    #Expiration that will be used with resultant Commitment if accepted - 0 is unlimited
-  description: ""  #Optional description of proposal - if set in initial proposal will be copied to Negotiaiton description
+  description: ""  #Optional description of proposal - if set in initial proposal will be copied to Negotiation description
   conditions: {}   #Optional collection of additional conditions - not used in R2
   clauses: {}      #Optional collection of additional clauses - not used in R2
 

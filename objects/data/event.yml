@@ -334,7 +334,10 @@ UserRoleModifiedEvent: !Extends_OrgEvent
 
 ---
 
-#The following events are published when Org operations occur
+#The following events are published when Org actions occur
+
+OrgNegotiationInitiatedEvent: !Extends_OrgEvent
+  negotiation_id: ""
 
 OrgMembershipGrantedEvent: !Extends_OrgEvent
   actor_id: ""

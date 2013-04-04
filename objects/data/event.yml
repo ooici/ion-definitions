@@ -502,6 +502,9 @@ DatasetModified: !Extends_InformationContentModifiedEvent
   # The slice of the dataset modificationsc
   window:     []
 
+ExternalReferencesUpdated: !Extends_InformationContentModifiedEvent
+  reference_keys: []
+
 ---
 
 

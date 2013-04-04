@@ -51,6 +51,10 @@ AssociationDefinitions:
     domain: [Device, Site, AgentDefinition, DataSource, ExternalDataset]
     range: [DeviceModel, ExternalDatasetModel]
     docstring: References the model (aka type/class) resource for the resource
+  - predicate: hasNetworkParent
+    domain: [Device]
+    range: [Device]
+    docstring: Connects platform nodes in the RSN network to provide an additional perspective of status and other
   - predicate: hasOutputProduct
     domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
     range: [DataProduct]
@@ -121,7 +125,7 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition
-    domain: [Stream, InstrumentModel, DataProcessDefinition]
+    domain: [DataProduct,Stream, InstrumentModel, DataProcessDefinition]
     range: [StreamDefinition]
     docstring: References the precise definition of a Stream's contents
   - predicate: hasTopic

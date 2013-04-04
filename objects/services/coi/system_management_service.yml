@@ -11,17 +11,32 @@ methods:
   perform_action:
     docstring: perform arbitrary string-encoded action (allow addition of new actions without adding service methods)
     in:
-      action: ""
+      predicate: !ContainerManagementPredicate
+      action: !ContainerManagementAction
     out:
     throws:
       BadRequest:
   set_log_level:
     docstring: Sets a log level.
     in:
-      host_filter: ""
-      loggers: []
+      logger: ""
       level: ""
       recursive: True
     out:
     throws:
       BadRequest:
+
+  reset_policy_cache:
+    docstring: Clears and reloads the policy caches in all of the containers.
+    in:
+    out:
+    throws:
+      BadRequest:
+
+  trigger_garbage_collection:
+    docstring: Triggers a garbage collection in all containers
+    in:
+    out:
+    throws:
+      BadRequest:
+

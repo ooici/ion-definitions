@@ -136,19 +136,12 @@ Parameter:
 
 ---
 
-DeviceStatusEnum: !enum (values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN), default=STATUS_UNKNOWN)
+DeviceStatusType: !enum (values=(STATUS_UNKNOWN, STATUS_OK, STATUS_WARNING, STATUS_CRITICAL), default=STATUS_UNKNOWN)
 
-AggregateStatusType: !enum (values=(AGGREGATE_COMMS, AGGREGATE_DATA, AGGREGATE_LOCATION, AGGREGATE_POWER, AGGREGATE_OTHER), default=AGGREGATE_OTHER)
-
----
-
-DeviceStatus:
-  communications: !DeviceStatusEnum
-  data: !DeviceStatusEnum
-  location: !DeviceStatusEnum
-  power: !DeviceStatusEnum
+AggregateStatusType: !enum (values=(AGGREGATE_COMMS, AGGREGATE_DATA, AGGREGATE_LOCATION, AGGREGATE_POWER), default=AGGREGATE_COMMS)
 
 ---
+
 
 # Describes a physical device with a serial number, such as sensor, instrument and platform. Abstract base type.
 Device: !Extends_TaskableResource
@@ -162,8 +155,7 @@ Device: !Extends_TaskableResource
   # Recommended format: {attribute1_name:value, attribute2_name:value}
   # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
-  #defines the current state for this device based on status paramters received
-  status: !DeviceStatus
+
 
 
 
@@ -197,10 +189,17 @@ DeviceModel: !Extends_InformationResource
   parameter_characteristics_reports: []    # list of ParameterCharacteristicsReport objects
 ---
 
-AttachmentType: !enum (values=(ASCII, BLOB, OBJECT), default=ASCII)
+AttachmentType: !enum (values=(ASCII, BLOB, OBJECT, REFERENCE), default=ASCII)
   # ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application
   # BLOB: the content is a binary
   # OBJECT: the content is an arbitrary object, such as a dict, list
+  # REFERENCE: the content is a reference document and requires a parser to be ingested
+AbstractAttachmentContext:
+
+---
+
+ReferenceAttachmentContext: !Extends_AbstractAttachmentContext
+  parser_id: ""
 
 ---
 
@@ -219,6 +218,7 @@ Attachment: !Extends_InformationResource
   #@ContentType=str
   keywords: []
   attachment_size: 0 # size of the attachment content field, in bytes
+  context: !AbstractAttachmentContext
 
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=PROCESS)
 

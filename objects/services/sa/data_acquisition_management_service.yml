@@ -694,3 +694,63 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+
+  # -----------------
+  # The following operations work on parsers
+  create_parser:
+    docstring: "Creates a new Parser Resource"
+    in:
+      name: ""
+      description: ""
+      module: ""
+      method: ""
+      config: {}
+    out:
+      parser_id: ""
+
+  read_parser:
+    docstring: "Reads a parser resource from the resource registry"
+    in:
+      parser_id: ""
+    out:
+      parser: !Parser
+
+  delete_parser:
+    docstring: "Deletes a parser resource from the resource registry"
+    in:
+      parser_id: ""
+    out:
+      success: True
+
+  update_parser:
+    docstring: "Updates an existing parser resource"
+    in:
+      parser: !Parser
+    out:
+
+  # -----------------
+
+  register_producer_qc_reference:
+    docstring: "Parses a QC lookup table attachment and stores the record values and updates the producer with the document keys"
+    in:
+      producer_id:   ""
+      parser_id:     ""
+      attachment_id: ""
+    out:
+      success: True
+
+  parse_qc_reference:
+    docstring: "Parses QC lookup table and returns a list of document keys"
+    in:
+      parser_id: ""
+      document:  ""
+    out:
+      keys: []
+
+  list_qc_references:
+    docstring: "Retrieves a list of stored reference keys in the data provenance"
+    in:
+      data_product_id: ""
+    out:
+      keys: []
+

@@ -38,6 +38,10 @@ DataProduct: !Extends_InformationResource
 
   geospatial_coordinate_reference_system: !GeospatialCoordinateReferenceSystem
 
+  # A nominal representation of the date span of when the observations within the data product were actually made.
+  # For instruments that are not real-time, this will not be the same as the earliest and latest ingestion of data into ION.
+  nominal_datetime: !TemporalBounds
+
   # temporal domain
   temporal_domain: {}
 
@@ -52,7 +56,14 @@ DataProduct: !Extends_InformationResource
   comment: ""
 
   # core data product a short code like PRESWAT
+  #@ContentType=str
   ooi_short_name: ""
+
+  # provided in section 2.2.1 of the DPS, and also in the column "Data Product Name"
+  # in the Data Product Catalog that is part of the Instrument Application in SAF
+  # OOI core data product descriptive name
+  #@ContentType=str
+  ooi_product_name: ""
 
   # synonyms to facilitate searching
   #@ContentType=str

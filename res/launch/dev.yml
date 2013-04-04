@@ -91,6 +91,22 @@ apps:
   parameter_bootstrap: {}
   policy_bootstrap: {}
 
+  visualization_service:                                                         
+    ha:                                                                          
+      policy: sensor                                                             
+      parameters:                                                                
+        metric: "app_attributes:ps"                                              
+        minimum_processes: 4                                                     
+        maximum_processes: 8                                                     
+        sample_period: 600                                                       
+        sample_function: Average                                                 
+        cooldown_period: 60                                                      
+        scale_up_threshold: 20                                                   
+        scale_down_n_processes: 1                                                
+        scale_down_threshold: 2                                                  
+        scale_up_n_processes: 1                                                  
+        queueing_mode: START_ONLY   
+
   # scheduler needs an override block because it is a singleton and
   # may only have one deployed service process at a time.
   scheduler:

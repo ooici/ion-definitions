@@ -5,6 +5,7 @@ PlatformMonitorAttributes:
   #monitor rate in seconds
   monitor_rate: 0
   units: ""
+  aggregate_type: !AggregateStatusType
 
 # Represents a physical package with a manufacturer, model, and serial number, providing physical
 # mounting locations for one to many instruments. Platforms are also the primary units of deployment
@@ -19,8 +20,6 @@ PlatformDevice: !Extends_Device
   # a list of PlatformMonitorAttributes objects
   #@ContentType=PlatformMonitorAttributes
   platform_monitor_attributes: []
-  #defines the current state for this device and its child devices based on status paramters received
-  aggregate_status: !DeviceStatus
   
 
 # Specifies a distinguished type of platform, derived from the manufacturer's model number

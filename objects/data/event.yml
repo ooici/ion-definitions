@@ -183,12 +183,10 @@ DeviceCommsEvent: !Extends_Event
   lapse_interval_seconds: 0
 ---
 
-DeviceStatusType: !enum (values=(OUT_OF_RANGE, OK), default=OUT_OF_RANGE)
----
 
 # To be used by transforms monitoring the health of data producers to report the status of the producers
 DeviceStatusEvent: !Extends_Event
-  state: !DeviceStatusType
+  status: !DeviceStatusType
   values: []
   time_stamps: []
   valid_values: []
@@ -197,8 +195,8 @@ DeviceStatusEvent: !Extends_Event
 
 DeviceAggregateStatusEvent: !Extends_ResourceEvent
   status_name: !AggregateStatusType
-  status: !DeviceStatusEnum
-  prev_status: !DeviceStatusEnum
+  prev_status: !DeviceStatusType
+  roll_up_status: False
 
 
 # ------------------------------------------------------------------------------------
@@ -312,10 +310,6 @@ ServicePolicyEvent: !Extends_PolicyEvent
   service_name: ""
   op: ""   #Optional op name
 
-
-#The following events are used to flush various policy related caches
-#This event is used to flush the policy caches in each container
-PolicyCacheResetEvent: !Extends_PolicyEvent
 
 #This event is used to flush the caches containing user roles
 UserRoleCacheResetEvent: !Extends_PolicyEvent

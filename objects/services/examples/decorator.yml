@@ -4,11 +4,14 @@ docstring: Example of adding decorators
 dependencies: []
 
 methods:
+  #@OperationType=CREATE
+  #@SpecialOperation
   new_account:
     docstring: Decorators do not have space after #
     in:
       # this is comment for arg1
       #@Decorator
+      #@Decorator2=DecValue
       arg1: ""
     out:
       # this is comment for arg2

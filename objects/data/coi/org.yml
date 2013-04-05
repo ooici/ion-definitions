@@ -61,8 +61,6 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   data_process_definitions: []
   #@hasResource=Observatory
   sites: []
-  #@hasMembership
-  actors: [] # The list of Actor Identity objects
   #@hasMembershipInfo
   members: [] # The list of User Info objects
   #@hasRole

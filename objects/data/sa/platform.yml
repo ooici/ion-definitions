@@ -20,8 +20,6 @@ PlatformDevice: !Extends_Device
   # a list of PlatformMonitorAttributes objects
   #@ContentType=PlatformMonitorAttributes
   platform_monitor_attributes: []
-  #defines the current state for this device and its child devices based on status paramters received
-  aggregate_status: !DeviceStatus
   
 
 # Specifies a distinguished type of platform, derived from the manufacturer's model number

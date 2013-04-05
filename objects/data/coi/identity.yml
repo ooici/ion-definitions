@@ -75,9 +75,7 @@ UserInfoExtension: !Extends_ExtendedInformationResource
   owned_resources: [] # A list of any resources owned by this user
   #@hasRequest
   user_requests: [] # A list of requests associated with this user
-  #@Method=find_user_open_negotiations
-  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN TODO - remove at some point
-  open_negotiations_request: !ServiceRequest
-  #@Method=find_user_closed_negotiations
-  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED TODO - remove at some point
-  closed_negotiations_request: !ServiceRequest
+  #@Method=find_user_open_requests
+  open_requests: [] # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of OPEN
+  #@Method=find_user_closed_requests
+  closed_requests: [] # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of ACCEPTED or REJECTED

@@ -183,22 +183,20 @@ DeviceCommsEvent: !Extends_Event
   lapse_interval_seconds: 0
 ---
 
-DeviceStatusType: !enum (values=(OUT_OF_RANGE, OK), default=OUT_OF_RANGE)
----
 
 # To be used by transforms monitoring the health of data producers to report the status of the producers
-DeviceStatusEvent: !Extends_Event
-  state: !DeviceStatusType
+DeviceStatusEvent: !Extends_DeviceEvent
+  status: !DeviceStatusType
   values: []
   time_stamps: []
   valid_values: []
 
 ---
 
-DeviceAggregateStatusEvent: !Extends_ResourceEvent
+DeviceAggregateStatusEvent: !Extends_DeviceStatusEvent
   status_name: !AggregateStatusType
-  status: !DeviceStatusEnum
-  prev_status: !DeviceStatusEnum
+  prev_status: !DeviceStatusType
+  roll_up_status: False
 
 
 # ------------------------------------------------------------------------------------
@@ -336,7 +334,10 @@ UserRoleModifiedEvent: !Extends_OrgEvent
 
 ---
 
-#The following events are published when Org operations occur
+#The following events are published when Org actions occur
+
+OrgNegotiationInitiatedEvent: !Extends_OrgEvent
+  negotiation_id: ""
 
 OrgMembershipGrantedEvent: !Extends_OrgEvent
   actor_id: ""
@@ -501,6 +502,14 @@ DatasetModified: !Extends_InformationContentModifiedEvent
   # The slice of the dataset modificationsc
   window:     []
 
+ExternalReferencesUpdatedEvent: !Extends_InformationContentModifiedEvent
+  reference_keys: []
+
 ---
 
+ParameterQCEvent: !Extends_Event
+  # Origin is the dataset
+  qc_parameter:   ""
+  temporal_value: 0
+  configuration:  {}
 

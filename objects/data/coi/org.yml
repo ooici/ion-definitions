@@ -61,6 +61,8 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   data_process_definitions: []
   #@hasResource=Observatory
   sites: []
+  #@hasMembership
+  actors: [] # The list of Actor Identity objects
   #@hasMembershipInfo
   members: [] # The list of User Info objects
   #@hasRole
@@ -76,11 +78,9 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   #@hasDeployedDeviceForOrg=PlatformSite
   number_of_platforms_deployed: 0
   #@Method=find_org_negotiations
-  open_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of OPEN TODO - remove at some point
-  open_negotiations_request: !ServiceRequest
+  open_requests: [] # The list of OrgUserNegotiationRequest objects for this org that have a negotiation_status of OPEN
   #@Method=find_org_closed_negotiations
-  closed_negotiations: [] # The list of Negotiations for this user that have a negotiation_status of ACCEPTED or REJECTED TODO - remove at some point
-  closed_negotiations_request: !ServiceRequest
+  closed_requests: [] # The list of OrgUserNegotiationRequest objects for this org that have a negotiation_status of ACCEPTED or REJECTED
 
 
 #Computed attributes for a data product

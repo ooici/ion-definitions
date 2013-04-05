@@ -399,6 +399,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   release_commitment:
     docstring: |
       Release the commitment that was created for resources. Throws a NotFound exception if none of the ids are found.

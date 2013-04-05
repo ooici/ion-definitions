@@ -1,0 +1,4 @@
+Array,Instrument Class,Reference Designator,Data Product In,Units,Data Product Flagged,Min Value (lim(1)),Max Value (lim(2))
+Array 1,SBE37,TEST,TEMPWAT,deg_C,TEMPWAT,10,28
+Array 1,SBE37,TEST,CONDWAT,S m-1,CONDWAT,0,30
+Array 1,SBE37,TEST,PRESWAT,dbar,PRESWAT,0,20

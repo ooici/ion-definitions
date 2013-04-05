@@ -9,6 +9,7 @@ Site: !Extends_FrameOfReference
   # The environment of the site. Used to differentiate marine deployments from, e.g. "bucket" tests
   environment: !SiteEnvironmentType
 
+
 ---
 # Represents a reference designator that designates a top-level observatory, with geospatial
 # and temporal bounds. This Observatory Site can have Subsites, Platform and Instrument Sites.
@@ -22,27 +23,37 @@ Observatory: !Extends_Site
 # within an Observatory.
 Subsite: !Extends_Site
 
+
 ---
 
-PortTypeEnum: !enum (values=(PAYLOAD, EXPANSION, UPLINK), default=PAYLOAD)
+PortTypeEnum: !enum (values=(NONE, PAYLOAD, EXPANSION, UPLINK), default=NONE)
 
 ---
 
 PlatformPort:
-  port_id: ""
-  ip_address: ""
-  port_type: !PortTypeEnum
   reference_designator: ""
+  port_type: !PortTypeEnum
+  ip_address: ""
+
+---
+
+# Represents a reference designator within an observatory to hold devices, with one of them being
+# the primary device for this site.
+DeviceSite: !Extends_Site
+
+  # Describes the port of the parent or network uplink device
+  planned_uplink_port: !PlatformPort
+
+  # For UI distinction purposes, a more fine granular resource type
+  alt_resource_type: ""
 
 ---
 
 # Represents a reference designator within an observatory, designated for the deployment of functionally
 # equivalent platform devices, with geospatial and temporal bounds.
-PlatformSite: !Extends_Site
-  planned_uplink_port: !PlatformPort
+PlatformSite: !Extends_DeviceSite
 
 # Represents a reference designator within an observatory, designated for the deployment of functionally
 # equivalent instrument devices, with geospatial and temporal bounds.
-InstrumentSite: !Extends_Site
-  planned_uplink_port: !PlatformPort
+InstrumentSite: !Extends_DeviceSite
 

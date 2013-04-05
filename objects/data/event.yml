@@ -196,6 +196,7 @@ DeviceStatusEvent: !Extends_DeviceEvent
 DeviceAggregateStatusEvent: !Extends_DeviceStatusEvent
   status_name: !AggregateStatusType
   prev_status: !DeviceStatusType
+  new_status: !DeviceStatusType
   roll_up_status: False
 
 

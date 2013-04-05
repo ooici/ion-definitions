@@ -9,6 +9,11 @@ Site: !Extends_FrameOfReference
   # The environment of the site. Used to differentiate marine deployments from, e.g. "bucket" tests
   environment: !SiteEnvironmentType
 
+  standalone_name: ""  # Name used in context of parent without composing with parent name
+
+  extension_name: ""   # Unique part of name that can be composed with next higher level name
+
+  reference_designator: ""  # OOI reference designator
 
 ---
 # Represents a reference designator that designates a top-level observatory, with geospatial
@@ -17,7 +22,7 @@ Observatory: !Extends_Site
 
   url: ""  # URL to an external homepage about the observatory
 
-  
+
 #Represents a reference designator that designates a hierarchical substructure within an observatory,
 # with geospatial and temporal bounds. Subsites mostly represent distinct geospatial areas
 # within an Observatory.

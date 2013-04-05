@@ -48,7 +48,9 @@ InstrumentModel: !Extends_DeviceModel
   #writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
   #@ContentType=str
   instrument_classes_supported: []  # The list of instrument classes this instrument model can support
-  
+
+  reference_designator: ""  # OOI reference designator
+
 
 # Defines an agent/driver combination compatible with a specific instrument model.
 InstrumentAgent: !Extends_DeviceAgent

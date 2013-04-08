@@ -11,7 +11,7 @@ Site: !Extends_FrameOfReference
 
   standalone_name: ""  # Name used in context of parent without composing with parent name
 
-  extension_name: ""   # Unique part of name that can be composed with next higher level name
+  local_name: ""   # Unique part of name that can be composed with next higher level name
 
   reference_designator: ""  # OOI reference designator
 

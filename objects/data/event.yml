@@ -59,6 +59,10 @@ ResourceCommandEvent: !Extends_ResourceEvent
 # Event created by an operator of a resource, for instance to manually indicate a modification or error.
 ResourceOperatorEvent: !Extends_ResourceEvent
 
+# Event created when a user reports an issue, contains a generated guid in the
+# description that should line up with the email.
+ResourceIssueReportedEvent: !Extends_ResourceEvent
+
 ---
 # DataSource Events
 ExternalDataSourceEvent: !Extends_ResourceEvent

@@ -59,6 +59,10 @@ ResourceCommandEvent: !Extends_ResourceEvent
 # Event created by an operator of a resource, for instance to manually indicate a modification or error.
 ResourceOperatorEvent: !Extends_ResourceEvent
 
+# Event created when a user reports an issue, contains a generated guid in the
+# description that should line up with the email.
+ResourceIssueReportedEvent: !Extends_ResourceEvent
+
 ---
 # DataSource Events
 ExternalDataSourceEvent: !Extends_ResourceEvent
@@ -185,7 +189,7 @@ DeviceCommsEvent: !Extends_Event
 
 
 # To be used by transforms monitoring the health of data producers to report the status of the producers
-DeviceStatusEvent: !Extends_Event
+DeviceStatusEvent: !Extends_DeviceEvent
   status: !DeviceStatusType
   values: []
   time_stamps: []
@@ -193,7 +197,7 @@ DeviceStatusEvent: !Extends_Event
 
 ---
 
-DeviceAggregateStatusEvent: !Extends_ResourceEvent
+DeviceAggregateStatusEvent: !Extends_DeviceStatusEvent
   status_name: !AggregateStatusType
   prev_status: !DeviceStatusType
   roll_up_status: False
@@ -507,4 +511,9 @@ ExternalReferencesUpdatedEvent: !Extends_InformationContentModifiedEvent
 
 ---
 
+ParameterQCEvent: !Extends_Event
+  # Origin is the dataset
+  qc_parameter:   ""
+  temporal_value: 0
+  configuration:  {}
 

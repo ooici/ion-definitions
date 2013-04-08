@@ -343,6 +343,32 @@ Negotiation: !Extends_InformationResource
   #@ContentType=ServiceAgreementProposal
   proposals: []  # The last SAP in the list is considered the most recent one
 
+
+---
+
+# This is a proxy object used to convey a contextualized negotiation to the UI in lieu of
+# actual Negotiation objects.
+NegotiationRequest:
+  ts_updated: ""
+  negotiation_id:
+  negotiation_type: ""
+  negotiation_status: ""
+  request_type: ""
+  originator: ""
+  description: ""
+  reason: ""
+
+
+---
+
+#Resource specific negotiation requests
+
+OrgUserNegotiationRequest: !Extends_NegotiationRequest
+  org_id: ""
+  user_id: ""
+  name: ""   # This can be set to the Org name or User name depending upon which service fulfills
+
+
 ---
 
 #A subtype for all specific commitments

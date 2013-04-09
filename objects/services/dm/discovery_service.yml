@@ -111,6 +111,7 @@ methods:
       See the formal language definition: https://confluence.oceanobservatories.org/display/CIDev/Pyon+Discovery+Query+DSL
     in: 
       search_request: ''
+      id_only: True
     out:
       success: []
 

@@ -139,7 +139,7 @@ methods:
 
   # -----------------
   
-  create_data_process2:
+  create_data_process:
     docstring: Create an instance or realization of a data process definition.
     in:
       data_process_definition_id: ""
@@ -149,7 +149,7 @@ methods:
     out:
       data_process_id: ""
 
-  read_data_process2:
+  read_data_process:
     docstring: Reads a data process resource
     in:
       data_process_id: ""
@@ -158,7 +158,7 @@ methods:
     throws:
       NotFound: If the data process doesn't exist
 
-  delete_data_process2:
+  delete_data_process:
     docstring: Deletes an instance of a data process
     in:
       data_process_id: ""
@@ -167,14 +167,14 @@ methods:
     throws:
       BadRequest: If the data process doesn't exist
 
-  activate_data_process2:
+  activate_data_process:
     docstring: Activates an instance of a data process
     in:
       data_process_id: ""
     out:
       success: True
 
-  deactivate_data_process2:
+  deactivate_data_process:
     docstring: Deactivates an instance of a data process
     in:
       data_process_id: ""
@@ -183,44 +183,11 @@ methods:
       
   # -----------------
 
-
-  create_data_process:
-    docstring: Create an instance or realization of a data process definition.
-    in:
-      data_process_definition_id: ""
-      in_data_product_ids: []
-      out_data_products: {}
-      configuration: {}
-    out:
-      data_process_id: ""
-      
-  update_data_process:
-    #This op may not make sense at this time
-    in:
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
   update_data_process_inputs:
     docstring: Update the subscriptions of a data process
     in: 
       data_process_id: ""
       in_stream_ids: []
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  read_data_process:
-    in:
-      data_process_id: ""
-    out:
-      data_process_definition_id: ""
-      in_subscription_id: ""
-      out_data_product_id: ""
-
-  delete_data_process:
-    in:
-      data_process_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -251,22 +218,6 @@ methods:
       filters: !ResourceFilter
     out:
       data_process_list: []
-
-  activate_data_process:
-    #Initiate processing
-    in:
-      data_process_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  deactivate_data_process:
-    #Suspend the data process
-    in:
-      data_process_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
 
   # -----------------
 

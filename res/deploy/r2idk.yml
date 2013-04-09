@@ -358,14 +358,14 @@ apps:
   - name: preload
     version: 0.1
     description: Preloader
-    processapp: [preload, ion.processes.bootstrap.idk_loader, IDKLoader]
+    processapp: [preload, ion.processes.bootstrap.ion_loader, IONLoader]
     config:
       path: master
       op: load
       loadui: true
       ui_path: res/preload/r2_ioc/ui_assets
       attachments: res/preload/r2_ioc/attachments
-      scenario: BASE,BETA,IDK,ALPHA_SYS
+      scenario: BASE,BETA,ALPHA_SYS
       #categories: Constraint,Contact,User,Org,UserRole,CoordinateSystem,ParameterDefs,ParameterDictionary,StreamConfiguration,SensorModel,PlatformModel,InstrumentModel,Observatory,Subsite,PlatformSite,InstrumentSite,StreamDefinition,PlatformDevice,PlatformAgent,PlatformAgentInstance,InstrumentAgent,InstrumentDevice,SensorDevice,InstrumentAgentInstance,DataProduct,DataProcessDefinition,DataProcess,DataProductLink,Attachment,WorkflowDefinition,Workflow
 
   # LAST SERVICE GATEWAY SERVICE

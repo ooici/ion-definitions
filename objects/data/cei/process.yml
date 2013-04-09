@@ -67,6 +67,6 @@ ProcessTarget:
 ProcessSchedule:
   schedule_mode: !enum (name=ProcessScheduleMode, values=(IMMEDIATE, SCHEDULE), default=IMMEDIATE)
   restart_mode: !enum (name=ProcessRestartMode, values=(NEVER, ALWAYS, ABNORMAL), default=NEVER)
-  queueing_mode: !enum (name=ProcessQueueingMode, values=(NEVER, ALWAYS, START_ONLY, RESTART_ONLY), default=NEVER)
+  queueing_mode: !enum (name=ProcessQueueingMode, values=(NEVER, ALWAYS, START_ONLY, RESTART_ONLY), default=ALWAYS)
   schedule:
   target: !ProcessTarget

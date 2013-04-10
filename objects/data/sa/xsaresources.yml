@@ -208,8 +208,17 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
-  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
-  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
+#  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
+#  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
+
+ # Set of aggregate status for child devices (device_id:{ AggregateStatusType: DeviceStatusType} ) for *ALL* children in sub-levels
+  child_device_status: {}
+  # RSN Platform rollup status from the network perspective. Defined by hasNetworkParent links in the data model.
+  # { AggregateStatusType: DeviceStatusType}
+  rsn_network_rollup: {}
+  # Set of aggregate status for netowrk child devices (device_id:{ AggregateStatusType: DeviceStatusType} )
+  # for *ALL* children in network sub-levels
+  rsn_network_child_device_status: {}
 
 ---
 

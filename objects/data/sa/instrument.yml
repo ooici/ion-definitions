@@ -17,7 +17,20 @@ PrimaryInterface: !enum (values=(RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT,
 # Specifies a distinguished type of instruments, derived from the manufacturer's
 # model number, based on common attributes.
 InstrumentModel: !Extends_DeviceModel
-  instrument_family: ""     # values= CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL, default=CAM
+  instrument_family: ""     # DEPRECATED - remove after UI DB update
+  family_id: ""   # Code for instrument family (from SAF). values= CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL, default=CAM
+  family_name: ""   # Name of instrument family (from SAF)
+  class_id: ""   # Code for instrument class (from SAF)
+  class_name: ""   # Name of instrument class (from SAF)
+  class_alternate_name: ""   # Alternate name of instrument class (from SAF)
+  class_description: ""   # Description for instrument class (from SAF)
+  series_id: ""   # Code for instrument series (from SAF)
+  series_name: ""   # Name of instrument series (from SAF)
+  configuration: ""  # Instrument series variant (from SAF)
+  subseries_id: ""   # Code for instrument subseries (from SAF)
+  subseries_name: ""   # Name of instrument subseries (from SAF)
+  ooi_make_model: ""    #  Model makemodel code (from SAF)
+
   baud_rate_default: ""
   # Polled vs...
   mixed_sampling_mode: True

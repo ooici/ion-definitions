@@ -522,21 +522,41 @@ methods:
       site_resources: {}
       site_children: {}
 
-
   get_sites_devices_status:
     docstring: |
       For a given parent resource id, compute related sites (child sites, parent sites),
       related devices (if requested), and site/device status (if requested). The content is provided
       for all higher parent and child sites of given parent id.
       The result is a dict that has the following keys in it:
-      - site_resources: dict with key site id, value Site resource object
+      - site_resources: dict with key site id, value Site resource object or None of id_only==True
       - site_children: dict with key site/org id, value list of site ids for children
-      - site_devices: dict with key site id, value (site type, device id, device type)
+      - site_devices: dict with key site id, value list of (site type, device id, device type) tuples
       - device_resources: dict with key device id, value Device resource object
       - site_status: dict with key site id, status dict (containing keys agg, power, comms, data, loc)
     in:
       parent_resource_id: ""
       include_devices: False
       include_status: False
+    out:
+      result: {}
+
+  find_site_data_products:
+    docstring: |
+      Determines efficiently all data products for the given site and child sites.
+      For given site_id, first determine all child sites (following child hasSite associations).
+      Then find all currently primary devices to all child sites (following hasDevice associations).
+      Then find all data products that are derived from the devices (following hasSource associations).
+      The result is a dict containing the following keys:
+      - site_resources: A dict mapping site_id to Site resource object (if include_sites==True) or None
+      - site_children: A dict mapping site/org id to list of site ids for children
+      - site_devices: A dict mapping site id to tuple (site type, device id, device type)
+      - device_resources: A dict mapping device_id to Device object (if include_devices==True)
+      - device_data_products: A dict mapping device_id to data_product_id
+      - data_product_resources: A dict mapping data_product_id to DataProduct resource object
+    in:
+      parent_resource_id: ""
+      include_sites: False
+      include_devices: False
+      include_data_products: False
     out:
       result: {}

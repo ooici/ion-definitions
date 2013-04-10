@@ -178,6 +178,8 @@ apps:
     version: 0.1
     processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
     bootlevel: 10
+    config:
+      create_workflow_timeout: 240
 
   - name: bootstrapper3
     processapp: [bootstrapper3, ion.processes.bootstrap.bootstrapper, Bootstrapper]

@@ -41,7 +41,7 @@ config:
       river_shards: 1
       river_replicas: 2
     erddap:
-      host: r2-erddap-stage.oceanobservatories.org
+      host: erddap.b.oceanobservatories.org
       port: 8080
       type: erddap
     pydap:

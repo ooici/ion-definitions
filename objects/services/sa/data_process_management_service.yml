@@ -180,7 +180,21 @@ methods:
       data_process_id: ""
     out:
       success: True
-      
+
+  get_data_process_subscriptions_count:
+    docstring: Returns count of subscriptions for data process id
+    in:
+      data_process_id: ""
+    out:
+      count: True
+
+  get_data_process_active_subscriptions_count:
+    docstring: Returns count of active subscriptions for data process id
+    in:
+      data_process_id: ""
+    out:
+      count: True
+
   # -----------------
 
   update_data_process_inputs:

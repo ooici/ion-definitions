@@ -6,6 +6,17 @@
 # without having an actual agent.
 
 ResourceInterface:
+  DataProcess:
+    params:
+      subscriptions_count:
+        get: serviceop:data_process_management.get_data_process_subscriptions_count($RESOURCE_ID)
+      subscriptions_active_count:
+        get: serviceop:data_process_management.get_data_process_active_subscriptions_count($RESOURCE_ID)
+    commands:
+      activate:
+        execute: serviceop:data_process_management.activate_data_process($RESOURCE_ID)
+      deactivate:
+        execute: serviceop:data_process_management.deactivate_data_process($RESOURCE_ID)
 
   InstrumentDevice:
     agent: True
@@ -39,7 +50,7 @@ ResourceInterface:
 
     params:
       object_size:
-          get: func:self.get_resource_size($RESOURCE_ID)
+        get: func:self.get_resource_size($RESOURCE_ID)
       object_size1:
         get: func:ion.services.coi.agent_management_service.get_resource_size($RESOURCE_ID)
       description:

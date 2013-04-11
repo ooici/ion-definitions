@@ -131,6 +131,7 @@ methods:
       field: ""
       value: ""
       fuzzy: False
+      match: False
       order: {}
       limit: 0
       offset: 0

@@ -36,6 +36,10 @@ config:
   server:
     elasticsearch:
       host: elasticsearch.a.oceanobservatories.org
+      shards: 5
+      replicas: 1
+      river_shards: 1
+      river_replicas: 2
     erddap:
       host: erddap-test.oceanobservatories.org
       port: 8080

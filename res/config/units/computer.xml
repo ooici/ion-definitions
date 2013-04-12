@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<unit-system>
+    <unit>
+        <base/>
+        <name>
+            <singular>byte</singular>
+        </name>
+        <symbol>B</symbol>
+    </unit>
+    <unit>
+        <def>1024 B</def>
+        <name><singular>kilo_byte</singular></name>
+        <symbol>kB</symbol>
+    </unit>
+    <unit>
+        <def>1024 kB</def>
+        <name><singular>giga_byte</singular></name>
+        <symbol>GB</symbol>
+    </unit>
+    <unit>
+        <def>1024 GB</def>
+        <name><singular>tera_byte</singular></name>
+        <symbol>TB</symbol>
+    </unit>
+
+</unit-system>
+

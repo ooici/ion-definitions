@@ -15,6 +15,11 @@
     </unit>
     <unit>
         <def>1024 kB</def>
+        <name><singular>mega_byte</singular></name>
+        <symbol>MB</symbol>
+    </unit>
+    <unit>
+        <def>1024 MB</def>
         <name><singular>giga_byte</singular></name>
         <symbol>GB</symbol>
     </unit>

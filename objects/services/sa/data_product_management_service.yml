@@ -218,3 +218,17 @@ methods:
     throws:
       BadRequest: A parameter is missing
       NotFound: An object with the specified data_product_id does not exist
+
+#-------
+
+  prepare_update_data_product:
+    docstring: |
+      Returns the information needed to update an data product
+    in:
+      data_product_id: ""
+    out:
+      resource_schema: !DataProductPrepareUpdate
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified data_product_id does not exist
+

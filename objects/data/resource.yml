@@ -144,8 +144,11 @@ ExtendedResource: !Extends_ResourceContainer
   attachments: []  # list of sensors attached to this device
 
 
-#A derived object containing common fields for all prepare update objects
-PrepareUpdateResource: !Extends_ResourceContainer
+#A base object containing common fields for all prepare update objects
+ResourcePrepareUpdate:
+  _id: ""   #  Unique identifier (matches the id of the internal persistable resource object)
+  resource: !Resource
+  resource_schema: {}
 
 ---
 

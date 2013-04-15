@@ -1046,3 +1046,27 @@ methods:
     throws:
       BadRequest: A parameter is missing
       NotFound: An object with the specified instrument_device_id does not exist
+
+#-------
+
+  prepare_update_instrument_device:
+    docstring: |
+      Returns the information needed to update an instrument device
+    in:
+      instrument_device_id: ""
+    out:
+      resource_schema: !InstrumentDevicePrepareUpdate
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified instrument_device_id does not exist
+
+  prepare_update_platform_device:
+    docstring: |
+      Returns the information needed to update a platform device
+    in:
+      platform_device_id: ""
+    out:
+      resource_schema: !PlatformDevicePrepareUpdate
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified platform_device_id does not exist

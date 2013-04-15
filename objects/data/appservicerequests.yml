@@ -3,6 +3,17 @@
 ResourceServiceRequest: !Extends_ServiceRequest
 
 ---
+StreamDefinitionServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "StreamDefinition"
+  resource_identifier: "stream_definition_id"
+
+DataProductServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "DataProduct"
+  resource_identifier: "data_product_id"
+
+DatasetServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "Dataset"
+  resource_identifier: "dataset_id"
 
 InstrumentDeviceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "InstrumentDevice"
@@ -27,6 +38,10 @@ SensorDeviceServiceRequest: !Extends_ResourceServiceRequest
 DeploymentServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "Deployment"
   resource_identifier: "deployment_id"
+
+PlatformDeviceServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "PlatformDevice"
+  resource_identifier: "platform_device_id"
 
 PlatformModelServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "PlatformModel"

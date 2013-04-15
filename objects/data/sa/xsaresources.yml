@@ -317,47 +317,69 @@ DataProcessComputedAttributes: !Extends_ComputedAttributes
 ---
 
 #This object contains additional information needed to create or update devices
-DeviceUpdatePreparation: !Extends_PrepareUpdateResource
+DevicePrepareUpdate: !Extends_ResourcePrepareUpdate
   #@ResourceType=Deployment
   deployments: []  # list of deployment resources to which to which this device is attached
-  assign_deployment_request: !DeploymentServiceRequest
-  unassign_deployment_request: !DeploymentServiceRequest
 
 ---
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=InstrumentDevice
-InstrumentDeviceUpdatePreparation: !Extends_DeviceUpdatePreparation
+InstrumentDevicePrepareUpdate: !Extends_DevicePrepareUpdate
+  create_instrument_device_request: !InstrumentDeviceServiceRequest
   #@ResourceType=InstrumentModel
   instrument_models: []  # The set of available instrument models
   assign_instrument_model_request: !InstrumentModelServiceRequest
   unassign_instrument_model_request: !InstrumentModelServiceRequest
   #@ResourceType=InstrumentAgent
-  instrument_agent_instances: []   # The set of available instrument agents
-  assign_instrument_agent_instances_request: !InstrumentAgentInstanceServiceRequest
-  unassign_instrument_agent_instances_request: !InstrumentAgentInstanceServiceRequest
+  instrument_agents: []   # The set of available instrument agents
   #@Association=hasModel
-  instrument_agent_models: []  # The set of hasModel Associations  #TODO - think about this one some more
+  #@ResourceSubject
+  #@ObjectType=InstrumentModel
+  instrument_device_model: []  # Should have one entry if the device is associated with a model
+  #@Association=hasModel
+  #@SubjectType=InstrumentAgent
+  #@ObjectType=InstrumentModel
+  instrument_agent_models: []  # The set of hasModel Associations between models and agents
   #@ResourceType=SensorDevice
   sensor_devices: []
-  assign_sensor_request: !SensorDeviceServiceRequest
-  unassign_sensor_request: !SensorDeviceServiceRequest
+
 
 
 #This object contains additional information needed to create or update platform devices
 #@OriginResourceType=PlatformDevice
-PlatformDeviceUpdatePreparation: !Extends_DeviceUpdatePreparation
+PlatformDevicePrepareUpdate: !Extends_DevicePrepareUpdate
+  create_platform_device_request: !PlatformDeviceServiceRequest
   #@ResourceType=PlatformModel
   platform_models: []  # The set of available instrument models
   assign_platform_model_request: !PlatformModelServiceRequest
   unassign_platform_model_request: !PlatformModelServiceRequest
   #@ResourceType=PlatformAgent
   platform_agents: []   # The set of available instrument agents
-  assign_platform_agent_request: !PlatformAgentServiceRequest
-  unassign_platform_agent_request: !PlatformAgentServiceRequest
   #@Association=hasModel
-  instrument_agent_models: []  # The set of hasModel Associations  #TODO - think about this one some more
+  #@ResourceSubject
+  #@ObjectType=PlatformModel
+  platform_device_model: []  # Should have one entry if the device is associated with a model
+  #@Association=hasModel
+  #@SubjectType=PlatformAgent
+  #@ObjectType=PlatformModel
+  platform_agent_models: []  # The set of hasModel Associations between models and agents
   #@ResourceType=InstrumentDevice
   instrument_devices: []
-  assign_instrument_request: !InstrumentDeviceServiceRequest
-  unassign_instrument_request: !InstrumentDeviceServiceRequest
+
+#This object contains additional information needed to create or update instrument devices
+#@OriginResourceType=DataProduct
+DataProductPrepareUpdate: !Extends_ResourcePrepareUpdate
+  create_data_product_request: !DataProductServiceRequest
+  #@ResourceType=StreamDefinition
+  stream_definitions: []  # The set of available instrument models
+  #@ResourceType=Dataset
+  datasets: []  # The set of available instrument models
+  #@Association=hasStreamDefinition
+  #@ResourceSubject
+  #@ObjectType=StreamDefinition
+  data_product_stream_definition: []  # Should have one entry if the data product is associated with a stream def
+  #@Association=hasDataset
+  #@ResourceSubject
+  #@ObjectType=Dataset
+  data_product_dataset: []  # Should have one entry if the data product is associated with a dataset

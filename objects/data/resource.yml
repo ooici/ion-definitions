@@ -167,6 +167,10 @@ TestExtendedResource: !Extends_ExtendedResource
   owner_count: 0  #count of owners
 
 # An object used for testing of the framework
+#@OriginResourceType=InstrumentDevice
+TestPrepareUpdateResource: !Extends_ResourcePrepareUpdate
+
+# An object used for testing of the framework
 #@OriginResourceType=Device
 TestExtendedResourceDevice: !Extends_ExtendedResource
   #@hasPolicy

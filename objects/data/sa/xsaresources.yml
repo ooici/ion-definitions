@@ -245,16 +245,22 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
 
-  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  data_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
+  communications_status_roll_up: !ComputedIntValue    # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  power_status_roll_up: !ComputedIntValue             # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  data_status_roll_up: !ComputedIntValue              # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  location_status_roll_up: !ComputedIntValue          # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  aggregated_status: !ComputedIntValue      # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
 
   platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
   instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
 
-  site_status: [] # List of aggregate status for child sites (list index see extended attribute)
+  site_status: []       # List of aggregate status for child sites (list index see extended attribute)
+
+  platform_station_sites: []    #lists all platformSite children where alt_resource_type = StationSite
+  platform_assembly_sites: []   #lists all platformSite children where alt_resource_type = PlatformAssemblySite
+  platform_component_sites: []  #lists all platformSite children where alt_resource_type = PlatformComponentSite
+  instrument_sites: []          #lists all instrumentSite children
+
 
 ---
 

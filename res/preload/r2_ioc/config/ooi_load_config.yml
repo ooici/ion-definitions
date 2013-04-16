@@ -1,0 +1,32 @@
+# This file configures the OOI asset import
+
+load_sequence:
+
+  - name: parse OOI
+    docstring:
+    config:
+      op: parseooi
+      scenario: X
+      loadooi: True
+      assets: res/preload/r2_ioc/ooi_assets
+      bulk: True
+      debug: True
+      ooiuntil: "8/1/2013"
+      ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+
+
+#  - name: step1
+#    docstring:
+#    config:
+#      op: load
+#      scenario: OOI
+#      loadooi: True
+#      assets: res/preload/r2_ioc/ooi_assets
+#      bulk: True
+#      debug: True
+#      ooiuntil: "8/1/2013"
+#      ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+
+#  - name: step2:
+#    config:
+#      ooiexclude:

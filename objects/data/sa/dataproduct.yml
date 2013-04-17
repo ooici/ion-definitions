@@ -196,10 +196,6 @@ DataProduct: !Extends_InformationResource
   # List of URLs with information about the data product
   reference_urls: []
 
-  # The end user formats for which the data product is available
-  #@ContentType=Term
-  available_formats: []   # a list of Term objects (see Shared.yml)
-
 ---
 DataProductVersion:
   # name of the version

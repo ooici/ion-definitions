@@ -425,25 +425,13 @@ StreamAlarmType: !enum (values=(WARNING, ALERT, ALL_CLEAR), default=ALL_CLEAR)
 
 StreamAlertType: !enum (values=(WARNING, ALARM, ALL_CLEAR), default=ALL_CLEAR)
 
+
 ---
-StreamAlarmEvent: !Extends_ResourceEvent
+
+DeviceStatusAlertEvent: !Extends_DeviceStatusEvent
   name: ''
-  message: ''
-  expr: ''
   stream_name: ''
   value_id: ''
-  value: None
-
----
-
-StreamWarningAlarmEvent: !Extends_StreamAlarmEvent
-  type: StreamAlaramType.WARNING
-
-StreamAlertAlarmEvent: !Extends_StreamAlarmEvent
-  type: StreamAlaramType.ALERT
-  
-StreamAllClearAlarmEvent: !Extends_StreamAlarmEvent
-  type: StreamAlaramType.ALL_CLEAR
 
 ---
 
@@ -454,16 +442,6 @@ StreamAlertEvent: !Extends_ResourceEvent
   value_id: ''
   value: None
 
----
-
-StreamWarningAlertEvent: !Extends_StreamAlertEvent
-  type: StreamAlertType.WARNING
-
-StreamAlertAlertEvent: !Extends_StreamAlertEvent
-  type: StreamAlertType.ALARM
-  
-StreamAllClearAlertEvent: !Extends_StreamAlertEvent
-  type: StreamAlertType.ALL_CLEAR
 
 ---
 

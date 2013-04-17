@@ -14,12 +14,7 @@ ExternalArchive:
 # have a real-time stream and may have persisted historic data.
 DataProduct: !Extends_InformationResource
 
-  # Current to version 140 of confluence resource page:  https://confluence.oceanobservatories.org/x/EYHsAQ
-
-  # The realization of a uniquely identified presentation of a defined collection of information.
-  # The presentation consists of a particular subset of the collection.
-
-  #Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID
+  # Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID
   naming_authority_id: ""
   
   # An entity that serves as a contact point
@@ -29,6 +24,7 @@ DataProduct: !Extends_InformationResource
   # limits expressed relative to earth
   geospatial_bounds: !GeospatialBounds
 
+  # Center point for easy indexing
   geospatial_point_center: !GeospatialIndex
 
   # for data from fixed-location assets, is set according to the GeospatialPoint of the fixed asset creating the data;
@@ -36,6 +32,7 @@ DataProduct: !Extends_InformationResource
   # or an average location of
   # geospatial_point: !GeospatialPoint  # used in R3
 
+  # Coordinate system reference
   geospatial_coordinate_reference_system: !GeospatialCoordinateReferenceSystem
 
   # A nominal representation of the date span of when the observations within the data product were actually made.
@@ -55,15 +52,66 @@ DataProduct: !Extends_InformationResource
   # Miscellaneous information not already captured in attributes
   comment: ""
 
-  # core data product a short code like PRESWAT
+  # OOI data product identifier and short code like PRESWAT
   #@ContentType=str
   ooi_short_name: ""
 
+  # OOI core data product descriptive name.
   # provided in section 2.2.1 of the DPS, and also in the column "Data Product Name"
   # in the Data Product Catalog that is part of the Instrument Application in SAF
-  # OOI core data product descriptive name
   #@ContentType=str
   ooi_product_name: ""
+
+  # Whether the data product is from the Air-Sea Interface, Surface Water, Water Column, Benthic Boundary Layer and/or Seafloor/Crust. Codelist: Air-Sea Interface, Surface Water, Water Column, Benthic Boundary Layer, Seafloor/Crust
+  regime: ""
+
+  # Whether the Combine QC Flags (CMBNFLG) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_cmbnflg: ""
+
+  # Whether the Conductivity Compressibility Compensation (CONDCMP) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_condcmp: ""
+
+  # Whether the Global Range Test (GLBLRNG) QC is run on this data product. Codelist:  applicable, not applicable, TBD
+  qc_glblrng: ""
+
+  # Whether the Gradient Test (GRADTST) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_gradtst: ""
+
+  # Whether the 1-D Interpolation (INTERP1) QC routine is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_interp1: ""
+
+  # Whether the Local Range Test (LOCLRNG) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_loclrng: ""
+
+  # Whether the Modulus (MODULUS) QC is run on this data product. Codelist:  applicable, not applicable, TBD
+  qc_modulus: ""
+
+  # Whether the Evaluate Polynomial (POLYVAL) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_polyval: ""
+
+  # Whether the Solar Elevation (SOLAREL) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_solarel: ""
+
+  # Whether the Spike Test (SPKETST) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_spketest: ""
+
+  # Whether the Stuck Value Test (STUCKVL) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_stuckvl: ""
+
+  # Whether the .Trend Test (TRNDTST) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  qc_trndtst: ""
+
+  # The OOI document control number (DCN) for this data product's Data Processing Specification. Comma-separated list when multiple values are present
+  dps_dcn: ""
+
+  # The OOI document control number (DCN) for this data product's processing flow diagram. Comma-separated list when multiple values are present. Codelist:  applicable, not applicable, TBD
+  flow_diagram_dcn: ""
+
+  # The OOI DOOR L2 Science Requirement number(s). Comma-separated list when multiple values are present
+  doors_l2_requirement_num: ""
+
+  # The OOI DOOR L2 Science Requirement text.
+  doors_l2_requirement_text: ""
 
   # synonyms to facilitate searching
   #@ContentType=str

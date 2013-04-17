@@ -203,6 +203,13 @@ methods:
     throws:
       NotFound: Data product not found or cache for data product not found.
 
+  get_data_product_group_list:
+    docstring: Return a sorted list of distinct names of ooi_product_name attributes
+    in:
+      org_id: ""  # Optional
+    out:
+      name_list: []
+
 #-------
 
   get_data_product_extension:

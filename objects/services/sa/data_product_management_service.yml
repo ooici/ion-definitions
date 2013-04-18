@@ -228,14 +228,14 @@ methods:
 
 #-------
 
-  prepare_update_data_product:
+  prepare_data_product_support:
     docstring: |
-      Returns the information needed to update an data product
+      Returns the information needed to create or update a data product. The data_product_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
     in:
       data_product_id: ""
     out:
-      resource_schema: !DataProductPrepareUpdate
+      resource_schema: !DataProductPrepareSupport
     throws:
-      BadRequest: A parameter is missing
       NotFound: An object with the specified data_product_id does not exist
 

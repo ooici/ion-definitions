@@ -145,7 +145,7 @@ ExtendedResource: !Extends_ResourceContainer
 
 
 #A base object containing common fields for all prepare update objects
-ResourcePrepareUpdate:
+ResourcePrepareSupport:
   _id: ""   #  Unique identifier (matches the id of the internal persistable resource object)
   resource: !Resource
   resource_schema: {}
@@ -168,7 +168,7 @@ TestExtendedResource: !Extends_ExtendedResource
 
 # An object used for testing of the framework
 #@OriginResourceType=InstrumentDevice
-TestPrepareUpdateResource: !Extends_ResourcePrepareUpdate
+TestPrepareUpdateResource: !Extends_ResourcePrepareSupport
 
 # An object used for testing of the framework
 #@OriginResourceType=Device

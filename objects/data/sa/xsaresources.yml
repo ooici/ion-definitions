@@ -323,7 +323,7 @@ DataProcessComputedAttributes: !Extends_ComputedAttributes
 ---
 
 #This object contains additional information needed to create or update devices
-DevicePrepareUpdate: !Extends_ResourcePrepareUpdate
+DevicePrepareSupport: !Extends_ResourcePrepareSupport
   #@ResourceType=Deployment
   deployments: []  # list of deployment resources to which to which this device is attached
 
@@ -331,8 +331,9 @@ DevicePrepareUpdate: !Extends_ResourcePrepareUpdate
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=InstrumentDevice
-InstrumentDevicePrepareUpdate: !Extends_DevicePrepareUpdate
+InstrumentDevicePrepareSupport: !Extends_DevicePrepareSupport
   create_instrument_device_request: !InstrumentDeviceServiceRequest
+  update_instrument_device_request: !InstrumentDeviceServiceRequest
   #@ResourceType=InstrumentModel
   instrument_models: []  # The set of available instrument models
   assign_instrument_model_request: !InstrumentModelServiceRequest
@@ -354,8 +355,9 @@ InstrumentDevicePrepareUpdate: !Extends_DevicePrepareUpdate
 
 #This object contains additional information needed to create or update platform devices
 #@OriginResourceType=PlatformDevice
-PlatformDevicePrepareUpdate: !Extends_DevicePrepareUpdate
+PlatformDevicePrepareSupport: !Extends_DevicePrepareSupport
   create_platform_device_request: !PlatformDeviceServiceRequest
+  update_platform_device_request: !PlatformDeviceServiceRequest
   #@ResourceType=PlatformModel
   platform_models: []  # The set of available instrument models
   assign_platform_model_request: !PlatformModelServiceRequest
@@ -375,8 +377,9 @@ PlatformDevicePrepareUpdate: !Extends_DevicePrepareUpdate
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=DataProduct
-DataProductPrepareUpdate: !Extends_ResourcePrepareUpdate
+DataProductPrepareSupport: !Extends_ResourcePrepareSupport
   create_data_product_request: !DataProductServiceRequest
+  update_data_product_request: !DataProductServiceRequest
   #@ResourceType=StreamDefinition
   stream_definitions: []  # The set of available instrument models
   #@ResourceType=Dataset

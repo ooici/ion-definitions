@@ -323,42 +323,41 @@ DataProcessComputedAttributes: !Extends_ComputedAttributes
 
 ---
 
-#This object contains additional information needed to create or update devices
-DevicePrepareSupport: !Extends_ResourcePrepareSupport
-  #@ResourceType=Deployment
-  deployments: []  # list of deployment resources to which to which this device is attached
-
----
-
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=InstrumentDevice
-InstrumentDevicePrepareSupport: !Extends_DevicePrepareSupport
-  create_instrument_device_request: !InstrumentDeviceServiceRequest
-  update_instrument_device_request: !InstrumentDeviceServiceRequest
+InstrumentDevicePrepareSupport: !Extends_ResourcePrepareSupport
+  create_request: !InstrumentDeviceServiceRequest
+  update_request: !InstrumentDeviceServiceRequest
   #@ResourceType=InstrumentModel
   instrument_models: []  # The set of available instrument models
   assign_instrument_model_request: !InstrumentModelServiceRequest
   unassign_instrument_model_request: !InstrumentModelServiceRequest
-  #@ResourceType=InstrumentAgent
-  instrument_agents: []   # The set of available instrument agents
   #@Association=hasModel
   #@ResourceSubject
   #@ObjectType=InstrumentModel
   instrument_device_model: []  # Should have one entry if the device is associated with a model
+  #@ResourceType=InstrumentAgent
+  instrument_agents: []   # The set of available instrument agents
   #@Association=hasModel
   #@SubjectType=InstrumentAgent
   #@ObjectType=InstrumentModel
   instrument_agent_models: []  # The set of hasModel Associations between models and agents
   #@ResourceType=SensorDevice
-  sensor_devices: []
+  sensor_devices: [] # The set of available sensors
+  assign_sensor_device_request: !SensorDeviceServiceRequest
+  unassign_sensor_device_request: !SensorDeviceServiceRequest
+  #@Association=hasDevice
+  #@ResourceObject
+  #@SubjectType=SensorDevice
+  instrument_device_sensor_device: []  # Should have one entry if the instrument device is associated with a sensor device
 
 
 
 #This object contains additional information needed to create or update platform devices
 #@OriginResourceType=PlatformDevice
-PlatformDevicePrepareSupport: !Extends_DevicePrepareSupport
-  create_platform_device_request: !PlatformDeviceServiceRequest
-  update_platform_device_request: !PlatformDeviceServiceRequest
+PlatformDevicePrepareSupport: !Extends_ResourcePrepareSupport
+  create_request: !PlatformDeviceServiceRequest
+  update_request: !PlatformDeviceServiceRequest
   #@ResourceType=PlatformModel
   platform_models: []  # The set of available instrument models
   assign_platform_model_request: !PlatformModelServiceRequest
@@ -375,23 +374,50 @@ PlatformDevicePrepareSupport: !Extends_DevicePrepareSupport
   platform_agent_models: []  # The set of hasModel Associations between models and agents
   #@ResourceType=InstrumentDevice
   instrument_devices: []
+  assign_instrument_device_request: !InstrumentDeviceServiceRequest
+  unassign_instrument_device_request: !InstrumentDeviceServiceRequest
+  #@Association=hasDevice
+  #@ResourceSubject
+  #@ObjectType=InstrumentDevice
+  platform_device_instrument_device: []  # Should have one entry if the platform device is associated with an instrument device
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=DataProduct
 DataProductPrepareSupport: !Extends_ResourcePrepareSupport
-  create_data_product_request: !DataProductServiceRequest
-  update_data_product_request: !DataProductServiceRequest
+  create_request: !DataProductServiceRequest
+  update_request: !DataProductServiceRequest
+  activate_request: !DataProductServiceRequest
+  deactivate_request: !DataProductServiceRequest
   #@ResourceType=StreamDefinition
   stream_definitions: []  # The set of available instrument models
   assign_stream_definition_request: !StreamDefinitionServiceRequest
-  #@ResourceType=Dataset
-  datasets: []  # The set of available instrument models
-  assign_dataset_request: !DatasetServiceRequest
+  unassign_stream_definition_request: !StreamDefinitionServiceRequest #Not currently implemented
   #@Association=hasStreamDefinition
   #@ResourceSubject
   #@ObjectType=StreamDefinition
   data_product_stream_definition: []  # Should have one entry if the data product is associated with a stream def
+  #@ResourceType=Dataset
+  datasets: []  # The set of available instrument models
+  assign_dataset_request: !DatasetServiceRequest
+  unassign_dataset_request: !DatasetServiceRequest  #Not currently implemented
   #@Association=hasDataset
   #@ResourceSubject
   #@ObjectType=Dataset
   data_product_dataset: []  # Should have one entry if the data product is associated with a dataset
+  #@ResourceType=InstrumentDevice
+  instrument_devices: []
+  assign_instrument_device_request: !InstrumentDeviceServiceRequest
+  unassign_instrument_device_request: !InstrumentDeviceServiceRequest
+  #@Association=hasOutputProduct
+  #@ResourceObject
+  #@SubjectType=InstrumentDevice
+  data_product_instrument_device: []  # Should have one entry if the data product is associated with an instrument device
+  #@ResourceType=InstrumentDevice
+  platform_devices: []
+  assign_platform_device_request: !PlatformDeviceServiceRequest
+  unassign_platform_device_request: !PlatformDeviceServiceRequest
+  #@Association=hasOutputProduct
+  #@ResourceObject
+  #@SubjectType=PlatformDevice
+  data_product_plaform_device: []  # Should have one entry if the data product is associated with a platform device
+

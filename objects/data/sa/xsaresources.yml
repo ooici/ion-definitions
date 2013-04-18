@@ -382,8 +382,10 @@ DataProductPrepareSupport: !Extends_ResourcePrepareSupport
   update_data_product_request: !DataProductServiceRequest
   #@ResourceType=StreamDefinition
   stream_definitions: []  # The set of available instrument models
+  assign_stream_definition_request: !StreamDefinitionServiceRequest
   #@ResourceType=Dataset
   datasets: []  # The set of available instrument models
+  assign_dataset_request: !DatasetServiceRequest
   #@Association=hasStreamDefinition
   #@ResourceSubject
   #@ObjectType=StreamDefinition

@@ -8,8 +8,19 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+P
 dependencies: [resource_registry, pubsub_management, data_acquisition_management, dataset_management, ingestion_management, data_retriever, user_notification]
 
 methods:
+  create_data_product_:
+    docstring: |
+      Define a realization of a uniquely identified presentation of a defined collection of information.
+      The presentation consists of a particular subset of the collection.
+    in:
+      data_product: !DataProduct
+    out:
+      data_product_id: ""
+
   create_data_product:
-    docstring: Define a realization of a uniquely identified presentation of a defined collection of information. The presentation consists of a particular subset of the collection.
+    docstring: |
+      Define a realization of a uniquely identified presentation of a defined collection of information. The
+      presentation consists of a particular subset of the collection. This version of the API should be deprecated.
     in:
       data_product: !DataProduct
       stream_definition_id: ""
@@ -42,6 +53,23 @@ methods:
   force_delete_data_product:
     in:
       data_product_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_stream_definition_to_data_product:
+    in:
+      data_product_id: ''
+      stream_definition_id: ''
+      exchange_point: ''
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_dataset_to_data_product:
+    in:
+      data_product_id: ''
+      dataset_id: ''
     out:
     throws:
       NotFound: object with specified id does not exist

@@ -181,6 +181,21 @@ methods:
       BadRequest: A parameter is missing
       NotFound: An object with the specified observatory_id does not exist
 
+  get_deployment_extension:
+    docstring: |
+      Returns an DeploymentExtension object containing additional related information
+    in:
+      deployment_id: ""
+      ext_associations: {}    # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: []         # An optional list of field names to exclude from retrieving
+      user_id: ""  # An optional user id associated with the requesting user
+    out:
+      site: !DeploymentExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified observatory_id does not exist
+
+
   # -----------------
   # Working with Subsite resources.
 

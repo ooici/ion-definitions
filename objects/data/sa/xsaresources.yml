@@ -80,17 +80,18 @@ DataProductExtension: !Extends_ExtendedInformationResource
 # This object contains additional information associated with a deployment resource.
 #@OriginResourceType=Deployment
 DeploymentExtension: !Extends_ExtendedInformationResource
-  #@hasDeployment=InstrumentDevice
+  #@ResourceType=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
-  #@hasDeployment=InstrumentSite
+  #@ResourceType=InstrumentSite
   instrument_sites: []  # The associated Instrument sites
-  #@hasDeployment=PlatformDevice
+  #@ResourceType=PlatformDevice
   platform_devices: []  # The associated Platform devices
-  #@hasDeployment=PlatformSite
+  #@ResourceType=PlatformSite
   platform_sites: []  # The associated Platform sites
-  #@hasModelForDeployment
-  models: []  # The associated models
-
+  #@ResourceType=InstrumentModel
+  instrument_models: []  # The associated models
+  #@ResourceType=PlatformModel
+  platform_models: []  # The associated models
 ---
 
 # This object contains additional information associated with a instrument or platform model.

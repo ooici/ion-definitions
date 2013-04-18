@@ -12,6 +12,7 @@ StreamDefinition: !Extends_InformationResource
   parameter_dictionary: {}
   stream_type: ""
   available_fields: []
+  stream_configuration: {}
 
 
 # Encapsulation for publishing on streams

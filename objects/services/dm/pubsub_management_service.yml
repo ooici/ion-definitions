@@ -18,6 +18,7 @@ methods:
       stream_type: ""
       description: ""
       available_fields: []
+      stream_configuration: {}
     out:
       stream_definition_id: ""
     throws:

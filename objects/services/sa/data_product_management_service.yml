@@ -74,12 +74,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  remove_streams:
-    in:
-      data_product_id: ""
-    out:
-      stream_ids: []
-
   find_data_products:
     in:
       filters: !ResourceFilter

@@ -913,13 +913,13 @@ BETA,CTDBP,seawater_pressure,PD909,0,seawater_pressure_function_float32_dbar,0,f
 BETA,CTDBP,seawater_conductivity,PD910,0,seawater_conductivity_function_float32_S_m_1,0,function,float32,,S m-1,-9999,"Sea Water Conductivity, S m-1",6,PFID37,"{'c0':'PD194','t1':'PD908','p1':'PD909','g':'LV_g','h':'LV_h','i':'LV_i','j':'LV_j','cpcor':'LV_cpcor','ctcor':'LV_ctcor'}",,CONDWAT,sea_water_electrical_conductivity,CONDWAT_L1,,"In situ, sea water conductivity in Siemens per meter [S/m] from the conductivity, temperature and depth (CTD) family of instruments",,,,
 BETA,CTDBP,practical_salinity,PD911,0,practical_salinity_function_float32_1,0,function,float32,,1,-9999,Sea Water Practical Salinity,4,PFID26,"{'c':'PD910','t':'PD908','p':'PD909'} ",,PRACSAL,sea_water_practical_salinity,PRACSAL_L2,,Practical Salinity is defined on the Practical Salinity Scale of 1978 (PSS-78) and is calculated from the electrical conductivity of sea water (as well as temperature and pressure).,,,,
 BETA,CTDBP,seawater_density,PD912,0,seawater_density_function_float32_kg_m_3,0,function,float32,,kg m-3,-9999,"Sea Water Density, kg m-3",4,PFID27,"{'SP':'PD911','t':'PD908','p':'PD909','lat':'PD8','lon':'PD9'}",,DENSITY,sea_water_density,DENSITY_L2,,"The density of seawater in kg m-3 computed using the TEOS-10 equations with data from the conductivity, temperature and depth (CTD) family of instruments.",,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelA,NPD1,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelB,NPD2,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelC,NPD3,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelD,NPD4,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Mx,NPD5,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,My,NPD6,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Mz,NPD7,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Pitch,NPD8,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Roll,NPD9,,,,quantity,uint16,,,65535,,,,,,,,,,,,,,
-NOSE,,upload_time,NPD10,,upload_time_quantity_float64_seconds_since_1900_01_01,0,quantity,float64,,seconds since 1900-01-01,-9999,"Time, seconds since 1900-01-01",,,,,,,,,,,,,
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelA,NPD1,0,VelA_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelB,NPD2,0,VelB_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelC,NPD3,0,VelC_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,VelD,NPD4,0,VelD_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Mx,NPD5,0,Mx_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,My,NPD6,0,My_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Mz,NPD7,0,Mz_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Pitch,NPD8,0,Pitch_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,https://confluence.oceanobservatories.org/display/CICG/HYPM_01_WFP_ACM,Roll,NPD9,0,Roll_quantity_uint16_,0,quantity,uint16,,,65535,,,,,,,,,,,,,,invalid id
+NOSE,,upload_time,NPD10,,upload_time_quantity_float64_seconds_since_1900_01_01,0,quantity,float64,,seconds since 1900-01-01,-9999,"Time, seconds since 1900-01-01",,,,,,,,,,,,,invalid id

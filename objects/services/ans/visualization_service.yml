@@ -80,18 +80,6 @@ methods:
       NotFound: Throws if specified data product id does not exist
 
 
-  get_data_product_kml:
-    docstring: |
-      This operation returns a KML file containing geo-references for all the data_products active in the system.
-      The KML file can be used for populating Google maps/earth.
-    in:
-      visualization_parameters: {}
-    out:
-      kml_file: ""
-    throws:
-      BadRequest: Throws if the KML could not be generated
-
-
   get_data_product_metadata:
     docstring: |
       Returns metadata about the data_product from the coverage

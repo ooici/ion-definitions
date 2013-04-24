@@ -1,17 +1,29 @@
-Scenario,ID,subject,name,description,contact_id,role_ids
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,
-BETA,USER_1,/DC=org/DC=cilogon/C=US/O=Google/CN=Owen Ownerrep A893,Owen Ownerrep,Demonstration User,O_OWNERREP,
-BETA,USER_2,/DC=org/DC=cilogon/C=US/O=Google/CN=Mike Manager A892,Mike Manager,Demonstration User,M_MANAGER,
-R2_DEMO,USER_3,/DC=org/DC=cilogon/C=US/O=Google/CN=Tim Ampe A448,Tim Ampe,MF_3 Observatory Manager,T_AMPE,
-R2_DEMO,USER_10,TBD_subject,User 10,MF_RSN Manager,,
-R2_DEMO,USER_11,TBD_subject,User 11,MF_RSN Observatory Operator,,
-R2_DEMO,USER_12,TBD_subject,User 12,MF_RSN Instrument Operator,,
-R2_DEMO,USER_13,TBD_subject,User 13,MF_RSN Data Operator,,
-R2_DEMO,USER_14,TBD_subject,User 14,MF_RSN Member,,
-R2_DEMO,USER_20,TBD_subject,User 20,MF_CGSN Manager,,
-R2_DEMO,USER_21,TBD_subject,User 21,MF_CGSN Observatory Operator,,
-R2_DEMO,USER_22,TBD_subject,User 22,MF_CGSN Instrument Operator,,
-R2_DEMO,USER_23,TBD_subject,User 23,MF_CGSN Data Operator,,
-R2_DEMO,USER_24,TBD_subject,User 24,MF_CGSN Member,,
-BETA,USER_4,/DC=org/DC=cilogon/C=US/O=Google/CN=Beta Tester A1730,Beta Operator,Beta Operator Test User,B_OPERATOR,
-IDK,IDK_USER,/DC=org/DC=cilogon/C=US/O=Google/CN=idkuser,IDK User,,IDK_USER1,
+Scenario,ID,subject,name,description,contact_id
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,
+BETA,USER_1,/DC=org/DC=cilogon/C=US/O=Google/CN=Owen Ownerrep A893,Owen Ownerrep,Demonstration User,O_OWNERREP
+BETA,USER_2,/DC=org/DC=cilogon/C=US/O=Google/CN=Mike Manager A892,Mike Manager,Demonstration User,M_MANAGER
+BETA,USER_3,/DC=org/DC=cilogon/C=US/O=Google/CN=Tim Ampe A448,Tim Ampe,MF_3 Observatory Manager,T_AMPE
+R2_DEMO,USER_10,TBD_subject,User 10,MF_RSN Manager,
+R2_DEMO,USER_11,TBD_subject,User 11,MF_RSN Observatory Operator,
+R2_DEMO,USER_12,TBD_subject,User 12,MF_RSN Instrument Operator,
+R2_DEMO,USER_13,TBD_subject,User 13,MF_RSN Data Operator,
+R2_DEMO,USER_14,TBD_subject,User 14,MF_RSN Member,
+R2_DEMO,USER_20,TBD_subject,User 20,MF_CGSN Manager,
+R2_DEMO,USER_21,TBD_subject,User 21,MF_CGSN Observatory Operator,
+R2_DEMO,USER_22,TBD_subject,User 22,MF_CGSN Instrument Operator,
+R2_DEMO,USER_23,TBD_subject,User 23,MF_CGSN Data Operator,
+R2_DEMO,USER_24,TBD_subject,User 24,MF_CGSN Member,
+BETA,USER_4,/DC=org/DC=cilogon/C=US/O=Google/CN=Beta Tester A1730,Beta Operator,Beta Operator Test User,B_OPERATOR
+IDK,IDK_USER,/DC=org/DC=cilogon/C=US/O=Google/CN=idkuser,IDK User,,IDK_USER1
+BETA,A_PLUEDDEMANN,/DC=org/DC=cilogon/C=US/O=Google/CN=Al Plueddemann A6810,Al Plueddemann,Beta User,A_PLUEDDEMANN
+BETA,B_BERGEN,/DC=org/DC=cilogon/C=US/O=Google/CN=Bill Bergen A1766,Bill Bergen,Beta User,B_BERGEN
+BETA,B_PRITCHETT,/DC=org/DC=cilogon/C=US/O=Google/CN=Bill Pritchett A545,Bill Pritchett,Beta User,B_PRITCHETT
+BETA,C_RISEN,/DC=org/DC=cilogon/C=US/O=Google/CN=Craig Risien A586,Craig Risen,Beta User,C_RISEN
+BETA,D_MANALANG,/DC=org/DC=cilogon/C=US/O=University of Washington/CN=DANA A. MANALANG A682,Dana Manalang,Beta User,D_MANALANG
+BETA,G_PROSKUROWSKI,/DC=org/DC=cilogon/C=US/O=University of Washington/CN=GIORA K PROSKUROWSKI A1751,GIORA PROSKUROWSKI,Beta User,G_PROSKUROWSKI
+BETA,J_LUND,/DC=org/DC=cilogon/C=US/O=Google/CN=John Lund A6805,John Lund,Beta User,J_LUND
+BETA,K_STIFFEL,/DC=org/DC=cilogon/C=US/O=Google/CN=Kurt Stiffel A6809,Kurt Stiffel,Beta User,K_STIFFEL
+BETA,L_MORGAN,/DC=org/DC=cilogon/C=US/O=Google/CN=Lynn Morgan A1728,Lyn Morgan,Beta User,L_MORGAN
+BETA,M_VARDARO,/DC=org/DC=cilogon/C=US/O=Google/CN=Michael Vardaro A1745,Mike Vardaro,Beta User,M_VARDARO
+BETA,O_ KAWKA,/DC=org/DC=cilogon/C=US/O=University of Washington/CN=OREST E. KAWKA A6894,Orest Kawka,Beta User,O_ KAWKA
+BETA,K_FELDMAN,/DC=org/DC=cilogon/C=US/O=University of Washington/CN=KENNETH S. FELDMAN A6895,Ken Feldman,Beta User,K_FELDMAN

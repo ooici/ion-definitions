@@ -223,7 +223,7 @@ apps:
     config: 
       op: load
       loadui: true
-      ui_path: res/preload/r2_ioc/ui_assets
+      ui_path: "https://userexperience.oceanobservatories.org/database-exports/Candidates"
       attachments: res/preload/r2_ioc/attachments
       scenario: BASE,BETA,R2_DEMO,EER2
   

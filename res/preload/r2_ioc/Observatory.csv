@@ -1,14 +1,16 @@
-Scenario,ID,owner_id,org_ids,obs/name,obs/description,constraint_ids,coordinate_system
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,
-DOC,,,,,,list of IDs,
-BETA,OBS_RSN,USER_1,MF_3,Regional Cable Demonstration,Regional Cable Demonstration Site,"GEO1,TEMP1",SUBMERGED
-R2_DEMO,OBS_CGSN,USER_20,MF_CGSN,Global Argentine Basin,Global Argentine Basin Array Site,"GEO4,TEMP1",SUBMERGED
-R2_DEMO,OBS_3,USER_1,MF_3,RSN_Demo Observatory,Beta RSN Demonstration Observatory Site,"GEO3,TEMP1",SUBMERGED
-R2_MANUAL,OBS_4,USER_1,MF_4,RSN_Demo_Create,Demonstration of RSN Observatory creation,"GEO3,TEMP1",SUBMERGED
-R2_DEMO,OBS_CE,,MF_EA,Coastal Endurance,Coastal Endurance Array Site,"GEO4,TEMP1",SUBMERGED
-R2_DEMO,OBS_CP,,MF_CGSN,Coastal Pioneer,Coastal Pioneer Array  Site,"GEO4,TEMP1",SUBMERGED
-R2_DEMO,OBS_GI,,MF_CGSN,Global Irminger Sea,Global Irminger Sea Array  Site,"GEO4,TEMP1",SUBMERGED
-R2_DEMO,OBS_GP,,MF_CGSN,Global Station Papa,Global Station Papa Array  Site,"GEO4,TEMP1",SUBMERGED
-R2_DEMO,OBS_GS,,MF_CGSN,Global Southern Ocean,Global Southern Ocean Array Site,"GEO4,TEMP1",SUBMERGED
-R2_DEMO,OBS_RSS,,MF_RSN,Regional Terrestrial,Regional Shore Site,"GEO3,TEMP1",SUBMERGED
-IDK,IDK_OBS,IDK_USER,IDK_ORG,IDK Observatory,"Your desk, your office","GEO_IDK,TEMP_IDK",SUBMERGED1
+Scenario,ID,owner_id,org_ids,obs/name,obs/local_name,obs/description,obs/reference_designator,obs/spatial_area_name,constraint_ids,coordinate_system
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,
+DOC,,,,,,,,,list of IDs,
+BETA,OBS_RSN,USER_1,MF_3,Beta Demo Site Alpha,Site Alpha,Regional Cable Demonstration Site,XX01ABCD,Beta Regional  Demonstration,"GEO1,TEMP1",SUBMERGED
+BETA,OBS_RSN2,USER_1,MF_3,Beta Demo Site Beta,Site Beta,Regional Cable Demonstration Site,XX01ABCD,Beta Regional  Demonstration,"GEO2,TEMP1",SUBMERGED
+BETA,OBS_RSN3,USER_1,MF_3,Beta Demo Site Gamma,Site Gamma,Regional Cable Demonstration Site,XX01ABCD,Beta Regional  Demonstration,"GEO3,TEMP1",SUBMERGED
+R2_DEMO,OBS_CGSN,USER_20,MF_CGSN,Demo Site Global Argentine Basin,Global Argentine Basin,Global Argentine Basin Array Site,XX01ABCD,Beta Regional  Demonstration,"GEO4,TEMP1",SUBMERGED
+R2_DEMO,OBS_3,USER_1,MF_3,Demo Site RSN,RSN,Beta RSN Demonstration Observatory Site,XX01ABCD,Beta Regional  Demonstration,"GEO_UW,TEMP1",SUBMERGED
+R2_MANUAL,OBS_4,USER_1,MF_4,RSN_Demo_Create,RSN_Demo_Create,Demonstration of RSN Observatory creation,XX01ABCD,Beta Regional  Demonstration,"GEO3,TEMP1",SUBMERGED
+VOID,OBS_CE,,MF_EA,Demo Site Coastal Endurance,Coastal Endurance,Coastal Endurance Array Site,XX01ABCD,Beta Regional  Demonstration,"GEO4,TEMP1",SUBMERGED
+VOID,OBS_CP,,MF_CGSN,Demo Site Coastal Pioneer,Coastal Pioneer,Coastal Pioneer Array  Site,XX01ABCD,Beta Regional  Demonstration,"GEO4,TEMP1",SUBMERGED
+VOID,OBS_GI,,MF_CGSN,Demo Site Global Irminger Sea,Global Irminger Sea,Global Irminger Sea Array  Site,XX01ABCD,Beta Regional  Demonstration,"GEO4,TEMP1",SUBMERGED
+VOID,OBS_GP,,MF_CGSN,Global Station Papa,Global Station Papa,Global Station Papa Array  Site,XX01ABCD,Beta Regional  Demonstration,"GEO4,TEMP1",SUBMERGED
+VOID,OBS_GS,,MF_CGSN,Global Southern Ocean,Global Southern Ocean,Global Southern Ocean Array Site,XX01ABCD,Beta Regional  Demonstration,"GEO4,TEMP1",SUBMERGED
+VOID,OBS_RSS,,MF_RSN,Regional Terrestrial,Regional Terrestrial,Regional Shore Site,XX01ABCD,Beta Regional  Demonstration,"GEO3,TEMP1",SUBMERGED
+IDK,IDK_OBS,IDK_USER,IDK_ORG,IDK Observatory,IDK Observatory,"Your desk, your office",XX01ABCD,,"GEO_IDK,TEMP_IDK",SUBMERGED1

@@ -1,10 +1,11 @@
-Scenario,ID,owner_id,org_ids,pm/name,pm/description,pm/platform_family,pm/manufacturer,obsolete/OOI_node_type,pm/ci_onboard,pm/shore_networked,pm/platform_type,obsolete/maximum_crew
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,
-DOC,,,marine facility ID or virtual observatory ID,,,,,,,boolean,,
-R2_DEMO,PM11,USER_1,MF_3,Shallow Profilern Demo,Shallow Profiler Model w/200M platform,Wire-Following Profiler,RSN,SP,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
-BETA,PM12,USER_1,MF_3,Beta Demonstration Platform Model,Beta Demonstration of RSN Platform Model,Surface-Piercing Profiler,RSN,MJ,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
-R2_DEMO,PM13,USER_1,MF_3,200m Platform Demo,200-meter Platform for Shallow Profiler Model,Wire-Following Profiler,RSN,FI,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/mooring,0
-R2_DEMO,PM14,USER_1,MF_3,Deep Profiler Demo,Wire-following Deep Profiler Model,Deep Profiler,RSN,WF,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler,0
-R2_DEMO,PM15,USER_1,MF_3,Low Power J-Box Demo,Low Power Junction Box (J-Box) Model,Low-power Junction Box,RSN,LJ,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
-R2_DEMO,PM16,USER_1,MF_3,Low Voltage Node Demo,Low Voltage Node Model,Low-power Junction Box,RSN,??,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
-IDK,IDK_PM,IDK_USER,IDK_ORG,IDK Platform Model,Platform model for IDK development,Low-power Junction Box,RSN,??,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode,0
+Scenario,ID,owner_id,org_ids,param_dict_id,pm/name,pm/description,pm/platform_family,pm/manufacturer,pm/ci_onboard,pm/shore_networked,pm/platform_type
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,
+DOC,,,marine facility ID or virtual observatory ID,,,,,,,boolean,
+R2_DEMO,PM11,USER_1,MF_3,,Shallow Profilern Demo,Shallow Profiler Model w/200M platform,Wire-Following Profiler,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler
+BETA,PM12,USER_1,MF_3,,Beta Demonstration Platform Model,Beta Demonstration of RSN Platform Model,Surface-Piercing Profiler,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode
+R2_DEMO,PM13,USER_1,MF_3,,200m Platform Demo,200-meter Platform for Shallow Profiler Model,Wire-Following Profiler,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/mooring
+R2_DEMO,PM14,USER_1,MF_3,,Deep Profiler Demo,Wire-following Deep Profiler Model,Deep Profiler,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/VerticalProfiler
+R2_DEMO,PM15,USER_1,MF_3,,Low Power J-Box Demo,Low Power Junction Box (J-Box) Model,Low-power Junction Box,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode
+R2_DEMO,PM16,USER_1,MF_3,,Low Voltage Node Demo,Low Voltage Node Model,Low-power Junction Box,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode
+IDK,IDK_PM,IDK_USER,IDK_ORG,,IDK Platform Model,Platform model for IDK development,Wire-Following Profiler,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode
+NOSE,PM_NOSE,USER_1,MF_TEST,,Nose Testing Platform Model,Beta Demonstration of RSN Platform Model,Surface-Piercing Profiler,RSN,FALSE,TRUE,http://mmisw.org/ont/mmi/platform/BenthicNode

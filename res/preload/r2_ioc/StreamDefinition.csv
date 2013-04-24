@@ -1,26 +1,110 @@
-Scenario,COMMENT,ID,org_ids,sdef/name,sdef/description,param_dict_name
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,
-BETA,,StreamDef11,MF_3,SeabirdSim_raw demo,,raw
-BETA,,StreamDef12,MF_3,SeabirdSim_parsed demo,,ctd_parsed_param_dict
-BETA,,StreamDef13,MF_3,DPD1_out_conductivity_L0 demo,,ctd_parsed_param_dict
-BETA,,StreamDef14,MF_3,DPD1_out_temp_L0 demo,,ctd_parsed_param_dict
-BETA,,StreamDef15,MF_3,DPD1_out_pressure_L0 demo,,ctd_parsed_param_dict
-BETA,,StreamDef16,MF_3,DPD2_out_conductivity_L1 demo,,ctd_parsed_param_dict
-BETA,,StreamDef17,MF_3,DPD3_out_temp_L1 demo,,ctd_parsed_param_dict
-BETA,,StreamDef18,MF_3,DPD4_out_pressure_L1 demo,,ctd_parsed_param_dict
-BETA,,StreamDef19,MF_3,DPD5_out_practical_salinity_L2 demo,,ctd_parsed_param_dict
-BETA,,StreamDef20,MF_3,DPD6_out_density_L2 demo,,ctd_parsed_param_dict
-R2_DEMO,,StreamDef21,MF_3,GoogleDT_out,,google_dt
-R2_DEMO,,StreamDef22,MF_3,Matplotlib graphs,,graph_image_param_dict
-BETA,,StreamDef23,MF_3,Raw Stream for any instrument,,raw
-DEVS,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,StreamDef24,MF_3,Parsed Photosynthetically Active Radiation,,parad_parsed
-DEVS,https://confluence.oceanobservatories.org/display/instruments/PRESF+Driver,StreamDef25,MF_3,Seafloor Pressure Instrument,,presf_parsed_tidesample
-BETA,,SD_PLATFORM1,MF_3,Platform Engineering Data,,platform_eng_parsed
-DEVS,,StreamDef26,MF_3,Parsed TRHPH,,trhph_parsed
-DEVS,,StreamDef27,MF_3,Parsed PREST,,prest_parsed
-DEVS,,StreamDef28,MF_3,Parsed VELPT,,velpt_parsed
-DEVS,,StreamDef29,MF_3,Parsed NUTNR,,nutnr_parsed
-BETA,,StreamDef30,MF_3,Seabird37SMP_raw,,raw
-BETA,,StreamDef31,MF_3,Seabird37SMP_parsed,,ctd_parsed_param_dict
-IDK,,SD_IDK_RAW,IDK_ORG,IDK raw stream def,,idk_raw_param_dict
-IDK,,SD_IDK_PARSED,IDK_ORG,IDK parsed stream def,,idk_parsed_param_dict
+Scenario,COMMENT,ID,org_ids,sdef/name,sdef/description,param_dict_name,parameter_dictionary,available_fields,reference_designator,Review Status
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,
+BETA,,StreamDef11,MF_3,SeabirdSim_raw demo,,raw,DICT9,,,
+BETA,,StreamDef12,MF_3,SeabirdSim_parsed demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef13,MF_3,DPD1_out_conductivity_L0 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef14,MF_3,DPD1_out_temp_L0 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef15,MF_3,DPD1_out_pressure_L0 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef16,MF_3,DPD2_out_conductivity_L1 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef17,MF_3,DPD3_out_temp_L1 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef18,MF_3,DPD4_out_pressure_L1 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef19,MF_3,DPD5_out_practical_salinity_L2 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef20,MF_3,DPD6_out_density_L2 demo,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+R2_DEMO,,StreamDef21,MF_3,GoogleDT_out,,google_dt,DICT4,,,
+R2_DEMO,,StreamDef22,MF_3,Matplotlib graphs,,graph_image_param_dict,DICT3,,,
+BETA,,StreamDef23,MF_3,Raw Stream for any instrument,,raw,DICT9,,,
+DEVS,https://confluence.oceanobservatories.org/display/instruments/PARAD+Driver,StreamDef24,MF_3,Parsed Photosynthetically Active Radiation,,parad_parsed,,,,
+BETA,https://confluence.oceanobservatories.org/display/instruments/PRESF+Driver,StreamDef25,MF_3,PRESF Parsed Tide Measurements,Includes Seafloor Pressure (SFLPRES_L0) from tide measurements,presf_tide_measurement,DICT15,"PD7,PD10,PD11,PD12,PD16,PD93,PD94,PD29,PD742,PD863",,
+BETA,,SD_PLATFORM1,MF_3,Platform Engineering Data,,platform_eng_parsed,DICT7,,,
+DEVS,,StreamDef26,MF_3,Parsed TRHPH,,trhph_parsed,,,,
+DEVS,,StreamDef28,MF_3,Parsed VELPT,,velpt_parsed,,,,
+DEVS,,StreamDef29,MF_3,Parsed NUTNR,,nutnr_parsed,,,,
+BETA,,StreamDef30,MF_3,Seabird37SMP_raw,,raw,DICT9,,,
+BETA,,StreamDef31,MF_3,Seabird37SMP_parsed,,ctd_parsed_param_dict,DICT1,,CE01ISSM-MF005-01-CTDBPC999,
+IDK,,SD_IDK_RAW,IDK_ORG,IDK raw stream def,,raw,DICT9,,,
+IDK,,SD_IDK_PARSED,IDK_ORG,IDK parsed stream def,,UNKNOWN,,,,
+BETA,,StreamDef32,MF_3,PRESF Operating Status,,presf_operating_status,DICT16,,,
+BETA,,StreamDef33,MF_3,PRESF Calibration Coefficients,,presf_calibration_coefficients,DICT17,,,
+BETA,,StreamDef34,MF_3,PRESF L1 Seafloor Pressure from Tide Measurements,Seafloor Pressure (SFLPRES_L1) from tide measurements,presf_tide_measurement,DICT15,"PD7,PD891",,
+BETA,CTDBP-CDEF,StreamDef35,MF_3,"CTDBP-C,D,E,F Sample",,ctdbp_cdef_sample,DICT19,,,
+BETA,CTDBP-CDEF,StreamDef36,MF_3,"CTDBP-C,D,E,F Operating Status",,ctdbp_cdef_status,DICT20,,,
+BETA,CTDBP-CDEF,StreamDef37,MF_3,"CTDBP-C,D,E,F Calibration Coefficients",,ctdbp_cdef_calibration_coefficients,DICT21,,,
+SP_TEST,CTDBP-NO,StreamDef38,MF_3,"CTDBP-N,O Sample",,ctdbp_no_sample,DICT23,,,
+SP_TEST,CTDBP-NO,StreamDef39,MF_3,"CTDBP-N,O Hardware",,ctdbp_no_hardware,DICT24,,,
+SP_TEST,CTDBP-NO,StreamDef40,MF_3,"CTDBP-N,O Calibration Coefficients",,ctdbp_no_calibration_coefficients,DICT25,,,
+SP_TEST,CTDBP-NO,StreamDef41,MF_3,"CTDBP-N,O Status",,ctdbp_no_status,DICT23,,,
+SP_TEST,CTDBP-NO,StreamDef42,MF_3,"CTDBP-N,O Configuration",,ctdbp_no_configuration,DICT27,,,
+SP_TEST,,StreamDef43,MF_3,PARAD-SA Sample,,parad_sa_sample,DICT28,,,
+SP_TEST,,StreamDef44,MF_3,TRHPH Sample,,trhph_sample,DICT47,,,
+SP_TEST,,StreamDef45,MF_3,TMPSF Sample,,tmpsf_sample,DICT64,,,
+SP_TEST,,StreamDef46,MF_3,TMPSF Engineering,,tmpsf_engineering,DICT65,,,
+VEL3D_B,,StreamDef47,MF_3,VEL3D-B Sample,"includes VELPTTU from Mavs4
+",vel3d_b_sample,DICT67,,,
+VEL3D_B,,StreamDef48,MF_3,VEL3D-B Engineering,,vel3d_b_engineering,DICT68,,,
+BETA,,StreamDef49,MF_3,PREST Realtime Data,,prest_real_time,DICT31,"PD7,PD10,PD11,PD12,PD16,PD73,PD74,PD93,PD94,PD29,PD863",,
+BETA,,StreamDef50,MF_3,PREST Reference Oscillator,,prest_reference_oscillator,DICT32,,,
+BETA,,StreamDef51,MF_3,PREST Configuration Data,,prest_configuration_data,DICT33,,,
+BETA,,StreamDef52,MF_3,PREST Device Status,,prest_device_status,DICT34,,,
+BETA,,StreamDef53,MF_3,PREST Event Counter,,prest_event_counter,DICT35,,,
+BETA,,StreamDef54,MF_3,PREST Hardware Data,,prest_hardware_data,DICT36,,,
+CW_TEST,,StreamDef55,MF_3,NUTNR Sample Data,,nutnr_b_sample,DICT38,,,
+CW_TEST,,StreamDef56,MF_3,NUTNR Status Data,,nutnr_b_status,DICT39,,,
+CW_TEST,,StreamDef57,MF_3,PCO2W Control Record,,pco2w_b_control_record,DICT41,,,
+CW_TEST,,StreamDef58,MF_3,PCO2W Data Record,,pco2w_b_data_record,DICT42,,,
+CW_TEST,,StreamDef59,MF_3,PCO2W Immediate Status,,pco2w_b_immediate_status,DICT43,,,
+CW_TEST,,StreamDef60,MF_3,PCO2W Regular Status,,pco2w_b_regular_status,DICT44,,,
+CW_TEST,,StreamDef61,MF_3,PCO2W Configuration String,,pco2w_b_configuration,DICT45,,,
+CW_TEST,,StreamDef62,MF_3,VELPT Hardware Configuration,,velpt_hardware_configuration,DICT49,,,
+CW_TEST,,StreamDef63,MF_3,VELPT Head Configuration,,velpt_head_configuration,DICT50,,,
+CW_TEST,,StreamDef64,MF_3,VELPT User Configuration,,velpt_user_configuration,DICT51,,,
+CW_TEST,,StreamDef65,MF_3,VELPT Velocity Data,,velpt_velocity_data,DICT52,,,
+CW_TEST,,StreamDef66,MF_3,VELPT Diagnostics Header,,velpt_diagostics_header,DICT53,,,
+CW_TEST,,StreamDef67,MF_3,VELPT Diagnostics Data,,velpt_diagnostics_data,DICT54,,,
+CW_TEST,,StreamDef68,MF_3,"VEL3D-C,D Hardware Configuration",,vel3d_cd_hardware_configuration,DICT56,,,
+CW_TEST,,StreamDef69,MF_3,"VEL3D-C,D Head Configuration",,vel3d_cd_head_configuration,DICT57,,,
+CW_TEST,,StreamDef70,MF_3,"VEL3D-C,D User Configuration",,vel3d_cd_user_configuration,DICT58,,,
+CW_TEST,,StreamDef71,MF_3,OPTAA Sample Data,,optaa_sample,DICT61,,,
+CW_TEST,,StreamDef72,MF_3,OPTAA Startup Status Message,,optaa_status,DICT62,,,
+CW_TEST,,StreamDef73,MF_3,ADCP PD0 Data,,adcp_pd0_parsed,,,,
+CW_TEST,,StreamDef74,MF_3,ADCP PD12 Data,,adcp_pd12_parsed,DICT71,,,
+CW_TEST,,StreamDef75,MF_3,ADCP Waves Packet Data,,adcp_waves_parsed,DICT72,,,
+CW_TEST,,StreamDef76,MF_3,ADCP Active Compass Calibration,,adcp_compass_calibration,DICT73,,,
+CW_TEST,,StreamDef77,MF_3,ADCP System Configuration,,adcp_system_configuration,DICT74,,,
+CW_TEST,,StreamDef78,MF_3,"VEL3D-C,D Data Header",,vel3d_cd_data_header,DICT75,,,
+CW_TEST,,StreamDef79,MF_3,"VEL3D-C,D Velocity Data",,vel3d_cd_velocity_data,DICT76,,,
+CW_TEST,,StreamDef80,MF_3,"VEL3D-C,D System Data",,vel3d_cd_system_data,DICT77,,,
+CW_TEST,,StreamDef81,MF_3,"VEL3D-C,D Clock Data",,vel3d_cd_clock_data,DICT78,,,
+CW_TEST,,StreamDef82,MF_3,"VEL3D-C,D Battery Voltage",,vel3d_cd_battery_voltage,DICT79,,,
+CW_TEST,,StreamDef83,MF_3,"VEL3D-C,D Identification String",,vel3d_cd_identification_string,DICT80,,,
+CW_TEST,,StreamDef84,MF_3,VELPT Clock Data,,velpt_clock_data,DICT81,,,
+CW_TEST,,StreamDef85,MF_3,VELPT Battery Voltage,,velpt_battery_voltage,DICT82,,,
+CW_TEST,,StreamDef86,MF_3,VELPT Identification String,,velpt_identification_string,DICT83,,,
+BETA,,StreamDef87,MF_3,PRESF Wave Bursts,,presf_wave_burst,DICT84,,,
+BETA,,StreamDef88,MF_3,PRESF Wave Statistics,,presf_wave_statistics,DICT85,,,
+BETA,,StreamDef89,MF_3,PREST L1 Seafloor Pressure,Seafloor Pressure (SFLPRES_L1) from PREST,prest_real_time,DICT31,"PD7,PD891",,
+SP_TEST,,StreamDef90,MF_3,BOTPT NANO Sample,includes BOTPRES_L1,botpt_nano_sample,DICT87,,,
+SP_TEST,,StreamDef91,MF_3,BOTPT LILY Sample,includes BOTTILT_L1,botpt_lily_sample,DICT88,,,
+SP_TEST,,StreamDef92,MF_3,BOTPT IRIS Sample,,botpt_iris_sample,DICT89,,,
+SP_TEST,,StreamDef93,MF_3,BOTPT HEAT Sample,,botpt_heat_sample,DICT90,,,
+BETA,,StreamDef94,MF_3,"CTDBP-C,D,E,F L0",,ctdbp_cdef_L0,DICT91,,,
+BETA,,StreamDef95,MF_3,"CTDBP-C,D,E,F L1",,ctdbp_cdef_L1,DICT92,,,
+BETA,,StreamDef96,MF_3,"CTDBP-C,D,E,F L2 pracsal",,ctdbp_cdef_L2_pracsal,DICT93,,,
+BETA,,StreamDef97,MF_3,"CTDBP-C,D,E,F L2 density",,ctdbp_cdef_L2_density,DICT94,,,
+SP_TEST,,StreamDef98,MF_3,VEL3D-B L0,"VELPTTU_L0
+",vel3d_b_L0,DICT99,,,
+SP_TEST,,StreamDef99,MF_3,VEL3D-B L1,"VELPTTU_L1
+",vel3d_b_L1,DICT100,,,
+SP_TEST,,StreamDef100,MF_3,"CTDBP-N,O L0",,ctdbp_no_L0,,,,
+SP_TEST,,StreamDef101,MF_3,"CTDBP-N,O L1",,ctdbp_no_L1,,,,
+SP_TEST,,StreamDef102,MF_3,TMPSF_L1,TMPSFL_L1,tmpsf_L1,DICT103,,,
+TMPSF,,StreamDef103,MF_3,TMPSF_SAMPLE,,tmpsf_sample,DICT64,,,
+TMPSF,,StreamDef104,MF_3,TMPSF_ENG,,tmpsf_engineering,DICT65,,,
+LC_TEST,,StreamDef105,MF_3,Extended CTD LC_TEST,,ctd_LC_TEST,DICT98,,CE01ISSM-MF005-01-CTDBPC999,
+NOSE,,SD_NOSE,MF_3,StreamDef for nose tests,,raw,DICT9,,,
+NOSE,,StreamDef106,MF_3,StreamDef for external CTD,,nose_ctd_external,,,,
+BETA,,StreamDef107,MF_3,CTD Simulator LC_TEST,,ctd_simulator,DICT110,,CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef108,MF_3,TEMPWAT Stream Def,,ctd_simulator,DICT110,"PD7,PD6,tempwat_glblrng_qc",CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef109,MF_3,PRESWAT Stream Def,,ctd_simulator,DICT110,"PD7,PD2,preswat_glblrng_qc",CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef110,MF_3,CONDWAT Stream Def,,ctd_simulator,DICT110,"PD7,PD1,condwat_glblrng_qc",CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef111,MF_3,PRACSAL Stream Def,,ctd_simulator,DICT110,"PD7,PD923,pracsal_glblrng_qc",CE01ISSM-MF005-01-CTDBPC999,
+BETA,,StreamDef112,MF_3,DENSITY Stream Def,,ctd_simulator,DICT110,"PD7,PD924,density_glblrng_qc",CE01ISSM-MF005-01-CTDBPC999,

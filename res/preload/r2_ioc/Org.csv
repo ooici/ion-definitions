@@ -1,11 +1,11 @@
-Scenario,ID,owner_id,org_type,org/name,org/description,org/institution/name,contact_id,org/url
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,
-DOC,,,,,,,single contact only,
-BETA,MF_RSN,USER_1,MarineFacility,Regional_Scale_Nodes,Marine Infrastructure managed by RSN Marine IO,Univ. of Washington,M_MANAGER,http://www.oceanobservatories.org
-BETA,MF_CGSN,USER_1,MarineFacility,Coastal_Global_Arrays,Marine Infrastructure managed by CGSN Marine IO,Woods Hole Oceanographic Institution,M_MANAGER,http://www.oceanobservatories.org
-BETA,MF_EA,USER_1,MarineFacility,Endurance_Array,Marine Infrastructure managed by EA Marine IO,Oregon State University Institution,M_MANAGER,http://www.oceanobservatories.org
-BETA,MF_3,USER_1,MarineFacility,Beta_Example_Observatory,Beta Demonstration of RSN Marine Facility,Univ. of Washington,M_MANAGER,http://www.oceanobservatories.org
-LCA_MANUAL,MF_4,USER_1,MarineFacility,RSN_Demo_Create,Demonstration of RSN Observatory Marine Facility,Univ. of Washington,M_MANAGER,http://www.oceanobservatories.org
-R2_XXX,VO_ION,USER_3,VirtualObservatory,ION,Integrated Observatory,OOI Cyberinfrastructure,J_ORCUTT,http://www.oceanobservatories.org
-NOSE,MF_TEST,USER_1,MarineFacility,CASPER,Created for preload nose test,Center for Advanced Studies Pertaining to Everything Real,TEST_USER,http://www.youtube.com/watch?v=7Sm83hIQ_4I
-IDK,IDK_ORG,IDK_USER,MarineFacility,IDK_Observatory,Placeholder ORG for IDK development,IDK Org,IDK_USER1,
+Scenario,ID,owner_id,org_type,org/name,org/org_governance_name,org/description,org/institution/name,contact_id,org/url
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,
+DOC,,,,,,,,single contact only,
+BETA,MF_RSN,USER_1,MarineFacility,RSN Facility,RSN,Marine Infrastructure managed by RSN Marine IO,Univ. of Washington,M_MANAGER,http://www.oceanobservatories.org
+BETA,MF_CGSN,USER_1,MarineFacility,CGSN Faciliy,CGSN,Marine Infrastructure managed by CGSN Marine IO,Woods Hole Oceanographic Institution,M_MANAGER,http://www.oceanobservatories.org
+BETA,MF_EA,USER_1,MarineFacility,EA Facility,EA,Marine Infrastructure managed by EA Marine IO,Oregon State University Institution,M_MANAGER,http://www.oceanobservatories.org
+BETA,MF_3,USER_1,MarineFacility,Beta Example Facility,BETA,Beta Demonstration of RSN Marine Facility,Univ. of Washington,M_MANAGER,http://www.oceanobservatories.org
+LCA_MANUAL,MF_4,USER_1,MarineFacility,RSN_Demo_Create,RSN1,Demonstration of RSN Observatory Marine Facility,Univ. of Washington,M_MANAGER,http://www.oceanobservatories.org
+R2_XXX,VO_ION,USER_3,VirtualObservatory,ION,ION,Integrated Observatory,OOI Cyberinfrastructure,J_ORCUTT,http://www.oceanobservatories.org
+NOSE,MF_TEST,USER_1,MarineFacility,CASPER,CASPER,Created for preload nose test,Center for Advanced Studies Pertaining to Everything Real,TEST_USER,http://www.youtube.com/watch?v=7Sm83hIQ_4I
+IDK,IDK_ORG,IDK_USER,MarineFacility,IDK_Observatory,IDK,Placeholder ORG for IDK development,IDK Org,IDK_USER1,

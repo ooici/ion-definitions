@@ -1,8 +1,10 @@
-Scenario,ID,confluence,owner_id,lcstate,org_ids,contact_ids,platform_model_id,pd/name,pd/description,pd/serial_number,obsolete/nominal_location,obsolete/manufacture_date,obsolete/platform_family
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,,
-DOC,,,,,,,,,,,"oops? this wouldn't be preconfigured, it would be calculated?",,
-BETA,PDEV3,,USER_1,DEPLOYED_AVAILABLE,MF_3,"M_MANAGER,O_OWNERREP",PM12,Beta Demonstration Platform Device,Beta Demonstration of RSN Platform Device connected to Simulated OMS,103,,20120423,brady
-R2_DEMO,PDEV4,,USER_1,DEPLOYED_AVAILABLE,MF_3,"M_MANAGER,O_OWNERREP",PM12,Profiler 200m Platform 104,200-meter Platform for Shallow Profiler - Platform 104,104,,20120515,tate
-R2_DEMO,D1PlatformDevice1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,"J_DELANEY,O_OWNERREP",PM13,platform device for test deployment 1,200-meter Platform for Shallow Profiler - Deployment 1,104,,20120515,campbell
-R2_DEMO,EEPlatformDevice1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,"J_DELANEY,O_OWNERREP",PM13,platform device for end to end R2 testing,200-meter Platform for Shallow Profiler - EER2 test,104,,20120515,bluth
-IDK,IDK_PD,,IDK_USER,DEPLOYED_AVAILABLE,IDK_ORG,"IDK_USER1,IDK_USER2",IDK_PM,IDK platform device,Platform device for IDK development,104,,20120515,bluth
+Scenario,ID,confluence,owner_id,lcstate,org_ids,contact_ids,platform_model_id,network_parent_id,pd/name,pd/description,pd/serial_number
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,
+DOC: CI attribute name,[X],[X],"[contacts, with role set to owner]",PlatformDevice.lcstate,[X],"[contacts, with role set to pointOfContact]",[association],[association],PlatformDevice.name,PlatformDevice.description,PlatformDevice.serial_number
+BETA,PDEV3,,USER_1,DEPLOYED_AVAILABLE,MF_3,"M_MANAGER,O_OWNERREP",PM12,,Beta Demonstration Platform Device,Beta Demonstration of RSN Platform Device connected to Simulated OMS,103
+R2_DEMO,PDEV4,,USER_1,DEPLOYED_AVAILABLE,MF_3,"M_MANAGER,O_OWNERREP",PM12,,Profiler 200m Platform 104,200-meter Platform for Shallow Profiler - Platform 104,104
+R2_DEMO,D1PlatformDevice1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,"J_DELANEY,O_OWNERREP",PM13,,platform device for test deployment 1,200-meter Platform for Shallow Profiler - Deployment 1,104
+R2_DEMO,EEPlatformDevice1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,DEPLOYED_AVAILABLE,MF_3,"J_DELANEY,O_OWNERREP",PM13,,platform device for end to end R2 testing,200-meter Platform for Shallow Profiler - EER2 test,104
+IDK,IDK_PD,,IDK_USER,DEPLOYED_AVAILABLE,IDK_ORG,"IDK_USER1,IDK_USER2",IDK_PM,,IDK platform device,Platform device for IDK development,104
+NOSE,PDEV_NOSE,,USER_1,DEPLOYED_AVAILABLE,MF_3,"M_MANAGER,O_OWNERREP",PM12,,Nose testing Platform Device,Beta Demonstration of RSN Platform Device connected to Simulated OMS,103
+BETA,PDEV5,,USER_1,DEPLOYED_AVAILABLE,MF_3,"M_MANAGER,O_OWNERREP",PM12,,Profiler 200m Platform 104,200-meter Platform for Shallow Profiler - Platform 104,104

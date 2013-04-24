@@ -1,5 +1,5 @@
 Scenario,ID,name,parser/module,parser/method,parser/config,description
 STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,
-LC_TEST,PARSE1,Global Range Test,ion.util.parsers.global_range_test,grt_parser,,
-LC_TEST,PARSE2,Stuck Value Test,ion.util.parsers.stuck_value_test,stuck_value_test_parser,,
-LC_TEST,PARSE3,Gradient Test,ion.util.parsers.gradient_test,gradient_test_parser,,
+BETA,PARSE1,Global Range Test,ion.util.parsers.global_range_test,grt_parser,,
+BETA,PARSE2,Stuck Value Test,ion.util.parsers.stuck_value_test,stuck_value_test_parser,,
+BETA,PARSE3,Gradient Test,ion.util.parsers.gradient_test,gradient_test_parser,,

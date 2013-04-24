@@ -1,14 +1,19 @@
-Scenario,confluence,ID,owner_id,org_ids,site_id,device_id,activate,d/name,d/description,constraint_ids,coordinate_system
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,
-R2_DEMO,,DEP1,USER_1,MF_3,LOGINS3,ID3,TRUE,dep1,deployment of first device,,
-BETA,,DEP2,USER_1,MF_3,LOGINS4,ID12,TRUE,dep2,Demo Deployment of SBE37SMP Instrument,,
-BETA,,DEP3,USER_1,MF_3,LP3,PDEV3,TRUE,dep3,deployment of platform device 1,,
-R2_DEMO,,DEP4,USER_1,MF_3,LP4,PDEV4,FALSE,dep4,deployment of platform device 2,,
-R2_DEMO,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,Deploy1,USER_1,MF_3,D1PlatformSite1,D1PlatformDevice1,FALSE,dep4,test deployment 1,,
-R2_DEMO,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,Deploy2,USER_1,MF_3,D2InstrumentSite1,D2InstrumentDevice3,FALSE,dep4,test deployment 2,,
-R2_DEMO,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,Deploy3,USER_1,MF_3,D3InstrumentSite1,D3InstrumentDevice4,FALSE,dep4,test deployment 3,,
-R2_DEMO,,EEDeploy1,USER_1,MF_3,EEInstrumentSite,EEInstrumentDevice,TRUE,ee_deployment,test deployment for EE test R2,,
-R2_DEMO,,DEP5,USER_1,MF_3,LOGINS5,ID4,TRUE,dep5,deployment of second device,,
-ALPHA_SYS,,DEP6,USER_1,MF_3,LOGINS6,ID13,TRUE,dep6,deployment of simulator on Alpha System,,
-BETA_SYS,,DEP7,USER_1,MF_3,LOGINS7,ID14,TRUE,dep7,deployment of simulator on Beta System,,
-IDK,,IDK_DEP,IDK_USER,IDK_ORG,IDK_SITE,DEVICE_IDK,TRUE,idk deployment,,,
+Scenario,confluence,ID,owner_id,org_ids,site_id,device_id,activate,d/name,d/description,constraint_ids,coordinate_system,context_type
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,
+R2_DEMO,,DEP1,USER_1,MF_3,LOGINS3,ID3,TRUE,dep1,deployment of first device,,,CabledNodeDeploymentContext
+BETA,,DEP2,USER_1,MF_3,LOGINS4,ID12,TRUE,dep2,Demo Deployment of SBE37SMP Instrument,,,CabledNodeDeploymentContext
+BETA,,DEP3,USER_1,MF_3,LP3,PDEV3,TRUE,dep3,deployment of platform device 1,,,CabledNodeDeploymentContext
+R2_DEMO,,DEP4,USER_1,MF_3,LP4,PDEV4,FALSE,dep4,deployment of platform device 2,,,CabledNodeDeploymentContext
+R2_DEMO,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,Deploy1,USER_1,MF_3,D1PlatformSite1,D1PlatformDevice1,FALSE,deploy1,test deployment 1,,,CabledNodeDeploymentContext
+R2_DEMO,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,Deploy2,USER_1,MF_3,D2InstrumentSite1,D2InstrumentDevice3,FALSE,deploy2,test deployment 2,,,CabledNodeDeploymentContext
+R2_DEMO,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,Deploy3,USER_1,MF_3,D3InstrumentSite1,D3InstrumentDevice4,FALSE,deploy3,test deployment 3,,,CabledNodeDeploymentContext
+R2_DEMO,,EEDeploy1,USER_1,MF_3,EEInstrumentSite,EEInstrumentDevice,TRUE,ee_deployment,test deployment for EE test R2,,,CabledNodeDeploymentContext
+R2_DEMO,,DEP5,USER_1,MF_3,LOGINS5,ID4,TRUE,dep5,deployment of second device,,,CabledNodeDeploymentContext
+ALPHA_SYS,,DEP6,USER_1,MF_3,LOGINS6,ID13,TRUE,dep6,deployment of simulator on Alpha System,,,CabledNodeDeploymentContext
+BETA_SYS,,DEP7,USER_1,MF_3,LOGINS7,ID14,TRUE,dep7,deployment of simulator on Beta System,,,CabledNodeDeploymentContext
+IDK,,IDK_DEP,IDK_USER,IDK_ORG,IDK_SITE,IDK_DEVICE,TRUE,idk deployment,Deployment for IDK,,,CabledNodeDeploymentContext
+PRESF,,DEP8,USER_1,MF_3,LOGINS8,ID6,TRUE,dep8,Demo Deployment of PRESF Instrument,,,CabledNodeDeploymentContext
+PREST,,DEP9,USER_1,MF_3,LOGINS9,ID9,TRUE,dep9,Demo Deployment of PREST Instrument,,,CabledNodeDeploymentContext
+CTDBP,,DEP10,USER_1,MF_3,LOGINS10,ID7,TRUE,dep10,Demo Deployment of CTDBP Instrument,,,CabledNodeDeploymentContext
+TMPSF,,DEP11,USER_1,MF_3,LOGINS11,ID15,TRUE,dep11,Demo deployment of TMPSF,,,CabledNodeDeploymentContext
+VEL3D_B,,DEP12,USER_1,MF_3,LOGINS12,ID16,TRUE,dep12,Demo deployment of VEL3D_B,,,CabledNodeDeploymentContext

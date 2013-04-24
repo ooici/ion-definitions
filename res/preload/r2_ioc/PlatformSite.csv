@@ -1,8 +1,8 @@
-Scenario,ID,confluence,owner_id,org_ids,parent_site_id,platform_model_ids,ps/name,ps/description,constraint_ids,coordinate_system
-STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,
-DOC,,,,marine facility ID,parent site ID,,,,,
-BETA,LP3,,USER_1,MF_3,SITE_CE02SH,PM12,Beta Demonstration Platform Site,Beta Demonstration Platform Site description,"GEO1,TEMP1",SUBMERGED
-R2_DEMO,LP4,,USER_1,MF_3,SITE_CE02SHSM,PM12,Coastal Endurance Oregon Shelf Surface Mooring Platform 2,Coastal Endurance Oregon Shelf Surface Mooring Platform 2,"GEO1,TEMP1",SUBMERGED
-R2_DEMO,D1PlatformSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,SITE_CE02SHSM,PM13,Demo site for deployment1,Coastal Endurance Oregon Shelf Surface Mooring Platform 3,"GEO5,TEMP1",SUBMERGED
-R2_DEMO,EEPlatformSite,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,SITE_CE02SHSM,PM13,End to end test site for R2,PN1A Medium-Power J-Box,"GEO5,TEMP1",SUBMERGED
-IDK,IDK_PS,,IDK_USER,IDK_ORG,IDK_SUBSITE,IDK_PM,Platform site for IDK,,"GEO_IDK,TEMP_IDK",SUBMERGED1
+Scenario,ID,confluence,owner_id,org_ids,parent_site_id,platform_model_ids,ps/name,ps/local_name,ps/description,ps/reference_designator,ps/alt_resource_type,constraint_ids,coordinate_system
+STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,,
+DOC,,,,marine facility ID,parent site ID,,,,,,either StationSite or PlatformComponentSite,,
+BETA,LP3,,USER_1,MF_3,OBS_RSN,PM12,Beta Demonstration Station One,Station One,Beta Demonstration Platform Site description,XX01ABCD-PL001,StationSite,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,LP4,,USER_1,MF_3,OBS_RSN,PM12,Beta Demonstration Station Two,Station Two,Coastal Endurance Oregon Shelf Surface Mooring Platform 2,XX01ABCD-PL002,StationSite,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,D1PlatformSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,OBS_RSN,PM13,Demo site for deployment1,Demo site for deployment1,Coastal Endurance Oregon Shelf Surface Mooring Platform 3,XX01ABCD-PL001,StationSite,"GEO5,TEMP1",SUBMERGED
+R2_DEMO,EEPlatformSite,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,OBS_RSN,PM13,End to end test site for R2,End to end test site for R2,PN1A Medium-Power J-Box,XX01ABCD-PL001,StationSite,"GEO5,TEMP1",SUBMERGED
+IDK,IDK_PS,,IDK_USER,IDK_ORG,IDK_OBS,IDK_PM,Platform site for IDK,Platform site for IDK,,XX01ABCD-PL001,StationSite,"GEO_IDK,TEMP_IDK",SUBMERGED1

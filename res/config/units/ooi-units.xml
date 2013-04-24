@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<unit-system>
+    <unit>
+        <base/>
+        <name>
+            <singular>undefined</singular>
+        </name>
+        <symbol>undef</symbol>
+    </unit>
+</unit-system>

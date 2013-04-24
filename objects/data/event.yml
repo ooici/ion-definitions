@@ -467,7 +467,7 @@ ExceptionEvent: !Extends_Event
 
 DatasetModified: !Extends_InformationContentModifiedEvent
   # The new dataset extents
-  extents:    []
+  extents:    0
   # The slice of the dataset modificationsc
   window:     []
 

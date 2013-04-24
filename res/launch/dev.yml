@@ -38,7 +38,7 @@ config:
       timeout: 60
   server:
     elasticsearch:
-      host: bc01.dev.oceanobservatories.org
+      host: es01.dev.oceanobservatories.org
     erddap:
       host: erddap.dev.oceanobservatories.org
       port: 8080

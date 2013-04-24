@@ -14,4 +14,5 @@ redistribution conditions.
     <import>udunits2-accepted.xml</import>
     <import>udunits2-common.xml</import>
     <import>computer.xml</import>
+    <import>ooi-units.xml</import>
 </unit-system>

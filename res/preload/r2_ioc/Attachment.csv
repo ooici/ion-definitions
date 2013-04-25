@@ -32,3 +32,4 @@ BETA_SYS,ATT27,DPROD59,1341-00040_Data_Product_SPEC_PRACSAL_OOI.pdf,1341-00040_D
 BETA_SYS,ATT28,DPROD60,1341-00050_Data_Product_SPEC_DENSITY_OOI.pdf,1341-00050_Data_Product_SPEC_DENSITY_OOI,OOI Data Product Specification,BLOB,application/pdf,,,
 VOID,ATT29,DPROD85,lc_test_global_range.csv,lc_test_global_range,Global Range Test QC Reference LC_TEST,REFERENCE,text/csv,,,
 BETA,ATT30,DPROD85,Data_QC_Lookup_Table_Global_Range_Test_2013-2-21.csv,Data_QC_Lookup_Table_Global_Range_Test_2013-2-21,Data QC Lookup Table Global Range Test,REFERENCE,text/csv,,,PARSE1
+BETA,ATT31,DPROD85,Data_QC_Lookup_Table_spike_test_updated.csv,Data_QC_Lookup_Table_spike_test_updated,Data QC Lookup Table Spike Test,REFERENCE,text/csv,,,PARSE4

@@ -1,0 +1,3 @@
+Array,Instrument Class,Reference Designator,Data Products,Time interval length in days,Polynomial order,Standard deviation reduction factor (nstd)
+RS,HPIES,RS01SBVM-LJ01A-05-HPIESA101,IESPRES,90,1,5
+RS,HPIES,RS03AXVM-LJ03A-05-HPIESA301,IESPRES,90,1,5

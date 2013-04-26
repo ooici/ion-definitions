@@ -12,17 +12,24 @@ AbstractPolicyType:
 ---
 
 # Holds a policy access rule for a specific resource
-ResourceAccessPolicy: !Extends_AbstractPolicyType
+AccessRulePolicy: !Extends_AbstractPolicyType
   #Contains the text of the Access Policy Rule
   policy_rule: ""
 
 ---
 
+# Holds a policy access rule for a specific resource
+ResourceAccessPolicy: !Extends_AccessRulePolicy
+  #Contains the id of the resource to which policy applies
+  resource_id: ""
+
+---
+
 # Holds a policy access rule common for all Services
-CommonServiceAccessPolicy: !Extends_ResourceAccessPolicy
+CommonServiceAccessPolicy: !Extends_AccessRulePolicy
 
 # Holds a policy access rule for a specific Service
-ServiceAccessPolicy: !Extends_ResourceAccessPolicy
+ServiceAccessPolicy: !Extends_AccessRulePolicy
   service_name: ""
 
 ---

@@ -115,12 +115,12 @@ methods:
       parameter_type: ""
       internal_name: ""
       value_encoding: ""
-      code_report: {}
+      code_report: ""
       units: ""
       fill_value: ""
       display_name: ""
       parameter_function_id: ""
-      parameter_function_map: {}
+      parameter_function_map: ""
       standard_name: ""
       ooi_short_name: ""
       precision: ""

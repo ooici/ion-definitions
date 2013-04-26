@@ -9,7 +9,7 @@ ParameterContext: !Extends_InformationResource
   fill_value: ""
   display_name: ""
   parameter_function_id: ""
-  parameter_function_map: {}
+  parameter_function_map: ""
   standard_name: ""
   ooi_short_name: ""
   precision: ""

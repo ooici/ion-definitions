@@ -295,8 +295,8 @@ PolicyEvent: !Extends_Event
 
 ---
 
-# The ResourcePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
-# when the underlying policy object is updated in the resource registry but by business login in the Policy Management
+# The ResourcePolicyEvent is a little different than a Policy resource object event, in that it does not get published
+# when the underlying policy object is updated in the resource registry but by business logic in the Policy Management
 # Service as appropriate, like when it is assigned or removed from a resource
 # The origin is the policy_id
 ResourcePolicyEvent: !Extends_PolicyEvent
@@ -305,8 +305,15 @@ ResourcePolicyEvent: !Extends_PolicyEvent
   resource_name: ""
   op: ""      #Optional op name
 
-# The ServicePolicyEvent is a little different that a Policy resource object event, in that it does not get fired
-# when the underlying policy object is updated in the resource registry but by business login in the Policy Management
+# The RelatedResourcePolicyEvent is different than a ResourcePolicyEvent object, in that it does not get published
+# when the underlying policy object is updated in the resource registry but by business logic in the Policy Management
+# Service when a related resource's policy is updated.
+# The origin is the policy_id
+RelatedResourcePolicyEvent: !Extends_PolicyEvent
+  resource_id: ""
+
+# The ServicePolicyEvent is a little different that a Policy resource object event, in that it does not get published
+# when the underlying policy object is updated in the resource registry but by business logic in the Policy Management
 # Service as appropriate, like when it is assigned or removed from a service
 # The origin is the policy_id
 ServicePolicyEvent: !Extends_PolicyEvent

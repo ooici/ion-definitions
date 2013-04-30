@@ -209,17 +209,17 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
-#  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
-#  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
+#  platform_status: !ComputedListValue   # List of aggregate status for child platforms (list index see extended attribute)
+#  instrument_status: !ComputedListValue # List of aggregate status for child instruments (list index see extended attribute)
 
  # Set of aggregate status for child devices (device_id:{ AggregateStatusType: DeviceStatusType} ) for *ALL* children in sub-levels
-  child_device_status: {}
+  child_device_status: !ComputedDictValue
   # RSN Platform rollup status from the network perspective. Defined by hasNetworkParent links in the data model.
   # { AggregateStatusType: DeviceStatusType}
-  rsn_network_rollup: {}
+  rsn_network_rollup: !ComputedDictValue
   # Set of aggregate status for netowrk child devices (device_id:{ AggregateStatusType: DeviceStatusType} )
   # for *ALL* children in network sub-levels
-  rsn_network_child_device_status: {}
+  rsn_network_child_device_status: !ComputedDictValue
 
 ---
 
@@ -252,15 +252,15 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   location_status_roll_up: !ComputedIntValue          # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   aggregated_status: !ComputedIntValue      # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
 
-  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
-  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
+  platform_status: !ComputedListValue   # List of aggregate status for child platforms (list index see extended attribute)
+  instrument_status: !ComputedListValue # List of aggregate status for child instruments (list index see extended attribute)
 
-  site_status: []       # List of aggregate status for child sites (list index see extended attribute)
+  site_status: !ComputedListValue       # List of aggregate status for child sites (list index see extended attribute)
 
-  platform_station_sites: []    #lists all platformSite children where alt_resource_type = StationSite
-  platform_assembly_sites: []   #lists all platformSite children where alt_resource_type = PlatformAssemblySite
-  platform_component_sites: []  #lists all platformSite children where alt_resource_type = PlatformComponentSite
-  instrument_sites: []          #lists all instrumentSite children
+  platform_station_sites: !ComputedListValue    #lists all platformSite children where alt_resource_type = StationSite
+  platform_assembly_sites: !ComputedListValue   #lists all platformSite children where alt_resource_type = PlatformAssemblySite
+  platform_component_sites: !ComputedListValue  #lists all platformSite children where alt_resource_type = PlatformComponentSite
+  instrument_sites: !ComputedListValue          #lists all instrumentSite children
 
 
 ---

@@ -323,101 +323,149 @@ DataProcessComputedAttributes: !Extends_ComputedAttributes
 
 ---
 
-#This object contains additional information needed to create or update instrument devices
-#@OriginResourceType=InstrumentDevice
-InstrumentDevicePrepareSupport: !Extends_ResourcePrepareSupport
-  create_request: !InstrumentDeviceServiceRequest
-  update_request: !InstrumentDeviceServiceRequest
+AssocInstDeviceInstModels: !Extends_AssociatedResources
   #@ResourceType=InstrumentModel
-  instrument_models: []  # The set of available instrument models
-  assign_instrument_model_request: !InstrumentModelServiceRequest
-  unassign_instrument_model_request: !InstrumentModelServiceRequest
+  resources: []
   #@Association=hasModel
   #@ResourceSubject
   #@ObjectType=InstrumentModel
-  instrument_device_model: []  # Should have one entry if the device is associated with a model
+  associated_resources: []  # Should have one entry if the device is associated with a model
+  assign_request: !InstrumentModelServiceRequest
+  unassign_request: !InstrumentModelServiceRequest
+
+#Note that this association definition is different, in that it is representing the associations between
+#InstrumentAgents and InstrumentModels
+AssocInstModelInstAgents: !Extends_AssociatedResources
   #@ResourceType=InstrumentAgent
-  instrument_agents: []   # The set of available instrument agents
+  resources: []
   #@Association=hasModel
   #@SubjectType=InstrumentAgent
   #@ObjectType=InstrumentModel
-  instrument_agent_models: []  # The set of hasModel Associations between models and agents
+  associated_resources: []   # The set of hasModel Associations between models and agents
+  assign_request: ""
+  unassign_request: ""
+
+AssocInstDeviceSensorDevices: !Extends_AssociatedResources
   #@ResourceType=SensorDevice
-  sensor_devices: [] # The set of available sensors
-  assign_sensor_device_request: !SensorDeviceServiceRequest
-  unassign_sensor_device_request: !SensorDeviceServiceRequest
+  resources: []
   #@Association=hasDevice
   #@ResourceObject
   #@SubjectType=SensorDevice
-  instrument_device_sensor_device: []  # Should have one entry if the instrument device is associated with a sensor device
+  associated_resources: []  # Should have one entry if the instrument device is associated with a sensor device
+  assign_request: !SensorDeviceServiceRequest
+  unassign_request: !SensorDeviceServiceRequest
+
+AssocPlatDevicePlatModels: !Extends_AssociatedResources
+  #@ResourceType=PlatformModel
+  resources: []
+  #@Association=hasModel
+  #@ResourceSubject
+  #@ObjectType=PlatformModel
+  associated_resources: []  # Should have one entry if the device is associated with a model
+  assign_request: !PlatformModelServiceRequest
+  unassign_request: !PlatformModelServiceRequest
+
+#Note that this association definition is different, in that it is representing the associations between
+#InstrumentAgents and InstrumentModels
+AssocPlatModelPlatAgents: !Extends_AssociatedResources
+  #@ResourceType=PlatformAgent
+  resources: []
+  #@Association=hasModel
+  #@SubjectType=PlatformAgent
+  #@ObjectType=PlatformModel
+  associated_resources: []   # The set of hasModel Associations between models and agents
+  assign_request: ""
+  unassign_request: ""
+
+AssocPlatDeviceInstDevices: !Extends_AssociatedResources
+  #@ResourceType=InstrumentDevice
+  resources: []
+  #@Association=hasDevice
+  #@ResourceSubject
+  #@ObjectType=InstrumentDevice
+  associated_resources: []  # Should have one entry if the device is associated with a model
+  assign_request: !InstrumentDeviceServiceRequest
+  unassign_request: !InstrumentDeviceServiceRequest
+
+AssocDataProdInstDevices: !Extends_AssociatedResources
+  #@ResourceType=InstrumentDevice
+  resources: []
+  #@Association=hasOutputProduct
+  #@ResourceObject
+  #@SubjectType=InstrumentDevice
+  associated_resources: []  # Should have one entry if the data product is associated with an instrument device
+  assign_request: !InstrumentDeviceServiceRequest
+  unassign_request: !InstrumentDeviceServiceRequest
 
 
+AssocDataProdPlatDevices: !Extends_AssociatedResources
+  #@ResourceType=PlatformDevice
+  resources: []
+  #@Association=hasOutputProduct
+  #@ResourceObject
+  #@SubjectType=PlatformDevice
+  associated_resources: []  # Should have one entry if the data product is associated with a platform device
+  assign_request: !PlatformDeviceServiceRequest
+  unassign_request: !PlatformDeviceServiceRequest
+
+AssocDataProdStreamDefs: !Extends_AssociatedResources
+  #@ResourceType=StreamDefinition
+  resources: []
+  #@Association=hasStreamDefinition
+  #@ResourceSubject
+  #@ObjectType=StreamDefinition
+  associated_resources: []  # Should have one entry if the data product is associated with a platform device
+  assign_request: !StreamDefinitionServiceRequest
+  unassign_request: "" #Not currently implemented
+
+AssocDataProdDatasets: !Extends_AssociatedResources
+  #@ResourceType=Dataset
+  resources: []
+  #@Association=hasDataset
+  #@ResourceSubject
+  #@ObjectType=Dataset
+  associated_resources: []  # Should have one entry if the data product is associated with a platform device
+  assign_request: !DatasetServiceRequest
+  unassign_request: "" #Not currently implemented
+
+
+---
+
+#This object contains additional information needed to create or update instrument devices
+#@OriginResourceType=InstrumentDevice
+InstrumentDevicePrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !InstrumentDeviceServiceRequest
+  update_request: !InstrumentDeviceServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocInstDeviceInstModels,AssocInstModelInstAgents,AssocInstDeviceSensorDevices
+  associations: {}
 
 #This object contains additional information needed to create or update platform devices
 #@OriginResourceType=PlatformDevice
 PlatformDevicePrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
   create_request: !PlatformDeviceServiceRequest
   update_request: !PlatformDeviceServiceRequest
-  #@ResourceType=PlatformModel
-  platform_models: []  # The set of available instrument models
-  assign_platform_model_request: !PlatformModelServiceRequest
-  unassign_platform_model_request: !PlatformModelServiceRequest
-  #@ResourceType=PlatformAgent
-  platform_agents: []   # The set of available instrument agents
-  #@Association=hasModel
-  #@ResourceSubject
-  #@ObjectType=PlatformModel
-  platform_device_model: []  # Should have one entry if the device is associated with a model
-  #@Association=hasModel
-  #@SubjectType=PlatformAgent
-  #@ObjectType=PlatformModel
-  platform_agent_models: []  # The set of hasModel Associations between models and agents
-  #@ResourceType=InstrumentDevice
-  instrument_devices: []
-  assign_instrument_device_request: !InstrumentDeviceServiceRequest
-  unassign_instrument_device_request: !InstrumentDeviceServiceRequest
-  #@Association=hasDevice
-  #@ResourceSubject
-  #@ObjectType=InstrumentDevice
-  platform_device_instrument_device: []  # Should have one entry if the platform device is associated with an instrument device
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocPlatDevicePlatModels,AssocPlatModelPlatAgents,AssocPlatDeviceInstDevices
+  associations: {}
+
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=DataProduct
 DataProductPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request", "activate_request", "deactivate_request"]
   create_request: !DataProductServiceRequest
   update_request: !DataProductServiceRequest
   activate_request: !DataProductServiceRequest
   deactivate_request: !DataProductServiceRequest
-  #@ResourceType=StreamDefinition
-  stream_definitions: []  # The set of available instrument models
-  assign_stream_definition_request: !StreamDefinitionServiceRequest
-  unassign_stream_definition_request: !StreamDefinitionServiceRequest #Not currently implemented
-  #@Association=hasStreamDefinition
-  #@ResourceSubject
-  #@ObjectType=StreamDefinition
-  data_product_stream_definition: []  # Should have one entry if the data product is associated with a stream def
-  #@ResourceType=Dataset
-  datasets: []  # The set of available instrument models
-  assign_dataset_request: !DatasetServiceRequest
-  unassign_dataset_request: !DatasetServiceRequest  #Not currently implemented
-  #@Association=hasDataset
-  #@ResourceSubject
-  #@ObjectType=Dataset
-  data_product_dataset: []  # Should have one entry if the data product is associated with a dataset
-  #@ResourceType=InstrumentDevice
-  instrument_devices: []
-  assign_instrument_device_request: !InstrumentDeviceServiceRequest
-  unassign_instrument_device_request: !InstrumentDeviceServiceRequest
-  #@Association=hasOutputProduct
-  #@ResourceObject
-  #@SubjectType=InstrumentDevice
-  data_product_instrument_device: []  # Should have one entry if the data product is associated with an instrument device
-  #@ResourceType=InstrumentDevice
-  platform_devices: []
-  assign_platform_device_request: !PlatformDeviceServiceRequest
-  unassign_platform_device_request: !PlatformDeviceServiceRequest
-  #@Association=hasOutputProduct
-  #@ResourceObject
-  #@SubjectType=PlatformDevice
-  data_product_plaform_device: []  # Should have one entry if the data product is associated with a platform device
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocDataProdStreamDefs,AssocDataProdDatasets,AssocDataProdInstDevices,AssocDataProdPlatDevices
+  associations: {}
+
+
+
+
+
 

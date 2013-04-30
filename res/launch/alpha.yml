@@ -92,6 +92,15 @@ apps:
   parameter_bootstrap: {}
   policy_bootstrap: {}
 
+  # exchange_management needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  exchange_management:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+          queueing_mode: START_ONLY
+
   # scheduler needs an override block because it is a singleton and
   # may only have one deployed service process at a time.
   scheduler:

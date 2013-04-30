@@ -365,7 +365,7 @@ apps:
       loadui: true
       ui_path: res/preload/r2_ioc/ui_assets
       attachments: res/preload/r2_ioc/attachments
-      scenario: BASE,BETA,ALPHA_SYS
+      scenario: BASE,BETA,ALPHA_SYS,VEL3D_B
       #categories: Constraint,Contact,User,Org,UserRole,CoordinateSystem,ParameterDefs,ParameterDictionary,StreamConfiguration,SensorModel,PlatformModel,InstrumentModel,Observatory,Subsite,PlatformSite,InstrumentSite,StreamDefinition,PlatformDevice,PlatformAgent,PlatformAgentInstance,InstrumentAgent,InstrumentDevice,SensorDevice,InstrumentAgentInstance,DataProduct,DataProcessDefinition,DataProcess,DataProductLink,Attachment,WorkflowDefinition,Workflow
 
   # LAST SERVICE GATEWAY SERVICE

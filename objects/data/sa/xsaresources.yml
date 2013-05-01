@@ -32,7 +32,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
 
 # This object contains additional information associated with a data process.
 #@OriginResourceType=DataProcess
-DataProcessExtension: !Extends_ExtendedInformationResource
+DataProcessExtension: !Extends_ExtendedTaskableResource
   #@hasProcessDefinition
   data_process_definition: !DataProcessDefinition
   #@hasInputProduct
@@ -318,7 +318,7 @@ DataProcessDefinitionComputedAttributes: !Extends_ComputedAttributes
 
 
 #Computed attributes for a data process
-DataProcessComputedAttributes: !Extends_ComputedAttributes
+DataProcessComputedAttributes: !Extends_TaskableComputedAttributes
 
 
 ---

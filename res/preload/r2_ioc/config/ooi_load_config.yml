@@ -1,22 +1,6 @@
-# This file configures the OOI asset import
+# This file configures the official OOI asset import for the "summer 2013" deployments
 
 load_sequence:
-
-  - name: delete_ooi
-    docstring:
-    config:
-      op: deleteooi
-      debug: True
-
-#  - name: parse OOI
-#    docstring:
-#    config:
-#      op: parseooi
-#      loadooi: True
-#      assets: res/preload/r2_ioc/ooi_assets
-#      bulk: True
-#      debug: True
-#      ooiuntil: "8/1/2013"
 
   - name: load_ooi
     docstring:
@@ -25,9 +9,9 @@ load_sequence:
       scenario: OOI
       loadooi: True
       assets: res/preload/r2_ioc/ooi_assets
-      bulk: True
-      debug: True
-      ooiuntil: "8/1/2013"
+      bulk: False
+      debug: False
+      ooiuntil: "9/1/2013"
       ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
 
 #  - name: step2:

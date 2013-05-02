@@ -905,27 +905,8 @@ methods:
       instrument_device_list: []
     
 
-  
-  
 
 
-  ##################
-  #
-  # Direct Access
-  #
-
-
-  request_direct_access:
-    in:
-      #@ResourceId
-      instrument_device_id: ""
-    out:
-
-  stop_direct_access:
-    in:
-      #@ResourceId
-      instrument_device_id: ""
-    out:
 
 
   ##################

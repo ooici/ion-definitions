@@ -3,6 +3,11 @@
 ResourceServiceRequest: !Extends_ServiceRequest
 
 ---
+
+GenericServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "Resource"
+  resource_identifier: "resource_id"
+
 StreamDefinitionServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "StreamDefinition"
   resource_identifier: "stream_definition_id"

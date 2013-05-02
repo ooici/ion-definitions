@@ -21,3 +21,15 @@ ObjectType: !Extends_InformationResource
   # The version of the object definition. DON'T SET. For future extensibility.
   object_version: 1
 
+---
+
+
+#This object contains additional information needed to create or update generic resources
+#@OriginResourceType=Resource
+GenericPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !GenericServiceRequest
+  update_request: !GenericServiceRequest
+  associations: {}
+
+

@@ -430,7 +430,21 @@ methods:
       ext_exclude: []         # An optional list of field names to exclude from retrieving
       optional_args: {}       # An optional dict of additional parameters and values to be passed in the kwargs to the extended resource framework.
     out:
-      actor_identity: !ExtendedResource
+      extended_resource: !ExtendedResource
     throws:
       BadRequest: A parameter is missing
       NotFound: An object with the specified resource_id does not exist
+
+  prepare_resource_support:
+    docstring: |
+      Returns a GenericPrepareSupport object containing additional related information needed to create/update resources
+    in:
+      resource_type: ""       # The resource type.
+      #@ResourceId
+      resource_id: ""         # The id of the resource to be extended - empty for a create
+    out:
+      resource_data: !GenericPrepareSupport
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified resource_id does not exist
+

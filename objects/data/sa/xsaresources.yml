@@ -32,7 +32,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
 
 # This object contains additional information associated with a data process.
 #@OriginResourceType=DataProcess
-DataProcessExtension: !Extends_ExtendedInformationResource
+DataProcessExtension: !Extends_ExtendedTaskableResource
   #@hasProcessDefinition
   data_process_definition: !DataProcessDefinition
   #@hasInputProduct
@@ -186,14 +186,9 @@ SiteExtension: !Extends_ExtendedInformationResource
 
 # Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
-  #@Method
-  firmware_version: !ComputedFloatValue  # identifier of software installed in unit
 
   #@Method
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
-
-  #@Method
-  last_calibration_datetime: !ComputedFloatValue  #
 
   power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
@@ -318,7 +313,7 @@ DataProcessDefinitionComputedAttributes: !Extends_ComputedAttributes
 
 
 #Computed attributes for a data process
-DataProcessComputedAttributes: !Extends_ComputedAttributes
+DataProcessComputedAttributes: !Extends_TaskableComputedAttributes
 
 
 ---

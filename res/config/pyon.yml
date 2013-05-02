@@ -234,8 +234,8 @@ interceptor:
             class: pyon.core.governance.policy.policy_interceptor.PolicyInterceptor
 
   stack:
-    message_outgoing: [codec, encode]
-    message_incoming: [encode, codec]
+    message_outgoing: [validate, codec, encode]
+    message_incoming: [encode, codec, validate]
     process_outgoing: [governance]
     process_incoming: [governance]
 

@@ -186,14 +186,9 @@ SiteExtension: !Extends_ExtendedInformationResource
 
 # Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
-  #@Method
-  firmware_version: !ComputedFloatValue  # identifier of software installed in unit
 
   #@Method
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
-
-  #@Method
-  last_calibration_datetime: !ComputedFloatValue  #
 
   power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN

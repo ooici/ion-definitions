@@ -20,7 +20,7 @@ AgentCommandResult:
   ts_execute: ""
   #@ContentType=int,str
   status: ""
-  #@ContentType=list,str
+  #@ContentType=list,str,dict
   result: ""
   
     

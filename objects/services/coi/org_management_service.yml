@@ -159,7 +159,7 @@ methods:
     in:
       org_id: ""
       proposal_type: ""
-      negotiation_status: ""
+      negotiation_status: -1
     out:
       negotiation: []
     throws:
@@ -189,7 +189,7 @@ methods:
       actor_id: ""
       org_id: ""
       proposal_type: ""
-      negotiation_status: ""
+      negotiation_status: -1
     out:
       negotiation: []
     throws:

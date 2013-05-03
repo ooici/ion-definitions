@@ -249,10 +249,10 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
 
-  communications_status_roll_up: !ComputedIntValue # StatusType
-  data_status_roll_up:           !ComputedIntValue # StatusType
-  location_status_roll_up:       !ComputedIntValue # StatusType
-  power_status_roll_up:          !ComputedIntValue # StatusType 
+  communications_status_rollup: !ComputedIntValue # StatusType
+  data_status_rollup:           !ComputedIntValue # StatusType
+  location_status_rollup:       !ComputedIntValue # StatusType
+  power_status_rollup:          !ComputedIntValue # StatusType 
 
   platform_status: !ComputedDictValue   # Dict of (device_id, aggregate StatusType) for child platform sites' devices
 

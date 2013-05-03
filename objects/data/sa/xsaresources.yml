@@ -19,6 +19,8 @@ DeviceExtension: !Extends_ExtendedInformationResource
   agent_instance: !AgentInstance
   #@hasCommitment
   commitments: [] # list of resource commitments 
+  # added by IMS.get_{instrument,platform}_device_extension
+  deployment_info: []
 
 ---
 
@@ -188,6 +190,8 @@ SiteExtension: !Extends_ExtendedInformationResource
   instruments_not_operational: []  # instruments are deployed with lifecycle state not Active or execution state not Operational
 
   instruments_operational: []  # instruments are deployed with lifecycle state of Active and execution state of Operational
+  # added by OMS.get_site_extension
+  deployment_info: []
 
 ###################################################################
 #

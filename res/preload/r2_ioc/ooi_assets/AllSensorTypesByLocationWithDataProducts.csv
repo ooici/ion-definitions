@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Instrument Classes By Location With Data Product Info,Report Generated: 3/26/2013
+Instrument Classes By Location With Data Product Info,Report Generated: 5/3/2013
 
 Textbox14
 
@@ -25,6 +25,8 @@ CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function N
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE01ISSM-MF005,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),005,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 CE01ISSM-MF005,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),005,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
 CE01ISSM-MF005,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),005,CTD Bottom Pumped,CTDBP,DENSITY,DCN 1341-00050
@@ -60,6 +62,8 @@ CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),0
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,PRESWAT,DCN 1341-00020
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,TEMPWAT,DCN 1341-00010
+CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE01ISSM-SB001,Endurance OR Inshore Surface Mooring,01,ISSM,SB (Surface Buoy),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
@@ -84,6 +88,8 @@ CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
@@ -110,6 +116,8 @@ CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,CTD Botto
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE02SHBP-MJ01C,Endurance OR Shelf Benthic Pkg,02,SHBP,MJ (MP Jbox),01C,Plankton ZP sonar coastal,ZPLSC,SONBSCA,DCN 1341-00800
 CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
@@ -136,6 +144,8 @@ CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003
 CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Meteorology bulk,METBK,BARPRES,DCN 1341-00360
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,CO2FLUX,DCN 1341-00270
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Meteorology bulk,METBK,CONDSRF,DCN 1341-00360
@@ -198,6 +208,8 @@ CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
@@ -223,6 +235,8 @@ CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,CTD Bo
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,CTD Bottom Pumped,CTDBP,TEMPWAT,DCN 1341-00010
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
@@ -271,6 +285,8 @@ CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Velocity point,VELPT,VELPTMN,DCN 1341-00790
+CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
 CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,DENSITY,DCN 1341-00050
@@ -296,6 +312,8 @@ CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),
 CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,Meteorology bulk,METBK,BARPRES,DCN 1341-00360
 CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,CO2FLUX,DCN 1341-00270
 CE04OSSM-SB001,Endurance OR Offshore Surface Mooring,04,OSSM,SB (Surface Buoy),001,Meteorology bulk,METBK,CONDSRF,DCN 1341-00360
@@ -416,6 +434,8 @@ CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function N
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE06ISSM-MF005,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),005,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 CE06ISSM-MF005,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),005,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
 CE06ISSM-MF005,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),005,CTD Bottom Pumped,CTDBP,DENSITY,DCN 1341-00050
@@ -451,6 +471,8 @@ CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),0
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,PRESWAT,DCN 1341-00020
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,TEMPWAT,DCN 1341-00010
+CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE06ISSM-SB001,Endurance WA Inshore Surface Mooring,06,ISSM,SB (Surface Buoy),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
@@ -475,6 +497,8 @@ CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
@@ -494,6 +518,8 @@ CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Nod
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,CTD Bottom Pumped,CTDBP,PRACSAL,DCN 1341-00040
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,CTD Bottom Pumped,CTDBP,PRESWAT,DCN 1341-00020
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,CTD Bottom Pumped,CTDBP,TEMPWAT,DCN 1341-00010
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE07SHSM-MF005,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),005,Pressure SF,PRESF,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
@@ -526,6 +552,8 @@ CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003
 CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,Meteorology bulk,METBK,BARPRES,DCN 1341-00360
 CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,CO2FLUX,DCN 1341-00270
 CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,Meteorology bulk,METBK,CONDSRF,DCN 1341-00360
@@ -580,6 +608,8 @@ CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
@@ -607,6 +637,8 @@ CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function 
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,pH stable,PHSEN,PH578SI,DCN 1341-00509
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
+CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
 CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,CTD Bottom Pumped,CTDBP,DENSITY,DCN 1341-00050
@@ -640,6 +672,8 @@ CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),
 CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,Meteorology bulk,METBK,BARPRES,DCN 1341-00360
 CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,CO2FLUX,DCN 1341-00270
 CE09OSSM-SB001,Endurance WA Offshore Surface Mooring,09,OSSM,SB (Surface Buoy),001,Meteorology bulk,METBK,CONDSRF,DCN 1341-00360
@@ -685,6 +719,8 @@ CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP01CNSM-MF005,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),005,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
 CP01CNSM-MF005,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),005,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
 CP01CNSM-MF005,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),005,pCO2 water,PCO2W,CO2THRM,DCN 1341-00489
@@ -707,6 +743,8 @@ CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,CT
 CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,PRESWAT,DCN 1341-00020
 CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,TEMPWAT,DCN 1341-00010
 CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,Velocity point,VELPT,VELPTMN,DCN 1341-00790
+CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP01CNSM-RI002,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
@@ -779,6 +817,8 @@ CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Sur
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP02PMCI-RI001,Pioneer Central Inshore Profiler Mooring,02,PMCI,RI (Mooring Riser),001,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP02PMCI-RI001,Pioneer Central Inshore Profiler Mooring,02,PMCI,RI (Mooring Riser),001,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CP02PMCI-RI001,Pioneer Central Inshore Profiler Mooring,02,PMCI,RI (Mooring Riser),001,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
@@ -859,6 +899,8 @@ CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),
 CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Plankton ZP sonar coastal,ZPLSC,SONBSCA,DCN 1341-00800
 CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
@@ -871,6 +913,8 @@ CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,pH
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,pH stable,PHSEN,PH578SI,DCN 1341-00509
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
+CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
@@ -933,6 +977,8 @@ CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Sur
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
@@ -968,6 +1014,8 @@ CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node)
 CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Pressure SF,PRESF,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Plankton ZP sonar coastal,ZPLSC,SONBSCA,DCN 1341-00800
 CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
+CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
@@ -980,6 +1028,8 @@ CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,p
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH stable,PHSEN,PH578SI,DCN 1341-00509
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
+CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CP04OSSM-RI003,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CP04OSSM-RI003,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CP04OSSM-RI003,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
@@ -1201,6 +1251,8 @@ GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Prof
 GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
@@ -1352,6 +1404,8 @@ GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profile
 GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
@@ -1436,6 +1490,8 @@ GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profile
 GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
@@ -1587,6 +1643,8 @@ GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profi
 GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
@@ -1674,6 +1732,8 @@ RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,CTD Pr
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
@@ -1696,6 +1756,8 @@ RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,CTD Profiler
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
@@ -1743,11 +1805,13 @@ RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science 
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,Velocity point,VELPT,VELPTMN,DCN 1341-00790
-RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Seismometer BB triaxial accel,OBSBB,GRNDACC,DCN 1341-00100
-RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Seismometer BB triaxial accel,OBSBB,GRNDVEL,DCN 1341-00090
+RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Pressure SF tidal,PREST,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Hydrophone LF passive,HYDLF,HYDAPLF,DCN 1341-00821
+RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Seismometer BB triaxial accel,OBSBB,GRNDACC,DCN 1341-00100
+RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Seismometer BB triaxial accel,OBSBB,GRNDVEL,DCN 1341-00090
 RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Pressure SF tidal,PREST,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Seismometer shortperiod,OBSSP,SGRDVEL,DCN 1341-00110
 RS01SUM1-LJ01B,Southern Hydrate Summit 1,01,SUM1,LJ (LP Jbox),01B,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
@@ -1762,8 +1826,6 @@ RS03ASHS-ID03A,Ashes,03,ASHS,ID (IF box HD camera),03A,Camera digital video HD,C
 RS03ASHS-MJ03B,Ashes,03,ASHS,MJ (MP Jbox),03B,Watersample chem trace,OSMOI,PHSSAMP,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)"
 RS03ASHS-MJ03B,Ashes,03,ASHS,MJ (MP Jbox),03B,Seismometer shortperiod,OBSSP,SGRDVEL,DCN 1341-00110
 RS03ASHS-MJ03B,Ashes,03,ASHS,MJ (MP Jbox),03B,Temperature seafloor,TMPSF,TEMPSFL,DCN 1341-00130
-RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Seismometer BB triaxial accel,OBSBB,GRNDACC,DCN 1341-00100
-RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Seismometer BB triaxial accel,OBSBB,GRNDVEL,DCN 1341-00090
 RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Pressure SF tidal,PREST,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Hydrophone LF passive,HYDLF,HYDAPLF,DCN 1341-00821
@@ -1782,6 +1844,8 @@ RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,CTD Profiler,CTDPF,P
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
@@ -1804,6 +1868,8 @@ RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,CTD Profiler,CTDPF,PRESWAT
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
@@ -1851,6 +1917,8 @@ RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,CTD
 RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
 RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,Velocity point,VELPT,VELPTMN,DCN 1341-00790
+RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 RS03CCAL-MJ03F,Central Caldera,03,CCAL,MJ (MP Jbox),03F,Pressure bottom tilt,BOTPT,BOTPRES,DCN 1341-00070
 RS03CCAL-MJ03F,Central Caldera,03,CCAL,MJ (MP Jbox),03F,Pressure bottom tilt,BOTPT,BOTSFLU,DCN 1341-00080
 RS03CCAL-MJ03F,Central Caldera,03,CCAL,MJ (MP Jbox),03F,Pressure bottom tilt,BOTPT,BOTTILT,DCN 1341-00060
@@ -1860,8 +1928,15 @@ RS03CCAL-MJ03F,Central Caldera,03,CCAL,MJ (MP Jbox),03F,Hydrophone LF passive,HY
 RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Pressure bottom tilt,BOTPT,BOTPRES,DCN 1341-00070
 RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Pressure bottom tilt,BOTPT,BOTSFLU,DCN 1341-00080
 RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Pressure bottom tilt,BOTPT,BOTTILT,DCN 1341-00060
+RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Seismometer BB triaxial accel,OBSBB,GRNDACC,DCN 1341-00100
+RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Seismometer BB triaxial accel,OBSBB,GRNDVEL,DCN 1341-00090
 RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Seismometer shortperiod,OBSSP,SGRDVEL,DCN 1341-00110
 RS03ECAL-MJ03E,Eastern Caldera,03,ECAL,MJ (MP Jbox),03E,Hydrophone LF passive,HYDLF,HYDAPLF,DCN 1341-00821
+RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
+RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,DNA particulate,PPSDN,DNASAMP,DCN 1341-00630
+RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Mass Spectrometer,MASSP,MASSPEC,DCN 1341-00240
+RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Watersample chem trace H2S pH,RASFL,PHSSAMP,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)"
+RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Watersample chem trace H2S pH,RASFL,TEMPVNT,DCN 1341-00140
 RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Temp H2 H2S pH,THSPH,THSPHHC,DCN 1341-00210
 RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Temp H2 H2S pH,THSPH,THSPHHS,DCN 1341-00200
 RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Temp H2 H2S pH,THSPH,THSPHPH,DCN 1341-00190
@@ -1878,11 +1953,6 @@ RS03INT1-MJ03C,International District 1,03,INT1,MJ (MP Jbox),03C,Temp resist,TRH
 RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Pressure bottom tilt,BOTPT,BOTPRES,DCN 1341-00070
 RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Pressure bottom tilt,BOTPT,BOTSFLU,DCN 1341-00080
 RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Pressure bottom tilt,BOTPT,BOTTILT,DCN 1341-00060
-RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
-RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,DNA particulate,PPSDN,DNASAMP,DCN 1341-00630
-RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Mass Spectrometer,MASSP,MASSPEC,DCN 1341-00240
-RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Watersample chem trace H2S pH,RASFL,PHSSAMP,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)"
 RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Seismometer shortperiod,OBSSP,SGRDVEL,DCN 1341-00110
-RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Watersample chem trace H2S pH,RASFL,TEMPVNT,DCN 1341-00140
 RS03INT2-MJ03D,International District 2,03,INT2,MJ (MP Jbox),03D,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 

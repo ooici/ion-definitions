@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Class Attributes Report,Report Generated: 3/26/2013
+Class Attributes Report,Report Generated: 5/3/2013
 
 Textbox14
 
@@ -249,7 +249,7 @@ CTDPF,CTD Profiler,ClassLongName,CTD_profiler
 CTDPF,CTD Profiler,Comments,
 CTDPF,CTD Profiler,CP Spares,
 CTDPF,CTD Profiler,Description,CTDs to be mounted on a profiler
-CTDPF,CTD Profiler,ECRs that changed the count,ECR 1303-00796
+CTDPF,CTD Profiler,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 CTDPF,CTD Profiler,Global Spares,
 CTDPF,CTD Profiler,Instrument Configuration,
 CTDPF,CTD Profiler,Link to the Specification,
@@ -295,7 +295,7 @@ DOSTA,Oxygen dissolved stable,ClassLongName,oxygen_dissolved_stable
 DOSTA,Oxygen dissolved stable,Comments,
 DOSTA,Oxygen dissolved stable,CP Spares,
 DOSTA,Oxygen dissolved stable,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,Oxygen dissolved stable,ECRs that changed the count,ECR 1303-00796
+DOSTA,Oxygen dissolved stable,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,Oxygen dissolved stable,Global Spares,
 DOSTA,Oxygen dissolved stable,Instrument Configuration,
 DOSTA,Oxygen dissolved stable,Link to the Specification,
@@ -318,7 +318,7 @@ FDCHP,Flux direct covariance,ClassLongName,flux_direct_cov_HP
 FDCHP,Flux direct covariance,Comments,
 FDCHP,Flux direct covariance,CP Spares,
 FDCHP,Flux direct covariance,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,Flux direct covariance,ECRs that changed the count,
+FDCHP,Flux direct covariance,ECRs that changed the count,1300-00318
 FDCHP,Flux direct covariance,Global Spares,
 FDCHP,Flux direct covariance,Instrument Configuration,
 FDCHP,Flux direct covariance,Link to the Specification,
@@ -341,7 +341,7 @@ FDCLP,Flux direct cov LP - DEPRECATED,ClassLongName,flux_direct_cov_LP
 FDCLP,Flux direct cov LP - DEPRECATED,Comments,
 FDCLP,Flux direct cov LP - DEPRECATED,CP Spares,
 FDCLP,Flux direct cov LP - DEPRECATED,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
-FDCLP,Flux direct cov LP - DEPRECATED,ECRs that changed the count,
+FDCLP,Flux direct cov LP - DEPRECATED,ECRs that changed the count,1300-00318
 FDCLP,Flux direct cov LP - DEPRECATED,Global Spares,
 FDCLP,Flux direct cov LP - DEPRECATED,Instrument Configuration,
 FDCLP,Flux direct cov LP - DEPRECATED,Link to the Specification,
@@ -525,7 +525,7 @@ METBK,Meteorology bulk,ClassLongName,Meteorology_bulk
 METBK,Meteorology bulk,Comments,
 METBK,Meteorology bulk,CP Spares,
 METBK,Meteorology bulk,Description,"Measures surface meteorology and provides the data required to compute air-sea fluxes of heat, freshwater, and momentum"
-METBK,Meteorology bulk,ECRs that changed the count,
+METBK,Meteorology bulk,ECRs that changed the count,1303-00794
 METBK,Meteorology bulk,Global Spares,
 METBK,Meteorology bulk,Instrument Configuration,
 METBK,Meteorology bulk,Link to the Specification,
@@ -801,7 +801,7 @@ PHSEN,pH stable,ClassLongName,pH_stable
 PHSEN,pH stable,Comments,
 PHSEN,pH stable,CP Spares,
 PHSEN,pH stable,Description,pH
-PHSEN,pH stable,ECRs that changed the count,
+PHSEN,pH stable,ECRs that changed the count,1300-00292
 PHSEN,pH stable,Global Spares,
 PHSEN,pH stable,Instrument Configuration,
 PHSEN,pH stable,Link to the Specification,

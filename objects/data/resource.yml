@@ -107,7 +107,11 @@ TaskableComputedAttributes: !Extends_ComputedAttributes
 # The base type for taskable computed attribute objects
 DeviceComputedAttributes: !Extends_TaskableComputedAttributes
 
-  aggregated_status: !ComputedIntValue # The status roll-up that summarizes the entire status of the device.
+  # StatusType.STATUS_OK, .STATUS_UNKNOWN, etc
+  communications_status_roll_up: !ComputedIntValue # StatusType
+  data_status_roll_up:           !ComputedIntValue # StatusType
+  location_status_roll_up:       !ComputedIntValue # StatusType
+  power_status_roll_up:          !ComputedIntValue # StatusType 
 
   #@Method
   uptime: !ComputedStringValue # time since device was last restarted

@@ -278,11 +278,15 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 #  #@Method
 #  data_ingestion_datetime: !ComputedStringValue  # the datetime of the earliest values in the data product
 
-  #@Method
+  #these are currently the same value: dataset_management.dataset_size except that stored_data_size is in bytes
   product_download_size_estimated: !ComputedIntValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
-
-  #@Method
   stored_data_size: !ComputedIntValue   # The storage size occupied by the data content of the resource, in bytes.
+
+#  #@Method
+#  product_download_size_estimated: !ComputedIntValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
+#
+#  #@Method
+#  stored_data_size: !ComputedIntValue   # The storage size occupied by the data content of the resource, in bytes.
 
   #@Method
   data_contents_updated: !ComputedStringValue   # the datetime when the contents of the data were last modified in any way. This is distinct from modifications to the data product attributes

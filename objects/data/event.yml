@@ -100,7 +100,7 @@ ResourceAgentCommandEvent: !Extends_ResourceAgentEvent
   execute_command: ""
   args: []
   kwargs: {}
-  result: ""
+  result: {}
 
 ResourceAgentErrorEvent: !Extends_ResourceAgentEvent
   command: ""

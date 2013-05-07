@@ -9,6 +9,11 @@ CompoundGranule:
 
 ---
 
+# Redefined because of scope issues, I don't want to debug the file loading order just yet - Luke
+StreamDefinition:
+
+---
+
 # Object containing data associated with a Taxonomy to be transported in messages between
 # distributed processes.
 Granule:
@@ -16,7 +21,11 @@ Granule:
 
   record_dictionary: {}
 
-  domain: {}
+  stream_definition_id: ""
+
+  stream_definition: !StreamDefinition
+
+  domain: []
 
   locator: {}
 
@@ -24,7 +33,7 @@ Granule:
 
   provider_metadata_update: {}
 
-  creation_timestamp: ""
+  creation_timestamp: 0.
 
   # UUID for Connection (instrument)
   connection_id: ""

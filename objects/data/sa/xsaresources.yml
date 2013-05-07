@@ -19,6 +19,8 @@ DeviceExtension: !Extends_ExtendedInformationResource
   agent_instance: !AgentInstance
   #@hasCommitment
   commitments: [] # list of resource commitments 
+  # added by IMS.get_{instrument,platform}_device_extension
+  deployment_info: []
 
 ---
 
@@ -133,22 +135,28 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 PlatformDeviceExtension: !Extends_DeviceExtension
   #@hasDevice=PlatformDevice
   platforms: []  # The list of child platforms
+
   #@hasModel
   platform_model: !PlatformModel  # The associated Platform Model
+
   #@hasAgentForDevice=PlatformModel,PlatformAgent
   platform_agent: !PlatformAgent  # The associated agent
+
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # list of sensors attached to this device
+
   # defined in InstrumentManagementService.get_platform_extension
   instrument_models: [] # list of models, aligns with instrument_devices
+
   # defined in InstrumentManagementService.get_platform_extension
   platform_models: [] # list of models, aligns with platforms
+
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
+
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
 
-  aggregated_status: !StatusType
 
 ---
 
@@ -157,24 +165,33 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 SiteExtension: !Extends_ExtendedInformationResource
   #@hasDevice=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
+
   # supplied in ObservatoryManagementService.get_site_extension
   instrument_models: []  # The associated Instrument models
+
   #@hasDevice=PlatformDevice
   platform_devices: []  # The associated Platform devices
+
   # supplied in ObservatoryManagementService.get_site_extension
   platform_models: []  # The associated Platform models
+
   #@hasDeployment
   deployments: []  # The associated deployments
+
   #@hasDataProduct
   data_products: []  # The associated data products
+
   #@hasSite
   sites: []  # The associated parent and child sites
+
   #@hasDataProductsForSite
   device_data_products: []  # All the data products produced from devices at this Site and Site data products
 
   instruments_not_operational: []  # instruments are deployed with lifecycle state not Active or execution state not Operational
 
   instruments_operational: []  # instruments are deployed with lifecycle state of Active and execution state of Operational
+  # added by OMS.get_site_extension
+  deployment_info: []
 
 ###################################################################
 #
@@ -190,31 +207,22 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
 
-  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
 ---
 
 # Computed attributes for an platform device
 PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
-  power_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  communications_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  data_status_roll_up: !ComputedIntValue  # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  location_status_roll_up: !ComputedIntValue # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
 
-#  platform_status: !ComputedListValue   # List of aggregate status for child platforms (list index see extended attribute)
-#  instrument_status: !ComputedListValue # List of aggregate status for child instruments (list index see extended attribute)
-
- # Set of aggregate status for child devices (device_id:{ AggregateStatusType: DeviceStatusType} ) for *ALL* children in sub-levels
+ # Dict of {device_id: aggregate StatusType} for child devices on ALL sub-levels (hasDevice->)
   child_device_status: !ComputedDictValue
+
+ # Dict of {device_id: aggregate StatusType} for child devices on ALL sub-levels (<-hasNetworkParent)
+  rsn_network_child_device_status: !ComputedDictValue
+
   # RSN Platform rollup status from the network perspective. Defined by hasNetworkParent links in the data model.
   # { AggregateStatusType: DeviceStatusType}
   rsn_network_rollup: !ComputedDictValue
-  # Set of aggregate status for netowrk child devices (device_id:{ AggregateStatusType: DeviceStatusType} )
-  # for *ALL* children in network sub-levels
-  rsn_network_child_device_status: !ComputedDictValue
+
 
 ---
 
@@ -241,20 +249,22 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
 
-  communications_status_roll_up: !ComputedIntValue    # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  power_status_roll_up: !ComputedIntValue             # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  data_status_roll_up: !ComputedIntValue              # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  location_status_roll_up: !ComputedIntValue          # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  aggregated_status: !ComputedIntValue      # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
+  communications_status_roll_up: !ComputedIntValue # StatusType
+  data_status_roll_up:           !ComputedIntValue # StatusType
+  location_status_roll_up:       !ComputedIntValue # StatusType
+  power_status_roll_up:          !ComputedIntValue # StatusType 
 
-  platform_status: !ComputedListValue   # List of aggregate status for child platforms (list index see extended attribute)
-  instrument_status: !ComputedListValue # List of aggregate status for child instruments (list index see extended attribute)
+  platform_status: !ComputedDictValue   # Dict of (device_id, aggregate StatusType) for child platform sites' devices
 
-  site_status: !ComputedListValue       # List of aggregate status for child sites (list index see extended attribute)
+  instrument_status: !ComputedDictValue # Dict of (device_id, aggregate StatusType) for child instrument sites' devices
 
-  platform_station_sites: !ComputedListValue    #lists all platformSite children where alt_resource_type = StationSite
-  platform_assembly_sites: !ComputedListValue   #lists all platformSite children where alt_resource_type = PlatformAssemblySite
-  platform_component_sites: !ComputedListValue  #lists all platformSite children where alt_resource_type = PlatformComponentSite
+  site_status: !ComputedDictValue       # Dict of (site_id, aggregate StatusType) for child sites
+
+  # list all PlatformSite with the following alt_resource_type:
+  platform_station_sites: !ComputedListValue    # == "StationSite"
+  platform_assembly_sites: !ComputedListValue   # == "PlatformAssemblySite"
+  platform_component_sites: !ComputedListValue  # == "PlatformComponentSite"
+
   instrument_sites: !ComputedListValue          #lists all instrumentSite children
 
 
@@ -268,11 +278,15 @@ DataProductComputedAttributes: !Extends_ComputedAttributes
 #  #@Method
 #  data_ingestion_datetime: !ComputedStringValue  # the datetime of the earliest values in the data product
 
-  #@Method
+  #these are currently the same value: dataset_management.dataset_size except that stored_data_size is in bytes
   product_download_size_estimated: !ComputedIntValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
-
-  #@Method
   stored_data_size: !ComputedIntValue   # The storage size occupied by the data content of the resource, in bytes.
+
+#  #@Method
+#  product_download_size_estimated: !ComputedIntValue  # how big (Mb?) the full data product will be if downloaded/presented in a given presentation form
+#
+#  #@Method
+#  stored_data_size: !ComputedIntValue   # The storage size occupied by the data content of the resource, in bytes.
 
   #@Method
   data_contents_updated: !ComputedStringValue   # the datetime when the contents of the data were last modified in any way. This is distinct from modifications to the data product attributes

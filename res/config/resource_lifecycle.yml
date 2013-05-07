@@ -7,19 +7,31 @@ LifecycleResourceTypes:
   InstrumentAgent: ResourceLCSM
   PlatformDevice: ResourceLCSM
   PlatformAgent: ResourceLCSM
+
+  Deployment: SimplifiedLCSM
+
   DataProduct: InformationResourceLCSM
 
 # Definition of lifecycle workflows and specializations
 LifecycleWorkflowDefinitions:
+
+  # The standard workflow with all states and transitions
   - name: ResourceLCSM
     lcsm_class: pyon.ion.resource.CommonResourceLifeCycleSM
     initial_state: DRAFT
     initial_availability: PRIVATE
 
+  # A simplified workflow that does not use DRAFT, DEVELOPED and starts in PLANNED_AVAILABLE
+  - name: SimplifiedLCSM
+    based_on: ResourceLCSM
+    initial_state: PLANNED
+    initial_availability: AVAILABLE
+    illegal_states: [DRAFT, DEVELOPED]
+
+  # A simplified workflow that does not use DRAFT, DEVELOPED, INTEGRATED and starts in PLANNED_AVAILABLE state
   - name: InformationResourceLCSM
     based_on: ResourceLCSM
-    initial_state: DEPLOYED
-    initial_availability: PRIVATE
-    illegal_states: []
-    illegal_transitions: []
+    initial_state: PLANNED
+    initial_availability: AVAILABLE
+    illegal_states: [DRAFT, DEVELOPED, INTEGRATED]
 

@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subsite Attributes Report,Report Generated: 3/26/2013
+Subsite Attributes Report,Report Generated: 5/3/2013
 
 Textbox14
 
@@ -27,7 +27,7 @@ CE01ISSP,Endurance OR Inshore Surface Piercing Profiler Mooring,Relative Depth,
 CE02SHBP,Endurance OR Shelf Benthic Pkg,depth_port_max,
 CE02SHBP,Endurance OR Shelf Benthic Pkg,depth_port_min,
 CE02SHBP,Endurance OR Shelf Benthic Pkg,depth_subsite,80
-CE02SHBP,Endurance OR Shelf Benthic Pkg,First Deployment Date,2014
+CE02SHBP,Endurance OR Shelf Benthic Pkg,First Deployment Date,2014-07
 CE02SHBP,Endurance OR Shelf Benthic Pkg,latitude,44.64
 CE02SHBP,Endurance OR Shelf Benthic Pkg,longitude,124.3
 CE02SHBP,Endurance OR Shelf Benthic Pkg,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -51,7 +51,7 @@ CE02SHSP,Endurance OR Shelf Surface Piercing Profiler Mooring,Relative Depth,
 CE04OSBP,Endurance OR Offshore Benthic Pkg,depth_port_max,
 CE04OSBP,Endurance OR Offshore Benthic Pkg,depth_port_min,
 CE04OSBP,Endurance OR Offshore Benthic Pkg,depth_subsite,500
-CE04OSBP,Endurance OR Offshore Benthic Pkg,First Deployment Date,2013-08
+CE04OSBP,Endurance OR Offshore Benthic Pkg,First Deployment Date,2013-06-28
 CE04OSBP,Endurance OR Offshore Benthic Pkg,latitude,44.65
 CE04OSBP,Endurance OR Offshore Benthic Pkg,longitude,124.9
 CE04OSBP,Endurance OR Offshore Benthic Pkg,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -107,7 +107,7 @@ CE07SHSM,Endurance WA Shelf Surface Mooring,Relative Depth,
 CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,depth_port_max,
 CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,depth_port_min,
 CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,depth_subsite,80
-CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,First Deployment Date,2014
+CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,First Deployment Date,2014-05
 CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,latitude,47
 CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,longitude,124.27
 CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -115,7 +115,7 @@ CE07SHSP,Endurance WA Shelf Surface Piercing Profiler Mooring,Relative Depth,
 CE09OSPM,Endurance WA Offshore Profiler Mooring,depth_port_max,
 CE09OSPM,Endurance WA Offshore Profiler Mooring,depth_port_min,
 CE09OSPM,Endurance WA Offshore Profiler Mooring,depth_subsite,500
-CE09OSPM,Endurance WA Offshore Profiler Mooring,First Deployment Date,2013-10
+CE09OSPM,Endurance WA Offshore Profiler Mooring,First Deployment Date,2014-05
 CE09OSPM,Endurance WA Offshore Profiler Mooring,latitude,46.91
 CE09OSPM,Endurance WA Offshore Profiler Mooring,longitude,124.95
 CE09OSPM,Endurance WA Offshore Profiler Mooring,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -131,7 +131,7 @@ CE09OSSM,Endurance WA Offshore Surface Mooring,Relative Depth,
 CP01CNSM,Pioneer Central Surface Mooring,depth_port_max,
 CP01CNSM,Pioneer Central Surface Mooring,depth_port_min,
 CP01CNSM,Pioneer Central Surface Mooring,depth_subsite,210
-CP01CNSM,Pioneer Central Surface Mooring,First Deployment Date,2013-09
+CP01CNSM,Pioneer Central Surface Mooring,First Deployment Date,2013-11
 CP01CNSM,Pioneer Central Surface Mooring,latitude,40.03333333
 CP01CNSM,Pioneer Central Surface Mooring,longitude,70.79166667
 CP01CNSM,Pioneer Central Surface Mooring,Platform Agent Type,InSitu CyberPoP - Surface Mooring Platform Controller
@@ -147,7 +147,7 @@ CP01CNSP,Pioneer Central Surface-Piercing Profiler Mooring,Relative Depth,
 CP02PMCI,Pioneer Central Inshore Profiler Mooring,depth_port_max,
 CP02PMCI,Pioneer Central Inshore Profiler Mooring,depth_port_min,
 CP02PMCI,Pioneer Central Inshore Profiler Mooring,depth_subsite,140
-CP02PMCI,Pioneer Central Inshore Profiler Mooring,First Deployment Date,2013-09
+CP02PMCI,Pioneer Central Inshore Profiler Mooring,First Deployment Date,2013-11
 CP02PMCI,Pioneer Central Inshore Profiler Mooring,latitude,40.1
 CP02PMCI,Pioneer Central Inshore Profiler Mooring,longitude,70.79166667
 CP02PMCI,Pioneer Central Inshore Profiler Mooring,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -155,7 +155,7 @@ CP02PMCI,Pioneer Central Inshore Profiler Mooring,Relative Depth,
 CP02PMCO,Pioneer Central Offshore Profiler Mooring,depth_port_max,
 CP02PMCO,Pioneer Central Offshore Profiler Mooring,depth_port_min,
 CP02PMCO,Pioneer Central Offshore Profiler Mooring,depth_subsite,360
-CP02PMCO,Pioneer Central Offshore Profiler Mooring,First Deployment Date,2013-09
+CP02PMCO,Pioneer Central Offshore Profiler Mooring,First Deployment Date,2013-11
 CP02PMCO,Pioneer Central Offshore Profiler Mooring,latitude,39.975
 CP02PMCO,Pioneer Central Offshore Profiler Mooring,longitude,70.79166667
 CP02PMCO,Pioneer Central Offshore Profiler Mooring,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -163,7 +163,7 @@ CP02PMCO,Pioneer Central Offshore Profiler Mooring,Relative Depth,
 CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,depth_port_max,
 CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,depth_port_min,
 CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,depth_subsite,130
-CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,First Deployment Date,2013-09
+CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,First Deployment Date,2013-11
 CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,latitude,40.11666667
 CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,longitude,70.68333333
 CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -171,7 +171,7 @@ CP02PMUI,Pioneer Upstream Inshore Profiler Mooring,Relative Depth,
 CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,depth_port_max,
 CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,depth_port_min,
 CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,depth_subsite,520
-CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,First Deployment Date,2013-09
+CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,First Deployment Date,2013-11
 CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,latitude,39.90833333
 CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,longitude,70.68333333
 CP02PMUO,Pioneer Upstream Offshore Profiler Mooring,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -195,7 +195,7 @@ CP03ISSP,Pioneer Inshore Surface-Piercing Profiler Mooring,Relative Depth,
 CP04OSPM,Pioneer Offshore Profiler Mooring,depth_port_max,
 CP04OSPM,Pioneer Offshore Profiler Mooring,depth_port_min,
 CP04OSPM,Pioneer Offshore Profiler Mooring,depth_subsite,520
-CP04OSPM,Pioneer Offshore Profiler Mooring,First Deployment Date,2013-09
+CP04OSPM,Pioneer Offshore Profiler Mooring,First Deployment Date,2013-11
 CP04OSPM,Pioneer Offshore Profiler Mooring,latitude,39.91666667
 CP04OSPM,Pioneer Offshore Profiler Mooring,longitude,70.79166667
 CP04OSPM,Pioneer Offshore Profiler Mooring,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -211,7 +211,7 @@ CP04OSSM,Pioneer Offshore Surface Mooring,Relative Depth,
 CP05MOAS,Pioneer Mobile Assets,depth_port_max,
 CP05MOAS,Pioneer Mobile Assets,depth_port_min,
 CP05MOAS,Pioneer Mobile Assets,depth_subsite,
-CP05MOAS,Pioneer Mobile Assets,First Deployment Date,
+CP05MOAS,Pioneer Mobile Assets,First Deployment Date,2013-11
 CP05MOAS,Pioneer Mobile Assets,latitude,
 CP05MOAS,Pioneer Mobile Assets,longitude,
 CP05MOAS,Pioneer Mobile Assets,Platform Agent Type,
@@ -299,7 +299,7 @@ GI05MOAS,Irminger Sea Mobile Assets,Relative Depth,
 GP02HYPM,Station Papa Hybrid Profiler,depth_port_max,
 GP02HYPM,Station Papa Hybrid Profiler,depth_port_min,
 GP02HYPM,Station Papa Hybrid Profiler,depth_subsite,4250
-GP02HYPM,Station Papa Hybrid Profiler,First Deployment Date,2013-08
+GP02HYPM,Station Papa Hybrid Profiler,First Deployment Date,2013-07-17
 GP02HYPM,Station Papa Hybrid Profiler,latitude,50.1969
 GP02HYPM,Station Papa Hybrid Profiler,longitude,144.7131
 GP02HYPM,Station Papa Hybrid Profiler,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
@@ -307,7 +307,7 @@ GP02HYPM,Station Papa Hybrid Profiler,Relative Depth,
 GP03FLMA,Station Papa Mesoscale Flanking Mooring A,depth_port_max,
 GP03FLMA,Station Papa Mesoscale Flanking Mooring A,depth_port_min,
 GP03FLMA,Station Papa Mesoscale Flanking Mooring A,depth_subsite,4250
-GP03FLMA,Station Papa Mesoscale Flanking Mooring A,First Deployment Date,2013-08
+GP03FLMA,Station Papa Mesoscale Flanking Mooring A,First Deployment Date,2013-07-17
 GP03FLMA,Station Papa Mesoscale Flanking Mooring A,latitude,50.4676
 GP03FLMA,Station Papa Mesoscale Flanking Mooring A,longitude,144.5174
 GP03FLMA,Station Papa Mesoscale Flanking Mooring A,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
@@ -315,7 +315,7 @@ GP03FLMA,Station Papa Mesoscale Flanking Mooring A,Relative Depth,
 GP03FLMB,Station Papa Mesoscale Flanking Mooring B,depth_port_max,
 GP03FLMB,Station Papa Mesoscale Flanking Mooring B,depth_port_min,
 GP03FLMB,Station Papa Mesoscale Flanking Mooring B,depth_subsite,4250
-GP03FLMB,Station Papa Mesoscale Flanking Mooring B,First Deployment Date,2013-08
+GP03FLMB,Station Papa Mesoscale Flanking Mooring B,First Deployment Date,2013-07-17
 GP03FLMB,Station Papa Mesoscale Flanking Mooring B,latitude,50.125
 GP03FLMB,Station Papa Mesoscale Flanking Mooring B,longitude,144.2097
 GP03FLMB,Station Papa Mesoscale Flanking Mooring B,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
@@ -323,7 +323,7 @@ GP03FLMB,Station Papa Mesoscale Flanking Mooring B,Relative Depth,
 GP05MOAS,Station Papa Mobile Assets,depth_port_max,
 GP05MOAS,Station Papa Mobile Assets,depth_port_min,
 GP05MOAS,Station Papa Mobile Assets,depth_subsite,
-GP05MOAS,Station Papa Mobile Assets,First Deployment Date,2013-08
+GP05MOAS,Station Papa Mobile Assets,First Deployment Date,2013-07-17
 GP05MOAS,Station Papa Mobile Assets,latitude,
 GP05MOAS,Station Papa Mobile Assets,longitude,
 GP05MOAS,Station Papa Mobile Assets,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
@@ -379,7 +379,7 @@ RS01SBVM,Slope Base Vertical Mooring,Relative Depth,
 RS01SLBS,Slope Base,depth_port_max,
 RS01SLBS,Slope Base,depth_port_min,
 RS01SLBS,Slope Base,depth_subsite,2906
-RS01SLBS,Slope Base,First Deployment Date,2013-08
+RS01SLBS,Slope Base,First Deployment Date,2013-06-28
 RS01SLBS,Slope Base,latitude,44.55404
 RS01SLBS,Slope Base,longitude,125.35235
 RS01SLBS,Slope Base,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -387,7 +387,7 @@ RS01SLBS,Slope Base,Relative Depth,
 RS01SUM1,Southern Hydrate Summit 1,depth_port_max,
 RS01SUM1,Southern Hydrate Summit 1,depth_port_min,
 RS01SUM1,Southern Hydrate Summit 1,depth_subsite,807
-RS01SUM1,Southern Hydrate Summit 1,First Deployment Date,2014
+RS01SUM1,Southern Hydrate Summit 1,First Deployment Date,2014-08
 RS01SUM1,Southern Hydrate Summit 1,latitude,44.568
 RS01SUM1,Southern Hydrate Summit 1,longitude,125.15
 RS01SUM1,Southern Hydrate Summit 1,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -395,7 +395,7 @@ RS01SUM1,Southern Hydrate Summit 1,Relative Depth,
 RS01SUM2,Southern Hydrate Summit 2,depth_port_max,
 RS01SUM2,Southern Hydrate Summit 2,depth_port_min,
 RS01SUM2,Southern Hydrate Summit 2,depth_subsite,811
-RS01SUM2,Southern Hydrate Summit 2,First Deployment Date,2014
+RS01SUM2,Southern Hydrate Summit 2,First Deployment Date,2014-08
 RS01SUM2,Southern Hydrate Summit 2,latitude,44.57
 RS01SUM2,Southern Hydrate Summit 2,longitude,125.147
 RS01SUM2,Southern Hydrate Summit 2,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -403,7 +403,7 @@ RS01SUM2,Southern Hydrate Summit 2,Relative Depth,
 RS03ASHS,Ashes,depth_port_max,
 RS03ASHS,Ashes,depth_port_min,
 RS03ASHS,Ashes,depth_subsite,1552
-RS03ASHS,Ashes,First Deployment Date,2013-08
+RS03ASHS,Ashes,First Deployment Date,2013-06-28
 RS03ASHS,Ashes,latitude,45.93619
 RS03ASHS,Ashes,longitude,130.01417
 RS03ASHS,Ashes,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -411,7 +411,7 @@ RS03ASHS,Ashes,Relative Depth,
 RS03AXBS,Axial Base,depth_port_max,
 RS03AXBS,Axial Base,depth_port_min,
 RS03AXBS,Axial Base,depth_subsite,2654
-RS03AXBS,Axial Base,First Deployment Date,2013-08
+RS03AXBS,Axial Base,First Deployment Date,2013-06-28
 RS03AXBS,Axial Base,latitude,46.10815
 RS03AXBS,Axial Base,longitude,129.61816
 RS03AXBS,Axial Base,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -427,7 +427,7 @@ RS03AXVM,Axial Mooring,Relative Depth,
 RS03CCAL,Central Caldera,depth_port_max,
 RS03CCAL,Central Caldera,depth_port_min,
 RS03CCAL,Central Caldera,depth_subsite,1584
-RS03CCAL,Central Caldera,First Deployment Date,2013-08
+RS03CCAL,Central Caldera,First Deployment Date,2013-06-28
 RS03CCAL,Central Caldera,latitude,45.97618
 RS03CCAL,Central Caldera,longitude,130.02011
 RS03CCAL,Central Caldera,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -435,7 +435,7 @@ RS03CCAL,Central Caldera,Relative Depth,
 RS03ECAL,Eastern Caldera,depth_port_max,
 RS03ECAL,Eastern Caldera,depth_port_min,
 RS03ECAL,Eastern Caldera,depth_subsite,1518
-RS03ECAL,Eastern Caldera,First Deployment Date,2013-08
+RS03ECAL,Eastern Caldera,First Deployment Date,2013-06-28
 RS03ECAL,Eastern Caldera,latitude,45.94801
 RS03ECAL,Eastern Caldera,longitude,129.98053
 RS03ECAL,Eastern Caldera,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -443,7 +443,7 @@ RS03ECAL,Eastern Caldera,Relative Depth,
 RS03INT1,International District 1,depth_port_max,
 RS03INT1,International District 1,depth_port_min,
 RS03INT1,International District 1,depth_subsite,1551
-RS03INT1,International District 1,First Deployment Date,2013-08
+RS03INT1,International District 1,First Deployment Date,2013-06-28
 RS03INT1,International District 1,latitude,45.9357
 RS03INT1,International District 1,longitude,130.01533
 RS03INT1,International District 1,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
@@ -451,7 +451,7 @@ RS03INT1,International District 1,Relative Depth,
 RS03INT2,International District 2,depth_port_max,
 RS03INT2,International District 2,depth_port_min,
 RS03INT2,International District 2,depth_subsite,1554
-RS03INT2,International District 2,First Deployment Date,2013-08
+RS03INT2,International District 2,First Deployment Date,2013-06-28
 RS03INT2,International District 2,latitude,45.93567
 RS03INT2,International District 2,longitude,130.01394
 RS03INT2,International District 2,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System

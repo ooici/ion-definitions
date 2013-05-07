@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Attributes Report,Report Generated: 3/26/2013
+Data Product Attributes Report,Report Generated: 5/3/2013
 
 Textbox14
 
@@ -920,6 +920,44 @@ OPTABSN,Optical Absorption Coefficient,2,Spike Test (SPKETST) QC,applicable
 OPTABSN,Optical Absorption Coefficient,2,Stuck Value Test (STUCKVL) QC,applicable
 OPTABSN,Optical Absorption Coefficient,2,Trend Test (TRNDTST) QC,applicable
 OPTABSN,Optical Absorption Coefficient,2,Units,1/m
+OPTAREF,Reference Absorption,0,1-D Interpolation (INTERP1) QC,not applicable
+OPTAREF,Reference Absorption,0,Combine QC Flags (CMBNFLG) QC,not applicable
+OPTAREF,Reference Absorption,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+OPTAREF,Reference Absorption,0,DOORS L2 Science Requirement #(s),
+OPTAREF,Reference Absorption,0,DOORS L2 Science Requirement Text,
+OPTAREF,Reference Absorption,0,DPS DCN(s),1341-00700
+OPTAREF,Reference Absorption,0,Evaluate Polynomial (POLYVAL) QC,not applicable
+OPTAREF,Reference Absorption,0,Global Range Test (GLBLRNG) QC,not applicable
+OPTAREF,Reference Absorption,0,Gradient Test (GRADTST) QC,not applicable
+OPTAREF,Reference Absorption,0,Local Range Test (LOCLRNG) QC,not applicable
+OPTAREF,Reference Absorption,0,Modulus (MODULUS) QC,not applicable
+OPTAREF,Reference Absorption,0,Notes,
+OPTAREF,Reference Absorption,0,Processing Flow Diagram DCN(s),1342-00690
+OPTAREF,Reference Absorption,0,Regime(s),Water Column
+OPTAREF,Reference Absorption,0,Solar Elevation (SOLAREL) QC,not applicable
+OPTAREF,Reference Absorption,0,Spike Test (SPKETST) QC,not applicable
+OPTAREF,Reference Absorption,0,Stuck Value Test (STUCKVL) QC,not applicable
+OPTAREF,Reference Absorption,0,Trend Test (TRNDTST) QC,not applicable
+OPTAREF,Reference Absorption,0,Units,
+OPTASIG,Signal Absorption,0,1-D Interpolation (INTERP1) QC,not applicable
+OPTASIG,Signal Absorption,0,Combine QC Flags (CMBNFLG) QC,not applicable
+OPTASIG,Signal Absorption,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+OPTASIG,Signal Absorption,0,DOORS L2 Science Requirement #(s),
+OPTASIG,Signal Absorption,0,DOORS L2 Science Requirement Text,
+OPTASIG,Signal Absorption,0,DPS DCN(s),1341-00700
+OPTASIG,Signal Absorption,0,Evaluate Polynomial (POLYVAL) QC,not applicable
+OPTASIG,Signal Absorption,0,Global Range Test (GLBLRNG) QC,not applicable
+OPTASIG,Signal Absorption,0,Gradient Test (GRADTST) QC,not applicable
+OPTASIG,Signal Absorption,0,Local Range Test (LOCLRNG) QC,not applicable
+OPTASIG,Signal Absorption,0,Modulus (MODULUS) QC,not applicable
+OPTASIG,Signal Absorption,0,Notes,
+OPTASIG,Signal Absorption,0,Processing Flow Diagram DCN(s),1342-00690 
+OPTASIG,Signal Absorption,0,Regime(s),Water Column
+OPTASIG,Signal Absorption,0,Solar Elevation (SOLAREL) QC,not applicable
+OPTASIG,Signal Absorption,0,Spike Test (SPKETST) QC,not applicable
+OPTASIG,Signal Absorption,0,Stuck Value Test (STUCKVL) QC,not applicable
+OPTASIG,Signal Absorption,0,Trend Test (TRNDTST) QC,not applicable
+OPTASIG,Signal Absorption,0,Units,
 OPTATTN,Optical Beam Attenuation Coefficient,2,1-D Interpolation (INTERP1) QC,not applicable
 OPTATTN,Optical Beam Attenuation Coefficient,2,Combine QC Flags (CMBNFLG) QC,not applicable
 OPTATTN,Optical Beam Attenuation Coefficient,2,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -1907,7 +1945,7 @@ VELPTTU,Turbulent Point Water Velocity,0,Solar Elevation (SOLAREL) QC,not applic
 VELPTTU,Turbulent Point Water Velocity,0,Spike Test (SPKETST) QC,not applicable
 VELPTTU,Turbulent Point Water Velocity,0,Stuck Value Test (STUCKVL) QC,not applicable
 VELPTTU,Turbulent Point Water Velocity,0,Trend Test (TRNDTST) QC,not applicable
-VELPTTU,Turbulent Point Water Velocity,0,Units,"cm/s (Nobska), m/s (Nortek)"
+VELPTTU,Turbulent Point Water Velocity,0,Units,"cm/s (Nobska), mm/s (Nortek)"
 VELTURB,Turbulent Velocity Profile,1,1-D Interpolation (INTERP1) QC,TBD
 VELTURB,Turbulent Velocity Profile,1,Combine QC Flags (CMBNFLG) QC,TBD
 VELTURB,Turbulent Velocity Profile,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD

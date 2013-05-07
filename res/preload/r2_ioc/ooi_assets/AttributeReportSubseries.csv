@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subseries Attributes Report,Report Generated: 3/26/2013
+Subseries Attributes Report,Report Generated: 5/3/2013
 
 Textbox14
 
@@ -54,29 +54,6 @@ ADCPA,N,01,ADCPA Series N Sub 01,RSN O&M Spares,
 ADCPA,N,01,ADCPA Series N Sub 01,RSN Part Number,
 ADCPA,N,01,ADCPA Series N Sub 01,Susceptible to Acoustic Interference,Yes
 ADCPA,N,01,ADCPA Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
-ADCPS,A,01,ADCPS Series A Sub 01,2009 Baseline Price*,"$60,575.00"
-ADCPS,A,01,ADCPS Series A Sub 01,2009 Deployed Instrument Count,16
-ADCPS,A,01,ADCPS Series A Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
-ADCPS,A,01,ADCPS Series A Sub 01,CE Spares,
-ADCPS,A,01,ADCPS Series A Sub 01,CGSN MREFC Spares,
-ADCPS,A,01,ADCPS Series A Sub 01,CGSN O&M Spares,
-ADCPS,A,01,ADCPS Series A Sub 01,CGSN P/N,
-ADCPS,A,01,ADCPS Series A Sub 01,ClassLongName,Velocity_Profile_Long_Range
-ADCPS,A,01,ADCPS Series A Sub 01,Comments,
-ADCPS,A,01,ADCPS Series A Sub 01,CP Spares,
-ADCPS,A,01,ADCPS Series A Sub 01,Description,ADCPs capable of measuring 500 m or greater from the instrument
-ADCPS,A,01,ADCPS Series A Sub 01,ECRs that changed the count,
-ADCPS,A,01,ADCPS Series A Sub 01,Global Spares,
-ADCPS,A,01,ADCPS Series A Sub 01,Instrument Configuration,
-ADCPS,A,01,ADCPS Series A Sub 01,Link to the Specification,
-ADCPS,A,01,ADCPS Series A Sub 01,Notes,
-ADCPS,A,01,ADCPS Series A Sub 01,PrimaryScienceDiscipline,P
-ADCPS,A,01,ADCPS Series A Sub 01,Produces Acoustic Interference,
-ADCPS,A,01,ADCPS Series A Sub 01,Ready for 2013?,
-ADCPS,A,01,ADCPS Series A Sub 01,RSN O&M Spares,
-ADCPS,A,01,ADCPS Series A Sub 01,RSN Part Number,
-ADCPS,A,01,ADCPS Series A Sub 01,Susceptible to Acoustic Interference,Yes
-ADCPS,A,01,ADCPS Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
 ADCPS,I,01,ADCPS Series I Sub 01,2009 Baseline Price*,"$60,575.00"
 ADCPS,I,01,ADCPS Series I Sub 01,2009 Deployed Instrument Count,16
 ADCPS,I,01,ADCPS Series I Sub 01,Alternate Instrument Class Name,Velocity Profiler (long range)
@@ -767,29 +744,6 @@ CTDMO,R,01,CTDMO Series R Sub 01,RSN O&M Spares,
 CTDMO,R,01,CTDMO Series R Sub 01,RSN Part Number,
 CTDMO,R,01,CTDMO Series R Sub 01,Susceptible to Acoustic Interference,
 CTDMO,R,01,CTDMO Series R Sub 01,"Vendor CLIN, SubCLIN or Model #","YD08 37IM, YD08 37IM-1x 9/16", YD08 37IM-3f"
-CTDPF,0,01,CTDPF Series 0 Sub 01,2009 Baseline Price*,
-CTDPF,0,01,CTDPF Series 0 Sub 01,2009 Deployed Instrument Count,30
-CTDPF,0,01,CTDPF Series 0 Sub 01,Alternate Instrument Class Name,CTD Profiler
-CTDPF,0,01,CTDPF Series 0 Sub 01,CE Spares,
-CTDPF,0,01,CTDPF Series 0 Sub 01,CGSN MREFC Spares,
-CTDPF,0,01,CTDPF Series 0 Sub 01,CGSN O&M Spares,
-CTDPF,0,01,CTDPF Series 0 Sub 01,CGSN P/N,
-CTDPF,0,01,CTDPF Series 0 Sub 01,ClassLongName,CTD_profiler
-CTDPF,0,01,CTDPF Series 0 Sub 01,Comments,
-CTDPF,0,01,CTDPF Series 0 Sub 01,CP Spares,
-CTDPF,0,01,CTDPF Series 0 Sub 01,Description,CTDs to be mounted on a profiler
-CTDPF,0,01,CTDPF Series 0 Sub 01,ECRs that changed the count,ECR 1303-00796
-CTDPF,0,01,CTDPF Series 0 Sub 01,Global Spares,
-CTDPF,0,01,CTDPF Series 0 Sub 01,Instrument Configuration,
-CTDPF,0,01,CTDPF Series 0 Sub 01,Link to the Specification,
-CTDPF,0,01,CTDPF Series 0 Sub 01,Notes,
-CTDPF,0,01,CTDPF Series 0 Sub 01,PrimaryScienceDiscipline,P
-CTDPF,0,01,CTDPF Series 0 Sub 01,Produces Acoustic Interference,
-CTDPF,0,01,CTDPF Series 0 Sub 01,Ready for 2013?,
-CTDPF,0,01,CTDPF Series 0 Sub 01,RSN O&M Spares,
-CTDPF,0,01,CTDPF Series 0 Sub 01,RSN Part Number,
-CTDPF,0,01,CTDPF Series 0 Sub 01,Susceptible to Acoustic Interference,
-CTDPF,0,01,CTDPF Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,A,01,CTDPF Series A Sub 01,2009 Baseline Price*,
 CTDPF,A,01,CTDPF Series A Sub 01,2009 Deployed Instrument Count,30
 CTDPF,A,01,CTDPF Series A Sub 01,Alternate Instrument Class Name,CTD Profiler
@@ -801,7 +755,7 @@ CTDPF,A,01,CTDPF Series A Sub 01,ClassLongName,CTD_profiler
 CTDPF,A,01,CTDPF Series A Sub 01,Comments,"Measures Conductivity, Temperature and Depth, model options include: shallow, 600m-rated plastic housing, profiling firmware (19plus V2), and 5P pump"
 CTDPF,A,01,CTDPF Series A Sub 01,CP Spares,
 CTDPF,A,01,CTDPF Series A Sub 01,Description,CTDs to be mounted on a profiler
-CTDPF,A,01,CTDPF Series A Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,A,01,CTDPF Series A Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 CTDPF,A,01,CTDPF Series A Sub 01,Global Spares,
 CTDPF,A,01,CTDPF Series A Sub 01,Instrument Configuration,"SBE 16plusV2 (19plus FW; 600 m housing; 350 m strain gauge; MCBH 6-pin connectors, 5P pump w/ MCBH)"
 CTDPF,A,01,CTDPF Series A Sub 01,Link to the Specification,
@@ -824,7 +778,7 @@ CTDPF,B,01,CTDPF Series B Sub 01,ClassLongName,CTD_profiler
 CTDPF,B,01,CTDPF Series B Sub 01,Comments,"Measures Conductivity, Temperature and Depth, model options include: deep, 7000m-rated titanium housing, profiling firmware (19plus V2), and 5T pump"
 CTDPF,B,01,CTDPF Series B Sub 01,CP Spares,
 CTDPF,B,01,CTDPF Series B Sub 01,Description,CTDs to be mounted on a profiler
-CTDPF,B,01,CTDPF Series B Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,B,01,CTDPF Series B Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 CTDPF,B,01,CTDPF Series B Sub 01,Global Spares,
 CTDPF,B,01,CTDPF Series B Sub 01,Instrument Configuration,"16plus V2 (7000m, with 19plus V2profiling firmware)"
 CTDPF,B,01,CTDPF Series B Sub 01,Link to the Specification,
@@ -847,7 +801,7 @@ CTDPF,C,01,CTDPF Series C Sub 01,ClassLongName,CTD_profiler
 CTDPF,C,01,CTDPF Series C Sub 01,Comments,
 CTDPF,C,01,CTDPF Series C Sub 01,CP Spares,
 CTDPF,C,01,CTDPF Series C Sub 01,Description,CTDs to be mounted on a profiler
-CTDPF,C,01,CTDPF Series C Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,C,01,CTDPF Series C Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 CTDPF,C,01,CTDPF Series C Sub 01,Global Spares,
 CTDPF,C,01,CTDPF Series C Sub 01,Instrument Configuration,
 CTDPF,C,01,CTDPF Series C Sub 01,Link to the Specification,
@@ -859,6 +813,29 @@ CTDPF,C,01,CTDPF Series C Sub 01,RSN O&M Spares,
 CTDPF,C,01,CTDPF Series C Sub 01,RSN Part Number,
 CTDPF,C,01,CTDPF Series C Sub 01,Susceptible to Acoustic Interference,
 CTDPF,C,01,CTDPF Series C Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,J,01,CTDPF Series J Sub 01,2009 Baseline Price*,
+CTDPF,J,01,CTDPF Series J Sub 01,2009 Deployed Instrument Count,30
+CTDPF,J,01,CTDPF Series J Sub 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,J,01,CTDPF Series J Sub 01,CE Spares,
+CTDPF,J,01,CTDPF Series J Sub 01,CGSN MREFC Spares,
+CTDPF,J,01,CTDPF Series J Sub 01,CGSN O&M Spares,
+CTDPF,J,01,CTDPF Series J Sub 01,CGSN P/N,
+CTDPF,J,01,CTDPF Series J Sub 01,ClassLongName,CTD_profiler
+CTDPF,J,01,CTDPF Series J Sub 01,Comments,
+CTDPF,J,01,CTDPF Series J Sub 01,CP Spares,
+CTDPF,J,01,CTDPF Series J Sub 01,Description,CTDs to be mounted on a profiler
+CTDPF,J,01,CTDPF Series J Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
+CTDPF,J,01,CTDPF Series J Sub 01,Global Spares,
+CTDPF,J,01,CTDPF Series J Sub 01,Instrument Configuration,
+CTDPF,J,01,CTDPF Series J Sub 01,Link to the Specification,
+CTDPF,J,01,CTDPF Series J Sub 01,Notes,
+CTDPF,J,01,CTDPF Series J Sub 01,PrimaryScienceDiscipline,P
+CTDPF,J,01,CTDPF Series J Sub 01,Produces Acoustic Interference,
+CTDPF,J,01,CTDPF Series J Sub 01,Ready for 2013?,
+CTDPF,J,01,CTDPF Series J Sub 01,RSN O&M Spares,
+CTDPF,J,01,CTDPF Series J Sub 01,RSN Part Number,
+CTDPF,J,01,CTDPF Series J Sub 01,Susceptible to Acoustic Interference,
+CTDPF,J,01,CTDPF Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,K,01,CTDPF Series K Sub 01,2009 Baseline Price*,
 CTDPF,K,01,CTDPF Series K Sub 01,2009 Deployed Instrument Count,30
 CTDPF,K,01,CTDPF Series K Sub 01,Alternate Instrument Class Name,CTD Profiler
@@ -870,7 +847,7 @@ CTDPF,K,01,CTDPF Series K Sub 01,ClassLongName,CTD_profiler
 CTDPF,K,01,CTDPF Series K Sub 01,Comments,McLane P/N: 200-1311
 CTDPF,K,01,CTDPF Series K Sub 01,CP Spares,
 CTDPF,K,01,CTDPF Series K Sub 01,Description,CTDs to be mounted on a profiler
-CTDPF,K,01,CTDPF Series K Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,K,01,CTDPF Series K Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 CTDPF,K,01,CTDPF Series K Sub 01,Global Spares,
 CTDPF,K,01,CTDPF Series K Sub 01,Instrument Configuration,SBE-52MP w/ SBE-43F Dissolved O2
 CTDPF,K,01,CTDPF Series K Sub 01,Link to the Specification,
@@ -893,7 +870,7 @@ CTDPF,L,01,CTDPF Series L Sub 01,ClassLongName,CTD_profiler
 CTDPF,L,01,CTDPF Series L Sub 01,Comments,McLane P/N: 200-1008
 CTDPF,L,01,CTDPF Series L Sub 01,CP Spares,
 CTDPF,L,01,CTDPF Series L Sub 01,Description,CTDs to be mounted on a profiler
-CTDPF,L,01,CTDPF Series L Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,L,01,CTDPF Series L Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 CTDPF,L,01,CTDPF Series L Sub 01,Global Spares,
 CTDPF,L,01,CTDPF Series L Sub 01,Instrument Configuration,SBE-52MP
 CTDPF,L,01,CTDPF Series L Sub 01,Link to the Specification,
@@ -916,7 +893,7 @@ CTDPF,R,01,CTDPF Series R Sub 01,ClassLongName,CTD_profiler
 CTDPF,R,01,CTDPF Series R Sub 01,Comments,SBE 52MP from Mclain for Profiler
 CTDPF,R,01,CTDPF Series R Sub 01,CP Spares,
 CTDPF,R,01,CTDPF Series R Sub 01,Description,CTDs to be mounted on a profiler
-CTDPF,R,01,CTDPF Series R Sub 01,ECRs that changed the count,ECR 1303-00796
+CTDPF,R,01,CTDPF Series R Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 CTDPF,R,01,CTDPF Series R Sub 01,Global Spares,
 CTDPF,R,01,CTDPF Series R Sub 01,Instrument Configuration,
 CTDPF,R,01,CTDPF Series R Sub 01,Link to the Specification,
@@ -928,29 +905,6 @@ CTDPF,R,01,CTDPF Series R Sub 01,RSN O&M Spares,1
 CTDPF,R,01,CTDPF Series R Sub 01,RSN Part Number,4830-67977
 CTDPF,R,01,CTDPF Series R Sub 01,Susceptible to Acoustic Interference,
 CTDPF,R,01,CTDPF Series R Sub 01,"Vendor CLIN, SubCLIN or Model #",
-DOFST,0,01,DOFST Series 0 Sub 01,2009 Baseline Price*,
-DOFST,0,01,DOFST Series 0 Sub 01,2009 Deployed Instrument Count,21
-DOFST,0,01,DOFST Series 0 Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Fast Response
-DOFST,0,01,DOFST Series 0 Sub 01,CE Spares,
-DOFST,0,01,DOFST Series 0 Sub 01,CGSN MREFC Spares,
-DOFST,0,01,DOFST Series 0 Sub 01,CGSN O&M Spares,
-DOFST,0,01,DOFST Series 0 Sub 01,CGSN P/N,
-DOFST,0,01,DOFST Series 0 Sub 01,ClassLongName,oxygen_dissolved_fastresp
-DOFST,0,01,DOFST Series 0 Sub 01,Comments,
-DOFST,0,01,DOFST Series 0 Sub 01,CP Spares,
-DOFST,0,01,DOFST Series 0 Sub 01,Description,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients
-DOFST,0,01,DOFST Series 0 Sub 01,ECRs that changed the count,
-DOFST,0,01,DOFST Series 0 Sub 01,Global Spares,
-DOFST,0,01,DOFST Series 0 Sub 01,Instrument Configuration,
-DOFST,0,01,DOFST Series 0 Sub 01,Link to the Specification,
-DOFST,0,01,DOFST Series 0 Sub 01,Notes,
-DOFST,0,01,DOFST Series 0 Sub 01,PrimaryScienceDiscipline,C
-DOFST,0,01,DOFST Series 0 Sub 01,Produces Acoustic Interference,
-DOFST,0,01,DOFST Series 0 Sub 01,Ready for 2013?,
-DOFST,0,01,DOFST Series 0 Sub 01,RSN O&M Spares,
-DOFST,0,01,DOFST Series 0 Sub 01,RSN Part Number,
-DOFST,0,01,DOFST Series 0 Sub 01,Susceptible to Acoustic Interference,
-DOFST,0,01,DOFST Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 DOFST,A,01,DOFST Series A Sub 01,2009 Baseline Price*,
 DOFST,A,01,DOFST Series A Sub 01,2009 Deployed Instrument Count,21
 DOFST,A,01,DOFST Series A Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Fast Response
@@ -974,6 +928,29 @@ DOFST,A,01,DOFST Series A Sub 01,RSN O&M Spares,1
 DOFST,A,01,DOFST Series A Sub 01,RSN Part Number,4830-58694
 DOFST,A,01,DOFST Series A Sub 01,Susceptible to Acoustic Interference,
 DOFST,A,01,DOFST Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOFST,J,01,DOFST Series J Sub 01,2009 Baseline Price*,
+DOFST,J,01,DOFST Series J Sub 01,2009 Deployed Instrument Count,21
+DOFST,J,01,DOFST Series J Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Fast Response
+DOFST,J,01,DOFST Series J Sub 01,CE Spares,
+DOFST,J,01,DOFST Series J Sub 01,CGSN MREFC Spares,
+DOFST,J,01,DOFST Series J Sub 01,CGSN O&M Spares,
+DOFST,J,01,DOFST Series J Sub 01,CGSN P/N,
+DOFST,J,01,DOFST Series J Sub 01,ClassLongName,oxygen_dissolved_fastresp
+DOFST,J,01,DOFST Series J Sub 01,Comments,
+DOFST,J,01,DOFST Series J Sub 01,CP Spares,
+DOFST,J,01,DOFST Series J Sub 01,Description,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients
+DOFST,J,01,DOFST Series J Sub 01,ECRs that changed the count,
+DOFST,J,01,DOFST Series J Sub 01,Global Spares,
+DOFST,J,01,DOFST Series J Sub 01,Instrument Configuration,
+DOFST,J,01,DOFST Series J Sub 01,Link to the Specification,
+DOFST,J,01,DOFST Series J Sub 01,Notes,
+DOFST,J,01,DOFST Series J Sub 01,PrimaryScienceDiscipline,C
+DOFST,J,01,DOFST Series J Sub 01,Produces Acoustic Interference,
+DOFST,J,01,DOFST Series J Sub 01,Ready for 2013?,
+DOFST,J,01,DOFST Series J Sub 01,RSN O&M Spares,
+DOFST,J,01,DOFST Series J Sub 01,RSN Part Number,
+DOFST,J,01,DOFST Series J Sub 01,Susceptible to Acoustic Interference,
+DOFST,J,01,DOFST Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
 DOFST,K,01,DOFST Series K Sub 01,2009 Baseline Price*,
 DOFST,K,01,DOFST Series K Sub 01,2009 Deployed Instrument Count,21
 DOFST,K,01,DOFST Series K Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Fast Response
@@ -997,29 +974,6 @@ DOFST,K,01,DOFST Series K Sub 01,RSN O&M Spares,
 DOFST,K,01,DOFST Series K Sub 01,RSN Part Number,
 DOFST,K,01,DOFST Series K Sub 01,Susceptible to Acoustic Interference,
 DOFST,K,01,DOFST Series K Sub 01,"Vendor CLIN, SubCLIN or Model #",
-DOSTA,0,01,DOSTA Series 0 Sub 01,2009 Baseline Price*,"$6,000.00"
-DOSTA,0,01,DOSTA Series 0 Sub 01,2009 Deployed Instrument Count,61
-DOSTA,0,01,DOSTA Series 0 Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
-DOSTA,0,01,DOSTA Series 0 Sub 01,CE Spares,
-DOSTA,0,01,DOSTA Series 0 Sub 01,CGSN MREFC Spares,
-DOSTA,0,01,DOSTA Series 0 Sub 01,CGSN O&M Spares,
-DOSTA,0,01,DOSTA Series 0 Sub 01,CGSN P/N,
-DOSTA,0,01,DOSTA Series 0 Sub 01,ClassLongName,oxygen_dissolved_stable
-DOSTA,0,01,DOSTA Series 0 Sub 01,Comments,
-DOSTA,0,01,DOSTA Series 0 Sub 01,CP Spares,
-DOSTA,0,01,DOSTA Series 0 Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,0,01,DOSTA Series 0 Sub 01,ECRs that changed the count,ECR 1303-00796
-DOSTA,0,01,DOSTA Series 0 Sub 01,Global Spares,
-DOSTA,0,01,DOSTA Series 0 Sub 01,Instrument Configuration,
-DOSTA,0,01,DOSTA Series 0 Sub 01,Link to the Specification,
-DOSTA,0,01,DOSTA Series 0 Sub 01,Notes,
-DOSTA,0,01,DOSTA Series 0 Sub 01,PrimaryScienceDiscipline,C
-DOSTA,0,01,DOSTA Series 0 Sub 01,Produces Acoustic Interference,
-DOSTA,0,01,DOSTA Series 0 Sub 01,Ready for 2013?,
-DOSTA,0,01,DOSTA Series 0 Sub 01,RSN O&M Spares,
-DOSTA,0,01,DOSTA Series 0 Sub 01,RSN Part Number,
-DOSTA,0,01,DOSTA Series 0 Sub 01,Susceptible to Acoustic Interference,
-DOSTA,0,01,DOSTA Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,A,01,DOSTA Series A Sub 01,2009 Baseline Price*,"$6,000.00"
 DOSTA,A,01,DOSTA Series A Sub 01,2009 Deployed Instrument Count,61
 DOSTA,A,01,DOSTA Series A Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
@@ -1031,7 +985,7 @@ DOSTA,A,01,DOSTA Series A Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,A,01,DOSTA Series A Sub 01,Comments,(deep profiler)
 DOSTA,A,01,DOSTA Series A Sub 01,CP Spares,
 DOSTA,A,01,DOSTA Series A Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,A,01,DOSTA Series A Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,A,01,DOSTA Series A Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,A,01,DOSTA Series A Sub 01,Global Spares,
 DOSTA,A,01,DOSTA Series A Sub 01,Instrument Configuration,
 DOSTA,A,01,DOSTA Series A Sub 01,Link to the Specification,
@@ -1054,7 +1008,7 @@ DOSTA,B,01,DOSTA Series B Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,B,01,DOSTA Series B Sub 01,Comments,
 DOSTA,B,01,DOSTA Series B Sub 01,CP Spares,
 DOSTA,B,01,DOSTA Series B Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,B,01,DOSTA Series B Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,B,01,DOSTA Series B Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,B,01,DOSTA Series B Sub 01,Global Spares,
 DOSTA,B,01,DOSTA Series B Sub 01,Instrument Configuration,
 DOSTA,B,01,DOSTA Series B Sub 01,Link to the Specification,
@@ -1077,7 +1031,7 @@ DOSTA,C,01,DOSTA Series C Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,C,01,DOSTA Series C Sub 01,Comments,
 DOSTA,C,01,DOSTA Series C Sub 01,CP Spares,
 DOSTA,C,01,DOSTA Series C Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,C,01,DOSTA Series C Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,C,01,DOSTA Series C Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,C,01,DOSTA Series C Sub 01,Global Spares,
 DOSTA,C,01,DOSTA Series C Sub 01,Instrument Configuration,
 DOSTA,C,01,DOSTA Series C Sub 01,Link to the Specification,
@@ -1100,7 +1054,7 @@ DOSTA,D,01,DOSTA Series D Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,D,01,DOSTA Series D Sub 01,Comments,4831 has Serial RS-232 and Analog Option for 4831 with Subcon connector
 DOSTA,D,01,DOSTA Series D Sub 01,CP Spares,1
 DOSTA,D,01,DOSTA Series D Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,D,01,DOSTA Series D Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,D,01,DOSTA Series D Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,D,01,DOSTA Series D Sub 01,Global Spares,2
 DOSTA,D,01,DOSTA Series D Sub 01,Instrument Configuration,Aanderaa optode 4831
 DOSTA,D,01,DOSTA Series D Sub 01,Link to the Specification,
@@ -1123,7 +1077,7 @@ DOSTA,K,01,DOSTA Series K Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,K,01,DOSTA Series K Sub 01,Comments,
 DOSTA,K,01,DOSTA Series K Sub 01,CP Spares,
 DOSTA,K,01,DOSTA Series K Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,K,01,DOSTA Series K Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,K,01,DOSTA Series K Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,K,01,DOSTA Series K Sub 01,Global Spares,
 DOSTA,K,01,DOSTA Series K Sub 01,Instrument Configuration,
 DOSTA,K,01,DOSTA Series K Sub 01,Link to the Specification,
@@ -1146,7 +1100,7 @@ DOSTA,L,01,DOSTA Series L Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,L,01,DOSTA Series L Sub 01,Comments,McLane P/N: 200-1365
 DOSTA,L,01,DOSTA Series L Sub 01,CP Spares,
 DOSTA,L,01,DOSTA Series L Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,L,01,DOSTA Series L Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,L,01,DOSTA Series L Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,L,01,DOSTA Series L Sub 01,Global Spares,
 DOSTA,L,01,DOSTA Series L Sub 01,Instrument Configuration,Aanderaa optode 4330
 DOSTA,L,01,DOSTA Series L Sub 01,Link to the Specification,
@@ -1169,7 +1123,7 @@ DOSTA,M,01,DOSTA Series M Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,M,01,DOSTA Series M Sub 01,Comments,TWR P/N: G-4663 Rev. 01
 DOSTA,M,01,DOSTA Series M Sub 01,CP Spares,
 DOSTA,M,01,DOSTA Series M Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,M,01,DOSTA Series M Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,M,01,DOSTA Series M Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,M,01,DOSTA Series M Sub 01,Global Spares,
 DOSTA,M,01,DOSTA Series M Sub 01,Instrument Configuration,Aanderaa optode 4831
 DOSTA,M,01,DOSTA Series M Sub 01,Link to the Specification,
@@ -1192,7 +1146,7 @@ DOSTA,N,01,DOSTA Series N Sub 01,ClassLongName,oxygen_dissolved_stable
 DOSTA,N,01,DOSTA Series N Sub 01,Comments,Hydroid P/N: 
 DOSTA,N,01,DOSTA Series N Sub 01,CP Spares,
 DOSTA,N,01,DOSTA Series N Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
-DOSTA,N,01,DOSTA Series N Sub 01,ECRs that changed the count,ECR 1303-00796
+DOSTA,N,01,DOSTA Series N Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
 DOSTA,N,01,DOSTA Series N Sub 01,Global Spares,
 DOSTA,N,01,DOSTA Series N Sub 01,Instrument Configuration,Aanderaa optode 4330
 DOSTA,N,01,DOSTA Series N Sub 01,Link to the Specification,
@@ -1204,6 +1158,29 @@ DOSTA,N,01,DOSTA Series N Sub 01,RSN O&M Spares,
 DOSTA,N,01,DOSTA Series N Sub 01,RSN Part Number,
 DOSTA,N,01,DOSTA Series N Sub 01,Susceptible to Acoustic Interference,
 DOSTA,N,01,DOSTA Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,O,01,DOSTA Series O Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,O,01,DOSTA Series O Sub 01,2009 Deployed Instrument Count,61
+DOSTA,O,01,DOSTA Series O Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,O,01,DOSTA Series O Sub 01,CE Spares,
+DOSTA,O,01,DOSTA Series O Sub 01,CGSN MREFC Spares,
+DOSTA,O,01,DOSTA Series O Sub 01,CGSN O&M Spares,
+DOSTA,O,01,DOSTA Series O Sub 01,CGSN P/N,
+DOSTA,O,01,DOSTA Series O Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,O,01,DOSTA Series O Sub 01,Comments,
+DOSTA,O,01,DOSTA Series O Sub 01,CP Spares,
+DOSTA,O,01,DOSTA Series O Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,O,01,DOSTA Series O Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
+DOSTA,O,01,DOSTA Series O Sub 01,Global Spares,
+DOSTA,O,01,DOSTA Series O Sub 01,Instrument Configuration,
+DOSTA,O,01,DOSTA Series O Sub 01,Link to the Specification,
+DOSTA,O,01,DOSTA Series O Sub 01,Notes,
+DOSTA,O,01,DOSTA Series O Sub 01,PrimaryScienceDiscipline,C
+DOSTA,O,01,DOSTA Series O Sub 01,Produces Acoustic Interference,
+DOSTA,O,01,DOSTA Series O Sub 01,Ready for 2013?,
+DOSTA,O,01,DOSTA Series O Sub 01,RSN O&M Spares,
+DOSTA,O,01,DOSTA Series O Sub 01,RSN Part Number,
+DOSTA,O,01,DOSTA Series O Sub 01,Susceptible to Acoustic Interference,
+DOSTA,O,01,DOSTA Series O Sub 01,"Vendor CLIN, SubCLIN or Model #",
 FDCHP,0,01,FDCHP Series 0 Sub 01,2009 Baseline Price*,"$55,900.00"
 FDCHP,0,01,FDCHP Series 0 Sub 01,2009 Deployed Instrument Count,7
 FDCHP,0,01,FDCHP Series 0 Sub 01,Alternate Instrument Class Name,Direct Covariance Flux
@@ -1215,7 +1192,7 @@ FDCHP,0,01,FDCHP Series 0 Sub 01,ClassLongName,flux_direct_cov_HP
 FDCHP,0,01,FDCHP Series 0 Sub 01,Comments,
 FDCHP,0,01,FDCHP Series 0 Sub 01,CP Spares,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,0,01,FDCHP Series 0 Sub 01,ECRs that changed the count,
+FDCHP,0,01,FDCHP Series 0 Sub 01,ECRs that changed the count,1300-00318
 FDCHP,0,01,FDCHP Series 0 Sub 01,Global Spares,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Instrument Configuration,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Link to the Specification,
@@ -1238,7 +1215,7 @@ FDCHP,A,01,FDCHP Series A Sub 01,ClassLongName,flux_direct_cov_HP
 FDCHP,A,01,FDCHP Series A Sub 01,Comments,
 FDCHP,A,01,FDCHP Series A Sub 01,CP Spares,
 FDCHP,A,01,FDCHP Series A Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,A,01,FDCHP Series A Sub 01,ECRs that changed the count,
+FDCHP,A,01,FDCHP Series A Sub 01,ECRs that changed the count,1300-00318
 FDCHP,A,01,FDCHP Series A Sub 01,Global Spares,2
 FDCHP,A,01,FDCHP Series A Sub 01,Instrument Configuration,
 FDCHP,A,01,FDCHP Series A Sub 01,Link to the Specification,
@@ -1261,7 +1238,7 @@ FDCLP,0,01,FDCLP Series 0 Sub 01,ClassLongName,flux_direct_cov_LP
 FDCLP,0,01,FDCLP Series 0 Sub 01,Comments,
 FDCLP,0,01,FDCLP Series 0 Sub 01,CP Spares,
 FDCLP,0,01,FDCLP Series 0 Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
-FDCLP,0,01,FDCLP Series 0 Sub 01,ECRs that changed the count,
+FDCLP,0,01,FDCLP Series 0 Sub 01,ECRs that changed the count,1300-00318
 FDCLP,0,01,FDCLP Series 0 Sub 01,Global Spares,
 FDCLP,0,01,FDCLP Series 0 Sub 01,Instrument Configuration,
 FDCLP,0,01,FDCLP Series 0 Sub 01,Link to the Specification,
@@ -1284,7 +1261,7 @@ FDCLP,A,01,FDCLP Series A Sub 01,ClassLongName,flux_direct_cov_LP
 FDCLP,A,01,FDCLP Series A Sub 01,Comments,
 FDCLP,A,01,FDCLP Series A Sub 01,CP Spares,1
 FDCLP,A,01,FDCLP Series A Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
-FDCLP,A,01,FDCLP Series A Sub 01,ECRs that changed the count,
+FDCLP,A,01,FDCLP Series A Sub 01,ECRs that changed the count,1300-00318
 FDCLP,A,01,FDCLP Series A Sub 01,Global Spares,
 FDCLP,A,01,FDCLP Series A Sub 01,Instrument Configuration,
 FDCLP,A,01,FDCLP Series A Sub 01,Link to the Specification,
@@ -1319,29 +1296,6 @@ FLOBN,A,01,FLOBN Series A Sub 01,RSN O&M Spares,1
 FLOBN,A,01,FLOBN Series A Sub 01,RSN Part Number,4830-58334
 FLOBN,A,01,FLOBN Series A Sub 01,Susceptible to Acoustic Interference,
 FLOBN,A,01,FLOBN Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
-FLORD,0,01,FLORD Series 0 Sub 01,2009 Baseline Price*,"$5,600.00"
-FLORD,0,01,FLORD Series 0 Sub 01,2009 Deployed Instrument Count,35
-FLORD,0,01,FLORD Series 0 Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
-FLORD,0,01,FLORD Series 0 Sub 01,CE Spares,
-FLORD,0,01,FLORD Series 0 Sub 01,CGSN MREFC Spares,
-FLORD,0,01,FLORD Series 0 Sub 01,CGSN O&M Spares,
-FLORD,0,01,FLORD Series 0 Sub 01,CGSN P/N,
-FLORD,0,01,FLORD Series 0 Sub 01,ClassLongName,Fluorometer_two_wavelength
-FLORD,0,01,FLORD Series 0 Sub 01,Comments,
-FLORD,0,01,FLORD Series 0 Sub 01,CP Spares,
-FLORD,0,01,FLORD Series 0 Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
-FLORD,0,01,FLORD Series 0 Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
-FLORD,0,01,FLORD Series 0 Sub 01,Global Spares,
-FLORD,0,01,FLORD Series 0 Sub 01,Instrument Configuration,
-FLORD,0,01,FLORD Series 0 Sub 01,Link to the Specification,
-FLORD,0,01,FLORD Series 0 Sub 01,Notes,
-FLORD,0,01,FLORD Series 0 Sub 01,PrimaryScienceDiscipline,B
-FLORD,0,01,FLORD Series 0 Sub 01,Produces Acoustic Interference,
-FLORD,0,01,FLORD Series 0 Sub 01,Ready for 2013?,
-FLORD,0,01,FLORD Series 0 Sub 01,RSN O&M Spares,
-FLORD,0,01,FLORD Series 0 Sub 01,RSN Part Number,
-FLORD,0,01,FLORD Series 0 Sub 01,Susceptible to Acoustic Interference,
-FLORD,0,01,FLORD Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 FLORD,A,01,FLORD Series A Sub 01,2009 Baseline Price*,"$5,600.00"
 FLORD,A,01,FLORD Series A Sub 01,2009 Deployed Instrument Count,35
 FLORD,A,01,FLORD Series A Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
@@ -1457,29 +1411,29 @@ FLORD,M,01,FLORD Series M Sub 01,RSN O&M Spares,
 FLORD,M,01,FLORD Series M Sub 01,RSN Part Number,
 FLORD,M,01,FLORD Series M Sub 01,Susceptible to Acoustic Interference,
 FLORD,M,01,FLORD Series M Sub 01,"Vendor CLIN, SubCLIN or Model #",
-FLORT,0,01,FLORT Series 0 Sub 01,2009 Baseline Price*,"$13,905.00"
-FLORT,0,01,FLORT Series 0 Sub 01,2009 Deployed Instrument Count,42
-FLORT,0,01,FLORT Series 0 Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
-FLORT,0,01,FLORT Series 0 Sub 01,CE Spares,
-FLORT,0,01,FLORT Series 0 Sub 01,CGSN MREFC Spares,
-FLORT,0,01,FLORT Series 0 Sub 01,CGSN O&M Spares,
-FLORT,0,01,FLORT Series 0 Sub 01,CGSN P/N,
-FLORT,0,01,FLORT Series 0 Sub 01,ClassLongName,Fluorometer_three_wavelength
-FLORT,0,01,FLORT Series 0 Sub 01,Comments,
-FLORT,0,01,FLORT Series 0 Sub 01,CP Spares,
-FLORT,0,01,FLORT Series 0 Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
-FLORT,0,01,FLORT Series 0 Sub 01,ECRs that changed the count,
-FLORT,0,01,FLORT Series 0 Sub 01,Global Spares,
-FLORT,0,01,FLORT Series 0 Sub 01,Instrument Configuration,
-FLORT,0,01,FLORT Series 0 Sub 01,Link to the Specification,
-FLORT,0,01,FLORT Series 0 Sub 01,Notes,
-FLORT,0,01,FLORT Series 0 Sub 01,PrimaryScienceDiscipline,B
-FLORT,0,01,FLORT Series 0 Sub 01,Produces Acoustic Interference,
-FLORT,0,01,FLORT Series 0 Sub 01,Ready for 2013?,
-FLORT,0,01,FLORT Series 0 Sub 01,RSN O&M Spares,
-FLORT,0,01,FLORT Series 0 Sub 01,RSN Part Number,
-FLORT,0,01,FLORT Series 0 Sub 01,Susceptible to Acoustic Interference,
-FLORT,0,01,FLORT Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORD,O,01,FLORD Series O Sub 01,2009 Baseline Price*,"$5,600.00"
+FLORD,O,01,FLORD Series O Sub 01,2009 Deployed Instrument Count,35
+FLORD,O,01,FLORD Series O Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,O,01,FLORD Series O Sub 01,CE Spares,
+FLORD,O,01,FLORD Series O Sub 01,CGSN MREFC Spares,
+FLORD,O,01,FLORD Series O Sub 01,CGSN O&M Spares,
+FLORD,O,01,FLORD Series O Sub 01,CGSN P/N,
+FLORD,O,01,FLORD Series O Sub 01,ClassLongName,Fluorometer_two_wavelength
+FLORD,O,01,FLORD Series O Sub 01,Comments,
+FLORD,O,01,FLORD Series O Sub 01,CP Spares,
+FLORD,O,01,FLORD Series O Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,O,01,FLORD Series O Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,O,01,FLORD Series O Sub 01,Global Spares,
+FLORD,O,01,FLORD Series O Sub 01,Instrument Configuration,
+FLORD,O,01,FLORD Series O Sub 01,Link to the Specification,
+FLORD,O,01,FLORD Series O Sub 01,Notes,
+FLORD,O,01,FLORD Series O Sub 01,PrimaryScienceDiscipline,B
+FLORD,O,01,FLORD Series O Sub 01,Produces Acoustic Interference,
+FLORD,O,01,FLORD Series O Sub 01,Ready for 2013?,
+FLORD,O,01,FLORD Series O Sub 01,RSN O&M Spares,
+FLORD,O,01,FLORD Series O Sub 01,RSN Part Number,
+FLORD,O,01,FLORD Series O Sub 01,Susceptible to Acoustic Interference,
+FLORD,O,01,FLORD Series O Sub 01,"Vendor CLIN, SubCLIN or Model #",
 FLORT,A,01,FLORT Series A Sub 01,2009 Baseline Price*,"$13,905.00"
 FLORT,A,01,FLORT Series A Sub 01,2009 Deployed Instrument Count,42
 FLORT,A,01,FLORT Series A Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
@@ -1549,6 +1503,29 @@ FLORT,D,01,FLORT Series D Sub 01,RSN O&M Spares,
 FLORT,D,01,FLORT Series D Sub 01,RSN Part Number,
 FLORT,D,01,FLORT Series D Sub 01,Susceptible to Acoustic Interference,
 FLORT,D,01,FLORT Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORT,J,01,FLORT Series J Sub 01,2009 Baseline Price*,"$13,905.00"
+FLORT,J,01,FLORT Series J Sub 01,2009 Deployed Instrument Count,42
+FLORT,J,01,FLORT Series J Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
+FLORT,J,01,FLORT Series J Sub 01,CE Spares,
+FLORT,J,01,FLORT Series J Sub 01,CGSN MREFC Spares,
+FLORT,J,01,FLORT Series J Sub 01,CGSN O&M Spares,
+FLORT,J,01,FLORT Series J Sub 01,CGSN P/N,
+FLORT,J,01,FLORT Series J Sub 01,ClassLongName,Fluorometer_three_wavelength
+FLORT,J,01,FLORT Series J Sub 01,Comments,
+FLORT,J,01,FLORT Series J Sub 01,CP Spares,
+FLORT,J,01,FLORT Series J Sub 01,Description,"3-Wavelength Fluorometer for measurement of fluorescence, Chl-a, CDOM, optical backscatter"
+FLORT,J,01,FLORT Series J Sub 01,ECRs that changed the count,
+FLORT,J,01,FLORT Series J Sub 01,Global Spares,
+FLORT,J,01,FLORT Series J Sub 01,Instrument Configuration,
+FLORT,J,01,FLORT Series J Sub 01,Link to the Specification,
+FLORT,J,01,FLORT Series J Sub 01,Notes,
+FLORT,J,01,FLORT Series J Sub 01,PrimaryScienceDiscipline,B
+FLORT,J,01,FLORT Series J Sub 01,Produces Acoustic Interference,
+FLORT,J,01,FLORT Series J Sub 01,Ready for 2013?,
+FLORT,J,01,FLORT Series J Sub 01,RSN O&M Spares,
+FLORT,J,01,FLORT Series J Sub 01,RSN Part Number,
+FLORT,J,01,FLORT Series J Sub 01,Susceptible to Acoustic Interference,
+FLORT,J,01,FLORT Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
 FLORT,K,01,FLORT Series K Sub 01,2009 Baseline Price*,"$13,905.00"
 FLORT,K,01,FLORT Series K Sub 01,2009 Deployed Instrument Count,42
 FLORT,K,01,FLORT Series K Sub 01,Alternate Instrument Class Name,3-Wavelength Fluorometer
@@ -1721,7 +1698,7 @@ METBK,A,01,METBK Series A Sub 01,ClassLongName,Meteorology_bulk
 METBK,A,01,METBK Series A Sub 01,Comments,Sole Source: Star Engineering
 METBK,A,01,METBK Series A Sub 01,CP Spares,2
 METBK,A,01,METBK Series A Sub 01,Description,"Measures surface meteorology and provides the data required to compute air-sea fluxes of heat, freshwater, and momentum"
-METBK,A,01,METBK Series A Sub 01,ECRs that changed the count,
+METBK,A,01,METBK Series A Sub 01,ECRs that changed the count,1303-00794
 METBK,A,01,METBK Series A Sub 01,Global Spares,2
 METBK,A,01,METBK Series A Sub 01,Instrument Configuration,Star Engineering ASIMET
 METBK,A,01,METBK Series A Sub 01,Link to the Specification,
@@ -1733,29 +1710,6 @@ METBK,A,01,METBK Series A Sub 01,RSN O&M Spares,
 METBK,A,01,METBK Series A Sub 01,RSN Part Number,
 METBK,A,01,METBK Series A Sub 01,Susceptible to Acoustic Interference,
 METBK,A,01,METBK Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
-NUTNR,0,01,NUTNR Series 0 Sub 01,2009 Baseline Price*,"$30,990.00"
-NUTNR,0,01,NUTNR Series 0 Sub 01,2009 Deployed Instrument Count,22
-NUTNR,0,01,NUTNR Series 0 Sub 01,Alternate Instrument Class Name,Nitrate
-NUTNR,0,01,NUTNR Series 0 Sub 01,CE Spares,
-NUTNR,0,01,NUTNR Series 0 Sub 01,CGSN MREFC Spares,
-NUTNR,0,01,NUTNR Series 0 Sub 01,CGSN O&M Spares,
-NUTNR,0,01,NUTNR Series 0 Sub 01,CGSN P/N,
-NUTNR,0,01,NUTNR Series 0 Sub 01,ClassLongName,nutrient_Nitrate
-NUTNR,0,01,NUTNR Series 0 Sub 01,Comments,
-NUTNR,0,01,NUTNR Series 0 Sub 01,CP Spares,
-NUTNR,0,01,NUTNR Series 0 Sub 01,Description,Optical Nitrate measurements (fast response and appropriate for profilers)
-NUTNR,0,01,NUTNR Series 0 Sub 01,ECRs that changed the count,ECR 1303-00511
-NUTNR,0,01,NUTNR Series 0 Sub 01,Global Spares,
-NUTNR,0,01,NUTNR Series 0 Sub 01,Instrument Configuration,
-NUTNR,0,01,NUTNR Series 0 Sub 01,Link to the Specification,
-NUTNR,0,01,NUTNR Series 0 Sub 01,Notes,
-NUTNR,0,01,NUTNR Series 0 Sub 01,PrimaryScienceDiscipline,C
-NUTNR,0,01,NUTNR Series 0 Sub 01,Produces Acoustic Interference,
-NUTNR,0,01,NUTNR Series 0 Sub 01,Ready for 2013?,
-NUTNR,0,01,NUTNR Series 0 Sub 01,RSN O&M Spares,
-NUTNR,0,01,NUTNR Series 0 Sub 01,RSN Part Number,
-NUTNR,0,01,NUTNR Series 0 Sub 01,Susceptible to Acoustic Interference,
-NUTNR,0,01,NUTNR Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 NUTNR,A,01,NUTNR Series A Sub 01,2009 Baseline Price*,"$30,990.00"
 NUTNR,A,01,NUTNR Series A Sub 01,2009 Deployed Instrument Count,22
 NUTNR,A,01,NUTNR Series A Sub 01,Alternate Instrument Class Name,Nitrate
@@ -1802,6 +1756,29 @@ NUTNR,B,01,NUTNR Series B Sub 01,RSN O&M Spares,
 NUTNR,B,01,NUTNR Series B Sub 01,RSN Part Number,
 NUTNR,B,01,NUTNR Series B Sub 01,Susceptible to Acoustic Interference,
 NUTNR,B,01,NUTNR Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","NUYD02 ISUS, NUYD13 ISUS Flow Cell, NUYD15 Pump, NUYD10 Battery Pack, NUYD11 Battery Cable"
+NUTNR,J,01,NUTNR Series J Sub 01,2009 Baseline Price*,"$30,990.00"
+NUTNR,J,01,NUTNR Series J Sub 01,2009 Deployed Instrument Count,22
+NUTNR,J,01,NUTNR Series J Sub 01,Alternate Instrument Class Name,Nitrate
+NUTNR,J,01,NUTNR Series J Sub 01,CE Spares,
+NUTNR,J,01,NUTNR Series J Sub 01,CGSN MREFC Spares,
+NUTNR,J,01,NUTNR Series J Sub 01,CGSN O&M Spares,
+NUTNR,J,01,NUTNR Series J Sub 01,CGSN P/N,
+NUTNR,J,01,NUTNR Series J Sub 01,ClassLongName,nutrient_Nitrate
+NUTNR,J,01,NUTNR Series J Sub 01,Comments,
+NUTNR,J,01,NUTNR Series J Sub 01,CP Spares,
+NUTNR,J,01,NUTNR Series J Sub 01,Description,Optical Nitrate measurements (fast response and appropriate for profilers)
+NUTNR,J,01,NUTNR Series J Sub 01,ECRs that changed the count,ECR 1303-00511
+NUTNR,J,01,NUTNR Series J Sub 01,Global Spares,
+NUTNR,J,01,NUTNR Series J Sub 01,Instrument Configuration,
+NUTNR,J,01,NUTNR Series J Sub 01,Link to the Specification,
+NUTNR,J,01,NUTNR Series J Sub 01,Notes,
+NUTNR,J,01,NUTNR Series J Sub 01,PrimaryScienceDiscipline,C
+NUTNR,J,01,NUTNR Series J Sub 01,Produces Acoustic Interference,
+NUTNR,J,01,NUTNR Series J Sub 01,Ready for 2013?,
+NUTNR,J,01,NUTNR Series J Sub 01,RSN O&M Spares,
+NUTNR,J,01,NUTNR Series J Sub 01,RSN Part Number,
+NUTNR,J,01,NUTNR Series J Sub 01,Susceptible to Acoustic Interference,
+NUTNR,J,01,NUTNR Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
 NUTNR,N,01,NUTNR Series N Sub 01,2009 Baseline Price*,"$30,990.00"
 NUTNR,N,01,NUTNR Series N Sub 01,2009 Deployed Instrument Count,22
 NUTNR,N,01,NUTNR Series N Sub 01,Alternate Instrument Class Name,Nitrate
@@ -1825,6 +1802,29 @@ NUTNR,N,01,NUTNR Series N Sub 01,RSN O&M Spares,
 NUTNR,N,01,NUTNR Series N Sub 01,RSN Part Number,
 NUTNR,N,01,NUTNR Series N Sub 01,Susceptible to Acoustic Interference,
 NUTNR,N,01,NUTNR Series N Sub 01,"Vendor CLIN, SubCLIN or Model #",
+NUTNR,O,01,NUTNR Series O Subseries 01,2009 Baseline Price*,"$30,990.00"
+NUTNR,O,01,NUTNR Series O Subseries 01,2009 Deployed Instrument Count,22
+NUTNR,O,01,NUTNR Series O Subseries 01,Alternate Instrument Class Name,Nitrate
+NUTNR,O,01,NUTNR Series O Subseries 01,CE Spares,
+NUTNR,O,01,NUTNR Series O Subseries 01,CGSN MREFC Spares,
+NUTNR,O,01,NUTNR Series O Subseries 01,CGSN O&M Spares,
+NUTNR,O,01,NUTNR Series O Subseries 01,CGSN P/N,
+NUTNR,O,01,NUTNR Series O Subseries 01,ClassLongName,nutrient_Nitrate
+NUTNR,O,01,NUTNR Series O Subseries 01,Comments,
+NUTNR,O,01,NUTNR Series O Subseries 01,CP Spares,
+NUTNR,O,01,NUTNR Series O Subseries 01,Description,Optical Nitrate measurements (fast response and appropriate for profilers)
+NUTNR,O,01,NUTNR Series O Subseries 01,ECRs that changed the count,ECR 1303-00511
+NUTNR,O,01,NUTNR Series O Subseries 01,Global Spares,
+NUTNR,O,01,NUTNR Series O Subseries 01,Instrument Configuration,
+NUTNR,O,01,NUTNR Series O Subseries 01,Link to the Specification,
+NUTNR,O,01,NUTNR Series O Subseries 01,Notes,
+NUTNR,O,01,NUTNR Series O Subseries 01,PrimaryScienceDiscipline,C
+NUTNR,O,01,NUTNR Series O Subseries 01,Produces Acoustic Interference,
+NUTNR,O,01,NUTNR Series O Subseries 01,Ready for 2013?,
+NUTNR,O,01,NUTNR Series O Subseries 01,RSN O&M Spares,
+NUTNR,O,01,NUTNR Series O Subseries 01,RSN Part Number,
+NUTNR,O,01,NUTNR Series O Subseries 01,Susceptible to Acoustic Interference,
+NUTNR,O,01,NUTNR Series O Subseries 01,"Vendor CLIN, SubCLIN or Model #",
 OBSBB,A,01,OBSBB Series A Sub 01,2009 Baseline Price*,
 OBSBB,A,01,OBSBB Series A Sub 01,2009 Deployed Instrument Count,4
 OBSBB,A,01,OBSBB Series A Sub 01,Alternate Instrument Class Name,Broadband Ocean Bottom Seismometer
@@ -1917,29 +1917,6 @@ OBSSP,A,01,OBSSP Series A Sub 01,RSN O&M Spares,2
 OBSSP,A,01,OBSSP Series A Sub 01,RSN Part Number,4830-58331
 OBSSP,A,01,OBSSP Series A Sub 01,Susceptible to Acoustic Interference,
 OBSSP,A,01,OBSSP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
-OPTAA,0,01,OPTAA Series 0 Sub 01,2009 Baseline Price*,"$17,500.00"
-OPTAA,0,01,OPTAA Series 0 Sub 01,2009 Deployed Instrument Count,35
-OPTAA,0,01,OPTAA Series 0 Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
-OPTAA,0,01,OPTAA Series 0 Sub 01,CE Spares,
-OPTAA,0,01,OPTAA Series 0 Sub 01,CGSN MREFC Spares,
-OPTAA,0,01,OPTAA Series 0 Sub 01,CGSN O&M Spares,
-OPTAA,0,01,OPTAA Series 0 Sub 01,CGSN P/N,
-OPTAA,0,01,OPTAA Series 0 Sub 01,ClassLongName,attenuation_absorption_optical
-OPTAA,0,01,OPTAA Series 0 Sub 01,Comments,
-OPTAA,0,01,OPTAA Series 0 Sub 01,CP Spares,
-OPTAA,0,01,OPTAA Series 0 Sub 01,Description,Measures optical attenuation and absorption
-OPTAA,0,01,OPTAA Series 0 Sub 01,ECRs that changed the count,
-OPTAA,0,01,OPTAA Series 0 Sub 01,Global Spares,
-OPTAA,0,01,OPTAA Series 0 Sub 01,Instrument Configuration,
-OPTAA,0,01,OPTAA Series 0 Sub 01,Link to the Specification,
-OPTAA,0,01,OPTAA Series 0 Sub 01,Notes,
-OPTAA,0,01,OPTAA Series 0 Sub 01,PrimaryScienceDiscipline,B
-OPTAA,0,01,OPTAA Series 0 Sub 01,Produces Acoustic Interference,
-OPTAA,0,01,OPTAA Series 0 Sub 01,Ready for 2013?,
-OPTAA,0,01,OPTAA Series 0 Sub 01,RSN O&M Spares,
-OPTAA,0,01,OPTAA Series 0 Sub 01,RSN Part Number,
-OPTAA,0,01,OPTAA Series 0 Sub 01,Susceptible to Acoustic Interference,
-OPTAA,0,01,OPTAA Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 OPTAA,A,01,OPTAA Series A Sub 01,2009 Baseline Price*,"$17,500.00"
 OPTAA,A,01,OPTAA Series A Sub 01,2009 Deployed Instrument Count,35
 OPTAA,A,01,OPTAA Series A Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
@@ -2032,6 +2009,52 @@ OPTAA,D,01,OPTAA Series D Sub 01,RSN O&M Spares,
 OPTAA,D,01,OPTAA Series D Sub 01,RSN Part Number,
 OPTAA,D,01,OPTAA Series D Sub 01,Susceptible to Acoustic Interference,
 OPTAA,D,01,OPTAA Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OPTAA,J,01,OPTAA Series J Sub 01,2009 Baseline Price*,"$17,500.00"
+OPTAA,J,01,OPTAA Series J Sub 01,2009 Deployed Instrument Count,35
+OPTAA,J,01,OPTAA Series J Sub 01,Alternate Instrument Class Name,Absorption Spectrophotometer
+OPTAA,J,01,OPTAA Series J Sub 01,CE Spares,
+OPTAA,J,01,OPTAA Series J Sub 01,CGSN MREFC Spares,
+OPTAA,J,01,OPTAA Series J Sub 01,CGSN O&M Spares,
+OPTAA,J,01,OPTAA Series J Sub 01,CGSN P/N,
+OPTAA,J,01,OPTAA Series J Sub 01,ClassLongName,attenuation_absorption_optical
+OPTAA,J,01,OPTAA Series J Sub 01,Comments,
+OPTAA,J,01,OPTAA Series J Sub 01,CP Spares,
+OPTAA,J,01,OPTAA Series J Sub 01,Description,Measures optical attenuation and absorption
+OPTAA,J,01,OPTAA Series J Sub 01,ECRs that changed the count,
+OPTAA,J,01,OPTAA Series J Sub 01,Global Spares,
+OPTAA,J,01,OPTAA Series J Sub 01,Instrument Configuration,
+OPTAA,J,01,OPTAA Series J Sub 01,Link to the Specification,
+OPTAA,J,01,OPTAA Series J Sub 01,Notes,
+OPTAA,J,01,OPTAA Series J Sub 01,PrimaryScienceDiscipline,B
+OPTAA,J,01,OPTAA Series J Sub 01,Produces Acoustic Interference,
+OPTAA,J,01,OPTAA Series J Sub 01,Ready for 2013?,
+OPTAA,J,01,OPTAA Series J Sub 01,RSN O&M Spares,
+OPTAA,J,01,OPTAA Series J Sub 01,RSN Part Number,
+OPTAA,J,01,OPTAA Series J Sub 01,Susceptible to Acoustic Interference,
+OPTAA,J,01,OPTAA Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
+OPTAA,O,01,OPTAA Series O Subseries 01,2009 Baseline Price*,"$17,500.00"
+OPTAA,O,01,OPTAA Series O Subseries 01,2009 Deployed Instrument Count,35
+OPTAA,O,01,OPTAA Series O Subseries 01,Alternate Instrument Class Name,Absorption Spectrophotometer
+OPTAA,O,01,OPTAA Series O Subseries 01,CE Spares,
+OPTAA,O,01,OPTAA Series O Subseries 01,CGSN MREFC Spares,
+OPTAA,O,01,OPTAA Series O Subseries 01,CGSN O&M Spares,
+OPTAA,O,01,OPTAA Series O Subseries 01,CGSN P/N,
+OPTAA,O,01,OPTAA Series O Subseries 01,ClassLongName,attenuation_absorption_optical
+OPTAA,O,01,OPTAA Series O Subseries 01,Comments,
+OPTAA,O,01,OPTAA Series O Subseries 01,CP Spares,
+OPTAA,O,01,OPTAA Series O Subseries 01,Description,Measures optical attenuation and absorption
+OPTAA,O,01,OPTAA Series O Subseries 01,ECRs that changed the count,
+OPTAA,O,01,OPTAA Series O Subseries 01,Global Spares,
+OPTAA,O,01,OPTAA Series O Subseries 01,Instrument Configuration,
+OPTAA,O,01,OPTAA Series O Subseries 01,Link to the Specification,
+OPTAA,O,01,OPTAA Series O Subseries 01,Notes,
+OPTAA,O,01,OPTAA Series O Subseries 01,PrimaryScienceDiscipline,B
+OPTAA,O,01,OPTAA Series O Subseries 01,Produces Acoustic Interference,
+OPTAA,O,01,OPTAA Series O Subseries 01,Ready for 2013?,
+OPTAA,O,01,OPTAA Series O Subseries 01,RSN O&M Spares,
+OPTAA,O,01,OPTAA Series O Subseries 01,RSN Part Number,
+OPTAA,O,01,OPTAA Series O Subseries 01,Susceptible to Acoustic Interference,
+OPTAA,O,01,OPTAA Series O Subseries 01,"Vendor CLIN, SubCLIN or Model #",
 OSMOI,A,01,OSMOI Series A Sub 01,2009 Baseline Price*,
 OSMOI,A,01,OSMOI Series A Sub 01,2009 Deployed Instrument Count,2
 OSMOI,A,01,OSMOI Series A Sub 01,Alternate Instrument Class Name,Osmosis-Based Water Sampler
@@ -2055,29 +2078,6 @@ OSMOI,A,01,OSMOI Series A Sub 01,RSN O&M Spares,1
 OSMOI,A,01,OSMOI Series A Sub 01,RSN Part Number,4830-58333
 OSMOI,A,01,OSMOI Series A Sub 01,Susceptible to Acoustic Interference,
 OSMOI,A,01,OSMOI Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
-PARAD,0,01,PARAD Series 0 Sub 01,2009 Baseline Price*,
-PARAD,0,01,PARAD Series 0 Sub 01,2009 Deployed Instrument Count,21
-PARAD,0,01,PARAD Series 0 Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
-PARAD,0,01,PARAD Series 0 Sub 01,CE Spares,
-PARAD,0,01,PARAD Series 0 Sub 01,CGSN MREFC Spares,
-PARAD,0,01,PARAD Series 0 Sub 01,CGSN O&M Spares,
-PARAD,0,01,PARAD Series 0 Sub 01,CGSN P/N,
-PARAD,0,01,PARAD Series 0 Sub 01,ClassLongName,PAR
-PARAD,0,01,PARAD Series 0 Sub 01,Comments,
-PARAD,0,01,PARAD Series 0 Sub 01,CP Spares,
-PARAD,0,01,PARAD Series 0 Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
-PARAD,0,01,PARAD Series 0 Sub 01,ECRs that changed the count,
-PARAD,0,01,PARAD Series 0 Sub 01,Global Spares,
-PARAD,0,01,PARAD Series 0 Sub 01,Instrument Configuration,
-PARAD,0,01,PARAD Series 0 Sub 01,Link to the Specification,
-PARAD,0,01,PARAD Series 0 Sub 01,Notes,
-PARAD,0,01,PARAD Series 0 Sub 01,PrimaryScienceDiscipline,B
-PARAD,0,01,PARAD Series 0 Sub 01,Produces Acoustic Interference,
-PARAD,0,01,PARAD Series 0 Sub 01,Ready for 2013?,
-PARAD,0,01,PARAD Series 0 Sub 01,RSN O&M Spares,
-PARAD,0,01,PARAD Series 0 Sub 01,RSN Part Number,
-PARAD,0,01,PARAD Series 0 Sub 01,Susceptible to Acoustic Interference,
-PARAD,0,01,PARAD Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 PARAD,1,01,PARAD Series TBD Sub 01,2009 Baseline Price*,
 PARAD,1,01,PARAD Series TBD Sub 01,2009 Deployed Instrument Count,21
 PARAD,1,01,PARAD Series TBD Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
@@ -2124,20 +2124,43 @@ PARAD,A,01,PARAD Series A Sub 01,RSN O&M Spares,1
 PARAD,A,01,PARAD Series A Sub 01,RSN Part Number,4830-66645
 PARAD,A,01,PARAD Series A Sub 01,Susceptible to Acoustic Interference,
 PARAD,A,01,PARAD Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PARAD,J,01,PARAD Series J Subseries 01,2009 Baseline Price*,
+PARAD,J,01,PARAD Series J Subseries 01,2009 Deployed Instrument Count,21
+PARAD,J,01,PARAD Series J Subseries 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
+PARAD,J,01,PARAD Series J Subseries 01,CE Spares,
+PARAD,J,01,PARAD Series J Subseries 01,CGSN MREFC Spares,
+PARAD,J,01,PARAD Series J Subseries 01,CGSN O&M Spares,
+PARAD,J,01,PARAD Series J Subseries 01,CGSN P/N,
+PARAD,J,01,PARAD Series J Subseries 01,ClassLongName,PAR
+PARAD,J,01,PARAD Series J Subseries 01,Comments,
+PARAD,J,01,PARAD Series J Subseries 01,CP Spares,
+PARAD,J,01,PARAD Series J Subseries 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
+PARAD,J,01,PARAD Series J Subseries 01,ECRs that changed the count,
+PARAD,J,01,PARAD Series J Subseries 01,Global Spares,
+PARAD,J,01,PARAD Series J Subseries 01,Instrument Configuration,
+PARAD,J,01,PARAD Series J Subseries 01,Link to the Specification,
+PARAD,J,01,PARAD Series J Subseries 01,Notes,
+PARAD,J,01,PARAD Series J Subseries 01,PrimaryScienceDiscipline,B
+PARAD,J,01,PARAD Series J Subseries 01,Produces Acoustic Interference,
+PARAD,J,01,PARAD Series J Subseries 01,Ready for 2013?,
+PARAD,J,01,PARAD Series J Subseries 01,RSN O&M Spares,
+PARAD,J,01,PARAD Series J Subseries 01,RSN Part Number,
+PARAD,J,01,PARAD Series J Subseries 01,Susceptible to Acoustic Interference,
+PARAD,J,01,PARAD Series J Subseries 01,"Vendor CLIN, SubCLIN or Model #",
 PARAD,K,01,PARAD Series K Sub 01,2009 Baseline Price*,
 PARAD,K,01,PARAD Series K Sub 01,2009 Deployed Instrument Count,21
 PARAD,K,01,PARAD Series K Sub 01,Alternate Instrument Class Name,Photosynthetically Available Radiation
 PARAD,K,01,PARAD Series K Sub 01,CE Spares,
 PARAD,K,01,PARAD Series K Sub 01,CGSN MREFC Spares,
 PARAD,K,01,PARAD Series K Sub 01,CGSN O&M Spares,
-PARAD,K,01,PARAD Series K Sub 01,CGSN P/N,1331-00005-00001
+PARAD,K,01,PARAD Series K Sub 01,CGSN P/N,
 PARAD,K,01,PARAD Series K Sub 01,ClassLongName,PAR
-PARAD,K,01,PARAD Series K Sub 01,Comments,McLane P/N: 200-1011 (?)
+PARAD,K,01,PARAD Series K Sub 01,Comments,
 PARAD,K,01,PARAD Series K Sub 01,CP Spares,
 PARAD,K,01,PARAD Series K Sub 01,Description,Measures optical attenuation and absorption at 400-700nm wavelengths
 PARAD,K,01,PARAD Series K Sub 01,ECRs that changed the count,
 PARAD,K,01,PARAD Series K Sub 01,Global Spares,
-PARAD,K,01,PARAD Series K Sub 01,Instrument Configuration,Biospherical QSP-2200
+PARAD,K,01,PARAD Series K Sub 01,Instrument Configuration,
 PARAD,K,01,PARAD Series K Sub 01,Link to the Specification,
 PARAD,K,01,PARAD Series K Sub 01,Notes,
 PARAD,K,01,PARAD Series K Sub 01,PrimaryScienceDiscipline,B
@@ -2216,29 +2239,6 @@ PCO2A,A,01,PCO2A Series A Sub 01,RSN O&M Spares,
 PCO2A,A,01,PCO2A Series A Sub 01,RSN Part Number,
 PCO2A,A,01,PCO2A Series A Sub 01,Susceptible to Acoustic Interference,
 PCO2A,A,01,PCO2A Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",PSI CO2-Pro w/ Atmosphere option PCO2/ATM-50A(P)
-PCO2W,0,01,PCO2W Series 0 Sub 01,2009 Baseline Price*,"$18,375.00"
-PCO2W,0,01,PCO2W Series 0 Sub 01,2009 Deployed Instrument Count,25
-PCO2W,0,01,PCO2W Series 0 Sub 01,Alternate Instrument Class Name,pCO2 Water
-PCO2W,0,01,PCO2W Series 0 Sub 01,CE Spares,
-PCO2W,0,01,PCO2W Series 0 Sub 01,CGSN MREFC Spares,
-PCO2W,0,01,PCO2W Series 0 Sub 01,CGSN O&M Spares,
-PCO2W,0,01,PCO2W Series 0 Sub 01,CGSN P/N,
-PCO2W,0,01,PCO2W Series 0 Sub 01,ClassLongName,pCO2_water
-PCO2W,0,01,PCO2W Series 0 Sub 01,Comments,
-PCO2W,0,01,PCO2W Series 0 Sub 01,CP Spares,
-PCO2W,0,01,PCO2W Series 0 Sub 01,Description,Measures partial pressure of CO2 in the water column
-PCO2W,0,01,PCO2W Series 0 Sub 01,ECRs that changed the count,
-PCO2W,0,01,PCO2W Series 0 Sub 01,Global Spares,
-PCO2W,0,01,PCO2W Series 0 Sub 01,Instrument Configuration,
-PCO2W,0,01,PCO2W Series 0 Sub 01,Link to the Specification,
-PCO2W,0,01,PCO2W Series 0 Sub 01,Notes,
-PCO2W,0,01,PCO2W Series 0 Sub 01,PrimaryScienceDiscipline,C
-PCO2W,0,01,PCO2W Series 0 Sub 01,Produces Acoustic Interference,
-PCO2W,0,01,PCO2W Series 0 Sub 01,Ready for 2013?,
-PCO2W,0,01,PCO2W Series 0 Sub 01,RSN O&M Spares,
-PCO2W,0,01,PCO2W Series 0 Sub 01,RSN Part Number,
-PCO2W,0,01,PCO2W Series 0 Sub 01,Susceptible to Acoustic Interference,
-PCO2W,0,01,PCO2W Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 PCO2W,A,01,PCO2W Series A Sub 01,2009 Baseline Price*,"$18,375.00"
 PCO2W,A,01,PCO2W Series A Sub 01,2009 Deployed Instrument Count,25
 PCO2W,A,01,PCO2W Series A Sub 01,Alternate Instrument Class Name,pCO2 Water
@@ -2285,6 +2285,52 @@ PCO2W,B,01,PCO2W Series B Sub 01,RSN O&M Spares,
 PCO2W,B,01,PCO2W Series B Sub 01,RSN Part Number,
 PCO2W,B,01,PCO2W Series B Sub 01,Susceptible to Acoustic Interference,
 PCO2W,B,01,PCO2W Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","PCYD01 SAMI-CO2 (1 L), PCYD12 foul-pkg, PCYD17 Wet-plug, PCYD24 Case, (D = 1 for WHOI, 3 for OSU)"
+PCO2W,J,01,PCO2W Series J Sub 01,2009 Baseline Price*,"$18,375.00"
+PCO2W,J,01,PCO2W Series J Sub 01,2009 Deployed Instrument Count,25
+PCO2W,J,01,PCO2W Series J Sub 01,Alternate Instrument Class Name,pCO2 Water
+PCO2W,J,01,PCO2W Series J Sub 01,CE Spares,
+PCO2W,J,01,PCO2W Series J Sub 01,CGSN MREFC Spares,
+PCO2W,J,01,PCO2W Series J Sub 01,CGSN O&M Spares,
+PCO2W,J,01,PCO2W Series J Sub 01,CGSN P/N,
+PCO2W,J,01,PCO2W Series J Sub 01,ClassLongName,pCO2_water
+PCO2W,J,01,PCO2W Series J Sub 01,Comments,
+PCO2W,J,01,PCO2W Series J Sub 01,CP Spares,
+PCO2W,J,01,PCO2W Series J Sub 01,Description,Measures partial pressure of CO2 in the water column
+PCO2W,J,01,PCO2W Series J Sub 01,ECRs that changed the count,
+PCO2W,J,01,PCO2W Series J Sub 01,Global Spares,
+PCO2W,J,01,PCO2W Series J Sub 01,Instrument Configuration,
+PCO2W,J,01,PCO2W Series J Sub 01,Link to the Specification,
+PCO2W,J,01,PCO2W Series J Sub 01,Notes,
+PCO2W,J,01,PCO2W Series J Sub 01,PrimaryScienceDiscipline,C
+PCO2W,J,01,PCO2W Series J Sub 01,Produces Acoustic Interference,
+PCO2W,J,01,PCO2W Series J Sub 01,Ready for 2013?,
+PCO2W,J,01,PCO2W Series J Sub 01,RSN O&M Spares,
+PCO2W,J,01,PCO2W Series J Sub 01,RSN Part Number,
+PCO2W,J,01,PCO2W Series J Sub 01,Susceptible to Acoustic Interference,
+PCO2W,J,01,PCO2W Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
+PCO2W,O,01,PCO2W Series O Subseries 01,2009 Baseline Price*,"$18,375.00"
+PCO2W,O,01,PCO2W Series O Subseries 01,2009 Deployed Instrument Count,25
+PCO2W,O,01,PCO2W Series O Subseries 01,Alternate Instrument Class Name,pCO2 Water
+PCO2W,O,01,PCO2W Series O Subseries 01,CE Spares,
+PCO2W,O,01,PCO2W Series O Subseries 01,CGSN MREFC Spares,
+PCO2W,O,01,PCO2W Series O Subseries 01,CGSN O&M Spares,
+PCO2W,O,01,PCO2W Series O Subseries 01,CGSN P/N,
+PCO2W,O,01,PCO2W Series O Subseries 01,ClassLongName,pCO2_water
+PCO2W,O,01,PCO2W Series O Subseries 01,Comments,
+PCO2W,O,01,PCO2W Series O Subseries 01,CP Spares,
+PCO2W,O,01,PCO2W Series O Subseries 01,Description,Measures partial pressure of CO2 in the water column
+PCO2W,O,01,PCO2W Series O Subseries 01,ECRs that changed the count,
+PCO2W,O,01,PCO2W Series O Subseries 01,Global Spares,
+PCO2W,O,01,PCO2W Series O Subseries 01,Instrument Configuration,
+PCO2W,O,01,PCO2W Series O Subseries 01,Link to the Specification,
+PCO2W,O,01,PCO2W Series O Subseries 01,Notes,
+PCO2W,O,01,PCO2W Series O Subseries 01,PrimaryScienceDiscipline,C
+PCO2W,O,01,PCO2W Series O Subseries 01,Produces Acoustic Interference,
+PCO2W,O,01,PCO2W Series O Subseries 01,Ready for 2013?,
+PCO2W,O,01,PCO2W Series O Subseries 01,RSN O&M Spares,
+PCO2W,O,01,PCO2W Series O Subseries 01,RSN Part Number,
+PCO2W,O,01,PCO2W Series O Subseries 01,Susceptible to Acoustic Interference,
+PCO2W,O,01,PCO2W Series O Subseries 01,"Vendor CLIN, SubCLIN or Model #",
 PHSEN,A,01,PHSEN Series A Sub 01,2009 Baseline Price*,"$17,500.00"
 PHSEN,A,01,PHSEN Series A Sub 01,2009 Deployed Instrument Count,33
 PHSEN,A,01,PHSEN Series A Sub 01,Alternate Instrument Class Name,Seawater pH
@@ -2296,7 +2342,7 @@ PHSEN,A,01,PHSEN Series A Sub 01,ClassLongName,pH_stable
 PHSEN,A,01,PHSEN Series A Sub 01,Comments,Reagent-based measurement of pH in seawater
 PHSEN,A,01,PHSEN Series A Sub 01,CP Spares,
 PHSEN,A,01,PHSEN Series A Sub 01,Description,pH
-PHSEN,A,01,PHSEN Series A Sub 01,ECRs that changed the count,
+PHSEN,A,01,PHSEN Series A Sub 01,ECRs that changed the count,1300-00292
 PHSEN,A,01,PHSEN Series A Sub 01,Global Spares,
 PHSEN,A,01,PHSEN Series A Sub 01,Instrument Configuration,"[SAMI2 pH, Current client revision is 1.06 and f/w is 46, though these will soon rev|http://www.sunburstsensors.com/SAMI_prod.html]"
 PHSEN,A,01,PHSEN Series A Sub 01,Link to the Specification,
@@ -2319,7 +2365,7 @@ PHSEN,B,01,PHSEN Series B Sub 01,ClassLongName,pH_stable
 PHSEN,B,01,PHSEN Series B Sub 01,Comments,
 PHSEN,B,01,PHSEN Series B Sub 01,CP Spares,
 PHSEN,B,01,PHSEN Series B Sub 01,Description,pH
-PHSEN,B,01,PHSEN Series B Sub 01,ECRs that changed the count,
+PHSEN,B,01,PHSEN Series B Sub 01,ECRs that changed the count,1300-00292
 PHSEN,B,01,PHSEN Series B Sub 01,Global Spares,
 PHSEN,B,01,PHSEN Series B Sub 01,Instrument Configuration,Sunburst SAMI-pH (MCBH connector option)
 PHSEN,B,01,PHSEN Series B Sub 01,Link to the Specification,
@@ -2342,7 +2388,7 @@ PHSEN,C,01,PHSEN Series C Sub 01,ClassLongName,pH_stable
 PHSEN,C,01,PHSEN Series C Sub 01,Comments,
 PHSEN,C,01,PHSEN Series C Sub 01,CP Spares,
 PHSEN,C,01,PHSEN Series C Sub 01,Description,pH
-PHSEN,C,01,PHSEN Series C Sub 01,ECRs that changed the count,
+PHSEN,C,01,PHSEN Series C Sub 01,ECRs that changed the count,1300-00292
 PHSEN,C,01,PHSEN Series C Sub 01,Global Spares,
 PHSEN,C,01,PHSEN Series C Sub 01,Instrument Configuration,
 PHSEN,C,01,PHSEN Series C Sub 01,Link to the Specification,
@@ -2365,7 +2411,7 @@ PHSEN,D,01,PHSEN Series D Sub 01,ClassLongName,pH_stable
 PHSEN,D,01,PHSEN Series D Sub 01,Comments,"Active bio-fouling package not an option. Instruments have a standard battery, and a back-up battery for a tidy shut-down. 1 liter bag for reagent Direct: SAMI spits out data after sampling."
 PHSEN,D,01,PHSEN Series D Sub 01,CP Spares,1
 PHSEN,D,01,PHSEN Series D Sub 01,Description,pH
-PHSEN,D,01,PHSEN Series D Sub 01,ECRs that changed the count,
+PHSEN,D,01,PHSEN Series D Sub 01,ECRs that changed the count,1300-00292
 PHSEN,D,01,PHSEN Series D Sub 01,Global Spares,
 PHSEN,D,01,PHSEN Series D Sub 01,Instrument Configuration,"Sunburst SAMI-pH (MCBH connector option) (reagent bag will last for 1 year, with hourly samples)"
 PHSEN,D,01,PHSEN Series D Sub 01,Link to the Specification,
@@ -2388,7 +2434,7 @@ PHSEN,E,01,PHSEN Series E Sub 01,ClassLongName,pH_stable
 PHSEN,E,01,PHSEN Series E Sub 01,Comments,"Active bio-fouling package not an option. Instruments have a standard battery, and a back-up battery for a tidy shut-down. 1 liter bag for reagent IM: SAMI sends out data, can't talk to SAMI from controller."
 PHSEN,E,01,PHSEN Series E Sub 01,CP Spares,
 PHSEN,E,01,PHSEN Series E Sub 01,Description,pH
-PHSEN,E,01,PHSEN Series E Sub 01,ECRs that changed the count,
+PHSEN,E,01,PHSEN Series E Sub 01,ECRs that changed the count,1300-00292
 PHSEN,E,01,PHSEN Series E Sub 01,Global Spares,2
 PHSEN,E,01,PHSEN Series E Sub 01,Instrument Configuration,Sunburst SAMI-pH (MCBH connectors; extra battery for 1 yr deployment; inductive modem connection) Housing is 2.5 in. longer for extra battery. (The IM is not included and must be ordered separately from SeaBird.)
 PHSEN,E,01,PHSEN Series E Sub 01,Link to the Specification,
@@ -2411,7 +2457,7 @@ PHSEN,F,01,PHSEN Series F Sub 01,ClassLongName,pH_stable
 PHSEN,F,01,PHSEN Series F Sub 01,Comments,"Active bio-fouling package not an option. Instruments have a standard battery, and a back-up battery for a tidy shut-down. 1 liter bag for reagent Direct: SAMI spits out data after sampling. No IM needed; will plug into secondary controller"
 PHSEN,F,01,PHSEN Series F Sub 01,CP Spares,
 PHSEN,F,01,PHSEN Series F Sub 01,Description,pH
-PHSEN,F,01,PHSEN Series F Sub 01,ECRs that changed the count,
+PHSEN,F,01,PHSEN Series F Sub 01,ECRs that changed the count,1300-00292
 PHSEN,F,01,PHSEN Series F Sub 01,Global Spares,2
 PHSEN,F,01,PHSEN Series F Sub 01,Instrument Configuration,Sunburst SAMI-pH (MCBH connectors; extra battery for 1 yr deployment) 
 PHSEN,F,01,PHSEN Series F Sub 01,Link to the Specification,
@@ -2434,7 +2480,7 @@ PHSEN,G,01,PHSEN Series G Sub 01,ClassLongName,pH_stable
 PHSEN,G,01,PHSEN Series G Sub 01,Comments,
 PHSEN,G,01,PHSEN Series G Sub 01,CP Spares,
 PHSEN,G,01,PHSEN Series G Sub 01,Description,pH
-PHSEN,G,01,PHSEN Series G Sub 01,ECRs that changed the count,
+PHSEN,G,01,PHSEN Series G Sub 01,ECRs that changed the count,1300-00292
 PHSEN,G,01,PHSEN Series G Sub 01,Global Spares,
 PHSEN,G,01,PHSEN Series G Sub 01,Instrument Configuration,
 PHSEN,G,01,PHSEN Series G Sub 01,Link to the Specification,
@@ -2607,29 +2653,6 @@ RASFL,A,01,RASFL Series A Sub 01,RSN O&M Spares,1
 RASFL,A,01,RASFL Series A Sub 01,RSN Part Number,4830-58340
 RASFL,A,01,RASFL Series A Sub 01,Susceptible to Acoustic Interference,
 RASFL,A,01,RASFL Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
-SPKIR,0,01,SPKIR Series 0 Sub 01,2009 Baseline Price*,"$11,080.00"
-SPKIR,0,01,SPKIR Series 0 Sub 01,2009 Deployed Instrument Count,22
-SPKIR,0,01,SPKIR Series 0 Sub 01,Alternate Instrument Class Name,Spectral Irradiance
-SPKIR,0,01,SPKIR Series 0 Sub 01,CE Spares,
-SPKIR,0,01,SPKIR Series 0 Sub 01,CGSN MREFC Spares,
-SPKIR,0,01,SPKIR Series 0 Sub 01,CGSN O&M Spares,
-SPKIR,0,01,SPKIR Series 0 Sub 01,CGSN P/N,
-SPKIR,0,01,SPKIR Series 0 Sub 01,ClassLongName,spectral_irradiance
-SPKIR,0,01,SPKIR Series 0 Sub 01,Comments,
-SPKIR,0,01,SPKIR Series 0 Sub 01,CP Spares,
-SPKIR,0,01,SPKIR Series 0 Sub 01,Description,Measures downwelling spectral irradiance
-SPKIR,0,01,SPKIR Series 0 Sub 01,ECRs that changed the count,
-SPKIR,0,01,SPKIR Series 0 Sub 01,Global Spares,
-SPKIR,0,01,SPKIR Series 0 Sub 01,Instrument Configuration,
-SPKIR,0,01,SPKIR Series 0 Sub 01,Link to the Specification,
-SPKIR,0,01,SPKIR Series 0 Sub 01,Notes,
-SPKIR,0,01,SPKIR Series 0 Sub 01,PrimaryScienceDiscipline,P
-SPKIR,0,01,SPKIR Series 0 Sub 01,Produces Acoustic Interference,
-SPKIR,0,01,SPKIR Series 0 Sub 01,Ready for 2013?,
-SPKIR,0,01,SPKIR Series 0 Sub 01,RSN O&M Spares,
-SPKIR,0,01,SPKIR Series 0 Sub 01,RSN Part Number,
-SPKIR,0,01,SPKIR Series 0 Sub 01,Susceptible to Acoustic Interference,
-SPKIR,0,01,SPKIR Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 SPKIR,A,01,SPKIR Series A Sub 01,2009 Baseline Price*,"$11,080.00"
 SPKIR,A,01,SPKIR Series A Sub 01,2009 Deployed Instrument Count,22
 SPKIR,A,01,SPKIR Series A Sub 01,Alternate Instrument Class Name,Spectral Irradiance
@@ -2676,6 +2699,52 @@ SPKIR,B,01,SPKIR Series B Sub 01,RSN O&M Spares,
 SPKIR,B,01,SPKIR Series B Sub 01,RSN Part Number,
 SPKIR,B,01,SPKIR Series B Sub 01,Susceptible to Acoustic Interference,
 SPKIR,B,01,SPKIR Series B Sub 01,"Vendor CLIN, SubCLIN or Model #",
+SPKIR,J,01,SPKIR Series J Sub 01,2009 Baseline Price*,"$11,080.00"
+SPKIR,J,01,SPKIR Series J Sub 01,2009 Deployed Instrument Count,22
+SPKIR,J,01,SPKIR Series J Sub 01,Alternate Instrument Class Name,Spectral Irradiance
+SPKIR,J,01,SPKIR Series J Sub 01,CE Spares,
+SPKIR,J,01,SPKIR Series J Sub 01,CGSN MREFC Spares,
+SPKIR,J,01,SPKIR Series J Sub 01,CGSN O&M Spares,
+SPKIR,J,01,SPKIR Series J Sub 01,CGSN P/N,
+SPKIR,J,01,SPKIR Series J Sub 01,ClassLongName,spectral_irradiance
+SPKIR,J,01,SPKIR Series J Sub 01,Comments,
+SPKIR,J,01,SPKIR Series J Sub 01,CP Spares,
+SPKIR,J,01,SPKIR Series J Sub 01,Description,Measures downwelling spectral irradiance
+SPKIR,J,01,SPKIR Series J Sub 01,ECRs that changed the count,
+SPKIR,J,01,SPKIR Series J Sub 01,Global Spares,
+SPKIR,J,01,SPKIR Series J Sub 01,Instrument Configuration,
+SPKIR,J,01,SPKIR Series J Sub 01,Link to the Specification,
+SPKIR,J,01,SPKIR Series J Sub 01,Notes,
+SPKIR,J,01,SPKIR Series J Sub 01,PrimaryScienceDiscipline,P
+SPKIR,J,01,SPKIR Series J Sub 01,Produces Acoustic Interference,
+SPKIR,J,01,SPKIR Series J Sub 01,Ready for 2013?,
+SPKIR,J,01,SPKIR Series J Sub 01,RSN O&M Spares,
+SPKIR,J,01,SPKIR Series J Sub 01,RSN Part Number,
+SPKIR,J,01,SPKIR Series J Sub 01,Susceptible to Acoustic Interference,
+SPKIR,J,01,SPKIR Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
+SPKIR,O,01,SPKIR Series O Subseries 01,2009 Baseline Price*,"$11,080.00"
+SPKIR,O,01,SPKIR Series O Subseries 01,2009 Deployed Instrument Count,22
+SPKIR,O,01,SPKIR Series O Subseries 01,Alternate Instrument Class Name,Spectral Irradiance
+SPKIR,O,01,SPKIR Series O Subseries 01,CE Spares,
+SPKIR,O,01,SPKIR Series O Subseries 01,CGSN MREFC Spares,
+SPKIR,O,01,SPKIR Series O Subseries 01,CGSN O&M Spares,
+SPKIR,O,01,SPKIR Series O Subseries 01,CGSN P/N,
+SPKIR,O,01,SPKIR Series O Subseries 01,ClassLongName,spectral_irradiance
+SPKIR,O,01,SPKIR Series O Subseries 01,Comments,
+SPKIR,O,01,SPKIR Series O Subseries 01,CP Spares,
+SPKIR,O,01,SPKIR Series O Subseries 01,Description,Measures downwelling spectral irradiance
+SPKIR,O,01,SPKIR Series O Subseries 01,ECRs that changed the count,
+SPKIR,O,01,SPKIR Series O Subseries 01,Global Spares,
+SPKIR,O,01,SPKIR Series O Subseries 01,Instrument Configuration,
+SPKIR,O,01,SPKIR Series O Subseries 01,Link to the Specification,
+SPKIR,O,01,SPKIR Series O Subseries 01,Notes,
+SPKIR,O,01,SPKIR Series O Subseries 01,PrimaryScienceDiscipline,P
+SPKIR,O,01,SPKIR Series O Subseries 01,Produces Acoustic Interference,
+SPKIR,O,01,SPKIR Series O Subseries 01,Ready for 2013?,
+SPKIR,O,01,SPKIR Series O Subseries 01,RSN O&M Spares,
+SPKIR,O,01,SPKIR Series O Subseries 01,RSN Part Number,
+SPKIR,O,01,SPKIR Series O Subseries 01,Susceptible to Acoustic Interference,
+SPKIR,O,01,SPKIR Series O Subseries 01,"Vendor CLIN, SubCLIN or Model #",
 THSPH,A,01,THSPH Series A Sub 01,2009 Baseline Price*,
 THSPH,A,01,THSPH Series A Sub 01,2009 Deployed Instrument Count,1
 THSPH,A,01,THSPH Series A Sub 01,Alternate Instrument Class Name,Hydrothermal Vent Fluid In-situ Chemistry
@@ -2768,29 +2837,6 @@ VADCP,A,01,VADCP Series A Sub 01,RSN O&M Spares,1
 VADCP,A,01,VADCP Series A Sub 01,RSN Part Number,4830-58345
 VADCP,A,01,VADCP Series A Sub 01,Susceptible to Acoustic Interference,
 VADCP,A,01,VADCP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
-VEL3D,0,01,VEL3D Series 0 Sub 01,2009 Baseline Price*,"$10,805.00"
-VEL3D,0,01,VEL3D Series 0 Sub 01,2009 Deployed Instrument Count,33
-VEL3D,0,01,VEL3D Series 0 Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
-VEL3D,0,01,VEL3D Series 0 Sub 01,CE Spares,
-VEL3D,0,01,VEL3D Series 0 Sub 01,CGSN MREFC Spares,
-VEL3D,0,01,VEL3D Series 0 Sub 01,CGSN O&M Spares,
-VEL3D,0,01,VEL3D Series 0 Sub 01,CGSN P/N,
-VEL3D,0,01,VEL3D Series 0 Sub 01,ClassLongName,Velocity_point_3D_turb
-VEL3D,0,01,VEL3D Series 0 Sub 01,Comments,
-VEL3D,0,01,VEL3D Series 0 Sub 01,CP Spares,
-VEL3D,0,01,VEL3D Series 0 Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
-VEL3D,0,01,VEL3D Series 0 Sub 01,ECRs that changed the count,ECR 1303-00796
-VEL3D,0,01,VEL3D Series 0 Sub 01,Global Spares,
-VEL3D,0,01,VEL3D Series 0 Sub 01,Instrument Configuration,
-VEL3D,0,01,VEL3D Series 0 Sub 01,Link to the Specification,
-VEL3D,0,01,VEL3D Series 0 Sub 01,Notes,
-VEL3D,0,01,VEL3D Series 0 Sub 01,PrimaryScienceDiscipline,P
-VEL3D,0,01,VEL3D Series 0 Sub 01,Produces Acoustic Interference,
-VEL3D,0,01,VEL3D Series 0 Sub 01,Ready for 2013?,
-VEL3D,0,01,VEL3D Series 0 Sub 01,RSN O&M Spares,
-VEL3D,0,01,VEL3D Series 0 Sub 01,RSN Part Number,
-VEL3D,0,01,VEL3D Series 0 Sub 01,Susceptible to Acoustic Interference,Yes
-VEL3D,0,01,VEL3D Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,A,01,VEL3D Series A Sub 01,2009 Baseline Price*,"$10,805.00"
 VEL3D,A,01,VEL3D Series A Sub 01,2009 Deployed Instrument Count,33
 VEL3D,A,01,VEL3D Series A Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
@@ -2883,20 +2929,43 @@ VEL3D,D,01,VEL3D Series D Sub 01,RSN O&M Spares,
 VEL3D,D,01,VEL3D Series D Sub 01,RSN Part Number,
 VEL3D,D,01,VEL3D Series D Sub 01,Susceptible to Acoustic Interference,Yes
 VEL3D,D,01,VEL3D Series D Sub 01,"Vendor CLIN, SubCLIN or Model #","VEYD04 VECTOR w/ 4 Gb ProLog, VEYD04 595 mm Ti housing, VEYD04 Two 50 Wh Li-ion rechargeable battery module, VEYD04 Ti MCBH(WB)-8-FS"
+VEL3D,J,01,VEL3D Series J Subseries 01,2009 Baseline Price*,"$10,805.00"
+VEL3D,J,01,VEL3D Series J Subseries 01,2009 Deployed Instrument Count,33
+VEL3D,J,01,VEL3D Series J Subseries 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
+VEL3D,J,01,VEL3D Series J Subseries 01,CE Spares,
+VEL3D,J,01,VEL3D Series J Subseries 01,CGSN MREFC Spares,
+VEL3D,J,01,VEL3D Series J Subseries 01,CGSN O&M Spares,
+VEL3D,J,01,VEL3D Series J Subseries 01,CGSN P/N,
+VEL3D,J,01,VEL3D Series J Subseries 01,ClassLongName,Velocity_point_3D_turb
+VEL3D,J,01,VEL3D Series J Subseries 01,Comments,
+VEL3D,J,01,VEL3D Series J Subseries 01,CP Spares,
+VEL3D,J,01,VEL3D Series J Subseries 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
+VEL3D,J,01,VEL3D Series J Subseries 01,ECRs that changed the count,ECR 1303-00796
+VEL3D,J,01,VEL3D Series J Subseries 01,Global Spares,
+VEL3D,J,01,VEL3D Series J Subseries 01,Instrument Configuration,
+VEL3D,J,01,VEL3D Series J Subseries 01,Link to the Specification,
+VEL3D,J,01,VEL3D Series J Subseries 01,Notes,
+VEL3D,J,01,VEL3D Series J Subseries 01,PrimaryScienceDiscipline,P
+VEL3D,J,01,VEL3D Series J Subseries 01,Produces Acoustic Interference,
+VEL3D,J,01,VEL3D Series J Subseries 01,Ready for 2013?,
+VEL3D,J,01,VEL3D Series J Subseries 01,RSN O&M Spares,
+VEL3D,J,01,VEL3D Series J Subseries 01,RSN Part Number,
+VEL3D,J,01,VEL3D Series J Subseries 01,Susceptible to Acoustic Interference,Yes
+VEL3D,J,01,VEL3D Series J Subseries 01,"Vendor CLIN, SubCLIN or Model #",
 VEL3D,K,01,VEL3D Series K Sub 01,2009 Baseline Price*,"$10,805.00"
 VEL3D,K,01,VEL3D Series K Sub 01,2009 Deployed Instrument Count,33
 VEL3D,K,01,VEL3D Series K Sub 01,Alternate Instrument Class Name,3-D Single Point Velocity Meter
 VEL3D,K,01,VEL3D Series K Sub 01,CE Spares,
 VEL3D,K,01,VEL3D Series K Sub 01,CGSN MREFC Spares,
 VEL3D,K,01,VEL3D Series K Sub 01,CGSN O&M Spares,
-VEL3D,K,01,VEL3D Series K Sub 01,CGSN P/N,1331-00008-00001
+VEL3D,K,01,VEL3D Series K Sub 01,CGSN P/N,
 VEL3D,K,01,VEL3D Series K Sub 01,ClassLongName,Velocity_point_3D_turb
-VEL3D,K,01,VEL3D Series K Sub 01,Comments,McLane P/N: 200-1366
+VEL3D,K,01,VEL3D Series K Sub 01,Comments,
 VEL3D,K,01,VEL3D Series K Sub 01,CP Spares,
 VEL3D,K,01,VEL3D Series K Sub 01,Description,"3-D single point velocity, fast enough to measure fluctuating velocity in u,v,w (u',v',w') or platform motion on moving profilers"
 VEL3D,K,01,VEL3D Series K Sub 01,ECRs that changed the count,ECR 1303-00796
 VEL3D,K,01,VEL3D Series K Sub 01,Global Spares,
-VEL3D,K,01,VEL3D Series K Sub 01,Instrument Configuration,Nortek Aquadopp HR Profiler
+VEL3D,K,01,VEL3D Series K Sub 01,Instrument Configuration,
 VEL3D,K,01,VEL3D Series K Sub 01,Link to the Specification,
 VEL3D,K,01,VEL3D Series K Sub 01,Notes,
 VEL3D,K,01,VEL3D Series K Sub 01,PrimaryScienceDiscipline,P

@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Spreadsheet,Report Generated: 3/26/2013
+Data Product Spreadsheet,Report Generated: 5/3/2013
 
 Textbox14
 
@@ -8,75 +8,76 @@ Count
 "Total Active, Retired, Draft, Rejected Risks: 0"
 
 Data_Product_Identifier,Data_Product_Name,Data_Product_Level1,Units,DPS_DCN_s_,Processing_Flow_Diagram_DCN_s_,Instrument_Class,Instrument_Name,First_Deployment_Date,DOORS_L2_Science_Req__,Regime_s_
-ABSTHRM,PHSEN Thermistor Temperature,L0,volts,DCN 1341-00507,DCN 1342-00510,PHSEN,pH stable,2013-08,Derived from design to achieve PHWATER,Water Column
-BARPRES,Barometric Pressure,L0,mbar,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3020,"Air-Sea Interface, Surface Water"
-BARPRES,Barometric Pressure,L1,Pa,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3020,"Air-Sea Interface, Surface Water"
-BENTHFL,Benthic Flow Rates,L2,m/yr,DCN 1341-00220,DCN 1342-00220,FLOBN,Benthic Flow,2014,L2-SR-RQ-3087,Seafloor/Crust
-BOTPRES,Nano-resolution Bottom Pressure,L1,nanoPascal,DCN 1341-00070,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08,L2-SR-RQ-3084,Seafloor/Crust
-BOTSFLU,Seafloor Uplift and Deflation,L2,meters,DCN 1341-00080,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08,L2-SR-RQ-3084,Seafloor/Crust
-BOTTILT,Seafloor High-Resolution Tilt,L0,microradians,DCN 1341-00060,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08,L2-SR-RQ-3084,Seafloor/Crust
-BOTTILT,Seafloor High-Resolution Tilt,L1,microradians,DCN 1341-00060,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-08,L2-SR-RQ-3084,Seafloor/Crust
-CAMSTIL,Still Image ,L1,Lossless compression Image File,DCN 1341-00830,n/a,CAMDS,Camera digital still strobe,2013-08,L2-SR-RQ-3805,"Benthic Boundary Layer, Seafloor/Crust"
-CDOMFLO,Fluorometric CDOM Concentration,L0,counts,DCN 1341-00550,DCN 1342-00530,FLORT,Fluorometer three wavelength,2013-08,L2-SR-RQ-3187,Water Column
-CDOMFLO,Fluorometric CDOM Concentration,L1,ppm,DCN 1341-00550,DCN 1342-00530,FLORT,Fluorometer three wavelength,2013-08,L2-SR-RQ-3187,Water Column
-CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-08,L2-SR-RQ-3185,Water Column
-CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-08,L2-SR-RQ-3185,Water Column
-CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-08,L2-SR-RQ-3185,Water Column
-CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-08,L2-SR-RQ-3185,Water Column
-CO2ABS1,Optical Absorbance Ratio at 434nm,L0,unitless,DCN 1341-00487,DCN 1342-00490,PCO2W,pCO2 water,2013-08,Derived from design to achieve PCO2WAT,Water Column
-CO2ABS2,Optical Absorbance Ratio at 620nm,L0,unitless,DCN 1341-00488,DCN 1342-00490,PCO2W,pCO2 water,2013-08,Derived from design to achieve PCO2WAT,Water Column
-CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,L2,mol m-2 s-1,DCN 1341-00270,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09,L2-SR-RQ-3032,Air-Sea Interface
-CO2THRM,PCO2W Thermistor Temperature,L0,volts,DCN 1341-00489,DCN 1342-00490,PCO2W,pCO2 water,2013-08,Derived from design to achieve PCO2WAT,Water Column
-CONDSRF,Sea Surface Conductivity,L0,S/m,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,"L2-SR-RQ-3413, L2-SR-RQ-3711","Air-Sea Interface, Surface Water"
-CONDSRF,Sea Surface Conductivity,L1,S/m,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,"L2-SR-RQ-3413, L2-SR-RQ-3711","Air-Sea Interface, Surface Water"
-CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3045,Water Column
-CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3045,Water Column
-DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3065,Water Column
-DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3065,Water Column
-DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3065,Water Column
-DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3065,Water Column
-DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3065,Water Column
-DNASAMP,16s rRNA sequence of filtered physical sample,L2,2 micron filter,DCN 1341-00630,n/a,PPSDN,DNA particulate,2013-08,L2-SR-RQ-3850,Seafloor/Crust
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,L2,uMol/l,DCN 1341-00521,DCN 1342-00521,DOFST,Oxygen dissolved fastresp,2013-09,L2-SR-RQ-3048,Water Column
-DOCONCS,Oxygen Concentration from Stable DO Instrument,L0,degrees; degrees Celcius,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-08,L2-SR-RQ-3048,Water Column
-DOCONCS,Oxygen Concentration from Stable DO Instrument,L2,uMol/l,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-08,L2-SR-RQ-3048,Water Column
-ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2013-08,L2-SR-RQ-3887,Water Column
-ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2013-08,L2-SR-RQ-3887,Water Column
-ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPT,Velocity profile Short Range,2013-08,L2-SR-RQ-3887,Water Column
-ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",VADCP,Velocity profile 50m turb,2013-08,L2-SR-RQ-3887,Water Column
-ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2013-08,L2-SR-RQ-3887,Water Column
-ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2013-08,L2-SR-RQ-3887,Water Column
-ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPT,Velocity profile Short Range,2013-08,L2-SR-RQ-3887,Water Column
-ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",VADCP,Velocity profile 50m turb,2013-08,L2-SR-RQ-3887,Water Column
-FLUBSCT,Optical Backscatter (Red Wavelengths),L0,counts,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-08,L2-SR-RQ-3059,Water Column
-FLUBSCT,Optical Backscatter (Red Wavelengths),L0,counts,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-08,L2-SR-RQ-3059,Water Column
-FLUBSCT,Optical Backscatter (Red Wavelengths),L1,1/m,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-08,L2-SR-RQ-3059,Water Column
-FLUBSCT,Optical Backscatter (Red Wavelengths),L1,1/m,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-08,L2-SR-RQ-3059,Water Column
-FLUXHOT,Direct Covariance Flux of Heat,L2,J m^(-2) s^(-1),DCN 1341-00330,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3062,Air-Sea Interface
-FLUXHOT,Direct Covariance Flux of Heat,L2,J m^(-2) s^(-1),DCN 1341-00330,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3062,Air-Sea Interface
-FLUXMOM,Direct Covariance Flux of Momentum,L2,kg m^(-1) s^(-2),DCN 1341-00320,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3033,Air-Sea Interface
-FLUXMOM,Direct Covariance Flux of Momentum,L2,kg m^(-1) s^(-2),DCN 1341-00320,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3033,Air-Sea Interface
-FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3033,Air-Sea Interface
-FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3033,Air-Sea Interface
-FRSHFLX ,Freshwater Flux,L2,m3/s,,,METBK,Meteorology bulk,2013-09,,
-GRNDACC,Broadband Ground Acceleration,L1,m/s^2,DCN 1341-00100,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-08,L2-SR-RQ-3603,Seafloor/Crust
-GRNDVEL,Broadband Ground Velocity,L1,m/s,DCN 1341-00090,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-08,L2-SR-RQ-3096,Seafloor/Crust
-HDVIDEO,HD Video Image,L1,Lossless compression Image File,DCN 1341-00840,n/a,CAMHD,Camera digital video HD,2013-08,L2-SR-RQ-3804,Seafloor/Crust
-HEATFLX ,Net Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-09,,
-HYDAPBB,Broadband Acoustic pressure waves ,L0,TBD,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-08,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
-HYDAPBB,Broadband Acoustic pressure waves ,L1,dB//1uPa/V,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-08,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
-HYDAPLF,Low Frequency Acoustic pressure waves,L0,,DCN 1341-00821,DCN 1341-00821,HYDLF,Hydrophone LF passive,2013-08,,
-HYDAPLF,Low Frequency Acoustic pressure waves,L1,,DCN 1341-00821,DCN 1341-00821,HYDLF,Hydrophone LF passive,2013-08,,
-HYDFRBB,Broadband Frequency,L0,TBD,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-08,Derived from design to achieve HYDACR,"Water Column, Seafloor/Crust"
-HYDFRBB,Broadband Frequency,L1,KHz,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-08,Derived from design to achieve HYDACR,"Water Column, Seafloor/Crust"
+ABSTHRM,PHSEN Thermistor Temperature,L0,volts,DCN 1341-00507,DCN 1342-00510,PHSEN,pH stable,2013-06-28,Derived from design to achieve PHWATER,Water Column
+BARPRES,Barometric Pressure,L0,mbar,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3020,"Air-Sea Interface, Surface Water"
+BARPRES,Barometric Pressure,L1,Pa,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3020,"Air-Sea Interface, Surface Water"
+BENTHFL,Benthic Flow Rates,L2,m/yr,DCN 1341-00220,DCN 1342-00220,FLOBN,Benthic Flow,2014-08,L2-SR-RQ-3087,Seafloor/Crust
+BOTPRES,Nano-resolution Bottom Pressure,L1,nanoPascal,DCN 1341-00070,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-06-28,L2-SR-RQ-3084,Seafloor/Crust
+BOTSFLU,Seafloor Uplift and Deflation,L2,meters,DCN 1341-00080,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-06-28,L2-SR-RQ-3084,Seafloor/Crust
+BOTTILT,Seafloor High-Resolution Tilt,L0,microradians,DCN 1341-00060,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-06-28,L2-SR-RQ-3084,Seafloor/Crust
+BOTTILT,Seafloor High-Resolution Tilt,L1,microradians,DCN 1341-00060,DCN 1342-00060,BOTPT,Pressure bottom tilt,2013-06-28,L2-SR-RQ-3084,Seafloor/Crust
+CAMSTIL,Still Image ,L1,Lossless compression Image File,DCN 1341-00830,n/a,CAMDS,Camera digital still strobe,2013-06-28,L2-SR-RQ-3805,"Benthic Boundary Layer, Seafloor/Crust"
+CDOMFLO,Fluorometric CDOM Concentration,L0,counts,DCN 1341-00550,DCN 1342-00530,FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3187,Water Column
+CDOMFLO,Fluorometric CDOM Concentration,L1,ppm,DCN 1341-00550,DCN 1342-00530,FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3187,Water Column
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-07-17,L2-SR-RQ-3185,Water Column
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3185,Water Column
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-07-17,L2-SR-RQ-3185,Water Column
+CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3185,Water Column
+CO2ABS1,Optical Absorbance Ratio at 434nm,L0,unitless,DCN 1341-00487,DCN 1342-00490,PCO2W,pCO2 water,2013-06-28,Derived from design to achieve PCO2WAT,Water Column
+CO2ABS2,Optical Absorbance Ratio at 620nm,L0,unitless,DCN 1341-00488,DCN 1342-00490,PCO2W,pCO2 water,2013-06-28,Derived from design to achieve PCO2WAT,Water Column
+CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,L2,mol m-2 s-1,DCN 1341-00270,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,L2-SR-RQ-3032,Air-Sea Interface
+CO2THRM,PCO2W Thermistor Temperature,L0,volts,DCN 1341-00489,DCN 1342-00490,PCO2W,pCO2 water,2013-06-28,Derived from design to achieve PCO2WAT,Water Column
+CONDSRF,Sea Surface Conductivity,L0,S/m,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,"L2-SR-RQ-3413, L2-SR-RQ-3711","Air-Sea Interface, Surface Water"
+CONDSRF,Sea Surface Conductivity,L1,S/m,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,"L2-SR-RQ-3413, L2-SR-RQ-3711","Air-Sea Interface, Surface Water"
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3045,Water Column
+CONDWAT,Conductivity,L1,S/m,DCN 1341-00030,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3045,Water Column
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3065,Water Column
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3065,Water Column
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3065,Water Column
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3065,Water Column
+DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3065,Water Column
+DNASAMP,16s rRNA sequence of filtered physical sample,L2,2 micron filter,DCN 1341-00630,n/a,PPSDN,DNA particulate,2013-06-28,L2-SR-RQ-3850,Seafloor/Crust
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,L2,uMol/l,DCN 1341-00521,DCN 1342-00521,DOFST,Oxygen dissolved fastresp,2013-11,L2-SR-RQ-3048,Water Column
+DOCONCS,Oxygen Concentration from Stable DO Instrument,L0,degrees; degrees Celcius,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-06-28,L2-SR-RQ-3048,Water Column
+DOCONCS,Oxygen Concentration from Stable DO Instrument,L1,uMol/l,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-06-28, L2-SR-RQ-3048, Water Column
+DOCONCS,Oxygen Concentration from Stable DO Instrument,L2,µmol/kg ,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-06-28,L2-SR-RQ-3048,Water Column
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2013-06-28,L2-SR-RQ-3887,Water Column
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2013-06-28,L2-SR-RQ-3887,Water Column
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPT,Velocity profile Short Range,2013-06-28,L2-SR-RQ-3887,Water Column
+ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",VADCP,Velocity profile 50m turb,2013-06-28,L2-SR-RQ-3887,Water Column
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2013-06-28,L2-SR-RQ-3887,Water Column
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2013-06-28,L2-SR-RQ-3887,Water Column
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPT,Velocity profile Short Range,2013-06-28,L2-SR-RQ-3887,Water Column
+ECHOINT,Echo Intensity,L1,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",VADCP,Velocity profile 50m turb,2013-06-28,L2-SR-RQ-3887,Water Column
+FLUBSCT,Optical Backscatter (Red Wavelengths),L0,counts,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-07-17,L2-SR-RQ-3059,Water Column
+FLUBSCT,Optical Backscatter (Red Wavelengths),L0,counts,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3059,Water Column
+FLUBSCT,Optical Backscatter (Red Wavelengths),L1,1/m,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-07-17,L2-SR-RQ-3059,Water Column
+FLUBSCT,Optical Backscatter (Red Wavelengths),L1,1/m,DCN 1341-00540,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3059,Water Column
+FLUXHOT,Direct Covariance Flux of Heat,L2,J m^(-2) s^(-1),DCN 1341-00330,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3062,Air-Sea Interface
+FLUXHOT,Direct Covariance Flux of Heat,L2,J m^(-2) s^(-1),DCN 1341-00330,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3062,Air-Sea Interface
+FLUXMOM,Direct Covariance Flux of Momentum,L2,kg m^(-1) s^(-2),DCN 1341-00320,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3033,Air-Sea Interface
+FLUXMOM,Direct Covariance Flux of Momentum,L2,kg m^(-1) s^(-2),DCN 1341-00320,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3033,Air-Sea Interface
+FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3033,Air-Sea Interface
+FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3033,Air-Sea Interface
+FRSHFLX ,Freshwater Flux,L2,m3/s,,,METBK,Meteorology bulk,2013-11,,
+GRNDACC,Broadband Ground Acceleration,L1,m/s^2,DCN 1341-00100,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-06-28,L2-SR-RQ-3603,Seafloor/Crust
+GRNDVEL,Broadband Ground Velocity,L1,m/s,DCN 1341-00090,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-06-28,L2-SR-RQ-3096,Seafloor/Crust
+HDVIDEO,HD Video Image,L1,Lossless compression Image File,DCN 1341-00840,n/a,CAMHD,Camera digital video HD,2013-06-28,L2-SR-RQ-3804,Seafloor/Crust
+HEATFLX ,Net Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
+HYDAPBB,Broadband Acoustic pressure waves ,L0,TBD,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-06-28,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
+HYDAPBB,Broadband Acoustic pressure waves ,L1,dB//1uPa/V,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-06-28,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
+HYDAPLF,Low Frequency Acoustic pressure waves,L0,,DCN 1341-00821,DCN 1341-00821,HYDLF,Hydrophone LF passive,2013-06-28,,
+HYDAPLF,Low Frequency Acoustic pressure waves,L1,,DCN 1341-00821,DCN 1341-00821,HYDLF,Hydrophone LF passive,2013-06-28,,
+HYDFRBB,Broadband Frequency,L0,TBD,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-06-28,Derived from design to achieve HYDACR,"Water Column, Seafloor/Crust"
+HYDFRBB,Broadband Frequency,L1,KHz,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-06-28,Derived from design to achieve HYDACR,"Water Column, Seafloor/Crust"
 IES_HEF,Horizontal Electric Fields,L0,TBD,DCN 1341-00580,DCN 1342-00560,HPIES,IES pressure velocity,2014-08,L2-SR-RQ-3912,Water Column
 IES_HEF,Horizontal Electric Fields,L1,micro volt/cm,DCN 1341-00580,DCN 1342-00560,HPIES,IES pressure velocity,2014-08,L2-SR-RQ-3912,Water Column
 IES_WPP,Water Property Profile Time Series,L2,"T (degree C), salinity (unitless), density (kgm-3)",DCN 1341-00600,DCN 1342-00560,HPIES,IES pressure velocity,2014-08,L2-SR-RQ-3073,Water Column
@@ -86,137 +87,141 @@ IESPRES,Bottom Pressure,L0,TBD,DCN 1341-00570,DCN 1342-00560,HPIES,IES pressure 
 IESPRES,Bottom Pressure,L1,Pa,DCN 1341-00570,DCN 1342-00560,HPIES,IES pressure velocity,2014-08,L2-SR-RQ-3918,Water Column
 IESRATT,Roundtrip Acoustic Travel Time (RATT),L0,TBD,DCN 1341-00560,DCN 1342-00560,HPIES,IES pressure velocity,2014-08,L2-SR-RQ-3593,Water Column
 IESRATT,Roundtrip Acoustic Travel Time (RATT),L1,milliseconds,DCN 1341-00560,DCN 1342-00560,HPIES,IES pressure velocity,2014-08,L2-SR-RQ-3593,Water Column
-LATNFLX ,Latent Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-09,,
-LONGIRR,Downwelling Longwave Irradiance,L0,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3021,"Air-Sea Interface, Surface Water"
-LONGIRR,Downwelling Longwave Irradiance,L1,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3021,"Air-Sea Interface, Surface Water"
-MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,L0,TBD,DCN 1341-00240,DCN 1342-00240,MASSP,Mass Spectrometer,2013-08,L2-SR-RQ-3094,Seafloor/Crust
-MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,L1,uM and daltons,DCN 1341-00240,DCN 1342-00240,MASSP,Mass Spectrometer,2013-08,L2-SR-RQ-3094,Seafloor/Crust
-MOISTUR,Turbulent Humidity Fluctuation,L0,TBD,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3899,Air-Sea Interface
-MOISTUR,Turbulent Humidity Fluctuation,L0,TBD,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3899,Air-Sea Interface
-MOISTUR,Turbulent Humidity Fluctuation,L1,%,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3899,Air-Sea Interface
-MOISTUR,Turbulent Humidity Fluctuation,L1,%,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3899,Air-Sea Interface
-MOMMFLX,Momentum Flux (Wind Stress) ,L2,N/m2,,,METBK,Meteorology bulk,2013-09,,
-MOTFLUX,Platform Direction and Tilt (3 axes),L0,"TBD (FDCHP), degree (from north or vertical) (FDCLP)",DCN 1341-00301,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3025,Air-Sea Interface
-MOTFLUX,Platform Direction and Tilt (3 axes),L0,"TBD (FDCHP), degree (from north or vertical) (FDCLP)",DCN 1341-00301,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3025,Air-Sea Interface
-NETLIRR ,Net Longwave Irradiance ,L2,W/m2,,,METBK,Meteorology bulk,2013-09,,
-NETSIRR ,Net Shortwave Irradiance ,L2,W/m2,,,METBK,Meteorology bulk,2013-09,,
-NITROPT,Nitrate Concentration,L1,µM,DCN 1341-00620,DCN 1342-00620,NUTNR,Nutrient nitrate,2013-08,L2-SR-RQ-3050,Water Column
-OPTABSN,Optical Absorption Coefficient,L2,1/m,DCN 1341-00700,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08,L2-SR-RQ-3926,Water Column
-OPTATTN,Optical Beam Attenuation Coefficient,L2,1/m,DCN 1341-00690,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08,L2-SR-RQ-3928,Water Column
-OPTATTS,Diffuse Attenuation Coefficient,L2,1/m,DCN 1341-00740,DCN 1342-00730,SPKIR,spectral irradiance,2013-08,L2-SR-RQ-3924,Water Column
-OPTCREF,Reference Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
-OPTCSIG,Signal Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
-OPTPARW,Photosynthetically Active Radiation (400-700 nm),L0,"counts (Satl), volts (Bios)","DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2013-09,L2-SR-RQ-3670,Water Column
-OPTPARW,Photosynthetically Active Radiation (400-700 nm),L1,µmol photons/m^2*s,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2013-09,L2-SR-RQ-3670,Water Column
-OPTTEMP,Temperature from OPTAA,L0,degrees C,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-08,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
-PCO2ATM,Partial Pressure of CO2 in Atmosphere,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09,L2-SR-RQ-3023,Air-Sea Interface
-PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09,L2-SR-RQ-3023,Air-Sea Interface
-PCO2WAT,Partial Pressure of CO2 in Water,L1,µatm,DCN 1341-00490,DCN 1342-00490,PCO2W,pCO2 water,2013-08,L2-SR-RQ-3049,Water Column
-PH434SI,Optical Absorbance Signal Intensity at 434nm,L0,unitless,DCN 1341-00508,DCN 1342-00510,PHSEN,pH stable,2013-08,Derived from design to achieve PHWATER,Water Column
-PH578SI,Optical Absorbance Signal Intensity at 578nm,L0,unitless,DCN 1341-00509,DCN 1342-00510,PHSEN,pH stable,2013-08,Derived from design to achieve PHWATER,Water Column
-PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,OSMOI,Watersample chem trace,2013-08,L2-SR-RQ-3088,Seafloor/Crust
-PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,RASFL,Watersample chem trace H2S pH,2013-08,L2-SR-RQ-3088,Seafloor/Crust
-PHWATER,pH,L1,pH units,DCN 1341-00510,DCN 1342-00510,PHSEN,pH stable,2013-08,L2-SR-RQ-3047,Water Column
-PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3064,Water Column
-PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3064,Water Column
-PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3064,Water Column
-PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3064,Water Column
-PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3064,Water Column
-PRECIPM,Precipitation,L0,mm,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3024,"Air-Sea Interface, Surface Water"
-PRECIPM,Precipitation,L1,mm,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3024,"Air-Sea Interface, Surface Water"
-PRESAIR,PCO2A Gas Stream Pressure,L0,mbar,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09,Derived from design to achieve PCO2AIR,Air-Sea Interface
-PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3046,Water Column
-PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3046,Water Column
-RAINFLX,Rain Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-09,,
-RAINRTE,Rain rate,L2,mm/hr,,,METBK,Meteorology bulk,2013-09,,
-RELHUMI,Relative Humidity,L0,"TBD (FDCHP), % (METBK)","DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
-RELHUMI,Relative Humidity,L0,"TBD (FDCHP), % (METBK)","DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",METBK,Meteorology bulk,2013-09,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
-RELHUMI,Relative Humidity,L1,%,"DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
-RELHUMI,Relative Humidity,L1,%,"DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",METBK,Meteorology bulk,2013-09,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
-SALSURF,Sea Surface Salinity ,L2,unitless,,,METBK,Meteorology bulk,2013-09,,
-SENSFLX ,Sensible Heat Flux ,L2,W/m2,,,METBK,Meteorology bulk,2013-09,,
-SFLPRES,Seafloor Pressure,L1,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST)",PRESF,Pressure SF,2013-08,L2-SR-RQ-3083,Seafloor/Crust
-SFLPRES,Seafloor Pressure,L1,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST)",PREST,Pressure SF tidal,2013-08,L2-SR-RQ-3083,Seafloor/Crust
-SGRDVEL,Short Period Ground Velocity,L1,m/s,DCN 1341-00110,DCN 1342-00110,OBSSP,Seismometer shortperiod,2013-08,L2-SR-RQ-3100,Seafloor/Crust
-SHRTIRR,Downwelling Shortwave Irradiance ,L0,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3022,"Air-Sea Interface, Surface Water"
-SHRTIRR,Downwelling Shortwave Irradiance ,L1,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3022,"Air-Sea Interface, Surface Water"
-SONBSCA,Multi-Frequency Acoustic Backscatter,L0,TBD,DCN 1341-00800,DCN 1342-00800,ZPLSC,Plankton ZP sonar coastal,2013-08,L2-SR-RQ-3054,Water Column
-SONBSCA,Multi-Frequency Acoustic Backscatter,L0,TBD,DCN 1341-00800,DCN 1342-00800,ZPLSG,Plankton ZP sonar global,2013-08,L2-SR-RQ-3054,Water Column
-SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSC,Plankton ZP sonar coastal,2013-08,L2-SR-RQ-3054,Water Column
-SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSG,Plankton ZP sonar global,2013-08,L2-SR-RQ-3054,Water Column
-SPECHUM,Specific Humidity,L2,%,DCN 1341-00370,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3179 ,"Air-Sea Interface, Surface Water"
-SPECTIR,Downwelling Spectral Irradiance ,L0,TBD,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-08,L2-SR-RQ-3051,Water Column
-SPECTIR,Downwelling Spectral Irradiance ,L1,µW*cm^-2*nm^-1,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-08,L2-SR-RQ-3051,Water Column
-SPHUM2M,Specific Humidity at 2 m,L2,%,,,METBK,Meteorology bulk,2013-09,,
-TEMPA2M,Air Temperature at 2 m,L2,degrees C,,,METBK,Meteorology bulk,2013-09,,
-TEMPAIR,Air Temperature,L0,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3033,"Air-Sea Interface, Surface Water"
-TEMPAIR,Air Temperature,L1,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3033,"Air-Sea Interface, Surface Water"
-TEMPSFL,Temperature Array in Spatial Grid,L0,TBD,DCN 1341-00130,DCN 1342-00130,TMPSF,Temperature seafloor,2013-08,L2-SR-RQ-3101,Seafloor/Crust
-TEMPSFL,Temperature Array in Spatial Grid,L1,C,DCN 1341-00130,DCN 1342-00130,TMPSF,Temperature seafloor,2013-08,L2-SR-RQ-3101,Seafloor/Crust
-TEMPSRF,Sea Surface Temperature,L0,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,"L2-SR-RQ-3416, L2-SR-RQ-3708","Air-Sea Interface, Surface Water"
-TEMPSRF,Sea Surface Temperature,L1,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,"L2-SR-RQ-3416, L2-SR-RQ-3708","Air-Sea Interface, Surface Water"
-TEMPVNT,Vent Fluid Temperature from RASFL,L0,TBD,DCN 1341-00140,DCN 1342-00140,RASFL,Watersample chem trace H2S pH,2013-08,L2-SR-RQ-3408,Seafloor/Crust
-TEMPVNT,Vent Fluid Temperature from RASFL,L1,degrees C,DCN 1341-00140,DCN 1342-00140,RASFL,Watersample chem trace H2S pH,2013-08,L2-SR-RQ-3408,Seafloor/Crust
-TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDAV,CTD AUV,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDGV,CTD Glider,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDMO,CTD Mooring,2013-08,L2-SR-RQ-3044,Water Column
-TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDPF,CTD Profiler,2013-08,L2-SR-RQ-3044,Water Column
-THSPHHC,Hydrogen Concentration,L0,V,DCN 1341-00210,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-THSPHHC,Hydrogen Concentration,L2,Moles/kg,DCN 1341-00210,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-THSPHHS,Hydrogen Sulfide Concentration,L0,V,DCN 1341-00200,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-THSPHHS,Hydrogen Sulfide Concentration,L2,Moles/kg,DCN 1341-00200,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-THSPHPH,pH,L0,V,DCN 1341-00190,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-THSPHPH,pH,L2,pH units,DCN 1341-00190,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-THSPHTE,Vent Fluid Temperature from THSPH,L0,V,DCN 1341-00120,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-THSPHTE,Vent Fluid Temperature from THSPH,L1,degrees C,DCN 1341-00120,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-08,L2-SR-RQ-3092,Seafloor/Crust
-TMPATUR,Turbulent Air Temperature,L0,TBD,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3894,Air-Sea Interface
-TMPATUR,Turbulent Air Temperature,L0,TBD,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3894,Air-Sea Interface
-TMPATUR,Turbulent Air Temperature,L1,degree C,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3894,Air-Sea Interface
-TMPATUR,Turbulent Air Temperature,L1,degree C,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3894,Air-Sea Interface
-TRHPHCC,Vent Fluid Chloride Concentration,L2,µM,DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),L1,mV,DCN 1341-00170,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHR1,Resistivity R1,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHR2,Resistivity R2,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHR3,Resistivity R3,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHTE,Vent Fluid Temperature from TRHPH,L1,C,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHVC,Thermocouple Temperature,L0,V,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHVO,ORP Volts,L0,V,DCN 1341-00170,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-TRHPHVS,Thermistor Temperature,L0,V,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-08,L2-SR-RQ-3090,Seafloor/Crust
-VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPA,Velocity profile Mobile Asset,2013-08,L2-SR-RQ-3757,Water Column
-VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPS,Velocity profile Long Range,2013-08,L2-SR-RQ-3757,Water Column
-VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPT,Velocity profile Short Range,2013-08,L2-SR-RQ-3757,Water Column
-VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPA,Velocity profile Mobile Asset,2013-08,L2-SR-RQ-3757,Water Column
-VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPS,Velocity profile Long Range,2013-08,L2-SR-RQ-3757,Water Column
-VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPT,Velocity profile Short Range,2013-08,L2-SR-RQ-3757,Water Column
-VELPTMN,Mean Point Water Velocity,L1,m/s,DCN 1341-00790,DCN 1342-00790,VELPT,Velocity point,2013-09,L2-SR-RQ-3085,Water Column
-VELPTTU,Turbulent Point Water Velocity,L0,"cm/s (Nobska), m/s (Nortek)","DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)",DCN 1342-00780,VEL3D,Velocity point 3D turb,2013-08,L2-SR-RQ-3058,"Water Column, Seafloor/Crust"
-VELPTTU,Turbulent Point Water Velocity,L1,m/s,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)",DCN 1342-00780,VEL3D,Velocity point 3D turb,2013-08,L2-SR-RQ-3058,"Water Column, Seafloor/Crust"
+LATNFLX ,Latent Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
+LONGIRR,Downwelling Longwave Irradiance,L0,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3021,"Air-Sea Interface, Surface Water"
+LONGIRR,Downwelling Longwave Irradiance,L1,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3021,"Air-Sea Interface, Surface Water"
+MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,L0,TBD,DCN 1341-00240,DCN 1342-00240,MASSP,Mass Spectrometer,2013-06-28,L2-SR-RQ-3094,Seafloor/Crust
+MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,L1,uM and daltons,DCN 1341-00240,DCN 1342-00240,MASSP,Mass Spectrometer,2013-06-28,L2-SR-RQ-3094,Seafloor/Crust
+MOISTUR,Turbulent Humidity Fluctuation,L0,TBD,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3899,Air-Sea Interface
+MOISTUR,Turbulent Humidity Fluctuation,L0,TBD,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3899,Air-Sea Interface
+MOISTUR,Turbulent Humidity Fluctuation,L1,%,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3899,Air-Sea Interface
+MOISTUR,Turbulent Humidity Fluctuation,L1,%,DCN 1341-00300,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3899,Air-Sea Interface
+MOMMFLX,Momentum Flux (Wind Stress) ,L2,N/m2,,,METBK,Meteorology bulk,2013-11,,
+MOTFLUX,Platform Direction and Tilt (3 axes),L0,"TBD (FDCHP), degree (from north or vertical) (FDCLP)",DCN 1341-00301,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3025,Air-Sea Interface
+MOTFLUX,Platform Direction and Tilt (3 axes),L0,"TBD (FDCHP), degree (from north or vertical) (FDCLP)",DCN 1341-00301,"DCN 1342-00280 (FDHCP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3025,Air-Sea Interface
+NETLIRR ,Net Longwave Irradiance ,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
+NETSIRR ,Net Shortwave Irradiance ,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
+NITROPT,Nitrate Concentration,L1,µM,DCN 1341-00620,DCN 1342-00620,NUTNR,Nutrient nitrate,2013-07-17,L2-SR-RQ-3050,Water Column
+OPTABSN,Optical Absorption Coefficient,L2,1/m,DCN 1341-00700,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-06-28,L2-SR-RQ-3926,Water Column
+OPTAREF,Reference Absorption,L0,,1341-00700,1342-00690,OPTAA,Attenuation absorption optical,2013-06-28,,Water Column
+OPTASIG,Signal Absorption,L0,,1341-00700,1342-00690 ,OPTAA,Attenuation absorption optical,2013-06-28,,Water Column
+OPTATTN,Optical Beam Attenuation Coefficient,L2,1/m,DCN 1341-00690,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-06-28,L2-SR-RQ-3928,Water Column
+OPTATTS,Diffuse Attenuation Coefficient,L2,1/m,DCN 1341-00740,DCN 1342-00730,SPKIR,spectral irradiance,2013-07-17,L2-SR-RQ-3924,Water Column
+OPTCREF,Reference Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-06-28,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
+OPTCSIG,Signal Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-06-28,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),L0,"counts (Satl), volts (Bios)","DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2013-10,L2-SR-RQ-3670,Water Column
+OPTPARW,Photosynthetically Active Radiation (400-700 nm),L1,µmol photons/m^2*s,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2013-10,L2-SR-RQ-3670,Water Column
+OPTTEMP,Temperature from OPTAA,L0,degrees C,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-06-28,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
+PCO2ATM,Partial Pressure of CO2 in Atmosphere,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,L2-SR-RQ-3023,Air-Sea Interface
+PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,L2-SR-RQ-3023,Air-Sea Interface
+PCO2WAT,Partial Pressure of CO2 in Water,L1,µatm,DCN 1341-00490,DCN 1342-00490,PCO2W,pCO2 water,2013-06-28,L2-SR-RQ-3049,Water Column
+PH434SI,Optical Absorbance Signal Intensity at 434nm,L0,unitless,DCN 1341-00508,DCN 1342-00510,PHSEN,pH stable,2013-06-28,Derived from design to achieve PHWATER,Water Column
+PH578SI,Optical Absorbance Signal Intensity at 578nm,L0,unitless,DCN 1341-00509,DCN 1342-00510,PHSEN,pH stable,2013-06-28,Derived from design to achieve PHWATER,Water Column
+PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,OSMOI,Watersample chem trace,2013-06-28,L2-SR-RQ-3088,Seafloor/Crust
+PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,RASFL,Watersample chem trace H2S pH,2013-06-28,L2-SR-RQ-3088,Seafloor/Crust
+PHWATER,pH,L1,pH units,DCN 1341-00510,DCN 1342-00510,PHSEN,pH stable,2013-06-28,L2-SR-RQ-3047,Water Column
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3064,Water Column
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3064,Water Column
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3064,Water Column
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3064,Water Column
+PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3064,Water Column
+PRECIPM,Precipitation,L0,mm,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3024,"Air-Sea Interface, Surface Water"
+PRECIPM,Precipitation,L1,mm,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3024,"Air-Sea Interface, Surface Water"
+PRESAIR,PCO2A Gas Stream Pressure,L0,mbar,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,Derived from design to achieve PCO2AIR,Air-Sea Interface
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L0,unitless,DCN 1341-00020,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3046,Water Column
+PRESWAT,Pressure (Depth),L1,Pa,DCN 1341-00020,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3046,Water Column
+RAINFLX,Rain Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
+RAINRTE,Rain rate,L2,mm/hr,,,METBK,Meteorology bulk,2013-11,,
+RELHUMI,Relative Humidity,L0,"TBD (FDCHP), % (METBK)","DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
+RELHUMI,Relative Humidity,L0,"TBD (FDCHP), % (METBK)","DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",METBK,Meteorology bulk,2013-11,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
+RELHUMI,Relative Humidity,L1,%,"DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
+RELHUMI,Relative Humidity,L1,%,"DCN 1341-00280 (FDCHP), DCN 1341-00360 (METBK)","DCN 1342-00280 (FDCHP), DCN 1342-00360 (METBK)",METBK,Meteorology bulk,2013-11,L2-SR-RQ-3025,"Air-Sea Interface, Surface Water"
+SALSURF,Sea Surface Salinity ,L2,unitless,,,METBK,Meteorology bulk,2013-11,,
+SENSFLX ,Sensible Heat Flux ,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
+SFLPRES,Seafloor Pressure,L0,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST) ",PRESF,Pressure SF,2013-06-28,L2-SR-RQ-3083,Seafloor/Crust
+SFLPRES,Seafloor Pressure,L0,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST) ",PREST,Pressure SF tidal,2013-06-28,L2-SR-RQ-3083,Seafloor/Crust
+SFLPRES,Seafloor Pressure,L1,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST)",PRESF,Pressure SF,2013-06-28,L2-SR-RQ-3083,Seafloor/Crust
+SFLPRES,Seafloor Pressure,L1,Pa,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)","DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST)",PREST,Pressure SF tidal,2013-06-28,L2-SR-RQ-3083,Seafloor/Crust
+SGRDVEL,Short Period Ground Velocity,L1,m/s,DCN 1341-00110,DCN 1342-00110,OBSSP,Seismometer shortperiod,2013-06-28,L2-SR-RQ-3100,Seafloor/Crust
+SHRTIRR,Downwelling Shortwave Irradiance ,L0,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3022,"Air-Sea Interface, Surface Water"
+SHRTIRR,Downwelling Shortwave Irradiance ,L1,W/m2,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3022,"Air-Sea Interface, Surface Water"
+SONBSCA,Multi-Frequency Acoustic Backscatter,L0,TBD,DCN 1341-00800,DCN 1342-00800,ZPLSC,Plankton ZP sonar coastal,2013-07-17,L2-SR-RQ-3054,Water Column
+SONBSCA,Multi-Frequency Acoustic Backscatter,L0,TBD,DCN 1341-00800,DCN 1342-00800,ZPLSG,Plankton ZP sonar global,2013-07-17,L2-SR-RQ-3054,Water Column
+SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSC,Plankton ZP sonar coastal,2013-07-17,L2-SR-RQ-3054,Water Column
+SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSG,Plankton ZP sonar global,2013-07-17,L2-SR-RQ-3054,Water Column
+SPECHUM,Specific Humidity,L2,%,DCN 1341-00370,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3179 ,"Air-Sea Interface, Surface Water"
+SPECTIR,Downwelling Spectral Irradiance ,L0,TBD,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-07-17,L2-SR-RQ-3051,Water Column
+SPECTIR,Downwelling Spectral Irradiance ,L1,µW*cm^-2*nm^-1,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-07-17,L2-SR-RQ-3051,Water Column
+SPHUM2M,Specific Humidity at 2 m,L2,%,,,METBK,Meteorology bulk,2013-11,,
+TEMPA2M,Air Temperature at 2 m,L2,degrees C,,,METBK,Meteorology bulk,2013-11,,
+TEMPAIR,Air Temperature,L0,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3033,"Air-Sea Interface, Surface Water"
+TEMPAIR,Air Temperature,L1,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3033,"Air-Sea Interface, Surface Water"
+TEMPSFL,Temperature Array in Spatial Grid,L0,TBD,DCN 1341-00130,DCN 1342-00130,TMPSF,Temperature seafloor,2013-06-28,L2-SR-RQ-3101,Seafloor/Crust
+TEMPSFL,Temperature Array in Spatial Grid,L1,C,DCN 1341-00130,DCN 1342-00130,TMPSF,Temperature seafloor,2013-06-28,L2-SR-RQ-3101,Seafloor/Crust
+TEMPSRF,Sea Surface Temperature,L0,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,"L2-SR-RQ-3416, L2-SR-RQ-3708","Air-Sea Interface, Surface Water"
+TEMPSRF,Sea Surface Temperature,L1,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,"L2-SR-RQ-3416, L2-SR-RQ-3708","Air-Sea Interface, Surface Water"
+TEMPVNT,Vent Fluid Temperature from RASFL,L0,TBD,DCN 1341-00140,DCN 1342-00140,RASFL,Watersample chem trace H2S pH,2013-06-28,L2-SR-RQ-3408,Seafloor/Crust
+TEMPVNT,Vent Fluid Temperature from RASFL,L1,degrees C,DCN 1341-00140,DCN 1342-00140,RASFL,Watersample chem trace H2S pH,2013-06-28,L2-SR-RQ-3408,Seafloor/Crust
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L0,unitless,DCN 1341-00010,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDGV,CTD Glider,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDMO,CTD Mooring,2013-06-28,L2-SR-RQ-3044,Water Column
+TEMPWAT,Temperature,L1,degrees C,DCN 1341-00010,DCN 1342-00010,CTDPF,CTD Profiler,2013-06-28,L2-SR-RQ-3044,Water Column
+THSPHHC,Hydrogen Concentration,L0,V,DCN 1341-00210,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+THSPHHC,Hydrogen Concentration,L2,Moles/kg,DCN 1341-00210,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+THSPHHS,Hydrogen Sulfide Concentration,L0,V,DCN 1341-00200,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+THSPHHS,Hydrogen Sulfide Concentration,L2,Moles/kg,DCN 1341-00200,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+THSPHPH,pH,L0,V,DCN 1341-00190,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+THSPHPH,pH,L2,pH units,DCN 1341-00190,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+THSPHTE,Vent Fluid Temperature from THSPH,L0,V,DCN 1341-00120,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+THSPHTE,Vent Fluid Temperature from THSPH,L1,degrees C,DCN 1341-00120,DCN 1342-00120,THSPH,Temp H2 H2S pH,2013-06-28,L2-SR-RQ-3092,Seafloor/Crust
+TMPATUR,Turbulent Air Temperature,L0,TBD,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3894,Air-Sea Interface
+TMPATUR,Turbulent Air Temperature,L0,TBD,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3894,Air-Sea Interface
+TMPATUR,Turbulent Air Temperature,L1,degree C,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3894,Air-Sea Interface
+TMPATUR,Turbulent Air Temperature,L1,degree C,DCN 1341-00290,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3894,Air-Sea Interface
+TRHPHCC,Vent Fluid Chloride Concentration,L2,µM,DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHEH,Vent Fluid Oxidation-Reduction Potential (ORP),L1,mV,DCN 1341-00170,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHR1,Resistivity R1,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHR2,Resistivity R2,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHR3,Resistivity R3,L0,"Ohm, raw voltage",DCN 1341-00160,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHTE,Vent Fluid Temperature from TRHPH,L1,C,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHVC,Thermocouple Temperature,L0,V,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHVO,ORP Volts,L0,V,DCN 1341-00170,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+TRHPHVS,Thermistor Temperature,L0,V,DCN 1341-00150,DCN 1342-00150,TRHPH,Temp resist,2013-06-28,L2-SR-RQ-3090,Seafloor/Crust
+VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPA,Velocity profile Mobile Asset,2013-06-28,L2-SR-RQ-3757,Water Column
+VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPS,Velocity profile Long Range,2013-06-28,L2-SR-RQ-3757,Water Column
+VELPROF,Velocity Profile,L0,mm/s,DCN 1341-00750,DCN 1342-00750,ADCPT,Velocity profile Short Range,2013-06-28,L2-SR-RQ-3757,Water Column
+VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPA,Velocity profile Mobile Asset,2013-06-28,L2-SR-RQ-3757,Water Column
+VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPS,Velocity profile Long Range,2013-06-28,L2-SR-RQ-3757,Water Column
+VELPROF,Velocity Profile,L1,m/s,DCN 1341-00750,DCN 1342-00750,ADCPT,Velocity profile Short Range,2013-06-28,L2-SR-RQ-3757,Water Column
+VELPTMN,Mean Point Water Velocity,L1,m/s,DCN 1341-00790,DCN 1342-00790,VELPT,Velocity point,2013-10,L2-SR-RQ-3085,Water Column
+VELPTTU,Turbulent Point Water Velocity,L0,"cm/s (Nobska), mm/s (Nortek)","DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)",DCN 1342-00780,VEL3D,Velocity point 3D turb,2013-06-28,L2-SR-RQ-3058,"Water Column, Seafloor/Crust"
+VELPTTU,Turbulent Point Water Velocity,L1,m/s,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)",DCN 1342-00780,VEL3D,Velocity point 3D turb,2013-06-28,L2-SR-RQ-3058,"Water Column, Seafloor/Crust"
 VELTURB,Turbulent Velocity Profile,L1,m/s,DCN 1341-00760,DCN 1342-00760,VADCP,Velocity profile 50m turb,2014-08,L2-SR-RQ-3060,Water Column
-WAVSTAT,Wave Spectral Properties,L0,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,ADCPT,Velocity profile Short Range,2013-09,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
-WAVSTAT,Wave Spectral Properties,L0,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,WAVSS,Wave spectra surface,2013-09,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
-WAVSTAT,Wave Spectral Properties,L2,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,ADCPT,Velocity profile Short Range,2013-09,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
-WAVSTAT,Wave Spectral Properties,L2,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,WAVSS,Wave spectra surface,2013-09,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
-WIND10M,Wind Velocity at 10 m  ,L2,m/s,,,METBK,Meteorology bulk,2013-09,,
-WINDAVG,Mean Wind Velocity,L0,m/s,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3027,"Air-Sea Interface, Surface Water"
-WINDAVG,Mean Wind Velocity,L1,m/s,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-09,L2-SR-RQ-3027,"Air-Sea Interface, Surface Water"
-WINDTUR,Wind Velocity in 3 Dimensions,L0,TBD,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3028,Air-Sea Interface
-WINDTUR,Wind Velocity in 3 Dimensions,L0,TBD,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3028,Air-Sea Interface
-WINDTUR,Wind Velocity in 3 Dimensions,L1,m/s,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-09,L2-SR-RQ-3028,Air-Sea Interface
-WINDTUR,Wind Velocity in 3 Dimensions,L1,m/s,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-09,L2-SR-RQ-3028,Air-Sea Interface
-XCO2ATM,CO2 Mole Fraction in Atmosphere,L0,ppm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09,Derived from design to achieve PCO2AIR,Air-Sea Interface
-XCO2SSW,CO2 Mole Fraction in Surface Sea Water,L0,ppm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-09,Derived from design to achieve PCO2AIR,Air-Sea Interface
+WAVSTAT,Wave Spectral Properties,L0,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,ADCPT,Velocity profile Short Range,2013-10,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
+WAVSTAT,Wave Spectral Properties,L0,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,WAVSS,Wave spectra surface,2013-10,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
+WAVSTAT,Wave Spectral Properties,L2,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,ADCPT,Velocity profile Short Range,2013-10,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
+WAVSTAT,Wave Spectral Properties,L2,m; s; degrees; Hz; m^2 Hz^-1,DCN 1341-00450,DCN 1342-00450,WAVSS,Wave spectra surface,2013-10,L2-SR-RQ-3587,"Air-Sea Interface, Surface Water"
+WIND10M,Wind Velocity at 10 m  ,L2,m/s,,,METBK,Meteorology bulk,2013-11,,
+WINDAVG,Mean Wind Velocity,L0,m/s,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3027,"Air-Sea Interface, Surface Water"
+WINDAVG,Mean Wind Velocity,L1,m/s,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3027,"Air-Sea Interface, Surface Water"
+WINDTUR,Wind Velocity in 3 Dimensions,L0,TBD,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3028,Air-Sea Interface
+WINDTUR,Wind Velocity in 3 Dimensions,L0,TBD,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3028,Air-Sea Interface
+WINDTUR,Wind Velocity in 3 Dimensions,L1,m/s,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3028,Air-Sea Interface
+WINDTUR,Wind Velocity in 3 Dimensions,L1,m/s,DCN 1341-00310,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3028,Air-Sea Interface
+XCO2ATM,CO2 Mole Fraction in Atmosphere,L0,ppm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,Derived from design to achieve PCO2AIR,Air-Sea Interface
+XCO2SSW,CO2 Mole Fraction in Surface Sea Water,L0,ppm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,Derived from design to achieve PCO2AIR,Air-Sea Interface
 

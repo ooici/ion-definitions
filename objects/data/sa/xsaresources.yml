@@ -52,8 +52,8 @@ DataProcessDefinitionExtension: !Extends_ExtendedInformationResource
   input_stream_definitions: []  # set of !StreamDefinition
   #@hasStreamDefinition
   output_stream_definitions: [] # set of !StreamDefinition
-  #@hasDataProductsForDataProcessDefinition
-  data_products: []             # set of DataProducts from all child data processes
+
+  data_products: []             # an aligned set of DataProducts from all child data processes
 
 ---
 

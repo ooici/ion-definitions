@@ -486,6 +486,6 @@ ExternalReferencesUpdatedEvent: !Extends_InformationContentModifiedEvent
 ParameterQCEvent: !Extends_Event
   # Origin is the dataset
   qc_parameter:   ""
-  temporal_value: 0
+  temporal_values: []
   configuration:  {}
 

@@ -23,6 +23,9 @@ AgentCommandResult:
   #@ContentType=list,str,dict
   result: ""
   
-    
+# Gives the UX schema for a taskable resource.
+AgentSchema:
+  agent_schema: ""
+  resource_schema: ""
 
 

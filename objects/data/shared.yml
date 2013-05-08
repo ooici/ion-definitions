@@ -259,6 +259,7 @@ AgentInstance: !Extends_InformationResource
   driver_config: {}
   agent_config: {}
   agent_process_id: ""
+  #@EditSizeHint=Large
   alerts: []
 
 ---

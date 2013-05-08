@@ -213,14 +213,14 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 # Computed attributes for an platform device
 PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 
- # Dict of {device_id: aggregate StatusType} for child devices on ALL sub-levels (hasDevice->)
+ # Dict of {device_id: aggregate StatusType int} for child devices on ALL sub-levels (hasDevice->)
   child_device_status: !ComputedDictValue
 
- # Dict of {device_id: aggregate StatusType} for child devices on ALL sub-levels (<-hasNetworkParent)
+ # Dict of {device_id: aggregate StatusType int} for child devices on ALL sub-levels (<-hasNetworkParent)
   rsn_network_child_device_status: !ComputedDictValue
 
   # RSN Platform rollup status from the network perspective. Defined by hasNetworkParent links in the data model.
-  # { AggregateStatusType: DeviceStatusType}
+  # { AggregateStatusType: DeviceStatusType} dict
   rsn_network_rollup: !ComputedDictValue
 
 
@@ -254,11 +254,11 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   location_status_roll_up:       !ComputedIntValue # StatusType
   power_status_roll_up:          !ComputedIntValue # StatusType 
 
-  platform_status: !ComputedDictValue   # Dict of (device_id, aggregate StatusType) for child platform sites' devices
+  platform_status: !ComputedDictValue   # Dict of {device_id: aggregate StatusType int} for child platform sites' devices
 
-  instrument_status: !ComputedDictValue # Dict of (device_id, aggregate StatusType) for child instrument sites' devices
+  instrument_status: !ComputedDictValue # Dict of {device_id: aggregate StatusType int} for child instrument sites' devices
 
-  site_status: !ComputedDictValue       # Dict of (site_id, aggregate StatusType) for child sites
+  site_status: !ComputedDictValue       # Dict of {site_id: aggregate StatusType int} for child sites
 
   # list all PlatformSite with the following alt_resource_type:
   platform_station_sites: !ComputedListValue    # == "StationSite"

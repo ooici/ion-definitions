@@ -191,7 +191,7 @@ SiteExtension: !Extends_ExtendedInformationResource
 
   instruments_operational: []  # instruments are deployed with lifecycle state of Active and execution state of Operational
   # added by OMS.get_site_extension
-  deployment_info: []
+  deployment_info: {}
 
 
 ---

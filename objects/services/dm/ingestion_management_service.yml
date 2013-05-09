@@ -55,6 +55,9 @@ methods:
   #-------------------------
 
   persist_data_stream:
+    docstring: |
+        Either reactivates or resumes persistence of a data stream or
+        creates a new subscription to a data stream and persists the data.
     in:
       stream_id: ""
       ingestion_configuration_id: ""
@@ -63,7 +66,18 @@ methods:
     out:
       dataset_id: ""
 
+  suspend_data_stream:
+    docstring: |
+        Suspends the data stream, the subscription remains active
+        data messages will continue to queue until the stream is restarted
+    in:
+      stream_id: ""
+      ingestion_configuration_id: ""
+    out:
+
   unpersist_data_stream:
+    docstring: |
+        Deletes the subscription, messages will no longer be collected or persisted.
     in:
       stream_id: ""
       ingestion_configuration_id: ""

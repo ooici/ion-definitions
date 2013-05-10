@@ -4,11 +4,6 @@ ComputedGeospatialBoundsValue: !Extends_ComputedValue
 
 ---
 
-StatusType: !enum ( values=(STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN ), default=STATUS_OK)
-  # see status by device on Confluence Device Status Roll-Ups and Aggregated Status page
-
----
-
 # This object contains additional information associated with an instrument device.
 DeviceExtension: !Extends_ExtendedInformationResource
   #@hasSource
@@ -264,10 +259,13 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 # Computed attributes for an platform device
 PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 
- # Dict of {device_id: aggregate StatusType int} for child devices on ALL sub-levels (hasDevice->)
-  child_device_status: !ComputedDictValue
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedPlatform.instrument_devices
+  instrument_status: !ComputedListValue
 
- # Dict of {device_id: aggregate StatusType int} for child devices on ALL sub-levels (<-hasNetworkParent)
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedPlatform.platforms
+  platform_status: !ComputedListValue
+
+ # Dict of {device_id: aggregate DeviceStatusType int} for child devices on ALL sub-levels (<-hasNetworkParent)
   rsn_network_child_device_status: !ComputedDictValue
 
   # RSN Platform rollup status from the network perspective. Defined by hasNetworkParent links in the data model.
@@ -300,16 +298,19 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
   number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
 
-  communications_status_roll_up: !ComputedIntValue # StatusType
-  data_status_roll_up:           !ComputedIntValue # StatusType
-  location_status_roll_up:       !ComputedIntValue # StatusType
-  power_status_roll_up:          !ComputedIntValue # StatusType 
+  communications_status_roll_up: !ComputedIntValue # DeviceStatusType
+  data_status_roll_up:           !ComputedIntValue # DeviceStatusType
+  location_status_roll_up:       !ComputedIntValue # DeviceStatusType
+  power_status_roll_up:          !ComputedIntValue # DeviceStatusType 
 
-  platform_status: !ComputedDictValue   # Dict of {device_id: aggregate StatusType int} for child platform sites' devices
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.instrument_devices
+  instrument_status: !ComputedListValue
 
-  instrument_status: !ComputedDictValue # Dict of {device_id: aggregate StatusType int} for child instrument sites' devices
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.platforms
+  platform_status: !ComputedListValue
 
-  site_status: !ComputedDictValue       # Dict of {site_id: aggregate StatusType int} for child sites
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.sites
+  site_status: !ComputedListValue
 
   # list all PlatformSite with the following alt_resource_type:
   platform_station_sites: !ComputedListValue    # == "StationSite"
@@ -324,14 +325,20 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
 
 #Computed attributes for a data product
 MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes
-  instrument_status: [] # List of aggregate status for child instruments (list index see extended attribute)
-  platform_status: []   # List of aggregate status for child platforms (list index see extended attribute)
-  site_status: []       # List of aggregate status for child platforms
-  communications_status_roll_up: !ComputedIntValue    # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  power_status_roll_up: !ComputedIntValue             # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  data_status_roll_up: !ComputedIntValue              # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  location_status_roll_up: !ComputedIntValue          # StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
-  aggregated_status: !ComputedIntValue                # The status roll-up that summarizes the entire status of the device. (StatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN)
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedOrg.instrument_devices
+  instrument_status: !ComputedListValue
+
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedOrg.platform_devices
+  platform_status: !ComputedListValue
+
+ # list of [aggregate DeviceStatusType int] for child devices according to ExtendedOrg.sites
+  site_status: !ComputedListValue
+
+  communications_status_roll_up: !ComputedIntValue    # DeviceStatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  power_status_roll_up: !ComputedIntValue             # DeviceStatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  data_status_roll_up: !ComputedIntValue              # DeviceStatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+  location_status_roll_up: !ComputedIntValue          # DeviceStatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
+
 ---
 
 

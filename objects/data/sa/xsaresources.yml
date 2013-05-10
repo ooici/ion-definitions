@@ -309,7 +309,7 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.platforms
   platform_status: !ComputedListValue
 
- # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.sites
+ # list of [aggregate DeviceStatusType int] for child sites according to ExtendedSite.sites
   site_status: !ComputedListValue
 
   # list all PlatformSite with the following alt_resource_type:

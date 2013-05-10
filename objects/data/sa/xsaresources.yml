@@ -236,9 +236,9 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   platforms_deployed: []  # a list of platform devices owned by this Org but not currently deployed to a Site
   #@hasDeployedDeviceForOrg=PlatformSite
   number_of_platforms_deployed: 0
-  #      #@Method=find_org_negotiations
+  #@Method=org_management.find_org_negotiations
   open_requests: [] # The list of OrgUserNegotiationRequest objects for this org that have a negotiation_status of OPEN
-  #      #@Method=find_org_closed_negotiations
+  #@Method=org_management.find_org_closed_negotiations
   closed_requests: [] # The list of OrgUserNegotiationRequest objects for this org that have a negotiation_status of ACCEPTED or REJECTED
 
 

@@ -56,8 +56,8 @@ methods:
 
   persist_data_stream:
     docstring: |
-        Either reactivates or resumes persistence of a data stream or
-        creates a new subscription to a data stream and persists the data.
+        Launches an ingestion worker, subscribes the worker's queue to the stream
+        and initializes the worker to begin consuming data.
     in:
       stream_id: ""
       ingestion_configuration_id: ""
@@ -66,10 +66,17 @@ methods:
     out:
       dataset_id: ""
 
-  suspend_data_stream:
+  pause_data_stream:
     docstring: |
-        Suspends the data stream, the subscription remains active
-        data messages will continue to queue until the stream is restarted
+        Pauses an ingestion worker
+    in:
+      stream_id: ""
+      ingestion_configuration_id: ""
+    out:
+
+  resume_data_stream:
+    docstring: |
+      Resumes an ingestion worker
     in:
       stream_id: ""
       ingestion_configuration_id: ""

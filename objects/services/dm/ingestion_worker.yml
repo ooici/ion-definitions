@@ -1,0 +1,24 @@
+name: ingestion_worker
+
+docstring: Behaviors for any ingestion workers
+
+spec: 
+
+dependencies: []
+
+methods:
+  pause:
+    docstring: |
+      Pauses an ingestion worker
+    in:
+    out:
+      success: True
+
+  resume:
+    docstring: |
+      Resumes an ingestion worker
+    in:
+    out:
+      sucess: True
+
+

@@ -10,6 +10,7 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Org+M
 dependencies: [policy_management,resource_registry]
 
 methods:
+  #@AlwaysVerifyPolicy
   create_org:
     docstring: |
       Creates an Org based on the provided object. The id string returned
@@ -21,6 +22,7 @@ methods:
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
+  #@AlwaysVerifyPolicy
   update_org:
     docstring: |
       Updates the Org based on provided object.
@@ -32,6 +34,7 @@ methods:
       NotFound: object with specified id does not exist
       Conflict: object not based on latest persisted object version
 
+  #@AlwaysVerifyPolicy
   read_org:
     docstring: |
       Returns the Org object for the specified id.
@@ -44,6 +47,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   delete_org:
     docstring: |
       Permanently deletes Org object with the specified
@@ -53,7 +57,6 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
-
 
   find_org:
     docstring: |
@@ -70,6 +73,7 @@ methods:
 
   # -----------------
 
+  #@AlwaysVerifyPolicy
   add_user_role:
     docstring: |
        Adds a UserRole to an Org. Will call Policy Management Service to actually
@@ -83,6 +87,7 @@ methods:
     throws:
       NotFound: object with specified name does not exist
 
+  #@AlwaysVerifyPolicy
   remove_user_role:
     docstring: |
        Removes a UserRole from an Org. The UserRole will not be removed if there are
@@ -123,6 +128,7 @@ methods:
 
   # -----------------
 
+  #@AlwaysVerifyPolicy
   negotiate:
     docstring: |
       A generic operation for negotiating actions with an Org, such as for enrollment, role request or to acquire a
@@ -138,6 +144,7 @@ methods:
       NotFound: If any of the ids in the SAP do not exist
 
 
+  #@AlwaysVerifyPolicy
   find_org_negotiations:
     docstring: |
       Returns a list of negotiations for an Org. An optional proposal_type can be supplied
@@ -153,6 +160,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   find_org_closed_negotiations:
     docstring: |
       Returns a list of closed negotiations for an Org - those which are Accepted or Rejected.
@@ -165,7 +173,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-
+  #@AlwaysVerifyPolicy
   find_user_negotiations:
     docstring: |
       Returns a list of negotiations for a specified Actor. All negotiations for all Orgs will be returned
@@ -185,6 +193,7 @@ methods:
 
   # -----------------
 
+  #@AlwaysVerifyPolicy
   enroll_member:
     docstring: |
       Enrolls a specified actor into the specified Org so that they may find and negotiate to use resources
@@ -198,6 +207,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   cancel_member_enrollment:
     docstring: |
       Cancels the membership of a specific actor actor within the specified Org. Once canceled, the actor will no longer
@@ -243,6 +253,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   find_enrolled_orgs:
     docstring: |
       Returns a list of Orgs that the actor is enrolled in. Will throw a not NotFound exception
@@ -256,6 +267,7 @@ methods:
 
   # -----------------
 
+  #@AlwaysVerifyPolicy
   grant_role:
     docstring: |
       Grants a defined role within an organization to a specific actor. A role of Member is
@@ -271,6 +283,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   revoke_role:
     docstring: |
       Revokes a defined Role within an organization to a specific actor. Will throw a not NotFound exception
@@ -325,7 +338,7 @@ methods:
 
   # ---------------------------
 
-
+  #@AlwaysVerifyPolicy
   share_resource:
     docstring: |
       Share a specified resource with the specified Org. Once shared, the resource will be added to a directory
@@ -338,6 +351,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   unshare_resource:
     docstring: |
       Unshare a specified resource with the specified Org. Once unshared, the resource will be removed from a directory
@@ -361,6 +375,7 @@ methods:
     throws:
       BadRequest: if either org_id or resource_id is not specified
 
+  #@AlwaysVerifyPolicy
   acquire_resource:
     docstring: |
       Creates a Commitment Resource for the specified resource for a specified actor withing the specified Org as defined in the
@@ -372,6 +387,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   create_resource_commitment:
     docstring: |
       Creates a Commitment Resource for the specified resource for a specified actor withing the specified Org. Once shared,
@@ -388,6 +404,7 @@ methods:
       NotFound: object with specified id does not exist
 
   #@OperationVerb=DELETE
+  #@AlwaysVerifyPolicy
   release_commitment:
     docstring: |
       Release the commitment that was created for resources. Throws a NotFound exception if none of the ids are found.
@@ -439,6 +456,7 @@ methods:
 
   # -----------------
 
+  #@AlwaysVerifyPolicy
   affiliate_org:
     docstring: |
       Creates an association between multiple Orgs as an affiliation
@@ -452,6 +470,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   unaffiliate_org:
     docstring: |
       Removes an association between multiple Orgs as an affiliation.

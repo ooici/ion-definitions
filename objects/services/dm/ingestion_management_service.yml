@@ -55,6 +55,9 @@ methods:
   #-------------------------
 
   persist_data_stream:
+    docstring: |
+        Launches an ingestion worker, subscribes the worker's queue to the stream
+        and initializes the worker to begin consuming data.
     in:
       stream_id: ""
       ingestion_configuration_id: ""
@@ -63,7 +66,25 @@ methods:
     out:
       dataset_id: ""
 
+  pause_data_stream:
+    docstring: |
+        Pauses an ingestion worker
+    in:
+      stream_id: ""
+      ingestion_configuration_id: ""
+    out:
+
+  resume_data_stream:
+    docstring: |
+      Resumes an ingestion worker
+    in:
+      stream_id: ""
+      ingestion_configuration_id: ""
+    out:
+
   unpersist_data_stream:
+    docstring: |
+        Deletes the subscription, messages will no longer be collected or persisted.
     in:
       stream_id: ""
       ingestion_configuration_id: ""

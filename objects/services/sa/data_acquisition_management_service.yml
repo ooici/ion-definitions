@@ -46,6 +46,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_external_data_provider:
     in:
       external_data_provider_id: ""
@@ -89,6 +90,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_source:
     in:
       data_source_id: ""
@@ -131,6 +133,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_source_model:
     in:
       data_source_model_id: ""
@@ -174,6 +177,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_source_agent:
     in:
       data_source_agent_id: ""
@@ -218,6 +222,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_source_agent_instance:
     in:
       data_source_agent_instance_id: ""
@@ -283,6 +288,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_external_dataset:
     docstring: Read and delete specified ExternalDataset object
     in:
@@ -328,6 +334,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_external_dataset_model:
     docstring: Read and delete specified ExternalDatasetModel object
     in:
@@ -375,6 +382,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_external_dataset_agent:
     docstring: Read and delete specified ExternalDatasetAgent object
     in:
@@ -423,6 +431,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_external_dataset_agent_instance:
     docstring: Read and delete specified ExternalDatasetAgentInstance object
     in:

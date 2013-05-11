@@ -87,6 +87,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_observatory:
     docstring: Delete a Observatory resource
     in:
@@ -250,6 +251,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_subsite:
     docstring: Delete a LogicalPlatform resource, removes assocations to parents
     in:
@@ -298,6 +300,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_platform_site:
     docstring: Delete a PlatformSite resource, removes assocations to parents
     in:
@@ -348,6 +351,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_instrument_site:
     docstring: Delete an InstrumentSite resource, removes assocations to parents
     in:
@@ -398,6 +402,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_deployment:
     docstring: Delete a Deployment resource
     in:

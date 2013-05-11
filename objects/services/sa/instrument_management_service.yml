@@ -742,6 +742,22 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  assign_platform_device_to_platform_device:
+    in:
+      child_platform_device_id: ""
+      platform_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_platform_device_from_platform_device:
+    in:
+      child_platform_device_id: ""
+      platform_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
 
   assign_instrument_device_to_platform_device:
     in:

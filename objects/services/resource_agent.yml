@@ -41,18 +41,6 @@ methods:
     out:
       capability_list: []
     throws:
-
-  get_schema:
-    docstring: |
-      Introspect for agent schema.
-      @param resource_id The id of the resource agent.
-      @retval AgentSchema object.
-    in:
-      #@ResourceId
-      resource_id: ""
-    out:
-      agent_schema: !AgentSchema
-    throws:
       
   # -----------------
   # Resource control interface

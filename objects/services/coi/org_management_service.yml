@@ -220,6 +220,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=GET
   is_registered:
     docstring: |
       Returns True if the specified actor_id is registered with the ION system; otherwise False.
@@ -230,6 +231,7 @@ methods:
     throws:
       BadRequest: if the actor_id is not specified.
 
+  #@OperationVerb=GET
   is_enrolled:
     docstring: |
       Returns True if the specified actor_id is enrolled in the Org and False if not.
@@ -242,6 +244,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@AlwaysVerifyPolicy
   find_enrolled_users:
     docstring: |
       Returns a list of actors enrolled in an Org. Will throw a not NotFound exception
@@ -297,6 +300,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=GET
   has_role:
     docstring: |
        Returns True if the specified actor_id has the specified role_name in the Org and False if not.
@@ -364,6 +368,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=GET
   is_resource_shared:
     docstring: |
        Returns True if the specified resource_id has been shared in the specified org_id; otherwise False is returned.
@@ -403,7 +408,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  #@OperationVerb=DELETE
+  #@OperationVerb=RETIRE
   #@AlwaysVerifyPolicy
   release_commitment:
     docstring: |
@@ -415,6 +420,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=GET
   is_resource_acquired:
     docstring: |
        Returns True if the specified resource_id has been acquired. The actor_id is optional, as the operation can
@@ -428,6 +434,7 @@ methods:
     throws:
       BadRequest: if resource_id is not specified
 
+  #@OperationVerb=GET
   is_resource_acquired_exclusively:
     docstring: |
        Returns True if the specified resource_id has been acquired exclusively. The actor_id is optional, as the operation can

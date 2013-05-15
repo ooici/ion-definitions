@@ -1,9 +1,9 @@
 # Describes a specific capability of an agent
 AgentCapability:
   name: ""
-  cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, RES_IFACE, CONV_TYPE), default=AGT_CMD)
+  cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, RES_IFACE, CONV_TYPE, AGT_STATES, RES_STATES, ALERT_DEFS, AGT_CMD_ARGS, AGT_STREAMS), default=AGT_CMD)
   restrictions: {}
-
+  schema: {}
 
 # Represents a command to a resource agent
 AgentCommand:

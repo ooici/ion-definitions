@@ -51,6 +51,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_instrument_agent_instance:
     docstring: Delete an InstrumentAgentInstance resource
     in:
@@ -147,6 +148,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_instrument_agent:
     docstring: Delete an InstrumentAgent resource
     in:
@@ -211,6 +213,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_instrument_device:
     docstring: Delete an InstrumentDevice resource
     in:
@@ -261,6 +264,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_instrument_model:
     docstring: Delete an InstrumentModel resource
     in:
@@ -316,6 +320,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_platform_agent_instance:
     docstring: Delete a PlatformAgentInstance resource
     in:
@@ -387,6 +392,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_platform_agent:
     docstring: Delete a PlatformAgent resource
     in:
@@ -438,6 +444,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_platform_device:
     docstring: Delete a PlatformDevice resource
     in:
@@ -488,6 +495,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_platform_model:
     docstring: Delete a PlatformModel resource
     in:
@@ -538,6 +546,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_sensor_device:
     docstring: Deleate a SensorDevice resource
     in:
@@ -589,6 +598,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_sensor_model:
     docstring: Delete a SensorModel resource
     in:
@@ -728,6 +738,22 @@ methods:
     in:
       platform_model_id: ""
       platform_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_platform_device_to_platform_device:
+    in:
+      child_platform_device_id: ""
+      platform_device_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_platform_device_from_platform_device:
+    in:
+      child_platform_device_id: ""
+      platform_device_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -914,7 +940,7 @@ methods:
   # LifeCycle States
   #
 
-
+  #@OperationVerb=LCS-CHANGE
   execute_instrument_agent_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -923,6 +949,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_instrument_agent_instance_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -931,6 +958,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_instrument_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -939,6 +967,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_instrument_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -947,6 +976,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_platform_agent_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -955,6 +985,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_platform_agent_instance_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -963,6 +994,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_platform_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -971,6 +1003,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_platform_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -979,6 +1012,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_sensor_model_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:
@@ -987,6 +1021,7 @@ methods:
       lifecycle_event: ""
     out:
 
+  #@OperationVerb=LCS-CHANGE
   execute_sensor_device_lifecycle:
     docstring: Set resource lifecycle state to given state.
     in:

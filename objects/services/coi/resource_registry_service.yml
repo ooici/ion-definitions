@@ -10,6 +10,7 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+Resou
 dependencies: []
 
 methods:
+  #@OperationVerb=CREATE
   create:
     docstring: |
       Persist an instance of the resource passed in the object param.
@@ -21,6 +22,7 @@ methods:
     throws:
       BadRequest: object has _id field
 
+  #@OperationVerb=READ
   read:
     docstring: |
       Read the latest, or optionally the specific, version of resource
@@ -35,6 +37,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=READ
   read_mult:
     docstring: |
         Read the latest resources specified in the paramter.
@@ -46,6 +49,7 @@ methods:
     throws:
       NotFound: objects do not exist.
 
+  #@OperationVerb=UPDATE
   update:
     docstring: |
       Persist new version of resource. Throws exception if previous
@@ -61,6 +65,7 @@ methods:
       Conflict: object not based on latest persisted object version
       BadRequest: object does not have required _id or _rev or lcstate was modified compared to persisted object version
 
+  #@OperationVerb=DELETE
   delete:
     docstring: |
       Permanently delete object in datastores.
@@ -72,6 +77,7 @@ methods:
     throws:
       NotFound: object does not exist
 
+  #@OperationVerb=RETIRE
   retire:
     docstring: |
       Sets resource lifecycle state to retired.
@@ -85,6 +91,7 @@ methods:
 
   # -----------------
 
+  #@OperationVerb=LCS-CHANGE
   execute_lifecycle_transition:
     docstring: |
       Alter object lifecycle according to given transition event. Throws exception
@@ -101,6 +108,7 @@ methods:
       BadRequest: transition event unknown or illegal in current state; resource type has no lifecycle
       Conflict: race condition while trying to update
 
+  #@OperationVerb=LCS-CHANGE
   set_lifecycle_state:
     docstring: |
       Alter object lifecycle to set to give lifecycle state. Throws exception
@@ -118,6 +126,7 @@ methods:
 
   # -----------------
 
+  #@OperationVerb=CREATE
   create_attachment:
     docstring: |
       Create an Attachment resource associated with another resource.
@@ -132,6 +141,7 @@ methods:
       NotFound: resource object does not exist if resource_id given
       BadRequest: bad attachment type or content
 
+  #@OperationVerb=READ
   read_attachment:
     docstring: |
       Reads an attachment by id, excludes content unless indicated otherwise.
@@ -143,6 +153,7 @@ methods:
     throws:
       NotFound: attachment does not exist
 
+  #@OperationVerb=DELETE
   delete_attachment:
     docstring: |
       Delete an attachment resource and resource associations.
@@ -152,6 +163,7 @@ methods:
     throws:
       NotFound: attachment does not exist
 
+  #@OperationVerb=FIND
   find_attachments:
     docstring: |
       Returns list of attachment resources for given associated resource id.
@@ -172,6 +184,7 @@ methods:
 
   # -----------------
 
+  #@OperationVerb=CREATE
   create_association:
     docstring: |
       Create an association between subject and object resources (IonObjects).
@@ -193,7 +206,7 @@ methods:
       NotFound: subject or object does not exist
       BadRequest: subject, predicate or object parameter missing, unknown value passed for the assoc_type parameter, predicate is unknown, subject or object are invalid types for predicate, or subject or object do not have _id field
       
-
+  #@OperationVerb=DELETE
   delete_association:
     docstring: |
       For now, permanently delete an association between two resources (IonObjects).
@@ -207,6 +220,7 @@ methods:
 
   # -----------------
 
+  #@OperationVerb=READ
   read_object:
     docstring: |
         Returns the object (or object id) by association from a given subject or
@@ -228,6 +242,7 @@ methods:
       NotFound: object not found
       Inconsistent: more than one object matching the given criteria
 
+  #@OperationVerb=FIND
   find_objects:
     docstring: |
         Find objects (or object ids) by association from a given subject or
@@ -249,6 +264,7 @@ methods:
     throws:
       BadRequest: missing parameters, or object id field missing in subject
 
+  #@OperationVerb=READ
   read_subject:
     docstring: |
         Returns the subject (or subject id) by association from a given object or
@@ -270,6 +286,7 @@ methods:
       NotFound: subject not found
       Inconsistent: more than one subject matching the given criteria
 
+  #@OperationVerb=FIND
   find_subjects:
     docstring: |
         Find subjects (or subject ids) by association from a given object or
@@ -291,6 +308,7 @@ methods:
     throws:
       BadRequest: missing parameters, or object id field missing in object
 
+  #@OperationVerb=FIND
   find_associations:
     docstring: |
         Find associations by subject, predicate, object and assoc_type.
@@ -316,6 +334,7 @@ methods:
     throws:
       BadRequest: missing parameters, or object id field missing in subject or object
 
+  #@OperationVerb=FIND
   find_objects_mult:
     docstring: |
       Find associations by a list of subjects.
@@ -327,6 +346,7 @@ methods:
     throws:
       BadRequest: subjects is not a list
 
+  #@OperationVerb=FIND
   find_subjects_mult:
     docstring: |
       Find associations by a list of objects.
@@ -338,6 +358,7 @@ methods:
     throws:
       BadRequest: subjects is not a list
 
+  #@OperationVerb=GET
   get_association:
     docstring: |
       Read the association specified by the exact subject, predicate, object
@@ -358,6 +379,7 @@ methods:
       NotFound: association does not exist
       Inconsistent: multiple associations satisfy the subject, predicate, object tuple
 
+  #@OperationVerb=FIND
   find_resources:
     docstring: |
       Utility method for finding resources via various attributes, including resource type,
@@ -380,7 +402,8 @@ methods:
       list: []
     throws:
       BadRequest: incompatible parameters
-      
+
+  #@OperationVerb=FIND
   find_resources_ext:
     docstring: |
       Utility method for finding resources via various attributes, including resource type,
@@ -419,6 +442,7 @@ methods:
 
 #-------
 
+  #@OperationVerb=GET
   get_resource_extension:
     docstring: |
       Returns any ExtendedResource object containing additional related information derived from associations
@@ -435,6 +459,7 @@ methods:
       BadRequest: A parameter is missing
       NotFound: An object with the specified resource_id does not exist
 
+  #@OperationVerb=CREATE
   prepare_resource_support:
     docstring: |
       Returns a GenericPrepareSupport object containing additional related information needed to create/update resources

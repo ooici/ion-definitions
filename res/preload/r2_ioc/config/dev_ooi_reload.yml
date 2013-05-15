@@ -1,0 +1,20 @@
+# This file configures the OOI asset import for development in a reload
+
+load_sequence:
+
+  - name: delete_ooi
+    docstring:
+    config:
+      op: deleteooi
+      debug: True
+
+  - name: load_ooi_assets
+    docstring:
+    config:
+      op: load
+      loadooi: True
+      assets: res/preload/r2_ioc/ooi_assets
+      bulk: True
+      debug: True
+      ooiuntil: "9/1/2013"
+      #ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition

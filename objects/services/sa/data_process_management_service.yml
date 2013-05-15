@@ -39,6 +39,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_process_definition:
     in:
       data_process_definition_id: ""
@@ -206,6 +207,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_process:
     in:
       data_process_id: ""

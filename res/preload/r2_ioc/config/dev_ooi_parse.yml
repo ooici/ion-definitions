@@ -1,0 +1,10 @@
+# This file configures the OOI asset import to parse OOI assets only
+
+load_sequence:
+
+  - name: parse_OOI
+    docstring:
+    config:
+      op: parseooi
+      assets: res/preload/r2_ioc/ooi_assets
+      ooiuntil: "9/1/2013"

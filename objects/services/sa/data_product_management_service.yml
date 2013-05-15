@@ -50,6 +50,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_product:
     in:
       data_product_id: ""
@@ -168,6 +169,7 @@ methods:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=DELETE
   force_delete_data_product_collection:
     docstring: Remove a data product but not the set of related data products.
     in:

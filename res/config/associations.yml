@@ -323,3 +323,5 @@ CompoundAssociations:
     predicates: [hasResource,hasDevice]
   hasResourcesForUser:
     predicates: [hasInfo,hasOwner]
+  hasPortalForDevice:
+    predicates: [hasSite,hasDevice]

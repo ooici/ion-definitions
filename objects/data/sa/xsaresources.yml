@@ -128,7 +128,7 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 # This object contains additional information associated with an instrument device.
 #@OriginResourceType=PlatformDevice
 PlatformDeviceExtension: !Extends_DeviceExtension
-  #@hasDevice=PlatformDevice
+  #@hasDevice=PlatformSite
   platforms: []  # The list of child platforms
 
   #@hasModel
@@ -151,8 +151,8 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
-
-  portals: []
+  #@hasPortalForDevice=InstrumentSite
+  portals: []  # NOTE: this compound association fails; see bug OOIION-948
 ---
 
 # This object contains additional information associated with a Site resource.

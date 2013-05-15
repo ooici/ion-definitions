@@ -12,8 +12,20 @@ methods:
   # -----------------
   # Working with Instrument Agent Instance resources (they describe how to configure agent instances)
 
-  create_instrument_agent_instance:
+  create_instrument_agent_instance_:
     docstring: Create an InstrumentAgentInstance resource, associate it to the instrument agent and instrument device it represents
+    in:
+      instrument_agent_instance: !InstrumentAgentInstance
+    out:
+      instrument_agent_instance_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  create_instrument_agent_instance:
+    docstring: |
+      Create an InstrumentAgentInstance resource, associate it to the instrument agent and instrument device it represents.
+      This version of the API should be deprecated.
     in:
       instrument_agent_instance: !InstrumentAgentInstance
       instrument_agent_id: ""
@@ -1075,6 +1087,18 @@ methods:
       resource_schema: !InstrumentDevicePrepareSupport
     throws:
       NotFound: An object with the specified instrument_device_id does not exist
+
+  prepare_instrument_agent_instance_support:
+    docstring: |
+      Returns the information needed to create or update an instrument agent instance. The instrument_agent_instance_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
+    in:
+      instrument_agent_instance_id: ""
+    out:
+      resource_schema: !InstrumentAgentInstancePrepareSupport
+    throws:
+      NotFound: An object with the specified instrument_device_id does not exist
+
 
   prepare_platform_device_support:
     docstring: |

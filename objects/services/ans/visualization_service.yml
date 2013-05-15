@@ -1,6 +1,6 @@
 # Visualization service interface definition
 
-name: visualization_service
+name: visualization
 
 docstring: Service is responsible for mantaining user sessions and collecting requested viz products, preparing them before returning them to the web client
 
@@ -9,13 +9,13 @@ dependencies: [resource_registry, pubsub_management, transform_management, data_
 
 methods:
   # Interface available through the SGS
-  initiate_realtime_visualization:
+  initiate_realtime_visualization_data:
     docstring: |
       Initial request required to start a realtime chart for the specified data product. Returns a user specific token associated
       with the request that will be required for subsequent requests when polling data.
     in:
       data_product_id: ""
-      visualization_parameters: {}
+      visualization_parameters: ""
       callback: ""
     out:
       query_token: ""
@@ -55,38 +55,13 @@ methods:
       visualization parameters. The visualization data is generated on demand and returns a specialied JSONP data string.
     in:
       data_product_id: ""
-      visualization_parameters: {}
+      visualization_parameters: ""
       callback: ""
       tqx: ""
     out:
-      jsonp_visualization_data: ""
+      json_data: ""
     throws:
       NotFound: Throws if specified data product id does not exist
 
 
-  get_visualization_image:
-    docstring: |
-      This operation returns an image for a particular data product and set of visualization parameters. Depending on
-      the attributes of the data product, it will either return a persisted image or will generate one on demand
-      based on the set of visualization parameters. The return value should be a dict of the image content type
-      (mime type) and the binary image data.
-    in:
-      data_product_id: ""
-      visualization_parameters: {}
-      callback: ""
-    out:
-      image_obj: {}
-    throws:
-      NotFound: Throws if specified data product id does not exist
 
-
-  get_data_product_metadata:
-    docstring: |
-      Returns metadata about the data_product from the coverage
-    in:
-      data_product_id: ""
-      callback: ""
-    out:
-      dp_meta_data_json: ""
-    throws:
-      NotFound: Throws if specified data product id does not exist

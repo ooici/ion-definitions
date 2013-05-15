@@ -22,3 +22,11 @@ ConversationRole: !Extends_InformationResource
 #TODO - determine the need for this object
 ConverationRoleBinding:
   exchange_name: ""   # The address of the process to communicate with
+
+# Conversation object that is logged in the conversation database
+ConversationMessage:
+  sender: ""
+  recipient: ""
+  conversation_id: ""
+  protocol: ""
+  headers: {}

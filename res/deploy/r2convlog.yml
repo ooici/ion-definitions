@@ -1,0 +1,15 @@
+type: release
+name: r2convlog
+version: 0.1
+description: R2 COI services deployment configuration
+ion: 2.0
+apps:
+  ##################################
+  # CORE SERVICES
+  # Bootstrap processes perform initializations
+  ##################################
+
+  - name: conversation_persister
+    processapp: [conversation_persister, ion.processes.conversation.conversation_persister, ConversationPersister]
+    deploy:
+      bootlevel: 1

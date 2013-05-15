@@ -152,7 +152,7 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
 
-
+  portals: []
 ---
 
 # This object contains additional information associated with a Site resource.

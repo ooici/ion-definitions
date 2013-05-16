@@ -217,6 +217,8 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   data_process_definitions: []
   #@hasResource=Observatory
   sites: []
+  #@hasResource=Deployment
+  deployments: []
   #@hasMembershipInfo
   members: [] # The list of User Info objects
   #@hasRole

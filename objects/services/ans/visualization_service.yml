@@ -16,7 +16,6 @@ methods:
     in:
       data_product_id: ""
       visualization_parameters: ""
-      callback: ""
     out:
       query_token: ""
     throws:
@@ -30,10 +29,8 @@ methods:
       specialied JSONP data string.
     in:
       query_token: ""
-      callback: ""
-      tqx: ""
     out:
-      jsonp_visualization_data: ""
+      json_visualization_data: ""
     throws:
       BadRequest: Throws if the query_token paramater is missing
       NotFound: Throws if specified query_token or its visualization product does not exist
@@ -56,8 +53,6 @@ methods:
     in:
       data_product_id: ""
       visualization_parameters: ""
-      callback: ""
-      tqx: ""
     out:
       json_data: ""
     throws:

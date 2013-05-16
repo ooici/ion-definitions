@@ -231,6 +231,13 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_policy, BootstrapPolicy]
 
+  - name: qc_post_processor
+    processapp: [qc_post_processor, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 29
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_qc_post_processor, BootstrapQCPostProcessor]
+
   - name: lightweight_pydap
     processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
     bootlevel: 30

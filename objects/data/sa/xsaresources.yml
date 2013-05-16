@@ -128,7 +128,7 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 # This object contains additional information associated with an instrument device.
 #@OriginResourceType=PlatformDevice
 PlatformDeviceExtension: !Extends_DeviceExtension
-  #@hasDevice=PlatformDevice
+  #@hasDevice=PlatformSite
   platforms: []  # The list of child platforms
 
   #@hasModel
@@ -151,8 +151,10 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
-
-
+  #@hasPortalForDevice=InstrumentSite
+  portals: []  # NOTE: this compound association fails; see bug OOIION-948
+  # defined in InstrumentManagementService.get_platform_extension
+  portal_instruments: []
 ---
 
 # This object contains additional information associated with a Site resource.
@@ -273,6 +275,9 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   # RSN Platform rollup status from the network perspective. Defined by hasNetworkParent links in the data model.
   # { AggregateStatusType: DeviceStatusType} dict
   rsn_network_rollup: !ComputedDictValue
+
+  # defined in InstrumentManagementService.get_platform_extension
+  portal_status: []
 
 
 ---

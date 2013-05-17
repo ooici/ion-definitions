@@ -8,6 +8,9 @@ config:
   endpoint:
     receive:
       timeout: 60
+  processdispatcher:
+    restart_throttling_config:
+        minimum_time_between_starts: 2
 
 # this configuration block is merged into a base pyon.yml including common
 # parameters like RabbitMQ and CouchDB blocks.
@@ -46,7 +49,6 @@ app_defaults:
     policy: npreserving
     parameters:
       preserve_n: 1
-      queueing_mode: START_ONLY
 
 # apps included below override the app_defaults block. apps present in the REL
 # but not below use the app_defaults block
@@ -73,4 +75,3 @@ apps:
         scale_down_n_processes: 1
         scale_down_threshold: 2
         scale_up_n_processes: 1
-        queueing_mode: START_ONLY

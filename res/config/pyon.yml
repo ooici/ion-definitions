@@ -293,6 +293,9 @@ service:
   directory:
     default_uispecs_url: "https://userexperience.oceanobservatories.org/database-exports/"
 
+  ingestion:
+    ignore_gaps: false
+
 
 # TODO: Remove (use global flags instead)
 external_data_agent_management:

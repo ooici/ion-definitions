@@ -79,3 +79,5 @@ UserInfoExtension: !Extends_ExtendedInformationResource
   open_requests: [] # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of OPEN
   #@Method=find_user_closed_requests
   closed_requests: [] # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of ACCEPTED or REJECTED
+  #@hasNotification
+  subscriptions: []   # UserNotifications requested by this user, subscriptions to events

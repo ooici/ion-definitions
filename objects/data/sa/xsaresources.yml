@@ -181,6 +181,9 @@ SiteExtension: !Extends_ExtendedInformationResource
   #@hasSite
   sites: []  # The associated parent and child sites
 
+  #@hasModel
+  model: []  #there can be more than one model that a site supports but need to place one model name in the site facepage
+
   #@hasDataProductsForSite
   device_data_products: []  # All the data products produced from devices at this Site and Site data products
 

@@ -532,8 +532,8 @@ AssocInstAgentInstanceInstDevice: !Extends_AssociatedResources
   #@ResourceObject
   #@SubjectType=InstrumentDevice
   associated_resources: []  # Should have one entry if the data product is associated with an instrument device
-  assign_request: !InstrumentAgentInstanceServiceRequest
-  unassign_request: !InstrumentAgentInstanceServiceRequest
+  assign_request: !InstrumentDeviceServiceRequest
+  unassign_request: !InstrumentDeviceServiceRequest
 
 AssocInstAgentInstanceInstAgent: !Extends_AssociatedResources
   #@ResourceType=InstrumentAgent
@@ -543,8 +543,8 @@ AssocInstAgentInstanceInstAgent: !Extends_AssociatedResources
   #@ResourceSubject
   #@ObjectType=InstrumentAgent
   associated_resources: []  # Should have one entry if the data product is associated with an instrument device
-  assign_request: !InstrumentAgentInstanceServiceRequest
-  unassign_request: !InstrumentAgentInstanceServiceRequest
+  assign_request: !InstrumentAgentServiceRequest
+  unassign_request: !InstrumentAgentServiceRequest
 
 ---
 

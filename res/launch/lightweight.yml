@@ -2,6 +2,17 @@ type: launch
 name: lightweight
 version: 0.2
 #############################################################################
+# PYON CONFIGURATION
+#############################################################################
+config:
+  processdispatcher:
+    restart_throttling_config:
+        minimum_time_between_starts: 2
+
+# this configuration block is merged into a base pyon.yml including common
+# parameters like RabbitMQ and CouchDB blocks.
+
+#############################################################################
 ## EXECUTION ENGINES
 ##############################################################################
 
@@ -22,7 +33,6 @@ app_defaults:
     policy: npreserving
     parameters:
       preserve_n: 1
-      queueing_mode: START_ONLY
 
 # apps included below override the app_defaults block. apps present in the REL
 # but not below use the app_defaults block

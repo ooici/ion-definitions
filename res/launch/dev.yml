@@ -49,6 +49,9 @@ config:
   system:
     elasticsearch: true
     smtp: true
+  processdispatcher:
+    restart_throttling_config:
+        minimum_time_between_starts: 2
 
 #############################################################################
 ## EXECUTION ENGINES

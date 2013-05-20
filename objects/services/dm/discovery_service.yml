@@ -56,7 +56,7 @@ methods:
 
   query:
     in: 
-      query: !SearchQuery
+      query: {}
       id_only: True
     out:
       results: {}

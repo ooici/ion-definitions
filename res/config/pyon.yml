@@ -116,6 +116,7 @@ server:
     type: erddap
     host: localhost
     port: 8081
+    dataset_caching: True
   localrouter:
     # In-process router
     type: local

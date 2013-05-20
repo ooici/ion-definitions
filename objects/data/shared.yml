@@ -269,8 +269,7 @@ StreamConfiguration:
   parameter_dictionary_name: ""   # the name of the parameter dictionary that defines the contents of the stream
   records_per_granule: 0          # recommended number of records/samples to place in a single granule
   granule_publish_rate: 0         # max recommended seconds between publishing granules
-  #@ContentType=dict
-  alarms: []                      # list of alarm objects for this stream, currently a list of dicts
+
 ---
 
 # Describes a running or scheduled  agent representing a single device. Abstract base type.

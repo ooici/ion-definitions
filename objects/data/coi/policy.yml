@@ -14,6 +14,7 @@ AbstractPolicyType:
 # Holds a policy access rule for a specific resource
 AccessRulePolicy: !Extends_AbstractPolicyType
   #Contains the text of the Access Policy Rule
+  #@EditSizeHint=Large
   policy_rule: ""
 
 ---

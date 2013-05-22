@@ -11,7 +11,7 @@ version: 0.2
 
 config:
   bootstrap:
-    use_es: true
+    use_es: false
     use_pydap: true
   container:
     filesystem:

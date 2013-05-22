@@ -158,6 +158,7 @@ container:
       priviledged:
     endpoint: # TODO: move entries to here
       rpc_conversation_enabled: True
+      prefetch_count: 1                 # how many messages to prefetch from broker by default
     interceptor: # TODO: move entries to here
     conversation_log:
           header_fields: []

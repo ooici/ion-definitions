@@ -44,3 +44,4 @@ apps:
   bootstrapper3: {}
   parameter_bootstrap: {}
   policy_bootstrap: {}
+  qc_post_processor: {}

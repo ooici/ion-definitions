@@ -111,12 +111,25 @@ server:
     port: 8001
     data_path: RESOURCE:ext/pydap
     datasets_xml_path: RESOURCE:ext/datasets.xml
+    # cache_limit defines the total number of datasets allowed to be cached
+    cache_limit: 2
+    # cache_expiration defines the time limit, in seconds, a dataset is allowed to remain
+    # in the cache.  
+    cache_expiration: 30
+    # Profile and log DAP requests
+    profile_enabled: False
+
   erddap:
     # ERDDAP DAP server and data catalog
     type: erddap
     host: localhost
     port: 8081
+    # Whether ERDDAP should cache the dataset extents or update it per request
+    # recommended setting is True
     dataset_caching: True
+    # How long ERDDAP should cache the dataset extents for (in milliseconds)
+    # recommended setting is at least 30s = 30000
+    refresh_interval: 30000
   localrouter:
     # In-process router
     type: local

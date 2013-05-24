@@ -526,6 +526,28 @@ AssocDataProdDatasets: !Extends_AssociatedResources
   assign_request: !DatasetServiceRequest
   unassign_request: "" #Not currently implemented
 
+AssocInstAgentInstModel: !Extends_AssociatedResources
+  #@ResourceType=InstrumentModel
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasModel
+  #@ResourceSubject
+  #@ObjectType=InstrumentModel
+  associated_resources: []
+  assign_request: !InstrumentModelServiceRequest
+  unassign_request: !InstrumentModelServiceRequest
+
+AssocInstAgentInstAgentInstance: !Extends_AssociatedResources
+  #@ResourceType=InstrumentAgentInstance
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasAgentDefinition
+  #@ResourceObject
+  #@SubjectType=InstrumentAgentInstance
+  associated_resources: []
+  assign_request: !InstrumentAgentInstanceServiceRequest
+  unassign_request: !InstrumentAgentInstanceServiceRequest
+
 AssocInstAgentInstanceInstDevice: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
   #@ResourceSPOFilter=InstrumentDevice,hasAgentInstance,InstrumentAgentInstance
@@ -559,6 +581,16 @@ InstrumentDevicePrepareSupport: !Extends_ResourcePrepareSupport
   update_request: !InstrumentDeviceServiceRequest
   #@ContentType=AssociatedResources
   #@AssociatedResources=AssocInstDeviceInstModels,AssocInstDeviceInstAgentInsts,AssocInstDeviceSensorDevices
+  associations: {}
+
+#This object contains additional information needed to create or update instrument agents
+#@OriginResourceType=InstrumentAgent
+InstrumentAgentPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !InstrumentAgentServiceRequest
+  update_request: !InstrumentAgentServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocInstAgentInstModel,AssocInstAgentInstAgentInstance
   associations: {}
 
 #This object contains additional information needed to create or update instrument agent instances

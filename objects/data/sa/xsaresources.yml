@@ -529,7 +529,7 @@ AssocDataProdDatasets: !Extends_AssociatedResources
 AssocInstAgentInstanceInstDevice: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
   #@ResourceSPOFilter=InstrumentDevice,hasAgentInstance,InstrumentAgentInstance
-  #@ExcludeLifecycleStates=DRAFT,PLANNED
+  #   DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasAgentInstance
   #@ResourceObject
@@ -540,7 +540,7 @@ AssocInstAgentInstanceInstDevice: !Extends_AssociatedResources
 
 AssocInstAgentInstanceInstAgent: !Extends_AssociatedResources
   #@ResourceType=InstrumentAgent
-  #@ExcludeLifecycleStates=DRAFT,PLANNED
+  #  DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasAgentDefinition
   #@ResourceSubject

@@ -242,8 +242,9 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   open_requests: [] # The list of OrgUserNegotiationRequest objects for this org that have a negotiation_status of OPEN
   #@Method=org_management.find_org_closed_negotiations
   closed_requests: [] # The list of OrgUserNegotiationRequest objects for this org that have a negotiation_status of ACCEPTED or REJECTED
-
-
+  # (focus)Org --> hasResource --> PlatformSite(list) / where alt_resource_type = StationSite
+  #@hasResource=PlatformSite
+  station_sites: [] # limit to list of PlatformSites
 
 
 ###################################################################
@@ -343,7 +344,7 @@ MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes
 
  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedOrg.sites
   site_status: !ComputedListValue
-
+  station_status: !ComputedListValue
   communications_status_roll_up: !ComputedIntValue    # DeviceStatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   power_status_roll_up: !ComputedIntValue             # DeviceStatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN
   data_status_roll_up: !ComputedIntValue              # DeviceStatusType: STATUS_OK, STATUS_WARNING, STATUS_CRITICAL, STATUS_UNKNOWN

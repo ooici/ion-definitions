@@ -469,7 +469,7 @@ AssocPlatDevicePlatAgentInstances: !Extends_AssociatedResources
 AssocPlatDeviceInstDevices: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
   #@ResourceSPOFilter=PlatformDevice,hasDevice,InstrumentDevice
-  #@ExcludeLifecycleStates=DRAFT,PLANNED
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasDevice
   #@ResourceSubject
@@ -481,7 +481,7 @@ AssocPlatDeviceInstDevices: !Extends_AssociatedResources
 AssocDataProdInstDevices: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
   #@ResourceSPOFilter=InstrumentDevice,hasOutputProduct,DataProduct
-  #@ExcludeLifecycleStates=DRAFT,PLANNED
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasOutputProduct
   #@ResourceObject
@@ -494,7 +494,7 @@ AssocDataProdInstDevices: !Extends_AssociatedResources
 AssocDataProdPlatDevices: !Extends_AssociatedResources
   #@ResourceType=PlatformDevice
   #@ResourceSPOFilter=PlatformDevice,hasOutputProduct,DataProduct
-  #@ExcludeLifecycleStates=DRAFT,PLANNED
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasOutputProduct
   #@ResourceObject
@@ -505,7 +505,7 @@ AssocDataProdPlatDevices: !Extends_AssociatedResources
 
 AssocDataProdStreamDefs: !Extends_AssociatedResources
   #@ResourceType=StreamDefinition
-  #@ExcludeLifecycleStates=DRAFT,PLANNED
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasStreamDefinition
   #@ResourceSubject
@@ -517,7 +517,7 @@ AssocDataProdStreamDefs: !Extends_AssociatedResources
 AssocDataProdDatasets: !Extends_AssociatedResources
   #@ResourceType=Dataset
   #@ResourceSPOFilter=DataProduct,hasDataset,Dataset
-  #@ExcludeLifecycleStates=DRAFT,PLANNED
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasDataset
   #@ResourceSubject

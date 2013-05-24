@@ -452,17 +452,18 @@ AssocPlatDevicePlatModels: !Extends_AssociatedResources
   assign_request: !PlatformModelServiceRequest
   unassign_request: !PlatformModelServiceRequest
 
-#Note that this association definition is different, in that it is representing the associations between
-#InstrumentAgents and InstrumentModels
-AssocPlatModelPlatAgents: !Extends_AssociatedResources
-  #@ResourceType=PlatformAgent
+AssocPlatDevicePlatAgentInstances: !Extends_AssociatedResources
+  #@ResourceType=PlatformAgentInstance
   resources: []
-  #@Association=hasModel
-  #@SubjectType=PlatformAgent
-  #@ObjectType=PlatformModel
-  associated_resources: []   # The set of hasModel Associations between models and agents
-  assign_request: ""
-  unassign_request: ""
+  #@Association=hasAgentInstance
+  #@ResourceSubject
+  #@ObjectType=PlatformAgentInstance
+  associated_resources: []
+  assign_request: !PlatformAgentInstanceServiceRequest
+  unassign_request: !PlatformAgentInstanceServiceRequest
+  # grouping, by PlatformModel id, of PAIs (via PA->PM association)
+  # this is all done in IMS.prepare_platform_device_support
+  group: {}
 
 AssocPlatDeviceInstDevices: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
@@ -578,7 +579,7 @@ PlatformDevicePrepareSupport: !Extends_ResourcePrepareSupport
   create_request: !PlatformDeviceServiceRequest
   update_request: !PlatformDeviceServiceRequest
   #@ContentType=AssociatedResources
-  #@AssociatedResources=AssocPlatDevicePlatModels,AssocPlatModelPlatAgents,AssocPlatDeviceInstDevices
+  #@AssociatedResources=AssocPlatDevicePlatModels,AssocPlatDevicePlatAgentInstances,AssocPlatDeviceInstDevices
   associations: {}
 
 

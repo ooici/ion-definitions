@@ -82,8 +82,29 @@ execution_engines:
       unique_values: ${gateway_ddns_hosts}
     replicas: 2
     slots: 1
+  instrument_agent:
+    base_need: 1
+    replicas: 4
+    slots: 5
+  ingestion_worker:
+    base_need: 1
+    replicas: 4
+    slots: 5
 
 default_execution_engine: default
+
+# mappings from process module paths to execution engine names. Process
+# # schedule requests which do not have an execution engine specified are
+# # matched against these mappings. Module paths are inherited, so for example
+# # "a.b" matches "a.b" and "a.b.c" and so forth. Matches are greedy.
+# process_engines:
+#   ion.services.something: some_other_engine
+#     ion.services.something.or_other: services
+process_engines:
+  ion.processes.data.ingestion: ingestion_worker
+  ion.agents.instrument: instrument_agent
+  ion.agents.platform: instrument_agent
+  ion.agents.data: instrument_agent
 
 #############################################################################
 #  APPS

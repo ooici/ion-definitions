@@ -9,13 +9,21 @@ load_sequence:
       scenario: OOIR2
       path: master
 
-  - name: load_instrument_scenarios
+  - name: load_parameter_scenarios
     docstring:
     config:
       op: load
-      scenario: CTDBP,PREST
-      ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+      scenario: BETA
+      path: master
+      categories: ParameterFunctions,ParameterDefs,ParameterDictionary
+      clearcols: owner_id,org_ids
 
+  - name: load_OOIR2_agents
+    docstring:
+    config:
+      op: load
+      scenario: OOIR2_I
+      path: master
 
   - name: load_ooi_assets
     docstring:
@@ -26,4 +34,13 @@ load_sequence:
       bulk: True
       debug: True
       ooiuntil: "9/1/2013"
-      #ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+      #excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+
+  - name: load_OOIR2_demo
+    docstring:
+    config:
+      op: load
+      scenario: OOIR2_X
+      path: master
+      debug: True
+      revert: True

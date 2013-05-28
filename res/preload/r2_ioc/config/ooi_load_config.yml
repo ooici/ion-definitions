@@ -18,4 +18,4 @@ load_sequence:
       bulk: False
       debug: False
       ooiuntil: "9/1/2013"
-      ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+      excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition

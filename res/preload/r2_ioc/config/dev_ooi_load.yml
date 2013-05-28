@@ -35,6 +35,7 @@ load_sequence:
       debug: True
       ooiuntil: "9/1/2013"
       #excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+      revert: True
 
   - name: load_OOIR2_demo
     docstring:

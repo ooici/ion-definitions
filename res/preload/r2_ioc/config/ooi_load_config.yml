@@ -2,12 +2,32 @@
 
 load_sequence:
 
+  - name: load_OOIR2_ui
+    docstring:
+    config:
+      op: loadui
+      ui_path: 'https://userexperience.oceanobservatories.org/database-exports/Stable'
+      attachments: res/preload/r2_ioc/attachments
+
   - name: load_OOIR2_scenario
     docstring:
     config:
       op: load
       scenario: OOIR2
-      path: master
+
+  - name: load_parameter_scenarios
+    docstring:
+    config:
+      op: load
+      scenario: BETA
+      categories: ParameterFunctions,ParameterDefs,ParameterDictionary
+      clearcols: owner_id,org_ids
+
+  - name: load_OOIR2_agents
+    docstring:
+    config:
+      op: load
+      scenario: OOIR2_I
 
   - name: load_ooi_assets
     docstring:
@@ -15,7 +35,11 @@ load_sequence:
       op: load
       loadooi: True
       assets: res/preload/r2_ioc/ooi_assets
-      bulk: False
-      debug: False
       ooiuntil: "9/1/2013"
-      excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+      #excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
+
+  - name: load_OOIR2_demo
+    docstring:
+    config:
+      op: load
+      scenario: OOIR2_X

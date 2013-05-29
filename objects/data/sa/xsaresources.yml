@@ -71,6 +71,8 @@ DataProductExtension: !Extends_ExtendedInformationResource
   provenance_product_list: []
 
   data_ingestion_datetime: ""
+  #@hasSource=InstrumentDevice
+  source_device: !InstrumentDevice
 
 ---
 

@@ -83,11 +83,11 @@ execution_engines:
     replicas: 2
     slots: 1
   instrument_agent:
-    base_need: 1
+    base_need: 2
     replicas: 4
     slots: 5
   ingestion_worker:
-    base_need: 1
+    base_need: 2
     replicas: 4
     slots: 5
 

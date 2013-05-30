@@ -194,6 +194,8 @@ SiteExtension: !Extends_ExtendedInformationResource
   instruments_operational: []  # instruments are deployed with lifecycle state of Active and execution state of Operational
   # added by OMS.get_site_extension
   deployment_info: {}
+  # for display in portals table, co-indexed with sites
+  portal_instruments: []
 
 
 ---
@@ -283,7 +285,7 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   rsn_network_rollup: !ComputedDictValue
 
   # defined in InstrumentManagementService.get_platform_extension
-  portal_status: []
+  portal_status: !ComputedListValue
 
 
 ---
@@ -331,7 +333,7 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
   platform_component_sites: !ComputedListValue  # == "PlatformComponentSite"
 
   instrument_sites: !ComputedListValue          #lists all instrumentSite children
-
+  portal_status: !ComputedListValue
 
 ---
 

@@ -1,0 +1,10 @@
+# This file configures the UI candidate import
+
+load_sequence:
+
+  - name: load_OOIR2_ui
+    docstring: Loads the UI definition
+    config:
+      op: loadui
+      ui_path: 'https://userexperience.oceanobservatories.org/database-exports/Candidates'
+      attachments: res/preload/r2_ioc/attachments

@@ -212,6 +212,8 @@ container:
 # TODO: Rename to "container". See there.
 cc:
   timeout:
+    # Apparently 10.0 is not enough to start a listener...
+    start_listener: 30.0
     shutdown: 30.0
     heartbeat: 30.0
     heartbeat_proc_time_threshold: 600.0

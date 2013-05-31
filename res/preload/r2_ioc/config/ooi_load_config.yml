@@ -24,7 +24,7 @@ load_sequence:
       clearcols: owner_id,org_ids
 
   - name: load_OOIR2_agents
-    docstring: Loads OOI agent definitions
+    docstring: Loads OOI agent definitions, needed for OOI asset preload
     config:
       op: load
       scenario: OOIR2_I
@@ -36,3 +36,4 @@ load_sequence:
       loadooi: True
       assets: res/preload/r2_ioc/ooi_assets
       ooiuntil: "9/1/2013"
+      ooiparams: True

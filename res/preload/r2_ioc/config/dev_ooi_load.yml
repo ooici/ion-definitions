@@ -8,7 +8,6 @@ load_sequence:
       op: load
       scenario: OOIR2
       path: master
-      revert: True
 
   - name: load_parameter_scenarios
     docstring:
@@ -18,7 +17,6 @@ load_sequence:
       path: master
       categories: ParameterFunctions,ParameterDefs,ParameterDictionary,StreamDefinition
       clearcols: owner_id,org_ids
-      revert: True
 
   - name: load_OOIR2_agents
     docstring:
@@ -26,7 +24,6 @@ load_sequence:
       op: load
       scenario: OOIR2_I
       path: master
-      revert: True
 
   - name: load_ooi_assets
     docstring:
@@ -38,6 +35,7 @@ load_sequence:
       bulk: True
       debug: True
       ooiuntil: "9/1/2013"
+      ooiparams: True
       #excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
       revert: True
 
@@ -45,7 +43,7 @@ load_sequence:
     docstring:
     config:
       op: load
-      scenario: OOIR2_X
+      scenario: OOIR2_DEMO
       path: master
       debug: True
       revert: True

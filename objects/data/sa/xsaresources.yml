@@ -228,7 +228,7 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   sites: []
   #@hasResource=Deployment
   deployments: []
-  #@hasMembershipInfo
+  #@Method=org_management.find_enrolled_users
   members: [] # The list of User Info objects
   #@hasRole
   roles: [] # The set of User Roles available in this Observatory

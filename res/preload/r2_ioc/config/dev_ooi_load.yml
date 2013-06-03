@@ -15,7 +15,7 @@ load_sequence:
       op: load
       scenario: BETA
       path: master
-      categories: ParameterFunctions,ParameterDefs,ParameterDictionary
+      categories: ParameterFunctions,ParameterDefs,ParameterDictionary,StreamDefinition
       clearcols: owner_id,org_ids
 
   - name: load_OOIR2_agents
@@ -30,10 +30,12 @@ load_sequence:
     config:
       op: load
       loadooi: True
+      path: master
       assets: res/preload/r2_ioc/ooi_assets
       bulk: True
       debug: True
       ooiuntil: "9/1/2013"
+      ooiparams: True
       #excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
       revert: True
 
@@ -41,7 +43,8 @@ load_sequence:
     docstring:
     config:
       op: load
-      scenario: OOIR2_X
+      scenario: OOIR2_DEMO
       path: master
       debug: True
       revert: True
+      idmap: True

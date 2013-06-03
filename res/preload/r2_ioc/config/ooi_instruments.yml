@@ -1,0 +1,12 @@
+# This file configures the official OOI instrument import
+
+load_sequence:
+
+  - name: load_OOIR2_ctdbp
+    docstring: Load physical instrument sites, devices and agent instance definitions
+    config:
+      op: load
+      path: master
+      scenario: CTDBP,PRESF,PREST,TMPSF,VEL3D_B
+      idmap: True
+      excludecategories: InstrumentAgent,InstrumentModel

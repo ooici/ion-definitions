@@ -313,6 +313,9 @@ service:
   ingestion:
     ignore_gaps: false
 
+  discovery:
+    search_buffer_size: 1048576
+
 
 # TODO: Remove (use global flags instead)
 external_data_agent_management:

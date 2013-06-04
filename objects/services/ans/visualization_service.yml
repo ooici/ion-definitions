@@ -58,5 +58,13 @@ methods:
     throws:
       NotFound: Throws if specified data product id does not exist
 
-
-
+  get_visualization_image:
+    docstring: |
+      This operation returns a computed image for a data product
+    in:
+      data_product_id: ""
+      visualization_parameters: {}
+    out:
+      image_info: {}
+    throws:
+      NotFound: Throws if specified data product id does not exist

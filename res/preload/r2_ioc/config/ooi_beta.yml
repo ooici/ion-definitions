@@ -52,7 +52,6 @@ load_sequence:
     docstring: Specialize for beta (port agent addresses in InstrumentAgentInstance)
     config:
       op: load
-      path: master
       scenario: OOIR2_BETA
 
 
@@ -61,7 +60,6 @@ load_sequence:
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      path: master
-      scenario: CTDBP,PRESF,PREST,TMPSF,VEL3D_B
+      scenario: PRESF,PREST,TMPSF
       idmap: True
       excludecategories: InstrumentAgent,InstrumentModel

@@ -1,4 +1,4 @@
-# This file configures the OOI alpha instance configuration
+# This file configures preload to load the OOI demo without the OOI assets
 
 load_sequence:
 
@@ -30,36 +30,16 @@ load_sequence:
       op: load
       scenario: OOIR2_I
 
-  - name: load_ooi_assets
-    docstring: Main OOI preload fed by SAF and OOI preload spreadsheet shources
+  - name: load_OOIR2_manual
+    docstring: Creates a few assets that would otherwise be created by the OOI preload
     config:
       op: load
-      loadooi: True
-      assets: res/preload/r2_ioc/ooi_assets
-      ooiuntil: "9/1/2013"
-      ooiparams: True
+      scenario: OOIR2_M
+      path: master
 
-
-  # THIS IS THE ACTUAL ALPHA SPECIALIZATION
   - name: load_OOIR2_demo
     docstring: Some simulators with data products
     config:
       op: load
       scenario: OOIR2_DEMO
       idmap: True
-
-  - name: load_OOIR2_alpha
-    docstring: Specialize for alpha (port agent addresses in InstrumentAgentInstance)
-    config:
-      op: load
-      scenario: OOIR2_ALPHA
-
-
-  # Copied from ooi_instruments.yml
-  - name: load_OOIR2_instruments
-    docstring: Load physical instrument sites, devices and agent instance definitions
-    config:
-      op: load
-      scenario: CTDBP,VEL3D_B
-      idmap: True
-      excludecategories: InstrumentAgent,InstrumentModel

@@ -15,7 +15,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
   #@hasCommitment
   commitments: [] # list of resource commitments 
   # added by IMS.get_{instrument,platform}_device_extension
-  deployment_info: {}
+  deployment_info: []
 
 ---
 
@@ -228,6 +228,8 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   sites: []
   #@hasResource=Deployment
   deployments: []
+  #
+  deployment_info: []
   #@Method=org_management.find_enrolled_users
   members: [] # The list of User Info objects
   #@hasRole

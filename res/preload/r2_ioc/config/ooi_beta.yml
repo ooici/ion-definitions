@@ -62,6 +62,6 @@ load_sequence:
     config:
       op: load
       path: master
-      scenario: CTDBP,PRESF,PREST,TMPSF,VEL3D_B
+      scenario: PRESF,PREST,TMPSF
       idmap: True
       excludecategories: InstrumentAgent,InstrumentModel

@@ -1,0 +1,45 @@
+# This file configures preload to load the OOI demo without the OOI assets
+
+load_sequence:
+
+  # Copied from ooi_load_config.yml
+  - name: load_OOIR2_ui
+    docstring: Loads the UI definition
+    config:
+      op: loadui
+      ui_path: 'https://userexperience.oceanobservatories.org/database-exports/Candidates'
+      attachments: res/preload/r2_ioc/attachments
+
+  - name: load_OOIR2_scenario
+    docstring: Loads the basic OOI resources, such as Orgs, Users etc
+    config:
+      op: load
+      scenario: OOIR2
+
+  - name: load_parameter_scenarios
+    docstring: Loads basic shared parameter and stream resources
+    config:
+      op: load
+      scenario: BETA
+      categories: ParameterFunctions,ParameterDefs,ParameterDictionary,StreamDefinition
+      clearcols: owner_id,org_ids
+
+  - name: load_OOIR2_agents
+    docstring: Loads OOI agent definitions, needed for OOI asset preload
+    config:
+      op: load
+      scenario: OOIR2_I
+
+  - name: load_OOIR2_manual
+    docstring: Creates a few assets that would otherwise be created by the OOI preload
+    config:
+      op: load
+      scenario: OOIR2_M
+      path: master
+
+  - name: load_OOIR2_demo
+    docstring: Some simulators with data products
+    config:
+      op: load
+      scenario: OOIR2_DEMO
+      idmap: True

@@ -240,6 +240,8 @@ interceptor:
         enabled: true
     encode:
       class: pyon.core.interceptor.encode.EncodeInterceptor
+      config:
+        max_message_size: 20000000
     governance:
       class: pyon.core.governance.governance_interceptor.GovernanceInterceptor
       config:

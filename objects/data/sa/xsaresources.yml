@@ -486,7 +486,7 @@ AssocPlatDeviceInstDevices: !Extends_AssociatedResources
 
 AssocDataProdInstDevices: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
-  #@ResourceSPOFilter=InstrumentDevice,hasOutputProduct,DataProduct
+  # DO NOT ResourceSPOFilter=InstrumentDevice,hasOutputProduct,DataProduct
   # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasOutputProduct
@@ -495,7 +495,6 @@ AssocDataProdInstDevices: !Extends_AssociatedResources
   associated_resources: []  # Should have one entry if the data product is associated with an instrument device
   assign_request: !InstrumentDeviceServiceRequest
   unassign_request: !InstrumentDeviceServiceRequest
-
 
 AssocDataProdPlatDevices: !Extends_AssociatedResources
   #@ResourceType=PlatformDevice

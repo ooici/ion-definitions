@@ -484,7 +484,8 @@ AssocPlatDeviceInstDevices: !Extends_AssociatedResources
   assign_request: !InstrumentDeviceServiceRequest
   unassign_request: !InstrumentDeviceServiceRequest
 
-AssocDataProdInstDevices: !Extends_AssociatedResources
+#@Key=InstrumentDeviceHasOutputProduct
+AssocDataProdInstDevicesHasOutputProduct: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
   # DO NOT ResourceSPOFilter=InstrumentDevice,hasOutputProduct,DataProduct
   # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
@@ -492,9 +493,20 @@ AssocDataProdInstDevices: !Extends_AssociatedResources
   #@Association=hasOutputProduct
   #@ResourceObject
   #@SubjectType=InstrumentDevice
-  associated_resources: []  # Should have one entry if the data product is associated with an instrument device
+  associated_resources: []  # Should have one entry if the data product is associated with an instrument device (hasOutputProduct)
   assign_request: !InstrumentDeviceServiceRequest
   unassign_request: !InstrumentDeviceServiceRequest
+
+#@Key=InstrumentDeviceHasSource
+AssocDataProdInstDevicesHasSource: !Extends_AssociatedResources
+  #@ResourceType=InstrumentDevice
+  resources: []
+  #@ResourceSubject
+  #@Association=hasSource
+  #@ObjectType=InstrumentDevice
+  associated_resources: []  # Should have 1 or more entry if the data product is associated with an instrument device (hasSource)
+  assign_request: !DataProductServiceRequest
+  unassign_request: !DataProductServiceRequest
 
 AssocDataProdPlatDevices: !Extends_AssociatedResources
   #@ResourceType=PlatformDevice
@@ -630,7 +642,7 @@ DataProductPrepareSupport: !Extends_ResourcePrepareSupport
   activate_request: !DataProductServiceRequest
   deactivate_request: !DataProductServiceRequest
   #@ContentType=AssociatedResources
-  #@AssociatedResources=AssocDataProdStreamDefs,AssocDataProdDatasets,AssocDataProdInstDevices,AssocDataProdPlatDevices
+  #@AssociatedResources=AssocDataProdStreamDefs,AssocDataProdDatasets,AssocDataProdInstDevicesHasOutputProduct,AssocDataProdInstDevicesHasSource,AssocDataProdPlatDevices
   associations: {}
 
 

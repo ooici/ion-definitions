@@ -260,9 +260,3 @@ apps:
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     bootlevel: 30
 
-
-  - name: sine_wave_generator
-    processapp: [sine_wave_generator, ion.processes.data.vis_stream_launcher, VisStreamLauncher]
-    config:
-      name: sine_wave_generator
-      dataset: sinusoidal

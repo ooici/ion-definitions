@@ -172,6 +172,15 @@ apps:
           preserve_n: 1
           queueing_mode: START_ONLY
 
+  # vis_user_queue_monitor is a process that monitors user queues created by the visualization
+  # service for realtime data views. If the queues are left unattanded and cross a certain limit,
+  # they are deleted
+  vis_user_queue_monitor:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+
   # gateway uses special engine
   service_gateway:
     ha:

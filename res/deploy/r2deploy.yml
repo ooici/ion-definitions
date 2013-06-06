@@ -173,13 +173,14 @@ apps:
     processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
     bootlevel: 10
 
-  - name: visualization_service
+  - name: visualization
     description: Responsible managing visualization data
     version: 0.1
-    processapp: [visualization_service, ion.services.ans.visualization_service, VisualizationService]
+    processapp: [visualization, ion.services.ans.visualization_service, VisualizationService]
     bootlevel: 10
     config:
       create_workflow_timeout: 240
+      terminate_workflow_timeout: 120
 
   - name: bootstrapper3
     processapp: [bootstrapper3, ion.processes.bootstrap.bootstrapper, Bootstrapper]
@@ -243,6 +244,13 @@ apps:
     processapp: [lightweight_pydap, ion.processes.data.externalization.lightweight_pydap, LightweightPyDAP]
     bootlevel: 30
 
+  - name: vis_user_queue_monitor
+    processapp: [vis_user_queue_monitor, ion.processes.data.visualization.vis_user_queue_monitor, VisUserQueueMonitor]
+    bootlevel: 30
+    config:
+      user_queue_monitor_timeout: 300
+      user_queue_monitor_size: 100
+
   # LAST SERVICE GATEWAY SERVICE
   #
   # Note the use of node_exclusive policy parameter. This is to prevent multiple
@@ -252,3 +260,9 @@ apps:
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     bootlevel: 30
 
+
+  - name: sine_wave_generator
+    processapp: [sine_wave_generator, ion.processes.data.vis_stream_launcher, VisStreamLauncher]
+    config:
+      name: sine_wave_generator
+      dataset: sinusoidal

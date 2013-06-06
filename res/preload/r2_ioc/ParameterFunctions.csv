@@ -33,7 +33,7 @@ LC_TEST,PFID16,,extended_calibrated_temperature,TEST,,NumexprFunction,lookup1 + 
 BASE,PFID17,,global_range_test,,,PythonFunction,dataqc_globalrangetest_minmax,ion_functions.qc.qc_functions,"['dat','dat_min','dat_max']",,,
 LC_TEST,PFID18,,dataqc_localrangetest,,,PythonFunction,dataqc_localrangetest,ion_functions.qc.qc_functions,"['dat','z','datlim','datlimz']",,,
 BASE,PFID19,,dataqc_spiketest,,,PythonFunction,dataqc_spiketest_wrapper,ion_functions.qc.qc_functions,"['dat','acc','N','L']",,,
-BASE,PFID20,,dataqc_polytrendtest,,,PythonFunction,dataqc_polytrendtest,ion_functions.qc.qc_functions,"['dat','t','ord_n','ntsd']",,,
+BASE,PFID20,,dataqc_polytrendtest,,,PythonFunction,dataqc_polytrendtest_wrapper,ion_functions.qc.qc_functions,"['dat','t','ord_n','ntsd']",,,
 BASE,PFID21,,dataqc_stuckvaluetest,,,PythonFunction,dataqc_stuckvaluetest_wrapper,ion_functions.qc.qc_functions,"['x','reso','num']",,,
 BASE,PFID22,,dataqc_gradienttest,,,PythonFunction,dataqc_gradienttest_wrapper,ion_functions.qc.qc_functions,"['dat','x','ddatdx','mindx','startdat','toldat']",,,
 LC_TEST,PFID23,,dataqc_solarelevation,,,PythonFunction,dataqc_solarelevation,ion_functions.qc.qc_functions,"['lon','lat','dt']",,,

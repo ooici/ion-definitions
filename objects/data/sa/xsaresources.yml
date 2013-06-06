@@ -130,7 +130,7 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 # This object contains additional information associated with an instrument device.
 #@OriginResourceType=PlatformDevice
 PlatformDeviceExtension: !Extends_DeviceExtension
-  #@hasDevice=PlatformDevice
+
   platforms: []  # The list of child platform devices
 
   #@hasModel

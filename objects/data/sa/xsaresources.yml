@@ -165,6 +165,9 @@ SiteExtension: !Extends_ExtendedInformationResource
 
   parent_site: !Site      # The immediate parent of this site (if any)
 
+  #@hasModel
+  model: []  #there can be more than one model that a site supports but need to place one model name in the site facepage
+
   instrument_devices: []  # All InstrumentDevices associated to this site or any child site
 
   instrument_models: []   # The associated Instrument models
@@ -175,29 +178,22 @@ SiteExtension: !Extends_ExtendedInformationResource
 
   deployments: []         # All Deployments associated to any parent or child site
 
+  deployment_info: []     # Additional information for all in deployments
+
   data_products: []       # All DataProducts associated to this site or any child site via hasSource
 
-  #@hasSite
   sites: []               # The associated direct child sites
 
-  #@hasModel
-  model: []  #there can be more than one model that a site supports but need to place one model name in the site facepage
-
-  #@hasDataProductsForSite
-  device_data_products: []  # All the data products produced from devices at this Site and Site data products
-
-  # added by OMS.get_site_extension
-  deployment_info: {}
-
-  # for display in portals table, co-indexed with sites
-  portal_instruments: []
+  sites_devices: []       # InstrumentDevice/PlatformDevice (primary) objects or None co-indexed with sites
+  portal_instruments: []  # DEPRECATED - alias for sites_devices
 
   # list all child PlatformSite with the following alt_resource_type:
-  platform_station_sites: !ComputedListValue    # == "StationSite"
-  platform_assembly_sites: !ComputedListValue   # == "PlatformAssemblySite"
-  platform_component_sites: !ComputedListValue  # == "PlatformComponentSite"
+  platform_station_sites: []    # == "StationSite"
+  platform_assembly_sites: []   # == "PlatformAssemblySite"
+  platform_component_sites: []  # == "PlatformComponentSite"
 
-  instrument_sites: !ComputedListValue          #lists all instrumentSite children
+  instrument_sites: !ComputedListValue   # all InstrumentSite children
+
 
 # Computed attributes for a Site (abstract type)
 SiteComputedAttributes: !Extends_TaskableComputedAttributes

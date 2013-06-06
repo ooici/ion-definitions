@@ -152,6 +152,9 @@ ExtendedResource: !Extends_ResourceContainer
 
 #A base object for associations between resources
 AssociatedResources:
+  # key to be used for prepare associations in case of multiple assocs with same resource type
+  # set via @Key decorator, by default will use resource_type value
+  key: ""
   resource_type: ""
   multiple_associations: False
 

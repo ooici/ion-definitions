@@ -15,7 +15,7 @@ DeviceExtension: !Extends_ExtendedInformationResource
   #@hasCommitment
   commitments: [] # list of resource commitments 
   # added by IMS.get_{instrument,platform}_device_extension
-  deployment_info: {}
+  deployment_info: []
 
 ---
 
@@ -130,8 +130,8 @@ NotificationRequestExtension: !Extends_ExtendedInformationResource
 # This object contains additional information associated with an instrument device.
 #@OriginResourceType=PlatformDevice
 PlatformDeviceExtension: !Extends_DeviceExtension
-  #@hasDevice=PlatformSite
-  platforms: []  # The list of child platforms
+
+  platforms: []  # The list of child platform devices
 
   #@hasModel
   platform_model: !PlatformModel  # The associated Platform Model
@@ -228,6 +228,8 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   sites: []
   #@hasResource=Deployment
   deployments: []
+  #
+  deployment_info: []
   #@Method=org_management.find_enrolled_users
   members: [] # The list of User Info objects
   #@hasRole
@@ -482,18 +484,29 @@ AssocPlatDeviceInstDevices: !Extends_AssociatedResources
   assign_request: !InstrumentDeviceServiceRequest
   unassign_request: !InstrumentDeviceServiceRequest
 
-AssocDataProdInstDevices: !Extends_AssociatedResources
+#@Key=InstrumentDeviceHasOutputProduct
+AssocDataProdInstDevicesHasOutputProduct: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
-  #@ResourceSPOFilter=InstrumentDevice,hasOutputProduct,DataProduct
+  # DO NOT ResourceSPOFilter=InstrumentDevice,hasOutputProduct,DataProduct
   # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
   resources: []
   #@Association=hasOutputProduct
   #@ResourceObject
   #@SubjectType=InstrumentDevice
-  associated_resources: []  # Should have one entry if the data product is associated with an instrument device
+  associated_resources: []  # Should have one entry if the data product is associated with an instrument device (hasOutputProduct)
   assign_request: !InstrumentDeviceServiceRequest
   unassign_request: !InstrumentDeviceServiceRequest
 
+#@Key=InstrumentDeviceHasSource
+AssocDataProdInstDevicesHasSource: !Extends_AssociatedResources
+  #@ResourceType=InstrumentDevice
+  resources: []
+  #@ResourceSubject
+  #@Association=hasSource
+  #@ObjectType=InstrumentDevice
+  associated_resources: []  # Should have 1 or more entry if the data product is associated with an instrument device (hasSource)
+  assign_request: !DataProductServiceRequest
+  unassign_request: !DataProductServiceRequest
 
 AssocDataProdPlatDevices: !Extends_AssociatedResources
   #@ResourceType=PlatformDevice
@@ -629,7 +642,7 @@ DataProductPrepareSupport: !Extends_ResourcePrepareSupport
   activate_request: !DataProductServiceRequest
   deactivate_request: !DataProductServiceRequest
   #@ContentType=AssociatedResources
-  #@AssociatedResources=AssocDataProdStreamDefs,AssocDataProdDatasets,AssocDataProdInstDevices,AssocDataProdPlatDevices
+  #@AssociatedResources=AssocDataProdStreamDefs,AssocDataProdDatasets,AssocDataProdInstDevicesHasOutputProduct,AssocDataProdInstDevicesHasSource,AssocDataProdPlatDevices
   associations: {}
 
 

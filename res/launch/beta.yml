@@ -15,6 +15,7 @@ config:
     use_pydap: true
   container:
     filesystem:
+      root: /ion-beta
       cache: /ion-beta/r2/data/ion/run/cache
       force_clean: false
       library: /ion-beta/r2/data/ion/lib

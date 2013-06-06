@@ -15,6 +15,7 @@ config:
     use_pydap: true
   container:
     filesystem:
+      root: /ion-stage
       cache: /ion-stage/r2/data/ion/run/cache
       force_clean: false
       library: /ion-stage/r2/data/ion/lib

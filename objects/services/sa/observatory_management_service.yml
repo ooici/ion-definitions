@@ -629,21 +629,23 @@ methods:
 
   get_sites_devices_status:
     docstring: |
-      For a given parent resource id, compute related sites (child sites, parent sites),
+      For a given parent resource id input list, compute related sites (child sites, parent sites),
       related devices (if requested), and site/device status (if requested). The content is provided
       for all higher parent and child sites of given parent id.
-      The result is a dict that has the following keys in it:
+      The result is a dict is a set of dicts for each site in the input site where each value dict  has the following keys in it:
       - site_resources: dict with key site id, value Site resource object or None of id_only==True
       - site_children: dict with key site/org id, value list of site ids for children
       - site_devices: dict with key site id, value list of (site type, device id, device type) tuples
       - device_resources: dict with key device id, value Device resource object
       - site_status: dict with key site id, status dict (containing keys agg, power, comms, data, loc)
     in:
-      parent_resource_id: ""
+      parent_resource_ids: []
+      include_sites: False
       include_devices: False
       include_status: False
     out:
       result: {}
+
 
   find_site_data_products:
     docstring: |

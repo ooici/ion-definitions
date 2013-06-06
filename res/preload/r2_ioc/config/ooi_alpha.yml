@@ -52,7 +52,6 @@ load_sequence:
     docstring: Specialize for alpha (port agent addresses in InstrumentAgentInstance)
     config:
       op: load
-      path: master
       scenario: OOIR2_ALPHA
 
 
@@ -61,7 +60,6 @@ load_sequence:
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      path: master
       scenario: CTDBP,VEL3D_B
       idmap: True
       excludecategories: InstrumentAgent,InstrumentModel

@@ -199,7 +199,6 @@ SiteExtension: !Extends_ExtendedInformationResource
 
   instrument_sites: !ComputedListValue          #lists all instrumentSite children
 
-
 # Computed attributes for a Site (abstract type)
 SiteComputedAttributes: !Extends_TaskableComputedAttributes
   #@Method
@@ -330,12 +329,7 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   # defined in InstrumentManagementService.get_platform_extension
   portal_status: !ComputedListValue
 
-
 ---
-
-
----
-
 
 #Computed attributes for a data product
 MarineFacilityOrgComputedAttributes: !Extends_ComputedAttributes

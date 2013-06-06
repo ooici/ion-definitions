@@ -259,7 +259,7 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   sensor_devices: []  # list of sensors attached to this device
 
   #@hasDevice=InstrumentSite
-  deployed_site: !InstrumentSite  # The current site where this device is deployed as primary
+  deployed_site: []  # The current site where this device is deployed as primary
 
 # Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
@@ -296,7 +296,7 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   sensor_devices: []  # list of sensors attached to this device
 
   #@hasDevice=PlatformSite
-  deployed_site: !PlatformSite  # The current site where this device is deployed as primary
+  deployed_site: []  # The current site where this device is deployed as primary
 
   #@hasPortalForDevice=InstrumentSite
   portals: []  # NOTE: this compound association fails; see bug OOIION-948

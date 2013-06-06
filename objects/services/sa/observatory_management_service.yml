@@ -639,7 +639,7 @@ methods:
       - device_resources: dict with key device id, value Device resource object
       - site_status: dict with key site id, status dict (containing keys agg, power, comms, data, loc)
     in:
-      parent_resource_id: []
+      parent_resource_ids: []
       include_sites: False
       include_devices: False
       include_status: False

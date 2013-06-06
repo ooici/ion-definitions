@@ -4,22 +4,13 @@ ComputedGeospatialBoundsValue: !Extends_ComputedValue
 
 ---
 
-# This object contains additional information associated with an instrument device.
-DeviceExtension: !Extends_ExtendedInformationResource
-  #@hasSource
-  data_products: [] # A list of associated data products
-  #@hasDeployment
-  deployments: []  # list of deployment resources to which to which this device is attached
-  #@hasAgentInstance
-  agent_instance: !AgentInstance
-  #@hasCommitment
-  commitments: [] # list of resource commitments 
-  # added by IMS.get_{instrument,platform}_device_extension
-  deployment_info: []
+# This object contains additional information associated with a request for notification.
+#@OriginResourceType=NotificationRequest
+NotificationRequestExtension: !Extends_ExtendedInformationResource
+  #@hasNotification=UserInfo
+  user_info: !UserInfo  # The associated user
 
 ---
-
-
 
 ####################################################################
 #
@@ -93,110 +84,80 @@ DeploymentExtension: !Extends_ExtendedInformationResource
   platform_models: []  # The associated models
 ---
 
-# This object contains additional information associated with a instrument or platform model.
-#@OriginResourceType=DeviceModel
-DeviceModelExtension: !Extends_ExtendedInformationResource
-  #@hasModel
-  devices: []  # The associated device instances
-
----
-
-# This object contains additional information associated with an instrument device.
-#@OriginResourceType=InstrumentDevice
-InstrumentDeviceExtension: !Extends_DeviceExtension
-  #@hasModel
-  instrument_model: !InstrumentModel  # The associated Instrument Model
-  #@hasAgentForDevice=InstrumentModel,InstrumentAgent
-  instrument_agent: !InstrumentAgent  # The associated agent
-  #@hasDevice=PlatformDevice
-  platform_device: !PlatformDevice  # The associated agent
-  #@hasPlatformModel=PlatformDevice,PlatformModel
-  platform_model: !PlatformModel  # The model associated to the parent platform
-  #@hasDevice=SensorDevice
-  sensor_devices: []  # list of sensors attached to this device
-  #@hasDevice=InstrumentSite
-  deployed_site: !InstrumentSite  # The current sites to which to which this device is deployed
-
----
-
-# This object contains additional information associated with a request for notification.
-#@OriginResourceType=NotificationRequest
-NotificationRequestExtension: !Extends_ExtendedInformationResource
-  #@hasNotification=UserInfo
-  user_info: !UserInfo  # The associated user
-
----
-
-# This object contains additional information associated with an instrument device.
-#@OriginResourceType=PlatformDevice
-PlatformDeviceExtension: !Extends_DeviceExtension
-
-  platforms: []  # The list of child platform devices
-
-  #@hasModel
-  platform_model: !PlatformModel  # The associated Platform Model
-
-  #@hasAgentForDevice=PlatformModel,PlatformAgent
-  platform_agent: !PlatformAgent  # The associated agent
-
-  #@hasDevice=InstrumentDevice
-  instrument_devices: []  # list of sensors attached to this device
-
-  # defined in InstrumentManagementService.get_platform_extension
-  instrument_models: [] # list of models, aligns with instrument_devices
-
-  # defined in InstrumentManagementService.get_platform_extension
-  platform_models: [] # list of models, aligns with platforms
-
-  #@hasDevice=SensorDevice
-  sensor_devices: []  # list of sensors attached to this device
-
-  #@hasDevice=PlatformSite
-  deployed_site: !PlatformSite  # The current sites to which to which this device is deployed
-  #@hasPortalForDevice=InstrumentSite
-  portals: []  # NOTE: this compound association fails; see bug OOIION-948
-  # defined in InstrumentManagementService.get_platform_extension
-  portal_instruments: []
----
-
 # This object contains additional information associated with a Site resource.
 #@OriginResourceType=Site
 SiteExtension: !Extends_ExtendedInformationResource
-  #@hasDevice=InstrumentDevice
-  instrument_devices: []  # The associated Instrument devices
 
-  # supplied in ObservatoryManagementService.get_site_extension
-  instrument_models: []  # The associated Instrument models
-
-  #@hasDevice=PlatformDevice
-  platform_devices: []  # The associated Platform devices
-
-  # supplied in ObservatoryManagementService.get_site_extension
-  platform_models: []  # The associated Platform models
-
-  #@hasDeployment
-  deployments: []  # The associated deployments
-
-  #@hasSource
-  data_products: []  # The associated data products
-
-  #@hasSite
-  sites: []  # The associated parent and child sites
+  parent_site: !Site      # The immediate parent of this site (if any)
 
   #@hasModel
   model: []  #there can be more than one model that a site supports but need to place one model name in the site facepage
 
-  #@hasDataProductsForSite
-  device_data_products: []  # All the data products produced from devices at this Site and Site data products
+  instrument_devices: []  # All InstrumentDevices associated to this site or any child site
 
-  instruments_not_operational: []  # instruments are deployed with lifecycle state not Active or execution state not Operational
+  instrument_models: []   # The associated Instrument models
 
-  instruments_operational: []  # instruments are deployed with lifecycle state of Active and execution state of Operational
-  # added by OMS.get_site_extension
-  deployment_info: {}
-  # for display in portals table, co-indexed with sites
-  portal_instruments: []
+  platform_devices: []    # All PlatformDevices associated to this site or any child site
 
+  platform_models: []     # The associated Platform models
+
+  deployments: []         # All Deployments associated to any parent or child site
+
+  deployment_info: []     # Additional information for all in deployments
+
+  data_products: []       # All DataProducts associated to this site or any child site via hasSource
+
+  sites: []               # The associated direct child sites
+
+  sites_devices: []       # InstrumentDevice/PlatformDevice (primary) objects or None co-indexed with sites
+  portal_instruments: []  # DEPRECATED - alias for sites_devices
+
+  # list all child PlatformSite with the following alt_resource_type:
+  platform_station_sites: []    # == "StationSite"
+  platform_assembly_sites: []   # == "PlatformAssemblySite"
+  platform_component_sites: []  # == "PlatformComponentSite"
+
+  instrument_sites: !ComputedListValue   # all InstrumentSite children
+
+
+# Computed attributes for a Site (abstract type)
+SiteComputedAttributes: !Extends_TaskableComputedAttributes
+  #@Method
+  number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
+
+  #@Method
+  number_instruments_deployed: !ComputedIntValue  # How many instruments are in the water?
+
+  #@Method
+  number_instruments_operational: !ComputedIntValue # A count of How many instruments are deployed with lifecycle state of Active and execution state of Operational?
+
+  #@Method
+  number_instruments_inoperational: !ComputedIntValue  # A count of how many instruments are deployed with lifecycle state not Active or execution state not Operational?
+
+  #@Method
+  number_instruments: !ComputedIntValue  # the number of instruments for which the observatory is responsible
+
+  #@Method
+  number_platforms: !ComputedIntValue   # the number of platforms for which the observatory is responsible
+
+  #@Method
+  number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
+
+  communications_status_roll_up: !ComputedIntValue # DeviceStatusType
+  data_status_roll_up:           !ComputedIntValue # DeviceStatusType
+  location_status_roll_up:       !ComputedIntValue # DeviceStatusType
+  power_status_roll_up:          !ComputedIntValue # DeviceStatusType
+
+  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.instrument_devices
+  instrument_status: !ComputedListValue
+
+  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.platforms
+  platform_status: !ComputedListValue
+
+  # list of [aggregate DeviceStatusType int] for child sites according to ExtendedSite.sites
+  site_status: !ComputedListValue
+
+  portal_status: !ComputedListValue
 
 ---
 
@@ -253,13 +214,52 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   station_sites: [] # limit to list of PlatformSites
 
 
-###################################################################
-#
-# Resource Computed Attributes
-#
-#  ALL DATA TYPES BELOW THIS POINT SHOULD BE EXTENSIONS OF ComputedValue!
-#
-####################################################################
+# This object contains additional information associated with a instrument or platform model.
+#@OriginResourceType=DeviceModel
+DeviceModelExtension: !Extends_ExtendedInformationResource
+  #@hasModel
+  devices: []  # The associated device instances
+
+# This object contains additional information associated with an instrument device.
+DeviceExtension: !Extends_ExtendedInformationResource
+
+  #@hasSource
+  data_products: [] # A list of associated data products
+
+  #@hasDeployment
+  deployments: []  # list of deployment resources to which to which this device is attached
+
+  deployment_info: []   # Coindexed with deployments
+
+  #@hasAgentInstance
+  agent_instance: !AgentInstance
+
+  #@hasCommitment
+  commitments: [] # list of resource commitments
+
+---
+
+# This object contains additional information associated with an instrument device.
+#@OriginResourceType=InstrumentDevice
+InstrumentDeviceExtension: !Extends_DeviceExtension
+
+  #@hasModel
+  instrument_model: !InstrumentModel  # The associated Instrument Model
+
+  #@hasAgentForDevice=InstrumentModel,InstrumentAgent
+  instrument_agent: !InstrumentAgent  # The associated agent
+
+  #@hasDevice=PlatformDevice
+  platform_device: !PlatformDevice  # The parent platform (if existing)
+
+  #@hasPlatformModel=PlatformDevice,PlatformModel
+  platform_model: !PlatformModel  # The model associated to the parent platform
+
+  #@hasDevice=SensorDevice
+  sensor_devices: []  # list of sensors attached to this device
+
+  #@hasDevice=InstrumentSite
+  deployed_site: !InstrumentSite  # The current site where this device is deployed as primary
 
 # Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
@@ -267,19 +267,53 @@ InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   #@Method
   last_data_received_datetime: !ComputedFloatValue  # timestamp of most recent record, converted to ISO 8601
 
-
 ---
+
+# This object contains additional information associated with an instrument device.
+#@OriginResourceType=PlatformDevice
+PlatformDeviceExtension: !Extends_DeviceExtension
+  #@hasModel
+  platform_model: !PlatformModel  # The associated Platform Model
+
+  #@hasAgentForDevice=PlatformModel,PlatformAgent
+  platform_agent: !PlatformAgent  # The associated agent
+
+  parent_platform_device: !PlatformDevice  # The parent platform (if existing)
+
+  parent_platform_model: !PlatformModel  # The model associated to the parent platform
+
+  #@hasDevice=PlatformSite
+  platforms: []  # The list of child platforms
+
+  platform_models: [] # list of models, aligns with platforms
+
+  #@hasDevice=InstrumentDevice
+  instrument_devices: []  # list of sensors attached to this device
+
+  instrument_models: []   # list of models, aligns with instrument_devices
+
+  #@hasDevice=SensorDevice
+  sensor_devices: []  # list of sensors attached to this device
+
+  #@hasDevice=PlatformSite
+  deployed_site: !PlatformSite  # The current site where this device is deployed as primary
+
+  #@hasPortalForDevice=InstrumentSite
+  portals: []  # NOTE: this compound association fails; see bug OOIION-948
+
+  # defined in InstrumentManagementService.get_platform_extension
+  portal_instruments: []
 
 # Computed attributes for an platform device
 PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 
- # list of [aggregate DeviceStatusType int] for child devices according to ExtendedPlatform.instrument_devices
+  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedPlatform.instrument_devices
   instrument_status: !ComputedListValue
 
- # list of [aggregate DeviceStatusType int] for child devices according to ExtendedPlatform.platforms
+  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedPlatform.platforms
   platform_status: !ComputedListValue
 
- # Dict of {device_id: aggregate DeviceStatusType int} for child devices on ALL sub-levels (<-hasNetworkParent)
+  # Dict of {device_id: aggregate DeviceStatusType int} for child devices on ALL sub-levels (<-hasNetworkParent)
   rsn_network_child_device_status: !ComputedDictValue
 
   # RSN Platform rollup status from the network perspective. Defined by hasNetworkParent links in the data model.
@@ -289,55 +323,15 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
   # defined in InstrumentManagementService.get_platform_extension
   portal_status: !ComputedListValue
 
-
 ---
 
-# Computed attributes for a Site (abstract type)
-SiteComputedAttributes: !Extends_TaskableComputedAttributes
-  #@Method
-  number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
-
-  #@Method
-  number_instruments_deployed: !ComputedIntValue  # How many instruments are in the water?
-
-  #@Method
-  number_instruments_operational: !ComputedIntValue # A count of How many instruments are deployed with lifecycle state of Active and execution state of Operational?
-
-  #@Method
-  number_instruments_inoperational: !ComputedIntValue  # A count of how many instruments are deployed with lifecycle state not Active or execution state not Operational?
-
-  #@Method
-  number_instruments: !ComputedIntValue  # the number of instruments for which the observatory is responsible
-
-  #@Method
-  number_platforms: !ComputedIntValue   # the number of platforms for which the observatory is responsible
-
-  #@Method
-  number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
-
-  communications_status_roll_up: !ComputedIntValue # DeviceStatusType
-  data_status_roll_up:           !ComputedIntValue # DeviceStatusType
-  location_status_roll_up:       !ComputedIntValue # DeviceStatusType
-  power_status_roll_up:          !ComputedIntValue # DeviceStatusType 
-
- # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.instrument_devices
-  instrument_status: !ComputedListValue
-
- # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.platforms
-  platform_status: !ComputedListValue
-
- # list of [aggregate DeviceStatusType int] for child sites according to ExtendedSite.sites
-  site_status: !ComputedListValue
-
-  # list all PlatformSite with the following alt_resource_type:
-  platform_station_sites: !ComputedListValue    # == "StationSite"
-  platform_assembly_sites: !ComputedListValue   # == "PlatformAssemblySite"
-  platform_component_sites: !ComputedListValue  # == "PlatformComponentSite"
-
-  instrument_sites: !ComputedListValue          #lists all instrumentSite children
-  portal_status: !ComputedListValue
-
----
+###################################################################
+#
+# Resource Computed Attributes
+#
+#  ALL DATA TYPES BELOW THIS POINT SHOULD BE EXTENSIONS OF ComputedValue!
+#
+####################################################################
 
 
 #Computed attributes for a data product
@@ -644,10 +638,4 @@ DataProductPrepareSupport: !Extends_ResourcePrepareSupport
   #@ContentType=AssociatedResources
   #@AssociatedResources=AssocDataProdStreamDefs,AssocDataProdDatasets,AssocDataProdInstDevicesHasOutputProduct,AssocDataProdInstDevicesHasSource,AssocDataProdPlatDevices
   associations: {}
-
-
-
-
-
-
 

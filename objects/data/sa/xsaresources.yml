@@ -162,26 +162,23 @@ PlatformDeviceExtension: !Extends_DeviceExtension
 # This object contains additional information associated with a Site resource.
 #@OriginResourceType=Site
 SiteExtension: !Extends_ExtendedInformationResource
-  #@hasDevice=InstrumentDevice
-  instrument_devices: []  # The associated Instrument devices
 
-  # supplied in ObservatoryManagementService.get_site_extension
-  instrument_models: []  # The associated Instrument models
+  parent_site: !Site      # The immediate parent of this site (if any)
 
-  #@hasDevice=PlatformDevice
-  platform_devices: []  # The associated Platform devices
+  instrument_devices: []  # All InstrumentDevices associated to this site or any child site
 
-  # supplied in ObservatoryManagementService.get_site_extension
-  platform_models: []  # The associated Platform models
+  instrument_models: []   # The associated Instrument models
 
-  #@hasDeployment
-  deployments: []  # The associated deployments
+  platform_devices: []    # All PlatformDevices associated to this site or any child site
 
-  #@hasSource
-  data_products: []  # The associated data products
+  platform_models: []     # The associated Platform models
+
+  deployments: []         # All Deployments associated to any parent or child site
+
+  data_products: []       # All DataProducts associated to this site or any child site via hasSource
 
   #@hasSite
-  sites: []  # The associated parent and child sites
+  sites: []               # The associated direct child sites
 
   #@hasModel
   model: []  #there can be more than one model that a site supports but need to place one model name in the site facepage
@@ -189,14 +186,58 @@ SiteExtension: !Extends_ExtendedInformationResource
   #@hasDataProductsForSite
   device_data_products: []  # All the data products produced from devices at this Site and Site data products
 
-  instruments_not_operational: []  # instruments are deployed with lifecycle state not Active or execution state not Operational
-
-  instruments_operational: []  # instruments are deployed with lifecycle state of Active and execution state of Operational
   # added by OMS.get_site_extension
   deployment_info: {}
+
   # for display in portals table, co-indexed with sites
   portal_instruments: []
 
+  # list all child PlatformSite with the following alt_resource_type:
+  platform_station_sites: !ComputedListValue    # == "StationSite"
+  platform_assembly_sites: !ComputedListValue   # == "PlatformAssemblySite"
+  platform_component_sites: !ComputedListValue  # == "PlatformComponentSite"
+
+  instrument_sites: !ComputedListValue          #lists all instrumentSite children
+
+
+# Computed attributes for a Site (abstract type)
+SiteComputedAttributes: !Extends_TaskableComputedAttributes
+  #@Method
+  number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
+
+  #@Method
+  number_instruments_deployed: !ComputedIntValue  # How many instruments are in the water?
+
+  #@Method
+  number_instruments_operational: !ComputedIntValue # A count of How many instruments are deployed with lifecycle state of Active and execution state of Operational?
+
+  #@Method
+  number_instruments_inoperational: !ComputedIntValue  # A count of how many instruments are deployed with lifecycle state not Active or execution state not Operational?
+
+  #@Method
+  number_instruments: !ComputedIntValue  # the number of instruments for which the observatory is responsible
+
+  #@Method
+  number_platforms: !ComputedIntValue   # the number of platforms for which the observatory is responsible
+
+  #@Method
+  number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
+
+  communications_status_roll_up: !ComputedIntValue # DeviceStatusType
+  data_status_roll_up:           !ComputedIntValue # DeviceStatusType
+  location_status_roll_up:       !ComputedIntValue # DeviceStatusType
+  power_status_roll_up:          !ComputedIntValue # DeviceStatusType
+
+  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.instrument_devices
+  instrument_status: !ComputedListValue
+
+  # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.platforms
+  platform_status: !ComputedListValue
+
+  # list of [aggregate DeviceStatusType int] for child sites according to ExtendedSite.sites
+  site_status: !ComputedListValue
+
+  portal_status: !ComputedListValue
 
 ---
 
@@ -292,50 +333,6 @@ PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes
 
 ---
 
-# Computed attributes for a Site (abstract type)
-SiteComputedAttributes: !Extends_TaskableComputedAttributes
-  #@Method
-  number_data_sets: !ComputedIntValue  # Total number of data sets (all types) in the Observatory
-
-  #@Method
-  number_instruments_deployed: !ComputedIntValue  # How many instruments are in the water?
-
-  #@Method
-  number_instruments_operational: !ComputedIntValue # A count of How many instruments are deployed with lifecycle state of Active and execution state of Operational?
-
-  #@Method
-  number_instruments_inoperational: !ComputedIntValue  # A count of how many instruments are deployed with lifecycle state not Active or execution state not Operational?
-
-  #@Method
-  number_instruments: !ComputedIntValue  # the number of instruments for which the observatory is responsible
-
-  #@Method
-  number_platforms: !ComputedIntValue   # the number of platforms for which the observatory is responsible
-
-  #@Method
-  number_platforms_deployed: !ComputedIntValue  # How many platforms are in the water?
-
-  communications_status_roll_up: !ComputedIntValue # DeviceStatusType
-  data_status_roll_up:           !ComputedIntValue # DeviceStatusType
-  location_status_roll_up:       !ComputedIntValue # DeviceStatusType
-  power_status_roll_up:          !ComputedIntValue # DeviceStatusType 
-
- # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.instrument_devices
-  instrument_status: !ComputedListValue
-
- # list of [aggregate DeviceStatusType int] for child devices according to ExtendedSite.platforms
-  platform_status: !ComputedListValue
-
- # list of [aggregate DeviceStatusType int] for child sites according to ExtendedSite.sites
-  site_status: !ComputedListValue
-
-  # list all PlatformSite with the following alt_resource_type:
-  platform_station_sites: !ComputedListValue    # == "StationSite"
-  platform_assembly_sites: !ComputedListValue   # == "PlatformAssemblySite"
-  platform_component_sites: !ComputedListValue  # == "PlatformComponentSite"
-
-  instrument_sites: !ComputedListValue          #lists all instrumentSite children
-  portal_status: !ComputedListValue
 
 ---
 

@@ -314,6 +314,10 @@ service:
   discovery:
     search_buffer_size: 1048576
 
+  qc_processing:
+    # Run every N hours
+    run_interval: 1
+
 
 # TODO: Remove (use global flags instead)
 external_data_agent_management:

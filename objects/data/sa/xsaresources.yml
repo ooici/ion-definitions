@@ -259,7 +259,7 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   sensor_devices: []  # list of sensors attached to this device
 
   #@hasDevice=InstrumentSite
-  deployed_site: []  # The current site where this device is deployed as primary
+  deployed_site: !InstrumentSite  # The current site where this device is deployed as primary
 
 # Computed attributes for an instrument device
 InstrumentDeviceComputedAttributes: !Extends_DeviceComputedAttributes
@@ -300,7 +300,7 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   portal_instruments: []
 
   #@hasDevice=PlatformSite
-  deployed_site: []  # The current site where this device is deployed as primary
+  deployed_site: !PlatformSite  # The current site where this device is deployed as primary
 
   connected_devices: []      # List of devices associated via a hasNetworkParent
 

@@ -15,15 +15,8 @@ config:
     use_pydap: true
   container:
     filesystem:
-      root: /ion-stage
-      cache: /ion-stage/r2/data/ion/run/cache
+      root: /ion-stage/r2/data
       force_clean: false
-      library: /ion-stage/r2/data/ion/lib
-      log: /ion-stage/r2/data/ion/run/log
-      resource: /ion-stage/r2/data/ion/res
-      run: /ion-stage/r2/data/ion/run
-      temp: /ion-stage/r2/data/ion/tmp
-      users: /ion-stage/r2/data/ion/usr
     sflow:
       enabled: true
       hsflowd_port: 36343

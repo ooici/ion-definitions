@@ -18,15 +18,8 @@ config:
       names:
         durable: true
     filesystem:
-      root: /ion-dev
-      cache: /ion-dev/r2/data/ion/run/cache
+      root: /ion-dev/r2/data
       force_clean: false
-      library: /ion-dev/r2/data/ion/lib
-      log: /ion-dev/r2/data/ion/run/log
-      resource: /ion-dev/r2/data/ion/res
-      run: /ion-dev/r2/data/ion/run
-      temp: /ion-dev/r2/data/ion/tmp
-      users: /ion-dev/r2/data/ion/usr
     sflow:
       enabled: true
       hsflowd_port: 36343

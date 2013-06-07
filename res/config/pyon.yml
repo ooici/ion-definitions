@@ -38,6 +38,9 @@ bootstrap:
   # Launches a bootstrap instance to build the search indices.
   use_es: False
 
+  # Loads the QC Reference Tables
+  load_references: False
+
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials TO external servers
 # These entries are names of server/credential profiles that can be referenced in other settings.
@@ -376,4 +379,11 @@ device:
     port_agent_binary: port_agent
 
 units: res/config/units/udunits2.xml
+
+reference_tables:
+  global_range_test: "res/preload/r2_ioc/attachments/Data_QC_Lookup_Table_Global_Range_Test_2013-2-21.csv"
+  gradient_test: "res/preload/r2_ioc/attachments/Data_QC_Lookup_Table_Gradient_Test.csv"
+  stuck_value_test: "res/preload/r2_ioc/attachments/Data_QC_Lookup_Table_Stuck_Value_Test.csv"
+  trend_test: "res/preload/r2_ioc/attachments/Data_QC_Lookup_Table_Trend_Test.csv"
+  spike_test: "res/preload/r2_ioc/attachments/Data_QC_Lookup_Table_spike_test_updated.csv"
 

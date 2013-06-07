@@ -237,6 +237,7 @@ apps:
     bootlevel: 29
     config:
       bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_references, BootstrapReferences]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_qc_post_processor, BootstrapQCPostProcessor]
 
 

@@ -295,14 +295,17 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   #@hasDevice=SensorDevice
   sensor_devices: []  # list of sensors attached to this device
 
+  portals: []       # For this device's site (if primary), list all direct child sites (platform and instrument)
+
+  portal_instruments: []
+
   #@hasDevice=PlatformSite
   deployed_site: !PlatformSite  # The current site where this device is deployed as primary
 
-  #@hasPortalForDevice=InstrumentSite
-  portals: []  # NOTE: this compound association fails; see bug OOIION-948
+  connected_devices: []      # List of devices associated via a hasNetworkParent
 
-  # defined in InstrumentManagementService.get_platform_extension
-  portal_instruments: []
+  connected_device_info: []  # Coindexed with additional information (e.g. direction, port)
+
 
 # Computed attributes for an platform device
 PlatformDeviceComputedAttributes: !Extends_DeviceComputedAttributes

@@ -709,11 +709,7 @@ methods:
   create_parser:
     docstring: "Creates a new Parser Resource"
     in:
-      name: ""
-      description: ""
-      module: ""
-      method: ""
-      config: {}
+      parser: !Parser
     out:
       parser_id: ""
 

@@ -170,7 +170,7 @@ container:
       primary: amqp
       priviledged:
     endpoint: # TODO: move entries to here
-      rpc_conversation_enabled: True
+      rpc_conversation_enabled: False
       prefetch_count: 1                 # how many messages to prefetch from broker by default
     interceptor: # TODO: move entries to here
     conversation_log:

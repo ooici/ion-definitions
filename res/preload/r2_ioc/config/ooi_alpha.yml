@@ -24,6 +24,7 @@ load_sequence:
       categories: ParameterFunctions,ParameterDefs,ParameterDictionary,StreamDefinition
       assets: res/preload/r2_ioc/ooi_assets
       clearcols: owner_id,org_ids
+      parseooi: True
 
   - name: load_OOIR2_agents
     docstring: Loads OOI agent definitions, needed for OOI asset preload

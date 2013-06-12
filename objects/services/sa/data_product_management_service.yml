@@ -97,6 +97,7 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  #@OperationVerb=GET
   is_persisted:
     docstring: Is the data product currently being persisted?
     in:

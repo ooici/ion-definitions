@@ -164,7 +164,7 @@ SiteComputedAttributes: !Extends_TaskableComputedAttributes
 
   # list of [aggregate DeviceStatusType int] for child sites according to ExtendedSite.sites
   site_status: !ComputedListValue
-
+  station_status: !ComputedListValue
   portal_status: !ComputedListValue
 
 ---

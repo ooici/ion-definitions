@@ -22,8 +22,8 @@ load_sequence:
       op: load
       scenario: BETA
       categories: ParameterFunctions,ParameterDefs,ParameterDictionary,StreamDefinition
-      assets: res/preload/r2_ioc/ooi_assets
       clearcols: owner_id,org_ids
+      assets: res/preload/r2_ioc/ooi_assets
       parseooi: True
 
   - name: load_OOIR2_agents

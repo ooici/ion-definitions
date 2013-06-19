@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Series Attributes Report,Report Generated: 5/3/2013
+Series Attributes Report,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -882,6 +882,29 @@ CTDPF,L,CTDPF Series L,RSN O&M Spares,
 CTDPF,L,CTDPF Series L,RSN Part Number,
 CTDPF,L,CTDPF Series L,Susceptible to Acoustic Interference,
 CTDPF,L,CTDPF Series L,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,O,CTDPF Series O,2009 Baseline Price*,
+CTDPF,O,CTDPF Series O,2009 Deployed Instrument Count,30
+CTDPF,O,CTDPF Series O,Alternate Instrument Class Name,CTD Profiler
+CTDPF,O,CTDPF Series O,CE Spares,
+CTDPF,O,CTDPF Series O,CGSN MREFC Spares,
+CTDPF,O,CTDPF Series O,CGSN O&M Spares,
+CTDPF,O,CTDPF Series O,CGSN P/N,
+CTDPF,O,CTDPF Series O,ClassLongName,CTD_profiler
+CTDPF,O,CTDPF Series O,Comments,
+CTDPF,O,CTDPF Series O,CP Spares,
+CTDPF,O,CTDPF Series O,Description,CTDs to be mounted on a profiler
+CTDPF,O,CTDPF Series O,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
+CTDPF,O,CTDPF Series O,Global Spares,
+CTDPF,O,CTDPF Series O,Instrument Configuration,
+CTDPF,O,CTDPF Series O,Link to the Specification,
+CTDPF,O,CTDPF Series O,Notes,
+CTDPF,O,CTDPF Series O,PrimaryScienceDiscipline,P
+CTDPF,O,CTDPF Series O,Produces Acoustic Interference,
+CTDPF,O,CTDPF Series O,Ready for 2013?,
+CTDPF,O,CTDPF Series O,RSN O&M Spares,
+CTDPF,O,CTDPF Series O,RSN Part Number,
+CTDPF,O,CTDPF Series O,Susceptible to Acoustic Interference,
+CTDPF,O,CTDPF Series O,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,R,CTDPF Series R,2009 Baseline Price*,
 CTDPF,R,CTDPF Series R,2009 Deployed Instrument Count,30
 CTDPF,R,CTDPF Series R,Alternate Instrument Class Name,CTD Profiler
@@ -1192,14 +1215,14 @@ FDCHP,0,FDCHP Series 0,ClassLongName,flux_direct_cov_HP
 FDCHP,0,FDCHP Series 0,Comments,
 FDCHP,0,FDCHP Series 0,CP Spares,
 FDCHP,0,FDCHP Series 0,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,0,FDCHP Series 0,ECRs that changed the count,1300-00318
+FDCHP,0,FDCHP Series 0,ECRs that changed the count,1300-00318 & 1303-00996
 FDCHP,0,FDCHP Series 0,Global Spares,
 FDCHP,0,FDCHP Series 0,Instrument Configuration,
 FDCHP,0,FDCHP Series 0,Link to the Specification,
 FDCHP,0,FDCHP Series 0,Notes,
 FDCHP,0,FDCHP Series 0,PrimaryScienceDiscipline,P
 FDCHP,0,FDCHP Series 0,Produces Acoustic Interference,
-FDCHP,0,FDCHP Series 0,Ready for 2013?,No. ECR 1303-00996.
+FDCHP,0,FDCHP Series 0,Ready for 2013?,No.  Waiver 1303-00996
 FDCHP,0,FDCHP Series 0,RSN O&M Spares,
 FDCHP,0,FDCHP Series 0,RSN Part Number,
 FDCHP,0,FDCHP Series 0,Susceptible to Acoustic Interference,
@@ -1215,7 +1238,7 @@ FDCHP,A,FDCHP Series A,ClassLongName,flux_direct_cov_HP
 FDCHP,A,FDCHP Series A,Comments,
 FDCHP,A,FDCHP Series A,CP Spares,
 FDCHP,A,FDCHP Series A,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,A,FDCHP Series A,ECRs that changed the count,1300-00318
+FDCHP,A,FDCHP Series A,ECRs that changed the count,1300-00318 & 1303-00996
 FDCHP,A,FDCHP Series A,Global Spares,
 FDCHP,A,FDCHP Series A,Instrument Configuration,
 FDCHP,A,FDCHP Series A,Link to the Specification,
@@ -2441,7 +2464,7 @@ PHSEN,E,PHSEN Series E,Link to the Specification,
 PHSEN,E,PHSEN Series E,Notes,
 PHSEN,E,PHSEN Series E,PrimaryScienceDiscipline,C
 PHSEN,E,PHSEN Series E,Produces Acoustic Interference,
-PHSEN,E,PHSEN Series E,Ready for 2013?,No
+PHSEN,E,PHSEN Series E,Ready for 2013?,
 PHSEN,E,PHSEN Series E,RSN O&M Spares,
 PHSEN,E,PHSEN Series E,RSN Part Number,
 PHSEN,E,PHSEN Series E,Susceptible to Acoustic Interference,
@@ -2763,7 +2786,7 @@ THSPH,A,THSPH Series A,Link to the Specification,
 THSPH,A,THSPH Series A,Notes,
 THSPH,A,THSPH Series A,PrimaryScienceDiscipline,C
 THSPH,A,THSPH Series A,Produces Acoustic Interference,
-THSPH,A,THSPH Series A,Ready for 2013?,No. (Waiver Pending)
+THSPH,A,THSPH Series A,Ready for 2013?,No. Waiver 1304-00289
 THSPH,A,THSPH Series A,RSN O&M Spares,
 THSPH,A,THSPH Series A,RSN Part Number,
 THSPH,A,THSPH Series A,Susceptible to Acoustic Interference,

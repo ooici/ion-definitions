@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subseries Attributes Report,Report Generated: 5/3/2013
+Subseries Attributes Report,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -882,6 +882,29 @@ CTDPF,L,01,CTDPF Series L Sub 01,RSN O&M Spares,
 CTDPF,L,01,CTDPF Series L Sub 01,RSN Part Number,
 CTDPF,L,01,CTDPF Series L Sub 01,Susceptible to Acoustic Interference,
 CTDPF,L,01,CTDPF Series L Sub 01,"Vendor CLIN, SubCLIN or Model #",
+CTDPF,O,01,CTDPF Series O Subseries 01,2009 Baseline Price*,
+CTDPF,O,01,CTDPF Series O Subseries 01,2009 Deployed Instrument Count,30
+CTDPF,O,01,CTDPF Series O Subseries 01,Alternate Instrument Class Name,CTD Profiler
+CTDPF,O,01,CTDPF Series O Subseries 01,CE Spares,
+CTDPF,O,01,CTDPF Series O Subseries 01,CGSN MREFC Spares,
+CTDPF,O,01,CTDPF Series O Subseries 01,CGSN O&M Spares,
+CTDPF,O,01,CTDPF Series O Subseries 01,CGSN P/N,
+CTDPF,O,01,CTDPF Series O Subseries 01,ClassLongName,CTD_profiler
+CTDPF,O,01,CTDPF Series O Subseries 01,Comments,
+CTDPF,O,01,CTDPF Series O Subseries 01,CP Spares,
+CTDPF,O,01,CTDPF Series O Subseries 01,Description,CTDs to be mounted on a profiler
+CTDPF,O,01,CTDPF Series O Subseries 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
+CTDPF,O,01,CTDPF Series O Subseries 01,Global Spares,
+CTDPF,O,01,CTDPF Series O Subseries 01,Instrument Configuration,
+CTDPF,O,01,CTDPF Series O Subseries 01,Link to the Specification,
+CTDPF,O,01,CTDPF Series O Subseries 01,Notes,
+CTDPF,O,01,CTDPF Series O Subseries 01,PrimaryScienceDiscipline,P
+CTDPF,O,01,CTDPF Series O Subseries 01,Produces Acoustic Interference,
+CTDPF,O,01,CTDPF Series O Subseries 01,Ready for 2013?,
+CTDPF,O,01,CTDPF Series O Subseries 01,RSN O&M Spares,
+CTDPF,O,01,CTDPF Series O Subseries 01,RSN Part Number,
+CTDPF,O,01,CTDPF Series O Subseries 01,Susceptible to Acoustic Interference,
+CTDPF,O,01,CTDPF Series O Subseries 01,"Vendor CLIN, SubCLIN or Model #",
 CTDPF,R,01,CTDPF Series R Sub 01,2009 Baseline Price*,
 CTDPF,R,01,CTDPF Series R Sub 01,2009 Deployed Instrument Count,30
 CTDPF,R,01,CTDPF Series R Sub 01,Alternate Instrument Class Name,CTD Profiler
@@ -1192,14 +1215,14 @@ FDCHP,0,01,FDCHP Series 0 Sub 01,ClassLongName,flux_direct_cov_HP
 FDCHP,0,01,FDCHP Series 0 Sub 01,Comments,
 FDCHP,0,01,FDCHP Series 0 Sub 01,CP Spares,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,0,01,FDCHP Series 0 Sub 01,ECRs that changed the count,1300-00318
+FDCHP,0,01,FDCHP Series 0 Sub 01,ECRs that changed the count,1300-00318 & 1303-00996
 FDCHP,0,01,FDCHP Series 0 Sub 01,Global Spares,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Instrument Configuration,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Link to the Specification,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Notes,
 FDCHP,0,01,FDCHP Series 0 Sub 01,PrimaryScienceDiscipline,P
 FDCHP,0,01,FDCHP Series 0 Sub 01,Produces Acoustic Interference,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Ready for 2013?,No. ECR 1303-00996.
+FDCHP,0,01,FDCHP Series 0 Sub 01,Ready for 2013?,No.  Waiver 1303-00996
 FDCHP,0,01,FDCHP Series 0 Sub 01,RSN O&M Spares,
 FDCHP,0,01,FDCHP Series 0 Sub 01,RSN Part Number,
 FDCHP,0,01,FDCHP Series 0 Sub 01,Susceptible to Acoustic Interference,
@@ -1215,7 +1238,7 @@ FDCHP,A,01,FDCHP Series A Sub 01,ClassLongName,flux_direct_cov_HP
 FDCHP,A,01,FDCHP Series A Sub 01,Comments,
 FDCHP,A,01,FDCHP Series A Sub 01,CP Spares,
 FDCHP,A,01,FDCHP Series A Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,A,01,FDCHP Series A Sub 01,ECRs that changed the count,1300-00318
+FDCHP,A,01,FDCHP Series A Sub 01,ECRs that changed the count,1300-00318 & 1303-00996
 FDCHP,A,01,FDCHP Series A Sub 01,Global Spares,2
 FDCHP,A,01,FDCHP Series A Sub 01,Instrument Configuration,
 FDCHP,A,01,FDCHP Series A Sub 01,Link to the Specification,
@@ -2763,7 +2786,7 @@ THSPH,A,01,THSPH Series A Sub 01,Link to the Specification,
 THSPH,A,01,THSPH Series A Sub 01,Notes,
 THSPH,A,01,THSPH Series A Sub 01,PrimaryScienceDiscipline,C
 THSPH,A,01,THSPH Series A Sub 01,Produces Acoustic Interference,
-THSPH,A,01,THSPH Series A Sub 01,Ready for 2013?,No. (Waiver Pending)
+THSPH,A,01,THSPH Series A Sub 01,Ready for 2013?,No. Waiver 1304-00289
 THSPH,A,01,THSPH Series A Sub 01,RSN O&M Spares,1
 THSPH,A,01,THSPH Series A Sub 01,RSN Part Number,4830-58342
 THSPH,A,01,THSPH Series A Sub 01,Susceptible to Acoustic Interference,

@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Spreadsheet,Report Generated: 5/3/2013
+Data Product Spreadsheet,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -69,8 +69,10 @@ FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"D
 FLUXWET,Direct Covariance Flux of Moisture,L2,kg m^(-1) s^(-1),DCN 1341-00340,"DCN 1342-00280 (FDCHP), DCN 1342-00290 (FDCLP)",FDCLP,Flux direct cov LP - DEPRECATED,2013-11,L2-SR-RQ-3033,Air-Sea Interface
 FRSHFLX ,Freshwater Flux,L2,m3/s,,,METBK,Meteorology bulk,2013-11,,
 GRNDACC,Broadband Ground Acceleration,L1,m/s^2,DCN 1341-00100,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-06-28,L2-SR-RQ-3603,Seafloor/Crust
+GRNDACC,Broadband Ground Acceleration,L1,m/s^2,DCN 1341-00100,DCN 1342-00090,OBSBK,Seismometer BB triaxial keck,2013-06-28,L2-SR-RQ-3603,Seafloor/Crust
 GRNDVEL,Broadband Ground Velocity,L1,m/s,DCN 1341-00090,DCN 1342-00090,OBSBB,Seismometer BB triaxial accel,2013-06-28,L2-SR-RQ-3096,Seafloor/Crust
-HDVIDEO,HD Video Image,L1,Lossless compression Image File,DCN 1341-00840,n/a,CAMHD,Camera digital video HD,2013-06-28,L2-SR-RQ-3804,Seafloor/Crust
+GRNDVEL,Broadband Ground Velocity,L1,m/s,DCN 1341-00090,DCN 1342-00090,OBSBK,Seismometer BB triaxial keck,2013-06-28,L2-SR-RQ-3096,Seafloor/Crust
+HDVIDEO,HD Video ,L1,Lossless compression Image File,DCN 1341-00840,n/a,CAMHD,Camera digital video HD,2013-06-28,L2-SR-RQ-3804,Seafloor/Crust
 HEATFLX ,Net Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
 HYDAPBB,Broadband Acoustic pressure waves ,L0,TBD,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-06-28,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
 HYDAPBB,Broadband Acoustic pressure waves ,L1,dB//1uPa/V,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2013-06-28,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
@@ -117,8 +119,8 @@ PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,L1,µatm,DCN 1341-00260,DCN
 PCO2WAT,Partial Pressure of CO2 in Water,L1,µatm,DCN 1341-00490,DCN 1342-00490,PCO2W,pCO2 water,2013-06-28,L2-SR-RQ-3049,Water Column
 PH434SI,Optical Absorbance Signal Intensity at 434nm,L0,unitless,DCN 1341-00508,DCN 1342-00510,PHSEN,pH stable,2013-06-28,Derived from design to achieve PHWATER,Water Column
 PH578SI,Optical Absorbance Signal Intensity at 578nm,L0,unitless,DCN 1341-00509,DCN 1342-00510,PHSEN,pH stable,2013-06-28,Derived from design to achieve PHWATER,Water Column
-PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,OSMOI,Watersample chem trace,2013-06-28,L2-SR-RQ-3088,Seafloor/Crust
-PHSSAMP,Physical Fluid Sample,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,RASFL,Watersample chem trace H2S pH,2013-06-28,L2-SR-RQ-3088,Seafloor/Crust
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,OSMOI,Watersample chem trace,2013-06-28,L2-SR-RQ-3088,Seafloor/Crust
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,RASFL,Watersample chem trace H2S pH,2013-06-28,L2-SR-RQ-3088,Seafloor/Crust
 PHWATER,pH,L1,pH units,DCN 1341-00510,DCN 1342-00510,PHSEN,pH stable,2013-06-28,L2-SR-RQ-3047,Water Column
 PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDAV,CTD AUV,2013-06-28,L2-SR-RQ-3064,Water Column
 PRACSAL,Practical Salinity,L2,unitless,DCN 1341-00040,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-06-28,L2-SR-RQ-3064,Water Column

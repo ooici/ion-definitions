@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Attributes Report,Report Generated: 5/3/2013
+Data Product Attributes Report,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -103,25 +103,25 @@ BOTSFLU,Seafloor Uplift and Deflation,2,Spike Test (SPKETST) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Stuck Value Test (STUCKVL) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Trend Test (TRNDTST) QC,TBD
 BOTSFLU,Seafloor Uplift and Deflation,2,Units,meters
-BOTTILT,Seafloor High-Resolution Tilt,0,1-D Interpolation (INTERP1) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Combine QC Flags (CMBNFLG) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
-BOTTILT,Seafloor High-Resolution Tilt,0,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
-BOTTILT,Seafloor High-Resolution Tilt,0,DPS DCN(s),DCN 1341-00060
-BOTTILT,Seafloor High-Resolution Tilt,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Global Range Test (GLBLRNG) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Gradient Test (GRADTST) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Local Range Test (LOCLRNG) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Modulus (MODULUS) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Notes,
-BOTTILT,Seafloor High-Resolution Tilt,0,Processing Flow Diagram DCN(s),DCN 1342-00060
-BOTTILT,Seafloor High-Resolution Tilt,0,Regime(s),Seafloor/Crust
-BOTTILT,Seafloor High-Resolution Tilt,0,Solar Elevation (SOLAREL) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Spike Test (SPKETST) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Stuck Value Test (STUCKVL) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Trend Test (TRNDTST) QC,not applicable
-BOTTILT,Seafloor High-Resolution Tilt,0,Units,microradians
+BOTTILT,Seafloor High-Resolution Tilt,1,1-D Interpolation (INTERP1) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Combine QC Flags (CMBNFLG) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
+BOTTILT,Seafloor High-Resolution Tilt,1,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
+BOTTILT,Seafloor High-Resolution Tilt,1,DPS DCN(s),DCN 1341-00060
+BOTTILT,Seafloor High-Resolution Tilt,1,Evaluate Polynomial (POLYVAL) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Global Range Test (GLBLRNG) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Gradient Test (GRADTST) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Local Range Test (LOCLRNG) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Modulus (MODULUS) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Notes,
+BOTTILT,Seafloor High-Resolution Tilt,1,Processing Flow Diagram DCN(s),DCN 1342-00060
+BOTTILT,Seafloor High-Resolution Tilt,1,Regime(s),Seafloor/Crust
+BOTTILT,Seafloor High-Resolution Tilt,1,Solar Elevation (SOLAREL) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Spike Test (SPKETST) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Stuck Value Test (STUCKVL) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Trend Test (TRNDTST) QC,TBD
+BOTTILT,Seafloor High-Resolution Tilt,1,Units,microradians
 CAMSTIL,Still Image ,1,1-D Interpolation (INTERP1) QC,not applicable
 CAMSTIL,Still Image ,1,Combine QC Flags (CMBNFLG) QC,not applicable
 CAMSTIL,Still Image ,1,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -369,25 +369,25 @@ DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Spike Test (SPKETST) QC
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Stuck Value Test (STUCKVL) QC,not applicable
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Trend Test (TRNDTST) QC,not applicable
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Units,degrees; degrees Celcius
-ECHOINT,Echo Intensity,0,1-D Interpolation (INTERP1) QC,not applicable
-ECHOINT,Echo Intensity,0,Combine QC Flags (CMBNFLG) QC,not applicable
-ECHOINT,Echo Intensity,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-ECHOINT,Echo Intensity,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3887
-ECHOINT,Echo Intensity,0,DOORS L2 Science Requirement Text,Velocity profile measurements shall provide a measure of acoustic backscatter intensity for each depth bin.
-ECHOINT,Echo Intensity,0,DPS DCN(s),"[DCN 1341-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/7ea90727-c1b4-4d73-b565-0ae4227da451/1341-00750_Data_Product_SPEC_VELPROF_ECHOINT_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
-ECHOINT,Echo Intensity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-ECHOINT,Echo Intensity,0,Global Range Test (GLBLRNG) QC,not applicable
-ECHOINT,Echo Intensity,0,Gradient Test (GRADTST) QC,not applicable
-ECHOINT,Echo Intensity,0,Local Range Test (LOCLRNG) QC,not applicable
-ECHOINT,Echo Intensity,0,Modulus (MODULUS) QC,not applicable
-ECHOINT,Echo Intensity,0,Notes,
-ECHOINT,Echo Intensity,0,Processing Flow Diagram DCN(s),"[DCN 1342-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/c1fb71ed-ec32-4035-9d7b-d8228b57f7b0/1342-00750_Data_Processing_Flow_ADCP_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)"
-ECHOINT,Echo Intensity,0,Regime(s),Water Column
-ECHOINT,Echo Intensity,0,Solar Elevation (SOLAREL) QC,not applicable
-ECHOINT,Echo Intensity,0,Spike Test (SPKETST) QC,not applicable
-ECHOINT,Echo Intensity,0,Stuck Value Test (STUCKVL) QC,not applicable
-ECHOINT,Echo Intensity,0,Trend Test (TRNDTST) QC,not applicable
-ECHOINT,Echo Intensity,0,Units,dB
+ECHOINT,Echo Intensity,1,1-D Interpolation (INTERP1) QC,0
+ECHOINT,Echo Intensity,1,Combine QC Flags (CMBNFLG) QC,0
+ECHOINT,Echo Intensity,1,Conductivity Compressibility Compensation (CONDCMP) QC,0
+ECHOINT,Echo Intensity,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3887
+ECHOINT,Echo Intensity,1,DOORS L2 Science Requirement Text,Velocity profile measurements shall provide a measure of acoustic backscatter intensity for each depth bin.
+ECHOINT,Echo Intensity,1,DPS DCN(s),"[DCN 1341-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/7ea90727-c1b4-4d73-b565-0ae4227da451/1341-00750_Data_Product_SPEC_VELPROF_ECHOINT_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
+ECHOINT,Echo Intensity,1,Evaluate Polynomial (POLYVAL) QC,0
+ECHOINT,Echo Intensity,1,Global Range Test (GLBLRNG) QC,0
+ECHOINT,Echo Intensity,1,Gradient Test (GRADTST) QC,0
+ECHOINT,Echo Intensity,1,Local Range Test (LOCLRNG) QC,0
+ECHOINT,Echo Intensity,1,Modulus (MODULUS) QC,0
+ECHOINT,Echo Intensity,1,Notes,
+ECHOINT,Echo Intensity,1,Processing Flow Diagram DCN(s),"[DCN 1342-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/c1fb71ed-ec32-4035-9d7b-d8228b57f7b0/1342-00750_Data_Processing_Flow_ADCP_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)"
+ECHOINT,Echo Intensity,1,Regime(s),Water Column
+ECHOINT,Echo Intensity,1,Solar Elevation (SOLAREL) QC,0
+ECHOINT,Echo Intensity,1,Spike Test (SPKETST) QC,0
+ECHOINT,Echo Intensity,1,Stuck Value Test (STUCKVL) QC,0
+ECHOINT,Echo Intensity,1,Trend Test (TRNDTST) QC,0
+ECHOINT,Echo Intensity,1,Units,dB
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,1-D Interpolation (INTERP1) QC,not applicable
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Combine QC Flags (CMBNFLG) QC,not applicable
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -521,25 +521,25 @@ GRNDVEL,Broadband Ground Velocity,1,Spike Test (SPKETST) QC,TBD
 GRNDVEL,Broadband Ground Velocity,1,Stuck Value Test (STUCKVL) QC,TBD
 GRNDVEL,Broadband Ground Velocity,1,Trend Test (TRNDTST) QC,TBD
 GRNDVEL,Broadband Ground Velocity,1,Units,m/s
-HDVIDEO,HD Video Image,1,1-D Interpolation (INTERP1) QC,not applicable
-HDVIDEO,HD Video Image,1,Combine QC Flags (CMBNFLG) QC,not applicable
-HDVIDEO,HD Video Image,1,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-HDVIDEO,HD Video Image,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3804
-HDVIDEO,HD Video Image,1,DOORS L2 Science Requirement Text,"Imagery, HD Video"
-HDVIDEO,HD Video Image,1,DPS DCN(s),DCN 1341-00840
-HDVIDEO,HD Video Image,1,Evaluate Polynomial (POLYVAL) QC,not applicable
-HDVIDEO,HD Video Image,1,Global Range Test (GLBLRNG) QC,not applicable
-HDVIDEO,HD Video Image,1,Gradient Test (GRADTST) QC,not applicable
-HDVIDEO,HD Video Image,1,Local Range Test (LOCLRNG) QC,not applicable
-HDVIDEO,HD Video Image,1,Modulus (MODULUS) QC,not applicable
-HDVIDEO,HD Video Image,1,Notes,These are not considered data to be archived - only live streaming
-HDVIDEO,HD Video Image,1,Processing Flow Diagram DCN(s),n/a
-HDVIDEO,HD Video Image,1,Regime(s),Seafloor/Crust
-HDVIDEO,HD Video Image,1,Solar Elevation (SOLAREL) QC,not applicable
-HDVIDEO,HD Video Image,1,Spike Test (SPKETST) QC,not applicable
-HDVIDEO,HD Video Image,1,Stuck Value Test (STUCKVL) QC,not applicable
-HDVIDEO,HD Video Image,1,Trend Test (TRNDTST) QC,not applicable
-HDVIDEO,HD Video Image,1,Units,Lossless compression Image File
+HDVIDEO,HD Video ,1,1-D Interpolation (INTERP1) QC,not applicable
+HDVIDEO,HD Video ,1,Combine QC Flags (CMBNFLG) QC,not applicable
+HDVIDEO,HD Video ,1,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+HDVIDEO,HD Video ,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3804
+HDVIDEO,HD Video ,1,DOORS L2 Science Requirement Text,"Imagery, HD Video"
+HDVIDEO,HD Video ,1,DPS DCN(s),DCN 1341-00840
+HDVIDEO,HD Video ,1,Evaluate Polynomial (POLYVAL) QC,not applicable
+HDVIDEO,HD Video ,1,Global Range Test (GLBLRNG) QC,not applicable
+HDVIDEO,HD Video ,1,Gradient Test (GRADTST) QC,not applicable
+HDVIDEO,HD Video ,1,Local Range Test (LOCLRNG) QC,not applicable
+HDVIDEO,HD Video ,1,Modulus (MODULUS) QC,not applicable
+HDVIDEO,HD Video ,1,Notes,These are not considered data to be archived - only live streaming
+HDVIDEO,HD Video ,1,Processing Flow Diagram DCN(s),n/a
+HDVIDEO,HD Video ,1,Regime(s),Seafloor/Crust
+HDVIDEO,HD Video ,1,Solar Elevation (SOLAREL) QC,not applicable
+HDVIDEO,HD Video ,1,Spike Test (SPKETST) QC,not applicable
+HDVIDEO,HD Video ,1,Stuck Value Test (STUCKVL) QC,not applicable
+HDVIDEO,HD Video ,1,Trend Test (TRNDTST) QC,not applicable
+HDVIDEO,HD Video ,1,Units,Lossless compression Image File
 HEATFLX ,Net Heat Flux,2,1-D Interpolation (INTERP1) QC,
 HEATFLX ,Net Heat Flux,2,Combine QC Flags (CMBNFLG) QC,
 HEATFLX ,Net Heat Flux,2,Conductivity Compressibility Compensation (CONDCMP) QC,
@@ -578,25 +578,25 @@ HYDAPBB,Broadband Acoustic pressure waves ,0,Spike Test (SPKETST) QC,not applica
 HYDAPBB,Broadband Acoustic pressure waves ,0,Stuck Value Test (STUCKVL) QC,not applicable
 HYDAPBB,Broadband Acoustic pressure waves ,0,Trend Test (TRNDTST) QC,not applicable
 HYDAPBB,Broadband Acoustic pressure waves ,0,Units,TBD
-HYDAPLF,Low Frequency Acoustic pressure waves,0,1-D Interpolation (INTERP1) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Combine QC Flags (CMBNFLG) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Conductivity Compressibility Compensation (CONDCMP) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,DOORS L2 Science Requirement #(s),
-HYDAPLF,Low Frequency Acoustic pressure waves,0,DOORS L2 Science Requirement Text,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,DPS DCN(s),DCN 1341-00821
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Evaluate Polynomial (POLYVAL) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Global Range Test (GLBLRNG) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Gradient Test (GRADTST) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Local Range Test (LOCLRNG) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Modulus (MODULUS) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Notes,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Processing Flow Diagram DCN(s),DCN 1341-00821
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Regime(s),
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Solar Elevation (SOLAREL) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Spike Test (SPKETST) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Stuck Value Test (STUCKVL) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Trend Test (TRNDTST) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,0,Units,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,1-D Interpolation (INTERP1) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Combine QC Flags (CMBNFLG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Conductivity Compressibility Compensation (CONDCMP) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,DOORS L2 Science Requirement #(s),
+HYDAPLF,Low Frequency Acoustic pressure waves,1,DOORS L2 Science Requirement Text,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,DPS DCN(s),DCN 1341-00821
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Evaluate Polynomial (POLYVAL) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Global Range Test (GLBLRNG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Gradient Test (GRADTST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Local Range Test (LOCLRNG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Modulus (MODULUS) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Notes,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Processing Flow Diagram DCN(s),DCN 1341-00821
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Regime(s),
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Solar Elevation (SOLAREL) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Spike Test (SPKETST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Stuck Value Test (STUCKVL) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Trend Test (TRNDTST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,1,Units,
 HYDFRBB,Broadband Frequency,0,1-D Interpolation (INTERP1) QC,not applicable
 HYDFRBB,Broadband Frequency,0,Combine QC Flags (CMBNFLG) QC,not applicable
 HYDFRBB,Broadband Frequency,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -749,25 +749,25 @@ LATNFLX ,Latent Heat Flux,2,Spike Test (SPKETST) QC,
 LATNFLX ,Latent Heat Flux,2,Stuck Value Test (STUCKVL) QC,
 LATNFLX ,Latent Heat Flux,2,Trend Test (TRNDTST) QC,
 LATNFLX ,Latent Heat Flux,2,Units,W/m2
-LONGIRR,Downwelling Longwave Irradiance,0,1-D Interpolation (INTERP1) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Combine QC Flags (CMBNFLG) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3021
-LONGIRR,Downwelling Longwave Irradiance,0,DOORS L2 Science Requirement Text,Downwelling longwave irradiance
-LONGIRR,Downwelling Longwave Irradiance,0,DPS DCN(s),DCN 1341-00360
-LONGIRR,Downwelling Longwave Irradiance,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Global Range Test (GLBLRNG) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Gradient Test (GRADTST) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Local Range Test (LOCLRNG) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Modulus (MODULUS) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Notes,
-LONGIRR,Downwelling Longwave Irradiance,0,Processing Flow Diagram DCN(s),DCN 1342-00360
-LONGIRR,Downwelling Longwave Irradiance,0,Regime(s),"Air-Sea Interface, Surface Water"
-LONGIRR,Downwelling Longwave Irradiance,0,Solar Elevation (SOLAREL) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Spike Test (SPKETST) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Stuck Value Test (STUCKVL) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Trend Test (TRNDTST) QC,not applicable
-LONGIRR,Downwelling Longwave Irradiance,0,Units,W/m2
+LONGIRR,Downwelling Longwave Irradiance,1,1-D Interpolation (INTERP1) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Combine QC Flags (CMBNFLG) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3021
+LONGIRR,Downwelling Longwave Irradiance,1,DOORS L2 Science Requirement Text,Downwelling longwave irradiance
+LONGIRR,Downwelling Longwave Irradiance,1,DPS DCN(s),DCN 1341-00360
+LONGIRR,Downwelling Longwave Irradiance,1,Evaluate Polynomial (POLYVAL) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Global Range Test (GLBLRNG) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Gradient Test (GRADTST) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Local Range Test (LOCLRNG) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Modulus (MODULUS) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Notes,
+LONGIRR,Downwelling Longwave Irradiance,1,Processing Flow Diagram DCN(s),DCN 1342-00360
+LONGIRR,Downwelling Longwave Irradiance,1,Regime(s),"Air-Sea Interface, Surface Water"
+LONGIRR,Downwelling Longwave Irradiance,1,Solar Elevation (SOLAREL) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Spike Test (SPKETST) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Stuck Value Test (STUCKVL) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Trend Test (TRNDTST) QC,TBD
+LONGIRR,Downwelling Longwave Irradiance,1,Units,W/m2
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,1-D Interpolation (INTERP1) QC,not applicable
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Combine QC Flags (CMBNFLG) QC,not applicable
 MASSPEC,Suite of Dissolved Gas Measurements (10-20 individual gases) vs. Time ,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -1167,25 +1167,25 @@ PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Spike Test (SPKETST) QC,n
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Stuck Value Test (STUCKVL) QC,not applicable
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Trend Test (TRNDTST) QC,not applicable
 PH578SI,Optical Absorbance Signal Intensity at 578nm,0,Units,unitless
-PHSSAMP,Physical Fluid Sample,2,1-D Interpolation (INTERP1) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Combine QC Flags (CMBNFLG) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,DOORS L2 Science Requirement #(s),L2-SR-RQ-3088
-PHSSAMP,Physical Fluid Sample,2,DOORS L2 Science Requirement Text,Interactive Sampling for Vent Fluid Chemistry
-PHSSAMP,Physical Fluid Sample,2,DPS DCN(s),"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)"
-PHSSAMP,Physical Fluid Sample,2,Evaluate Polynomial (POLYVAL) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Global Range Test (GLBLRNG) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Gradient Test (GRADTST) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Local Range Test (LOCLRNG) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Modulus (MODULUS) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Notes,
-PHSSAMP,Physical Fluid Sample,2,Processing Flow Diagram DCN(s),n/a
-PHSSAMP,Physical Fluid Sample,2,Regime(s),Seafloor/Crust
-PHSSAMP,Physical Fluid Sample,2,Solar Elevation (SOLAREL) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Spike Test (SPKETST) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Stuck Value Test (STUCKVL) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Trend Test (TRNDTST) QC,not applicable
-PHSSAMP,Physical Fluid Sample,2,Units,No Direct Datastream to OOI
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,1-D Interpolation (INTERP1) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Combine QC Flags (CMBNFLG) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,DOORS L2 Science Requirement #(s),L2-SR-RQ-3088
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,DOORS L2 Science Requirement Text,Interactive Sampling for Vent Fluid Chemistry
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,DPS DCN(s),"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)"
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Evaluate Polynomial (POLYVAL) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Global Range Test (GLBLRNG) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Gradient Test (GRADTST) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Local Range Test (LOCLRNG) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Modulus (MODULUS) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Notes,
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Processing Flow Diagram DCN(s),n/a
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Regime(s),Seafloor/Crust
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Solar Elevation (SOLAREL) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Spike Test (SPKETST) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Stuck Value Test (STUCKVL) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Trend Test (TRNDTST) QC,not applicable
+PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,2,Units,No Direct Datastream to OOI
 PHWATER,pH,1,1-D Interpolation (INTERP1) QC,TBD
 PHWATER,pH,1,Combine QC Flags (CMBNFLG) QC,TBD
 PHWATER,pH,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
@@ -1528,25 +1528,25 @@ TEMPA2M,Air Temperature at 2 m,2,Spike Test (SPKETST) QC,
 TEMPA2M,Air Temperature at 2 m,2,Stuck Value Test (STUCKVL) QC,
 TEMPA2M,Air Temperature at 2 m,2,Trend Test (TRNDTST) QC,
 TEMPA2M,Air Temperature at 2 m,2,Units,degrees C
-TEMPAIR,Air Temperature,0,1-D Interpolation (INTERP1) QC,not applicable
-TEMPAIR,Air Temperature,0,Combine QC Flags (CMBNFLG) QC,not applicable
-TEMPAIR,Air Temperature,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-TEMPAIR,Air Temperature,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3033
-TEMPAIR,Air Temperature,0,DOORS L2 Science Requirement Text,Direct Covariance Fluxes 
-TEMPAIR,Air Temperature,0,DPS DCN(s),DCN 1341-00360
-TEMPAIR,Air Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-TEMPAIR,Air Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TEMPAIR,Air Temperature,0,Gradient Test (GRADTST) QC,not applicable
-TEMPAIR,Air Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
-TEMPAIR,Air Temperature,0,Modulus (MODULUS) QC,not applicable
-TEMPAIR,Air Temperature,0,Notes,
-TEMPAIR,Air Temperature,0,Processing Flow Diagram DCN(s),DCN 1342-00360
-TEMPAIR,Air Temperature,0,Regime(s),"Air-Sea Interface, Surface Water"
-TEMPAIR,Air Temperature,0,Solar Elevation (SOLAREL) QC,not applicable
-TEMPAIR,Air Temperature,0,Spike Test (SPKETST) QC,not applicable
-TEMPAIR,Air Temperature,0,Stuck Value Test (STUCKVL) QC,not applicable
-TEMPAIR,Air Temperature,0,Trend Test (TRNDTST) QC,not applicable
-TEMPAIR,Air Temperature,0,Units,degree C
+TEMPAIR,Air Temperature,1,1-D Interpolation (INTERP1) QC,TBD
+TEMPAIR,Air Temperature,1,Combine QC Flags (CMBNFLG) QC,TBD
+TEMPAIR,Air Temperature,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+TEMPAIR,Air Temperature,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3033
+TEMPAIR,Air Temperature,1,DOORS L2 Science Requirement Text,Direct Covariance Fluxes 
+TEMPAIR,Air Temperature,1,DPS DCN(s),DCN 1341-00360
+TEMPAIR,Air Temperature,1,Evaluate Polynomial (POLYVAL) QC,TBD
+TEMPAIR,Air Temperature,1,Global Range Test (GLBLRNG) QC,TBD
+TEMPAIR,Air Temperature,1,Gradient Test (GRADTST) QC,TBD
+TEMPAIR,Air Temperature,1,Local Range Test (LOCLRNG) QC,TBD
+TEMPAIR,Air Temperature,1,Modulus (MODULUS) QC,TBD
+TEMPAIR,Air Temperature,1,Notes,
+TEMPAIR,Air Temperature,1,Processing Flow Diagram DCN(s),DCN 1342-00360
+TEMPAIR,Air Temperature,1,Regime(s),"Air-Sea Interface, Surface Water"
+TEMPAIR,Air Temperature,1,Solar Elevation (SOLAREL) QC,TBD
+TEMPAIR,Air Temperature,1,Spike Test (SPKETST) QC,TBD
+TEMPAIR,Air Temperature,1,Stuck Value Test (STUCKVL) QC,TBD
+TEMPAIR,Air Temperature,1,Trend Test (TRNDTST) QC,TBD
+TEMPAIR,Air Temperature,1,Units,degree C
 TEMPSFL,Temperature Array in Spatial Grid,0,1-D Interpolation (INTERP1) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Combine QC Flags (CMBNFLG) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -2003,25 +2003,25 @@ WIND10M,Wind Velocity at 10 m  ,2,Spike Test (SPKETST) QC,
 WIND10M,Wind Velocity at 10 m  ,2,Stuck Value Test (STUCKVL) QC,
 WIND10M,Wind Velocity at 10 m  ,2,Trend Test (TRNDTST) QC,
 WIND10M,Wind Velocity at 10 m  ,2,Units,m/s
-WINDAVG,Mean Wind Velocity,0,1-D Interpolation (INTERP1) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Combine QC Flags (CMBNFLG) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3027
-WINDAVG,Mean Wind Velocity,0,DOORS L2 Science Requirement Text,Mean Wind Velocity
-WINDAVG,Mean Wind Velocity,0,DPS DCN(s),DCN 1341-00360
-WINDAVG,Mean Wind Velocity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Global Range Test (GLBLRNG) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Gradient Test (GRADTST) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Local Range Test (LOCLRNG) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Modulus (MODULUS) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Notes,
-WINDAVG,Mean Wind Velocity,0,Processing Flow Diagram DCN(s),DCN 1342-00360
-WINDAVG,Mean Wind Velocity,0,Regime(s),"Air-Sea Interface, Surface Water"
-WINDAVG,Mean Wind Velocity,0,Solar Elevation (SOLAREL) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Spike Test (SPKETST) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Stuck Value Test (STUCKVL) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Trend Test (TRNDTST) QC,not applicable
-WINDAVG,Mean Wind Velocity,0,Units,m/s
+WINDAVG,Mean Wind Velocity,1,1-D Interpolation (INTERP1) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Combine QC Flags (CMBNFLG) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+WINDAVG,Mean Wind Velocity,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3027
+WINDAVG,Mean Wind Velocity,1,DOORS L2 Science Requirement Text,Mean Wind Velocity
+WINDAVG,Mean Wind Velocity,1,DPS DCN(s),DCN 1341-00360
+WINDAVG,Mean Wind Velocity,1,Evaluate Polynomial (POLYVAL) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Global Range Test (GLBLRNG) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Gradient Test (GRADTST) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Local Range Test (LOCLRNG) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Modulus (MODULUS) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Notes,
+WINDAVG,Mean Wind Velocity,1,Processing Flow Diagram DCN(s),DCN 1342-00360
+WINDAVG,Mean Wind Velocity,1,Regime(s),"Air-Sea Interface, Surface Water"
+WINDAVG,Mean Wind Velocity,1,Solar Elevation (SOLAREL) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Spike Test (SPKETST) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Stuck Value Test (STUCKVL) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Trend Test (TRNDTST) QC,TBD
+WINDAVG,Mean Wind Velocity,1,Units,m/s
 WINDTUR,Wind Velocity in 3 Dimensions,0,1-D Interpolation (INTERP1) QC,not applicable
 WINDTUR,Wind Velocity in 3 Dimensions,0,Combine QC Flags (CMBNFLG) QC,not applicable
 WINDTUR,Wind Velocity in 3 Dimensions,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable

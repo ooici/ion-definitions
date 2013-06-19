@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Instrument Classes By Location With Data Product Info,Report Generated: 5/3/2013
+Instrument Classes By Location With Data Product Info,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -1807,6 +1807,8 @@ RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science 
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
+RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Seismometer BB triaxial keck,OBSBK,GRNDACC,DCN 1341-00100
+RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Seismometer BB triaxial keck,OBSBK,GRNDVEL,DCN 1341-00090
 RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Pressure SF tidal,PREST,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 RS01SLBS-MJ01A,Slope Base,01,SLBS,MJ (MP Jbox),01A,Hydrophone LF passive,HYDLF,HYDAPLF,DCN 1341-00821
@@ -1826,6 +1828,8 @@ RS03ASHS-ID03A,Ashes,03,ASHS,ID (IF box HD camera),03A,Camera digital video HD,C
 RS03ASHS-MJ03B,Ashes,03,ASHS,MJ (MP Jbox),03B,Watersample chem trace,OSMOI,PHSSAMP,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)"
 RS03ASHS-MJ03B,Ashes,03,ASHS,MJ (MP Jbox),03B,Seismometer shortperiod,OBSSP,SGRDVEL,DCN 1341-00110
 RS03ASHS-MJ03B,Ashes,03,ASHS,MJ (MP Jbox),03B,Temperature seafloor,TMPSF,TEMPSFL,DCN 1341-00130
+RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Seismometer BB triaxial keck,OBSBK,GRNDACC,DCN 1341-00100
+RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Seismometer BB triaxial keck,OBSBK,GRNDVEL,DCN 1341-00090
 RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Pressure SF tidal,PREST,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 RS03AXBS-MJ03A,Axial Base,03,AXBS,MJ (MP Jbox),03A,Hydrophone LF passive,HYDLF,HYDAPLF,DCN 1341-00821

@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Node Attributes Report,Report Generated: 5/3/2013
+Node Attributes Report,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -99,7 +99,7 @@ CE02SHSM-SB001,SB,001,Relative Depth,
 CE02SHSP-SP001,SP,001,depth_port_max,
 CE02SHSP-SP001,SP,001,depth_port_min,
 CE02SHSP-SP001,SP,001,depth_subsite,80
-CE02SHSP-SP001,SP,001,First Deployment Date,2014-07
+CE02SHSP-SP001,SP,001,First Deployment Date,2014-05
 CE02SHSP-SP001,SP,001,latitude,44.64
 CE02SHSP-SP001,SP,001,longitude,124.3
 CE02SHSP-SP001,SP,001,Platform Agent Type,Shore CyberPoP - Coastal Mooring Server
@@ -259,7 +259,7 @@ CE06ISSP-SP001,SP,001,Relative Depth,
 CE07SHSM-MF004,MF,004,depth_port_max,
 CE07SHSM-MF004,MF,004,depth_port_min,
 CE07SHSM-MF004,MF,004,depth_subsite,80
-CE07SHSM-MF004,MF,004,First Deployment Date,2014-05
+CE07SHSM-MF004,MF,004,First Deployment Date,2014-10
 CE07SHSM-MF004,MF,004,latitude,47
 CE07SHSM-MF004,MF,004,longitude,124.27
 CE07SHSM-MF004,MF,004,Platform Agent Type,InSitu CyberPoP - Surface Mooring Platform Controller
@@ -267,7 +267,7 @@ CE07SHSM-MF004,MF,004,Relative Depth,
 CE07SHSM-MF005,MF,005,depth_port_max,
 CE07SHSM-MF005,MF,005,depth_port_min,
 CE07SHSM-MF005,MF,005,depth_subsite,80
-CE07SHSM-MF005,MF,005,First Deployment Date,2014-05
+CE07SHSM-MF005,MF,005,First Deployment Date,2014-10
 CE07SHSM-MF005,MF,005,latitude,47
 CE07SHSM-MF005,MF,005,longitude,124.27
 CE07SHSM-MF005,MF,005,Platform Agent Type,InSitu CyberPoP - Surface Mooring Platform Controller
@@ -275,7 +275,7 @@ CE07SHSM-MF005,MF,005,Relative Depth,
 CE07SHSM-RI002,RI,002,depth_port_max,
 CE07SHSM-RI002,RI,002,depth_port_min,
 CE07SHSM-RI002,RI,002,depth_subsite,80
-CE07SHSM-RI002,RI,002,First Deployment Date,2014-05
+CE07SHSM-RI002,RI,002,First Deployment Date,2014-10
 CE07SHSM-RI002,RI,002,latitude,47
 CE07SHSM-RI002,RI,002,longitude,124.27
 CE07SHSM-RI002,RI,002,Platform Agent Type,InSitu CyberPoP - Surface Mooring Platform Controller
@@ -283,7 +283,7 @@ CE07SHSM-RI002,RI,002,Relative Depth,
 CE07SHSM-RI003,RI,003,depth_port_max,
 CE07SHSM-RI003,RI,003,depth_port_min,
 CE07SHSM-RI003,RI,003,depth_subsite,80
-CE07SHSM-RI003,RI,003,First Deployment Date,2014-05
+CE07SHSM-RI003,RI,003,First Deployment Date,2014-10
 CE07SHSM-RI003,RI,003,latitude,47
 CE07SHSM-RI003,RI,003,longitude,124.27
 CE07SHSM-RI003,RI,003,Platform Agent Type,InSitu CyberPoP - Surface Mooring Platform Controller
@@ -291,7 +291,7 @@ CE07SHSM-RI003,RI,003,Relative Depth,
 CE07SHSM-SB001,SB,001,depth_port_max,
 CE07SHSM-SB001,SB,001,depth_port_min,
 CE07SHSM-SB001,SB,001,depth_subsite,80
-CE07SHSM-SB001,SB,001,First Deployment Date,2014-05
+CE07SHSM-SB001,SB,001,First Deployment Date,2014-10
 CE07SHSM-SB001,SB,001,latitude,47
 CE07SHSM-SB001,SB,001,longitude,124.27
 CE07SHSM-SB001,SB,001,Platform Agent Type,InSitu CyberPoP - Surface Mooring Platform Controller

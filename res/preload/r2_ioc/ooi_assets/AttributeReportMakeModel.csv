@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Make/Model Attributes Report,Report Generated: 5/3/2013
+Make/Model Attributes Report,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -470,6 +470,20 @@ WET Labs,ECO Puck FLBBCD-SLK,ECO Puck FLBBCD-SLK,Lead Time,
 WET Labs,ECO Puck FLBBCD-SLK,ECO Puck FLBBCD-SLK,Make/Model Website,
 WET Labs,ECO Puck FLBBCD-SLK,ECO Puck FLBBCD-SLK,Output Description,
 WET Labs,ECO Puck FLBBCD-SLK,ECO Puck FLBBCD-SLK,Vendor Website,
+WET Labs,ECO Puck FLBB-SLC,ECO Puck FLBB-SLC,Connector,
+WET Labs,ECO Puck FLBB-SLC,ECO Puck FLBB-SLC,Input Voltage Range,
+WET Labs,ECO Puck FLBB-SLC,ECO Puck FLBB-SLC,Interface,
+WET Labs,ECO Puck FLBB-SLC,ECO Puck FLBB-SLC,Lead Time,
+WET Labs,ECO Puck FLBB-SLC,ECO Puck FLBB-SLC,Make/Model Website,
+WET Labs,ECO Puck FLBB-SLC,ECO Puck FLBB-SLC,Output Description,
+WET Labs,ECO Puck FLBB-SLC,ECO Puck FLBB-SLC,Vendor Website,
+WET Labs,ECO Triplet,"ECO Triplet  (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)",Connector,
+WET Labs,ECO Triplet,"ECO Triplet  (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)",Input Voltage Range,
+WET Labs,ECO Triplet,"ECO Triplet  (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)",Interface,
+WET Labs,ECO Triplet,"ECO Triplet  (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)",Lead Time,
+WET Labs,ECO Triplet,"ECO Triplet  (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)",Make/Model Website,
+WET Labs,ECO Triplet,"ECO Triplet  (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)",Output Description,
+WET Labs,ECO Triplet,"ECO Triplet  (700 nm backscatter, 370/640 nm CDOM, 470/695 Chl)",Vendor Website,
 WET Labs,ECO Triplet-w,ECO Triplet-w,Connector,
 WET Labs,ECO Triplet-w,ECO Triplet-w,Input Voltage Range,
 WET Labs,ECO Triplet-w,ECO Triplet-w,Interface,

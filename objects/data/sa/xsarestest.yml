@@ -47,3 +47,19 @@ TestExtendedResourceDeploy: !Extends_ExtendedResource
   device_31: !Device
   #@hasDeployment=InstrumentSite,PlatformSite
   site_31: !Site
+
+
+# An object used for testing of the framework
+#@OriginResourceType=Site
+TestExtendedResourceSite: !Extends_ExtendedResource
+  #@hasSite<
+  parent_site: !Site      # The immediate parent of this site (if any)
+
+  #@hasSite>
+  child_sites: []
+
+  #@hasSite>=InstrumentSite
+  child_instrument_sites: []
+
+  #@hasSite>=InstrumentSite,PlatformSite
+  child_sites1: []

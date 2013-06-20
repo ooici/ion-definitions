@@ -140,7 +140,7 @@ ResourceContainer:
 
 # A derived object containing common fields for all extended resource objects
 ExtendedResource: !Extends_ResourceContainer
-  computed: !ComputedAttributes
+  computed: !BaseComputedAttributes
   #@hasPolicy
   policies: []  # A list of any associated policies
   #@hasOwnerInfo

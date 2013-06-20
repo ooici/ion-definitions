@@ -141,7 +141,7 @@ container:
   # Capability profile to use (assumes a file in res/profile/<name>.yml unless a path is specified)
   # NOTE: This can affect the configuration if there is a config section in the profile file!!!
   profile: development   # Profile for development purposes
-  #profile: production   # Profile for gumstix container
+  #profile: production   # Profile for production container
   #profile: gumstix      # Profile for gumstix container
   #profile: dataadmin    # Profile for a database admin
 
@@ -174,7 +174,10 @@ container:
       prefetch_count: 1                 # how many messages to prefetch from broker by default
     interceptor: # TODO: move entries to here
     conversation_log:
-          header_fields: []
+      header_fields: []
+
+  processes:
+    exit_once_empty: True    # Whether the container should exit once all spawned processes have been terminated
 
   objects:
     validate: # TODO: move entries to here
@@ -256,7 +259,7 @@ interceptor:
 
 # TODO: Rename system.exchange_spaces
 exchange_spaces:
-   # define the names and structure of exchange spaces and exchange points
+    # define the names and structure of exchange spaces and exchange points
     ioncore:
         exchange_points:
             science_data:

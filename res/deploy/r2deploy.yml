@@ -248,7 +248,7 @@ apps:
     processapp: [vis_user_queue_monitor, ion.processes.data.visualization.vis_user_queue_monitor, VisUserQueueMonitor]
     bootlevel: 30
     config:
-      user_queue_monitor_timeout: 300
+      user_queue_monitor_timeout: 120
       user_queue_monitor_size: 100
 
   # LAST SERVICE GATEWAY SERVICE
@@ -259,4 +259,3 @@ apps:
   - name: service_gateway
     processapp: [service_gateway, ion.services.coi.service_gateway_service, ServiceGatewayService]
     bootlevel: 30
-

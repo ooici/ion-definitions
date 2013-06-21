@@ -1,0 +1,65 @@
+# An object used for testing of the framework
+#@OriginResourceType=Deployment
+TestExtendedResourceDeploy: !Extends_ExtendedResource
+  #@hasDeployment=InstrumentDevice
+  device_11: !InstrumentDevice
+  #@hasDeployment=InstrumentSite
+  site_11: !InstrumentSite
+
+  #@hasDeployment=InstrumentDevice
+  device_12: []
+  #@hasDeployment=InstrumentSite
+  site_12: []
+
+  #@hasDeployment=InstrumentDevice
+  device_13: 0
+  #@hasDeployment=InstrumentSite
+  site_13: 0
+
+  #@hasDeployment=InstrumentDevice
+  device_14:
+  #@hasDeployment=InstrumentSite
+  site_14:
+
+
+  #@hasDeployment=InstrumentDevice,PlatformDevice
+  device_21: !InstrumentDevice
+  #@hasDeployment=InstrumentSite,PlatformSite
+  site_21: !InstrumentSite
+
+  #@hasDeployment=InstrumentDevice,PlatformDevice
+  device_22: []
+  #@hasDeployment=InstrumentSite,PlatformSite
+  site_22: []
+
+  #@hasDeployment=InstrumentDevice,PlatformDevice
+  device_23: 0
+  #@hasDeployment=InstrumentSite,PlatformSite
+  site_23: 0
+
+  #@hasDeployment=InstrumentDevice,PlatformDevice
+  device_24:
+  #@hasDeployment=InstrumentSite,PlatformSite
+  site_24:
+
+
+  #@hasDeployment=InstrumentDevice,PlatformDevice
+  device_31: !Device
+  #@hasDeployment=InstrumentSite,PlatformSite
+  site_31: !Site
+
+
+# An object used for testing of the framework
+#@OriginResourceType=Site
+TestExtendedResourceSite: !Extends_ExtendedResource
+  #@hasSite<
+  parent_site: !Site      # The immediate parent of this site (if any)
+
+  #@hasSite>
+  child_sites: []
+
+  #@hasSite>=InstrumentSite
+  child_instrument_sites: []
+
+  #@hasSite>=InstrumentSite,PlatformSite
+  child_sites1: []

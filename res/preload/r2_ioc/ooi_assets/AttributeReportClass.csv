@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Class Attributes Report,Report Generated: 5/3/2013
+Class Attributes Report,Report Generated: 6/19/2013
 
 Textbox14
 
@@ -318,14 +318,14 @@ FDCHP,Flux direct covariance,ClassLongName,flux_direct_cov_HP
 FDCHP,Flux direct covariance,Comments,
 FDCHP,Flux direct covariance,CP Spares,
 FDCHP,Flux direct covariance,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,Flux direct covariance,ECRs that changed the count,1300-00318
+FDCHP,Flux direct covariance,ECRs that changed the count,1300-00318 & 1303-00996
 FDCHP,Flux direct covariance,Global Spares,
 FDCHP,Flux direct covariance,Instrument Configuration,
 FDCHP,Flux direct covariance,Link to the Specification,
 FDCHP,Flux direct covariance,Notes,
 FDCHP,Flux direct covariance,PrimaryScienceDiscipline,P
 FDCHP,Flux direct covariance,Produces Acoustic Interference,
-FDCHP,Flux direct covariance,Ready for 2013?,No. ECR 1303-00996.
+FDCHP,Flux direct covariance,Ready for 2013?,No.  Waiver 1303-00996
 FDCHP,Flux direct covariance,RSN O&M Spares,
 FDCHP,Flux direct covariance,RSN Part Number,
 FDCHP,Flux direct covariance,Susceptible to Acoustic Interference,
@@ -946,7 +946,7 @@ THSPH,Temp H2 H2S pH,Link to the Specification,
 THSPH,Temp H2 H2S pH,Notes,
 THSPH,Temp H2 H2S pH,PrimaryScienceDiscipline,C
 THSPH,Temp H2 H2S pH,Produces Acoustic Interference,
-THSPH,Temp H2 H2S pH,Ready for 2013?,No. (Waiver Pending)
+THSPH,Temp H2 H2S pH,Ready for 2013?,No. Waiver 1304-00289
 THSPH,Temp H2 H2S pH,RSN O&M Spares,
 THSPH,Temp H2 H2S pH,RSN Part Number,
 THSPH,Temp H2 H2S pH,Susceptible to Acoustic Interference,

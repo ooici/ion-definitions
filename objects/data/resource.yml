@@ -82,9 +82,12 @@ ComputedDictValue: !Extends_ComputedValue
 
 ---
 
+BaseComputedAttributes:
+
+---
 # The base type for computed attribute objects
 # IMPORTANT!!! NOTHING IN HERE SHOULD REFERENCE LOCAL FUNCTIONS SINCE THIS IS USED ACROSS SERVICES
-ComputedAttributes:
+ComputedAttributes: !Extends_BaseComputedAttributes
   #@Method=user_notification.get_recent_events
   recent_events: !ComputedListValue    # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first
   #@ServiceRequest=user_notification.get_recent_events
@@ -137,7 +140,7 @@ ResourceContainer:
 
 # A derived object containing common fields for all extended resource objects
 ExtendedResource: !Extends_ResourceContainer
-  computed: !ComputedAttributes
+  computed: !BaseComputedAttributes
   #@hasPolicy
   policies: []  # A list of any associated policies
   #@hasOwnerInfo

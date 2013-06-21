@@ -72,9 +72,9 @@ DataProductExtension: !Extends_ExtendedInformationResource
 DeploymentExtension: !Extends_ExtendedInformationResource
   ### device and site directly associated with deployment
   #@hasDeployment=InstrumentDevice,PlatformDevice
-  device:
+  device: !Device
   #@hasDeployment=InstrumentSite,PlatformSite
-  site:
+  site: !Site
   ### in tree below deployment, all device nodes
   #@ResourceType=InstrumentDevice
   instrument_devices: []  # The associated Instrument devices
@@ -90,6 +90,8 @@ DeploymentExtension: !Extends_ExtendedInformationResource
   instrument_models: []  # The associated models
   #@ResourceType=PlatformModel
   platform_models: []  # The associated models
+  portal_instruments: []
+
 ---
 
 # This object contains additional information associated with a Site resource.
@@ -413,7 +415,6 @@ DeploymentComputedAttributes: !Extends_ComputedAttributes
   #@ResourceType=InstrumentSite,PlatformSite
   portals: !ComputedListValue
   portal_status: !ComputedListValue
-  portal_device: !ComputedListValue
   # status of device lists
   instrument_status: !ComputedListValue
   platform_status: !ComputedListValue

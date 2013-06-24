@@ -44,4 +44,7 @@ apps:
   bootstrapper3: {}
   parameter_bootstrap: {}
   policy_bootstrap: {}
-  qc_post_processor: {}
+  qc_post_processor:
+    include: False
+  vis_user_queue_monitor:
+    include: False

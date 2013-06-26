@@ -13,6 +13,7 @@ ParameterContext: !Extends_InformationResource
   standard_name: ""
   ooi_short_name: ""
   precision: ""
+  visible: True
 
 
 ParameterDictionary: !Extends_InformationResource

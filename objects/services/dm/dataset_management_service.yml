@@ -22,6 +22,7 @@ methods:
       temporal_domain:         {}
       parameter_dictionary_id: ""
       description:             ""
+      parent_dataset_id:       ""
     out:
       dataset_id:              ""
 

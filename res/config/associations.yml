@@ -71,6 +71,10 @@ AssociationDefinitions:
     domain: [DataProduct]
     range: [Device, Site]
     docstring: References a child Site for a Site. The extent of all these associations form a true tree with an Observatory as root.
+  - predicate: hasDataProductParent
+    domain: [DataProduct]
+    range: [DataProduct]
+    docstring: References a parent Data Product indicating that the referencer is a derived data product
   - predicate: hasVersion
     domain: [DataProductCollection]
     range: [DataProduct]

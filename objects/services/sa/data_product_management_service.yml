@@ -26,6 +26,7 @@ methods:
       stream_definition_id: ""
       exchange_point: ""
       dataset_id: ""
+      parent_data_product_id: ""
     out:
       data_product_id: ""
 

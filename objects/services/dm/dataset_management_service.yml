@@ -22,6 +22,7 @@ methods:
       temporal_domain:         {}
       parameter_dictionary_id: ""
       description:             ""
+      parent_dataset_id:       ""
     out:
       dataset_id:              ""
 
@@ -124,6 +125,7 @@ methods:
       standard_name: ""
       ooi_short_name: ""
       precision: ""
+      visible: True
     out:
       parameter_context_id: ""
 

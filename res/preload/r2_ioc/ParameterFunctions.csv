@@ -73,7 +73,7 @@ BETA,PFID56,,nortek_mag_corr_north,VEL3D,"C,D",PythonFunction,nortek_mag_corr_no
 BETA,PFID57,,nobska_scale_up_vel,VEL3D,"A,B",NumexprFunction,w / 100.0,,['w'],,L1 VELPTTU-VLN (Nobska) by converting L0 from cm/s to m/s.,
 BETA,PFID58,,nortek_scale_up_vel,VEL3D,"C,D",NumexprFunction,w / 1000.0,,['w'],,L1 VELPTTU-VLN (Nortek) by converting L0 from mm/s to m/s.,
 SP_TEST,PFID59,,do2_SVU,DOSTA,ALL,PythonFunction,do2_SVU,ion_functions.data.do2_functions,"['calphase','do_temp','csv']",,The Stern-Volmer-Uchida equation that converts phase into temperature corrected dissolved oxygen L1 DOCONCS,
-SP_TEST,PFID60,,o2_counts_to_uM,DOSTA,ALL,NumexprFunction,(o2_counts / 10000.0) - 10.0,,['o2_counts'],,"L1 DOCONCS from a CTDBP linked DOSTA, converts counts to umol/L",
+SP_TEST,PFID60,,o2_counts_to_uM,CTDBP,"N,O",NumexprFunction,(o2_counts / 10000.0) - 10.0,,['o2_counts'],,"L1 DOCONCS from a CTDBP linked DOSTA, converts counts to umol/L",
 SP_TEST,PFID61,,do2_salinity_correction,DOSTA,ALL,PythonFunction,do2_salinity_correction,ion_functions.data.do2_functions,"['DO','do_temp', 'P','T','SP','lat','lon']",,Salinity and pressure correction to dissolved oxygen producing L2 DOCONCS,
 CW_TEST,PFID62,,sfl_trhph_reftemp,TRHPH,ALL,NumexprFunction,27.50133 - 17.2658 * V_s + 15.83424 / V_s,,['V_s'],,TRHPH thermistor reference temperature,
 CW_TEST,PFID63,,sfl_trhph_vfltemp,TRHPH,ALL,PythonFunction,sfl_trhph_vfltemp,ion_functions.data.sfl_functions,"['V_s','V_c','a','b','c','d','e']",,"L1 TRHPHTE, Vent Fluid Temperature from the TRHPH instrument class.",

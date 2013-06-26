@@ -125,6 +125,7 @@ methods:
       standard_name: ""
       ooi_short_name: ""
       precision: ""
+      visible: True
     out:
       parameter_context_id: ""
 

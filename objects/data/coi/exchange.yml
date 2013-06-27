@@ -12,7 +12,7 @@ ExchangeName: !Extends_InformationResource
 # Represents a message router within an Exchange Space. Message routing may occur based on
 # topic, headers or content.
 ExchangePoint: !Extends_InformationResource
-  topology_type: "topic_tree"
+  topology_type: "ttree"
 
 
 # Represents one message broker (may be a cluster of multiple nodes) or messaging appliance.

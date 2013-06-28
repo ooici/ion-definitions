@@ -50,13 +50,13 @@ apps:
     config:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_exchange, BootstrapExchange]
+
 
   ##################################
   # HIGHER LEVEL SERVICES
   ##################################
 
-
-#
   - name: process_dispatcher
     processapp: [process_dispatcher, ion.services.cei.process_dispatcher_service, ProcessDispatcherService]
     bootlevel: 10

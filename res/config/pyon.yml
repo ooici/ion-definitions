@@ -3,6 +3,9 @@
 #   CFG.server.amqp.host
 # Do not modify this file! Set overrides in pyon.local.yml or in rel files
 
+# PLEASE DO NOT ADD NEW TOP LEVEL KEYS
+# PLEASE COORDINATE WITH ARCHITECTURE FOR APPROPRIATE CFG KEYS
+
 # ----------------------------------------------------------------------------------
 # The "system" root entry defines settings for the distributed ION system that this
 # container starts or joins. A system comprises all containers with the same sysname.
@@ -257,26 +260,37 @@ interceptor:
     process_outgoing: [governance]
     process_incoming: [governance]
 
-# TODO: Rename system.exchange_spaces
-exchange_spaces:
+# ----------------------------------------------------------------------------------
+# The "exchange" root entry contains config of the system wide Exchange for bootstrap
+exchange:
+  exchange_spaces:
     # define the names and structure of exchange spaces and exchange points
     ioncore:
-        exchange_points:
-            science_data:
-                type: topic_tree
-            events:
-                type: topic_tree
-        brokers: [default_broker]
+      description: The system root exchange space
+      exchange_points:
+        science_data:
+          type: ttree
+          description: System default exchange point for data streams
+        events:
+          type: ttree
+          description: System default exchange point for system events
 
-# TODO: Rename system.core_xps
-core_xps:
+  exchange_brokers:
+    system_broker:
+      server: amqp
+      description: Main exchange broker (RabbitMQ 2.7.x AMQP 0.9.1)
+      join_xs: [ioncore]
+      join_xp: []
+
+  core_xps:
     # used as defaults by pyon.ion.endpoint and PubSub Mgmt Service
+    ion_rpc: ioncore
     science_data: ioncore.science_data
     events: ioncore.events
 
-core_stream_types:
-    - "BlogStreamType"
-    - "ScienceStreamType"
+#core_stream_types:
+#    - "BlogStreamType"
+#    - "ScienceStreamType"
 
 
 # ----------------------------------------------------------------------------------
@@ -384,3 +398,7 @@ device:
 
 units: res/config/units/udunits2.xml
 
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# PLEASE DO NOT ADD NEW TOP LEVEL KEYS
+# PLEASE COORDINATE WITH ARCHITECTURE FOR APPROPRIATE CFG KEYS
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

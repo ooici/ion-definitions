@@ -137,6 +137,8 @@ Parameter:
 
 DeviceStatusType: !enum (values=(STATUS_UNKNOWN, STATUS_OK, STATUS_WARNING, STATUS_CRITICAL), default=STATUS_UNKNOWN)
 
+CommissionedStatusType: !enum (values=(NOT_COMMISSIONED, COMMISSIONED, DECOMMISSIONED, OTHER), default=NOT_COMMISSIONED)
+
 AggregateStatusType: !enum (values=(AGGREGATE_COMMS, AGGREGATE_DATA, AGGREGATE_LOCATION, AGGREGATE_POWER), default=AGGREGATE_COMMS)
 
 ---
@@ -148,14 +150,13 @@ Device: !Extends_TaskableResource
   controllable: True   # Whether the device can be sent a control message
   reference_urls: []   # References to pages about that individual device (e.g. Configuration diagram)
   uuid: ""             # the uuid provide by the manufacturer
+  commissioned: !CommissionedStatusType     # Commissioning status
   #@ContentType=ContactInformation
   contacts: []         # Contacts for this device.
   # Additional attributes required for specific devices
   # Recommended format: {attribute1_name:value, attribute2_name:value}
   # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
-
-
 
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
@@ -243,14 +244,13 @@ FrameOfReference: !Extends_InformationResource
 # Describes a type of agent. Abstract base type.
 AgentDefinition: !Extends_InformationResource
   agent_version: ""
-#  connection_method: ""
-#  event_publisher_origin: ""
   # (SYS) location of driver, used if class and module are NOT defined
   driver_uri: ""
   # (SYS) module for driver source code
   driver_module: ""
   # (SYS) class for driver source code
   driver_class: ""
+  commissioned: !CommissionedStatusType     # Commissioning status
 
 # Describes a running or scheduled agent representing a single resource. Abstract base type.
 AgentInstance: !Extends_InformationResource

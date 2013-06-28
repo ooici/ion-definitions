@@ -87,6 +87,7 @@ apps:
     config:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_exchange, BootstrapExchange]
 
   ##################################
   # HIGHER LEVEL SERVICES

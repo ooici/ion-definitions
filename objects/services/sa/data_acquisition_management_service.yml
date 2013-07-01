@@ -346,10 +346,11 @@ methods:
   # -----------------
   # Manipulate external dataset agent  : ExternalDatasetAgent
   create_external_dataset_agent:
-    docstring: Persist ExternalDatasetAgent object, associate with a DatasetModel and return object _id as OOI id
+    docstring: Persist ExternalDatasetAgent object, associate with a DatasetModel or device model and return object _id as OOI id
     in:
       external_dataset_agent: !ExternalDatasetAgent
       external_dataset_model_id: ""
+      device_model_id: ""
     out:
       external_dataset_agent_id: ""
     throws:
@@ -391,8 +392,17 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  assign_model_to_external_dataset_agent:
+    in:
+      model_id: ""
+      external_dataset_agent_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
   # -----------------
   # Manipulate external dataset agent instance : ExternalDatasetAgentInstance
+
   create_external_dataset_agent_instance:
     docstring: Create and persist ExternalDatasetAgentInstance, associate both the ExternalDatasetAgent and the ExternalDataset that it will control
     in:

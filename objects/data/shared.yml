@@ -1,6 +1,5 @@
 # Place shared objects in here that can be used by definitions in subdirectories
 
-
 Phone:
   phone_number: ""
   phone_type: ""
@@ -49,7 +48,6 @@ GeospatialCoordinateReferenceSystem:
   geospatial_vertical_units: ""
   geospatial_vertical_positive: ""
 
-
 # Data structure for representing geospatial bounds uniformly across resources
 GeospatialBounds:
   geospatial_latitude_limit_north: 0.0
@@ -59,14 +57,12 @@ GeospatialBounds:
   geospatial_vertical_min: 0.0
   geospatial_vertical_max: 0.0
 
-
 GeospatialPoint:
   geospatial_vertical_location: 0.0
   geospatial_vertical_accuracy: 0.0
   geospatial_latitude: 0.0
   geospatial_longitude: 0.0
   geospatial_horizontal_accuracy: 0.0
-
 
 TemporalBounds:
   name: ""
@@ -143,7 +139,6 @@ AggregateStatusType: !enum (values=(AGGREGATE_COMMS, AGGREGATE_DATA, AGGREGATE_L
 
 ---
 
-
 # Describes a physical device with a serial number, such as sensor, instrument and platform. Abstract base type.
 Device: !Extends_TaskableResource
   serial_number: ""    # unique identifier of device provided by manufacturer
@@ -157,7 +152,6 @@ Device: !Extends_TaskableResource
   # Recommended format: {attribute1_name:value, attribute2_name:value}
   # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
-
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
 DeviceModel: !Extends_InformationResource
@@ -187,6 +181,7 @@ DeviceModel: !Extends_InformationResource
   has_clock: True      # Indicates whether the device has an internal clock or not
   #@ContentType=ParameterCharacteristicsReport
   parameter_characteristics_reports: []    # list of ParameterCharacteristicsReport objects
+
 ---
 
 AttachmentType: !enum (values=(ASCII, BLOB, OBJECT, REFERENCE), default=ASCII)
@@ -220,7 +215,11 @@ Attachment: !Extends_InformationResource
   attachment_size: 0 # size of the attachment content field, in bytes
   context: !AbstractAttachmentContext
 
-DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE), default=PROCESS)
+StreamConfiguration:
+  stream_name: ""                 # the tag that the driver uses to reference this stream
+  parameter_dictionary_name: ""   # the name of the parameter dictionary that defines the contents of the stream
+  records_per_granule: 0          # recommended number of records/samples to place in a single granule
+  granule_publish_rate: 0         # max recommended seconds between publishing granules
 
 ---
 
@@ -239,36 +238,53 @@ FrameOfReference: !Extends_InformationResource
   coordinate_reference_system: !GeospatialCoordinateReferenceSystem
   geospatial_point_center: !GeospatialIndex
 
+# Determines how the agent is deployed. PROCESS=One process per resource; SERVICE: One service per resource type
+DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE, CLIENT), default=PROCESS)
+
+# Determines how the driver/handler for an agent is deployed. ION_PROCESS: as an ION process;
+# EXT_PROCESS: as a separate UNIX process; CLASS: as a loaded plugin class
+DriverTypeEnum:  !enum (values=(ION_PROCESS, EXT_PROCESS, CLASS), default=CLASS)
+
 ---
 
 # Describes a type of agent. Abstract base type.
 AgentDefinition: !Extends_InformationResource
+  # (SYS) location of agent code, used if class and module are NOT defined
+  agent_uri: ""
+  # (SYS) module for agent source code
+  agent_module: ""
+  # (SYS) class for agent source code
+  agent_class: ""
+  # (SYS) released version of driver code package. NOTE: this is set instead of the driver_version
   agent_version: ""
+
+  # (SYS) released version of driver code package.
+  driver_version:
   # (SYS) location of driver, used if class and module are NOT defined
   driver_uri: ""
   # (SYS) module for driver source code
   driver_module: ""
   # (SYS) class for driver source code
   driver_class: ""
-  commissioned: !CommissionedStatusType     # Commissioning status
+  # (SYS) instantiation type of driver (ION_PROCESS, EXT_PROCESS, CLASS)
+  driver_type: !DriverTypeEnum
+
+  # Commissioning status
+  commissioned: !CommissionedStatusType
 
 # Describes a running or scheduled agent representing a single resource. Abstract base type.
 AgentInstance: !Extends_InformationResource
-  deployment_type: !DeploymentTypeEnum  # PROCESS=One process per resource; SERVICE: One service per resource type
-#  exchange_name: ""
+  # Determines how the actual agent is accessible
+  deployment_type: !DeploymentTypeEnum
+  # Authored, specific config for the driver/handler part, such as connection ports
   driver_config: {}
-  agent_config: {}
-  agent_process_id: ""
   #@EditSizeHint=Large
   alerts: []
 
----
-
-StreamConfiguration:
-  stream_name: ""                 # the tag that the driver uses to reference this stream
-  parameter_dictionary_name: ""   # the name of the parameter dictionary that defines the contents of the stream
-  records_per_granule: 0          # recommended number of records/samples to place in a single granule
-  granule_publish_rate: 0         # max recommended seconds between publishing granules
+  # Cached, generated spawn config for the agent process
+  agent_config: {}
+  # The process_id of the agent process. (remove) this information is in the directory.
+  agent_process_id: ""
 
 ---
 
@@ -342,7 +358,6 @@ Negotiation: !Extends_InformationResource
   #@ContentType=ServiceAgreementProposal
   proposals: []  # The last SAP in the list is considered the most recent one
 
-
 ---
 
 # This is a proxy object used to convey a contextualized negotiation to the UI in lieu of
@@ -357,7 +372,6 @@ NegotiationRequest:
   description: ""
   reason: ""
 
-
 ---
 
 #Resource specific negotiation requests
@@ -366,7 +380,6 @@ OrgUserNegotiationRequest: !Extends_NegotiationRequest
   org_id: ""
   user_id: ""
   name: ""   # This can be set to the Org name or User name depending upon which service fulfills
-
 
 ---
 

@@ -349,8 +349,7 @@ methods:
     docstring: Persist ExternalDatasetAgent object, associate with a DatasetModel or device model and return object _id as OOI id
     in:
       external_dataset_agent: !ExternalDatasetAgent
-      external_dataset_model_id: ""
-      device_model_id: ""
+      external_dataset_model_id: ""    # NOTE: Can be any model id
     out:
       external_dataset_agent_id: ""
     throws:

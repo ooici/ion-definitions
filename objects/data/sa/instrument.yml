@@ -70,17 +70,5 @@ InstrumentAgent: !Extends_DeviceAgent
 
 # Describes parameters for an instance of an instrument agent for a specific device.
 InstrumentAgentInstance: !Extends_AgentInstance
-#  svr_addr: ""
-#  comms_method: ""
-#  comms_device_address: ""
-#  comms_device_port: 0
-#  comms_server_address: ""
-#  comms_server_port: 0
-  #replace all the individual items about with driver_config and agent_config dict
-#  driver_config: {}
-#  agent_config: {}
   port_agent_config: {}
   startup_config: {}
-#  port_agent_work_dir: ""
-#  port_agent_delimeter: []
-

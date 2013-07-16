@@ -60,3 +60,7 @@ PlatformAgentInstanceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "PlatformAgentInstance"
   resource_identifier: "platform_agent_instance_id"
 
+UserInfoServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "UserInfo"
+  resource_identifier: "user_info_id"
+

@@ -188,6 +188,17 @@ methods:
     throws:
       NotFound: failed to find UserCredential, ActorIdentity, association or UserInfo object
 
+  prepare_user_info_support:
+    docstring: |
+      Returns the information needed to create or update user information. The user_info_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
+    in:
+      user_info_id: ""
+    out:
+      resource_schema: !UserInfoPrepareSupport
+    throws:
+      NotFound: An object with the specified instrument_device_id does not exist
+
   # -----------------
   # Utility methods for users authenticating
   

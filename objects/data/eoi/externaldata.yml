@@ -51,6 +51,8 @@ DataSourceAgentInstance: !Extends_AgentInstance
   login: ""
   password: ""
 
+DatasetAgentTypeEnum: !enum (values=(EXTERNAL_DATASET, DEVICE), default=EXTERNAL_DATASET)
+
 ---
 # Describes a dataset provided by an external collaborator or organization.
 ExternalDataset: !Extends_InformationResource
@@ -66,9 +68,17 @@ ExternalDatasetModel: !Extends_InformationResource
 
 # Describes a type of external dataset agent
 ExternalDatasetAgent: !Extends_DeviceAgent
+  dataset_agent_type: !DatasetAgentTypeEnum
+
+  poller_module: ""
+  poller_class: ""
+  poller_uri: ""
+  poller_default_config: {}
+
+  parser_module: ""
+  parser_class: ""
+  parser_uri: ""
+  parser_default_config: {}
 
 # Describes an instance of external dataset agent
 ExternalDatasetAgentInstance: !Extends_AgentInstance
-  dataset_driver_config: {}
-  dataset_agent_config: {}
-  dataset_agent_process_id: ""

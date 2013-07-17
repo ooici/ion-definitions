@@ -1,0 +1,12 @@
+# This file configures the OOI alpha instance configuration
+
+load_sequence:
+
+  - name: load_OOIR2_OPTAA
+    docstring: Load physical instrument sites, devices and agent instance definitions
+    config:
+      op: load
+      scenario: OPTAA
+      idmap: True
+      excludecategories: InstrumentModel
+      revert: True

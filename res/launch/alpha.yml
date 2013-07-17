@@ -42,6 +42,7 @@ config:
       host: sg.a.oceanobservatories.org
       port: 10999
   system:
+    web_ui_url: http://ion-alpha.oceanobservatories.org/
     elasticsearch: true
     smtp: true
     load_policy: true

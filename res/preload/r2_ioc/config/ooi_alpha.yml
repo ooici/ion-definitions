@@ -65,3 +65,12 @@ load_sequence:
       scenario: CTDBP,VEL3D_B
       idmap: True
       excludecategories: InstrumentAgent,InstrumentModel
+
+  - name: load_OOIR2_OPTAA
+    docstring: Load physical instrument sites, devices and agent instance definitions
+    config:
+      op: load
+      scenario: OPTAA
+      idmap: True
+      excludecategories: InstrumentModel
+      revert: True

@@ -62,6 +62,6 @@ load_sequence:
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      scenario: CTDBP,VEL3D_B
+      scenario: CTDBP,VEL3D_B, OPTAA
       idmap: True
       excludecategories: InstrumentAgent,InstrumentModel

@@ -259,7 +259,7 @@ AgentDefinition: !Extends_InformationResource
   agent_version: ""
 
   # (SYS) released version of driver code package.
-  driver_version:
+  driver_version: ""
   # (SYS) location of driver, used if class and module are NOT defined
   driver_uri: ""
   # (SYS) module for driver source code

@@ -265,3 +265,12 @@ methods:
     throws:
       NotFound: An object with the specified data_product_id does not exist
 
+  get_data_product_parameter_provenance:
+    in:
+      data_product_id: ""
+      parameter_name: ""
+    out:
+      provenance_image: ""
+    throws:
+      BadRequest: if provenance can not be retrieved
+      NotFound: object with specified id does not exist

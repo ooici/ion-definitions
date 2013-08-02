@@ -141,13 +141,13 @@ ResourceContainer:
 # A derived object containing common fields for all extended resource objects
 ExtendedResource: !Extends_ResourceContainer
   computed: !BaseComputedAttributes
-  #@hasPolicy
+  #@hasPolicy=Policy
   policies: []  # A list of any associated policies
   #@hasOwnerInfo
   owners: []  # A list of  owner information of this resource
   #@hasResource=Org
   orgs: []  # A list of orgs to which this resource belongs - NOTE this does not apply to Users!
-  #@hasAttachment
+  #@hasAttachment=Attachment
   attachments: []  # list of sensors attached to this device
 
 

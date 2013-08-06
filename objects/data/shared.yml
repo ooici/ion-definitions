@@ -270,7 +270,7 @@ AgentDefinition: !Extends_InformationResource
   # Commissioning status
   commissioned: !CommissionedStatusType
   # the default settings for this agent (pubrate, etc)
-  agent_init_config: {}
+  agent_default_config: {}
 
 # Describes a running or scheduled agent representing a single resource. Abstract base type.
 AgentInstance: !Extends_InformationResource

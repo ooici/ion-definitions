@@ -198,6 +198,11 @@ DeviceStatusEvent: !Extends_DeviceEvent
 
 ---
 
+OMSDeviceStatusEvent: !Extends_DeviceStatusEvent
+  status_details: {}
+
+---
+
 DeviceAggregateStatusEvent: !Extends_DeviceStatusEvent
   status_name: !AggregateStatusType
   prev_status: !DeviceStatusType

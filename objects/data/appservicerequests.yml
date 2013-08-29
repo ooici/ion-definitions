@@ -24,6 +24,10 @@ InstrumentDeviceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "InstrumentDevice"
   resource_identifier: "instrument_device_id"
 
+InstrumentSiteServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "InstrumentSite"
+  resource_identifier: "instrument_site_id"
+
 InstrumentModelServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "InstrumentModel"
   resource_identifier: "instrument_model_id"
@@ -47,6 +51,10 @@ DeploymentServiceRequest: !Extends_ResourceServiceRequest
 PlatformDeviceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "PlatformDevice"
   resource_identifier: "platform_device_id"
+
+PlatformSiteServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "PlatformSite"
+  resource_identifier: "platform_site_id"
 
 PlatformModelServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "PlatformModel"

@@ -86,3 +86,20 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  start_agent_instance:
+    docstring: Start the given Agent Instance. Delegates to the type specific service.
+    in:
+      agent_instance_id: ""
+    out:
+      process_id: ""
+    throws:
+      NotFound: object with specified id does not exist
+
+  stop_agent_instance:
+    docstring: Stop the given Agent Instance. Delegates to the type specific service.
+    in:
+      agent_instance_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist

@@ -430,6 +430,16 @@ methods:
       NotFound: object with specified id does not exist
       BadRequest: if devices can not be undeployed
 
+  prepare_deployment_support:
+    docstring: |
+      Returns the information needed to create or update a deployment resource. The deployment_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
+    in:
+      deployment_id: ""
+    out:
+      resource_schema: !DeploymentPrepareSupport
+    throws:
+      NotFound: An object with the specified deployment_id does not exist
 
   # -----------------
   # Assignments
@@ -547,11 +557,49 @@ methods:
       NotFound: object with specified id does not exist
 
 
+  assign_device_to_deployment:
+    docstring: link a physical device to a deployment
+    in:
+      device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_device_from_deployment:
+    in:
+      device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_site_to_deployment:
+    docstring: link a site to a deployment
+    in:
+      site_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_site_from_deployment:
+    in:
+      site_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+
+
   # -----------------
   # Deploying sites
 
+  # MOVE to assign_xxx_to_deployment etc (currently duplicates)
+
   deploy_platform_site:
-    docstring: link a physical platform to a platform site
+    docstring: link a deployment to a platform site - OBSOLETE - use assign_site_to_deployment
     in:
       platform_site_id: ""
       deployment_id: ""
@@ -560,6 +608,7 @@ methods:
       NotFound: object with specified id does not exist
 
   undeploy_platform_site:
+    docstring: unassign - OBSOLETE - use unassign_site_from_deployment
     in:
       platform_site_id: ""
       deployment_id: ""
@@ -569,7 +618,7 @@ methods:
 
 
   deploy_instrument_site:
-    docstring: link a physical instrument to a instrument site
+    docstring: link a deployment to a instrument site - OBSOLETE - use assign_site_to_deployment
     in:
       instrument_site_id: ""
       deployment_id: ""
@@ -578,6 +627,7 @@ methods:
       NotFound: object with specified id does not exist
 
   undeploy_instrument_site:
+    docstring: unassign - OBSOLETE - use unassign_site_from_deployment
     in:
       instrument_site_id: ""
       deployment_id: ""
@@ -585,7 +635,6 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
-  
 
   # -----------------
   # find methods

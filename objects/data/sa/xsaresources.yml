@@ -500,6 +500,52 @@ AssocPlatDeviceInstDevices: !Extends_AssociatedResources
   assign_request: !InstrumentDeviceServiceRequest
   unassign_request: !InstrumentDeviceServiceRequest
 
+
+#@Key=DeploymentHasInstrumentDevice
+AssocDeploymentInstDevice: !Extends_AssociatedResources
+  #@ResourceType=InstrumentDevice
+  resources: []
+  #@Association=hasDeployment
+  #@ResourceObject
+  #@SubjectType=InstrumentDevice
+  associated_resources: []  # Should have one entry if the deployment is associated with a device
+  assign_request: !InstrumentDeviceServiceRequest
+  unassign_request: !InstrumentDeviceServiceRequest
+
+#@Key=DeploymentHasPlatformDevice
+AssocDeploymentPlatDevice: !Extends_AssociatedResources
+  #@ResourceType=PlatformDevice
+  resources: []
+  #@Association=hasDeployment
+  #@ResourceObject
+  #@SubjectType=PlatformDevice
+  associated_resources: []  # Should have one entry if the deployment is associated with a device
+  assign_request: !PlatformDeviceServiceRequest
+  unassign_request: !PlatformDeviceServiceRequest
+
+#@Key=DeploymentHasInstrumentSite
+AssocDeploymentInstSite: !Extends_AssociatedResources
+  #@ResourceType=InstrumentSite
+  resources: []
+  #@Association=hasDeployment
+  #@ResourceObject
+  #@SubjectType=InstrumentSite
+  associated_resources: []  # Should have one entry if the deployment is associated with a site
+  assign_request: !InstrumentSiteServiceRequest
+  unassign_request: !InstrumentSiteServiceRequest
+
+#@Key=DeploymentHasPlatformSite
+AssocDeploymentPlatSite: !Extends_AssociatedResources
+  #@ResourceType=PlatformSite
+  resources: []
+  #@Association=hasDeployment
+  #@ResourceObject
+  #@SubjectType=PlatformSite
+  associated_resources: []  # Should have one entry if the deployment is associated with a site
+  assign_request: !PlatformSiteServiceRequest
+  unassign_request: !PlatformSiteServiceRequest
+
+
 #@Key=InstrumentDeviceHasOutputProduct
 AssocDataProdInstDevicesHasOutputProduct: !Extends_AssociatedResources
   #@ResourceType=InstrumentDevice
@@ -661,3 +707,12 @@ DataProductPrepareSupport: !Extends_ResourcePrepareSupport
   #@AssociatedResources=AssocDataProdStreamDefs,AssocDataProdDatasets,AssocDataProdInstDevicesHasOutputProduct,AssocDataProdInstDevicesHasSource,AssocDataProdPlatDevices
   associations: {}
 
+#This object contains additional information needed to create or update deployment resources
+#@OriginResourceType=Deployment
+DeploymentPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !DeploymentServiceRequest
+  update_request: !DeploymentServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocDeploymentInstDevice,AssocDeploymentPlatDevice,AssocDeploymentInstSite,AssocDeploymentPlatSite
+  associations: {}

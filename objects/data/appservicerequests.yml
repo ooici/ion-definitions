@@ -20,6 +20,7 @@ DatasetServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "Dataset"
   resource_identifier: "dataset_id"
 
+
 InstrumentDeviceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "InstrumentDevice"
   resource_identifier: "instrument_device_id"
@@ -40,6 +41,7 @@ InstrumentAgentInstanceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "InstrumentAgentInstance"
   resource_identifier: "instrument_agent_instance_id"
 
+
 SensorDeviceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "SensorDevice"
   resource_identifier: "sensor_device_id"
@@ -47,6 +49,7 @@ SensorDeviceServiceRequest: !Extends_ResourceServiceRequest
 DeploymentServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "Deployment"
   resource_identifier: "deployment_id"
+
 
 PlatformDeviceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "PlatformDevice"
@@ -67,6 +70,16 @@ PlatformAgentServiceRequest: !Extends_ResourceServiceRequest
 PlatformAgentInstanceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "PlatformAgentInstance"
   resource_identifier: "platform_agent_instance_id"
+
+
+ExternalDatasetAgentServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "ExternalDatasetAgent"
+  resource_identifier: "external_dataset_agent_id"
+
+ExternalDatasetAgentInstanceServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "ExternalDatasetAgentInstance"
+  resource_identifier: "external_dataset_agent_instance_id"
+
 
 UserInfoServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "UserInfo"

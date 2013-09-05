@@ -40,3 +40,22 @@ methods:
     throws:
       BadRequest:
 
+  trigger_container_snapshot:
+    docstring: Triggers a snapshot of container status for later analysis
+    in:
+      include_snapshots: []   # List of special snapshots to include
+      exclude_snapshots: []   # List of special snapshots to exclude
+      take_at_time: ""        # System timestamp for time when to take the snapshot
+      clear_all: False        # If True, clear snapshots
+      persist_snapshot: True  # If True, persist snapshot, otherwise log
+    out:
+    throws:
+      BadRequest:
+
+  prepare_system_shutdown:
+    docstring: Prepares all containers in the system for a controlled shutdown
+    in:
+      mode: ""
+    out:
+    throws:
+      BadRequest:

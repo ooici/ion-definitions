@@ -43,11 +43,13 @@ methods:
   trigger_container_snapshot:
     docstring: Triggers a snapshot of container status for later analysis
     in:
+      snapshot_id: ""         # Unique identifier for a snapshot
       include_snapshots: []   # List of special snapshots to include
       exclude_snapshots: []   # List of special snapshots to exclude
       take_at_time: ""        # System timestamp for time when to take the snapshot
       clear_all: False        # If True, clear snapshots
-      persist_snapshot: True  # If True, persist snapshot, otherwise log
+      persist_snapshot: True  # If True, persist snapshot, otherwise log only
+      snapshot_kwargs: {}     # Arbitrary args for snapshot
     out:
     throws:
       BadRequest:

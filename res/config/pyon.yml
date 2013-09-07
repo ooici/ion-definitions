@@ -395,6 +395,13 @@ device:
     port_agent_data_port: 4000
     port_agent_cmd_port: 4003
     port_agent_binary: port_agent
+    dvr_egg: "http://sddevrepo.oceanobservatories.org/releases/seabird_sbe37smb_ooicore-0.1.5-py2.7.egg"
+    dvr_sha: "51ce182316f4f9dce336a76164276cb4749b77a5"
+    dvr_mod: "mi.instrument.seabird.sbe37smb.ooicore.driver"
+    dvr_cls: "SBE37Driver"
+    workdir: "/tmp/"
+    delim: ["<<",">>"]
+
 
 units: res/config/units/udunits2.xml
 

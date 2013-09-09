@@ -1,21 +1,65 @@
 Scenario,ID,data_product_id,input_resource_id,source_resource_id,resource_type,comment
 STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,
 DOC,,The data product preload ID,The resource to be linked to - link assocuation depends on value in column resource_type,"Additionally, association of type hasSource from DataProduct to an InstrumentDevice or PlatformDevice.",Type of input_resource_id (behavior will be different for different types),
+OOIR2_ALPHA,LINK34,DP_ID12_RAW,ID_BTST_SBE37,ID_BTST_SBE37,InstrumentDevice,SBE37SMP Raw
+OOIR2_ALPHA,LINK35,DP_ID12,ID_BTST_SBE37,ID_BTST_SBE37,InstrumentDevice,SBE37SMP Parsed
+OOIR2_ALPHA,LINK79,DPROD27,,ID_BTST_SBE37,InstrumentDevice,
+OOIR2_ALPHA,LINK80,DPROD28,,ID_BTST_SBE37,InstrumentDevice,
+OOIR2_ALPHA,LINK81,DPROD29,,ID_BTST_SBE37,InstrumentDevice,
+OOIR2_ALPHA,LINK82,DPROD30,,ID_BTST_SBE37,InstrumentDevice,
+OOIR2_ALPHA,LINK83,DPROD31,,ID_BTST_SBE37,InstrumentDevice,
+OOIR2_ALPHA,LINK79A,DPROD27,,IS_BTST_SBE37,InstrumentSite,
+OOIR2_ALPHA,LINK80A,DPROD28,,IS_BTST_SBE37,InstrumentSite,
+OOIR2_ALPHA,LINK81A,DPROD29,,IS_BTST_SBE37,InstrumentSite,
+OOIR2_ALPHA,LINK82A,DPROD30,,IS_BTST_SBE37,InstrumentSite,
+OOIR2_ALPHA,LINK83A,DPROD31,,IS_BTST_SBE37,InstrumentSite,
+OOIR2_DEMO,LINK38,DPROD51,ID_BTST_CTDSIM0,ID_BTST_CTDSIM0,InstrumentDevice,CTD Sim Beta Raw
+OOIR2_DEMO,LINK39,DPROD52,ID_BTST_CTDSIM0,ID_BTST_CTDSIM0,InstrumentDevice,CTD Sim Beta Parsed
+OOIR2_DEMO,LINK89,DPROD56,,ID_BTST_CTDSIM0,InstrumentDevice,
+OOIR2_DEMO,LINK90,DPROD57,,ID_BTST_CTDSIM0,InstrumentDevice,
+OOIR2_DEMO,LINK91,DPROD58,,ID_BTST_CTDSIM0,InstrumentDevice,
+OOIR2_DEMO,LINK92,DPROD59,,ID_BTST_CTDSIM0,InstrumentDevice,
+OOIR2_DEMO,LINK93,DPROD60,,ID_BTST_CTDSIM0,InstrumentDevice,
+OOIR2_DEMO,LINK89A,DPROD56,,IS_BTST_CTDSIM0,InstrumentSite,
+OOIR2_DEMO,LINK90A,DPROD57,,IS_BTST_CTDSIM0,InstrumentSite,
+OOIR2_DEMO,LINK91A,DPROD58,,IS_BTST_CTDSIM0,InstrumentSite,
+OOIR2_DEMO,LINK92A,DPROD59,,IS_BTST_CTDSIM0,InstrumentSite,
+OOIR2_DEMO,LINK93A,DPROD60,,IS_BTST_CTDSIM0,InstrumentSite,
+OOIR2_DEMO,LINK1,DPROD11,ID_BTST_CTDSIM1,ID_BTST_CTDSIM1,InstrumentDevice,CTD Sim 1 Raw
+OOIR2_DEMO,LINK2,DPROD12,ID_BTST_CTDSIM1,ID_BTST_CTDSIM1,InstrumentDevice,CTD Sim 1 Parsed
+OOIR2_DEMO,LINK6,DPROD16,,ID_BTST_CTDSIM1,InstrumentDevice,
+OOIR2_DEMO,LINK7,DPROD17,,ID_BTST_CTDSIM1,InstrumentDevice,
+OOIR2_DEMO,LINK8,DPROD18,,ID_BTST_CTDSIM1,InstrumentDevice,
+OOIR2_DEMO,LINK9,DPROD19,,ID_BTST_CTDSIM1,InstrumentDevice,
+OOIR2_DEMO,LINK10,DPROD20,,ID_BTST_CTDSIM1,InstrumentDevice,
+OOIR2_DEMO,LINK6A,DPROD16,,IS_BTST_CTDSIM1,InstrumentSite,
+OOIR2_DEMO,LINK7A,DPROD17,,IS_BTST_CTDSIM1,InstrumentSite,
+OOIR2_DEMO,LINK8A,DPROD18,,IS_BTST_CTDSIM1,InstrumentSite,
+OOIR2_DEMO,LINK9A,DPROD19,,IS_BTST_CTDSIM1,InstrumentSite,
+OOIR2_DEMO,LINK10A,DPROD20,,IS_BTST_CTDSIM1,InstrumentSite,
+OOIR2_DEMO,LINK11,DPROD21,ID_BTST_CTDSIM2,ID_BTST_CTDSIM2,InstrumentDevice,CTD Sim 2 Raw
+OOIR2_DEMO,LINK12,DPROD22,ID_BTST_CTDSIM2,ID_BTST_CTDSIM2,InstrumentDevice,CTD Sim 2 Parsed
+OOIR2_DEMO,LINK16,DPROD16,,ID_BTST_CTDSIM2,InstrumentDevice,
+OOIR2_DEMO,LINK17,DPROD17,,ID_BTST_CTDSIM2,InstrumentDevice,
+OOIR2_DEMO,LINK18,DPROD18,,ID_BTST_CTDSIM2,InstrumentDevice,
+OOIR2_DEMO,LINK19,DPROD19,,ID_BTST_CTDSIM2,InstrumentDevice,
+OOIR2_DEMO,LINK20,DPROD20,,ID_BTST_CTDSIM2,InstrumentDevice,
+OOIR2_DEMO,LINK27,DP_PD3,PD_BTST_RSN1,PD_BTST_RSN1,PlatformDevice,Platform Engineering Data Product
+OOIR2_DEMO,LINK27A,DP_PD3,,PS_BTST_RSN,PlatformSite,Platform Engineering Data Product
 R2_DEMO,LINK1,DPROD11,ID3,ID3,InstrumentDevice,CTD Sim 1 Raw
 R2_DEMO,LINK2,DPROD12,ID3,ID3,InstrumentDevice,CTD Sim 1 Parsed
-R2_DEMO,LINK3,DPROD13,,ID3,InstrumentDevice,
-R2_DEMO,LINK4,DPROD14,,ID3,InstrumentDevice,
-R2_DEMO,LINK5,DPROD15,,ID3,InstrumentDevice,
 R2_DEMO,LINK6,DPROD16,,ID3,InstrumentDevice,
 R2_DEMO,LINK7,DPROD17,,ID3,InstrumentDevice,
 R2_DEMO,LINK8,DPROD18,,ID3,InstrumentDevice,
 R2_DEMO,LINK9,DPROD19,,ID3,InstrumentDevice,
 R2_DEMO,LINK10,DPROD20,,ID3,InstrumentDevice,
+R2_DEMO,LINK6A,DPROD16,,LOGINS3,InstrumentSite,
+R2_DEMO,LINK7A,DPROD17,,LOGINS3,InstrumentSite,
+R2_DEMO,LINK8A,DPROD18,,LOGINS3,InstrumentSite,
+R2_DEMO,LINK9A,DPROD19,,LOGINS3,InstrumentSite,
+R2_DEMO,LINK10A,DPROD20,,LOGINS3,InstrumentSite,
 R2_DEMO,LINK11,DPROD21,ID4,ID4,InstrumentDevice,CTD Sim 2 Raw
 R2_DEMO,LINK12,DPROD22,ID4,ID4,InstrumentDevice,CTD Sim 2 Parsed
-R2_DEMO,LINK13,DPROD13,,ID4,InstrumentDevice,
-R2_DEMO,LINK14,DPROD14,,ID4,InstrumentDevice,
-R2_DEMO,LINK15,DPROD15,,ID4,InstrumentDevice,
 R2_DEMO,LINK16,DPROD16,,ID4,InstrumentDevice,
 R2_DEMO,LINK17,DPROD17,,ID4,InstrumentDevice,
 R2_DEMO,LINK18,DPROD18,,ID4,InstrumentDevice,
@@ -23,11 +67,14 @@ R2_DEMO,LINK19,DPROD19,,ID4,InstrumentDevice,
 R2_DEMO,LINK20,DPROD20,,ID4,InstrumentDevice,
 R2_DEMO,LINK21,EEDP1,EEInstrumentDevice,EEInstrumentDevice,InstrumentDevice,CTD EER2 Parsed
 R2_DEMO,LINK22,EEDP2,EEInstrumentDevice,EEInstrumentDevice,InstrumentDevice,CTD EER2 Raw
-R2_DEMO,LINK23,EEDP3,EEInstrumentSite,,InstrumentSite,CTD EER2 Parsed
+R2_DEMO,LINK23,EEDP3,EEInstrumentSite,EEInstrumentSite,InstrumentSite,CTD EER2 Parsed
 disable,LINK24,EEDP4,EEInstrumentSite,,InstrumentSite,CTD EER2 Raw
 DEVS,LINK25,DP_ID5,ID5,ID5,InstrumentDevice,PARAD Parsed
 DEVS,LINK26,DP_ID5_RAW,ID5,ID5,InstrumentDevice,PARAD Raw
-BETA,LINK27,DP_PD3,PDEV3,PDEV3,PlatformDevice,not loading
+BETA,LINK27,DP_PD3,PDEV3,PDEV3,PlatformDevice,Platform Engineering Data Product
+BETA,LINK27A,DP_PD3,,LP3,PlatformSite,Platform Engineering Data Product
+BETA,LINK27B,DP_PD5,PDEV5,PDEV5,PlatformDevice,Platform Engineering Data Product
+BETA,LINK27C,DP_PD5,,LP5,PlatformSite,Platform Engineering Data Product
 DEVS,LINK28,DP_ID8,ID8,ID8,InstrumentDevice,TRHPH Parsed
 DEVS,LINK29,DP_ID10,ID10,ID10,InstrumentDevice,VELPT Parsed
 DEVS,LINK30,DP_ID11,ID11,ID11,InstrumentDevice,NUTNR Parsed
@@ -36,17 +83,52 @@ DEVS,LINK32,DP_ID10_RAW,ID10,ID10,InstrumentDevice,VELPT Raw
 DEVS,LINK33,DP_ID11_RAW,ID11,ID11,InstrumentDevice,NUTNR Raw
 BETA,LINK34,DP_ID12_RAW,ID12,ID12,InstrumentDevice,SBE37SMP Raw
 BETA,LINK35,DP_ID12,ID12,ID12,InstrumentDevice,SBE37SMP Parsed
+BETA,LINK79,DPROD27,,ID12,InstrumentDevice,
+BETA,LINK80,DPROD28,,ID12,InstrumentDevice,
+BETA,LINK81,DPROD29,,ID12,InstrumentDevice,
+BETA,LINK82,DPROD30,,ID12,InstrumentDevice,
+BETA,LINK83,DPROD31,,ID12,InstrumentDevice,
+BETA,LINK79A,DPROD27,,LOGINS4,InstrumentSite,
+BETA,LINK80A,DPROD28,,LOGINS4,InstrumentSite,
+BETA,LINK81A,DPROD29,,LOGINS4,InstrumentSite,
+BETA,LINK82A,DPROD30,,LOGINS4,InstrumentSite,
+BETA,LINK83A,DPROD31,,LOGINS4,InstrumentSite,
 ALPHA_SYS,LINK36,DPROD41,ID13,ID13,InstrumentDevice,CTD Sim Alpha Raw
 ALPHA_SYS,LINK37,DPROD42,ID13,ID13,InstrumentDevice,CTD Sim Alpha Parsed
+ALPHA_SYS,LINK84,DPROD46,,ID13,InstrumentDevice,
+ALPHA_SYS,LINK85,DPROD47,,ID13,InstrumentDevice,
+ALPHA_SYS,LINK86,DPROD48,,ID13,InstrumentDevice,
+ALPHA_SYS,LINK87,DPROD49,,ID13,InstrumentDevice,
+ALPHA_SYS,LINK88,DPROD50,,ID13,InstrumentDevice,
+ALPHA_SYS,LINK84A,DPROD46,,LOGINS6,InstrumentSite,
+ALPHA_SYS,LINK85A,DPROD47,,LOGINS6,InstrumentSite,
+ALPHA_SYS,LINK86A,DPROD48,,LOGINS6,InstrumentSite,
+ALPHA_SYS,LINK87A,DPROD49,,LOGINS6,InstrumentSite,
+ALPHA_SYS,LINK88A,DPROD50,,LOGINS6,InstrumentSite,
 BETA_SYS,LINK38,DPROD51,ID14,ID14,InstrumentDevice,CTD Sim Beta Raw
 BETA_SYS,LINK39,DPROD52,ID14,ID14,InstrumentDevice,CTD Sim Beta Parsed
+BETA_SYS,LINK89,DPROD56,,ID14,InstrumentDevice,
+BETA_SYS,LINK90,DPROD57,,ID14,InstrumentDevice,
+BETA_SYS,LINK91,DPROD58,,ID14,InstrumentDevice,
+BETA_SYS,LINK92,DPROD59,,ID14,InstrumentDevice,
+BETA_SYS,LINK93,DPROD60,,ID14,InstrumentDevice,
+BETA_SYS,LINK89A,DPROD56,,LOGINS7,InstrumentSite,
+BETA_SYS,LINK90A,DPROD57,,LOGINS7,InstrumentSite,
+BETA_SYS,LINK91A,DPROD58,,LOGINS7,InstrumentSite,
+BETA_SYS,LINK92A,DPROD59,,LOGINS7,InstrumentSite,
+BETA_SYS,LINK93A,DPROD60,,LOGINS7,InstrumentSite,
 IDK,LINK40,DPROD_IDK_RAW,IDK_DEVICE,IDK_DEVICE,InstrumentDevice,
 IDK,LINK41,DPROD_IDK_PARSED,IDK_DEVICE,IDK_DEVICE,InstrumentDevice,
+NOSE,LINK66,DP_TEST_EXT,ID_TEST,ID_TEST,InstrumentDevice,link data product to external dataset
 PRESF,LINK42,DP_ID6_RAW,ID6,ID6,InstrumentDevice,PRESF Raw
 PRESF,LINK43,DP_ID6,ID6,ID6,InstrumentDevice,PRESF Parsed Tide Measurements
 PRESF,LINK44,DPROD61,ID6,ID6,InstrumentDevice,PRESF Operating Status
 PRESF,LINK45,DPROD62,ID6,ID6,InstrumentDevice,PRESF Calibration Coefficients
 PRESF,LINK46,DPROD64,ID6,ID6,InstrumentDevice,PRESF Parsed Wave Burst
+PRESF,LINK69,DP_ID13,,ID6,InstrumentDevice,PRESF L0 absolute_pressure from Tide Measurements
+PRESF,LINK70,DP_ID14,,ID6,InstrumentDevice,PRESF L1 seafloor_pressure from Tide Measurements
+PRESF,LINK69A,DP_ID13,,LOGINS8,InstrumentSite,PRESF L0 absolute_pressure from Tide Measurements
+PRESF,LINK70A,DP_ID14,,LOGINS8,InstrumentSite,PRESF L1 seafloor_pressure from Tide Measurements
 PRESF,LINK47,DPROD66,ID6,ID6,InstrumentDevice,PRESF Parsed Wave Statistics
 PREST,LINK48,DP_ID9_RAW,ID9,ID9,InstrumentDevice,PREST Raw
 PREST,LINK49,DPROD67,ID9,ID9,InstrumentDevice,PREST Real Time Data
@@ -55,16 +137,44 @@ PREST,LINK51,DPROD69,ID9,ID9,InstrumentDevice,PREST Configuration Data
 PREST,LINK52,DPROD70,ID9,ID9,InstrumentDevice,PREST Device Status
 PREST,LINK53,DPROD71,ID9,ID9,InstrumentDevice,PREST Event Counter
 PREST,LINK54,DPROD72,ID9,ID9,InstrumentDevice,PREST Hardware Data
+PREST,LINK71,DPROD73,,ID9,InstrumentDevice,PREST L0 absolute_pressure from Real Time Data
+PREST,LINK72,DPROD74,,ID9,InstrumentDevice,PREST L1 Seafloor Pressure
+PREST,LINK71A,DPROD73,,LOGINS9,InstrumentSite,PREST L0 absolute_pressure from Real Time Data
+PREST,LINK72A,DPROD74,,LOGINS9,InstrumentSite,PREST L1 Seafloor Pressure
 CTDBP,LINK55,DP_ID7,ID7,ID7,InstrumentDevice,CTDBP sb16+v2 Parsed
 CTDBP,LINK56,DP_ID7_RAW,ID7,ID7,InstrumentDevice,CTDBP sb16+v2 Raw
 CTDBP,LINK57,DPROD75,ID7,ID7,InstrumentDevice,CTDBP Status
 CTDBP,LINK58,DPROD76,ID7,ID7,InstrumentDevice,CTDBP Calibration Coefficients
+CTDBP,LINK73,DPROD77,,ID7,InstrumentDevice,"CTDBP cdef L0 (CONDWAT, TEMPWAT, PRESWAT)"
+CTDBP,LINK74,DPROD78,,ID7,InstrumentDevice,"CTDBP cdef L1 (CONDWAT, TEMPWAT, PRESWAT)"
+CTDBP,LINK75,DPROD79,,ID7,InstrumentDevice,CTDBP cdef L2 PRACSAL
+CTDBP,LINK76,DPROD80,,ID7,InstrumentDevice,CTDBP cdef L2 DENSITY
+CTDBP,LINK73A,DPROD77,,LOGINS10,InstrumentSite,"CTDBP cdef L0 (CONDWAT, TEMPWAT, PRESWAT)"
+CTDBP,LINK74A,DPROD78,,LOGINS10,InstrumentSite,"CTDBP cdef L1 (CONDWAT, TEMPWAT, PRESWAT)"
+CTDBP,LINK75A,DPROD79,,LOGINS10,InstrumentSite,CTDBP cdef L2 PRACSAL
+CTDBP,LINK76A,DPROD80,,LOGINS10,InstrumentSite,CTDBP cdef L2 DENSITY
 TMPSF,LINK59,DPROD81,ID15,ID15,InstrumentDevice,TMPSF sample data
 TMPSF,LINK60,DPROD82,ID15,ID15,InstrumentDevice,TMPSF engineering data
 TMPSF,LINK61,DPROD81_RAW,ID15,ID15,InstrumentDevice,TMPSF raw
 VEL3D_B,LINK62,DPROD83,ID16,ID16,InstrumentDevice,vel3d sample data
 VEL3D_B,LINK63,DPROD84,ID16,ID16,InstrumentDevice,vel3d engineering data
 VEL3D_B,LINK64,DPROD83_RAW,ID16,ID16,InstrumentDevice,vel3d raw
+VEL3D_B,LINK77,DPROD94,,ID16,InstrumentDevice,vel3d-b VELPTTU_L0
+VEL3D_B,LINK78,DPROD95,,ID16,InstrumentDevice,vel3d-b VELPTTU_L1
+VEL3D_B,LINK77A,DPROD94,,LOGINS12,InstrumentSite,vel3d-b VELPTTU_L0
+VEL3D_B,LINK78A,DPROD95,,LOGINS12,InstrumentSite,vel3d-b VELPTTU_L1
 BETA,LINK65,DPROD85,ID17,ID17,InstrumentDevice,CTD Simulator Data Parsed
-NOSE,LINK66,DP_TEST_EXT,ED_NOSE_CTD,ID_TEST,ExternalDataset,link data product to external dataset
 BETA,LINK67,DPROD91,ID17,ID17,InstrumentDevice,CTD Simulator Data Raw
+JN,LINK68,DPROD92,ID18,ID18,InstrumentDevice,CTD Sim derived
+OPTAA,LINK79,DPROD96,ID19,ID19,InstrumentDevice,OPTAA sample data
+OPTAA,LINK80,DPROD97,ID19,ID19,InstrumentDevice,OPTAA status data
+OPTAA,LINK81,DPROD96_RAW,ID19,ID19,InstrumentDevice,OPTAA raw
+OPTAA,LINK82,DPROD98,,ID19,InstrumentDevice,OPTAA L0 Data product
+OPTAA,LINK83,DPROD99,,ID19,InstrumentDevice,OPTAA L2 Data product
+OPTAA,LINK82A,DPROD98,,LOGINS14,InstrumentSite,OPTAA L0 Data product
+OPTAA,LINK83A,DPROD99,,LOGINS14,InstrumentSite,OPTAA L2 Data product
+CTDPF,LINK84,DPROD100,ID22,ID22,InstrumentDevice,CTDPF 52 Parsed
+CTDPF,LINK85,DPROD101,ID22,ID22,InstrumentDevice,"CTDPF 52 L1 (CONDWAT, TEMPWAT, PRESWAT)"
+CTDPF,LINK85A,DPROD101,,LOGINS16,InstrumentSite,"CTDPF 52 L1 (CONDWAT, TEMPWAT, PRESWAT)"
+BETA,LINK86,DPROD103,PDEV6,PDEV6,PlatformDevice,Glider Platform Engineering Data Product
+BETA,LINK86A,DPROD103,,LP6,PlatformSite,Glider Platform Engineering Data Product

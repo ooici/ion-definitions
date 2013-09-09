@@ -1,8 +1,14 @@
 Scenario,ID,confluence,owner_id,org_ids,parent_site_id,platform_model_ids,ps/name,ps/local_name,ps/description,ps/reference_designator,ps/alt_resource_type,constraint_ids,coordinate_system
 STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,,
 DOC,,,,marine facility ID,parent site ID,,,,,,either StationSite or PlatformComponentSite,,
+IDK,IDK_PS,,IDK_USER,IDK_ORG,IDK_OBS,IDK_PM,Platform site for IDK,Platform site for IDK,,XX01ABCD-PL001,StationSite,"GEO_IDK,TEMP_IDK",SUBMERGED1
+NOSE,PS_NOSE,,USER_1,MF_TEST,OBS_NOSE,PM_NOSE,Beta Demonstration Station One,Station One,Beta Demonstration Platform Site description,XX01ABCD-PL001,StationSite,"GEO1,TEMP1",SUBMERGED
+OOIR2_DEMO,PS_BTST_RSN,,,MF_3,OBS_BTST_RSN,LJ_PM,Low Power JBox - RSN Bench Testing,Low Power JBox,Platform for RSN bench testing,,StationSite,"GEO_10,TEMP1",SUBMERGED
+OOIR2_DEMO,PS_BTST_CG,,,MF_3,OBS_BTST_CG,FM_PM,Low Power Sub-surface Mooring - CG Bench Testing,Low Power Sub-surface Mooring,Platform for CG bench testing,,StationSite,"GEO_11,TEMP1",SUBMERGED
+OOIR2_DEMO,PS_BTST_CG_A,,,MF_3,PS_BTST_CG,FM_PM,Low Power Sub-surface Mooring - Bench Testing Assembly,Low Power Sub-surface Mooring,Assembly for CG bench testing,,PlatformComponentSite,"GEO_11,TEMP1",SUBMERGED
 BETA,LP3,,USER_1,MF_3,OBS_RSN,PM12,Beta Demonstration Station One,Station One,Beta Demonstration Platform Site description,XX01ABCD-PL001,StationSite,"GEO1,TEMP1",SUBMERGED
+BETA,LP5,,USER_1,MF_3,LP3,PM12,Profiler 200m Platform 104 Site,Platform 104 site,Profiler 200m Platform 104 description,XX01ABCD-PL001,PlatformComponentSite,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,LP4,,USER_1,MF_3,OBS_RSN,PM12,Beta Demonstration Station Two,Station Two,Coastal Endurance Oregon Shelf Surface Mooring Platform 2,XX01ABCD-PL002,StationSite,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,D1PlatformSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,OBS_RSN,PM13,Demo site for deployment1,Demo site for deployment1,Coastal Endurance Oregon Shelf Surface Mooring Platform 3,XX01ABCD-PL001,StationSite,"GEO5,TEMP1",SUBMERGED
 R2_DEMO,EEPlatformSite,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,OBS_RSN,PM13,End to end test site for R2,End to end test site for R2,PN1A Medium-Power J-Box,XX01ABCD-PL001,StationSite,"GEO5,TEMP1",SUBMERGED
-IDK,IDK_PS,,IDK_USER,IDK_ORG,IDK_OBS,IDK_PM,Platform site for IDK,Platform site for IDK,,XX01ABCD-PL001,StationSite,"GEO_IDK,TEMP_IDK",SUBMERGED1
+BETA,LP6,,USER_1,MF_3,OBS_RSN2,PM17,Glider 001 - Mobile Assets Station,Global Glider 1 Station,Node (platform): GP05MOAS-GL001,XX01ABCD-PL001,StationSite,"GEO2,TEMP1",SUBMERGED

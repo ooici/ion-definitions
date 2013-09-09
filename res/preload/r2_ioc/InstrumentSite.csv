@@ -1,19 +1,28 @@
 Scenario,ID,confluence,owner_id,org_ids,parent_site_id,instrument_model_ids,is/name,is/local_name,is/description,is/reference_designator,constraint_ids,coordinate_system
 STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,,,,,
-R2_DEMO,LOGINS3,,USER_1,MF_3,LP3,IM2,Instrument site 1 Demonstration,Instrument site 1 Demonstration,First simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
+NOSE,IS_TEST,,USER_1,MF_TEST,PS_NOSE,IM_NOSE,Test Instrument Site,Test Instrument Site,First simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
+IDK,IDK_SITE,,IDK_USER,IDK_ORG,IDK_PS,IDK_MODEL,Instrument site for IDK,Instrument site for IDK,Instrument site for IDK,XX01ABCD-PL001-001-CTDBPA001,"GEO_IDK,TEMP_IDK",SUBMERGED1
+OOIR2_ALPHA,IS_BTST_SBE37,,,MF_3,PS_BTST_RSN,IM_SBE37,SBE37SMP CTD Instrument site,SBE37SMP CTD Instrument site,SBE37SMP CTD Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_10,TEMP1",SUBMERGED
+OOIR2_DEMO,IS_BTST_CTDSIM0,,,MF_3,PS_BTST_RSN,IM_SBE37,Bench Test CTD Simulator,Bench Test CTD Simulator,Bench Test CTD Simulator 1 - former Alpha/Beta CTD Sim,XX01ABCD-PL001-001-CTDBPA001,"GEO_10,TEMP1",SUBMERGED
+OOIR2_DEMO,IS_BTST_CTDSIM1,,,MF_3,PS_BTST_RSN,IM_SBE37,Bench Test CTD Simulator Demo,Bench Test CTD Simulator Demo,Bench Test CTD Simulator 2 - former CTD Sim 1/2 Demo,XX01ABCD-PL001-001-CTDBPA001,"GEO_10,TEMP1",SUBMERGED
+OOIR2_DEMO,IS_BTST_CGCTD1,,,MF_3,PS_BTST_CG,CTDMOG,Bench Test CG Platform CTD 1,Bench Test CG Platform CTD 1,Bench Test CG Platform CTD 1,XX01ABCD-PL001-001-CTDBPA001,"GEO_11,TEMP1",SUBMERGED
+OOIR2_DEMO,IS_BTST_CGCTD2,,,MF_3,PS_BTST_CG,CTDMOG,Bench Test CG Platform CTD 2,Bench Test CG Platform CTD 2,Bench Test CG Platform CTD 2,XX01ABCD-PL001-001-CTDBPA001,"GEO_11,TEMP1",SUBMERGED
 BETA,LOGINS4,,USER_1,MF_3,LP3,IM2,Instrument site 2 Demonstration,Instrument site 2 Demonstration,SBE37SMP CTD Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
+R2_DEMO,LOGINS3,,USER_1,MF_3,LP3,IM2,Instrument site 1 Demonstration,Instrument site 1 Demonstration,First simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,D1PlatformSite1Instrument1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,D1PlatformSite1,IM2,Instrument site 1 for test deployment 1,Instrument site 1 for test deployment 1,Second simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,D1PlatformSite1Instrument2,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,D1PlatformSite1,IM2,Instrument site 2 for test deployment 1,Instrument site 2 for test deployment 1,Second simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,D2InstrumentSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,,IM2,Instrument site for test deployment 2,Instrument site for test deployment 2,Second simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,D3InstrumentSite1,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,,IM2,Instrument site for test deployment 3,Instrument site for test deployment 3,Second simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,EEInstrumentSite,https://confluence.oceanobservatories.org/display/CIDev/Preload+Data+for+Deployments+1-3,USER_1,MF_3,EEPlatformSite,IM2,Instrument site for R2 end to end tests,Instrument site for R2 end to end tests,Second simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 R2_DEMO,LOGINS5,,USER_1,MF_3,LP3,IM2,Instrument site 5 Demo,Instrument site 5 Demo,Site for SBE37SMP CTD,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
-NOSE,IS_TEST,,USER_1,MF_TEST,LP3,IM2,Test Instrument Site,Test Instrument Site,First simulator of CTD site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
+BETA,LOGINS13,,USER_1,MF_3,LP5,IM2,Instrument site 7 Demo,Instrument site7 Demo,Site for SBE Simulator CTD,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 ALPHA_SYS,LOGINS6,,USER_1,MF_3,LP3,IM2,Instrument site for Simulator on Alpha System,Instrument site for Simulator on Alpha System,ALPHA simulator CTD Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
 BETA_SYS,LOGINS7,,USER_1,MF_3,LP3,IM2,Instrument site for Simulator on Beta System,Instrument site for Simulator on Beta System,BETA simulator CTD Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO1,TEMP1",SUBMERGED
-IDK,IDK_SITE,,IDK_USER,IDK_ORG,IDK_PS,IDK_MODEL,Instrument site for IDK,Instrument site for IDK,Instrument site for IDK,XX01ABCD-PL001-001-CTDBPA001,"GEO_IDK,TEMP_IDK",SUBMERGED1
 PRESF,LOGINS8,,USER_1,MF_3,LP3,IM5,Instrument site for PRESF,Instrument site for PRESF,PRESF Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_WHOI2,TEMP1",SUBMERGED
 PREST,LOGINS9,,USER_1,MF_3,LP3,IM8,Instrument site for PREST,Instrument site for PREST,PREST Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_UW,TEMP1",SUBMERGED
 CTDBP,LOGINS10,,USER_1,MF_3,LP3,IM6,Instrument site for CTDBP,Instrument site for CTDBP,CTDBP Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_WHOI2,TEMP1",SUBMERGED
 TMPSF,LOGINS11,,USER_1,MF_3,LP3,IM11,Instrument site for TMPSF,Instrument site for TMPSF,TMPSF instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_WHOI2,TEMP1",SUBMERGED
 VEL3D_B,LOGINS12,,USER_1,MF_3,LP3,IM12,Instrument site for VEL3D_B,Instrument site for VEL3D_B,vel3d instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_WHOI2,TEMP1",SUBMERGED
+OPTAA,LOGINS14,,USER_1,MF_3,LP3,IM13,Instrument site for OPTAA,Instrument site for OPTAA,OPTAA instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_WHOI2,TEMP1",SUBMERGED
+METBK,LOGINS15,,USER_1,MF_3,LP3,IM14,Instrument site for METBK,Instrument site for METBK,METBK instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_WHOI2,TEMP1",SUBMERGED
+CTDPF,LOGINS16,,USER_1,MF_3,LP3,IM16,Instrument site for CTDPF,Instrument site for CTDPF,CTDPF Instrument site,XX01ABCD-PL001-001-CTDBPA001,"GEO_WHOI2,TEMP1",SUBMERGED

@@ -1,39 +1,39 @@
 Scenario,ID,owner_id,org_ids,data_process_definition_id,in_data_product_id,out_data_products,configuration,comment
 STOP!,"Changes to this doc can break the nose tests or interfere with test systems!  BEFORE making changes, please read https://confluence.oceanobservatories.org/display/CIDev/Preload+development.  AFTER making changes, please TEST, make a copy of this sheet, and commit the new URL to ion_loader.py!",,,,,,,
-R2_DEMO,DPROC1,USER_1,MF_3,DPD1,DPROD12,"{'conductivity':'DPROD13','temperature':'DPROD14','pressure':'DPROD15'}",,CTD_L0 demo
-R2_DEMO,DPROC2,USER_1,MF_3,DPD2,DPROD13,{'conductivity':'DPROD16'},,CONDWAT demo
-R2_DEMO,DPROC3,USER_1,MF_3,DPD3,DPROD14,{'temperature':'DPROD17'},,TEMPWAT demo
-R2_DEMO,DPROC4,USER_1,MF_3,DPD4,DPROD15,{'pressure':'DPROD18'},,PRESWAT demo
-R2_DEMO,DPROC5,USER_1,MF_3,DPD5,DPROD12,{'salinity':'DPROD19'},,PRACSAL demo
-R2_DEMO,DPROC6,USER_1,MF_3,DPD6,DPROD12,{'density':'DPROD20'},,DENSITY demo
+VOID,DPROC1,USER_1,MF_3,DPD1,DPROD12,"{'conductivity':'DPROD13','temperature':'DPROD14','pressure':'DPROD15'}",,CTD_L0 demo
+VOID,DPROC2,USER_1,MF_3,DPD2,DPROD13,{'conductivity':'DPROD16'},,CONDWAT demo
+VOID,DPROC3,USER_1,MF_3,DPD3,DPROD14,{'temperature':'DPROD17'},,TEMPWAT demo
+VOID,DPROC4,USER_1,MF_3,DPD4,DPROD15,{'pressure':'DPROD18'},,PRESWAT demo
+VOID,DPROC5,USER_1,MF_3,DPD5,DPROD12,{'salinity':'DPROD19'},,PRACSAL demo
+VOID,DPROC6,USER_1,MF_3,DPD6,DPROD12,{'density':'DPROD20'},,DENSITY demo
 DOC,,,,,,,,
-BETA,DPROC11,USER_1,MF_3,DPD1,DP_ID12,"{'conductivity':'DPROD24','temperature':'DPROD25','pressure':'DPROD26'}",,CTD_L0 demo SBE37
-BETA,DPROC12,USER_1,MF_3,DPD2,DPROD24,{'conductivity':'DPROD27'},,CONDWAT demo SBE37
-BETA,DPROC13,USER_1,MF_3,DPD3,DPROD25,{'temperature':'DPROD28'},,TEMPWAT demo SBE37
-BETA,DPROC14,USER_1,MF_3,DPD4,DPROD26,{'pressure':'DPROD29'},,PRESWAT demo SBE37
-BETA,DPROC15,USER_1,MF_3,DPD5,DP_ID12,{'salinity':'DPROD30'},,PRACSAL demo SBE37
-BETA,DPROC16,USER_1,MF_3,DPD6,DP_ID12,{'density':'DPROD31'},,DENSITY demo SBE37
+VOID,DPROC11,USER_1,MF_3,DPD1,DP_ID12,"{'conductivity':'DPROD24','temperature':'DPROD25','pressure':'DPROD26'}",,CTD_L0 demo SBE37
+VOID,DPROC12,USER_1,MF_3,DPD2,DPROD24,{'conductivity':'DPROD27'},,CONDWAT demo SBE37
+VOID,DPROC13,USER_1,MF_3,DPD3,DPROD25,{'temperature':'DPROD28'},,TEMPWAT demo SBE37
+VOID,DPROC14,USER_1,MF_3,DPD4,DPROD26,{'pressure':'DPROD29'},,PRESWAT demo SBE37
+VOID,DPROC15,USER_1,MF_3,DPD5,DP_ID12,{'salinity':'DPROD30'},,PRACSAL demo SBE37
+VOID,DPROC16,USER_1,MF_3,DPD6,DP_ID12,{'density':'DPROD31'},,DENSITY demo SBE37
 DOC,,,,,,,,
-ALPHA_SYS,DPROC21,USER_1,MF_3,DPD1,DPROD42,"{'conductivity':'DPROD43','temperature':'DPROD44','pressure':'DPROD45'}",,CTD_L0 Alpha
-ALPHA_SYS,DPROC22,USER_1,MF_3,DPD2,DPROD43,{'conductivity':'DPROD46'},,CONDWAT Alpha
-ALPHA_SYS,DPROC23,USER_1,MF_3,DPD3,DPROD44,{'temperature':'DPROD47'},,TEMPWAT Alpha
-ALPHA_SYS,DPROC24,USER_1,MF_3,DPD4,DPROD45,{'pressure':'DPROD48'},,PRESWAT Alpha
-ALPHA_SYS,DPROC25,USER_1,MF_3,DPD5,DPROD42,{'salinity':'DPROD49'},,PRACSAL Alpha
-ALPHA_SYS,DPROC26,USER_1,MF_3,DPD6,DPROD42,{'density':'DPROD50'},,DENSITY Alpha
-PRESF,DPROC27,USER_1,MF_3,DPD21,DP_ID6,{'absolute_pressure':'DP_ID13'},,PRESF absolute pressure
-PRESF,DPROC28,USER_1,MF_3,DPD22,DP_ID13,{'seafloor_pressure':'DP_ID14'},,PRESF seafloor pressure
+VOID,DPROC21,USER_1,MF_3,DPD1,DPROD42,"{'conductivity':'DPROD43','temperature':'DPROD44','pressure':'DPROD45'}",,CTD_L0 Alpha
+VOID,DPROC22,USER_1,MF_3,DPD2,DPROD43,{'conductivity':'DPROD46'},,CONDWAT Alpha
+VOID,DPROC23,USER_1,MF_3,DPD3,DPROD44,{'temperature':'DPROD47'},,TEMPWAT Alpha
+VOID,DPROC24,USER_1,MF_3,DPD4,DPROD45,{'pressure':'DPROD48'},,PRESWAT Alpha
+VOID,DPROC25,USER_1,MF_3,DPD5,DPROD42,{'salinity':'DPROD49'},,PRACSAL Alpha
+VOID,DPROC26,USER_1,MF_3,DPD6,DPROD42,{'density':'DPROD50'},,DENSITY Alpha
+VOID,DPROC27,USER_1,MF_3,DPD21,DP_ID6,{'absolute_pressure':'DP_ID13'},,PRESF absolute pressure
+VOID,DPROC28,USER_1,MF_3,DPD22,DP_ID13,{'seafloor_pressure':'DP_ID14'},,PRESF seafloor pressure
 DOC,,,,,,,,
-BETA_SYS,DPROC31,USER_1,MF_3,DPD1,DPROD52,"{'conductivity':'DPROD53','temperature':'DPROD54','pressure':'DPROD55'}",,CTD_L0 Beta
-BETA_SYS,DPROC32,USER_1,MF_3,DPD2,DPROD53,{'conductivity':'DPROD56'},,CONDWAT Beta
-BETA_SYS,DPROC33,USER_1,MF_3,DPD3,DPROD54,{'temperature':'DPROD57'},,TEMPWAT Beta
-BETA_SYS,DPROC34,USER_1,MF_3,DPD4,DPROD55,{'pressure':'DPROD58'},,PRESWAT Beta
-BETA_SYS,DPROC35,USER_1,MF_3,DPD5,DPROD52,{'salinity':'DPROD59'},,PRACSAL Beta
-BETA_SYS,DPROC36,USER_1,MF_3,DPD6,DPROD52,{'density':'DPROD60'},,DENSITY Beta
+VOID,DPROC31,USER_1,MF_3,DPD1,DPROD52,"{'conductivity':'DPROD53','temperature':'DPROD54','pressure':'DPROD55'}",,CTD_L0 Beta
+VOID,DPROC32,USER_1,MF_3,DPD2,DPROD53,{'conductivity':'DPROD56'},,CONDWAT Beta
+VOID,DPROC33,USER_1,MF_3,DPD3,DPROD54,{'temperature':'DPROD57'},,TEMPWAT Beta
+VOID,DPROC34,USER_1,MF_3,DPD4,DPROD55,{'pressure':'DPROD58'},,PRESWAT Beta
+VOID,DPROC35,USER_1,MF_3,DPD5,DPROD52,{'salinity':'DPROD59'},,PRACSAL Beta
+VOID,DPROC36,USER_1,MF_3,DPD6,DPROD52,{'density':'DPROD60'},,DENSITY Beta
 DOC,,,,,,,,
-PREST,DPROC37,USER_1,MF_3,DPD23,DPROD67,{'absolute_pressure':'DPROD73'},,PREST absolute pressure
-PREST,DPROC38,USER_1,MF_3,DPD24,DPROD73,{'seafloor_pressure':'DPROD74'},,PREST seafloor pressure
+VOID,DPROC37,USER_1,MF_3,DPD23,DPROD67,{'absolute_pressure':'DPROD73'},,PREST absolute pressure
+VOID,DPROC38,USER_1,MF_3,DPD24,DPROD73,{'seafloor_pressure':'DPROD74'},,PREST seafloor pressure
 DOC,,,,,,,,
-CTDBP,DPROC39,USER_1,MF_3,DPD25,DP_ID7,{'L0_stream':'DPROD77'},,CTDBP L0s
-CTDBP,DPROC40,USER_1,MF_3,DPD26,DPROD77,{'L1_stream':'DPROD78'},"{'process': {'calibration_coeffs': {'temp_calibration_coeffs': { 'TA0': 1.301118e-03, 'TA1': 2.561486e-04, 'TA2': 1.896537e-07, 'TA3': 1.301189e-07, 'TOFFSET': 0.000000e+00 }, 'cond_calibration_coeffs':  { 'G': -9.896568e-01, 'H': 1.316599e-01,  'I': -2.213854e-04,  'J': 3.292199e-05, 'CPCOR': -9.570000e-08,  'CTCOR': 3.250000e-06,  'CSLOPE': 1.000000e+00  },  'pres_calibration_coeffs': {  'PA0': 4.960417e-02,  'PA1': 4.883681e-04, 'PA2': -5.687309e-12,  'PTCA0': 5.249802e+05,  'PTCA1': 7.595719e+00,  'PTCA2': -1.322776e-01,  'PTCB0': 2.503125e+01,  'PTCB1': 5.000000e-05,  'PTCB2': 0.000000e+00, 'PTEMPA0': -6.431504e+01,  'PTEMPA1': 5.168177e+01,  'PTEMPA2': -2.847757e-01, 'POFFSET': 0.000000e+00}}}}",CTDBP L1s
-CTDBP,DPROC41,USER_1,MF_3,DPD27,DPROD78,{'salinity':'DPROD79'},,PRACSAL for CTDBP
-CTDBP,DPROC42,USER_1,MF_3,DPD28,DPROD78,{'density':'DPROD80'},"{'process':{'lat' : 41.5, 'lon' : -70.6}}",DENSITY for CTDBP
+VOID,DPROC39,USER_1,MF_3,DPD25,DP_ID7,{'L0_stream':'DPROD77'},,CTDBP L0s
+VOID,DPROC40,USER_1,MF_3,DPD26,DPROD77,{'L1_stream':'DPROD78'},"{'process': {'calibration_coeffs': {'temp_calibration_coeffs': { 'TA0': 1.301118e-03, 'TA1': 2.561486e-04, 'TA2': 1.896537e-07, 'TA3': 1.301189e-07, 'TOFFSET': 0.000000e+00 }, 'cond_calibration_coeffs':  { 'G': -9.896568e-01, 'H': 1.316599e-01,  'I': -2.213854e-04,  'J': 3.292199e-05, 'CPCOR': -9.570000e-08,  'CTCOR': 3.250000e-06,  'CSLOPE': 1.000000e+00  },  'pres_calibration_coeffs': {  'PA0': 4.960417e-02,  'PA1': 4.883681e-04, 'PA2': -5.687309e-12,  'PTCA0': 5.249802e+05,  'PTCA1': 7.595719e+00,  'PTCA2': -1.322776e-01,  'PTCB0': 2.503125e+01,  'PTCB1': 5.000000e-05,  'PTCB2': 0.000000e+00, 'PTEMPA0': -6.431504e+01,  'PTEMPA1': 5.168177e+01,  'PTEMPA2': -2.847757e-01, 'POFFSET': 0.000000e+00}}}}",CTDBP L1s
+VOID,DPROC41,USER_1,MF_3,DPD27,DPROD78,{'salinity':'DPROD79'},,PRACSAL for CTDBP
+VOID,DPROC42,USER_1,MF_3,DPD28,DPROD78,{'density':'DPROD80'},"{'process':{'lat' : 41.5, 'lon' : -70.6}}",DENSITY for CTDBP

@@ -18,3 +18,15 @@ ReportStatistics: !Extends_ContainerManagementAction
 ClearStatistics: !Extends_ContainerManagementAction
 ResetPolicyCache: !Extends_ContainerManagementAction
 TriggerGarbageCollection: !Extends_ContainerManagementAction
+
+TriggerContainerSnapshot: !Extends_ContainerManagementAction
+  snapshot_id: ""         # Unique identifier for a snapshot
+  include_snapshots: []   # List of special snapshots to include
+  exclude_snapshots: []   # List of special snapshots to exclude
+  take_at_time: ""        # System timestamp for time when to take the snapshot
+  clear_all: False        # If True, clear snapshots
+  persist_snapshot: True  # If True, persist snapshot, otherwise log
+  snapshot_kwargs: {}     # Arbitrary args for snapshot
+
+PrepareSystemShutdown: !Extends_ContainerManagementAction
+  mode: ""

@@ -33,6 +33,10 @@ config:
   server:
     elasticsearch:
       host: es01.dev.oceanobservatories.org
+      shards: 5
+      replicas: 1
+      river_shards: 1
+      river_replicas: 2
     erddap:
       host: erddap.dev.oceanobservatories.org
       port: 8080
@@ -44,6 +48,7 @@ config:
     web_ui_url: http://ion-dev.oceanobservatories.org/
     elasticsearch: true
     smtp: true
+    load_policy: true
   processdispatcher:
     restart_throttling_config:
         minimum_time_between_starts: 2
@@ -110,7 +115,6 @@ app_defaults:
     policy: npreserving
     parameters:
       preserve_n: 4
-      queueing_mode: START_ONLY
 
 # apps included below override the app_defaults block. apps present in the REL
 # but not below use the app_defaults block
@@ -147,7 +151,6 @@ apps:
         policy: npreserving
         parameters:
           preserve_n: 1
-          queueing_mode: START_ONLY
 
   # scheduler needs an override block because it is a singleton and
   # may only have one deployed service process at a time.
@@ -156,7 +159,6 @@ apps:
         policy: npreserving
         parameters:
           preserve_n: 1
-          queueing_mode: START_ONLY
 
   # event_persister needs an override block because it is a singleton and
   # may only have one deployed service process at a time.
@@ -165,7 +167,6 @@ apps:
         policy: npreserving
         parameters:
           preserve_n: 1
-          queueing_mode: START_ONLY
 
   # vis_user_queue_monitor is a process that monitors user queues created by the visualization
   # service for realtime data views. If the queues are left unattanded and cross a certain limit,
@@ -182,7 +183,6 @@ apps:
       policy: npreserving
       parameters:
         preserve_n: 4
-        queueing_mode: START_ONLY
         node_exclusive: service_gateway
         execution_engine_id: service_gateway
 
@@ -192,6 +192,5 @@ apps:
       policy: npreserving
       parameters:
         preserve_n: 4
-        queueing_mode: START_ONLY
         node_exclusive: pydap
         execution_engine_id: service_gateway

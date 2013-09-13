@@ -110,6 +110,7 @@ server:
   oms:
     host: localhost
     port: 5000
+    path: /ion-service/oms_event
   pydap:
     # Python DAP server
     type: pydap

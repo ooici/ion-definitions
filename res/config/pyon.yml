@@ -106,7 +106,10 @@ server:
 #    replicas: 1
 #    river_shards: 5
 #    replicas: 1
-
+  #oms event receiver currently co-locates within service gateway
+  oms:
+    host: localhost
+    port: 5000
   pydap:
     # Python DAP server
     type: pydap

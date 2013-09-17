@@ -6,7 +6,7 @@ load_sequence:
     docstring: Loads the UI definition
     config:
       op: loadui
-      ui_path: 'https://userexperience.oceanobservatories.org/database-exports/Stable'
+      ui_path: 'http://userexperience.oceanobservatories.org/database-exports/Stable'
       attachments: res/preload/r2_ioc/attachments
 
   - name: load_OOIR2_scenario

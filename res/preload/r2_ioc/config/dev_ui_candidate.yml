@@ -6,5 +6,5 @@ load_sequence:
     docstring: Loads the UI definition
     config:
       op: loadui
-      ui_path: 'https://userexperience.oceanobservatories.org/database-exports/Candidates'
+      ui_path: 'http://userexperience.oceanobservatories.org/database-exports/Candidates'
       attachments: res/preload/r2_ioc/attachments

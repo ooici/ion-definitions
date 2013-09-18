@@ -1560,3 +1560,8 @@ EXAMPLE2,Examples,corr_velocity_up,PD1550,corr_velocity_up_function_float32_m_s_
 variation, in m/s",,,PFID57,{'w':'PD1547'},,,,VELPTTU_W_L1,,,,,,
 CTDPF,HYPM_SP_CTD,oxygen,PD1551,oxygen_quantity_float32_hz,0,quantity,float32,,Hz,-9999999,"Oxygen, Hz",1,,,,,,,,,"Dissolved oxygen (DO) sensor based on the SBE 43F frequency output version. 1 Hz (approximately 0.01% saturation, < 0.05 micro-molar)",,,,
 CTDPF,HYPM_SP_CTD,conductivity,PD1552,conductivity_quantity_float32_mS_cm_1,0,quantity,float32,,mS cm-1,-9999999,"Conductivity, mS cm-1",4,,,,,,sea_water_electrical_conductivity,,,"In situ water conductivity in milliSiemens per centimeter [mS/cm] from the 52-mp conductivity, temperature and depth (CTD) instrument",,,Conductivity,
+LC_TEST,Testing,sparse_float,PD1553,"HID IS TAKING TOO LONG, I'M NO LONGER SUPPORTING HID",NA,sparse,float32,,1,-9999999,Sparse Value,,,,,,,,,,,,,,
+LC_TEST,Testing,sparse_double,PD1554,HID NA,NA,sparse,float64,,1,-9999999,Sparse Double,,,,,,,,,,,,,,
+LC_TEST,Testing,sparse_int,PD1555,HID NA,NA,sparse,int64,,1,65535,Sparse Integer,,,,,,,,,,,,,,
+BASE,,lat,PD1556,HID NA,NA,sparse,float64,,degree_north,-9999,Latitude,,,,,,,,,,,,,,
+BASE,,lon,PD1557,HID NA,NA,sparse,float64,,degree_east,-9999,Longitude,,,,,,,,,,,,,,

@@ -102,6 +102,7 @@ methods:
       max_datetime: ""
       limit: -1
       descending: False
+      offset: 0
     out:
       event_list: []
     throws:
@@ -130,6 +131,18 @@ methods:
     in:
       resource_id: ""
       limit: 100
+    out:
+      event_list: []
+    throws:
+      NotFound: if object with specified parameters does not exist
+
+  get_events:
+    docstring: |
+      Returns a list of events that match the resource id
+    in:
+      resource_id: ""
+      limit: 10
+      offset: 0
     out:
       event_list: []
     throws:

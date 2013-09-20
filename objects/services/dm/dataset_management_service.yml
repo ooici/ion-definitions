@@ -52,8 +52,7 @@ methods:
     docstring: |
       Registers a dataset with PyDAP
     in: 
-      dataset_id: ""
-      external_data_product_name: ""
+      data_product_id: ""
     out:
     throws:
       NotFound: if dataset does not exist

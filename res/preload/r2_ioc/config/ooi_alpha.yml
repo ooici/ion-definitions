@@ -56,21 +56,11 @@ load_sequence:
       op: load
       scenario: OOIR2_ALPHA
 
-
-  # Copied from ooi_instruments.yml
-  - name: load_OOIR2_instruments
-    docstring: Load physical instrument sites, devices and agent instance definitions
-    config:
-      op: load
-      scenario: VEL3D_B
-      idmap: True
-      excludecategories: InstrumentAgent,InstrumentModel
-
   - name: load_OOIR2_OPTAA_CTDPF
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      scenario: OPTAA,CTDPF
+      scenario: CTDPF
       idmap: True
       excludecategories: InstrumentModel
       revert: True

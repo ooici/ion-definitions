@@ -62,6 +62,15 @@ load_sequence:
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      scenario: PRESF,PREST,TMPSF
+      scenario: PREST,TMPSF, VEL3D_B
       idmap: True
       excludecategories: InstrumentAgent,InstrumentModel
+
+  - name: load_OOIR2_OPTAA_CTDPF
+    docstring: Load physical instrument sites, devices and agent instance definitions
+    config:
+      op: load
+      scenario: OPTAA,CTDPF
+      idmap: True
+      excludecategories: InstrumentModel
+      revert: True

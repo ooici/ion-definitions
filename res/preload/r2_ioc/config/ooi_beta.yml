@@ -62,7 +62,7 @@ load_sequence:
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      scenario: PREST,TMPSF, VEL3D_B
+      scenario: PREST,TMPSF,VEL3D_B
       idmap: True
       excludecategories: InstrumentAgent,InstrumentModel
 

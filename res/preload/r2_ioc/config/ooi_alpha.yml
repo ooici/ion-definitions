@@ -60,7 +60,7 @@ load_sequence:
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      scenario: CTDPF
+      scenario: CTDPF,VEL3D_C
       idmap: True
       excludecategories: InstrumentModel
       revert: True

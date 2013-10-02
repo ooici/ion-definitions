@@ -21,10 +21,21 @@ methods:
     throws:
       BadRequest: if object passed has _id or _rev attribute
 
+  update_process_definition:
+    docstring: Updates a Process Definition based on given object.
+    in:
+      process_definition: !ProcessDefinition
+      process_definition_id: ""
+    out:
+      process_definition_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
   read_process_definition:
     docstring: Returns a Process Definition as object.
     in:
       process_definition_id: ""
+      process_definition_name: ""
     out:
       process_definition: !ProcessDefinition
     throws:
@@ -75,6 +86,7 @@ methods:
       a new unique ID is generated.
     in:
       process_definition_id: ""
+      process_definition_name: ""
       schedule: !ProcessSchedule
       configuration: {}
       process_id: ""

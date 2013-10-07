@@ -56,6 +56,21 @@ methods:
       BadRequest: if the command was malformed
       NotFound: if the command is not implemented in the agent
 
+  execute_resource:
+    docstring: Execute a command on the resource represented by the agent
+    docstring: |
+      Execute a command against the resource and returns the result.
+      As a side effect, fire a ResourceCommandEvent (or sub-type) with the result of the command.
+    in:
+      #@ResourceId
+      resource_id: ""
+      command: !AgentCommand
+    out:
+      result: !AgentCommandResult
+    throws:
+      BadRequest: if the command was malformed
+      NotFound: if the command is not implemented in the agent
+
   get_param:
     docstring: Get the value of the given resource parameter
     docstring: |

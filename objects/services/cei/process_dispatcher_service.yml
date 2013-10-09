@@ -120,3 +120,11 @@ methods:
     in:
     out:
       processes: []
+
+  set_system_boot:
+    docstring: Enable or disable system boot mode
+    in:
+      system_boot: False
+    out: {}
+    throws:
+        BadRequest: If passed a non-boolean value

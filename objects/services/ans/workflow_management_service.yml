@@ -83,3 +83,17 @@ methods:
       BadRequest: if any of the required parameters are not set
       NotFound: object with specified id does not exist
 
+# -----------------
+  get_workflow_data_sources:
+    in:
+      filter_pattern: ""
+      data_source_name: ""
+    out:
+      data_source_list: []
+
+  get_workflow_data_source_info:
+    in:
+      data_source_id: ""
+    out:
+      data_source_info: !WorkflowDataSourceExtended
+      #data_source_info: !WorkflowDataSourceInfo

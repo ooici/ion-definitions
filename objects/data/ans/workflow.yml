@@ -25,3 +25,33 @@ Workflow: !Extends_InformationResource
   persist_process_output_data: True
   output_data_product_name: ""  #Optional name to use for the result output data product for the step
   configuration: {}  #Optional configuration dict passed to data process being created.
+
+---
+
+# Added by Charlie
+# WorkflowDataSource is a brief description of a data source useful for display and selection
+# The id should be used with get_workflow_data_source_info to return a more detailed description
+# of a specific data source
+# TODO: Replace charlie_ with suitable/no prefix
+WorkflowDataSource:
+  #workflow_data_source_id: ""
+  #data_product: !Resource
+  #stream: !Resource
+  charlie_id: ""
+  charlie_description: ""
+  charlie_availability: ""
+  charlie_state: ""
+  charlie_name: ""
+  charlie_created: ""
+  charlie_updated: ""
+  charlie_type: ""
+
+# Added by Charlie
+# wraps a Resource object
+WorkflowDataSourceExtended:
+  data_product: !Resource
+
+# Legacy Michael
+#WorkflowDataSourceInfo:
+#  data_source_id: ""
+#  attributes: {}

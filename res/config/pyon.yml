@@ -40,6 +40,8 @@ system:
 bootstrap:
   # Launches a bootstrap instance to build the search indices.
   use_es: False
+  # Launches a registration worker to register DAP datasets with PyDAP
+  use_pydap: False
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials TO external servers

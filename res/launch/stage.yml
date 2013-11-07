@@ -29,7 +29,7 @@ config:
       timeout: 60
   server:
     elasticsearch:
-      host: elasticsearch.s.oceanobservatories.org
+      host: es.s.oceanobservatories.org
       shards: 5
       replicas: 1
       river_shards: 1
@@ -70,7 +70,7 @@ basenodes:
 
 execution_engines:
   default:
-    base_need: 3
+    base_need: 4
     replicas: 4
     slots: 25
   service_gateway:
@@ -112,7 +112,7 @@ app_defaults:
   ha:
     policy: npreserving
     parameters:
-      preserve_n: 4
+      preserve_n: 8
 
 # apps included below override the app_defaults block. apps present in the REL
 # but not below use the app_defaults block
@@ -159,6 +159,37 @@ apps:
         parameters:
           preserve_n: 1
 
+  #Bump up the work intensive guys from UI
+  resource_registry:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 30
+  org_management:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 30
+  data_product_management:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 30
+  instrument_management:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 30
+  observatory_management:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 30
+  visualization:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 30
   # gateway uses special engine
   service_gateway:
     ha:

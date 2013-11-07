@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Array Attributes Report,Report Generated: 6/19/2013
+Array Attributes Report,Report Generated: 10/23/2013
 
 Textbox14
 
@@ -43,7 +43,7 @@ GA,Global Argentine,Relative Depth,
 GI,Global Irminger,depth_port_max,
 GI,Global Irminger,depth_port_min,
 GI,Global Irminger,depth_subsite,
-GI,Global Irminger,First Deployment Date,
+GI,Global Irminger,First Deployment Date,2014-09
 GI,Global Irminger,latitude,
 GI,Global Irminger,longitude,
 GI,Global Irminger,Platform Agent Type,
@@ -59,7 +59,7 @@ GP,Global Papa,Relative Depth,
 GS,Global Southern,depth_port_max,
 GS,Global Southern,depth_port_min,
 GS,Global Southern,depth_subsite,
-GS,Global Southern,First Deployment Date,
+GS,Global Southern,First Deployment Date,2014-12
 GS,Global Southern,latitude,
 GS,Global Southern,longitude,
 GS,Global Southern,Platform Agent Type,
@@ -75,7 +75,7 @@ OO,OOI,Relative Depth,
 RS,Regional,depth_port_max,
 RS,Regional,depth_port_min,
 RS,Regional,depth_subsite,
-RS,Regional,First Deployment Date,
+RS,Regional,First Deployment Date,2014-07
 RS,Regional,latitude,
 RS,Regional,longitude,
 RS,Regional,Platform Agent Type,

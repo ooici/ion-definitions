@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Instrument Classes By Location With Data Product Info,Report Generated: 6/19/2013
+Instrument Classes By Location With Data Product Info,Report Generated: 10/23/2013
 
 Textbox14
 
@@ -185,31 +185,31 @@ CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Meteorology bulk,METBK,MOMMFLX,
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Meteorology bulk,METBK,SALSURF,
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Meteorology bulk,METBK,WIND10M,
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2THRM,DCN 1341-00489
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,DOCONCF,DCN 1341-00521
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,FLUBSCT,DCN 1341-00540
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,OPTATTS,DCN 1341-00740
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCSIG,"DCN 1341-00690, DCN 1341-00700"
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,OPTPARW,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)"
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTTEMP,"DCN 1341-00690, DCN 1341-00700"
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,PCO2WAT,DCN 1341-00490
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring,02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2THRM,DCN 1341-00489
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,DOCONCF,DCN 1341-00521
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,FLUBSCT,DCN 1341-00540
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,OPTATTS,DCN 1341-00740
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCSIG,"DCN 1341-00690, DCN 1341-00700"
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,OPTPARW,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)"
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTTEMP,"DCN 1341-00690, DCN 1341-00700"
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,PCO2WAT,DCN 1341-00490
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Camera digital still strobe,CAMDS,CAMSTIL,DCN 1341-00830
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
@@ -1095,19 +1095,6 @@ CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,CTD AUV,CTDAV,PRACSAL,
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,CTD AUV,CTDAV,PRESWAT,DCN 1341-00020
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,CTD AUV,CTDAV,TEMPWAT,DCN 1341-00010
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,CTD AUV,CTDAV,CONDWAT,DCN 1341-00030
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,CTD AUV,CTDAV,DENSITY,DCN 1341-00050
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Fluorometer three wavelength,FLORT,FLUBSCT,DCN 1341-00540
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,PAR,PARAD,OPTPARW,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)"
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,CTD AUV,CTDAV,PRACSAL,DCN 1341-00040
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,CTD AUV,CTDAV,PRESWAT,DCN 1341-00020
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,CTD AUV,CTDAV,TEMPWAT,DCN 1341-00010
-CP05MOAS-AV003,Pioneer Mobile Assets,05,MOAS,AV (AUV),003,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030

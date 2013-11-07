@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subseries Attributes Report,Report Generated: 6/19/2013
+Subseries Attributes Report,Report Generated: 10/23/2013
 
 Textbox14
 
@@ -1204,29 +1204,6 @@ DOSTA,O,01,DOSTA Series O Sub 01,RSN O&M Spares,
 DOSTA,O,01,DOSTA Series O Sub 01,RSN Part Number,
 DOSTA,O,01,DOSTA Series O Sub 01,Susceptible to Acoustic Interference,
 DOSTA,O,01,DOSTA Series O Sub 01,"Vendor CLIN, SubCLIN or Model #",
-FDCHP,0,01,FDCHP Series 0 Sub 01,2009 Baseline Price*,"$55,900.00"
-FDCHP,0,01,FDCHP Series 0 Sub 01,2009 Deployed Instrument Count,7
-FDCHP,0,01,FDCHP Series 0 Sub 01,Alternate Instrument Class Name,Direct Covariance Flux
-FDCHP,0,01,FDCHP Series 0 Sub 01,CE Spares,
-FDCHP,0,01,FDCHP Series 0 Sub 01,CGSN MREFC Spares,
-FDCHP,0,01,FDCHP Series 0 Sub 01,CGSN O&M Spares,
-FDCHP,0,01,FDCHP Series 0 Sub 01,CGSN P/N,
-FDCHP,0,01,FDCHP Series 0 Sub 01,ClassLongName,flux_direct_cov_HP
-FDCHP,0,01,FDCHP Series 0 Sub 01,Comments,
-FDCHP,0,01,FDCHP Series 0 Sub 01,CP Spares,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,0,01,FDCHP Series 0 Sub 01,ECRs that changed the count,1300-00318 & 1303-00996
-FDCHP,0,01,FDCHP Series 0 Sub 01,Global Spares,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Instrument Configuration,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Link to the Specification,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Notes,
-FDCHP,0,01,FDCHP Series 0 Sub 01,PrimaryScienceDiscipline,P
-FDCHP,0,01,FDCHP Series 0 Sub 01,Produces Acoustic Interference,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Ready for 2013?,No.  Waiver 1303-00996
-FDCHP,0,01,FDCHP Series 0 Sub 01,RSN O&M Spares,
-FDCHP,0,01,FDCHP Series 0 Sub 01,RSN Part Number,
-FDCHP,0,01,FDCHP Series 0 Sub 01,Susceptible to Acoustic Interference,
-FDCHP,0,01,FDCHP Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
 FDCHP,A,01,FDCHP Series A Sub 01,2009 Baseline Price*,"$55,900.00"
 FDCHP,A,01,FDCHP Series A Sub 01,2009 Deployed Instrument Count,7
 FDCHP,A,01,FDCHP Series A Sub 01,Alternate Instrument Class Name,Direct Covariance Flux

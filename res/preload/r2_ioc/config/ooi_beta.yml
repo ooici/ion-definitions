@@ -26,19 +26,13 @@ load_sequence:
       assets: res/preload/r2_ioc/ooi_assets
       parseooi: True
 
-  - name: load_OOIR2_agents
-    docstring: Loads OOI agent definitions, needed for OOI asset preload
-    config:
-      op: load
-      scenario: OOIR2_I
-
   - name: load_ooi_assets
     docstring: Main OOI preload fed by SAF and OOI preload spreadsheet shources
     config:
       op: load
       loadooi: True
       assets: res/preload/r2_ioc/ooi_assets
-      ooiuntil: "9/1/2013"
+      ooiuntil: "12/31/2013"
       ooiparams: True
 
 
@@ -56,21 +50,19 @@ load_sequence:
       op: load
       scenario: OOIR2_BETA
 
-
-  # Copied from ooi_instruments.yml
   - name: load_OOIR2_instruments
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load
-      scenario: PREST,TMPSF,VEL3D_B
-      idmap: True
-      excludecategories: InstrumentAgent,InstrumentModel
-
-  - name: load_OOIR2_OPTAA_CTDPF
-    docstring: Load physical instrument sites, devices and agent instance definitions
-    config:
-      op: load
-      scenario: OPTAA,CTDPF
+      scenario: PREST,TMPSF,VEL3D_B,OPTAA,CTDPF
       idmap: True
       excludecategories: InstrumentModel
-      revert: True
+
+  - name: load_ooi_assets2
+    docstring: Reapply OOI preload to finish off data product generation
+    config:
+      op: load
+      loadooi: True
+      assets: res/preload/r2_ioc/ooi_assets
+      ooiuntil: "12/31/2013"
+      ooiparams: True

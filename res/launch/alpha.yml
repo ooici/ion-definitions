@@ -32,7 +32,7 @@ config:
       timeout: 60
   server:
     elasticsearch:
-      host: elasticsearch.a.oceanobservatories.org
+      host: es.a.oceanobservatories.org
       shards: 5
       replicas: 1
       river_shards: 1

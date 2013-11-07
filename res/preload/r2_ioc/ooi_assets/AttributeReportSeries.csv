@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Series Attributes Report,Report Generated: 6/19/2013
+Series Attributes Report,Report Generated: 10/23/2013
 
 Textbox14
 
@@ -1204,29 +1204,6 @@ DOSTA,O,DOSTA Series O,RSN O&M Spares,
 DOSTA,O,DOSTA Series O,RSN Part Number,
 DOSTA,O,DOSTA Series O,Susceptible to Acoustic Interference,
 DOSTA,O,DOSTA Series O,"Vendor CLIN, SubCLIN or Model #",
-FDCHP,0,FDCHP Series 0,2009 Baseline Price*,"$55,900.00"
-FDCHP,0,FDCHP Series 0,2009 Deployed Instrument Count,7
-FDCHP,0,FDCHP Series 0,Alternate Instrument Class Name,Direct Covariance Flux
-FDCHP,0,FDCHP Series 0,CE Spares,
-FDCHP,0,FDCHP Series 0,CGSN MREFC Spares,
-FDCHP,0,FDCHP Series 0,CGSN O&M Spares,
-FDCHP,0,FDCHP Series 0,CGSN P/N,
-FDCHP,0,FDCHP Series 0,ClassLongName,flux_direct_cov_HP
-FDCHP,0,FDCHP Series 0,Comments,
-FDCHP,0,FDCHP Series 0,CP Spares,
-FDCHP,0,FDCHP Series 0,Description,Measures vertical fluxes associated with eddies in the flow over the ocean
-FDCHP,0,FDCHP Series 0,ECRs that changed the count,1300-00318 & 1303-00996
-FDCHP,0,FDCHP Series 0,Global Spares,
-FDCHP,0,FDCHP Series 0,Instrument Configuration,
-FDCHP,0,FDCHP Series 0,Link to the Specification,
-FDCHP,0,FDCHP Series 0,Notes,
-FDCHP,0,FDCHP Series 0,PrimaryScienceDiscipline,P
-FDCHP,0,FDCHP Series 0,Produces Acoustic Interference,
-FDCHP,0,FDCHP Series 0,Ready for 2013?,No.  Waiver 1303-00996
-FDCHP,0,FDCHP Series 0,RSN O&M Spares,
-FDCHP,0,FDCHP Series 0,RSN Part Number,
-FDCHP,0,FDCHP Series 0,Susceptible to Acoustic Interference,
-FDCHP,0,FDCHP Series 0,"Vendor CLIN, SubCLIN or Model #",
 FDCHP,A,FDCHP Series A,2009 Baseline Price*,"$55,900.00"
 FDCHP,A,FDCHP Series A,2009 Deployed Instrument Count,7
 FDCHP,A,FDCHP Series A,Alternate Instrument Class Name,Direct Covariance Flux

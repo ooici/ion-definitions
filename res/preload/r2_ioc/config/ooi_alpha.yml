@@ -26,19 +26,13 @@ load_sequence:
       assets: res/preload/r2_ioc/ooi_assets
       parseooi: True
 
-  - name: load_OOIR2_agents
-    docstring: Loads OOI agent definitions, needed for OOI asset preload
-    config:
-      op: load
-      scenario: OOIR2_I
-
   - name: load_ooi_assets
     docstring: Main OOI preload fed by SAF and OOI preload spreadsheet shources
     config:
       op: load
       loadooi: True
       assets: res/preload/r2_ioc/ooi_assets
-      ooiuntil: "9/1/2013"
+      ooiuntil: "12/31/2013"
       ooiparams: True
 
 
@@ -63,4 +57,12 @@ load_sequence:
       scenario: CTDPF,VEL3D_C
       idmap: True
       excludecategories: InstrumentModel
-      revert: True
+
+  - name: load_ooi_assets2
+    docstring: Reapply OOI preload to finish off data product generation
+    config:
+      op: load
+      loadooi: True
+      assets: res/preload/r2_ioc/ooi_assets
+      ooiuntil: "12/31/2013"
+      ooiparams: True

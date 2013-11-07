@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Attributes Report,Report Generated: 6/19/2013
+Data Product Attributes Report,Report Generated: 10/23/2013
 
 Textbox14
 
@@ -255,25 +255,25 @@ CO2THRM,PCO2W Thermistor Temperature,0,Spike Test (SPKETST) QC,not applicable
 CO2THRM,PCO2W Thermistor Temperature,0,Stuck Value Test (STUCKVL) QC,not applicable
 CO2THRM,PCO2W Thermistor Temperature,0,Trend Test (TRNDTST) QC,not applicable
 CO2THRM,PCO2W Thermistor Temperature,0,Units,volts
-CONDSRF,Sea Surface Conductivity,0,1-D Interpolation (INTERP1) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Combine QC Flags (CMBNFLG) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,DOORS L2 Science Requirement #(s),"L2-SR-RQ-3413, L2-SR-RQ-3711"
-CONDSRF,Sea Surface Conductivity,0,DOORS L2 Science Requirement Text,The OOI shall provide fixed measurements of Sea Surface Conductivity.
-CONDSRF,Sea Surface Conductivity,0,DPS DCN(s),DCN 1341-00360
-CONDSRF,Sea Surface Conductivity,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Global Range Test (GLBLRNG) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Gradient Test (GRADTST) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Local Range Test (LOCLRNG) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Modulus (MODULUS) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Notes,
-CONDSRF,Sea Surface Conductivity,0,Processing Flow Diagram DCN(s),DCN 1342-00360
-CONDSRF,Sea Surface Conductivity,0,Regime(s),"Air-Sea Interface, Surface Water"
-CONDSRF,Sea Surface Conductivity,0,Solar Elevation (SOLAREL) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Spike Test (SPKETST) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Stuck Value Test (STUCKVL) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Trend Test (TRNDTST) QC,not applicable
-CONDSRF,Sea Surface Conductivity,0,Units,S/m
+CONDSRF,Sea Surface Conductivity,1,1-D Interpolation (INTERP1) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Combine QC Flags (CMBNFLG) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,DOORS L2 Science Requirement #(s),"L2-SR-RQ-3413, L2-SR-RQ-3711"
+CONDSRF,Sea Surface Conductivity,1,DOORS L2 Science Requirement Text,The OOI shall provide fixed measurements of Sea Surface Conductivity.
+CONDSRF,Sea Surface Conductivity,1,DPS DCN(s),DCN 1341-00360
+CONDSRF,Sea Surface Conductivity,1,Evaluate Polynomial (POLYVAL) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Global Range Test (GLBLRNG) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Gradient Test (GRADTST) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Local Range Test (LOCLRNG) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Modulus (MODULUS) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Notes,
+CONDSRF,Sea Surface Conductivity,1,Processing Flow Diagram DCN(s),DCN 1342-00360
+CONDSRF,Sea Surface Conductivity,1,Regime(s),"Air-Sea Interface, Surface Water"
+CONDSRF,Sea Surface Conductivity,1,Solar Elevation (SOLAREL) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Spike Test (SPKETST) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Stuck Value Test (STUCKVL) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Trend Test (TRNDTST) QC,TBD
+CONDSRF,Sea Surface Conductivity,1,Units,S/m
 CONDWAT,Conductivity,0,1-D Interpolation (INTERP1) QC,not applicable
 CONDWAT,Conductivity,0,Combine QC Flags (CMBNFLG) QC,not applicable
 CONDWAT,Conductivity,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -1224,25 +1224,25 @@ PRACSAL,Practical Salinity,2,Spike Test (SPKETST) QC,applicable
 PRACSAL,Practical Salinity,2,Stuck Value Test (STUCKVL) QC,applicable
 PRACSAL,Practical Salinity,2,Trend Test (TRNDTST) QC,not applicable
 PRACSAL,Practical Salinity,2,Units,unitless
-PRECIPM,Precipitation,0,1-D Interpolation (INTERP1) QC,not applicable
-PRECIPM,Precipitation,0,Combine QC Flags (CMBNFLG) QC,not applicable
-PRECIPM,Precipitation,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-PRECIPM,Precipitation,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3024
-PRECIPM,Precipitation,0,DOORS L2 Science Requirement Text,Precipitation
-PRECIPM,Precipitation,0,DPS DCN(s),DCN 1341-00360
-PRECIPM,Precipitation,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-PRECIPM,Precipitation,0,Global Range Test (GLBLRNG) QC,not applicable
-PRECIPM,Precipitation,0,Gradient Test (GRADTST) QC,not applicable
-PRECIPM,Precipitation,0,Local Range Test (LOCLRNG) QC,not applicable
-PRECIPM,Precipitation,0,Modulus (MODULUS) QC,not applicable
-PRECIPM,Precipitation,0,Notes,
-PRECIPM,Precipitation,0,Processing Flow Diagram DCN(s),DCN 1342-00360
-PRECIPM,Precipitation,0,Regime(s),"Air-Sea Interface, Surface Water"
-PRECIPM,Precipitation,0,Solar Elevation (SOLAREL) QC,not applicable
-PRECIPM,Precipitation,0,Spike Test (SPKETST) QC,not applicable
-PRECIPM,Precipitation,0,Stuck Value Test (STUCKVL) QC,not applicable
-PRECIPM,Precipitation,0,Trend Test (TRNDTST) QC,not applicable
-PRECIPM,Precipitation,0,Units,mm
+PRECIPM,Precipitation,1,1-D Interpolation (INTERP1) QC,TBD
+PRECIPM,Precipitation,1,Combine QC Flags (CMBNFLG) QC,TBD
+PRECIPM,Precipitation,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+PRECIPM,Precipitation,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3024
+PRECIPM,Precipitation,1,DOORS L2 Science Requirement Text,Precipitation
+PRECIPM,Precipitation,1,DPS DCN(s),DCN 1341-00360
+PRECIPM,Precipitation,1,Evaluate Polynomial (POLYVAL) QC,TBD
+PRECIPM,Precipitation,1,Global Range Test (GLBLRNG) QC,TBD
+PRECIPM,Precipitation,1,Gradient Test (GRADTST) QC,TBD
+PRECIPM,Precipitation,1,Local Range Test (LOCLRNG) QC,TBD
+PRECIPM,Precipitation,1,Modulus (MODULUS) QC,TBD
+PRECIPM,Precipitation,1,Notes,
+PRECIPM,Precipitation,1,Processing Flow Diagram DCN(s),DCN 1342-00360
+PRECIPM,Precipitation,1,Regime(s),"Air-Sea Interface, Surface Water"
+PRECIPM,Precipitation,1,Solar Elevation (SOLAREL) QC,TBD
+PRECIPM,Precipitation,1,Spike Test (SPKETST) QC,TBD
+PRECIPM,Precipitation,1,Stuck Value Test (STUCKVL) QC,TBD
+PRECIPM,Precipitation,1,Trend Test (TRNDTST) QC,TBD
+PRECIPM,Precipitation,1,Units,mm
 PRESAIR,PCO2A Gas Stream Pressure,0,1-D Interpolation (INTERP1) QC,not applicable
 PRESAIR,PCO2A Gas Stream Pressure,0,Combine QC Flags (CMBNFLG) QC,not applicable
 PRESAIR,PCO2A Gas Stream Pressure,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -1414,25 +1414,25 @@ SGRDVEL,Short Period Ground Velocity,1,Spike Test (SPKETST) QC,TBD
 SGRDVEL,Short Period Ground Velocity,1,Stuck Value Test (STUCKVL) QC,TBD
 SGRDVEL,Short Period Ground Velocity,1,Trend Test (TRNDTST) QC,TBD
 SGRDVEL,Short Period Ground Velocity,1,Units,m/s
-SHRTIRR,Downwelling Shortwave Irradiance ,0,1-D Interpolation (INTERP1) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Combine QC Flags (CMBNFLG) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3022
-SHRTIRR,Downwelling Shortwave Irradiance ,0,DOORS L2 Science Requirement Text,Downwelling shortwave irradiance
-SHRTIRR,Downwelling Shortwave Irradiance ,0,DPS DCN(s),DCN 1341-00360
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Global Range Test (GLBLRNG) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Gradient Test (GRADTST) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Local Range Test (LOCLRNG) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Modulus (MODULUS) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Notes,
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Processing Flow Diagram DCN(s),DCN 1342-00360
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Regime(s),"Air-Sea Interface, Surface Water"
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Solar Elevation (SOLAREL) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Spike Test (SPKETST) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Stuck Value Test (STUCKVL) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Trend Test (TRNDTST) QC,not applicable
-SHRTIRR,Downwelling Shortwave Irradiance ,0,Units,W/m2
+SHRTIRR,Downwelling Shortwave Irradiance ,1,1-D Interpolation (INTERP1) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Combine QC Flags (CMBNFLG) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3022
+SHRTIRR,Downwelling Shortwave Irradiance ,1,DOORS L2 Science Requirement Text,Downwelling shortwave irradiance
+SHRTIRR,Downwelling Shortwave Irradiance ,1,DPS DCN(s),DCN 1341-00360
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Evaluate Polynomial (POLYVAL) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Global Range Test (GLBLRNG) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Gradient Test (GRADTST) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Local Range Test (LOCLRNG) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Modulus (MODULUS) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Notes,
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Processing Flow Diagram DCN(s),DCN 1342-00360
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Regime(s),"Air-Sea Interface, Surface Water"
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Solar Elevation (SOLAREL) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Spike Test (SPKETST) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Stuck Value Test (STUCKVL) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Trend Test (TRNDTST) QC,TBD
+SHRTIRR,Downwelling Shortwave Irradiance ,1,Units,W/m2
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,1-D Interpolation (INTERP1) QC,not applicable
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,Combine QC Flags (CMBNFLG) QC,not applicable
 SONBSCA,Multi-Frequency Acoustic Backscatter,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
@@ -1566,25 +1566,25 @@ TEMPSFL,Temperature Array in Spatial Grid,0,Spike Test (SPKETST) QC,not applicab
 TEMPSFL,Temperature Array in Spatial Grid,0,Stuck Value Test (STUCKVL) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Trend Test (TRNDTST) QC,not applicable
 TEMPSFL,Temperature Array in Spatial Grid,0,Units,TBD
-TEMPSRF,Sea Surface Temperature,0,1-D Interpolation (INTERP1) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Combine QC Flags (CMBNFLG) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,DOORS L2 Science Requirement #(s),"L2-SR-RQ-3416, L2-SR-RQ-3708"
-TEMPSRF,Sea Surface Temperature,0,DOORS L2 Science Requirement Text,The OOI shall provide fixed measurements of Sea Surface Temperature.
-TEMPSRF,Sea Surface Temperature,0,DPS DCN(s),DCN 1341-00360
-TEMPSRF,Sea Surface Temperature,0,Evaluate Polynomial (POLYVAL) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Global Range Test (GLBLRNG) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Gradient Test (GRADTST) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Local Range Test (LOCLRNG) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Modulus (MODULUS) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Notes,
-TEMPSRF,Sea Surface Temperature,0,Processing Flow Diagram DCN(s),DCN 1342-00360
-TEMPSRF,Sea Surface Temperature,0,Regime(s),"Air-Sea Interface, Surface Water"
-TEMPSRF,Sea Surface Temperature,0,Solar Elevation (SOLAREL) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Spike Test (SPKETST) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Stuck Value Test (STUCKVL) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Trend Test (TRNDTST) QC,not applicable
-TEMPSRF,Sea Surface Temperature,0,Units,degree C
+TEMPSRF,Sea Surface Temperature,1,1-D Interpolation (INTERP1) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Combine QC Flags (CMBNFLG) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Conductivity Compressibility Compensation (CONDCMP) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,DOORS L2 Science Requirement #(s),"L2-SR-RQ-3416, L2-SR-RQ-3708"
+TEMPSRF,Sea Surface Temperature,1,DOORS L2 Science Requirement Text,The OOI shall provide fixed measurements of Sea Surface Temperature.
+TEMPSRF,Sea Surface Temperature,1,DPS DCN(s),DCN 1341-00360
+TEMPSRF,Sea Surface Temperature,1,Evaluate Polynomial (POLYVAL) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Global Range Test (GLBLRNG) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Gradient Test (GRADTST) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Local Range Test (LOCLRNG) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Modulus (MODULUS) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Notes,
+TEMPSRF,Sea Surface Temperature,1,Processing Flow Diagram DCN(s),DCN 1342-00360
+TEMPSRF,Sea Surface Temperature,1,Regime(s),"Air-Sea Interface, Surface Water"
+TEMPSRF,Sea Surface Temperature,1,Solar Elevation (SOLAREL) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Spike Test (SPKETST) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Stuck Value Test (STUCKVL) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Trend Test (TRNDTST) QC,TBD
+TEMPSRF,Sea Surface Temperature,1,Units,degree C
 TEMPVNT,Vent Fluid Temperature from RASFL,0,1-D Interpolation (INTERP1) QC,not applicable
 TEMPVNT,Vent Fluid Temperature from RASFL,0,Combine QC Flags (CMBNFLG) QC,not applicable
 TEMPVNT,Vent Fluid Temperature from RASFL,0,Conductivity Compressibility Compensation (CONDCMP) QC,not applicable

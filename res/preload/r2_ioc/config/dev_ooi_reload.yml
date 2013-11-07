@@ -16,5 +16,5 @@ load_sequence:
       assets: res/preload/r2_ioc/ooi_assets
       bulk: True
       debug: True
-      ooiuntil: "9/1/2013"
+      ooiuntil: "12/31/2013"
       #ooiexclude: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition

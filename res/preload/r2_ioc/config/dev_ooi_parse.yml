@@ -7,4 +7,4 @@ load_sequence:
     config:
       op: parseooi
       assets: res/preload/r2_ioc/ooi_assets
-      ooiuntil: "9/1/2013"
+      ooiuntil: "12/31/2013"

@@ -24,12 +24,6 @@ load_sequence:
       categories: ParameterFunctions,ParameterDefs,ParameterDictionary,StreamDefinition
       clearcols: owner_id,org_ids
 
-  - name: load_OOIR2_agents
-    docstring: Loads OOI agent definitions, needed for OOI asset preload
-    config:
-      op: load
-      scenario: OOIR2_I
-
   - name: load_OOIR2_manual
     docstring: Creates a few assets that would otherwise be created by the OOI preload
     config:

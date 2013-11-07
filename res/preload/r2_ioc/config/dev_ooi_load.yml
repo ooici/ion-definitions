@@ -20,13 +20,6 @@ load_sequence:
       assets: res/preload/r2_ioc/ooi_assets
       parseooi: True
 
-  - name: load_OOIR2_agents
-    docstring:
-    config:
-      op: load
-      scenario: OOIR2_I
-      path: master
-
   - name: load_ooi_assets
     docstring:
     config:
@@ -36,7 +29,7 @@ load_sequence:
       assets: res/preload/r2_ioc/ooi_assets
       bulk: True
       debug: True
-      ooiuntil: "9/1/2013"
+      ooiuntil: "12/31/2013"
       ooiparams: True
       #excludecategories: DataProduct,DataProductLink,Deployment,Workflow,WorkflowDefinition
       revert: True

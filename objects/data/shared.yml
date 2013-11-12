@@ -281,13 +281,15 @@ AgentInstance: !Extends_InformationResource
   #@EditSizeHint=Large
   alerts: []
 
-  # Cached, generated spawn config for the agent process
+  # Config for the agent process. REMOVE
   agent_config: {}
-  # The process_id of the agent process. (remove) this information is in the directory.
+  # The process_id of the agent process. REMOVE: this information is in the directory.
   agent_process_id: ""
-  # the configuration used for the running instance
+  # the configuration used for the running instance. REMOVE
   agent_spawn_config: {}
 
+  # Agent process state from prior agent run (OOIION-1353)
+  saved_agent_state: {}
 ---
 
 # Describes a running or scheduled  agent representing a single device. Abstract base type.

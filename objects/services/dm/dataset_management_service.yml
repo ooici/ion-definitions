@@ -306,34 +306,25 @@ methods:
       @param axis             A member of AxisTypeEnum; may be an iterable of such members
     in:
       dataset_id: ""
-      parameters: []
+      axis: ""
     out:
       extents: {}
 
   dataset_size:
     docstring: |
-      Returns the size of the <b>data values</b> for the parameter(s) indicated by <i>parameter_name</i>.
-      ParameterContext and Coverage metadata is <b>NOT</b> included in the returned size.
-      If <i>parameter_name</i> is None, all parameters in the coverage are included
-      If more than one parameter is indicated by <i>parameter_name</i>, the sum of the indicated parameters is returned
-      If <i>slice_</i> is not None, it is applied to each parameter (after being run through utils.fix_slice) before
-      calculation of size
-      Sizes are calculated as:
-      size = itemsize * total_extent_size
-      where
-      itemsize == the per-item size based on the data type of the parameter
-      total_extent_size == the total number of elements after slicing is applied (if applicable)
-      Sizes are in MB unless <i>in_bytes</i> == True
-      @param dataset_id       Identifier string for dataset
-      @param parameter_name   A string parameter name; may be an iterable of such members
-      @param slice_           If not None, applied to each parameter before calculation of size
-      @param in_bytes         If True, returns the size in bytes; otherwise, returns the size in MB (default)
+      Returns the size of the dataset in kilobytes, may also return value in bytes.
     in:
       dataset_id: ""
-      parameters: []
-      slice_: {}
       in_bytes: False
     out:
       size: 0
+
+  dataset_latest:
+    docstring: |
+      Returns the latest values of the dataset.
+    in:
+      dataset_id: ""
+    out:
+      values: {}
 
 

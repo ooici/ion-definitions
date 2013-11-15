@@ -3,7 +3,7 @@ name: system_management
 docstring: |
   Allow operators to perform administrative actions throughout the system.
 
-spec: 
+spec:
 
 dependencies: []
 
@@ -50,6 +50,21 @@ methods:
       clear_all: False        # If True, clear snapshots
       persist_snapshot: True  # If True, persist snapshot, otherwise log only
       snapshot_kwargs: {}     # Arbitrary args for snapshot
+    out:
+    throws:
+      BadRequest:
+
+  start_gevent_block:
+    docstring: Starts gevent block monitoring
+    in:
+      alarm_mode: False       # Use thread monitor mode to detect blocking instead of alarm mode
+    out:
+    throws:
+      BadRequest:
+
+  stop_gevent_block:
+    docstring: Stops gevent block monitoring
+    in:
     out:
     throws:
       BadRequest:

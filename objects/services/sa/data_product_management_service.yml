@@ -221,14 +221,6 @@ methods:
       lifecycle_event: ""
     out:
 
-  get_last_update:
-    in:
-      data_product_id: ""
-    out:
-      last_update: {}
-    throws:
-      NotFound: Data product not found or cache for data product not found.
-
   get_data_product_group_list:
     docstring: Return a sorted list of distinct names of ooi_product_name attributes
     in:

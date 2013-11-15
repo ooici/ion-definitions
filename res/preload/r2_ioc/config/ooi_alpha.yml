@@ -50,7 +50,15 @@ load_sequence:
       op: load
       scenario: OOIR2_ALPHA
 
-  - name: load_OOIR2_OPTAA_CTDPF
+  - name: load_glider
+    docstring: Load glider platform and instruments
+    config:
+      op: load
+      scenario: GENG,CTDGV,FLORD,DOSTA
+      idmap: True
+      excludecategories: InstrumentModel
+
+  - name: load_OOIR2_alpha_instruments
     docstring: Load physical instrument sites, devices and agent instance definitions
     config:
       op: load

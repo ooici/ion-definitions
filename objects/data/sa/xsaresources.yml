@@ -465,6 +465,7 @@ AssocInstDeviceSensorDevices: !Extends_AssociatedResources
   assign_request: !SensorDeviceServiceRequest
   unassign_request: !SensorDeviceServiceRequest
 
+
 AssocPlatDevicePlatModels: !Extends_AssociatedResources
   #@ResourceType=PlatformModel
   resources: []
@@ -485,6 +486,19 @@ AssocPlatDevicePlatAgentInstances: !Extends_AssociatedResources
   assign_request: !PlatformAgentInstanceServiceRequest
   unassign_request: !PlatformAgentInstanceServiceRequest
   # grouping, by PlatformModel id, of PAIs (via PA->PM association)
+  # this is all done in IMS.prepare_platform_device_support
+  group: {}
+
+AssocPlatDeviceExtDataAgentInstances: !Extends_AssociatedResources
+  #@ResourceType=ExternalDatasetAgentInstance
+  resources: []
+  #@Association=hasAgentInstance
+  #@ResourceSubject
+  #@ObjectType=ExternalDatasetAgentInstance
+  associated_resources: []
+  assign_request: !ExternalDatasetAgentInstanceServiceRequest
+  unassign_request: !ExternalDatasetAgentInstanceServiceRequest
+  # grouping, by PlatformModel id, of EDAIs (via EDA->PM association)
   # this is all done in IMS.prepare_platform_device_support
   group: {}
 
@@ -650,6 +664,80 @@ AssocInstAgentInstanceInstAgent: !Extends_AssociatedResources
   assign_request: !InstrumentAgentServiceRequest
   unassign_request: !InstrumentAgentServiceRequest
 
+
+#@Key=InstrumentModel
+AssocExtDataAgentInstModel: !Extends_AssociatedResources
+  #@ResourceType=InstrumentModel
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasModel
+  #@ResourceSubject
+  #@ObjectType=InstrumentModel
+  associated_resources: []
+  assign_request: !InstrumentModelServiceRequest
+  unassign_request: !InstrumentModelServiceRequest
+
+#@Key=PlatformModel
+AssocExtDataAgentPlatModel: !Extends_AssociatedResources
+  #@ResourceType=PlatformModel
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasModel
+  #@ResourceSubject
+  #@ObjectType=PlatformModel
+  associated_resources: []
+  assign_request: !PlatformModelServiceRequest
+  unassign_request: !PlatformModelServiceRequest
+
+#@Key=ExternalDatasetAgentInstance
+AssocExtDataAgentExtDataAgentInstance: !Extends_AssociatedResources
+  #@ResourceType=ExternalDatasetAgentInstance
+  # DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasAgentDefinition
+  #@ResourceObject
+  #@SubjectType=ExternalDatasetAgentInstance
+  associated_resources: []
+  assign_request: !ExternalDatasetAgentInstanceServiceRequest
+  unassign_request: !ExternalDatasetAgentInstanceServiceRequest
+
+#@Key=InstrumentDevice
+AssocExtDataAgentInstanceInstDevice: !Extends_AssociatedResources
+  #@ResourceType=InstrumentDevice
+  #@ResourceSPOFilter=InstrumentDevice,hasAgentInstance,ExternalDatasetAgentInstance
+  #   DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasAgentInstance
+  #@ResourceObject
+  #@SubjectType=InstrumentDevice
+  associated_resources: []  # Should have one entry if the data product is associated with an instrument device
+  assign_request: !InstrumentDeviceServiceRequest
+  unassign_request: !InstrumentDeviceServiceRequest
+
+#@Key=PlatformDevice
+AssocExtDataAgentInstancePlatDevice: !Extends_AssociatedResources
+  #@ResourceType=PlatformDevice
+  #@ResourceSPOFilter=PlatformDevice,hasAgentInstance,ExternalDatasetAgentInstance
+  #   DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasAgentInstance
+  #@ResourceObject
+  #@SubjectType=PlatformDevice
+  associated_resources: []  # Should have one entry if the data product is associated with an instrument device
+  assign_request: !PlatformDeviceServiceRequest
+  unassign_request: !PlatformDeviceServiceRequest
+
+AssocExtDataAgentInstanceExtDataAgent: !Extends_AssociatedResources
+  #@ResourceType=ExternalDatasetAgent
+  #  DO NOT ExcludeLifecycleStates=DRAFT,PLANNED
+  resources: []
+  #@Association=hasAgentDefinition
+  #@ResourceSubject
+  #@ObjectType=ExternalDatasetAgent
+  associated_resources: []  # Should have one entry if the data product is associated with an instrument device
+  assign_request: !ExternalDatasetAgentServiceRequest
+  unassign_request: !ExternalDatasetAgentServiceRequest
+
 ---
 
 #This object contains additional information needed to create or update instrument devices
@@ -691,9 +779,30 @@ PlatformDevicePrepareSupport: !Extends_ResourcePrepareSupport
   create_request: !PlatformDeviceServiceRequest
   update_request: !PlatformDeviceServiceRequest
   #@ContentType=AssociatedResources
-  #@AssociatedResources=AssocPlatDevicePlatModels,AssocPlatDevicePlatAgentInstances,AssocPlatDeviceInstDevices
+  #@AssociatedResources=AssocPlatDevicePlatModels,AssocPlatDevicePlatAgentInstances,AssocPlatDeviceExtDataAgentInstances,AssocPlatDeviceInstDevices
   associations: {}
 
+#This object contains additional information needed to create or update external dataset agents
+#@OriginResourceType=ExternalDatasetAgent
+ExternalDatasetAgentPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !ExternalDatasetAgentServiceRequest
+  update_request: !ExternalDatasetAgentServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocExtDataAgentInstModel,AssocExtDataAgentPlatModel,AssocExtDataAgentExtDataAgentInstance
+  associations: {}
+
+#This object contains additional information needed to create or update external dataset agent instances
+#@OriginResourceType=ExternalDatasetAgentInstance
+ExternalDatasetAgentInstancePrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request", "start_request", "stop_request"]
+  create_request: !ExternalDatasetAgentInstanceServiceRequest
+  update_request: !ExternalDatasetAgentInstanceServiceRequest
+  start_request: !ExternalDatasetAgentInstanceServiceRequest
+  stop_request: !ExternalDatasetAgentInstanceServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocExtDataAgentInstanceInstDevice,AssocExtDataAgentInstancePlatDevice,AssocExtDataAgentInstanceExtDataAgent
+  associations: {}
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=DataProduct

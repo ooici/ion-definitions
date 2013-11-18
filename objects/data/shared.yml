@@ -215,9 +215,16 @@ Attachment: !Extends_InformationResource
   attachment_size: 0 # size of the attachment content field, in bytes
   context: !AbstractAttachmentContext
 
+# RAW=raw device stream, PARSED=instrument parsed stream (basis for L0/L1/L2), ENG=device engineering data
+StreamConfigurationType: !enum (values=(OTHER, RAW, PARSED, ENG, DERIVED), default=OTHER)
+
+---
+
 StreamConfiguration:
-  stream_name: ""                 # the tag that the driver uses to reference this stream
-  parameter_dictionary_name: ""   # the name of the parameter dictionary that defines the contents of the stream
+  stream_name: ""                        # the tag that the driver uses to reference this stream
+  parameter_dictionary_name: ""          # the name of the parameter dictionary that defines the contents of the stream
+  stream_type: !StreamConfigurationType  # Type of stream configuration
+  stream_attributes: {}                  # Additional attributes for the stream (for extension purposes)
 
 ---
 

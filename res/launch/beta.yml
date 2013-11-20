@@ -78,7 +78,7 @@ execution_engines:
     config:
       unique_key: ddns_hostname
       unique_values: ${gateway_ddns_hosts}
-    replicas: 2
+    replicas: 3
     slots: 1
   instrument_agent:
     base_need: 2
@@ -103,7 +103,7 @@ process_engines:
   ion.agents.instrument: instrument_agent
   ion.agents.platform: instrument_agent
   ion.agents.data: instrument_agent
-
+  ion.processes.data.transforms.qc_post_processing: service_gateway
 #############################################################################
 #  APPS
 #############################################################################

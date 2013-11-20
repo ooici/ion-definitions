@@ -256,8 +256,8 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   #@hasModel
   instrument_model: !InstrumentModel  # The associated Instrument Model
 
-  #@hasAgentForDevice=InstrumentModel,InstrumentAgent
-  instrument_agent: !InstrumentAgent  # The associated agent
+  #@hasAgentForDevice=InstrumentModel,AgentDefinition
+  instrument_agent: !AgentDefinition  # The associated agent
 
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The parent platform (if existing)
@@ -285,8 +285,8 @@ PlatformDeviceExtension: !Extends_DeviceExtension
   #@hasModel
   platform_model: !PlatformModel  # The associated Platform Model
 
-  #@hasAgentForDevice=PlatformModel,PlatformAgent
-  platform_agent: !PlatformAgent  # The associated agent
+  #@hasAgentForDevice=PlatformModel,AgentDefinition
+  platform_agent: !AgentDefinition  # The associated agent
 
   parent_platform_device: !PlatformDevice  # The parent platform (if existing)
 

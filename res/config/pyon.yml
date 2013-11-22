@@ -127,6 +127,8 @@ server:
     cache_expiration: 30
     # Profile and log DAP requests
     profile_enabled: False
+    # Allowable request limit in MB
+    request_limit: 200
 
   erddap:
     # ERDDAP DAP server and data catalog

@@ -130,7 +130,7 @@ methods:
       Returns a list of events that match the resource id
     in:
       resource_id: ""
-      limit: 10000
+      limit: 0
     out:
       event_list: []
     throws:

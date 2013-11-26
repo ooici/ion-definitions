@@ -340,6 +340,8 @@ service:
     # Run every N hours
     run_interval: 1
 
+  user_notification:
+    max_events_limit: 2000
 
 # TODO: Remove (use global flags instead)
 external_data_agent_management:

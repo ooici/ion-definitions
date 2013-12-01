@@ -9,6 +9,7 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Datase
 dependencies: [resource_registry]
 
 methods:
+
 #--------
 
   create_dataset:
@@ -105,7 +106,8 @@ methods:
 
   create_parameter_context:
     docstring: |
-      Creates a new parameter context resource. The context defines the parameter in a dataset. This method accepts a dumped ParameterContext instance as its argument.
+      Creates a new parameter context resource. The context defines the parameter in a dataset. This method
+      accepts a dumped ParameterContext instance as its argument.
       https://confluence.oceanobservatories.org/display/CIDev/Defining+Parameter+Dictionaries+and+Contexts
     in:
       name: ""
@@ -199,7 +201,8 @@ methods:
 
   create_parameter_dictionary:
     docstring: |
-      Creates a container for a set of parameter contexts known as a parameter dictionary. Parameter dictionaries define the parameters of a particular dataset.
+      Creates a container for a set of parameter contexts known as a parameter dictionary.
+      Parameter dictionaries define the parameters of a particular dataset.
     in:
       name: ""
       parameter_context_ids: []
@@ -223,6 +226,20 @@ methods:
       parameter_dictionary_id: ""
     out:
       success: True
+
+
+#--------
+
+  create_parameters_mult:
+    docstring: |
+      Creates multiple parameter function, parameter context and parameter dictionary resources.
+    in:
+      parameter_function_list: []
+      parameter_context_list: []
+      parameter_dictionary_list: []
+      parameter_dictionary_assocs: {}
+    out:
+      resource_ids: {}
 
 #--------
       

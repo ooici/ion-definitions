@@ -205,7 +205,23 @@ methods:
     throws:
       NotFound: subject or object does not exist
       BadRequest: subject, predicate or object parameter missing, unknown value passed for the assoc_type parameter, predicate is unknown, subject or object are invalid types for predicate, or subject or object do not have _id field
-      
+
+  #@OperationVerb=CREATE
+  create_association_mult:
+    docstring: |
+      Create multiple associations between subject and object resources (IonObjects).
+      Subject and object values can be passed as actual object instances or just
+      object ids.  Valid predicates can be found in res/config/associations.yml.
+      Subject and object must be of the proper types for the predicate or
+      an exception will be thrown.
+    in:
+      assoc_list: []
+    out:
+      tuple: []
+    throws:
+      NotFound: subject or object does not exist
+      BadRequest: subject, predicate or object parameter missing, predicate is unknown, subject or object are invalid types for predicate, or subject or object do not have _id field
+
   #@OperationVerb=DELETE
   delete_association:
     docstring: |

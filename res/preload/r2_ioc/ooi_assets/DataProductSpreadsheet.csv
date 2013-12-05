@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Spreadsheet,Report Generated: 10/23/2013
+Data Product Spreadsheet,Report Generated: 12/5/2013
 
 Textbox14
 
@@ -45,8 +45,8 @@ DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDMO,CTD Mooring,2013-0
 DENSITY,Density,L2,kg/m^3,DCN 1341-00050,DCN 1342-00010,CTDPF,CTD Profiler,2013-07-17,L2-SR-RQ-3065,Water Column
 DNASAMP,16s rRNA sequence of filtered physical sample,L2,2 micron filter,DCN 1341-00630,n/a,PPSDN,DNA particulate,2014-07,L2-SR-RQ-3850,Seafloor/Crust
 DOCONCF,Oxygen Concentration from Fastrep DO Instrument,L2,uMol/l,DCN 1341-00521,DCN 1342-00521,DOFST,Oxygen dissolved fastresp,2013-11,L2-SR-RQ-3048,Water Column
-DOCONCS,Oxygen Concentration from Stable DO Instrument,L0,degrees; degrees Celcius,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17,L2-SR-RQ-3048,Water Column
-DOCONCS,Oxygen Concentration from Stable DO Instrument,L1,uMol/l,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17, L2-SR-RQ-3048, Water Column
+DOCONCS,Oxygen Concentration from Stable DO Instrument,L0,angular degrees,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17,L2-SR-RQ-3048,Water Column
+DOCONCS,Oxygen Concentration from Stable DO Instrument,L1,umol/l,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17, L2-SR-RQ-3048, Water Column
 DOCONCS,Oxygen Concentration from Stable DO Instrument,L2,µmol/kg ,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17,L2-SR-RQ-3048,Water Column
 ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2013-07-17,L2-SR-RQ-3887,Water Column
 ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2013-07-17,L2-SR-RQ-3887,Water Column

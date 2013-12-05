@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday,Textbox2
-Instrument Catalog (Full Location Detail),Report Generated: 10/23/2013,Total Instruments (761)
+Instrument Catalog (Full Location Detail),Report Generated: 12/5/2013,Total Instruments (762)
 
 Textbox14
 
@@ -501,6 +501,7 @@ RS01SBVM-SF01A-2D-PHSENA101,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Prof
 RS01SBVM-PC01A-4B-PHSENA102,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,4B,PHSEN,A,102,01,PHSEN Series A Sub 01,Sunburst,SAMI-pH,SAMI-pH,2014-07,Shore CyberPoP - Regional Observatory Management System,,,
 RS03AXVM-SF03A-2D-PHSENA301,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,2D,PHSEN,A,301,01,PHSEN Series A Sub 01,Sunburst,SAMI-pH,SAMI-pH,2014-07,Shore CyberPoP - Regional Observatory Management System,,,
 RS03AXVM-PC03A-4B-PHSENA302,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,4B,PHSEN,A,302,01,PHSEN Series A Sub 01,Sunburst,SAMI-pH,SAMI-pH,2014-07,Shore CyberPoP - Regional Observatory Management System,,,
+CE04OSHY-SF01B-10-PHSENA101,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,10,PHSEN,A,101,01,PHSEN Series A Sub 01,Sunburst,SAMI-pH,SAMI-pH,2014-07,Shore CyberPoP - Regional Observatory Management System,,,
 CE02SHBP-LJ01D-10-PHSEND103,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,10,PHSEN,D,103,01,PHSEN Series D Sub 01,Sunburst,SAMI-pH,SAMI-pH,2014-07,Shore CyberPoP - Regional Observatory Management System,,,
 CE04OSBP-LJ01C-10-PHSEND107,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,10,PHSEN,D,107,01,PHSEN Series D Sub 01,Sunburst,SAMI-pH,SAMI-pH,2014-07,Shore CyberPoP - Regional Observatory Management System,,,
 CP01CNSM-MF004-05-PHSEND999,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,05,PHSEN,D,999,01,PHSEN Series D Sub 01,Sunburst,SAMI-pH,SAMI-pH,2013-11,InSitu CyberPoP - Surface Mooring Platform Controller,,,

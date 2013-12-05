@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday,Textbox2
-Instrument Classes By Location,Report Generated: 10/23/2013,Total Instruments (761)
+Instrument Classes By Location,Report Generated: 12/5/2013,Total Instruments (762)
 
 Textbox14
 
@@ -95,6 +95,7 @@ CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Attenuation absorption optical,OPTAA,D,01,WET Labs,AC-S,1
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,PAR,PARAD,A,01,Satlantic,digital PAR,1
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pCO2 water,PCO2W,A,01,Sunburst,SAMI-pCO2,1
+CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pH stable,PHSEN,A,01,Sunburst,SAMI-pH,1
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,spectral irradiance,SPKIR,A,01,Satlantic,OCR507 ICSW,1
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Velocity point,VELPT,D,01,Nortek,Aquadopp,1
 CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,C,01,Sea-Bird,SBE 16plusV2,1

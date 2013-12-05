@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Make/Model Attributes Report,Report Generated: 10/23/2013
+Make/Model Attributes Report,Report Generated: 12/5/2013
 
 Textbox14
 
@@ -16,7 +16,7 @@ Aanderaa,Optode 4330,Optode 4330,Lead Time,
 Aanderaa,Optode 4330,Optode 4330,Make/Model Website,
 Aanderaa,Optode 4330,Optode 4330,Output Description,
 Aanderaa,Optode 4330,Optode 4330,Vendor Website,
-Aanderaa,Optode 4831,Optode 4831,Calibration Shelf Life,
+Aanderaa,Optode 4831,Optode 4831,Calibration Shelf Life,Needs pre-deployment calibration by EA (not vendor)
 Aanderaa,Optode 4831,Optode 4831,Connector,
 Aanderaa,Optode 4831,Optode 4831,Input Voltage Range,
 Aanderaa,Optode 4831,Optode 4831,Interface,
@@ -40,7 +40,7 @@ Biospherical Instruments,QSP-2150,QSP-2150,Lead Time,
 Biospherical Instruments,QSP-2150,QSP-2150,Make/Model Website,
 Biospherical Instruments,QSP-2150,QSP-2150,Output Description,
 Biospherical Instruments,QSP-2150,QSP-2150,Vendor Website,
-Biospherical Instruments,QSP-2155,QSP-2155,Calibration Shelf Life,
+Biospherical Instruments,QSP-2155,QSP-2155,Calibration Shelf Life,Needs annual recalibration
 Biospherical Instruments,QSP-2155,QSP-2155,Connector,
 Biospherical Instruments,QSP-2155,QSP-2155,Input Voltage Range,
 Biospherical Instruments,QSP-2155,QSP-2155,Interface,
@@ -48,7 +48,7 @@ Biospherical Instruments,QSP-2155,QSP-2155,Lead Time,
 Biospherical Instruments,QSP-2155,QSP-2155,Make/Model Website,
 Biospherical Instruments,QSP-2155,QSP-2155,Output Description,
 Biospherical Instruments,QSP-2155,QSP-2155,Vendor Website,
-Biospherical Instruments,QSP-2200,QSP-2200,Calibration Shelf Life,
+Biospherical Instruments,QSP-2200,QSP-2200,Calibration Shelf Life,Needs annual recalibration
 Biospherical Instruments,QSP-2200,QSP-2200,Connector,
 Biospherical Instruments,QSP-2200,QSP-2200,Input Voltage Range,
 Biospherical Instruments,QSP-2200,QSP-2200,Interface,
@@ -400,7 +400,7 @@ SubC,1Cam,1Cam,Lead Time,
 SubC,1Cam,1Cam,Make/Model Website,
 SubC,1Cam,1Cam,Output Description,
 SubC,1Cam,1Cam,Vendor Website,
-Sunburst,SAMI-pCO2,SAMI-pCO2,Calibration Shelf Life,
+Sunburst,SAMI-pCO2,SAMI-pCO2,Calibration Shelf Life,Needs annual recalibration
 Sunburst,SAMI-pCO2,SAMI-pCO2,Connector,
 Sunburst,SAMI-pCO2,SAMI-pCO2,Input Voltage Range,
 Sunburst,SAMI-pCO2,SAMI-pCO2,Interface,
@@ -408,7 +408,7 @@ Sunburst,SAMI-pCO2,SAMI-pCO2,Lead Time,7-9 weeks
 Sunburst,SAMI-pCO2,SAMI-pCO2,Make/Model Website,
 Sunburst,SAMI-pCO2,SAMI-pCO2,Output Description,
 Sunburst,SAMI-pCO2,SAMI-pCO2,Vendor Website,
-Sunburst,SAMI-pH,SAMI-pH,Calibration Shelf Life,
+Sunburst,SAMI-pH,SAMI-pH,Calibration Shelf Life,Needs annual recalibration
 Sunburst,SAMI-pH,SAMI-pH,Connector,
 Sunburst,SAMI-pH,SAMI-pH,Input Voltage Range,
 Sunburst,SAMI-pH,SAMI-pH,Interface,
@@ -416,7 +416,7 @@ Sunburst,SAMI-pH,SAMI-pH,Lead Time,7-9 weeks
 Sunburst,SAMI-pH,SAMI-pH,Make/Model Website,
 Sunburst,SAMI-pH,SAMI-pH,Output Description,
 Sunburst,SAMI-pH,SAMI-pH,Vendor Website,
-Teledyne RDI,Explorer DVL 600 kHz,Explorer DVL 600 kHz,Calibration Shelf Life,
+Teledyne RDI,Explorer DVL 600 kHz,Explorer DVL 600 kHz,Calibration Shelf Life,"Needs compass calibration prior to deployment, but not by vendor"
 Teledyne RDI,Explorer DVL 600 kHz,Explorer DVL 600 kHz,Connector,
 Teledyne RDI,Explorer DVL 600 kHz,Explorer DVL 600 kHz,Input Voltage Range,
 Teledyne RDI,Explorer DVL 600 kHz,Explorer DVL 600 kHz,Interface,
@@ -440,7 +440,7 @@ Teledyne RDI,WorkHorse LongRanger Monitor 75khz,WorkHorse LongRanger Monitor 75k
 Teledyne RDI,WorkHorse LongRanger Monitor 75khz,WorkHorse LongRanger Monitor 75khz,Make/Model Website,
 Teledyne RDI,WorkHorse LongRanger Monitor 75khz,WorkHorse LongRanger Monitor 75khz,Output Description,
 Teledyne RDI,WorkHorse LongRanger Monitor 75khz,WorkHorse LongRanger Monitor 75khz,Vendor Website,
-Teledyne RDI,WorkHorse LongRanger Sentinel 75khz,WorkHorse LongRanger Sentinel 75khz,Calibration Shelf Life,
+Teledyne RDI,WorkHorse LongRanger Sentinel 75khz,WorkHorse LongRanger Sentinel 75khz,Calibration Shelf Life,"Needs compass calibration prior to deployment, but not by vendor"
 Teledyne RDI,WorkHorse LongRanger Sentinel 75khz,WorkHorse LongRanger Sentinel 75khz,Connector,
 Teledyne RDI,WorkHorse LongRanger Sentinel 75khz,WorkHorse LongRanger Sentinel 75khz,Input Voltage Range,
 Teledyne RDI,WorkHorse LongRanger Sentinel 75khz,WorkHorse LongRanger Sentinel 75khz,Interface,
@@ -480,7 +480,7 @@ Teledyne RDI,WorkHorse Sentinel 300khz,WorkHorse Sentinel 300khz,Lead Time,
 Teledyne RDI,WorkHorse Sentinel 300khz,WorkHorse Sentinel 300khz,Make/Model Website,
 Teledyne RDI,WorkHorse Sentinel 300khz,WorkHorse Sentinel 300khz,Output Description,
 Teledyne RDI,WorkHorse Sentinel 300khz,WorkHorse Sentinel 300khz,Vendor Website,
-Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Calibration Shelf Life,
+Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Calibration Shelf Life,"Needs compass calibration prior to deployment, but not by vendor"
 Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Connector,
 Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Input Voltage Range,
 Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Interface,
@@ -488,7 +488,7 @@ Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Lead Time,60 da
 Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Make/Model Website,[WorkHorse Sentinel 600khz|http://www.rdinstruments.com/sen.aspx]
 Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Output Description,
 Teledyne RDI,WorkHorse Sentinel 600khz,WorkHorse Sentinel 600khz,Vendor Website,
-Teledyne RDI,WorkHorse Sentinel150khz,WorkHorse Sentinel150khz,Calibration Shelf Life,
+Teledyne RDI,WorkHorse Sentinel150khz,WorkHorse Sentinel150khz,Calibration Shelf Life,"Needs compass calibration prior to deployment, but not by vendor"
 Teledyne RDI,WorkHorse Sentinel150khz,WorkHorse Sentinel150khz,Connector,
 Teledyne RDI,WorkHorse Sentinel150khz,WorkHorse Sentinel150khz,Input Voltage Range,
 Teledyne RDI,WorkHorse Sentinel150khz,WorkHorse Sentinel150khz,Interface,
@@ -504,7 +504,7 @@ Teledyne RDI,WorkHorse Sentinel150khz,WorkHorse Sentinel150khz,Vendor Website,
 "TLR, Inc.",OsmoSampler,OsmoSampler,Make/Model Website,
 "TLR, Inc.",OsmoSampler,OsmoSampler,Output Description,
 "TLR, Inc.",OsmoSampler,OsmoSampler,Vendor Website,
-WET Labs,AC-S,AC-S,Calibration Shelf Life,
+WET Labs,AC-S,AC-S,Calibration Shelf Life,**Issue here** - needs recalibration prior to deployment
 WET Labs,AC-S,AC-S,Connector,
 WET Labs,AC-S,AC-S,Input Voltage Range,
 WET Labs,AC-S,AC-S,Interface,
@@ -512,7 +512,7 @@ WET Labs,AC-S,AC-S,Lead Time,
 WET Labs,AC-S,AC-S,Make/Model Website,
 WET Labs,AC-S,AC-S,Output Description,
 WET Labs,AC-S,AC-S,Vendor Website,
-WET Labs,AC-S Deep,AC-S Deep,Calibration Shelf Life,
+WET Labs,AC-S Deep,AC-S Deep,Calibration Shelf Life,**Issue here** - needs recalibration prior to deployment
 WET Labs,AC-S Deep,AC-S Deep,Connector,
 WET Labs,AC-S Deep,AC-S Deep,Input Voltage Range,
 WET Labs,AC-S Deep,AC-S Deep,Interface,

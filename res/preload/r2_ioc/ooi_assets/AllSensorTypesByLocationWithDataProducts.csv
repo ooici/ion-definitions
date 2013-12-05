@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Instrument Classes By Location With Data Product Info,Report Generated: 10/23/2013
+Instrument Classes By Location With Data Product Info,Report Generated: 12/5/2013
 
 Textbox14
 
@@ -262,6 +262,7 @@ CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platfor
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,Plankton ZP sonar coastal,ZPLSC,SONBSCA,DCN 1341-00800
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
+CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pH stable,PHSEN,ABSTHRM,DCN 1341-00507
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
@@ -280,6 +281,9 @@ CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,PAR,PARAD,OPTPARW,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)"
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,Attenuation absorption optical,OPTAA,OPTTEMP,"DCN 1341-00690, DCN 1341-00700"
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pCO2 water,PCO2W,PCO2WAT,DCN 1341-00490
+CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pH stable,PHSEN,PH434SI,DCN 1341-00508
+CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pH stable,PHSEN,PH578SI,DCN 1341-00509
+CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730

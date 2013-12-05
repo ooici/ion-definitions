@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Node Attributes Report,Report Generated: 10/23/2013
+Node Attributes Report,Report Generated: 12/5/2013
 
 Textbox14
 
@@ -844,7 +844,7 @@ GP03FLMA-RI001,RI,001,depth_port_max,
 GP03FLMA-RI001,RI,001,depth_port_min,
 GP03FLMA-RI001,RI,001,depth_subsite,4126
 GP03FLMA-RI001,RI,001,First Deployment Date,2013-07-17
-GP03FLMA-RI001,RI,001,latitude,50.9795
+GP03FLMA-RI001,RI,001,latitude,49.9795
 GP03FLMA-RI001,RI,001,longitude,144.254
 GP03FLMA-RI001,RI,001,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001,RI,001,Relative Depth,

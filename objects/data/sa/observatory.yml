@@ -31,7 +31,9 @@ Subsite: !Extends_Site
 
 ---
 
-PortTypeEnum: !enum (values=(NONE, PAYLOAD, EXPANSION, UPLINK), default=NONE)
+# Types of ports. PAYLOAD, EXPANSION, UPLINK are RSN node ports.
+# ASSEMBLY is the type for a non-cabled physical assembly of parent and child devices
+PortTypeEnum: !enum (values=(NONE, PAYLOAD, EXPANSION, UPLINK, ASSEMBLY), default=NONE)
 
 ---
 

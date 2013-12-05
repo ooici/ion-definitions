@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday,Total_Count3
-Instrument Table (Website) (Detailed),Report Generated: 10/23/2013,Total Instruments: 761
+Instrument Table (Website) (Detailed),Report Generated: 12/5/2013,Total Instruments: 762
 
 Textbox14
 
@@ -97,6 +97,7 @@ CE04OSHY-SF01B-07-SPKIRA102,CE,CE04OSHY,Endurance OR Offshore Hybrid Profiler Mo
 CE04OSHY-SF01B-08-CTDPFA107,CE,CE04OSHY,Endurance OR Offshore Hybrid Profiler Mooring,SF(Shallow Profiler Science Float),CTDPF,CTD Profiler,CTDs to be mounted on a profiler,Sea-Bird,SBE 16plusV2,Conductivity; Density; Practical Salinity; Pressure (Depth); Temperature,20m to 200m below sea surface,20,200
 CE04OSHY-SF01B-08-DOFSTA107,CE,CE04OSHY,Endurance OR Offshore Hybrid Profiler Mooring,SF(Shallow Profiler Science Float),DOFST,Dissolved Oxygen Fast Response,Measures dissolved oxygen concentrations on shallow coastal profilers through rapid oxygen gradients,Sea-Bird,SBE 43,Oxygen Concentration from Fastrep DO Instrument,20m to 200m below sea surface,20,200
 CE04OSHY-SF01B-09-OPTAAD105,CE,CE04OSHY,Endurance OR Offshore Hybrid Profiler Mooring,SF(Shallow Profiler Science Float),OPTAA,Absorption Spectrophotometer,Measures optical attenuation and absorption,WET Labs,AC-S,Optical Absorption Coefficient; Reference Absorption; Signal Absorption; Optical Beam Attenuation Coefficient; Reference Beam Attenuation; Signal Beam Attenuation; Temperature from OPTAA ,20m to 200m below sea surface,20,200
+CE04OSHY-SF01B-10-PHSENA101,CE,CE04OSHY,Endurance OR Offshore Hybrid Profiler Mooring,SF(Shallow Profiler Science Float),PHSEN,Seawater pH,pH,Sunburst,SAMI-pH,PHSEN Thermistor Temperature; Optical Absorbance Signal Intensity at 434nm; Optical Absorbance Signal Intensity at 578nm; pH,,,
 CE04OSSM-RI002-01-DOSTAD999,CE,CE04OSSM,Endurance OR Offshore Surface Mooring,RI(Mooring Riser),DOSTA,Dissolved Oxygen Stable Response,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings",Aanderaa,Optode 4831,Oxygen Concentration from Stable DO Instrument,5m below sea surface,5,5
 CE04OSSM-RI002-02-VELPTA999,CE,CE04OSSM,Endurance OR Offshore Surface Mooring,RI(Mooring Riser),VELPT,Single Point Velocity Meter,Measures Mean U and V single point velocity,Nortek,Aquadopp 300m,Mean Point Water Velocity,5m below sea surface,5,5
 CE04OSSM-RI002-03-PHSEND999,CE,CE04OSSM,Endurance OR Offshore Surface Mooring,RI(Mooring Riser),PHSEN,Seawater pH,pH,Sunburst,SAMI-pH,PHSEN Thermistor Temperature; Optical Absorbance Signal Intensity at 434nm; Optical Absorbance Signal Intensity at 578nm; pH,5m below sea surface,5,5

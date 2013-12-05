@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Attributes Report,Report Generated: 10/23/2013
+Data Product Attributes Report,Report Generated: 12/5/2013
 
 Textbox14
 
@@ -368,7 +368,7 @@ DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Solar Elevation (SOLARE
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Spike Test (SPKETST) QC,not applicable
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Stuck Value Test (STUCKVL) QC,not applicable
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Trend Test (TRNDTST) QC,not applicable
-DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Units,degrees; degrees Celcius
+DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Units,angular degrees
 ECHOINT,Echo Intensity,1,1-D Interpolation (INTERP1) QC,0
 ECHOINT,Echo Intensity,1,Combine QC Flags (CMBNFLG) QC,0
 ECHOINT,Echo Intensity,1,Conductivity Compressibility Compensation (CONDCMP) QC,0

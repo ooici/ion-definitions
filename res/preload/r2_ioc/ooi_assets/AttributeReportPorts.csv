@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Port Attributes Report,Report Generated: 10/23/2013
+Port Attributes Report,Report Generated: 12/5/2013
 
 Textbox14
 
@@ -680,6 +680,14 @@ CE04OSHY-SF01B-09,latitude,44.37
 CE04OSHY-SF01B-09,longitude,124.95
 CE04OSHY-SF01B-09,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
 CE04OSHY-SF01B-09,Relative Depth,20m to 200m below sea surface
+CE04OSHY-SF01B-10,depth_port_max,
+CE04OSHY-SF01B-10,depth_port_min,
+CE04OSHY-SF01B-10,depth_subsite,588
+CE04OSHY-SF01B-10,First Deployment Date,2014-07
+CE04OSHY-SF01B-10,latitude,44.37
+CE04OSHY-SF01B-10,longitude,124.95
+CE04OSHY-SF01B-10,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
+CE04OSHY-SF01B-10,Relative Depth,
 CE04OSSM-RI002-01,depth_port_max,5
 CE04OSSM-RI002-01,depth_port_min,5
 CE04OSSM-RI002-01,depth_subsite,588
@@ -4292,7 +4300,7 @@ GP03FLMA-RI001-01,depth_port_max,40
 GP03FLMA-RI001-01,depth_port_min,40
 GP03FLMA-RI001-01,depth_subsite,4126
 GP03FLMA-RI001-01,First Deployment Date,2013-07-17
-GP03FLMA-RI001-01,latitude,50.9795
+GP03FLMA-RI001-01,latitude,49.9795
 GP03FLMA-RI001-01,longitude,144.254
 GP03FLMA-RI001-01,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-01,Relative Depth,40m below sea surface
@@ -4300,7 +4308,7 @@ GP03FLMA-RI001-02,depth_port_max,40
 GP03FLMA-RI001-02,depth_port_min,40
 GP03FLMA-RI001-02,depth_subsite,4126
 GP03FLMA-RI001-02,First Deployment Date,2013-07-17
-GP03FLMA-RI001-02,latitude,50.9795
+GP03FLMA-RI001-02,latitude,49.9795
 GP03FLMA-RI001-02,longitude,144.254
 GP03FLMA-RI001-02,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-02,Relative Depth,40m below sea surface
@@ -4308,7 +4316,7 @@ GP03FLMA-RI001-03,depth_port_max,40
 GP03FLMA-RI001-03,depth_port_min,40
 GP03FLMA-RI001-03,depth_subsite,4126
 GP03FLMA-RI001-03,First Deployment Date,2013-07-17
-GP03FLMA-RI001-03,latitude,50.9795
+GP03FLMA-RI001-03,latitude,49.9795
 GP03FLMA-RI001-03,longitude,144.254
 GP03FLMA-RI001-03,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-03,Relative Depth,40m below sea surface
@@ -4316,7 +4324,7 @@ GP03FLMA-RI001-04,depth_port_max,500
 GP03FLMA-RI001-04,depth_port_min,500
 GP03FLMA-RI001-04,depth_subsite,4126
 GP03FLMA-RI001-04,First Deployment Date,2013-07-17
-GP03FLMA-RI001-04,latitude,50.9795
+GP03FLMA-RI001-04,latitude,49.9795
 GP03FLMA-RI001-04,longitude,144.254
 GP03FLMA-RI001-04,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-04,Relative Depth,"Mounted at 500m, uplooking"
@@ -4324,7 +4332,7 @@ GP03FLMA-RI001-06,depth_port_max,30
 GP03FLMA-RI001-06,depth_port_min,30
 GP03FLMA-RI001-06,depth_subsite,4126
 GP03FLMA-RI001-06,First Deployment Date,2013-07-17
-GP03FLMA-RI001-06,latitude,50.9795
+GP03FLMA-RI001-06,latitude,49.9795
 GP03FLMA-RI001-06,longitude,144.254
 GP03FLMA-RI001-06,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-06,Relative Depth,30m below sea surface
@@ -4332,7 +4340,7 @@ GP03FLMA-RI001-07,depth_port_max,40
 GP03FLMA-RI001-07,depth_port_min,40
 GP03FLMA-RI001-07,depth_subsite,4126
 GP03FLMA-RI001-07,First Deployment Date,2013-07-17
-GP03FLMA-RI001-07,latitude,50.9795
+GP03FLMA-RI001-07,latitude,49.9795
 GP03FLMA-RI001-07,longitude,144.254
 GP03FLMA-RI001-07,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-07,Relative Depth,40m below sea surface
@@ -4340,7 +4348,7 @@ GP03FLMA-RI001-08,depth_port_max,60
 GP03FLMA-RI001-08,depth_port_min,60
 GP03FLMA-RI001-08,depth_subsite,4126
 GP03FLMA-RI001-08,First Deployment Date,2013-07-17
-GP03FLMA-RI001-08,latitude,50.9795
+GP03FLMA-RI001-08,latitude,49.9795
 GP03FLMA-RI001-08,longitude,144.254
 GP03FLMA-RI001-08,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-08,Relative Depth,60m below sea surface
@@ -4348,7 +4356,7 @@ GP03FLMA-RI001-09,depth_port_max,90
 GP03FLMA-RI001-09,depth_port_min,90
 GP03FLMA-RI001-09,depth_subsite,4126
 GP03FLMA-RI001-09,First Deployment Date,2013-07-17
-GP03FLMA-RI001-09,latitude,50.9795
+GP03FLMA-RI001-09,latitude,49.9795
 GP03FLMA-RI001-09,longitude,144.254
 GP03FLMA-RI001-09,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-09,Relative Depth,90m below sea surface
@@ -4356,7 +4364,7 @@ GP03FLMA-RI001-10,depth_port_max,130
 GP03FLMA-RI001-10,depth_port_min,130
 GP03FLMA-RI001-10,depth_subsite,4126
 GP03FLMA-RI001-10,First Deployment Date,2013-07-17
-GP03FLMA-RI001-10,latitude,50.9795
+GP03FLMA-RI001-10,latitude,49.9795
 GP03FLMA-RI001-10,longitude,144.254
 GP03FLMA-RI001-10,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-10,Relative Depth,130m below sea surface
@@ -4364,7 +4372,7 @@ GP03FLMA-RI001-11,depth_port_max,180
 GP03FLMA-RI001-11,depth_port_min,180
 GP03FLMA-RI001-11,depth_subsite,4126
 GP03FLMA-RI001-11,First Deployment Date,2013-07-17
-GP03FLMA-RI001-11,latitude,50.9795
+GP03FLMA-RI001-11,latitude,49.9795
 GP03FLMA-RI001-11,longitude,144.254
 GP03FLMA-RI001-11,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-11,Relative Depth,180m below sea surface
@@ -4372,7 +4380,7 @@ GP03FLMA-RI001-12,depth_port_max,250
 GP03FLMA-RI001-12,depth_port_min,250
 GP03FLMA-RI001-12,depth_subsite,4126
 GP03FLMA-RI001-12,First Deployment Date,2013-07-17
-GP03FLMA-RI001-12,latitude,50.9795
+GP03FLMA-RI001-12,latitude,49.9795
 GP03FLMA-RI001-12,longitude,144.254
 GP03FLMA-RI001-12,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-12,Relative Depth,250m below sea surface
@@ -4380,7 +4388,7 @@ GP03FLMA-RI001-13,depth_port_max,350
 GP03FLMA-RI001-13,depth_port_min,350
 GP03FLMA-RI001-13,depth_subsite,4126
 GP03FLMA-RI001-13,First Deployment Date,2013-07-17
-GP03FLMA-RI001-13,latitude,50.9795
+GP03FLMA-RI001-13,latitude,49.9795
 GP03FLMA-RI001-13,longitude,144.254
 GP03FLMA-RI001-13,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-13,Relative Depth,350m below sea surface
@@ -4388,7 +4396,7 @@ GP03FLMA-RI001-14,depth_port_max,500
 GP03FLMA-RI001-14,depth_port_min,500
 GP03FLMA-RI001-14,depth_subsite,4126
 GP03FLMA-RI001-14,First Deployment Date,2013-07-17
-GP03FLMA-RI001-14,latitude,50.9795
+GP03FLMA-RI001-14,latitude,49.9795
 GP03FLMA-RI001-14,longitude,144.254
 GP03FLMA-RI001-14,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-14,Relative Depth,500m below sea surface
@@ -4396,7 +4404,7 @@ GP03FLMA-RI001-15,depth_port_max,750
 GP03FLMA-RI001-15,depth_port_min,750
 GP03FLMA-RI001-15,depth_subsite,4126
 GP03FLMA-RI001-15,First Deployment Date,2013-07-17
-GP03FLMA-RI001-15,latitude,50.9795
+GP03FLMA-RI001-15,latitude,49.9795
 GP03FLMA-RI001-15,longitude,144.254
 GP03FLMA-RI001-15,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-15,Relative Depth,750m below sea surface
@@ -4404,7 +4412,7 @@ GP03FLMA-RI001-16,depth_port_max,1000
 GP03FLMA-RI001-16,depth_port_min,1000
 GP03FLMA-RI001-16,depth_subsite,4126
 GP03FLMA-RI001-16,First Deployment Date,2013-07-17
-GP03FLMA-RI001-16,latitude,50.9795
+GP03FLMA-RI001-16,latitude,49.9795
 GP03FLMA-RI001-16,longitude,144.254
 GP03FLMA-RI001-16,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-16,Relative Depth,1000m below sea surface
@@ -4412,7 +4420,7 @@ GP03FLMA-RI001-17,depth_port_max,1500
 GP03FLMA-RI001-17,depth_port_min,1500
 GP03FLMA-RI001-17,depth_subsite,4126
 GP03FLMA-RI001-17,First Deployment Date,2013-07-17
-GP03FLMA-RI001-17,latitude,50.9795
+GP03FLMA-RI001-17,latitude,49.9795
 GP03FLMA-RI001-17,longitude,144.254
 GP03FLMA-RI001-17,Platform Agent Type,Shore CyberPoP - Open Ocean Glider Dock Server
 GP03FLMA-RI001-17,Relative Depth,1500m below sea surface

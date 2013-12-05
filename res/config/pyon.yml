@@ -145,6 +145,15 @@ server:
     # In-process router
     type: local
 
+  ux:
+    # Used to configure web-redirection and info urls
+    type: ux
+    host: localhost
+    port: 3000
+    # Example might be /ooiux or /ux
+    webprefix: ""
+      
+
 
 # ----------------------------------------------------------------------------------
 # The "container" root entry defines settings for the current Pyon container

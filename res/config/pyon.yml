@@ -37,6 +37,10 @@ system:
   # Indicates whether policy should be loaded during system bootstrap (False is for development only)
   load_policy: False
 
+  # The base web ui URL
+  web_ui_url: http://localhost:3000/
+
+
 bootstrap:
   # Launches a bootstrap instance to build the search indices.
   use_es: False

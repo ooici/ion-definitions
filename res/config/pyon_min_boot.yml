@@ -13,7 +13,30 @@ server:
     port: 5984
     username:
     password:
+  postgresql:
+    type: postgresql
+    host: localhost
+    port: 5432
+    username: ion
+    password:
+    admin_username:             # If empty, defaults to current login username
+    admin_password:
+    default_database: postgres  # Postgres' internal database
+    database: ion               # Database name for OOI Network (will be sysname prefixed)
 
 # Config values to allow discovery of the directory
 container:
   profile: development
+
+  datastore:
+    default_server: couchdb     # Which server connection (and type) to use as primary datastore
+    server_types:               # Definition of the known server types and how to start them
+      couchdb:
+        base: pyon.datastore.couchdb.base_store.CouchDataStore
+        full: pyon.datastore.couchdb.datastore.CouchPyonDataStore
+      couchbase:
+        base: pyon.datastore.couchbase.base_store.CouchbaseDataStore
+        full: pyon.datastore.couchbase.datastore.CouchbasePyonDataStore
+      postgresql:
+        base: pyon.datastore.postgresql.base_store.PostgresDataStore
+        full: pyon.datastore.postgresql.datastore.PostgresPyonDataStore

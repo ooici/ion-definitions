@@ -29,11 +29,10 @@ load_sequence:
     config:
       op: load
       scenario: OOIR2_M
-      path: master
 
   - name: load_OOIR2_demo
     docstring: Some simulators with data products
     config:
       op: load
-      scenario: OOIR2_DEMO
+      scenario: OOIR2_DEMO,OOIR2_LOCAL
       idmap: True

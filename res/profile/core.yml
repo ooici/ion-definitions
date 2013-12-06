@@ -1,0 +1,22 @@
+# ION Capability Container Profile - defines the capabilities to start for a container variant
+
+# This is for a core container variant
+
+type: profile
+name: core
+version: 0.1
+
+# Definition of profiles
+profile:
+  capabilities:
+
+  start_order:
+  - PID_FILE
+  - SIGNAL_HANDLER
+  - DATASTORE_MANAGER
+  - RESOURCE_REGISTRY
+  - PROC_MANAGER
+  - APP_MANAGER
+
+  # Changes applied on top of pyon.yml for specific profile
+  config:

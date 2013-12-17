@@ -89,6 +89,18 @@ server:
     bucket_ram_quota_medium_mb: 512
     bucket_ram_quota_big_mb: 1024
     bucket_ram_quota_xbig_mb: 2048
+  postgresql:
+    type: postgresql
+    host: localhost
+    port: 5432
+    username: ion
+    password:
+    admin_username:             # If empty, defaults to current login username
+    admin_password:
+    default_database: postgres  # Postgres' internal database
+    database: ion               # Database name for OOI Network (will be sysname prefixed)
+    connection_pool_max: 5      # Number of connections for entire container
+
   smtp:
     # Outgoing email server
     type: smtp
@@ -161,7 +173,7 @@ container:
   #profile: dataadmin    # Profile for a database admin
 
   datastore:
-    default_server: couchdb     # Which server connection (and type) to use as primary datastore
+    default_server: postgresql  # Which server connection (and type) to use as primary datastore
     server_types:               # Definition of the known server types and how to start them
       couchdb:
         base: pyon.datastore.couchdb.base_store.CouchDataStore
@@ -169,6 +181,9 @@ container:
       couchbase:
         base: pyon.datastore.couchbase.base_store.CouchbaseDataStore
         full: pyon.datastore.couchbase.datastore.CouchbasePyonDataStore
+      postgresql:
+        base: pyon.datastore.postgresql.base_store.PostgresDataStore
+        full: pyon.datastore.postgresql.datastore.PostgresPyonDataStore
 
   exchange:
     # @TODO rename to delegate or similar, used for management api calls too

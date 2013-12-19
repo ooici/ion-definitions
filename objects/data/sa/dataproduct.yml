@@ -196,6 +196,20 @@ DataProduct: !Extends_InformationResource
   # List of URLs with information about the data product
   reference_urls: []
 
+  # Describes the provenance of this data product with respect to input data products and data sources.
+  # This is in addition to the associations of this data product to other resources and any computed
+  # provenance information.
+  provenance_description: ""
+
+  # Describes how this data product is used and can be used. This is in addition to any system record
+  # of acquired commitments (if existing) to the data product and events generated when accessing
+  # the data product.
+  citation_description: ""
+
+  # Describes user entered changes to this data product over time.
+  # This is in addition to the event history of life cycle state changes, resource changes and other events.
+  lineage_description: ""
+
 ---
 DataProductVersion:
   # name of the version

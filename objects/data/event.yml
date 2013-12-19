@@ -220,7 +220,10 @@ DeviceAggregateStatusEvent: !Extends_DeviceStatusEvent
 InformationContentEvent: !Extends_Event
   author: ""
 
-InformationStatus: !enum (values=(NORMAL,ERROR,OFFLINE), default=NORMAL)
+InformationStatus: !enum (values=(NORMAL, ERROR, OFFLINE), default=NORMAL)
+
+InformationContentAccessEnum: !enum (values=(VIEW, REALTIME_VIEW, DOWNLOAD, SUBSCRIBE, MODIFY, OPERATOR_ACTION, OTHER), default=VIEW)
+
 ---
 
 InformationContentModifiedEvent: !Extends_InformationContentEvent
@@ -232,6 +235,12 @@ InformationContentStatusEvent: !Extends_InformationContentEvent
   # New status of the information
   status: !InformationStatus
   
+InformationContentAccessedEvent: !Extends_InformationContentEvent
+  # The origin_type identifies the type of resource, e.g. DataProduct.
+  # The sub_type identifies the type of access using the InformationContentAccessEnum
+
+  # Additional information about access
+  access_params: {}
 
 # ------------------------------------------------------------------------------------
 #                                  Infrastructure Level Events
@@ -484,6 +493,7 @@ DatasetModified: !Extends_InformationContentModifiedEvent
 ExternalReferencesUpdatedEvent: !Extends_InformationContentModifiedEvent
   reference_keys: []
 
+
 ---
 
 ParameterQCEvent: !Extends_Event
@@ -491,4 +501,3 @@ ParameterQCEvent: !Extends_Event
   qc_parameter:   ""
   temporal_values: []
   configuration:  {}
-

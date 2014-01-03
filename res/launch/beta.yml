@@ -70,7 +70,7 @@ basenodes:
 
 execution_engines:
   default:
-    base_need: 4
+    base_need: 6
     replicas: 4
     slots: 25
   service_gateway:
@@ -88,6 +88,10 @@ execution_engines:
     base_need: 2
     replicas: 4
     slots: 5
+  visualization:
+    base_need: 2
+    replicas: 4
+    slots: 10
 
 default_execution_engine: default
 
@@ -104,6 +108,8 @@ process_engines:
   ion.agents.platform: instrument_agent
   ion.agents.data: instrument_agent
   ion.processes.data.transforms.qc_post_processing: service_gateway
+  ion.processes.data.transforms.viz: visualization
+
 #############################################################################
 #  APPS
 #############################################################################

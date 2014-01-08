@@ -232,7 +232,15 @@ container:
       port: 8001
 
   flask_webapp:
-    port: 8080
+    port: 8080   # Port of the container UI - TODO: move under containerui config
+
+  containerui:
+    association_graph: False    # Show D3 graph of associations
+    read_only: False            # Run in read-only mode
+
+  tracer:
+    enabled: False        # Enable the database class and message tracer in container
+    max_entries: 10000    # Length of trace buffer
 
       
 # TODO: Rename to "container". See there.

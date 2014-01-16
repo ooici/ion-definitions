@@ -58,13 +58,13 @@ load_sequence:
       idmap: True
       categories: ExternalDatasetAgent,ParameterFunctions,ParameterDefs,ParameterDictionary,StreamConfiguration,IDMap
 
-#  - name: load_mflm
-#    docstring: Load MFLM instruments
-#    config:
-#      op: load
-#      scenario: SP_MFLM
-#      idmap: True
-#      categories: ExternalDatasetAgent,ParameterFunctions,ParameterDefs,ParameterDictionary,StreamConfiguration,IDMap
+  - name: load_mflm
+    docstring: Load MFLM instruments
+    config:
+      op: load
+      scenario: SP_MFLM
+      idmap: True
+      categories: ExternalDatasetAgent,ParameterFunctions,ParameterDefs,ParameterDictionary,StreamConfiguration,IDMap
 
   - name: load_OOIR2_alpha_instruments
     docstring: Load physical instrument sites, devices and agent instance definitions

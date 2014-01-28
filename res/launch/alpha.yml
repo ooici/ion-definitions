@@ -46,6 +46,9 @@ config:
       port: 10999
     oms:
       host: sg.a.oceanobservatories.org
+  device:
+    dataset_agent:
+      datasource_cache_dir: /ion-alpha/r2/dsastore
   system:
     web_ui_url: http://ion-alpha.oceanobservatories.org/
     elasticsearch: true

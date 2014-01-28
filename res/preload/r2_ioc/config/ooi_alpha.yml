@@ -62,7 +62,7 @@ load_sequence:
     docstring: Load MFLM instruments
     config:
       op: load
-      scenario: SP_MFLM
+      scenario: SP_MFLM,CTDMO,PHSEN
       idmap: True
       categories: ExternalDatasetAgent,ParameterFunctions,ParameterDefs,ParameterDictionary,StreamConfiguration,IDMap
 

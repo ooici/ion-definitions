@@ -438,7 +438,8 @@ device:
     dvr_cls: "SBE37Driver"
     workdir: "/tmp/"
     delim: ["<<",">>"]
-
+  dataset_agent:
+    datasource_cache_dir: /tmp/dsastore
 
 units: res/config/units/udunits2.xml
 

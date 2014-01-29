@@ -46,6 +46,9 @@ config:
       port: 10999
     oms:
       host: sg.s.oceanobservatories.org
+  device:
+    dataset_agent:
+      datasource_cache_dir: /ion-stage/r2/dsastore
   system:
     web_ui_url: http://ion-stage.oceanobservatories.org/
     elasticsearch: true

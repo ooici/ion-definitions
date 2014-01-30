@@ -112,6 +112,10 @@ ResourceAgentErrorEvent: !Extends_ResourceAgentEvent
   error_msg: ""
   error_code: -1
 
+ResourceAgentIOEvent: !Extends_ResourceAgentEvent
+  source_type: ""
+  stats: {}
+
 ResourceAgentConnectionLostErrorEvent: !Extends_ResourceAgentEvent
   error_msg: "Connection to resource device was lost."
   error_code: -1

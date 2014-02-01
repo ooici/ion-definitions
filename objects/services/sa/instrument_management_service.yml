@@ -1085,6 +1085,17 @@ methods:
     throws:
       NotFound: An object with the specified instrument_device_id does not exist
 
+  prepare_instrument_agent_support:
+    docstring: |
+      Returns the information needed to create or update an instrument agent. The instrument_agent_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
+    in:
+      instrument_agent_id: ""
+    out:
+      resource_schema: !InstrumentAgentPrepareSupport
+    throws:
+      NotFound: An object with the specified instrument_agent_id does not exist
+
   prepare_instrument_agent_instance_support:
     docstring: |
       Returns the information needed to create or update an instrument agent instance. The instrument_agent_instance_id parameter
@@ -1108,13 +1119,24 @@ methods:
     throws:
       NotFound: An object with the specified platform_device_id does not exist
 
-  prepare_instrument_agent_support:
+  prepare_platform_agent_support:
     docstring: |
-      Returns the information needed to create or update an instrument agent. The instrument_agent_id parameter
+      Returns the information needed to create or update an platform agent. The platform_agent_id parameter
       is optional and should be provided when updating an existing resource but not when creating a new resource.
     in:
-      instrument_agent_id: ""
+      platform_agent_id: ""
     out:
-      resource_schema: !InstrumentAgentPrepareSupport
+      resource_schema: !PlatformAgentPrepareSupport
     throws:
-      NotFound: An object with the specified instrument_agent_id does not exist 
+      NotFound: An object with the specified platform_agent_id does not exist
+
+  prepare_platform_agent_instance_support:
+    docstring: |
+      Returns the information needed to create or update a platform agent instance. The platform_agent_instance_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
+    in:
+      platform_agent_instance_id: ""
+    out:
+      resource_schema: !PlatformAgentInstancePrepareSupport
+    throws:
+      NotFound: An object with the specified platform_agent_instance_id does not exist

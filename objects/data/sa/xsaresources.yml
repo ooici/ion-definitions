@@ -782,6 +782,26 @@ PlatformDevicePrepareSupport: !Extends_ResourcePrepareSupport
   #@AssociatedResources=AssocPlatDevicePlatModels,AssocPlatDevicePlatAgentInstances,AssocPlatDeviceExtDataAgentInstances,AssocPlatDeviceInstDevices
   associations: {}
 
+#This object contains additional information needed to create or update platform agents
+#@OriginResourceType=PlatformAgent
+PlatformAgentPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !PlatformAgentServiceRequest
+  update_request: !PlatformAgentServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=TBD
+  associations: {}
+
+#This object contains additional information needed to create or update platform agent instances
+#@OriginResourceType=PlatformAgentInstance
+PlatformAgentInstancePrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request", "start_request", "stop_request"]
+  create_request: !PlatformAgentInstanceServiceRequest
+  update_request: !PlatformAgentInstanceServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=TBD
+  associations: {}
+
 #This object contains additional information needed to create or update external dataset agents
 #@OriginResourceType=ExternalDatasetAgent
 ExternalDatasetAgentPrepareSupport: !Extends_ResourcePrepareSupport

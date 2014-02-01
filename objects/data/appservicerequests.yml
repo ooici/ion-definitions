@@ -71,7 +71,6 @@ PlatformAgentInstanceServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "PlatformAgentInstance"
   resource_identifier: "platform_agent_instance_id"
 
-
 ExternalDatasetAgentServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "ExternalDatasetAgent"
   resource_identifier: "external_dataset_agent_id"

@@ -1,9 +1,18 @@
 ---
-DataProcessTypeEnum: !enum (values=(TRANSFORM, EXTERNAL, DATA_PROCESS), default=DATA_PROCESS)
+# PARAMETER_FUNCTION - Run in a coverage model not in a process
+# TRANSFORM_PROCESS  - Stream in, stream out
+# RETRIEVE_PROCESS   - Retreived granule in, stream out
+# DATA_MONITOR       - Stream in, event out
+# RETRIEVE_MONITOR   - Retrieved granule in, event out
+# EVENT_MONITOR      - Event in, event out
+DataProcessTypeEnum: !enum (values=(PARAMETER_FUNCTION, TRANSFORM_PROCESS, RETRIEVE_PROCESS, DATA_MONITOR, RETRIEVE_MONITOR, EVENT_MONITOR), default=TRANSFORM_PROCESS)
 ---
 
 # Defines a type of data transform computational process.
 DataProcessDefinition: !Extends_InformationResource
+  data_process_type: !DataProcessTypeEnum
+
+  # ---  DEPRECATED FIELDS ---
   # (SYS) module for source code
   module: ""
   # (SYS) class for source code
@@ -14,19 +23,46 @@ DataProcessDefinition: !Extends_InformationResource
   parameters: {}
 
   output_bindings: {}
-  data_process_type: !DataProcessTypeEnum  
 
 
 # Represents a computational process receiving data granules from stream subscription and
 # produces output data products. Instance of DataProcessDefinition.
 DataProcess: !Extends_TaskableResource
+  # key is the argument name in the function and value is the parameter in the granule
+  # for example if we have a python function
+  # def pressure_range(p, p_range):
+  #     return p + p_range
+  # the argument map could be {'p' : 'seawater_pressure', 'p_range' : 'instrument_pressure_range'}
+  argument_map: {}
+
+  # ---  DEPRECATED FIELDS ---
   input_subscription_id: ""
   process_id: ""
   configuration: {}
 
+
+# TRANSFORM      - Arrays as input and returns one array to be used in a granule
+# EVENT_FUNCTION - Arrays as input and returns an Ion Event to be published
+# EVENT_HANDLER  - A single event as input and a single event as output
+TransformFunctionType: !enum (values=(TRANSFORM, EVENT_FUNCTION, EVENT_HANDLER), default=TRANSFORM)
+
+---
+
+# A resource that represents an executable function 
 TransformFunction: !Extends_InformationResource
-  module:        ""
-  cls:           ""
-  uri:           ""
+  # What kind of transform function
   function_type: !TransformFunctionType
+  # Name of the function as defined in code
+  function: ""
+  # The python module where the function is defined
+  module: ""
+  # The URL where the egg is located
+  uri: ""
+  # The arguments that the function accepts
+  arguments: []
+
+  # ---  DEPRECATED FIELDS ---
+  cls:           ""
+
+
 

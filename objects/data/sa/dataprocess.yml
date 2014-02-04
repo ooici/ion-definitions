@@ -25,8 +25,8 @@ DataProcessDefinition: !Extends_InformationResource
   output_bindings: {}
 
 
-# Represents a computational process receiving data granules from stream subscription and
-# produces output data products. Instance of DataProcessDefinition.
+# Represents a computational process that derives information from less refined information on a
+# continuous streaming basis or on-demand, including the generation of derived science data products.
 DataProcess: !Extends_TaskableResource
   # key is the argument name in the function and value is the parameter in the granule
   # for example if we have a python function

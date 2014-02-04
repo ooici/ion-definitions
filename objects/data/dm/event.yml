@@ -1,14 +1,18 @@
-
 ---
 
-OriginType: !enum (values=(RESOURCE, CAPABILITYCONTAINER, ORG), default=RESOURCE)
+# Enumerates all possible classes of event producers
+OriginType: !enum (values=(RESOURCE, CAPABILITYCONTAINER, ORG, OTHER), default=RESOURCE)
 ---
+
 # Describes a unique type of event
 EventType: !Extends_InformationResource
+  # (SYS) Routing key pattern schema for event
   pattern: ""
+  # Grouping for event types
   category: ""
+  # The event originator class as OriginType value
   origin_type: !OriginType
+  # Describes the meaning of the origin field for an event of this type (e.g. resource id)
   origin: ""
+  # Describes the typical producer of an event of this type (e.g. instrument agent)
   producer: ""
-
-

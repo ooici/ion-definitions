@@ -1,29 +1,44 @@
 # Describes a specific capability of an agent
 AgentCapability:
+  # Capability name
   name: ""
+  # Capability type
   cap_type: !enum (name=CapabilityType, values=(AGT_CMD, AGT_PAR, RES_CMD, RES_PAR, RES_IFACE, CONV_TYPE, AGT_STATES, RES_STATES, ALERT_DEFS, AGT_CMD_ARGS, AGT_STREAMS), default=AGT_CMD)
+  # Known restrictions when issuing this agent capability
   restrictions: {}
+  # Capability schema
   schema: {}
 
-# Represents a command to a resource agent
+
+# Holds a command to a resource agent
 AgentCommand:
+  # Unique identifier for this specific command
   command_id: ""
+  # The actual command code
   command: ""
+  # Additional positional args for the command
   args: []
+  # Additional keyword args for the command
   kwargs: {}
 
 
-# Represents the status of the execution of a command to a resource agent
+# Holds the status of the execution of a command to a resource agent
 AgentCommandResult:
+  # Unique identifier of a previously issued command
   command_id: ""
+  # The actual command code
   command: ""
+  # Timestamp when the command started to execute
   ts_execute: ""
+  # Result status of command
   #@ContentType=int,str
   status: ""
+  # Result value of command execution
   #@ContentType=list,str,dict
   result: ""
-  
-# Gives the UX schema for a taskable resource.
+
+
+# Defines the command and parameter schema for a resource agent representing a taskable resource.
 AgentSchema:
   agent_schema: ""
   resource_schema: ""

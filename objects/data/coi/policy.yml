@@ -1,14 +1,14 @@
  # Defines a named set of responsibilities and authorities that a user may fulfill within one Org
  # when interacting with resources.
 UserRole: !Extends_InformationResource
+  # A permanent valid human readable identifier for the role
   governance_name: ""
-  org_governance_name: ""  #TODO - perhaps replace when better indexing across associations in couch is available?
-
-
+  # The permanent Org name this role pertains to
+  org_governance_name: ""
 ---
-#The base type for all specific policy types
-AbstractPolicyType:
 
+# Abstract base type for all specific policy types
+AbstractPolicyType:
 ---
 
 # Holds a policy access rule for a specific resource
@@ -16,46 +16,44 @@ AccessRulePolicy: !Extends_AbstractPolicyType
   #Contains the text of the Access Policy Rule
   #@EditSizeHint=Large
   policy_rule: ""
-
 ---
 
 # Holds a policy access rule for a specific resource
 ResourceAccessPolicy: !Extends_AccessRulePolicy
-  #Contains the id of the resource to which policy applies
+  # Contains the id of the resource to which policy applies
   resource_id: ""
 
----
 
 # Holds a policy access rule common for all Services
 CommonServiceAccessPolicy: !Extends_AccessRulePolicy
+
 
 # Holds a policy access rule for a specific Service
 ServiceAccessPolicy: !Extends_AccessRulePolicy
   service_name: ""
 
----
 
-# THe base type for service operation precondition policies
+# Base type for service operation precondition policies
 OperationPreconditionPolicy: !Extends_AbstractPolicyType
+  # Service operation
   op: ""
-  preconditions: []  # A list of precondition methods or snippets of code
-
+  # A list of precondition methods or snippets of code
+  preconditions: []
 ---
 
-
-# THe base type for service operation precondition policies
+# Holds a process operation precondition policy
 ProcessOperationPreconditionPolicy: !Extends_OperationPreconditionPolicy
   process_name: ""
-
 ---
 
 # Specifies a set of rules applicable when interacting with designated OOI system resources.
 Policy: !Extends_InformationResource
   enabled: True
   required: True
+  # UNUSED - Holds the policy rule definition
   definition: {}
+  # Holds the policy definition as specific object of AbstractPolicyType
   policy_type: !AbstractPolicyType
-
 ---
 
 # Defines the scope of applicability of policy, i.e. the subset of resources

@@ -8,7 +8,6 @@ SearchOptions: !Extends_InformationResource
   range_fields:    [] 
   # Fields containing discrete geospatial locations
   geo_fields:      [] 
-
 ---
 
 # Represents a structure to view and navigate resources.

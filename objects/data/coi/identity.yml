@@ -1,86 +1,103 @@
+# Enumerates the possible types of actor identities
 ActorTypeEnum: !enum (values=(USER, AGENT, SYSTEM), default=USER)
 ---
 
-# A known user, resource or system identity within ION System.
+# A known identity for a user, resource or system element.
 ActorIdentity: !Extends_InformationResource
-
-  # The type of actor
+  # The type of actor as ActorTypeEnum value
   actor_type: !ActorTypeEnum
 
 
-# Represents one set of a user's credentials from an external identity provider.
-# An external user identity.
+# Represents one set of user credentials from an external identity provider for a user, defining
+# an external user identity.
 UserCredentials: !Extends_InformationResource
-
   # Service that authenticates an actor
   authentication_service: "CIlogon"
-
   # Service that identities the specific actor.
   identity_provider: ""
-
 ---
+
+# Holds information for a user specific authorization token
 TokenInformation:
+  # The token secret
   token_string: ""
-  expires : ""     # Timestamp (UNIX epoch) for when the token expires in UTC
-  status: ""       # OPEN, VERIFIED, EXPIRED
-  merge_email: ""  # Email address of merge account
+  # Timestamp (UNIX epoch) for when the token expires in UTC
+  expires : ""
+  # OPEN, VERIFIED, EXPIRED
+  status: ""
+  # Email address of merge account
+  merge_email: ""
 ---
 
+# Enumerates possible notification delivery modes. WARNING: See also UNS specific definitions
 NotificationDeliveryModeEnum: !enum (values=(REALTIME, BATCH), default=REALTIME)
-
 ---
-# Provides details on notification deliver. Contained in UserInfo:variables with name as 'notification_preferences'
+
+# Provides details on notification delivery. Contained in UserInfo:variables with name as 'notification_preferences'
 NotificationPreferences:
   delivery_mode: !NotificationDeliveryModeEnum
-  delivery_enabled: True   #set to disabled by user or by system if email overflow
+  # Set to disabled by user or by system if email overflow
+  delivery_enabled: True
 
 
 # Represents a human user registered with the system, with their contact information,
 # preferences and other profile data.
 UserInfo: !Extends_InformationResource
+  # Describes user attributes as ContactInformation object
   contact: !ContactInformation
-  tokens: []  # list of TokenInformation
+  # (SYS) List of user specific TokenInformation for authorization purposes
+  tokens: []
+  # A list of key-value arguments for the user; can be used to specify user configuration information
+  # such as UI preferences
   variables:
   - name: ""
     value: ""
-
 ---
 
 #This object contains additional information associated with an actor; typically a user.
 #@OriginResourceType=ActorIdentity
 ActorIdentityExtension: !Extends_ExtendedInformationResource
+  # The associated user's credentials
   #@hasCredentials
-  credentials: !UserCredentials  # The associated user's credentials
+  credentials: !UserCredentials
+  # The associated user's information
   #@hasInfo
-  user_info: !UserInfo # The associated user's information
-  roles: []  #Any Org Roles associated with the user - not filled out using only asscociations.
+  user_info: !UserInfo
+  # Any Org Roles associated with the user - not filled out using only associations.
+  roles: []
+  # A list of any resources owned by this user
   #@hasOwner
-  owned_resources: [] # A list of any resources owned by this user
-  #recent_events: []  # Not sure about this one
+  owned_resources: []
+  # A list of requests associated with this user
   #@hasRequest
-  user_requests: [] # A list of requests associated with this user
+  user_requests: []
 
-
----
-
-#This object contains additional information associated with an actor; typically a user.
+#This object contains additional information associated with a user.
 #@OriginResourceType=UserInfo
 UserInfoExtension: !Extends_ExtendedInformationResource
+  # The associated user's credentials
   #@hasCredentials
-  credentials: !UserCredentials  # The associated user's credentials
+  credentials: !UserCredentials
+  # The associated user's information
   #@hasInfo=ActorIdentity
-  actor_identity: !ActorIdentity # The associated user's information
-  roles: []  # Any Org Roles associated with the user - not filled out using only asscociations.
+  actor_identity: !ActorIdentity
+  # Any Org Roles associated with the user - not filled out using only associations.
+  roles: []
+  # A list of any resources owned by this user
   #@hasResourcesForUser
-  owned_resources: [] # A list of any resources owned by this user
+  owned_resources: []
+  # A list of requests associated with this user
   #@hasRequest
-  user_requests: [] # A list of requests associated with this user
+  user_requests: []
+  # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of OPEN
   #@Method=find_user_open_requests
-  open_requests: [] # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of OPEN
+  open_requests: []
+  # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of ACCEPTED or REJECTED
   #@Method=find_user_closed_requests
-  closed_requests: [] # The list of OrgUserNegotiationRequest objects for this user that have a negotiation_status of ACCEPTED or REJECTED
+  closed_requests: []
+  # UserNotifications requested by this user, subscriptions to events
   #@hasNotification
-  subscriptions: []   # UserNotifications requested by this user, subscriptions to events
+  subscriptions: []
 
 #This object contains additional information needed to create or update instrument devices
 #@OriginResourceType=UserInfo

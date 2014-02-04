@@ -1,4 +1,4 @@
-#The base type for all producer context objects
+# Abstract base type for all data producer context objects
 AbstractProducerContextType:
   activation_time: ""
   deactivation_time: ""
@@ -14,14 +14,14 @@ DataProcessProducerContext: !Extends_AbstractProducerContextType
   parameters: {}
   execution_host: ""
 
+
 # Contains the context for a data process execution
 InstrumentProducerContext: !Extends_AbstractProducerContextType
   deployed_site_id: ""
 
+
 DataProductProductContext: !Extends_AbstractProducerContextType
   fields: []
-
-
 ---
 
 # Represents provenance information within data flows for a data source such as a device,
@@ -29,7 +29,3 @@ DataProductProductContext: !Extends_AbstractProducerContextType
 DataProducer: !Extends_InformationResource
   is_primary: False
   producer_context: !AbstractProducerContextType
-
-
-
-

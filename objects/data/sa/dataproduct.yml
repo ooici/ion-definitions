@@ -1,9 +1,14 @@
-
+# Describes an external data archive location, e.g. as contained within a data product resource.
 ExternalArchive:
+  # Name of an external repository where the data product has been submitted
   archive_name: ""
+  # The last datetime this data product was submitted to an external repository (timestamp, no constraints, stored).
   submission_datetime: ""
+  # The URL of the data product within an external repository.
   archive_url: ""
+  # The Unique ID of the resource in an external repository
   id_in_archive: ""
+  # The contact information for the archive POC.
   archive_contact: !ContactInformation
 
 
@@ -14,55 +19,54 @@ ExternalArchive:
 # have a real-time stream and may have persisted historic data.
 DataProduct: !Extends_InformationResource
 
-  # Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID
+  # Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID.
+  # It will indicate the OOI identity in some way (may indicate each Org as they issue their own resource IDs)
   naming_authority_id: ""
   
-  # An entity that serves as a contact point
+  # All entities that serves as a contact point for this data product as a list of ContactInformation objects.
   #@ContentType=ContactInformation
-  contacts: []    # a list of  !ContactInformation
+  contacts: []
 
-  # limits expressed relative to earth
+  # Specifies both limits of the resource's latitude, longitude, and optionally vertical position,
+  # with respect to a geospatial CRS.
   geospatial_bounds: !GeospatialBounds
 
-  # Center point for easy indexing
+  # (SYS) Geographical center point used for indexing this resource.
   geospatial_point_center: !GeospatialIndex
 
-  # for data from fixed-location assets, is set according to the GeospatialPoint of the fixed asset creating the data;
-  # for data from mobile (even constrained) assets, is optionally calculated as the center of the data's bounding box,
-  # or an average location of
-  # geospatial_point: !GeospatialPoint  # used in R3
-
-  # Coordinate system reference
+  # The geospatial coordinate reference system, expressed as a URI (ideally a URL); incorporates both coordinate system
+  # and datum; may be geodetic/horizontal, vertical, or both.
   geospatial_coordinate_reference_system: !GeospatialCoordinateReferenceSystem
 
-  # A nominal representation of the date span of when the observations within the data product were actually made.
-  # For instruments that are not real-time, this will not be the same as the earliest and latest ingestion of data into ION.
+  # A nominal representation of the temporal span of when the observations within the data product were actually made.
+  # For instruments that are not real-time, this will not be the same as the earliest and latest ingestion of data.
   nominal_datetime: !TemporalBounds
 
-  # temporal domain
+  # (SYS) Describes the temporal domain used to represent the data product's coverage.
   temporal_domain: {}
 
-  # spatial domain
+  # (SYS) Describes the spatial domain used to represent the data product's coverage.
   spatial_domain: {}
 
-  # a list of !Term objects (see Shared)
+  # A list of keyword/authority pairs with optional urls as list of Term objects.
   #@ContentType=Term
   descriptors: []
 
   # Miscellaneous information not already captured in attributes
   comment: ""
 
-  # OOI data product identifier and short code like PRESWAT
+  # The product short name provided in the Data Product Specification, often a 7 character code, e.g. "PRESWAT"
   #@ContentType=str
   ooi_short_name: ""
 
-  # OOI core data product descriptive name.
-  # provided in section 2.2.1 of the DPS, and also in the column "Data Product Name"
-  # in the Data Product Catalog that is part of the Instrument Application in SAF
+  # The OOI core data product descriptive name provided in section 2.2.1 of the DPS, and also in the column
+  # "Data Product Name" in the Data Product Catalog that is part of the Instrument Application in SAF
   #@ContentType=str
   ooi_product_name: ""
 
-  # Whether the data product is from the Air-Sea Interface, Surface Water, Water Column, Benthic Boundary Layer and/or Seafloor/Crust. Codelist: Air-Sea Interface, Surface Water, Water Column, Benthic Boundary Layer, Seafloor/Crust
+  # Whether the data product is from the Air-Sea Interface, Surface Water, Water Column, Benthic Boundary Layer
+  # and/or Seafloor/Crust.
+  # Codelist: Air-Sea Interface, Surface Water, Water Column, Benthic Boundary Layer, Seafloor/Crust
   regime: ""
 
   # Whether the Combine QC Flags (CMBNFLG) QC is run on this data product. Codelist: applicable, not applicable, TBD
@@ -98,98 +102,71 @@ DataProduct: !Extends_InformationResource
   # Whether the Stuck Value Test (STUCKVL) QC is run on this data product. Codelist: applicable, not applicable, TBD
   qc_stuckvl: ""
 
-  # Whether the .Trend Test (TRNDTST) QC is run on this data product. Codelist: applicable, not applicable, TBD
+  # Whether the Trend Test (TRNDTST) QC is run on this data product. Codelist: applicable, not applicable, TBD
   qc_trndtst: ""
 
-  # The OOI document control number (DCN) for this data product's Data Processing Specification. Comma-separated list when multiple values are present
+  # The OOI document control number (DCN) for this data product's Data Processing Specification.
+  # Comma-separated list when multiple values are present.
   dps_dcn: ""
 
-  # The OOI document control number (DCN) for this data product's processing flow diagram. Comma-separated list when multiple values are present. Codelist:  applicable, not applicable, TBD
+  # The OOI document control number (DCN) for this data product's processing flow diagram. Comma-separated list
+  # when multiple values are present.
   flow_diagram_dcn: ""
 
-  # The OOI DOOR L2 Science Requirement number(s). Comma-separated list when multiple values are present
+  # The OOI DOOR L2 Science Requirement number(s). Comma-separated list when multiple values are present.
   doors_l2_requirement_num: ""
 
   # The OOI DOOR L2 Science Requirement text.
   doors_l2_requirement_text: ""
 
-  # synonyms to facilitate searching
+  # Synonyms to facilitate searching as a list of strings.
   #@ContentType=str
-  synonyms: []  # a list of strings
-
-  # TODO: remove these from the gateway call
-  #provider_project: ""
-  #contact: ""
-
-  #provider_information: !ContactInformation
+  synonyms: []
 
   # A place to acknowledge various types of support provided by the project that produced the data
-  #provider_acknowledgement: ""
   acknowledgement: ""
 
-    # a link to the (time-varying) data product
-    # Mandatory
-#    data_url: ""  moved to computed
-
-  # one or more of the topic categories from ISO 19115
-  # Mandatory
+  # One or more of the topic categories from ISO 19115
   #@ContentType=str
   iso_topic_category: []
 
-  # Selection from IOOS controlled vocabulary for parameters
+  # Selection from IOOS controlled vocabulary for parameters.
   ioos_category: ""
 
-  # From ISO:method used to spatially represent geographic information
-  # Code List: vector, grid, textTable, tin, stereoModel, video
+  # From ISO:method used to spatially represent geographic information.
+  # Codelist: vector, grid, textTable, tin, stereoModel, video
   iso_spatial_representation_type: ""
 
-  # OOI data processing level; L0, L1, or L2. The definitions of these levels are currently in revision,
-  # and should be verified from the OOI Data Products document
-  # Mandatory
-  #data_product_level: ""
+  # OOI data processing level.
+  # Codelist: L0, L1, L2 or N/A
   processing_level_code: ""
 
-  # Provides the name and contact information for a person associated with the dataset
-  # TODO: change this back to : A list of ContactInformation objects
-  #data_contact: !ContactInformation
-
-  # See OOI Data Products document for latest (not necessarily normative) definitions and controlled vocabulary
-  # The quality control level of the data product.  A = no QC, b = automated QC, c = human QC
-  # Mandatory
+  # The quality control level of the data product.
+  # Codelist: a = no QC, b = automated QC, c = human QC, N/A = no QC for this data product
   quality_control_level: ""
 
-  # Optional for ISO 19115 (=> MD_DataIdentification.spatialRepresentationType
+  # Optional for ISO 19115 (=> MD_DataIdentification.spatialRepresentationType.
+  # DUPLICATE with iso_spatial_representation_type.
   ISO_spatial_representation_type: ""
 
-  # Describes the permissions and restrictions for access to and distribution of OOI data;
-  # presumed to be legally enforceable language.
-  # Mandatory
-  #license: ""
-
-  # Reference identifier to an explicit license, as described in License attribute.
+  # Links to a description of the permissions and restrictions for access to and distribution of OOI data.
   license_uri: ""
 
-  # Indicates whether the dataset is under proprietary hold or whether it is public
-  # string: unrestricted, temporary_hold, permanent_hold
-  # Mandatory
+  # Indicates whether the dataset is under proprietary hold or whether it is public.
+  # Codelist: unrestricted, temporary_hold, permanent_hold
   exclusive_rights_status: ""
 
-  # For temporary data holds, the date on which the hold will expire
-  # Mandatory
-  exclusive_rights_end_date: ""  #datetime
-
-  # The name and contact information of the person/entity who requested the exclusive rights
-  # Mandatory
-  #exclusive_rights_contact: !ContactInformation
+  # For temporary data holds, the date on which the hold will expire.
+  exclusive_rights_end_date: ""
 
   # Further information about the exclusive rights hold, such as a justification for a permanent hold
   exclusive_rights_notes: ""
 
-  # (SYS) Dataset COnfiguration Id for the persisted product; used to switch persistence on/off
+  # (SYS) Dataset Configuration Id for the persisted product; used to switch persistence on/off
   dataset_configuration_id: ""
 
   # Holds information on where and when the data product was submitted to an external archive.
-  # returns a list of objects of the ExternalArchiveType (ExternalArchive at the top of this yaml)
+  # A list of objects of type ExternalArchive.
   #@ContentType=ExternalArchive
   external_archives: []
 
@@ -211,6 +188,7 @@ DataProduct: !Extends_InformationResource
   lineage_description: ""
 
 ---
+# (UNUSED) Represents a version or variant of a data product.
 DataProductVersion:
   # name of the version
   name: ""
@@ -223,4 +201,5 @@ DataProductVersion:
 
 # Represents a collection of data products that describes a succession of derived versions from an original.
 DataProductCollection: !Extends_InformationResource
-  version_list: [] # a ordered set of DataProductVersion object
+  # a ordered set of DataProductVersion object
+  version_list: []

@@ -1,231 +1,326 @@
-# Place shared objects in here that can be used by definitions in subdirectories
-
+# Holds a phone number and indicates its type.
 Phone:
+  # The phone number.  phone number is assumed US if no '+' prefix exists to specify a country code
   phone_number: ""
+  # The type of phone number
   phone_type: ""
-
 ---
 
-# Data structure for representing contact information uniformly across resources
+# Data structure for representing contact information uniformly across resources.
 ContactInformation:
+  # The name of the organization.  Can be used in place of an individually-named contact when appropriate.
   organization_name: ""
+  # The given, i.e. first and optionally middle, name(s)
   individual_names_given: ""
+  # The family, aka last, name
   individual_name_family: ""
+  # The street address portion of the mailing address
   street_address: ""
+  # The city part of the address
   city: ""
+  # The postal code, i.e. zip code
   postal_code: ""
-  #state: ""
+  # The country part of the address.
   country: ""
+  # A list of phone contacts as a lists of Phone object
   #@ContentType=Phone
   phones: []  # list of phone objects
+  # Primary email for the contact
   email: ""
+  # Any placenames that are less specific than country and more specific than city, e.g. state or province.
   administrative_area: ""
+  # The position or role of the contact. For example, it may be preferable to name "OOI Data Curator" as a contact
+  # instead of giving an individual's name, since the individual may change through time
   position_name: ""        # the position or role of the contact
+  # The list of roles this contact has, e.g. owner, custodian, PointOfcontact
   #@ContentType=str
-  roles: []                # list of strings of role names
-  url: ""                  # url for the contact
-  variables:   # Extension set of name/value pairs
+  roles: []
+  # URL for the contact
+  url: ""
+  # A list holding the extra information about user so that specific variables do not need to be held,
+  # e.g. IM, alternate phone, second address, facebook, etc. Every entry in this list has a name and a value.
+  variables:
   - name: ""
     value: ""
 
+
 # Data structure for representing institution information uniformly across resources
 Institution:
+  # Name of the institution
   name: ""
+  # Primary phone for the institution
   phone: ""
+  # Primary email for the institution
   email: ""
+  # Website URL for the institution
   website: ""
+
 
 # Object representing the geospatial location in a searchable index
 GeospatialIndex:
   lat: 0.0
   lon: 0.0
 
+
+# Data structure for representing geospatial and vertical coordinate reference systems uniformly across resources.
 GeospatialCoordinateReferenceSystem:
+  # The geospatial coordinate reference system, expressed as a URI (ideally a URL); incorporates both coordinate
+  # system and datum; may be geodetic horizonal, vertical, or both
   geospatial_geodetic_crs: ""
+  # The vertical coordinate reference system, expressed as a URI (ideally a URL); incorporates both
+  # coordinate system and datum
   geospatial_vertical_crs: ""
+  # Specifies the units of measure for latitude
   geospatial_latitude_units: ""
+  # Specifies the units of measure for longitude
   geospatial_longitude_units: ""
+  # The units of measure for the vertical location; overrides the geospatial_vertical_crs, if those units are different
   geospatial_vertical_units: ""
+  # Specifies the direction meant by more positive vertical location values; up indicates more positive
+  # values are further from earth's center.
   geospatial_vertical_positive: ""
 
-# Data structure for representing geospatial bounds uniformly across resources
+
+# Data structure for representing geospatial bounds uniformly across resources, including vertical bounds.
 GeospatialBounds:
+  # Specifies one or both limits, for any or all of an entity's latitude, longitude, and vertical position,
+  # with respect to a geospatial CRS
   geospatial_latitude_limit_north: 0.0
+  # Specifies the southernmost latitude
   geospatial_latitude_limit_south: 0.0
+  # Specifies the easternmost longitude (if the value is smaller than the minimum longitude, the bounds fall
+  # on either side of the 18th meridian, and the enclosed area includes that meridian)
   geospatial_longitude_limit_east: 0.0
+  # Specifies the westernmost longitude (if the value is larger than the maximum longitude, the bounds fall
+  # on either side of the 180th meridian, and the enclosed area includes that meridian)
   geospatial_longitude_limit_west: 0.0
+  # Specifies the (numerically) minimum vertical position; if the vertical/z axis positive (geospatial_vertical_positive)
+  # is down, the minimum value will be further away from earth center than the maximum value
   geospatial_vertical_min: 0.0
+  # Specifies the (numerically) maximum vertical position; if the vertical/z axis positive (geospatial_vertical_positive)
+  # is down, the maximum value will be closer to earth center than the minimum value
   geospatial_vertical_max: 0.0
 
+
+# Data structure for representing a geospatial point uniformly across resources.
 GeospatialPoint:
+  # Specifies a vertical position (relative to the datum, along the axis direction specified by geospatial_vertical_positive)
   geospatial_vertical_location: 0.0
+  # The accuracy of the vertical value, expressed in the same units
   geospatial_vertical_accuracy: 0.0
+  # Specifies the latitude, longitude, and/or vertical location of an entity, with respect to a geospatial CRS
   geospatial_latitude: 0.0
+  # Specifies the longitude
   geospatial_longitude: 0.0
+  # The accuracy of the lat/lon info, expressed in the same units as the lat/lon fields
   geospatial_horizontal_accuracy: 0.0
 
+
+# Data structure for representing temporal bounds uniformly across resources.
 TemporalBounds:
+  # Allows the kind of datetime to be specified, in cases where more than one TemporalBounds is used.
+  # For example to differentiate the planned vs actual deployment datetimes.
   name: ""
+  # The start of the timespan (string with number of seconds since epoch)
   start_datetime: ""
+  # The end of the timespan (string with number of seconds since epoch)
   end_datetime: ""
 
+
+# Holds information about the definition of a custom attribute, e.g. for instrument models
 CustomAttribute:
+  # Name of the attribute
   name: ""
+  # Type of the attribute.
+  # Codelist: str, int, float, bool, list, dict
   type: ""
+  # Description for the attribute
   description: ""
+  # Default value for the attribute
   default: ""
+  # Units applied to the attribute value (if applicable)
   units: ""
-
-#---
-
-#DataFormat:
-#  name: ""
-#  description: ""
-#  format_version_identifier: ""
-#  between_record_delimiter: ""
-#  # Mandatory for OOI Core Data, optional for external provider data
-#  character_set: ""
-#  unique_short_name: ""
-#  long_name: ""
-#  units: ""
-#  # what is inserted when a real measurement is unavailable)
-#  missing_value: ""
-#  # a Java-style format specification for parsing a value from a string
-#  value_format: ""
-#  nominal_sampling_rate_minimum: "" # Hz
-#  nominal_sampling_rate_maximum: "" # Hz
-
 ---
+
+# Holds information about a code used within a resource
 CodeReport:
+  # Description of the meaning of the code value
   code_meaning: ""  # description of the meaning of the code value
+  # The code value being described
   code_value: ""
-
 ---
 
+# Holds additional information about a parameter used within a data product or stream.
 ParameterCharacteristicsReport:
-  parameter_name: ""        # The OOI ParameterDictionary name for the parameter being described.
-  applicable_range_max: 0.0 # If the value is only valid within a particular range, this gives the maximum. Must be in same units as the value.
-  applicable_range_min: 0.0 # If the value is only valid within a particular range, this gives the minimum. Must be in same units as the value.
-  characteristic_name: ""   # Name of the characteristic being reported on. Common ones include accuracy, precision, and drift
-  comments: ""              # Any additional important information about the characteristic
-  source: ""                # Indicates the category of the source of the value, such as manufacturer, literature, etc
-  units: ""                 # The units associated with the value of the characteristic
-  value: 0.0                # The value of the characteristic
-
----
-
-Parameter:
-  standard_name: ""     # from CF standard names
-  long_name: ""
-  ooi_short_name: ""    # seven character code
-  ioos_category: ""     # Selection from IOOS controlled vocabulary for parameters
-  fill_value: ""        # A value used to represent missing or undefined data
-  cdm_data_type: ""     # the THREDDS data type
-  axis: ""              # for CF compliance, holds X, Y, Z or T for vars holding lat, lon, depth and time info
-  code_reports: []      # provide the meaning of flags in CodeReport objects
-  description: ""           # a human-readable description of the parameter
-  reference_urls: []    # List of URLs with information about the data parameter
+  # The ParameterDictionary name for the parameter being described.
+  parameter_name: ""
+  # If the value is only valid within a particular range, this gives the maximum. Must be in same units as the value.
+  applicable_range_max: 0.0
+  # If the value is only valid within a particular range, this gives the minimum. Must be in same units as the value.
+  applicable_range_min: 0.0
+  # Name of the characteristic being reported on. Common ones include accuracy, precision, and drift
+  characteristic_name: ""
+  # Any additional important information about the characteristic
+  comments: ""
+  # Indicates the category of the source of the value, such as manufacturer, literature, etc
+  source: ""
+  # The units associated with the value of the characteristic
   units: ""
-  ion_name: ""
-  custom_attributes: {}
-
+  # The value of the characteristic
+  value: 0.0
 ---
 
+# Holds information about a parameter used within a data product or stream.
+Parameter:
+  # From CF standard names
+  standard_name: ""
+  # A longer descriptive name
+  long_name: ""
+  # The 7 character code (now being expanded to >7 characters) used by OL to identify core data producs, e.g. TEMPWAT)
+  ooi_short_name: ""
+  # Selection from IOOS controlled vocabulary for parameters
+  ioos_category: ""
+  # A value used to represent missing or undefined data
+  fill_value: ""
+  # The THREDDS data type
+  cdm_data_type: ""
+  # For CF compliance, holds X, Y, Z or T for vars holding lat, lon, depth and time info
+  axis: ""
+  # Provide the meaning of flags, or other code lists that need description
+  code_reports: []
+  # A human-readable description of the parameter
+  description: ""
+  # List of URLs with information about the data parameter
+  reference_urls: []
+  # Units of measure (from UDUNITS)
+  units: ""
+  # The name given in the Data Product Specification
+  ion_name: ""
+  # Holds additional attributes, especially those provided by external providers that are difficult to characterize in advance
+  custom_attributes: {}
+---
+
+# Enumerates the possible status values for a device.
 DeviceStatusType: !enum (values=(STATUS_UNKNOWN, STATUS_OK, STATUS_WARNING, STATUS_CRITICAL), default=STATUS_UNKNOWN)
 
+# Enumeratest the possible commissioning states for a device.
 CommissionedStatusType: !enum (values=(NOT_COMMISSIONED, COMMISSIONED, DECOMMISSIONED, OTHER), default=NOT_COMMISSIONED)
 
+# Enumerates the possible aggregate status dimensions for a device
 AggregateStatusType: !enum (values=(AGGREGATE_COMMS, AGGREGATE_DATA, AGGREGATE_LOCATION, AGGREGATE_POWER), default=AGGREGATE_COMMS)
-
 ---
 
 # Describes a physical device with a serial number, such as sensor, instrument and platform. Abstract base type.
 Device: !Extends_TaskableResource
-  serial_number: ""    # unique identifier of device provided by manufacturer
-  controllable: True   # Whether the device can be sent a control message
-  reference_urls: []   # References to pages about that individual device (e.g. Configuration diagram)
-  uuid: ""             # the uuid provide by the manufacturer
-  commissioned: !CommissionedStatusType     # Commissioning status
+  # Unique identifier of device provided by manufacturer
+  serial_number: ""
+  # Whether the device can be sent a control message
+  controllable: True
+  # References to pages about that individual device (e.g. configuration diagram)
+  reference_urls: []
+  # The UUID provided by the manufacturer
+  uuid: ""
+  # Commissioning status as CommissionedStatusType value
+  commissioned: !CommissionedStatusType
+  # Contacts for this device as list of ContactInformation objects.
   #@ContentType=ContactInformation
-  contacts: []         # Contacts for this device.
-  # Additional attributes required for specific devices
-  # Recommended format: {attribute1_name:value, attribute2_name:value}
-  # The attribute names should align with the DeviceModel:custom_attributes:name field for this type of device.
+  contacts: []
+  # Additional attribute values applicable for the device's model as key-value pairs.
+  # The attribute names must align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
+
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.
 DeviceModel: !Extends_InformationResource
-  # weight of instrument in air, as configured for operation, in kg
+  # Weight of instrument in air, as configured for operation, in kg
   weight: 0.0
-  # nominal voltage at which unit operates, in Volts
+  # Nominal voltage at which unit operates, in Volts
   voltage: 0.0
-  # nominal wattage consumed by instrument, in Watts
+  # Nominal wattage consumed by instrument, in Watts
   wattage: 0.0
-  # The length of the instrument device in meters
+  # The length of the instrument device in meters, generally along the longest (alternatively, the facing) side-to-side dimension
   length: 0.0
-  # The width of the instrument device in meters
+  # The width of the instrument device in meters, from side to side (orthogonal to length measurement)
   width: 0.0
-  # The height  of the instrument device in meters
+  # The height  of the instrument device in meters, typically from bottom to top as mounted or resting
   height: 0.0
   # The name of the manufacturer
   manufacturer: ""
+  # The primary URL of the manufacturer
   manufacturer_url: ""
   # Location(s) where additional information about this model can be obtained
   reference_urls: []
-  # Additional attributes required for specific models
-  # Each entry in the list is a CustomAttribute object (see above)
+  # Additional attributes permissible or required for this specific model.
+  # Each entry in the list is a CustomAttribute object (see above).
   # A device of this model should then store these attribute values in the corresponding custom_attributes
   # of the device instance.
   #@ContentType=CustomAttribute
   custom_attributes: []
-  has_clock: True      # Indicates whether the device has an internal clock or not
+  # Indicates whether the device has an internal clock or not
+  has_clock: True
+  # List of ParameterCharacteristicsReport objects
   #@ContentType=ParameterCharacteristicsReport
-  parameter_characteristics_reports: []    # list of ParameterCharacteristicsReport objects
-
+  parameter_characteristics_reports: []
 ---
 
+# Enumerates the representation type for an attachment. Possible values are:
+# ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application;
+# BLOB: the content is a binary;
+# OBJECT: the content is an arbitrary object, such as a dict, list;
+# REFERENCE: the content is a reference document and requires a parser to be ingested
 AttachmentType: !enum (values=(ASCII, BLOB, OBJECT, REFERENCE), default=ASCII)
-  # ASCII: the content is ASCII, e.g. JSON or BASE64 encoded by the application
-  # BLOB: the content is a binary
-  # OBJECT: the content is an arbitrary object, such as a dict, list
-  # REFERENCE: the content is a reference document and requires a parser to be ingested
+
+
+# Abstract base type for objects holding additional information about attachments, specific by type.
 AbstractAttachmentContext:
-
 ---
 
+# Holds additional attributes for attachments of attachment_type==REFERENCE.
 ReferenceAttachmentContext: !Extends_AbstractAttachmentContext
+  # Identifies a parser for this attachment
   parser_id: ""
-
 ---
 
-# Represents a separate information attached to a resource, such as a PDF or image file.
+# Represents separate information attached to a resource, such as a PDF or image file.
 Attachment: !Extends_InformationResource
+  # (SYS) system representation type of attachment
   attachment_type: !AttachmentType
   # type of attachment (PDF document, PNG image, etc); expressed as standard MIME types
-  content_type: ""  # MIME type
+  content_type: ""
+  # (SYS) unused - for holding the actual data
   content: ""
-  object_id: ""   # Associated object (resource) ID, for easier indexing
-  # identity of the creator of the document (could be outside OOI)
+  # (SYS) Associated object (resource) ID, for easier indexing
+  object_id: ""
+  # The identity of the creator of the document. For documents imported from external sources,
+  # this is not the same as the creator of this resource.
   created_by: ""
-  # identity of the last modifier of the document (could be outside OOI)
+  # The identity of someone who has modified of the document. For documents imported from external sources,
+  # this modification may have happened outside of the system
   modified_by: ""
   # Keywords indicating the type of attachment (e.g. user manual, log)
   #@ContentType=str
   keywords: []
-  attachment_size: 0 # size of the attachment content field, in bytes
+  # Size of the attachment content, in bytes
+  attachment_size: 0
+  # Provides additional attributes depending on the type of attachment.
   context: !AbstractAttachmentContext
 
-# RAW=raw device stream, PARSED=instrument parsed stream (basis for L0/L1/L2), ENG=device engineering data
-StreamConfigurationType: !enum (values=(OTHER, RAW, PARSED, ENG, DERIVED), default=OTHER)
 
+# Enumerates the types of streams. Possible values are:
+# RAW=raw device stream; PARSED=instrument parsed stream (basis for L0/L1/L2); ENG=device engineering data
+StreamConfigurationType: !enum (values=(OTHER, RAW, PARSED, ENG, DERIVED), default=OTHER)
 ---
 
+# Holds information about a stream in the system.
 StreamConfiguration:
-  stream_name: ""                        # the tag that the driver uses to reference this stream
-  parameter_dictionary_name: ""          # the name of the parameter dictionary that defines the contents of the stream
-  stream_type: !StreamConfigurationType  # Type of stream configuration
-  stream_attributes: {}                  # Additional attributes for the stream (for extension purposes)
-
+  # the tag that the driver uses to reference this stream
+  stream_name: ""
+  # the name of the parameter dictionary that defines the contents of the stream
+  parameter_dictionary_name: ""
+  # Type of stream configuration
+  stream_type: !StreamConfigurationType
+  # Additional attributes for the stream (for extension purposes)
+  stream_attributes: {}
 ---
 
 # Describes a range or extent over the dimensions that it represents.
@@ -233,142 +328,156 @@ StreamConfiguration:
 # time, or other cardinal or ordinal axes, and can be specified in absolute terms
 # or relative to another frame of reference.
 FrameOfReference: !Extends_InformationResource
+  # Applicable constraints as a list of GeospatialBounds, GeospatialPoint, TemporalBounds, etc objects
   #@ContentType=GeospatialBounds,GeospatialPoint,TemporalBounds
-  constraint_list: [] # set of constraints; GeospatialBounds, temporal bounds, composite, etc
-  # KStocks: My assumption is that within a FrameOfReference, the coordinate reference system will not change.
-  # So that there may be several geospatial bounds defined (I.e. several boxes defined) but that they will all
-  #have the same CRS. So per FrameOfReferenceConstraint, there could be zero or one
-  # GeospatialCoordinateReferenceSystem object, and zero to many GeospatialBounds, and that the
-  # GeospatialCoordinateReferenceSystem would apply to all of the GeospatialBounds. 
+  constraint_list: []
+  # Defines the as geospatial coordinate reference system as GeospatialCoordinateReferenceSystem object
   coordinate_reference_system: !GeospatialCoordinateReferenceSystem
+  # (SYS) Geospatial center point for easier indexing.
   geospatial_point_center: !GeospatialIndex
 
-# Determines how the agent is deployed. PROCESS=One process per resource; SERVICE: One service per resource type
+
+# Enumerates the possible deployments modes for an agent.
+# Values include: PROCESS=One process per resource; SERVICE=One service per resource type
 DeploymentTypeEnum: !enum (values=(PROCESS, SERVICE, CLIENT), default=PROCESS)
 
-# Determines how the driver/handler for an agent is deployed. ION_PROCESS: as an ION process;
+
+# Enumerates the type of agent driver. Values include: ION_PROCESS: as an ION process;
 # EXT_PROCESS: as a separate UNIX process; CLASS: as a loaded plugin class
 DriverTypeEnum:  !enum (values=(ION_PROCESS, EXT_PROCESS, CLASS), default=CLASS)
-
 ---
 
 # Describes a type of agent. Abstract base type.
 AgentDefinition: !Extends_InformationResource
-  # (SYS) location of agent code, used if class and module are NOT defined
+  # (SYS) Location of agent code, used if class and module are NOT defined
   agent_uri: ""
-  # (SYS) module for agent source code
+  # (SYS) Module for agent source code
   agent_module: ""
-  # (SYS) class for agent source code
+  # (SYS) Class for agent source code
   agent_class: ""
-  # (SYS) released version of driver code package. NOTE: this is set instead of the driver_version
+  # (SYS) Released version of driver code package. NOTE: this is set instead of the driver_version
   agent_version: ""
 
-  # (SYS) released version of driver code package.
+  # (SYS) Released version of driver code package.
   driver_version: ""
-  # (SYS) location of driver, used if class and module are NOT defined
+  # (SYS) Location of driver, used if class and module are NOT defined
   driver_uri: ""
-  # (SYS) module for driver source code
+  # (SYS) Module for driver source code
   driver_module: ""
-  # (SYS) class for driver source code
+  # (SYS) Class for driver source code
   driver_class: ""
-  # (SYS) instantiation type of driver (ION_PROCESS, EXT_PROCESS, CLASS)
+  # (SYS) Instantiation type of driver (ION_PROCESS, EXT_PROCESS, CLASS)
   driver_type: !DriverTypeEnum
 
-  # Commissioning status
+  # Commissioning status for this agent type as CommissionedStatusType value
   commissioned: !CommissionedStatusType
-  # the default settings for this agent (pubrate, etc)
+  # The default settings for this agent (pubrate, etc)
   agent_default_config: {}
 
 # Describes a running or scheduled agent representing a single resource. Abstract base type.
 AgentInstance: !Extends_InformationResource
-  # Determines how the actual agent is accessible
+  # (SYS) The type of agent deployment
   deployment_type: !DeploymentTypeEnum
-  # Authored, specific config for the driver/handler part, such as connection ports
+  # Specific config for the agent driver, such as connection ports
   driver_config: {}
+  # Configures alert detectors for the device represented by this agent instance.
   #@EditSizeHint=Large
   alerts: []
 
-  # Config for the agent process. REMOVE
+  # (SYS) Config for the agent process. REMOVE
   agent_config: {}
-  # The process_id of the agent process. REMOVE: this information is in the directory.
+  # (SYS) The process_id of the agent process. REMOVE: this information is in the directory.
   agent_process_id: ""
-  # the configuration used for the running instance. REMOVE
+  # (SYS) The configuration used for the running instance. REMOVE
   agent_spawn_config: {}
 
-  # Agent process state from prior agent run (OOIION-1353)
+  # (SYS) Agent process state from prior agent run (OOIION-1353)
   saved_agent_state: {}
 ---
 
-# Describes a running or scheduled  agent representing a single device. Abstract base type.
+# Describes a running or scheduled agent representing a single device. Abstract base type.
 DeviceAgent: !Extends_AgentDefinition
+  # List of StreamConfiguration objects for which this agent/driver can produce granules on
   #@ContentType=StreamConfiguration
-  stream_configurations: []     #set of StreamConfiguration objects that this agent/driver produces
-
+  stream_configurations: []
 ---
 
+# Enumerates possible states of container processes.
 ProcessStateEnum: !enum (values=(REQUESTED, WAITING, PENDING, RUNNING, TERMINATING, TERMINATED, FAILED, REJECTED, EXITED), default=REQUESTED)
+
+
+# Enumerates possible states of system services.
 ServiceStateEnum: !enum (values=(PENDING, READY, STEADY, FAILED), default=PENDING)
-
 ---
 
+# Holds a keyword term for a resource with the intent of searching.
 Term:
+  # The name of the keyword applied to a resource
   term_value: ""
+  # The name of the vocabulary or guideline from which the keyword was drawn, if applicable
   vocabulary_name: ""
+  # A URL defining a term
   term_url: ""
+  # A URL to the source of a controlled vocabulary
   vocabulary_url: ""
-
-
 ---
 
-# Internal
-EndShared:
-
----
-
-# Governance related objects
-
-# Enum for originator of the proposal
+# Enumerates possible proposal originator roles
 ProposalOriginatorEnum: !enum (values=(CONSUMER, PROVIDER, BROKER), default=CONSUMER)
 
-# Enum for the status of the proposal
-ProposalStatusEnum: !enum (values=(INITIAL, COUNTER, ACCEPTED, REJECTED, GRANTED), default=INITIAL)
 
+# Enumerates possible status status values for  the proposal
+ProposalStatusEnum: !enum (values=(INITIAL, COUNTER, ACCEPTED, REJECTED, GRANTED), default=INITIAL)
 ---
 
 # Object representing a current proposal for a service agreement. The proposal may contain several items of
 # different type, or can be a composite of service agreement proposals.
 ServiceAgreementProposal:
-  negotiation_id: ""   #What negotiation resource is this part of
+  # What negotiation resource is this part of
+  negotiation_id: ""
+  # Role of the originator as ProposalOriginatorEnum value
   originator: !ProposalOriginatorEnum
-  consumer: ""     #Who will be the consumer of this proposal - such as an actor id
-  provider: ""     #Who will be the provider of this proposal - such as an org id
-  broker: ""       #Optional identifier if proposal is brokered by third party
-  sequence_num: 0  #Keeps track of the sequence of proposals within a negotiation
+  # Who will be the consumer of this proposal - such as an actor id
+  consumer: ""
+  # Who will be the provider of this proposal - such as an org id
+  provider: ""
+  # Optional identifier if proposal is brokered by third party
+  broker: ""
+  # Keeps track of the sequence of proposals within a negotiation
+  sequence_num: 0
+  # Status of the proposal as ProposalStatusEnum value
   proposal_status: !ProposalStatusEnum
-  expiration: "0"    #Expiration that will be used with resultant Commitment if accepted - 0 is unlimited
-  description: ""  #Optional description of proposal - if set in initial proposal will be copied to Negotiation description
-  conditions: {}   #Optional collection of additional conditions - not used in R2
-  clauses: {}      #Optional collection of additional clauses - not used in R2
-
+  # Expiration that will be used with resultant Commitment if accepted - 0 is unlimited
+  expiration: "0"
+  # Optional description of proposal - if set in initial proposal will be copied to Negotiation description
+  description: ""
+  # Optional collection of additional conditions - not used in R2
+  conditions: {}
+  # Optional collection of additional clauses - not used in R2
+  clauses: {}
 ---
 
-# Enum for the type of Negotiation
+# Enumerates the possible types of Negotiation.
 NegotiationTypeEnum: !enum (values=(REQUEST, INVITATION, BROKERED), default=REQUEST)
 
-# Enum for the status of the Negotiation
-NegotiationStatusEnum: !enum (values=(OPEN, ACCEPTED, REJECTED), default=OPEN)
 
+# Enumerates the status values for a Negotiation.
+NegotiationStatusEnum: !enum (values=(OPEN, ACCEPTED, REJECTED), default=OPEN)
 ---
 
-# Describes a negotiation between multiple system participants with the intent of agreeing
-# to a mutual contract with commitments if successful.
+# Describes an interaction between multiple system participants with the intent of negotiating
+# a mutual contract with commitments for each participant.
 Negotiation: !Extends_InformationResource
+  # Specific variant of negotiation as NegotiationTypeEnum value
   negotiation_type: !NegotiationTypeEnum
+  # Current status of negotiation as NegotiationStatusEnum value.
   negotiation_status: !NegotiationStatusEnum
-  reason: ""     #Optional field to include a reason for a status
+  # Describes a reason for a status (optional)
+  reason: ""
+  # A list of service agreement proposals (SAP) describing the sequent steps of the negotiation.
+  # The last SAP in the list is considered the most recent one.
   #@ContentType=ServiceAgreementProposal
-  proposals: []  # The last SAP in the list is considered the most recent one
-
+  proposals: []
 ---
 
 # This is a proxy object used to convey a contextualized negotiation to the UI in lieu of
@@ -382,7 +491,6 @@ NegotiationRequest:
   originator: ""
   description: ""
   reason: ""
-
 ---
 
 #Resource specific negotiation requests
@@ -391,7 +499,6 @@ OrgUserNegotiationRequest: !Extends_NegotiationRequest
   org_id: ""
   user_id: ""
   name: ""   # This can be set to the Org name or User name depending upon which service fulfills
-
 ---
 
 #A subtype for all specific commitments
@@ -399,33 +506,30 @@ AbstractBaseCommitment:
 
 ---
 
-# Represents a standing obligation of one ION participant to another ION participant.
+# Represents a standing obligation of one participant to another participant.
 # Commitments can be tracked and violations against commitments can be sanctioned.
 Commitment: !Extends_InformationResource
   provider: ""
   consumer: ""
   expiration: "0"    #Expiration of the Commitment - 0 is unlimited
   commitment: !AbstractBaseCommitment
-
 ---
 
-#An internal specific commitment object for resources
+# An internal specific commitment object for resources
 ResourceCommitment: !Extends_AbstractBaseCommitment
   resource_id: ""
   exclusive: False
 
-#Reports the status of shared and exclusive commitments for a resource
+# Reports the status of shared and exclusive commitments for a resource
 ResourceCommitmentStatus:
   shared: False
   exclusive: False
-
 ---
 
 ComputedResourceCommitmentStatusValue: !Extends_ComputedValue
    value: !ResourceCommitmentStatus
 
 ---
-
 # base class for all predicate types that select which containers should run a particular requested action
 ContainerManagementPredicate:
 

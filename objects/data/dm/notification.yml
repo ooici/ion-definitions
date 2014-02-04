@@ -1,38 +1,51 @@
 
-
+# Enumerates possible notification delivery modes
 DeliveryMode: !enum (values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
 
+# Enumerates possible notification delivery types
 NotificationType: !enum (values=(EMAIL, FILTER), default=EMAIL)
 
+# Enumerates possible notification delivery frequency categories.
 Frequency: !enum (values=(REAL_TIME, BATCH), default=REAL_TIME)
 
 ---
 
-# Base class objects....
+# Abstract base type for a notification delivery configuration.
 DeliveryConfig:
   process_definition_id: ""
   processing:
-    message_header: ""   # User defined header for the message
-    parsing: ""          # Instructions on how to parse the notification to produce an SMS - more than just a string?
+    # User defined header for the message
+    message_header: ""
+    # Instructions on how to parse the notification to produce an SMS - more than just a string?
+    parsing: ""
   delivery:
-    email: ""            # Email address to use. If empty, get user contact-info
-    mode: !DeliveryMode  # Delivery mode for email notification based on google groups api
-    frequency: !Frequency # for the two kinds of notifications: real_time and batch
+    # Email address to use. If empty, get user contact-info
+    email: ""
+    # Delivery mode for email notification as DeliveryMode value
+    mode: !DeliveryMode
+    # Indicates the notification frequency mode (real_time and batch) as Frequency value
+    frequency: !Frequency
 
 ---
 
 # Describes a standing request for notifications by type and delivery modality for one user.
 NotificationRequest: !Extends_InformationResource
+  # Indicates the notification type as NotificationType value
   type: !NotificationType
-  origin: ""           # Event filter by origin
-  origin_type: ""      # Event filter by origin type
-  event_type: ""       # Event filter by event type
-  event_subtype: ""    # Event filter by event subtype
-  temporal_bounds: !TemporalBounds    # the start and end time of this subscription
+  # Event filter by origin
+  origin: ""
+  # Event filter by origin type
+  origin_type: ""
+  # Event filter by event type
+  event_type: ""
+  # Event filter by event subtype
+  event_subtype: ""
+  # The start and end time of this subscription
+  temporal_bounds: !TemporalBounds
 
 ---
 
-# For Detection Event
+# Notification delivery configuration for a detection event
 DetectionFilterConfig:
   processing:
     search_string: ""

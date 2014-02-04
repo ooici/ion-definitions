@@ -1,66 +1,62 @@
+# Enumerates possible categories of sites
 SiteEnvironmentType:  !enum (values=(FIELD, TEST), default=FIELD)
 
 ---
 # Represents a reference designator within an observatory, with geospatial and temporal bounds. Abstract base type.
 Site: !Extends_FrameOfReference
-#  # Specified bounds in 2 or 3 dimensions within which entity exists
-#  # Mandatory
-
   # The environment of the site. Used to differentiate marine deployments from, e.g. "bucket" tests
   environment: !SiteEnvironmentType
-
-  local_name: ""   # Unique part of name that can be composed with next higher level name
-
-  reference_designator: ""  # OOI reference designator
+  # Unique part of name that can be composed with next higher level name
+  local_name: ""
+  # OOI reference designator
+  reference_designator: ""
 
 ---
 # Represents a reference designator that designates a top-level observatory, with geospatial
 # and temporal bounds. This Observatory Site can have Subsites, Platform and Instrument Sites.
 Observatory: !Extends_Site
+  # URL to an external homepage about the observatory
+  url: ""
+  # The larger geospatial area (aka OI array/site) used to group sites
+  spatial_area_name: ""
 
-  url: ""  # URL to an external homepage about the observatory
 
-  spatial_area_name: ""  # The larger geospatial area (aka OI array/site)
-
-
-#Represents a reference designator that designates a hierarchical substructure within an observatory,
+# Represents a reference designator that designates a hierarchical substructure within an observatory,
 # with geospatial and temporal bounds. Subsites mostly represent distinct geospatial areas
 # within an Observatory.
 Subsite: !Extends_Site
-
-
 ---
 
-# Types of ports. PAYLOAD, EXPANSION, UPLINK are RSN node ports.
+# Enumerates possible types of ports. Values PAYLOAD, EXPANSION, UPLINK are RSN node ports.
 # ASSEMBLY is the type for a non-cabled physical assembly of parent and child devices
 PortTypeEnum: !enum (values=(NONE, PAYLOAD, EXPANSION, UPLINK, ASSEMBLY), default=NONE)
-
 ---
 
+# Holds information about a port on a platform (node).
 PlatformPort:
+  # The OOI reference designator
   reference_designator: ""
+  # The type of port as PortTypeEnum value
   port_type: !PortTypeEnum
+  # IP address of port as needed for cabled platforms
   ip_address: ""
 
 ---
 
-# Represents a reference designator within an observatory to hold devices, with one of them being
-# the primary device for this site.
+# Represents a reference designator within an observatory for one platform or instrument. Can have one current
+# primary device and has many device assignments of the same model over time. Abstract base type.
 DeviceSite: !Extends_Site
-
-  # Describes the port of the parent or network uplink device
+  # Describes the nominal port of the parent or network uplink device
   planned_uplink_port: !PlatformPort
-
   # For UI distinction purposes, a more fine granular resource type
   alt_resource_type: ""
-
 ---
 
 # Represents a reference designator within an observatory, designated for the deployment of functionally
 # equivalent platform devices, with geospatial and temporal bounds.
 PlatformSite: !Extends_DeviceSite
 
+
 # Represents a reference designator within an observatory, designated for the deployment of functionally
 # equivalent instrument devices, with geospatial and temporal bounds.
 InstrumentSite: !Extends_DeviceSite
-

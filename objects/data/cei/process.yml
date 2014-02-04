@@ -4,55 +4,62 @@ ProcessArgument:
   type: ""
   description: ""
   default:
-
 ---
 
+# Abstract base type for process definition details attributes
 AbstractProcessDefinitionDetailType:
 
+# Abstract base type for process details attributes
 AbstractProcessDetailType:
-
 ---
 
-# Event transformation processes that may produce an event or a stream
+# Special attributes for event transformation process definitions. Such processes may produce an event or a stream
 EventProcessDefinitionDetail: !Extends_AbstractProcessDefinitionDetailType
   event_types: []
   sub_types: []
   origin_types: []
 
+# Special attributes for event transformation process. Such processes may produce an event or a stream
 EventProcessDetail: !Extends_AbstractProcessDetailType
   event_types: []
   sub_types: []
   origins: []
   origin_types: []
   output_streams: {}
-
 ---
-
 
 # Specifies a type of executable process of class service, agent or transformation process.
 # References the executable or source code.
 ProcessDefinition: !Extends_ExecutableResource
   definition_type: !enum (name=ProcessDefinitionType, values=(PYON_STREAM, PYON_EVENT), default=PYON_STREAM)
-  version: ""    # Version of the same process definition
-  executable:    # Describes where to find the code to run
-    module: ""   # The source code file in which the code is in
-    class: ""    # The class name within the source code module
-    url: ""      # location of the module in ION
-  arguments: []  # This is a list of supported arguments. Each entry is a ProcessArgument object
-  definition: !AbstractProcessDefinitionDetailType   # process definition specific information  that is true for all processes of this type
-
+  # Version of the same process definition
+  version: ""
+  # Describes where to find the code to run
+  executable:
+    # The source code file in which the code is in
+    module: ""
+    # The class name within the source code module
+    class: ""
+    # location of the module in ION
+    url: ""
+  # This is a list of supported arguments. Each entry is a ProcessArgument object
+  arguments: []
+  # process definition specific information  that is true for all processes of this type
+  definition: !AbstractProcessDefinitionDetailType
 ---
 
 # Represents an executing computational entity in the system, executed by an Execution Engine. An instance
 # of a process definition, of type service, agent or transformation process.
 Process: !Extends_TaskableResource
-  label: ""     # Human legible label
-  proctype: ""  # Indicates a specialized type of CC process
+  # Human legible label
+  label: ""
+  # Indicates a specialized type of CC process
+  proctype: ""
   process_state: !ProcessStateEnum
   process_configuration: {}
   process_id: ""
-  detail: !AbstractProcessDetailType   # instance specific information
-
+  # instance specific information
+  detail: !AbstractProcessDetailType
 ---
 
 # Describes request scheduling a process on specific resources
@@ -60,7 +67,6 @@ ProcessTarget:
   execution_engine_id: ""
   node_exclusive: ""
   constraints: {}
-
 ---
 
 # Describes request to schedule a process at a certain time or modality

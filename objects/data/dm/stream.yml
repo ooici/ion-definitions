@@ -3,9 +3,11 @@ Stream: !Extends_InformationResource
   stream_route: !StreamRoute
   persisted: False
 
+
 # Defines a well-known identifier within a TopicTopology
 Topic: !Extends_InformationResource
   exchange_point: ""
+
 
 # Describes the format, structure, and characteristics of a stream and its granules (data records).
 StreamDefinition: !Extends_InformationResource

@@ -1,32 +1,35 @@
+# Describes an external dataset
 DatasetDescription:
   data_sampling: !enum (name=DatasetDescriptionDataSamplingEnum, value=(NONE, FIRST_LAST, FULL, SHOTGUN, SHOTGUN_COUNT), default=NONE)
   parameters: {}
 
+# Describes an observed update to an external dataset
 UpdateDescription:
   last_update_result: None
   last_update_timestamp: None
   last_signature: ""
   parameters: {}
 
+# Describes the differences observed between fetches of an external dataset
 CompareResult:
   field_name: ""
   difference: !enum (name=CompareResultEnum, value=(EQUAL, NEW_DIM, MOD_DIM, NEW_GATT, MOD_GATT, NEW_VARATT, MOD_VARATT, NEW_VAR, MOD_VAR), default=EQUAL)
 
+# Describes an attribute of an external dataset
 Attribute:
   name: ""
   value: None
   ion_name: ""
 
+# Describes a dimension for an external dataset
 Dimension:
   name: ""
   size: 0
   isunlimited: False
   ion_name: ""
-
 ---
 
-# an external institutional entity that provides and owns data, represented as
-# Data Sources with External Data Sets.
+# Represents an external institutional entity that provides and owns data.
 ExternalDataProvider: !Extends_InformationResource
   institution: !Institution
   contact: !ContactInformation
@@ -51,6 +54,7 @@ DataSourceAgentInstance: !Extends_AgentInstance
   login: ""
   password: ""
 
+# Enumerates possible types of dataset agents
 DatasetAgentTypeEnum: !enum (values=(EXTERNAL_DATASET, DEVICE), default=EXTERNAL_DATASET)
 
 ---
@@ -63,21 +67,30 @@ ExternalDataset: !Extends_InformationResource
 
 # Describes a type of external dataset
 ExternalDatasetModel: !Extends_InformationResource
-  #This defines the characteristics of a dataset class
+  # Defines the characteristics of a dataset class
   dataset_type: ""
 
 # Describes a type of external dataset agent
 ExternalDatasetAgent: !Extends_DeviceAgent
+  # (SYS) Specifies the internal type of dataset agent
   dataset_agent_type: !DatasetAgentTypeEnum
 
+  # (SYS) - UNUSED
   poller_module: ""
+  # (SYS) - UNUSED
   poller_class: ""
+  # (SYS) - UNUSED
   poller_uri: ""
+  # (SYS) - UNUSED
   poller_default_config: {}
 
+  # (SYS) - UNUSED
   parser_module: ""
+  # (SYS) - UNUSED
   parser_class: ""
+  # (SYS) - UNUSED
   parser_uri: ""
+  # (SYS) - UNUSED
   parser_default_config: {}
 
 # Describes an instance of external dataset agent

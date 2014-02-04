@@ -1,7 +1,12 @@
+
+# Holds a command to a remote device sent via the 2 component agent architecture.
 DeviceCommand:
+  # Name of the command
   name: ""
+  # Command arguments
   args: []
 
+# Holds a command response from a remote device relayed via the 2 component agent architecture.
 DeviceCommandResult:
   command: ""
   status: ""
@@ -10,6 +15,7 @@ DeviceCommandResult:
 DeviceConfiguration:
   configuration: {}
 
+# Wraps a command to a remote entity sent via the 2 component agent architecture.
 RemoteCommand:
   resource_id: ''
   svc_name: ''
@@ -21,10 +27,8 @@ RemoteCommand:
   time_completed: 0
   result: ''
   
+# Represents a command queue to a remote platform managed by the 2 component agent architecture.
 RemoteCommandQueue: !Extends_InformationResource
   queue: []
   created: 0
   updated: 0
-  
-  
-  

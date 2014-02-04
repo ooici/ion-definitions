@@ -3,6 +3,7 @@ EPUDefinition: !Extends_ExecutableResource
   definition_type: ""   # Type of EPU
   definition: {}        # Detailed definition of EPU
 
+
 # Represents a highly available, scalable virtual computing platform for a specific service.
 # An EPU (Elastic Processing Unit) manages itself based on policy.
 EPU: !Extends_TaskableResource

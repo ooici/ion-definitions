@@ -1,14 +1,22 @@
 # Represents a type of execution engine, with the ability to execute a specific type of process.
 ExecutionEngineDefinition: !Extends_ExecutableResource
-  definition_type: ""   # Type of execution engine definition
-  definition: {}        # Detailed definition of execution engine (in the format of the type)
+  # Defines the specific representation of execution engine definition
+  definition_type: ""
+  # Detailed definition of execution engine (in the format of the type)
+  definition: {}
+
 
 # Represents a managed computing platform for executing processes of specified type.
 ExecutionEngine: !Extends_TaskableResource
 
-# An ION capability container - a special type of execution engine with special treatment
+
+# Represents a capability container that is part of the system with the ability to host processes.
 CapabilityContainer: !Extends_TaskableResource
-  version: "1.0"        # Version identifier for this container type
-  technology: "Python"  # Class of technology
-  cc_agent: ""          # Exchange name of the agent representing the container
-  status_log: []        # Log of most recent container status snapshots
+# Version identifier for this container type
+  version: "1.0"
+  # Class of technology
+  technology: "Python"
+  # Exchange name of the agent representing the container
+  cc_agent: ""
+  # (SYS) Log of most recent container status snapshots
+  status_log: []

@@ -1,3 +1,5 @@
+# Represents a standing request to receive information from streaming sources. Typically,
+# represents a pubsub queue receiving science data granules from a data stream.
 Subscription: !Extends_InformationResource
   exchange_points: []
   exchange_name: ""

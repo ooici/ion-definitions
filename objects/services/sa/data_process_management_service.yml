@@ -19,6 +19,17 @@ methods:
       BadRequest: if object does not have _id or _rev attribute
       NotFound: object with specified id does not exist
 
+  create_data_process_definition_new:
+    docstring: Create a resource which defines the processing of a stream, from transform definition to scheduling
+    in:
+      data_process_definition: !DataProcessDefinition
+      function_id: ""
+    out:
+      data_process_definition_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
   update_data_process_definition:
     in:
       data_process_definition: !DataProcessDefinition
@@ -141,6 +152,16 @@ methods:
   # -----------------
   
   create_data_process:
+    docstring: Create an instance or realization of a data process definition.
+    in:
+      data_process_definition_id: ""
+      in_data_product_ids: []
+      out_data_product_ids: []
+      configuration: {}
+    out:
+      data_process_id: ""
+
+  create_data_process_new:
     docstring: Create an instance or realization of a data process definition.
     in:
       data_process_definition_id: ""

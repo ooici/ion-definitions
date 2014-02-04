@@ -34,6 +34,7 @@ DataProcess: !Extends_TaskableResource
   #     return p + p_range
   # the argument map could be {'p' : 'seawater_pressure', 'p_range' : 'instrument_pressure_range'}
   argument_map: {}
+  output_param: ''
 
   # ---  DEPRECATED FIELDS ---
   input_subscription_id: ""
@@ -48,7 +49,7 @@ TransformFunctionType: !enum (values=(TRANSFORM, EVENT_FUNCTION, EVENT_HANDLER),
 
 ---
 
-# A resource that represents an executable function 
+# A resource that represents an executable function
 TransformFunction: !Extends_InformationResource
   # What kind of transform function
   function_type: !TransformFunctionType

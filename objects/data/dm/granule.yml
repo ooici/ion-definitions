@@ -1,43 +1,39 @@
-# Contains information describing terms within granules
+# UNUSED, REMOVE - Contains information describing terms within granules
 Taxonomy: !Extends_InformationResource
   map: {}
-
 ---
 
 CompoundGranule:
   granules: []
-
 ---
 
-# Redefined because of scope issues, I don't want to debug the file loading order just yet - Luke
+# Redefined because of scope issues, I don't want to debug the file loading order just yet - Luke.
+# WARNING - Name space shadowing with similarly named resource!!
 StreamDefinition:
-
 ---
 
 # Object containing data associated with a Taxonomy to be transported in messages between
 # distributed processes.
 Granule:
+  # Contains the relevant parts of the parameter dictionary definition for this granule and stream
   param_dictionary: {}
-
+  # The data content of this granule
   record_dictionary: {}
-
+  # References the stream definition for this stream
   stream_definition_id: ""
-
+  # Contains the relevant parts of the stream definition
   stream_definition: !StreamDefinition
-
+  # Defines the domain pertinent to this granule's data
   domain: []
-
+  # Locates this granule's data content within the coverage domain
   locator: {}
-
+  # Identifies a data producer
   data_producer_id: ""
-
+  # Informs about any updates to data producer metadata
   provider_metadata_update: {}
-
+  # Timestamp of granule creation
   creation_timestamp: 0.
-
   # UUID for Connection (instrument)
   connection_id: ""
   # Connection window index
   connection_index: ""
-
-

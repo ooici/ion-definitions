@@ -1,7 +1,6 @@
 ########### PREDICATE TYPES #############
 
 # indicate that the request should be run on all containers
-
 AllContainers: !Extends_ContainerManagementPredicate
   #@module=pyon.container.management
   #@class=AllContainers
@@ -14,10 +13,18 @@ ChangeLogLevel: !Extends_ContainerManagementAction
   level: ""
   recursive: True
 
+
 ReportStatistics: !Extends_ContainerManagementAction
+
+
 ClearStatistics: !Extends_ContainerManagementAction
+
+
 ResetPolicyCache: !Extends_ContainerManagementAction
+
+
 TriggerGarbageCollection: !Extends_ContainerManagementAction
+
 
 TriggerContainerSnapshot: !Extends_ContainerManagementAction
   snapshot_id: ""         # Unique identifier for a snapshot
@@ -28,10 +35,13 @@ TriggerContainerSnapshot: !Extends_ContainerManagementAction
   persist_snapshot: True  # If True, persist snapshot, otherwise log
   snapshot_kwargs: {}     # Arbitrary args for snapshot
 
+
 StartGeventBlock: !Extends_ContainerManagementAction
   alarm_mode: False       # Use thread monitor mode to detect blocking instead of alarm mode
 
+
 StopGeventBlock: !Extends_ContainerManagementAction
+
 
 PrepareSystemShutdown: !Extends_ContainerManagementAction
   mode: ""

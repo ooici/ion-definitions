@@ -1,6 +1,5 @@
 # Represents an interaction between system participants. Conversation is an instance of a
 # conversation type, with actor identities bound to conversation roles.
-#TODO - determine the need for this object
 Conversation: !Extends_InformationResource
 
 
@@ -19,9 +18,9 @@ ConversationRole: !Extends_InformationResource
 
 
 # Resource describing an actor taking on a conversation role in a conversation (instance)
-#TODO - determine the need for this object
 ConverationRoleBinding:
   exchange_name: ""   # The address of the process to communicate with
+
 
 # Conversation object that is logged in the conversation database
 ConversationMessage:

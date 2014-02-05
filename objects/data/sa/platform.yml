@@ -1,23 +1,27 @@
-
+# Describes a platform monitor
 PlatformMonitorAttributes:
+  # Monitor identifier
   id: ""
+  # Monitor mane
   name: ""
-  #monitor rate in seconds
+  # Monitor rate in seconds
   monitor_rate: 0
+  # Monitor units
   units: ""
+  # Defines the actual aggregate status category for this monitor as AggregateStatusType value
   aggregate_type: !AggregateStatusType
+
 
 # Represents a physical package with a manufacturer, model, and serial number, providing physical
 # mounting locations for one to many instruments. Platforms are also the primary units of deployment
 # of marine infrastructure.
 PlatformDevice: !Extends_Device
-
+  # (SYS) Nominal location of the platform for indexing purposes
   index_location: !GeospatialIndex
-
-  # a list of platform_port objects (see above)
+  # Describes this platform's ports as a list of PlatformPort objects
   #@ContentType=PlatformPort
   ports: []
-  # a list of PlatformMonitorAttributes objects
+  # Describes this platform's monitors as a list of PlatformMonitorAttributes objects
   #@ContentType=PlatformMonitorAttributes
   platform_monitor_attributes: []
   
@@ -25,30 +29,29 @@ PlatformDevice: !Extends_Device
 # Specifies a distinguished type of platform, derived from the manufacturer's model number
 # and on common attributes.
 PlatformModel: !Extends_DeviceModel
-  # The family of platform, with term from the OOI Node Type list
-  # Code List: Medium-power Junction Box, Interface Box HD Camera, Float Junction Box, Low-power Junction Box,
+  # The family of platform, with term from the OOI Node Type list.
+  # Codelist: Medium-power Junction Box, Interface Box HD Camera, Float Junction Box, Low-power Junction Box,
   # Winch Junction Box, Profiler Junction Box, Multi-Function Node, Fixed Instruments, Surface Buoy
   # Surface-Piercing Profiler, Wire-Following Profiler, Mid-Water Platform, AUV, Gliders, Benthic Package
   # Deep Profiler
   platform_family: ""
   
+  # Broad categorization of the platform into major functional category.
+  # Codelist: AUV, Glider, Mooring, Profiler, Cable Node, ...
+  platform_type: ""
+
   # Whether ION software is run on platform resources
-  # Mandatory
   ci_onboard: ""
 
-  # Whether the platform is typically connected to the terrestrial network - boolean
-  # Mandatory
-  shore_networked: True   # Always Fast, Always Slow, Intermittent, Never
+  # Whether the platform is typically connected to the terrestrial network (boolean).
+  # Codelist: Always Fast, Always Slow, Intermittent, Never
+  shore_networked: True
 
-  # Broad categorization of the platform into major functional category (AUV, Glider, Mooring, Profiler, ...)/
-  # Mandatory
-  platform_type: ""   #
+
 
 # Describes a type of platform agent
 PlatformAgent: !Extends_DeviceAgent
 
+
 # Describes parameters for a platform agent instance
 PlatformAgentInstance: !Extends_AgentInstance
-  #replace all the individual items about with driver_config and agent_config dict
-#  driver_config: {}
-#  agent_config: {}

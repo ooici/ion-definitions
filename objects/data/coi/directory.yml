@@ -1,20 +1,14 @@
 # Node and leaf object within a directory tree
 DirEntry:
-
   # Name of the Org this directory entry belongs to
   org: ""
-
   # Path of the parent node within the directory tree
   parent: ""
-
   # Name of this node (composite or leaf) in the directory tree
   key: ""
-
   # Key-value attributes associated to this node in the directory tree
   attributes: {}
-
   # Timestamp str in millis in UNIX epoch when this node was created
   ts_created: ""
-
   # Timestamp str in millis in UNIX epoch when this node was updated
   ts_updated: ""

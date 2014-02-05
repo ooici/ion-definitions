@@ -2,18 +2,20 @@
 # in which execution nodes (e.g. VMs) are connected via LAN. For OOICI, these are the CyberPoPs.
 ExecutionSite: !Extends_InformationResource
 
+
 # Describes one provider of execution, such as OOICI, Amazon, etc
 ExecutionProvider: !Extends_InformationResource
+
 
 # Specifies a resource that can be instantiated into an Operational Unit (a virtual machine).
 # For instance specifies a base image and any contextualization type modification scripts to run.
 DeployableType: !Extends_ExecutableResource
 
+
 # Describes a deployable type that has been specialized for one target execution environment,
 # and which can be instantiated many times in this environment.
 DeployableUnit: !Extends_ExecutableResource
-  tbd: ""
+
 
 # Describes a running virtual compute node (a virtual machine), an instance of a deployable type and unit.
 OperationalUnit: !Extends_TaskableResource
-  tbd: ""

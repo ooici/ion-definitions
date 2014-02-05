@@ -34,7 +34,7 @@ DataProcess: !Extends_TaskableResource
   #     return p + p_range
   # the argument map could be {'p' : 'seawater_pressure', 'p_range' : 'instrument_pressure_range'}
   argument_map: {}
-  output_param: ''
+  output_param: ""
 
   # ---  DEPRECATED FIELDS ---
   input_subscription_id: ""

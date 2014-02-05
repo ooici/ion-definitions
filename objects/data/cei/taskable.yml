@@ -1,17 +1,21 @@
-# TODO - The following are for consideration as advanced R2 features and are now R3 scope
-
+# UNUSED. Represents a request for computation to a planner
 ComputationRequest:
   request_type: "process"
   request: {}
 
+
+# UNUSED. Represents a request for process execution to a planner
 ProcessRequest:
   process_definition_id: ""
   parameters: {}
   config: {}
 
+
+# UNUSED. Represents a request for EPU instantiation to a planner
 EPURequest:
   epu_definition_id: ""
   parameters: {}
   config: {}
+
 
 ResourceAgentType: !Extends_InformationResource

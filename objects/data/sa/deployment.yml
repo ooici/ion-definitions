@@ -2,89 +2,88 @@
 # The mount orientation indicates which way a device is pointing (where the pointing direction
 # is defined as the direction in which its sensor is pointing, unless another direction has been
 # specified ) relative to the device (usually a platform) on which it is mounted.
-# !! THIS IS NOT USED IN R2.0, FOR LATER USE !!
 DeviceMountingPosition:
-  # the id of the device to which this position applies relative to the parent device
+  # The id of the device to which this position applies relative to the parent device
   # (usually an instrument on a platform)
   device_id: ""
 
-  # unique identification of the port to which the device is attached
+  # Unique identification of the port to which the device is attached
   connection_port: ""
 
   # OOI code for the position of an instrument location on a platform. Ex: GA01SUMO-FI003-03-CTDMO0999
   reference_designator: ""
 
-  # offset location of the mounted device along the X|Y|Z axis of the mounting platform, with more
+  # Offset location of the mounted device along the X axis of the mounting platform, with more
   # positive offsets indicating the device is further along the positive direction of that axis and
   # indicating the device is at the origin of the axis
+  # (see https://confluence.oceanobservatories.org/display/CIDev/Coordinate+Systems+and+Coordinate+Transformations#CoordinateSystemsandCoordinateTransformations-MountingPosition)
   offset_x: 0
+  # Offset location of the mounted device along the Y axis of the mounting platform, with more
+  # positive offsets indicating the device is further along the positive direction of that axis and
+  # indicating the device is at the origin of the axis
   offset_y: 0
+  # Offset location of the mounted device along the Z axis of the mounting platform, with more
+  # positive offsets indicating the device is further along the positive direction of that axis and
+  # indicating the device is at the origin of the axis
   offset_z: 0
 
-  # indicates which way a device is pointing relative to its platform; specifies the rotation around the X|Y|Z axis
+  # Indicates which way a device is pointing relative to its platform; specifies the rotation around the X axis
   # in degrees clockwise; assumes device is pointing out Z axis
+  # (see https://confluence.oceanobservatories.org/display/CIDev/Coordinate+Systems+and+Coordinate+Transformations#CoordinateSystemsandCoordinateTransformations-MountingOrientation)
   rotation_x: 0.0
+  # Indicates which way a device is pointing relative to its platform; specifies the rotation around the Y axis
+  # in degrees clockwise; assumes device is pointing out Z axis
   rotation_y: 0.0
+  # Indicates which way a device is pointing relative to its platform; specifies the rotation around the Z axis
+  # in degrees clockwise; assumes device is pointing out Z axis
   rotation_z: 0.0
   
 ---
 
+# Abstract base type for detailed deployment attributes specific to the type of deployment.
 AbstractDeploymentContextType:
 
 ---
 
-# Describes an assignment of a device to a specific observatory position,
-# typically for a specified period of time.
+# Describes an assignment of a device to a specific observatory site for a period of time. The device
+# may be an assembly of devices, such as a platform composed of components and instruments.
 Deployment: !Extends_FrameOfReference
-  # a string that defines the deployment: RemotePlatform, CabledNode, CabledInstrument, Cruise, MobileAsset
+  # Defines the specific type of deployment.
+  # Codelist: RemotePlatform, CabledNode, CabledInstrument, Cruise, MobileAsset
   type: ""
-
-  # the specifics of this deployment type
+  # Additional attributes specific to this deployment type
   context: !AbstractDeploymentContextType
-
   # An additional identification code used by the operators
   auxiliary_identifier: ""
-
   # An additional identification name used by the operators
   auxiliary_name: ""
-
-  # device ids and keys, port reference designators as values
+  # A mapping of device id to PlatformPort object, containing port reference designators as values
   port_assignments: {}
 
 
-
-
 ---
-# was BuoyDeploymentContext
-# Deployment of a bundled, integrated platform into a remote environment without direct comms capabilities
+# Detailed attributes for a deployment of an assembly integrated platform into a remote environment
+# without remote telemetry connection.
 RemotePlatformDeploymentContext: !Extends_AbstractDeploymentContextType
 
-
-  # a list of DeviceMountingPosition objects
+  # A list of DeviceMountingPosition objects
   #@ContentType=DeviceMountingPosition
   device_mounting_positions: []
 
----
 
-
-# was MooringDeploymentContext
-# The deployment of a single RSN node
+# Detailed attributes for a deployment of a single RSN node
 CabledNodeDeploymentContext: !Extends_AbstractDeploymentContextType
 
----
-# a one-to-one deployment of an instrument onto an RSN platform
+
+# Detailed attributes for a deployment of a cabled instrument
 CabledInstrumentDeploymentContext: !Extends_AbstractDeploymentContextType
 
 
----
-
-
+# Detailed attributes for a deployment cruise
 CruiseDeploymentContext: !Extends_AbstractDeploymentContextType
 
----
 
-
-#was GliderDeploymentContext
+# Detailed attributes for a deployment of a mobile asset
 MobileAssetDeploymentContext: !Extends_AbstractDeploymentContextType
 
 ---

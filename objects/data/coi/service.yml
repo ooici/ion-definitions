@@ -1,25 +1,20 @@
 # Represents a type of service, available for instantiation within the OOI Integrated Observatory Network.
 ServiceDefinition: !Extends_ExecutableResource
-
   # The language of service specification. For future extensibility
   definition_type: "ion_svc_yml_1"
-
   # The actual service specification
   definition: ""
-
   # List of operations in this service.
   operations: []
-
   # Relative path for specific service definition, e.g. "coi"
   namespace: ""
 
 
 # Represents an instance of a service definition, available for use within the OOI Integrated Observatory Network.
 Service: !Extends_TaskableResource
-
   # The fully qualified name under which the service is available in the system
   exchange_name: ""
+  # Current service state as ServiceStateEnum value
   state: !ServiceStateEnum
-
-  # The policy of the service
+  # The policy pertaining to the service
   policy: {}

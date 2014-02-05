@@ -1,25 +1,9 @@
-# Describes a physical device that can be deployed as part of an instrument, and reports its
+# UNUSED - Describes a physical device that can be deployed as part of an instrument, and reports its
 # data through that instrument.
 SensorDevice: !Extends_Device
-
-  # Current to version 30 of confluence resource page:  
-  # https://confluence.oceanobservatories.org/pages/viewpage.action?pageId=33227619
-  
-  # A physical device that can be deployed on an instrument, and reports its data through that instrument
-
-  # Identifier of hard-coded operating system in unit 
+  # Identifier of hard-coded operating system in unit
   firmware_version: ""
 
 
-
-# Describes a distinguished type of sensor, derived from the manufacturer's model number and common attributes.
+# UNUSED -Describes a distinguished type of sensor, derived from the manufacturer's model number and common attributes.
 SensorModel: !Extends_DeviceModel
-
-  # A grouping of sensors, derived from the manufacturer's model number, based on common attributes.
-  # Sensor Model provides the template for characterizing a measurement capability. 
-
-
-
-
-  
-  

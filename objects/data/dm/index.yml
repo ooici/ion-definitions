@@ -2,21 +2,22 @@
 Index: !Extends_InformationResource
   # Devices, Instruments, Users etc.
   content_type:   "" 
+  # Additional search filter or options
   options:        !SearchOptions
-
 ---
+
 # Represents a named set of resources. These may or may not be of the same type, and may or may not be ordered.
 Collection: !Extends_InformationResource
+  # The resources in this collection
   resources: []
+  # Additional search filter or options
   options:   !SearchOptions
-
 ---
 
 # Specialization of Index used for CouchDB
 CouchDBIndex: !Extends_Index
   view_name: ""
   datastore_name: ""
-
 ---
 
 # Specialization of Index used for ElasticSearch

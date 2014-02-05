@@ -1,4 +1,4 @@
-# Specifies a predefined, parametrized search for resources.
+# Specifies a standing, parameterizable query for resources.
 # Describes order and additional filters to be applied when view is evaluated.
 View: !Extends_InformationResource
   order:   []

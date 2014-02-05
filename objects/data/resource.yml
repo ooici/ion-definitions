@@ -1,154 +1,187 @@
-# Place resource specific definitions in here
-
-# Represents an entity associated with the Integrated Observatory that provides capability
-# and has a life cycle. Abstract base type.
+# Represents an entity known to the system that provides capability and has an identity
+# and a life cycle. Resources can be associated with other resources. Abstract base type and type root.
+# The following are internal attributes common to all objects:
+# _id: A unique identifier that comes with every persisted object;
+# _rev: A revision identifier that comes with every persisted object;
+# type_: The object type
 Resource:
-  # _id: ""       - Unique identifier (comes with every object)
-  # _rev: ""      - Revision identifier (comes with every object)
-  # type_: ""     - Object type name (comes with every object)
-  name: ""        # Human readable long name of the resource, displayable in lists
-  description: "" # A more verbose description if needed
-  lcstate: "DRAFT"         # Resource life cycle state (maturity)
-  availability: "PRIVATE"  # Resource availability
-  ts_created: ""  # Timestamp str in millis in UNIX epoch when resource was created
-  ts_updated: ""  # Timestamp str in millis in UNIX epoch when resource was last updated
-  alt_ids: []     # System internal - Used to assign alternate IDs to this resource, e.g. for preload
-  addl: {}        # System internal - Additional attributes from preload import
-
+  # Human readable long name of the resource, e.g. for display in resource lists
+  name: ""
+  # A more verbose description of the resource
+  description: ""
+  # Resource life cycle state
+  lcstate: "DRAFT"
+  # Resource availability state
+  availability: "PRIVATE"
+  # Timestamp when resource object was created (str in millis in UNIX epoch)
+  ts_created: ""
+  # Timestamp when resource object was last updated (str in millis in UNIX epoch)
+  ts_updated: ""
+  # (SYS) Holds a list of alternate IDs to this resource, e.g. for preload in the form prefix:id
+  alt_ids: []
+  # (SYS) Additional attributes, e.g. from preload import
+  addl: {}
 ---
 
 # Describes a resource that exists as an electronic artifact, such as science data,
 # attachments, actor identities. Abstract base type.
 InformationResource: !Extends_Resource
-
 ---
 
 # Describes a resource that can be controlled and monitored, such as a physical device
 # or a computational process. Abstract base type.
 TaskableResource: !Extends_Resource
-  message_controllable: True    # can this resource be controlled by messages sent to it
-  monitorable: True             # A device that has a communication port for real-time monitoring
-  
+  # Indicates that this resource can be controlled by messages sent to it
+  message_controllable: True
+  # Indicates that this resource has a communication port for real-time monitoring
+  monitorable: True
 ---
 
-# Describes a resource that can be instantiated into a taskable resource. Abstract base type.
+# Describes an electronically described computational entity that can be instantiated into a taskable resource.
+# Abstract base type.
 ExecutableResource: !Extends_InformationResource
-
 ---
 
 # Describes a resource that represents a system internal component or function. Abstract base type.
 SystemResource: !Extends_InformationResource
-
 ---
 
 # Defines a type of system known resource.
 ResourceType: !Extends_InformationResource
 
+
 # Specifies a particular resource life-cycle workflow.
 ResourceLifeCycle: !Extends_InformationResource
+  # Type in which the definition is represented
   definition_type: ""
+  # The definition of the resource life-cycle workflow (varies by type).
   definition: {}
 
+# OBSOLETE - Used to indicate filters in find resource operations
 ResourceFilter:
   filters: {}
-
-
 ---
 
-ComputedValueAvailability: !enum (values=(PROVIDED,NOTAVAILABLE), default=NOTAVAILABLE)
-
+# Enumerates the availability of a computed attribute's value.
+ComputedValueAvailability: !enum (values=(PROVIDED, NOTAVAILABLE), default=NOTAVAILABLE)
 ---
 
+# Holds a computed value and status about its availability. Abstract base type.
 ComputedValue:
+  # Availability of this computed attribute value
   status: !ComputedValueAvailability
+  # Additional details regarding attribute (un)availability
   reason: ""
-
 ---
 
+# Holds an integer type computed value and status about its availability.
 ComputedIntValue: !Extends_ComputedValue
+  # Holds the value
   value: 0
 
+
+# Holds a string type computed value and status about its availability.
 ComputedStringValue: !Extends_ComputedValue
+  # Holds the value
   value: ""
 
+
+# Holds a float (decimal number) type computed value and status about its availability.
 ComputedFloatValue: !Extends_ComputedValue
+  # Holds the value
   value: 0.0
 
+
+# Holds a list type computed value and status about its availability.
 ComputedListValue: !Extends_ComputedValue
+  # Holds the value
   value: []
 
+
+# Holds a dict (mapping) type computed value and status about its availability.
 ComputedDictValue: !Extends_ComputedValue
+  # Holds the value
   value: {}
-
 ---
 
+# Base container for attributes computed via the extended resource framework. Abstract base type.
 BaseComputedAttributes:
-
 ---
-# The base type for computed attribute objects
+
+# The base type for computed attribute objects.
 # IMPORTANT!!! NOTHING IN HERE SHOULD REFERENCE LOCAL FUNCTIONS SINCE THIS IS USED ACROSS SERVICES
 ComputedAttributes: !Extends_BaseComputedAttributes
+  # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first
   #@Method=user_notification.get_recent_events
-  recent_events: !ComputedListValue    # A list of Event objects (or subtypes) for current resource, max 100, descending order, most recent first
+  recent_events: !ComputedListValue
+  # Describes the service request to retrieve recent events
   #@ServiceRequest=user_notification.get_recent_events
   recent_events_request: !ServiceRequest
+  # A list of NotificationRequest objects, for the current user, where origin equals current resource id
   #@Method=user_notification.get_subscriptions_attribute
-  user_notification_requests:  !ComputedListValue      # A list of NotificationRequest objects, for the current user, where origin equals current resource id
+  user_notification_requests:  !ComputedListValue
+  # Describes the service request to retrieve user notification requests
   #@ServiceRequest=user_notification.get_subscriptions_attribute
   user_notifications_request: !ServiceRequest
-
 ---
 
 # The base type for taskable computed attribute objects
 TaskableComputedAttributes: !Extends_ComputedAttributes
-  
+  # The device's operational state
   #@Method
-  operational_state: !ComputedStringValue   # from Device
-
+  operational_state: !ComputedStringValue
 ---
 
 # The base type for taskable computed attribute objects
 DeviceComputedAttributes: !Extends_TaskableComputedAttributes
-
-  # StatusType.STATUS_OK, .STATUS_UNKNOWN, etc
-  communications_status_roll_up: !ComputedIntValue # StatusType
-  data_status_roll_up:           !ComputedIntValue # StatusType
-  location_status_roll_up:       !ComputedIntValue # StatusType
-  power_status_roll_up:          !ComputedIntValue # StatusType 
-
+  # Communications status roll up for device as ComputedIntValue with a StatusType Value
+  communications_status_roll_up: !ComputedIntValue
+  # Data status roll up for device as ComputedIntValue with a StatusType Value
+  data_status_roll_up:           !ComputedIntValue
+  # Location status roll up for device as ComputedIntValue with a StatusType Value
+  location_status_roll_up:       !ComputedIntValue
+  # Power status roll up for device as ComputedIntValue with a StatusType Value
+  power_status_roll_up:          !ComputedIntValue
+  # Time since device was last restarted
   #@Method
-  uptime: !ComputedStringValue # time since device was last restarted
-
-  data_product_set: !ComputedDictValue    # UNUSED - The set of data product with the processing_level_code as the key to identify   =instrument_management.get_data_product_set
-
-  data_product_parameters_set: !ComputedDictValue    # UNUSED - A dictionary of data product contexts with the processing_level_code as the key to identify
-
+  uptime: !ComputedStringValue
+  # UNUSED - The set of data product with the processing_level_code as the key to identify   =instrument_management.get_data_product_set
+  data_product_set: !ComputedDictValue
+  # UNUSED - A dictionary of data product contexts with the processing_level_code as the key to identify
+  data_product_parameters_set: !ComputedDictValue
 ---
 
-# A non-persistable container for a resource and its related data
+# A non-persistable container for a resource and its related data used by the extended resource framework
 ResourceContainer:
-  _id: ""   #  Unique identifier (matches the id of the internal persistable resource object)
-  ts_created: ""  # Timestamp str in millis in UNIX epoch
-  lcstate_transitions: {}       # Available lcstate transitions (key event, value target state)
-  availability_transitions: {}  # Available availability transitions (key event, value target state)
+  #  Unique identifier (matches the id of the internal persistable resource object)
+  _id: ""
+  # Timestamp str in millis in UNIX epoch
+  ts_created: ""
+  # Available lcstate transitions (key event, value target state)
+  lcstate_transitions: {}
+  # Available availability transitions (key event, value target state)
+  availability_transitions: {}
+  # Contains the actual resource object as retrieved from the resource registry
   resource: !Resource
-  ext_associations: {}  # An optional dict of names and associated objects to get other associations on the fly
-
+  # An optional dict of names and associated objects to get other associations on the fly
+  ext_associations: {}
 ---
 
 # A derived object containing common fields for all extended resource objects
 ExtendedResource: !Extends_ResourceContainer
   computed: !BaseComputedAttributes
+  # A list of any associated policies
   #@hasPolicy=Policy
-  policies: []  # A list of any associated policies
+  policies: []
+  # A list of owner information of this resource
   #@hasOwnerInfo
-  owners: []  # A list of  owner information of this resource
+  owners: []
+  # A list of orgs to which this resource belongs - NOTE this does not apply to Users!
   #@hasResource=Org
-  orgs: []  # A list of orgs to which this resource belongs - NOTE this does not apply to Users!
+  orgs: []
+  # list of sensors attached to this device
   #@hasAttachment=Attachment
-  attachments: []  # list of sensors attached to this device
-
-
+  attachments: []
 ---
 
 #A base object for associations between resources
@@ -158,7 +191,6 @@ AssociatedResources:
   key: ""
   resource_type: ""
   multiple_associations: False
-
 ---
 
 #A base object containing common fields for all prepare update objects
@@ -166,7 +198,6 @@ ResourcePrepareSupport:
   _id: ""   #  Unique identifier (matches the id of the internal persistable resource object)
   resource: !Resource
   resource_schema: {}
-
 ---
 
 # An object used for testing of the framework
@@ -183,9 +214,11 @@ TestExtendedResource: !Extends_ExtendedResource
   #@hasOwnerInfo
   owner_count: 0  #count of owners
 
+
 # An object used for testing of the framework
 #@OriginResourceType=InstrumentDevice
 TestPrepareUpdateResource: !Extends_ResourcePrepareSupport
+
 
 # An object used for testing of the framework
 #@OriginResourceType=Device
@@ -193,23 +226,23 @@ TestExtendedResourceDevice: !Extends_ExtendedResource
   #@hasPolicy
   policy_count: 0
 
+
 # An object used for testing of the framework
 #@OriginResourceType=Org
 TestExtendedResourceBad: !Extends_ExtendedResource
   #@hasPolicy
   policy_count: 0
 
+
 #@OriginResourceType=InformationResource
 TestExtendedInformationResource: !Extends_ExtendedResource
   #@Method=get_user_id_test
   user_id: ""
-
 ---
+
 #@OriginResourceType=InformationResource
 ExtendedInformationResource: !Extends_ExtendedResource
-
 ---
+
 #@OriginResourceType=TaskableResource
 ExtendedTaskableResource: !Extends_ExtendedResource
-
-

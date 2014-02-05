@@ -1,3 +1,6 @@
+# Defines a named variable of a stream, dataset or data product. This can be an independent, measured
+# value, a variable describing the geospatial-temporal domain, a calibration coefficient or
+# a derived, computed value or QC flag.
 ParameterContext: !Extends_InformationResource
   parameter_context: {}
   reference_urls: []
@@ -16,9 +19,13 @@ ParameterContext: !Extends_InformationResource
   visible: True
 
 
+# Represents a collection of parameter contexts, e.g. for use to describe a stream, dataset or data product.
 ParameterDictionary: !Extends_InformationResource
   temporal_context: ""
 
+
+# Represents a calculation used to compute a derived parameter, e.g. for an L1 product or QC flag, that can
+# be executed within a coverage.
 ParameterFunction: !Extends_InformationResource
   parameter_function: {}
 

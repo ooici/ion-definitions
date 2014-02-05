@@ -1,35 +1,38 @@
-# Enum for the different categories of Orgs
+# Enumerates the different flavors of Orgs (facilities)
 OrgTypeEnum: !enum (values=(BASIC, MARINE_FACILITY, VIRTUAL_OBSERVATORY, CLASSROOM, LABORATORY, INTERACTIVE_FACILITY), default=BASIC)
 ---
 
-
 # Represents a domain of authority that provides the context within which policy applies to registered
-# member individuals and resources.
+# member individuals and resources. Also known as facility.
 Org: !Extends_TaskableResource
-  org_governance_name: ""     # An identifier for the Org used by governance that should not be changed.
-  org_type: !OrgTypeEnum      # Specializes the type of Or
-  institution: !Institution   # Identifies the institution that operates the Org/Facility
+  # A permanent human readable identifier for the Org.
+  org_governance_name: ""
+  # Specializes the type of Org as OrgTypeEnum value
+  org_type: !OrgTypeEnum
+  # Identifies the institution that operates the Org/Facility
+  institution: !Institution
+  # A URL for the Org
   url: ""
+  # A list of ContactInformation entities that serves as a contact point
   #@ContentType=ContactInformation
-  contacts: []                # A list of ContactInformation entities that serves as a contact point
-
-
+  contacts: []
 ---
-#Various specific types of proposals managed by the Org
 
+# Describes a proposal for enrolling a user in an Org/facility.
 EnrollmentProposal: !Extends_ServiceAgreementProposal
 
+
+# Describes a proposal for granting a user a specific role in an Org/facility.
 RequestRoleProposal: !Extends_ServiceAgreementProposal
   #@EventData
   role_name: ""
 
+
+# Describes a proposal for acquiring a resource by a user within an Org/facility.
 AcquireResourceProposal: !Extends_ServiceAgreementProposal
   #@EventData
   resource_id: ""
-
 ---
 
+# Describes a proposal for acquiring a resource exclusively by a user within an Org/facility.
 AcquireResourceExclusiveProposal: !Extends_AcquireResourceProposal
-
-
-

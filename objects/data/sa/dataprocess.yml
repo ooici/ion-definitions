@@ -17,8 +17,8 @@ DataProcessDefinition: !Extends_InformationResource
   data_process_type: !DataProcessTypeEnum  
 
 
-# Represents a computational process receiving data granules from stream subscription and
-# produces output data products. Instance of DataProcessDefinition.
+# Represents a computational process that derives information from less refined information on a
+# continuous streaming basis or on-demand, including the generation of derived science data products.
 DataProcess: !Extends_TaskableResource
   input_subscription_id: ""
   process_id: ""

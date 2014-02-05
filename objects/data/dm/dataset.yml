@@ -1,14 +1,16 @@
 # Represents a possibly open-ended coverage of science data that may be persistent.
 Dataset: !Extends_InformationResource
-  datastore_name: ""        # the couch datastore name
+  # (SYS) The system datastore name - UNUSED, REMOVE
+  datastore_name: ""
+  # (SYS) The system datastore view name - UNUSED, REMOVE
   view_name: ""
-  primary_view_key: ""      # the primary key to access this dataset from the primary view
+  # (SYS) The primary key to access this dataset from the primary view - UNUSED, REMOVE
+  primary_view_key: ""
+  # (SYS) - UNUSED, REMOVE
   registered: False
+  # (SYS) Describes the parameters used by the coverage.
   parameter_dictionary: {}
+  # (SYS) Describes the temporal domain used to represent the coverage.
   temporal_domain: {}
+  # (SYS) Describes the spatial domain used to represent the coverage.
   spatial_domain: {}
-
-
-
-
-

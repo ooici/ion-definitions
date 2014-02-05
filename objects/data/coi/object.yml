@@ -1,28 +1,20 @@
-# Enum for the different categories of object types
+# Enumerates the different categories of object types
 ObjectTypeEnum: !enum (values=(OBJECT, ENUM), default=OBJECT)
 ---
 
-
-# Specifies a type of ION object.
+# Specifies a type of system known object.
 ObjectType: !Extends_InformationResource
-
   # The language of object specification. For future extensibility
   definition_type: "ion_obj_yml_1"
-
   # The actual object specification
   definition: ""
-
   # Used to sort multiple object type definitions to maintain dependencies
   definition_order: 0
-
   # The class of object (e.g is it an enum or a content object)
   object_type: !ObjectTypeEnum
-
   # The version of the object definition. DON'T SET. For future extensibility.
   object_version: 1
-
 ---
-
 
 #This object contains additional information needed to create or update generic resources
 #@OriginResourceType=Resource
@@ -31,5 +23,3 @@ GenericPrepareSupport: !Extends_ResourcePrepareSupport
   create_request: !GenericServiceRequest
   update_request: !GenericServiceRequest
   associations: {}
-
-

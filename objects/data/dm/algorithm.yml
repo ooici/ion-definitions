@@ -1,4 +1,4 @@
-# A resource type which allows the definition of a criteria to filter events and streams
+# UNUSED, REMOVE - A resource type which allows the definition of a criteria to filter events and streams
 # so that special action can be taken for events or streams that satisfy the criteria
 Algorithm: !Extends_InformationResource
   query_statement: ""  # The query statement that provides a value or range against which we check parameters

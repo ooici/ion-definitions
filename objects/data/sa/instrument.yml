@@ -1,74 +1,99 @@
 # Represents a physical package with a manufacturer, model, and serial number, containing one to many
 # sensors that communicate through a single onboard data interface.
 InstrumentDevice: !Extends_Device
+  # Identifier of hard-coded operating system in unit
   firmware_version: ""
-  #datum_characterization: "" #later will be an object
+  # Version of the hardware
   hardware_version: ""
-  # The date of the last instrument calibration, expressed in ISO format. Manually managed in R2.
+  # The date of the last instrument calibration, expressed in ISO format.
   last_calibration_datetime: ""
-
-
-
-
 ---
+
+# Enumerates all possible primary instrument interfaces
 PrimaryInterface: !enum (values=(RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE), default=RS232)
-
 ---
+
 # Specifies a distinguished type of instruments, derived from the manufacturer's
 # model number, based on common attributes.
 InstrumentModel: !Extends_DeviceModel
-  instrument_family: ""     # DEPRECATED - remove after UI DB update
-  family_id: ""   # Code for instrument family (from SAF). values= CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL, default=CAM
-  family_name: ""   # Name of instrument family (from SAF)
-  class_id: ""   # Code for instrument class (from SAF)
-  class_name: ""   # Name of instrument class (from SAF)
-  class_alternate_name: ""   # Alternate name of instrument class (from SAF)
-  class_description: ""   # Description for instrument class (from SAF)
-  series_id: ""   # Code for instrument series (from SAF)
-  series_name: ""   # Name of instrument series (from SAF)
-  configuration: ""  # Instrument series variant (from SAF)
-  subseries_id: ""   # Code for instrument subseries (from SAF)
-  subseries_name: ""   # Name of instrument subseries (from SAF)
-  ooi_make_model: ""    #  Model makemodel code (from SAF)
+  # DEPRECATE, REMOVE - the family of instrument
+  instrument_family: ""
+  # The family of instrument (from SAF).
+  # Codelist: CAM, CO2, CTD, DO2, FDC, FLO, HYD, IES, MET, MSP, NIT, NUT, OBS, OPT, PRS, RAS, SFL, VEL, WAV, ZPL
+  family_id: ""
+  # Name of instrument family (from SAF)
+  family_name: ""
+  # Code for instrument class (from SAF)
+  class_id: ""
+  # Name of instrument class (from SAF)
+  class_name: ""
+  # Alternate name of instrument class (from SAF)
+  class_alternate_name: ""
+  # Description for instrument class (from SAF)
+  class_description: ""
+  # Code for instrument series (from SAF)
+  series_id: ""
+  # Name of instrument series (from SAF)
+  series_name: ""
+  # Instrument series variant (from SAF)
+  configuration: ""
+  # Code for instrument subseries (from SAF)
+  subseries_id: ""
+  # Name of instrument subseries (from SAF)
+  subseries_name: ""
+  #  Model makemodel code (from SAF)
+  ooi_make_model: ""
 
+  # Default rate at which bits are sent over RS232 interface
   baud_rate_default: ""
-  # Polled vs...
+  # Polled vs ...
   mixed_sampling_mode: True
-  # Can you manage the system while it is operating
+  # Can you manage the instrument while it is operating
   inline_management: True
+  # Manufacturer's specifications of clock drift rate
   clock_max_drift: 0.0
+  # Notes on real-time clock
   clock_notes: ""
+  # Maximum depth for correct functioning (meters)
   operational_depth_maximum: 0.0
+  # Maximum depth beyond which instrument may be damaged (meters)
   survival_depth_maximum: 0.0
+  # Can system store data internally?
   internal_data_storage: True
-  # time system must be on before sampling.
+  # Time system must be on before sampling.
   required_on_time: ""
+  # Required power source is external or internal
   power_source: ""
+  # Any notes about electrical attributes or characteristics
   electrical_notes: ""
+  # Amount of current drawn by the instrument on standby
   hotel_current: ""
+  # Is there an inductive modem in the unit?
   integrated_inductive_modem_available: True
+  # Is there an internal battery?
   internal_battery: True
-  # minimum voltage supported by internal power supply
+  # Minimum voltage supported by internal power supply
   power_supply_voltage_minimum: 0.0
-  # maximum voltage supported by internal power supply
+  # Maximum voltage supported by internal power supply
   power_supply_voltage_maximum: 0.0
-  #instrument_class: ""  # values=OPTAA, CAMDS, CAMHD, CTDAV, CTDBP, CTDGV, CTDMO, CTDPF, PPSDN, OTISF, FLORT, FLORD, FDCHP, FDCLP, HYDBB, HYDLF, HPIES, MASSP, METBK, NUTR4, NUTNR, DOFST, DOSTA, PARAD, PCO2A, PCO2W, PHSEN, ZPLSC, ZPLSG, BOTPT, PRESF, PREST, OSBSBB, OBSBK, OBSSP, OBSSK, SPKIR, THSPH, TRHPH, TMPSF, VELPT, VELPT, VEL3D, ADCPT, ADCPV, ADCPS, ADCPA, OSMOI, RASFL, WAVSS, default=OPTAA
-  #data_record_description: "" #later will be an object
-  # the principal interface by which the instrument communicates (typically via its platform) with OOI
-  primary_interface: !PrimaryInterface   # values=RS232, RS245, TCPIP, TTL, ETHER, ACOUS, INDUCT, USB, IE1394, BLUE2TH, REMOVABLE, default=RS232
-  #secondary_interface: []
-  #baud_supported: []
-  #writeable_storage: !enum (name=WriteableStorageType, values=(NONE, PUCK, OTHER), default=NONE)
+  # The principal interface by which the instrument communicates (typically via its platform) with OOI
+  # as PrimaryInterface value.
+  primary_interface: !PrimaryInterface
+  # A list of instrument classes this instrument model can support
   #@ContentType=str
-  instrument_classes_supported: []  # The list of instrument classes this instrument model can support
+  instrument_classes_supported: []
 
-  reference_designator: ""  # OOI reference designator
+  # (SYS) UNUSED, REMOVE. - OOI reference designator (does not make sense here)
+  reference_designator: ""
 
 
 # Defines an agent/driver combination compatible with a specific instrument model.
 InstrumentAgent: !Extends_DeviceAgent
 
+
 # Describes parameters for an instance of an instrument agent for a specific device.
 InstrumentAgentInstance: !Extends_AgentInstance
+  # Contains configuration for accessing the instrument specific port agent
   port_agent_config: {}
+  # Contains configuration for the instrument agent and agent driver start
   startup_config: {}

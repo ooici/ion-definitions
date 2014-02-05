@@ -161,6 +161,16 @@ methods:
     out:
       data_process_id: ""
 
+  create_data_process_new:
+    docstring: Create an instance or realization of a data process definition.
+    in:
+      data_process_definition_id: ""
+      in_data_product_ids: []
+      out_data_product_ids: []
+      configuration: {}
+    out:
+      data_process_id: ""
+
   read_data_process:
     docstring: Reads a data process resource
     in:

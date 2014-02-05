@@ -247,6 +247,32 @@ InformationContentAccessedEvent: !Extends_InformationContentEvent
   access_params: {}
 
 
+
+# ------------------------------------------------------------------------------------
+# Data Process Events
+# Events about data processes and data process definitions
+#
+# origin: set to the data process id
+# origin_type: the type of resource
+# ------------------------------------------------------------------------------------
+
+# Base type of events related to data processes
+DataProcessEvent: !Extends_Event
+    # The origin is a data process (resource) id
+
+DataProcessStatusType: !enum (values=(NORMAL, ERROR, OFFLINE), default=NORMAL)
+
+---
+
+
+# To be used by transforms monitoring the health of data producers to report the status of the producers
+DataProcessStatusEvent: !Extends_DataProcessEvent
+  status: !DataProcessStatusType
+
+
+
+
+
 # ------------------------------------------------------------------------------------
 #                                  Infrastructure Level Events
 # ------------------------------------------------------------------------------------

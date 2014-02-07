@@ -188,6 +188,7 @@ methods:
       required by the transform worker process.
     in:
       stream_id: ""
+      worker_process_id: ""
     out:
       data_process_details: {}
     throws:

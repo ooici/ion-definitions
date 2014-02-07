@@ -168,6 +168,8 @@ methods:
       in_data_product_ids: []
       out_data_product_ids: []
       configuration: {}
+      argument_map: {}
+      out_param_name: ""
     out:
       data_process_id: ""
 

@@ -182,6 +182,17 @@ methods:
     throws:
       NotFound: If the data process doesn't exist
 
+  read_data_process_for_stream:
+    docstring: |
+      Reads a data process resource associated with a stream. Returns details
+      required by the transform worker process.
+    in:
+      stream_id: ""
+    out:
+      data_process_details: {}
+    throws:
+      NotFound: If the data process doesn't exist
+
   delete_data_process:
     docstring: Deletes an instance of a data process
     in:

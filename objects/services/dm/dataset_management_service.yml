@@ -59,11 +59,11 @@ methods:
       NotFound: if dataset does not exist
 #--------
 
-  add_parameter:
+  add_parameter_to_dataset:
     docstring: Adds a parameter to a dataset
     in:
-      dataset_id: ""
       parameter_context_id: ""
+      dataset_id: ""
     out:
       success: True
 

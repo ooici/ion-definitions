@@ -57,6 +57,15 @@ methods:
     out:
     throws:
       NotFound: if dataset does not exist
+#--------
+
+  add_parameter_to_dataset:
+    docstring: Adds a parameter to a dataset
+    in:
+      parameter_context_id: ""
+      dataset_id: ""
+    out:
+      success: True
 
 #--------
 

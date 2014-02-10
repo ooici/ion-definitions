@@ -30,22 +30,17 @@ system:
   # True is Real, False is fake
   smtp: False
 
-  # Use ElasticSearch ? (also set bootstrap.use_es if the container should build
-  # the search indices
-  elasticsearch: False
-
   # Indicates whether policy should be loaded during system bootstrap (False is for development only)
   load_policy: False
 
-  # The base web ui URL
+  # The base web UI URL
   web_ui_url: http://localhost:3000/
 
 
 bootstrap:
-  # Launches a bootstrap instance to build the search indices.
-  use_es: False
   # Launches a registration worker to register DAP datasets with PyDAP
   use_pydap: False
+
 
 # ----------------------------------------------------------------------------------
 # The "server" root entry defines profiles for connections/credentials TO external servers
@@ -108,22 +103,6 @@ server:
     port: 25
     sender: data_alerts@oceanobservatories.org
     password: ""
-  elasticsearch:
-    # Search index server
-    type:           elasticsearch
-    host:           localhost
-    port:           9200
-    timeout:        10
-    shards:         1        # Defines the default number of shards for indexes
-    replicas:       0        # Defines the default number of replicas for each shard
-    river_shards:   1        # Defines the number of shards for the _river
-    river_replicas: 0        # Defines the number of replicas (important) for the _river
-                             # This number should be the number of nodes running exactly
-# Example of production-like configuration
-#    shards: 5
-#    replicas: 1
-#    river_shards: 5
-#    replicas: 1
   #oms event receiver currently co-locates within service gateway
   oms:
     host: localhost
@@ -355,13 +334,13 @@ service:
                               #no trailing slash
 
   directory:
-    default_uispecs_url: "https://userexperience.oceanobservatories.org/database-exports/"
+    default_uispecs_url: "http://userexperience.oceanobservatories.org/database-exports/Stable"
 
   ingestion:
     ignore_gaps: false
 
   discovery:
-    search_buffer_size: 1048576
+    max_search_results: 250
 
   qc_processing:
     # Run every N hours

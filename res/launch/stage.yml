@@ -11,7 +11,6 @@ version: 0.2
 
 config:
   bootstrap:
-    use_es: false
     use_pydap: true
   container:
     exchange:
@@ -31,12 +30,6 @@ config:
     receive:
       timeout: 60
   server:
-    elasticsearch:
-      host: es.s.oceanobservatories.org
-      shards: 5
-      replicas: 1
-      river_shards: 1
-      river_replicas: 2
     erddap:
       host: erddap.s.oceanobservatories.org
       port: 8080
@@ -51,7 +44,6 @@ config:
       datasource_cache_dir: /ion-stage/r2/dsastore
   system:
     web_ui_url: http://ion-stage.oceanobservatories.org/
-    elasticsearch: true
     smtp: true
     load_policy: true
   processdispatcher:

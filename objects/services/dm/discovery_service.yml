@@ -5,9 +5,38 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+OV+Discovery+Service
 
-dependencies: [resource_registry,catalog_management, index_management]
+dependencies: [resource_registry, catalog_management, index_management]
 
 methods:
+  # -----------------
+  # Query operations
+
+  query:
+    docstring: |
+      Issue a query against the indexes as specified in the query, applying filters and operators
+      accordingly. The query format is a structured dict.
+      See the query format definition: https://confluence.oceanobservatories.org/display/CIDev/Discovery+Service+Query+Format
+    in:
+      query: {}
+      id_only: True
+    out:
+      results: []
+
+  parse:
+    docstring: |
+      Parses a given string request and assembles the query, processes the query and returns the results of the query.
+      This is the primary means of interfacing with the search features in discovery.
+      See the query language definition: https://confluence.oceanobservatories.org/display/CIDev/Discovery+Service+Query+Format
+    in:
+      search_request: ""
+      id_only: True
+    out:
+      results: []
+
+
+  # -----------------
+  # View management. Views are persisted parameterizable queries
+
   create_view:
     docstring: |
       Creates a view which has the specified search fields, the order in which the search fields are presented
@@ -17,7 +46,6 @@ methods:
       @param fields Search fields
       @param order List of fields to determine order of precendence in which the results are presented
       @param filter Simple term filter
-    
     in:
       view_name:   ""
       description: ""
@@ -27,186 +55,23 @@ methods:
     out:
       view_id:     ""
 
-
   read_view:
+    docstring: Read a View resource
     in:
       view_id:     ""
     out:
       view:        !View
 
   update_view:
+    docstring: Update a View resource
     in:
       view:        !View
     out:
       success:     True
   
   delete_view:
+    docstring: Delete a View resource
     in:
       view_id:     ""
     out:
       success:     True
-
-  list_catalogs:
-    in:
-      view_id:     ""
-    out:
-      catalogs:    []
-  # -----------------
-  # --- Query Methods ---
-
-  query:
-    in: 
-      query: {}
-      id_only: True
-    out:
-      results: {}
-
-  query_couch:
-    docstring: |
-      Queries against a CouchDBIndex are performed here.  
-    in: 
-      index_id: ""
-      key:      ""
-      limit:    0
-      offset:   0
-      id_only:  True
-    out:
-      results:  [] 
-
-  traverse:
-    docstring: Breadth-first traversal of the association graph for a specified resource.
-    in:
-      resource_id: ""
-    out:
-      resources: []
-
-  iterative_traverse:
-    docstring: Iterative breadth-first traversal of the association graph for the specified resource.
-    in:
-      resource_id: ""
-      limit: -1
-    out:
-      resources: []
-
-  intersect:
-    docstring: The intersection between two sets of resources.
-    in:
-      left: []
-      right: []
-    out:
-      result: []
-
-  union:
-    dosctring: The union between two sets of resources.
-    in: 
-      left: []
-      right: []
-    out:
-      result: []
-
-  parse:
-    dosctring: |
-      Parses a given string request and assembles the query, processes the query and returns the results of the query.
-      This is the primary means of interfacing with the search features in discovery.
-      See the formal language definition: https://confluence.oceanobservatories.org/display/CIDev/Pyon+Discovery+Query+DSL
-    in: 
-      search_request: ''
-      id_only: True
-    out:
-      success: []
-
-  query_request:
-    docstring: Processes a single portion of a query.
-    in: 
-      query: {}
-      limit: 0
-      id_only: False
-    out:
-      results: []
-
-  query_term:
-    docstring: A term search which supports wildcards.
-    in:
-      source_id: ""
-      field: ""
-      value: ""
-      fuzzy: False
-      match: False
-      order: {}
-      limit: 0
-      offset: 0
-      id_only: False
-    out:
-      results: []
-
-  query_range:
-    docstring: A ranged search for fields with numbers
-    in:
-      source_id: ""
-      field: ""
-      from_value: Null
-      to_value: Null
-      order: {}
-      limit: 0
-      offset: 0
-      id_only: False
-    out:
-      results: []
-
-  query_association:
-    docstring: Returns the list of all resources belonging to the specified resource.
-    in:
-      resource_id: ""
-      limit: 0
-      id_only: False
-    out:
-      results: []
-
-  query_geo_distance:
-    docstring: Searches for resources based on the distance from an origin.
-    in:
-      source_id: ""
-      field: ""
-      origin: []
-      distance: ""
-      units: ""
-      order: {}
-      limit: 0
-      offset: 0
-      id_only: False
-    out:
-      results: []
-
-  query_geo_bbox: 
-    docstring: Searches for resources based on a bounding box.
-    in:
-      source_id: ""
-      field: ""
-      top_left: []
-      bottom_right: []
-      order: {}
-      limit: 0
-      offset: 0
-      id_only: False
-    out:
-      results: []
-
-  query_collection:
-    docstring: Returns the list of all resources that belong to the specified collection.
-    in:
-      collection_id: ""
-      id_only: False
-    out:
-      results: []
-
-  request:
-    docstring: |
-      Process request objects.
-      Request objects are the collection of parameters and tokens assembled by the parser.
-    in:
-      query: {}
-      id_only: True
-    out:
-      results: []
-
-      

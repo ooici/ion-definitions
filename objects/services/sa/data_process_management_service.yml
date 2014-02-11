@@ -122,6 +122,13 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  inspect_data_process_definition:
+    docstring: Returns the source code of the data process definition
+    in:
+      data_process_definition_id: ""
+    out:
+      source_code: ""
+
   # -----------------
 
   create_transform_function:

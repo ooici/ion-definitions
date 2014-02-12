@@ -16,22 +16,28 @@ methods:
       Issue a query against the indexes as specified in the query, applying filters and operators
       accordingly. The query format is a structured dict.
       See the query format definition: https://confluence.oceanobservatories.org/display/CIDev/Discovery+Service+Query+Format
+      Returns a dictionary that contains a 'results' key with the array of query results and metadata
+      about the query.
     in:
       query: {}
       id_only: True
+      count: False
     out:
-      results: []
+      results: {}
 
   parse:
     docstring: |
       Parses a given string request and assembles the query, processes the query and returns the results of the query.
       This is the primary means of interfacing with the search features in discovery.
       See the query language definition: https://confluence.oceanobservatories.org/display/CIDev/Discovery+Service+Query+Format
+      Returns a dictionary that contains a 'results' key with the array of query results and metadata
+      about the query.
     in:
       search_request: ""
       id_only: True
+      count: False
     out:
-      results: []
+      results: {}
 
 
   # -----------------

@@ -23,7 +23,7 @@ methods:
       id_only: True
       search_args: {}
     out:
-      results: {}
+      results: []
 
   parse:
     docstring: |
@@ -37,7 +37,7 @@ methods:
       id_only: True
       search_args: {}
     out:
-      results: {}
+      results: []
 
 
   # -----------------

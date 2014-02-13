@@ -19,6 +19,7 @@ methods:
     in:
       query: {}
       id_only: True
+      search_args: {}
     out:
       results: []
 
@@ -30,6 +31,7 @@ methods:
     in:
       search_request: ""
       id_only: True
+      search_args: {}
     out:
       results: []
 

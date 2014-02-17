@@ -78,6 +78,11 @@ capabilities:
     class: pyon.ion.state.StateRepository
     field: state_repository
     depends_on: DATASTORE_MANAGER
+  COVERAGE_METADATA_STORE:
+    docstring: Provides coverage metadata management for container processes
+    class: pyon.datastore.coverage_metadata.CoverageMetadataStore
+    field: coverage_metadata
+    depends_on: DATASTORE_MANAGER
   STATS_MANAGER:
     docstring: Controls sFlow stat emission
     class: pyon.util.sflow.SFlowManager

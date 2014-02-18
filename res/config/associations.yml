@@ -79,6 +79,10 @@ AssociationDefinitions:
     domain: [DataProductCollection]
     range: [DataProduct]
     docstring: References a version of a DataProduct. The first version is created with the DataProductCollection.
+  - predicate: hasReplay
+    domain: [DataProcess]
+    range: [Replay]
+    docstring: Links a data process to a replay
 # DM
   - predicate: hasArchive
     domain: [DataStore]

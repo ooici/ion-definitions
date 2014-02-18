@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Process+Management+Service
 
-dependencies: [resource_registry, data_product_management, data_acquisition_management, pubsub_management, process_dispatcher, dataset_management]
+dependencies: [resource_registry, data_product_management, data_acquisition_management, pubsub_management, process_dispatcher, dataset_management, data_retriever]
 
 methods:
   create_data_process_definition:

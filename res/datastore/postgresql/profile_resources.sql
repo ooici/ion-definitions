@@ -1,8 +1,10 @@
 -- Resource tables
 CREATE TABLE "%(ds)s" (id varchar(300) PRIMARY KEY, rev int, doc json,
-    type_ varchar(80), lcstate varchar(10), availability varchar(14), name varchar(300),
+    type_ varchar(80), lcstate varchar(10), availability varchar(14), visibility int,
+    name varchar(300),
     ts_created varchar(14), ts_updated varchar(14),
-    vertical_range numrange, temporal_range numrange);
+    vertical_range numrange, temporal_range numrange,
+    deleted boolean);
 
 SELECT AddGeometryColumn('public', '%(ds)s', 'geom', 4326, 'POINT', 2);
 
@@ -36,6 +38,8 @@ CREATE INDEX "%(ds)s_type_idx" ON "%(ds)s" (type_);
 CREATE INDEX "%(ds)s_lcstate_idx" ON "%(ds)s" (lcstate);
 
 CREATE INDEX "%(ds)s_availability_idx" ON "%(ds)s" (availability);
+
+CREATE INDEX "%(ds)s_visibility_idx" ON "%(ds)s" (visibility);
 
 CREATE INDEX "%(ds)s_name_idx" ON "%(ds)s" (name);
 

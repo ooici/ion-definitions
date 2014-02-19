@@ -1,3 +1,7 @@
+# Enumerates the possible visibility levels of a resource.
+ResourceVisibilityEnum: !enum (values=(PUBLIC, REGISTERED, FACILITY, OWNER), default=PUBLIC)
+---
+
 # Represents an entity known to the system that provides capability and has an identity
 # and a life cycle. Resources can be associated with other resources. Abstract base type and type root.
 # The following are internal attributes common to all objects:
@@ -9,10 +13,12 @@ Resource:
   name: ""
   # A more verbose description of the resource
   description: ""
-  # Resource life cycle state
+  # Resource life cycle state. Codeset: DRAFT, PLANNED, DEVELOPED, INTEGRATED, DEPLOYED, RETIRED, DELETED
   lcstate: "DRAFT"
-  # Resource availability state
+  # Resource availability state. Codeset: PRIVATE, DISCOVERABLE, AVAILABLE
   availability: "PRIVATE"
+  # Resource visibility level
+  visibility: !ResourceVisibilityEnum
   # Timestamp when resource object was created (str in millis in UNIX epoch)
   ts_created: ""
   # Timestamp when resource object was last updated (str in millis in UNIX epoch)

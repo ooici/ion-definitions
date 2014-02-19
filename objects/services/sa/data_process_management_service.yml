@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Process+Management+Service
 
-dependencies: [resource_registry, data_product_management, data_acquisition_management, pubsub_management, process_dispatcher, dataset_management]
+dependencies: [resource_registry, data_product_management, data_acquisition_management, pubsub_management, process_dispatcher, dataset_management, data_retriever]
 
 methods:
   create_data_process_definition:
@@ -172,8 +172,8 @@ methods:
     docstring: Create an instance or realization of a data process definition.
     in:
       data_process_definition_id: ""
-      in_data_product_ids: []
-      out_data_product_ids: []
+      inputs: []
+      outputs: []
       configuration: {}
       argument_map: {}
       out_param_name: ""

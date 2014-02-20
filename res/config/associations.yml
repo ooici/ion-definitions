@@ -14,6 +14,10 @@ AssociationDefinitions:
     domain: [WorkflowDefinition]
     range: [DataProcessDefinition]
     docstring: References a DataProcessDefinition (type) used by WorkflowDefinition (type)
+  - predicate: hasRealtimeVisualization
+    domain: [DataProduct]
+    range: [RealtimeVisualization]
+    docstring: Connects a data product to a realtime visualization of that data product
 #SA
   - predicate: hasDataset
     domain: [DataProducer, DataProduct]
@@ -121,7 +125,7 @@ AssociationDefinitions:
     range: [NotificationRequest]
     docstring: References a NotificationRequest (standing notification rule) for a user.
   - predicate: hasSubscription
-    domain: [DataProcess, IngestionConfiguration, ExchangeName]
+    domain: [DataProcess, IngestionConfiguration, ExchangeName, RealtimeVisualization]
     range: [Subscription]
     docstring: References the Subscription used by the ingenestion system
   - predicate: hasOutStream
@@ -129,7 +133,7 @@ AssociationDefinitions:
     range: [Stream]
     docstring: References one Stream on which a Transform publishes on
   - predicate: hasStream
-    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, Dataset, ExchangePoint]
+    domain: [Subscription,Replay, DataProcess, DataProduct, DataProductVersion, Dataset, ExchangePoint, RealtimeVisualization]
     range: [Stream]
     docstring: References a Stream used by a resource as input (or output)
   - predicate: hasStreamDefinition

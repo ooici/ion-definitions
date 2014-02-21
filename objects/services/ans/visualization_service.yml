@@ -4,7 +4,7 @@ name: visualization
 
 docstring: Service is responsible for mantaining user sessions and collecting requested viz products, preparing them before returning them to the web client
 
-dependencies: [resource_registry, pubsub_management, transform_management, data_retriever, dataset_management, data_process_management, workflow_management]
+dependencies: [resource_registry, pubsub_management, data_product_management, data_retriever, dataset_management, process_dispatcher]
 
 
 methods:

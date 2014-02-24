@@ -9,17 +9,8 @@ spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+P
 dependencies: [resource_registry, data_product_management, data_acquisition_management, pubsub_management, process_dispatcher, dataset_management, data_retriever]
 
 methods:
-  create_data_process_definition:
-    docstring: Create a resource which defines the processing of a stream, from transform definition to scheduling
-    in:
-      data_process_definition: !DataProcessDefinition
-    out:
-      data_process_definition_id: ""
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
-      NotFound: object with specified id does not exist
 
-  create_data_process_definition_new:
+  create_data_process_definition:
     docstring: Create a resource which defines the processing of a stream, from transform definition to scheduling
     in:
       data_process_definition: !DataProcessDefinition
@@ -157,18 +148,8 @@ methods:
 
 
   # -----------------
-  
-  create_data_process:
-    docstring: Create an instance or realization of a data process definition.
-    in:
-      data_process_definition_id: ""
-      in_data_product_ids: []
-      out_data_product_ids: []
-      configuration: {}
-    out:
-      data_process_id: ""
 
-  create_data_process_new:
+  create_data_process:
     docstring: Create an instance or realization of a data process definition.
     in:
       data_process_definition_id: ""

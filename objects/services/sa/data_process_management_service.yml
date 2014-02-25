@@ -221,15 +221,6 @@ methods:
 
   # -----------------
 
-  update_data_process_inputs:
-    docstring: Update the subscriptions of a data process
-    in: 
-      data_process_id: ""
-      in_stream_ids: []
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
   #@OperationVerb=DELETE
   force_delete_data_process:
     in:
@@ -258,26 +249,8 @@ methods:
     out:
       data_process_list: []
 
-  # -----------------
 
-  attach_process:
-    in:
-      process: ""
-    out:
-    throws:
-      BadRequest: if object does not have _id or _rev attribute
 
-  # -----------------
-
-  validate_compatibility:
-    in:
-      in_data_product_ids: []
-      out_data_product_ids: []
-      routes: {}
-    out:
-      compatible: False
-    throws:
-      BadRequest: If a data product identifier does not correspond to a resource in the system.
 
  
 

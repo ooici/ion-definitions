@@ -12,14 +12,6 @@ DataProcessTypeEnum: !enum (values=(PARAMETER_FUNCTION, TRANSFORM_PROCESS, RETRI
 DataProcessDefinition: !Extends_InformationResource
   data_process_type: !DataProcessTypeEnum
 
-  # ---  DEPRECATED FIELDS ---
-  # (SYS) module for source code
-  module: ""
-  # (SYS) class for source code
-  class_name: ""
-  # (SYS) uri of transform egg
-  uri: ""
-
   parameters: {}
 
   output_bindings: {}

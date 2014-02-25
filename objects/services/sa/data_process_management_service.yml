@@ -125,7 +125,7 @@ methods:
   create_transform_function:
     docstring: Creates a new transform function
     in:
-      transform_function: {}
+      transform_function: !TransformFunction
     out:
       transform_function_id: ""
 
@@ -134,7 +134,7 @@ methods:
     in:
       transform_function_id: ""
     out: 
-      transform_function: {}
+      transform_function: !TransformFunction
     throws:
       NotFound: If TransformFunction does not exist
 

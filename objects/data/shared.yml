@@ -228,6 +228,11 @@ Device: !Extends_TaskableResource
   # Additional attribute values applicable for the device's model as key-value pairs.
   # The attribute names must align with the DeviceModel:custom_attributes:name field for this type of device.
   custom_attributes: {}
+  # Location of device during a deployment
+  geospatial_bounds: !GeospatialBounds
+  #Begin and end timestamp for this device
+  temproal_bounds: !TemporalBounds
+
 
 
 # Represents a grouping of devices by common characteristics, e.g. a vendor's make and model. Abstract base type.

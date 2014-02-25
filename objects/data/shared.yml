@@ -231,7 +231,7 @@ Device: !Extends_TaskableResource
   # Location of device during a deployment
   geospatial_bounds: !GeospatialBounds
   #Begin and end timestamp for this device
-  temproal_bounds: !TemporalBounds
+  temporal_bounds: !TemporalBounds
 
 
 

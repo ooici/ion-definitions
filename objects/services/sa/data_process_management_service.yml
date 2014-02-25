@@ -191,13 +191,6 @@ methods:
     throws:
       BadRequest: If the data process doesn't exist
 
-  activate_data_process:
-    docstring: Activates an instance of a data process
-    in:
-      data_process_id: ""
-    out:
-      success: True
-
   deactivate_data_process:
     docstring: Deactivates an instance of a data process
     in:

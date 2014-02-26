@@ -16,6 +16,9 @@ DataProcessDefinition: !Extends_InformationResource
 
   output_bindings: {}
 
+  # this attribute is user defined and maintained.
+  version_label: ""
+
 
 # Represents a computational process that derives information from less refined information on a
 # continuous streaming basis or on-demand, including the generation of derived science data products.

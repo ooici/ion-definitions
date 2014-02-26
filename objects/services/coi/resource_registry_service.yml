@@ -369,6 +369,7 @@ methods:
     in:
       subjects: []
       id_only: False
+      predicate: ""
     out:
       results: []
     throws:
@@ -381,6 +382,7 @@ methods:
     in:
       objects: []
       id_only: False
+      predicate: ""
     out:
       results: []
     throws:

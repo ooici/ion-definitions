@@ -233,7 +233,7 @@ cc:
     heartbeat_proc_count_threshold: 20
 
 validate:
-  setattr: True
+  setattr: False
 
 endpoint:
   receive:

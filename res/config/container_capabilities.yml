@@ -80,7 +80,7 @@ capabilities:
     depends_on: DATASTORE_MANAGER
   COVERAGE_METADATA_STORE:
     docstring: Provides coverage metadata management for container processes
-    class: pyon.datastore.coverage_metadata.CoverageMetadataStore
+    class: pyon.ion.coverage.CoverageMetadataStore
     field: coverage_metadata
     depends_on: DATASTORE_MANAGER
   STATS_MANAGER:

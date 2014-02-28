@@ -7,6 +7,7 @@ LifecycleResourceTypes:
   InstrumentAgent: ResourceLCSM
   PlatformDevice: ResourceLCSM
   PlatformAgent: ResourceLCSM
+  ExternalDatasetAgent: ResourceLCSM
 
   Deployment: SimplifiedLCSM
 
@@ -17,21 +18,54 @@ LifecycleWorkflowDefinitions:
 
   # The standard workflow with all states and transitions
   - name: ResourceLCSM
-    lcsm_class: pyon.ion.resource.CommonResourceLifeCycleSM
-    initial_state: DRAFT
+    lcsm_class: pyon.ion.resource.ResourceLifeCycleSM
+    initial_lcstate: DRAFT
     initial_availability: PRIVATE
+    lcstate_states: [DRAFT, PLANNED, DEVELOPED, INTEGRATED, DEPLOYED, RETIRED, DELETED]
+    lcstate_transitions:
+    - [DRAFT, plan, PLANNED]               # Transition: plan
+    - [DRAFT, develop, DEVELOPED]          # Transition: develop
+    - [PLANNED, develop, DEVELOPED]
+    - [INTEGRATED, develop, DEVELOPED]
+    - [DEPLOYED, develop, DEVELOPED]
+    - [DRAFT, integrate, INTEGRATED]       # Transition: integrate
+    - [PLANNED, integrate, INTEGRATED]
+    - [DEVELOPED, integrate, INTEGRATED]
+    - [DEPLOYED, integrate, INTEGRATED]
+    - [DRAFT, deploy, DEPLOYED]            # Transition: deploy
+    - [PLANNED, deploy, DEPLOYED]
+    - [DEVELOPED, deploy, DEPLOYED]
+    - [INTEGRATED, deploy, DEPLOYED]
+    - [DRAFT, retire, RETIRED]             # Transition: retire
+    - [PLANNED, retire, RETIRED]
+    - [DEVELOPED, retire, RETIRED]
+    - [INTEGRATED, retire, RETIRED]
+    - [DEPLOYED, retire, RETIRED]
+    - [DRAFT, delete, DELETED]             # Transition: delete
+    - [PLANNED, delete, DELETED]
+    - [DEVELOPED, delete, DELETED]
+    - [INTEGRATED, delete, DELETED]
+    - [DEPLOYED, delete, DELETED]
+    - [RETIRED, delete, DELETED]
+    availability_states: [PRIVATE, DISCOVERABLE, AVAILABLE]
+    availability_transitions:
+    - [PRIVATE, announce, DISCOVERABLE]
+    - [DISCOVERABLE, unannounce, PRIVATE]
+    - [AVAILABLE, unannounce, PRIVATE]
+    - [PRIVATE, enable, AVAILABLE]
+    - [DISCOVERABLE, enable, AVAILABLE]
+    - [AVAILABLE, disable, DISCOVERABLE]
 
   # A simplified workflow that does not use DRAFT, DEVELOPED and starts in PLANNED_AVAILABLE
   - name: SimplifiedLCSM
     based_on: ResourceLCSM
-    initial_state: PLANNED
+    initial_lcstate: PLANNED
     initial_availability: AVAILABLE
-    illegal_states: [DRAFT, DEVELOPED]
+    remove_states: [DRAFT, DEVELOPED]
 
-  # A simplified workflow that does not use DRAFT, DEVELOPED, INTEGRATED and starts in PLANNED_AVAILABLE state
+  # A simplified workflow that does not use DRAFT, DEVELOPED, INTEGRATED and starts in PLANNED/AVAILABLE state
   - name: InformationResourceLCSM
     based_on: ResourceLCSM
-    initial_state: PLANNED
+    initial_lcstate: PLANNED
     initial_availability: AVAILABLE
-    illegal_states: [DRAFT, DEVELOPED, INTEGRATED]
-
+    remove_states: [DRAFT, DEVELOPED, INTEGRATED]

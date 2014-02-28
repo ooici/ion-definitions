@@ -1,10 +1,11 @@
-# Place generic ION definitions here
-
+# Generic response object
 Response:
   code: 200
   body:
 
-# Associations refer to "subject" and "object" objects
+
+# A first class object creating a typed cross-reference between 2 resources. It references the subject resource by
+# id and type and the object resource by id and type and a predicate.
 Association:
   s: ""     # Subject ID
   st: ""    # Subject type
@@ -17,7 +18,7 @@ Association:
   retired: False     # Flag identifying retired associations
 
 
-
+# Represents the information to make a request to a service operation with predefined call arguments
 ServiceRequest:
   service_name: ""  #The name of the service
   service_operation: ""    #The name of the service operation

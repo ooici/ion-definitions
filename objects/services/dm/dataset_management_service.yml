@@ -155,6 +155,14 @@ methods:
     out:
       success: True
 
+  create_parameter:
+    docstring: |
+      Creates a parameter context using an IonObject
+    in:
+      parameter_context: !ParameterContext
+    out:
+      parameter_context_id: ""
+
 #--------
 
   read_parameter_context_by_name:

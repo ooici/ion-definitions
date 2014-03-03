@@ -26,6 +26,19 @@ ParameterDictionary: !Extends_InformationResource
 
 # Represents a calculation used to compute a derived parameter, e.g. for an L1 product or QC flag, that can
 # be executed within a coverage.
+
+---
+
+ParameterFunctionType: !enum (values=(PYTHON, NUMEXPR), default=PYTHON)
+
+---
+
 ParameterFunction: !Extends_InformationResource
-  parameter_function: {}
+  function_type: !ParameterFunctionType
+  # Either the function name for python functions or the expression for numexpr
+  function: ""
+  # the module
+  owner: ""
+  # function arguments
+  args: []
 

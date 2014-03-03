@@ -2,20 +2,47 @@
 # value, a variable describing the geospatial-temporal domain, a calibration coefficient or
 # a derived, computed value or QC flag.
 ParameterContext: !Extends_InformationResource
+  # Coverage model parameter context object dump
   parameter_context: {}
+  # Supposed to be a list of URLs, but for some reason the preload spreadsheet uses them for
+  # instrumetn identifiers
   reference_urls: []
+  # Options are
+  # - quantity
+  # - array<>
+  # - category<>
+  # - function
+  # - boolean
+  # - sparse
+  # - record<>
+  # - constant<>
   parameter_type: ""
+  # No purpose
   internal_name: ""
+  # Options are 
+  # [u]int<8|16|32|64>
+  # float<32|64>
+  # str
   value_encoding: ""
+  # Key-value dictionary of numeral keys and string values
   code_report: ""
+  # Scientific units (use 1 for non-scientific units)
   units: ""
+  # Default fill value for parameters
   fill_value: ""
+  # Descriptive name used for display purposes
   display_name: ""
+  # Parameter function reference
   parameter_function_id: ""
+  # Parameter map {argument_name : parameter_name}
   parameter_function_map: ""
+  # CF 1.6 standard_name, see http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/26/cf-standard-name-table.html
   standard_name: ""
+  # OOI Conventional Identifier (TEMPWAT, CTDMO etc.)
   ooi_short_name: ""
+  # Display precision, only affects presentation in the UI
   precision: ""
+  # Boolean for if the parameter should be visible in graphs and for download
   visible: True
 
 

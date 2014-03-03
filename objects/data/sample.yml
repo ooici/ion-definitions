@@ -15,9 +15,76 @@ SampleObject:
   another_enum: !enum (name=AnEnum, values=(VALUE1, VALUE2), default=VALUE2)
   # attribute can be of any type that extends Resource
   abstract_val: !InformationResource
+---
 
 SampleResource: !Extends_Resource
   num: 0
   other_field: ""
   list_element: []
   dict_element: {}
+
+---
+# objects below added for tests associated with schema version
+
+#@TypeVersion=2
+SampleResource_V2: !Extends_Resource
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+  new_attribute: {'key':'value'}
+
+#@TypeVersion=3
+SampleResource_V3: !Extends_Resource
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+  another_new_attribute: {'key':'new_value'}
+
+---
+SampleEvent: !Extends_Event
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+
+#@TypeVersion=2
+SampleEvent_V2: !Extends_Event
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+  new_attribute: {'key':'value'}
+
+#@TypeVersion=3
+SampleEvent_V3: !Extends_Event
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+  another_new_attribute: {'key':'new_value'}
+
+---
+SampleComplexEvent: !Extends_Event
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+  resource: {}
+
+#@TypeVersion=2
+SampleComplexEvent_V2: !Extends_Event
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+  new_resource: !SampleResource_V2
+
+#@TypeVersion=3
+SampleComplexEvent_V3: !Extends_Event
+  num: 0
+  other_field: ""
+  list_element: []
+  dict_element: {}
+  new_resource: !SampleResource_V3

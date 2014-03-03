@@ -3,6 +3,7 @@
 # See Events and Notification hierarchy here:
 #   https://confluence.oceanobservatories.org/display/syseng/CIAD+DM+SV+Events+and+Notifications
 #
+#@TypeVersion=1
 Event:
   origin: ""        # the origin of the event (content specific to subtype). Mostly a resource id
   origin_type: ""   # the type of origin (e.g. resource type, etc) or empty
@@ -11,7 +12,7 @@ Event:
   base_types: []    # List of event super types
   sub_type: ""      # A specialization of the event_type expressed by this object type (or empty)
   actor_id: ""      # The actor ID requesting the action causing the event
-
+  persisted_version: 1 # The last version in which the event instance was saved (persisted)
 
 # Object containing additional computed information about one Event
 EventComputedAttributes:

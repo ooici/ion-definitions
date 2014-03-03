@@ -8,6 +8,7 @@ ResourceVisibilityEnum: !enum (values=(PUBLIC, REGISTERED, FACILITY, OWNER), def
 # _id: A unique identifier that comes with every persisted object;
 # _rev: A revision identifier that comes with every persisted object;
 # type_: The object type
+#@TypeVersion=1
 Resource:
   # Human readable long name of the resource, e.g. for display in resource lists
   name: ""
@@ -27,6 +28,8 @@ Resource:
   alt_ids: []
   # (SYS) Additional attributes, e.g. from preload import
   addl: {}
+  # The last version in which the object was saved (persisted)
+  persisted_version: 1
 ---
 
 # Describes a resource that exists as an electronic artifact, such as science data,
@@ -171,6 +174,8 @@ ResourceContainer:
   resource: !Resource
   # An optional dict of names and associated objects to get other associations on the fly
   ext_associations: {}
+  # Tracks the version of this class
+  type_version: 1
 ---
 
 # A derived object containing common fields for all extended resource objects

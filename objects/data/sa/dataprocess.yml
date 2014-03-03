@@ -12,7 +12,8 @@ DataProcessTypeEnum: !enum (values=(PARAMETER_FUNCTION, TRANSFORM_PROCESS, RETRI
 DataProcessDefinition: !Extends_InformationResource
   data_process_type: !DataProcessTypeEnum
 
-  parameters: {}
+  #list of input parameters to this funcion
+  parameters: []
 
   output_bindings: {}
 

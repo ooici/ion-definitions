@@ -68,4 +68,5 @@ ParameterFunction: !Extends_InformationResource
   owner: ""
   # function arguments
   args: []
+  egg_uri: ""
 

@@ -3,14 +3,14 @@ CREATE TABLE "%(ds)s" (id text PRIMARY KEY, auto_flush_values text, brick_domain
 
 GRANT SELECT, INSERT, UPDATE, DELETE on "%(ds)s" TO ion;
 
-CREATE TABLE "%(ds)s_spans" (span_address text PRIMARY KEY, coverage_id text, spatial_geography geography, vertical_range numrange, time_range tsrange);
+CREATE TABLE "%(ds)s_spans" (span_address text PRIMARY KEY, coverage_id text, spatial_geometry geometry, vertical_range numrange, time_range tsrange);
 
 CREATE INDEX spans_time_idx on "%(ds)s_spans" (time_range);
 
-CREATE INDEX spans_spatial_idx on "%(ds)s_spans" (spatial_geography);
+CREATE INDEX spans_spatial_idx on "%(ds)s_spans" (spatial_geometry);
 
 CREATE INDEX spans_vertical_idx on "%(ds)s_spans" (vertical_range);
 
-CREATE INDEX spans_time_space_idx on "%(ds)s_spans" (time_range, spatial_geography);
+CREATE INDEX spans_time_space_idx on "%(ds)s_spans" (time_range, spatial_geometry);
 
 GRANT SELECT, INSERT, UPDATE, DELETE on "%(ds)s_spans" TO ion;

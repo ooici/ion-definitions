@@ -1,0 +1,6 @@
+# A resource to manage consistency between UI realtime subscriptions
+# and data products
+RealtimeVisualization: !Extends_InformationResource
+  visualization_parameters: {}
+  pid: ''
+

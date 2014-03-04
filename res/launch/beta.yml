@@ -43,7 +43,7 @@ config:
     dataset_agent:
       datasource_cache_dir: /ion-beta/r2/dsastore
   system:
-    web_ui_url: http://ion-beta.oceanobservatories.org/
+    web_ui_url: http://ooinet.oceanobservatories.org/
     smtp: true
     load_policy: true
   processdispatcher:

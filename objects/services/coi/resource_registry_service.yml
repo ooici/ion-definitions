@@ -80,8 +80,20 @@ methods:
   #@OperationVerb=RETIRE
   retire:
     docstring: |
-      Sets resource lifecycle state to retired.
-      Throws exception if object does not exist.
+      Sets resource lifecycle state to RETIRED.
+      Throws exception if object does not exist or state transition is not possible.
+    in:
+      #@ResourceId
+      resource_id: ""
+    out:
+    throws:
+      NotFound: object does not exist
+
+  #@OperationVerb=RETIRE
+  lcs_delete:
+    docstring: |
+      Sets resource lifecycle state to DELETED.
+      Throws exception if object does not exist or state transition is not possible.
     in:
       #@ResourceId
       resource_id: ""
@@ -357,6 +369,7 @@ methods:
     in:
       subjects: []
       id_only: False
+      predicate: ""
     out:
       results: []
     throws:
@@ -369,6 +382,7 @@ methods:
     in:
       objects: []
       id_only: False
+      predicate: ""
     out:
       results: []
     throws:

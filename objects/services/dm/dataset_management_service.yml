@@ -155,6 +155,14 @@ methods:
     out:
       success: True
 
+  create_parameter:
+    docstring: |
+      Creates a parameter context using an IonObject
+    in:
+      parameter_context: !ParameterContext
+    out:
+      parameter_context_id: ""
+
 #--------
 
   read_parameter_context_by_name:
@@ -170,12 +178,9 @@ methods:
 
   create_parameter_function:
     docstring: |
-      Creates a new parameter function resource based. This method accepts a dumped parameter function as its argument.
-      https://confluence.oceanobservatories.org/display/CIDev/Defining+Parameter+Functions
+      Creates a new parameter function resource.
     in:
-      name: ""
-      parameter_function: {}
-      description: ""
+      parameter_function: !ParameterFunction
     out:
       parameter_function_id: ""
 
@@ -194,6 +199,16 @@ methods:
       parameter_function_id: ""
     out:
       success: True
+
+#--------
+
+  load_parameter_function:
+    docstring: |
+      Creates a parameter function and data process definition resource from a preload row.
+    in:
+      row: {} # A row from the preload spreadsheet
+    out:
+      parameter_function_id: ""
 
 #--------
 

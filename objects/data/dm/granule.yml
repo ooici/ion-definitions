@@ -22,7 +22,7 @@ Granule:
   # References the stream definition for this stream
   stream_definition_id: ""
   # Contains the relevant parts of the stream definition
-  stream_definition: !StreamDefinition
+  stream_definition: {}
   # Defines the domain pertinent to this granule's data
   domain: []
   # Locates this granule's data content within the coverage domain

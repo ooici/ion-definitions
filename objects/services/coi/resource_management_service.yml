@@ -133,6 +133,27 @@ methods:
       NotFound: object with specified id does not exist
 
   # -----------------
+  # UI support for resources
+
+  get_org_resource_attributes:
+    docstring: |
+      For a given org, return a list of dicts with core resource attributes (_id, type_, name, description,
+      ts_created, ts_modified, lcstate, availability, visibility and alt_resource_type).
+      The returned list is ordered by name unless otherwise specified.
+      Supports pagination and white-list filtering if provided.
+    in:
+      org_id: ""
+      order_by: ""
+      type_filter: []
+      limit: 0
+      skip: 0
+    out:
+      resource_list: []
+    throws:
+      BadRequest: illegal arguments
+
+
+  # -----------------
   # Other common resource operations for any resource
 
   execute_lifecycle_transition:

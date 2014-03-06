@@ -1,0 +1,178 @@
+type: launch
+name: alpha
+version: 0.2
+
+#############################################################################
+# PYON CONFIGURATION
+#############################################################################
+
+# this configuration block is merged into a base pyon.yml including common
+# parameters like RabbitMQ and CouchDB blocks.
+
+config:
+  bootstrap:
+    use_pydap: true
+  container:
+    exchange:
+      names:
+        durable: true
+    filesystem:
+      root: /ion-alpha/r3/data
+      force_clean: false
+    sflow:
+      enabled: true
+      hsflowd_port: 36343
+    pydap_gateway:
+      web_server:
+        host: 0.0.0.0
+        port: 10999
+  endpoint:
+    receive:
+      timeout: 60
+  server:
+    erddap:
+      host: erddap.a3.oceanobservatories.org
+      port: 8080
+      type: erddap
+    pydap:
+      host: sg.a3.oceanobservatories.org
+      port: 10999
+    oms:
+      host: sg.a3.oceanobservatories.org
+  system:
+    web_ui_url: http://r3alpha.oceanobservatories.org/
+    smtp: true
+    load_policy: true
+  processdispatcher:
+    restart_throttling_config:
+        minimum_time_between_starts: 2
+#############################################################################
+## CEI BASE NODE
+##############################################################################
+basenodes:
+  basenode:
+    process_dispatcher:
+      replicas: 2
+    epum:
+      replicas: 2
+    provisioner:
+      replicas: 2
+
+
+#############################################################################
+## EXECUTION ENGINES
+##############################################################################
+
+execution_engines:
+  default:
+    base_need: 3
+    replicas: 4
+    slots: 25
+  service_gateway:
+    base_need: 4
+    config:
+      unique_key: ddns_hostname
+      unique_values: ${gateway_ddns_hosts}
+    replicas: 3
+    slots: 1
+  instrument_agent:
+    base_need: 2
+    replicas: 4
+    slots: 10
+  ingestion_worker:
+    base_need: 2
+    replicas: 4
+    slots: 10
+  visualization:
+    base_need: 2
+    replicas: 4
+    slots: 10
+
+default_execution_engine: default
+
+# mappings from process module paths to execution engine names. Process
+# # schedule requests which do not have an execution engine specified are
+# # matched against these mappings. Module paths are inherited, so for example
+# # "a.b" matches "a.b" and "a.b.c" and so forth. Matches are greedy.
+# process_engines:
+#   ion.services.something: some_other_engine
+#     ion.services.something.or_other: services
+process_engines:
+  ion.processes.data.ingestion: ingestion_worker
+  ion.agents.instrument: instrument_agent
+  ion.agents.platform: instrument_agent
+  ion.agents.data: instrument_agent
+  ion.processes.data.transforms.qc_post_processing: service_gateway
+  ion.processes.data.transforms.viz: visualization
+#############################################################################
+#  APPS
+#############################################################################
+
+app_defaults:
+  ha:
+    policy: npreserving
+    parameters:
+      preserve_n: 4
+
+# apps included below override the app_defaults block. apps present in the REL
+# but not below use the app_defaults block
+apps:
+
+  # bootstrap processes do not deploy with HA so we override the defaults
+  bootstrapper1: {}
+  bootstrapper2: {}
+  bootstrapper3: {}
+  parameter_bootstrap: {}
+  policy_bootstrap: {}
+  qc_post_processor: {}
+
+  # exchange_management needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  exchange_management:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+
+  # scheduler needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  scheduler:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+
+  # event_persister needs an override block because it is a singleton and
+  # may only have one deployed service process at a time.
+  event_persister:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+
+  # vis_user_queue_monitor is a process that monitors user queues created by the visualization
+  # service for realtime data views. If the queues are left unattanded and cross a certain limit,
+  # they are deleted
+  vis_user_queue_monitor:
+    ha:
+        policy: npreserving
+        parameters:
+          preserve_n: 1
+
+  # gateway uses special engine
+  service_gateway:
+    ha:
+      policy: npreserving
+      parameters:
+        preserve_n: 4
+        node_exclusive: service_gateway
+        execution_engine_id: service_gateway
+
+  # lightweight_pydap uses special engine
+  lightweight_pydap:
+    ha:
+      policy: npreserving
+      parameters:
+        preserve_n: 4
+        node_exclusive: pydap
+        execution_engine_id: service_gateway

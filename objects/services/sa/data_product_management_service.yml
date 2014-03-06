@@ -134,6 +134,16 @@ methods:
     throws:
       BadRequest: if provenance can not be retrieved
       NotFound: object with specified id does not exist
+
+  add_parameter_to_data_product:
+    docstring:
+      Performs the necessary actions to add a parameter to a data product.
+    in:
+      parameter_id: ""
+      data_product_id: ""
+    out:
+    throws:
+      BadRequest: If associations to datasets aren't found.
       
   create_data_product_collection:
     docstring: |

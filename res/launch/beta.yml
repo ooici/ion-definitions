@@ -26,6 +26,14 @@ config:
       web_server:
         host: 0.0.0.0
         port: 10999
+    objects:
+      validate:
+        setattr: False
+  interceptor:
+    interceptors:
+      validate:
+        config:
+          enabled: False
   endpoint:
     receive:
       timeout: 60

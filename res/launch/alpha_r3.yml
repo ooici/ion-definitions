@@ -40,7 +40,7 @@ config:
     oms:
       host: sg.a3.oceanobservatories.org
   system:
-    web_ui_url: http://r3alpha.oceanobservatories.org/
+    web_ui_url: http://r3-alpha.oceanobservatories.org/
     smtp: true
     load_policy: true
   processdispatcher:

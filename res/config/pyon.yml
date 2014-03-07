@@ -190,6 +190,7 @@ container:
 
   objects:
     validate: # TODO: move entries to here
+      setattr: False
 
   org_boundary: False  # If True, then check against policies related to the Org below; else do not.
 
@@ -232,9 +233,6 @@ cc:
     heartbeat_proc_time_threshold: 600.0
     heartbeat_proc_count_threshold: 20
 
-validate:
-  setattr: False
-
 endpoint:
   receive:
     timeout: 30   # RPC receive timeout in seconds
@@ -245,8 +243,6 @@ interceptor:
       class: pyon.core.interceptor.sample.SampleInterceptor
     sampleprocessonly:
       class: pyon.core.interceptor.sample.SampleProcessOnlyInterceptor
-    codec:
-      class: pyon.core.interceptor.codec.CodecInterceptor
     validate:
       class: pyon.core.interceptor.validate.ValidateInterceptor
       config:
@@ -269,8 +265,8 @@ interceptor:
             class: pyon.core.governance.policy.policy_interceptor.PolicyInterceptor
 
   stack:
-    message_outgoing: [validate, codec, encode]
-    message_incoming: [encode, codec, validate]
+    message_outgoing: [validate, encode]
+    message_incoming: [encode, validate]
     process_outgoing: [governance]
     process_incoming: [governance]
 

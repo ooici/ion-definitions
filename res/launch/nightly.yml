@@ -5,12 +5,21 @@ version: 0.2
 # PYON CONFIGURATION
 #############################################################################
 config:
+  container:
+    objects:
+      validate:
+        setattr: False
   endpoint:
     receive:
       timeout: 60
   processdispatcher:
     restart_throttling_config:
         minimum_time_between_starts: 2
+  interceptor:
+    interceptors:
+      validate:
+        config:
+          enabled: False
 
 # this configuration block is merged into a base pyon.yml including common
 # parameters like RabbitMQ and CouchDB blocks.

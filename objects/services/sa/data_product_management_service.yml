@@ -125,15 +125,6 @@ methods:
     throws:
       BadRequest: if provenance can not be retrieved
       NotFound: object with specified id does not exist
-
-  get_data_product_provenance_report:
-    in:
-      data_product_id: ""
-    out:
-      provenance_information: ""
-    throws:
-      BadRequest: if provenance can not be retrieved
-      NotFound: object with specified id does not exist
       
   create_data_product_collection:
     docstring: |

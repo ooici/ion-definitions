@@ -269,6 +269,7 @@ DataProcessStatusType: !enum (values=(NORMAL, ERROR, OFFLINE), default=NORMAL)
 # To be used by transforms monitoring the health of data producers to report the status of the producers
 DataProcessStatusEvent: !Extends_DataProcessEvent
   status: !DataProcessStatusType
+  values: []
 
 
 

@@ -108,6 +108,16 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  add_parameter_to_data_product:
+    docstring: |
+      Adds a parameter context to a data product.
+    in:
+      parameter_context_id: ""
+      data_product_id: ""
+    out:
+    throws:
+      BadRequest: Associations are incorrect or the data product is not activated
+
   get_data_product_stream_definition:
     in:
       data_product_id: ""

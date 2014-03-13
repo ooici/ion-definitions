@@ -113,6 +113,14 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  get_data_process_definition_url:
+    docstring: Returns the URL for the source code
+    in:
+      data_process_definition_id: ""
+    out:
+      url: ""
+    throws:
+      BadRequest: If the object does not contain a URL
   inspect_data_process_definition:
     docstring: Returns the source code of the data process definition
     in:

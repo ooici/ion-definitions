@@ -1,0 +1,37 @@
+# EOI tree format
+eoi:
+    meta:
+        debug: true
+        lat_field: lat
+        lon_field: lon
+#geoserver serving OWS/W*S services and geo layers
+    geoserver:
+        server: http://localhost:8080
+        geoserver_ooi_store: ooi
+        geoserver_ooi_workspace: geonode
+        user_name: admin
+        password: admin
+        layer_prefix: ooi_
+        layer_suffix: _ooi
+#postgres DB storing the FDT        
+    postgres:
+        host: localhost
+        user_name: rpsdev
+        password: 
+        database: postgres
+        port: 5432
+        table_prefix: _
+        table_suffix: _view
+        session_startup_ln1: select runCovTest();
+        session_startup_ln2: select 1 from covtest limit 1;
+#importer service for geoserver        
+    importer_service:
+        server: http://localhost
+        port: 8844
+        add_layer: addlayer
+        remove_layer: removelayer
+        reset_store: resetstore
+#coverageFDWSever        
+    fdw:
+        server: cov_srv
+        create_fdw: 

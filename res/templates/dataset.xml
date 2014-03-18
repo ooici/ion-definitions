@@ -12,6 +12,9 @@
             <att name="cdm_data_type">Other</att>
             <att name="summary">{{summary}}</att>
             <att name="institution">OOI</att>
+            {% for key, value in attrs.iteritems() %}
+            <att name="{{key}}">{{value}}</att>
+            {% endfor %}
         </addAttributes>
         {% for var in vars %}
         <dataVariable>

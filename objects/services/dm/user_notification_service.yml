@@ -6,7 +6,7 @@ docstring: |
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+COI+OV+User+Notification+Service
 
-dependencies: [resource_registry, scheduler]
+dependencies: [resource_registry, scheduler, discovery, process_dispatcher]
 
 methods:
   create_notification:
@@ -22,35 +22,6 @@ methods:
     throws:
       BadRequest: if object passed has _id or _rev attribute, or if more than one user info exists
       NotFound: if user does not exist, user info does not exist, or user email does not exist
-
-  create_worker:
-    docstring: |
-      Creates notification workers
-    in:
-      number_of_workers: 1
-    out:
-
-  publish_event_object:
-    in:
-      event: !Event
-    out:
-      event: !Event
-    throws:
-      BadRequest: if there is anything wrong with the event object
-
-  publish_event:
-    in:
-      event_type: ""
-      origin: ""
-      origin_type: ""
-      sub_type: ""
-      description: ""
-      event_attrs: {}
-    out:
-      event: !Event
-    throws:
-      BadRequest: if there is anything wrong with the event object
-
 
   update_notification:
     docstring: |
@@ -90,64 +61,6 @@ methods:
       BadRequest: if more than one user exists for the notification
       NotFound: if object with specified id does not exist, user for notification does not exist, or association does not exist
 
-  find_events:
-    docstring: |
-      Returns a list of events that match the specified search criteria. Will throw a NotFound exception
-      if no events exist for the given parameters.
-      @todo can we replace this with discovery service?
-    in:
-      origin: ""
-      type: ""
-      min_datetime: ""
-      max_datetime: ""
-      limit: -1
-      descending: False
-      offset: 0
-    out:
-      event_list: []
-    throws:
-      NotFound: if object with specified parameters does not exist
-
-  find_events_extended:
-    docstring: |
-      Uses ElasticSearch. Returns a list of events that match the specified search criteria. Will throw a NotFound exception
-      if no events exist for the given parameters.
-      @todo can we replace this with discovery service?
-    in:
-      origin: ""
-      type: ""
-      min_time: ""
-      max_time: ""
-      limit: -1
-      descending: False
-    out:
-      event_list: []
-    throws:
-      NotFound: if object with specified parameters does not exist
-
-  get_recent_events:
-    docstring: |
-      Returns a list of events that match the resource id
-    in:
-      resource_id: ""
-      limit: 0
-    out:
-      event_list: []
-    throws:
-      NotFound: if object with specified parameters does not exist
-
-  get_events:
-    docstring: |
-      Returns a list of events that match the resource id
-    in:
-      resource_id: ""
-      limit: 10
-      offset: 0
-    out:
-      event_list: []
-    throws:
-      NotFound: if object with specified parameters does not exist
-
   get_user_notifications:
     docstring: |
       Returns a list of notifications for a user id
@@ -158,6 +71,12 @@ methods:
     throws:
       NotFound: if object with specified parameters does not exist
 
+  create_worker:
+    docstring: |
+      Creates notification workers
+    in:
+      number_of_workers: 1
+    out:
 
   process_batch:
     docstring:  |
@@ -210,3 +129,65 @@ methods:
     out:
       notification_requests: []
 
+  # -------------------------------------------------------------------------
+  # Events operations
+
+  publish_event_object:
+    docstring: |
+      Publishes an event based on the given event object.
+      Returns the published event object with filled out _id and other attributes.
+    in:
+      event: !Event
+    out:
+      event: !Event
+    throws:
+      BadRequest: if there is anything wrong with the event object
+
+  publish_event:
+    docstring: |
+      Publishes an event of given type based on given basic and additional attributes.
+      Returns the published event object with filled out _id and other attributes.
+    in:
+      event_type: ""
+      origin: ""
+      origin_type: ""
+      sub_type: ""
+      description: ""
+      event_attrs: {}
+    out:
+      event: !Event
+    throws:
+      BadRequest: if there is anything wrong with the event object
+
+  find_events:
+    docstring: |
+      Returns a list of events that match the specified search criteria.
+      Can return a list of EventComputedAttributes if requested with event objects contained.
+      Pagination arguments are supported.
+    in:
+      origin: ""
+      type: ""
+      min_datetime: ""
+      max_datetime: ""
+      limit: -1
+      descending: False
+      skip: 0
+      computed: False
+    out:
+      event_list: []
+    throws:
+      NotFound: if object with specified parameters does not exist
+
+  get_recent_events:
+    docstring: |
+      Returns a list of EventComputedAttributes for events that match the resource id as origin,
+      in descending order, most recent first. The total number of events is limited by default
+      based on system configuration. Pagination arguments are supported.
+    in:
+      resource_id: ""
+      limit: 0
+      skip: 0
+    out:
+      event_list: []
+    throws:
+      NotFound: if object with specified parameters does not exist

@@ -1,0 +1,30 @@
+    <dataset active="True" datasetID="{{dataset_id}}" type="EDDTableFromDapSequence">
+        <sourceUrl>{{url}}</sourceUrl>
+        <reloadEveryNMinutes>1440</reloadEveryNMinutes>
+        <outerSequenceName>data</outerSequenceName>
+        <defaultDataQuery>&amp;amp;time&amp;gt;=1970-01-01</defaultDataQuery>
+        <addAttributes>
+            <att name="infoUrl">{{face_page}}</att>
+            <att name="license">These data were collected by the Ocean Observatory Initiative (OOI) project purely for internal system development purposes during the construction phase of the project and are offered for release to the public with no assurance of data quality, consistency, temporal continuity or additional support. The OOI Program assumes no liability resulting from the use of these data for other than the intended purpose. No data quality assurance steps have been implemented on this data to date.</att>
+            <att name="title">{{title}}</att>
+            <att name="standard_name_vocabulary">CF-12</att>
+            <att name="Conventions">COARDS, CF-1.6, Unidata Dataset Discovery v1.0</att>
+            <att name="cdm_data_type">Other</att>
+            <att name="summary">{{summary}}</att>
+            <att name="institution">OOI</att>
+            {% for key, value in attrs.iteritems() %}
+            <att name="{{key}}">{{value}}</att>
+            {% endfor %}
+        </addAttributes>
+        {% for var in vars %}
+        <dataVariable>
+            <sourceName>{{var["name"]}}</sourceName>
+            <destinationName>{{var["name"]}}</destinationName>
+            <addAttributes>
+                {% for key,value in var["attrs"].iteritems() %}
+                <att name="{{key}}">{{value}}</att>
+                {% endfor %}
+            </addAttributes>
+        </dataVariable>
+        {% endfor %}
+    </dataset>

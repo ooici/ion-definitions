@@ -13,9 +13,11 @@ Event:
   sub_type: ""      # A specialization of the event_type expressed by this object type (or empty)
   actor_id: ""      # The actor ID requesting the action causing the event
   persisted_version: 1 # The last version in which the event instance was saved (persisted)
+---
 
 # Object containing additional computed information about one Event
 EventComputedAttributes:
+  event: !Event           # The actual event object or None
   event_id: ""            # The event id of the described Event
   ts_computed: ""         # Timestamp when event attributes were computed
   event_summary: ""       # A summary str describing event based on type and core attributes

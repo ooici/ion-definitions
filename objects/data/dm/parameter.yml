@@ -44,6 +44,8 @@ ParameterContext: !Extends_InformationResource
   precision: ""
   # Boolean for if the parameter should be visible in graphs and for download
   visible: True
+  # Contains CF-like metadata fields that are available for download in ERDDAP
+  additional_metadata: {}
 
 
 # Represents a collection of parameter contexts, e.g. for use to describe a stream, dataset or data product.

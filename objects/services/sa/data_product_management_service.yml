@@ -257,3 +257,42 @@ methods:
     throws:
       BadRequest: if provenance can not be retrieved
       NotFound: object with specified id does not exist
+
+  create_catalog_entry:
+    docstring: |
+      Creates an entry in the external datasets catalog for a data product.
+    in:
+      data_product_id: ""
+    out:
+    throws:
+      BadRequest: if the data product is malformed or associations are missing
+
+  read_catalog_entry:
+    docstring: |
+      Reads an XML entry from the external datasets catalog for a data product.
+    in:
+      data_product_id: ""
+    out:
+      catalog_entry: XML string for the entry
+    throws:
+      BadRequest: if the data product is malformed.
+
+  udpate_catalog_entry:
+    docstring: | 
+      Updates a catalog entry for a data product.
+    in:
+      data_product_id: ""
+    out:
+    throws:
+      BadRequest: if the data product is malformed
+      NotFound: if there is no catalog for the system
+
+  delete_catalog_entry:
+    docstring: |
+      Removes a data product entry from the catalog
+    in:
+      data_product_id: ""
+    throws:
+      NotFound: if there is not catalog for the system
+      BadRequest: if the data product is not registered in the catalog
+

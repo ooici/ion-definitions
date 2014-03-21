@@ -307,7 +307,7 @@ methods:
     throws:
       BadRequest: if the data product is malformed.
 
-  udpate_catalog_entry:
+  update_catalog_entry:
     docstring: | 
       Updates a catalog entry for a data product.
     in:

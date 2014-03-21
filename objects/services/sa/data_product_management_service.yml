@@ -82,13 +82,23 @@ methods:
     out:
       data_product_list: []
 
+  create_dataset_for_data_product:
+    docstring: Creates a dataset resource and coverage model for a data product
+    in:
+      data_product_id: ''
+    out:
+      dataset_id: ''
+    throws:
+      BadRequest: Incorrect or missing associated resources
+
   activate_data_product_persistence:
-    docstring: Persist data product data into a data set
+    docstring: Launches an ingestion worker and persists data.
     in:
       data_product_id: ""
     out:
     throws:
       NotFound: object with specified id does not exist
+      BadRequest: Incorrect or missing associated resources
 
   suspend_data_product_persistence:
     docstring: Suspend data product data persistnce into a data set, multiple options

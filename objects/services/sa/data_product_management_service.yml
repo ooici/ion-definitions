@@ -322,6 +322,7 @@ methods:
       Removes a data product entry from the catalog
     in:
       data_product_id: ""
+    out: 
     throws:
       NotFound: if there is not catalog for the system
       BadRequest: if the data product is not registered in the catalog

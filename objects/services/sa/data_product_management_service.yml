@@ -82,6 +82,16 @@ methods:
     out:
       data_product_list: []
 
+  get_data_product_updates:
+    docstring: |
+      For a list of data products, retrieve events since the given timestamp. The return is a dict
+      of dp_id to a dict containing dataset_id, updated: boolean, current geospatial bounds, current temporal bounds.
+    in:
+      data_product_id_list: []
+      since_timestamp: ""
+    out:
+      data_product_list: {}
+
   create_dataset_for_data_product:
     docstring: Creates a dataset resource and coverage model for a data product
     in:

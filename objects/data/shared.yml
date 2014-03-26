@@ -541,3 +541,12 @@ ContainerManagementPredicate:
 # base class for all requested actions for container management
 ContainerManagementAction:
 
+---
+FileUploadContext: !Extends_InformationResource
+  filename: ""
+  filetype: ""
+  path:     ""
+  upload_time: 0.0
+  meta: {}
+  status: ""
+

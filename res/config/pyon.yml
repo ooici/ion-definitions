@@ -423,6 +423,7 @@ units: res/config/units/udunits2.xml
 eoi:
   #holds some meta data used by the eoi services
   meta:
+    use_eoi_services: False
     #add additional debugging information to the log file
     debug: true
     #geospatial fields

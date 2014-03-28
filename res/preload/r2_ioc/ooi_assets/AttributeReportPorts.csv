@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Port Attributes Report,Report Generated: 12/5/2013
+Port Attributes Report,Report Generated: 3/27/2014
 
 Textbox14
 
@@ -680,14 +680,14 @@ CE04OSHY-SF01B-09,latitude,44.37
 CE04OSHY-SF01B-09,longitude,124.95
 CE04OSHY-SF01B-09,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
 CE04OSHY-SF01B-09,Relative Depth,20m to 200m below sea surface
-CE04OSHY-SF01B-10,depth_port_max,
-CE04OSHY-SF01B-10,depth_port_min,
-CE04OSHY-SF01B-10,depth_subsite,588
-CE04OSHY-SF01B-10,First Deployment Date,2014-07
-CE04OSHY-SF01B-10,latitude,44.37
-CE04OSHY-SF01B-10,longitude,124.95
-CE04OSHY-SF01B-10,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
-CE04OSHY-SF01B-10,Relative Depth,
+CE04OSHY-SF01B-2B,depth_port_max,
+CE04OSHY-SF01B-2B,depth_port_min,
+CE04OSHY-SF01B-2B,depth_subsite,588
+CE04OSHY-SF01B-2B,First Deployment Date,2014-07
+CE04OSHY-SF01B-2B,latitude,44.37
+CE04OSHY-SF01B-2B,longitude,124.95
+CE04OSHY-SF01B-2B,Platform Agent Type,Shore CyberPoP - Regional Observatory Management System
+CE04OSHY-SF01B-2B,Relative Depth,
 CE04OSSM-RI002-01,depth_port_max,5
 CE04OSSM-RI002-01,depth_port_min,5
 CE04OSSM-RI002-01,depth_subsite,588

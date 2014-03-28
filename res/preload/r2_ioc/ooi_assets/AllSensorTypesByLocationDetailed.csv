@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday,Textbox2
-Instrument Classes By Location,Report Generated: 12/5/2013,Total Instruments (762)
+Instrument Classes By Location,Report Generated: 3/27/2014,Total Instruments (756)
 
 Textbox14
 
@@ -28,15 +28,14 @@ CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),0
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,D,01,WET Labs,AC-S,1
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,B,01,Satlantic,OCR507 ICSW,1
 CE01ISSM-SB001,Endurance OR Inshore Surface Mooring,01,ISSM,SB (Surface Buoy),001,Velocity point,VELPT,A,01,Nortek,Aquadopp 300m,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,,,1
-CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,J,01,Nortek,Aquadopp,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,Sea-Bird,FastCAT 49 CTD,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,J,01,Aanderaa,Optode 4831,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,WET Labs,ECO Triplet-w,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,Satlantic,SUNA V2,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,WET Labs,AC-S,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,WET Labs,ECO PAR,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,Satlantic,OCR507 ICSW,1
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,J,01,Nortek,Aquadopp HR,1
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Velocity profile Short Range,ADCPT,B,01,Teledyne RDI,WorkHorse Monitor 300khz,1
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Camera digital still strobe,CAMDS,B,01,Kongsberg,Modified OE14-408,1
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,CTD Bottom Pumped,CTDBP,N,01,Sea-Bird,SBE 16plusV2,1
@@ -61,15 +60,14 @@ CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,A,01,Pro-Oceanus,pCO2-pro,1
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Velocity point,VELPT,A,01,Nortek,Aquadopp 300m,1
 CE02SHSM-SB001,Endurance OR Shelf Surface Mooring,02,SHSM,SB (Surface Buoy),001,Wave spectra surface,WAVSS,A,01,Axys Technologies,TRIAXYS,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,,,1
-CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,J,01,Nortek,Aquadopp,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,Sea-Bird,FastCAT 49 CTD,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,J,01,Aanderaa,Optode 4831,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,WET Labs,ECO Triplet-w,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,Satlantic,SUNA V2,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,WET Labs,AC-S,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,WET Labs,ECO PAR,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,Satlantic,OCR507 ICSW,1
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,J,01,Nortek,Aquadopp HR,1
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Velocity profile Long Range,ADCPS,I,01,Teledyne RDI,WorkHorse LongRanger Monitor 75khz,1
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Camera digital still strobe,CAMDS,B,01,Kongsberg,Modified OE14-408,1
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,CTD Bottom Pumped,CTDBP,O,01,Sea-Bird,SBE 16plusV2,1
@@ -161,15 +159,14 @@ CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),0
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,Attenuation absorption optical,OPTAA,D,01,WET Labs,AC-S,1
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,B,01,Satlantic,OCR507 ICSW,1
 CE06ISSM-SB001,Endurance WA Inshore Surface Mooring,06,ISSM,SB (Surface Buoy),001,Velocity point,VELPT,A,01,Nortek,Aquadopp 300m,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,,,1
-CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,J,01,Nortek,Aquadopp,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,Sea-Bird,FastCAT 49 CTD,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,J,01,Aanderaa,Optode 4831,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,WET Labs,ECO Triplet-w,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,Satlantic,SUNA V2,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,WET Labs,AC-S,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,WET Labs,ECO PAR,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,Satlantic,OCR507 ICSW,1
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,J,01,Nortek,Aquadopp HR,1
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,CTD Bottom Pumped,CTDBP,C,01,Sea-Bird,SBE 16plusV2,1
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,D,01,Aanderaa,Optode 4831,1
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,D,01,WET Labs,AC-S,1
@@ -193,15 +190,14 @@ CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,
 CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,A,01,Pro-Oceanus,pCO2-pro,1
 CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,Velocity point,VELPT,A,01,Nortek,Aquadopp 300m,1
 CE07SHSM-SB001,Endurance WA Shelf Surface Mooring,07,SHSM,SB (Surface Buoy),001,Wave spectra surface,WAVSS,A,01,Axys Technologies,TRIAXYS,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,,,1
-CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,J,01,Nortek,Aquadopp,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,Sea-Bird,FastCAT 49 CTD,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,J,01,Aanderaa,Optode 4831,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,WET Labs,ECO Triplet-w,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,Satlantic,SUNA V2,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,WET Labs,AC-S,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,WET Labs,ECO PAR,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,Satlantic,OCR507 ICSW,1
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,J,01,Nortek,Aquadopp HR,1
 CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,CTD Profiler,CTDPF,K,01,Sea-Bird,SBE 52MP,1
 CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,Oxygen dissolved fastresp,DOFST,K,01,Sea-Bird,SBE 43F,1
 CE09OSPM-WF001,Endurance WA Offshore Profiler Mooring,09,OSPM,WF (Wire-Following Profiler),001,Fluorometer three wavelength,FLORT,K,01,WET Labs,ECO Triplet,1
@@ -250,15 +246,14 @@ CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,Flu
 CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,Meteorology bulk,METBK,A,01,Star Engineering,ASIMET,2
 CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,A,01,Pro-Oceanus,pCO2-pro,1
 CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,Wave spectra surface,WAVSS,A,01,Axys Technologies,TRIAXYS,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,,,1
-CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,J,01,Nortek,Aquadopp,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,Sea-Bird,FastCAT 49 CTD,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,J,01,Aanderaa,Optode 4831,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,WET Labs,ECO Triplet-w,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,Satlantic,SUNA V2,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,WET Labs,AC-S,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,WET Labs,ECO PAR,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,Satlantic,OCR507 ICSW,1
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,J,01,Nortek,Aquadopp HR,1
 CP02PMCI-RI001,Pioneer Central Inshore Profiler Mooring,02,PMCI,RI (Mooring Riser),001,Velocity profile Short Range,ADCPT,G,01,Teledyne RDI,WorkHorse Sentinel150khz,1
 CP02PMCI-WF001,Pioneer Central Inshore Profiler Mooring,02,PMCI,WF (Wire-Following Profiler),001,CTD Profiler,CTDPF,K,01,Sea-Bird,SBE 52MP,1
 CP02PMCI-WF001,Pioneer Central Inshore Profiler Mooring,02,PMCI,WF (Wire-Following Profiler),001,Oxygen dissolved fastresp,DOFST,K,01,Sea-Bird,SBE 43F,1
@@ -302,15 +297,14 @@ CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,Nu
 CP03ISSM-RI003,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),003,Velocity point,VELPT,A,01,Nortek,Aquadopp 300m,1
 CP03ISSM-SB001,Pioneer Inshore Surface Mooring,03,ISSM,SB (Surface Buoy),001,Meteorology bulk,METBK,A,01,Star Engineering,ASIMET,1
 CP03ISSM-SB001,Pioneer Inshore Surface Mooring,03,ISSM,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,A,01,Pro-Oceanus,pCO2-pro,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved fastresp,DOFST,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,,,1
-CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Velocity point 3D turb,VEL3D,J,01,Nortek,Aquadopp,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,J,01,Sea-Bird,FastCAT 49 CTD,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,J,01,Aanderaa,Optode 4831,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Fluorometer three wavelength,FLORT,J,01,WET Labs,ECO Triplet-w,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,J,01,Satlantic,SUNA V2,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,J,01,WET Labs,AC-S,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,PAR,PARAD,J,01,WET Labs,ECO PAR,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,J,01,Satlantic,OCR507 ICSW,1
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,J,01,Nortek,Aquadopp HR,1
 CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,CTD Profiler,CTDPF,K,01,Sea-Bird,SBE 52MP,1
 CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,Oxygen dissolved fastresp,DOFST,K,01,Sea-Bird,SBE 43F,1
 CP04OSPM-WF001,Pioneer Offshore Profiler Mooring,04,OSPM,WF (Wire-Following Profiler),001,Fluorometer three wavelength,FLORT,K,01,WET Labs,ECO Triplet,1
@@ -339,13 +333,13 @@ CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Velocity profile Mobil
 CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,CTD AUV,CTDAV,N,01,Sea-Bird,SBE Glider Payload CTD (GP-CTD),1
 CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Oxygen dissolved stable,DOSTA,N,01,Aanderaa,Optode 4330,1
 CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Fluorometer three wavelength,FLORT,N,01,WET Labs,ECO Triplet,1
-CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Nutrient nitrate,NUTNR,N,01,Satlantic,SUNA,1
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Nutrient nitrate,NUTNR,N,01,Satlantic,Deep SUNA,1
 CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,PAR,PARAD,N,01,Biospherical Instruments,QSP-2150,1
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Velocity profile Mobile Asset,ADCPA,N,01,Teledyne RDI,Workhorse Navigator 600 kHz dual,1
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,CTD AUV,CTDAV,N,01,Sea-Bird,SBE Glider Payload CTD (GP-CTD),1
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Oxygen dissolved stable,DOSTA,N,01,Aanderaa,Optode 4330,1
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Fluorometer three wavelength,FLORT,N,01,WET Labs,ECO Triplet,1
-CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Nutrient nitrate,NUTNR,N,01,Satlantic,SUNA,1
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Nutrient nitrate,NUTNR,N,01,Satlantic,Deep SUNA,1
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,PAR,PARAD,N,01,Biospherical Instruments,QSP-2150,1
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Velocity profile Mobile Asset,ADCPA,M,01,Teledyne RDI,Explorer DVL 600 kHz,1
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,M,01,Sea-Bird,SBE Glider Payload CTD (GP-CTD),1

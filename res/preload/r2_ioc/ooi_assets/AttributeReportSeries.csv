@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Series Attributes Report,Report Generated: 12/5/2013
+Series Attributes Report,Report Generated: 3/27/2014
 
 Textbox14
 
@@ -1089,6 +1089,29 @@ DOSTA,D,DOSTA Series D,RSN O&M Spares,
 DOSTA,D,DOSTA Series D,RSN Part Number,
 DOSTA,D,DOSTA Series D,Susceptible to Acoustic Interference,
 DOSTA,D,DOSTA Series D,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,J,DOSTA Series J,2009 Baseline Price*,"$6,000.00"
+DOSTA,J,DOSTA Series J,2009 Deployed Instrument Count,61
+DOSTA,J,DOSTA Series J,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,J,DOSTA Series J,CE Spares,
+DOSTA,J,DOSTA Series J,CGSN MREFC Spares,
+DOSTA,J,DOSTA Series J,CGSN O&M Spares,
+DOSTA,J,DOSTA Series J,CGSN P/N,
+DOSTA,J,DOSTA Series J,ClassLongName,oxygen_dissolved_stable
+DOSTA,J,DOSTA Series J,Comments,
+DOSTA,J,DOSTA Series J,CP Spares,
+DOSTA,J,DOSTA Series J,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,J,DOSTA Series J,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
+DOSTA,J,DOSTA Series J,Global Spares,
+DOSTA,J,DOSTA Series J,Instrument Configuration,
+DOSTA,J,DOSTA Series J,Link to the Specification,
+DOSTA,J,DOSTA Series J,Notes,
+DOSTA,J,DOSTA Series J,PrimaryScienceDiscipline,C
+DOSTA,J,DOSTA Series J,Produces Acoustic Interference,
+DOSTA,J,DOSTA Series J,Ready for 2013?,
+DOSTA,J,DOSTA Series J,RSN O&M Spares,
+DOSTA,J,DOSTA Series J,RSN Part Number,
+DOSTA,J,DOSTA Series J,Susceptible to Acoustic Interference,
+DOSTA,J,DOSTA Series J,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,K,DOSTA Series K,2009 Baseline Price*,"$6,000.00"
 DOSTA,K,DOSTA Series K,2009 Deployed Instrument Count,61
 DOSTA,K,DOSTA Series K,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
@@ -1227,52 +1250,6 @@ FDCHP,A,FDCHP Series A,RSN O&M Spares,
 FDCHP,A,FDCHP Series A,RSN Part Number,
 FDCHP,A,FDCHP Series A,Susceptible to Acoustic Interference,
 FDCHP,A,FDCHP Series A,"Vendor CLIN, SubCLIN or Model #",
-FDCLP,0,FDCLP Series 0,2009 Baseline Price*,"$30,000.00"
-FDCLP,0,FDCLP Series 0,2009 Deployed Instrument Count,3
-FDCLP,0,FDCLP Series 0,Alternate Instrument Class Name,Direct Covariance Flux (Low Power) - DEPRECATED
-FDCLP,0,FDCLP Series 0,CE Spares,
-FDCLP,0,FDCLP Series 0,CGSN MREFC Spares,
-FDCLP,0,FDCLP Series 0,CGSN O&M Spares,
-FDCLP,0,FDCLP Series 0,CGSN P/N,
-FDCLP,0,FDCLP Series 0,ClassLongName,flux_direct_cov_LP
-FDCLP,0,FDCLP Series 0,Comments,
-FDCLP,0,FDCLP Series 0,CP Spares,
-FDCLP,0,FDCLP Series 0,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
-FDCLP,0,FDCLP Series 0,ECRs that changed the count,1300-00318
-FDCLP,0,FDCLP Series 0,Global Spares,
-FDCLP,0,FDCLP Series 0,Instrument Configuration,
-FDCLP,0,FDCLP Series 0,Link to the Specification,
-FDCLP,0,FDCLP Series 0,Notes,
-FDCLP,0,FDCLP Series 0,PrimaryScienceDiscipline,P
-FDCLP,0,FDCLP Series 0,Produces Acoustic Interference,
-FDCLP,0,FDCLP Series 0,Ready for 2013?,Maybe
-FDCLP,0,FDCLP Series 0,RSN O&M Spares,
-FDCLP,0,FDCLP Series 0,RSN Part Number,
-FDCLP,0,FDCLP Series 0,Susceptible to Acoustic Interference,
-FDCLP,0,FDCLP Series 0,"Vendor CLIN, SubCLIN or Model #",
-FDCLP,A,FDCLP Series A,2009 Baseline Price*,"$30,000.00"
-FDCLP,A,FDCLP Series A,2009 Deployed Instrument Count,3
-FDCLP,A,FDCLP Series A,Alternate Instrument Class Name,Direct Covariance Flux (Low Power) - DEPRECATED
-FDCLP,A,FDCLP Series A,CE Spares,
-FDCLP,A,FDCLP Series A,CGSN MREFC Spares,
-FDCLP,A,FDCLP Series A,CGSN O&M Spares,
-FDCLP,A,FDCLP Series A,CGSN P/N,
-FDCLP,A,FDCLP Series A,ClassLongName,flux_direct_cov_LP
-FDCLP,A,FDCLP Series A,Comments,
-FDCLP,A,FDCLP Series A,CP Spares,
-FDCLP,A,FDCLP Series A,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
-FDCLP,A,FDCLP Series A,ECRs that changed the count,1300-00318
-FDCLP,A,FDCLP Series A,Global Spares,
-FDCLP,A,FDCLP Series A,Instrument Configuration,
-FDCLP,A,FDCLP Series A,Link to the Specification,
-FDCLP,A,FDCLP Series A,Notes,
-FDCLP,A,FDCLP Series A,PrimaryScienceDiscipline,P
-FDCLP,A,FDCLP Series A,Produces Acoustic Interference,
-FDCLP,A,FDCLP Series A,Ready for 2013?,Maybe
-FDCLP,A,FDCLP Series A,RSN O&M Spares,
-FDCLP,A,FDCLP Series A,RSN Part Number,
-FDCLP,A,FDCLP Series A,Susceptible to Acoustic Interference,
-FDCLP,A,FDCLP Series A,"Vendor CLIN, SubCLIN or Model #",
 FLOBN,A,FLOBN Series A,2009 Baseline Price*,
 FLOBN,A,FLOBN Series A,2009 Deployed Instrument Count,1
 FLOBN,A,FLOBN Series A,Alternate Instrument Class Name,Benthic Fluid Flow
@@ -3067,6 +3044,29 @@ VELPT,D,VELPT Series D,RSN O&M Spares,
 VELPT,D,VELPT Series D,RSN Part Number,
 VELPT,D,VELPT Series D,Susceptible to Acoustic Interference,Yes
 VELPT,D,VELPT Series D,"Vendor CLIN, SubCLIN or Model #",
+VELPT,J,VELPT Series J,2009 Baseline Price*,"$14,700.00"
+VELPT,J,VELPT Series J,2009 Deployed Instrument Count,29
+VELPT,J,VELPT Series J,Alternate Instrument Class Name,Single Point Velocity Meter
+VELPT,J,VELPT Series J,CE Spares,
+VELPT,J,VELPT Series J,CGSN MREFC Spares,
+VELPT,J,VELPT Series J,CGSN O&M Spares,
+VELPT,J,VELPT Series J,CGSN P/N,
+VELPT,J,VELPT Series J,ClassLongName,Velocity_point
+VELPT,J,VELPT Series J,Comments,
+VELPT,J,VELPT Series J,CP Spares,
+VELPT,J,VELPT Series J,Description,Measures Mean U and V single point velocity
+VELPT,J,VELPT Series J,ECRs that changed the count,
+VELPT,J,VELPT Series J,Global Spares,
+VELPT,J,VELPT Series J,Instrument Configuration,
+VELPT,J,VELPT Series J,Link to the Specification,
+VELPT,J,VELPT Series J,Notes,
+VELPT,J,VELPT Series J,PrimaryScienceDiscipline,P
+VELPT,J,VELPT Series J,Produces Acoustic Interference,
+VELPT,J,VELPT Series J,Ready for 2013?,
+VELPT,J,VELPT Series J,RSN O&M Spares,
+VELPT,J,VELPT Series J,RSN Part Number,
+VELPT,J,VELPT Series J,Susceptible to Acoustic Interference,Yes
+VELPT,J,VELPT Series J,"Vendor CLIN, SubCLIN or Model #",
 WAVSS,A,WAVSS Series A,2009 Baseline Price*,"$17,279.00"
 WAVSS,A,WAVSS Series A,2009 Deployed Instrument Count,10
 WAVSS,A,WAVSS Series A,Alternate Instrument Class Name,Surface Wave Spectra

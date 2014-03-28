@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subseries Attributes Report,Report Generated: 12/5/2013
+Subseries Attributes Report,Report Generated: 3/27/2014
 
 Textbox14
 
@@ -1089,6 +1089,29 @@ DOSTA,D,01,DOSTA Series D Sub 01,RSN O&M Spares,
 DOSTA,D,01,DOSTA Series D Sub 01,RSN Part Number,
 DOSTA,D,01,DOSTA Series D Sub 01,Susceptible to Acoustic Interference,
 DOSTA,D,01,DOSTA Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+DOSTA,J,01,DOSTA Series J Sub 01,2009 Baseline Price*,"$6,000.00"
+DOSTA,J,01,DOSTA Series J Sub 01,2009 Deployed Instrument Count,61
+DOSTA,J,01,DOSTA Series J Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
+DOSTA,J,01,DOSTA Series J Sub 01,CE Spares,
+DOSTA,J,01,DOSTA Series J Sub 01,CGSN MREFC Spares,
+DOSTA,J,01,DOSTA Series J Sub 01,CGSN O&M Spares,
+DOSTA,J,01,DOSTA Series J Sub 01,CGSN P/N,
+DOSTA,J,01,DOSTA Series J Sub 01,ClassLongName,oxygen_dissolved_stable
+DOSTA,J,01,DOSTA Series J Sub 01,Comments,
+DOSTA,J,01,DOSTA Series J Sub 01,CP Spares,
+DOSTA,J,01,DOSTA Series J Sub 01,Description,"Measures dissolved oxygen concentrations on mobile assets, deep profilers, and moorings"
+DOSTA,J,01,DOSTA Series J Sub 01,ECRs that changed the count,"ECR 1303-00796, ECR 1303-00928"
+DOSTA,J,01,DOSTA Series J Sub 01,Global Spares,
+DOSTA,J,01,DOSTA Series J Sub 01,Instrument Configuration,
+DOSTA,J,01,DOSTA Series J Sub 01,Link to the Specification,
+DOSTA,J,01,DOSTA Series J Sub 01,Notes,
+DOSTA,J,01,DOSTA Series J Sub 01,PrimaryScienceDiscipline,C
+DOSTA,J,01,DOSTA Series J Sub 01,Produces Acoustic Interference,
+DOSTA,J,01,DOSTA Series J Sub 01,Ready for 2013?,
+DOSTA,J,01,DOSTA Series J Sub 01,RSN O&M Spares,
+DOSTA,J,01,DOSTA Series J Sub 01,RSN Part Number,
+DOSTA,J,01,DOSTA Series J Sub 01,Susceptible to Acoustic Interference,
+DOSTA,J,01,DOSTA Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
 DOSTA,K,01,DOSTA Series K Sub 01,2009 Baseline Price*,"$6,000.00"
 DOSTA,K,01,DOSTA Series K Sub 01,2009 Deployed Instrument Count,61
 DOSTA,K,01,DOSTA Series K Sub 01,Alternate Instrument Class Name,Dissolved Oxygen Stable Response
@@ -1227,52 +1250,6 @@ FDCHP,A,01,FDCHP Series A Sub 01,RSN O&M Spares,
 FDCHP,A,01,FDCHP Series A Sub 01,RSN Part Number,
 FDCHP,A,01,FDCHP Series A Sub 01,Susceptible to Acoustic Interference,
 FDCHP,A,01,FDCHP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
-FDCLP,0,01,FDCLP Series 0 Sub 01,2009 Baseline Price*,"$30,000.00"
-FDCLP,0,01,FDCLP Series 0 Sub 01,2009 Deployed Instrument Count,3
-FDCLP,0,01,FDCLP Series 0 Sub 01,Alternate Instrument Class Name,Direct Covariance Flux (Low Power) - DEPRECATED
-FDCLP,0,01,FDCLP Series 0 Sub 01,CE Spares,
-FDCLP,0,01,FDCLP Series 0 Sub 01,CGSN MREFC Spares,
-FDCLP,0,01,FDCLP Series 0 Sub 01,CGSN O&M Spares,
-FDCLP,0,01,FDCLP Series 0 Sub 01,CGSN P/N,
-FDCLP,0,01,FDCLP Series 0 Sub 01,ClassLongName,flux_direct_cov_LP
-FDCLP,0,01,FDCLP Series 0 Sub 01,Comments,
-FDCLP,0,01,FDCLP Series 0 Sub 01,CP Spares,
-FDCLP,0,01,FDCLP Series 0 Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
-FDCLP,0,01,FDCLP Series 0 Sub 01,ECRs that changed the count,1300-00318
-FDCLP,0,01,FDCLP Series 0 Sub 01,Global Spares,
-FDCLP,0,01,FDCLP Series 0 Sub 01,Instrument Configuration,
-FDCLP,0,01,FDCLP Series 0 Sub 01,Link to the Specification,
-FDCLP,0,01,FDCLP Series 0 Sub 01,Notes,
-FDCLP,0,01,FDCLP Series 0 Sub 01,PrimaryScienceDiscipline,P
-FDCLP,0,01,FDCLP Series 0 Sub 01,Produces Acoustic Interference,
-FDCLP,0,01,FDCLP Series 0 Sub 01,Ready for 2013?,Maybe
-FDCLP,0,01,FDCLP Series 0 Sub 01,RSN O&M Spares,
-FDCLP,0,01,FDCLP Series 0 Sub 01,RSN Part Number,
-FDCLP,0,01,FDCLP Series 0 Sub 01,Susceptible to Acoustic Interference,
-FDCLP,0,01,FDCLP Series 0 Sub 01,"Vendor CLIN, SubCLIN or Model #",
-FDCLP,A,01,FDCLP Series A Sub 01,2009 Baseline Price*,"$30,000.00"
-FDCLP,A,01,FDCLP Series A Sub 01,2009 Deployed Instrument Count,3
-FDCLP,A,01,FDCLP Series A Sub 01,Alternate Instrument Class Name,Direct Covariance Flux (Low Power) - DEPRECATED
-FDCLP,A,01,FDCLP Series A Sub 01,CE Spares,
-FDCLP,A,01,FDCLP Series A Sub 01,CGSN MREFC Spares,1
-FDCLP,A,01,FDCLP Series A Sub 01,CGSN O&M Spares,
-FDCLP,A,01,FDCLP Series A Sub 01,CGSN P/N,3305-00004-00001
-FDCLP,A,01,FDCLP Series A Sub 01,ClassLongName,flux_direct_cov_LP
-FDCLP,A,01,FDCLP Series A Sub 01,Comments,
-FDCLP,A,01,FDCLP Series A Sub 01,CP Spares,1
-FDCLP,A,01,FDCLP Series A Sub 01,Description,Measures vertical fluxes associated with eddies in the flow over the ocean - DEPRECATED
-FDCLP,A,01,FDCLP Series A Sub 01,ECRs that changed the count,1300-00318
-FDCLP,A,01,FDCLP Series A Sub 01,Global Spares,
-FDCLP,A,01,FDCLP Series A Sub 01,Instrument Configuration,
-FDCLP,A,01,FDCLP Series A Sub 01,Link to the Specification,
-FDCLP,A,01,FDCLP Series A Sub 01,Notes,
-FDCLP,A,01,FDCLP Series A Sub 01,PrimaryScienceDiscipline,P
-FDCLP,A,01,FDCLP Series A Sub 01,Produces Acoustic Interference,
-FDCLP,A,01,FDCLP Series A Sub 01,Ready for 2013?,Maybe
-FDCLP,A,01,FDCLP Series A Sub 01,RSN O&M Spares,
-FDCLP,A,01,FDCLP Series A Sub 01,RSN Part Number,
-FDCLP,A,01,FDCLP Series A Sub 01,Susceptible to Acoustic Interference,
-FDCLP,A,01,FDCLP Series A Sub 01,"Vendor CLIN, SubCLIN or Model #",
 FLOBN,A,01,FLOBN Series A Sub 01,2009 Baseline Price*,
 FLOBN,A,01,FLOBN Series A Sub 01,2009 Deployed Instrument Count,1
 FLOBN,A,01,FLOBN Series A Sub 01,Alternate Instrument Class Name,Benthic Fluid Flow
@@ -3067,6 +3044,29 @@ VELPT,D,01,VELPT Series D Sub 01,RSN O&M Spares,
 VELPT,D,01,VELPT Series D Sub 01,RSN Part Number,
 VELPT,D,01,VELPT Series D Sub 01,Susceptible to Acoustic Interference,Yes
 VELPT,D,01,VELPT Series D Sub 01,"Vendor CLIN, SubCLIN or Model #",
+VELPT,J,01,VELPT Series J Sub 01,2009 Baseline Price*,"$14,700.00"
+VELPT,J,01,VELPT Series J Sub 01,2009 Deployed Instrument Count,29
+VELPT,J,01,VELPT Series J Sub 01,Alternate Instrument Class Name,Single Point Velocity Meter
+VELPT,J,01,VELPT Series J Sub 01,CE Spares,
+VELPT,J,01,VELPT Series J Sub 01,CGSN MREFC Spares,
+VELPT,J,01,VELPT Series J Sub 01,CGSN O&M Spares,
+VELPT,J,01,VELPT Series J Sub 01,CGSN P/N,
+VELPT,J,01,VELPT Series J Sub 01,ClassLongName,Velocity_point
+VELPT,J,01,VELPT Series J Sub 01,Comments,
+VELPT,J,01,VELPT Series J Sub 01,CP Spares,
+VELPT,J,01,VELPT Series J Sub 01,Description,Measures Mean U and V single point velocity
+VELPT,J,01,VELPT Series J Sub 01,ECRs that changed the count,
+VELPT,J,01,VELPT Series J Sub 01,Global Spares,
+VELPT,J,01,VELPT Series J Sub 01,Instrument Configuration,
+VELPT,J,01,VELPT Series J Sub 01,Link to the Specification,
+VELPT,J,01,VELPT Series J Sub 01,Notes,
+VELPT,J,01,VELPT Series J Sub 01,PrimaryScienceDiscipline,P
+VELPT,J,01,VELPT Series J Sub 01,Produces Acoustic Interference,
+VELPT,J,01,VELPT Series J Sub 01,Ready for 2013?,
+VELPT,J,01,VELPT Series J Sub 01,RSN O&M Spares,
+VELPT,J,01,VELPT Series J Sub 01,RSN Part Number,
+VELPT,J,01,VELPT Series J Sub 01,Susceptible to Acoustic Interference,Yes
+VELPT,J,01,VELPT Series J Sub 01,"Vendor CLIN, SubCLIN or Model #",
 WAVSS,A,01,WAVSS Series A Sub 01,2009 Baseline Price*,"$17,279.00"
 WAVSS,A,01,WAVSS Series A Sub 01,2009 Deployed Instrument Count,10
 WAVSS,A,01,WAVSS Series A Sub 01,Alternate Instrument Class Name,Surface Wave Spectra

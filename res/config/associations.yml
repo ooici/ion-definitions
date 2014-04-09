@@ -322,7 +322,7 @@ CompoundAssociations:
   hasPlatformModel:
     predicates: [hasDevice,hasModel]
   hasAgentForDevice:
-    predicates: [hasModel,hasModel]
+    predicates: [hasAgentInstance,hasAgentDefinition]
   hasModelForDeployment:
     predicates: [hasDeployment,hasModel]
   hasDataProductsForDataProcessDefinition:

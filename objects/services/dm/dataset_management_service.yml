@@ -368,4 +368,12 @@ methods:
     out:
       values: {}
 
+#--------
+  read_object:
+    docstring: |
+      Reads an object from the object store
+    in:
+      obj_id: ""
+    out:
+      obj_dictionary: {}
 

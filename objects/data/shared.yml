@@ -232,6 +232,8 @@ Device: !Extends_TaskableResource
   geospatial_bounds: !GeospatialBounds
   #Begin and end timestamp for this device
   temporal_bounds: !TemporalBounds
+  # The OOI Asset Tracking Property Number
+  ooi_property_number: ""
 
 
 
@@ -266,6 +268,8 @@ DeviceModel: !Extends_InformationResource
   # List of ParameterCharacteristicsReport objects
   #@ContentType=ParameterCharacteristicsReport
   parameter_characteristics_reports: []
+  # OOI Device Model Type
+  ooi_type_number: ""
 ---
 
 # Enumerates the representation type for an attachment. Possible values are:

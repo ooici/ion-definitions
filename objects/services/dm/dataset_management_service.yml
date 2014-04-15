@@ -368,4 +368,12 @@ methods:
     out:
       values: {}
 
+#--------
+  read_qc_table:
+    docstring: |
+      Reads an object containing uploaded QC tables from the object store
+    in:
+      obj_id: ""
+    out:
+      obj_dictionary: {}
 

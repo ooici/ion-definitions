@@ -52,6 +52,8 @@ DeviceSite: !Extends_Site
   planned_uplink_port: !PlatformPort
   # For UI distinction purposes, a more fine granular resource type
   alt_resource_type: ""
+  # A list of StreamConfigurations for this Site. Everything deployed at this Site must adhere to one of these.
+  stream_configurations: []
 ---
 
 # Represents a reference designator within an observatory, designated for the deployment of functionally

@@ -43,6 +43,10 @@ AssociationDefinitions:
     domain: [Device, InstrumentSite, PlatformSite]
     range: [Deployment, InstrumentSite, PlatformSite]
     docstring: References the Deployment (combination of Device and Site with temporal extent) associated with a Site or Device
+  - predicate: withinDeployment
+    domain: [Device]
+    range: [Deployment]
+    docstring: References all Deployments throughout entire lifecycle of a Device
   - predicate: hasInputDataProducer
     domain: [DataProducer]
     range: [DataProducer]

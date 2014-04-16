@@ -11,6 +11,9 @@ ExternalArchive:
   # The contact information for the archive POC.
   archive_contact: !ContactInformation
 
+---
+
+DataProductType: !enum (values=(SITE, DEVICE), default=DEVICE)
 
 ---
 
@@ -186,6 +189,12 @@ DataProduct: !Extends_InformationResource
   # Describes user entered changes to this data product over time.
   # This is in addition to the event history of life cycle state changes, resource changes and other events.
   lineage_description: ""
+
+  # Defines each Dataset Window for a Site DataProduct
+  dataset_windows: [] # A list of dicts that associate a Site to a Dataset, temporally. (starting=, ending=, dataset_id=)
+
+  # Defines if the DataProduct is from a Site or Device
+  category: !DataProductType
 
 ---
 # (UNUSED) Represents a version or variant of a data product.

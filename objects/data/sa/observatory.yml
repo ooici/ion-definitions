@@ -40,6 +40,8 @@ PlatformPort:
   port_type: !PortTypeEnum
   # IP address of port as needed for cabled platforms
   ip_address: ""
+  # the device id of the parent device, clarifies multi-tier platform structure
+  parent_id: ""
 
 ---
 

@@ -43,6 +43,10 @@ AssociationDefinitions:
     domain: [Device, InstrumentSite, PlatformSite]
     range: [Deployment, InstrumentSite, PlatformSite]
     docstring: References the Deployment (combination of Device and Site with temporal extent) associated with a Site or Device
+  - predicate: hasPrimaryDeployment
+    domain: [Device, InstrumentSite, PlatformSite]
+    range: [Deployment]
+    docstring: References the deployment that is currently active (DEPLOYED state)
   - predicate: withinDeployment
     domain: [Device]
     range: [Deployment]

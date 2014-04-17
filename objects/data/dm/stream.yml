@@ -2,6 +2,10 @@
 Stream: !Extends_InformationResource
   stream_route: !StreamRoute
   persisted: False
+  # stream type of stream
+  stream_type: ""
+  # The stream name identified by the stream configuration
+  stream_name: ""
 
 
 # Defines a well-known identifier within a TopicTopology

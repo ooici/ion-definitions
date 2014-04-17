@@ -63,7 +63,6 @@ methods:
     in:
       data_product_id: ''
       stream_definition_id: ''
-      exchange_point: ''
     out:
     throws:
       NotFound: object with specified id does not exist
@@ -75,6 +74,15 @@ methods:
     out:
     throws:
       NotFound: object with specified id does not exist
+
+  assign_stream_to_data_product:
+    docstring: Assigns a stream to a data product
+    in:
+      data_product_id: ''
+      stream_id: ''
+    out:
+    throws:
+      NotFound: object with specified id does not exit
 
   find_data_products:
     in:

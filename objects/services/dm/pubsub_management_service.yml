@@ -77,6 +77,8 @@ methods:
       credentials: {}
       stream_definition_id: ""
       description: ''
+      stream_name: ''
+      stream_type: ''
     out:
       stream_id: ""
       stream_route: {}

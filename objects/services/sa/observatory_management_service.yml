@@ -557,6 +557,39 @@ methods:
       NotFound: object with specified id does not exist
 
 
+  assign_device_to_deployment:
+    docstring: link a physical device to a deployment
+    in:
+      device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_device_from_deployment:
+    in:
+      device_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_site_to_deployment:
+    docstring: link a site to a deployment
+    in:
+      site_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_site_from_deployment:
+    in:
+      site_id: ""
+      deployment_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
 
 
   # -----------------

@@ -27,6 +27,7 @@ methods:
       exchange_point: ""
       dataset_id: ""
       parent_data_product_id: ""
+      default_stream_configuration: !StreamConfiguration
     out:
       data_product_id: ""
 
@@ -64,6 +65,7 @@ methods:
       data_product_id: ''
       stream_definition_id: ''
       exchange_point: ''
+      stream_configuration: !StreamConfiguration
     out:
     throws:
       NotFound: object with specified id does not exist

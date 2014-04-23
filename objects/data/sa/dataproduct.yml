@@ -11,6 +11,20 @@ ExternalArchive:
   # The contact information for the archive POC.
   archive_contact: !ContactInformation
 
+---
+
+DataProductTypeEnum: !enum (values=(SITE, DEVICE), default=DEVICE)
+
+---
+
+# Represents a temporal window of a Dataset
+DatasetWindow:
+    # Beginning and End of data window
+    bounds: !TemporalBounds
+    # ID of the dataset which the time window applies.  Yes, storing an ID here.
+    dataset_id: ""
+    # Arbitrary set of key-value attributes
+    attributes: {}
 
 ---
 
@@ -22,7 +36,7 @@ DataProduct: !Extends_InformationResource
   # Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID.
   # It will indicate the OOI identity in some way (may indicate each Org as they issue their own resource IDs)
   naming_authority_id: ""
-  
+
   # All entities that serves as a contact point for this data product as a list of ContactInformation objects.
   #@ContentType=ContactInformation
   contacts: []
@@ -186,6 +200,13 @@ DataProduct: !Extends_InformationResource
   # Describes user entered changes to this data product over time.
   # This is in addition to the event history of life cycle state changes, resource changes and other events.
   lineage_description: ""
+
+  # Defines each Dataset Window for a Site DataProduct
+  #@ContentType=DatasetWindow
+  dataset_windows: []
+
+  # Defines if the DataProduct is from a Site or Device
+  category: !DataProductTypeEnum
 
 ---
 # (UNUSED) Represents a version or variant of a data product.

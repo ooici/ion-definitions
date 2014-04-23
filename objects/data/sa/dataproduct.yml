@@ -13,7 +13,7 @@ ExternalArchive:
 
 ---
 
-DataProductType: !enum (values=(SITE, DEVICE), default=DEVICE)
+DataProductTypeEnum: !enum (values=(SITE, DEVICE), default=DEVICE)
 
 ---
 
@@ -194,7 +194,7 @@ DataProduct: !Extends_InformationResource
   dataset_windows: [] # A list of dicts that associate a Site to a Dataset, temporally. (starting=, ending=, dataset_id=)
 
   # Defines if the DataProduct is from a Site or Device
-  category: !DataProductType
+  category: !DataProductTypeEnum
 
 ---
 # (UNUSED) Represents a version or variant of a data product.

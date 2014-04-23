@@ -106,6 +106,14 @@ apps:
 #    bootlevel: 10
 
   #### DM Services
+
+  - name: bootstrap_eoi
+    processapp: [bootstrap_eoi, ion.processes.bootstrap.bootstrapper, Bootstrapper]
+    bootlevel: 9
+    config:
+      bootstrap_plugins:
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_eoi, BootstrapEOI]
+
   - name: dataset_management
     processapp: [dataset_management, ion.services.dm.inventory.dataset_management_service, DatasetManagementService]
     bootlevel: 10

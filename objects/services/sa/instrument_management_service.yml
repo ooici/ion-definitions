@@ -822,48 +822,6 @@ methods:
 
 
 
-  # -----------------
-  # Deploying sites
-
-  deploy_platform_device:
-    docstring: link a physical platform to a platform site - OBSOLETE - use assign_device_to_deployment
-    in:
-      platform_device_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  undeploy_platform_device:
-    docstring: unassign - OBSOLETE - use observatory_management/unassign_device_from_deployment
-    in:
-      platform_device_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-
-  deploy_instrument_device:
-    docstring: link a physical instrument to a instrument site - OBSOLETE - use assign_device_to_deployment
-    in:
-      instrument_device_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  undeploy_instrument_device:
-    docstring: unassign - OBSOLETE - use observatory_management/unassign_device_from_deployment
-    in:
-      instrument_device_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-
-
 
 
   ##################

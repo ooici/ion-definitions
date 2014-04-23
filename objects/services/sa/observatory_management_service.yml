@@ -592,50 +592,6 @@ methods:
       NotFound: object with specified id does not exist
 
 
-
-  # -----------------
-  # Deploying sites
-
-  # MOVE to assign_xxx_to_deployment etc (currently duplicates)
-
-  deploy_platform_site:
-    docstring: link a deployment to a platform site - OBSOLETE - use assign_site_to_deployment
-    in:
-      platform_site_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  undeploy_platform_site:
-    docstring: unassign - OBSOLETE - use unassign_site_from_deployment
-    in:
-      platform_site_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-
-  deploy_instrument_site:
-    docstring: link a deployment to a instrument site - OBSOLETE - use assign_site_to_deployment
-    in:
-      instrument_site_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-  undeploy_instrument_site:
-    docstring: unassign - OBSOLETE - use unassign_site_from_deployment
-    in:
-      instrument_site_id: ""
-      deployment_id: ""
-    out:
-    throws:
-      NotFound: object with specified id does not exist
-
-
   # -----------------
   # find methods
 

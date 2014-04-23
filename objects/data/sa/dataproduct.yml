@@ -17,6 +17,17 @@ DataProductTypeEnum: !enum (values=(SITE, DEVICE), default=DEVICE)
 
 ---
 
+# Represents a temporal window of a Dataset
+DatasetWindow:
+    # Beginning and End of data window
+    bounds: !TemporalBounds
+    # ID of the dataset which the time window applies.  Yes, storing an ID here.
+    dataset_id: ""
+    # Arbitrary set of key-value attributes
+    attributes: {}
+
+---
+
 # Represents a uniquely identified presentation of a defined collection of information.
 # The presentation consists of a particular subset of the collection. A DataProduct may
 # have a real-time stream and may have persisted historic data.
@@ -25,7 +36,7 @@ DataProduct: !Extends_InformationResource
   # Indicates the authority that is issuing the IDs, so that people with the product can know how/where to look up the ID.
   # It will indicate the OOI identity in some way (may indicate each Org as they issue their own resource IDs)
   naming_authority_id: ""
-  
+
   # All entities that serves as a contact point for this data product as a list of ContactInformation objects.
   #@ContentType=ContactInformation
   contacts: []
@@ -191,7 +202,8 @@ DataProduct: !Extends_InformationResource
   lineage_description: ""
 
   # Defines each Dataset Window for a Site DataProduct
-  dataset_windows: [] # A list of dicts that associate a Site to a Dataset, temporally. (starting=, ending=, dataset_id=)
+  #@ContentType=DatasetWindow
+  dataset_windows: []
 
   # Defines if the DataProduct is from a Site or Device
   category: !DataProductTypeEnum

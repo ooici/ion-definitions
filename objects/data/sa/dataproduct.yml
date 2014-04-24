@@ -105,6 +105,12 @@ DataProduct: !Extends_InformationResource
   # Whether the Trend Test (TRNDTST) QC is run on this data product. Codelist: applicable, not applicable, TBD
   qc_trndtst: ""
 
+  # Dictionary describing which parameters have qc enabled.
+  #{ "TEMPWAT_L1": ["qc_glblrng", "qc_gradtst"],
+  #  "DENSITY_L2": ["qc_glblrng"] }
+  # 
+  qc_applications: {}
+
   # The OOI document control number (DCN) for this data product's Data Processing Specification.
   # Comma-separated list when multiple values are present.
   dps_dcn: ""

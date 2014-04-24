@@ -39,7 +39,8 @@ system:
 
 bootstrap:
   # Launches a registration worker to register DAP datasets with PyDAP
-  use_pydap: False
+  # If this is disabled, registration will not be available.
+  use_pydap: True
 
 
 # ----------------------------------------------------------------------------------

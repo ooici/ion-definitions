@@ -531,11 +531,13 @@ ExternalReferencesUpdatedEvent: !Extends_InformationContentModifiedEvent
 
 ---
 
-ParameterQCEvent: !Extends_Event
-  # Origin is the dataset
-  qc_parameter:   ""
-  temporal_values: []
-  configuration:  {}
+#  Events published in the context of data processing
+DataProcessingEvent: !Extends_Event
+
+---
+
+# Events published in a Quality Control context
+DataQCEvent: !Extends_DataProcessingEvent
 
 ---
 
@@ -545,6 +547,14 @@ ParameterQCEvent: !Extends_Event
 #   - System is re-deployed with new QC algorithms
 # The QC Processor should re-evaluate applicable QCs for data products associated
 # with the reference designator
-ResetQCEvent: !Extends_Event
+ResetQCEvent: !Extends_DataQCEvent
   reference_designator: ""
+
+# Published when:
+#   - QC Processing detects a failure in the vector of parameter values
+ParameterQCEvent: !Extends_DataQCEvent
+  # Origin is the dataset
+  qc_parameter:   ""
+  temporal_values: []
+  configuration:  {}
 

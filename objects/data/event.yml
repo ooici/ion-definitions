@@ -536,3 +536,15 @@ ParameterQCEvent: !Extends_Event
   qc_parameter:   ""
   temporal_values: []
   configuration:  {}
+
+---
+
+# Published when:
+#   - QC Lookup tables are changed
+#   - User driven QC re-evaluation
+#   - System is re-deployed with new QC algorithms
+# The QC Processor should re-evaluate applicable QCs for data products associated
+# with the reference designator
+ResetQCEvent: !Extends_Event
+  reference_designator: ""
+

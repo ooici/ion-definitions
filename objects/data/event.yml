@@ -547,8 +547,9 @@ DataQCEvent: !Extends_DataProcessingEvent
 #   - System is re-deployed with new QC algorithms
 # The QC Processor should re-evaluate applicable QCs for data products associated
 # with the reference designator
+# origin is the reference designator
 ResetQCEvent: !Extends_DataQCEvent
-  reference_designator: ""
+  # origin is the reference_designator
 
 # Published when:
 #   - QC Processing detects a failure in the vector of parameter values

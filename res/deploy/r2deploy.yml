@@ -55,6 +55,8 @@ apps:
       bootstrap_plugins:
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_org, BootstrapOrg]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_exchange, BootstrapExchange]
+        #used for eoi services, needs to be run before datasetmanagement service
+        - plugin: [ion.processes.bootstrap.plugins.bootstrap_eoi, BootstrapEOI]
 
   ##################################
   # HIGHER LEVEL SERVICES

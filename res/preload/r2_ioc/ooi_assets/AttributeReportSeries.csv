@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Series Attributes Report,Report Generated: 3/27/2014
+Series Attributes Report,Report Generated: 4/28/2014
 
 Textbox14
 
@@ -629,6 +629,29 @@ CTDBP,O,CTDBP Series O,RSN O&M Spares,
 CTDBP,O,CTDBP Series O,RSN Part Number,
 CTDBP,O,CTDBP Series O,Susceptible to Acoustic Interference,
 CTDBP,O,CTDBP Series O,"Vendor CLIN, SubCLIN or Model #",
+CTDBP,P,CTDBP Series P,2009 Baseline Price*,"$10,630.00"
+CTDBP,P,CTDBP Series P,2009 Deployed Instrument Count,15
+CTDBP,P,CTDBP Series P,Alternate Instrument Class Name,CTD Pumped
+CTDBP,P,CTDBP Series P,CE Spares,
+CTDBP,P,CTDBP Series P,CGSN MREFC Spares,
+CTDBP,P,CTDBP Series P,CGSN O&M Spares,
+CTDBP,P,CTDBP Series P,CGSN P/N,
+CTDBP,P,CTDBP Series P,ClassLongName,CTD_bottom_pumped
+CTDBP,P,CTDBP Series P,Comments,
+CTDBP,P,CTDBP Series P,CP Spares,
+CTDBP,P,CTDBP Series P,Description,CTDs equiped with a bottom pump
+CTDBP,P,CTDBP Series P,ECRs that changed the count,
+CTDBP,P,CTDBP Series P,Global Spares,
+CTDBP,P,CTDBP Series P,Instrument Configuration,
+CTDBP,P,CTDBP Series P,Link to the Specification,
+CTDBP,P,CTDBP Series P,Notes,
+CTDBP,P,CTDBP Series P,PrimaryScienceDiscipline,P
+CTDBP,P,CTDBP Series P,Produces Acoustic Interference,
+CTDBP,P,CTDBP Series P,Ready for 2013?,
+CTDBP,P,CTDBP Series P,RSN O&M Spares,
+CTDBP,P,CTDBP Series P,RSN Part Number,
+CTDBP,P,CTDBP Series P,Susceptible to Acoustic Interference,
+CTDBP,P,CTDBP Series P,"Vendor CLIN, SubCLIN or Model #",
 CTDGV,M,CTDGV Series M,2009 Baseline Price*,
 CTDGV,M,CTDGV Series M,2009 Deployed Instrument Count,24
 CTDGV,M,CTDGV Series M,Alternate Instrument Class Name,CTD Glider
@@ -1342,6 +1365,29 @@ FLORD,E,FLORD Series E,RSN O&M Spares,
 FLORD,E,FLORD Series E,RSN Part Number,
 FLORD,E,FLORD Series E,Susceptible to Acoustic Interference,
 FLORD,E,FLORD Series E,"Vendor CLIN, SubCLIN or Model #",
+FLORD,G,FLORD Series G,2009 Baseline Price*,"$5,600.00"
+FLORD,G,FLORD Series G,2009 Deployed Instrument Count,35
+FLORD,G,FLORD Series G,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,G,FLORD Series G,CE Spares,
+FLORD,G,FLORD Series G,CGSN MREFC Spares,
+FLORD,G,FLORD Series G,CGSN O&M Spares,
+FLORD,G,FLORD Series G,CGSN P/N,
+FLORD,G,FLORD Series G,ClassLongName,Fluorometer_two_wavelength
+FLORD,G,FLORD Series G,Comments,
+FLORD,G,FLORD Series G,CP Spares,
+FLORD,G,FLORD Series G,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,G,FLORD Series G,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,G,FLORD Series G,Global Spares,
+FLORD,G,FLORD Series G,Instrument Configuration,
+FLORD,G,FLORD Series G,Link to the Specification,
+FLORD,G,FLORD Series G,Notes,
+FLORD,G,FLORD Series G,PrimaryScienceDiscipline,B
+FLORD,G,FLORD Series G,Produces Acoustic Interference,
+FLORD,G,FLORD Series G,Ready for 2013?,
+FLORD,G,FLORD Series G,RSN O&M Spares,
+FLORD,G,FLORD Series G,RSN Part Number,
+FLORD,G,FLORD Series G,Susceptible to Acoustic Interference,
+FLORD,G,FLORD Series G,"Vendor CLIN, SubCLIN or Model #",
 FLORD,L,FLORD Series L,2009 Baseline Price*,"$5,600.00"
 FLORD,L,FLORD Series L,2009 Deployed Instrument Count,35
 FLORD,L,FLORD Series L,Alternate Instrument Class Name,2-Wavelength Fluorometer
@@ -2262,6 +2308,29 @@ PCO2W,B,PCO2W Series B,RSN O&M Spares,
 PCO2W,B,PCO2W Series B,RSN Part Number,
 PCO2W,B,PCO2W Series B,Susceptible to Acoustic Interference,
 PCO2W,B,PCO2W Series B,"Vendor CLIN, SubCLIN or Model #",
+PCO2W,C,PCO2W Series C,2009 Baseline Price*,"$18,375.00"
+PCO2W,C,PCO2W Series C,2009 Deployed Instrument Count,25
+PCO2W,C,PCO2W Series C,Alternate Instrument Class Name,pCO2 Water
+PCO2W,C,PCO2W Series C,CE Spares,
+PCO2W,C,PCO2W Series C,CGSN MREFC Spares,
+PCO2W,C,PCO2W Series C,CGSN O&M Spares,
+PCO2W,C,PCO2W Series C,CGSN P/N,
+PCO2W,C,PCO2W Series C,ClassLongName,pCO2_water
+PCO2W,C,PCO2W Series C,Comments,
+PCO2W,C,PCO2W Series C,CP Spares,
+PCO2W,C,PCO2W Series C,Description,Measures partial pressure of CO2 in the water column
+PCO2W,C,PCO2W Series C,ECRs that changed the count,
+PCO2W,C,PCO2W Series C,Global Spares,
+PCO2W,C,PCO2W Series C,Instrument Configuration,
+PCO2W,C,PCO2W Series C,Link to the Specification,
+PCO2W,C,PCO2W Series C,Notes,
+PCO2W,C,PCO2W Series C,PrimaryScienceDiscipline,C
+PCO2W,C,PCO2W Series C,Produces Acoustic Interference,
+PCO2W,C,PCO2W Series C,Ready for 2013?,
+PCO2W,C,PCO2W Series C,RSN O&M Spares,
+PCO2W,C,PCO2W Series C,RSN Part Number,
+PCO2W,C,PCO2W Series C,Susceptible to Acoustic Interference,
+PCO2W,C,PCO2W Series C,"Vendor CLIN, SubCLIN or Model #",
 PCO2W,J,PCO2W Series J,2009 Baseline Price*,"$18,375.00"
 PCO2W,J,PCO2W Series J,2009 Deployed Instrument Count,25
 PCO2W,J,PCO2W Series J,Alternate Instrument Class Name,pCO2 Water

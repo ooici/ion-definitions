@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Subseries Attributes Report,Report Generated: 3/27/2014
+Subseries Attributes Report,Report Generated: 4/28/2014
 
 Textbox14
 
@@ -629,6 +629,29 @@ CTDBP,O,01,CTDBP Series O Sub 01,RSN O&M Spares,
 CTDBP,O,01,CTDBP Series O Sub 01,RSN Part Number,
 CTDBP,O,01,CTDBP Series O Sub 01,Susceptible to Acoustic Interference,
 CTDBP,O,01,CTDBP Series O Sub 01,"Vendor CLIN, SubCLIN or Model #","16plusV2, 16p-1a, 16p-???, 16p-5, 16p-4h"
+CTDBP,P,01,CTDBP Series P Sub 01,2009 Baseline Price*,"$10,630.00"
+CTDBP,P,01,CTDBP Series P Sub 01,2009 Deployed Instrument Count,15
+CTDBP,P,01,CTDBP Series P Sub 01,Alternate Instrument Class Name,CTD Pumped
+CTDBP,P,01,CTDBP Series P Sub 01,CE Spares,
+CTDBP,P,01,CTDBP Series P Sub 01,CGSN MREFC Spares,
+CTDBP,P,01,CTDBP Series P Sub 01,CGSN O&M Spares,
+CTDBP,P,01,CTDBP Series P Sub 01,CGSN P/N,
+CTDBP,P,01,CTDBP Series P Sub 01,ClassLongName,CTD_bottom_pumped
+CTDBP,P,01,CTDBP Series P Sub 01,Comments,
+CTDBP,P,01,CTDBP Series P Sub 01,CP Spares,
+CTDBP,P,01,CTDBP Series P Sub 01,Description,CTDs equiped with a bottom pump
+CTDBP,P,01,CTDBP Series P Sub 01,ECRs that changed the count,
+CTDBP,P,01,CTDBP Series P Sub 01,Global Spares,
+CTDBP,P,01,CTDBP Series P Sub 01,Instrument Configuration,7000m titanium housing; 1000m strain gauge; MCBH 6-pin connector; 5T titanium pump with MCBH
+CTDBP,P,01,CTDBP Series P Sub 01,Link to the Specification,
+CTDBP,P,01,CTDBP Series P Sub 01,Notes,
+CTDBP,P,01,CTDBP Series P Sub 01,PrimaryScienceDiscipline,P
+CTDBP,P,01,CTDBP Series P Sub 01,Produces Acoustic Interference,
+CTDBP,P,01,CTDBP Series P Sub 01,Ready for 2013?,
+CTDBP,P,01,CTDBP Series P Sub 01,RSN O&M Spares,
+CTDBP,P,01,CTDBP Series P Sub 01,RSN Part Number,
+CTDBP,P,01,CTDBP Series P Sub 01,Susceptible to Acoustic Interference,
+CTDBP,P,01,CTDBP Series P Sub 01,"Vendor CLIN, SubCLIN or Model #",
 CTDGV,M,01,CTDGV Series M Sub 01,2009 Baseline Price*,
 CTDGV,M,01,CTDGV Series M Sub 01,2009 Deployed Instrument Count,24
 CTDGV,M,01,CTDGV Series M Sub 01,Alternate Instrument Class Name,CTD Glider
@@ -1342,6 +1365,29 @@ FLORD,E,01,FLORD Series E Sub 01,RSN O&M Spares,
 FLORD,E,01,FLORD Series E Sub 01,RSN Part Number,
 FLORD,E,01,FLORD Series E Sub 01,Susceptible to Acoustic Interference,
 FLORD,E,01,FLORD Series E Sub 01,"Vendor CLIN, SubCLIN or Model #",
+FLORD,G,01,FLORD Series G Sub 01,2009 Baseline Price*,"$5,600.00"
+FLORD,G,01,FLORD Series G Sub 01,2009 Deployed Instrument Count,35
+FLORD,G,01,FLORD Series G Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
+FLORD,G,01,FLORD Series G Sub 01,CE Spares,
+FLORD,G,01,FLORD Series G Sub 01,CGSN MREFC Spares,
+FLORD,G,01,FLORD Series G Sub 01,CGSN O&M Spares,
+FLORD,G,01,FLORD Series G Sub 01,CGSN P/N,
+FLORD,G,01,FLORD Series G Sub 01,ClassLongName,Fluorometer_two_wavelength
+FLORD,G,01,FLORD Series G Sub 01,Comments,
+FLORD,G,01,FLORD Series G Sub 01,CP Spares,
+FLORD,G,01,FLORD Series G Sub 01,Description,"2-Wavelength Fluorometer for measurement of fluorescence, Chl-a, optical backscatter"
+FLORD,G,01,FLORD Series G Sub 01,ECRs that changed the count,"ECR 1300-00177, ECR 1303-00796"
+FLORD,G,01,FLORD Series G Sub 01,Global Spares,
+FLORD,G,01,FLORD Series G Sub 01,Instrument Configuration,w/ cable.  P/N# EXA-210374
+FLORD,G,01,FLORD Series G Sub 01,Link to the Specification,
+FLORD,G,01,FLORD Series G Sub 01,Notes,
+FLORD,G,01,FLORD Series G Sub 01,PrimaryScienceDiscipline,B
+FLORD,G,01,FLORD Series G Sub 01,Produces Acoustic Interference,
+FLORD,G,01,FLORD Series G Sub 01,Ready for 2013?,
+FLORD,G,01,FLORD Series G Sub 01,RSN O&M Spares,
+FLORD,G,01,FLORD Series G Sub 01,RSN Part Number,
+FLORD,G,01,FLORD Series G Sub 01,Susceptible to Acoustic Interference,
+FLORD,G,01,FLORD Series G Sub 01,"Vendor CLIN, SubCLIN or Model #",
 FLORD,L,01,FLORD Series L Sub 01,2009 Baseline Price*,"$5,600.00"
 FLORD,L,01,FLORD Series L Sub 01,2009 Deployed Instrument Count,35
 FLORD,L,01,FLORD Series L Sub 01,Alternate Instrument Class Name,2-Wavelength Fluorometer
@@ -2262,6 +2308,29 @@ PCO2W,B,01,PCO2W Series B Sub 01,RSN O&M Spares,
 PCO2W,B,01,PCO2W Series B Sub 01,RSN Part Number,
 PCO2W,B,01,PCO2W Series B Sub 01,Susceptible to Acoustic Interference,
 PCO2W,B,01,PCO2W Series B Sub 01,"Vendor CLIN, SubCLIN or Model #","PCYD01 SAMI-CO2 (1 L), PCYD12 foul-pkg, PCYD17 Wet-plug, PCYD24 Case, (D = 1 for WHOI, 3 for OSU)"
+PCO2W,C,01,PCO2W Series C Sub 01,2009 Baseline Price*,"$18,375.00"
+PCO2W,C,01,PCO2W Series C Sub 01,2009 Deployed Instrument Count,25
+PCO2W,C,01,PCO2W Series C Sub 01,Alternate Instrument Class Name,pCO2 Water
+PCO2W,C,01,PCO2W Series C Sub 01,CE Spares,
+PCO2W,C,01,PCO2W Series C Sub 01,CGSN MREFC Spares,
+PCO2W,C,01,PCO2W Series C Sub 01,CGSN O&M Spares,
+PCO2W,C,01,PCO2W Series C Sub 01,CGSN P/N,
+PCO2W,C,01,PCO2W Series C Sub 01,ClassLongName,pCO2_water
+PCO2W,C,01,PCO2W Series C Sub 01,Comments,
+PCO2W,C,01,PCO2W Series C Sub 01,CP Spares,
+PCO2W,C,01,PCO2W Series C Sub 01,Description,Measures partial pressure of CO2 in the water column
+PCO2W,C,01,PCO2W Series C Sub 01,ECRs that changed the count,
+PCO2W,C,01,PCO2W Series C Sub 01,Global Spares,
+PCO2W,C,01,PCO2W Series C Sub 01,Instrument Configuration,MCBH Connector option; active bio-fouling; extra battery for 1 yr deployment; inductive modem connection
+PCO2W,C,01,PCO2W Series C Sub 01,Link to the Specification,
+PCO2W,C,01,PCO2W Series C Sub 01,Notes,
+PCO2W,C,01,PCO2W Series C Sub 01,PrimaryScienceDiscipline,C
+PCO2W,C,01,PCO2W Series C Sub 01,Produces Acoustic Interference,
+PCO2W,C,01,PCO2W Series C Sub 01,Ready for 2013?,
+PCO2W,C,01,PCO2W Series C Sub 01,RSN O&M Spares,
+PCO2W,C,01,PCO2W Series C Sub 01,RSN Part Number,
+PCO2W,C,01,PCO2W Series C Sub 01,Susceptible to Acoustic Interference,
+PCO2W,C,01,PCO2W Series C Sub 01,"Vendor CLIN, SubCLIN or Model #",
 PCO2W,J,01,PCO2W Series J Sub 01,2009 Baseline Price*,"$18,375.00"
 PCO2W,J,01,PCO2W Series J Sub 01,2009 Deployed Instrument Count,25
 PCO2W,J,01,PCO2W Series J Sub 01,Alternate Instrument Class Name,pCO2 Water

@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Attributes Report,Report Generated: 3/27/2014
+Data Product Attributes Report,Report Generated: 4/28/2014
 
 Textbox14
 
@@ -78,20 +78,20 @@ BOTSFLU,Seafloor Uplift and Deflation,2,Spike Test (SPKETST) QC,Applicable
 BOTSFLU,Seafloor Uplift and Deflation,2,Stuck Value Test (STUCKVL) QC,Applicable
 BOTSFLU,Seafloor Uplift and Deflation,2,Trend Test (TRNDTST) QC,Applicable
 BOTSFLU,Seafloor Uplift and Deflation,2,Units,meters
-BOTTILT,Seafloor High-Resolution Tilt,1,Combine QC Flags (CMBNFLG) QC,Applicable
-BOTTILT,Seafloor High-Resolution Tilt,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
-BOTTILT,Seafloor High-Resolution Tilt,1,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
-BOTTILT,Seafloor High-Resolution Tilt,1,DPS DCN(s),DCN 1341-00060
-BOTTILT,Seafloor High-Resolution Tilt,1,Global Range Test (GLBLRNG) QC,Applicable
-BOTTILT,Seafloor High-Resolution Tilt,1,Gradient Test (GRADTST) QC,Applicable
-BOTTILT,Seafloor High-Resolution Tilt,1,Local Range Test (LOCLRNG) QC,Applicable
-BOTTILT,Seafloor High-Resolution Tilt,1,Notes,
-BOTTILT,Seafloor High-Resolution Tilt,1,Processing Flow Diagram DCN(s),DCN 1342-00060
-BOTTILT,Seafloor High-Resolution Tilt,1,Regime(s),Seafloor/Crust
-BOTTILT,Seafloor High-Resolution Tilt,1,Spike Test (SPKETST) QC,Applicable
-BOTTILT,Seafloor High-Resolution Tilt,1,Stuck Value Test (STUCKVL) QC,Applicable
-BOTTILT,Seafloor High-Resolution Tilt,1,Trend Test (TRNDTST) QC,Applicable
-BOTTILT,Seafloor High-Resolution Tilt,1,Units,microradians
+BOTTILT,Seafloor High-Resolution Tilt,0,Combine QC Flags (CMBNFLG) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3084
+BOTTILT,Seafloor High-Resolution Tilt,0,DOORS L2 Science Requirement Text,Coupled near bottom pressure and tilt (Seafloor uplift/deflation)
+BOTTILT,Seafloor High-Resolution Tilt,0,DPS DCN(s),DCN 1341-00060
+BOTTILT,Seafloor High-Resolution Tilt,0,Global Range Test (GLBLRNG) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Gradient Test (GRADTST) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Local Range Test (LOCLRNG) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Notes,
+BOTTILT,Seafloor High-Resolution Tilt,0,Processing Flow Diagram DCN(s),DCN 1342-00060
+BOTTILT,Seafloor High-Resolution Tilt,0,Regime(s),Seafloor/Crust
+BOTTILT,Seafloor High-Resolution Tilt,0,Spike Test (SPKETST) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Stuck Value Test (STUCKVL) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Trend Test (TRNDTST) QC,not applicable
+BOTTILT,Seafloor High-Resolution Tilt,0,Units,microradians
 CAMSTIL,Still Image ,1,Combine QC Flags (CMBNFLG) QC,not applicable
 CAMSTIL,Still Image ,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3805
 CAMSTIL,Still Image ,1,DOORS L2 Science Requirement Text,"Imagery, Still"
@@ -246,20 +246,20 @@ DNASAMP,16s rRNA sequence of filtered physical sample,2,Spike Test (SPKETST) QC,
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Stuck Value Test (STUCKVL) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Trend Test (TRNDTST) QC,not applicable
 DNASAMP,16s rRNA sequence of filtered physical sample,2,Units,2 micron filter
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Combine QC Flags (CMBNFLG) QC,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,DOORS L2 Science Requirement #(s), L2-SR-RQ-3048
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,DOORS L2 Science Requirement Text,Dissolved Oxygen
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,DPS DCN(s),DCN 1341-00521
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Global Range Test (GLBLRNG) QC,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Gradient Test (GRADTST) QC,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Local Range Test (LOCLRNG) QC,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Notes,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Processing Flow Diagram DCN(s),DCN 1342-00521
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Regime(s),Water Column
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Spike Test (SPKETST) QC,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Stuck Value Test (STUCKVL) QC,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Trend Test (TRNDTST) QC,not applicable
-DOCONCF,Oxygen Concentration from Fastrep DO Instrument,0,Units,counts
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Combine QC Flags (CMBNFLG) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,DOORS L2 Science Requirement #(s),L2-SR-RQ-3048
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,DOORS L2 Science Requirement Text,Dissolved Oxygen
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,DPS DCN(s),DCN 1341-00521
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Global Range Test (GLBLRNG) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Gradient Test (GRADTST) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Local Range Test (LOCLRNG) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Notes,
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Processing Flow Diagram DCN(s),DCN 1342-00521
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Regime(s),Water Column
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Spike Test (SPKETST) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Stuck Value Test (STUCKVL) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Trend Test (TRNDTST) QC,TBD
+DOCONCF,Oxygen Concentration from Fastrep DO Instrument,2,Units, µmol/kg
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Combine QC Flags (CMBNFLG) QC,not applicable
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3048
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,DOORS L2 Science Requirement Text,Dissolved Oxygen
@@ -274,20 +274,34 @@ DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Spike Test (SPKETST) QC
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Stuck Value Test (STUCKVL) QC,not applicable
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Trend Test (TRNDTST) QC,not applicable
 DOCONCS,Oxygen Concentration from Stable DO Instrument,0,Units,angular degrees
-ECHOINT,Echo Intensity,1,Combine QC Flags (CMBNFLG) QC,Not Applicable
-ECHOINT,Echo Intensity,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3887
-ECHOINT,Echo Intensity,1,DOORS L2 Science Requirement Text,Velocity profile measurements shall provide a measure of acoustic backscatter intensity for each depth bin.
-ECHOINT,Echo Intensity,1,DPS DCN(s),"[DCN 1341-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/7ea90727-c1b4-4d73-b565-0ae4227da451/1341-00750_Data_Product_SPEC_VELPROF_ECHOINT_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
-ECHOINT,Echo Intensity,1,Global Range Test (GLBLRNG) QC,Applicable
-ECHOINT,Echo Intensity,1,Gradient Test (GRADTST) QC,Not Applicable
-ECHOINT,Echo Intensity,1,Local Range Test (LOCLRNG) QC,Not Applicable
-ECHOINT,Echo Intensity,1,Notes,
-ECHOINT,Echo Intensity,1,Processing Flow Diagram DCN(s),"[DCN 1342-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/c1fb71ed-ec32-4035-9d7b-d8228b57f7b0/1342-00750_Data_Processing_Flow_ADCP_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)"
-ECHOINT,Echo Intensity,1,Regime(s),Water Column
-ECHOINT,Echo Intensity,1,Spike Test (SPKETST) QC,Applicable
-ECHOINT,Echo Intensity,1,Stuck Value Test (STUCKVL) QC,Applicable
-ECHOINT,Echo Intensity,1,Trend Test (TRNDTST) QC,Not Applicable
-ECHOINT,Echo Intensity,1,Units,dB
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Combine QC Flags (CMBNFLG) QC,not applicable
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,DOORS L2 Science Requirement #(s),L2-SR-RQ-3048
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,DOORS L2 Science Requirement Text,Dissolved Oxygen
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,DPS DCN(s),[DCN 1341-00520|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/97f4bfbb-b075-4b1d-993f-b1df24adf369/1341-00520_Data_Product_SPEC_DOCONCS_OOI.pdf]
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Global Range Test (GLBLRNG) QC,applicable
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Gradient Test (GRADTST) QC,not applicable
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Local Range Test (LOCLRNG) QC,applicable
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Notes,
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Processing Flow Diagram DCN(s),[DCN 1342-00520|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/047d2339-e8e3-44c8-b1b7-4b4a575016b9/1342-00520_Data_Processing_Flow_DOSTA_OOI.pdf]
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Regime(s),Water Column
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Spike Test (SPKETST) QC,applicable
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Stuck Value Test (STUCKVL) QC,applicable
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Trend Test (TRNDTST) QC,applicable
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,2,Units,µmol/kg 
+ECHOINT,Echo Intensity,0,Combine QC Flags (CMBNFLG) QC,not applicable
+ECHOINT,Echo Intensity,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3887
+ECHOINT,Echo Intensity,0,DOORS L2 Science Requirement Text,Velocity profile measurements shall provide a measure of acoustic backscatter intensity for each depth bin.
+ECHOINT,Echo Intensity,0,DPS DCN(s),"[DCN 1341-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/7ea90727-c1b4-4d73-b565-0ae4227da451/1341-00750_Data_Product_SPEC_VELPROF_ECHOINT_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
+ECHOINT,Echo Intensity,0,Global Range Test (GLBLRNG) QC,not applicable
+ECHOINT,Echo Intensity,0,Gradient Test (GRADTST) QC,not applicable
+ECHOINT,Echo Intensity,0,Local Range Test (LOCLRNG) QC,not applicable
+ECHOINT,Echo Intensity,0,Notes,
+ECHOINT,Echo Intensity,0,Processing Flow Diagram DCN(s),"[DCN 1342-00750|https://alfresco.oceanobservatories.org/alfresco/d/d/workspace/SpacesStore/c1fb71ed-ec32-4035-9d7b-d8228b57f7b0/1342-00750_Data_Processing_Flow_ADCP_OOI.pdf] (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)"
+ECHOINT,Echo Intensity,0,Regime(s),Water Column
+ECHOINT,Echo Intensity,0,Spike Test (SPKETST) QC,not applicable
+ECHOINT,Echo Intensity,0,Stuck Value Test (STUCKVL) QC,not applicable
+ECHOINT,Echo Intensity,0,Trend Test (TRNDTST) QC,not applicable
+ECHOINT,Echo Intensity,0,Units,dB
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,Combine QC Flags (CMBNFLG) QC,not applicable
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3059
 FLUBSCT,Optical Backscatter (Red Wavelengths),0,DOORS L2 Science Requirement Text,Optical Backscatter
@@ -344,21 +358,21 @@ FLUXWET,Direct Covariance Flux of Moisture,2,Spike Test (SPKETST) QC,Applicable
 FLUXWET,Direct Covariance Flux of Moisture,2,Stuck Value Test (STUCKVL) QC,Applicable
 FLUXWET,Direct Covariance Flux of Moisture,2,Trend Test (TRNDTST) QC,Applicable
 FLUXWET,Direct Covariance Flux of Moisture,2,Units,kg m^(-1) s^(-1) 
-FRSHFLX ,Freshwater Flux,2,Combine QC Flags (CMBNFLG) QC,
+FRSHFLX ,Freshwater Flux,2,Combine QC Flags (CMBNFLG) QC,Applicable
 FRSHFLX ,Freshwater Flux,2,DOORS L2 Science Requirement #(s),
 FRSHFLX ,Freshwater Flux,2,DOORS L2 Science Requirement Text,
 FRSHFLX ,Freshwater Flux,2,DPS DCN(s),
-FRSHFLX ,Freshwater Flux,2,Global Range Test (GLBLRNG) QC,
-FRSHFLX ,Freshwater Flux,2,Gradient Test (GRADTST) QC,
-FRSHFLX ,Freshwater Flux,2,Local Range Test (LOCLRNG) QC,
+FRSHFLX ,Freshwater Flux,2,Global Range Test (GLBLRNG) QC,Applicable
+FRSHFLX ,Freshwater Flux,2,Gradient Test (GRADTST) QC,Applicable
+FRSHFLX ,Freshwater Flux,2,Local Range Test (LOCLRNG) QC,Applicable
 FRSHFLX ,Freshwater Flux,2,Notes,
 FRSHFLX ,Freshwater Flux,2,Processing Flow Diagram DCN(s),
 FRSHFLX ,Freshwater Flux,2,Regime(s),
-FRSHFLX ,Freshwater Flux,2,Spike Test (SPKETST) QC,
-FRSHFLX ,Freshwater Flux,2,Stuck Value Test (STUCKVL) QC,
-FRSHFLX ,Freshwater Flux,2,Trend Test (TRNDTST) QC,
+FRSHFLX ,Freshwater Flux,2,Spike Test (SPKETST) QC,Applicable
+FRSHFLX ,Freshwater Flux,2,Stuck Value Test (STUCKVL) QC,Applicable
+FRSHFLX ,Freshwater Flux,2,Trend Test (TRNDTST) QC,Applicable
 FRSHFLX ,Freshwater Flux,2,Units,m3/s
-GRNDACC,Broadband Ground Acceleration,1,Combine QC Flags (CMBNFLG) QC,Not Applicable
+GRNDACC,Broadband Ground Acceleration,1,Combine QC Flags (CMBNFLG) QC,Applicable
 GRNDACC,Broadband Ground Acceleration,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3603
 GRNDACC,Broadband Ground Acceleration,1,DOORS L2 Science Requirement Text,Strong motion
 GRNDACC,Broadband Ground Acceleration,1,DPS DCN(s),DCN 1341-00100
@@ -400,19 +414,19 @@ HDVIDEO,HD Video ,1,Spike Test (SPKETST) QC,not applicable
 HDVIDEO,HD Video ,1,Stuck Value Test (STUCKVL) QC,not applicable
 HDVIDEO,HD Video ,1,Trend Test (TRNDTST) QC,not applicable
 HDVIDEO,HD Video ,1,Units,Lossless compression Image File
-HEATFLX ,Net Heat Flux,2,Combine QC Flags (CMBNFLG) QC,
+HEATFLX ,Net Heat Flux,2,Combine QC Flags (CMBNFLG) QC,Applicable
 HEATFLX ,Net Heat Flux,2,DOORS L2 Science Requirement #(s),
 HEATFLX ,Net Heat Flux,2,DOORS L2 Science Requirement Text,
 HEATFLX ,Net Heat Flux,2,DPS DCN(s),
-HEATFLX ,Net Heat Flux,2,Global Range Test (GLBLRNG) QC,
-HEATFLX ,Net Heat Flux,2,Gradient Test (GRADTST) QC,
-HEATFLX ,Net Heat Flux,2,Local Range Test (LOCLRNG) QC,
+HEATFLX ,Net Heat Flux,2,Global Range Test (GLBLRNG) QC,Applicable
+HEATFLX ,Net Heat Flux,2,Gradient Test (GRADTST) QC,Applicable
+HEATFLX ,Net Heat Flux,2,Local Range Test (LOCLRNG) QC,Applicable
 HEATFLX ,Net Heat Flux,2,Notes,
 HEATFLX ,Net Heat Flux,2,Processing Flow Diagram DCN(s),
 HEATFLX ,Net Heat Flux,2,Regime(s),
-HEATFLX ,Net Heat Flux,2,Spike Test (SPKETST) QC,
-HEATFLX ,Net Heat Flux,2,Stuck Value Test (STUCKVL) QC,
-HEATFLX ,Net Heat Flux,2,Trend Test (TRNDTST) QC,
+HEATFLX ,Net Heat Flux,2,Spike Test (SPKETST) QC,Applicable
+HEATFLX ,Net Heat Flux,2,Stuck Value Test (STUCKVL) QC,Applicable
+HEATFLX ,Net Heat Flux,2,Trend Test (TRNDTST) QC,Applicable
 HEATFLX ,Net Heat Flux,2,Units,W/m2
 HYDAPBB,Broadband Acoustic pressure waves ,0,Combine QC Flags (CMBNFLG) QC,not applicable
 HYDAPBB,Broadband Acoustic pressure waves ,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3086
@@ -428,20 +442,20 @@ HYDAPBB,Broadband Acoustic pressure waves ,0,Spike Test (SPKETST) QC,not applica
 HYDAPBB,Broadband Acoustic pressure waves ,0,Stuck Value Test (STUCKVL) QC,not applicable
 HYDAPBB,Broadband Acoustic pressure waves ,0,Trend Test (TRNDTST) QC,not applicable
 HYDAPBB,Broadband Acoustic pressure waves ,0,Units,TBD
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Combine QC Flags (CMBNFLG) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,DOORS L2 Science Requirement #(s),
-HYDAPLF,Low Frequency Acoustic pressure waves,1,DOORS L2 Science Requirement Text,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,DPS DCN(s),DCN 1341-00821
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Global Range Test (GLBLRNG) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Gradient Test (GRADTST) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Local Range Test (LOCLRNG) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Notes,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Processing Flow Diagram DCN(s),DCN 1341-00821
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Regime(s),
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Spike Test (SPKETST) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Stuck Value Test (STUCKVL) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Trend Test (TRNDTST) QC,
-HYDAPLF,Low Frequency Acoustic pressure waves,1,Units,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Combine QC Flags (CMBNFLG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,DOORS L2 Science Requirement #(s),
+HYDAPLF,Low Frequency Acoustic pressure waves,0,DOORS L2 Science Requirement Text,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,DPS DCN(s),DCN 1341-00821
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Global Range Test (GLBLRNG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Gradient Test (GRADTST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Local Range Test (LOCLRNG) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Notes,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Processing Flow Diagram DCN(s),DCN 1341-00821
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Regime(s),
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Spike Test (SPKETST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Stuck Value Test (STUCKVL) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Trend Test (TRNDTST) QC,
+HYDAPLF,Low Frequency Acoustic pressure waves,0,Units,
 HYDFRBB,Broadband Frequency,0,Combine QC Flags (CMBNFLG) QC,not applicable
 HYDFRBB,Broadband Frequency,0,DOORS L2 Science Requirement #(s),Derived from design to achieve HYDACR
 HYDFRBB,Broadband Frequency,0,DOORS L2 Science Requirement Text,none
@@ -540,19 +554,19 @@ IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Spike Test (SPKETST) QC,not appl
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Stuck Value Test (STUCKVL) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Trend Test (TRNDTST) QC,not applicable
 IESRATT,Roundtrip Acoustic Travel Time (RATT),0,Units,TBD
-LATNFLX ,Latent Heat Flux,2,Combine QC Flags (CMBNFLG) QC,
+LATNFLX ,Latent Heat Flux,2,Combine QC Flags (CMBNFLG) QC,Applicable
 LATNFLX ,Latent Heat Flux,2,DOORS L2 Science Requirement #(s),
 LATNFLX ,Latent Heat Flux,2,DOORS L2 Science Requirement Text,
 LATNFLX ,Latent Heat Flux,2,DPS DCN(s),
-LATNFLX ,Latent Heat Flux,2,Global Range Test (GLBLRNG) QC,
-LATNFLX ,Latent Heat Flux,2,Gradient Test (GRADTST) QC,
-LATNFLX ,Latent Heat Flux,2,Local Range Test (LOCLRNG) QC,
+LATNFLX ,Latent Heat Flux,2,Global Range Test (GLBLRNG) QC,Applicable
+LATNFLX ,Latent Heat Flux,2,Gradient Test (GRADTST) QC,Applicable
+LATNFLX ,Latent Heat Flux,2,Local Range Test (LOCLRNG) QC,Applicable
 LATNFLX ,Latent Heat Flux,2,Notes,
 LATNFLX ,Latent Heat Flux,2,Processing Flow Diagram DCN(s),
 LATNFLX ,Latent Heat Flux,2,Regime(s),
-LATNFLX ,Latent Heat Flux,2,Spike Test (SPKETST) QC,
-LATNFLX ,Latent Heat Flux,2,Stuck Value Test (STUCKVL) QC,
-LATNFLX ,Latent Heat Flux,2,Trend Test (TRNDTST) QC,
+LATNFLX ,Latent Heat Flux,2,Spike Test (SPKETST) QC,Applicable
+LATNFLX ,Latent Heat Flux,2,Stuck Value Test (STUCKVL) QC,Applicable
+LATNFLX ,Latent Heat Flux,2,Trend Test (TRNDTST) QC,Applicable
 LATNFLX ,Latent Heat Flux,2,Units,W/m2
 LONGIRR,Downwelling Longwave Irradiance,1,Combine QC Flags (CMBNFLG) QC,Applicable
 LONGIRR,Downwelling Longwave Irradiance,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3021
@@ -596,19 +610,19 @@ MOISTUR,Turbulent Humidity Fluctuation,0,Spike Test (SPKETST) QC,
 MOISTUR,Turbulent Humidity Fluctuation,0,Stuck Value Test (STUCKVL) QC,
 MOISTUR,Turbulent Humidity Fluctuation,0,Trend Test (TRNDTST) QC,
 MOISTUR,Turbulent Humidity Fluctuation,0,Units,TBD
-MOMMFLX,Momentum Flux (Wind Stress) ,2,Combine QC Flags (CMBNFLG) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Combine QC Flags (CMBNFLG) QC,Applicable
 MOMMFLX,Momentum Flux (Wind Stress) ,2,DOORS L2 Science Requirement #(s),
 MOMMFLX,Momentum Flux (Wind Stress) ,2,DOORS L2 Science Requirement Text,
 MOMMFLX,Momentum Flux (Wind Stress) ,2,DPS DCN(s),
-MOMMFLX,Momentum Flux (Wind Stress) ,2,Global Range Test (GLBLRNG) QC,
-MOMMFLX,Momentum Flux (Wind Stress) ,2,Gradient Test (GRADTST) QC,
-MOMMFLX,Momentum Flux (Wind Stress) ,2,Local Range Test (LOCLRNG) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Global Range Test (GLBLRNG) QC,Applicable
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Gradient Test (GRADTST) QC,Applicable
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Local Range Test (LOCLRNG) QC,Applicable
 MOMMFLX,Momentum Flux (Wind Stress) ,2,Notes,
 MOMMFLX,Momentum Flux (Wind Stress) ,2,Processing Flow Diagram DCN(s),
 MOMMFLX,Momentum Flux (Wind Stress) ,2,Regime(s),
-MOMMFLX,Momentum Flux (Wind Stress) ,2,Spike Test (SPKETST) QC,
-MOMMFLX,Momentum Flux (Wind Stress) ,2,Stuck Value Test (STUCKVL) QC,
-MOMMFLX,Momentum Flux (Wind Stress) ,2,Trend Test (TRNDTST) QC,
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Spike Test (SPKETST) QC,Applicable
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Stuck Value Test (STUCKVL) QC,Applicable
+MOMMFLX,Momentum Flux (Wind Stress) ,2,Trend Test (TRNDTST) QC,Applicable
 MOMMFLX,Momentum Flux (Wind Stress) ,2,Units,N/m2
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Combine QC Flags (CMBNFLG) QC,
 MOTFLUX,Platform Direction and Tilt (3 axes),0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3025
@@ -624,33 +638,33 @@ MOTFLUX,Platform Direction and Tilt (3 axes),0,Spike Test (SPKETST) QC,
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Stuck Value Test (STUCKVL) QC,
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Trend Test (TRNDTST) QC,
 MOTFLUX,Platform Direction and Tilt (3 axes),0,Units,TBD
-NETLIRR ,Net Longwave Irradiance ,2,Combine QC Flags (CMBNFLG) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Combine QC Flags (CMBNFLG) QC,Applicable
 NETLIRR ,Net Longwave Irradiance ,2,DOORS L2 Science Requirement #(s),
 NETLIRR ,Net Longwave Irradiance ,2,DOORS L2 Science Requirement Text,
 NETLIRR ,Net Longwave Irradiance ,2,DPS DCN(s),
-NETLIRR ,Net Longwave Irradiance ,2,Global Range Test (GLBLRNG) QC,
-NETLIRR ,Net Longwave Irradiance ,2,Gradient Test (GRADTST) QC,
-NETLIRR ,Net Longwave Irradiance ,2,Local Range Test (LOCLRNG) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Global Range Test (GLBLRNG) QC,Applicable
+NETLIRR ,Net Longwave Irradiance ,2,Gradient Test (GRADTST) QC,Applicable
+NETLIRR ,Net Longwave Irradiance ,2,Local Range Test (LOCLRNG) QC,Applicable
 NETLIRR ,Net Longwave Irradiance ,2,Notes,
 NETLIRR ,Net Longwave Irradiance ,2,Processing Flow Diagram DCN(s),
 NETLIRR ,Net Longwave Irradiance ,2,Regime(s),
-NETLIRR ,Net Longwave Irradiance ,2,Spike Test (SPKETST) QC,
-NETLIRR ,Net Longwave Irradiance ,2,Stuck Value Test (STUCKVL) QC,
-NETLIRR ,Net Longwave Irradiance ,2,Trend Test (TRNDTST) QC,
+NETLIRR ,Net Longwave Irradiance ,2,Spike Test (SPKETST) QC,Applicable
+NETLIRR ,Net Longwave Irradiance ,2,Stuck Value Test (STUCKVL) QC,Applicable
+NETLIRR ,Net Longwave Irradiance ,2,Trend Test (TRNDTST) QC,Applicable
 NETLIRR ,Net Longwave Irradiance ,2,Units,W/m2
-NETSIRR ,Net Shortwave Irradiance ,2,Combine QC Flags (CMBNFLG) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Combine QC Flags (CMBNFLG) QC,Applicable
 NETSIRR ,Net Shortwave Irradiance ,2,DOORS L2 Science Requirement #(s),
 NETSIRR ,Net Shortwave Irradiance ,2,DOORS L2 Science Requirement Text,
 NETSIRR ,Net Shortwave Irradiance ,2,DPS DCN(s),
-NETSIRR ,Net Shortwave Irradiance ,2,Global Range Test (GLBLRNG) QC,
-NETSIRR ,Net Shortwave Irradiance ,2,Gradient Test (GRADTST) QC,
-NETSIRR ,Net Shortwave Irradiance ,2,Local Range Test (LOCLRNG) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Global Range Test (GLBLRNG) QC,Applicable
+NETSIRR ,Net Shortwave Irradiance ,2,Gradient Test (GRADTST) QC,Applicable
+NETSIRR ,Net Shortwave Irradiance ,2,Local Range Test (LOCLRNG) QC,Applicable
 NETSIRR ,Net Shortwave Irradiance ,2,Notes,
 NETSIRR ,Net Shortwave Irradiance ,2,Processing Flow Diagram DCN(s),
 NETSIRR ,Net Shortwave Irradiance ,2,Regime(s),
-NETSIRR ,Net Shortwave Irradiance ,2,Spike Test (SPKETST) QC,
-NETSIRR ,Net Shortwave Irradiance ,2,Stuck Value Test (STUCKVL) QC,
-NETSIRR ,Net Shortwave Irradiance ,2,Trend Test (TRNDTST) QC,
+NETSIRR ,Net Shortwave Irradiance ,2,Spike Test (SPKETST) QC,Applicable
+NETSIRR ,Net Shortwave Irradiance ,2,Stuck Value Test (STUCKVL) QC,Applicable
+NETSIRR ,Net Shortwave Irradiance ,2,Trend Test (TRNDTST) QC,Applicable
 NETSIRR ,Net Shortwave Irradiance ,2,Units,W/m2
 NITROPT,Nitrate Concentration,1,Combine QC Flags (CMBNFLG) QC,Applicable
 NITROPT,Nitrate Concentration,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3050
@@ -932,33 +946,33 @@ PRESWAT,Pressure (Depth),0,Spike Test (SPKETST) QC,not applicable
 PRESWAT,Pressure (Depth),0,Stuck Value Test (STUCKVL) QC,not applicable
 PRESWAT,Pressure (Depth),0,Trend Test (TRNDTST) QC,not applicable
 PRESWAT,Pressure (Depth),0,Units,unitless
-RAINFLX,Rain Heat Flux,2,Combine QC Flags (CMBNFLG) QC,
+RAINFLX,Rain Heat Flux,2,Combine QC Flags (CMBNFLG) QC,Applicable
 RAINFLX,Rain Heat Flux,2,DOORS L2 Science Requirement #(s),
 RAINFLX,Rain Heat Flux,2,DOORS L2 Science Requirement Text,
 RAINFLX,Rain Heat Flux,2,DPS DCN(s),
-RAINFLX,Rain Heat Flux,2,Global Range Test (GLBLRNG) QC,
-RAINFLX,Rain Heat Flux,2,Gradient Test (GRADTST) QC,
-RAINFLX,Rain Heat Flux,2,Local Range Test (LOCLRNG) QC,
+RAINFLX,Rain Heat Flux,2,Global Range Test (GLBLRNG) QC,Applicable
+RAINFLX,Rain Heat Flux,2,Gradient Test (GRADTST) QC,Applicable
+RAINFLX,Rain Heat Flux,2,Local Range Test (LOCLRNG) QC,Applicable
 RAINFLX,Rain Heat Flux,2,Notes,
 RAINFLX,Rain Heat Flux,2,Processing Flow Diagram DCN(s),
 RAINFLX,Rain Heat Flux,2,Regime(s),
-RAINFLX,Rain Heat Flux,2,Spike Test (SPKETST) QC,
-RAINFLX,Rain Heat Flux,2,Stuck Value Test (STUCKVL) QC,
-RAINFLX,Rain Heat Flux,2,Trend Test (TRNDTST) QC,
+RAINFLX,Rain Heat Flux,2,Spike Test (SPKETST) QC,Applicable
+RAINFLX,Rain Heat Flux,2,Stuck Value Test (STUCKVL) QC,Applicable
+RAINFLX,Rain Heat Flux,2,Trend Test (TRNDTST) QC,Applicable
 RAINFLX,Rain Heat Flux,2,Units,W/m2
-RAINRTE,Rain rate,2,Combine QC Flags (CMBNFLG) QC,
+RAINRTE,Rain rate,2,Combine QC Flags (CMBNFLG) QC,Applicable
 RAINRTE,Rain rate,2,DOORS L2 Science Requirement #(s),
 RAINRTE,Rain rate,2,DOORS L2 Science Requirement Text,
 RAINRTE,Rain rate,2,DPS DCN(s),
-RAINRTE,Rain rate,2,Global Range Test (GLBLRNG) QC,
-RAINRTE,Rain rate,2,Gradient Test (GRADTST) QC,
-RAINRTE,Rain rate,2,Local Range Test (LOCLRNG) QC,
+RAINRTE,Rain rate,2,Global Range Test (GLBLRNG) QC,Applicable
+RAINRTE,Rain rate,2,Gradient Test (GRADTST) QC,Applicable
+RAINRTE,Rain rate,2,Local Range Test (LOCLRNG) QC,Applicable
 RAINRTE,Rain rate,2,Notes,
 RAINRTE,Rain rate,2,Processing Flow Diagram DCN(s),
 RAINRTE,Rain rate,2,Regime(s),
-RAINRTE,Rain rate,2,Spike Test (SPKETST) QC,
-RAINRTE,Rain rate,2,Stuck Value Test (STUCKVL) QC,
-RAINRTE,Rain rate,2,Trend Test (TRNDTST) QC,
+RAINRTE,Rain rate,2,Spike Test (SPKETST) QC,Applicable
+RAINRTE,Rain rate,2,Stuck Value Test (STUCKVL) QC,Applicable
+RAINRTE,Rain rate,2,Trend Test (TRNDTST) QC,Applicable
 RAINRTE,Rain rate,2,Units,mm/hr
 RELHUMI,Relative Humidity,0,Combine QC Flags (CMBNFLG) QC,not applicable
 RELHUMI,Relative Humidity,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3025
@@ -974,40 +988,40 @@ RELHUMI,Relative Humidity,0,Spike Test (SPKETST) QC,not applicable
 RELHUMI,Relative Humidity,0,Stuck Value Test (STUCKVL) QC,not applicable
 RELHUMI,Relative Humidity,0,Trend Test (TRNDTST) QC,not applicable
 RELHUMI,Relative Humidity,0,Units,"TBD (FDCHP), % (METBK)"
-SALSURF,Sea Surface Salinity ,2,Combine QC Flags (CMBNFLG) QC,
+SALSURF,Sea Surface Salinity ,2,Combine QC Flags (CMBNFLG) QC,Applicable
 SALSURF,Sea Surface Salinity ,2,DOORS L2 Science Requirement #(s),
 SALSURF,Sea Surface Salinity ,2,DOORS L2 Science Requirement Text,
 SALSURF,Sea Surface Salinity ,2,DPS DCN(s),
-SALSURF,Sea Surface Salinity ,2,Global Range Test (GLBLRNG) QC,
-SALSURF,Sea Surface Salinity ,2,Gradient Test (GRADTST) QC,
-SALSURF,Sea Surface Salinity ,2,Local Range Test (LOCLRNG) QC,
+SALSURF,Sea Surface Salinity ,2,Global Range Test (GLBLRNG) QC,Applicable
+SALSURF,Sea Surface Salinity ,2,Gradient Test (GRADTST) QC,Applicable
+SALSURF,Sea Surface Salinity ,2,Local Range Test (LOCLRNG) QC,Applicable
 SALSURF,Sea Surface Salinity ,2,Notes,
 SALSURF,Sea Surface Salinity ,2,Processing Flow Diagram DCN(s),
 SALSURF,Sea Surface Salinity ,2,Regime(s),
-SALSURF,Sea Surface Salinity ,2,Spike Test (SPKETST) QC,
-SALSURF,Sea Surface Salinity ,2,Stuck Value Test (STUCKVL) QC,
-SALSURF,Sea Surface Salinity ,2,Trend Test (TRNDTST) QC,
+SALSURF,Sea Surface Salinity ,2,Spike Test (SPKETST) QC,Applicable
+SALSURF,Sea Surface Salinity ,2,Stuck Value Test (STUCKVL) QC,Applicable
+SALSURF,Sea Surface Salinity ,2,Trend Test (TRNDTST) QC,Applicable
 SALSURF,Sea Surface Salinity ,2,Units,unitless
-SENSFLX ,Sensible Heat Flux ,2,Combine QC Flags (CMBNFLG) QC,
+SENSFLX ,Sensible Heat Flux ,2,Combine QC Flags (CMBNFLG) QC,Applicable
 SENSFLX ,Sensible Heat Flux ,2,DOORS L2 Science Requirement #(s),
 SENSFLX ,Sensible Heat Flux ,2,DOORS L2 Science Requirement Text,
 SENSFLX ,Sensible Heat Flux ,2,DPS DCN(s),
-SENSFLX ,Sensible Heat Flux ,2,Global Range Test (GLBLRNG) QC,
-SENSFLX ,Sensible Heat Flux ,2,Gradient Test (GRADTST) QC,
-SENSFLX ,Sensible Heat Flux ,2,Local Range Test (LOCLRNG) QC,
+SENSFLX ,Sensible Heat Flux ,2,Global Range Test (GLBLRNG) QC,Applicable
+SENSFLX ,Sensible Heat Flux ,2,Gradient Test (GRADTST) QC,Applicable
+SENSFLX ,Sensible Heat Flux ,2,Local Range Test (LOCLRNG) QC,Applicable
 SENSFLX ,Sensible Heat Flux ,2,Notes,
 SENSFLX ,Sensible Heat Flux ,2,Processing Flow Diagram DCN(s),
 SENSFLX ,Sensible Heat Flux ,2,Regime(s),
-SENSFLX ,Sensible Heat Flux ,2,Spike Test (SPKETST) QC,
-SENSFLX ,Sensible Heat Flux ,2,Stuck Value Test (STUCKVL) QC,
-SENSFLX ,Sensible Heat Flux ,2,Trend Test (TRNDTST) QC,
+SENSFLX ,Sensible Heat Flux ,2,Spike Test (SPKETST) QC,Applicable
+SENSFLX ,Sensible Heat Flux ,2,Stuck Value Test (STUCKVL) QC,Applicable
+SENSFLX ,Sensible Heat Flux ,2,Trend Test (TRNDTST) QC,Applicable
 SENSFLX ,Sensible Heat Flux ,2,Units,W/m2
-SFLPRES,Seafloor Pressure,1,Combine QC Flags (CMBNFLG) QC,Not Applicable
+SFLPRES,Seafloor Pressure,1,Combine QC Flags (CMBNFLG) QC,Applicable
 SFLPRES,Seafloor Pressure,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3083
 SFLPRES,Seafloor Pressure,1,DOORS L2 Science Requirement Text,Bottom Pressure
 SFLPRES,Seafloor Pressure,1,DPS DCN(s),"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 SFLPRES,Seafloor Pressure,1,Global Range Test (GLBLRNG) QC,Applicable
-SFLPRES,Seafloor Pressure,1,Gradient Test (GRADTST) QC,"Not Applicable (PRESF), Applicable (PREST)"
+SFLPRES,Seafloor Pressure,1,Gradient Test (GRADTST) QC,Applicable
 SFLPRES,Seafloor Pressure,1,Local Range Test (LOCLRNG) QC,Applicable
 SFLPRES,Seafloor Pressure,1,Notes,
 SFLPRES,Seafloor Pressure,1,Processing Flow Diagram DCN(s),"DCN 1342-00230 (PRESF), DCN 1342-00231 (PREST)"
@@ -1016,7 +1030,7 @@ SFLPRES,Seafloor Pressure,1,Spike Test (SPKETST) QC,Applicable
 SFLPRES,Seafloor Pressure,1,Stuck Value Test (STUCKVL) QC,Applicable
 SFLPRES,Seafloor Pressure,1,Trend Test (TRNDTST) QC,Applicable
 SFLPRES,Seafloor Pressure,1,Units,Pa
-SGRDVEL,Short Period Ground Velocity,1,Combine QC Flags (CMBNFLG) QC,Not Applicable
+SGRDVEL,Short Period Ground Velocity,1,Combine QC Flags (CMBNFLG) QC,Applicable
 SGRDVEL,Short Period Ground Velocity,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3100
 SGRDVEL,Short Period Ground Velocity,1,DOORS L2 Science Requirement Text,Short period ground motion
 SGRDVEL,Short Period Ground Velocity,1,DPS DCN(s),DCN 1341-00110
@@ -1086,33 +1100,33 @@ SPECTIR,Downwelling Spectral Irradiance ,0,Spike Test (SPKETST) QC,not applicabl
 SPECTIR,Downwelling Spectral Irradiance ,0,Stuck Value Test (STUCKVL) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Trend Test (TRNDTST) QC,not applicable
 SPECTIR,Downwelling Spectral Irradiance ,0,Units,TBD
-SPHUM2M,Specific Humidity at 2 m,2,Combine QC Flags (CMBNFLG) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Combine QC Flags (CMBNFLG) QC,Applicable
 SPHUM2M,Specific Humidity at 2 m,2,DOORS L2 Science Requirement #(s),
 SPHUM2M,Specific Humidity at 2 m,2,DOORS L2 Science Requirement Text,
 SPHUM2M,Specific Humidity at 2 m,2,DPS DCN(s),
-SPHUM2M,Specific Humidity at 2 m,2,Global Range Test (GLBLRNG) QC,
-SPHUM2M,Specific Humidity at 2 m,2,Gradient Test (GRADTST) QC,
-SPHUM2M,Specific Humidity at 2 m,2,Local Range Test (LOCLRNG) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Global Range Test (GLBLRNG) QC,Applicable
+SPHUM2M,Specific Humidity at 2 m,2,Gradient Test (GRADTST) QC,Applicable
+SPHUM2M,Specific Humidity at 2 m,2,Local Range Test (LOCLRNG) QC,Applicable
 SPHUM2M,Specific Humidity at 2 m,2,Notes,
 SPHUM2M,Specific Humidity at 2 m,2,Processing Flow Diagram DCN(s),
 SPHUM2M,Specific Humidity at 2 m,2,Regime(s),
-SPHUM2M,Specific Humidity at 2 m,2,Spike Test (SPKETST) QC,
-SPHUM2M,Specific Humidity at 2 m,2,Stuck Value Test (STUCKVL) QC,
-SPHUM2M,Specific Humidity at 2 m,2,Trend Test (TRNDTST) QC,
+SPHUM2M,Specific Humidity at 2 m,2,Spike Test (SPKETST) QC,Applicable
+SPHUM2M,Specific Humidity at 2 m,2,Stuck Value Test (STUCKVL) QC,Applicable
+SPHUM2M,Specific Humidity at 2 m,2,Trend Test (TRNDTST) QC,Applicable
 SPHUM2M,Specific Humidity at 2 m,2,Units,%
-TEMPA2M,Air Temperature at 2 m,2,Combine QC Flags (CMBNFLG) QC,
+TEMPA2M,Air Temperature at 2 m,2,Combine QC Flags (CMBNFLG) QC,Applicable
 TEMPA2M,Air Temperature at 2 m,2,DOORS L2 Science Requirement #(s),
 TEMPA2M,Air Temperature at 2 m,2,DOORS L2 Science Requirement Text,
 TEMPA2M,Air Temperature at 2 m,2,DPS DCN(s),
-TEMPA2M,Air Temperature at 2 m,2,Global Range Test (GLBLRNG) QC,
-TEMPA2M,Air Temperature at 2 m,2,Gradient Test (GRADTST) QC,
-TEMPA2M,Air Temperature at 2 m,2,Local Range Test (LOCLRNG) QC,
+TEMPA2M,Air Temperature at 2 m,2,Global Range Test (GLBLRNG) QC,Applicable
+TEMPA2M,Air Temperature at 2 m,2,Gradient Test (GRADTST) QC,Applicable
+TEMPA2M,Air Temperature at 2 m,2,Local Range Test (LOCLRNG) QC,Applicable
 TEMPA2M,Air Temperature at 2 m,2,Notes,
 TEMPA2M,Air Temperature at 2 m,2,Processing Flow Diagram DCN(s),
 TEMPA2M,Air Temperature at 2 m,2,Regime(s),
-TEMPA2M,Air Temperature at 2 m,2,Spike Test (SPKETST) QC,
-TEMPA2M,Air Temperature at 2 m,2,Stuck Value Test (STUCKVL) QC,
-TEMPA2M,Air Temperature at 2 m,2,Trend Test (TRNDTST) QC,
+TEMPA2M,Air Temperature at 2 m,2,Spike Test (SPKETST) QC,Applicable
+TEMPA2M,Air Temperature at 2 m,2,Stuck Value Test (STUCKVL) QC,Applicable
+TEMPA2M,Air Temperature at 2 m,2,Trend Test (TRNDTST) QC,Applicable
 TEMPA2M,Air Temperature at 2 m,2,Units,degrees C
 TEMPAIR,Air Temperature,1,Combine QC Flags (CMBNFLG) QC,Applicable
 TEMPAIR,Air Temperature,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3033
@@ -1450,34 +1464,34 @@ WAVSTAT,Wave Spectral Properties,0,Spike Test (SPKETST) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Stuck Value Test (STUCKVL) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Trend Test (TRNDTST) QC,not applicable
 WAVSTAT,Wave Spectral Properties,0,Units,m; s; degrees; Hz; m^2 Hz^-1
-WIND10M,Wind Velocity at 10 m  ,2,Combine QC Flags (CMBNFLG) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Combine QC Flags (CMBNFLG) QC,Applicable
 WIND10M,Wind Velocity at 10 m  ,2,DOORS L2 Science Requirement #(s),
 WIND10M,Wind Velocity at 10 m  ,2,DOORS L2 Science Requirement Text,
 WIND10M,Wind Velocity at 10 m  ,2,DPS DCN(s),
-WIND10M,Wind Velocity at 10 m  ,2,Global Range Test (GLBLRNG) QC,
-WIND10M,Wind Velocity at 10 m  ,2,Gradient Test (GRADTST) QC,
-WIND10M,Wind Velocity at 10 m  ,2,Local Range Test (LOCLRNG) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Global Range Test (GLBLRNG) QC,Applicable
+WIND10M,Wind Velocity at 10 m  ,2,Gradient Test (GRADTST) QC,Applicable
+WIND10M,Wind Velocity at 10 m  ,2,Local Range Test (LOCLRNG) QC,Applicable
 WIND10M,Wind Velocity at 10 m  ,2,Notes,
 WIND10M,Wind Velocity at 10 m  ,2,Processing Flow Diagram DCN(s),
 WIND10M,Wind Velocity at 10 m  ,2,Regime(s),
-WIND10M,Wind Velocity at 10 m  ,2,Spike Test (SPKETST) QC,
-WIND10M,Wind Velocity at 10 m  ,2,Stuck Value Test (STUCKVL) QC,
-WIND10M,Wind Velocity at 10 m  ,2,Trend Test (TRNDTST) QC,
+WIND10M,Wind Velocity at 10 m  ,2,Spike Test (SPKETST) QC,Applicable
+WIND10M,Wind Velocity at 10 m  ,2,Stuck Value Test (STUCKVL) QC,Applicable
+WIND10M,Wind Velocity at 10 m  ,2,Trend Test (TRNDTST) QC,Applicable
 WIND10M,Wind Velocity at 10 m  ,2,Units,m/s
-WINDAVG,Mean Wind Velocity,1,Combine QC Flags (CMBNFLG) QC,Applicable
-WINDAVG,Mean Wind Velocity,1,DOORS L2 Science Requirement #(s),L2-SR-RQ-3027
-WINDAVG,Mean Wind Velocity,1,DOORS L2 Science Requirement Text,Mean Wind Velocity
-WINDAVG,Mean Wind Velocity,1,DPS DCN(s),DCN 1341-00360
-WINDAVG,Mean Wind Velocity,1,Global Range Test (GLBLRNG) QC,Applicable
-WINDAVG,Mean Wind Velocity,1,Gradient Test (GRADTST) QC,Applicable
-WINDAVG,Mean Wind Velocity,1,Local Range Test (LOCLRNG) QC,Applicable
-WINDAVG,Mean Wind Velocity,1,Notes,
-WINDAVG,Mean Wind Velocity,1,Processing Flow Diagram DCN(s),DCN 1342-00360
-WINDAVG,Mean Wind Velocity,1,Regime(s),"Air-Sea Interface, Surface Water"
-WINDAVG,Mean Wind Velocity,1,Spike Test (SPKETST) QC,Applicable
-WINDAVG,Mean Wind Velocity,1,Stuck Value Test (STUCKVL) QC,Applicable
-WINDAVG,Mean Wind Velocity,1,Trend Test (TRNDTST) QC,Applicable
-WINDAVG,Mean Wind Velocity,1,Units,m/s
+WINDAVG,Mean Wind Velocity,0,Combine QC Flags (CMBNFLG) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3027
+WINDAVG,Mean Wind Velocity,0,DOORS L2 Science Requirement Text,Mean Wind Velocity
+WINDAVG,Mean Wind Velocity,0,DPS DCN(s),DCN 1341-00360
+WINDAVG,Mean Wind Velocity,0,Global Range Test (GLBLRNG) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,Gradient Test (GRADTST) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,Local Range Test (LOCLRNG) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,Notes,
+WINDAVG,Mean Wind Velocity,0,Processing Flow Diagram DCN(s),DCN 1342-00360
+WINDAVG,Mean Wind Velocity,0,Regime(s),"Air-Sea Interface, Surface Water"
+WINDAVG,Mean Wind Velocity,0,Spike Test (SPKETST) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,Stuck Value Test (STUCKVL) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,Trend Test (TRNDTST) QC,not applicable
+WINDAVG,Mean Wind Velocity,0,Units,m/s
 WINDTUR,Wind Velocity in 3 Dimensions,0,Combine QC Flags (CMBNFLG) QC,
 WINDTUR,Wind Velocity in 3 Dimensions,0,DOORS L2 Science Requirement #(s),L2-SR-RQ-3028
 WINDTUR,Wind Velocity in 3 Dimensions,0,DOORS L2 Science Requirement Text,

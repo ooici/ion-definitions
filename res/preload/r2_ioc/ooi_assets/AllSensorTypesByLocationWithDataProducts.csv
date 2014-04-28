@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Instrument Classes By Location With Data Product Info,Report Generated: 3/27/2014
+Instrument Classes By Location With Data Product Info,Report Generated: 4/28/2014
 
 Textbox14
 
@@ -20,6 +20,7 @@ CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function N
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,pH stable,PHSEN,PH578SI,DCN 1341-00509
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE01ISSM-MF004,Endurance OR Inshore Surface Mooring,01,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -47,6 +48,7 @@ CE01ISSM-RI002,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),0
 CE01ISSM-RI002,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE01ISSM-RI002,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),002,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE01ISSM-RI002,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE01ISSM-RI002,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,DENSITY,DCN 1341-00050
 CE01ISSM-RI003,Endurance OR Inshore Surface Mooring,01,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,PRACSAL,DCN 1341-00040
@@ -78,6 +80,7 @@ CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE01ISSP-SP001,Endurance OR Inshore Surface Piercing Profiler Mooring,01,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -107,6 +110,7 @@ CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,pH stable
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE02SHBP-LJ01D,Endurance OR Shelf Benthic Pkg,02,SHBP,LJ (LP Jbox),01D,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -126,6 +130,7 @@ CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002
 CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE02SHSM-RI002,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE02SHSM-RI003,Endurance OR Shelf Surface Mooring,02,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
@@ -190,6 +195,7 @@ CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE02SHSP-SP001,Endurance OR Shelf Surface Piercing Profiler Mooring (cabled),02,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -218,6 +224,7 @@ CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,pH sta
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE04OSBP-LJ01C,Endurance OR Offshore Benthic Pkg,04,OSBP,LJ (LP Jbox),01C,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -236,6 +243,7 @@ CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Pr
 CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE04OSHY-DP01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,DP (Deep Profiler),01B,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -251,6 +259,7 @@ CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platfor
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,Plankton ZP sonar coastal,ZPLSC,SONBSCA,DCN 1341-00800
 CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE04OSHY-PC01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,PC (Platform Interface Controller),01B,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 CE04OSHY-SF01B,Endurance OR Offshore Hybrid Profiler Mooring,04,OSHY,SF (Shallow Profiler Science Float),01B,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -290,6 +299,7 @@ CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),
 CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE04OSSM-RI002,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE04OSSM-RI003,Endurance OR Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
@@ -348,6 +358,7 @@ CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,PAR,PARAD,OPTPAR
 CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE05MOAS-GL001,Endurance Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -360,6 +371,7 @@ CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,PAR,PARAD,OPTPAR
 CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE05MOAS-GL002,Endurance Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -372,6 +384,7 @@ CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,PAR,PARAD,OPTPAR
 CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE05MOAS-GL003,Endurance Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -384,6 +397,7 @@ CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,PAR,PARAD,OPTPAR
 CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE05MOAS-GL004,Endurance Mobile Assets,05,MOAS,GL (Gliders),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -396,6 +410,7 @@ CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,PAR,PARAD,OPTPAR
 CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE05MOAS-GL005,Endurance Mobile Assets,05,MOAS,GL (Gliders),005,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -408,6 +423,7 @@ CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,PAR,PARAD,OPTPAR
 CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE05MOAS-GL006,Endurance Mobile Assets,05,MOAS,GL (Gliders),006,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
@@ -420,6 +436,7 @@ CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function N
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,pH stable,PHSEN,PH578SI,DCN 1341-00509
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE06ISSM-MF004,Endurance WA Inshore Surface Mooring,06,ISSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -447,6 +464,7 @@ CE06ISSM-RI002,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),0
 CE06ISSM-RI002,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE06ISSM-RI002,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),002,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE06ISSM-RI002,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE06ISSM-RI002,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,DENSITY,DCN 1341-00050
 CE06ISSM-RI003,Endurance WA Inshore Surface Mooring,06,ISSM,RI (Mooring Riser),003,CTD Bottom Pumped,CTDBP,PRACSAL,DCN 1341-00040
@@ -478,6 +496,7 @@ CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE06ISSP-SP001,Endurance WA Inshore Surface Piercing Profiler Mooring,06,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -499,6 +518,7 @@ CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Nod
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,pH stable,PHSEN,PH578SI,DCN 1341-00509
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE07SHSM-MF004,Endurance WA Shelf Surface Mooring,07,SHSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -525,6 +545,7 @@ CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002
 CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE07SHSM-RI002,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE07SHSM-RI003,Endurance WA Shelf Surface Mooring,07,SHSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
@@ -584,6 +605,7 @@ CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE07SHSP-SP001,Endurance WA Shelf Surface Piercing Profiler Mooring,07,SHSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -614,6 +636,7 @@ CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function 
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,pH stable,PHSEN,PH578SI,DCN 1341-00509
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CE09OSSM-MF004,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -630,6 +653,7 @@ CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function 
 CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,Pressure SF,PRESF,SFLPRES,"DCN 1341-00230 (PRESF), DCN 1341-00231 (PREST)"
 CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
+CE09OSSM-MF005,Endurance WA Offshore Surface Mooring,09,OSSM,MF (Multi-Function Node),005,Plankton ZP sonar coastal,ZPLSC,SONBSCA,DCN 1341-00800
 CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
 CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,DENSITY,DCN 1341-00050
 CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,PRACSAL,DCN 1341-00040
@@ -641,6 +665,7 @@ CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),
 CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CE09OSSM-RI002,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CE09OSSM-RI003,Endurance WA Offshore Surface Mooring,09,OSSM,RI (Mooring Riser),003,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
@@ -696,6 +721,7 @@ CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CP01CNSM-MF004,Pioneer Central Surface Mooring,01,CNSM,MF (Multi-Function Node),004,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -737,6 +763,7 @@ CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,pH
 CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP01CNSM-RI003,Pioneer Central Surface Mooring,01,CNSM,RI (Mooring Riser),003,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,Flux direct covariance,FDCHP,FLUXHOT,DCN 1341-00330
 CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,Flux direct covariance,FDCHP,FLUXMOM,DCN 1341-00320
 CP01CNSM-SB001,Pioneer Central Surface Mooring,01,CNSM,SB (Surface Buoy),001,Flux direct covariance,FDCHP,MOTFLUX,DCN 1341-00301
@@ -785,6 +812,7 @@ CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Sur
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CP01CNSP-SP001,Pioneer Central Surface-Piercing Profiler Mooring,01,CNSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -862,6 +890,7 @@ CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),
 CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP03ISSM-MF004,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Velocity profile Short Range,ADCPT,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Velocity profile Short Range,ADCPT,VELPROF,DCN 1341-00750
 CP03ISSM-MF005,Pioneer Inshore Surface Mooring,03,ISSM,MF (Multi-Function Node),005,Velocity profile Short Range,ADCPT,WAVSTAT,DCN 1341-00450
@@ -884,6 +913,7 @@ CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,pH
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CP03ISSM-RI002,Pioneer Inshore Surface Mooring,03,ISSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -943,6 +973,7 @@ CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Sur
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CP03ISSP-SP001,Pioneer Inshore Surface-Piercing Profiler Mooring,03,ISSP,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -973,6 +1004,7 @@ CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node)
 CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),004,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),004,Velocity point,VELPT,VELPTMN,DCN 1341-00790
 CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP04OSSM-MF004,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 CP04OSSM-MF005,Pioneer Offshore Surface Mooring,04,OSSM,MF (Multi-Function Node),005,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
@@ -994,6 +1026,7 @@ CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,p
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,pH stable,PHSEN,PHWATER,DCN 1341-00510
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 CP04OSSM-RI002,Pioneer Offshore Surface Mooring,04,OSSM,RI (Mooring Riser),002,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -1053,6 +1086,7 @@ CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,CTD AUV,CTDAV,PRESWAT,
 CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,CTD AUV,CTDAV,TEMPWAT,DCN 1341-00010
 CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-AV001,Pioneer Mobile Assets,05,MOAS,AV (AUV),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Fluorometer three wavelength,FLORT,CHLAFLO,DCN 1341-00530
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Fluorometer three wavelength,FLORT,FLUBSCT,DCN 1341-00540
@@ -1066,6 +1100,7 @@ CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,CTD AUV,CTDAV,PRESWAT,
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,CTD AUV,CTDAV,TEMPWAT,DCN 1341-00010
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
 CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-AV002,Pioneer Mobile Assets,05,MOAS,AV (AUV),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1078,6 +1113,7 @@ CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,PAR,PARAD,OPTPARW,
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-GL001,Pioneer Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1090,6 +1126,7 @@ CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,PAR,PARAD,OPTPARW,
 CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-GL002,Pioneer Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1102,6 +1139,7 @@ CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,PAR,PARAD,OPTPARW,
 CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-GL003,Pioneer Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1114,6 +1152,7 @@ CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,PAR,PARAD,OPTPARW,
 CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-GL004,Pioneer Mobile Assets,05,MOAS,GL (Gliders),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1126,6 +1165,7 @@ CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,PAR,PARAD,OPTPARW,
 CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-GL005,Pioneer Mobile Assets,05,MOAS,GL (Gliders),005,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1138,6 +1178,7 @@ CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,PAR,PARAD,OPTPARW,
 CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,Velocity profile Mobile Asset,ADCPA,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,Velocity profile Mobile Asset,ADCPA,VELPROF,DCN 1341-00750
 CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+CP05MOAS-GL006,Pioneer Mobile Assets,05,MOAS,GL (Gliders),006,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GA01SUMO-RI002,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GA01SUMO-RI002,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GA01SUMO-RI002,Argentine Basin Surface Mooring,01,SUMO,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
@@ -1189,27 +1230,6 @@ GA01SUMO-SB001,Argentine Basin Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO
 GA01SUMO-SB001,Argentine Basin Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,XCO2ATM,DCN 1341-00260
 GA01SUMO-SB001,Argentine Basin Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,XCO2SSW,DCN 1341-00260
 GA02HYPM-MP003,Argentine Basin Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,Plankton ZP sonar global,ZPLSG,SONBSCA,DCN 1341-00800
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2THRM,DCN 1341-00489
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,PCO2WAT,DCN 1341-00490
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCSIG,"DCN 1341-00690, DCN 1341-00700"
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTTEMP,"DCN 1341-00690, DCN 1341-00700"
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
-GA02HYPM-SP001,Argentine Basin Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1220,6 +1240,7 @@ GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profil
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GA02HYPM-WF002,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1230,6 +1251,7 @@ GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profil
 GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GA02HYPM-WF004,Argentine Basin Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
@@ -1245,6 +1267,7 @@ GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring 
 GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRESWAT,DCN 1341-00020
 GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,TEMPWAT,DCN 1341-00010
 GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GA03FLMA-RI001,Argentine Basin Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
@@ -1260,6 +1283,7 @@ GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring 
 GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRESWAT,DCN 1341-00020
 GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,TEMPWAT,DCN 1341-00010
 GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GA03FLMB-RI001,Argentine Basin Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1268,6 +1292,7 @@ GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider
 GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GA05MOAS-GL001,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1276,6 +1301,7 @@ GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider
 GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GA05MOAS-GL002,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1284,6 +1310,7 @@ GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider
 GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GA05MOAS-GL003,Argentine Basin Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GI01SUMO-RI002,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GI01SUMO-RI002,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GI01SUMO-RI002,Irminger Sea Surface Mooring,01,SUMO,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
@@ -1340,27 +1367,6 @@ GI01SUMO-SB001,Irminger Sea Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2 a
 GI01SUMO-SB001,Irminger Sea Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,XCO2ATM,DCN 1341-00260
 GI01SUMO-SB001,Irminger Sea Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,XCO2SSW,DCN 1341-00260
 GI02HYPM-MP003,Irminger Sea Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,Plankton ZP sonar global,ZPLSG,SONBSCA,DCN 1341-00800
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2THRM,DCN 1341-00489
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,PCO2WAT,DCN 1341-00490
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCSIG,"DCN 1341-00690, DCN 1341-00700"
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTTEMP,"DCN 1341-00690, DCN 1341-00700"
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
-GI02HYPM-SP001,Irminger Sea Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1371,6 +1377,7 @@ GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler)
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GI02HYPM-WF002,Irminger Sea Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
@@ -1381,6 +1388,7 @@ GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Ris
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH stable,PHSEN,PH578SI,DCN 1341-00509
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH stable,PHSEN,PHWATER,DCN 1341-00510
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,CONDWAT,DCN 1341-00030
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,DENSITY,DCN 1341-00050
 GI03FLMA-RI001,Irminger Sea Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRACSAL,DCN 1341-00040
@@ -1396,6 +1404,7 @@ GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Ris
 GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH stable,PHSEN,PH578SI,DCN 1341-00509
 GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH stable,PHSEN,PHWATER,DCN 1341-00510
 GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,CONDWAT,DCN 1341-00030
 GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,DENSITY,DCN 1341-00050
 GI03FLMB-RI001,Irminger Sea Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRACSAL,DCN 1341-00040
@@ -1409,6 +1418,7 @@ GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CT
 GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GI05MOAS-GL001,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1417,6 +1427,7 @@ GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CT
 GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GI05MOAS-GL002,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1425,28 +1436,8 @@ GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CT
 GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GI05MOAS-GL003,Irminger Sea Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GP02HYPM-MP003,Station Papa Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,Plankton ZP sonar global,ZPLSG,SONBSCA,DCN 1341-00800
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2THRM,DCN 1341-00489
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,PCO2WAT,DCN 1341-00490
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCSIG,"DCN 1341-00690, DCN 1341-00700"
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTTEMP,"DCN 1341-00690, DCN 1341-00700"
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
-GP02HYPM-SP001,Station Papa Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1457,6 +1448,7 @@ GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler)
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GP02HYPM-WF002,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1467,6 +1459,7 @@ GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler)
 GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GP02HYPM-WF004,Station Papa Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
@@ -1477,6 +1470,7 @@ GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Ris
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH stable,PHSEN,PH578SI,DCN 1341-00509
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH stable,PHSEN,PHWATER,DCN 1341-00510
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,CONDWAT,DCN 1341-00030
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,DENSITY,DCN 1341-00050
 GP03FLMA-RI001,Station Papa Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRACSAL,DCN 1341-00040
@@ -1492,6 +1486,7 @@ GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Ris
 GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH stable,PHSEN,PH578SI,DCN 1341-00509
 GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH stable,PHSEN,PHWATER,DCN 1341-00510
 GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,CONDWAT,DCN 1341-00030
 GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,DENSITY,DCN 1341-00050
 GP03FLMB-RI001,Station Papa Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRACSAL,DCN 1341-00040
@@ -1505,6 +1500,7 @@ GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,CT
 GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GP05MOAS-GL001,Station Papa Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1513,6 +1509,7 @@ GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CT
 GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GP05MOAS-GL002,Station Papa Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1521,6 +1518,7 @@ GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CT
 GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GP05MOAS-GL003,Station Papa Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GS01SUMO-RI002,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GS01SUMO-RI002,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),002,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GS01SUMO-RI002,Southern Ocean Surface Mooring,01,SUMO,RI (Mooring Riser),002,CTD Bottom Pumped,CTDBP,CONDWAT,DCN 1341-00030
@@ -1577,27 +1575,6 @@ GS01SUMO-SB001,Southern Ocean Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2
 GS01SUMO-SB001,Southern Ocean Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,XCO2ATM,DCN 1341-00260
 GS01SUMO-SB001,Southern Ocean Surface Mooring,01,SUMO,SB (Surface Buoy),001,pCO2 air-sea,PCO2A,XCO2SSW,DCN 1341-00260
 GS02HYPM-MP003,Southern Ocean Hybrid Profiler,02,HYPM,MP (Mid-Water Platform),003,Plankton ZP sonar global,ZPLSG,SONBSCA,DCN 1341-00800
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,PRESWAT,DCN 1341-00020
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,CTD Profiler,CTDPF,TEMPWAT,DCN 1341-00010
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS1,DCN 1341-00487
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2ABS2,DCN 1341-00488
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,CO2THRM,DCN 1341-00489
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,pCO2 water,PCO2W,PCO2WAT,DCN 1341-00490
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,spectral irradiance,SPKIR,SPECTIR,DCN 1341-00730
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Nutrient nitrate,NUTNR,NITROPT,DCN 1341-00620
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTCSIG,"DCN 1341-00690, DCN 1341-00700"
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTTEMP,"DCN 1341-00690, DCN 1341-00700"
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTAREF,1341-00700
-GS02HYPM-SP001,Southern Ocean Hybrid Profiler,02,HYPM,SP (Surface-Piercing Profiler),001,Attenuation absorption optical,OPTAA,OPTASIG,1341-00700
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1608,6 +1585,7 @@ GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profile
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GS02HYPM-WF002,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1618,6 +1596,7 @@ GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profile
 GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GS02HYPM-WF004,Southern Ocean Hybrid Profiler,02,HYPM,WF (Wire-Following Profiler),004,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Velocity profile Long Range,ADCPS,VELPROF,DCN 1341-00750
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Fluorometer three wavelength,FLORT,CDOMFLO,DCN 1341-00550
@@ -1628,6 +1607,7 @@ GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring R
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH stable,PHSEN,PH578SI,DCN 1341-00509
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,pH stable,PHSEN,PHWATER,DCN 1341-00510
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,CONDWAT,DCN 1341-00030
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,DENSITY,DCN 1341-00050
 GS03FLMA-RI001,Southern Ocean Mesoscale Flanking Mooring A,03,FLMA,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRACSAL,DCN 1341-00040
@@ -1643,6 +1623,7 @@ GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring R
 GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH stable,PHSEN,PH578SI,DCN 1341-00509
 GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,pH stable,PHSEN,PHWATER,DCN 1341-00510
 GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,CONDWAT,DCN 1341-00030
 GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,DENSITY,DCN 1341-00050
 GS03FLMB-RI001,Southern Ocean Mesoscale Flanking Mooring B,03,FLMB,RI (Mooring Riser),001,CTD Mooring,CTDMO,PRACSAL,DCN 1341-00040
@@ -1656,6 +1637,7 @@ GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,CTD Glider,
 GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GS05MOAS-GL001,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),001,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1664,6 +1646,7 @@ GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,CTD Glider,
 GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GS05MOAS-GL002,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),002,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,CONDWAT,DCN 1341-00030
 GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,DENSITY,DCN 1341-00050
 GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,CTDGV,PRACSAL,DCN 1341-00040
@@ -1672,6 +1655,7 @@ GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,CTD Glider,
 GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,CHLAFLO,DCN 1341-00530
 GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,Fluorometer two wavelength,FLORD,FLUBSCT,DCN 1341-00540
 GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+GS05MOAS-GL003,Southern Ocean Mobile Assets,05,MOAS,GL (Gliders),003,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1683,6 +1667,7 @@ RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Fluoro
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 RS01SBVM-DP01A,Slope Base Vertical Mooring,01,SBVM,DP (Deep Profiler),01A,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -1707,6 +1692,7 @@ RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,IES pressure
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Hydrophone BB passive,HYDBB,HYDAPBB,DCN 1341-00820
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Hydrophone BB passive,HYDBB,HYDFRBB,DCN 1341-00810
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 RS01SBVM-LJ01A,Slope Base Vertical Mooring,01,SBVM,LJ (LP Jbox),01A,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -1734,6 +1720,7 @@ RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Contro
 RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,Velocity profile 50m turb,VADCP,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,Velocity profile 50m turb,VADCP,VELTURB,DCN 1341-00760
 RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+RS01SBVM-PC01A,Slope Base Vertical Mooring,01,SBVM,PC (Platform Interface Controller),01A,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 RS01SBVM-SF01A,Slope Base Vertical Mooring,01,SBVM,SF (Shallow Profiler Science Float),01A,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040
@@ -1802,6 +1789,7 @@ RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Fluorometer three wa
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Velocity point 3D turb,VEL3D,VELPTMN,DCN 1341-00790
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Velocity point 3D turb,VEL3D,VELPTTU,"DCN 1341-00781 (Nobska), DCN 1341-00780 (Nortek)"
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 RS03AXVM-DP03A,Axial Mooring,03,AXVM,DP (Deep Profiler),03A,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -1826,6 +1814,7 @@ RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,IES pressure velocity,HPIE
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Hydrophone BB passive,HYDBB,HYDAPBB,DCN 1341-00820
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Hydrophone BB passive,HYDBB,HYDFRBB,DCN 1341-00810
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Attenuation absorption optical,OPTAA,OPTABSN,DCN 1341-00700
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Attenuation absorption optical,OPTAA,OPTATTN,DCN 1341-00690
 RS03AXVM-LJ03A,Axial Mooring,03,AXVM,LJ (LP Jbox),03A,Attenuation absorption optical,OPTAA,OPTCREF,"DCN 1341-00690, DCN 1341-00700"
@@ -1853,6 +1842,7 @@ RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,pH s
 RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,Velocity profile 50m turb,VADCP,ECHOINT,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)"
 RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,Velocity profile 50m turb,VADCP,VELTURB,DCN 1341-00760
 RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,Oxygen dissolved stable,DOSTA,DOCONCS,DCN 1341-00520
+RS03AXVM-PC03A,Axial Mooring,03,AXVM,PC (Platform Interface Controller),03A,Oxygen dissolved stable,DOSTA,DOXYGEN,DCN 1341-00520
 RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,CTD Profiler,CTDPF,CONDWAT,DCN 1341-00030
 RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,CTD Profiler,CTDPF,DENSITY,DCN 1341-00050
 RS03AXVM-SF03A,Axial Mooring,03,AXVM,SF (Shallow Profiler Science Float),03A,CTD Profiler,CTDPF,PRACSAL,DCN 1341-00040

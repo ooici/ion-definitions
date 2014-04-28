@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Data Product Spreadsheet,Report Generated: 3/27/2014
+Data Product Spreadsheet,Report Generated: 4/28/2014
 
 Textbox14
 
@@ -23,10 +23,10 @@ CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,L0,counts,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3185,Water Column
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORD,Fluorometer two wavelength,2013-07-17,L2-SR-RQ-3185,Water Column
 CHLAFLO,Fluorometric Chlorophyll-a Concentration,L1,ug/L,DCN 1341-00530,"DCN 1342-00531 (FLORD), DCN 1342-00530 (FLORT)",FLORT,Fluorometer three wavelength,2013-07-17,L2-SR-RQ-3185,Water Column
-CO2ABS1,Optical Absorbance Ratio at 434nm,L0,unitless,DCN 1341-00487,DCN 1342-00490,PCO2W,pCO2 water,2013-07-17,Derived from design to achieve PCO2WAT,Water Column
-CO2ABS2,Optical Absorbance Ratio at 620nm,L0,unitless,DCN 1341-00488,DCN 1342-00490,PCO2W,pCO2 water,2013-07-17,Derived from design to achieve PCO2WAT,Water Column
+CO2ABS1,Optical Absorbance Ratio at 434nm,L0,unitless,DCN 1341-00487,DCN 1342-00490,PCO2W,pCO2 water,2013-11,Derived from design to achieve PCO2WAT,Water Column
+CO2ABS2,Optical Absorbance Ratio at 620nm,L0,unitless,DCN 1341-00488,DCN 1342-00490,PCO2W,pCO2 water,2013-11,Derived from design to achieve PCO2WAT,Water Column
 CO2FLUX,Flux of CO2 from the Ocean into the Atmosphere,L2,mol m-2 s-1,DCN 1341-00270,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,L2-SR-RQ-3032,Air-Sea Interface
-CO2THRM,PCO2W Thermistor Temperature,L0,volts,DCN 1341-00489,DCN 1342-00490,PCO2W,pCO2 water,2013-07-17,Derived from design to achieve PCO2WAT,Water Column
+CO2THRM,PCO2W Thermistor Temperature,L0,volts,DCN 1341-00489,DCN 1342-00490,PCO2W,pCO2 water,2013-11,Derived from design to achieve PCO2WAT,Water Column
 CONDSRF,Sea Surface Conductivity,L1,S/m,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,"L2-SR-RQ-3413, L2-SR-RQ-3711","Air-Sea Interface, Surface Water"
 CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDAV,CTD AUV,2013-07-17,L2-SR-RQ-3045,Water Column
 CONDWAT,Conductivity,L0,unitless,DCN 1341-00030,DCN 1342-00010,CTDBP,CTD Bottom Pumped,2013-07-17,L2-SR-RQ-3045,Water Column
@@ -47,8 +47,8 @@ DNASAMP,16s rRNA sequence of filtered physical sample,L2,2 micron filter,DCN 134
 DOCONCF,Oxygen Concentration from Fastrep DO Instrument,L0,counts,DCN 1341-00521,DCN 1342-00521,DOFST,Oxygen dissolved fastresp,2013-11, L2-SR-RQ-3048,Water Column
 DOCONCF,Oxygen Concentration from Fastrep DO Instrument,L2, µmol/kg,DCN 1341-00521,DCN 1342-00521,DOFST,Oxygen dissolved fastresp,2013-11,L2-SR-RQ-3048,Water Column
 DOCONCS,Oxygen Concentration from Stable DO Instrument,L0,angular degrees,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17,L2-SR-RQ-3048,Water Column
-DOCONCS,Oxygen Concentration from Stable DO Instrument,L1,umol/l,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17, L2-SR-RQ-3048, Water Column
-DOCONCS,Oxygen Concentration from Stable DO Instrument,L2,µmol/kg ,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17,L2-SR-RQ-3048,Water Column
+DOCONCS,Oxygen Concentration from Stable DO Instrument,L1,umol/kg,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17, L2-SR-RQ-3048, Water Column
+DOXYGEN,Oxygen Concentration from Stable DO Instrument,L2,µmol/kg ,DCN 1341-00520,DCN 1342-00520,DOSTA,Oxygen dissolved stable,2013-07-17,L2-SR-RQ-3048,Water Column
 ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPA,Velocity profile Mobile Asset,2013-07-17,L2-SR-RQ-3887,Water Column
 ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPS,Velocity profile Long Range,2013-07-17,L2-SR-RQ-3887,Water Column
 ECHOINT,Echo Intensity,L0,dB,"DCN 1341-00750 (ADCPA, ADCPS, ADCPT), DCN 1341-00760 (VADCP)","DCN 1342-00750 (ADCPA, ADCPS, ADCPT), DCN 1342-00760 (VADCP)",ADCPT,Velocity profile Short Range,2013-07-17,L2-SR-RQ-3887,Water Column
@@ -73,7 +73,7 @@ HEATFLX ,Net Heat Flux,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
 HYDAPBB,Broadband Acoustic pressure waves ,L0,TBD,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2014-07,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
 HYDAPBB,Broadband Acoustic pressure waves ,L1,dB//1uPa/V,DCN 1341-00820,DCN 1342-00810,HYDBB,Hydrophone BB passive,2014-07,L2-SR-RQ-3086,"Water Column, Seafloor/Crust"
 HYDAPLF,Low Frequency Acoustic pressure waves,L0,,DCN 1341-00821,DCN 1341-00821,HYDLF,Hydrophone LF passive,2014-07,,
-HYDAPLF,Low Frequency Acoustic pressure waves,L1,,DCN 1341-00821,DCN 1341-00821,HYDLF,Hydrophone LF passive,2014-07,,
+HYDAPLF,Low Frequency Acoustic pressure waves,L1,,DCN 1341-00821,DCN 1342-00821,HYDLF,Hydrophone LF passive,2014-07,,
 HYDFRBB,Broadband Frequency,L0,TBD,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2014-07,Derived from design to achieve HYDACR,"Water Column, Seafloor/Crust"
 HYDFRBB,Broadband Frequency,L1,KHz,DCN 1341-00810,DCN 1342-00810,HYDBB,Hydrophone BB passive,2014-07,Derived from design to achieve HYDACR,"Water Column, Seafloor/Crust"
 IES_HEF,Horizontal Electric Fields,L0,TBD,DCN 1341-00580,DCN 1342-00560,HPIES,IES pressure velocity,2014-07,L2-SR-RQ-3912,Water Column
@@ -93,19 +93,19 @@ MOMMFLX,Momentum Flux (Wind Stress) ,L2,N/m2,,,METBK,Meteorology bulk,2013-11,,
 MOTFLUX,Platform Direction and Tilt (3 axes),L0,TBD,DCN 1341-00301,DCN 1342-00280,FDCHP,Flux direct covariance,2013-11,L2-SR-RQ-3025,Air-Sea Interface
 NETLIRR ,Net Longwave Irradiance ,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
 NETSIRR ,Net Shortwave Irradiance ,L2,W/m2,,,METBK,Meteorology bulk,2013-11,,
-NITROPT,Nitrate Concentration,L1,µM,DCN 1341-00620,DCN 1342-00620,NUTNR,Nutrient nitrate,2013-07-17,L2-SR-RQ-3050,Water Column
-OPTABSN,Optical Absorption Coefficient,L2,1/m,DCN 1341-00700,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-07-17,L2-SR-RQ-3926,Water Column
-OPTAREF,Reference Absorption,L0,,1341-00700,1342-00690,OPTAA,Attenuation absorption optical,2013-07-17,,Water Column
-OPTASIG,Signal Absorption,L0,,1341-00700,1342-00690 ,OPTAA,Attenuation absorption optical,2013-07-17,,Water Column
-OPTATTN,Optical Beam Attenuation Coefficient,L2,1/m,DCN 1341-00690,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-07-17,L2-SR-RQ-3928,Water Column
-OPTCREF,Reference Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-07-17,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
-OPTCSIG,Signal Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-07-17,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
+NITROPT,Nitrate Concentration,L1,µM,DCN 1341-00620,DCN 1342-00620,NUTNR,Nutrient nitrate,2013-11,L2-SR-RQ-3050,Water Column
+OPTABSN,Optical Absorption Coefficient,L2,1/m,DCN 1341-00700,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-11,L2-SR-RQ-3926,Water Column
+OPTAREF,Reference Absorption,L0,,1341-00700,1342-00690,OPTAA,Attenuation absorption optical,2013-11,,Water Column
+OPTASIG,Signal Absorption,L0,,1341-00700,1342-00690 ,OPTAA,Attenuation absorption optical,2013-11,,Water Column
+OPTATTN,Optical Beam Attenuation Coefficient,L2,1/m,DCN 1341-00690,DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-11,L2-SR-RQ-3928,Water Column
+OPTCREF,Reference Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-11,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
+OPTCSIG,Signal Beam Attenuation,L0,unitless,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-11,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
 OPTPARW,Photosynthetically Active Radiation (400-700 nm),L0,"counts (Satl), volts (Bios)","DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2013-10,L2-SR-RQ-3670,Water Column
 OPTPARW,Photosynthetically Active Radiation (400-700 nm),L1,µmol photons/m^2*s,"DCN 1341-00720 (Satl), DCN 1341-00721 (Bios)",DCN 1342-00720,PARAD,PAR,2013-10,L2-SR-RQ-3670,Water Column
-OPTTEMP,Temperature from OPTAA,L0,degrees C,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-07-17,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
+OPTTEMP,Temperature from OPTAA,L0,degrees C,"DCN 1341-00690, DCN 1341-00700",DCN 1342-00690,OPTAA,Attenuation absorption optical,2013-11,"L2-SR-RQ-3926, L2-SR-RQ-3928",Water Column
 PCO2ATM,Partial Pressure of CO2 in Atmosphere,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,L2-SR-RQ-3023,Air-Sea Interface
 PCO2SSW,Partial Pressure of CO2 in Surface Sea Water,L1,µatm,DCN 1341-00260,DCN 1342-00260,PCO2A,pCO2 air-sea,2013-11,L2-SR-RQ-3023,Air-Sea Interface
-PCO2WAT,Partial Pressure of CO2 in Water,L1,µatm,DCN 1341-00490,DCN 1342-00490,PCO2W,pCO2 water,2013-07-17,L2-SR-RQ-3049,Water Column
+PCO2WAT,Partial Pressure of CO2 in Water,L1,µatm,DCN 1341-00490,DCN 1342-00490,PCO2W,pCO2 water,2013-11,L2-SR-RQ-3049,Water Column
 PH434SI,Optical Absorbance Signal Intensity at 434nm,L0,unitless,DCN 1341-00508,DCN 1342-00510,PHSEN,pH stable,2013-07-17,Derived from design to achieve PHWATER,Water Column
 PH578SI,Optical Absorbance Signal Intensity at 578nm,L0,unitless,DCN 1341-00509,DCN 1342-00510,PHSEN,pH stable,2013-07-17,Derived from design to achieve PHWATER,Water Column
 PHSSAMP,Physical Fluid Sample – Diffuse fluid chemistry,L2,No Direct Datastream to OOI,"DCN 1341-00640 (OSMOI), DCN 1341-00641 (RASFL)",n/a,OSMOI,Watersample chem trace,2014-07,L2-SR-RQ-3088,Seafloor/Crust
@@ -144,8 +144,8 @@ SONBSCA,Multi-Frequency Acoustic Backscatter,L0,TBD,DCN 1341-00800,DCN 1342-0080
 SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSC,Plankton ZP sonar coastal,2013-07-17,L2-SR-RQ-3054,Water Column
 SONBSCA,Multi-Frequency Acoustic Backscatter,L1,dB re 1(m^2 nmi^-2),DCN 1341-00800,DCN 1342-00800,ZPLSG,Plankton ZP sonar global,2013-07-17,L2-SR-RQ-3054,Water Column
 SPECHUM,Specific Humidity,L2,%,DCN 1341-00370,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3179 ,"Air-Sea Interface, Surface Water"
-SPECTIR,Downwelling Spectral Irradiance ,L0,TBD,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-07-17,L2-SR-RQ-3051,Water Column
-SPECTIR,Downwelling Spectral Irradiance ,L1,µW*cm^-2*nm^-1,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-07-17,L2-SR-RQ-3051,Water Column
+SPECTIR,Downwelling Spectral Irradiance ,L0,TBD,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-11,L2-SR-RQ-3051,Water Column
+SPECTIR,Downwelling Spectral Irradiance ,L1,µW*cm^-2*nm^-1,DCN 1341-00730,DCN 1342-00730,SPKIR,spectral irradiance,2013-11,L2-SR-RQ-3051,Water Column
 SPHUM2M,Specific Humidity at 2 m,L2,%,,,METBK,Meteorology bulk,2013-11,,
 TEMPA2M,Air Temperature at 2 m,L2,degrees C,,,METBK,Meteorology bulk,2013-11,,
 TEMPAIR,Air Temperature,L1,degree C,DCN 1341-00360,DCN 1342-00360,METBK,Meteorology bulk,2013-11,L2-SR-RQ-3033,"Air-Sea Interface, Surface Water"

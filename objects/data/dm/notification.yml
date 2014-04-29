@@ -40,7 +40,7 @@ NotificationRequest: !Extends_InformationResource
   temporal_bounds: !TemporalBounds
   # Delivery information as a list of DeliveryConfiguration objects
   #@ContentType=DeliveryConfiguration
-  delivery_configuration: []
+  delivery_configurations: []
   # Additional attributes for extensibility
   request_details: {}
 ---

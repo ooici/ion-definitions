@@ -27,7 +27,7 @@ DeliveryConfiguration:
 # Describes a standing request for notifications by type and delivery modality for one user.
 NotificationRequest: !Extends_InformationResource
   # type of aggregation to augment the set of origins
-  type: !NotificationAggregateEnum
+  type: !NotificationTypeEnum
   # Event filter by origin
   origin: ""
   # Event filter by origin type

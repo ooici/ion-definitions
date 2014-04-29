@@ -1,5 +1,5 @@
 ﻿Textbox8,tbToday
-Make/Model Attributes Report,Report Generated: 3/27/2014
+Make/Model Attributes Report,Report Generated: 4/28/2014
 
 Textbox14
 
@@ -336,6 +336,14 @@ Sea-Bird,FastCAT 49 CTD,FastCAT 49 CTD,Lead Time,
 Sea-Bird,FastCAT 49 CTD,FastCAT 49 CTD,Make/Model Website,
 Sea-Bird,FastCAT 49 CTD,FastCAT 49 CTD,Output Description,
 Sea-Bird,FastCAT 49 CTD,FastCAT 49 CTD,Vendor Website,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Calibration Shelf Life,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Connector,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Input Voltage Range,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Interface,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Lead Time,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Make/Model Website,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Output Description,
+Sea-Bird,SBE 16plus-IM V2,SBE 16plus-IM V2,Vendor Website,
 Sea-Bird,SBE 16plusV2,SBE 16plusV2,Calibration Shelf Life,
 Sea-Bird,SBE 16plusV2,SBE 16plusV2,Connector,
 Sea-Bird,SBE 16plusV2,SBE 16plusV2,Input Voltage Range,
@@ -536,6 +544,14 @@ WET Labs,AC-S Deep,AC-S Deep,Lead Time,10-12 weeks
 WET Labs,AC-S Deep,AC-S Deep,Make/Model Website,
 WET Labs,AC-S Deep,AC-S Deep,Output Description,
 WET Labs,AC-S Deep,AC-S Deep,Vendor Website,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Calibration Shelf Life,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Connector,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Input Voltage Range,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Interface,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Lead Time,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Make/Model Website,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Output Description,
+WET Labs,ECO FLBB-SB,ECO FLBB-SB,Vendor Website,
 WET Labs,ECO PAR,ECO PAR,Calibration Shelf Life,
 WET Labs,ECO PAR,ECO PAR,Connector,
 WET Labs,ECO PAR,ECO PAR,Input Voltage Range,

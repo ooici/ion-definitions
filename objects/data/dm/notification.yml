@@ -20,7 +20,7 @@ DeliveryConfiguration:
     # Indicates the notification frequency mode (real_time and batch) as Frequency value
     frequency: !NotificationFrequencyEnum
     # Additional attributes for extensibility
-    extra_attributes: {}
+    delivery_options: {}
 
 ---
 
@@ -39,8 +39,10 @@ NotificationRequest: !Extends_InformationResource
   # The start and end time of this subscription
   temporal_bounds: !TemporalBounds
   # Delivery information
-  delivery_configuration: !DeliveryConfiguration
-
+  #@ContentType=DeliveryConfiguration
+  delivery_configuration: []  #list of !DeliveryConfiguration objects
+  # Additional attributes for extensibility
+  request_details: {}
 ---
 
 # Notification delivery configuration for a detection event

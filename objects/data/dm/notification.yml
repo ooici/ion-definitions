@@ -1,37 +1,31 @@
 
 # Enumerates possible notification delivery modes
-DeliveryMode: !enum (values=(DIGEST, UNFILTERED, ABRIDGED), default=DIGEST)
-
-# Enumerates possible notification delivery types
-NotificationType: !enum (values=(EMAIL, FILTER), default=EMAIL)
+DeliveryMode: !enum (values=(DIGEST, UNFILTERED), default=UNFILTERED)
 
 # Enumerates possible notification delivery frequency categories.
-Frequency: !enum (values=(REAL_TIME, BATCH), default=REAL_TIME)
+NotificationFrequencyType: !enum (values=(REAL_TIME, BATCH, DISABLED), default=REAL_TIME)
+
+# Enumerates possible notification delivery frequency categories.
+NotificationAggregateType: !enum (values=(NONE, PLATFORM, SITE, FACILITY, COLLECTION), default=NONE)
 
 ---
 
 # Abstract base type for a notification delivery configuration.
 DeliveryConfig:
-  process_definition_id: ""
-  processing:
-    # User defined header for the message
-    message_header: ""
-    # Instructions on how to parse the notification to produce an SMS - more than just a string?
-    parsing: ""
-  delivery:
     # Email address to use. If empty, get user contact-info
-    email: ""
-    # Delivery mode for email notification as DeliveryMode value
+    email: []
+    # Delivery mode for email notification as DeliveryMode value.
+    # DIGEST signifies SMS or other limited channel
     mode: !DeliveryMode
     # Indicates the notification frequency mode (real_time and batch) as Frequency value
-    frequency: !Frequency
+    frequency: !NotificationFrequencyType
 
 ---
 
 # Describes a standing request for notifications by type and delivery modality for one user.
 NotificationRequest: !Extends_InformationResource
-  # Indicates the notification type as NotificationType value
-  type: !NotificationType
+  # type of aggregation to augment the set of origins
+  aggregate_type: !NotificationAggregateType
   # Event filter by origin
   origin: ""
   # Event filter by origin type
@@ -42,6 +36,8 @@ NotificationRequest: !Extends_InformationResource
   event_subtype: ""
   # The start and end time of this subscription
   temporal_bounds: !TemporalBounds
+  # Delivery information
+  delivery_configuration: !DeliveryConfig
 
 ---
 

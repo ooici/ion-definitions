@@ -38,9 +38,9 @@ NotificationRequest: !Extends_InformationResource
   event_subtype: ""
   # The start and end time of this subscription
   temporal_bounds: !TemporalBounds
-  # Delivery information
+  # Delivery information as a list of DeliveryConfiguration objects
   #@ContentType=DeliveryConfiguration
-  delivery_configuration: []  #list of !DeliveryConfiguration objects
+  delivery_configuration: []
   # Additional attributes for extensibility
   request_details: {}
 ---

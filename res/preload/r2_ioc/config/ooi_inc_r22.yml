@@ -1,0 +1,39 @@
+# This file adds the OOINet R2.1 production configuration (ooi_beta.yml)
+
+load_sequence:
+
+  - name: load_ooi_assets_1update
+    docstring: Reapply OOI preload to update to latest asset mappings and push out ooiuntil date
+    config:
+      op: load
+      loadooi: True
+      assets: res/preload/r2_ioc/ooi_assets
+      ooiuntil: "6/30/2014"
+      ooiparams: True
+      ooiupdate: True
+
+  - name: load_pioneer_wpf1
+    docstring: Load the agent definition and parameters for Pioneer WFP
+    config:
+      op: load
+      scenario: FLORT_KN,PARAD_K,WFC_ENG
+      idmap: True
+      categories: ExternalDatasetAgent,ParameterFunctions,ParameterDefs,ParameterDictionary,StreamConfiguration,IDMap
+
+  - name: load_pioneer_wpf2
+    docstring: Load the agent definition and parameters for Pioneer WFP
+    config:
+      op: load
+      scenario: DOFST_K_CSTL,CTDPF_CKL_CSTL,VEL3D_K_CSTL,ADCPSL_CSTL,CG_STC_ENG_CSTL
+      idmap: True
+      categories: ExternalDatasetAgent,ParameterFunctions,ParameterDefs,ParameterDictionary,StreamConfiguration,IDMap
+
+  - name: load_ooi_assets_2dp
+    docstring: Reapply OOI preload to finish off data product generation
+    config:
+      op: load
+      loadooi: True
+      assets: res/preload/r2_ioc/ooi_assets
+      ooiuntil: "6/30/2014"
+      ooiparams: True
+      ooiupdate: True

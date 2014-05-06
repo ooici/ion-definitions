@@ -56,12 +56,6 @@ DataProduct: !Extends_InformationResource
   # For instruments that are not real-time, this will not be the same as the earliest and latest ingestion of data.
   nominal_datetime: !TemporalBounds
 
-  # (SYS) Describes the temporal domain used to represent the data product's coverage.
-  temporal_domain: {}
-
-  # (SYS) Describes the spatial domain used to represent the data product's coverage.
-  spatial_domain: {}
-
   # A list of keyword/authority pairs with optional urls as list of Term objects.
   #@ContentType=Term
   descriptors: []

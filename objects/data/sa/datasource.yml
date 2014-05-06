@@ -1,7 +1,13 @@
 # Represents an external service that provides data and metadata for potential acquisition into the system.
 DataSource: !Extends_InformationResource
-  type: ""
+  externalize: ""
+  data_source_type: ""
+  harvester_type: ""
+  search_terms: ""
+  import_xslt: ""
+  ogc_type: ""
   connection_params: {}
+  data_source_attributes: {}
   protocol_type: ""
   institution: !Institution
   contact: !ContactInformation

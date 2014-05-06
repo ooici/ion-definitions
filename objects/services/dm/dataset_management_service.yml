@@ -19,8 +19,6 @@ methods:
       view_name:               ""
       stream_id:               ""
       parameter_dict:          {}
-      spatial_domain:          {}
-      temporal_domain:         {}
       parameter_dictionary_id: ""
       description:             ""
       parent_dataset_id:       ""

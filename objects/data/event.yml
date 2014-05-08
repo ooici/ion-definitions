@@ -225,6 +225,8 @@ DeviceMissionEvent: !Extends_DeviceEvent
 
 MissionExecutionStatus: !enum (values=(OK, ABORTED, KILLED, FAILED), default=OK)
 
+---
+
 MissionLifecycleEvent: !Extends_DeviceMissionEvent
   # sub_type: STARTED, STOPPED
   # origin: device id (platform resource id)

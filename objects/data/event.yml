@@ -215,6 +215,22 @@ DeviceAggregateStatusEvent: !Extends_DeviceStatusEvent
   prev_status: !DeviceStatusType
   roll_up_status: False
 
+# ------------------------------------------------------------------------------------
+# Mission events.
+# Events about the status of mission plan execution
+# ------------------------------------------------------------------------------------
+
+DeviceMissionEvent: !Extends_DeviceEvent
+  mission_id: ""  # the resource id of the mission
+
+MissionExecutionStatus: !enum (values=(OK, ABORTED, KILLED, FAILED), default=OK)
+
+MissionLifecycleEvent: !Extends_DeviceMissionEvent
+  # sub_type: STARTED, STOPPED
+  # origin: device id (platform resource id)
+  mission_thread_id: ""   # If not empty, ID of particular mission thread
+  execution_status: !MissionExecutionStatus
+
 
 # ------------------------------------------------------------------------------------
 # Information Content Events

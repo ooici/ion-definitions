@@ -137,6 +137,16 @@ ResourceAgentAsyncResultEvent: !Extends_ResourceAgentEvent
   desc: ""
   result: ""
 
+ResourceAgentExecutionStatus: !enum (values=(OK, FAILED), default=OK)
+
+---
+
+ResourceAgentLifecycleEvent: !Extends_ResourceAgentEvent
+  # sub_types: STARTED, STOPPED
+  process_id: ""
+  agent_state: ""
+  execution_status: !ResourceAgentExecutionStatus
+
 ---
 
 # ------------------------------------------------------------------------------------

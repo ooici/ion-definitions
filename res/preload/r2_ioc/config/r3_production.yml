@@ -1,0 +1,35 @@
+# This file configures the OOI beta instance configuration
+
+load_sequence:
+
+  - name: load_OOIR2_ui
+    docstring: Loads the UI definition
+    config:
+      op: loadui
+      ui_path: 'http://userexperience.oceanobservatories.org/database-exports/R3Candidates'
+      attachments: res/preload/r2_ioc/attachments
+
+  - name: load_OOIR2_scenario
+    docstring: Loads the basic OOI resources, such as Orgs, Users etc
+    config:
+      op: load
+      scenario: OOIR2
+
+  - name: load_parameter_scenarios
+    docstring: Loads basic shared parameter and stream resources
+    config:
+      op: load
+      scenario: BETA
+      categories: ParameterFunctions,ParameterDefs,ParameterDictionary,StreamDefinition
+      clearcols: owner_id,org_ids
+      assets: res/preload/r2_ioc/ooi_assets
+      parseooi: True
+
+  - name: load_ooi_assets
+    docstring: Main OOI preload fed by SAF and OOI preload spreadsheet shources
+    config:
+      op: load
+      loadooi: True
+      assets: res/preload/r2_ioc/ooi_assets
+      ooiuntil: "6/30/2014"
+      ooiparams: True

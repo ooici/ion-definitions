@@ -24,7 +24,11 @@ PlatformDevice: !Extends_Device
   # Describes this platform's monitors as a list of PlatformMonitorAttributes objects
   #@ContentType=PlatformMonitorAttributes
   platform_monitor_attributes: []
-  
+  # Identifier of hard-coded operating system in unit
+  firmware_version: ""
+  # Version of the hardware
+  hardware_version: ""
+
 
 # Specifies a distinguished type of platform, derived from the manufacturer's model number
 # and on common attributes.
@@ -42,6 +46,9 @@ PlatformModel: !Extends_DeviceModel
 
   # Whether ION software is run on platform resources
   ci_onboard: ""
+
+  # OOI node type code, such as WP or GL.
+  node_type_id: ""
 
   # Whether the platform is typically connected to the terrestrial network (boolean).
   # Codelist: Always Fast, Always Slow, Intermittent, Never

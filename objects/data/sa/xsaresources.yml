@@ -62,8 +62,8 @@ DataProductExtension: !Extends_ExtendedInformationResource
   provenance_product_list: []
 
   data_ingestion_datetime: ""
-  #@hasSource=InstrumentDevice
-  source_device: !InstrumentDevice
+  # Device that produced the data
+  source_device: !Device
 
 ---
 
@@ -110,6 +110,9 @@ SiteExtension: !Extends_ExtendedInformationResource
   platform_devices: []    # All PlatformDevices associated to this site or any child site
 
   platform_models: []     # The associated Platform models
+
+  # Current active deployment
+  deployment: !Deployment
 
   deployments: []         # All Deployments associated to any parent or child site
 
@@ -236,6 +239,9 @@ DeviceExtension: !Extends_ExtendedInformationResource
   #@hasSource
   data_products: [] # A list of associated data products
 
+  # Current active deployment
+  deployment: !Deployment
+
   #@hasDeployment
   deployments: []  # list of deployment resources to which to which this device is attached
 
@@ -262,7 +268,6 @@ InstrumentDeviceExtension: !Extends_DeviceExtension
   #@hasDevice=PlatformDevice
   platform_device: !PlatformDevice  # The parent platform (if existing)
 
-  #@hasPlatformModel=PlatformDevice,PlatformModel
   platform_model: !PlatformModel  # The model associated to the parent platform
 
   #@hasDevice=SensorDevice

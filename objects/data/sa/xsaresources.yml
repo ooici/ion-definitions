@@ -103,6 +103,9 @@ SiteExtension: !Extends_ExtendedInformationResource
   #@hasModel
   model: []  #there can be more than one model that a site supports but need to place one model name in the site facepage
 
+  #@hasDevice
+  deployed_device: !Device  # The currently deployed as primary device
+
   instrument_devices: []  # All InstrumentDevices associated to this site or any child site
 
   instrument_models: []   # The associated Instrument models

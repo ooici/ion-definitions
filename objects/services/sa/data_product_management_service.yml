@@ -290,6 +290,16 @@ methods:
       BadRequest: if provenance can not be retrieved
       NotFound: object with specified id does not exist
 
+  get_data_product_parameters:
+    in:
+      data_product_id: ""
+      id_only: False
+    out:
+      parameters: []
+    throws:
+      BadRequest: if the data product id is invalid
+      NotFound: if no parameters are associated with the data product
+
   create_catalog_entry:
     docstring: |
       Creates an entry in the external datasets catalog for a data product.

@@ -559,6 +559,11 @@ ExternalReferencesUpdatedEvent: !Extends_InformationContentModifiedEvent
 
 ---
 
+DatasetCalibrationEvent: !Extends_DatasetModified
+  calibrations: []
+
+---
+
 #  Events published in the context of data processing
 DataProcessingEvent: !Extends_Event
 

@@ -354,6 +354,7 @@ methods:
       object: ""
       assoc_type:
       id_only: False
+      anyside: ""
       limit: 0
       skip: 0
       descending: False
@@ -465,6 +466,7 @@ methods:
       skip: 0
       descending: False
       id_only: False
+      query: {}
     out:
       list: []
     throws:

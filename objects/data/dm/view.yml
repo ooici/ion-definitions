@@ -1,6 +1,14 @@
-# Specifies a standing, parameterizable query for resources.
-# Describes order and additional filters to be applied when view is evaluated.
+# Specifies a standing, parameterizable query for resources and events. Can represent a "saved search".
 View: !Extends_InformationResource
-  order:   []
-  filters: ""
+  # Designates the type of view definition
+  view_type: ""
 
+  # Detailed definition of the view according to the type
+  view_definition: {}
+
+  # Definition of parameterized values within the view definition
+  #@ContentType=CustomAttribute
+  view_parameters: []
+
+  # Default or filled set of parameterized values (matching view_parameters)
+  param_values: {}

@@ -13,8 +13,9 @@ methods:
 
   query:
     docstring: |
-      Issue a query against the indexes as specified in the query, applying filters and operators
-      accordingly. The query format is a structured dict.
+      Issue a query provided in structured dict format or internal datastore query format.
+      Returns a list of resource or event objects or their IDs only.
+      Search_args may contain parameterized values.
       See the query format definition: https://confluence.oceanobservatories.org/display/CIDev/Discovery+Service+Query+Format
     in:
       query: {}
@@ -23,10 +24,25 @@ methods:
     out:
       results: []
 
+  query_view:
+    docstring: |
+      Execute an existing query as defined within a View resource, providing additional arguments for
+      parameterized values.
+      If ext_query is provided, it will be combined with the query defined by the View.
+      Search_args may contain parameterized values.
+      Returns a list of resource or event objects or their IDs only.
+    in:
+      view_id: ""
+      view_name: ""
+      ext_query: {}
+      id_only: True
+      search_args: {}
+    out:
+      results: []
+
   parse:
     docstring: |
       Parses a given string request and assembles the query, processes the query and returns the results of the query.
-      This is the primary means of interfacing with the search features in discovery.
       See the query language definition: https://confluence.oceanobservatories.org/display/CIDev/Discovery+Service+Query+Format
     in:
       search_request: ""
@@ -40,6 +56,43 @@ methods:
   # View management. Views are persisted parameterizable queries
 
   create_view:
+    docstring: |
+      Creates a view resource.
+    in:
+      view: !View
+    out:
+      view_id: ""
+    throws:
+      BadRequest: if object passed has _id or _rev attribute
+
+  update_view:
+    docstring: Update a View resource
+    in:
+      view: !View
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+      Conflict: object not based on latest persisted object version
+  
+  read_view:
+    docstring: Read a View resource
+    in:
+      view_id:     ""
+    out:
+      view: !View
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_view:
+    docstring: Delete a View resource
+    in:
+      view_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  create_catalog_view:
     docstring: |
       Creates a view which has the specified search fields, the order in which the search fields are presented
       to a query and a term filter.
@@ -57,23 +110,3 @@ methods:
     out:
       view_id:     ""
 
-  read_view:
-    docstring: Read a View resource
-    in:
-      view_id:     ""
-    out:
-      view:        !View
-
-  update_view:
-    docstring: Update a View resource
-    in:
-      view:        !View
-    out:
-      success:     True
-  
-  delete_view:
-    docstring: Delete a View resource
-    in:
-      view_id:     ""
-    out:
-      success:     True

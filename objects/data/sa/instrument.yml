@@ -88,7 +88,9 @@ InstrumentModel: !Extends_DeviceModel
 
 
 # Defines an agent/driver combination compatible with a specific instrument model.
+#@TypeVersion=2
 InstrumentAgent: !Extends_DeviceAgent
+  schema_versioning_test: ""
 
 
 # Describes parameters for an instance of an instrument agent for a specific device.

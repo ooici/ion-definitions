@@ -15,18 +15,28 @@ UserCredentials: !Extends_InformationResource
   authentication_service: "CIlogon"
   # Service that identities the specific actor.
   identity_provider: ""
+
+
+# Enumerates the possible types of security tokens
+TokenTypeEnum: !enum (values=(ACTOR_SECRET, ACTOR_AUTH), default=ACTOR_SECRET)
 ---
 
 # Holds information for a user specific authorization token
-TokenInformation:
+SecurityToken:
   # The token secret
   token_string: ""
+  # The type of token
+  token_type: !TokenTypeEnum
   # Timestamp (UNIX epoch) for when the token expires in UTC
   expires : ""
   # OPEN, VERIFIED, EXPIRED
   status: ""
+  # ID of an actor identity.
+  actor_id:
   # Email address of merge account
   merge_email: ""
+  # Additional token attributes
+  attributes: {}
 ---
 
 # Enumerates possible notification delivery modes. WARNING: See also UNS specific definitions

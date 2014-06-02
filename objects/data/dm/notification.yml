@@ -1,6 +1,6 @@
 
 # Enumerates possible notification delivery modes
-DeliveryModeEnum: !enum (values=(DIGEST, UNFILTERED), default=UNFILTERED)
+DeliveryModeEnum: !enum (values=(SMS, EMAIL), default=EMAIL)
 
 # Enumerates possible notification delivery frequency categories.
 NotificationFrequencyEnum: !enum (values=(REAL_TIME, BATCH, DISABLED), default=REAL_TIME)
@@ -38,6 +38,8 @@ NotificationRequest: !Extends_InformationResource
   event_subtype: ""
   # The start and end time of this subscription
   temporal_bounds: !TemporalBounds
+  # indicated this NotificationRequest (and all DeliveryConfigurations) has been disabled by a system process
+  disabled_by_system: False
   # Delivery information as a list of DeliveryConfiguration objects
   #@ContentType=DeliveryConfiguration
   delivery_configurations: []

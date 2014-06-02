@@ -592,3 +592,13 @@ ParameterQCEvent: !Extends_DataQCEvent
   temporal_values: []
   configuration:  {}
 
+---
+# Events generated in the context of NotificationRequest handling
+NotificationEvent: !Extends_Event
+
+# Event generated when a NotificationRequest has resulted in message(s) being sent
+NotificationSentEvent: !Extends_NotificationEvent
+  user_id: ""
+  notification_id: ""
+  notification_max: 0
+

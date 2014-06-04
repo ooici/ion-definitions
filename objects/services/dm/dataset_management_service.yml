@@ -15,13 +15,11 @@ methods:
   create_dataset:
     in:
       name:                    ""
-      datastore_name:          ""
-      view_name:               ""
       stream_id:               ""
       parameter_dict:          {}
       parameter_dictionary_id: ""
       description:             ""
-      parent_dataset_id:       ""
+      coverage_type:           !CoverageTypeEnum
     out:
       dataset_id:              ""
 

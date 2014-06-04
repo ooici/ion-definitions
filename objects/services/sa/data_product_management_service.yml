@@ -1,7 +1,12 @@
 name: data_product_management
 
 docstring: |
-  Services to register and manage the resources related to data products and their metadata.
+  Manages data product resources and data product metadata. This includes:
+    - Dataset Creation
+    - External Catalog Creation and Updates
+    - Data Product Resource Management
+    - Data Product Persistence Support (Saving the data)
+    - Adding Parameters to Data Products
 
 spec: https://confluence.oceanobservatories.org/display/syseng/CIAD+SA+OV+Data+Product+Management+Service
 
@@ -10,8 +15,7 @@ dependencies: [resource_registry, pubsub_management, data_acquisition_management
 methods:
   create_data_product_:
     docstring: |
-      Define a realization of a uniquely identified presentation of a defined collection of information.
-      The presentation consists of a particular subset of the collection.
+      Creates a data product resource with no side-effects.
     in:
       data_product: !DataProduct
     out:
@@ -19,8 +23,9 @@ methods:
 
   create_data_product:
     docstring: |
-      Define a realization of a uniquely identified presentation of a defined collection of information. The
-      presentation consists of a particular subset of the collection. This version of the API should be deprecated.
+      Creates a data product. As a side-effect, a dataset will be created for
+      device data products, a complex coverage created for site data products.
+      If a dataset is created, an ERDDAP Catalog entry is created.
     in:
       data_product: !DataProduct
       stream_definition_id: ""
@@ -32,6 +37,7 @@ methods:
       data_product_id: ""
 
   update_data_product:
+    docstring: Updates a data product
     in:
       data_product: !DataProduct
     out:
@@ -39,13 +45,14 @@ methods:
       NotFound: object with specified id does not exist
 
   read_data_product:
-    docstring: Retrieve data product information
+    docstring: Reads a data product
     in:
       data_product_id: ""
     out:
       data_product: !DataProduct
 
   delete_data_product:
+    docstring: Retires a data product
     in:
       data_product_id: ""
     out:
@@ -54,6 +61,7 @@ methods:
 
   #@OperationVerb=DELETE
   force_delete_data_product:
+    docstring: Deletes a data product
     in:
       data_product_id: ""
     out:
@@ -61,6 +69,7 @@ methods:
       NotFound: object with specified id does not exist
 
   assign_stream_definition_to_data_product:
+    docstring: associates stream_definition to data_product
     in:
       data_product_id: ''
       stream_definition_id: ''
@@ -71,6 +80,7 @@ methods:
       NotFound: object with specified id does not exist
 
   assign_dataset_to_data_product:
+    doctstring: associates dataset to data product
     in:
       data_product_id: ''
       dataset_id: ''
@@ -86,8 +96,9 @@ methods:
 
   get_data_product_updates:
     docstring: |
-      For a list of data products, retrieve events since the given timestamp. The return is a dict
-      of dp_id to a dict containing dataset_id, updated: boolean, current geospatial bounds, current temporal bounds.
+      For a list of data products, retrieve events since the given timestamp.
+      The return is a dict of dp_id to a dict containing dataset_id, updated:
+      boolean, current geospatial bounds, current temporal bounds.
     in:
       data_product_id_list: []
       since_timestamp: ""
@@ -131,8 +142,7 @@ methods:
       NotFound: object with specified id does not exist
 
   add_parameter_to_data_product:
-    docstring: |
-      Adds a parameter context to a data product.
+    docstring: Adds a parameter to a data product.
     in:
       parameter_context_id: ""
       data_product_id: ""
@@ -160,7 +170,8 @@ methods:
       
   create_data_product_collection:
     docstring: |
-      Create a collection of data products with the given data_product as the base version.
+      Create a collection of data products with the given data_product as the
+      base version.
     in:
       data_product_id: ""
       collection_name: ""

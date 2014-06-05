@@ -1,9 +1,0 @@
-# Place parameter dictionary definitions here
-
-# Parameter dictionary definitions for parsed and raw data
-ctd_parsed_param_dict: ['time*','port_timestamp','driver_timestamp','internal_timestamp','preferred_timestamp', 'lat', 'lon', 'pressure', 'conductivity', 'temp', 'salinity','density', 'quality_flag']
-ctd_raw_param_dict: ['time*', 'port_timestamp', 'driver_timestamp', 'internal_timestamp', 'preferred_timestamp', 'lat', 'lon', 'quality_flag', 'raw']
-# Visualization param dict defs
-graph_image_param_dict: ['viz_timestamp*', 'viz_product_type', 'image_name', 'content_type', 'image_obj']
-google_dt: ['google_dt_components'] # will never go into a coverage, do not try to ingest, it will die, painfully.
-mpl_graph: ['mpl_graph'] # will never go into a coverage, do not try to ingest, it will die, painfully.

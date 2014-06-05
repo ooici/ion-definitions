@@ -4,6 +4,8 @@ CoverageTypeEnum: !enum (values=(SIMPLEX, COMPLEX), default=SIMPLEX)
 
 # Represents a possibly open-ended coverage of science data that may be persistent.
 Dataset: !Extends_InformationResource
-  # (SYS) Describes the parameters used by the coverage.
-  parameter_dictionary: {}
+  # (SYS) Coverage Type Enumeration
   coverage_type: !CoverageTypeEnum
+  # (SYS) Coverage Version
+  coverage_version: ""
+

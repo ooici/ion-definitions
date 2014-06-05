@@ -169,7 +169,7 @@ AssociationDefinitions:
     range: [ParameterContext]
     docstring: ParameterDictionary -> ParameterContext
   - predicate: hasParameterDictionary
-    domain: [StreamDefinition]
+    domain: [StreamDefinition,Dataset]
     range: [ParameterDictionary]
     docstring: StreamDefinition -> ParameterDictionary
   - predicate: hasParameterFunction

@@ -14,12 +14,9 @@ methods:
 
   create_dataset:
     in:
-      name:                    ""
-      stream_id:               ""
-      parameter_dict:          {}
+      dataset: !Dataset
+      parameter_dict: {}
       parameter_dictionary_id: ""
-      description:             ""
-      coverage_type:           !CoverageTypeEnum
     out:
       dataset_id:              ""
 

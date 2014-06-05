@@ -57,6 +57,49 @@ methods:
     throws:
       NotFound: object with specified id does not exist
 
+  create_device_data_product:
+    docstring: Creates a data product that represents data from a device or agent
+    in:
+      data_product: !DataProduct
+      stream_definition_id: ""
+      stream_configuration: !StreamConfiguration
+    out:
+      data_product_id: ""
+    throws:
+      BadRequest: Data Product with incorrect category type, i.e. not a device data product
+
+  create_site_data_product:
+    docstring: Creates a data product that represents data from a site
+    in:
+      data_product: !DataProduct
+      stream_definition_id: ""
+    out:
+      data_product_id: ""
+    throws:
+      BadRequest: Data Product with incorrect category type, i.e. not a device data product
+
+  create_external_data_product:
+    docstring: Creates a data product that represents data from an external observatory
+    in:
+      data_product: !DataProduct
+      stream_definition_id: ""
+    out:
+      data_product_id: ""
+    throws:
+      BadRequest: Data Product with incorrect category type, i.e. not a device data product
+
+  create_derived_data_product:
+    docstring: Creates a data product that represents a view of an existing data product
+    in:
+      data_product: !DataProduct
+      stream_definition_id: ""
+      parent_data_product_id: ""
+    out:
+      data_product_id: ""
+    throws:
+      BadRequest: Data Product with incorrect category type, i.e. not a device data product
+
+
   #@OperationVerb=DELETE
   force_delete_data_product:
     docstring: Deletes a data product

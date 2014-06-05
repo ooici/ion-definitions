@@ -38,6 +38,8 @@ NotificationRequest: !Extends_InformationResource
   event_subtype: ""
   # The start and end time of this subscription
   temporal_bounds: !TemporalBounds
+  # maximum daily notifications (zero indicates no maximum - DISABLE for no notifications)
+  max_daily: 0
   # indicated this NotificationRequest (and all DeliveryConfigurations) has been disabled by a system process
   disabled_by_system: False
   # Delivery information as a list of DeliveryConfiguration objects

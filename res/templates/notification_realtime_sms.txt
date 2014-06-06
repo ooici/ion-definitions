@@ -1,0 +1,1 @@
+{{event_label}} at {{timestamp}} for {{origin}}/{{name(?)}}: {{origin_type}} status change: STATUS_OK(?)

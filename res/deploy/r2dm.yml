@@ -88,10 +88,6 @@ apps:
     processapp: [user_notification, ion.services.dm.presentation.user_notification_service, UserNotificationService]
     bootlevel: 10
 
-#  - name: preservation_management
-#    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
-#    bootlevel: 10
-
   - name: catalog_management
     processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
     bootlevel: 10

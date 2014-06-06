@@ -119,11 +119,6 @@ apps:
     deploy:
       bootlevel: 10
 
-#  - name: preservation_management
-#    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
-#    deploy:
-#      bootlevel: 10
-
   - name: catalog_management
     processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
     deploy:

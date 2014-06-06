@@ -226,15 +226,6 @@ apps:
         parameters:
           preserve_n: 1
 
-  - name: preservation_management
-    processapp: [preservation_management, ion.services.dm.preservation.preservation_management_service, PreservationManagementService]
-    deploy:
-      bootlevel: 10
-      ha:
-        policy: npreserving
-        parameters:
-          preserve_n: 1
-
   - name: catalog_management
     processapp: [catalog_management, ion.services.dm.presentation.catalog_management_service, CatalogManagementService]
     deploy:
@@ -302,15 +293,6 @@ apps:
 
 
   ##### AS SERVICE
-  - name: workflow_management
-    processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
-    deploy:
-      bootlevel: 10
-      ha:
-        policy: npreserving
-        parameters:
-          preserve_n: 1
-
   - name: visualization_service
     description: Responsible managing visualization data
     version: 0.1

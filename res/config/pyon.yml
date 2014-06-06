@@ -344,6 +344,7 @@ service:
 
   user_notification:
     max_events_limit: 2000
+    max_daily_notifications: 100
 
 # TODO: Remove (use global flags instead)
 external_data_agent_management:

@@ -1,0 +1,1 @@
+{{event_label}} at {{timestamp}} for {{origin}}/{{notification_name}}: {{origin_type}}

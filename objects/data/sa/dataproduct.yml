@@ -13,7 +13,7 @@ ExternalArchive:
 
 ---
 
-DataProductTypeEnum: !enum (values=(SITE, DEVICE, EXTERNAL), default=DEVICE)
+DataProductTypeEnum: !enum (values=(SITE, DEVICE, EXTERNAL, DERIVED), default=DEVICE)
 
 ---
 

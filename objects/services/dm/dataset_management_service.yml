@@ -14,14 +14,9 @@ methods:
 
   create_dataset:
     in:
-      name:                    ""
-      datastore_name:          ""
-      view_name:               ""
-      stream_id:               ""
-      parameter_dict:          {}
+      dataset: !Dataset
+      parameter_dict: {}
       parameter_dictionary_id: ""
-      description:             ""
-      parent_dataset_id:       ""
     out:
       dataset_id:              ""
 

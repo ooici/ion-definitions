@@ -151,10 +151,6 @@ apps:
 
 
   ##### AS SERVICE
-  - name: workflow_management
-    processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
-    bootlevel: 10
-
   - name: visualization_service
     description: Responsible managing visualization data
     version: 0.1

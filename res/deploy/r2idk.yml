@@ -303,15 +303,6 @@ apps:
 
 
   ##### AS SERVICE
-  - name: workflow_management
-    processapp: [workflow_management, ion.services.ans.workflow_management_service, WorkflowManagementService]
-    deploy:
-      bootlevel: 10
-      ha:
-        policy: npreserving
-        parameters:
-          preserve_n: 1
-
   - name: visualization_service
     description: Responsible managing visualization data
     version: 0.1
@@ -340,7 +331,6 @@ apps:
                   queue_name:     science_data.science_granule_ingestion
                   workers: 1
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_transform, BootstrapTransform]
-        - plugin: [ion.processes.bootstrap.plugins.bootstrap_index, BootstrapIndex]
         - plugin: [ion.processes.bootstrap.plugins.bootstrap_ingestion, BootstrapIngestion]
           config:
             ingestion:

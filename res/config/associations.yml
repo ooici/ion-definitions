@@ -7,13 +7,9 @@
 AssociationDefinitions:
 # AS
   - predicate: hasDataProcess
-    domain: [Workflow, DataProcessDefinition]
+    domain: [DataProcessDefinition]
     range: [DataProcess]
-    docstring: References a DataProcess (instance) belonging to a Workflow (instance)
-  - predicate: hasDataProcessDefinition
-    domain: [WorkflowDefinition]
-    range: [DataProcessDefinition]
-    docstring: References a DataProcessDefinition (type) used by WorkflowDefinition (type)
+    docstring: References a DataProcess 
   - predicate: hasRealtimeVisualization
     domain: [DataProduct]
     range: [RealtimeVisualization]
@@ -28,7 +24,7 @@ AssociationDefinitions:
     range: [DataProducer]
     docstring: References the DataProducer entiry to track a provenance relationship
   - predicate: hasDataProduct
-    domain: [Subscription, Site, Workflow]
+    domain: [Subscription, Site]
     range: [DataProduct]
     docstring: References a resulting or intermediate DataProduct
   - predicate: hasDependency
@@ -56,7 +52,7 @@ AssociationDefinitions:
     range: [DataProducer]
     docstring: References the a DataProducer's input DataProducer to express a provenance relationship
   - predicate: hasInputProduct
-    domain: [DataProcess, Workflow]
+    domain: [DataProcess]
     range: [DataProduct]
     docstring: References the DataProduct that provides input data for a processing resource
   - predicate: hasModel
@@ -68,7 +64,7 @@ AssociationDefinitions:
     range: [Device]
     docstring: Connects platform nodes in the RSN network to provide an additional perspective of status and other
   - predicate: hasOutputProduct
-    domain: [DataProcess, Device, ExternalDataset, Workflow, InstrumentSite, PlatformSite]
+    domain: [DataProcess, Device, ExternalDataset, InstrumentSite, PlatformSite]
     range: [DataProduct]
     docstring: References the DataProduct produced by the given resource
   - predicate: hasParent
@@ -225,8 +221,8 @@ AssociationDefinitions:
     range: [UserCredentials]
     docstring: References an external identity with credentials for an ION identity
   - predicate: hasDefinition
-    domain: [TaskableResource, Workflow]
-    range: [ExecutableResource, WorkflowDefinition]
+    domain: [TaskableResource]
+    range: [ExecutableResource]
     docstring:
   - predicate: hasExchangeBroker
     domain: [ExchangeSpace]

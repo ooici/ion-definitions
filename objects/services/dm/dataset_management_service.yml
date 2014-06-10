@@ -50,6 +50,18 @@ methods:
     out:
     throws:
       NotFound: if dataset does not exist
+
+  add_dataset_window_to_complex:
+    docstring: |
+      Updates a complex coverage to include a new reference to a device dataset with a window.
+    in:
+      device_dataset_id: ""
+      window: []
+      site_dataset_id: ""
+    out:
+    throws:
+      NotFound: if site dataset doesn't exist
+
 #--------
 
   add_parameter_to_dataset:

@@ -152,6 +152,20 @@ methods:
     throws:
       BadRequest: illegal arguments
 
+  get_distinct_values:
+    docstring: |
+      Returns a list of distinct values for given resource type and list of attribute names.
+      Only supports simple types for the attribute values.
+      Returns a sorted list of list of values in the order given by attr_list.
+    in:
+      restype: ""
+      attr_list: []
+      res_filter: {}
+    out:
+      value_list: []
+    throws:
+      BadRequest: illegal arguments
+
 
   # -----------------
   # Other common resource operations for any resource

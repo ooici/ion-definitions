@@ -208,6 +208,9 @@ DataProduct: !Extends_InformationResource
   # Defines if the DataProduct is from a Site or Device
   category: !DataProductTypeEnum
 
+  # Defines the ingest stream name
+  ingest_stream_name: ""
+
 ---
 # (UNUSED) Represents a version or variant of a data product.
 DataProductVersion:

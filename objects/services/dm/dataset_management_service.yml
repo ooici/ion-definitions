@@ -62,6 +62,19 @@ methods:
     throws:
       NotFound: if site dataset doesn't exist
 
+  update_dataset_window_to_complex:
+    docstring: |
+      Updates the window extents to a referenced coverage for a complex coverage
+    in:
+      device_dataset_id: ""
+      old_window: []
+      new_window: []
+      site_dataset_id: ""
+    out:
+    throws:
+      BadRequest: if the windows are improperly set
+
+
 #--------
 
   add_parameter_to_dataset:

@@ -62,7 +62,7 @@ methods:
     throws:
       NotFound: if site dataset doesn't exist
 
-  update_dataset_window_to_complex:
+  update_dataset_window_for_complex:
     docstring: |
       Updates the window extents to a referenced coverage for a complex coverage
     in:

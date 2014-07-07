@@ -22,7 +22,11 @@
             <destinationName>{{var["name"]}}</destinationName>
             <addAttributes>
                 {% for key,value in var["attrs"].iteritems() %}
+                    {% if key == "fillvalue" %}
+                <att name="_FillValue" type="{{value["type"]}}">{{value["value"]}}</att>
+                    {% else %}
                 <att name="{{key}}">{{value}}</att>
+                    {% endif %}
                 {% endfor %}
             </addAttributes>
         </dataVariable>

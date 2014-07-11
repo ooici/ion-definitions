@@ -226,8 +226,8 @@ methods:
       NotFound: Something bad happened in the registry such that an object or association got lost
       ServerError: More than one UserCredentials object was associated with the certificate subject
 
-
-#-------
+  # -----------------
+  # UI support
 
   get_user_info_extension:
     docstring: |
@@ -242,7 +242,8 @@ methods:
       NotFound: An object with the specified user_info_id does not exist
 
 
-#------
+  # -----------------
+  # Account merging
 
   initiate_account_merge:
     docstring: |
@@ -250,17 +251,77 @@ methods:
     in:
       merge_user_email: ""
     out:
-      throws:
-        BadRequest: A parameter is missing
-        NotFound: Merge user email address is not found
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: Merge user email address is not found
 
-#----
   complete_account_merge:
     docstring: |
       Complete account merge by verifying the token string
     in:
       token_string: ""
     out:
-      throws:
-        BadRequest: A parameter is missing
-        NotFound: Token string not found
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: Token string not found
+
+  # -----------------
+  # Account merging
+
+  create_authentication_token:
+    docstring: |
+      Create an authentification token for provided actor id with a given start time and validity.
+      start_time defaults to current time if empty and uses a system timestamp.
+      validity is in seconds and must be set.
+    in:
+      actor_id: ""
+      start_time: ""
+      validity: 0
+    out:
+      token_string: ""
+    throws:
+      BadRequest: Illegal parameter type of value
+      NotFound: Object not found
+
+  read_authentication_token:
+    docstring: |
+      Returns the token object for given actor authentication token string.
+    in:
+      token_string: ""
+    out:
+      token: !SecurityToken
+    throws:
+      BadRequest: Illegal parameter type of value
+      NotFound: Token string not found
+
+  update_authentication_token:
+    docstring: |
+      Updates the given token.
+    in:
+      token: !SecurityToken
+    out:
+    throws:
+      BadRequest: Illegal parameter type of value
+      NotFound: Token not found
+
+  invalidate_authentication_token:
+    docstring: |
+      Invalidates an authentication token, but leaves it in place for auditing purposes.
+    in:
+      token_string: ""
+    out:
+    throws:
+      BadRequest: Illegal parameter type of value
+      NotFound: Token string not found
+
+  check_authentication_token:
+    docstring: |
+      Checks given token and returns a dict with actor id if valid.
+    in:
+      token_string: ""
+    out:
+      token_info: {}
+    throws:
+      BadRequest: Illegal parameter type of value
+      NotFound: Token string not found
+      Unauthorized: Token not valid anymore or otherwise

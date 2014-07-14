@@ -36,6 +36,10 @@ ParameterContext: !Extends_InformationResource
   parameter_function_id: ""
   # Parameter map {argument_name : parameter_name}
   parameter_function_map: ""
+  # Dataset ID for the target
+  target_dataset: ""
+  # Parameter name in the target dataset
+  target_name: ""
   # CF 1.6 standard_name, see http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/26/cf-standard-name-table.html
   standard_name: ""
   # OOI Conventional Identifier (TEMPWAT, CTDMO etc.)

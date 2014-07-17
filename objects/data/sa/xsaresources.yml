@@ -228,7 +228,28 @@ MarineFacilityOrgExtension: !Extends_ExtendedInformationResource
   # (focus)Org --> hasResource --> PlatformSite(list) / where alt_resource_type = StationSite
   #@hasResource=PlatformSite
   station_sites: [] # limit to list of PlatformSites
-
+  #
+  #@hasResource=Asset
+  assets: [] # constrained to a list of Assets
+  assets_request: !ServiceRequest
+  #@hasResource=Asset
+  number_of_assets: 0
+  #@hasResource=AssetType
+  asset_types: [] # constrained to a list of AssetTypes
+  asset_types_request: !ServiceRequest
+  #@hasResource=AssetType
+  number_of_asset_types: 0
+  #
+  #@hasResource=EventDuration
+  event_durations: [] # constrained to a list of EventDurations
+  event_durations_request: !ServiceRequest
+  #@hasResource=EventDuration
+  number_of_event_durations: 0
+  #@hasResource=EventDurationType
+  event_duration_types: [] # constrained to a list of EventDurationTypes
+  event_duration_types_request: !ServiceRequest
+  #@hasResource=EventDurationType
+  number_of_event_duration_types: 0
 
 # This object contains additional information associated with a instrument or platform model.
 #@OriginResourceType=DeviceModel

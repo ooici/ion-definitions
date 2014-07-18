@@ -677,3 +677,507 @@ methods:
       include_data_products: False
     out:
       result: {}
+
+  # ---------------------------------------------------------
+  # Marine Asset Management CRUD and Association Operators
+  # ---------------------------------------------------------
+
+  # ---------------------------------
+  # AssetType resource
+  # ---------------------------------
+  create_asset_type:
+    docstring: Create AssetType resource.
+    in:
+      asset_type: !AssetType
+    out:
+      asset_type_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_asset_type:
+    docstring: Update an AssetType resource.
+    in:
+      asset_type: !AssetType
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_asset_type:
+    docstring: Read an AssetType resource.
+    in:
+      asset_type_id: ""
+    out:
+      asset_type: !AssetType
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_asset_type:
+    docstring: Delete an AssetType resource.
+    in:
+      asset_type_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist.
+
+  force_delete_asset_type:
+    docstring: Delete an AssetType resource.
+    in:
+      asset_type_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  update_attribute_specifications:
+    docstring: |
+      Update AttributeSpecifications.
+    in:
+      resource_id: ""
+      spec_dict: {}
+    out:
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute.
+
+  delete_attribute_specification:
+    docstring: |
+      Delete a list attribute specification(s) for a resource with resource_id,
+      and return dictionary of AttributeSpecification.
+    in:
+      resource_id: ""
+      attr_spec_names: []
+    out:
+      attr_specs: {}
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute.
+
+  # ---------------------------------
+  # Asset resource
+  # ---------------------------------
+  create_asset:
+    docstring: Create an Asset resource.
+    in:
+      asset: !Asset
+      asset_type_id:  ""    # optional id for creating association
+    out:
+      asset_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_asset:
+    docstring: Update an Asset resource.
+    in:
+      asset: !Asset
+    out:
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  read_asset:
+    docstring: Read Asset resource.
+    in:
+      asset_id: ""
+    out:
+      asset: !Asset
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_asset:
+    docstring: Delete an Asset resource.
+    in:
+      asset_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  force_delete_asset:
+    docstring: Force delete Asset resource.
+    in:
+      asset_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  get_asset_extension:
+    docstring: |
+      Returns an AssetExtension object containing additional related information.
+    in:
+      asset_id: ""
+      ext_associations: {}    # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: []         # An optional list of field names to exclude from retrieving
+      user_id: ""             # An optional user id associated with the requesting user
+    out:
+      site: !AssetExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified observatory_id does not exist
+
+  prepare_asset_support:
+    docstring: |
+      Returns the information needed to create or update an asset resource. The asset_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
+    in:
+      asset_id: ""
+    out:
+      resource_schema: !AssetPrepareSupport
+    throws:
+      NotFound: An object with the specified asset_id does not exist
+
+  assign_asset_type_to_asset:
+    docstring: Link an Asset to a AssetType.
+    in:
+      asset_type_id: ""
+      asset_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_asset_type_from_asset:
+    docstring: Remove link of Asset from AssetType.
+    in:
+      asset_type_id: ""
+      asset_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  # ---------------------------------
+  # EventDurationType resource
+  # ---------------------------------
+  create_event_duration_type:
+    docstring: Create EventDurationType resource.
+    in:
+      event_duration_type: !EventDurationType
+    out:
+      event_duration_type_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_event_duration_type:
+    docstring: Update an EventDurationType resource.
+    in:
+      event_duration_type: !EventDurationType
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_event_duration_type:
+    docstring: Read an EventDurationType resource.
+    in:
+      event_duration_type_id: ""
+    out:
+      event_duration_type: !EventDurationType
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_event_duration_type:
+    docstring: Delete an EventDurationType resource.
+    in:
+      event_duration_type_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist.
+
+  force_delete_event_duration_type:
+    docstring: Delete an EventDurationType resource.
+    in:
+      event_duration_type_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+# ---------------------------------
+# EventDuration
+# ---------------------------------
+  create_event_duration:
+    docstring: Create an EventDuration resource.
+    in:
+      event_duration: !EventDuration
+      event_duration_type_id: ""                   # optional id for creating association
+    out:
+      event_duration_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_event_duration:
+    docstring: Update an EventDuration resource.
+    in:
+      event_duration: !EventDuration
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_event_duration:
+    docstring: Read EventDuration resource.
+    in:
+      event_duration_id: ""
+    out:
+      event_duration: !EventDuration
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_event_duration:
+    docstring: Delete an EventDuration resource.
+    in:
+      event_duration_id: ""
+    out:
+    throws:
+      NotFOund: object with specified id does not exist
+
+  force_delete_event_duration:
+    docstring: Force delete EventDuration resource.
+    in:
+      event_duration_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  assign_event_duration_type_to_event_duration:
+    docstring: Link a EventDuration to a EventDurationType.
+    in:
+      event_duration_type_id: ""
+      event_duration_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  unassign_event_duration_type_from_event_duration:
+    docstring: Remove link of EventDuration from EventDurationType.
+    in:
+      event_duration_type_id: ""
+      event_duration_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  get_event_duration_extension:
+    docstring: |
+      Returns an EventDurationExtension object containing additional related information.
+    in:
+      event_duration_id: ""
+      ext_associations: {}    # An optional dict of names and associations to get other associations dynamically
+      ext_exclude: []         # An optional list of field names to exclude from retrieving
+      user_id: ""             # An optional user id associated with the requesting user
+    out:
+      site: !EventDurationExtension
+    throws:
+      BadRequest: A parameter is missing
+      NotFound: An object with the specified event_duration_id does not exist
+
+  prepare_event_duration_support:
+    docstring: |
+      Returns the information needed to create or update an event duration resource. The event_duration_id parameter
+      is optional and should be provided when updating an existing resource but not when creating a new resource.
+    in:
+      event_duration_id: ""
+    out:
+      resource_schema: !EventDurationPrepareSupport
+    throws:
+      NotFound: An object with the specified event_duration_id does not exist
+
+  # ---------------------------------
+  # Asset to EventDuration association(s)
+  # ---------------------------------
+  assign_event_duration_to_asset:
+    docstring: Link EventDuration to Asset
+    in:
+      event_duration_id: ""
+      asset_id: ""
+    out:
+    throws:
+      NotFound: An object with the specified event_duration_id does not exist
+
+  unassign_event_duration_to_asset:
+    docstring: Remove link EventDuration to Asset
+    in:
+      event_duration_id: ""
+      asset_id: ""
+    out:
+    throws:
+      NotFound: An object with the specified event_duration_id does not exist
+
+  # ---------------------------------
+  # CodeSpace
+  # ---------------------------------
+  create_code_space:
+    docstring: Create CodeSpace resource.
+    in:
+      code_space: !CodeSpace
+    out:
+      resource_id: ""
+    throws:
+      BadRequest: if object does not have _id or _rev attribute
+      NotFound: object with specified id does not exist
+
+  update_code_space:
+    docstring: Update an CodeSpace resource.
+    in:
+      code_space: !CodeSpace
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_code_space:
+    docstring: Read an CodeSpace resource.
+    in:
+      resource_id: ""
+    out:
+      code_space: !CodeSpace
+    throws:
+      NotFound: object with specified id does not exist
+
+  delete_code_space:
+    docstring: Delete an CodeSpace resource.
+    in:
+      resource_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist.
+
+  force_delete_code_space:
+    docstring: Force delete CodeSpace resource.
+    in:
+      resource_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+
+  read_codesets_by_name:
+    docstring:  |
+      Return list of Codeset(s) from code_space for [list of] name(s)
+    in:
+      resource_id: ""
+      names: []
+    out:
+      code_sets: []
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute
+
+  read_codes_by_name:
+    docstring: |
+      Return a list of Codes from CodeSpace resource having names in list.
+    in:
+      resource_id: ""
+      names: []
+      id_only: False
+    out:
+      codes: []
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute
+
+  update_codes:
+    docstring: |
+      Update CodeSpace resource using the dictionary of codes provided.
+    in:
+      resource_id: ""
+      codes: {}
+    out:
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute
+
+  update_codesets:
+    docstring: |
+      Update CodeSets in CodeSpace resource using dictionary of CodeSets provided.
+    in:
+      resource_id: ""
+      codesets: {}
+    out:
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute
+
+  delete_codes:
+    docstring: |
+      Delete codes from CodeSpace; Codes to be deleted are identified in list names.
+      Return list of Codes in CodeSpace (?)
+    in:
+      resource_id: ""
+      names: []
+    out:
+      codes: []
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute
+
+  delete_codesets:
+    docstring: |
+      Delete CodeSets from CodeSpace; CodeSets to be deleted are identified in
+      list names. Return list of CodeSets in CodeSpace (?)
+    in:
+      resource_id: ""
+      names: []
+    out:
+      codesets: []
+    throws:
+      NotFound: object with specified id does not exist.
+      BadRequest: if object does not have _id or _rev attribute
+
+  assign_asset_to_resource:
+    docstring: Link a Asset to a Resource.
+    in:
+      asset_id: ""
+      resource_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+      BadRequest: if object does not have _id or _rev attribute
+
+  unassign_asset_from_resource:
+    docstring: Remove link of Asset from Resource.
+    in:
+      asset_id: ""
+      resource_id: ""
+    out:
+    throws:
+      NotFound: object with specified id does not exist
+      BadRequest: if object does not have _id or _rev attribute
+
+  declare_asset_tracking_resources:
+    docstring: |
+      Determines and declares asset management resources based on xlsx content provided.
+      Returns dictionary resource types and list of ids created of that type.
+    in:
+      content: ""
+      content_type: ""
+      content_encoding: ""
+    out:
+      response: {}
+
+  asset_tracking_report:
+    docstring: |
+      Determines asset tracking resources based on system marine tracking instances content.
+      Returns xls content (encoded).
+    in:
+    out:
+      response: ""
+
+  get_assets_picklist:
+    docstring:
+      find resource instances of type Asset and return list of tuples (where tuple is [res.name, res.id] )
+    in:
+      id_only: ""
+    out:
+      response: []
+
+  get_events_picklist:
+    docstring:
+      find resource instances of type EventDuration and return list of tuples (where tuple is [res.name, res.id] )
+    in:
+      id_only: ""
+    out:
+      response: []
+
+  get_altids:
+    docstring:
+      find resource instances of res_type; return list of alt_ids([]) [ [res.alt_ids], [res.alt_ids], ...]
+    in:
+      res_type: ""
+    out:
+      response: []

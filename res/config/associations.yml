@@ -309,6 +309,43 @@ AssociationDefinitions:
     range: [UIResource]
     docstring: Defines references between UI elements
 
+# Asset Management
+  - predicate: implementsAssetType
+    domain: [Asset]
+    range: [AssetType]
+    docstring: References the specification resource of a marine asset resource
+
+  - predicate: implementsEventDurationType
+    domain: [EventDuration]
+    range: [EventDurationType]
+    docstring: References the event specification resource of a marine asset event resource
+
+  - predicate: extendsAssetType
+    domain: [AssetType]
+    range: [AssetType]
+    docstring: References the extended AssetType(s) of a resource
+
+  - predicate: extendsEventDurationType
+    domain: [EventDurationType]
+    range: [EventDurationType]
+    docstring: References the extended EventDurationType(s) of a resource
+
+  - predicate: hasLocationEvent
+    domain: [Asset]
+    range: [EventDuration]
+
+  - predicate: hasOperabilityEvent
+    domain: [Asset]
+    range: [EventDuration]
+
+  - predicate: hasVerificationEvent
+    domain: [Asset]
+    range: [EventDuration]
+
+  - predicate: hasAssemblyEvent
+    domain: [Asset]
+    range: [EventDuration]
+
 # Examples
   - predicate: hasAccount
     domain: [BankCustomer]

@@ -84,3 +84,12 @@ UserInfoServiceRequest: !Extends_ResourceServiceRequest
   resource_type: "UserInfo"
   resource_identifier: "user_info_id"
 
+AssetServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "Asset"
+  resource_identifier: "asset_id"
+
+EventDurationServiceRequest: !Extends_ResourceServiceRequest
+  resource_type: "EventDuration"
+  resource_identifier: "event_duration_id"
+
+

@@ -1,0 +1,198 @@
+
+#
+ValueTypeEnum: !enum (values=(BooleanValue, IntegerValue, RealValue, StringValue, DateValue, TimeValue, DateTimeValue, CodeValue), default=StringValue)
+
+EventCategoryEnum: !enum (values=(Location, Operability, Verification, Assembly), default=Location)
+
+#
+Value:
+
+---
+#
+BooleanValue: !Extends_Value
+  value: False
+
+IntegerValue: !Extends_Value
+  value: 0
+
+RealValue: !Extends_Value
+  value: 0.0
+
+StringValue: !Extends_Value
+  value: ""
+
+DateValue: !Extends_Value
+  value: ""
+
+TimeValue: !Extends_Value
+  value: ""
+
+DateTimeValue: !Extends_Value
+  value: ""
+
+CodeValue: !Extends_Value
+  value: ""
+
+---
+
+Attribute:
+  name: ""
+  #@ContentType=Value
+  value: []
+
+AttributeSpecification:
+  id: ""
+  description: ""
+  value_type: #@ContentType=Value
+  value_constraints: ""
+  default_value: ""
+  uom: ""
+  value_pattern: ""
+  cardinality: ""
+  editable: ""
+  journal: ""
+  group_label: ""
+  attr_label: ""
+  rank: ""
+  visibility: ""
+  _source_id: ""
+
+Code:
+  id: ""
+  name: ""
+  description: ""
+
+CodeSet:
+  name: ""
+  description: ""
+  enumeration: []
+
+---
+
+CodeSpace: !Extends_InformationResource
+  #@ContentType=Code
+  codes: {}
+  #@ContentType=CodeSet
+  codesets: {}
+
+TypeResource: !Extends_InformationResource
+  # Additional attributes permissible or required for this specific TypeResource.
+  # Each entry in the attribute_specifications dictionary is an AttributeSpecification object (see above).
+  # A resource instance (for example Asset) which uses a specific TypeResource should then store the attribute values
+  # corresponding to attribute_specifications of the associated TypeResource instance (for example AssetType)
+  #@ContentType=AttributeSpecification
+  attribute_specifications: {}
+  concrete: False
+
+---
+
+AssetType: !Extends_TypeResource
+  # Additional attributes permissible or required for this specific asset type.
+  # Each entry in the list is a AttributeSpecification object (see above).
+  # An asset attribute of this type should then store these attribute meta-data values in the corresponding
+  # attribute_specifications of the asset type instance.
+
+
+EventDurationType: !Extends_TypeResource
+  # Additional attributes permissible or required for this specific event duration type.
+  # Each entry in the list is a AttributeSpecification object (see above).
+  # An event duration attribute of this type should then store these attribute meta-data values in the corresponding
+  # attribute_specifications of the event duration type instance.
+  event_category: !EventCategoryEnum
+---
+
+Asset: !Extends_InformationResource
+  # Additional attribute values applicable for the asset's type as key-value pairs.
+  # The attribute names must align with the AssetType:attribute_specifications:name field for this type of asset.
+  #@ContentType=Attribute
+  asset_attrs: {}
+
+---
+
+# This object contains additional information associated with an Asset.
+#@OriginResourceType=Asset
+AssetExtension: !Extends_ExtendedInformationResource
+  #@implementsAssetType
+  asset_type: !AssetType
+
+EventDuration: !Extends_InformationResource
+  # Additional attribute values applicable for the asset event's type as key-value pairs.
+  # The attribute names must align with the EventDurationType:custom_attribute_definitions:name
+  # field for this type of event duration.
+  #@ContentType=Attribute
+  event_duration_attrs: {}
+
+---
+
+# This object contains additional information associated with an EventDuration.
+#@OriginResourceType=EventDuration
+EventDurationExtension: !Extends_ExtendedInformationResource
+  #@implementsEventDurationType
+  event_duration_type: !EventDurationType
+
+#@Key=AssetHasLocationEvent
+AssocAssetHasLocationEvent: !Extends_AssociatedResources
+  #@ResourceType=EventDuration
+  resources: []
+  #@Association=hasLocationEvent
+  #@ResourceObject
+  #@SubjectType=EventDuration
+  associated_resources: []
+  assign_request: !AssetServiceRequest
+  unassign_request: !AssetServiceRequest
+
+#@Key=AssetHasOperabilityEvent
+AssocAssetHasOperabilityEvent: !Extends_AssociatedResources
+  #@ResourceType=EventDuration
+  resources: []
+  #@Association=hasOperabilityEvent
+  #@ResourceObject
+  #@SubjectType=EventDuration
+  associated_resources: []
+  assign_request: !AssetServiceRequest
+  unassign_request: !AssetServiceRequest
+
+#@Key=AssetHasVerificationEvent
+AssocAssetHasVerificationEvent: !Extends_AssociatedResources
+  #@ResourceType=EventDuration
+  resources: []
+  #@Association=hasVerificationEvent
+  #@ResourceObject
+  #@SubjectType=EventDuration
+  associated_resources: []
+  assign_request: !AssetServiceRequest
+  unassign_request: !AssetServiceRequest
+
+#@Key=AssetHasAssemblyEvent
+AssocAssetHasAssemblyEvent: !Extends_AssociatedResources
+  #@ResourceType=EventDuration
+  resources: []
+  #@Association=hasAssemblyEvent
+  #@ResourceObject
+  #@SubjectType=EventDuration
+  associated_resources: []
+  assign_request: !AssetServiceRequest
+  unassign_request: !AssetServiceRequest
+
+---
+
+#This object contains additional information needed to create or update asset resources
+#@OriginResourceType=Asset
+AssetPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !AssetServiceRequest
+  update_request: !AssetServiceRequest
+  #@ContentType=AssociatedResources
+  #@AssociatedResources=AssocAssetHasLocationEvent,AssocAssetHasOperabilityEvent,AssocAssetHasVerificationEvent,AssocAssetHasAssemblyEvent
+  associations: {}
+
+#This object contains additional information needed to create or update event duration resources
+#@OriginResourceType=EventDuration
+EventDurationPrepareSupport: !Extends_ResourcePrepareSupport
+  operation_requests: ["create_request", "update_request"]
+  create_request: !EventDurationServiceRequest
+  update_request: !EventDurationServiceRequest
+  ##@ContentType=AssociatedResources
+  ##@AssociatedResources=AssocEventDurationImplementsEventDurationType
+  associations: {}
+
